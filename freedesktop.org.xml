@@ -3,11 +3,11 @@
   <!ELEMENT mime-info (mime-type)+>
   <!ATTLIST mime-info xmlns CDATA #FIXED "http://www.freedesktop.org/standards/shared-mime-info">
 
-  <!ELEMENT mime-type (_comment|glob|magic|root-XML|alias|sub-class-of)*>
+  <!ELEMENT mime-type (comment|glob|magic|root-XML|alias|sub-class-of)*>
   <!ATTLIST mime-type type CDATA #REQUIRED>
 
-  <!ELEMENT _comment (#PCDATA)>
-  <!ATTLIST _comment xml:lang CDATA #IMPLIED>
+  <!ELEMENT comment (#PCDATA)>
+  <!ATTLIST comment xml:lang CDATA #IMPLIED>
 
   <!ELEMENT glob EMPTY>
   <!ATTLIST glob pattern CDATA #REQUIRED>
@@ -6309,6 +6309,7 @@
     <root-XML namespaceURI='http://www.w3.org/1999/xhtml' localName='html'/>
   </mime-type>
   <mime-type type="application/zip">
+    <alias type="application/x-zip-compressed"/>
     <comment>ZIP archive</comment>
     <comment xml:lang="bg">Архив, формат ZIP</comment>
     <comment xml:lang="cs">Archiv ZIP</comment>

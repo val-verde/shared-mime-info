@@ -285,6 +285,62 @@ command to generate the output files.
     <_comment>OpenOffice.org Writer document template</_comment>
     <glob pattern="*.stw"/>
   </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.text">
+    <_comment>OpenDocument Text</_comment>
+    <glob pattern="*.odt"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.text-template">
+    <_comment>OpenDocument Text Template</_comment>
+    <glob pattern="*.ott"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.text-web">
+    <_comment>OpenDocument HTML Document Template</_comment>
+    <glob pattern="*.oth"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.text-master">
+    <_comment>OpenDocument Master Document</_comment>
+    <glob pattern="*.odm"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.graphics">
+    <_comment>OpenDocument Drawing</_comment>
+    <glob pattern="*.odg"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.graphics-template">
+    <_comment>OpenDocument Drawing Template</_comment>
+    <glob pattern="*.otg"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.presentation">
+    <_comment>OpenDocument Presentation</_comment>
+    <glob pattern="*.odp"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.presentation-template">
+    <_comment>OpenDocument Presentation Template</_comment>
+    <glob pattern="*.otp"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.spreadsheet">
+    <_comment>OpenDocument Spreadsheet</_comment>
+    <glob pattern="*.ods"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.spreadsheet-template">
+    <_comment>OpenDocument Spreadsheet Template</_comment>
+    <glob pattern="*.ots"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.chart">
+    <_comment>OpenDocument Chart</_comment>
+    <glob pattern="*.odc"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.formula">
+    <_comment>OpenDocument Formula</_comment>
+    <glob pattern="*.odf"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.database">
+    <_comment>OpenDocument Database</_comment>
+    <glob pattern="*.odb"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.image">
+    <_comment>OpenDocument Image</_comment>
+    <glob pattern="*.odi"/>
+  </mime-type>
   <mime-type type="application/vnd.wordperfect">
     <alias type="application/x-wordperfect"/>
     <alias type="application/wordperfect"/>

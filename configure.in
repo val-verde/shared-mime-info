@@ -1,0 +1,6 @@
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(freedesktop-shared.mimeinfo)
+AM_INIT_AUTOMAKE(shared-mime-info, 0.5)
+
+AC_OUTPUT(Makefile)

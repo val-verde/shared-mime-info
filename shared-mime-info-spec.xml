@@ -320,15 +320,6 @@ all the directries listed above. For example, <quote>Load all the
 <filename>~/.mime/text/html.xml</filename> (if they exist).
 		</para>
 		<para>
-Where the information from these files is conflicting, information from directories
-lower in the list takes precedence.
-		</para>
-		<para>
-Any file named <filename>Override.xml</filename> takes precedence over all other files in
-the same <filename>packages</filename> directory. Tools which let the user edit the
-database should edit the file <filename>~/.mime/packages/Override.xml</filename>.
-		</para>
-		<para>
 Each application that wishes to contribute to the MIME database will install a
 single XML file, named after the application, into one of the three
 <filename>&lt;MIME&gt;/packages/</filename> directories (depending on where the user requested
@@ -340,7 +331,17 @@ which is provided by the freedesktop.org shared database<citation>SharedMIME</ci
 <command>update-mime-database</command> is passed the <filename>mime</filename>
 directory containing the <filename>packages</filename> subdirectory which was
 modified as its only argument. It scans all the XML files in the <filename>packages</filename>
-subdirectory, combines the information in them, and creates a number of output files:
+subdirectory, combines the information in them, and creates a number of output files.
+		</para>
+		<para>
+Where the information from these files is conflicting, information from directories
+lower in the list takes precedence.
+Any file named <filename>Override.xml</filename> takes precedence over all other files in
+the same <filename>packages</filename> directory. Tools which let the user edit the
+database should edit the file <filename>~/.mime/packages/Override.xml</filename>.
+		</para>
+		<para>
+The files created by <command>update-mime-database</command> are:
 			<itemizedlist>
 				<listitem><para>
 <filename>&lt;MIME&gt;/globs</filename> (contains a mapping from extension to MIME type)

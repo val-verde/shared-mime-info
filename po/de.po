@@ -3,17 +3,18 @@
 # This file is distributed under the same license as the shared-mime-data package.
 # Christian Neumair <chris@gnome-de.org>, 2004.
 # 
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-data 0.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-04-06 17:41+0200\n"
-"PO-Revision-Date: 2004-03-27 11:02+0100\n"
+"POT-Creation-Date: 2004-04-11 20:24+0200\n"
+"PO-Revision-Date: 2004-04-11 20:25+0200\n"
 "Last-Translator: Christian Neumair <chris@gnome-de.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
 #: freedesktop.org.xml.in.h:1
 msgid "3D Studio image"
@@ -1336,157 +1337,162 @@ msgid "message in several formats"
 msgstr "Nachricht in mehreren Formaten"
 
 #: freedesktop.org.xml.in.h:331
+msgid "message translation template"
+msgstr "Vorlage zur Nachrichtenübersetzung"
+
+#: freedesktop.org.xml.in.h:332
 msgid "mount point"
 msgstr "Einbindepunkt"
 
-#: freedesktop.org.xml.in.h:332
+#: freedesktop.org.xml.in.h:333
 msgid "object code"
 msgstr "Objekt-Code"
 
-#: freedesktop.org.xml.in.h:333
+#: freedesktop.org.xml.in.h:334
 msgid "packed font file"
 msgstr "gepackte Schriftdatei"
 
-#: freedesktop.org.xml.in.h:334
+#: freedesktop.org.xml.in.h:335
 msgid "partial email message"
 msgstr "E-Mail-Nachrichtenfragment"
 
-#: freedesktop.org.xml.in.h:335
+#: freedesktop.org.xml.in.h:336
 msgid "pipe"
 msgstr "Pipe"
 
-#: freedesktop.org.xml.in.h:336
+#: freedesktop.org.xml.in.h:337
 msgid "plain text document"
 msgstr "einfaches Textdokument"
 
-#: freedesktop.org.xml.in.h:337
+#: freedesktop.org.xml.in.h:338
 msgid "profiler results"
 msgstr "Profiler-Ergebnisse"
 
-#: freedesktop.org.xml.in.h:338
+#: freedesktop.org.xml.in.h:339
 msgid "program crash data"
 msgstr "Daten zu Programmabsturz"
 
-#: freedesktop.org.xml.in.h:339
+#: freedesktop.org.xml.in.h:340
 msgid "raw CD image"
 msgstr "CD-Roh-Image"
 
-#: freedesktop.org.xml.in.h:340
+#: freedesktop.org.xml.in.h:341
 msgid "reference to remote file"
 msgstr "Verweis auf entfernte Datei"
 
-#: freedesktop.org.xml.in.h:341
+#: freedesktop.org.xml.in.h:342
 msgid "rejected patch"
 msgstr "abgelehnter Patch"
 
-#: freedesktop.org.xml.in.h:342
+#: freedesktop.org.xml.in.h:343
 msgid "resource location"
 msgstr "Ressourcenort"
 
-#: freedesktop.org.xml.in.h:343
+#: freedesktop.org.xml.in.h:344
 msgid "rich text document"
 msgstr "RTF-Textdokument"
 
-#: freedesktop.org.xml.in.h:344
+#: freedesktop.org.xml.in.h:345
 msgid "scalable SVG image"
 msgstr "skalierbares SVG-Bild"
 
-#: freedesktop.org.xml.in.h:345
+#: freedesktop.org.xml.in.h:346
 msgid "shared library"
 msgstr "gemeinsame Bibliothek"
 
-#: freedesktop.org.xml.in.h:346
+#: freedesktop.org.xml.in.h:347
 msgid "shared library (la)"
 msgstr "gemeinsame Bibliothek (la)"
 
-#: freedesktop.org.xml.in.h:347
+#: freedesktop.org.xml.in.h:348
 msgid "shell archive"
 msgstr "Shell-Archiv"
 
-#: freedesktop.org.xml.in.h:348
+#: freedesktop.org.xml.in.h:349
 msgid "shell script"
 msgstr "Shell-Skript"
 
-#: freedesktop.org.xml.in.h:349
+#: freedesktop.org.xml.in.h:350
 msgid "signed message"
 msgstr "signierte Nachricht"
 
-#: freedesktop.org.xml.in.h:350
+#: freedesktop.org.xml.in.h:351
 msgid "socket"
 msgstr "Socket"
 
-#: freedesktop.org.xml.in.h:351
+#: freedesktop.org.xml.in.h:352
 msgid "software author credits"
 msgstr "Software-Impressum"
 
-#: freedesktop.org.xml.in.h:352
+#: freedesktop.org.xml.in.h:353
 msgid "software installation instructions"
 msgstr "Software-Installationsanleitung"
 
-#: freedesktop.org.xml.in.h:353
+#: freedesktop.org.xml.in.h:354
 msgid "software license terms"
 msgstr "Software-Lizenzbedingungen"
 
-#: freedesktop.org.xml.in.h:354
+#: freedesktop.org.xml.in.h:355
 msgid "stream of data (server push)"
 msgstr "Datenstrom (Server-Push)"
 
-#: freedesktop.org.xml.in.h:355
+#: freedesktop.org.xml.in.h:356
 msgid "symbolic link"
 msgstr "Symbolischer Link"
 
-#: freedesktop.org.xml.in.h:356
+#: freedesktop.org.xml.in.h:357
 msgid "tar archive"
 msgstr "tar-Archiv"
 
-#: freedesktop.org.xml.in.h:357
+#: freedesktop.org.xml.in.h:358
 msgid "tar archive (LZO-compressed)"
 msgstr "tar-Archiv (LZO-komprimiert)"
 
-#: freedesktop.org.xml.in.h:358
+#: freedesktop.org.xml.in.h:359
 msgid "tar archive (bzip-compressed)"
 msgstr "tar-Archiv (bzip-komprimiert)"
 
-#: freedesktop.org.xml.in.h:359
+#: freedesktop.org.xml.in.h:360
 msgid "tar archive (compressed)"
 msgstr "tar-Archiv (komprimiert)"
 
-#: freedesktop.org.xml.in.h:360
+#: freedesktop.org.xml.in.h:361
 msgid "tar archive (gzip-compressed)"
 msgstr "tar-Archiv (gzip-komprimiert)"
 
-#: freedesktop.org.xml.in.h:361
+#: freedesktop.org.xml.in.h:362
 msgid "text document (with comma-separated values)"
 msgstr "Textdokument (Werte durch Kommata unterteilt)"
 
-#: freedesktop.org.xml.in.h:362
+#: freedesktop.org.xml.in.h:363
 msgid "text document (with tab-separated values)"
 msgstr "Textdokument·(Werte·durch·Tabulatorzeichen·unterteilt)"
 
-#: freedesktop.org.xml.in.h:363
+#: freedesktop.org.xml.in.h:364
 msgid "theme"
 msgstr "Thema"
 
-#: freedesktop.org.xml.in.h:364
+#: freedesktop.org.xml.in.h:365
 msgid "translated messages"
 msgstr "übersetzte Meldungen"
 
-#: freedesktop.org.xml.in.h:365
+#: freedesktop.org.xml.in.h:366
 msgid "translated messages (machine-readable)"
 msgstr "übersetzte Meldungen (maschinenlesbar)"
 
-#: freedesktop.org.xml.in.h:366
+#: freedesktop.org.xml.in.h:367
 msgid "unknown"
 msgstr "unbekannt"
 
-#: freedesktop.org.xml.in.h:367
+#: freedesktop.org.xml.in.h:368
 msgid "ustar archive"
 msgstr "ustar-Archiv"
 
-#: freedesktop.org.xml.in.h:368
+#: freedesktop.org.xml.in.h:369
 msgid "vCalendar interchange file"
 msgstr "vCalendar-Austauschdatei"
 
-#: freedesktop.org.xml.in.h:369
+#: freedesktop.org.xml.in.h:370
 msgid "zoo archive"
 msgstr "zoo-Archiv"
+

@@ -189,6 +189,9 @@ command to generate the output files.
     <glob pattern="*.ppt"/>
     <glob pattern="*.pps"/>
     <glob pattern="*.pot"/>
+    <magic priority="50">
+      <match type="little32" value="0xcfd0e011" offset="0"/>
+    </magic>
   </mime-type>
   <mime-type type="application/vnd.ms-word">
     <_comment>Microsoft Word document</_comment>
@@ -293,6 +296,7 @@ command to generate the output files.
       <match type="string" value="&lt;!DOCTYPE abiword" offset="0:64"/>
     </magic>
     <glob pattern="*.abw"/>
+    <glob pattern="*.abw.CRASHED"/>
     <glob pattern="*.abw.gz"/>
     <glob pattern="*.zabw"/>
   </mime-type>
@@ -1979,6 +1983,10 @@ command to generate the output files.
   <mime-type type="text/x-gettext-translation">
     <_comment>translated messages</_comment>
     <glob pattern="*.po"/>
+  </mime-type>
+  <mime-type type="text/x-gettext-translation-template">
+    <_comment>message translation template</_comment>
+    <glob pattern="*.pot"/>
   </mime-type>
   <mime-type type="text/html">
     <_comment>HTML page</_comment>

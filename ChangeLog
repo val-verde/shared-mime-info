@@ -1,3 +1,9 @@
+2004-04-11  Christian Neumair  <chris@gnome-de.org>
+
+	* freedesktop.xml.in: Added *.abw.CRASHED glob pattern to
+	application/x-abiword, added text/x-gettext-translation-template,
+	added match tag to application/vnd.ms-powerpoint.
+
 2004-04-06  Christian Neumair  <chris@gnome-de.org>
 
 	* configure.in (ALL_LINGUAS): Added German (de).

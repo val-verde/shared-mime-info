@@ -1,5 +1,12 @@
 2004-11-01  Christophe Fergeau  <teuf@gnome.org>
 
+	* freedesktop.org.xml:
+	* freedesktop.org.xml.in: sync freedesktop.org.xml with
+	freedesktop.org.xml.in, fix freedesktop.org.xml.in to make it valid
+	XML
+
+2004-11-01  Christophe Fergeau  <teuf@gnome.org>
+
 	* freedesktop.org.xml.in: Added application/mathematica, patch by Chris
 	Maes <i-chris@wolfram.com>, fixes #870
 

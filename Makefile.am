@@ -9,6 +9,8 @@ packages_DATA = freedesktop.org.xml
 
 bin_PROGRAMS = update-mime-database
 update_mime_database_SOURCES = update-mime-database.c
+update_mime_database_CFLAGS = $(ALL_CFLAGS)
+update_mime_database_LDADD = $(ALL_LIBS)
 
 man_MANS = update-mime-database.1
 
@@ -25,9 +27,6 @@ EXTRA_DIST = \
 
 CLEANFILES = freedesktop.org.xml
 DISTCLEANFILES = intltool-extract intltool-merge intltool-update
-
-CFLAGS = $(ALL_CFLAGS)
-LDFLAGS = $(ALL_LIBS)
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = shared-mime-info.pc

@@ -1,3 +1,11 @@
+Wed Jan 14 16:45:26 2004  Jonathan Blandford  <jrb@gnome.org>
+
+	* configure.in: I already tagged CVS so I'm releasing 0.13.1 to
+	get the intltool files.
+
+	* Makefile.am: I wasn't including the intltool files correctly.
+	Fixed.
+
 Wed Jan 14 16:27:10 2004  Jonathan Blandford  <jrb@gnome.org>
 
 	* configure.in: ...except version 0.12 was already released.

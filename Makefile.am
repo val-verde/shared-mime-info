@@ -12,7 +12,17 @@ update_mime_database_SOURCES = update-mime-database.c
 
 man_MANS = update-mime-database.1
 
-EXTRA_DIST = shared-mime-info-spec.xml freedesktop.org.xml.in $(packages_DATA) README $(man_MANS)
+EXTRA_DIST = \
+	shared-mime-info-spec.xml	\
+	freedesktop.org.xml.in		\
+	$(packages_DATA) 		\
+	README				\
+	$(man_MANS)			\
+	intltool-extract.in		\
+	intltool-merge.in		\
+	intltool-update.in
+
+CLEANFILES = intltool-extract intltool-merge intltool-update freedesktop.org.xml
 
 CFLAGS = @CFLAGS@ `@PKG_CONFIG@ --cflags libxml-2.0 glib-2.0`
 LDFLAGS = @LDFLAGS@ `@PKG_CONFIG@ --libs libxml-2.0 glib-2.0`

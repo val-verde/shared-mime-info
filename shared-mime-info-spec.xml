@@ -16,17 +16,24 @@
 					<address><email>tal197@users.sf.net</email></address>
 				</affiliation>
 			</author>
+			<author>
+				<firstname>David</firstname>
+				<surname>Faure</surname>
+				<affiliation>
+					<address><email>david@mandrakesoft.com</email></address>
+				</affiliation>
+			</author>
 		</authorgroup>
 
 		<title>Shared MIME-info Database</title>
-		<date>18 April 2002</date>
+		<date>20 April 2002</date>
 	</articleinfo>
 <sect1>
 	<title>Introduction</title>
 	<sect2>
 		<title>Version</title>
 		<para>
-This is version 0.3 of the Shared MIME-info Database spec, last updated 18 April 2002.
+This is version 0.4 of the Shared MIME-info Database spec, last updated 20 April 2002.
 		</para>
 	</sect2>
 	<sect2>
@@ -249,16 +256,23 @@ Comment[af]=...
 [... etc. other translations ]
 Patterns=*.htm;*.html;
 Contents=(starts-with "<HTML")
+Hidden=false
 ]]></programlisting>
 		</para>
 		<para>
 Specifically, all KDE-specific tags have been removed, as well as the Icon
 field. Although all desktops need a way to determine the icon for a particular
 type, the icon used will depend on desktop, and not only on the file type.
+The type should be a standard MIME type where possible. If a special media type
+is required for non-file objects (directories, pipes, etc), then the media
+type 'inode' may be used.
 		</para>
 		<para>
 Although not part of the name-to-type mapping, the Comment field is left in
-for the sake of not having too many files.
+for the sake of not having too many files. The Hidden field is usually not
+present. It is used to indicate that this entry replaces all information for
+this MIME type read so far, instead of being merged with other records for
+the same type. The intent is to let users entirely replace existing types.
 		</para>
 	</sect2>
 	<sect2>

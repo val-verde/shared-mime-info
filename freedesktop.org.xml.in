@@ -143,6 +143,13 @@ command to generate the output files.
     <glob pattern="*.smi"/>
     <glob pattern="*.sml"/>
   </mime-type>
+  <mime-type type="application/vnd.corel-draw">
+    <_comment>Corel Draw drawing</_comment>
+    <magic priority="50">
+      <match type="string" value="CDR vrsn" offset="8"/>
+    </magic>
+    <glob pattern="*.cdr"/>
+  </mime-type>
   <mime-type type="application/vnd.lotus-1-2-3">
     <_comment>Lotus 1-2-3 spreadsheet</_comment>
     <magic priority="50">
@@ -260,6 +267,13 @@ command to generate the output files.
     </magic>
     <glob pattern="*.wpd"/>
   </mime-type>
+  <mime-type type="application/xbell">
+    <_comment>XBEL bookmarks file</_comment>
+    <magic priority="50">
+      <match type="string" value="&lt;!DOCTYPE\ xbel" offset="0:64"/>
+    </magic>
+    <glob pattern="*.xbel"/>
+  </mime-type>
   <mime-type type="application/x-abiword">
     <_comment>AbiWord Document</_comment>
     <magic priority="50">
@@ -340,6 +354,22 @@ command to generate the output files.
   <mime-type type="application/x-bcpio">
     <_comment>BCPIO document</_comment>
     <glob pattern="*.bcpio"/>
+  </mime-type>
+  <mime-type type="application/x-bittorrent">
+    <_comment>BitTorrent seed file</_comment>
+    <magic priority="50">
+      <match type="string" value="d8:announce" offset="0"/>
+    </magic>
+    <glob pattern="*.torrent"/>
+  </mime-type>
+  <mime-type type="application/x-blender">
+    <_comment>Blender file</_comment>
+    <glob pattern="*.blender"/>
+    <glob pattern="*.blend"/>
+    <glob pattern="*.BLEND"/>
+    <magic priority="50">
+      <match type="string" value="BLENDER" offset="0"/>
+    </magic>
   </mime-type>
   <mime-type type="application/x-bzip">
     <_comment>Bzip file</_comment>
@@ -495,13 +525,15 @@ command to generate the output files.
     </magic>
     <glob pattern="*.exe"/>
   </mime-type>
-  <mime-type type="application/x-font">
+  <mime-type type="application/x-font-type1">
     <_comment>Fonts</_comment>
     <magic priority="50">
       <match type="string" value="LWFN" offset="0"/>
       <match type="string" value="LWFN" offset="65"/>
       <match type="string" value="%!PS-AdobeFont-1." offset="0"/>
       <match type="string" value="%!PS-AdobeFont-1." offset="6"/>
+      <match type="string" value="%!FontType1-1." offset="0"/>
+      <match type="string" value="%!FontType1-1." offset="6"/>
     </magic>
     <glob pattern="*.pfa"/>
     <glob pattern="*.pfb"/>
@@ -552,6 +584,12 @@ command to generate the output files.
       <match type="string" value="\001fcp" offset="0"/>
     </magic>
     <glob pattern="*.pcf"/>
+  </mime-type>
+  <mime-type type="application/x-font-otf">
+    <_comment>OpenType font</_comment>
+    <magic priority="50">
+      <match type="string" value="OTTO" offset="0"/>
+    </magic>
   </mime-type>
   <mime-type type="application/x-font-speedo">
     <_comment>Speedo font</_comment>
@@ -680,6 +718,12 @@ command to generate the output files.
   <mime-type type="application/x-hdf">
     <_comment>HDF document</_comment>
     <glob pattern="*.hdf"/>
+  </mime-type>
+  <mime-type type="application/x-ipod-firmware">
+    <_comment>iPod software</_comment>
+    <magic priority="50">
+      <match type="string" value="S T O P" offset="0"/>
+    </magic>
   </mime-type>
   <mime-type type="application/x-jar">
     <_comment>Java Archive</_comment>
@@ -919,9 +963,27 @@ command to generate the output files.
     <_comment>Lzopped File</_comment>
     <glob pattern="*.lzo"/>
   </mime-type>
+  <mime-type type="application/x-macbinary">
+    <_comment>MacBinary file</_comment>
+    <magic priority="50">
+      <match type="string" value="mBIN" offset="102"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/x-mif">
     <_comment>FrameMaker interchange document</_comment>
     <glob pattern="*.mif"/>
+  </mime-type>
+  <mime-type type="application/x-mozilla-bookmarks">
+    <_comment>Mozilla bookmarks file</_comment>
+    <magic priority="50">
+      <match type="string" value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" offset="0:64"/>
+    </magic>
+  </mime-type>
+  <mime-type type="application/x-ms-dos-executable">
+    <_comment>DOS/Windows program</_comment>
+    <magic priority="40">
+      <match type="string" value="MZ" offset="0"/>
+    </magic>
   </mime-type>
   <mime-type type="application/x-mswinurl">
     <magic priority="50">
@@ -954,6 +1016,12 @@ command to generate the output files.
     <_comment>Unidata netCDF document</_comment>
     <glob pattern="*.cdf"/>
     <glob pattern="*.nc"/>
+  </mime-type>
+  <mime-type type="application/x-netscape-bookmarks">
+    <_comment>Netscape bookmarks file</_comment>
+    <magic priority="50">
+      <match type="string" value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" offset="0:64"/>
+    </magic>
   </mime-type>
   <mime-type type="application/x-object">
     <_comment>Object Code</_comment>
@@ -1380,6 +1448,14 @@ command to generate the output files.
     <_comment>Streaming MPEG layer 3 audio</_comment>
     <glob pattern="*.m3u"/>
   </mime-type>
+  <mime-type type="audio/x-ms-asx">
+    <_comment>Playlist</_comment>
+    <magic priority="50">
+      <match type="string" value="ASF " offset="0"/>
+      <match type="string" value="&lt;ASX" offset="0"/>
+      <match type="string" value="&lt;asx" offset="0"/>
+    </magic>
+  </mime-type>
   <mime-type type="audio/x-pn-realaudio">
     <_comment>RealAudio broadcast</_comment>
     <magic priority="50">
@@ -1525,6 +1601,19 @@ command to generate the output files.
     <glob pattern="*.xcf.gz"/>
     <glob pattern="*.xcf.bz2"/>
   </mime-type>
+  <mime-type type="image/x-dcm">
+    <_comment>Digital Imaging and Communications in Medicine image</_comment>
+    <glob pattern="*.dcm"/>
+    <magic priority="50">
+      <match type="string" value="DCMw" offset="0"/>
+    </magic>
+  </mime-type>
+  <mime-type type="image/x-dib">
+    <_comment>Device Independant Bitmap</_comment>
+    <magic priority="50">
+      <match type="string" value="\x28\00\00\00" offset="0"/>
+    </magic>
+  </mime-type>
   <mime-type type="image/x-djvu">
     <magic priority="50">
       <match type="string" value="FORM" offset="4">
@@ -1533,6 +1622,12 @@ command to generate the output files.
         <match type="string" value="BM44" offset="12"/>
         <match type="string" value="PM44" offset="12"/>
       </match>
+    </magic>
+  </mime-type>
+  <mime-type type="image/dpx">
+    <_comment>Digital Moving Picture Exchange image</_comment>
+    <magic priority="50">
+      <match type="big32" value="0x53445058" offset="0"/>
     </magic>
   </mime-type>
   <mime-type type="image/x-eps">
@@ -1548,6 +1643,26 @@ command to generate the output files.
     <glob pattern="*.eps"/>
     <glob pattern="*.epsi"/>
     <glob pattern="*.epsf"/>
+  </mime-type>
+  <mime-type type="image/x-fits">
+    <_comment>Flexible Image Transport System</_comment>
+    <magic priority="50">
+      <match type="string" value="SIMPLE  =" offset="0"/>
+    </magic>
+    <glob pattern="*.fits"/>
+  </mime-type>
+  <mime-type type="image/x-fpx">
+    <_comment>FlashPix Image</_comment>
+    <magic priority="50">
+      <match type="big32" value="0x46506978" offset="0"/>
+    </magic>
+  </mime-type>
+  <mime-type type="image/x-icb">
+    <_comment>Truevision Targa image</_comment>
+    <magic priority="50">
+      <match type="big32" value="0x00000200" offset="0"/>
+    </magic>
+    <glob pattern="*.icb"/>
   </mime-type>
   <mime-type type="image/x-ico">
     <_comment>MSWindows Icons</_comment>
@@ -1635,6 +1750,13 @@ command to generate the output files.
   <mime-type type="image/x-rgb">
     <_comment>RGB image</_comment>
     <glob pattern="*.rgb"/>
+  </mime-type>
+  <mime-type type="image/x-sun-raster">
+    <_comment>SUN Rasterfile</_comment>
+    <magic priority="50">
+      <match type="big32" value="0x59a66a95" offset="0"/>
+    </magic>
+    <glob pattern="*.sun"/>
   </mime-type>
   <mime-type type="image/x-tga">
     <_comment>TarGA image</_comment>
@@ -2161,6 +2283,9 @@ command to generate the output files.
     <_comment>MS ASF video</_comment>
     <glob pattern="*.asf"/>
     <glob pattern="*.asx"/>
+    <magic priority="50">
+      <match type="big32" value="0x3026b275" offset="0"/>
+    </magic>
   </mime-type>
   <mime-type type="video/x-ms-wmv">
     <_comment>Microsoft WMV video</_comment>
@@ -2173,6 +2298,14 @@ command to generate the output files.
       <match type="string" value="RIFF" offset="0"/>
     </magic>
     <glob pattern="*.avi"/>
+  </mime-type>
+  <mime-type type="video/x-nsv">
+    <_comment>Nullsoft video</_comment>
+    <magic priority="50">
+      <match type="string" value="NSVf" offset="0"/>
+    </magic>
+    <glob pattern="*.nsv"/>
+    <glob pattern="*.NSV"/>
   </mime-type>
   <mime-type type="video/x-real-video">
     <_comment>RealVideo video</_comment>

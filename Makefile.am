@@ -34,7 +34,7 @@ SUBDIRS = m4
 ACLOCAL_AMFLAGS = -I m4
 
 all-local:
-	if locale | grep -q UTF; then echo "intltool doesn't like UTF-8 locales.  Try rerunning with eg: LANG=en_US"; /bin/rm -f freedesktop.org.xml; exit 1; fi
+	@if locale | grep -q UTF; then echo "*** intltool doesn't like UTF-8 locales.  Try rerunning with eg: LANG=en_US"; /bin/rm -f freedesktop.org.xml; exit 1; fi
 
 dist-hook:
-	if locale | grep -q UTF; then echo "intltool doesn't like UTF-8 locales.  Try rerunning with eg: LANG=en_US"; /bin/rm -f freedesktop.org.xml; exit 1; fi
+	@if locale | grep -q UTF; then echo "*** intltool doesn't like UTF-8 locales.  Try rerunning with eg: LANG=en_US"; /bin/rm -f freedesktop.org.xml; exit 1; fi

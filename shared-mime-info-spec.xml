@@ -165,6 +165,12 @@ The files created by <command>update-mime-database</command> are:
 <filename>&lt;MIME&gt;/magic</filename> (contains a mapping from file contents to MIME types)
 				</para></listitem>
 				<listitem><para>
+<filename>&lt;MIME&gt;/subclasses</filename> (contains a mapping from MIME types to types they inherit from)
+				</para></listitem>
+				<listitem><para>
+<filename>&lt;MIME&gt;/aliases</filename> (contains a mapping from aliases to MIME types)
+				</para></listitem>
+				<listitem><para>
 <filename>&lt;MIME&gt;/XMLnamespaces</filename> (contains a mapping from XML
 (namespaceURI, localName) pairs to MIME types)
 				</para></listitem>

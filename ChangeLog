@@ -1,3 +1,11 @@
+Tue Nov  9 01:52:52 2004  Jonathan Blandford  <jrb@redhat.com>
+
+	* update-mime-database.c: Patch from Matthias Clasen to generate
+	subclass and alias files.
+
+	* shared-mime-info-spec.xml.in: update the spec to mention the
+	subclasses and aliases files.
+
 2004-11-04  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml:

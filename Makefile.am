@@ -2,7 +2,7 @@
 
 AUTOMAKE_OPTIONS = foreign
 
-mimeinfodir = $(datadir)/mime/mime-info
-mimeinfo_DATA = freedesktop-shared.mimeinfo
+packagesdir = $(datadir)/mime/packages
+packages_DATA = freedesktop.org.xml
 
 EXTRA_DIST = shared-mime-info-spec.xml freedesktop-shared.mimeinfo

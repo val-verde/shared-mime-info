@@ -178,7 +178,42 @@ application/msword
 Guidelines for writing descriptions can be found in the
 <filename>mime-descriptions-guidelines.txt</filename> file.
 		</para>
-
+		<para>
+The format for magic entries is defined as:
+			<programlisting><![CDATA[
+# The format of magic entries is:
+#
+#     offset_start[:offset_end] pattern_type pattern [&pattern_mask] type
+#
+# <offset_start> and <offset_end> are decimal numbers (file offsets).
+#
+# <pattern_type> is (byte | short | long | string | date | beshort |
+#                    belong | bedate | leshort | lelong | ledate).
+#
+# <pattern> is an ASCII string with non-printable characters escaped
+# as hex or octal escape sequences, and spaces and other important
+# whitespace escaped with '\'.
+#
+# <pattern_mask> is a string of hex digits. The mask must be the same
+# length as the pattern.
+#
+# <type> is a valid MIME type.
+#
+# Order magic patterns such that ambiguous ones (such as
+# application/x-ms-dos-executable) are at the end of the list and
+# therefore get applied last.
+#
+# Avoid rules that require a seek deep into the examined file. If you
+# must, locate such rules at the end of the list so that they get
+# applied last
+#
+# When designing new document formats, make them easily recognizable
+# by defining a sufficiently unique magic pattern near the document
+# start. A good pattern is at least four bytes long and contains one
+# or two non-printable characters so that text files won't be
+# misidentified.
+]]></programlisting>
+		</para>
 	</sect2>
 	<sect2>
 		<title>ROX</title>
@@ -250,7 +285,6 @@ The new format is very similar to the KDE format. However, only the tags used
 in this example are valid:
 			<programlisting><![CDATA[
 [MIME-Info text/html]
-Encoding=UTF-8
 Comment=HTML document
 Comment[af]=...
 [... etc. other translations ]
@@ -262,7 +296,8 @@ Hidden=false
 		<para>
 All KDE-specific tags have been removed, as well as the Icon field. Although
 all desktops need a way to determine the icon for a particular type, the icon
-used will depend on desktop, and not only on the file type.
+used will depend on desktop, and not only on the file type. The Encoding tag
+is not present; all .mimeinfo files are in the UTF-8 encoding.
 		</para>
 		<para>
 The type should be a standard MIME type where possible. If a special media type
@@ -355,7 +390,10 @@ using a hash table).
 If the same pattern is defined twice, then they MUST be ordered by the
 directory the rule came from (this is to allow users to override the system
 defaults if, for example, they are using a common extension to mean something
-else). If they came from the same directory, either can be used.
+else). Patterns in <filename>~/.mime/mime-info</filename> override those
+in <filename>/usr/local/share/mime/mime-info</filename>, which in turn take
+precedence over those from <filename>/usr/mime/mime-info</filename>.
+If a pattern is defined twice within same directory, either can be used.
 		</para>
 		<para>
 If the same type is defined in several places, the Patterns and Comments

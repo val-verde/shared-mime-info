@@ -594,7 +594,10 @@ to the standard types of object found in a Unix filesystem:
 		</simplelist>
 		<para>
 An inode/mount-point is a subclass of inode/directory. It can be useful when adding extra
-actions for these directories, such as 'mount' or 'eject'.
+actions for these directories, such as 'mount' or 'eject'. Mounted directories can be
+detected by comparing the 'st_dev' of a directory with that of its parent. If
+they differ, they are from different devices and the directory is a mount
+point.
 		</para>
 	</sect2>
 	<sect2>

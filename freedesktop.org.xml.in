@@ -273,7 +273,9 @@ command to generate the output files.
     <_comment>OpenOffice.org Writer document template</_comment>
     <glob pattern="*.stw"/>
   </mime-type>
-  <mime-type type="application/wordperfect">
+  <mime-type type="application/vnd.wordperfect">
+    <alias type="application/x-wordperfect"/>
+    <alias type="application/wordperfect"/>
     <_comment>WordPerfect document</_comment>
     <magic priority="50">
       <match type="string" value="WPC" offset="1"/>

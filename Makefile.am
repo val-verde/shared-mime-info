@@ -19,6 +19,6 @@ install-data-hook:
 	"${bindir}/update-mime-database" "${mimedir}"
 
 uninstall-hook:
-	rm "${mimedir}"/{text,application,image,audio}/*.xml
-	rm "${mimedir}"/{inode,video,message,model,multipart}/*.xml
-	rm "${mimedir}"/{globs,magic}
+	for media in text application image audio inode video message model multipart; do rm -f "${mimedir}/$${media}/"*.xml; done
+	rm -f "${mimedir}/globs"
+	rm -f "${mimedir}/magic"

@@ -1,3 +1,15 @@
+Sun Mar 21 22:39:58 2004  Jonathan Blandford  <jrb@gnome.org>
+
+	* configure.in: version 0.14
+
+	* freedesktop.org.xml.in: upped the mozilla/netscape bookmarks
+	priority.
+
+	* freedesktop.org.xml.in: change xbell to x-xbel, #195
+
+	* freedesktop.org.xml.in: Add matroska video mime type.  Patch
+	from Johan Fischer <linux@fischaz.com>, #301
+
 Sun Mar 21 17:50:21 2004  Jonathan Blandford  <jrb@gnome.org>
 
 	* configure.in (GETTEXT_PACKAGE): add az.po

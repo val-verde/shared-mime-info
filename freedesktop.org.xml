@@ -37,6 +37,7 @@
 <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
   <mime-type type="application/andrew-inset">
     <comment>Andrew Toolkit inset</comment>
+    <comment xml:lang="az">Andrew Toolkit sənədi</comment>
     <comment xml:lang="cy">Mewnosodiad Andrew Toolkit</comment>
     <comment xml:lang="fi">Andrew Toolkit -osio</comment>
     <comment xml:lang="fr">ajout Andrew Toolkit</comment>
@@ -54,6 +55,7 @@
   </mime-type>
   <mime-type type="application/mac-binhex40">
     <comment>Macintosh BinHex-encoded file</comment>
+    <comment xml:lang="az">Macintosh BinHex-kodlanmış fayl</comment>
     <comment xml:lang="cy">Ffeil BinHex-amgodwyd Macintosh</comment>
     <comment xml:lang="fi">Macintosh BinHex -koodattu tiedosto</comment>
     <comment xml:lang="fr">fichier encode Macintosh BinHex</comment>
@@ -64,11 +66,12 @@
     <comment xml:lang="sr">Мекинтош BinHex-encoded датотека</comment>
     <comment xml:lang="sv">Macintosh BinHex-kodad fil</comment>
     <magic priority="50">
-      <match offset="11" type="string" value="must be converted with BinHex" />
+      <match value="must be converted with BinHex" type="string" offset="11" />
     </magic>
   </mime-type>
   <mime-type type="application/msword">
     <comment>Microsoft Word document</comment>
+    <comment xml:lang="az">Microsoft Word sənədi</comment>
     <comment xml:lang="cy">Dogfen Miscrosoft Word</comment>
     <comment xml:lang="fi">Microsoft Word -asiakirja</comment>
     <comment xml:lang="fr">document Microsoft Word</comment>
@@ -79,12 +82,12 @@
     <comment xml:lang="sr">Микрософт Word документ</comment>
     <comment xml:lang="sv">Microsoft Word-dokument</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\x31\xbe\x00\x00" />
-      <match offset="0" type="string" value="PO^Q`" />
-      <match offset="0" type="string" value="\376\067\0\043" />
-      <match offset="0" type="string" value="\333\245-\0\0\0" />
-      <match offset="2080" type="string" value="Microsoft Word 6.0 Document" />
-      <match offset="2112" type="string" value="Microsoft Word document data" />
+      <match value="\x31\xbe\x00\x00" type="string" offset="0" />
+      <match value="PO^Q`" type="string" offset="0" />
+      <match value="\376\067\0\043" type="string" offset="0" />
+      <match value="\333\245-\0\0\0" type="string" offset="0" />
+      <match value="Microsoft Word 6.0 Document" type="string" offset="2080" />
+      <match value="Microsoft Word document data" type="string" offset="2112" />
     </magic>
     <glob pattern="*.doc" />
   </mime-type>
@@ -92,16 +95,17 @@
     <comment>unknown</comment>
     <comment xml:lang="no">ukjent</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\037\036" />
-      <match offset="0" type="host16" value="017437" />
-      <match offset="0" type="host16" value="0x1fff" />
-      <match offset="0" type="string" value="\377\037" />
-      <match offset="0" type="host16" value="0145405" />
+      <match value="\037\036" type="string" offset="0" />
+      <match value="017437" type="host16" offset="0" />
+      <match value="0x1fff" type="host16" offset="0" />
+      <match value="\377\037" type="string" offset="0" />
+      <match value="0145405" type="host16" offset="0" />
     </magic>
     <glob pattern="*.bin" />
   </mime-type>
   <mime-type type="application/oda">
     <comment>ODA document</comment>
+    <comment xml:lang="az">ODA sənədi</comment>
     <comment xml:lang="cy">Dogfen ODA</comment>
     <comment xml:lang="fi">ODA-asiakirja</comment>
     <comment xml:lang="fr">document ODA</comment>
@@ -117,12 +121,13 @@
     <comment>PDF document</comment>
     <comment xml:lang="no">PDF-dokument</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="%PDF-" />
+      <match value="%PDF-" type="string" offset="0" />
     </magic>
     <glob pattern="*.pdf" />
   </mime-type>
   <mime-type type="application/pgp">
     <comment>PGP message</comment>
+    <comment xml:lang="az">PGP ismarışı</comment>
     <comment xml:lang="cy">Neges PGP</comment>
     <comment xml:lang="fi">PGP-viesti</comment>
     <comment xml:lang="fr">message PGP</comment>
@@ -140,6 +145,7 @@
   </mime-type>
   <mime-type type="application/pgp-keys">
     <comment>PGP keys</comment>
+    <comment xml:lang="az">PGP açarları</comment>
     <comment xml:lang="cy">Allweddi PGP</comment>
     <comment xml:lang="fi">PGP-avainrengas</comment>
     <comment xml:lang="fr">clés PGP</comment>
@@ -156,6 +162,7 @@
   </mime-type>
   <mime-type type="application/pkcs7-mime">
     <comment>S/MIME file</comment>
+    <comment xml:lang="az">S/MIME faylı</comment>
     <comment xml:lang="cy">Ffeil S/MIME</comment>
     <comment xml:lang="fi">S/MIME-tiedosto</comment>
     <comment xml:lang="fr">fichier S/MIME</comment>
@@ -175,13 +182,14 @@
     <comment>PostScript document</comment>
     <comment xml:lang="no">PostScript-dokument</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\004%!" />
-      <match offset="0" type="string" value="%!" />
+      <match value="\004%!" type="string" offset="0" />
+      <match value="%!" type="string" offset="0" />
     </magic>
     <glob pattern="*.ps" />
   </mime-type>
   <mime-type type="application/rtf">
     <comment>Rich Text Format</comment>
+    <comment xml:lang="az">Zəngin Mətn Formatı</comment>
     <comment xml:lang="cy">Dogfen Testun Gyfoethog</comment>
     <comment xml:lang="fi">RTF-asiakirja</comment>
     <comment xml:lang="fr">Rich Text Format</comment>
@@ -192,12 +200,13 @@
     <comment xml:lang="sr">Обогаћени текстуални запис (RTF)</comment>
     <comment xml:lang="sv">Rikt textdokument</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="{\\rtf" />
+      <match value="{\\rtf" type="string" offset="0" />
     </magic>
     <glob pattern="*.rtf" />
   </mime-type>
   <mime-type type="application/smil">
     <comment>Synchronized Multimedia Integration Language</comment>
+    <comment xml:lang="az">Sinxronlaşdırılmış Multemediya İnteqrasiya Dili</comment>
     <comment xml:lang="cy">Iaith Integreiddio Aml-Gyfrwng wedi ei Chydweddu</comment>
     <comment xml:lang="fi">Synchronized Multimedia Integration Language</comment>
     <comment xml:lang="fr">Synchronized Multimedia Integration Language</comment>
@@ -212,6 +221,7 @@
   </mime-type>
   <mime-type type="application/vnd.corel-draw">
     <comment>Corel Draw drawing</comment>
+    <comment xml:lang="az">Corel Draw çəkimi</comment>
     <comment xml:lang="cy">Darlun Corel Draw</comment>
     <comment xml:lang="fi">Corel Draw -piirros</comment>
     <comment xml:lang="fr">dessin Corel Draw</comment>
@@ -222,7 +232,7 @@
     <comment xml:lang="sr">Corel Draw цртеж</comment>
     <comment xml:lang="sv">Corel Draw-teckning</comment>
     <magic priority="50">
-      <match offset="8" type="string" value="CDR vrsn" />
+      <match value="CDR vrsn" type="string" offset="8" />
     </magic>
     <glob pattern="*.cdr" />
   </mime-type>
@@ -236,6 +246,7 @@
   </mime-type>
   <mime-type type="application/vnd.lotus-1-2-3">
     <comment>Lotus 1-2-3 spreadsheet</comment>
+    <comment xml:lang="az">Lotus 1-2-3 hesab cədvəli</comment>
     <comment xml:lang="cy">Taenlen Lotus 1-2-3</comment>
     <comment xml:lang="fi">Lotus 1-2-3 -taulukko</comment>
     <comment xml:lang="fr">chiffrier Lotus 1-2-3</comment>
@@ -246,7 +257,7 @@
     <comment xml:lang="sr">Lotus 1-2-3 табеларни прорачун</comment>
     <comment xml:lang="sv">Lotus 1-2-3-kalkylblad</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\x00\x00\x02\x00" />
+      <match value="\x00\x00\x02\x00" type="string" offset="0" />
     </magic>
     <glob pattern="*.123" />
     <glob pattern="*.wk1" />
@@ -256,6 +267,7 @@
   </mime-type>
   <mime-type type="application/vnd.ms-excel">
     <comment>Microsoft Excel spreadsheet</comment>
+    <comment xml:lang="az">Microsoft Excel hesab cədvəli</comment>
     <comment xml:lang="cy">Taenlen Microsoft Excel</comment>
     <comment xml:lang="fi">Microsoft Excel -taulukko</comment>
     <comment xml:lang="fr">chiffrier Microsoft Excel</comment>
@@ -266,7 +278,7 @@
     <comment xml:lang="sr">Микрософт Ексел табеларни прорачун</comment>
     <comment xml:lang="sv">Microsoft Excel-kalkylblad</comment>
     <magic priority="50">
-      <match offset="2080" type="string" value="Microsoft Excel 5.0 Worksheet" />
+      <match value="Microsoft Excel 5.0 Worksheet" type="string" offset="2080" />
     </magic>
     <glob pattern="*.xls" />
     <glob pattern="*.xlc" />
@@ -287,6 +299,7 @@
   </mime-type>
   <mime-type type="application/vnd.ms-word">
     <comment>Microsoft Word document</comment>
+    <comment xml:lang="az">Microsoft Word sənədi</comment>
     <comment xml:lang="cy">Dogfen Miscrosoft Word</comment>
     <comment xml:lang="fi">Microsoft Word -asiakirja</comment>
     <comment xml:lang="fr">document Microsoft Word</comment>
@@ -303,6 +316,7 @@
   </mime-type>
   <mime-type type="application/vnd.rn-realmedia">
     <comment>RealAudio/Video document</comment>
+    <comment xml:lang="az">RealAudio/Video sənədi</comment>
     <comment xml:lang="cy">Dogfen RealAudio neu RealVideo</comment>
     <comment xml:lang="fi">RealAudio/Video-asiakirja</comment>
     <comment xml:lang="fr">document RealAudio/Video</comment>
@@ -315,6 +329,7 @@
   </mime-type>
   <mime-type type="application/vnd.stardivision.calc">
     <comment>StarCalc spreadsheet</comment>
+    <comment xml:lang="az">StarCalc hesab cədvəli</comment>
     <comment xml:lang="cy">Taenlen StarCalc</comment>
     <comment xml:lang="fi">StarCalc-taulukko</comment>
     <comment xml:lang="fr">chiffier StarCalc</comment>
@@ -328,6 +343,7 @@
   </mime-type>
   <mime-type type="application/vnd.stardivision.chart">
     <comment>StarChart chart</comment>
+    <comment xml:lang="az">StarChart cədvəli</comment>
     <comment xml:lang="cy">Siart StarChart</comment>
     <comment xml:lang="fi">StarChart-kaavio</comment>
     <comment xml:lang="fr">graphique StarChart</comment>
@@ -341,6 +357,7 @@
   </mime-type>
   <mime-type type="application/vnd.stardivision.draw">
     <comment>StarDraw drawing</comment>
+    <comment xml:lang="az">StarDraw çəkimi</comment>
     <comment xml:lang="cy">Darlun StarDraw</comment>
     <comment xml:lang="fi">StarDraw-piirros</comment>
     <comment xml:lang="fr">dessin StarDraw</comment>
@@ -354,6 +371,7 @@
   </mime-type>
   <mime-type type="application/vnd.stardivision.impress">
     <comment>StarImpress presentation</comment>
+    <comment xml:lang="az">StarImpress təqdimatı</comment>
     <comment xml:lang="cy">Cyflwyniad StarImpress</comment>
     <comment xml:lang="fi">StarImpress-esitys</comment>
     <comment xml:lang="fr">présentation StarImpress</comment>
@@ -378,6 +396,7 @@
   </mime-type>
   <mime-type type="application/vnd.stardivision.writer">
     <comment>StarWriter document</comment>
+    <comment xml:lang="az">StarWriter sənədi</comment>
     <comment xml:lang="cy">Dogfen StarWriter</comment>
     <comment xml:lang="fi">StarWriter-asiakirja</comment>
     <comment xml:lang="fr">document StarWriter</comment>
@@ -443,6 +462,7 @@
   </mime-type>
   <mime-type type="application/wordperfect">
     <comment>WordPerfect document</comment>
+    <comment xml:lang="az">WordPerfect sənədi</comment>
     <comment xml:lang="cy">Dogfen WordPerfect</comment>
     <comment xml:lang="fi">WordPerfect-asiakirja</comment>
     <comment xml:lang="fr">document WordPerfect</comment>
@@ -453,16 +473,16 @@
     <comment xml:lang="sr">WordPerfect документ</comment>
     <comment xml:lang="sv">WordPerfect-dokument</comment>
     <magic priority="50">
-      <match offset="1" type="string" value="WPC" />
+      <match value="WPC" type="string" offset="1" />
       
     </magic>
     <glob pattern="*.wpd" />
   </mime-type>
-  <mime-type type="application/xbell">
+  <mime-type type="application/x-xbel">
     <comment>XBEL bookmarks</comment>
     <comment xml:lang="no">XBEL-bokmerker</comment>
     <magic priority="50">
-      <match offset="0:64" type="string" value="&lt;!DOCTYPE\ xbel" />
+      <match value="&lt;!DOCTYPE\ xbel" type="string" offset="0:64" />
     </magic>
     <glob pattern="*.xbel" />
   </mime-type>
@@ -470,8 +490,8 @@
     <comment>AbiWord document</comment>
     <comment xml:lang="no">AbiWord-dokument</comment>
     <magic priority="50">
-      <match offset="0:64" type="string" value="&lt;abiword" />
-      <match offset="0:64" type="string" value="&lt;!DOCTYPE abiword" />
+      <match value="&lt;abiword" type="string" offset="0:64" />
+      <match value="&lt;!DOCTYPE abiword" type="string" offset="0:64" />
     </magic>
     <glob pattern="*.abw" />
     <glob pattern="*.abw.gz" />
@@ -479,6 +499,7 @@
   </mime-type>
   <mime-type type="application/x-amipro">
     <comment>Lotus AmiPro document</comment>
+    <comment xml:lang="az">Lotus AmiPro sənədi</comment>
     <comment xml:lang="cy">Dogfen Lotus AmiPro</comment>
     <comment xml:lang="fi">Lotus AmiPro -asiakirja</comment>
     <comment xml:lang="fr">document Lotus AmiPro</comment>
@@ -494,15 +515,16 @@
     <comment>Applix Spreadsheets spreadsheet</comment>
     <comment xml:lang="no">Applix Spreadsheets-regneark</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="*BEGIN SPREADSHEETS" />
-      <match offset="0" type="string" value="*BEGIN">
-        <match offset="7" type="string" value="SPREADSHEETS" />
+      <match value="*BEGIN SPREADSHEETS" type="string" offset="0" />
+      <match value="*BEGIN" type="string" offset="0">
+        <match value="SPREADSHEETS" type="string" offset="7" />
       </match>
     </magic>
     <glob pattern="*.as" />
   </mime-type>
   <mime-type type="application/x-applix-word">
     <comment>Applix Words document</comment>
+    <comment xml:lang="az">Applix Words sənədi</comment>
     <comment xml:lang="cy">Dogfen Applix Words</comment>
     <comment xml:lang="fi">Applix Words -asiakirja</comment>
     <comment xml:lang="fr">document Applix Words</comment>
@@ -513,33 +535,34 @@
     <comment xml:lang="sr">Applix Words документ</comment>
     <comment xml:lang="sv">Applix Words-dokument</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="*BEGIN">
-        <match offset="7" type="string" value="WORDS" />
+      <match value="*BEGIN" type="string" offset="0">
+        <match value="WORDS" type="string" offset="7" />
       </match>
     </magic>
     <glob pattern="*.aw" />
   </mime-type>
   <mime-type type="application/x-arc">
     <magic priority="50">
-      <match offset="0" type="little32" value="0x0000081a" mask="0x8080ffff" />
-      <match offset="0" type="little32" value="0x0000091a" mask="0x8080ffff" />
-      <match offset="0" type="little32" value="0x0000021a" mask="0x8080ffff" />
-      <match offset="0" type="little32" value="0x0000031a" mask="0x8080ffff" />
-      <match offset="0" type="little32" value="0x0000041a" mask="0x8080ffff" />
-      <match offset="0" type="little32" value="0x0000061a" mask="0x8080ffff" />
+      <match mask="0x8080ffff" value="0x0000081a" type="little32" offset="0" />
+      <match mask="0x8080ffff" value="0x0000091a" type="little32" offset="0" />
+      <match mask="0x8080ffff" value="0x0000021a" type="little32" offset="0" />
+      <match mask="0x8080ffff" value="0x0000031a" type="little32" offset="0" />
+      <match mask="0x8080ffff" value="0x0000041a" type="little32" offset="0" />
+      <match mask="0x8080ffff" value="0x0000061a" type="little32" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-archive">
     <comment>AR archive</comment>
     <comment xml:lang="no">AR-arkiv</comment>
     <magic priority="45">
-      <match offset="0" type="string" value="&lt;ar&gt;" />
-      <match offset="0" type="string" value="!&lt;arch&gt;" />
+      <match value="&lt;ar&gt;" type="string" offset="0" />
+      <match value="!&lt;arch&gt;" type="string" offset="0" />
     </magic>
     <glob pattern="*.a" />
   </mime-type>
   <mime-type type="application/x-arj">
     <comment>ARJ archive</comment>
+    <comment xml:lang="az">ARJ arxivi</comment>
     <comment xml:lang="cy">Archif ARJ</comment>
     <comment xml:lang="fi">ARJ-arkisto</comment>
     <comment xml:lang="fr">archive ARJ</comment>
@@ -550,12 +573,13 @@
     <comment xml:lang="sr">ARJ архива</comment>
     <comment xml:lang="sv">ARJ-arkiv</comment>
     <magic priority="50">
-      <match offset="0" type="little16" value="0xea60" />
+      <match value="0xea60" type="little16" offset="0" />
     </magic>
     <glob pattern="*.arj" />
   </mime-type>
   <mime-type type="application/x-asp">
     <comment>active server page</comment>
+    <comment xml:lang="az">active server page sənədi</comment>
     <comment xml:lang="cy">tudalen ASP</comment>
     <comment xml:lang="fi">aktiivinen palvelinsivu</comment>
     <comment xml:lang="fr">page active du serveur</comment>
@@ -569,6 +593,7 @@
   </mime-type>
   <mime-type type="application/x-awk">
     <comment>AWK script</comment>
+    <comment xml:lang="az">AWK skripti</comment>
     <comment xml:lang="cy">Sgript AWK</comment>
     <comment xml:lang="fi">AWK-skripti</comment>
     <comment xml:lang="fr">script AWK</comment>
@@ -579,20 +604,21 @@
     <comment xml:lang="sr">AWK скрипта</comment>
     <comment xml:lang="sv">AWK-skript</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="#!/bin/gawk" />
-      <match offset="0" type="string" value="#! /bin/gawk" />
-      <match offset="0" type="string" value="#!/usr/bin/gawk" />
-      <match offset="0" type="string" value="#! /usr/bin/gawk" />
-      <match offset="0" type="string" value="#!/usr/local/bin/gawk" />
-      <match offset="0" type="string" value="#! /usr/local/bin/gawk" />
-      <match offset="0" type="string" value="#!/bin/awk" />
-      <match offset="0" type="string" value="#! /bin/awk" />
-      <match offset="0" type="string" value="#!/usr/bin/awk" />
-      <match offset="0" type="string" value="#! /usr/bin/awk" />
+      <match value="#!/bin/gawk" type="string" offset="0" />
+      <match value="#! /bin/gawk" type="string" offset="0" />
+      <match value="#!/usr/bin/gawk" type="string" offset="0" />
+      <match value="#! /usr/bin/gawk" type="string" offset="0" />
+      <match value="#!/usr/local/bin/gawk" type="string" offset="0" />
+      <match value="#! /usr/local/bin/gawk" type="string" offset="0" />
+      <match value="#!/bin/awk" type="string" offset="0" />
+      <match value="#! /bin/awk" type="string" offset="0" />
+      <match value="#!/usr/bin/awk" type="string" offset="0" />
+      <match value="#! /usr/bin/awk" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-bcpio">
     <comment>BCPIO document</comment>
+    <comment xml:lang="az">BCPIO sənədi</comment>
     <comment xml:lang="cy">Dogfen BCPIO</comment>
     <comment xml:lang="fi">BCPIO-asiakirja</comment>
     <comment xml:lang="fr">document BCPIO</comment>
@@ -606,6 +632,7 @@
   </mime-type>
   <mime-type type="application/x-bittorrent">
     <comment>BitTorrent seed file</comment>
+    <comment xml:lang="az">BitTorrent seed faylı</comment>
     <comment xml:lang="cy">Ffeil hadu BitTorrent</comment>
     <comment xml:lang="fi">BitTorrent-siementiedosto</comment>
     <comment xml:lang="fr">fichier racine BitTorrent</comment>
@@ -616,7 +643,7 @@
     <comment xml:lang="sr">Датотека са БитТорентовим полазиштима</comment>
     <comment xml:lang="sv">BitTorrent-fröfil</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="d8:announce" />
+      <match value="d8:announce" type="string" offset="0" />
     </magic>
     <glob pattern="*.torrent" />
   </mime-type>
@@ -627,14 +654,14 @@
     <glob pattern="*.blend" />
     <glob pattern="*.BLEND" />
     <magic priority="50">
-      <match offset="0" type="string" value="BLENDER" />
+      <match value="BLENDER" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-bzip">
     <comment>bzip archive</comment>
     <comment xml:lang="no">bzip-arkiv</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="BZh" />
+      <match value="BZh" type="string" offset="0" />
     </magic>
     <glob pattern="*.bz" />
     <glob pattern="*.bz2" />
@@ -657,6 +684,7 @@
   </mime-type>
   <mime-type type="application/x-chess-pgn">
     <comment>PGN chess game</comment>
+    <comment xml:lang="az">PGN şahmat oyunu</comment>
     <comment xml:lang="cy">Gêm wyddbwyll PGN</comment>
     <comment xml:lang="fi">PGN-šakkipeli</comment>
     <comment xml:lang="fr">jeu d&apos;échec PGN</comment>
@@ -670,6 +698,7 @@
   </mime-type>
   <mime-type type="application/x-class-file">
     <comment>Java byte code</comment>
+    <comment xml:lang="az">Java bayt kodu</comment>
     <comment xml:lang="cy">Côd beit Java</comment>
     <comment xml:lang="fi">Java-tavukoodi</comment>
     <comment xml:lang="fr">code byte Java</comment>
@@ -684,7 +713,7 @@
     <comment>UNIX-compressed file</comment>
     <comment xml:lang="no">UNIX-komprimert fil</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\037\235" />
+      <match value="\037\235" type="string" offset="0" />
     </magic>
     <glob pattern="*.Z" />
   </mime-type>
@@ -697,24 +726,25 @@
   <mime-type type="application/x-core">
     <comment>program crash data</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\177ELF            \004" mask="0xffffffff000000000000000000000000ff" />
-      <match offset="0" type="string" value="\177ELF">
-        <match offset="5" type="byte" value="1">
-          <match offset="16" type="little16" value="4" />
+      <match mask="0xffffffff000000000000000000000000ff" value="\177ELF            \004" type="string" offset="0" />
+      <match value="\177ELF" type="string" offset="0">
+        <match value="1" type="byte" offset="5">
+          <match value="4" type="little16" offset="16" />
         </match>
       </match>
-      <match offset="0" type="string" value="\177ELF">
-        <match offset="5" type="byte" value="2">
-          <match offset="16" type="big16" value="4" />
+      <match value="\177ELF" type="string" offset="0">
+        <match value="2" type="byte" offset="5">
+          <match value="4" type="big16" offset="16" />
         </match>
       </match>
-      <match offset="0" type="string" value="Core\001" />
-      <match offset="0" type="string" value="Core\002" />
+      <match value="Core\001" type="string" offset="0" />
+      <match value="Core\002" type="string" offset="0" />
     </magic>
     <glob pattern="core" />
   </mime-type>
   <mime-type type="application/x-cpio">
     <comment>CPIO archive</comment>
+    <comment xml:lang="az">CPIO arxivi</comment>
     <comment xml:lang="cy">Archif CPIO</comment>
     <comment xml:lang="fi">CPIO-arkisto</comment>
     <comment xml:lang="fr">archive CPIO</comment>
@@ -725,15 +755,16 @@
     <comment xml:lang="sr">CPIO архива</comment>
     <comment xml:lang="sv">CPIO-arkiv</comment>
     <magic priority="50">
-      <match offset="0" type="host16" value="070707" />
-      <match offset="0" type="string" value="070701" />
-      <match offset="0" type="string" value="070702" />
-      <match offset="0" type="host16" value="0143561" />
+      <match value="070707" type="host16" offset="0" />
+      <match value="070701" type="string" offset="0" />
+      <match value="070702" type="string" offset="0" />
+      <match value="0143561" type="host16" offset="0" />
     </magic>
     <glob pattern="*.cpio" />
   </mime-type>
   <mime-type type="application/x-cpio-compressed">
     <comment>CPIO archive (gzip-compressed)</comment>
+    <comment xml:lang="az">CPIO arxivi (gzip ilə sıxışdırılmış)</comment>
     <comment xml:lang="cy">Archif CPIO (gywasgwyd drwy gzip)</comment>
     <comment xml:lang="fi">CPIO-arkisto (gzip-pakattu)</comment>
     <comment xml:lang="fr">archive CPIO (compressé gzip)</comment>
@@ -747,6 +778,7 @@
   </mime-type>
   <mime-type type="application/x-csh">
     <comment>C shell script</comment>
+    <comment xml:lang="az">C qabıq skripti</comment>
     <comment xml:lang="cy">Sgript plisgyn C</comment>
     <comment xml:lang="fi">Csh-komentotiedosto</comment>
     <comment xml:lang="fr">script C shell</comment>
@@ -759,6 +791,7 @@
   </mime-type>
   <mime-type type="application/x-dbase">
     <comment>dBASE document</comment>
+    <comment xml:lang="az">dBASE sənədi</comment>
     <comment xml:lang="cy">Dogfen dBASE</comment>
     <comment xml:lang="fi">dBASE-asiakirja</comment>
     <comment xml:lang="fr">document dBASE</comment>
@@ -772,7 +805,7 @@
   </mime-type>
   <mime-type type="application/x-dbm">
     <magic priority="50">
-      <match offset="0" type="big32" value="0x061561" />
+      <match value="0x061561" type="big32" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-dc-rom">
@@ -782,6 +815,7 @@
   </mime-type>
   <mime-type type="application/x-deb">
     <comment>Debian package</comment>
+    <comment xml:lang="az">Debian paketi</comment>
     <comment xml:lang="cy">Pecyn Debian</comment>
     <comment xml:lang="fi">Debian-paketti</comment>
     <comment xml:lang="fr">package Debian</comment>
@@ -792,8 +826,8 @@
     <comment xml:lang="sr">Debian пакет</comment>
     <comment xml:lang="sv">Debianpaket</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="!&lt;arch&gt;">
-        <match offset="8" type="string" value="debian" />
+      <match value="!&lt;arch&gt;" type="string" offset="0">
+        <match value="debian" type="string" offset="8" />
       </match>
     </magic>
     <glob pattern="*.deb" />
@@ -807,17 +841,18 @@
     <comment>desktop configuration file</comment>
     <comment xml:lang="no">konfigurasjonsfil for skrivebordet</comment>
     <magic priority="50">
-      <match offset="0:32" type="string" value="[Desktop Entry]" />
-      <match offset="0" type="string" value="[Desktop Action" />
-      <match offset="0" type="string" value="[KDE Desktop Entry]" />
-      <match offset="0" type="string" value="# Config File" />
-      <match offset="0" type="string" value="# KDE Config File" />
+      <match value="[Desktop Entry]" type="string" offset="0:32" />
+      <match value="[Desktop Action" type="string" offset="0" />
+      <match value="[KDE Desktop Entry]" type="string" offset="0" />
+      <match value="# Config File" type="string" offset="0" />
+      <match value="# KDE Config File" type="string" offset="0" />
     </magic>
     <glob pattern="*.desktop" />
     <glob pattern="*.kdelnk" />
   </mime-type>
   <mime-type type="application/x-dia-diagram">
     <comment>Dia diagram</comment>
+    <comment xml:lang="az">Dia diaqramı</comment>
     <comment xml:lang="cy">Diagram Dia</comment>
     <comment xml:lang="fi">Dia-kaavio</comment>
     <comment xml:lang="fr">diagramme Dia</comment>
@@ -833,12 +868,13 @@
     <comment>TeX DVI document</comment>
     <comment xml:lang="no">TeX DVI-dokument</comment>
     <magic priority="50">
-      <match offset="0" type="little16" value="0x02f7" />
+      <match value="0x02f7" type="little16" offset="0" />
     </magic>
     <glob pattern="*.dvi" />
   </mime-type>
   <mime-type type="application/x-e-theme">
     <comment>Enlightenment theme</comment>
+    <comment xml:lang="az">Enlightenment örtüyü</comment>
     <comment xml:lang="cy">Thema Enlightenment</comment>
     <comment xml:lang="fi">Enlightenment-teema</comment>
     <comment xml:lang="fr">thème « Enlightenment »</comment>
@@ -859,21 +895,21 @@
     <comment>executable</comment>
     <comment xml:lang="no">kjørbar</comment>
     <magic priority="40">
-      <match offset="0" type="string" value="\177ELF">
-        <match offset="5" type="byte" value="1">
-          <match offset="16" type="little16" value="2" />
+      <match value="\177ELF" type="string" offset="0">
+        <match value="1" type="byte" offset="5">
+          <match value="2" type="little16" offset="16" />
         </match>
       </match>
-      <match offset="0" type="string" value="\177ELF">
-        <match offset="5" type="byte" value="2">
-          <match offset="16" type="big16" value="2" />
+      <match value="\177ELF" type="string" offset="0">
+        <match value="2" type="byte" offset="5">
+          <match value="2" type="big16" offset="16" />
         </match>
       </match>
-      <match offset="0" type="string" value="MZ" />
-      <match offset="0" type="little16" value="0x521c" />
-      <match offset="0" type="host16" value="0420" />
-      <match offset="0" type="host16" value="0421" />
-      <match offset="0" type="little16" value="0603" />
+      <match value="MZ" type="string" offset="0" />
+      <match value="0x521c" type="little16" offset="0" />
+      <match value="0420" type="host16" offset="0" />
+      <match value="0421" type="host16" offset="0" />
+      <match value="0603" type="little16" offset="0" />
     </magic>
     <glob pattern="*.exe" />
   </mime-type>
@@ -881,12 +917,12 @@
     <comment>font</comment>
     <comment xml:lang="no">skrift</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="LWFN" />
-      <match offset="65" type="string" value="LWFN" />
-      <match offset="0" type="string" value="%!PS-AdobeFont-1." />
-      <match offset="6" type="string" value="%!PS-AdobeFont-1." />
-      <match offset="0" type="string" value="%!FontType1-1." />
-      <match offset="6" type="string" value="%!FontType1-1." />
+      <match value="LWFN" type="string" offset="0" />
+      <match value="LWFN" type="string" offset="65" />
+      <match value="%!PS-AdobeFont-1." type="string" offset="0" />
+      <match value="%!PS-AdobeFont-1." type="string" offset="6" />
+      <match value="%!FontType1-1." type="string" offset="0" />
+      <match value="%!FontType1-1." type="string" offset="6" />
     </magic>
     <glob pattern="*.pfa" />
     <glob pattern="*.pfb" />
@@ -895,6 +931,7 @@
   </mime-type>
   <mime-type type="application/x-font-afm">
     <comment>Adobe font metrics</comment>
+    <comment xml:lang="az">Adobe yazı növü metrikləri</comment>
     <comment xml:lang="cy">Metrigau Ffont Adobe</comment>
     <comment xml:lang="fi">Adobe-kirjasinmitat</comment>
     <comment xml:lang="fr">métriques de fonte Adobe</comment>
@@ -908,6 +945,7 @@
   </mime-type>
   <mime-type type="application/x-font-bdf">
     <comment>BDF font</comment>
+    <comment xml:lang="az">BDF yazı növü</comment>
     <comment xml:lang="cy">Ffont BDF</comment>
     <comment xml:lang="fi">BDF-kirjasin</comment>
     <comment xml:lang="fr">fonte BDF</comment>
@@ -918,12 +956,13 @@
     <comment xml:lang="sr">BDF фонт</comment>
     <comment xml:lang="sv">BDF-typsnitt</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="STARTFONT\040" />
+      <match value="STARTFONT\040" type="string" offset="0" />
     </magic>
     <glob pattern="*.bdf" />
   </mime-type>
   <mime-type type="application/x-font-dos">
     <comment>DOS font</comment>
+    <comment xml:lang="az">DOS yazı növü</comment>
     <comment xml:lang="cy">Ffont DOS</comment>
     <comment xml:lang="fi">DOS-kirjasin</comment>
     <comment xml:lang="fr">fonte DOS</comment>
@@ -934,13 +973,14 @@
     <comment xml:lang="sr">DOS фонт</comment>
     <comment xml:lang="sv">DOS-typsnitt</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\xff\x46\x4f\x4e" />
-      <match offset="7" type="string" value="\x00\x45\x47\x41" />
-      <match offset="7" type="string" value="\x00\x56\x49\x44" />
+      <match value="\xff\x46\x4f\x4e" type="string" offset="0" />
+      <match value="\x00\x45\x47\x41" type="string" offset="7" />
+      <match value="\x00\x56\x49\x44" type="string" offset="7" />
     </magic>
   </mime-type>
   <mime-type type="application/x-font-framemaker">
     <comment>Adobe FrameMaker font</comment>
+    <comment xml:lang="az">Adobe FrameMaker yazı növü</comment>
     <comment xml:lang="cy">Ffont Adobe FrameMaker</comment>
     <comment xml:lang="fi">Adobe FrameMaker -kirjasin</comment>
     <comment xml:lang="fr">fonte Adobe FrameMaker</comment>
@@ -951,11 +991,12 @@
     <comment xml:lang="sr">Adobe FrameMaker фонт</comment>
     <comment xml:lang="sv">Adobe FrameMaker-typsnitt</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="&lt;MakerScreenFont" />
+      <match value="&lt;MakerScreenFont" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-font-libgrx">
     <comment>LIBGRX font</comment>
+    <comment xml:lang="az">LIBGRX yazı növü</comment>
     <comment xml:lang="cy">Ffont LIBGRX</comment>
     <comment xml:lang="fi">LIBGRX-kirjasin</comment>
     <comment xml:lang="fr">fonte LIBGRX</comment>
@@ -966,11 +1007,12 @@
     <comment xml:lang="sr">LIBGRX фонт</comment>
     <comment xml:lang="sv">LIBGRX-typsnitt</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\x14\x02\x59\x19" />
+      <match value="\x14\x02\x59\x19" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-font-linux-psf">
     <comment>Linux PSF console font</comment>
+    <comment xml:lang="az">Linux PSF konsol yazı növü</comment>
     <comment xml:lang="cy">Ffont Linux PSF</comment>
     <comment xml:lang="fi">Linux PSF -konsolikirjasin</comment>
     <comment xml:lang="fr">fonte console Linux PSF</comment>
@@ -981,12 +1023,13 @@
     <comment xml:lang="sr">Линукс PSF конзолни фонт</comment>
     <comment xml:lang="sv">Linux PSF-konsolltypsnitt</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\x36\x04" />
+      <match value="\x36\x04" type="string" offset="0" />
     </magic>
     <glob pattern="*.psf" />
   </mime-type>
   <mime-type type="application/x-font-pcf">
     <comment>PCF font</comment>
+    <comment xml:lang="az">PCF yazı növü</comment>
     <comment xml:lang="cy">Ffont PCF</comment>
     <comment xml:lang="fi">PCF-kirjasin</comment>
     <comment xml:lang="fr">fonte PCF</comment>
@@ -997,12 +1040,13 @@
     <comment xml:lang="sr">PCF фонт</comment>
     <comment xml:lang="sv">PCF-typsnitt</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\001fcp" />
+      <match value="\001fcp" type="string" offset="0" />
     </magic>
     <glob pattern="*.pcf" />
   </mime-type>
   <mime-type type="application/x-font-otf">
     <comment>OpenType font</comment>
+    <comment xml:lang="az">OpenType yazı növü</comment>
     <comment xml:lang="cy">Ffont OpenType</comment>
     <comment xml:lang="fi">OpenType-kirjasin</comment>
     <comment xml:lang="fr">fonte OpenType</comment>
@@ -1013,11 +1057,12 @@
     <comment xml:lang="sr">OpenType фонт</comment>
     <comment xml:lang="sv">OpenType-typsnitt</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="OTTO" />
+      <match value="OTTO" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-font-speedo">
     <comment>Speedo font</comment>
+    <comment xml:lang="az">Speedo yazı növü</comment>
     <comment xml:lang="cy">Ffont Speedo</comment>
     <comment xml:lang="fi">Speedo-kirjasin</comment>
     <comment xml:lang="fr">fonte Speedo</comment>
@@ -1028,12 +1073,13 @@
     <comment xml:lang="sr">Speedo фонт</comment>
     <comment xml:lang="sv">Speedo-typsnitt</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="D1.0\015" />
+      <match value="D1.0\015" type="string" offset="0" />
     </magic>
     <glob pattern="*.spd" />
   </mime-type>
   <mime-type type="application/x-font-sunos-news">
     <comment>SunOS News font</comment>
+    <comment xml:lang="az">SunOS News yazı növü</comment>
     <comment xml:lang="cy">Ffont SunOS News</comment>
     <comment xml:lang="fi">SunOS News -kirjasin</comment>
     <comment xml:lang="fr">fonte SunOS News</comment>
@@ -1044,13 +1090,14 @@
     <comment xml:lang="sr">SunOS News фонт</comment>
     <comment xml:lang="sv">SunOS News-typsnitt</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="StartFont" />
-      <match offset="0" type="string" value="\x13\x7A\x29" />
-      <match offset="8" type="string" value="\x13\x7A\x2B" />
+      <match value="StartFont" type="string" offset="0" />
+      <match value="\x13\x7A\x29" type="string" offset="0" />
+      <match value="\x13\x7A\x2B" type="string" offset="8" />
     </magic>
   </mime-type>
   <mime-type type="application/x-font-tex">
     <comment>TeX font</comment>
+    <comment xml:lang="az">TeX yazı növü</comment>
     <comment xml:lang="cy">Ffont TeX</comment>
     <comment xml:lang="fi">TeX-kirjasin</comment>
     <comment xml:lang="fr">fonte TeX</comment>
@@ -1061,13 +1108,14 @@
     <comment xml:lang="sr">ТеХ фонт</comment>
     <comment xml:lang="sv">TeX-typsnitt</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\367\203" />
-      <match offset="0" type="string" value="\367\131" />
-      <match offset="0" type="string" value="\367\312" />
+      <match value="\367\203" type="string" offset="0" />
+      <match value="\367\131" type="string" offset="0" />
+      <match value="\367\312" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-font-tex-tfm">
     <comment>TeX font metrics</comment>
+    <comment xml:lang="az">TeX yazı növü metrikləri</comment>
     <comment xml:lang="cy">Metrigau Ffont TeX</comment>
     <comment xml:lang="fi">TeX-kirjasinmitat</comment>
     <comment xml:lang="fr">métriques de fonte TeX</comment>
@@ -1078,22 +1126,23 @@
     <comment xml:lang="sr">ТеХ метрика фонта</comment>
     <comment xml:lang="sv">TeX-typsnittsmetrik</comment>
     <magic priority="50">
-      <match offset="2" type="string" value="\000\021" />
-      <match offset="2" type="string" value="\000\022" />
+      <match value="\000\021" type="string" offset="2" />
+      <match value="\000\022" type="string" offset="2" />
     </magic>
   </mime-type>
   <mime-type type="application/x-font-ttf">
     <comment>TrueType font</comment>
     <comment xml:lang="no">TrueType-skrift</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="FFIL" />
-      <match offset="65" type="string" value="FFIL" />
-      <match offset="0" type="string" value="\000\001\000\000\000" />
+      <match value="FFIL" type="string" offset="0" />
+      <match value="FFIL" type="string" offset="65" />
+      <match value="\000\001\000\000\000" type="string" offset="0" />
     </magic>
     <glob pattern="*.ttf" />
   </mime-type>
   <mime-type type="application/x-font-vfont">
     <comment>V font</comment>
+    <comment xml:lang="az">V yazı növü</comment>
     <comment xml:lang="cy">Ffont V</comment>
     <comment xml:lang="fi">V-kirjasin</comment>
     <comment xml:lang="fr">fonte V</comment>
@@ -1104,18 +1153,18 @@
     <comment xml:lang="sr">V фонт</comment>
     <comment xml:lang="sv">V-typsnitt</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="FONT" />
+      <match value="FONT" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-frame">
     <magic priority="50">
-      <match offset="0" type="string" value="&lt;MakerFile" />
-      <match offset="0" type="string" value="&lt;MIFFile" />
-      <match offset="0" type="string" value="&lt;MakerDictionary" />
-      <match offset="0" type="string" value="&lt;MakerScreenFon" />
-      <match offset="0" type="string" value="&lt;MML" />
-      <match offset="0" type="string" value="&lt;Book" />
-      <match offset="0" type="string" value="&lt;Maker" />
+      <match value="&lt;MakerFile" type="string" offset="0" />
+      <match value="&lt;MIFFile" type="string" offset="0" />
+      <match value="&lt;MakerDictionary" type="string" offset="0" />
+      <match value="&lt;MakerScreenFon" type="string" offset="0" />
+      <match value="&lt;MML" type="string" offset="0" />
+      <match value="&lt;Book" type="string" offset="0" />
+      <match value="&lt;Maker" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-gameboy-rom">
@@ -1125,9 +1174,9 @@
   </mime-type>
   <mime-type type="application/x-gdbm">
     <magic priority="50">
-      <match offset="0" type="big32" value="0x13579ace" />
-      <match offset="0" type="little32" value="0x13579ace" />
-      <match offset="0" type="string" value="GDBM" />
+      <match value="0x13579ace" type="big32" offset="0" />
+      <match value="0x13579ace" type="little32" offset="0" />
+      <match value="GDBM" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-genesis-rom">
@@ -1143,6 +1192,7 @@
   </mime-type>
   <mime-type type="application/x-glade">
     <comment>Glade project</comment>
+    <comment xml:lang="az">Glade layihəsi</comment>
     <comment xml:lang="cy">Prosiect Glade</comment>
     <comment xml:lang="fi">Glade-projekti</comment>
     <comment xml:lang="fr">projet Glade</comment>
@@ -1156,6 +1206,7 @@
   </mime-type>
   <mime-type type="application/x-gmc-link">
     <comment>GMC link</comment>
+    <comment xml:lang="az">GMC körpüsü</comment>
     <comment xml:lang="cy">Cyswllt GMC</comment>
     <comment xml:lang="fi">GMC-linkki</comment>
     <comment xml:lang="fr">lien GMC</comment>
@@ -1166,7 +1217,7 @@
     <comment xml:lang="sr">GMC веза</comment>
     <comment xml:lang="sv">GMC-länk</comment>
     <magic priority="50">
-      <match offset="0:32" type="string" value="URL:" />
+      <match value="URL:" type="string" offset="0:32" />
     </magic>
   </mime-type>
   <mime-type type="application/x-gnucash">
@@ -1180,7 +1231,7 @@
     <comment>Gnumeric spreadsheet</comment>
     <comment xml:lang="no">Gnumeric-regneark</comment>
     <magic priority="50">
-      <match offset="0:64" type="string" value="gmr:Workbook" />
+      <match value="gmr:Workbook" type="string" offset="0:64" />
     </magic>
     <glob pattern="*.gnumeric" />
   </mime-type>
@@ -1190,6 +1241,7 @@
   </mime-type>
   <mime-type type="application/x-gtar">
     <comment>gtar archive</comment>
+    <comment xml:lang="az">gtar arxivi</comment>
     <comment xml:lang="cy">archif gtar</comment>
     <comment xml:lang="fi">gtar-arkisto</comment>
     <comment xml:lang="fr">archive gtar</comment>
@@ -1205,14 +1257,14 @@
     <comment>GTKtalog catalog</comment>
     <comment xml:lang="no">GTKtalog-katalog</comment>
     <magic priority="50">
-      <match offset="4" type="string" value="gtktalog " />
+      <match value="gtktalog " type="string" offset="4" />
     </magic>
   </mime-type>
   <mime-type type="application/x-gzip">
     <comment>gzip archive</comment>
     <comment xml:lang="no">gzip-arkiv</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\037\213" />
+      <match value="\037\213" type="string" offset="0" />
     </magic>
     <glob pattern="*.gz" />
   </mime-type>
@@ -1223,6 +1275,7 @@
   </mime-type>
   <mime-type type="application/x-hdf">
     <comment>HDF document</comment>
+    <comment xml:lang="az">HDF sənədi</comment>
     <comment xml:lang="cy">Dogfen HDF</comment>
     <comment xml:lang="fi">HDF-asiakirja</comment>
     <comment xml:lang="fr">document HDF</comment>
@@ -1238,7 +1291,7 @@
     <comment>iPod firmware</comment>
     <comment xml:lang="no">iPod-firmware</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="S T O P" />
+      <match value="S T O P" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-jar">
@@ -1250,8 +1303,8 @@
     <comment>Java class</comment>
     <comment xml:lang="no">Java-klasse</comment>
     <magic priority="50">
-      <match offset="0" type="host16" value="0xcafe">
-        <match offset="2" type="host16" value="0xbabe" />
+      <match value="0xcafe" type="host16" offset="0">
+        <match value="0xbabe" type="host16" offset="2" />
       </match>
     </magic>
     <glob pattern="*.class" />
@@ -1266,14 +1319,14 @@
     <comment>Karbon14 drawing</comment>
     <comment xml:lang="no">Karbon14-tegning</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\037\213">
-        <match offset="10" type="string" value="KOffice">
-          <match offset="18" type="string" value="application/x-karbon\004\006" />
+      <match value="\037\213" type="string" offset="0">
+        <match value="KOffice" type="string" offset="10">
+          <match value="application/x-karbon\004\006" type="string" offset="18" />
         </match>
       </match>
-      <match offset="0" type="string" value="PK\003\004">
-        <match offset="30" type="string" value="mimetype">
-          <match offset="38" type="string" value="application/x-karbon" />
+      <match value="PK\003\004" type="string" offset="0">
+        <match value="mimetype" type="string" offset="30">
+          <match value="application/x-karbon" type="string" offset="38" />
         </match>
       </match>
     </magic>
@@ -1283,14 +1336,14 @@
     <comment>KChart chart</comment>
     <comment xml:lang="no">KChart-graf</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\037\213">
-        <match offset="10" type="string" value="KOffice">
-          <match offset="18" type="string" value="application/x-kchart\004\006" />
+      <match value="\037\213" type="string" offset="0">
+        <match value="KOffice" type="string" offset="10">
+          <match value="application/x-kchart\004\006" type="string" offset="18" />
         </match>
       </match>
-      <match offset="0" type="string" value="PK\003\004">
-        <match offset="30" type="string" value="mimetype">
-          <match offset="38" type="string" value="application/x-kchart" />
+      <match value="PK\003\004" type="string" offset="0">
+        <match value="mimetype" type="string" offset="30">
+          <match value="application/x-kchart" type="string" offset="38" />
         </match>
       </match>
     </magic>
@@ -1300,14 +1353,14 @@
     <comment>KFormula formula</comment>
     <comment xml:lang="no">KFormula-formel</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\037\213">
-        <match offset="10" type="string" value="KOffice">
-          <match offset="18" type="string" value="application/x-kformula\004\006" />
+      <match value="\037\213" type="string" offset="0">
+        <match value="KOffice" type="string" offset="10">
+          <match value="application/x-kformula\004\006" type="string" offset="18" />
         </match>
       </match>
-      <match offset="0" type="string" value="PK\003\004">
-        <match offset="30" type="string" value="mimetype">
-          <match offset="38" type="string" value="application/x-kformula" />
+      <match value="PK\003\004" type="string" offset="0">
+        <match value="mimetype" type="string" offset="30">
+          <match value="application/x-kformula" type="string" offset="38" />
         </match>
       </match>
     </magic>
@@ -1317,9 +1370,9 @@
     <comment>KIllustrator drawing</comment>
     <comment xml:lang="no">KIllustrator-tegning</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\037\213">
-        <match offset="10" type="string" value="KOffice">
-          <match offset="18" type="string" value="application/x-killustrator\004\006" />
+      <match value="\037\213" type="string" offset="0">
+        <match value="KOffice" type="string" offset="10">
+          <match value="application/x-killustrator\004\006" type="string" offset="18" />
         </match>
       </match>
     </magic>
@@ -1329,14 +1382,14 @@
     <comment>Kivio flowchart</comment>
     <comment xml:lang="no">Kivio-flytdiagram</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\037\213">
-        <match offset="10" type="string" value="KOffice">
-          <match offset="18" type="string" value="application/x-kivio\004\006" />
+      <match value="\037\213" type="string" offset="0">
+        <match value="KOffice" type="string" offset="10">
+          <match value="application/x-kivio\004\006" type="string" offset="18" />
         </match>
       </match>
-      <match offset="0" type="string" value="PK\003\004">
-        <match offset="30" type="string" value="mimetype">
-          <match offset="38" type="string" value="application/x-kivio" />
+      <match value="PK\003\004" type="string" offset="0">
+        <match value="mimetype" type="string" offset="30">
+          <match value="application/x-kivio" type="string" offset="38" />
         </match>
       </match>
     </magic>
@@ -1346,14 +1399,14 @@
     <comment>Kontour drawing</comment>
     <comment xml:lang="no">Kontour-tegning</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\037\213">
-        <match offset="10" type="string" value="KOffice">
-          <match offset="18" type="string" value="application/x-kontour\004\006" />
+      <match value="\037\213" type="string" offset="0">
+        <match value="KOffice" type="string" offset="10">
+          <match value="application/x-kontour\004\006" type="string" offset="18" />
         </match>
       </match>
-      <match offset="0" type="string" value="PK\003\004">
-        <match offset="30" type="string" value="mimetype">
-          <match offset="38" type="string" value="application/x-kontour" />
+      <match value="PK\003\004" type="string" offset="0">
+        <match value="mimetype" type="string" offset="30">
+          <match value="application/x-kontour" type="string" offset="38" />
         </match>
       </match>
     </magic>
@@ -1367,14 +1420,14 @@
     <comment>KPresenter presentation</comment>
     <comment xml:lang="no">KPresenter-presentasjon</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\037\213">
-        <match offset="10" type="string" value="KOffice">
-          <match offset="18" type="string" value="application/x-kpresenter\004\006" />
+      <match value="\037\213" type="string" offset="0">
+        <match value="KOffice" type="string" offset="10">
+          <match value="application/x-kpresenter\004\006" type="string" offset="18" />
         </match>
       </match>
-      <match offset="0" type="string" value="PK\003\004">
-        <match offset="30" type="string" value="mimetype">
-          <match offset="38" type="string" value="application/x-kpresenter" />
+      <match value="PK\003\004" type="string" offset="0">
+        <match value="mimetype" type="string" offset="30">
+          <match value="application/x-kpresenter" type="string" offset="38" />
         </match>
       </match>
     </magic>
@@ -1385,14 +1438,14 @@
     <comment>Krita document</comment>
     <comment xml:lang="no">Krita-dokument</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\037\213">
-        <match offset="10" type="string" value="KOffice">
-          <match offset="18" type="string" value="application/x-krita\004\006" />
+      <match value="\037\213" type="string" offset="0">
+        <match value="KOffice" type="string" offset="10">
+          <match value="application/x-krita\004\006" type="string" offset="18" />
         </match>
       </match>
-      <match offset="0" type="string" value="PK\003\004">
-        <match offset="30" type="string" value="mimetype">
-          <match offset="38" type="string" value="application/x-krita" />
+      <match value="PK\003\004" type="string" offset="0">
+        <match value="mimetype" type="string" offset="30">
+          <match value="application/x-krita" type="string" offset="38" />
         </match>
       </match>
     </magic>
@@ -1402,14 +1455,14 @@
     <comment>KSpread spreadsheet</comment>
     <comment xml:lang="no">KSpread-regneark</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\037\213">
-        <match offset="10" type="string" value="KOffice">
-          <match offset="18" type="string" value="application/x-kspread\004\006" />
+      <match value="\037\213" type="string" offset="0">
+        <match value="KOffice" type="string" offset="10">
+          <match value="application/x-kspread\004\006" type="string" offset="18" />
         </match>
       </match>
-      <match offset="0" type="string" value="PK\003\004">
-        <match offset="30" type="string" value="mimetype">
-          <match offset="38" type="string" value="application/x-kspread" />
+      <match value="PK\003\004" type="string" offset="0">
+        <match value="mimetype" type="string" offset="30">
+          <match value="application/x-kspread" type="string" offset="38" />
         </match>
       </match>
     </magic>
@@ -1419,12 +1472,12 @@
     <comment>KSpread spreadsheet (encrypted)</comment>
     <comment xml:lang="no">KSpread-regneark (kryptert)</comment>
     <magic priority="50">
-      <match offset="0" type="big32" value="0x0d1a2702" />
+      <match value="0x0d1a2702" type="big32" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-ksysv-package">
     <magic priority="50">
-      <match offset="4" type="string" value="KSysV" />
+      <match value="KSysV" type="string" offset="4" />
     </magic>
   </mime-type>
   <mime-type type="application/x-kugar">
@@ -1436,14 +1489,14 @@
     <comment>KWord document</comment>
     <comment xml:lang="no">KWord-dokument</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\037\213">
-        <match offset="10" type="string" value="KOffice">
-          <match offset="18" type="string" value="application/x-kword\004\006" />
+      <match value="\037\213" type="string" offset="0">
+        <match value="KOffice" type="string" offset="10">
+          <match value="application/x-kword\004\006" type="string" offset="18" />
         </match>
       </match>
-      <match offset="0" type="string" value="PK\003\004">
-        <match offset="30" type="string" value="mimetype">
-          <match offset="38" type="string" value="application/x-kword" />
+      <match value="PK\003\004" type="string" offset="0">
+        <match value="mimetype" type="string" offset="30">
+          <match value="application/x-kword" type="string" offset="38" />
         </match>
       </match>
     </magic>
@@ -1454,11 +1507,12 @@
     <comment>KWord document (encrypted)</comment>
     <comment xml:lang="no">KWord-dokument (kryptert)</comment>
     <magic priority="50">
-      <match offset="0" type="big32" value="0x0d1a2701" />
+      <match value="0x0d1a2701" type="big32" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-lha">
     <comment>LHA archive</comment>
+    <comment xml:lang="az">LHA arxivi</comment>
     <comment xml:lang="cy">Archif LHA</comment>
     <comment xml:lang="fi">LHA-arkisto</comment>
     <comment xml:lang="fr">archive LHA</comment>
@@ -1469,18 +1523,18 @@
     <comment xml:lang="sr">LHA архива</comment>
     <comment xml:lang="sv">LHA-arkiv</comment>
     <magic priority="50">
-      <match offset="2" type="string" value="-lh -" />
-      <match offset="2" type="string" value="-lh0-" />
-      <match offset="2" type="string" value="-lh1-" />
-      <match offset="2" type="string" value="-lh2-" />
-      <match offset="2" type="string" value="-lh3-" />
-      <match offset="2" type="string" value="-lh4-" />
-      <match offset="2" type="string" value="-lh5-" />
-      <match offset="2" type="string" value="-lh40-" />
-      <match offset="2" type="string" value="-lhd-" />
-      <match offset="2" type="string" value="-lz4-" />
-      <match offset="2" type="string" value="-lz5-" />
-      <match offset="2" type="string" value="-lzs-" />
+      <match value="-lh -" type="string" offset="2" />
+      <match value="-lh0-" type="string" offset="2" />
+      <match value="-lh1-" type="string" offset="2" />
+      <match value="-lh2-" type="string" offset="2" />
+      <match value="-lh3-" type="string" offset="2" />
+      <match value="-lh4-" type="string" offset="2" />
+      <match value="-lh5-" type="string" offset="2" />
+      <match value="-lh40-" type="string" offset="2" />
+      <match value="-lhd-" type="string" offset="2" />
+      <match value="-lz4-" type="string" offset="2" />
+      <match value="-lz5-" type="string" offset="2" />
+      <match value="-lzs-" type="string" offset="2" />
     </magic>
     <glob pattern="*.lha" />
     <glob pattern="*.lzh" />
@@ -1499,7 +1553,7 @@
     <comment>LyX document</comment>
     <comment xml:lang="no">LyX-dokument</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="#LyX" />
+      <match value="#LyX" type="string" offset="0" />
     </magic>
     <glob pattern="*.lyx" />
   </mime-type>
@@ -1517,8 +1571,15 @@
     <comment>Macintosh MacBinary file</comment>
     <comment xml:lang="no">Macintosh MacBinary-fil</comment>
     <magic priority="50">
-      <match offset="102" type="string" value="mBIN" />
+      <match value="mBIN" type="string" offset="102" />
     </magic>
+  </mime-type>
+  <mime-type type="application/x-matroska">
+    <comment>Matroska video</comment>
+    <magic priority="50">
+      <match value="matroska" type="string" offset="8" />
+    </magic>
+    <glob pattern="*.mkv" />
   </mime-type>
   <mime-type type="application/x-mif">
     <comment>FrameMaker MIF document</comment>
@@ -1528,24 +1589,25 @@
   <mime-type type="application/x-mozilla-bookmarks">
     <comment>Mozilla bookmarks</comment>
     <comment xml:lang="no">Mozilla-bokmerker</comment>
-    <magic priority="50">
-      <match offset="0:64" type="string" value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" />
+    <magic priority="80">
+      <match value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" type="string" offset="0:64" />
     </magic>
   </mime-type>
   <mime-type type="application/x-ms-dos-executable">
     <comment>DOS/Windows executable</comment>
     <comment xml:lang="no">Kjørbar fil for DOS/Windows</comment>
     <magic priority="40">
-      <match offset="0" type="string" value="MZ" />
+      <match value="MZ" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-mswinurl">
     <magic priority="50">
-      <match offset="1" type="string" value="InternetShortcut" />
+      <match value="InternetShortcut" type="string" offset="1" />
     </magic>
   </mime-type>
   <mime-type type="application/x-mswrite">
     <comment>Microsoft Write document</comment>
+    <comment xml:lang="az">Microsoft Write sənədi</comment>
     <comment xml:lang="cy">Dogfen Microsoft Write</comment>
     <comment xml:lang="fi">Microsoft Write -asiakirja</comment>
     <comment xml:lang="fr">document Microsoft Write</comment>
@@ -1569,6 +1631,7 @@
   </mime-type>
   <mime-type type="application/x-nautilus-link">
     <comment>Nautilus link</comment>
+    <comment xml:lang="az">Nautilus körpüsü</comment>
     <comment xml:lang="cy">Cyswllt Nautilus</comment>
     <comment xml:lang="fi">Nautilus-linkki</comment>
     <comment xml:lang="fr">lien Nautilus</comment>
@@ -1579,7 +1642,7 @@
     <comment xml:lang="sr">Наутилус веза</comment>
     <comment xml:lang="sv">Nautiluslänk</comment>
     <magic priority="50">
-      <match offset="0:32" type="string" value="&lt;nautilus_object nautilus_link" />
+      <match value="&lt;nautilus_object nautilus_link" type="string" offset="0:32" />
     </magic>
   </mime-type>
   <mime-type type="application/x-nes-rom">
@@ -1596,22 +1659,22 @@
   <mime-type type="application/x-netscape-bookmarks">
     <comment>Netscape bookmarks</comment>
     <comment xml:lang="no">Netscape-bokmerker</comment>
-    <magic priority="50">
-      <match offset="0:64" type="string" value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" />
+    <magic priority="80">
+      <match value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" type="string" offset="0:64" />
     </magic>
   </mime-type>
   <mime-type type="application/x-object">
     <comment>object code</comment>
     <comment xml:lang="no">objektkode</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\177ELF">
-        <match offset="5" type="byte" value="1">
-          <match offset="16" type="little16" value="1" />
+      <match value="\177ELF" type="string" offset="0">
+        <match value="1" type="byte" offset="5">
+          <match value="1" type="little16" offset="16" />
         </match>
       </match>
-      <match offset="0" type="string" value="\177ELF">
-        <match offset="5" type="byte" value="2">
-          <match offset="16" type="big16" value="1" />
+      <match value="\177ELF" type="string" offset="0">
+        <match value="2" type="byte" offset="5">
+          <match value="1" type="big16" offset="16" />
         </match>
       </match>
     </magic>
@@ -1619,6 +1682,7 @@
   </mime-type>
   <mime-type type="application/ogg">
     <comment>Ogg Vorbis audio</comment>
+    <comment xml:lang="az">Ogg Vorbis audio faylı</comment>
     <comment xml:lang="cy">Sain Ogg Vorbis</comment>
     <comment xml:lang="fi">Ogg Vorbis -ääni</comment>
     <comment xml:lang="fr">audio Ogg Vorbis</comment>
@@ -1629,7 +1693,7 @@
     <comment xml:lang="sr">Ог-ворбис звучни запис</comment>
     <comment xml:lang="sv">Ogg Vorbis-ljud</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="OggS" />
+      <match value="OggS" type="string" offset="0" />
     </magic>
     <glob pattern="*.ogg" />
   </mime-type>
@@ -1637,19 +1701,20 @@
   <mime-type type="application/x-ole-storage">
     <comment>OLE2 compound document storage</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\320\317\021\340\241\261\032\341" />
+      <match value="\320\317\021\340\241\261\032\341" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-oleo">
     <comment>GNU Oleo spreadsheet</comment>
     <comment xml:lang="no">GNU Oleo regneark</comment>
     <magic priority="50">
-      <match offset="31" type="string" value="Oleo" />
+      <match value="Oleo" type="string" offset="31" />
     </magic>
     <glob pattern="*.oleo" />
   </mime-type>
   <mime-type type="application/x-palm-database">
     <comment>Palm OS database</comment>
+    <comment xml:lang="az">Palm OS mə&apos;lumat bazası</comment>
     <comment xml:lang="cy">Cronfa Ddata Palm OS</comment>
     <comment xml:lang="fi">Palm OS -tietokanta</comment>
     <comment xml:lang="fr">base de données Palm OS</comment>
@@ -1664,16 +1729,16 @@
     <comment>PEF executable</comment>
     <comment xml:lang="no">PEF-kjørbar</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="Joy!" />
+      <match value="Joy!" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-perl">
     <comment>Perl script</comment>
     <comment xml:lang="no">Perl skript</comment>
     <magic priority="50">
-      <match offset="0" type="string" value='eval \"exec /usr/local/bin/perl' />
-      <match offset="1:16" type="string" value="/bin/perl" />
-      <match offset="1:16" type="string" value="/bin/env perl" />
+      <match value='eval \"exec /usr/local/bin/perl' type="string" offset="0" />
+      <match value="/bin/perl" type="string" offset="1:16" />
+      <match value="/bin/env perl" type="string" offset="1:16" />
     </magic>
     <glob pattern="*.pl" />
     <glob pattern="*.pm" />
@@ -1682,6 +1747,7 @@
   </mime-type>
   <mime-type type="application/x-php">
     <comment>PHP script</comment>
+    <comment xml:lang="az">PHP skripti</comment>
     <comment xml:lang="cy">Sgript PHP</comment>
     <comment xml:lang="fi">PHP-skripti</comment>
     <comment xml:lang="fr">script PHP</comment>
@@ -1692,7 +1758,7 @@
     <comment xml:lang="sr">PHP скрипта</comment>
     <comment xml:lang="sv">PHP-skript</comment>
     <magic priority="80">
-      <match offset="0:64" type="string" value="&lt;?php" />
+      <match value="&lt;?php" type="string" offset="0:64" />
     </magic>
     <glob pattern="*.php" />
     <glob pattern="*.php3" />
@@ -1706,6 +1772,7 @@
   </mime-type>
   <mime-type type="application/x-profile">
     <comment>profiler results</comment>
+    <comment xml:lang="az">profiler nəticələri</comment>
     <comment xml:lang="cy">canlyniadau proffeilio</comment>
     <comment xml:lang="fi">profilointitulokset</comment>
     <comment xml:lang="fr">résultat du profileur</comment>
@@ -1726,21 +1793,22 @@
     <comment>Python script</comment>
     <comment xml:lang="no">Python-skript</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="#!/bin/python" />
-      <match offset="0" type="string" value="#! /bin/python" />
-      <match offset="0" type="string" value='eval \"exec /bin/python' />
-      <match offset="0" type="string" value="#!/usr/bin/python" />
-      <match offset="0" type="string" value="#! /usr/bin/python" />
-      <match offset="0" type="string" value='eval \"exec /usr/bin/python' />
-      <match offset="0" type="string" value="#!/usr/local/bin/python" />
-      <match offset="0" type="string" value="#! /usr/local/bin/python" />
-      <match offset="0" type="string" value='eval \"exec /usr/local/bin/python' />
-      <match offset="1:16" type="string" value='/bin/env python' />
+      <match value="#!/bin/python" type="string" offset="0" />
+      <match value="#! /bin/python" type="string" offset="0" />
+      <match value='eval \"exec /bin/python' type="string" offset="0" />
+      <match value="#!/usr/bin/python" type="string" offset="0" />
+      <match value="#! /usr/bin/python" type="string" offset="0" />
+      <match value='eval \"exec /usr/bin/python' type="string" offset="0" />
+      <match value="#!/usr/local/bin/python" type="string" offset="0" />
+      <match value="#! /usr/local/bin/python" type="string" offset="0" />
+      <match value='eval \"exec /usr/local/bin/python' type="string" offset="0" />
+      <match value='/bin/env python' type="string" offset="1:16" />
     </magic>
     <glob pattern="*.py" />
   </mime-type>
   <mime-type type="application/x-python-bytecode">
     <comment>Python bytecode</comment>
+    <comment xml:lang="az">Python bayt kodu</comment>
     <comment xml:lang="cy">Côd beit Python</comment>
     <comment xml:lang="fi">Python-tavukoodi</comment>
     <comment xml:lang="fr">bytecode Python</comment>
@@ -1751,7 +1819,7 @@
     <comment xml:lang="sr">Питонов бајт кôд</comment>
     <comment xml:lang="sv">Python-bytekod</comment>
     <magic priority="50">
-      <match offset="0" type="big32" value="0x994e0d0a" />
+      <match value="0x994e0d0a" type="big32" offset="0" />
     </magic>
     <glob pattern="*.pyc" />
     <glob pattern="*.pyo" />
@@ -1765,6 +1833,7 @@
   </mime-type>
   <mime-type type="application/x-qw">
     <comment>Quicken document</comment>
+    <comment xml:lang="az">Quicken sənədi</comment>
     <comment xml:lang="cy">Dogfen Quicken</comment>
     <comment xml:lang="fi">Quicken-asiakirja</comment>
     <comment xml:lang="fr">document Quicken</comment>
@@ -1780,7 +1849,7 @@
     <comment>RAR archive</comment>
     <comment xml:lang="no">RAR-arkiv</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="Rar!" />
+      <match value="Rar!" type="string" offset="0" />
     </magic>
     <glob pattern="*.rar" />
   </mime-type>
@@ -1793,7 +1862,7 @@
     <comment>RPM package</comment>
     <comment xml:lang="no">RPM-pakke</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\xed\xab\xee\xdb" />
+      <match value="\xed\xab\xee\xdb" type="string" offset="0" />
     </magic>
     <glob pattern="*.rpm" />
   </mime-type>
@@ -1801,16 +1870,17 @@
     <comment>Ruby script</comment>
     <comment xml:lang="no">Ruby-skript</comment>
     <magic>
-      <match offset="1:16" type="string" value="/bin/env ruby" />
+      <match value="/bin/env ruby" type="string" offset="1:16" />
     </magic>
   </mime-type>
   <mime-type type="application/x-sc">
     <magic priority="50">
-      <match offset="38" type="string" value="Spreadsheet" />
+      <match value="Spreadsheet" type="string" offset="38" />
     </magic>
   </mime-type>
   <mime-type type="application/x-shar">
     <comment>shell archive</comment>
+    <comment xml:lang="az">qabıq arxivi</comment>
     <comment xml:lang="cy">archif plisgyn</comment>
     <comment xml:lang="fi">komentotulkkiarkisto</comment>
     <comment xml:lang="fr">archive shell</comment>
@@ -1829,6 +1899,7 @@
   </mime-type>
   <mime-type type="application/x-sharedlib">
     <comment>shared library</comment>
+    <comment xml:lang="az">bölüşülmüş kitabxana</comment>
     <comment xml:lang="cy">llyfrgell wedi ei rhannu</comment>
     <comment xml:lang="fi">jaettu kirjasto</comment>
     <comment xml:lang="fr">librairie partagée « shared »</comment>
@@ -1839,25 +1910,26 @@
     <comment xml:lang="sr">дељена библиотека</comment>
     <comment xml:lang="sv">delat bibliotek</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\177ELF">
-        <match offset="5" type="byte" value="1">
-          <match offset="16" type="little16" value="3" />
+      <match value="\177ELF" type="string" offset="0">
+        <match value="1" type="byte" offset="5">
+          <match value="3" type="little16" offset="16" />
         </match>
       </match>
-      <match offset="0" type="string" value="\177ELF">
-        <match offset="5" type="byte" value="2">
-          <match offset="16" type="big16" value="3" />
+      <match value="\177ELF" type="string" offset="0">
+        <match value="2" type="byte" offset="5">
+          <match value="3" type="big16" offset="16" />
         </match>
       </match>
-      <match offset="0" type="little16" value="0603">
-        <match offset="22" type="little16" value="020000" mask="030000" />
+      <match value="0603" type="little16" offset="0">
+        <match mask="030000" value="020000" type="little16" offset="22" />
       </match>
-      <match offset="0" type="string" value="\177ELF            \003" mask="0xffffffff000000000000000000000000ff" />
+      <match mask="0xffffffff000000000000000000000000ff" value="\177ELF            \003" type="string" offset="0" />
     </magic>
     <glob pattern="*.so" />
   </mime-type>
   <mime-type type="application/x-shellscript">
     <comment>shell script</comment>
+    <comment xml:lang="az">qabıq skripti</comment>
     <comment xml:lang="cy">sgript plisgyn</comment>
     <comment xml:lang="fi">komentojono</comment>
     <comment xml:lang="fr">script shell</comment>
@@ -1868,21 +1940,21 @@
     <comment xml:lang="sr">скрипта љуске</comment>
     <comment xml:lang="sv">skalskript</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="#!/bin/ksh" />
-      <match offset="0" type="string" value="#!/usr/local/bin/ash" />
-      <match offset="0" type="string" value="#!/usr/local/tcsh" />
-      <match offset="10" type="string" value="# This is a shell archive" />
-      <match offset="1:16" type="string" value="/bin/bash" />
-      <match offset="1:16" type="string" value="/bin/nawk" />
-      <match offset="1:16" type="string" value="/bin/tcsh" />
-      <match offset="1:16" type="string" value="/bin/csh" />
-      <match offset="1:16" type="string" value="/bin/zsh" />
-      <match offset="1:16" type="string" value="/bin/sh" />
-      <match offset="0" type="string" value="#!/usr/bin/env sh" />
-      <match offset="0" type="string" value="#!/usr/bin/env bash" />
-      <match offset="0" type="string" value="#!/usr/bin/env csh" />
-      <match offset="0" type="string" value="#!/usr/bin/env tcsh" />
-      <match offset="0" type="string" value="#!/usr/bin/env zsh" />
+      <match value="#!/bin/ksh" type="string" offset="0" />
+      <match value="#!/usr/local/bin/ash" type="string" offset="0" />
+      <match value="#!/usr/local/tcsh" type="string" offset="0" />
+      <match value="# This is a shell archive" type="string" offset="10" />
+      <match value="/bin/bash" type="string" offset="1:16" />
+      <match value="/bin/nawk" type="string" offset="1:16" />
+      <match value="/bin/tcsh" type="string" offset="1:16" />
+      <match value="/bin/csh" type="string" offset="1:16" />
+      <match value="/bin/zsh" type="string" offset="1:16" />
+      <match value="/bin/sh" type="string" offset="1:16" />
+      <match value="#!/usr/bin/env sh" type="string" offset="0" />
+      <match value="#!/usr/bin/env bash" type="string" offset="0" />
+      <match value="#!/usr/bin/env csh" type="string" offset="0" />
+      <match value="#!/usr/bin/env tcsh" type="string" offset="0" />
+      <match value="#!/usr/bin/env zsh" type="string" offset="0" />
 
     </magic>
     <glob pattern="*.sh" />
@@ -1892,7 +1964,7 @@
     <comment>Shockwave Flash file</comment>
     <comment xml:lang="no">Shockwave Flash-fil</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="FWS" />
+      <match value="FWS" type="string" offset="0" />
     </magic>
     <glob pattern="*.swf" />
   </mime-type>
@@ -1903,6 +1975,7 @@
   </mime-type>
   <mime-type type="application/x-slp">
     <comment>Stampede package</comment>
+    <comment xml:lang="az">Stampede paketi</comment>
     <comment xml:lang="cy">Pecyn Stampede</comment>
     <comment xml:lang="fi">Stampede-paketti</comment>
     <comment xml:lang="fr">package Stampede</comment>
@@ -1921,6 +1994,7 @@
   </mime-type>
   <mime-type type="application/x-stuffit">
     <comment>Macintosh StuffIt archive</comment>
+    <comment xml:lang="az">Macintosh StuffIt arxivi</comment>
     <comment xml:lang="cy">Archif Macintosh StuffIt</comment>
     <comment xml:lang="fi">Macintosh StuffIt -arkisto</comment>
     <comment xml:lang="fr">archive Macintosh StuffIt</comment>
@@ -1931,12 +2005,13 @@
     <comment xml:lang="sr">Мекинтош StuffIt архива</comment>
     <comment xml:lang="sv">Macintosh StuffIt-arkiv </comment>
     <magic priority="50">
-      <match offset="0" type="string" value="StuffIt " />
-      <match offset="0" type="string" value="SIT!" />
+      <match value="StuffIt " type="string" offset="0" />
+      <match value="SIT!" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="application/x-sv4cpio">
     <comment>SV4 CPIO archive</comment>
+    <comment xml:lang="az">SV4 CPIO arxivi</comment>
     <comment xml:lang="cy">Archif CPIO SV4</comment>
     <comment xml:lang="fi">SV4 CPIO -arkisto</comment>
     <comment xml:lang="fr">archive SV4 CPIO</comment>
@@ -1950,6 +2025,7 @@
   </mime-type>
   <mime-type type="application/x-sv4crc">
     <comment>SV4 CPIP archive (with CRC)</comment>
+    <comment xml:lang="az">SV4 CPIP arxivi (CRC ilə)</comment>
     <comment xml:lang="cy">Archif CPIP SV4 (efo CRC)</comment>
     <comment xml:lang="fi">SV4 CPIP -arkisto (CRC:llä)</comment>
     <comment xml:lang="fr">archive SV4 CPIP (avec CRC)</comment>
@@ -1965,8 +2041,8 @@
     <comment>tar archive</comment>
     <comment xml:lang="no">tar-arkiv</comment>
     <magic priority="50">
-      <match offset="257" type="string" value="ustar\0" />
-      <match offset="257" type="string" value="ustar\040\040\0" />
+      <match value="ustar\0" type="string" offset="257" />
+      <match value="ustar\040\040\0" type="string" offset="257" />
     </magic>
     <glob pattern="*.tar" />
   </mime-type>
@@ -1989,12 +2065,13 @@
     <comment>TGIF document</comment>
     <comment xml:lang="no">TGIF-dokument</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="%TGIF" />
+      <match value="%TGIF" type="string" offset="0" />
     </magic>
     <glob pattern="*.obj" />
   </mime-type>
   <mime-type type="application/x-theme">
     <comment>theme</comment>
+    <comment xml:lang="az">örtük</comment>
     <comment xml:lang="cy">thema</comment>
     <comment xml:lang="fi">teema</comment>
     <comment xml:lang="fr">thème</comment>
@@ -2008,6 +2085,7 @@
   </mime-type>
   <mime-type type="application/x-toutdoux">
     <comment>ToutDoux document</comment>
+    <comment xml:lang="az">ToutDoux sənədi</comment>
     <comment xml:lang="cy">Dogfen ToutDoux</comment>
     <comment xml:lang="fi">ToutDoux-asiakirja</comment>
     <comment xml:lang="fr">document ToutDoux</comment>
@@ -2029,6 +2107,7 @@
   </mime-type>
   <mime-type type="application/x-troff">
     <comment>Troff document</comment>
+    <comment xml:lang="az">Troff sənədi</comment>
     <comment xml:lang="cy">Dogfen troff</comment>
     <comment xml:lang="fi">Troff-asiakirja</comment>
     <comment xml:lang="fr">document Troff</comment>
@@ -2039,10 +2118,10 @@
     <comment xml:lang="sr">Troff документ</comment>
     <comment xml:lang="sv">Troff-dokument</comment>
     <magic priority="50">
-      <match offset="0" type="string" value='.\\\"' />
-      <match offset="0" type="string" value="'\\\&quot;" />
-      <match offset="0" type="string" value="'.\\\&quot;" />
-      <match offset="0" type="string" value='\\\"' />
+      <match value='.\\\"' type="string" offset="0" />
+      <match value="'\\\&quot;" type="string" offset="0" />
+      <match value="'.\\\&quot;" type="string" offset="0" />
+      <match value='\\\"' type="string" offset="0" />
     </magic>
     <glob pattern="*.tr" />
     <glob pattern="*.roff" />
@@ -2054,6 +2133,7 @@
   </mime-type>
   <mime-type type="application/x-troff-man-compressed">
     <comment>manual page (compressed)</comment>
+    <comment xml:lang="az">man səhifəsi (sıxışdırılmış)</comment>
     <comment xml:lang="cy">tudalen llawlyfr (wedi ei gywasgu)</comment>
     <comment xml:lang="fi">manuaalisivu (pakattu)</comment>
     <comment xml:lang="fr">man pages (compressés)</comment>
@@ -2072,6 +2152,7 @@
   </mime-type>
   <mime-type type="application/x-ustar">
     <comment>ustar archive</comment>
+    <comment xml:lang="az">ustar arxivi</comment>
     <comment xml:lang="cy">archif ustar</comment>
     <comment xml:lang="fi">ustar-arkisto</comment>
     <comment xml:lang="fr">archive ustar</comment>
@@ -2085,6 +2166,7 @@
   </mime-type>
   <mime-type type="application/x-wais-source">
     <comment>WAIS source code</comment>
+    <comment xml:lang="az">WAIS mənbə faylı</comment>
     <comment xml:lang="cy">Ffynhonnell Rhaglen WAIS</comment>
     <comment xml:lang="fi">WAIS-lähdekoodi</comment>
     <comment xml:lang="fr">code source WAIS</comment>
@@ -2117,7 +2199,7 @@
     <comment>zoo archive</comment>
     <comment xml:lang="no">zoo-arkiv</comment>
     <magic priority="50">
-      <match offset="20" type="little32" value="0xfdc4a7dc" />
+      <match value="0xfdc4a7dc" type="little32" offset="20" />
     </magic>
     <glob pattern="*.zoo" />
   </mime-type>
@@ -2131,12 +2213,13 @@
     <comment>ZIP archive</comment>
     <comment xml:lang="no">ZIP-arkiv</comment>
     <magic priority="40">
-      <match offset="0" type="string" value="PK\003\004" />
+      <match value="PK\003\004" type="string" offset="0" />
     </magic>
     <glob pattern="*.zip" />
   </mime-type>
   <mime-type type="audio/ac3">
     <comment>Dolby Digital audio</comment>
+    <comment xml:lang="az">Dolby Digital audio</comment>
     <comment xml:lang="cy">Sain Dolby Digital</comment>
     <comment xml:lang="fi">Dolby Digital -ääni</comment>
     <comment xml:lang="fr">audio Dolby Digital audio</comment>
@@ -2150,6 +2233,7 @@
   </mime-type>
   <mime-type type="audio/basic">
     <comment>ULAW (Sun) audio</comment>
+    <comment xml:lang="az">ULAW (Sun) audio faylı</comment>
     <comment xml:lang="cy">Sain ULAW (Sun)</comment>
     <comment xml:lang="fi">ULAW (Sun) -ääni</comment>
     <comment xml:lang="fr">ULAW (Sun) audio</comment>
@@ -2160,7 +2244,7 @@
     <comment xml:lang="sr">ULAW (Sun) звучни запис</comment>
     <comment xml:lang="sv">ULAW-ljud (Sun)</comment>
     <magic priority="40">
-      <match offset="0" type="string" value=".snd" />
+      <match value=".snd" type="string" offset="0" />
     </magic>
     <glob pattern="*.au" />
     <glob pattern="*.snd" />
@@ -2169,13 +2253,14 @@
     <comment>Commodore 64 audio</comment>
     <comment xml:lang="no">Commodore 64-lyd</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="PSID" />
+      <match value="PSID" type="string" offset="0" />
     </magic>
     <glob pattern="*.sid" />
     <glob pattern="*.psid" />
   </mime-type>
   <mime-type type="audio/vnd.rn-realaudio">
     <comment>RealAudio broadcast</comment>
+    <comment xml:lang="az">RealAudio yayımı</comment>
     <comment xml:lang="cy">Darllediad RealAudio</comment>
     <comment xml:lang="fi">RealAudio-yleislähetys</comment>
     <comment xml:lang="fr">diffusion RealAudio</comment>
@@ -2188,6 +2273,7 @@
   </mime-type>
   <mime-type type="audio/x-adpcm">
     <comment>PCM audio</comment>
+    <comment xml:lang="az">PCM audio faylı</comment>
     <comment xml:lang="cy">Sain PCM</comment>
     <comment xml:lang="fi">PCM-ääni</comment>
     <comment xml:lang="fr">audio PCM</comment>
@@ -2198,23 +2284,24 @@
     <comment xml:lang="sr">PCM звучни запис</comment>
     <comment xml:lang="sv">PCM-ljud</comment>
     <magic priority="50">
-      <match offset="0" type="string" value=".snd">
-        <match offset="12" type="big32" value="23" />
+      <match value=".snd" type="string" offset="0">
+        <match value="23" type="big32" offset="12" />
       </match>
-      <match offset="0" type="little32" value="0x0064732E">
-        <match offset="12" type="little32" value="1" />
-        <match offset="12" type="little32" value="2" />
-        <match offset="12" type="little32" value="3" />
-        <match offset="12" type="little32" value="4" />
-        <match offset="12" type="little32" value="5" />
-        <match offset="12" type="little32" value="6" />
-        <match offset="12" type="little32" value="7" />
-        <match offset="12" type="little32" value="23" />
+      <match value="0x0064732E" type="little32" offset="0">
+        <match value="1" type="little32" offset="12" />
+        <match value="2" type="little32" offset="12" />
+        <match value="3" type="little32" offset="12" />
+        <match value="4" type="little32" offset="12" />
+        <match value="5" type="little32" offset="12" />
+        <match value="6" type="little32" offset="12" />
+        <match value="7" type="little32" offset="12" />
+        <match value="23" type="little32" offset="12" />
       </match>
     </magic>
   </mime-type>
   <mime-type type="audio/x-aifc">
     <comment>AIFC audio</comment>
+    <comment xml:lang="az">AIFC audio faylı</comment>
     <comment xml:lang="cy">Sain AIFC</comment>
     <comment xml:lang="fi">AIFC-ääni</comment>
     <comment xml:lang="fr">audio AIFC</comment>
@@ -2225,11 +2312,12 @@
     <comment xml:lang="sr">AIFC звучни запис</comment>
     <comment xml:lang="sv">AIFC-ljud</comment>
     <magic priority="50">
-      <match offset="8" type="string" value="AIFC" />
+      <match value="AIFC" type="string" offset="8" />
     </magic>
   </mime-type>
   <mime-type type="audio/x-aiff">
     <comment>AIFF/Amiga/Mac audio</comment>
+    <comment xml:lang="az">AIFF/Amiga/Mac audio faylı</comment>
     <comment xml:lang="cy">Sain AIFF/Amiga/Mac</comment>
     <comment xml:lang="fi">AIFF/Amiga/Mac-ääni</comment>
     <comment xml:lang="fr">audio AIFF/Amiga/Mac</comment>
@@ -2240,9 +2328,9 @@
     <comment xml:lang="sr">AIFF/Амига/Мекинтош звучни запис</comment>
     <comment xml:lang="sv">AIFF/Amiga/Mac-ljud</comment>
     <magic priority="50">
-      <match offset="8" type="string" value="AIFF" />
-      <match offset="8" type="string" value="AIFC" />
-      <match offset="8" type="string" value="8SVX" />
+      <match value="AIFF" type="string" offset="8" />
+      <match value="AIFC" type="string" offset="8" />
+      <match value="8SVX" type="string" offset="8" />
     </magic>
     <glob pattern="*.aiff" />
     <glob pattern="*.aif" />
@@ -2250,6 +2338,7 @@
   </mime-type>
   <mime-type type="audio/x-aiffc">
     <comment>AIFF audio</comment>
+    <comment xml:lang="az">AIFF audio faylı</comment>
     <comment xml:lang="cy">Sain AIFF</comment>
     <comment xml:lang="fi">AIFF-ääni</comment>
     <comment xml:lang="fr">audio AIFF</comment>
@@ -2262,6 +2351,7 @@
   </mime-type>
   <mime-type type="audio/x-it">
     <comment>Impulse Tracker audio</comment>
+    <comment xml:lang="az">Impulse Tracker audio faylı</comment>
     <comment xml:lang="cy">Sain Impulse Tracker</comment>
     <comment xml:lang="fi">Impulse Tracker -ääni</comment>
     <comment xml:lang="fr">audio Impulse Tracker</comment>
@@ -2272,7 +2362,7 @@
     <comment xml:lang="sr">Impulse Tracker звучни запис</comment>
     <comment xml:lang="sv">Impulse Tracker-ljud</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="IMPM" />
+      <match value="IMPM" type="string" offset="0" />
     </magic>
     <glob pattern="*.it" />
   </mime-type>
@@ -2284,6 +2374,7 @@
   <mime-type type="audio/midi">
     <alias type="audio/x-midi" />
     <comment>MIDI audio</comment>
+    <comment xml:lang="az">MIDI audio faylı</comment>
     <comment xml:lang="cy">Sain MIDI</comment>
     <comment xml:lang="fi">MIDI-ääni</comment>
     <comment xml:lang="fr">audio MIDI</comment>
@@ -2294,7 +2385,7 @@
     <comment xml:lang="sr">MIDI звучни запис</comment>
     <comment xml:lang="sv">MIDI-ljud</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="MThd" />
+      <match value="MThd" type="string" offset="0" />
     </magic>
     <glob pattern="*.mid" />
     <glob pattern="*.midi" />
@@ -2312,6 +2403,7 @@
   </mime-type>
   <mime-type type="audio/x-mp3">
     <comment>MP3 audio</comment>
+    <comment xml:lang="az">MP3 audio faylı</comment>
     <comment xml:lang="cy">Sain MP3</comment>
     <comment xml:lang="fi">MP3-ääni</comment>
     <comment xml:lang="fr">audio MP3</comment>
@@ -2322,9 +2414,9 @@
     <comment xml:lang="sr">MP3 звучни запис</comment>
     <comment xml:lang="sv">MP3-ljud</comment>
     <magic priority="50">
-      <match offset="0" type="big32" value="0xfffb" />
-      <match offset="0" type="string" value="ID3" />
-      <match offset="0" type="big16" value="0xfff0" mask="0xfff0" />
+      <match value="0xfffb" type="big32" offset="0" />
+      <match value="ID3" type="string" offset="0" />
+      <match mask="0xfff0" value="0xfff0" type="big16" offset="0" />
     </magic>
     <glob pattern="*.mp3" />
   </mime-type>
@@ -2334,6 +2426,7 @@
   </mime-type>
   <mime-type type="audio/x-mpeg">
     <comment>MP3 audio</comment>
+    <comment xml:lang="az">MP3 audio faylı</comment>
     <comment xml:lang="cy">Sain MP3</comment>
     <comment xml:lang="fi">MP3-ääni</comment>
     <comment xml:lang="fr">audio MP3</comment>
@@ -2351,6 +2444,7 @@
   </mime-type>
   <mime-type type="audio/x-ms-asx">
     <comment>Playlist</comment>
+    <comment xml:lang="az">Çalğı siyahısı</comment>
     <comment xml:lang="cy">Rhestr Chwarae</comment>
     <comment xml:lang="fi">soittolista</comment>
     <comment xml:lang="fr">Playlist</comment>
@@ -2361,13 +2455,14 @@
     <comment xml:lang="sr">Листа нумера</comment>
     <comment xml:lang="sv">Spellista</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="ASF " />
-      <match offset="0" type="string" value="&lt;ASX" />
-      <match offset="0" type="string" value="&lt;asx" />
+      <match value="ASF " type="string" offset="0" />
+      <match value="&lt;ASX" type="string" offset="0" />
+      <match value="&lt;asx" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="audio/x-pn-realaudio">
     <comment>RealAudio broadcast</comment>
+    <comment xml:lang="az">RealAudio yayımı</comment>
     <comment xml:lang="cy">Darllediad RealAudio</comment>
     <comment xml:lang="fi">RealAudio-yleislähetys</comment>
     <comment xml:lang="fr">diffusion RealAudio</comment>
@@ -2378,7 +2473,7 @@
     <comment xml:lang="sr">RealAudio емитовање</comment>
     <comment xml:lang="sv">RealAudio-utsändning</comment>
     <magic priority="50">
-      <match offset="0" type="string" value=".ra\375" />
+      <match value=".ra\375" type="string" offset="0" />
     </magic>
     <glob pattern="*.ra" />
     <glob pattern="*.ram" />
@@ -2386,6 +2481,7 @@
   </mime-type>
   <mime-type type="audio/x-riff">
     <comment>RIFF audio</comment>
+    <comment xml:lang="az">RIFF audio faylı</comment>
     <comment xml:lang="cy">Sain RIFF</comment>
     <comment xml:lang="fi">RIFF-ääni</comment>
     <comment xml:lang="fr">audio RIFF</comment>
@@ -2397,11 +2493,12 @@
     <comment xml:lang="sv">RIFF-ljud</comment>
     
     <magic priority="45">
-      <match offset="0" type="string" value="RIFF" />
+      <match value="RIFF" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="audio/x-s3m">
     <comment>Scream Tracker 3 audio</comment>
+    <comment xml:lang="az">Scream Tracker 3 audio faylı</comment>
     <comment xml:lang="cy">Sain Scream Tracker 3</comment>
     <comment xml:lang="fi">Scream Tracker 3 -ääni</comment>
     <comment xml:lang="fr">aiudio Scream Tracker 3</comment>
@@ -2420,6 +2517,7 @@
   </mime-type>
   <mime-type type="audio/x-stm">
     <comment>Scream Tracker audio</comment>
+    <comment xml:lang="az">Scream Tracker audio faylı</comment>
     <comment xml:lang="cy">Sain Scream Tracker</comment>
     <comment xml:lang="fi">Scream Tracker -ääni</comment>
     <comment xml:lang="fr">audio Scream Tracker</comment>
@@ -2433,6 +2531,7 @@
   </mime-type>
   <mime-type type="audio/x-voc">
     <comment>VOC audio</comment>
+    <comment xml:lang="az">VOC audio faylı</comment>
     <comment xml:lang="cy">Sain VOC</comment>
     <comment xml:lang="fi">VOC-ääni</comment>
     <comment xml:lang="fr">audio VOC</comment>
@@ -2446,6 +2545,7 @@
   </mime-type>
   <mime-type type="audio/x-wav">
     <comment>WAV audio</comment>
+    <comment xml:lang="az">WAV audio faylı</comment>
     <comment xml:lang="cy">Sain WAV</comment>
     <comment xml:lang="fi">WAV-ääni</comment>
     <comment xml:lang="fr">audio WAV</comment>
@@ -2456,13 +2556,14 @@
     <comment xml:lang="sr">WAV звучни запис</comment>
     <comment xml:lang="sv">WAV-ljud</comment>
     <magic priority="50">
-      <match offset="8" type="string" value="WAVE" />
-      <match offset="8" type="string" value="WAV " />
+      <match value="WAVE" type="string" offset="8" />
+      <match value="WAV " type="string" offset="8" />
     </magic>
     <glob pattern="*.wav" />
   </mime-type>
   <mime-type type="audio/x-xi">
     <comment>Scream Tracker instrument</comment>
+    <comment xml:lang="az">Scream Tracker instrumenti</comment>
     <comment xml:lang="cy">Offeryn Scream Tracker</comment>
     <comment xml:lang="fi">Scream Tracker -soitin</comment>
     <comment xml:lang="fr">instrument Scream Tracker</comment>
@@ -2476,6 +2577,7 @@
   </mime-type>
   <mime-type type="audio/x-xm">
     <comment>FastTracker II audio</comment>
+    <comment xml:lang="az">FastTracker II audio faylı</comment>
     <comment xml:lang="cy">Sain FastTracker II</comment>
     <comment xml:lang="fi">FastTracker II -ääni</comment>
     <comment xml:lang="fr">audio FastTracker II</comment>
@@ -2489,6 +2591,7 @@
   </mime-type>
   <mime-type type="image/bmp">
     <comment>Windows BMP image</comment>
+    <comment xml:lang="az">Windows BMP rəsmi</comment>
     <comment xml:lang="cy">Delwedd BMP Windows</comment>
     <comment xml:lang="fi">Windows BMP -kuva</comment>
     <comment xml:lang="fr">image Windows BMP</comment>
@@ -2499,17 +2602,18 @@
     <comment xml:lang="sr">Windows BMP слика</comment>
     <comment xml:lang="sv">Windows BMP-bild</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="BMxxxx\000\000" mask="0xffff00000000ffff" />
-      <match offset="0" type="string" value="BM">
-        <match offset="14" type="byte" value="12" />
-        <match offset="14" type="byte" value="64" />
-        <match offset="14" type="byte" value="40" />
+      <match mask="0xffff00000000ffff" value="BMxxxx\000\000" type="string" offset="0" />
+      <match value="BM" type="string" offset="0">
+        <match value="12" type="byte" offset="14" />
+        <match value="64" type="byte" offset="14" />
+        <match value="40" type="byte" offset="14" />
       </match>
     </magic>
     <glob pattern="*.bmp" />
   </mime-type>
   <mime-type type="image/cgm">
     <comment>Computer Graphics Metafile</comment>
+    <comment xml:lang="az">Kompüter Qrafikası Meta Faylı</comment>
     <comment xml:lang="cy">Delwedd ffurf CGM</comment>
     <comment xml:lang="fi">Computer Graphics -metatiedosto</comment>
     <comment xml:lang="fr">métafichier Computer Graphics</comment>
@@ -2528,6 +2632,7 @@
   </mime-type>
   <mime-type type="image/g3fax">
     <comment>G3 fax image</comment>
+    <comment xml:lang="az">G3 faks rəsmi</comment>
     <comment xml:lang="cy">Delwedd Ffacs G3</comment>
     <comment xml:lang="fi">G3-faksikuva</comment>
     <comment xml:lang="fr">image de télécopie G3 « fax »</comment>
@@ -2540,6 +2645,7 @@
   </mime-type>
   <mime-type type="image/gif">
     <comment>GIF image</comment>
+    <comment xml:lang="az">GIF rəsmi</comment>
     <comment xml:lang="cy">Delwedd GIF</comment>
     <comment xml:lang="fi">GIF-kuva</comment>
     <comment xml:lang="fr">image GIF</comment>
@@ -2550,12 +2656,13 @@
     <comment xml:lang="sr">GIF слика</comment>
     <comment xml:lang="sv">GIF-bild</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="GIF" />
+      <match value="GIF" type="string" offset="0" />
     </magic>
     <glob pattern="*.gif" />
   </mime-type>
   <mime-type type="image/ief">
     <comment>IEF image</comment>
+    <comment xml:lang="az">IEF rəsmi</comment>
     <comment xml:lang="cy">Delwedd IEF</comment>
     <comment xml:lang="fi">IEF-kuva</comment>
     <comment xml:lang="fr">image IEF</comment>
@@ -2569,6 +2676,7 @@
   </mime-type>
   <mime-type type="image/jpeg">
     <comment>JPEG image</comment>
+    <comment xml:lang="az">JPEG rəsmi</comment>
     <comment xml:lang="cy">Delwedd JPEG</comment>
     <comment xml:lang="fi">JPEG-kuva</comment>
     <comment xml:lang="fr">image JPEG</comment>
@@ -2579,8 +2687,8 @@
     <comment xml:lang="sr">JPEG слика</comment>
     <comment xml:lang="sv">JPEG-bild</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\377\330\377" />
-      <match offset="0" type="big16" value="0xffd8" />
+      <match value="\377\330\377" type="string" offset="0" />
+      <match value="0xffd8" type="big16" offset="0" />
     </magic>
     <glob pattern="*.jpeg" />
     <glob pattern="*.jpg" />
@@ -2598,6 +2706,7 @@
   </mime-type>
   <mime-type type="image/png">
     <comment>PNG image</comment>
+    <comment xml:lang="az">PNG rəsmi</comment>
     <comment xml:lang="cy">Delwedd PNG</comment>
     <comment xml:lang="fi">PNG-kuva</comment>
     <comment xml:lang="fr">image PNG</comment>
@@ -2608,7 +2717,7 @@
     <comment xml:lang="sr">PNG слика</comment>
     <comment xml:lang="sv">PNG-bild</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\x89PNG" />
+      <match value="\x89PNG" type="string" offset="0" />
     </magic>
     <glob pattern="*.png" />
   </mime-type>
@@ -2620,8 +2729,8 @@
     <comment>scalable SVG image</comment>
     <comment xml:lang="no">skalerbart SVG-bilde</comment>
     <magic priority="80">
-      <match offset="0:256" type="string" value="&lt;!DOCTYPE svg" />
-      <match offset="0:64" type="string" value="&lt;svg" />
+      <match value="&lt;!DOCTYPE svg" type="string" offset="0:256" />
+      <match value="&lt;svg" type="string" offset="0:64" />
     </magic>
     <glob pattern="*.svg" />
   </mime-type>
@@ -2629,14 +2738,15 @@
     <comment>TIFF image</comment>
     <comment xml:lang="no">TIFF-bilde</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="MM\x00\x2a" />
-      <match offset="0" type="string" value="II\x2a\x00" />
+      <match value="MM\x00\x2a" type="string" offset="0" />
+      <match value="II\x2a\x00" type="string" offset="0" />
     </magic>
     <glob pattern="*.tif" />
     <glob pattern="*.tiff" />
   </mime-type>
   <mime-type type="image/vnd.dwg">
     <comment>AutoCAD image</comment>
+    <comment xml:lang="az">AutoCAD rəsmi</comment>
     <comment xml:lang="cy">Delwedd AutoCAD</comment>
     <comment xml:lang="fi">AutoCAD-kuva</comment>
     <comment xml:lang="fr">image AutoCAD</comment>
@@ -2655,6 +2765,7 @@
   </mime-type>
   <mime-type type="image/x-3ds">
     <comment>3D Studio image</comment>
+    <comment xml:lang="az">3D Studio rəsmi</comment>
     <comment xml:lang="cy">Delwedd &quot;3D Studio&quot;</comment>
     <comment xml:lang="fi">3D Studio -kuva</comment>
     <comment xml:lang="fr">image 3D Studio</comment>
@@ -2670,14 +2781,15 @@
     <comment>Applix Graphics image</comment>
     <comment xml:lang="no">Applix Graphics-dokument</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="*BEGIN">
-        <match offset="7" type="string" value="GRAPHICS" />
+      <match value="*BEGIN" type="string" offset="0">
+        <match value="GRAPHICS" type="string" offset="7" />
       </match>
     </magic>
     <glob pattern="*.ag" />
   </mime-type>
   <mime-type type="image/x-cmu-raster">
     <comment>CMU raster image</comment>
+    <comment xml:lang="az">CMU raster rəsmi</comment>
     <comment xml:lang="cy">Delwedd raster CMU</comment>
     <comment xml:lang="fi">CMU-rasterikuva</comment>
     <comment xml:lang="fr">image raster CMU</comment>
@@ -2697,6 +2809,7 @@
   </mime-type>
   <mime-type type="image/x-dcm">
     <comment>Digital Imaging and Communications in Medicine image</comment>
+    <comment xml:lang="az">Dijital Rəsm və Tibbdə Rabitə rəsmi</comment>
     <comment xml:lang="cy">Delwedd DCIM (Digital Imaging and Communications in Medicine)</comment>
     <comment xml:lang="fi">Digital Imaging and Communications in Medicine -kuva</comment>
     <comment xml:lang="fr">image « Digital Imaging and Communications in Medicine »</comment>
@@ -2707,11 +2820,12 @@
     <comment xml:lang="sv">Bildformat för digital bildbehandling och medicinsk kommunikation</comment>
     <glob pattern="*.dcm" />
     <magic priority="50">
-      <match offset="0" type="string" value="DCMw" />
+      <match value="DCMw" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="image/x-dib">
     <comment>Device Independant Bitmap</comment>
+    <comment xml:lang="az">Avadanlıqdan Müstəqil Bitmap</comment>
     <comment xml:lang="cy">Didfap Dyfais-Annibynol</comment>
     <comment xml:lang="fi">laiteriippumaton bittikartta</comment>
     <comment xml:lang="fr">bitmap indépendant du périphérique</comment>
@@ -2722,7 +2836,7 @@
     <comment xml:lang="sr">Битмапа независна од уређаја</comment>
     <comment xml:lang="sv">Enhetsoberoende bitmapp</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\x28\00\00\00" />
+      <match value="\x28\00\00\00" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="image/vnd.djvu">
@@ -2730,11 +2844,11 @@
    <comment xml:lang="nn">DjVu-bilete</comment>
    <comment xml:lang="no">DjVu-bilde</comment>
    <magic priority="50">
-     <match offset="4" type="string" value="FORM">
-       <match offset="12" type="string" value="DJVU" />
-       <match offset="12" type="string" value="DJVM" />
-       <match offset="12" type="string" value="BM44" />
-       <match offset="12" type="string" value="PM44" />
+     <match value="FORM" type="string" offset="4">
+       <match value="DJVU" type="string" offset="12" />
+       <match value="DJVM" type="string" offset="12" />
+       <match value="BM44" type="string" offset="12" />
+       <match value="PM44" type="string" offset="12" />
      </match>
    </magic>
    <glob pattern="*.djvu" />
@@ -2743,6 +2857,7 @@
   </mime-type>
   <mime-type type="image/dpx">
     <comment>Digital Moving Picture Exchange image</comment>
+    <comment xml:lang="az">Digital Moving Picture Exchange rəsmi</comment>
     <comment xml:lang="cy">Delwedd Digital Moving Picture Exchange</comment>
     <comment xml:lang="fi">Digital Moving Picture Exchange -kuva</comment>
     <comment xml:lang="fr">image « Digital Moving Picture Exchange »</comment>
@@ -2753,11 +2868,12 @@
     <comment xml:lang="sr">Дигитални облик за размену покретних слика</comment>
     <comment xml:lang="sv">DPX-bild (Digital Moving Picture Exchange)</comment>
     <magic priority="50">
-      <match offset="0" type="big32" value="0x53445058" />
+      <match value="0x53445058" type="big32" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="image/x-eps">
     <comment>Encapsulated PostScript image</comment>
+    <comment xml:lang="az">Encapsulated PostScript rəsmi</comment>
     <comment xml:lang="cy">Delwedd PostScript wedi ei chrisialu</comment>
     <comment xml:lang="fi">kapsuloitu PostScript-kuva</comment>
     <comment xml:lang="fr">image encapsulé PostScript</comment>
@@ -2767,11 +2883,11 @@
     <comment xml:lang="sr">Угњеждена ПостСкрипт слика (EPS)</comment>
     <comment xml:lang="sv">Inkapslad PostScript-bild</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="%!">
-        <match offset="15" type="string" value="EPS" />
+      <match value="%!" type="string" offset="0">
+        <match value="EPS" type="string" offset="15" />
       </match>
-      <match offset="0" type="string" value="\004%!">
-        <match offset="16" type="string" value="EPS" />
+      <match value="\004%!" type="string" offset="0">
+        <match value="EPS" type="string" offset="16" />
       </match>
     </magic>
     <glob pattern="*.eps" />
@@ -2780,6 +2896,7 @@
   </mime-type>
   <mime-type type="image/x-fits">
     <comment>Flexible Image Transport System</comment>
+    <comment xml:lang="az">Flexible Rəsm Transport Sistemi</comment>
     <comment xml:lang="cy">System Trosgludo Delweddau Hyblyg</comment>
     <comment xml:lang="fi">Flexible Image Transport System</comment>
     <comment xml:lang="fr">système de transport « Flexible Image »</comment>
@@ -2790,7 +2907,7 @@
     <comment xml:lang="sr">Флексибилни транспортни систем слика</comment>
     <comment xml:lang="sv">Flexibelt bildtransportssystem</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="SIMPLE  =" />
+      <match value="SIMPLE  =" type="string" offset="0" />
     </magic>
     <glob pattern="*.fits" />
   </mime-type>
@@ -2798,11 +2915,12 @@
     <comment>FlashPix image</comment>
     <comment xml:lang="no">FlashPix-bilde</comment>
     <magic priority="50">
-      <match offset="0" type="big32" value="0x46506978" />
+      <match value="0x46506978" type="big32" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="image/x-icb">
     <comment>Truevision Targa image</comment>
+    <comment xml:lang="az">Truevision Targa rəsmi</comment>
     <comment xml:lang="cy">Delwedd Targa Truevision</comment>
     <comment xml:lang="fi">Truevision Targa -kuva</comment>
     <comment xml:lang="fr">image Truevision Targa</comment>
@@ -2813,7 +2931,7 @@
     <comment xml:lang="sr">Truevision Targa слика</comment>
     <comment xml:lang="sv">Truevision Targa-bild</comment>
     <magic priority="50">
-      <match offset="0" type="big32" value="0x00000200" />
+      <match value="0x00000200" type="big32" offset="0" />
     </magic>
     <glob pattern="*.icb" />
   </mime-type>
@@ -2824,6 +2942,7 @@
   </mime-type>
   <mime-type type="image/x-iff">
     <comment>IFF image</comment>
+    <comment xml:lang="az">IFF rəsmi</comment>
     <comment xml:lang="cy">Delwedd IFF</comment>
     <comment xml:lang="fi">IFF-kuva</comment>
     <comment xml:lang="fr">image IFF</comment>
@@ -2837,6 +2956,7 @@
   </mime-type>
   <mime-type type="image/x-ilbm">
     <comment>ILBM image</comment>
+    <comment xml:lang="az">ILBM rəsmi</comment>
     <comment xml:lang="cy">Delwedd ILBM</comment>
     <comment xml:lang="fi">ILBM-kuva</comment>
     <comment xml:lang="fr">image ILBM</comment>
@@ -2850,6 +2970,7 @@
   </mime-type>
   <mime-type type="image/x-jng">
     <comment>JNG image</comment>
+    <comment xml:lang="az">JNG rəsmi</comment>
     <comment xml:lang="cy">Delwedd JNG</comment>
     <comment xml:lang="fi">JNG-kuva</comment>
     <comment xml:lang="fr">image JNG</comment>
@@ -2863,6 +2984,7 @@
   </mime-type>
   <mime-type type="image/x-lwo">
     <comment>LightWave object</comment>
+    <comment xml:lang="az">LightWave cismi</comment>
     <comment xml:lang="cy">Gwrthrych LightWave</comment>
     <comment xml:lang="fi">LightWave-esine</comment>
     <comment xml:lang="fr">objet LightWave</comment>
@@ -2877,6 +2999,7 @@
   </mime-type>
   <mime-type type="image/x-lws">
     <comment>LightWave scene</comment>
+    <comment xml:lang="az">LightWave səhnəsi</comment>
     <comment xml:lang="cy">Golygfa LightWave</comment>
     <comment xml:lang="fi">LightWave-maisema</comment>
     <comment xml:lang="fr">scène LightWave</comment>
@@ -2895,21 +3018,22 @@
   </mime-type>
   <mime-type type="image/x-niff">
     <magic priority="80">
-      <match offset="0" type="string" value="IIN1" />
+      <match value="IIN1" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="image/x-pcx">
     <magic priority="50">
-      <match offset="0" type="byte" value="10">
-        <match offset="1" type="byte" value="0" />
-        <match offset="1" type="byte" value="2" />
-        <match offset="1" type="byte" value="3" />
-        <match offset="1" type="byte" value="5" />
+      <match value="10" type="byte" offset="0">
+        <match value="0" type="byte" offset="1" />
+        <match value="2" type="byte" offset="1" />
+        <match value="3" type="byte" offset="1" />
+        <match value="5" type="byte" offset="1" />
       </match>
     </magic>
   </mime-type>
   <mime-type type="image/x-photo-cd">
     <comment>PhotoCD image</comment>
+    <comment xml:lang="az">PhotoCD rəsmi</comment>
     <comment xml:lang="cy">Delwedd PhotoCD</comment>
     <comment xml:lang="fi">PhotoCD-kuva</comment>
     <comment xml:lang="fr">image PhotoCD</comment>
@@ -2923,6 +3047,7 @@
   </mime-type>
   <mime-type type="image/x-portable-anymap">
     <comment>PNM image</comment>
+    <comment xml:lang="az">PNM rəsmi</comment>
     <comment xml:lang="cy">Delwedd PNM</comment>
     <comment xml:lang="fi">PNM-kuva</comment>
     <comment xml:lang="fr">image PNM</comment>
@@ -2936,6 +3061,7 @@
   </mime-type>
   <mime-type type="image/x-portable-bitmap">
     <comment>Portable Bitmap File Format</comment>
+    <comment xml:lang="az">Portable Bitmap Fayl Formatı</comment>
     <comment xml:lang="cy">Ffeiliau Fformat Pixfap Cludadwy</comment>
     <comment xml:lang="fi">siirrettävä bittikarttatiedostomuoto</comment>
     <comment xml:lang="fr">format de fichier Portable Bitmap</comment>
@@ -2944,13 +3070,14 @@
     <comment xml:lang="sr">Портабилни запис битмапираних датотека</comment>
     <comment xml:lang="sv">Portabelt bitmapp-filformat</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="P1" />
-      <match offset="0" type="string" value="P4" />
+      <match value="P1" type="string" offset="0" />
+      <match value="P4" type="string" offset="0" />
     </magic>
     <glob pattern="*.pbm" />
   </mime-type>
   <mime-type type="image/x-portable-graymap">
     <comment>Portable Graymap File Format</comment>
+    <comment xml:lang="az">Portable Graymap Fayl Formatı</comment>
     <comment xml:lang="cy">Ffeiliau Fformat Llwydfap Cludadwy</comment>
     <comment xml:lang="fi">siirrettävä harmaasävytiedostomuoto</comment>
     <comment xml:lang="fr">format de fichier Portable Graymap</comment>
@@ -2959,13 +3086,14 @@
     <comment xml:lang="sr">Портабилни запис слика у сивим нијансама</comment>
     <comment xml:lang="sv">Portabelt gråskale-filformat</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="P2" />
-      <match offset="0" type="string" value="P5" />
+      <match value="P2" type="string" offset="0" />
+      <match value="P5" type="string" offset="0" />
     </magic>
     <glob pattern="*.pgm" />
   </mime-type>
   <mime-type type="image/x-portable-pixmap">
     <comment>Portable Pixmap File Format</comment>
+    <comment xml:lang="az">Portable Pixmap Fayl Formatı</comment>
     <comment xml:lang="cy">Delwedd Pixmap Cludadwy</comment>
     <comment xml:lang="fi">siirrettävä pikselikarttatiedostomuoto</comment>
     <comment xml:lang="fr">format de fichier Portable Pixmap</comment>
@@ -2975,8 +3103,8 @@
     <comment xml:lang="sr">Портабилни запис пиксмапа</comment>
     <comment xml:lang="sv">Portabelt pixmap-filformat</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="P3" />
-      <match offset="0" type="string" value="P6" />
+      <match value="P3" type="string" offset="0" />
+      <match value="P6" type="string" offset="0" />
     </magic>
     <glob pattern="*.ppm" />
   </mime-type>
@@ -2984,12 +3112,13 @@
     <comment>Photoshop image</comment>
     <comment xml:lang="no">Photoshop-bilde</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="8BPS  \000\000\000\000" mask="0xffffffff0000ffffffff" />
+      <match mask="0xffffffff0000ffffffff" value="8BPS  \000\000\000\000" type="string" offset="0" />
     </magic>
     <glob pattern="*.psd" />
   </mime-type>
   <mime-type type="image/x-rgb">
     <comment>RGB image</comment>
+    <comment xml:lang="az">RGB rəsmi</comment>
     <comment xml:lang="cy">Delwedd RGB</comment>
     <comment xml:lang="fi">RGB-kuva</comment>
     <comment xml:lang="fr">image RGB</comment>
@@ -3009,12 +3138,13 @@
     <comment>SUN Rasterfile image</comment>
     <comment xml:lang="no">SUN rasterfil-bilde</comment>
     <magic priority="50">
-      <match offset="0" type="big32" value="0x59a66a95" />
+      <match value="0x59a66a95" type="big32" offset="0" />
     </magic>
     <glob pattern="*.sun" />
   </mime-type>
   <mime-type type="image/x-tga">
     <comment>TarGA image</comment>
+    <comment xml:lang="az">TarGA rəsmi</comment>
     <comment xml:lang="cy">Delwedd TarGA</comment>
     <comment xml:lang="fi">TarGA-kuva</comment>
     <comment xml:lang="fr">image TarGA</comment>
@@ -3037,6 +3167,7 @@
   </mime-type>
   <mime-type type="image/x-xbitmap">
     <comment>X BitMap image</comment>
+    <comment xml:lang="az">X BitMap rəsmi</comment>
     <comment xml:lang="cy">Delwedd didfap X</comment>
     <comment xml:lang="fi">X BitMap -kuva</comment>
     <comment xml:lang="fr">image X BitMap</comment>
@@ -3058,11 +3189,12 @@
     <comment xml:lang="no">XFig-bilde</comment>
     <glob pattern="*.fig" />
     <magic priority="50">
-      <match offset="0" type="string" value="#FIG" />
+      <match value="#FIG" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="image/x-xpixmap">
     <comment>X PixMap image</comment>
+    <comment xml:lang="az">X PixMap rəsmi</comment>
     <comment xml:lang="cy">Delwedd picsfap X</comment>
     <comment xml:lang="fi">X PixMap -kuva</comment>
     <comment xml:lang="fr">image X PixMap</comment>
@@ -3073,12 +3205,13 @@
     <comment xml:lang="sr">X пискмапа</comment>
     <comment xml:lang="sv">X-pixmapbild</comment>
     <magic priority="80">
-      <match offset="0" type="string" value="/* XPM" />
+      <match value="/* XPM" type="string" offset="0" />
     </magic>
     <glob pattern="*.xpm" />
   </mime-type>
   <mime-type type="image/x-xwindowdump">
     <comment>X window image</comment>
+    <comment xml:lang="az">X window rəsmi</comment>
     <comment xml:lang="cy">Delwedd ffenest X</comment>
     <comment xml:lang="fi">X-ikkunakuva</comment>
     <comment xml:lang="fr">image X window</comment>
@@ -3117,6 +3250,7 @@
   </mime-type>
   <mime-type type="inode/symlink">
     <comment>symbolic link</comment>
+    <comment xml:lang="az">simvolik körpü</comment>
     <comment xml:lang="cy">cyswllt symbolaidd</comment>
     <comment xml:lang="fi">symbolinen linkki</comment>
     <comment xml:lang="fr">lien symbolique</comment>
@@ -3129,6 +3263,7 @@
   </mime-type>
   <mime-type type="message/delivery-status">
     <comment>mail delivery report</comment>
+    <comment xml:lang="az">poçt yollama raportu</comment>
     <comment xml:lang="cy">Adroddiad trosgludo post</comment>
     <comment xml:lang="fi">viestin jakeluilmoitus</comment>
     <comment xml:lang="fr">rapport de livraison de courriels</comment>
@@ -3141,6 +3276,7 @@
   </mime-type>
   <mime-type type="message/disposition-notification">
     <comment>mail disposition report</comment>
+    <comment xml:lang="az">poçt qayıtma raportu</comment>
     <comment xml:lang="cy">adroddiad ffurf post</comment>
     <comment xml:lang="fi">viestin kuittausilmoitus</comment>
     <comment xml:lang="fr">rapport de disposition de courriels</comment>
@@ -3153,6 +3289,7 @@
   </mime-type>
   <mime-type type="message/external-body">
     <comment>reference to remote file</comment>
+    <comment xml:lang="az">uzaq fayla göstəriş</comment>
     <comment xml:lang="cy">cyfeiriad at ffeil bell</comment>
     <comment xml:lang="fi">viittaus etätiedostoon</comment>
     <comment xml:lang="fr">référence au fichier distant</comment>
@@ -3165,6 +3302,7 @@
   </mime-type>
   <mime-type type="message/news">
     <comment>Usenet news message</comment>
+    <comment xml:lang="az">Usenet xəbərlər ismarışı</comment>
     <comment xml:lang="cy">Neges newyddion Usenet</comment>
     <comment xml:lang="fi">nyyssiviesti</comment>
     <comment xml:lang="fr">message des nouvelles « news » Usenet</comment>
@@ -3175,13 +3313,14 @@
     <comment xml:lang="sr">Порука са дискусионе групе</comment>
     <comment xml:lang="sv">Usenet-diskussionsgruppsmeddelande</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="Article" />
-      <match offset="0" type="string" value="Path:" />
-      <match offset="0" type="string" value="Xref:" />
+      <match value="Article" type="string" offset="0" />
+      <match value="Path:" type="string" offset="0" />
+      <match value="Xref:" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="message/partial">
     <comment>partial email message</comment>
+    <comment xml:lang="az">qismi poçt ismarışı</comment>
     <comment xml:lang="cy">darn o neges e-bost</comment>
     <comment xml:lang="fi">osittainen sähköpostiviesti</comment>
     <comment xml:lang="fr">message partiel de courriel</comment>
@@ -3196,18 +3335,19 @@
     <comment>email message</comment>
     <comment xml:lang="no">e-postmelding</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="#! rnews" />
-      <match offset="0" type="string" value="Forward to" />
-      <match offset="0" type="string" value="From:" />
-      <match offset="0" type="string" value="N#! rnews" />
-      <match offset="0" type="string" value="Pipe to" />
-      <match offset="0" type="string" value="Received:" />
-      <match offset="0" type="string" value="Relay-Version:" />
-      <match offset="0" type="string" value="Return-Path:" />
+      <match value="#! rnews" type="string" offset="0" />
+      <match value="Forward to" type="string" offset="0" />
+      <match value="From:" type="string" offset="0" />
+      <match value="N#! rnews" type="string" offset="0" />
+      <match value="Pipe to" type="string" offset="0" />
+      <match value="Received:" type="string" offset="0" />
+      <match value="Relay-Version:" type="string" offset="0" />
+      <match value="Return-Path:" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="message/x-gnu-rmail">
     <comment>GNU mail message</comment>
+    <comment xml:lang="az">GNU poçt ismarışı</comment>
     <comment xml:lang="cy">Neges E-Bost GNU</comment>
     <comment xml:lang="fi">GNU-postiviesti</comment>
     <comment xml:lang="fr">message de courriel GNU</comment>
@@ -3221,6 +3361,7 @@
   </mime-type>
   <mime-type type="model/vrml">
     <comment>VRML document</comment>
+    <comment xml:lang="az">VRML sənədi</comment>
     <comment xml:lang="cy">Dogfen VRML</comment>
     <comment xml:lang="fi">VRML-asiakirja</comment>
     <comment xml:lang="fr">document VRML</comment>
@@ -3234,6 +3375,7 @@
   </mime-type>
   <mime-type type="multipart/alternative">
     <comment>message in several formats</comment>
+    <comment xml:lang="az">verici formatlarında ismarış</comment>
     <comment xml:lang="cy">neges mewn sawl fformat</comment>
     <comment xml:lang="fi">viesti useissa muodoissa</comment>
     <comment xml:lang="fr">message en format divers</comment>
@@ -3246,6 +3388,7 @@
   </mime-type>
   <mime-type type="multipart/appledouble">
     <comment>Macintosh AppleDouble-encoded file</comment>
+    <comment xml:lang="az">Macintosh AppleDouble-kodlanmış fayl</comment>
     <comment xml:lang="cy">Ffeil AppleDouble-amgodedig Macintosh</comment>
     <comment xml:lang="fi">Macintosh AppleDouble -koodattu tiedosto</comment>
     <comment xml:lang="fr">fichier encodé Macintosh AppleDouble</comment>
@@ -3258,6 +3401,7 @@
   </mime-type>
   <mime-type type="multipart/digest">
     <comment>message digest</comment>
+    <comment xml:lang="az">ismarış daycesti</comment>
     <comment xml:lang="cy">crynodeb negeseuon</comment>
     <comment xml:lang="fi">viestikokoelma</comment>
     <comment xml:lang="fr">digesteur de messages</comment>
@@ -3270,6 +3414,7 @@
   </mime-type>
   <mime-type type="multipart/encrypted">
     <comment>encrypted message</comment>
+    <comment xml:lang="az">şifrələnmiş ismarış</comment>
     <comment xml:lang="cy">Neges wedi ei hamgryptio</comment>
     <comment xml:lang="fi">salattu viesti</comment>
     <comment xml:lang="fr">message encrypté</comment>
@@ -3286,6 +3431,7 @@
   </mime-type>
   <mime-type type="multipart/related">
     <comment>compound document</comment>
+    <comment xml:lang="az">birləşik sənəd</comment>
     <comment xml:lang="cy">dogfen gyfansawdd</comment>
     <comment xml:lang="fi">yhdisteasiakirja</comment>
     <comment xml:lang="fr">document lié « compound »</comment>
@@ -3298,6 +3444,7 @@
   </mime-type>
   <mime-type type="multipart/report">
     <comment>mail system report</comment>
+    <comment xml:lang="az">poçt sistemi raportu</comment>
     <comment xml:lang="cy">adroddiad system bost</comment>
     <comment xml:lang="fi">viestijärjestelmän ilmoitus</comment>
     <comment xml:lang="fr">rapport système de courriels</comment>
@@ -3310,6 +3457,7 @@
   </mime-type>
   <mime-type type="multipart/signed">
     <comment>signed message</comment>
+    <comment xml:lang="az">imzalanmış ismarış</comment>
     <comment xml:lang="cy">neges lofnodwyd</comment>
     <comment xml:lang="fi">allekirjoitettu viesti</comment>
     <comment xml:lang="fr">message signé</comment>
@@ -3326,6 +3474,7 @@
   </mime-type>
   <mime-type type="text/calendar">
     <comment>iCalendar file</comment>
+    <comment xml:lang="az">iCalendar faylı</comment>
     <comment xml:lang="cy">Ffeil iCalendar</comment>
     <comment xml:lang="fi">iCalendar-tiedosto</comment>
     <comment xml:lang="fr">fichier iCalendar</comment>
@@ -3336,12 +3485,13 @@
     <comment xml:lang="sr">iCalendar датотека</comment>
     <comment xml:lang="sv">iCalendar-fil</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="BEGIN:VCALENDAR" />
+      <match value="BEGIN:VCALENDAR" type="string" offset="0" />
     </magic>
     <glob pattern="*.ics" />
   </mime-type>
   <mime-type type="text/css">
     <comment>Cascading Style Sheet</comment>
+    <comment xml:lang="az">Stil Layları (CSS)</comment>
     <comment xml:lang="cy">Taflen Arddull Rhaeadrol</comment>
     <comment xml:lang="fi">CSS-tyylisäännöstö</comment>
     <comment xml:lang="fr">Cascading Style Sheet</comment>
@@ -3356,6 +3506,7 @@
   </mime-type>
   <mime-type type="text/directory">
     <comment>directory information file</comment>
+    <comment xml:lang="az">cərgə mə&apos;lumat faylı</comment>
     <comment xml:lang="cy">Ffeil gwybodaeth cyfeiriadur</comment>
     <comment xml:lang="fi">hakemistoinfotiedosto</comment>
     <comment xml:lang="fr">fichier d&apos;information répertoire</comment>
@@ -3368,6 +3519,7 @@
   </mime-type>
   <mime-type type="text/enriched">
     <comment>enriched text document</comment>
+    <comment xml:lang="az">zəngin mətn sənədi</comment>
     <comment xml:lang="cy">Dogfen testun wedi ei gyfoethogi</comment>
     <comment xml:lang="fi">rikastettu tekstiasiakirja</comment>
     <comment xml:lang="fr">document  « enriched text »</comment>
@@ -3387,29 +3539,30 @@
     <comment>HTML page</comment>
     <comment xml:lang="no">HTML-side</comment>
     <magic priority="50">
-      <match offset="0:64" type="string" value="&lt;!DOCTYPE HTML" />
-      <match offset="0:64" type="string" value="&lt;!doctype html" />
-      <match offset="0:64" type="string" value="&lt;HEAD" />
-      <match offset="0:64" type="string" value="&lt;head" />
-      <match offset="0:64" type="string" value="&lt;TITLE" />
-      <match offset="0:64" type="string" value="&lt;title" />
-      <match offset="0:64" type="string" value="&lt;html" />
-      <match offset="0:64" type="string" value="&lt;HTML" />
-      <match offset="0" type="string" value="&lt;BODY" />
-      <match offset="0" type="string" value="&lt;body" />
-      <match offset="0" type="string" value="&lt;TITLE" />
-      <match offset="0" type="string" value="&lt;title" />
-      <match offset="0" type="string" value="&lt;!--" />
-      <match offset="0" type="string" value="&lt;h1" />
-      <match offset="0" type="string" value="&lt;H1" />
-      <match offset="0" type="string" value="&lt;!doctype HTML" />
-      <match offset="0" type="string" value="&lt;!DOCTYPE html" />
+      <match value="&lt;!DOCTYPE HTML" type="string" offset="0:64" />
+      <match value="&lt;!doctype html" type="string" offset="0:64" />
+      <match value="&lt;HEAD" type="string" offset="0:64" />
+      <match value="&lt;head" type="string" offset="0:64" />
+      <match value="&lt;TITLE" type="string" offset="0:64" />
+      <match value="&lt;title" type="string" offset="0:64" />
+      <match value="&lt;html" type="string" offset="0:64" />
+      <match value="&lt;HTML" type="string" offset="0:64" />
+      <match value="&lt;BODY" type="string" offset="0" />
+      <match value="&lt;body" type="string" offset="0" />
+      <match value="&lt;TITLE" type="string" offset="0" />
+      <match value="&lt;title" type="string" offset="0" />
+      <match value="&lt;!--" type="string" offset="0" />
+      <match value="&lt;h1" type="string" offset="0" />
+      <match value="&lt;H1" type="string" offset="0" />
+      <match value="&lt;!doctype HTML" type="string" offset="0" />
+      <match value="&lt;!DOCTYPE html" type="string" offset="0" />
     </magic>
     <glob pattern="*.html" />
     <glob pattern="*.htm" />
   </mime-type>
   <mime-type type="text/htmlh">
     <comment>help page</comment>
+    <comment xml:lang="az">yardım səhifəsi</comment>
     <comment xml:lang="cy">tudalen gymorth</comment>
     <comment xml:lang="fi">ohjesivu</comment>
     <comment xml:lang="fr">page d&apos;aide</comment>
@@ -3422,6 +3575,7 @@
   </mime-type>
   <mime-type type="text/mathml">
     <comment>MathML document</comment>
+    <comment xml:lang="az">MathML sənədi</comment>
     <comment xml:lang="cy">Dogfen MathML</comment>
     <comment xml:lang="fi">MathML-asiakirja</comment>
     <comment xml:lang="fr">document MathML</comment>
@@ -3437,14 +3591,15 @@
     <comment>plain text document</comment>
     <comment xml:lang="no">vanlig tekstdokument</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="This is TeX," />
-      <match offset="0" type="string" value="This is METAFONT," />
+      <match value="This is TeX," type="string" offset="0" />
+      <match value="This is METAFONT," type="string" offset="0" />
     </magic>
     <glob pattern="*.txt" />
     <glob pattern="*.asc" />
   </mime-type>
   <mime-type type="text/rdf">
     <comment>Resource Description Framework (RDF) file</comment>
+    <comment xml:lang="az">Mənbə İzahat Çərçivəsi (RDF) faylı</comment>
     <comment xml:lang="cy">Ffeil RDF (Resource Description Framework)</comment>
     <comment xml:lang="fi">Resource Description Framework (RDF) -tiedosto</comment>
     <comment xml:lang="fr">fichier Resource Description Framework (RDF)</comment>
@@ -3457,6 +3612,7 @@
   </mime-type>
   <mime-type type="text/rfc822-headers">
     <comment>email headers</comment>
+    <comment xml:lang="az">epoçt başlıqları</comment>
     <comment xml:lang="cy">penawdau e-bost</comment>
     <comment xml:lang="fi">sähköpostiotsakkeet</comment>
     <comment xml:lang="fr">en-tête de courriel</comment>
@@ -3469,6 +3625,7 @@
   </mime-type>
   <mime-type type="text/richtext">
     <comment>rich text document</comment>
+    <comment xml:lang="az">zəngin mətn sənədi</comment>
     <comment xml:lang="cy">dogfen testun gyfoethog (rtf)</comment>
     <comment xml:lang="fi">RTF-asiakirja</comment>
     <comment xml:lang="fr">document « rich text »</comment>
@@ -3482,6 +3639,7 @@
   </mime-type>
   <mime-type type="text/rss">
     <comment>RDF Site Summary</comment>
+    <comment xml:lang="az">RDF Sayt İcmalı</comment>
     <comment xml:lang="cy">Crynodeb Safle RDF</comment>
     <comment xml:lang="fi">RDF-sivuston tiivistelmä</comment>
     <comment xml:lang="fr">sommaire RDF Site</comment>
@@ -3503,7 +3661,7 @@
     <comment>Spreadsheet interchange document</comment>
     <comment xml:lang="no">Dokument for regnearkutveksling</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="ID;" />
+      <match value="ID;" type="string" offset="0" />
     </magic>
     <glob pattern="*.sylk" />
     <glob pattern="*.slk" />
@@ -3515,6 +3673,7 @@
   </mime-type>
   <mime-type type="text/vnd.wap.wml">
     <comment>WML document</comment>
+    <comment xml:lang="az">WML sənədi</comment>
     <comment xml:lang="cy">Dogfen WML</comment>
     <comment xml:lang="fi">WML-asiakirja</comment>
     <comment xml:lang="fr">document WML</comment>
@@ -3570,6 +3729,7 @@
   </mime-type>
   <mime-type type="text/x-copying">
     <comment>software license terms</comment>
+    <comment xml:lang="az">proqram tə&apos;minatını lisenziya qaydaları</comment>
     <comment xml:lang="cy">termau trwydded meddalwedd</comment>
     <comment xml:lang="fi">ohjelmiston lisenssiehdot</comment>
     <comment xml:lang="fr">termes de la license du logiciel</comment>
@@ -3583,6 +3743,7 @@
   </mime-type>
   <mime-type type="text/x-credits">
     <comment>software author credits</comment>
+    <comment xml:lang="az">proqram müəllifləri sənədi</comment>
     <comment xml:lang="cy">clodau awduron meddalwedd</comment>
     <comment xml:lang="fi">ohjelmiston tekijäluettelo</comment>
     <comment xml:lang="fr">crédits des auteurs pour le logiciel</comment>
@@ -3605,6 +3766,7 @@
   </mime-type>
   <mime-type type="text/x-dcl">
     <comment>DCL script</comment>
+    <comment xml:lang="az">DCL skripti</comment>
     <comment xml:lang="cy">Sgript DCL</comment>
     <comment xml:lang="fi">DCL-komentotiedosto</comment>
     <comment xml:lang="fr">script DCL</comment>
@@ -3618,6 +3780,7 @@
   </mime-type>
   <mime-type type="text/x-dsl">
     <comment>DSSSL document</comment>
+    <comment xml:lang="az">DSSSL sənədi</comment>
     <comment xml:lang="cy">Dogfen DSSSL</comment>
     <comment xml:lang="fi">DSSSL-asiakirja</comment>
     <comment xml:lang="fr">document DSSSL</comment>
@@ -3631,6 +3794,7 @@
   </mime-type>
   <mime-type type="text/x-dtd">
     <comment>document type definition</comment>
+    <comment xml:lang="az">sənəd növü tə&apos;yini</comment>
     <comment xml:lang="cy">Diffiniad math dogfen</comment>
     <comment xml:lang="fi">asiakirjatyypin määritelmä</comment>
     <comment xml:lang="fr">définition des types de document</comment>
@@ -3644,6 +3808,7 @@
   </mime-type>
   <mime-type type="text/x-emacs-lisp">
     <comment>Emacs Lisp source code</comment>
+    <comment xml:lang="az">Emacs Lisp mənbə kodu</comment>
     <comment xml:lang="cy">Ffynhonnell rhaglen EMACS LISP</comment>
     <comment xml:lang="fi">Emacs Lisp -lähdekoodi</comment>
     <comment xml:lang="fr">code source Emacs Lisp</comment>
@@ -3654,13 +3819,14 @@
     <comment xml:lang="sr">Емакс Лисп изворни кôд</comment>
     <comment xml:lang="sv">Emacs Lisp-källkod</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\012(" />
-      <match offset="0" type="string" value=";ELC\023\000\000\000" />
+      <match value="\012(" type="string" offset="0" />
+      <match value=";ELC\023\000\000\000" type="string" offset="0" />
     </magic>
     <glob pattern="*.el" />
   </mime-type>
   <mime-type type="text/x-fortran">
     <comment>Fortran source code</comment>
+    <comment xml:lang="az">Fortran mənbə kodu</comment>
     <comment xml:lang="cy">Ffynhonnell rhaglen FORTRAN</comment>
     <comment xml:lang="fi">Fortran-lähdekoodi</comment>
     <comment xml:lang="fr">code source Fortran</comment>
@@ -3674,6 +3840,7 @@
   </mime-type>
   <mime-type type="text/x-gtkrc">
     <comment>GTK configuration</comment>
+    <comment xml:lang="az">GTK qurğusu</comment>
     <comment xml:lang="cy">Ffurfosodiad GTK</comment>
     <comment xml:lang="fi">GTK-asetukset</comment>
     <comment xml:lang="fr">configuration GTK</comment>
@@ -3688,6 +3855,7 @@
   </mime-type>
   <mime-type type="text/x-haskell">
     <comment>Haskell source code</comment>
+    <comment xml:lang="az">Haskell mənbə kodu</comment>
     <comment xml:lang="cy">Ffynhonnell rhaglen Haskell</comment>
     <comment xml:lang="fi">Haskell-lähdekoodi</comment>
     <comment xml:lang="fr">code source Haskell</comment>
@@ -3701,6 +3869,7 @@
   </mime-type>
   <mime-type type="text/x-idl">
     <comment>IDL document</comment>
+    <comment xml:lang="az">IDL sənədi</comment>
     <comment xml:lang="cy">Dogfen IDL</comment>
     <comment xml:lang="fi">IDL-asiakirja</comment>
     <comment xml:lang="fr">document IDL</comment>
@@ -3714,6 +3883,7 @@
   </mime-type>
   <mime-type type="text/x-install">
     <comment>software installation instructions</comment>
+    <comment xml:lang="az">proqram tə&apos;minatını qurma tə&apos;limatları</comment>
     <comment xml:lang="cy">cyfarwyddiadau gosod meddalwedd</comment>
     <comment xml:lang="fi">ohjelmiston asennusohjeet</comment>
     <comment xml:lang="fr">instructions d&apos;installation du logiciel</comment>
@@ -3732,6 +3902,7 @@
   </mime-type>
   <mime-type type="text/x-ksh">
     <comment>Korn shell script</comment>
+    <comment xml:lang="az">Korn qabıq skripti</comment>
     <comment xml:lang="cy">Sgript plisgyn Korn</comment>
     <comment xml:lang="fi">Ksh-komentotiedosto</comment>
     <comment xml:lang="fr">script Korn shell</comment>
@@ -3742,16 +3913,17 @@
     <comment xml:lang="sr">Korn скрипта окружења</comment>
     <comment xml:lang="sv">Korn-skalskript</comment>
     <magic priority="50">
-      <match offset="1:16" type="string" value="/bin/ksh" />
+      <match value="/bin/ksh" type="string" offset="1:16" />
     </magic>
   </mime-type>
   <mime-type type="text/x-ksysv-log">
     <magic priority="50">
-      <match offset="0" type="string" value="KDE System V Init Editor" />
+      <match value="KDE System V Init Editor" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="text/x-literate-haskell">
     <comment>Literate haskell source code</comment>
+    <comment xml:lang="az">Literate haskell mənbə kodu</comment>
     <comment xml:lang="cy">Ffynhonnell Haskell llenyddol</comment>
     <comment xml:lang="fi">Literate haskell -lähdekoodi</comment>
     <comment xml:lang="fr">code source Literate haskell</comment>
@@ -3769,6 +3941,7 @@
   </mime-type>
   <mime-type type="text/x-makefile">
     <comment>Makefile</comment>
+    <comment xml:lang="az">İnşa faylı</comment>
     <comment xml:lang="cy">Ffeil &quot;make&quot;</comment>
     <comment xml:lang="fi">Makefile</comment>
     <comment xml:lang="fr">makefile</comment>
@@ -3801,20 +3974,21 @@
     <comment>differences between files</comment>
     <comment xml:lang="no">forskjeller mellom filer</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="diff\t" />
-      <match offset="0" type="string" value="diff " />
-      <match offset="0" type="string" value="***\t" />
-      <match offset="0" type="string" value="*** " />
-      <match offset="0" type="string" value="Only in\t" />
-      <match offset="0" type="string" value="Only in " />
-      <match offset="0" type="string" value="Common subdirectories: " />
-      <match offset="0" type="string" value="Index:" />
+      <match value="diff\t" type="string" offset="0" />
+      <match value="diff " type="string" offset="0" />
+      <match value="***\t" type="string" offset="0" />
+      <match value="*** " type="string" offset="0" />
+      <match value="Only in\t" type="string" offset="0" />
+      <match value="Only in " type="string" offset="0" />
+      <match value="Common subdirectories: " type="string" offset="0" />
+      <match value="Index:" type="string" offset="0" />
     </magic>
     <glob pattern="*.diff" />
     <glob pattern="*.patch" />
   </mime-type>
   <mime-type type="text/x-readme">
     <comment>README document</comment>
+    <comment xml:lang="az">README sənədi</comment>
     <comment xml:lang="cy">Dogfen README</comment>
     <comment xml:lang="fi">LUEMINUT-asiakirja</comment>
     <comment xml:lang="fr">document README</comment>
@@ -3828,6 +4002,7 @@
   </mime-type>
   <mime-type type="text/x-scheme">
     <comment>Scheme source code</comment>
+    <comment xml:lang="az">Sxem mənbə kodu</comment>
     <comment xml:lang="cy">Ffynhonnell Rhaglen Scheme</comment>
     <comment xml:lang="fi">Scheme-lähdekoodi</comment>
     <comment xml:lang="fr">code source Scheme</comment>
@@ -3841,6 +4016,7 @@
   </mime-type>
   <mime-type type="text/x-setext">
     <comment>Setext document</comment>
+    <comment xml:lang="az">Setext sənədi</comment>
     <comment xml:lang="cy">Dogfen Setext</comment>
     <comment xml:lang="fi">Setext-asiakirja</comment>
     <comment xml:lang="fr">document Setext</comment>
@@ -3854,6 +4030,7 @@
   </mime-type>
   <mime-type type="text/x-speech">
     <comment>Speech document</comment>
+    <comment xml:lang="az">Danışıq sənədi</comment>
     <comment xml:lang="cy">Dogfen leferydd</comment>
     <comment xml:lang="fi">puheasiakirja</comment>
     <comment xml:lang="fr">document Speech</comment>
@@ -3866,6 +4043,7 @@
   </mime-type>
   <mime-type type="text/x-sql">
     <comment>SQL code</comment>
+    <comment xml:lang="az">SQL kodu</comment>
     <comment xml:lang="cy">Côd SQL</comment>
     <comment xml:lang="fi">SQL-koodi</comment>
     <comment xml:lang="fr">code SQL</comment>
@@ -3893,6 +4071,7 @@
   </mime-type>
   <mime-type type="text/x-texinfo">
     <comment>TeXInfo document</comment>
+    <comment xml:lang="az">TeXInfo sənədi</comment>
     <comment xml:lang="cy">Dogfen TeXInfo</comment>
     <comment xml:lang="fi">TeXInfo-asiakirja</comment>
     <comment xml:lang="fr">document TeXInfo</comment>
@@ -3933,6 +4112,7 @@
   </mime-type>
   <mime-type type="text/x-vcalendar">
     <comment>vCalendar interchange file</comment>
+    <comment xml:lang="az">vCalendar dəyişmə faylı</comment>
     <comment xml:lang="cy">Ffeil gyfnewid vCalendar</comment>
     <comment xml:lang="fi">vCalendar-välitystiedosto</comment>
     <comment xml:lang="fr">fichier « vCalendar interchange »</comment>
@@ -3942,8 +4122,8 @@
     <comment xml:lang="sr">Датотека за vCalendar размену</comment>
     <comment xml:lang="sv">vCalendar-utbytesfil</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="BEGIN:VCALENDAR" />
-      <match offset="0" type="string" value="begin:vcalendar" />
+      <match value="BEGIN:VCALENDAR" type="string" offset="0" />
+      <match value="begin:vcalendar" type="string" offset="0" />
     </magic>
     <glob pattern="*.vcs" />
     <glob pattern="*.vcf" />
@@ -3952,14 +4132,15 @@
     <comment>electronic business card</comment>
     <comment xml:lang="no">elektronisk visittkort</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="BEGIN:VCARD" />
-      <match offset="0" type="string" value="begin:vcard" />
+      <match value="BEGIN:VCARD" type="string" offset="0" />
+      <match value="begin:vcard" type="string" offset="0" />
     </magic>
     <glob pattern="*.vct" />
     <glob pattern="*.gcrd" />
   </mime-type>
   <mime-type type="text/x-xslfo">
     <comment>XSL Formating Object file</comment>
+    <comment xml:lang="az">XSL Formatlama Cismi faylı</comment>
     <comment xml:lang="cy">Ffeil gwrthrych ffurfwedd XSL</comment>
     <comment xml:lang="fi">XSL-muotoiluobjektitiedosto</comment>
     <comment xml:lang="fr">fichier objet XSL Formating</comment>
@@ -3979,11 +4160,12 @@
   </mime-type>
   <mime-type type="text/xmcd">
     <magic priority="50">
-      <match offset="0" type="string" value="# xmcd" />
+      <match value="# xmcd" type="string" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="text/xml">
     <comment>eXtensible Markup Language document</comment>
+    <comment xml:lang="az">eXtensible Markup Language sənədi</comment>
     <comment xml:lang="cy">Dogfen XML (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language)</comment>
     <comment xml:lang="fi">laajennettava merkintäkielinen asiakirja (XML)</comment>
     <comment xml:lang="fr">document XML « eXtensible Markup Language »</comment>
@@ -3993,12 +4175,13 @@
     <comment xml:lang="sr">документ проширивог језика за означавање (XML)</comment>
     <comment xml:lang="sv">XML-dokument</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="&lt;?xml" />
+      <match value="&lt;?xml" type="string" offset="0" />
     </magic>
     <glob pattern="*.xml" />
   </mime-type>
   <mime-type type="video/isivideo">
     <comment>ISI video</comment>
+    <comment xml:lang="az">ISI video faylı</comment>
     <comment xml:lang="cy">Fideo ISI</comment>
     <comment xml:lang="fi">ISI-video</comment>
     <comment xml:lang="fr">vidéo ISI</comment>
@@ -4013,9 +4196,9 @@
     <comment>MPEG video</comment>
     <comment xml:lang="no">MPEG-film</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="\x47\x3f\xff\x10" />
-      <match offset="0" type="big32" value="0x000001b3" />
-      <match offset="0" type="big32" value="0x000001ba" />
+      <match value="\x47\x3f\xff\x10" type="string" offset="0" />
+      <match value="0x000001b3" type="big32" offset="0" />
+      <match value="0x000001ba" type="big32" offset="0" />
     </magic>
     <glob pattern="*.mpeg" />
     <glob pattern="*.mpg" />
@@ -4028,9 +4211,9 @@
     <comment>QuickTime video</comment>
     <comment xml:lang="no">Quicktime-film</comment>
     <magic priority="50">
-      <match offset="12" type="string" value="mdat" />
-      <match offset="4" type="string" value="mdat" />
-      <match offset="4" type="string" value="moov" />
+      <match value="mdat" type="string" offset="12" />
+      <match value="mdat" type="string" offset="4" />
+      <match value="moov" type="string" offset="4" />
     </magic>
     <glob pattern="*.qt" />
     <glob pattern="*.mov" />
@@ -4039,6 +4222,7 @@
   </mime-type>
   <mime-type type="video/vivo">
     <comment>Vivo video</comment>
+    <comment xml:lang="az">Vivo video faylı</comment>
     <comment xml:lang="cy">Fideo Vivo</comment>
     <comment xml:lang="fi">Vivo-video</comment>
     <comment xml:lang="fr">vidéo Vivo</comment>
@@ -4051,6 +4235,7 @@
   </mime-type>
   <mime-type type="video/wavelet">
     <comment>Wavelet video</comment>
+    <comment xml:lang="az">Wavelet video faylı</comment>
     <comment xml:lang="cy">Fideo Wavelet</comment>
     <comment xml:lang="fi">Wavelet-video</comment>
     <comment xml:lang="fr">vidéo Wavelet</comment>
@@ -4063,6 +4248,7 @@
   </mime-type>
   <mime-type type="video/x-anim">
     <comment>ANIM animation</comment>
+    <comment xml:lang="az">ANIM animasiyası</comment>
     <comment xml:lang="cy">Animeiddiad ANIM</comment>
     <comment xml:lang="fi">ANIM-animaatio</comment>
     <comment xml:lang="fr">animation ANIM</comment>
@@ -4076,6 +4262,7 @@
   </mime-type>
   <mime-type type="video/x-avi">
     <comment>AVI video</comment>
+    <comment xml:lang="az">AVI video faylı</comment>
     <comment xml:lang="cy">Fideo AVI</comment>
     <comment xml:lang="fi">AVI-video</comment>
     <comment xml:lang="fr">vidéo AVI</comment>
@@ -4090,8 +4277,8 @@
     <comment>AutoDesk FLIC animation</comment>
     <comment xml:lang="no">AutoDesk FLIC-animasjon</comment>
     <magic priority="50">
-      <match offset="0" type="little16" value="0xAF11" />
-      <match offset="0" type="little16" value="0xAF12" />
+      <match value="0xAF11" type="little16" offset="0" />
+      <match value="0xAF12" type="little16" offset="0" />
     </magic>
     <glob pattern="*.fli" />
     <glob pattern="*.flc" />
@@ -4107,11 +4294,12 @@
     <glob pattern="*.asf" />
     <glob pattern="*.asx" />
     <magic priority="50">
-      <match offset="0" type="big32" value="0x3026b275" />
+      <match value="0x3026b275" type="big32" offset="0" />
     </magic>
   </mime-type>
   <mime-type type="video/x-ms-wmv">
     <comment>Microsoft WMV video</comment>
+    <comment xml:lang="az">Microsoft WMV video faylı</comment>
     <comment xml:lang="cy">Video Microsoft WMV</comment>
     <comment xml:lang="fi">Microsoft WMV -video</comment>
     <comment xml:lang="fr">vidéo Microsoft WMV</comment>
@@ -4127,13 +4315,14 @@
     <comment>Microsoft AVI video</comment>
     <comment xml:lang="no">Microsoft AVI-film</comment>
     <magic priority="50">
-      <match offset="8" type="string" value="AVI " />
-      <match offset="0" type="string" value="RIFF" />
+      <match value="AVI " type="string" offset="8" />
+      <match value="RIFF" type="string" offset="0" />
     </magic>
     <glob pattern="*.avi" />
   </mime-type>
   <mime-type type="video/x-nsv">
     <comment>Nullsoft video</comment>
+    <comment xml:lang="az">Nullsoft video faylı</comment>
     <comment xml:lang="cy">Fideo Nullsoft</comment>
     <comment xml:lang="fi">Nullsoft-video</comment>
     <comment xml:lang="fr">vidéo Nullsoft</comment>
@@ -4144,13 +4333,14 @@
     <comment xml:lang="sr">Nullsoft видео</comment>
     <comment xml:lang="sv">Nullsoft-video</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="NSVf" />
+      <match value="NSVf" type="string" offset="0" />
     </magic>
     <glob pattern="*.nsv" />
     <glob pattern="*.NSV" />
   </mime-type>
   <mime-type type="video/x-real-video">
     <comment>RealVideo video</comment>
+    <comment xml:lang="az">RealVideo video faylı</comment>
     <comment xml:lang="cy">Fideo RealVideo</comment>
     <comment xml:lang="fi">RealVideo-video</comment>
     <comment xml:lang="fr">vidéo RealVideos</comment>
@@ -4163,6 +4353,7 @@
   </mime-type>
   <mime-type type="video/x-sgi-movie">
     <comment>SGI video</comment>
+    <comment xml:lang="az">SGI video faylı</comment>
     <comment xml:lang="cy">Video SGI</comment>
     <comment xml:lang="fi">SGI-video</comment>
     <comment xml:lang="fr">vidéo SGI</comment>
@@ -4173,7 +4364,7 @@
     <comment xml:lang="sr">SGI видео</comment>
     <comment xml:lang="sv">SGI-video</comment>
     <magic priority="50">
-      <match offset="0" type="string" value="MOVI" />
+      <match value="MOVI" type="string" offset="0" />
     </magic>
     <glob pattern="*.movie" />
   </mime-type>

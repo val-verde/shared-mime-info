@@ -55,6 +55,9 @@ struct _Type {
 /* Maps MIME type names to Types */
 static GHashTable *types = NULL;
 
+/* Maps "namespaceURI localName" strings to Types */
+static GHashTable *namespace_hash = NULL;
+
 /* Maps glob patterns to Types */
 static GHashTable *globs_hash = NULL;
 
@@ -134,21 +137,68 @@ static gboolean match_node(xmlNode *node,
 		return strcmp(node->name, localName) == 0 && !node->ns;
 }
 
-static gboolean validate_magic(xmlNode *parent)
+static gboolean has_non_empty_attr(xmlNode *node, const gchar *name,
+				   GError **error)
+{
+	guchar *value;
+
+	g_return_val_if_fail(error != NULL, FALSE);
+
+	/* xmlHasNsProp is broken */
+
+	value = xmlGetNsProp(node, name, NULL);
+	if (!value)
+	{
+		g_set_error(error, MIME_ERROR, 0,
+				_("Missing '%s' attribute in <match>"), name);
+		return FALSE;
+	}
+
+	if (!*value)
+		g_set_error(error, MIME_ERROR, 0,
+				_("'%s' attribute in <match> is empty"), name);
+
+	xmlFree(value);
+	
+	return !*error;
+}
+
+static gboolean validate_magic(xmlNode *parent, GError **error)
 {
 	xmlNode *node;
+
+	g_return_val_if_fail(error != NULL, FALSE);
+	g_return_val_if_fail(*error == NULL, FALSE);
 
 	for (node = parent->xmlChildrenNode; node; node = node->next)
 	{
 		if (node->type != XML_ELEMENT_NODE)
 			continue;
-		if (!xmlHasNsProp(node, "offset", NULL))
+
+		if (node->ns == NULL || strcmp(node->ns->href, FREE_NS) != 0)
+		{
+			g_set_error(error, MIME_ERROR, 0,
+				_("Element found with non-freedesktop.org "
+				  "namespace"));
 			return FALSE;
-		if (!xmlHasNsProp(node, "type", NULL))
+		}
+
+		if (strcmp(node->name, "match") != 0)
+		{
+			g_set_error(error, MIME_ERROR, 0,
+				_("Expected <match> element, but found "
+				  "<%s> instead"), node->name);
 			return FALSE;
-		if (!xmlHasNsProp(node, "value", NULL))
+		}
+				
+		if (!has_non_empty_attr(node, "offset", error))
 			return FALSE;
-		if (!validate_magic(node))
+		if (!has_non_empty_attr(node, "type", error))
+			return FALSE;
+		if (!has_non_empty_attr(node, "value", error))
+			return FALSE;
+
+		if (!validate_magic(node, error))
 			return FALSE;
 	}
 
@@ -164,7 +214,7 @@ static int get_priority(xmlNode *node)
 	if (prio_string)
 	{
 		p = atoi(prio_string);
-		g_free(prio_string);
+		xmlFree(prio_string);
 		if (p < 0 || p > 100)
 			return -1;
 		return p;
@@ -173,11 +223,53 @@ static int get_priority(xmlNode *node)
 		return 50;
 }
 
+static void add_namespace(Type *type, const guchar *namespaceURI,
+			  const guchar *localName, GError **error)
+{
+	g_return_if_fail(type != NULL);
+
+	if (!namespaceURI)
+	{
+		g_set_error(error, MIME_ERROR, 0,
+			_("Missing 'namespaceURI' attribute'"));
+		return;
+	}
+
+	if (!localName)
+	{
+		g_set_error(error, MIME_ERROR, 0,
+			_("Missing 'localName' attribute'"));
+		return;
+	}
+
+	if (!*namespaceURI && !*localName)
+	{
+		g_set_error(error, MIME_ERROR, 0,
+			_("namespaceURI and localName attributes can't "
+			  "both be empty"));
+		return;
+	}
+
+	if (strpbrk(namespaceURI, " \n") || strpbrk(localName, " \n"))
+	{
+		g_set_error(error, MIME_ERROR, 0,
+			_("namespaceURI and localName cannot contain "
+			  "spaces or newlines"));
+		return;
+	}
+
+	g_hash_table_insert(namespace_hash,
+			g_strconcat(namespaceURI, " ", localName, NULL),
+			type);
+}
+
 /* 'field' was found in the definition of 'type' and has the freedesktop.org
  * namespace. If it's a known field, process it and return TRUE, else
  * return FALSE to add it to the output XML document.
+ * On error, returns FALSE and sets 'error'.
  */
-static gboolean process_freedesktop_node(Type *type, xmlNode *field)
+static gboolean process_freedesktop_node(Type *type, xmlNode *field,
+					 GError **error)
 {
 	if (strcmp(field->name, "glob") == 0)
 	{
@@ -185,23 +277,34 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field)
 		
 		pattern = xmlGetNsProp(field, "pattern", NULL);
 
-		if (pattern)
+		if (pattern && *pattern)
 		{
 			g_hash_table_insert(globs_hash,
 					    g_strdup(pattern), type);
-			g_free(pattern);
+			xmlFree(pattern);
 		}
 		else
-			g_print("* Missing 'pattern' attribute in glob element "
-				"(type %s/%s)\n", type->media, type->subtype);
+		{
+			if (pattern)
+				xmlFree(pattern);
+			g_set_error(error, MIME_ERROR, 0,
+				_("Missing 'pattern' attribute in <glob> "
+				  "element"));
+		}
 	}
 	else if (strcmp(field->name, "magic") == 0)
 	{
 		xmlNode *copy;
 		gchar *type_name;
 
-		if (get_priority(field) != -1 && validate_magic(field))
+		if (get_priority(field) == -1)
+			g_set_error(error, MIME_ERROR, 0,
+				_("Bad priority in <magic> element"));
+		else if (validate_magic(field, error))
 		{
+			g_return_val_if_fail(error == NULL || *error == NULL,
+					     FALSE);
+
 			copy = xmlCopyNode(field, 1);
 			type_name = g_strconcat(type->media, "/",
 						type->subtype, NULL);
@@ -211,20 +314,33 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field)
 			g_ptr_array_add(magic, copy);
 		}
 		else
-			g_print("* Skipping invalid magic for type '%s/%s'\n",
-				type->media, type->subtype);
+			g_return_val_if_fail(error == NULL || *error != NULL,
+					     FALSE);
 	}
 	else if (strcmp(field->name, "comment") == 0)
 		return FALSE;	/* Copy through */
+	else if (strcmp(field->name, "root-XML") == 0)
+	{
+		char *namespaceURI, *localName;
+
+		namespaceURI = xmlGetNsProp(field, "namespaceURI", NULL);
+		localName = xmlGetNsProp(field, "localName", NULL);
+
+		add_namespace(type, namespaceURI, localName, error);
+
+		if (namespaceURI)
+			xmlFree(namespaceURI);
+		if (localName)
+			xmlFree(localName);
+	}
 	else
 	{
-		g_print("* Unknown freedesktop.org field '%s' "
-			"in type '%s/%s'\n",
-			  field->name, type->media, type->subtype);
-		return FALSE;
+		g_set_error(error, MIME_ERROR, 0,
+			_("Unknown freedesktop.org field '%s'"),
+			field->name);
 	}
 	
-	return TRUE;
+	return !error;
 }
 
 static gboolean has_lang(xmlNode *node, const char *lang)
@@ -237,7 +353,7 @@ static gboolean has_lang(xmlNode *node, const char *lang)
 
 	if (strcmp(lang, lang2) == 0)
 	{
-		g_free(lang2);
+		xmlFree(lang2);
 		return TRUE;
 	}
 	return FALSE;
@@ -271,7 +387,7 @@ static void remove_old(Type *type, xmlNode *new)
 		}
 	}
 
-	g_free(lang);
+	xmlFree(lang);
 }
 
 static void load_type(xmlNode *node)
@@ -284,12 +400,12 @@ static void load_type(xmlNode *node)
 	if (!type_name)
 	{
 		g_warning(_("mime-type element has no 'type' attribute\n"));
-		g_free(type_name);
+		xmlFree(type_name);
 		return;
 	}
 
 	type = get_type(type_name);
-	g_free(type_name);
+	xmlFree(type_name);
 
 	if (!type)
 		return;
@@ -297,13 +413,23 @@ static void load_type(xmlNode *node)
 	for (field = node->xmlChildrenNode; field; field = field->next)
 	{
 		xmlNode *copy;
+		GError *error = NULL;
 
 		if (field->type != XML_ELEMENT_NODE)
 			continue;
 
 		if (field->ns && strcmp(field->ns->href, FREE_NS) == 0)
-			if (process_freedesktop_node(type, field))
+			if (process_freedesktop_node(type, field, &error))
 				continue;
+
+		if (error)
+		{
+			g_print("* Error in type '%s/%s':\n"
+				"*   %s.\n", type->media, type->subtype,
+				error->message);
+			g_error_free(error);
+			continue;
+		}
 
 		copy = xmlDocCopyNode(field, type->output, 1);
 		
@@ -528,8 +654,8 @@ static gint cmp_magic(gconstpointer a, gconstpointer b)
 
 	retval = strcmp(type_a, type_b);
 
-	g_free(type_a);
-	g_free(type_b);
+	xmlFree(type_a);
+	xmlFree(type_b);
 
 	return retval;
 }
@@ -876,10 +1002,10 @@ static void write_magic_children(FILE *stream, xmlNode *parent, int indent,
 
 		fputc('\n', stream);
 
-		g_free(offset);
-		g_free(mask);
-		g_free(value);
-		g_free(type);
+		xmlFree(offset);
+		xmlFree(mask);
+		xmlFree(value);
+		xmlFree(type);
 
 		write_magic_children(stream, node, indent + 1, mime_type);
 	}
@@ -901,7 +1027,7 @@ static void write_magic(FILE *stream, xmlNode *node)
 
 	write_magic_children(stream, node, 0, type);
 
-	g_free(type);
+	xmlFree(type);
 }
 
 static void delete_old_types(const gchar *mime_dir)
@@ -946,6 +1072,39 @@ static void delete_old_types(const gchar *mime_dir)
 		
 		closedir(dir);
 	}
+}
+
+static void add_ns(gpointer key, gpointer value, gpointer data)
+{
+	GPtrArray *lines = (GPtrArray *) data;
+	const guchar *ns = (guchar *) key;
+	Type *type = (Type *) value;
+
+	g_ptr_array_add(lines, g_strconcat(ns, " ", type->media,
+					   "/", type->subtype, "\n", NULL));
+}
+
+static void write_namespaces(FILE *stream)
+{
+	GPtrArray *lines;
+	int i;
+	
+	lines = g_ptr_array_new();
+
+	g_hash_table_foreach(namespace_hash, add_ns, lines);
+
+	g_ptr_array_sort(lines, strcmp2);
+
+	for (i = 0; i < lines->len; i++)
+	{
+		char *line = (char *) lines->pdata[i];
+
+		fwrite(line, 1, strlen(line), stream);
+
+		g_free(line);
+	}
+
+	g_ptr_array_free(lines, TRUE);
 }
 
 int main(int argc, char **argv)
@@ -998,6 +1157,8 @@ int main(int argc, char **argv)
 					g_free, free_type);
 	globs_hash = g_hash_table_new_full(g_str_hash, g_str_equal,
 					g_free, NULL);
+	namespace_hash = g_hash_table_new_full(g_str_hash, g_str_equal,
+					g_free, NULL);
 	magic = g_ptr_array_new();
 
 	scan_source_dir(package_dir);
@@ -1013,7 +1174,8 @@ int main(int argc, char **argv)
 		globs_path = g_strconcat(mime_dir, "/globs.new", NULL);
 		globs = fopen(globs_path, "wb");
 		if (!globs)
-			g_error("Failed to open '%s' for writing\n", globs_path);
+			g_error("Failed to open '%s' for writing\n",
+				globs_path);
 		fprintf(globs,
 			"# This file was automatically generated by the\n"
 			"# update-mime-database command. DO NOT EDIT!\n");
@@ -1048,6 +1210,22 @@ int main(int argc, char **argv)
 		atomic_update(magic_path);
 		g_free(magic_path);
 	}
+	
+	{
+		FILE *stream;
+		char *ns_path;
+
+		ns_path = g_strconcat(mime_dir, "/XMLnamespaces.new", NULL);
+		stream = fopen(ns_path, "wb");
+		if (!stream)
+			g_error("Failed to open '%s' for writing\n",
+					ns_path);
+
+		write_namespaces(stream);
+
+		atomic_update(ns_path);
+		g_free(ns_path);
+	}
 
 	{
 		int i;
@@ -1058,6 +1236,7 @@ int main(int argc, char **argv)
 
 	g_hash_table_destroy(types);
 	g_hash_table_destroy(globs_hash);
+	g_hash_table_destroy(namespace_hash);
 
 	g_print("***\n");
 	

@@ -69,7 +69,7 @@ a particular application.
 		<para>
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be
-interpreted as described in RFC 2119.  
+interpreted as described in RFC 2119<citation>RFC-2119</citation>.
 		</para>
 	</sect2>
 </sect1>
@@ -651,14 +651,14 @@ The text/x-diff above example would (on its own) create this magic file:
 		<title>The XMLnamespaces files</title>
 		<para>
 Each <filename>XMLnamespaces</filename> file is a list of lines in the form:
-<screen>namespaceURI " " localName " " MIME-Type</screen>
+<screen>namespaceURI " " localName " " MIME-Type "\n"</screen>
 For example:
 <screen>
 http://www.w3.org/1999/xhtml html application/xhtml+xml
 </screen>
 The lines are sorted (using strcmp) and there are no lines with the same namespaceURI and
 localName in one file. If the localName was empty then there will be two spaces following
-the namespaceURI. Example:
+the namespaceURI.
 		</para>
 	</sect2>
 	<sect2>
@@ -786,11 +786,16 @@ Override.xml mentioned in <xref linkend="s2_layout"/>. Information such as
 		</citetitle>
 	</bibliomixed>
 	<bibliomixed>
-		<abbrev>SharedMIME</abbrev><citetitle>Shared MIME-info Database
+		<abbrev>SharedMIME</abbrev><citetitle>Shared MIME-info Database,
 		<ulink url="http://www.freedesktop.org/standards/shared-mime-info.html"/>
 		</citetitle>
 	</bibliomixed>
-
+	<bibliomixed>
+		<abbrev>RFC-2119</abbrev>
+		<citetitle>Key words for use in RFCs to Indicate Requirement Levels,
+		<ulink url="http://www.ietf.org/rfc/rfc2119.txt?number=2119"/>
+		</citetitle>
+	</bibliomixed>
 </bibliography>
 
 </article>

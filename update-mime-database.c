@@ -16,7 +16,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
-#define XML_NS "http://www.w3.org/XML/1998/namespace"
+#define XML_NS XML_XML_NAMESPACE
 #define XMLNS_NS "http://www.w3.org/2000/xmlns/"
 #define FREE_NS "http://www.freedesktop.org/standards/shared-mime-info"
 
@@ -95,6 +95,18 @@ static Type *get_type(const char *name)
 	return type;
 }
 
+static gboolean match_node(xmlNode *node,
+			   const char *namespaceURI,
+			   const char *localName)
+{
+	if (namespaceURI)
+		return node->ns &&
+			strcmp(node->ns->href, namespaceURI) == 0 &&
+			strcmp(node->name, localName) == 0;
+	else
+		return strcmp(node->name, localName) == 0 && !node->ns;
+}
+
 /* 'field' was found in the definition of 'type' and has the freedesktop.org
  * namespace. If it's a known field, process it and return TRUE, else
  * return FALSE to add it to the unknown fields list (copied to output).
@@ -125,9 +137,7 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field)
 		g_ptr_array_add(magic, copy);
 	}
 	else if (strcmp(field->name, "comment") == 0)
-	{
 		return FALSE;	/* Copy through */
-	}
 	else
 	{
 		g_warning("Unknown freedesktop.org field '%s' "
@@ -137,6 +147,57 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field)
 	}
 	
 	return TRUE;
+}
+
+static gboolean has_lang(xmlNode *node, const char *lang)
+{
+	char *lang2;
+
+	lang2 = xmlGetNsProp(node, "lang", XML_NS);
+	if (!lang2)
+		lang2 = xmlGetNsProp(node, "lang", NULL); /* (libxml) */
+	if (!lang2)
+		return !lang;
+
+	if (strcmp(lang, lang2) == 0)
+	{
+		g_free(lang2);
+		return TRUE;
+	}
+	return FALSE;
+}
+
+/* We're about to add 'new' to the list of fields to be output for the
+ * type. Remove any existing nodes which it replaces.
+ */
+static void remove_old(Type *type, xmlNode *new)
+{
+	GList *next;
+	gchar *lang;
+
+	if (new->ns == NULL || strcmp(new->ns->href, FREE_NS) != 0)
+		return;	/* No idea what we're doing -- leave it in! */
+
+	if (strcmp(new->name, "comment") != 0)
+		return;
+
+	lang = xmlGetNsProp(new, "lang", XML_NS);
+	if (!lang)
+		lang = xmlGetNsProp(new, "lang", NULL); /* (libxml) */
+
+	for (next = type->unknown; next; next = next->next)
+	{
+		xmlNode *node = (xmlNode *) next->data;
+
+		if (match_node(node, FREE_NS, "comment") &&
+		    has_lang(node, lang))
+		{
+			type->unknown = g_list_remove(type->unknown, node);
+			break;
+		}
+	}
+
+	g_free(lang);
 }
 
 static void load_type(xmlNode *node)
@@ -170,17 +231,25 @@ static void load_type(xmlNode *node)
 			if (process_freedesktop_node(type, field))
 				continue;
 
+		/* Note that libxml helpfully removes the namespace
+		 * from xml:lang when copying. Nice.
+		 */
 		copy = xmlCopyNode(field, 1);
+
+		remove_old(type, field);
 
 		type->unknown = g_list_append(type->unknown, copy);
 	}
 }
 
-#define CHECK_NODE(node, namespaceURI, localName) do { \
-if (strcmp(node->ns->href, namespaceURI) || strcmp(node->name, localName)) { \
-	g_warning(_("Wrong node namespace or name in %s\n"), filename);	     \
+#define CHECK_NODE(node, namespaceURI, localName) do {		\
+if (!match_node(node, namespaceURI, localName)) { 		\
+	g_warning(_("Wrong node namespace or name in %s\n"	\
+		    "Expected (%s,%s) but got (%s,%s)\n"),	\
+		    filename, namespaceURI, localName,		\
+		    node->ns ? (char *) node->ns->href : "none", node->name);\
 	goto out;							\
-} } while (0);
+}} while (0);
 
 static void load_source_file(const char *filename)
 {
@@ -482,8 +551,10 @@ int main(int argc, char **argv)
 		return EXIT_FAILURE;
 	}
 
-	types = g_hash_table_new_full(NULL, NULL, g_free, free_type);
-	globs_hash = g_hash_table_new_full(NULL, NULL, g_free, NULL);
+	types = g_hash_table_new_full(g_str_hash, g_str_equal,
+					g_free, free_type);
+	globs_hash = g_hash_table_new_full(g_str_hash, g_str_equal,
+					g_free, NULL);
 	magic = g_ptr_array_new();
 
 	scan_source_dir(package_dir);

@@ -34,15 +34,14 @@
 	</authorgroup>
 
 	<title>Shared MIME-info Database</title>
-	<date>04 Jul 2002</date>
+	<date>24 Jul 2002</date>
 </articleinfo>
 <sect1>
 	<title>Introduction</title>
 	<sect2>
 		<title>Version</title>
 		<para>
-This is version 0.8-preview of the Shared MIME-info Database spec, last updated 05
-Jul 2002.</para>
+This is version 0.8 of the Shared MIME-info Database spec, last updated 24 Jul 2002.</para>
 	</sect2>
 	<sect2>
 		<title>What is this spec?</title>
@@ -304,11 +303,11 @@ There are two important requirements for the way the MIME database is stored:
 			<itemizedlist>
 				<listitem><para>
 Applications must be able to extend the database in any way when they are installed,
-both to add new rules for determining type, and new information about specific types.
+to add both new rules for determining type, and new information about specific types.
 				</para></listitem>
 				<listitem><para>
-The user must be able to override the defaults set by the system administrator, who
-must, in turn, be able to override the defaults set by the distribution.
+It must be possible to install applications in /usr, /usr/local and the user's home directory
+(in the normal Unix way) and have the MIME information used.
 				</para></listitem>
 			</itemizedlist>
 		</para>
@@ -335,12 +334,12 @@ all the directries listed above. For example, <quote>Load all the
 		</para>
 		<para>
 Where the information from these files is conflicting, information from directories
-lower in the list take precedence.
+lower in the list takes precedence.
 		</para>
 		<para>
-Any file named <filename>User.xml</filename> takes precedence over all other files in
+Any file named <filename>Override.xml</filename> takes precedence over all other files in
 the same <filename>packages</filename> directory. Tools which let the user edit the
-database should edit the file <filename>~/mime/packages/User.xml</filename>.
+database should edit the file <filename>~/.mime/packages/Override.xml</filename>.
 		</para>
 		<para>
 Each application that wishes to contribute to the MIME database will install a
@@ -368,7 +367,12 @@ type, giving details about the type)
 				</para></listitem>
 			</itemizedlist>
 The format of these generated files and the source files in <filename>packages</filename>
-are explained in the following sections.
+are explained in the following sections. This step serves several purposes. First, it allows
+applications to quickly get the data they need without parsing all the source XML files (the
+base package alone is over 700K). Second, it allows the database to be used for other
+purposes (such as creating the <filename>/etc/mime.types</filename> if desired). Third, it
+allows some validation to be performed on the input data, and removes the need for other
+applications to carefully check the input for errors themselves.
 		</para>
 	</sect2>
 	<sect2>
@@ -393,10 +397,20 @@ whose name matches this pattern will be given this MIME type (subject to conflic
 other files, of course).
 				</para></listitem>
 				<listitem><para>
-<userinput>magic</userinput> elements have <userinput>offset</userinput>,
-<userinput>type</userinput>, <userinput>value</userinput> and, optionally,
-<userinput>mask</userinput> attributes.  Each magic element corresponds to one
-line of <citerefentry><refentrytitle>file</refentrytitle>
+<userinput>magic</userinput> elements contain a list of match elements, any of which may match,
+and an optional <userinput>priority</userinput> attribute for all of the contained rules. Low numbers
+should be used for more generic types (such as 'gzip compressed data') and higher values for specific
+subtypes (such as a word processor format that happens to use gzip to compress the file).
+The default priority value is 50.
+				</para><para>
+Each child element can be any of <userinput>string</userinput>, <userinput>host16</userinput>,
+<userinput>host32</userinput>, <userinput>big16</userinput>,
+<userinput>big32</userinput>, <userinput>little16</userinput>,
+<userinput>little32</userinput> or <userinput>byte</userinput>. Each of these elements has
+<userinput>offset</userinput>, <userinput>type</userinput>,
+<userinput>value</userinput> and, optionally, <userinput>mask</userinput>
+attributes. Each element corresponds to one line of
+<citerefentry><refentrytitle>file</refentrytitle>
 <manvolnum>1</manvolnum></citerefentry>'s <filename>magic.mime</filename> file.
 They can be nested in the same way to provide the equivalent of continuation
 lines.
@@ -407,21 +421,29 @@ type. There may be many of these elements with different <userinput>xml:lang</us
 to provide the text in multiple languages.
 				</para></listitem>
 			</itemizedlist>
+Applications may also define their own elements, provided they are namespaced to prevent collisions.
+Unknown elements are copied directly to the output XML files like <userinput>comment</userinput>
+elements.
 		</para><para>
-Here is an example source file, named <filename>mozilla.xml</filename>:
+Here is an example source file, named <filename>diff.xml</filename>:
 		<programlisting><![CDATA[
 <?xml version="1.0"?>
 <mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
-  <mime-type type='text/html'>
-    <glob pattern='*.html'/>
-    <glob pattern='*.htm'/>
-    <magic offset='0:64' type='string' value='<HEAD'/>
-    <comment>HTML page</comment>
-    <comment xml:lang='af'>html bladsy</comment>
+  <mime-type type="text/x-diff">
+    <comment>Differences between files</comment>
+    <comment xml:lang="af">verskille tussen lêers</comment>
+    ...
+    <magic priority="50">
+      <string offset="0" value="diff	"/>
+      <string offset="0" value="***	"/>
+      <string offset="0" value="Common subdirectories: "/>
+    </magic>
+    <glob pattern="*.diff"/>
+    <glob pattern="*.patch"/>
   </mime-type>
 </mime-info>
 ]]></programlisting>
-In practice, common types such as text/html are provided by the freedesktop.org shared
+In practice, common types such as text/x-diff are provided by the freedesktop.org shared
 database. Also, only new information needs to be provided, since this information will be merged
 with other information about the same type.
 		</para>
@@ -435,17 +457,32 @@ elements from the source files and creating one output file per MIME type. Each 
 information from multiple source files. The <userinput>magic</userinput> and
 <userinput>glob</userinput> elements will have been removed.
 		</para>
+		<para>
+The example source file given above would (on its own) create an output file called
+<filename>&lt;MIME&gt;/text/x-diff.xml</filename> containing the following:
+			<programlisting><![CDATA[
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-diff">
+<!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Differences between files</comment>
+  <comment lang="af">verskille tussen lêers</comment>
+  ...
+</mime-type>
+
+]]></programlisting>
+		</para>
 	</sect2>
 	<sect2>
 		<title>The glob files</title>
 		<para>
-This is a simple list of lines containing a glob pattern, whitespace, and a MIME type. For example:
+This is a simple list of lines containing a MIME type and pattern, separated by a colon.
+For example:
 			<programlisting><![CDATA[
-# Automatically generated by update-mime-database. DO NOT EDIT.
-
-*.html		text/html
-*.htm		text/html
-README*		text/x-readme
+# This file was automatically generated by the
+# update-mime-database command. DO NOT EDIT!
+...
+text/x-diff:*.diff
+text/x-diff:*.patch
 ...
 ]]></programlisting>
 		</para>
@@ -485,18 +522,31 @@ about its own types, conflicts should be rare.
 	<sect2>
 		<title>The magic files</title>
 		<para>
-These files have the same format as
+These files have a similar format to
 <citerefentry><refentrytitle>file</refentrytitle>
-<manvolnum>1</manvolnum></citerefentry>'s <filename>magic.mime</filename> file, except that
-the offset may be a range in the form START:END. The rule is considered to match if there is
-a match at either of these offsets, or at any offset in-between.
+<manvolnum>1</manvolnum></citerefentry>'s <filename>magic.mime</filename> file.
+Each line may be either a comment (starting with '#'), a new type (starting with '[') or
+a rule to match (anything else).
+		</para><para>
+Type lines are in the form "[" PRIORITY ":" TYPE "]".
+		</para><para>
+Match lines are in the form ">"* START [":" END] TAB TYPE ["&amp;" MASK] TAB VALUE.
+The offsets may be a range in the form START:END. The rule is considered to match if there is
+a match at either of these offsets, or at any offset in-between. The line may start with zero
+or more ">" characters, as for the normal file syntax. Whitespace in the value (after the tab)
+is significant, and fields are separated by exactly one tab character.
+		</para>
+		<para>
+The above example would create a magic file with these contents:
 			<programlisting><![CDATA[
-# Automatically generated by update-mime-database. DO NOT EDIT.
-
-0:64	string		\<HEAD		text/html
-0:64	string		\<head		text/html
-0:64	string		\<TITLE		text/html
-0:64	string		\<title		text/html
+# This file was automatically generated by the
+# update-mime-database command. DO NOT EDIT!
+...
+[50:text/x-diff]
+0	string	diff 
+0	string	*** 
+0	string	Common subdirectories: 
+...
 ]]></programlisting>
 		</para>
 	</sect2>
@@ -514,6 +564,17 @@ because the type looks `harmless' (eg, text/plain).
 Do not rely on two applications getting the same type for the same file, even
 if they both use this system. The spec allows some leeway in implementation,
 and in any case the programs may be following different versions of the spec.
+		</para>
+	</sect2>
+	<sect2>
+		<title>User preferences</title>
+		<para>
+The MIME database is NOT intended to store user preferences. Although users can edit the database,
+this is only to provide corrections and to allow them to install software themselves. Information such
+as "text/html files should be opened with Mozilla" should NOT go in the database. However, it may be
+used to store static information, such as "Mozilla can view text/html files",
+and even information such as "Galeon is the GNOME default text/html browser" (via an extension element
+with a GNOME namespace).
 		</para>
 	</sect2>
 </sect1>

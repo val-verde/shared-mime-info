@@ -397,10 +397,13 @@ static void write_magic_children(FILE *stream, xmlNode *parent, int indent)
 static void write_magic(FILE *stream, xmlNode *node)
 {
 	char *type;
+	int prio;
+
+	prio = get_priority(node);
 
 	type = xmlGetNsProp(node, "type", NULL);
 	g_return_if_fail(type != NULL);
-	fprintf(stream, "[%s]\n", type);
+	fprintf(stream, "[%d:%s]\n", prio, type);
 	g_free(type);
 
 	write_magic_children(stream, node, 0);
@@ -473,7 +476,7 @@ int main(int argc, char **argv)
 	{
 		FILE *stream;
 		char *magic_path;
-		int  i, last_prio = -1;
+		int  i;
 		magic_path = g_strconcat(mime_dir, "/magic", NULL);
 		stream = fopen(magic_path, "wb");
 		g_free(magic_path);
@@ -484,17 +487,9 @@ int main(int argc, char **argv)
 			g_ptr_array_sort(magic, cmp_prio);
 		for (i = 0; i < magic->len; i++)
 		{
-			int prio;
 			xmlNode *node = (xmlNode *) magic->pdata[i];
 
-			prio = get_priority(node);
-
-			if (prio != last_prio)
-				fprintf(stream, "[priority=%d]\n", prio);
-			
 			write_magic(stream, node);
-
-			last_prio = prio;
 		}
 		fclose(stream);
 	}

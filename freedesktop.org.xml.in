@@ -750,6 +750,10 @@ command to generate the output files.
     </magic>
     <glob pattern="*.class"/>
   </mime-type>
+  <mime-type type="application/x-javascript">
+    <_comment>Javascript program</_comment>
+    <glob pattern="*.js"/>
+  </mime-type>
   <mime-type type="application/x-jbuilder-project">
     <_comment>JBuilder project</_comment>
     <glob pattern="*.jpr"/>

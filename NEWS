@@ -1,9 +1,39 @@
-shared-mime-info	Version 0.9	29-Jul-2002
-
-Thomas Leonard <tal00r@ecs.soton.ac.uk>
+shared-mime-info		Thomas Leonard <tal00r@ecs.soton.ac.uk>
 
 
-Changes since version 0.8:
+			Version 0.10 (03-Mar-2003)
+
+* Change to half-text, half-binary format to make parsing the magic file
+  much easier.
+
+* Make it really clear that user prefs don't go in the database.
+
+* Require libxml 2.4.0 (not sure if it's needed, but older versions seem a
+  little buggy).
+
+* Fix problem where copying nodes lost the namespace (workaround for libxml
+  bug).
+
+* Added DTD to freedesktop.org.xml.
+
+* Spec was confused about whether a match type was an attribute or element
+  name. Settled on attribute and updated XML (makes the DTD easier this way).
+
+* Glob pattern for TGIF files.
+
+* Added application/x-cd-image (requested by Stefano Peluchetti).
+
+* Added text/x-uri (text/uri-list is used for something else).
+
+* Added more extensions for powerpoint (Stefano Peluchetti).
+
+* Marked AIFF as Amiga/Mac (Marcin Juszkiewicz), not just Amiga.
+
+* Added *.xsl glob (*.xslt was already allowed) and added xhtml MIME type
+  (requested by Vincent Lefevre).
+
+
+			Version 0.9 (29-Jul-2002)
 
 * Removed bashism in uninstall rule (reported by Filip Van Raemdonck).
 

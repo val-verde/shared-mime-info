@@ -313,7 +313,7 @@ The directories to be used to store the files in the database are:
 			</itemizedlist>
 In the rest of this document, paths shown with the prefix
 <filename>&lt;MIME&gt;</filename> indicate the files should be loaded from
-all the directries listed above. For example, <quote>Load all the
+all the directories listed above. For example, <quote>Load all the
 <filename>&lt;MIME&gt;/text/html.xml</filename> files</quote> means to load
 <filename>/usr/share/mime/text/html.xml</filename>,
 <filename>/usr/local/share/mime/text/html.xml</filename>, and

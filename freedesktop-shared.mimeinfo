@@ -301,7 +301,7 @@ Comment[zu]=Ayaziwa
 #
 # compacted data
 # huf output
-Contents=50:(or (string 0 "\037\036") (short 0 "017437") (short 0 "0x1fff") (string 0 "\377\037") (short 0 "0145405"))
+Contents=50:(or (string 0 "\037\036") (host16 0 "017437") (host16 0 "0x1fff") (string 0 "\377\037") (host16 0 "0145405"))
 Patterns=*.bin
 
 [MIME-Info application/oda]
@@ -1417,7 +1417,7 @@ Comment[xx]=xx
 Comment[zh_CN]=WordPerfect 文档
 Comment[zh_TW]=WordPerfect 文件
 Comment[zu]=Idokumente ye WordPerfect
-Contents=50:(or (string 1 "WPC") (belong 0 "0xff575053c405"))
+Contents=50:(or (string 1 "WPC") (big32 0 "0xff575053c405"))
 Patterns=*.wpd
 
 [MIME-Info application/x-abiword]
@@ -1629,7 +1629,7 @@ Patterns=*.aw
 # packed
 # squeezed
 # crunched
-Contents=50:(or (lelong 0 "0x0000081a" 0x8080ffff) (lelong 0 "0x0000091a" 0x8080ffff) (lelong 0 "0x0000021a" 0x8080ffff) (lelong 0 "0x0000031a" 0x8080ffff) (lelong 0 "0x0000041a" 0x8080ffff) (lelong 0 "0x0000061a" 0x8080ffff))
+Contents=50:(or (little32 0 "0x0000081a" 0x8080ffff) (little32 0 "0x0000091a" 0x8080ffff) (little32 0 "0x0000021a" 0x8080ffff) (little32 0 "0x0000031a" 0x8080ffff) (little32 0 "0x0000041a" 0x8080ffff) (little32 0 "0x0000061a" 0x8080ffff))
 
 [MIME-Info application/x-archive]
 Comment=Ar Archives
@@ -1749,7 +1749,7 @@ Comment[xh]=Ushicilelo lukawonke-wonke kunye nexwebhu le Mbali ye ARJ
 Comment[xx]=xx
 Comment[zh_CN]=ARJ 归档文件
 Comment[zh_TW]=ARJ 壓縮檔案
-Contents=50:(leshort 0 "0xea60")
+Contents=50:(little16 0 "0xea60")
 Patterns=*.arj
 
 [MIME-Info application/x-asp]
@@ -2286,7 +2286,7 @@ Comment[zu]=Idata yeprogremu yedata eshabalile
 # UNIX core dump file may produce too many false hits, so we include one
 # byte of the version number as well; DU 5.0 appears only to be up to
 # version 2.
-Contents=50:(or (or (string 0 "\177ELF            \004" 0xffffffff000000000000000000000000ff) (and (string 0 "\177ELF") (byte 5 "1") (leshort 16 "4"))) (and (string 0 "\177ELF") (byte 5 "2") (beshort 16 "4")) (string 0 "Core\001") (string 0 "Core\002"))
+Contents=50:(or (or (string 0 "\177ELF            \004" 0xffffffff000000000000000000000000ff) (and (string 0 "\177ELF") (byte 5 "1") (little16 16 "4"))) (and (string 0 "\177ELF") (byte 5 "2") (big16 16 "4")) (string 0 "Core\001") (string 0 "Core\002"))
 Patterns=core
 
 [MIME-Info application/x-cpio]
@@ -2347,7 +2347,7 @@ Comment[xx]=xx
 Comment[zh_CN]=CPIO 归档文件
 Comment[zh_TW]=CPIO 壓縮檔案
 #swapped
-Contents=50:(or (short 0 "070707") (string 0 "070701") (string 0 "070702") (short 0 "0143561"))
+Contents=50:(or (host16 0 "070707") (string 0 "070701") (string 0 "070702") (host16 0 "0143561"))
 Patterns=*.cpio
 
 [MIME-Info application/x-cpio-compressed]
@@ -2428,7 +2428,7 @@ Comment[sv]=dBASE-dokument
 Patterns=*.dbf
 
 [MIME-Info application/x-dbm]
-Contents=50:(belong 0 "0x061561")
+Contents=50:(big32 0 "0x061561")
 
 [MIME-Info application/x-dc-rom]
 Comment=Dreamcast rom
@@ -2702,7 +2702,7 @@ Comment[zu]=Ifayile Ezimeleyo yecebo le TeX
 # correct TeX magic for Linux (and maybe more)
 # from Peter Tobias (tobias@server.et-inf.fho-emden.de)
 #
-Contents=50:(or (string 0 "\367\002") (leshort 0 "0x02f7"))
+Contents=50:(or (string 0 "\367\002") (little16 0 "0x02f7"))
 Patterns=*.dvi
 
 [MIME-Info application/x-e-theme]
@@ -2851,7 +2851,7 @@ Comment[zu]=Ephumelelisiwe
 # From ignatios@cs.uni-bonn.de (Ignatios Souvatzis)
 # Some formats are still missing: AmigaOS special IFF's, e.g.: FORM....CTLG
 # (the others should be separate, anyway)
-Contents=50:(or (or (or (or (or (or (or (or (or (or (or (or (or (or (or (string 0 "\177ELF") (string 0 "MZ")) (and (string 0 "\177ELF") (byte 5 "1") (leshort 16 "2"))) (and (string 0 "\177ELF") (byte 5 "2") (beshort 16 "2")) (string 0 "MZ") (leshort 0 "0x521c")) (and (leshort 0 "0x521c") (lelong 18 "&02"))) (and (leshort 0 "0x521c") (lelong 18 "^02") (lelong 18 "&01"))) (and (leshort 0 "0x521c") (lelong 18 "^02") (lelong 18 "^01"))) (and (leshort 0 "0x521c") (lelong 18 "&010"))) (and (leshort 0 "0x521c") (lelong 18 "^010")) (short 0 "0420") (short 0 "0421") (leshort 0 "0603")) (and (leshort 0 "0603") (leshort 22 "!020000" 030000))) (and (leshort 0 "0603") (leshort 24 "0410"))) (and (leshort 0 "0603") (leshort 24 "0413"))) (and (leshort 0 "0603") (leshort 22 "!0" 020000))) (and (leshort 0 "0603") (lelong 16 "!0"))) (and (leshort 0 "0603") (lelong 16 "0"))) (and (leshort 0 "0603") (leshort 24 "0407")) (belong 0 "0x000003f3"))
+Contents=50:(or (or (or (or (or (or (or (or (or (or (or (or (or (or (or (string 0 "\177ELF") (string 0 "MZ")) (and (string 0 "\177ELF") (byte 5 "1") (little16 16 "2"))) (and (string 0 "\177ELF") (byte 5 "2") (big16 16 "2")) (string 0 "MZ") (little16 0 "0x521c")) (and (little16 0 "0x521c") (little32 18 "&02"))) (and (little16 0 "0x521c") (little32 18 "^02") (little32 18 "&01"))) (and (little16 0 "0x521c") (little32 18 "^02") (little32 18 "^01"))) (and (little16 0 "0x521c") (little32 18 "&010"))) (and (little16 0 "0x521c") (little32 18 "^010")) (host16 0 "0420") (host16 0 "0421") (little16 0 "0603")) (and (little16 0 "0603") (little16 22 "!020000" 030000))) (and (little16 0 "0603") (little16 24 "0410"))) (and (little16 0 "0603") (little16 24 "0413"))) (and (little16 0 "0603") (little16 22 "!0" 020000))) (and (little16 0 "0603") (little32 16 "!0"))) (and (little16 0 "0603") (little32 16 "0"))) (and (little16 0 "0603") (little16 24 "0407")) (big32 0 "0x000003f3"))
 Patterns=*.exe
 
 [MIME-Info application/x-font]
@@ -3414,7 +3414,7 @@ Patterns=*.gb
 # GDBM magic numbers
 #  Will be maintained as part of the GDBM distribution in the future.
 #  <downsj@teeny.org>
-Contents=50:(or (belong 0 "0x13579ace") (lelong 0 "0x13579ace") (string 0 "GDBM"))
+Contents=50:(or (big32 0 "0x13579ace") (little32 0 "0x13579ace") (string 0 "GDBM"))
 
 [MIME-Info application/x-genesis-rom]
 Comment=Genesis rom
@@ -3923,7 +3923,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Java 类
 Comment[zu]=Iqoqo lwe Java
 # Java
-Contents=50:(or (string 0 "\312\376\272\276") (and (short 0 "0xcafe") (short 2 "0xbabe")))
+Contents=50:(or (string 0 "\312\376\272\276") (and (host16 0 "0xcafe") (host16 2 "0xbabe")))
 Patterns=*.class
 
 [MIME-Info application/x-jbuilder-project]
@@ -4250,7 +4250,7 @@ Comment[xx]=xx
 Comment[zh_CN]=KSpread 加密
 Comment[zh_TW]=編碼過的 KSpread 文件
 Comment[zu]=i KSpread enombhalo ofihlakeleyo
-Contents=50:(belong 0 "0x0d1a2702")
+Contents=50:(big32 0 "0x0d1a2702")
 
 [MIME-Info application/x-ksysv-package]
 # KSysV init packages
@@ -4373,7 +4373,7 @@ Comment[zh_CN]=KWord 加密
 Comment[zh_TW]=編碼過的 KWord 文件
 Comment[zu]=i KWord enombhalo ofihlakeleyo
 # KOffice:
-Contents=50:(belong 0 "0x0d1a2701")
+Contents=50:(big32 0 "0x0d1a2701")
 
 [MIME-Info application/x-lha]
 Comment=Lha Archives
@@ -4894,7 +4894,7 @@ Comment[xx]=xx
 Comment[zh_CN]=目标代码
 Comment[zu]=Ikhowudi Yenhloso
 # Executables
-Contents=50:(or (and (string 0 "\177ELF") (byte 5 "1") (leshort 16 "1")) (and (string 0 "\177ELF") (byte 5 "2") (beshort 16 "1")))
+Contents=50:(or (and (string 0 "\177ELF") (byte 5 "1") (little16 16 "1")) (and (string 0 "\177ELF") (byte 5 "2") (big16 16 "1")))
 Patterns=*.o
 
 [MIME-Info application/x-ogg]
@@ -5354,7 +5354,7 @@ Comment[vi]=Bytecode Python
 Comment[xh]=Ikhowudi yebyte yenyoka enkulu engenancindi inetyhefu ebulala ixhoba ngokulisonga
 Comment[xx]=xx
 Comment[zh_CN]=Python 字节码
-Contents=50:(belong 0 "0x994e0d0a")
+Contents=50:(big32 0 "0x994e0d0a")
 Patterns=*.pyc;*.pyo
 
 [MIME-Info application/x-quattropro]
@@ -5593,7 +5593,7 @@ Comment[zh_CN]=RPM 包文件
 Comment[zh_TW]=RPM 套件檔案
 Comment[zu]=Ifayiela elipakishiwe le RPM
 # The below ignores the details available (architecture, type, version)
-Contents=50:(or (string 0 "\xed\xab\xee\xdb") (and (beshort 0 "0xedab") (beshort 2 "0xeedb")))
+Contents=50:(or (string 0 "\xed\xab\xee\xdb") (and (big16 0 "0xedab") (big16 2 "0xeedb")))
 Patterns=*.rpm
 
 [MIME-Info application/x-sc]
@@ -5756,7 +5756,7 @@ Comment[xx]=xx
 Comment[zh_CN]=共享库
 Comment[zh_TW]=共享程式庫
 Comment[zu]=Isitholalwazi Ehlkukanisayo
-Contents=50:(or (or (or (or (or (or (and (string 0 "\177ELF") (byte 5 "1") (leshort 16 "3")) (and (string 0 "\177ELF") (byte 5 "2") (beshort 16 "3"))) (and (short 0 "0420") (short 2 "&0x0020"))) (and (short 0 "0420") (long 16 ">0"))) (and (short 0 "0421") (short 2 "&0x0020"))) (and (short 0 "0421") (long 16 ">0"))) (and (leshort 0 "0603") (leshort 22 "020000" 030000)) (belong 0 "0x000003e7"))
+Contents=50:(or (or (or (or (or (or (and (string 0 "\177ELF") (byte 5 "1") (little16 16 "3")) (and (string 0 "\177ELF") (byte 5 "2") (big16 16 "3"))) (and (host16 0 "0420") (host16 2 "&0x0020"))) (and (host16 0 "0420") (host32 16 ">0"))) (and (host16 0 "0421") (host16 2 "&0x0020"))) (and (host16 0 "0421") (host32 16 ">0"))) (and (little16 0 "0603") (little16 22 "020000" 030000)) (big32 0 "0x000003e7"))
 
 [MIME-Info application/x-shellscript]
 Comment=shell script
@@ -6913,7 +6913,7 @@ Comment[zh_TW]=Zoo 壓縮文件
 # Zoo archiver
 # DF: the continuation lines are a bit useless, since the mimetype is
 # already set at the top level -> commenting out.
-Contents=50:(or (string 20 "\375\304\247\334") (lelong 20 "0xfdc4a7dc"))
+Contents=50:(or (string 20 "\375\304\247\334") (little32 20 "0xfdc4a7dc"))
 Patterns=*.zoo
 
 [MIME-Info application/zip]
@@ -7060,7 +7060,7 @@ Comment[zu]=ULAW (Ilanga) ezwakalayo
 # audio:  file(1) magic for sound formats
 # from Jan Nicolai Langfeldt <janl@ifi.uio.no>,
 # Sun/NeXT audio data
-Contents=50:(or (or (or (or (or (or (or (string 0 ".snd") (and (string 0 ".snd") (belong 12 "1"))) (and (string 0 ".snd") (belong 12 "2"))) (and (string 0 ".snd") (belong 12 "3"))) (and (string 0 ".snd") (belong 12 "4"))) (and (string 0 ".snd") (belong 12 "5"))) (and (string 0 ".snd") (belong 12 "6"))) (and (string 0 ".snd") (belong 12 "7")))
+Contents=50:(or (or (or (or (or (or (or (string 0 ".snd") (and (string 0 ".snd") (big32 12 "1"))) (and (string 0 ".snd") (big32 12 "2"))) (and (string 0 ".snd") (big32 12 "3"))) (and (string 0 ".snd") (big32 12 "4"))) (and (string 0 ".snd") (big32 12 "5"))) (and (string 0 ".snd") (big32 12 "6"))) (and (string 0 ".snd") (big32 12 "7")))
 Patterns=*.au;*.snd
 
 [MIME-Info audio/prs.sid]
@@ -7199,7 +7199,7 @@ Comment[zu]=PCM ezwakalayo
 # that uses little-endian encoding and has a different magic number
 # (0x0064732E in little-endian encoding).
 #                                       compressed (G.721 ADPCM)
-Contents=50:(or (or (or (or (or (or (or (or (and (string 0 ".snd") (belong 12 "23")) (and (lelong 0 "0x0064732E") (lelong 12 "1"))) (and (lelong 0 "0x0064732E") (lelong 12 "2"))) (and (lelong 0 "0x0064732E") (lelong 12 "3"))) (and (lelong 0 "0x0064732E") (lelong 12 "4"))) (and (lelong 0 "0x0064732E") (lelong 12 "5"))) (and (lelong 0 "0x0064732E") (lelong 12 "6"))) (and (lelong 0 "0x0064732E") (lelong 12 "7"))) (and (lelong 0 "0x0064732E") (lelong 12 "23")))
+Contents=50:(or (or (or (or (or (or (or (or (and (string 0 ".snd") (big32 12 "23")) (and (little32 0 "0x0064732E") (little32 12 "1"))) (and (little32 0 "0x0064732E") (little32 12 "2"))) (and (little32 0 "0x0064732E") (little32 12 "3"))) (and (little32 0 "0x0064732E") (little32 12 "4"))) (and (little32 0 "0x0064732E") (little32 12 "5"))) (and (little32 0 "0x0064732E") (little32 12 "6"))) (and (little32 0 "0x0064732E") (little32 12 "7"))) (and (little32 0 "0x0064732E") (little32 12 "23")))
 
 [MIME-Info audio/x-aifc]
 Comment=AIFC audio
@@ -7519,7 +7519,7 @@ Comment[zh_CN]=MP3 音频文件
 Comment[zu]=MPEG layer 3 ezwakalayo
 # MPEG Layer 3 sound files
 # Modified the 11/20/97 at 15:59:04 by Christophe Prud'homme <christophe.prudhomme@asci.fr>
-Contents=50:(or (belong 0 "0xfffb") (string 0 "ID3") (beshort 0 "0xfff0" 0xfff0))
+Contents=50:(or (big32 0 "0xfffb") (string 0 "ID3") (big16 0 "0xfff0" 0xfff0))
 Patterns=*.mp3
 
 [MIME-Info audio/x-mp3-playlist]
@@ -7696,7 +7696,7 @@ Comment[zh_CN]=RealAudio 广播
 Comment[zh_TW]=RealAudio 廣播
 Comment[zu]=Ukusakaza Kwangempela Okuzwakalayo
 #
-Contents=50:(or (string 0 ".ra\375") (belong 0 "0x2e7261fd"))
+Contents=50:(or (string 0 ".ra\375") (big32 0 "0x2e7261fd"))
 Patterns=*.ra;*.ram;*.rm
 
 [MIME-Info audio/x-riff]
@@ -8347,7 +8347,7 @@ Comment[xx]=xx
 Comment[zh_CN]=JPEG 图像
 Comment[zh_TW]=JPEG 影像
 Comment[zu]=Umfanekiso we JPEG
-Contents=50:(or (string 0 "\377\330\377") (beshort 0 "0xffd8"))
+Contents=50:(or (string 0 "\377\330\377") (big16 0 "0xffd8"))
 Patterns=*.jpeg;*.jpg;*.jpe
 
 [MIME-Info image/png]
@@ -13312,7 +13312,7 @@ Comment[xx]=xx
 Comment[zh_CN]=MPEG 视频文件
 Comment[zh_TW]=MPEG 視頻文件
 Comment[zu]=MPEG Vidiyo
-Contents=50:(or (string 0 "\000\000\001\272") (string 0 "\000\000\001\263") (string 0 "\x47\x3f\xff\x10") (belong 0 "0x000001b3") (belong 0 "0x000001ba"))
+Contents=50:(or (string 0 "\000\000\001\272") (string 0 "\000\000\001\263") (string 0 "\x47\x3f\xff\x10") (big32 0 "0x000001b3") (big32 0 "0x000001ba"))
 Patterns=*.mpeg;*.mpg;*.mp2;*.mpe;*.vob;*.dat
 
 [MIME-Info video/quicktime]
@@ -13557,7 +13557,7 @@ Comment[zh_TW]=Autodesk FLIC 文件
 Comment[zu]=Amafayela e Autodesk's FLIC files
 # FLI animation format
 # FLC animation format
-Contents=50:(or (string 4 "\x11\xAF") (string 4 "\x12\xAF") (leshort 0 "0xAF11") (leshort 0 "0xAF12"))
+Contents=50:(or (string 4 "\x11\xAF") (string 4 "\x12\xAF") (little16 0 "0xAF11") (little16 0 "0xAF12"))
 Patterns=*.fli;*.flc
 
 [MIME-Info video/x-mng]

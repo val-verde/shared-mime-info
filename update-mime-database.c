@@ -323,7 +323,7 @@ static gboolean has_lang(xmlNode *node, const char *lang)
 	if (!lang2)
 		return !lang;
 
-	if (strcmp(lang, lang2) == 0)
+	if (lang && strcmp(lang, lang2) == 0)
 	{
 		xmlFree(lang2);
 		return TRUE;

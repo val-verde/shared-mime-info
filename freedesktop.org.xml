@@ -2042,7 +2042,7 @@ command to generate the output files.
     <glob pattern="*.tar.bz2"/>
   </mime-type>
   <mime-type type="application/x-cd-image">
-    <comment>A raw CD image</comment>
+    <comment>Raw CD image</comment>
     <glob pattern="*.iso"/>
   </mime-type>
   <mime-type type="application/x-cgi">
@@ -10957,39 +10957,6 @@ command to generate the output files.
     <comment xml:lang="xx">xx</comment>
     <comment xml:lang="zh_CN">数据流(服务器推)</comment>
     <comment xml:lang="zu">Ukutanta kwedata (ukududula komlekeleli)</comment>
-  </mime-type>
-  <mime-type type="text/abiword">
-    <comment>AbiWord document</comment>
-    <comment xml:lang="az">AbiWord sənədi</comment>
-    <comment xml:lang="ca">document AbiWord</comment>
-    <comment xml:lang="da">AbiWord-dokument</comment>
-    <comment xml:lang="de">AbiWord-Dokument</comment>
-    <comment xml:lang="el">Έγγραφο AbiWord</comment>
-    <comment xml:lang="es">documento de AbiWord</comment>
-    <comment xml:lang="et">AbiWord dokument</comment>
-    <comment xml:lang="fi">AbiWord-asiakirja</comment>
-    <comment xml:lang="fr">Document AbiWord</comment>
-    <comment xml:lang="gl">Documento do AbiWord</comment>
-    <comment xml:lang="hu">AbiWord dokumentum</comment>
-    <comment xml:lang="it">Documento AbiWord</comment>
-    <comment xml:lang="ja">AbiWord ドキュメント</comment>
-    <comment xml:lang="ko">AbiWord 문서</comment>
-    <comment xml:lang="lt">AbiWord dokumentas</comment>
-    <comment xml:lang="ms">Dokumen AbiWord</comment>
-    <comment xml:lang="nl">AbiWord document</comment>
-    <comment xml:lang="nn">AbiWord-dokument</comment>
-    <comment xml:lang="no">AbiWord-dokument</comment>
-    <comment xml:lang="pl">Dokument AbiWord</comment>
-    <comment xml:lang="pt">Documento AbiWord</comment>
-    <comment xml:lang="ro">Document AbiWord</comment>
-    <comment xml:lang="ru">Документ формата AbiWord</comment>
-    <comment xml:lang="sk">dokument AbiWord</comment>
-    <comment xml:lang="sl">dokument AbiWord-a</comment>
-    <comment xml:lang="sv">AbiWord-dokument</comment>
-    <comment xml:lang="tr">AbiWord belgesi</comment>
-    <comment xml:lang="uk">документ AbiWord</comment>
-    <comment xml:lang="wa">documint Abiword</comment>
-    <comment xml:lang="zh">AbiWord文档</comment>
   </mime-type>
   <mime-type type="text/calendar">
     <comment>iCalendar file</comment>

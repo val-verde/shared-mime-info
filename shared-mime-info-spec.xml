@@ -315,25 +315,18 @@ It must be possible to install applications in /usr, /usr/local and the user's h
 			</itemizedlist>
 		</para>
 		<para>
-The directories to be used to store the files in the database are:
-			<itemizedlist>
-				<listitem><para>
-<filename>/usr/share/mime/</filename>
-				</para></listitem>
-				<listitem><para>
-<filename>/usr/local/share/mime/</filename>
-				</para></listitem>
-				<listitem><para>
-<filename>~/.mime/</filename>
-				</para></listitem>
-			</itemizedlist>
+This specification uses the XDG Base Directory Specification<citation>BaseDir</citation> to
+define the prefixes below which the database is stored.
 In the rest of this document, paths shown with the prefix
 <filename>&lt;MIME&gt;</filename> indicate the files should be loaded from
-all the directories listed above. For example, <quote>Load all the
-<filename>&lt;MIME&gt;/text/html.xml</filename> files</quote> means to load
-<filename>/usr/share/mime/text/html.xml</filename>,
+the <filename>mime</filename> subdirectory of every directory in <envar>XDG_DIRS</envar>.
+		</para>
+		<para>
+For example, when using the default paths, <quote>Load all the
+<filename>&lt;MIME&gt;/text/html.xml</filename> files</quote> means to
+load <filename>/usr/share/mime/text/html.xml</filename>,
 <filename>/usr/local/share/mime/text/html.xml</filename>, and
-<filename>~/.mime/text/html.xml</filename> (if they exist).
+<filename>~/.share/mime/text/html.xml</filename> (if they exist).
 		</para>
 		<para>
 Each application that wishes to contribute to the MIME database will install a
@@ -353,8 +346,9 @@ subdirectory, combines the information in them, and creates a number of output f
 Where the information from these files is conflicting, information from directories
 lower in the list takes precedence.
 Any file named <filename>Override.xml</filename> takes precedence over all other files in
-the same <filename>packages</filename> directory. Tools which let the user edit the
-database should edit the file <filename>~/.mime/packages/Override.xml</filename>.
+the same <filename>packages</filename> directory. This can be used by
+tools which let the user edit the database to ensure that the user's
+changes take effect.
 		</para>
 		<para>
 The files created by <command>update-mime-database</command> are:
@@ -794,6 +788,12 @@ Override.xml mentioned in <xref linkend="s2_layout"/>. Information such as
 		<abbrev>RFC-2119</abbrev>
 		<citetitle>Key words for use in RFCs to Indicate Requirement Levels,
 		<ulink url="http://www.ietf.org/rfc/rfc2119.txt?number=2119"/>
+		</citetitle>
+	</bibliomixed>
+	<bibliomixed>
+		<abbrev>BaseDir</abbrev>
+		<citetitle>XDG Base Directory Specification
+		<ulink url="http://www.freedesktop.org/standards/basedir/draft/basedir-spec/basedir-spec.html"/>
 		</citetitle>
 	</bibliomixed>
 </bibliography>

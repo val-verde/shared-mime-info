@@ -708,7 +708,7 @@ command to generate the output files.
     <glob pattern="*.gmo"/>
   </mime-type>
   <mime-type type="application/x-glade">
-    <sub-class-of type="text/plain"/>
+    <sub-class-of type="text/xml"/>
     <_comment>Glade project</_comment>
     <glob pattern="*.glade"/>
   </mime-type>

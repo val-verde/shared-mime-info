@@ -3124,7 +3124,7 @@
     <glob pattern="*.gmo"/>
   </mime-type>
   <mime-type type="application/x-glade">
-    <sub-class-of type="text/plain"/>
+    <sub-class-of type="text/xml"/>
     <comment>Glade project</comment>
     <comment xml:lang="az">Glade layihəsi</comment>
     <comment xml:lang="bg">Проектен файл, формат Glade</comment>

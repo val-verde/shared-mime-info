@@ -1,3 +1,9 @@
+2004-12-02  Christophe Fergeau  <teuf@gnome.org>
+
+	* freedesktop.org.xml:
+	* freedesktop.org.xml.in: mark glade files as inheriting from 
+	text/xml, not text/plain
+
 2004-11-28  Christophe Fergeau  <teuf@gnome.org>
 
 	* freedesktop.org.xml: sync'ed file with freedesktop.org.xml.in

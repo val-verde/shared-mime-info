@@ -1,8 +1,8 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
 "/usr/share/sgml/docbook/dtd/xml/4.1.2/docbookx.dtd" [
-  <!ENTITY updated "26 Feb 2003">
-  <!ENTITY version "0.11-pre">
+  <!ENTITY updated "03 Mar 2003">
+  <!ENTITY version "0.10">
 ]>
 <article id="index">
 
@@ -31,7 +31,7 @@
 	<sect2>
 		<title>Version</title>
 		<para>
-This is version &version; of the Shared MIME-info Database spec, last updated &updated;.</para>
+This is version &version; of the Shared MIME-info Database specification, last updated &updated;.</para>
 	</sect2>
 	<sect2>
 		<title>What is this spec?</title>
@@ -374,9 +374,10 @@ The format of these generated files and the source files in <filename>packages</
 are explained in the following sections. This step serves several purposes. First, it allows
 applications to quickly get the data they need without parsing all the source XML files (the
 base package alone is over 700K). Second, it allows the database to be used for other
-purposes (such as creating the <filename>/etc/mime.types</filename> if desired). Third, it
-allows some validation to be performed on the input data, and removes the need for other
-applications to carefully check the input for errors themselves.
+purposes (such as creating the <filename>/etc/mime.types</filename> file if
+desired). Third, it allows validation to be performed on the input data,
+and removes the need for other applications to carefully check the input for
+errors themselves.
 		</para>
 	</sect2>
 	<sect2>
@@ -413,7 +414,8 @@ filename matching anyway.
 <userinput>priority</userinput> attribute for all of the contained rules. Low
 numbers should be used for more generic types (such as 'gzip compressed data')
 and higher values for specific subtypes (such as a word processor format that
-happens to use gzip to compress the file). The default priority value is 50.
+happens to use gzip to compress the file). The default priority value is 50, and
+the maximum is 100.
 				</para><para>
 Each <userinput>match</userinput> element has a number of attributes:
 
@@ -440,9 +442,9 @@ Each <userinput>match</userinput> element has a number of attributes:
 	</entry></row>
 
 	<row><entry>mask</entry><entry>No</entry><entry>
-	The number to AND the value in the file with before comparing it to `value'. The
-	mask can start with `0x' to indicate a hexadecimal value, or with `0' to indicate
-	octal.
+	The number to AND the value in the file with before comparing it to
+	`value'. Masks for numerical types can be any number, while masks for strings
+	must be in base 16, and start with 0x.
 	</entry></row>
 
 	</tbody></tgroup>
@@ -462,10 +464,10 @@ to provide the text in multiple languages.
 			</itemizedlist>
 Applications may also define their own elements, provided they are namespaced to prevent collisions.
 Unknown elements are copied directly to the output XML files like <userinput>comment</userinput>
-elements.
-A typical use for this would be to indicate the default handler application for a particular desktop
-("Galeon is the GNOME default text/html browser"). Note that this doesn't indicate the user's preferred
-application, only the (fixed) default.
+elements. A typical use for this would be to indicate the default handler
+application for a particular desktop
+("Galeon is the GNOME default text/html browser"). Note that this doesn't
+indicate the user's preferred application, only the (fixed) default.
 		</para>
 		<para>
 Here is an example source file, named <filename>diff.xml</filename>:
@@ -486,6 +488,7 @@ Here is an example source file, named <filename>diff.xml</filename>:
   </mime-type>
 </mime-info>
 ]]></programlisting>
+		</para><para>
 In practice, common types such as text/x-diff are provided by the freedesktop.org shared
 database. Also, only new information needs to be provided, since this information will be merged
 with other information about the same type.
@@ -568,9 +571,9 @@ Where possible, compatible changes only will be made.
 All numbers are big-endian, so need to be byte-swapped on little-endian machines.
 		</para><para>
 The rest of the file is made up of a sequence of small sections.
-Each section is introduced by giving the priority and type in brackets.
-Higher priority entries come first.
-<screen>[50:text/x-diff]</screen>
+Each section is introduced by giving the priority and type in brackets, followed by
+a newline character. Higher priority entries come first. Example:
+<screen>[50:text/x-diff]\n</screen>
 Each line in the section takes the form:
 <screen>[ indent ] ">" start-offset "=" value
 [ "&amp;" mask ] [ "~" word-size ] [ "+" range-length ] "\n"</screen>
@@ -579,7 +582,7 @@ Each line in the section takes the form:
 	<thead><row><entry>Part</entry><entry>Example</entry><entry>Meaning</entry></row></thead>
 	<tbody>
 
-	<row><entry>indent</entry><entry>0</entry><entry>The nesting
+	<row><entry>indent</entry><entry>1</entry><entry>The nesting
 	depth of the rule, corresponding to the number of '>' characters in the traditional file format.</entry></row>
 	<row><entry>">" start-offset</entry><entry>&gt;4</entry><entry>The offset into the
 	file to look for a match.</entry></row>
@@ -598,8 +601,9 @@ Each line in the section takes the form:
 	</tgroup>
 </informaltable>
 		</para><para>
-Note that the start-offset, value, value length and mask are all binary,
-whereas everything else is textual.
+Note that the value, value length and mask are all binary, whereas everything
+else is textual. Each of the elements begins with a single character to
+identify it, except for the indent level.
 		</para><para>
 The word size is used for byte-swapping. Little-endian systems should reverse
 the order of groups of bytes in the value and mask if this is greater than one.
@@ -607,12 +611,18 @@ This only affects `host' matches (`big32' entries still have a word size of 1,
 for example, because no swapping is necessary, whereas `host32' has a word size
 of 4).
 		</para><para>
-The range-length, word-size and mask components are optional. If missing, the range-length
-defaults to 1, the word-size is 1, and the mask is all one bits.
+The indent, range-length, word-size and mask components are optional. If
+missing, indent defaults to 0, range-length to 1, the word-size to 1, and the
+mask to all 'one' bits.
 		</para><para>
 Indent corresponds to the nesting depth of the rule. Top-level rules have an
 indent of zero. The parent of an entry is the preceding entry with an indent
-one less than the entry. The test number is an index into the array of tests.
+one less than the entry.
+		</para><para>
+If an unknown character is found where a newline is expected then the whole
+line should be ignored (there will be no binary data after the new
+character, so the next line starts after the next "\n" character). This is for
+future extensions.
 		</para><para>
 The text/x-diff above example would (on its own) create this magic file:
 			<programlisting><![CDATA[
@@ -627,11 +637,11 @@ The text/x-diff above example would (on its own) create this magic file:
 	<sect2>
 		<title>Storing the MIME type using Extended Attributes</title>
 		<para>
-An implementation may also get a file's MIME type from the <userinput>user.mime_type</userinput> extended
+An implementation MAY also get a file's MIME type from the <userinput>user.mime_type</userinput> extended
 attribute. <!-- The attr(5) man page documents this name --> The type given here should normally be used
-in preference to any guessed type, since the user is able to set it explicitly. Applications may choose to
+in preference to any guessed type, since the user is able to set it explicitly. Applications MAY choose to
 set the type when saving files. Since many applications and filesystems do not support extended attributes,
-implementations should not rely on this method being available.
+implementations MUST NOT rely on this method being available.
 		</para>
 	</sect2>
 	<sect2>

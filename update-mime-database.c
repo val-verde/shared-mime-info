@@ -155,6 +155,24 @@ static gboolean validate_magic(xmlNode *parent)
 	return TRUE;
 }
 
+static int get_priority(xmlNode *node)
+{
+	char *prio_string;
+	int p;
+
+	prio_string = xmlGetNsProp(node, "priority", NULL);
+	if (prio_string)
+	{
+		p = atoi(prio_string);
+		g_free(prio_string);
+		if (p < 0 || p > 100)
+			return -1;
+		return p;
+	}
+	else
+		return 50;
+}
+
 /* 'field' was found in the definition of 'type' and has the freedesktop.org
  * namespace. If it's a known field, process it and return TRUE, else
  * return FALSE to add it to the output XML document.
@@ -167,17 +185,22 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field)
 		
 		pattern = xmlGetNsProp(field, "pattern", NULL);
 
-		g_return_val_if_fail(pattern != NULL, FALSE);
-
-		g_hash_table_insert(globs_hash, g_strdup(pattern), type);
-		g_free(pattern);
+		if (pattern)
+		{
+			g_hash_table_insert(globs_hash,
+					    g_strdup(pattern), type);
+			g_free(pattern);
+		}
+		else
+			g_print("* Missing 'pattern' attribute in glob element "
+				"(type %s/%s)\n", type->media, type->subtype);
 	}
 	else if (strcmp(field->name, "magic") == 0)
 	{
 		xmlNode *copy;
 		gchar *type_name;
 
-		if (validate_magic(field))
+		if (get_priority(field) != -1 && validate_magic(field))
 		{
 			copy = xmlCopyNode(field, 1);
 			type_name = g_strconcat(type->media, "/",
@@ -188,15 +211,15 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field)
 			g_ptr_array_add(magic, copy);
 		}
 		else
-			g_print("Skipping invalid magic for type '%s/%s'\n",
+			g_print("* Skipping invalid magic for type '%s/%s'\n",
 				type->media, type->subtype);
 	}
 	else if (strcmp(field->name, "comment") == 0)
 		return FALSE;	/* Copy through */
 	else
 	{
-		g_warning("Unknown freedesktop.org field '%s' "
-			  "in type '%s/%s'\n",
+		g_print("* Unknown freedesktop.org field '%s' "
+			"in type '%s/%s'\n",
 			  field->name, type->media, type->subtype);
 		return FALSE;
 	}
@@ -430,7 +453,13 @@ static void write_out_glob(gpointer key, gpointer value, gpointer data)
 	Type *type = (Type *) value;
 	FILE *stream = (FILE *) data;
 
-	fprintf(stream, "%s/%s:%s\n", type->media, type->subtype, pattern);
+	if (strchr(pattern, '\n'))
+		g_print("* Glob patterns can't contain literal newlines "
+			"(%s in type %s/%s)\n", pattern,
+			type->media, type->subtype);
+	else
+		fprintf(stream, "%s/%s:%s\n",
+				type->media, type->subtype, pattern);
 }
 
 /* Renames pathname by removing the .new extension */
@@ -470,23 +499,6 @@ static void write_out_type(gpointer key, gpointer value, gpointer data)
 	atomic_update(filename);
 
 	g_free(filename);
-}
-
-static int get_priority(xmlNode *node)
-{
-	char *prio_string;
-	int p;
-
-	prio_string = xmlGetNsProp(node, "priority", NULL);
-	if (prio_string)
-	{
-		p = atoi(prio_string);
-		g_free(prio_string);
-		g_return_val_if_fail(p >= 0 && p <= 100, 50);
-		return p;
-	}
-	else
-		return 50;
 }
 
 /* (this is really inefficient) */
@@ -651,8 +663,7 @@ static void parse_int_value(int bytes, const char *in, const char *in_mask,
 	value = strtol(in, &end, 0);
 	if (*end != '\0')
 	{
-		g_set_error(error, MIME_ERROR,
-				0, "Value is not a number");
+		g_set_error(error, MIME_ERROR, 0, "Value is not a number");
 		return;
 	}
 
@@ -785,9 +796,8 @@ static void write_magic_children(FILE *stream, xmlNode *parent, int indent,
 	for (node = parent->xmlChildrenNode; node; node = node->next)
 	{
 		GError *error = NULL;
-		char *offset, *mask, *value, *type;
+		char *offset, *mask, *value, *type, *end;
 		char *parsed_mask = NULL;
-		const char *colon;
 		int word_size = 1;
 		long range_start;
 		int range_length = 1;
@@ -804,23 +814,40 @@ static void write_magic_children(FILE *stream, xmlNode *parent, int indent,
 		g_return_if_fail(value != NULL);
 		g_return_if_fail(type != NULL);
 
-		range_start = atol(offset);
-		colon = strchr(offset, ':');
-		if (colon)
-			range_length = atol(colon + 1) - range_start + 1;
+		range_start = strtol(offset, &end, 10);
+		if (!*offset)
+			g_set_error(&error, MIME_ERROR, 0, "Empty offset");
+		else if (*end == ':' && end[1])
+		{
+			int range_end;
+
+			range_end = strtol(end + 1, &end, 10);
+			if (*end == '\0')
+				range_length = range_end - range_start + 1;
+			else
+				g_set_error(&error, MIME_ERROR, 0,
+						"Invalid offset");
+		}
+		else if (*end != '\0')
+			g_set_error(&error, MIME_ERROR, 0, "Invalid offset");
 
 		if (strcmp(type, "host16") == 0)
 			word_size = 2;
 		else if (strcmp(type, "host32") == 0)
 			word_size = 4;
-		else if (strcmp(type, "big16") && strcmp(type, "big32") &&
+		else if (!error && strcmp(type, "big16") &&
+			 strcmp(type, "big32") &&
 			 strcmp(type, "little16") && strcmp(type, "little32") &&
 			 strcmp(type, "string") && strcmp(type, "byte"))
-			g_warning("Unknown magic type '%s'\n", type);
+		{
+			g_set_error(&error, MIME_ERROR, 0,
+				    "Unknown magic type '%s'", type);
+		}
 
 		g_string_truncate(parsed_value, 0);
-		parse_value(type, value, mask, parsed_value, &parsed_mask,
-			    &error);
+		if (!error)
+			parse_value(type, value, mask,
+				    parsed_value, &parsed_mask, &error);
 
 		if (error)
 		{
@@ -866,6 +893,7 @@ static void write_magic(FILE *stream, xmlNode *node)
 	int prio;
 
 	prio = get_priority(node);
+	g_return_if_fail(prio >= 0 && prio <= 100);
 
 	type = xmlGetNsProp(node, "type", NULL);
 	g_return_if_fail(type != NULL);

@@ -3,6 +3,10 @@ shared-mime-info		Thomas Leonard <tal00r@ecs.soton.ac.uk>
 
 			Version 0.10 (03-Mar-2003)
 
+* Much better validation of input files.
+
+* Added note about the use of extended attributes to store the MIME type.
+
 * Ensure that all changes to generated files happen atomically.
 
 * Change to half-text, half-binary format to make parsing the magic file

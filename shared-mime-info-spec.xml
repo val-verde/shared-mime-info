@@ -1,8 +1,8 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
 "/usr/share/sgml/docbook/dtd/xml/4.1.2/docbookx.dtd" [
-  <!ENTITY updated "03 Mar 2003">
-  <!ENTITY version "0.10">
+  <!ENTITY updated "05 Mar 2003">
+  <!ENTITY version "0.11-preview">
 ]>
 <article id="index">
 
@@ -360,10 +360,14 @@ database should edit the file <filename>~/.mime/packages/Override.xml</filename>
 The files created by <command>update-mime-database</command> are:
 			<itemizedlist>
 				<listitem><para>
-<filename>&lt;MIME&gt;/globs</filename> (contains a mapping from extension to MIME type)
+<filename>&lt;MIME&gt;/globs</filename> (contains a mapping from extensions to MIME types)
 				</para></listitem>
 				<listitem><para>
-<filename>&lt;MIME&gt;/magic</filename> (contains a mapping from file contents to MIME type)
+<filename>&lt;MIME&gt;/magic</filename> (contains a mapping from file contents to MIME types)
+				</para></listitem>
+				<listitem><para>
+<filename>&lt;MIME&gt;/XMLnamespaces</filename> (contains a mapping from XML
+(namespaceURI, localName) pairs to MIME types)
 				</para></listitem>
 				<listitem><para>
 <filename>&lt;MIME&gt;/MEDIA/SUBTYPE.xml</filename> (one file for each MIME
@@ -460,6 +464,15 @@ lines.
 <userinput>comment</userinput> elements give a human-readable textual description of the MIME
 type. There may be many of these elements with different <userinput>xml:lang</userinput> attributes
 to provide the text in multiple languages.
+				</para></listitem>
+				<listitem><para>
+<userinput>root-XML</userinput> elements have <userinput>namespaceURI</userinput> 
+and <userinput>localName</userinput> attributes. If a file is identified as being an XML file,
+these rules allow a more specific MIME type to be chosen based on the namespace and localname
+of the document element.
+				</para><para>
+If <userinput>localName</userinput> is present but empty then the document element may have
+any name, but the namespace must still match.
 				</para></listitem>
 			</itemizedlist>
 Applications may also define their own elements, provided they are namespaced to prevent collisions.
@@ -635,13 +648,66 @@ The text/x-diff above example would (on its own) create this magic file:
 		</para>
 	</sect2>
 	<sect2>
+		<title>The XMLnamespaces files</title>
+		<para>
+Each <filename>XMLnamespaces</filename> file is a list of lines in the form:
+<screen>namespaceURI " " localName " " MIME-Type</screen>
+For example:
+<screen>
+http://www.w3.org/1999/xhtml html application/xhtml+xml
+</screen>
+The lines are sorted (using strcmp) and there are no lines with the same namespaceURI and
+localName in one file. If the localName was empty then there will be two spaces following
+the namespaceURI. Example:
+		</para>
+	</sect2>
+	<sect2>
 		<title>Storing the MIME type using Extended Attributes</title>
 		<para>
-An implementation MAY also get a file's MIME type from the <userinput>user.mime_type</userinput> extended
-attribute. <!-- The attr(5) man page documents this name --> The type given here should normally be used
-in preference to any guessed type, since the user is able to set it explicitly. Applications MAY choose to
-set the type when saving files. Since many applications and filesystems do not support extended attributes,
+An implementation MAY also get a file's MIME type from the
+<userinput>user.mime_type</userinput> extended attribute. <!-- The attr(5) man
+page documents this name --> The type given here should normally be used in
+preference to any guessed type, since the user is able to set it explicitly.
+Applications MAY choose to set the type when saving files. Since many
+applications and filesystems do not support extended attributes,
 implementations MUST NOT rely on this method being available.
+		</para>
+	</sect2>
+	<sect2>
+		<title>Recommended checking order</title>
+		<para>
+Because different applications have different requirements, they may choose to
+use the various methods provided by this specification in any order. However, the
+RECOMMENDED order to perform the checks is:
+			<itemizedlist>
+				<listitem><para>
+If a MIME type is provided explicitly (eg, by a ContentType HTTP header, a MIME
+email attachment, an extended attribute or some other means) then that should
+be used instead of guessing.
+				</para></listitem>
+				<listitem><para>
+If no explicit type is present, the glob rules should be applied to the name to
+get the type.
+				</para></listitem>
+				<listitem><para>
+If no glob rules match, the magic rules should be tried next.
+				</para></listitem>
+				<listitem><para>
+If nothing matches, the default type of application/octet-stream should be used
+for binary data, or text/plain for textual data (checking the start of the file
+for ASCII control characters is a good way to guess whether a file is binary or
+text).
+				</para></listitem>
+			</itemizedlist>
+		</para>
+		<para>
+There are several reasons for checking the globs patterns before the magic.
+Some applications don't check the magic at all, and this makes it more likely
+that both will get the same type. Users can easily understand why calling their
+text file <filename>README.mp3</filename> makes the system think it's an MP3,
+whereas they have trouble understanding why their computer thinks
+<filename>README.txt</filename> is a PostScript file. If the system guesses wrongly,
+the user can often rename the file to fix the problem.
 		</para>
 	</sect2>
 	<sect2>

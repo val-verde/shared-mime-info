@@ -22,3 +22,6 @@ uninstall-hook:
 	for media in text application image audio inode video message model multipart; do rm -f "${mimedir}/$${media}/"*.xml; done
 	rm -f "${mimedir}/globs"
 	rm -f "${mimedir}/magic"
+
+check:
+	xmllint --noout --valid $(srcdir)/freedesktop.org.xml

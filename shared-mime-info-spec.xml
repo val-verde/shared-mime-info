@@ -584,8 +584,9 @@ text/x-diff:*.patch
 ]]></programlisting>
 		</para>
 		<para>
-Applications MUST first try a case-sensitive match, then a case-insensitive
-one. This is so that <filename>main.C</filename> will be seen as a C++ file,
+Applications MUST first try a case-sensitive match, then try again with the
+filename converted to lower-case if that fails.
+This is so that <filename>main.C</filename> will be seen as a C++ file,
 but <filename>IMAGE.GIF</filename> will still use the *.gif pattern.
 		</para>
 		<para>

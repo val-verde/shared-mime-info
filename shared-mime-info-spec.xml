@@ -556,10 +556,11 @@ If no glob rules match, the remaining magic rules should be tried next.
 				</para></listitem>
 				<listitem><para>
 If nothing matches, the default type of application/octet-stream should be used
-for binary data, or text/plain for textual data. Checking the start of the file
-for ASCII control characters is a good way to guess whether a file is binary or
-text, but note that files with high-bit-set characters should still be treated
-as text since these can appear in UTF-8 text, unlike control characters.
+for binary data, or text/plain for textual data. Checking the first 32
+bytes of the file for ASCII control characters is a good way to guess
+whether a file is binary or text, but note that files with high-bit-set
+characters should still be treated as text since these can appear in UTF-8
+text, unlike control characters.
 				</para></listitem>
 			</itemizedlist>
 		</para>

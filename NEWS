@@ -8,17 +8,19 @@ shared-mime-info		Thomas Leonard <tal00r@ecs.soton.ac.uk>
 * Install instructions updated for new XDG Base Directory Specification.
 
 * Added new <root-XML> element to identify XML files by
-  (namespaceURI, localName) pairs.
+  (namespaceURI, localName) pairs (suggested by Mike Hearn).
 
-* Minor updates to the database itself.
+* Minor updates to the database itself (Vincent Lefevre).
 
-* Added short discussion of ACAP Media Type Dataset Class to spec.
+* Added short discussion of ACAP Media Type Dataset Class to spec (suggested
+  by Dave Cridland).
 
 * Updated spec to use XDG Base Directory Specification for paths.
 
-* Clarifications to glob matching section.
+* Clarifications to glob matching section (requested by Jonathan Blandford).
 
-* Added a 'Recommended checking order' section to help interoperability.
+* Added a 'Recommended checking order' section to help interoperability
+  (suggested by Lars Hallberg).
 
 * Greatly improved error reporting in update-mime-database, and commented
   the code more.

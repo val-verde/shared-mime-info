@@ -531,6 +531,15 @@
     <glob pattern="*.smi"/>
     <glob pattern="*.sml"/>
   </mime-type>
+  <mime-type type="application/stuffit">
+    <comment>StuffIt archive</comment>
+    <magic priority="50">
+      <match value="StuffIt" type="string" offset="0"/>
+    </magic>
+    <glob pattern="*.sit"/>
+    <alias type="application/x-stuffit"/>
+    <alias type="application/x-sit"/>
+  </mime-type>
   <mime-type type="application/vnd.corel-draw">
     <comment>Corel Draw drawing</comment>
     <comment xml:lang="az">Corel Draw çəkimi</comment>

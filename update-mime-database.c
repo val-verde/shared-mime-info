@@ -840,7 +840,14 @@ static void parse_int_value(int bytes, const char *in, const char *in_mask,
 	unsigned long value;
 	int b;
 
-	value = strtol(in, &end, 0);
+	value = strtoul(in, &end, 0);
+	if (errno == ERANGE) {
+		g_set_error(error, MIME_ERROR, 0,
+			    "Number out-of-range (%s should fit in %d bytes)",
+			    in, bytes);
+		return;
+	}
+
 	if (*end != '\0')
 	{
 		g_set_error(error, MIME_ERROR, 0, "Value is not a number");
@@ -865,9 +872,17 @@ static void parse_int_value(int bytes, const char *in, const char *in_mask,
 	if (in_mask)
 	{
 		int b;
-		long mask;
+		unsigned long mask;
 		
-		mask = strtol(in_mask, &end, 0);
+		mask = strtoul(in_mask, &end, 0);
+		if (errno == ERANGE) {
+			g_set_error(error, MIME_ERROR, 0,
+				    "Mask out-of-range (%s should fit in %d bytes)",
+				    in_mask, bytes);
+			return;
+		}
+
+
 		if (*end != '\0')
 		{
 			g_set_error(error, MIME_ERROR, 0,
@@ -1022,11 +1037,33 @@ static void match_offset(Match *match, xmlNode *node, GError **error)
 	}
 
 	match->range_start = strtol(offset, &end, 10);
+	if (errno == ERANGE) {
+		char *number;
+		number = g_strndup(offset, end-offset);
+		g_set_error(error, MIME_ERROR, 0,
+			    "Number out-of-range (%s should fit in 4 bytes)",
+			    number);
+		g_free(number);
+		return;
+	}
+
 	if (*end == ':' && end[1] && match->range_start >= 0)
 	{
 		int last;
+		char *begin;
 
-		last = strtol(end + 1, &end, 10);
+		begin = end + 1;
+		last = strtol(begin, &end, 10);
+		if (errno == ERANGE) {
+			char *number;
+			number = g_strndup(begin, end-begin);
+			g_set_error(error, MIME_ERROR, 0,
+				    "Number out-of-range (%s should fit in 8 bytes)",
+				    number);
+			g_free(number);
+			return;
+		}
+
 		if (*end == '\0' && last >= match->range_start)
 			match->range_length = last - match->range_start + 1;
 		else

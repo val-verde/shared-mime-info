@@ -509,6 +509,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.desktop"/>
     <glob pattern="*.kdelnk"/>
+    <alias type="application/x-gnome-app-info"/>
   </mime-type>
   <mime-type type="application/x-dia-diagram">
     <_comment>Dia diagram</_comment>

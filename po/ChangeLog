@@ -1,3 +1,8 @@
+2004-08-28  Christophe Fergeau   <teuf@gnome.org>
+
+	* el.po: commit the actual file sent by Nikos to the mailing list,
+	  the one which was in CVS didn't pass msgfmt -cv and broke the build.
+
 2004-08-27  Ole Laursen  <olau@hardworking.dk>
 
 	* el.po: Added Greek translation on behalf of Nikos Charonitakis.

@@ -30,6 +30,9 @@
 
 #define MIME_ERROR g_quark_from_static_string("mime-error-quark")
 
+/* This is the list of directories to scan when finding old type files to
+ * delete. It is also used to warn about invalid MIME types.
+ */
 const char *media_types[] = {
 	"text",
 	"application",
@@ -42,15 +45,22 @@ const char *media_types[] = {
 	"multipart",
 };
 
+/* Represents a MIME type */
 typedef struct _Type Type;
+
+/* A parsed <magic> element */
 typedef struct _Magic Magic;
+
+/* A parsed <match> element */
 typedef struct _Match Match;
 
 struct _Type {
 	char *media;
 	char *subtype;
 
-	/* contains xmlNodes for elements that are being copied to the output */
+	/* Contains xmlNodes for elements that are being copied to the output.
+	 * That is, <comment> nodes and anything with an unknown namespace.
+	 */
 	xmlDoc	*output;
 };
 
@@ -103,6 +113,11 @@ static void free_type(gpointer data)
 	g_free(type);
 }
 
+/* If we've seen this type before, return the existing object.
+ * Otherwise, create a new one. Checks that the name looks sensible;
+ * if not, sets error and returns NULL.
+ * Also warns about unknown media types, but does not set error.
+ */
 static Type *get_type(const char *name, GError **error)
 {
 	xmlNode *root;
@@ -148,6 +163,7 @@ static Type *get_type(const char *name, GError **error)
 	return type;
 }
 
+/* Test that this node has the expected name and namespace */
 static gboolean match_node(xmlNode *node,
 			   const char *namespaceURI,
 			   const char *localName)
@@ -160,6 +176,10 @@ static gboolean match_node(xmlNode *node,
 		return strcmp(node->name, localName) == 0 && !node->ns;
 }
 
+/* Return the priority of a <magic> node.
+ * Returns 50 if no priority is given, or -1 if a priority is given but
+ * is invalid.
+ */
 static int get_priority(xmlNode *node)
 {
 	char *prio_string;
@@ -182,6 +202,7 @@ static int get_priority(xmlNode *node)
 		return 50;
 }
 
+/* Process a <root-XML> element by adding a rule to namespace_hash */
 static void add_namespace(Type *type, const guchar *namespaceURI,
 			  const guchar *localName, GError **error)
 {
@@ -291,6 +312,9 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 	return !*error;
 }
 
+/* Checks to see if 'node' has the given value for xml:lang.
+ * If 'lang' is NULL, checks that 'node' doesn't have an xml:lang.
+ */
 static gboolean has_lang(xmlNode *node, const char *lang)
 {
 	char *lang2;
@@ -304,6 +328,7 @@ static gboolean has_lang(xmlNode *node, const char *lang)
 		xmlFree(lang2);
 		return TRUE;
 	}
+	xmlFree(lang2);
 	return FALSE;
 }
 
@@ -338,6 +363,9 @@ static void remove_old(Type *type, xmlNode *new)
 	xmlFree(lang);
 }
 
+/* 'node' is a <mime-type> node from a source file, whose type is 'type'.
+ * Process all the child elements, setting 'error' if anything goes wrong.
+ */
 static void load_type(Type *type, xmlNode *node, GError **error)
 {
 	xmlNode *field;
@@ -388,15 +416,10 @@ static void load_type(Type *type, xmlNode *node, GError **error)
 	}
 }
 
-#define CHECK_NODE(node, namespaceURI, localName) do {		\
-if (!match_node(node, namespaceURI, localName)) { 		\
-	g_warning(_("Wrong node namespace or name in %s\n"	\
-		    "Expected (%s,%s) but got (%s,%s)\n"),	\
-		    filename, namespaceURI, localName,		\
-		    node->ns ? (char *) node->ns->href : "none", node->name);\
-	goto out;							\
-}} while (0);
-
+/* Parse 'filename' as an XML file and add all the information to the
+ * database. If called more than once, information read in later calls
+ * overrides information read previously.
+ */
 static void load_source_file(const char *filename)
 {
 	xmlDoc *doc;
@@ -411,7 +434,20 @@ static void load_source_file(const char *filename)
 
 	root = xmlDocGetRootElement(doc);
 
-	CHECK_NODE(root, FREE_NS, "mime-info");
+	if (root->ns == NULL || strcmp(root->ns->href, FREE_NS) != 0)
+	{
+		g_print("* Wrong namespace on document element\n"
+			"*   in '%s'\n"
+			"*   (should be %s)\n", filename, FREE_NS);
+		goto out;
+	}
+	
+	if (strcmp(root->name, "mime-info") != 0)
+	{
+		g_print("* Root element <%s> is not <mime-info>\n"
+			"*   (in '%s')\n", root->name, filename);
+		goto out;
+	}
 
 	for (node = root->xmlChildrenNode; node; node = node->next)
 	{
@@ -466,6 +502,7 @@ out:
 	xmlFreeDoc(doc);
 }
 
+/* Used as the sort function for sorting GPtrArrays */
 static gint strcmp2(gconstpointer a, gconstpointer b)
 {
 	const char *aa = *(char **) a;
@@ -474,6 +511,9 @@ static gint strcmp2(gconstpointer a, gconstpointer b)
 	return strcmp(aa, bb);
 }
 
+/* 'path' should be a 'packages' directory. Loads the information from
+ * every file in the directory.
+ */
 static void scan_source_dir(const char *path)
 {
 	DIR *dir;
@@ -547,6 +587,7 @@ static int save_xml_file(xmlDocPtr doc, const gchar *filename)
 	return 0;
 }
 
+/* Write out one line of the 'globs' file */
 static void write_out_glob(gpointer key, gpointer value, gpointer data)
 {
 	const gchar *pattern = (gchar *) key;
@@ -580,6 +621,7 @@ static void atomic_update(const guchar *pathname)
 	g_free(new_name);
 }
 
+/* Write out an XML file for one type */
 static void write_out_type(gpointer key, gpointer value, gpointer data)
 {
 	Type *type = (Type *) value;
@@ -601,6 +643,7 @@ static void write_out_type(gpointer key, gpointer value, gpointer data)
 	g_free(filename);
 }
 
+/* Comparison function to get the magic rules in priority order */
 static gint cmp_magic(gconstpointer a, gconstpointer b)
 {
 	Magic *aa = *(Magic **) a;
@@ -619,6 +662,7 @@ static gint cmp_magic(gconstpointer a, gconstpointer b)
 	return retval;
 }
 
+/* Write out 'n' as a two-byte big-endian number to 'stream' */
 static void write16(FILE *stream, guint32 n)
 {
 	guint16 big = GUINT16_TO_BE(n);
@@ -736,6 +780,9 @@ static void getstr(const char *s, GString *out)
 	}
 }
 
+/* Parse the value and mask attributes of a <match> element with a
+ * numerical type (anything except "string").
+ */
 static void parse_int_value(int bytes, const char *in, const char *in_mask,
 			    GString *parsed_value, char **parsed_mask,
 			    GError **error)
@@ -838,6 +885,7 @@ err:
 	return NULL;
 }
 
+/* Parse the value and mask attributes for a <match> element */
 static void parse_value(const char *type, const char *in, const char *in_mask,
 			GString *parsed_value, char **parsed_mask,
 			GError **error)
@@ -1071,6 +1119,7 @@ static void magic_free(Magic *magic)
 	g_free(magic);
 }
 
+/* Create a new Magic object by parsing 'node' (a <magic> element) */
 static Magic *magic_new(xmlNode *node, Type *type, GError **error)
 {
 	Magic *magic = NULL;
@@ -1108,6 +1157,7 @@ static Magic *magic_new(xmlNode *node, Type *type, GError **error)
 	return magic;
 }
 
+/* Write a list of Match elements (and their children) to the 'magic' file */
 static void write_magic_children(FILE *stream, GList *matches, int indent)
 {
 	GList *next;
@@ -1139,6 +1189,7 @@ static void write_magic_children(FILE *stream, GList *matches, int indent)
 	}
 }
 
+/* Write a whole Magic element to the 'magic' file */
 static void write_magic(FILE *stream, Magic *magic)
 {
 	fprintf(stream, "[%d:%s/%s]\n", magic->priority,
@@ -1147,6 +1198,9 @@ static void write_magic(FILE *stream, Magic *magic)
 	write_magic_children(stream, magic->matches, 0);
 }
 
+/* Check each of the directories with generated XML files, looking for types
+ * which we didn't get on this scan, and delete them.
+ */
 static void delete_old_types(const gchar *mime_dir)
 {
 	int i;
@@ -1191,6 +1245,9 @@ static void delete_old_types(const gchar *mime_dir)
 	}
 }
 
+/* Extract one entry from namespace_hash and put it in the GPtrArray so
+ * we can sort it.
+ */
 static void add_ns(gpointer key, gpointer value, gpointer data)
 {
 	GPtrArray *lines = (GPtrArray *) data;
@@ -1201,6 +1258,7 @@ static void add_ns(gpointer key, gpointer value, gpointer data)
 					   "/", type->subtype, "\n", NULL));
 }
 
+/* Write all the collected namespace rules to 'XMLnamespaces' */
 static void write_namespaces(FILE *stream)
 {
 	GPtrArray *lines;

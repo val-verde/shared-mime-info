@@ -34,6 +34,8 @@ do_cmd() {
 
 do_cmd libtoolize --force --copy
 
+do_cmd intltoolize --force
+
 do_cmd aclocal ${ACLOCAL_FLAGS}
 
 do_cmd autoheader

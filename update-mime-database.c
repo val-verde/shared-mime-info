@@ -1242,8 +1242,10 @@ static void delete_old_types(const gchar *mime_dir)
 				char *path;
 				path = g_strconcat(mime_dir, "/",
 						type_name, ".xml", NULL);
+#if 0
 				g_print("* Removing old info for type %s\n",
 						path);
+#endif
 				unlink(path);
 				g_free(path);
 			}

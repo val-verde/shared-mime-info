@@ -83,6 +83,14 @@ command to generate the output files.
     <_comment>ODA document</_comment>
     <glob pattern="*.oda"/>
   </mime-type>
+  <mime-type type="application/x-par2">
+    <comment>PAR2 Parity File</comment>
+    <magic priority="50">
+      <match offset="0" type="string" value="PAR2" />
+    </magic>
+    <glob pattern="*.PAR2" />
+    <glob pattern="*.par2" />
+  </mime-type>
   <mime-type type="application/pdf">
     <_comment>PDF document</_comment>
     <magic priority="50">

@@ -267,6 +267,48 @@ expressions.
 ROX has no rules for determining a file's type from its contents.
 		</para>
 	</sect2>
+	<sect2>
+		<title>ACAP Media Type Dataset Class</title>
+		<para>
+The ACAP Media Type Dataset Class<citation>ACAP</citation> draft proposes a
+network-based solution to the problem.  The sytem is intended mainly to allow
+email clients to find a viewer application for an attachment. The draft gives
+the following example of a record for the `image/jpeg' type:
+		</para>
+<programlisting>
+attribute                            value
+---------                            -----
+entry                                JPEG image
+mediatype.common.type                image/jpeg
+mediatype.common.extension           jpg
+mediatype.common.extensionOther      (jpeg jpe jfif jfi)
+mediatype.common.description         JPEG is an image format most
+				     suitable for compressing photographs
+mediatype.common.suppressWarning     1
+mediatype.macOS.type.bin             JPEG
+mediatype.macOS.creator.bin          JVWR
+mediatype.macOS.creator.name         JPEG View
+mediatype.macOS.action.edit.bin      8BIM
+mediatype.macOS.action.edit.name     Adobe Photoshop
+mediatype.unix.action.view           xv
+</programlisting>
+		<para>
+Finding a type involves sending a query to a remote database, which is intended
+to allow companies to configure MIME information on a company-wide basis. The
+system is designed to allow a single database to be shared between different
+platforms.
+		</para>
+		<para>
+It is not designed for handing a large number of lookups quickly, making the
+system too slow for use in file managers and similar. Both its name and
+contents matching are more primitive than other systems; only extensions can be
+matched, case is ignored, and the contents matching can only match an exact
+string at the start of the file. It provides similar information to this
+specification, except that it defines many items of platform-specific
+information in the core specification, instead of using namespacing to allow
+vendor extensions.
+		</para>
+	</sect2>
 </sect1>
 
 
@@ -689,14 +731,15 @@ If no glob rules match, the magic rules should be tried next.
 				</para></listitem>
 				<listitem><para>
 If nothing matches, the default type of application/octet-stream should be used
-for binary data, or text/plain for textual data (checking the start of the file
+for binary data, or text/plain for textual data. Checking the start of the file
 for ASCII control characters is a good way to guess whether a file is binary or
-text).
+text, but note that files with high-bit-set characters should still be treated
+as text since these can appear in UTF-8 text, unlike control characters.
 				</para></listitem>
 			</itemizedlist>
 		</para>
 		<para>
-There are several reasons for checking the globs patterns before the magic.
+There are several reasons for checking the glob patterns before the magic.
 Some applications don't check the magic at all, and this makes it more likely
 that both will get the same type. Users can easily understand why calling their
 text file <filename>README.mp3</filename> makes the system think it's an MP3,
@@ -795,6 +838,12 @@ Override.xml mentioned in <xref linkend="s2_layout"/>. Information such as
 		<abbrev>BaseDir</abbrev>
 		<citetitle>XDG Base Directory Specification
 		<ulink url="http://www.freedesktop.org/standards/basedir/draft/basedir-spec/basedir-spec.html"/>
+		</citetitle>
+	</bibliomixed>
+	<bibliomixed>
+		<abbrev>ACAP</abbrev>
+		<citetitle>ACAP Media Type Dataset Class
+		<ulink url="ftp://ftp.ietf.org/internet-drafts/draft-ietf-acap-mediatype-01.txt"/>
 		</citetitle>
 	</bibliomixed>
 </bibliography>

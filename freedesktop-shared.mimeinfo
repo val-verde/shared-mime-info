@@ -2251,7 +2251,7 @@ Comment[tr]=CPIO arşivi (gzip-sıkıştırmalı)
 Comment[uk]=архів CPIO (стиснутий gzip)
 Comment[wa]=årtchive CPIO (gzip-sipotcheye)
 Comment[zh]=CPIO存档(用gzip压缩)
-Patterns=.cpio.gz
+Patterns=*.cpio.gz
 
 [MIME-Info application/x-csh]
 Comment=C shell script

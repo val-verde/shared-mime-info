@@ -159,7 +159,12 @@ command to generate the output files.
     <glob pattern="*.wk4"/>
     <glob pattern="*.wks"/>
   </mime-type>
-  <mime-type type="application/vnd.ms-excel">
+  <mime-type type="application/vnd.mozilla.xul+xml">
+    <sub-class-of type="text/xml"/>
+    <_comment>XML User Interface Language document</_comment>
+    <glob pattern="*.xul"/>
+  </mime-type>
+ <mime-type type="application/vnd.ms-excel">
     <_comment>Microsoft Excel spreadsheet</_comment>
     <magic priority="50">
       <match type="string" value="Microsoft Excel 5.0 Worksheet" offset="2080"/>
@@ -2046,6 +2051,7 @@ command to generate the output files.
     <_comment>help page</_comment>
   </mime-type>
   <mime-type type="text/mathml">
+    <sub-class-of type="text/xml"/>
     <_comment>MathML document</_comment>
     <glob pattern="*.mml"/>
   </mime-type>

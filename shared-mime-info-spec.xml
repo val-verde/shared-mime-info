@@ -34,15 +34,15 @@
 	</authorgroup>
 
 	<title>Shared MIME-info Database</title>
-	<date>23 May 2002</date>
+	<date>04 Jul 2002</date>
 </articleinfo>
 <sect1>
 	<title>Introduction</title>
 	<sect2>
 		<title>Version</title>
 		<para>
-This is version 0.7 of the Shared MIME-info Database spec, last updated 23 May 2002.
-		</para>
+This is version 0.8-preview of the Shared MIME-info Database spec, last updated 05
+Jul 2002.</para>
 	</sect2>
 	<sect2>
 		<title>What is this spec?</title>
@@ -53,17 +53,20 @@ correct MIME type for a file. This is generally done by examining the file's
 name or contents, and looking up the correct MIME type in a database.
 		</para>
 		<para>
-For interoperability, it is useful for different programs to use the same
-database so that different programs agree on the type of a file and new
-rules for determining the type apply to all programs.
+It is also useful to store information about each type, such as a textual
+description of it, or a list of applications that can be used to view or edit
+files of that type.
 		</para>
 		<para>
-This specification attempts to unify the type-guessing systems currently in
+For interoperability, it is useful for different programs to use the same
+database so that different programs agree on the type of a file and
+information is not duplicated. It is also helpful for application authors to
+only have to install new information in one place.
+		</para>
+		<para>
+This specification attempts to unify the MIME database systems currently in
 use by GNOME<citation>GNOME</citation>, KDE<citation>KDE</citation> and
-ROX<citation>ROX</citation>. Only the name-to-type and contents-to-type mappings
-are covered by this spec; other MIME type information, such as the default
-handler for a particular type, or the icon to use to display it in a file
-manager, are not covered since these are a matter of style.
+ROX<citation>ROX</citation>, and provide room for future extensibility.
 		</para>
 	</sect2>
 	<sect2>
@@ -279,107 +282,175 @@ This spec proposes:
 
 		<itemizedlist>
 			<listitem><para>
-A standard format for these files.
+A standard way for applications to install new MIME related information.
 			</para></listitem>
 			<listitem><para>
-Standard locations for them.
+A standard way of getting the MIME type for a file.
+			</para></listitem>
+			<listitem><para>
+A standard way of getting information about a MIME type.
+			</para></listitem>
+			<listitem><para>
+Standard locations for all the files, and methods of resolving conflicts.
 			</para></listitem>
 		</itemizedlist>
 Further, the existing databases have been merged into a single package
 <citation>SharedMIME</citation>.
 	</para>
 	<sect2>
-		<title>File format</title>
+		<title>Directory layout</title>
 		<para>
-The new format is very similar to that described in the Desktop Entries
-Specification<citation>DesktopEntries</citation>. However, only the tags used
-in this example are valid:
+There are two important requirements for the way the MIME database is stored:
+			<itemizedlist>
+				<listitem><para>
+Applications must be able to extend the database in any way when they are installed,
+both to add new rules for determining type, and new information about specific types.
+				</para></listitem>
+				<listitem><para>
+The user must be able to override the defaults set by the system administrator, who
+must, in turn, be able to override the defaults set by the distribution.
+				</para></listitem>
+			</itemizedlist>
+		</para>
+		<para>
+The directories to be used to store the files in the database are:
+			<itemizedlist>
+				<listitem><para>
+<filename>/usr/share/mime/</filename>
+				</para></listitem>
+				<listitem><para>
+<filename>/usr/local/share/mime/</filename>
+				</para></listitem>
+				<listitem><para>
+<filename>~/.mime/</filename>
+				</para></listitem>
+			</itemizedlist>
+In the rest of this document, paths shown with the prefix
+<filename>&lt;MIME&gt;</filename> indicate the files should be loaded from
+all the directries listed above. For example, <quote>Load all the
+<filename>&lt;MIME&gt;/text/html.xml</filename> files</quote> means to load
+<filename>/usr/share/mime/text/html.xml</filename>,
+<filename>/usr/local/share/mime/text/html.xml</filename>, and
+<filename>~/.mime/text/html.xml</filename> (if they exist).
+		</para>
+		<para>
+Where the information from these files is conflicting, information from directories
+lower in the list take precedence.
+		</para>
+		<para>
+Any file named <filename>User.xml</filename> takes precedence over all other files in
+the same <filename>packages</filename> directory. Tools which let the user edit the
+database should edit the file <filename>~/mime/packages/User.xml</filename>.
+		</para>
+		<para>
+Each application that wishes to contribute to the MIME database will install a
+single XML file, named after the application, into one of the three
+<filename>&lt;MIME&gt;/packages/</filename> directories (depending on where the user requested
+the application be installed). After installing, uninstalling or modifying this
+file, the application MUST run the <command>update-mime-database</command> command,
+which is provided by the freedesktop.org shared database<citation>SharedMIME</citation>.
+		</para>
+		<para>
+<command>update-mime-database</command> is passed the <filename>mime</filename>
+directory containing the <filename>packages</filename> subdirectory which was
+modified as its only argument. It scans all the XML files in the <filename>packages</filename>
+subdirectory, combines the information in them, and creates a number of output files:
+			<itemizedlist>
+				<listitem><para>
+<filename>&lt;MIME&gt;/globs</filename> (contains a mapping from extension to MIME type)
+				</para></listitem>
+				<listitem><para>
+<filename>&lt;MIME&gt;/magic</filename> (contains a mapping from file contents to MIME type)
+				</para></listitem>
+				<listitem><para>
+<filename>&lt;MIME&gt;/MEDIA/SUBTYPE.xml</filename> (one file for each MIME
+type, giving details about the type)
+				</para></listitem>
+			</itemizedlist>
+The format of these generated files and the source files in <filename>packages</filename>
+are explained in the following sections.
+		</para>
+	</sect2>
+	<sect2>
+		<title>The source XML files</title>
+		<para>
+Each application provides only a single XML source file, which is installed in the
+<filename>packages</filename> directory as described above. This file is an XML file
+whose document element is named <userinput>mime-info</userinput> and whose namespace URI
+is <ulink url="http://www.freedesktop.org/standards/shared-mime-info"/>. All elements
+described in this specification MUST have this namespace too.
+		</para><para>
+The document element may contain zero or more <userinput>mime-type</userinput> child nodes,
+in any order, each describing a single MIME type. Each element has a <userinput>type</userinput>
+attribute giving the MIME type that it describes.
+		</para><para>
+Each <userinput>mime-type</userinput> node may contain any combination of the following elements,
+and in any order:
+			<itemizedlist>
+				<listitem><para>
+<userinput>glob</userinput> elements have a <userinput>pattern</userinput> attribute. Any file
+whose name matches this pattern will be given this MIME type (subject to conflicting rules in
+other files, of course).
+				</para></listitem>
+				<listitem><para>
+<userinput>magic</userinput> elements have <userinput>offset</userinput>,
+<userinput>type</userinput>, <userinput>value</userinput> and, optionally,
+<userinput>mask</userinput> attributes.  Each magic element corresponds to one
+line of <citerefentry><refentrytitle>file</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry>'s <filename>magic.mime</filename> file.
+They can be nested in the same way to provide the equivalent of continuation
+lines.
+				</para></listitem>
+				<listitem><para>
+<userinput>comment</userinput> elements give a human-readable textual description of the MIME
+type. There may be many of these elements with different <userinput>xml:lang</userinput> attributes
+to provide the text in multiple languages.
+				</para></listitem>
+			</itemizedlist>
+		</para><para>
+Here is an example source file, named <filename>mozilla.xml</filename>:
+		<programlisting><![CDATA[
+<?xml version="1.0"?>
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+  <mime-type type='text/html'>
+    <glob pattern='*.html'/>
+    <glob pattern='*.htm'/>
+    <magic offset='0:64' type='string' value='<HEAD'/>
+    <comment>HTML page</comment>
+    <comment xml:lang='af'>html bladsy</comment>
+  </mime-type>
+</mime-info>
+]]></programlisting>
+In practice, common types such as text/html are provided by the freedesktop.org shared
+database. Also, only new information needs to be provided, since this information will be merged
+with other information about the same type.
+		</para>
+	</sect2>
+	<sect2>
+		<title>The MEDIA/SUBTYPE.xml files</title>
+		<para>
+These files have a <userinput>mime-type</userinput> element as the root node. The format is
+as described above. They are created by merging all the <userinput>mime-type</userinput>
+elements from the source files and creating one output file per MIME type. Each file may contain
+information from multiple source files. The <userinput>magic</userinput> and
+<userinput>glob</userinput> elements will have been removed.
+		</para>
+	</sect2>
+	<sect2>
+		<title>The glob files</title>
+		<para>
+This is a simple list of lines containing a glob pattern, whitespace, and a MIME type. For example:
 			<programlisting><![CDATA[
-[MIME-Info text/html]
-Comment=HTML document
-Comment[af]=...
-[... etc. other translations ]
-Patterns=*.htm;*.html
-Contents=50:(string 0:64 "<HTML")
-Hidden=false
-PreferredExtension=html
+# Automatically generated by update-mime-database. DO NOT EDIT.
+
+*.html		text/html
+*.htm		text/html
+README*		text/x-readme
+...
 ]]></programlisting>
 		</para>
 		<para>
-All KDE-specific tags have been removed, as well as the Icon field. Although
-all desktops need a way to determine the icon for a particular type, the icon
-used will depend on desktop, and not only on the file type. The Encoding tag
-is not present; all .mimeinfo files are in the UTF-8 encoding.
-		</para>
-		<para>
-The type should be a standard MIME type where possible. If a special media type
-is required for non-file objects (directories, pipes, etc), then the media
-type 'inode' may be used.
-		</para>
-		<para>
-The entries in Patterns are separated by semicolons. There is no trailing
-semicolon. PreferredExtension is the suggested extension to use when creating
-files of this type.
-		</para>
-		<para>
-Although not part of the name-to-type mapping, the Comment field is left in
-for the sake of not having too many files.
-		</para>
-		<para>
-The Hidden field is usually not present. It is used to indicate that this entry
-replaces all information for this MIME type read so far, instead of being
-merged with other records for the same type. The intent is to let users
-entirely replace existing types.
-		</para>
-	</sect2>
-	<sect2>
-		<title>Directory layout</title>
-		<para>
-Unlike the KDE system, the files are not arranged in the filesystem by type.
-This approach is only possible for a tightly coordinated system. Consider,
-for example, that ROX-Filer adds a mapping from
-<filename>.DirIcon</filename> to 'image/png'. This cannot be specified in
-a file called <filename>image/png.desktop</filename> without conflicting
-with existing definitions for the type.
-		</para>
-		<para>
-Since files are not named by type, each file may contain multiple types. The
-files should instead be named by the package that they come from to avoid
-conflicts and reduce loading times.
-		</para>
-		<para>
-The directories to be used to load these files are:
-
-			<itemizedlist>
-				<listitem><para>
-<filename>/usr/share/mime/mime-info</filename>
-				</para></listitem>
-				<listitem><para>
-<filename>/usr/local/share/mime/mime-info</filename>
-				</para></listitem>
-				<listitem><para>
-<filename>~/.mime/mime-info</filename>
-				</para></listitem>
-			</itemizedlist>
-Each of these directories contains a number of files with the '.mimeinfo'
-extension. Applications MUST NOT try to load other files. This is to allow for
-future extensions.
-		</para>
-		<para>
-Programs modifying any of these files MUST update the modification time on
-the parent (<filename>mime-info</filename>) directory so that applications can
-easily detect the change. The rules from the directories in this list take
-precedence over conflicting rules from earlier directories. If a directory
-contains a file called <filename>user.mimeinfo</filename> then it should be
-read after all other files in that directory. This is to allow the user's
-settings to take precedence over all others. GUI tools for editing the MIME
-types will edit <filename>~/.mime/mime-info/user.mimeinfo</filename>.
-		</para>
-	</sect2>
-	<sect2>
-		<title>Pattern matching</title>
-		<para>
-KDE's Patterns field replaces GNOME's and ROX's ext/regex fields, since it
+KDE's glob system replaces GNOME's and ROX's ext/regex fields, since it
 is trivial to detect a pattern in the form '*.ext' and store it in an
 extension hash table internally. The full power of regular expressions was
 not being used by either desktop, and glob patterns are more suitable for
@@ -390,9 +461,6 @@ Applications MUST first try a case-sensitive match, then a case-insensitive
 one. This is so that <filename>main.C</filename> will be seen as a C++ file,
 but <filename>IMAGE.GIF</filename> will still use the *.gif pattern.
 		</para>
-	</sect2>
-	<sect2>
-		<title>Dealing with conflicts</title>
 		<para>
 If several patterns match then the longest pattern SHOULD be used. In
 particular, files with multiple extensions (such as
@@ -403,18 +471,9 @@ be matched before all others. It is acceptable to match patterns of the form
 using a hash table).
 		</para>
 		<para>
+There may be several rules mapping to the same type. They should all be merged.
 If the same pattern is defined twice, then they MUST be ordered by the
-directory the rule came from (this is to allow users to override the system
-defaults if, for example, they are using a common extension to mean something
-else). Patterns in <filename>~/.mime/mime-info</filename> override those
-in <filename>/usr/local/share/mime/mime-info</filename>, which in turn take
-precedence over those from <filename>/usr/mime/mime-info</filename>.
-If a pattern is defined twice within same directory, either can be used.
-		</para>
-		<para>
-If the same type is defined in several places, the Patterns and Comments
-MUST be merged. If two different comments are provided for the same
-MIME type in the same language, they should be ordered by directory as before.
+directory the rule came from, as described above.
 		</para>
 		<para>
 Common types (such as MS Word Documents) will be provided in the X Desktop
@@ -424,82 +483,22 @@ about its own types, conflicts should be rare.
 		</para>
 	</sect2>
 	<sect2>
-		<title>Contents matching</title>
+		<title>The magic files</title>
 		<para>
-The value of the Contents attribute contains a priority and an expression.
-If several expressions match for one file, the one with the highest priority is used.
-As a guide, priorities should be between 1 and 100, with 50 being the normal case.
-Generic types (such as XML or GZip-compressed files) should have lower priorities.
-		</para><para>
-Since scanning a file's contents can be very slow, applications may choose to
-do pattern matching first and only fall back to content matching, or not
-perform it at all.
+These files have the same format as
+<citerefentry><refentrytitle>file</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry>'s <filename>magic.mime</filename> file, except that
+the offset may be a range in the form START:END. The rule is considered to match if there is
+a match at either of these offsets, or at any offset in-between.
+			<programlisting><![CDATA[
+# Automatically generated by update-mime-database. DO NOT EDIT.
+
+0:64	string		\<HEAD		text/html
+0:64	string		\<head		text/html
+0:64	string		\<TITLE		text/html
+0:64	string		\<title		text/html
+]]></programlisting>
 		</para>
-		<para>
-The basic building blocks of expressions are bracketed lists containing a type,
-an offset (or range of offsets), the data to match and, optionally, a mask. For
-example:
-			<programlisting><![CDATA[
-(string 0 "%PDF-")
-(string 0 "\177ELF")
-(string	0:64 "<svg")
-(string 0 "BMxxxx\000\000" 0xffff00000000ffff)
-]]></programlisting>
-The first element of the list is the type of the data (see the table below), the
-second is the range of offsets to check, the third is the value to match and
-the last, if present, is the mask.
-			</para>
-			<para>
-Integers have the usual C-style prefixes (0 for octal numbers, 0x for hexadecimal).
-Strings have C-style escaping. This string contains the sequence of bytes
-&lt;0, 8, 9, 10&gt;: <userinput>"\0\010\t\xa"</userinput>.
-			</para>
-			<para>
-A range gives the range of valid starting offsets. If the end of the range is omitted then
-it is assumed to be the same as the start (that is, the match is only checked at one point
-in the file).
-			</para>
-			<para>
-The possible types of match are listed below:
-			</para>
-			<informaltable>
-				<tgroup cols="3">
-					<thead>
-						<row>
-<entry>Type</entry><entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-<row><entry>string</entry><entry>String of bytes</entry></row>
-<row><entry>byte</entry><entry>Single byte</entry></row>
-<row><entry>big16</entry><entry>16-bit big-endian integer</entry></row>
-<row><entry>big32</entry><entry>32-bit big-endian integer</entry></row>
-<row><entry>little16</entry><entry>16-bit little-endian integer</entry></row>
-<row><entry>little32</entry><entry>32-bit little-endian integer</entry></row>
-<row><entry>host16</entry><entry>16-bit integer in host-order</entry></row>
-<row><entry>host32</entry><entry>32-bit integer in host-order</entry></row>
-					</tbody>
-				</tgroup>
-			</informaltable>
-			<para>
-These basic expressions may be combined using the <userinput>and</userinput> and
-<userinput>or</userinput> syntax, eg:
-			<programlisting><![CDATA[
-(and (string 0 "\037\213") (string 10 "KOffice") (string 18 "application/x-kchart\004\006"))
-]]></programlisting>
-The <userinput>and</userinput> keyword corresponds to a more-deeply indented continuation
-line in the original <citerefentry><refentrytitle>file</refentrytitle>
-<manvolnum>1</manvolnum></citerefentry> syntax, while <userinput>or</userinput> corresponds
-to elements at the same indentation. They may be nested in the obvious (scheme-like)
-fashion.
-			</para>
-			<para>
-Since many formats have sub-formats (for example, KOffice stores its files in
-GZip format, with a generic KOffice marker and a specific application marker),
-it may be a useful optimisation to spot the same subexpression (eg
-<userinput>(string 10 "KOffice")</userinput>) being used in several types and
-only check it once.
-			</para>
 	</sect2>
 	<sect2>
 		<title>Security implications</title>

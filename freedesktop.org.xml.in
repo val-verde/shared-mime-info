@@ -2024,10 +2024,13 @@ command to generate the output files.
     <_comment>stream of data (server push)</_comment>
   </mime-type>
   <mime-type type="text/calendar">
-    <_comment>iCalendar file</_comment>
+    <alias type=="text/x-vcalendar"/>
+    <_comment>vCalendar interchange file</_comment>
     <magic priority="50">
       <match type="string" value="BEGIN:VCALENDAR" offset="0"/>
+      <match type="string" value="begin:vcalendar" offset="0"/>
     </magic>
+    <glob pattern="*.vcs"/>
     <glob pattern="*.ics"/>
   </mime-type>
   <mime-type type="text/css">
@@ -2036,7 +2039,15 @@ command to generate the output files.
     <glob pattern="*.CSSL"/>
   </mime-type>
   <mime-type type="text/directory">
-    <_comment>directory information file</_comment>
+    <alias type="text/x-vcard"/>
+    <_comment>Electronic Business Card</_comment>
+    <magic priority="50">
+      <match type="string" value="BEGIN:VCARD" offset="0"/>
+      <match type="string" value="begin:vcard" offset="0"/>
+    </magic>
+    <glob pattern="*.vcf"/>
+    <glob pattern="*.vct"/>
+    <glob pattern="*.gcrd"/>
   </mime-type>
   <mime-type type="text/enriched">
     <_comment>enriched text document</_comment>
@@ -2352,24 +2363,6 @@ command to generate the output files.
     <_comment>resource location</_comment>
     <glob pattern="*.uri"/>
     <glob pattern="*.url"/>
-  </mime-type>
-  <mime-type type="text/x-vcalendar">
-    <_comment>vCalendar interchange file</_comment>
-    <magic priority="50">
-      <match type="string" value="BEGIN:VCALENDAR" offset="0"/>
-      <match type="string" value="begin:vcalendar" offset="0"/>
-    </magic>
-    <glob pattern="*.vcs"/>
-    <glob pattern="*.vcf"/>
-  </mime-type>
-  <mime-type type="text/x-vcard">
-    <_comment>electronic business card</_comment>
-    <magic priority="50">
-      <match type="string" value="BEGIN:VCARD" offset="0"/>
-      <match type="string" value="begin:vcard" offset="0"/>
-    </magic>
-    <glob pattern="*.vct"/>
-    <glob pattern="*.gcrd"/>
   </mime-type>
   <mime-type type="text/x-xmi">
     <_comment>XML Metadata Interchange file</_comment>

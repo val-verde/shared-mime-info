@@ -495,7 +495,7 @@ Each element corresponds to one line of
 <citerefentry><refentrytitle>file</refentrytitle>
 <manvolnum>1</manvolnum></citerefentry>'s <filename>magic.mime</filename> file.
 They can be nested in the same way to provide the equivalent of continuation
-lines.
+lines. That is, <![CDATA[<a><b/><c/></a>]]> means 'a and (b or c)'.
 				</para></listitem>
 				<listitem><para>
 <userinput>comment</userinput> elements give a human-readable textual description of the MIME

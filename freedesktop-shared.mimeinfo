@@ -27,7 +27,7 @@ Comment[sl]=seznam Andrew Toolkit-a
 Comment[sv]=Andrew-verktygssamling insatt
 Comment[uk]=вкладка Andrew Toolkit
 Comment[zh]=Andrew Toolkit inset 檔
-Patterns=*.ez;
+Patterns=*.ez
 
 [MIME-Info application/illustrator]
 Comment=Adobe Illustrator Document
@@ -68,7 +68,7 @@ Comment[vi]=Tài liệu Adobe Illustrator
 Comment[xx]=xx
 Comment[zh_CN]=Adobe Illustrator 文档
 Comment[zu]=Umkhombisi Wedokhumenti ye Adobe
-Patterns=*.ai;
+Patterns=*.ai
 
 [MIME-Info application/mac-binhex40]
 Comment=Macintosh BinHex-encoded file
@@ -159,7 +159,7 @@ Comment[xx]=xx
 Comment[zh_CN]=微软 Word 文档
 Comment[zh_TW]=微軟 Word 文件
 Comment[zu]=Idokhumente ye Microsoft Word
-Patterns=*.doc;
+Patterns=*.doc
 
 [MIME-Info application/octet-stream]
 Comment=Unknown
@@ -220,7 +220,7 @@ Comment[xx]=xx
 Comment[zh_CN]=未知
 Comment[zh_TW]=未知
 Comment[zu]=Ayaziwa
-Patterns=*.bin;
+Patterns=*.bin
 
 [MIME-Info application/oda]
 Comment=ODA document
@@ -254,7 +254,7 @@ Comment[tr]=ODA belgesi
 Comment[uk]=документ ODA
 Comment[wa]=documint ODA
 Comment[zh]=ODA文档
-Patterns=*.oda;
+Patterns=*.oda
 
 [MIME-Info application/pdf]
 Comment=Pdf Document
@@ -315,7 +315,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Pdf 文档
 Comment[zh_TW]=Pdf 文件
 Comment[zu]=Idokhumente yePdf
-Patterns=*.pdf;
+Patterns=*.pdf
 
 [MIME-Info application/pgp]
 Comment=PGP message
@@ -348,7 +348,7 @@ Comment[tr]=PGP iletisi
 Comment[uk]=повідомлення PGP
 Comment[wa]=messaedje PGP
 Comment[zh]=PGP消息
-Patterns=*.pgp;
+Patterns=*.pgp
 
 [MIME-Info application/pgp-encrypted]
 Comment=PGP/MIME encrypted message header
@@ -530,7 +530,7 @@ Comment[vi]=Lọc chữ kí S/MIME
 Comment[xx]=xx
 Comment[zh_CN]=分离的 S/MIME 签名
 Comment[zu]=Ukungamanyanisi kokusayina kwe S/MIME
-Patterns=*.p7s;
+Patterns=*.p7s
 
 [MIME-Info application/postscript]
 Comment=PostScript Document
@@ -591,7 +591,7 @@ Comment[xx]=xx
 Comment[zh_CN]=PostScript 文档
 Comment[zh_TW]=PostScript 文件
 Comment[zu]=Idokhumente ye PostScript
-Patterns=*.ps;
+Patterns=*.ps
 
 [MIME-Info application/rtf]
 Comment=Rich Text Format
@@ -638,7 +638,7 @@ Comment[xx]=xx
 Comment[zh_CN]=RTF 文字格式
 Comment[zh_TW]=Rich 文字格式
 Comment[zu]=Ifomathi Yokubhaliweyo Okubalulekile
-Patterns=*.rtf;
+Patterns=*.rtf
 
 [MIME-Info application/smil]
 Comment=Synchronized Multimedia Integration Language
@@ -687,7 +687,7 @@ Comment[xx]=xx
 Comment[zh_CN]=同步多媒体集成语言
 Comment[zh_TW]=同步多媒體整合式語言
 Comment[zu]=Okuxhumeneyo nokuhlukeneyo ezezindaba Ezihlanganayo Zolimi
-Patterns=*.smil;*.smi;*.sml;
+Patterns=*.smil;*.smi;*.sml
 
 [MIME-Info application/vnd.lotus-1-2-3]
 Comment=Lotus 1-2-3 spreadsheet
@@ -719,7 +719,7 @@ Comment[tr]=Lotus 1-2-3 hesap tablosu
 Comment[uk]=таблиця Lotus 1-2-3
 Comment[wa]=foye tåvleu Lotus 1-2-3
 Comment[zh]=Lotus 1-2-3电子表格
-Patterns=*.123;*.wk1;*.wk3;*.wk4;*.wks;
+Patterns=*.123;*.wk1;*.wk3;*.wk4;*.wks
 
 [MIME-Info application/vnd.ms-excel]
 Comment=Microsoft Excel spreadsheet
@@ -777,7 +777,7 @@ Comment[xx]=xx
 Comment[zh_CN]=微软 Excel 表格
 Comment[zh_TW]=微軟 Excel 表格
 Comment[zu]=Ikhasi lokwandisa le Microsoft Excel
-Patterns=*.xls;*.xlc;*.xll;*.xlm;*.xlw;*.xla;*.xlt;*.xld;
+Patterns=*.xls;*.xlc;*.xll;*.xlm;*.xlw;*.xla;*.xlt;*.xld
 
 [MIME-Info application/vnd.ms-powerpoint]
 Comment=Microsoft PowerPoint document
@@ -836,7 +836,7 @@ Comment[xx]=xx
 Comment[zh_CN]=微软 PowerPoint 文档
 Comment[zh_TW]=微軟 PowerPoint 文件
 Comment[zu]=Idokumente ye Microsoft PowerPoint
-Patterns=*.ppz;*.ppt;
+Patterns=*.ppz;*.ppt
 
 [MIME-Info application/vnd.ms-word]
 Comment=Microsoft Word document
@@ -947,7 +947,7 @@ Comment[sl]=preglednica StarCalc
 Comment[sv]=StarCalc-kalkylblad
 Comment[uk]=електронна таблиця StarCalc
 Comment[zh]=StarCalc电子表格
-Patterns=*.sdc;
+Patterns=*.sdc
 
 [MIME-Info application/vnd.stardivision.chart]
 Comment=StarChart chart
@@ -967,7 +967,7 @@ Comment[sl]=graf StarChart
 Comment[sv]=StarChart-diagram
 Comment[uk]=графік StarChart
 Comment[zh]=StarChart图表
-Patterns=*.sds;
+Patterns=*.sds
 
 [MIME-Info application/vnd.stardivision.draw]
 Comment=StarDraw drawing
@@ -987,7 +987,7 @@ Comment[sl]=risba StarDraw
 Comment[sv]=StarDraw-teckning
 Comment[uk]=рисунок StarDraw
 Comment[zh]=StarDraw图画
-Patterns=*.sda;
+Patterns=*.sda
 
 [MIME-Info application/vnd.stardivision.impress]
 Comment=StarImpress presentation
@@ -1007,7 +1007,7 @@ Comment[sl]=predstavitev StarImpress
 Comment[sv]=StarImpress-presentation
 Comment[uk]=презентація StarImpress
 Comment[zh]=StarImpress演示稿
-Patterns=*.sdd;*.sdp;
+Patterns=*.sdd;*.sdp
 
 [MIME-Info application/vnd.stardivision.mail]
 Comment=StarMail file
@@ -1027,7 +1027,7 @@ Comment[sl]=datoteka StarMail
 Comment[sv]=StarMail-fil
 Comment[uk]=файл StarMail
 Comment[zh]=StarMail文件
-Patterns=*.smd;
+Patterns=*.smd
 
 [MIME-Info application/vnd.stardivision.math]
 Comment=StarMath document
@@ -1047,7 +1047,7 @@ Comment[sl]=dokument StarMath
 Comment[sv]=StarMath-dokument
 Comment[uk]=документ StarMath
 Comment[zh]=StarMath文档
-Patterns=*.smf;
+Patterns=*.smf
 
 [MIME-Info application/vnd.stardivision.writer]
 Comment=StarWriter document
@@ -1067,7 +1067,7 @@ Comment[sl]=dokument StarWriter
 Comment[sv]=StarWriter-dokument
 Comment[uk]=документ StarWriter
 Comment[zh]=StarWriter文档
-Patterns=*.sdw;*.vor;*.sgl;
+Patterns=*.sdw;*.vor;*.sgl
 
 [MIME-Info application/vnd.sun.xml.calc]
 Comment=OpenOffice spreadsheet
@@ -1087,7 +1087,7 @@ Comment[sl]=preglednica OpenOffice
 Comment[sv]=OpenOffice-kalkylblad
 Comment[uk]=електронна таблиця OpenOffice
 Comment[zh]=OpenOffice spreadsheet
-Patterns=*.sxc;
+Patterns=*.sxc
 
 [MIME-Info application/vnd.sun.xml.calc.template]
 Comment=OpenOffice spreadsheet template
@@ -1107,7 +1107,7 @@ Comment[sl]=predloga preglednice OpenOffice
 Comment[sv]=OpenOffice-kalkylbladsmall
 Comment[uk]=шаблон електронної таблиці OpenOffice
 Comment[zh]=OpenOffice spreadsheet摸板
-Patterns=*.stc;
+Patterns=*.stc
 
 [MIME-Info application/vnd.sun.xml.draw]
 Comment=OpenOffice drawing
@@ -1127,7 +1127,7 @@ Comment[sl]=risba OpenOffice
 Comment[sv]=OpenOffice-teckning
 Comment[uk]=рисунок OpenOffice
 Comment[zh]=OpenOffice drawing
-Patterns=*.sxd;
+Patterns=*.sxd
 
 [MIME-Info application/vnd.sun.xml.draw.template]
 Comment=OpenOffice drawing template
@@ -1147,7 +1147,7 @@ Comment[sl]=predloga risbe OpenOffice
 Comment[sv]=OpenOffice-teckningsmall
 Comment[uk]=шаблон рисунка OpenOffice
 Comment[zh]=OpenOffice drawing摸板
-Patterns=*.std;
+Patterns=*.std
 
 [MIME-Info application/vnd.sun.xml.impress]
 Comment=OpenOffice Impress presentation
@@ -1167,7 +1167,7 @@ Comment[sl]=predstavitev OpenOffice Impress
 Comment[sv]=OpenOffice Impress-presentation
 Comment[uk]=презентація OpenOffice Impress
 Comment[zh]=OpenOffice Impress演示稿
-Patterns=*.sxi;
+Patterns=*.sxi
 
 [MIME-Info application/vnd.sun.xml.impress.template]
 Comment=OpenOffice Impress presentation template
@@ -1187,7 +1187,7 @@ Comment[sl]=predloga predstavitve OpenOffice Impress
 Comment[sv]=OpenOffice Impress-presentationsmall
 Comment[uk]=шаблон презентації OpenOffice Impress
 Comment[zh]=OpenOffice Impress演示稿摸板
-Patterns=*.sti;
+Patterns=*.sti
 
 [MIME-Info application/vnd.sun.xml.math]
 Comment=OpenOffice Math document
@@ -1207,7 +1207,7 @@ Comment[sl]=dokument OpenOffice Math
 Comment[sv]=OpenOffice Math-dokument
 Comment[uk]=документ OpenOffice Math
 Comment[zh]=OpenOffice Math文档
-Patterns=*.sxm;
+Patterns=*.sxm
 
 [MIME-Info application/vnd.sun.xml.writer]
 Comment=OpenOffice Writer document
@@ -1227,7 +1227,7 @@ Comment[sl]=dokument OpenOffice Writer
 Comment[sv]=OpenOffice Writer-dokument
 Comment[uk]=документ OpenOffice Writer
 Comment[zh]=OpenOffice Writer文档
-Patterns=*.sxw;
+Patterns=*.sxw
 
 [MIME-Info application/vnd.sun.xml.writer.global]
 Comment=OpenOffice Writer global document
@@ -1247,7 +1247,7 @@ Comment[sl]=globalni dokument OpenOffice Writer
 Comment[sv]=OpenOffice Writer-globaldokument
 Comment[uk]=глобальний документ OpenOffice Writer
 Comment[zh]=OpenOffice Writer全局文档
-Patterns=*.sxg;
+Patterns=*.sxg
 
 [MIME-Info application/vnd.sun.xml.writer.template]
 Comment=OpenOffice Writer template
@@ -1267,7 +1267,7 @@ Comment[sl]=predloga OpenOffice Writer
 Comment[sv]=OpenOffice Writer-mall
 Comment[uk]=шаблон OpenOffice Writer
 Comment[zh]=OpenOffice Writer摸板
-Patterns=*.stw;
+Patterns=*.stw
 
 [MIME-Info application/wordperfect]
 Comment=WordPerfect document
@@ -1327,7 +1327,7 @@ Comment[xx]=xx
 Comment[zh_CN]=WordPerfect 文档
 Comment[zh_TW]=WordPerfect 文件
 Comment[zu]=Idokumente ye WordPerfect
-Patterns=*.wpd;
+Patterns=*.wpd
 
 [MIME-Info application/x-abiword]
 Comment=AbiWord Document
@@ -1381,7 +1381,7 @@ Comment[xx]=xx
 Comment[zh_CN]=AbiWord 文档
 Comment[zh_TW]=AbiWord 文件
 Comment[zu]=U AbiWord Document
-Patterns=*.abw;*.abw.gz;*.zabw;
+Patterns=*.abw;*.abw.gz;*.zabw
 
 [MIME-Info application/x-amipro]
 Comment=Lotus AmiPro document
@@ -1419,7 +1419,7 @@ Comment[vi]=Tài liệu Lotus AmiPro
 Comment[xx]=xx
 Comment[zh_CN]=Lotus AmiPro 文档
 Comment[zu]=Idokhumenti ye Lotus AmiPro
-Patterns=*.sam;
+Patterns=*.sam
 
 [MIME-Info application/x-applix-spreadsheet]
 Comment=Applix Spreadsheets document
@@ -1471,7 +1471,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Applix 电子表格文档
 Comment[zh_TW]=Applix 電子表格文件
 Comment[zu]=Idokhumente yamaphepha aluliweyo eApplix
-Patterns=*.as;
+Patterns=*.as
 
 [MIME-Info application/x-applix-word]
 Comment=Applix Words document
@@ -1523,7 +1523,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Applix 文字处理文档
 Comment[zh_TW]=Applix 文文書處理文件
 Comment[zu]=Idokhumente ye Applix Words
-Patterns=*.aw;
+Patterns=*.aw
 
 [MIME-Info application/x-archive]
 Comment=Ar Archives
@@ -1583,7 +1583,7 @@ Comment[xh]=Ushicilelo lukawonke-wonke kunye namaxwebhu eMbali e Ar
 Comment[xx]=xx
 Comment[zh_CN]=Ar 归档文件
 Comment[zh_TW]=Ar 壓縮文件
-Patterns=*.a;
+Patterns=*.a
 
 [MIME-Info application/x-arj]
 Comment=ARJ archive
@@ -1642,7 +1642,7 @@ Comment[xh]=Ushicilelo lukawonke-wonke kunye nexwebhu le Mbali ye ARJ
 Comment[xx]=xx
 Comment[zh_CN]=ARJ 归档文件
 Comment[zh_TW]=ARJ 壓縮檔案
-Patterns=*.arj;
+Patterns=*.arj
 
 [MIME-Info application/x-asp]
 Comment=active server page
@@ -1675,7 +1675,7 @@ Comment[tr]=etkin sunucu sayfası
 Comment[uk]=Active Server Page
 Comment[wa]=pådje ASP
 Comment[zh]=主动服务页面(asp)
-Patterns=*.asp;
+Patterns=*.asp
 
 [MIME-Info application/x-awk]
 Comment=AWK script
@@ -1765,7 +1765,7 @@ Comment[tr]=BCPIO belgesi
 Comment[uk]=документ BCPIO
 Comment[wa]=documint BCPIO
 Comment[zh]=AutoCAD文档
-Patterns=*.bcpio;
+Patterns=*.bcpio
 
 [MIME-Info application/x-bzip]
 Comment=Bzip file
@@ -1826,7 +1826,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Bzip 文件
 Comment[zh_TW]=Bzip 檔案
 Comment[zu]=Ifayile ye Bzip
-Patterns=*.bz;*.bz2;
+Patterns=*.bz;*.bz2
 
 [MIME-Info application/x-bzip-compressed-tar]
 Comment=Bzipped Tar Archives
@@ -1884,7 +1884,7 @@ Comment[xh]=Ushicilelo lukawonke-wonke namaxwebhu eMbali le Bzipped Tar
 Comment[xx]=xx
 Comment[zh_CN]=Bzip 压缩的 Tar 归档文件
 Comment[zh_TW]=Bzip 壓縮的 Tar 壓縮文件
-Patterns=*.tar.bz;*.tar.bz2;
+Patterns=*.tar.bz;*.tar.bz2
 
 [MIME-Info application/x-cgi]
 Comment=CGI program
@@ -1918,7 +1918,7 @@ Comment[tr]=CGI yazılımı
 Comment[uk]=програма CGI
 Comment[wa]=programe CGI
 Comment[zh]=CGI程序
-Patterns=*.cgi;
+Patterns=*.cgi
 
 [MIME-Info application/x-chess-pgn]
 Comment=PGN chess game
@@ -1951,7 +1951,7 @@ Comment[tr]=PGN satranç oyunu
 Comment[uk]=шахова гра PGN
 Comment[wa]=djeu d' echeks PGN
 Comment[zh]=PGN国际象棋游戏
-Patterns=*.pgn;
+Patterns=*.pgn
 
 [MIME-Info application/x-class-file]
 Comment=Java byte code
@@ -2042,7 +2042,7 @@ Comment[xx]=xx
 Comment[zh_CN]=UNIX 压缩文件
 Comment[zh_TW]=UNIX 壓縮檔案
 Comment[zu]=Ifayile enciphisiwe yeUNIX
-Patterns=*.Z;
+Patterns=*.Z
 
 [MIME-Info application/x-compressed-tar]
 Comment=Gzipped Tar Archive
@@ -2100,7 +2100,7 @@ Comment[xh]=Ushicilelo lukawonke-wonke nexwebhu leMbali le Gzipped Tar
 Comment[xx]=xx
 Comment[zh_CN]=Gzip 压缩的 Tar 归档文件
 Comment[zh_TW]=Gzip 壓縮的 Tar 壓縮文件
-Patterns=*.tar.gz;*.tgz;
+Patterns=*.tar.gz;*.tgz
 
 [MIME-Info application/x-core]
 Comment=Program crash data
@@ -2159,7 +2159,7 @@ Comment[xx]=xx
 Comment[zh_CN]=程序崩溃数据
 Comment[zh_TW]=程式 crash 資料
 Comment[zu]=Idata yeprogremu yedata eshabalile
-Patterns=core;
+Patterns=core
 
 [MIME-Info application/x-cpio]
 Comment=CPIO archive
@@ -2218,7 +2218,7 @@ Comment[xh]=Ushicilelo lukawonke-wonke kunye nexwebhu leMbali ye CPIO
 Comment[xx]=xx
 Comment[zh_CN]=CPIO 归档文件
 Comment[zh_TW]=CPIO 壓縮檔案
-Patterns=*.cpio;
+Patterns=*.cpio
 
 [MIME-Info application/x-cpio-compressed]
 Comment=CPIO archive (gzip-compressed)
@@ -2251,7 +2251,7 @@ Comment[tr]=CPIO arşivi (gzip-sıkıştırmalı)
 Comment[uk]=архів CPIO (стиснутий gzip)
 Comment[wa]=årtchive CPIO (gzip-sipotcheye)
 Comment[zh]=CPIO存档(用gzip压缩)
-Patterns=.cpio.gz;
+Patterns=.cpio.gz
 
 [MIME-Info application/x-csh]
 Comment=C shell script
@@ -2295,7 +2295,7 @@ Comment[nl]=dBASE-document
 Comment[ro]=Document dBASE
 Comment[sl]=Dokument dBASE
 Comment[sv]=dBASE-dokument
-Patterns=*.dbf;
+Patterns=*.dbf
 
 [MIME-Info application/x-dc-rom]
 Comment=Dreamcast rom
@@ -2315,7 +2315,7 @@ Comment[sl]=ROM Dreamcast
 Comment[sv]=Dreamcast-rom
 Comment[uk]=ПЗП Dreamcast
 Comment[zh]=Dreamcast rom
-Patterns=*.dc;
+Patterns=*.dc
 
 [MIME-Info application/x-deb]
 Comment=Debian package
@@ -2349,7 +2349,7 @@ Comment[tr]=Debian paketi
 Comment[uk]=пакет Debian
 Comment[wa]=pacaedje Debian
 Comment[zh]=Debian包
-Patterns=*.deb;
+Patterns=*.deb
 
 [MIME-Info application/x-designer]
 Comment=Qt Designer File
@@ -2401,7 +2401,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Qt Designer 文件
 Comment[zh_TW]=Qt Designer 檔案
 Comment[zu]=Qt Ifayela Yomdwebi
-Patterns=*.ui;
+Patterns=*.ui
 
 [MIME-Info application/x-desktop]
 Comment=Desktop config file
@@ -2460,7 +2460,7 @@ Comment[xx]=xx
 Comment[zh_CN]=桌面配置文件
 Comment[zh_TW]=桌面設定檔案檔案
 Comment[zu]=Ifayile yohlanganiso le Desktop
-Patterns=*.desktop;*.kdelnk;
+Patterns=*.desktop;*.kdelnk
 
 [MIME-Info application/x-dia-diagram]
 Comment=Dia diagram
@@ -2493,7 +2493,7 @@ Comment[sv]=Dia-diagram
 Comment[tr]=Dia çizgesi
 Comment[uk]=діаграма Dia
 Comment[zh]=Dia图表
-Patterns=*.dia;
+Patterns=*.dia
 
 [MIME-Info application/x-dvi]
 Comment=TeX Device Independent file
@@ -2550,7 +2550,7 @@ Comment[xx]=xx
 Comment[zh_CN]=TeX 设备无关文件
 Comment[zh_TW]=與裝置無關的 Tex 檔案
 Comment[zu]=Ifayile Ezimeleyo yecebo le TeX
-Patterns=*.dvi;
+Patterns=*.dvi
 
 [MIME-Info application/x-e-theme]
 Comment=Enlightenment theme
@@ -2583,7 +2583,7 @@ Comment[tr]=Enlightenment teması
 Comment[uk]=тема Enlightenment
 Comment[wa]=tinme po Enlightenment
 Comment[zh]=Enlightenment主题
-Patterns=*.etheme;
+Patterns=*.etheme
 
 [MIME-Info application/x-egon]
 Comment=Egon Animator
@@ -2623,7 +2623,7 @@ Comment[ven]=Zwipuka zwa Egon
 Comment[vi]=Hoạt hoạ Egon
 Comment[xh]=Umphilisi we-Egon
 Comment[xx]=xx
-Patterns=*.egon;
+Patterns=*.egon
 
 [MIME-Info application/x-executable]
 Comment=Executable
@@ -2678,7 +2678,7 @@ Comment[xx]=xx
 Comment[zh_CN]=可执行文件
 Comment[zh_TW]=可執行的
 Comment[zu]=Ephumelelisiwe
-Patterns=*.exe;
+Patterns=*.exe
 
 [MIME-Info application/x-font]
 Comment=Fonts
@@ -2734,7 +2734,7 @@ Comment[xh]=Imigca
 Comment[xx]=xx
 Comment[zh_CN]=字体
 Comment[zh_TW]=字體
-Patterns=*.pfa;*.pfb;*.gsf;*.pcf.Z;
+Patterns=*.pfa;*.pfb;*.gsf;*.pcf.Z
 
 [MIME-Info application/x-font-afm]
 Comment=Adobe font metrics
@@ -2767,7 +2767,7 @@ Comment[tr]=Adobe yazıtipi ölçüleri
 Comment[uk]=метрики шрифта Adobe
 Comment[wa]=metrikes di fonte d' Adobe
 Comment[zh]=Adobe metrics 字型檔
-Patterns=*.afm;
+Patterns=*.afm
 
 [MIME-Info application/x-font-bdf]
 Comment=BDF font
@@ -2801,7 +2801,7 @@ Comment[tr]=BDF yazıtipi
 Comment[uk]=шрифт BDF
 Comment[wa]=fonte BCF
 Comment[zh]=BDF字体
-Patterns=*.bdf;
+Patterns=*.bdf
 
 [MIME-Info application/x-font-dos]
 Comment=DOS font
@@ -2933,7 +2933,7 @@ Comment[tr]=Linux PSF konsol yazıtipi
 Comment[uk]=консольний шрифт Linux PSF
 Comment[wa]=fonte PSF pol conzôle Linux
 Comment[zh]=Linux PSF控制台字体
-Patterns=*.psf;
+Patterns=*.psf
 
 [MIME-Info application/x-font-pcf]
 Comment=PCF font
@@ -2967,7 +2967,7 @@ Comment[tr]=PCF yazıtipi
 Comment[uk]=шрифт PCF
 Comment[wa]=fonte PCF
 Comment[zh]=PCF字体
-Patterns=*.pcf;
+Patterns=*.pcf
 
 [MIME-Info application/x-font-speedo]
 Comment=Speedo font
@@ -3001,7 +3001,7 @@ Comment[tr]=Speedo yazıtipi
 Comment[uk]=шрифт Speedo
 Comment[wa]=fonte Speedo
 Comment[zh]=Speedo字体
-Patterns=*.spd;
+Patterns=*.spd
 
 [MIME-Info application/x-font-sunos-news]
 Comment=SunOS News font
@@ -3159,7 +3159,7 @@ Comment[xh]=Umgca wodidi oluyinyaniso
 Comment[xx]=xx
 Comment[zh_CN]=Truetype 字体
 Comment[zh_TW]=Truetype 字體
-Patterns=*.ttf;
+Patterns=*.ttf
 
 [MIME-Info application/x-font-vfont]
 Comment=V font
@@ -3212,7 +3212,7 @@ Comment[sl]=ROM Game Boy
 Comment[sv]=Game Boy-rom
 Comment[uk]=ПЗП Game Boy
 Comment[zh]=Game Boy rom
-Patterns=*.gb;
+Patterns=*.gb
 
 [MIME-Info application/x-genesis-rom]
 Comment=Genesis rom
@@ -3232,7 +3232,7 @@ Comment[sl]=ROM Genesis
 Comment[sv]=Genesis-rom
 Comment[uk]=ПЗП Genesis
 Comment[zh]=Genesis rom
-Patterns=*.gen;*.md;
+Patterns=*.gen;*.md
 
 [MIME-Info application/x-glade]
 Comment=Glade project
@@ -3265,7 +3265,7 @@ Comment[tr]=Glade projesi
 Comment[uk]=проект Glade
 Comment[wa]=prodjet Glade
 Comment[zh]=Glade工程文件
-Patterns=*.glade;
+Patterns=*.glade
 
 [MIME-Info application/x-gmc-link]
 Comment=GMC link
@@ -3329,7 +3329,7 @@ Comment[sv]=GnuCash-arbetsbok
 Comment[tr]=GnuCash Çalışma defteri
 Comment[uk]=книга GnuCash
 Comment[zh]=GnuCash业务手册
-Patterns=*.gnucash;*.gnc;*.xac;
+Patterns=*.gnucash;*.gnc;*.xac
 
 [MIME-Info application/x-gnumeric]
 Comment=GNUmeric spreadsheet
@@ -3378,7 +3378,7 @@ Comment[xx]=xx
 Comment[zh_CN]=GNUmeric 电子表格
 Comment[zh_TW]=GNUmeric 電子表格
 Comment[zu]=GNUmeric ikhasi lolwando
-Patterns=*.gnumeric;
+Patterns=*.gnumeric
 
 [MIME-Info application/x-graphite]
 Comment=graphite - Scientific Graphs
@@ -3436,7 +3436,7 @@ Comment[xx]=xx
 Comment[zh_CN]=graphite - 科学绘图
 Comment[zh_TW]=graphite - 科學繪圖
 Comment[zu]=graphite - Imidwebo Yobuchwepheshe
-Patterns=*.gra;
+Patterns=*.gra
 
 [MIME-Info application/x-gtar]
 Comment=gtar archive
@@ -3470,7 +3470,7 @@ Comment[tr]=gtar arşivi
 Comment[uk]=архів gtar
 Comment[wa]=årtchive gtar
 Comment[zh]=gtar归档
-Patterns=*.gtar;
+Patterns=*.gtar
 
 [MIME-Info application/x-gtktalog]
 Comment=Gtktalog Catalogue
@@ -3550,7 +3550,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Gzip 文件
 Comment[zh_TW]=Gzip 檔案
 Comment[zu]=Ifayela ye Gzip
-Patterns=*.gz;
+Patterns=*.gz
 
 [MIME-Info application/x-gzpostscript]
 Comment=Gzipped PostScript File
@@ -3562,7 +3562,7 @@ Comment[nl]=met Gzip gecomprimeerd PostScript-bestand
 Comment[ro]=Fişier PostScript comprimat
 Comment[sl]=Postscriptna datoteka, stisnjena z gzip-om
 Comment[sv]=Gzip-komprimerad Postscript-fil
-Patterns=*.ps.gz;
+Patterns=*.ps.gz
 
 [MIME-Info application/x-hdf]
 Comment=HDF document
@@ -3596,7 +3596,7 @@ Comment[tr]=HDF belgesi
 Comment[uk]=документ HDF
 Comment[wa]=documint HDF
 Comment[zh]=HDF文档
-Patterns=*.hdf;
+Patterns=*.hdf
 
 [MIME-Info application/x-jar]
 Comment=Java Archive
@@ -3656,7 +3656,7 @@ Comment[xh]=Ushicilelo lukawonke-wonke nexwebhu leMbali le Java
 Comment[xx]=xx
 Comment[zh_CN]=Java 归档文件
 Comment[zh_TW]=Java 壓縮檔案
-Patterns=*.jar;
+Patterns=*.jar
 
 [MIME-Info application/x-java]
 Comment=Java Class
@@ -3714,7 +3714,7 @@ Comment[xh]=Uhlobo lwe Java
 Comment[xx]=xx
 Comment[zh_CN]=Java 类
 Comment[zu]=Iqoqo lwe Java
-Patterns=*.class;
+Patterns=*.class
 
 [MIME-Info application/x-jbuilder-project]
 Comment=JBuilder Project
@@ -3747,7 +3747,7 @@ Comment[tr]=JBuilder Projesi
 Comment[uk]=проект JBuilder
 Comment[wa]=prodjet JBuilder
 Comment[zh]=JBuilder工程文件
-Patterns=*.jpr;*.jpx;
+Patterns=*.jpr;*.jpx
 
 [MIME-Info application/x-karbon]
 Comment=Karbon14 Document
@@ -3788,7 +3788,7 @@ Comment[xh]=Karbon14 Uxwebhu
 Comment[xx]=xx
 Comment[zh_CN]=Karbon14 文档
 Comment[zu]=Idokhumenti ye Karbon14
-Patterns=*.karbon;
+Patterns=*.karbon
 
 [MIME-Info application/x-kchart]
 Comment=KChart
@@ -3809,7 +3809,7 @@ Comment[ven]=Tshati ya K
 Comment[xh]=Itshati ye K
 Comment[xx]=xx
 Comment[zu]=KIngxoxo
-Patterns=*.chrt;
+Patterns=*.chrt
 
 [MIME-Info application/x-kformula]
 Comment=KFormula
@@ -3826,7 +3826,7 @@ Comment[sv]=Kformula
 Comment[th]=สูตรคณิตศาสตร์ - K
 Comment[ven]=Fomula ya K
 Comment[xx]=xx
-Patterns=*.kfo;
+Patterns=*.kfo
 
 [MIME-Info application/x-killustrator]
 Comment=KIllustrator document
@@ -3859,7 +3859,7 @@ Comment[tr]=KIllustrator belgesi
 Comment[uk]=документ KIllustrator
 Comment[wa]=documint Killustrator
 Comment[zh]=KIllustrator文档
-Patterns=*.kil;
+Patterns=*.kil
 
 [MIME-Info application/x-kivio]
 Comment=Kivio
@@ -3869,7 +3869,7 @@ Comment[es]=Archivo de Kivio
 Comment[is]=kivio: Forrit til að teikna ýmis rit (ekki ósvipað Visio)
 Comment[pt_BR]=Editor de fluxogramas
 Comment[xx]=xx
-Patterns=*.flw;
+Patterns=*.flw
 
 [MIME-Info application/x-kontour]
 Comment=Kontour
@@ -3879,7 +3879,7 @@ Comment[bg]=Контур
 Comment[da]=Kontour-illustrationsprogram
 Comment[eo]=Vektorgrafikprogramo Konturo
 Comment[xx]=xx
-Patterns=*.kon;
+Patterns=*.kon
 
 [MIME-Info application/x-kpovmodeler]
 Comment=KPovModeler File
@@ -3929,7 +3929,7 @@ Comment[xx]=xx
 Comment[zh_CN]=KPovModeler 文件
 Comment[zh_TW]=KPovModeler 文件
 Comment[zu]=Ifayile yoMumodeli we KPov
-Patterns=*.kpm;
+Patterns=*.kpm
 
 [MIME-Info application/x-kpresenter]
 Comment=KPresenter
@@ -3950,7 +3950,7 @@ Comment[ven]=Muimeleli wa K
 Comment[xh]=Isiboniso se K
 Comment[xx]=xx
 Comment[zu]=Umbonisi we K
-Patterns=*.kpr;*.kpt;
+Patterns=*.kpr;*.kpt
 
 [MIME-Info application/x-krita]
 Comment=Krita
@@ -3958,7 +3958,7 @@ Comment[ar]=كريتا
 Comment[eo]=Krito
 Comment[fr]=Document Krita
 Comment[xx]=xx
-Patterns=*.kra;
+Patterns=*.kra
 
 [MIME-Info application/x-kspread]
 Comment=KSpread
@@ -3983,7 +3983,7 @@ Comment[sv]=Kspread
 Comment[th]=กระดาษคำนวณ - K
 Comment[uk]=Програма створення електронних таблиць KSpread
 Comment[xx]=xx
-Patterns=*.ksp;
+Patterns=*.ksp
 
 [MIME-Info application/x-kspread-crypt]
 Comment=KSpread Encrypted
@@ -4078,7 +4078,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Kugar 数据文件
 Comment[zh_TW]=Kugar 資料檔案
 Comment[zu]=Ifayela Yedata ye Kugar
-Patterns=*.kud;
+Patterns=*.kud
 
 [MIME-Info application/x-kword]
 Comment=KWord
@@ -4098,7 +4098,7 @@ Comment[sr]=KWord dokument
 Comment[sv]=Kword
 Comment[th]=เวิร์ด - K
 Comment[xx]=xx
-Patterns=*.kwd;*.kwt;
+Patterns=*.kwd;*.kwt
 
 [MIME-Info application/x-kword-crypt]
 Comment=KWord Encrypted
@@ -4205,7 +4205,7 @@ Comment[xh]=Ushicilelo lukawonke-wonke nexwebhu leMbali le Lha
 Comment[xx]=xx
 Comment[zh_CN]=Lha 归档文件
 Comment[zh_TW]=Lha 壓縮檔案
-Patterns=*.lha;*.lzh;
+Patterns=*.lha;*.lzh
 
 [MIME-Info application/x-lhz]
 Comment=LHA archive
@@ -4239,7 +4239,7 @@ Comment[tr]=LHA arşivi
 Comment[uk]=архів LHA
 Comment[wa]=årtchive LHA
 Comment[zh]=LHA存档
-Patterns=*.lhz;
+Patterns=*.lhz
 
 [MIME-Info application/x-linguist]
 Comment=Message Catalog
@@ -4298,7 +4298,7 @@ Comment[xx]=xx
 Comment[zh_CN]=消息目录
 Comment[zh_TW]=訊息分類
 Comment[zu]=Umyalezo womfanekiso Osebhukwini
-Patterns=*.ts;
+Patterns=*.ts
 
 [MIME-Info application/x-lyx]
 Comment=LyX Document
@@ -4395,7 +4395,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Lzopped 文件
 Comment[zh_TW]=Lzopped 檔案
 Comment[zu]=Ifayela le Lzopped
-Patterns=*.lzo;
+Patterns=*.lzo
 
 [MIME-Info application/x-mif]
 Comment=FrameMaker interchange document
@@ -4428,7 +4428,7 @@ Comment[tr]=FrameMaker değiş tokuş belgesi
 Comment[uk]=обмінний документ FrameMaker
 Comment[wa]=documint FrameMaker interchange
 Comment[zh]=FrameMaker互换文档
-Patterns=*.mif;
+Patterns=*.mif
 
 [MIME-Info application/x-mswrite]
 Comment=Microsoft Write document
@@ -4471,7 +4471,7 @@ Comment[xh]=Uxwebhhu Legama le Microsoft
 Comment[xx]=xx
 Comment[zh_CN]=微软 Write 文档
 Comment[zu]=Idokhumente ye Microsoft Word
-Patterns=*.wri;
+Patterns=*.wri
 
 [MIME-Info application/x-msx-rom]
 Comment=MSX rom
@@ -4491,7 +4491,7 @@ Comment[sl]=ROM MSX
 Comment[sv]=MSX-rom
 Comment[uk]=ПЗП MSX
 Comment[zh]=MSX rom
-Patterns=*.msx;
+Patterns=*.msx
 
 [MIME-Info application/x-n64-rom]
 Comment=Nintendo64 rom
@@ -4511,7 +4511,7 @@ Comment[sl]=ROM Nintendo64
 Comment[sv]=Nintendo64-rom
 Comment[uk]=ПЗП Nintendo64
 Comment[zh]=Nintendo64 rom
-Patterns=*.n64;
+Patterns=*.n64
 
 [MIME-Info application/x-nautilus-link]
 Comment=Nautilus link
@@ -4564,7 +4564,7 @@ Comment[sl]=ROM NES
 Comment[sv]=NES-rom
 Comment[uk]=ПЗП NES
 Comment[zh]=NES rom
-Patterns=*.nes;
+Patterns=*.nes
 
 [MIME-Info application/x-netcdf]
 Comment=Unidata netCDF document
@@ -4598,7 +4598,7 @@ Comment[tr]=Unidata netCDF belgesi
 Comment[uk]=документ Unidata netCDF
 Comment[wa]=documint Unidata netCDF
 Comment[zh]=Unidata netCDF文档
-Patterns=*.cdf;*.nc;
+Patterns=*.cdf;*.nc
 
 [MIME-Info application/x-object]
 Comment=Object Code
@@ -4655,7 +4655,7 @@ Comment[xh]=Ikhowudi yenjongo
 Comment[xx]=xx
 Comment[zh_CN]=目标代码
 Comment[zu]=Ikhowudi Yenhloso
-Patterns=*.o;
+Patterns=*.o
 
 [MIME-Info application/x-ogg]
 Comment=Ogg Vorbis audio
@@ -4705,7 +4705,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Ogg Vorbis 音频文件
 Comment[zh_TW]=Ogg Vorbis 聲音檔案
 Comment[zu]=Ogg Vorbis ozwakalayo
-Patterns=*.ogg;
+Patterns=*.ogg
 
 [MIME-Info application/x-oleo]
 Comment=GNU Oleo Spreadsheet
@@ -4737,7 +4737,7 @@ Comment[tr]=GNU Oleo Hesap tablosu
 Comment[uk]=таблиця GNU Oleo
 Comment[wa]=foye tåvleu GNU Oleo
 Comment[zh]=GNU Oleo电子表格
-Patterns=*.oleo;
+Patterns=*.oleo
 
 [MIME-Info application/x-palm-database]
 Comment=Palm OS database
@@ -4858,7 +4858,7 @@ Comment[xx]=xx
 Comment[zh_CN]=PERL 程序
 Comment[zh_TW]=PERL 程式
 Comment[zu]=PERL iprogremu
-Patterns=*.pl;*.perl;
+Patterns=*.pl;*.perl
 
 [MIME-Info application/x-php]
 Comment=PHP script
@@ -4891,7 +4891,7 @@ Comment[tr]=PHP betiği
 Comment[uk]=скрипт PHP
 Comment[wa]=scripe PHP
 Comment[zh]=PHP脚本
-Patterns=*.php;*.php3;*.php4;
+Patterns=*.php;*.php3;*.php4
 
 [MIME-Info application/x-pkcs12]
 Comment=PKCS#12 Certificate Bundle
@@ -4927,7 +4927,7 @@ Comment[ven]=Nanda ya sethifikheithi tsha PKCS#12
 Comment[xh]=PKCS#12 Inyanda Yesiqinisekiso
 Comment[xx]=xx
 Comment[zu]=PKCS#12 Isitifiketi Bundle
-Patterns=*.p12;*.pfx;
+Patterns=*.p12;*.pfx
 
 [MIME-Info application/x-profile]
 Comment=profiler results
@@ -4958,7 +4958,7 @@ Comment[sv]=profilerarresultat
 Comment[tr]=başarım ölçümü
 Comment[uk]=результати профілювання
 Comment[zh]=程式優化報告
-Patterns=gmon.out;
+Patterns=gmon.out
 
 [MIME-Info application/x-pw]
 Comment=Pathetic Writer
@@ -4988,7 +4988,7 @@ Comment[xh]=Umbhali wosizi
 Comment[xx]=xx
 Comment[zh_CN]=可怜的作家
 Comment[zu]=Umbhali Ongenaphupho
-Patterns=*.pw;
+Patterns=*.pw
 
 [MIME-Info application/x-python]
 Comment=Python program
@@ -5045,7 +5045,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Python 程序
 Comment[zh_TW]=Python 程式
 Comment[zu]=Python iprogremu
-Patterns=*.py;
+Patterns=*.py
 
 [MIME-Info application/x-python-bytecode]
 Comment=Python bytecode
@@ -5099,7 +5099,7 @@ Comment[vi]=Bytecode Python
 Comment[xh]=Ikhowudi yebyte yenyoka enkulu engenancindi inetyhefu ebulala ixhoba ngokulisonga
 Comment[xx]=xx
 Comment[zh_CN]=Python 字节码
-Patterns=*.pyc;*.pyo;
+Patterns=*.pyc;*.pyo
 
 [MIME-Info application/x-quattropro]
 Comment=Quattro Pro file
@@ -5149,7 +5149,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Quattro Pro 文件
 Comment[zh_TW]=Quattro Pro 文件
 Comment[zu]=Ifayela Quattro Pro
-Patterns=*.wb1;*.wb2;*.wb3;
+Patterns=*.wb1;*.wb2;*.wb3
 
 [MIME-Info application/x-qw]
 Comment=Quicken document
@@ -5182,7 +5182,7 @@ Comment[tr]=Quicken belgesi
 Comment[uk]=документ Quicken
 Comment[wa]=documint Quicken
 Comment[zh]=Quicken文档
-Patterns=*.qif;
+Patterns=*.qif
 
 [MIME-Info application/x-rar]
 Comment=Rar archive
@@ -5242,7 +5242,7 @@ Comment[xh]=ushiccilelo lukawonke-wonke nexwebhu leMbali le Rar
 Comment[xx]=xx
 Comment[zh_CN]=Rar 归档文件
 Comment[zh_TW]=Rar 壓縮檔案
-Patterns=*.rar;
+Patterns=*.rar
 
 [MIME-Info application/x-reject]
 Comment=rejected patch file
@@ -5274,7 +5274,7 @@ Comment[sv]=avvisad patchfil
 Comment[tr]=reddedilmiş yama dosyası
 Comment[uk]=відкинутий файл латки
 Comment[zh]=被丢弃的补丁文件
-Patterns=*.rej;
+Patterns=*.rej
 
 [MIME-Info application/x-rpm]
 Comment=RPM package file
@@ -5334,7 +5334,7 @@ Comment[xx]=xx
 Comment[zh_CN]=RPM 包文件
 Comment[zh_TW]=RPM 套件檔案
 Comment[zu]=Ifayiela elipakishiwe le RPM
-Patterns=*.rpm;
+Patterns=*.rpm
 
 [MIME-Info application/x-shar]
 Comment=shell archive
@@ -5367,7 +5367,7 @@ Comment[tr]=kabuk arşivi
 Comment[uk]=архів оболонки
 Comment[wa]=årtchive shell
 Comment[zh]=shell 檔
-Patterns=*.shar;
+Patterns=*.shar
 
 [MIME-Info application/x-shared-library]
 Comment=shared library
@@ -5400,7 +5400,7 @@ Comment[tr]=paylaşılmış kütüphane
 Comment[uk]=спільна бібліотека
 Comment[wa]=pårteye lîvreye
 Comment[zh]=共享库
-Patterns=*.so;
+Patterns=*.so
 
 [MIME-Info application/x-shared-library-la]
 Comment=shared library
@@ -5433,7 +5433,7 @@ Comment[tr]=paylaşılmış kütüphane
 Comment[uk]=спільна бібліотека
 Comment[wa]=pårteye lîvreye
 Comment[zh]=共享库
-Patterns=*.la;
+Patterns=*.la
 
 [MIME-Info application/x-sharedlib]
 Comment=Shared library
@@ -5546,7 +5546,7 @@ Comment[xh]=ushicilelo phantsi lweqokobhe
 Comment[xx]=xx
 Comment[zh_CN]=shell 脚本
 Comment[zu]=ushicilelo phantsi lwegololodo
-Patterns=*.sh;*.csh;
+Patterns=*.sh;*.csh
 
 [MIME-Info application/x-shockwave-flash]
 Comment=Shockwave Flash Media
@@ -5583,7 +5583,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Shockwave Flash 媒体文件
 Comment[zh_TW]=Shockwave Flash 媒體檔案
 Comment[zu]=Igagasi lokuthuka Flash Media
-Patterns=*.swf;
+Patterns=*.swf
 
 [MIME-Info application/x-siag]
 Comment=Siag Spreadsheet
@@ -5633,7 +5633,7 @@ Comment[xh]=Ikhasi lolwando lwe Siag
 Comment[xx]=xx
 Comment[zh_CN]=Siag 电子表格
 Comment[zh_TW]=Siag 電子表格
-Patterns=*.siag;
+Patterns=*.siag
 
 [MIME-Info application/x-slp]
 Comment=Stampede package
@@ -5685,7 +5685,7 @@ Comment[sl]=ROM Game Gear ali SMS
 Comment[sv]=SMS- eller Game Gear-rom
 Comment[uk]=ПЗП SMS чиr Game Gear
 Comment[zh]=SMS或者Game Gear rom
-Patterns=*.sms;*.gg;
+Patterns=*.sms;*.gg
 
 [MIME-Info application/x-stuffit]
 Comment=Macintosh StuffIt archive
@@ -5751,7 +5751,7 @@ Comment[tr]=SV4 CPIO arşivi
 Comment[uk]=архів SV4 CPIO
 Comment[wa]=årtchive CPIO SV4
 Comment[zh]=SV4 CPIO归档
-Patterns=*.sv4cpio;
+Patterns=*.sv4cpio
 
 [MIME-Info application/x-sv4crc]
 Comment=SV4 CPIP archive (with CRC)
@@ -5784,7 +5784,7 @@ Comment[tr]=SV4 CPIP arşivi (CRC'li)
 Comment[uk]=архів SV4 CPIP (з CRC)
 Comment[wa]=årtchive CPIO SV4 (avou CRC)
 Comment[zh]=SV4 CPIP归档(带CRC校验)
-Patterns=*.sv4crc;
+Patterns=*.sv4crc
 
 [MIME-Info application/x-tar]
 Comment=Tar archive
@@ -5843,7 +5843,7 @@ Comment[xh]=Ushicilelo lukawonke-wonke nexwebhu leMbali le Tar
 Comment[xx]=xx
 Comment[zh_CN]=Tar 归档文件
 Comment[zh_TW]=Tar 壓縮文件
-Patterns=*.tar;
+Patterns=*.tar
 
 [MIME-Info application/x-tarz]
 Comment=Compressed Tar Archive
@@ -5901,7 +5901,7 @@ Comment[xx]=xx
 Comment[zh_CN]=压缩的 Tar 归档文件
 Comment[zh_TW]=壓縮的 Tar 壓縮文件
 Comment[zu]=Enciphisiweyo i Tar Archive
-Patterns=*.tar.Z;
+Patterns=*.tar.Z
 
 [MIME-Info application/x-tex-gf]
 Comment=Generic Font files
@@ -5960,7 +5960,7 @@ Comment[xx]=xx
 Comment[zh_CN]=普通字体文件
 Comment[zh_TW]=一般字型文件
 Comment[zu]=Amafayela e Font Abanzi
-Patterns=*.*gf;
+Patterns=*.*gf
 
 [MIME-Info application/x-tex-pk]
 Comment=Packed Font file
@@ -6019,7 +6019,7 @@ Comment[xx]=xx
 Comment[zh_CN]=压缩的字体文件
 Comment[zh_TW]=壓縮的字型文件
 Comment[zu]=Ifayela Ye Font Epakishiweyo
-Patterns=*pk;
+Patterns=*pk
 
 [MIME-Info application/x-tgif]
 Comment=TGIF Document
@@ -6090,7 +6090,7 @@ Comment[tr]=tema
 Comment[uk]=тема
 Comment[wa]=tinme
 Comment[zh]=主题
-Patterns=*.theme;
+Patterns=*.theme
 
 [MIME-Info application/x-toutdoux]
 Comment=ToutDoux document
@@ -6182,7 +6182,7 @@ Comment[xx]=xx
 Comment[zh_CN]=备份文件
 Comment[zh_TW]=備份文件
 Comment[zu]=Ifayela Eyokuvikela ukulahlekelwa
-Patterns=*~;*%;*.bak;*.old;*.sik;
+Patterns=*~;*%;*.bak;*.old;*.sik
 
 [MIME-Info application/x-troff]
 Comment=Troff document
@@ -6242,7 +6242,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Troff 文档
 Comment[zh_TW]=Troff 文件
 Comment[zu]=Idokhumenti ye Troff
-Patterns=*.tr;*.roff;*.t;
+Patterns=*.tr;*.roff;*.t
 
 [MIME-Info application/x-troff-man]
 Comment=Troff document with manpage macros
@@ -6299,7 +6299,7 @@ Comment[xx]=xx
 Comment[zh_CN]=带有 manpage 宏的 Troff 文档
 Comment[zh_TW]=帶有 manpage 巨集 Troff 文件
 Comment[zu]=Troff dokhumenti nge manpage macros
-Patterns=*.man;
+Patterns=*.man
 
 [MIME-Info application/x-troff-man-compressed]
 Comment=manual page (compressed)
@@ -6388,7 +6388,7 @@ Comment[xh]=Ushicilelolukawonke-wonke nexwebhu leMbali le Lzopped Tar
 Comment[xx]=xx
 Comment[zh_CN]=Lzop 压缩的 Tar 归档文件
 Comment[zh_TW]=Lzop 壓縮的 Tar 壓縮文件
-Patterns=*.tar.lzo;*.tzo;
+Patterns=*.tar.lzo;*.tzo
 
 [MIME-Info application/x-ustar]
 Comment=ustar archive
@@ -6421,7 +6421,7 @@ Comment[tr]=ustar arşivi
 Comment[uk]=архів ustar
 Comment[wa]=årtchive ustar
 Comment[zh]=ustar归档
-Patterns=*.ustar;
+Patterns=*.ustar
 
 [MIME-Info application/x-wais-source]
 Comment=WAIS source code
@@ -6454,7 +6454,7 @@ Comment[tr]=WAIS kaynak kodu
 Comment[uk]=вихідний код WAIS
 Comment[wa]=côde soûrdant WAIS
 Comment[zh]=WAIS源代码
-Patterns=*.src;
+Patterns=*.src
 
 [MIME-Info application/x-x509-ca-cert]
 Comment=DER, PEM, or Netscape encoded X.509 certificate
@@ -6492,7 +6492,7 @@ Comment[ven]=DER, PEM, or Netscape encoded X.509 Sethifikheithi
 Comment[vi]=DER, PEM, hay  Netscape encoded X.509 certificate
 Comment[xh]=DER, PEM, okanye Netscape e enkhowudiweyo X.509 isiqinisekiso
 Comment[xx]=xx
-Patterns=*.der;*.cer;*.crt;*.cert;*.pem;
+Patterns=*.der;*.cer;*.crt;*.cert;*.pem
 
 [MIME-Info application/x-xfig]
 Comment=XFig Document
@@ -6626,7 +6626,7 @@ Comment[xh]=Ushicilelo lukawonke-wonke lwendawo egcina izilwanyane
 Comment[xx]=xx
 Comment[zh_CN]=Zoo 归档文件
 Comment[zh_TW]=Zoo 壓縮文件
-Patterns=*.zoo;
+Patterns=*.zoo
 
 [MIME-Info application/zip]
 Comment=Zip archive
@@ -6685,7 +6685,7 @@ Comment[xh]=Ushicilelo likawonke-wonke nexwebhu leMbali le Zip
 Comment[xx]=xx
 Comment[zh_CN]=Zip 归档文件
 Comment[zh_TW]=Zip 壓縮文件
-Patterns=*.zip;
+Patterns=*.zip
 
 [MIME-Info audio/ac3]
 Comment=Dolby Digital audio
@@ -6717,7 +6717,7 @@ Comment[tr]=Dolby Digital sesi
 Comment[uk]=аудіо Dolby Digital
 Comment[wa]=son dolby digital
 Comment[zh]=杜比数码声频
-Patterns=*.ac3;
+Patterns=*.ac3
 
 [MIME-Info audio/basic]
 Comment=ULAW (Sun) audio
@@ -6767,7 +6767,7 @@ Comment[xx]=xx
 Comment[zh_CN]=ULAW (Sun) 音频文件
 Comment[zh_TW]=ULAW (Sun) 聲音文件
 Comment[zu]=ULAW (Ilanga) ezwakalayo
-Patterns=*.au;*.snd;
+Patterns=*.au;*.snd
 
 [MIME-Info audio/prs.sid]
 Comment=Commodore 64 Audio
@@ -6792,7 +6792,7 @@ Comment[sl]=zvok Commodore 64
 Comment[sv]=Commodore 64-ljud
 Comment[uk]=аудіо 64 Audio
 Comment[zh]=Commodore 64声频
-Patterns=*.sid;*.psid;
+Patterns=*.sid;*.psid
 
 [MIME-Info audio/vnd.rn-realaudio]
 Comment=RealAudio broadcast
@@ -6983,7 +6983,7 @@ Comment[xx]=xx
 Comment[zh_CN]=AIFF/Amiga 音频文件
 Comment[zh_TW]=AIFF/Amiga 聲音文件
 Comment[zu]=AIFF/Amiga ezwakalayo
-Patterns=*.aiff;*.aif;*.aifc;
+Patterns=*.aiff;*.aif;*.aifc
 
 [MIME-Info audio/x-aiffc]
 Comment=AIFF audio
@@ -7049,7 +7049,7 @@ Comment[tr]=Impulse Tracker sesi
 Comment[uk]=аудіо Impulse Tracker
 Comment[wa]=son Impulse Tracker
 Comment[zh]=Impulse Tracker声频
-Patterns=*.it;
+Patterns=*.it
 
 [MIME-Info audio/x-midi]
 Comment=MIDI audio
@@ -7102,7 +7102,7 @@ Comment[xx]=xx
 Comment[zh_CN]=MIDI 音频文件
 Comment[zh_TW]=MIDI 聲音文件
 Comment[zu]=MIDI ezwakalayo
-Patterns=*.mid;*.midi;
+Patterns=*.mid;*.midi
 
 [MIME-Info audio/x-mod]
 Comment=Amiga soundtracker audio
@@ -7157,7 +7157,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Amiga soundtracker 音频文件
 Comment[zh_TW]=Amiga 聲軌聲音文件
 Comment[zu]=Amiga soundtracker ezwakalayo
-Patterns=*.mod;*.ult;*.uni;*.XM;*.m15;*.mtm;*.669;
+Patterns=*.mod;*.ult;*.uni;*.XM;*.m15;*.mtm;*.669
 
 [MIME-Info audio/x-mp3]
 Comment=MPEG layer 3 audio
@@ -7209,7 +7209,7 @@ Comment[xh]=MPEG layer 3 evakalayo
 Comment[xx]=xx
 Comment[zh_CN]=MP3 音频文件
 Comment[zu]=MPEG layer 3 ezwakalayo
-Patterns=*.mp3;
+Patterns=*.mp3
 
 [MIME-Info audio/x-mp3-playlist]
 Comment=MP3 audio playlist
@@ -7327,7 +7327,7 @@ Comment[xh]=Equkuqelayo i MPEG layer 3 evakalayo
 Comment[xx]=xx
 Comment[zh_CN]=流式 MP3 音频文件
 Comment[zu]= Streaming MPEG layer 3 audio
-Patterns=*.m3u;
+Patterns=*.m3u
 
 [MIME-Info audio/x-pn-realaudio]
 Comment=RealAudio broadcast
@@ -7384,7 +7384,7 @@ Comment[xx]=xx
 Comment[zh_CN]=RealAudio 广播
 Comment[zh_TW]=RealAudio 廣播
 Comment[zu]=Ukusakaza Kwangempela Okuzwakalayo
-Patterns=*.ra;*.ram;*.rm;
+Patterns=*.ra;*.ram;*.rm
 
 [MIME-Info audio/x-riff]
 Comment=RIFF audio
@@ -7449,7 +7449,7 @@ Comment[tr]=Scream Tracker 3 sesi
 Comment[uk]=аудіо Scream Tracker 3
 Comment[wa]=son Scream Tracker 3
 Comment[zh]=Scream Tracker 3声频
-Patterns=*.s3m;
+Patterns=*.s3m
 
 [MIME-Info audio/x-scpls]
 Comment=MP3 ShoutCast Playlist
@@ -7506,7 +7506,7 @@ Comment[xh]=MP3 Uluhlu lokudlala olukhethwa ngokukhwaza
 Comment[xx]=xx
 Comment[zh_CN]=MP3 ShoutCast 播放列表
 Comment[zh_TW]=MP3 ShoutCast 播放列表
-Patterns=*.pls;
+Patterns=*.pls
 
 [MIME-Info audio/x-stm]
 Comment=Scream Tracker audio
@@ -7539,7 +7539,7 @@ Comment[tr]=Scream Tracker sesi
 Comment[uk]=аудіо Scream Tracker
 Comment[wa]=son Scream Tracker
 Comment[zh]=Scream Tracker声频
-Patterns=*.stm;
+Patterns=*.stm
 
 [MIME-Info audio/x-voc]
 Comment=VOC audio
@@ -7572,7 +7572,7 @@ Comment[tr]=VOC sesi
 Comment[uk]=аудіо VOC
 Comment[wa]=son VOC
 Comment[zh]=VOC声频
-Patterns=*.voc;
+Patterns=*.voc
 
 [MIME-Info audio/x-wav]
 Comment=WAV audio
@@ -7624,7 +7624,7 @@ Comment[xx]=xx
 Comment[zh_CN]=WAV 音频文件
 Comment[zh_TW]=WAV 聲音文件
 Comment[zu]=WAV ezwakalayo
-Patterns=*.wav;
+Patterns=*.wav
 
 [MIME-Info audio/x-xi]
 Comment=Scream Tracker instrument
@@ -7657,7 +7657,7 @@ Comment[tr]=Scream Tracker çalgısı
 Comment[uk]=інструмент Scream Tracker
 Comment[wa]=instrumint Scream Tracker
 Comment[zh]=Scream Tracker乐器
-Patterns=*.xi;
+Patterns=*.xi
 
 [MIME-Info audio/x-xm]
 Comment=FastTracker II audio
@@ -7690,7 +7690,7 @@ Comment[tr]=FastTracker II sesi
 Comment[uk]=аудіо FastTracker II
 Comment[wa]=son FastTracker II
 Comment[zh]=FastTracker II声频
-Patterns=*.xm;
+Patterns=*.xm
 
 [MIME-Info image/bmp]
 Comment=Windows BMP image
@@ -7750,7 +7750,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Windows BMP 图像
 Comment[zh_TW]=Windows BMP 影像
 Comment[zu]=Umfanekiso wamawindi e BMP
-Patterns=*.bmp;
+Patterns=*.bmp
 
 [MIME-Info image/cgm]
 Comment=Computer Graphics Metafile
@@ -7794,7 +7794,7 @@ Comment[xx]=xx
 Comment[zh_CN]=计算机图形元文件
 Comment[zh_TW]=電腦繪圖檔案
 Comment[zu]=Ifayela yeMeta Yemidwebo Yekhomputha
-Patterns=*.cgm;
+Patterns=*.cgm
 
 [MIME-Info image/fax-g3]
 Comment=CCITT g3 fax
@@ -7836,7 +7836,7 @@ Comment[xx]=xx
 Comment[zh_CN]=CCITT g3 传真
 Comment[zh_TW]=CCITT g3 傳真
 Comment[zu]=I CCITT g3 fax
-Patterns=*.g3;
+Patterns=*.g3
 
 [MIME-Info image/g3fax]
 Comment=G3 fax image
@@ -7929,7 +7929,7 @@ Comment[xx]=xx
 Comment[zh_CN]=GIF 图像
 Comment[zh_TW]=GIF 影像
 Comment[zu]=Umfanekiso we GIF
-Patterns=*.gif;
+Patterns=*.gif
 
 [MIME-Info image/ief]
 Comment=IEF image
@@ -7963,7 +7963,7 @@ Comment[tr]=IEF görüntüsü
 Comment[uk]=зображення IEF
 Comment[wa]=imådje IEF
 Comment[zh]=IEF图象
-Patterns=*.ief;
+Patterns=*.ief
 
 [MIME-Info image/jpeg]
 Comment=JPEG image
@@ -8024,7 +8024,7 @@ Comment[xx]=xx
 Comment[zh_CN]=JPEG 图像
 Comment[zh_TW]=JPEG 影像
 Comment[zu]=Umfanekiso we JPEG
-Patterns=*.jpeg;*.jpg;*.jpe;
+Patterns=*.jpeg;*.jpg;*.jpe
 
 [MIME-Info image/png]
 Comment=PNG image
@@ -8085,7 +8085,7 @@ Comment[xx]=xx
 Comment[zh_CN]=PNG 图像
 Comment[zh_TW]=PNG 影像
 Comment[zu]=Umfanekiso we PNG
-Patterns=*.png;
+Patterns=*.png
 
 [MIME-Info image/svg+xml]
 Comment=Scalable Vector Graphics
@@ -8121,7 +8121,7 @@ Comment[xx]=xx
 Comment[zh_CN]=可缩放向量图
 Comment[zh_TW]=可縮放向量圖
 Comment[zu]=Imidwebo elinganiselekayo ye Vector
-Patterns=*.svg;
+Patterns=*.svg
 
 [MIME-Info image/tiff]
 Comment=TIFF Image
@@ -8182,7 +8182,7 @@ Comment[xx]=xx
 Comment[zh_CN]=TIFF 图像
 Comment[zh_TW]=TIFF 影像
 Comment[zu]=Umfanekiso we TIFF
-Patterns=*.tif;*.tiff;
+Patterns=*.tif;*.tiff
 
 [MIME-Info image/vnd.dwg]
 Comment=AutoCAD image
@@ -8216,7 +8216,7 @@ Comment[tr]=AutoCAD görüntüsü
 Comment[uk]=зображення AutoCAD
 Comment[wa]=imådje AutoCAD
 Comment[zh]=AutoCAD图象
-Patterns=*.dwg;
+Patterns=*.dwg
 
 [MIME-Info image/vnd.dxf]
 Comment=DXF vector graphic
@@ -8249,7 +8249,7 @@ Comment[tr]=DXF vektör çizimi
 Comment[uk]=векторна графіка DXF
 Comment[wa]=grafike vectoriel DXF
 Comment[zh]=DXF矢量图形
-Patterns=*.dxf;
+Patterns=*.dxf
 
 [MIME-Info image/x-3ds]
 Comment=3D Studio image
@@ -8283,7 +8283,7 @@ Comment[tr]=3D Studio görüntüsü
 Comment[uk]=зображення 3D Studio
 Comment[wa]=imådje 3D Studio
 Comment[zh]=3D Studio图象
-Patterns=*.3ds;
+Patterns=*.3ds
 
 [MIME-Info image/x-applix-graphics]
 Comment=Applix Graphics document
@@ -8335,7 +8335,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Applix 图象文档
 Comment[zh_TW]=Applix 影像文件
 Comment[zu]=Idokhumente ye Applix Graphics
-Patterns=*.ag;
+Patterns=*.ag
 
 [MIME-Info image/x-cmu-raster]
 Comment=CMU raster image
@@ -8367,7 +8367,7 @@ Comment[sv]=CMU-rasterbild
 Comment[tr]=CMU bit eşlem görüntüsü
 Comment[uk]=растрове зображення CMU
 Comment[zh]=CMU光栅图象
-Patterns=*.ras;
+Patterns=*.ras
 
 [MIME-Info image/x-compressed-xcf]
 Comment=compressed GIMP document
@@ -8400,7 +8400,7 @@ Comment[tr]=sıkıştırılmış GIMP belgesi
 Comment[uk]=стиснений документ GIMP
 Comment[wa]=documint GIMP sipotchî
 Comment[zh]=压缩的GIMP文档
-Patterns=*.xcf.gz;*.xcf.bz2;
+Patterns=*.xcf.gz;*.xcf.bz2
 
 [MIME-Info image/x-eps]
 Comment=Encapsulated PostScript image
@@ -8459,7 +8459,7 @@ Comment[xx]=xx
 Comment[zh_CN]=封装的 PostScript 图像
 Comment[zh_TW]=Encapsulated PostScript 影像
 Comment[zu]=Umfanekiso Wokushicilelwe phansi Okuposwayo
-Patterns=*.eps;*.epsi;*.epsf;
+Patterns=*.eps;*.epsi;*.epsf
 
 [MIME-Info image/x-ico]
 Comment=MSWindows Icons
@@ -8511,7 +8511,7 @@ Comment[wa]=Imådjetes MS-Windows
 Comment[xx]=xx
 Comment[zh_CN]=MSWindows 图标
 Comment[zh_TW]=MSWindows 圖示
-Patterns=*.ico;
+Patterns=*.ico
 
 [MIME-Info image/x-iff]
 Comment=IFF image
@@ -8545,7 +8545,7 @@ Comment[tr]=IFF görüntüsü
 Comment[uk]=зображення IFF
 Comment[wa]=imådje IFF
 Comment[zh]=IEF图象
-Patterns=*.iff;
+Patterns=*.iff
 
 [MIME-Info image/x-ilbm]
 Comment=ILBM image
@@ -8579,7 +8579,7 @@ Comment[tr]=ILBM görüntüsü
 Comment[uk]=зображення ILBM
 Comment[wa]=imådje ILBM
 Comment[zh]=ILBM图象
-Patterns=*.ilbm;
+Patterns=*.ilbm
 
 [MIME-Info image/x-jng]
 Comment=JNG image
@@ -8633,7 +8633,7 @@ Comment[xx]=xx
 Comment[zh_CN]=JNG 图像
 Comment[zh_TW]=JNG 影像
 Comment[zu]=Umfanekiso we JNG
-Patterns=*.jng;
+Patterns=*.jng
 
 [MIME-Info image/x-lwo]
 Comment=LightWave object
@@ -8667,7 +8667,7 @@ Comment[tr]=LightWave nesnesi
 Comment[uk]=об'єкт LightWave
 Comment[wa]=objet LightWave
 Comment[zh]=LightWave物体
-Patterns=*.lwo;*.lwob;
+Patterns=*.lwo;*.lwob
 
 [MIME-Info image/x-lws]
 Comment=LightWave scene
@@ -8701,7 +8701,7 @@ Comment[tr]=LightWave ortamı
 Comment[uk]=сцена LightWave
 Comment[wa]=sinne LightWave
 Comment[zh]=LightWave场景
-Patterns=*.lws;
+Patterns=*.lws
 
 [MIME-Info image/x-msod]
 Comment=MS Office Drawing
@@ -8746,7 +8746,7 @@ Comment[xx]=xx
 Comment[zh_CN]=MS Office 图片
 Comment[zh_TW]=MS Office 圖片
 Comment[zu]=Umdwebo we MS Office
-Patterns=*.msod;
+Patterns=*.msod
 
 [MIME-Info image/x-photo-cd]
 Comment=PhotoCD image
@@ -8806,7 +8806,7 @@ Comment[xx]=xx
 Comment[zh_CN]=PhotoCD 图像
 Comment[zh_TW]=PhotoCD 影像
 Comment[zu]=Umfanekiso we SthombeCD
-Patterns=*.pcd;
+Patterns=*.pcd
 
 [MIME-Info image/x-portable-anymap]
 Comment=PNM image
@@ -8840,7 +8840,7 @@ Comment[tr]=PNM görüntüsü
 Comment[uk]=зображення PNM
 Comment[wa]=imådje PNM
 Comment[zh]=PNM图象
-Patterns=*.pnm;
+Patterns=*.pnm
 
 [MIME-Info image/x-portable-bitmap]
 Comment=Portable Bitmap File Format
@@ -8877,7 +8877,7 @@ Comment[ven]=Muiti wa Bitimepe
 Comment[xx]=xx
 Comment[zh_CN]=Portable Bitmap 文件格式
 Comment[zu]=Ifomathi Yefayela Yephathekayo i Bitmap
-Patterns=*.pbm;
+Patterns=*.pbm
 
 [MIME-Info image/x-portable-graymap]
 Comment=Portable Graymap File Format
@@ -8914,7 +8914,7 @@ Comment[uk]=Мобільний формат файлів graymap
 Comment[ven]=Vhuvha ha faela ya Graymap yau farea
 Comment[zh_CN]=Portable Graymap 文件格式
 Comment[zu]=Ifomathi Yefayela Yephathekayo i Graymephu
-Patterns=*.pgm;
+Patterns=*.pgm
 
 [MIME-Info image/x-portable-pixmap]
 Comment=Portable Pixmap File Format
@@ -8952,7 +8952,7 @@ Comment[ven]=Vhuvha ha faela ya Pixmap yau farea
 Comment[xx]=xx
 Comment[zh_CN]=Portable Pixmap 文件格式
 Comment[zu]=Ifomathi Yefayela Yephathekayo i Pixmephu
-Patterns=*.ppm;
+Patterns=*.ppm
 
 [MIME-Info image/x-psd]
 Comment=Photoshop document
@@ -8986,7 +8986,7 @@ Comment[tr]=Photoshop belgesi
 Comment[uk]=документ Photoshop
 Comment[wa]=documint Photoshop
 Comment[zh]=Photoshop文档
-Patterns=*.psd;
+Patterns=*.psd
 
 [MIME-Info image/x-rgb]
 Comment=RGB image
@@ -9020,7 +9020,7 @@ Comment[tr]=RGB görüntüsü
 Comment[uk]=зображення RGB
 Comment[wa]=imådje RGB
 Comment[zh]=RGB图象
-Patterns=*.rgb;
+Patterns=*.rgb
 
 [MIME-Info image/x-tga]
 Comment=TarGA image
@@ -9054,7 +9054,7 @@ Comment[tr]=TarGA görüntüsü
 Comment[uk]=зображення TarGA
 Comment[wa]=imådje TarGA
 Comment[zh]=TarGA图象
-Patterns=*.tga;
+Patterns=*.tga
 
 [MIME-Info image/x-wmf]
 Comment=Windows MetaFile
@@ -9093,7 +9093,7 @@ Comment[xh]=Ifayile yeMeta ye Windows
 Comment[xx]=xx
 Comment[zh_CN]=Windows 元文件
 Comment[zu]=Amafayela eMetaFayela
-Patterns=*.wmf;
+Patterns=*.wmf
 
 [MIME-Info image/x-xbitmap]
 Comment=X BitMap image
@@ -9153,7 +9153,7 @@ Comment[xx]=xx
 Comment[zh_CN]=X 位图图像
 Comment[zh_TW]=X 位圖影像
 Comment[zu]=Umfanekiso we X BitMap
-Patterns=*.xbm;
+Patterns=*.xbm
 
 [MIME-Info image/x-xcf]
 Comment=GIMP native image format
@@ -9203,7 +9203,7 @@ Comment[xx]=xx
 Comment[zh_CN]=GIMP 本地图像文件格式
 Comment[zh_TW]=GIMP 本地影像文件格式
 Comment[zu]=Ifomathi yomfanekiso wendalo we GIMP
-Patterns=*.xcf;
+Patterns=*.xcf
 
 [MIME-Info image/x-xfig]
 Comment=XFig File
@@ -9254,7 +9254,7 @@ Comment[xx]=xx
 Comment[zh_CN]=XFig 文件
 Comment[zh_TW]=XFig 檔案
 Comment[zu]=Ifayela ye XFig
-Patterns=*.fig;
+Patterns=*.fig
 
 [MIME-Info image/x-xpixmap]
 Comment=X PixMap image
@@ -9314,7 +9314,7 @@ Comment[xx]=xx
 Comment[zh_CN]=X 点图图像
 Comment[zh_TW]=X 點圖影像
 Comment[zu]=Umfanekiso we X PixMap
-Patterns=*.xpm;
+Patterns=*.xpm
 
 [MIME-Info image/x-xwindowdump]
 Comment=X window image
@@ -9348,7 +9348,7 @@ Comment[tr]=X pencere görüntüsü
 Comment[uk]=зображення X Window
 Comment[wa]=imådje X Windows
 Comment[zh]=X window图象
-Patterns=*.xwd;
+Patterns=*.xwd
 
 [MIME-Info inode/blockdevice]
 Comment=Block Device
@@ -9918,7 +9918,7 @@ Comment[tr]=GNU posta iletisi
 Comment[uk]=поштове повідомлення GNU
 Comment[wa]=messaedje GNU mail
 Comment[zh]=GNU mail消息
-Patterns=RMAIL;
+Patterns=RMAIL
 
 [MIME-Info model/vrml]
 Comment=VRML document
@@ -9952,7 +9952,7 @@ Comment[tr]=VRML belgesi
 Comment[uk]=документ VRML
 Comment[wa]=documint VRML
 Comment[zh]=VRML文档
-Patterns=*.wrl;
+Patterns=*.wrl
 
 [MIME-Info multipart/alternative]
 Comment=message in several formats
@@ -10333,7 +10333,7 @@ Comment[xx]=xx
 Comment[zh_CN]=iCalendar 文件
 Comment[zh_TW]=ICalendar 文件
 Comment[zu]=Ifayela Yekhalenda
-Patterns=*.ics;
+Patterns=*.ics
 
 [MIME-Info text/css]
 Comment=Cascading Style Sheet
@@ -10373,7 +10373,7 @@ Comment[xh]=Uhlobo lwekhasi elingxangxazayo
 Comment[xx]=xx
 Comment[zh_CN]=层叠样式单
 Comment[zu]=Isitayela lwekhasi eli Cascading
-Patterns=*.css;*.CSSL;
+Patterns=*.css;*.CSSL
 
 [MIME-Info text/directory]
 Comment=directory information file
@@ -10499,7 +10499,7 @@ Comment[xx]=xx
 Comment[zh_CN]=HTML 页面
 Comment[zh_TW]=HTML 頁面
 Comment[zu]=Iphepha le HTML
-Patterns=*.html;*.htm;
+Patterns=*.html;*.htm
 
 [MIME-Info text/htmlh]
 Comment=help page
@@ -10566,7 +10566,7 @@ Comment[tr]=MathML belgesi
 Comment[uk]=документ MathML
 Comment[wa]=documint MathML
 Comment[zh]=MathML文档
-Patterns=*.mml;
+Patterns=*.mml
 
 [MIME-Info text/plain]
 Comment=Plain Text
@@ -10626,7 +10626,7 @@ Comment[xx]=xx
 Comment[zh_CN]=普通文本
 Comment[zh_TW]=普通文字
 Comment[zu]=Okubhaliweyo Okungenamhlobiso
-Patterns=*.txt;*.asc;
+Patterns=*.txt;*.asc
 
 [MIME-Info text/rdf]
 Comment=Resource Description Framework (RDF) file
@@ -10676,7 +10676,7 @@ Comment[xx]=xx
 Comment[zh_CN]=资源描述框架(RDF)文件
 Comment[zh_TW]=Resource Description Framework RDF 文件
 Comment[zu]=Ifayela Yencazelo Yecebo Lomsebenzi Wesiseko (RDF)
-Patterns=*.rdf;
+Patterns=*.rdf
 
 [MIME-Info text/rfc822-headers]
 Comment=email headers
@@ -10742,7 +10742,7 @@ Comment[tr]=zengin yazı belgesi
 Comment[uk]=документ rich text
 Comment[wa]=documint e ritche tecse
 Comment[zh]=RTF 文件
-Patterns=*.rtx;
+Patterns=*.rtx
 
 [MIME-Info text/rss]
 Comment=RDF Site Summary
@@ -10789,7 +10789,7 @@ Comment[xx]=xx
 Comment[zh_CN]=RDF 站点摘要
 Comment[zh_TW]=RDF 摘要
 Comment[zu]=Isikhungo Sokuhlaziweyo se RDF
-Patterns=*.rss;
+Patterns=*.rss
 
 [MIME-Info text/sgml]
 Comment=SGML
@@ -10803,7 +10803,7 @@ Comment[ru]=Документ SGML
 Comment[sv]=Dokument i SGML-format
 Comment[th]=แฟ้ม SGML
 Comment[xx]=xx
-Patterns=*.sgml;*.sgm;
+Patterns=*.sgml;*.sgm
 
 [MIME-Info text/spreadsheet]
 Comment=Spreadsheet Interchange document
@@ -10835,7 +10835,7 @@ Comment[sv]=Spreadsheet Interchange-dokument
 Comment[tr]=Hesap tablosu Değiş tokuş belgesi
 Comment[uk]=документ Spreadsheet Interchange
 Comment[zh]=Spreadsheet互换文档
-Patterns=*.sylk;*.slk;
+Patterns=*.sylk;*.slk
 
 [MIME-Info text/tab-separated-values]
 Comment=tab-separated text document
@@ -10868,7 +10868,7 @@ Comment[tr]=tab ile ayrılmış yazı belgesi
 Comment[uk]=текстовий документ розділений табуляціями
 Comment[wa]=documint tecse separé pa des tåbulåcions
 Comment[zh]=用tab分隔的文本文件
-Patterns=*.tsv;
+Patterns=*.tsv
 
 [MIME-Info text/vnd.wap.wml]
 Comment=WML document
@@ -10907,7 +10907,7 @@ Comment[vi]=Tài liệu WML
 Comment[xx]=xx
 Comment[zh_CN]=WML 文档
 Comment[zu]=Idokhumente ye WML
-Patterns=*.wml;
+Patterns=*.wml
 
 [MIME-Info text/x-adasrc]
 Comment=Ada sources
@@ -10948,7 +10948,7 @@ Comment[xh]=Iimvelaphi zeAda
 Comment[xx]=xx
 Comment[zh_CN]=Ada 源文件
 Comment[zu]=Izimvelaphi ze Ada
-Patterns=*.adb;*.ads;
+Patterns=*.adb;*.ads
 
 [MIME-Info text/x-authors]
 Comment=authors list
@@ -10982,7 +10982,7 @@ Comment[tr]=yazar listesi
 Comment[uk]=список авторів
 Comment[wa]=djîvêye des oteurs
 Comment[zh]=作者列表
-Patterns=AUTHORS;
+Patterns=AUTHORS
 
 [MIME-Info text/x-bibtex]
 Comment=Bibliographic Data (bibtex)
@@ -11031,7 +11031,7 @@ Comment[vi]=Dữ liệu kiểu thư mục(bibtext)
 Comment[xh]=Idata yoluhlu lweencwadi zoMbhali nawuphi na (bibtex)
 Comment[xx]=xx
 Comment[zu]=Idata Yoluhlu lwezincwadi zoMbhali (bibtex)
-Patterns=*.bib;
+Patterns=*.bib
 
 [MIME-Info text/x-c++hdr]
 Comment=C++ headers
@@ -11086,7 +11086,7 @@ Comment[vi]=Header của file C++
 Comment[xx]=xx
 Comment[zh_CN]=C++ 头文件
 Comment[zh_TW]=C++ 含入檔
-Patterns=*.hh;
+Patterns=*.hh
 
 [MIME-Info text/x-c++src]
 Comment=C++ sources
@@ -11146,7 +11146,7 @@ Comment[xx]=xx
 Comment[zh_CN]=C++ 源文件
 Comment[zh_TW]=C++ 原始程式
 Comment[zu]=C++ izimvelaphi
-Patterns=*.cpp;*.cxx;*.cc;*.C;*.c++;
+Patterns=*.cpp;*.cxx;*.cc;*.C;*.c++
 
 [MIME-Info text/x-chdr]
 Comment=C headers
@@ -11202,7 +11202,7 @@ Comment[wa]=Tiesstîres C
 Comment[xx]=xx
 Comment[zh_CN]=C 头文件
 Comment[zh_TW]=C 含入檔
-Patterns=*.h;*.h++;*.hp;
+Patterns=*.h;*.h++;*.hp
 
 [MIME-Info text/x-comma-separated-values]
 Comment=Text file with comma separated values
@@ -11216,7 +11216,7 @@ Comment[ca]=Fitxer de text amb valors separats per comes
 Comment[cs]=Text s hodnotami oddělenými čárkami
 Comment[da]=Tekstfilter med komma-adskilte værdier
 Comment[de]=Textdatei mit Werten, die durch Komma getrennt sind
-Comment[el]=Αρχείο κειμένου  με τιμές διαχωριζόμενες με ;
+Comment[el]=Αρχείο κειμένου  με τιμές διαχωριζόμενες με 
 Comment[eo]=Tekstdosiero (Komo-apartigitaj valoroj)
 Comment[es]=Archivo de texto con valores separados por comas
 Comment[et]=Komaga eraldatud väljadega tekstifail
@@ -11259,7 +11259,7 @@ Comment[xx]=xx
 Comment[zh_CN]=用逗号分隔值的文本文件
 Comment[zh_TW]=用逗號分隔值的文字文件
 Comment[zu]=Ifayela wokubhala ngekhoma ehlukaniswe ngamanani
-Patterns=*.csv;
+Patterns=*.csv
 
 [MIME-Info text/x-copying]
 Comment=software license terms
@@ -11291,7 +11291,7 @@ Comment[sv]=licensavtal
 Comment[tr]=yazılım antlaşma koşulları
 Comment[uk]=ліцензійні умови програмного забезпечення
 Comment[zh]=软件许可证条款
-Patterns=COPYING;
+Patterns=COPYING
 
 [MIME-Info text/x-credits]
 Comment=software author credits
@@ -11323,7 +11323,7 @@ Comment[sv]=författarlista
 Comment[tr]=yazılım yazarı bilgileri
 Comment[uk]=довідка про авторів програмного заьезпечення
 Comment[zh]=软件作者致谢
-Patterns=CREDITS;
+Patterns=CREDITS
 
 [MIME-Info text/x-csrc]
 Comment=C sources
@@ -11383,7 +11383,7 @@ Comment[xx]=xx
 Comment[zh_CN]=C 源文件
 Comment[zh_TW]=C 原始程式
 Comment[zu]=C izimvelaphi
-Patterns=*.c;
+Patterns=*.c
 
 [MIME-Info text/x-dcl]
 Comment=DCL script
@@ -11416,7 +11416,7 @@ Comment[tr]=DCL betiği
 Comment[uk]=скрипт DCL
 Comment[wa]=scripe DCL
 Comment[zh]=DCL脚本
-Patterns=*.dcl;
+Patterns=*.dcl
 
 [MIME-Info text/x-diff]
 Comment=Differences between files
@@ -11469,7 +11469,7 @@ Comment[xx]=xx
 Comment[zh_CN]=文件的差异
 Comment[zh_TW]=在檔案內的差異性
 Comment[zu]=Okungafaniyo phakathi kwamafayela
-Patterns=*.diff;*.patch;
+Patterns=*.diff;*.patch
 
 [MIME-Info text/x-dsl]
 Comment=DSSSL document
@@ -11503,7 +11503,7 @@ Comment[tr]=DSSSL belgesi
 Comment[uk]=документ DSSSL
 Comment[wa]=documint DSSSL
 Comment[zh]=DSSSL文档
-Patterns=*.dsl;
+Patterns=*.dsl
 
 [MIME-Info text/x-dtd]
 Comment=document type definition
@@ -11536,7 +11536,7 @@ Comment[tr]=belge tür tanımı
 Comment[uk]=визначення типу документу
 Comment[wa]=definixha del sôre di documint
 Comment[zh]=文档类型定义
-Patterns=*.dtd;
+Patterns=*.dtd
 
 [MIME-Info text/x-emacs-lisp]
 Comment=Emacs Lisp source code
@@ -11569,7 +11569,7 @@ Comment[tr]=Emacs Lisp kaynak kodu
 Comment[uk]=вихідний код Emacs Lisp
 Comment[wa]=côde soûrdant e lingaedje lisp d' emacs
 Comment[zh]=Dreamcast rom源代码
-Patterns=*.el;
+Patterns=*.el
 
 [MIME-Info text/x-fortran]
 Comment=Fortran source code
@@ -11602,7 +11602,7 @@ Comment[tr]=Fortran kaynak kodu
 Comment[uk]=вихідний код Fortran
 Comment[wa]=côde soûrdant e lingaedje Fortran
 Comment[zh]=Fortran源代码
-Patterns=*.f;
+Patterns=*.f
 
 [MIME-Info text/x-gtkrc]
 Comment=GTK configuration
@@ -11635,14 +11635,14 @@ Comment[tr]=GTK ayarları
 Comment[uk]=конфіґурація GTK
 Comment[wa]=fitchî d' apontiaedje GTK
 Comment[zh]=GTK配置文件
-Patterns=gtkrc;.gtkrc;
+Patterns=gtkrc;.gtkrc
 
 [MIME-Info text/x-haskell]
 Comment=Haskell source code
 Comment[ko]=Haskell 소스 코드
 Comment[no]=Haskell-kildekode
 Comment[pt]=Código Fonte Haskell
-Patterns=*.hs;
+Patterns=*.hs
 
 [MIME-Info text/x-idl]
 Comment=IDL document
@@ -11676,7 +11676,7 @@ Comment[tr]=IDL belgesi
 Comment[uk]=документ IDL
 Comment[wa]=documint IDL
 Comment[zh]=IDL文档
-Patterns=*.idl;
+Patterns=*.idl
 
 [MIME-Info text/x-install]
 Comment=software installation instructions
@@ -11708,7 +11708,7 @@ Comment[sv]=installationsinstruktioner
 Comment[tr]=yazılım yükleme eğitimi
 Comment[uk]=інструкції з встановлення програмного запезсепечення
 Comment[zh]=软件安装指南
-Patterns=INSTALL;
+Patterns=INSTALL
 
 [MIME-Info text/x-java]
 Comment=Java sources
@@ -11767,7 +11767,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Java 源文件
 Comment[zh_TW]=Java 原始程式
 Comment[zu]=Izimvelaphi ze Java
-Patterns=*.java;
+Patterns=*.java
 
 [MIME-Info text/x-ksh]
 Comment=Korn shell script
@@ -11806,7 +11806,7 @@ Comment=Literate haskell source code
 Comment[ko]=Literate haskell 소스 코드
 Comment[no]=Literate haskell-kildekode
 Comment[pt]=Código fonte haskell literado
-Patterns=*.lhs;
+Patterns=*.lhs
 
 [MIME-Info text/x-log]
 Comment=Application log file
@@ -11858,7 +11858,7 @@ Comment[xx]=xx
 Comment[zh_CN]=应用程序记录文件
 Comment[zh_TW]=應用日志文件
 Comment[zu]=Isicelo sesigodo sefayela
-Patterns=*.log;
+Patterns=*.log
 
 [MIME-Info text/x-lyx]
 Comment=LyX - document
@@ -11908,7 +11908,7 @@ Comment[xx]=xx
 Comment[zh_CN]=LyX - 文档
 Comment[zh_TW]=LyX - 文件
 Comment[zu]=Idokhumente ye - LyX
-Patterns=*.lyx;
+Patterns=*.lyx
 
 [MIME-Info text/x-makefile]
 Comment=Makefile
@@ -11928,7 +11928,7 @@ Comment[ven]=Itanifaela
 Comment[xh]=Yenza ifayile
 Comment[xx]=xx
 Comment[zu]=Yenza ifayela
-Patterns=makefile*;[Mm]akefile;
+Patterns=makefile*;[Mm]akefile
 
 [MIME-Info text/x-moc]
 Comment=Qt Meta Object File
@@ -11984,7 +11984,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Qt 元目标文件
 Comment[zh_TW]=Qt Meta 目標文件
 Comment[zu]=Qt Meta Ifayela Yenhloso
-Patterns=*.moc;
+Patterns=*.moc
 
 [MIME-Info text/x-objcsrc]
 Comment=Objective-C sources
@@ -12043,7 +12043,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Objective-C 源文件
 Comment[zh_TW]=Objective-C 原始碼
 Comment[zu]=Okunehloso-C izimvelaphi
-Patterns=*.m;
+Patterns=*.m
 
 [MIME-Info text/x-pascal]
 Comment=Pascal sources
@@ -12102,7 +12102,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Pascal 源文件
 Comment[zh_TW]=Pascal 原始碼
 Comment[zu]=Izimvelaphi ze Pascal
-Patterns=*.p;*.pas;
+Patterns=*.p;*.pas
 
 [MIME-Info text/x-patch]
 Comment=source code patch
@@ -12168,7 +12168,7 @@ Comment[tr]=BENİOKU belgesi
 Comment[uk]=документ README
 Comment[wa]=documint README (lijhoz mu)
 Comment[zh]=README文档
-Patterns=README*;
+Patterns=README*
 
 [MIME-Info text/x-scheme]
 Comment=Scheme source code
@@ -12201,7 +12201,7 @@ Comment[tr]=Scheme kaynak kodu
 Comment[uk]=вихідний код Scheme
 Comment[wa]=côde soûrdant e lingaedje scheme
 Comment[zh]=Scheme源代码
-Patterns=*.scm;
+Patterns=*.scm
 
 [MIME-Info text/x-setext]
 Comment=Setext document
@@ -12235,7 +12235,7 @@ Comment[tr]=Setext document
 Comment[uk]=документ Setext
 Comment[wa]=documint Setext
 Comment[zh]=Setext文档
-Patterns=*.etx;
+Patterns=*.etx
 
 [MIME-Info text/x-speech]
 Comment=Speech document
@@ -12301,7 +12301,7 @@ Comment[tr]=SQL kodu
 Comment[uk]=код SQL
 Comment[wa]=côde SQL
 Comment[zh]=SQL代码
-Patterns=*.sql;
+Patterns=*.sql
 
 [MIME-Info text/x-tcl]
 Comment=Tcl file
@@ -12362,7 +12362,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Tcl 文件
 Comment[zh_TW]=Tcl 文件
 Comment[zu]=Ifayela ye Tcl
-Patterns=*.tcl;*.tk;
+Patterns=*.tcl;*.tk
 
 [MIME-Info text/x-tex]
 Comment=TeX file
@@ -12423,7 +12423,7 @@ Comment[xx]=xx
 Comment[zh_CN]=TeX 文件
 Comment[zh_TW]=TeX 文件
 Comment[zu]=Ifayela ye TeX
-Patterns=*.tex;*.ltx;*.sty;*.cls;
+Patterns=*.tex;*.ltx;*.sty;*.cls
 
 [MIME-Info text/x-texinfo]
 Comment=TeXInfo document
@@ -12457,7 +12457,7 @@ Comment[tr]=TeXInfo belgesi
 Comment[uk]=документ TeXInfo
 Comment[wa]=documint TeXInfo
 Comment[zh]=TeXInfo文档
-Patterns=*.texi;*.texinfo;
+Patterns=*.texi;*.texinfo
 
 [MIME-Info text/x-troff-me]
 Comment=troff me input document
@@ -12489,7 +12489,7 @@ Comment[tr]=troff me giriş belgesi
 Comment[uk]=вхідний документ troff me
 Comment[wa]=documint intrêye troff me
 Comment[zh]=troff me输入文档
-Patterns=*.me;
+Patterns=*.me
 
 [MIME-Info text/x-troff-mm]
 Comment=troff mm input document
@@ -12521,7 +12521,7 @@ Comment[tr]=troff mm giriş belgesi
 Comment[uk]=вхідний документ troff mm
 Comment[wa]=documint intrêye troff mm
 Comment[zh]=troff mm输入文档
-Patterns=*.mm;
+Patterns=*.mm
 
 [MIME-Info text/x-troff-ms]
 Comment=troff ms input document
@@ -12553,7 +12553,7 @@ Comment[tr]=troff ms giriş belgesi
 Comment[uk]=вхідний документ troff ms
 Comment[wa]=documint intrêye troff ms
 Comment[zh]=troff ms输入文档
-Patterns=*.ms;
+Patterns=*.ms
 
 [MIME-Info text/x-vcalendar]
 Comment=vCalendar interchange file
@@ -12612,7 +12612,7 @@ Comment[xx]=xx
 Comment[zh_CN]=vCalendar 交换文件
 Comment[zh_TW]=vCalendar 交換文件
 Comment[zu]=Ifayile eshintsha ngaphakathi ye vCalendar
-Patterns=*.vcs;*.vcf;
+Patterns=*.vcs;*.vcf
 
 [MIME-Info text/x-vcard]
 Comment=Electronic Business Card
@@ -12669,7 +12669,7 @@ Comment[xx]=xx
 Comment[zh_CN]=电子商业卡片
 Comment[zh_TW]=電子商業卡片
 Comment[zu]=Elikagesi Ikhadi Lebhizinisi
-Patterns=*.vct;*.gcrd;
+Patterns=*.vct;*.gcrd
 
 [MIME-Info text/x-xslfo]
 Comment=XSL Formating Object file
@@ -12707,7 +12707,7 @@ Comment[ven]=Vhuvha ha Faela ya tshithu ya XSL
 Comment[xx]=xx
 Comment[zh_CN]=XSL 格式对象文件
 Comment[zu]=Into Yokufomatha ifayela le XSL
-Patterns=*.fo;*.xslfo;
+Patterns=*.fo;*.xslfo
 
 [MIME-Info text/x-xslt]
 Comment=XSLT Stylesheet file
@@ -12745,7 +12745,7 @@ Comment[ven]=Faela ya tshitaela tsha bammbiri ya XSLT
 Comment[xx]=xx
 Comment[zh_CN]=XSLT 风格表单文件
 Comment[zu]=Ifayela Lephepha lesitayela se XSLT
-Patterns=*.xslt;
+Patterns=*.xslt
 
 [MIME-Info text/x-zsh]
 Comment=Z shell script
@@ -12813,7 +12813,7 @@ Comment[xx]=xx
 Comment[zh_CN]=可扩展标记语言文档
 Comment[zh_TW]=可延伸標記語言文件(XML)
 Comment[zu]=eXtensible Markup ulimi idokhumenti
-Patterns=*.xml;
+Patterns=*.xml
 
 [MIME-Info video/isivideo]
 Comment=ISI video
@@ -12895,7 +12895,7 @@ Comment[xx]=xx
 Comment[zh_CN]=MPEG 视频文件
 Comment[zh_TW]=MPEG 視頻文件
 Comment[zu]=MPEG Vidiyo
-Patterns=*.mpeg;*.mpg;*.mp2;*.mpe;*.vob;*.dat;
+Patterns=*.mpeg;*.mpg;*.mp2;*.mpe;*.vob;*.dat
 
 [MIME-Info video/quicktime]
 Comment=Quicktime Video
@@ -12947,7 +12947,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Quicktime 视频文件
 Comment[zh_TW]=Quicktime 視頻文件
 Comment[zu]=Ividiyo Yesikhathi Esheshayo
-Patterns=*.qt;*.mov;*.moov;*.qtvr;
+Patterns=*.qt;*.mov;*.moov;*.qtvr
 
 [MIME-Info video/vivo]
 Comment=Vivo video
@@ -13045,7 +13045,7 @@ Comment[tr]=ANIM animasyonu
 Comment[uk]=анімація ANIM
 Comment[wa]=animåcion ANIM
 Comment[zh]=ANIM动画
-Patterns=*.anim[1-9j];
+Patterns=*.anim[1-9j]
 
 [MIME-Info video/x-avi]
 Comment=AVI video
@@ -13136,7 +13136,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Autodesk FLIC 文件
 Comment[zh_TW]=Autodesk FLIC 文件
 Comment[zu]=Amafayela e Autodesk's FLIC files
-Patterns=*.fli;*.flc;
+Patterns=*.fli;*.flc
 
 [MIME-Info video/x-mng]
 Comment=MNG image
@@ -13189,7 +13189,7 @@ Comment[xx]=xx
 Comment[zh_CN]=MNG 图像
 Comment[zh_TW]=MNG 影像
 Comment[zu]=Umfanekiso we MNG
-Patterns=*.mng;
+Patterns=*.mng
 
 [MIME-Info video/x-ms-asf]
 Comment=MS ASF video
@@ -13221,14 +13221,14 @@ Comment[tr]=MS ASF videosu
 Comment[uk]=відео MS ASF
 Comment[wa]=vidéyo MS ASF
 Comment[zh]=MS ASF影像
-Patterns=*.asf;*.asx;
+Patterns=*.asf;*.asx
 
 [MIME-Info video/x-ms-wmv]
 Comment=Microsoft WMV video
 Comment[ko]=마이크로소프트 WMV 비디오
 Comment[no]=Microsoft WMV-film
 Comment[pt]=Vídeo Microsoft WMV
-Patterns=*.wmv;
+Patterns=*.wmv
 
 [MIME-Info video/x-msvideo]
 Comment=Microsoft AVI Video
@@ -13279,7 +13279,7 @@ Comment[xx]=xx
 Comment[zh_CN]=微软 AVI 视频文件
 Comment[zh_TW]=微軟 AVI 視頻文件
 Comment[zu]=Microsoft AVI Vidiyo
-Patterns=*.avi;
+Patterns=*.avi
 
 [MIME-Info video/x-real-video]
 Comment=RealVideo video
@@ -13344,4 +13344,4 @@ Comment[tr]=SGI videosu
 Comment[uk]=відео SGI
 Comment[wa]=vidéyo SGI
 Comment[zh]=SGI影像
-Patterns=*.movie;
+Patterns=*.movie

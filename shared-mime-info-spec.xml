@@ -26,14 +26,14 @@
 		</authorgroup>
 
 		<title>Shared MIME-info Database</title>
-		<date>20 April 2002</date>
+		<date>25 April 2002</date>
 	</articleinfo>
 <sect1>
 	<title>Introduction</title>
 	<sect2>
 		<title>Version</title>
 		<para>
-This is version 0.4 of the Shared MIME-info Database spec, last updated 20 April 2002.
+This is version 0.5 of the Shared MIME-info Database spec, last updated 25 April 2002.
 		</para>
 	</sect2>
 	<sect2>
@@ -254,11 +254,12 @@ Encoding=UTF-8
 Comment=HTML document
 Comment[af]=...
 [... etc. other translations ]
-Patterns=*.htm;*.html;
+Patterns=*.htm;*.html
 Contents=(starts-with "<HTML")
 Hidden=false
 ]]></programlisting>
-<!-- In KDE, single pattern types don't have a trailing ; -->
+The entries in Patterns are separated by semicolons. There is no trailing
+semicolon.
 		</para>
 		<para>
 Specifically, all KDE-specific tags have been removed, as well as the Icon
@@ -301,12 +302,104 @@ choose to do pattern matching first and only fallback to content matching, or
 not perform it at all.
 		</para>
 		<para>
-			<note>
-				<para>
-This is just a vague proposal at the moment. Also, need a list of functions
-to provide.
-				</para>
-			</note>
+An expression is a list of space-separated items surrounded by parenthesis, eg:
+			<programlisting><![CDATA[
+(starts-with "<?xml ")
+]]></programlisting>
+The first element of the list (<userinput>starts-with</userinput> in this
+example) is the name of a function. The remaining elements are its arguments.
+The result of evaluating the expression is the result of applying the function
+to the arguments. Each argument may be:
+			<variablelist>
+				<varlistentry><term>An integer</term>
+					<listitem><para>
+A 64-bit signed integer, such as <userinput>32</userinput>.
+					</para></listitem>
+				</varlistentry>
+				<varlistentry><term>A string</term>
+					<listitem><para>
+A string of characters with C-style escaping. This string contains the
+sequence of bytes &lt;0, 8, 9, 10&gt;: <userinput>"\0\010\t\xa"</userinput>.
+					</para></listitem>
+				</varlistentry>
+				<varlistentry><term>A symbol</term>
+					<listitem><para>
+A symbol is a constant for the file being tested. For example,
+<userinput>size</userinput> evaluates to the file's size.
+					</para></listitem>
+				</varlistentry>
+				<varlistentry><term>A list</term>
+					<listitem><para>
+Lists may be nested. Each sub-list is evaluated in the same way as the top-level
+list, eg <userinput>(+ (* 3 2) (* 4 3))</userinput> is 18.
+					</para></listitem>
+				</varlistentry>
+			</variablelist>
+Functions may return integers or strings. 'True' is represented by the integer
+1, and False by 0. The following functions and symbols are provided:
+			<informaltable>
+				<tgroup cols="3">
+					<thead>
+						<row>
+<entry>Function example</entry><entry>Result</entry><entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+<entry>(+ 1 2 3)</entry><entry>6</entry>
+<entry>The sum of the arguments</entry>
+						</row>
+						<row>
+<entry>(- 10 6 6)</entry><entry>-2</entry>
+<entry>The first argument minus the sum of the remaining arguments</entry>
+						</row>
+						<row>
+<entry>(* 2 2 3)</entry><entry>12</entry>
+<entry>The product of the arguments</entry>
+						</row>
+						<row>
+<entry>(/ 20 2 2)</entry><entry>5</entry>
+<entry>The first argument divided by the
+product of the remaining arguments.</entry>
+						</row>
+						<row>
+<entry>(&gt; 1 2)</entry><entry>0</entry>
+<entry>True iff the first aguement is greater than the second</entry>
+						</row>
+						<row>
+<entry>(&lt; 1 2)</entry><entry>1</entry>
+<entry>True iff the first aguement is less than the second</entry>
+						</row>
+						<row>
+<entry>(= 1 2)</entry><entry>0</entry>
+<entry>True iff the first aguement is equal to the second</entry>
+						</row>
+						<row>
+<entry>size</entry><entry>32</entry>
+<entry>The size of the file in bytes</entry>
+						</row>
+						<row>
+<entry>(starts-with "GIF89a")</entry>
+<entry>1</entry><entry>True iff the file
+starts with the given sequence of bytes</entry>
+						</row>
+						<row>
+<entry>(not size)</entry><entry>1</entry>
+<entry>True iff argument is false (0 or "")</entry>
+						</row>
+						<row>
+<entry>(and "one" 2 3)</entry><entry>3</entry>
+<entry>The first false argument, or the last argument if none are false.</entry>
+						</row>
+						<row>
+<entry>(or 0 "" 2 0)</entry><entry>2</entry>
+<entry>The first true argument, or the last argument if none are true.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</informaltable>
+<userinput>and</userinput> and <userinput>or</userinput> should only evaluate
+as many arguments as are necessary to determine the result.
 		</para>
 	</sect2>
 	<sect2>

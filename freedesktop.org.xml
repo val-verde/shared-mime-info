@@ -57,6 +57,7 @@ command to generate the output files.
     <comment>Andrew Toolkit inset</comment>
     <comment xml:lang="hu">Andrew Toolkit inset</comment>
     <comment xml:lang="sr">Andrew додатаг групе алата</comment>
+    <comment xml:lang="sv">Andrew-verktygssamling insatt</comment>
     <glob pattern="*.ez"/>
   </mime-type>
   <mime-type type="application/illustrator">
@@ -64,6 +65,7 @@ command to generate the output files.
     <comment xml:lang="hu">Adobe Illustrator-dokumentum</comment>
     <comment xml:lang="nl">Adobe Illustrator document</comment>
     <comment xml:lang="sr">Adobe Illustrator документ</comment>
+    <comment xml:lang="sv">Adobe Illustrator-dokument</comment>
     <glob pattern="*.ai"/>
   </mime-type>
   <mime-type type="application/mac-binhex40">
@@ -71,6 +73,7 @@ command to generate the output files.
     <comment xml:lang="hu">Macintosh BinHex kódolású fájl</comment>
     <comment xml:lang="nl">Macintosh BinHex-gecodeerd bestand</comment>
     <comment xml:lang="sr">Мекинтош BinHex-encoded датотека</comment>
+    <comment xml:lang="sv">Macintosh BinHex-kodad fil</comment>
     <magic priority="50">
       <match type="string" value="must be converted with BinHex" offset="11"/>
     </magic>
@@ -80,6 +83,7 @@ command to generate the output files.
     <comment xml:lang="hu">Microsoft Word-dokumentum</comment>
     <comment xml:lang="nl">Microsoft Word document</comment>
     <comment xml:lang="sr">Микрософт Word документ</comment>
+    <comment xml:lang="sv">Microsoft Word-dokument</comment>
     <magic priority="50">
       <match type="string" value="\x31\xbe\x00\x00" offset="0"/>
       <match type="string" value="PO^Q`" offset="0"/>
@@ -96,6 +100,7 @@ command to generate the output files.
     <comment xml:lang="hu">Ismeretlen</comment>
     <comment xml:lang="nl">Onbekend</comment>
     <comment xml:lang="sr">Непознато</comment>
+    <comment xml:lang="sv">Okänd</comment>
     <magic priority="50">
       <match type="string" value="\037\036" offset="0"/>
       <match type="host16" value="017437" offset="0"/>
@@ -110,12 +115,14 @@ command to generate the output files.
     <comment xml:lang="hu">ODA-dokumentum</comment>
     <comment xml:lang="nl">ODA document</comment>
     <comment xml:lang="sr">ODA документ</comment>
+    <comment xml:lang="sv">ODA-dokument</comment>
     <glob pattern="*.oda"/>
   </mime-type>
   <mime-type type="application/pdf">
     <comment>Pdf Document</comment>
     <comment xml:lang="nl">Pdf document</comment>
     <comment xml:lang="sr">ПДФ документ</comment>
+    <comment xml:lang="sv">Pdf-dokument</comment>
     <magic priority="50">
       <match type="string" value="%PDF-" offset="0"/>
     </magic>
@@ -126,40 +133,47 @@ command to generate the output files.
     <comment xml:lang="hu">PGP-üzenet</comment>
     <comment xml:lang="nl">PGP bericht</comment>
     <comment xml:lang="sr">PGP порука</comment>
+    <comment xml:lang="sv">PGP-meddelande</comment>
     <glob pattern="*.pgp"/>
   </mime-type>
   <mime-type type="application/pgp-encrypted">
     <comment>PGP/MIME encrypted message header</comment>
     <comment xml:lang="nl">PGP/MIME gecodeerde berichtkop</comment>
     <comment xml:lang="sr">ПГП/МИМЕ шифрована порука</comment>
+    <comment xml:lang="sv">PGP/MIME-krypterat meddelandehuvud</comment>
   </mime-type>
   <mime-type type="application/pgp-keys">
     <comment>PGP keys</comment>
     <comment xml:lang="hu">PGP-kulcs</comment>
     <comment xml:lang="nl">PGP sleutels</comment>
     <comment xml:lang="sr">PGP кључ</comment>
+    <comment xml:lang="sv">PGP-nycklar</comment>
   </mime-type>
   <mime-type type="application/pgp-signature">
     <comment>Detached OpenPGP signature</comment>
     <comment xml:lang="nl">Losstaande OpenPGP ondertekening</comment>
     <comment xml:lang="sr">Одвојени ОпенПГП потпис</comment>
+    <comment xml:lang="sv">Frikopplad PGP-signatur</comment>
   </mime-type>
   <mime-type type="application/pkcs7-mime">
     <comment>S/MIME file</comment>
     <comment xml:lang="hu">S/MIME-fájl</comment>
     <comment xml:lang="nl">S/MIME bestand</comment>
     <comment xml:lang="sr">S/MIME датотека</comment>
+    <comment xml:lang="sv">S/MIME-fil</comment>
   </mime-type>
   <mime-type type="application/pkcs7-signature">
     <comment>Detached S/MIME signature</comment>
     <comment xml:lang="nl">Losstaande S/MIME ondertekening</comment>
     <comment xml:lang="sr">Одвојени S/MIME потпис</comment>
+    <comment xml:lang="sv">Frikopplad S/MIME-signatur</comment>
     <glob pattern="*.p7s"/>
   </mime-type>
   <mime-type type="application/postscript">
     <comment>PostScript Document</comment>
     <comment xml:lang="nl">PostScript document</comment>
     <comment xml:lang="sr">ПостСкрипт документ</comment>
+    <comment xml:lang="sv">PostScript-dokument</comment>
     <magic priority="50">
       <match type="string" value="\004%!" offset="0"/>
       <match type="string" value="%!" offset="0"/>
@@ -170,6 +184,7 @@ command to generate the output files.
     <comment>Rich Text Format</comment>
     <comment xml:lang="nl">Rijke Tekst Formaat</comment>
     <comment xml:lang="sr">Обогаћени текстуални запис (RTF)</comment>
+    <comment xml:lang="sv">Rikt textdokument</comment>
     <magic priority="50">
       <match type="string" value="{\\rtf" offset="0"/>
     </magic>
@@ -179,6 +194,7 @@ command to generate the output files.
     <comment>Synchronized Multimedia Integration Language</comment>
     <comment xml:lang="nl">Gesynchroniseerde multimedia integratie taal</comment>
     <comment xml:lang="sr">Синхронизовани језик за интеграцију мултимедије (SMIL)</comment>
+    <comment xml:lang="sv">Språk för synkroniserad multimediaintegration</comment>
     <glob pattern="*.smil"/>
     <glob pattern="*.smi"/>
     <glob pattern="*.sml"/>
@@ -188,6 +204,7 @@ command to generate the output files.
     <comment xml:lang="hu">Corel Draw-rajz</comment>
     <comment xml:lang="nl">Corel Draw tekening</comment>
     <comment xml:lang="sr">Corel Draw цртеж</comment>
+    <comment xml:lang="sv">Corel Draw-teckning</comment>
     <magic priority="50">
       <match type="string" value="CDR vrsn" offset="8"/>
     </magic>
@@ -198,6 +215,7 @@ command to generate the output files.
     <comment xml:lang="hu">Lotus 1-2-3-munkafüzet</comment>
     <comment xml:lang="nl">Lotus 1-2-3 spreadsheet</comment>
     <comment xml:lang="sr">Lotus 1-2-3 табеларни прорачун</comment>
+    <comment xml:lang="sv">Lotus 1-2-3-kalkylblad</comment>
     <magic priority="50">
       <match type="string" value="\x00\x00\x02\x00" offset="0"/>
     </magic>
@@ -212,6 +230,7 @@ command to generate the output files.
     <comment xml:lang="hu">Microsoft Excel-munkafüzet</comment>
     <comment xml:lang="nl">Microsoft Excel spreadsheet</comment>
     <comment xml:lang="sr">Микрософт Ексел табеларни прорачун</comment>
+    <comment xml:lang="sv">Microsoft Excel-kalkylblad</comment>
     <magic priority="50">
       <match type="string" value="Microsoft Excel 5.0 Worksheet" offset="2080"/>
     </magic>
@@ -229,6 +248,7 @@ command to generate the output files.
     <comment xml:lang="hu">Microsoft PowerPoint-dokumentum</comment>
     <comment xml:lang="nl">Microsoft PowerPoint document</comment>
     <comment xml:lang="sr">Микрософт ПауерПоинт документ</comment>
+    <comment xml:lang="sv">Microsoft PowerPoint-dokument</comment>
     <glob pattern="*.ppz"/>
     <glob pattern="*.ppt"/>
     <glob pattern="*.pps"/>
@@ -239,18 +259,21 @@ command to generate the output files.
     <comment xml:lang="hu">Microsoft Word-dokumentum</comment>
     <comment xml:lang="nl">Microsoft Word document</comment>
     <comment xml:lang="sr">Микрософт Word документ</comment>
+    <comment xml:lang="sv">Microsoft Word-dokument</comment>
   </mime-type>
   <mime-type type="application/vnd.rn-realmedia">
     <comment>RealAudio/Video document</comment>
     <comment xml:lang="hu">RealAudio/Video-dokumentum</comment>
     <comment xml:lang="nl">RealAudio/Video document</comment>
     <comment xml:lang="sr">RealAudio/Video документ</comment>
+    <comment xml:lang="sv">RealAudio/Video-dokument</comment>
   </mime-type>
   <mime-type type="application/vnd.stardivision.calc">
     <comment>StarCalc spreadsheet</comment>
     <comment xml:lang="hu">StarCalc-munkafüzet</comment>
     <comment xml:lang="nl">StarCalc spreadsheet</comment>
     <comment xml:lang="sr">StarCalc табеларни прорачун</comment>
+    <comment xml:lang="sv">StarCalc-kalkylblad</comment>
     <glob pattern="*.sdc"/>
   </mime-type>
   <mime-type type="application/vnd.stardivision.chart">
@@ -258,6 +281,7 @@ command to generate the output files.
     <comment xml:lang="hu">StarChart-grafikon</comment>
     <comment xml:lang="nl">StarChart grafiek</comment>
     <comment xml:lang="sr">StarChart графикон</comment>
+    <comment xml:lang="sv">StarChart-diagram</comment>
     <glob pattern="*.sds"/>
   </mime-type>
   <mime-type type="application/vnd.stardivision.draw">
@@ -265,6 +289,7 @@ command to generate the output files.
     <comment xml:lang="hu">StarDraw-rajz</comment>
     <comment xml:lang="nl">StarDraw tekening</comment>
     <comment xml:lang="sr">StarDraw drawing</comment>
+    <comment xml:lang="sv">StarDraw-teckning</comment>
     <glob pattern="*.sda"/>
   </mime-type>
   <mime-type type="application/vnd.stardivision.impress">
@@ -272,6 +297,7 @@ command to generate the output files.
     <comment xml:lang="hu">StarImpress-bemutató</comment>
     <comment xml:lang="nl">StarImpress presentatie</comment>
     <comment xml:lang="sr">StarImpress презентација</comment>
+    <comment xml:lang="sv">StarImpress-presentation</comment>
     <glob pattern="*.sdd"/>
     <glob pattern="*.sdp"/>
   </mime-type>
@@ -280,6 +306,7 @@ command to generate the output files.
     <comment xml:lang="hu">StarMail-fájl</comment>
     <comment xml:lang="nl">StarMail bestand</comment>
     <comment xml:lang="sr">StarMail датотека</comment>
+    <comment xml:lang="sv">StarMail-fil</comment>
     <glob pattern="*.smd"/>
   </mime-type>
   <mime-type type="application/vnd.stardivision.math">
@@ -287,6 +314,7 @@ command to generate the output files.
     <comment xml:lang="hu">StarMath-dokumentum</comment>
     <comment xml:lang="nl">StarMath document</comment>
     <comment xml:lang="sr">StarMath документ</comment>
+    <comment xml:lang="sv">StarMath-dokument</comment>
     <glob pattern="*.smf"/>
   </mime-type>
   <mime-type type="application/vnd.stardivision.writer">
@@ -294,6 +322,7 @@ command to generate the output files.
     <comment xml:lang="hu">StarWriter-dokumentum</comment>
     <comment xml:lang="nl">StarWriter document</comment>
     <comment xml:lang="sr">StarWriter документ</comment>
+    <comment xml:lang="sv">StarWriter-dokument</comment>
     <glob pattern="*.sdw"/>
     <glob pattern="*.vor"/>
     <glob pattern="*.sgl"/>
@@ -302,60 +331,70 @@ command to generate the output files.
     <comment>OpenOffice spreadsheet</comment>
     <comment xml:lang="nl">OpenOffice spreadsheet</comment>
     <comment xml:lang="sr">OpenOffice табеларни рачун</comment>
+    <comment xml:lang="sv">OpenOffice-kalkylblad</comment>
     <glob pattern="*.sxc"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc.template">
     <comment>OpenOffice spreadsheet template</comment>
     <comment xml:lang="nl">OpenOffice spreadsheet sjabloon</comment>
     <comment xml:lang="sr">OpenOffice шаблон табеларног прорачуна</comment>
+    <comment xml:lang="sv">OpenOffice-kalkylbladsmall</comment>
     <glob pattern="*.stc"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw">
     <comment>OpenOffice drawing</comment>
     <comment xml:lang="nl">OpenOffice tekening</comment>
     <comment xml:lang="sr">OpenOffice цртеж</comment>
+    <comment xml:lang="sv">OpenOffice-teckning</comment>
     <glob pattern="*.sxd"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw.template">
     <comment>OpenOffice drawing template</comment>
     <comment xml:lang="nl">OpenOffice tekening sjabloon</comment>
     <comment xml:lang="sr">OpenOffice шаблон цртежа</comment>
+    <comment xml:lang="sv">OpenOffice-teckningsmall</comment>
     <glob pattern="*.std"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.impress">
     <comment>OpenOffice Impress presentation</comment>
     <comment xml:lang="nl">OpenOffice Impress presentatie</comment>
     <comment xml:lang="sr">OpenOffice Impress презентација</comment>
+    <comment xml:lang="sv">OpenOffice Impress-presentation</comment>
     <glob pattern="*.sxi"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.impress.template">
     <comment>OpenOffice Impress presentation template</comment>
     <comment xml:lang="nl">OpenOffice Impress presentatie sjabloon</comment>
     <comment xml:lang="sr">OpenOffice Impress шаблон презентације</comment>
+    <comment xml:lang="sv">OpenOffice Impress-presentationsmall</comment>
     <glob pattern="*.sti"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.math">
     <comment>OpenOffice Math document</comment>
     <comment xml:lang="nl">OpenOffice Math document</comment>
     <comment xml:lang="sr">OpenOffice Math документ</comment>
+    <comment xml:lang="sv">OpenOffice Math-dokument</comment>
     <glob pattern="*.sxm"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer">
     <comment>OpenOffice Writer document</comment>
     <comment xml:lang="nl">OpenOffice Writer document</comment>
     <comment xml:lang="sr">OpenOffice Writer документ</comment>
+    <comment xml:lang="sv">OpenOffice Writer-dokument</comment>
     <glob pattern="*.sxw"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer.global">
     <comment>OpenOffice Writer global document</comment>
     <comment xml:lang="nl">OpenOffice Writer globaal document</comment>
     <comment xml:lang="sr">OpenOffice Writer глобални документ</comment>
+    <comment xml:lang="sv">OpenOffice Writer-globaldokument</comment>
     <glob pattern="*.sxg"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer.template">
     <comment>OpenOffice Writer template</comment>
     <comment xml:lang="nl">OpenOffice Writer sjabloon</comment>
     <comment xml:lang="sr">OpenOffice Writer шаблон</comment>
+    <comment xml:lang="sv">OpenOffice Writer-mall</comment>
     <glob pattern="*.stw"/>
   </mime-type>
   <mime-type type="application/wordperfect">
@@ -363,6 +402,7 @@ command to generate the output files.
     <comment xml:lang="hu">WordPerfect-dokumentum</comment>
     <comment xml:lang="nl">WordPerfect document</comment>
     <comment xml:lang="sr">WordPerfect документ</comment>
+    <comment xml:lang="sv">WordPerfect-dokument</comment>
     <magic priority="50">
       <match type="string" value="WPC" offset="1"/>
       <!-- <match type="big32" value="0xff575053c405" offset="0"/> -->
@@ -374,6 +414,7 @@ command to generate the output files.
     <comment xml:lang="hu">XBEL-könyvjelzőfájl</comment>
     <comment xml:lang="nl">XBEL bladwijzers bestand</comment>
     <comment xml:lang="sr">XBEL датотека маркера</comment>
+    <comment xml:lang="sv">XBEL-bokmärkesfil</comment>
     <magic priority="50">
       <match type="string" value="&lt;!DOCTYPE\ xbel" offset="0:64"/>
     </magic>
@@ -384,6 +425,7 @@ command to generate the output files.
     <comment xml:lang="hu">AbiWord-dokumentum</comment>
     <comment xml:lang="nl">AbiWord document</comment>
     <comment xml:lang="sr">AbiWord документ</comment>
+    <comment xml:lang="sv">AbiWord-dokument</comment>
     <magic priority="50">
       <match type="string" value="&lt;abiword" offset="0:64"/>
       <match type="string" value="&lt;!DOCTYPE abiword" offset="0:64"/>
@@ -397,12 +439,14 @@ command to generate the output files.
     <comment xml:lang="hu">Lotus AmiPro-dokumentum</comment>
     <comment xml:lang="nl">Lotus AmiPro document</comment>
     <comment xml:lang="sr">Лотус АмиПро документ</comment>
+    <comment xml:lang="sv">Lotus AmiPro-dokument</comment>
     <glob pattern="*.sam"/>
   </mime-type>
   <mime-type type="application/x-applix-spreadsheet">
     <comment>Applix Spreadsheets document</comment>
     <comment xml:lang="nl">Applix Spreadsheets document</comment>
     <comment xml:lang="sr">Applix Spreadsheets документ</comment>
+    <comment xml:lang="sv">Applix Spreadsheets-dokument</comment>
     <magic priority="50">
       <match type="string" value="*BEGIN SPREADSHEETS" offset="0"/>
       <match type="string" value="*BEGIN" offset="0">
@@ -415,6 +459,7 @@ command to generate the output files.
     <comment>Applix Words document</comment>
     <comment xml:lang="nl">Applix Words document</comment>
     <comment xml:lang="sr">Applix Words документ</comment>
+    <comment xml:lang="sv">Applix Words-dokument</comment>
     <magic priority="50">
       <match type="string" value="*BEGIN" offset="0">
         <match type="string" value="WORDS" offset="7"/>
@@ -437,6 +482,7 @@ command to generate the output files.
     <comment xml:lang="hu">Ar-archívum</comment>
     <comment xml:lang="nl">Ar archief</comment>
     <comment xml:lang="sr">Ar архива</comment>
+    <comment xml:lang="sv">Ar-arkiv</comment>
     <magic priority="50">
       <match type="string" value="&lt;ar&gt;" offset="0"/>
       <match type="string" value="!&lt;arch&gt;" offset="0"/>
@@ -448,6 +494,7 @@ command to generate the output files.
     <comment xml:lang="hu">ARJ-archívum</comment>
     <comment xml:lang="nl">ARJ archief</comment>
     <comment xml:lang="sr">ARJ архива</comment>
+    <comment xml:lang="sv">ARJ-arkiv</comment>
     <magic priority="50">
       <match type="little16" value="0xea60" offset="0"/>
     </magic>
@@ -457,6 +504,7 @@ command to generate the output files.
     <comment>active server page</comment>
     <comment xml:lang="nl">actieve server pagina</comment>
     <comment xml:lang="sr">Активна серверска страна</comment>
+    <comment xml:lang="sv">aktiv serversida</comment>
     <glob pattern="*.asp"/>
   </mime-type>
   <mime-type type="application/x-awk">
@@ -464,6 +512,7 @@ command to generate the output files.
     <comment xml:lang="hu">AWK-szkript</comment>
     <comment xml:lang="nl">AWK script</comment>
     <comment xml:lang="sr">AWK скрипта</comment>
+    <comment xml:lang="sv">AWK-skript</comment>
     <magic priority="50">
       <match type="string" value="#!/bin/gawk" offset="0"/>
       <match type="string" value="#! /bin/gawk" offset="0"/>
@@ -482,12 +531,14 @@ command to generate the output files.
     <comment xml:lang="hu">BCPIO-dokumentum</comment>
     <comment xml:lang="nl">BCPIO document</comment>
     <comment xml:lang="sr">BCPIO документ</comment>
+    <comment xml:lang="sv">BCPIO-dokument</comment>
     <glob pattern="*.bcpio"/>
   </mime-type>
   <mime-type type="application/x-bittorrent">
     <comment>BitTorrent seed file</comment>
     <comment xml:lang="nl">BitTorrent zaad-bestand</comment>
     <comment xml:lang="sr">Датотека са БитТорентовим полазиштима</comment>
+    <comment xml:lang="sv">BitTorrent-fröfil</comment>
     <magic priority="50">
       <match type="string" value="d8:announce" offset="0"/>
     </magic>
@@ -498,6 +549,7 @@ command to generate the output files.
     <comment xml:lang="hu">Blender-fájl</comment>
     <comment xml:lang="nl">Blender bestand</comment>
     <comment xml:lang="sr">Блендер датотека</comment>
+    <comment xml:lang="sv">Blender-fil</comment>
     <glob pattern="*.blender"/>
     <glob pattern="*.blend"/>
     <glob pattern="*.BLEND"/>
@@ -510,6 +562,7 @@ command to generate the output files.
     <comment xml:lang="hu">Bzip-fájl</comment>
     <comment xml:lang="nl">Bzip bestand</comment>
     <comment xml:lang="sr">Bzip датотека</comment>
+    <comment xml:lang="sv">Bzip-fil</comment>
     <magic priority="50">
       <match type="string" value="BZh" offset="0"/>
     </magic>
@@ -520,6 +573,7 @@ command to generate the output files.
     <comment>Bzipped Tar Archives</comment>
     <comment xml:lang="nl">Bzip-ingepakt Tar archief</comment>
     <comment xml:lang="sr">Бзипована ТАР архива</comment>
+    <comment xml:lang="sv">Bzippade tar-arkiv</comment>
     <glob pattern="*.tar.bz"/>
     <glob pattern="*.tar.bz2"/>
   </mime-type>
@@ -527,6 +581,7 @@ command to generate the output files.
     <comment>Raw CD image</comment>
     <comment xml:lang="nl">Ruwe CD afbeelding</comment>
     <comment xml:lang="sr">Сирови отисак ЦД-а</comment>
+    <comment xml:lang="sv">Rå CD-avbild</comment>
     <glob pattern="*.iso"/>
   </mime-type>
   <mime-type type="application/x-cgi">
@@ -534,6 +589,7 @@ command to generate the output files.
     <comment xml:lang="hu">CGI-program</comment>
     <comment xml:lang="nl">CGI programma</comment>
     <comment xml:lang="sr">CGI програм</comment>
+    <comment xml:lang="sv">CGI-program</comment>
     <glob pattern="*.cgi"/>
   </mime-type>
   <mime-type type="application/x-chess-pgn">
@@ -541,6 +597,7 @@ command to generate the output files.
     <comment xml:lang="hu">PGN-sakkjátszma</comment>
     <comment xml:lang="nl">PGN schaakspel</comment>
     <comment xml:lang="sr">PGN шаховска игра</comment>
+    <comment xml:lang="sv">PGN-schackparti</comment>
     <glob pattern="*.pgn"/>
   </mime-type>
   <mime-type type="application/x-class-file">
@@ -548,11 +605,13 @@ command to generate the output files.
     <comment xml:lang="hu">Java-bájtkód</comment>
     <comment xml:lang="nl">Java byte code</comment>
     <comment xml:lang="sr">Java бајтни кôд</comment>
+    <comment xml:lang="sv">Java-bytekod</comment>
   </mime-type>
   <mime-type type="application/x-compress">
     <comment>UNIX compressed file</comment>
     <comment xml:lang="nl">UNIX ingepakt bestand</comment>
     <comment xml:lang="sr">UNIX компресована датотека</comment>
+    <comment xml:lang="sv">UNIX-komprimerad fil</comment>
     <magic priority="50">
       <match type="string" value="\037\235" offset="0"/>
     </magic>
@@ -562,6 +621,7 @@ command to generate the output files.
     <comment>Gzipped Tar Archive</comment>
     <comment xml:lang="nl">Gzip-ingepakt Tar archief</comment>
     <comment xml:lang="sr">Гзипована Тар архива</comment>
+    <comment xml:lang="sv">Gzippat tar-arkiv</comment>
     <glob pattern="*.tar.gz"/>
     <glob pattern="*.tgz"/>
   </mime-type>
@@ -569,6 +629,7 @@ command to generate the output files.
     <comment>Program crash data</comment>
     <comment xml:lang="nl">Programma crash-gegevens</comment>
     <comment xml:lang="sr">Подаци о кркљавини програма</comment>
+    <comment xml:lang="sv">Programkraschdata</comment>
     <magic priority="50">
       <match type="string" mask="0xffffffff000000000000000000000000ff" value="\177ELF            \004" offset="0"/>
       <match type="string" value="\177ELF" offset="0">
@@ -591,6 +652,7 @@ command to generate the output files.
     <comment xml:lang="hu">CPIO-archívum</comment>
     <comment xml:lang="nl">CPIO archief</comment>
     <comment xml:lang="sr">CPIO архива</comment>
+    <comment xml:lang="sv">CPIO-arkiv</comment>
     <magic priority="50">
       <match type="host16" value="070707" offset="0"/>
       <match type="string" value="070701" offset="0"/>
@@ -603,6 +665,7 @@ command to generate the output files.
     <comment>CPIO archive (gzip-compressed)</comment>
     <comment xml:lang="nl">CPIO archief (gzip-ingepakt)</comment>
     <comment xml:lang="sr">CPIO архива (компресована gzip-ом)</comment>
+    <comment xml:lang="sv">CPIO-arkiv (gzip-komprimerat)</comment>
     <glob pattern="*.cpio.gz"/>
   </mime-type>
   <mime-type type="application/x-csh">
@@ -610,11 +673,13 @@ command to generate the output files.
     <comment xml:lang="hu">C shell-parancsfájl</comment>
     <comment xml:lang="nl">C shell script</comment>
     <comment xml:lang="sr">C скрипта окружења</comment>
+    <comment xml:lang="sv">Skalskript (csh)</comment>
   </mime-type>
   <mime-type type="application/x-dbase">
     <comment>dBASE document</comment>
     <comment xml:lang="nl">dBASE document</comment>
     <comment xml:lang="sr">dBASE документ</comment>
+    <comment xml:lang="sv">dBASE-dokument</comment>
     <glob pattern="*.dbf"/>
   </mime-type>
   <mime-type type="application/x-dbm">
@@ -626,6 +691,7 @@ command to generate the output files.
     <comment>Dreamcast rom</comment>
     <comment xml:lang="nl">Dreamcast ROM</comment>
     <comment xml:lang="sr">Dreamcast ром</comment>
+    <comment xml:lang="sv">Dreamcast-rom</comment>
     <glob pattern="*.dc"/>
   </mime-type>
   <mime-type type="application/x-deb">
@@ -633,6 +699,7 @@ command to generate the output files.
     <comment xml:lang="hu">Debian-csomag</comment>
     <comment xml:lang="nl">Debian pakket</comment>
     <comment xml:lang="sr">Debian пакет</comment>
+    <comment xml:lang="sv">Debianpaket</comment>
     <magic priority="50">
       <match type="string" value="!&lt;arch&gt;" offset="0">
         <match type="string" value="debian" offset="8"/>
@@ -644,12 +711,14 @@ command to generate the output files.
     <comment>Qt Designer File</comment>
     <comment xml:lang="nl">Qt Designer bestand</comment>
     <comment xml:lang="sr">Qt Designer датотека</comment>
+    <comment xml:lang="sv">Qt Designer-fil</comment>
     <glob pattern="*.ui"/>
   </mime-type>
   <mime-type type="application/x-desktop">
     <comment>Desktop config file</comment>
     <comment xml:lang="nl">Bureaublad configuratiebestand</comment>
     <comment xml:lang="sr">Датотека за подешавања радне површи</comment>
+    <comment xml:lang="sv">Skrivbordskonfigurationsfil</comment>
     <magic priority="50">
       <match type="string" value="[Desktop Entry]" offset="0:32"/>
       <match type="string" value="[Desktop Action" offset="0"/>
@@ -665,6 +734,7 @@ command to generate the output files.
     <comment xml:lang="hu">Dia-diagram</comment>
     <comment xml:lang="nl">Dia diagram</comment>
     <comment xml:lang="sr">Диа дијаграм</comment>
+    <comment xml:lang="sv">Dia-diagram</comment>
     <glob pattern="*.dia"/>
   </mime-type>
   <mime-type type="application/x-dvi">
@@ -672,6 +742,7 @@ command to generate the output files.
     <comment xml:lang="hu">TeX-eszközfüggetlenfájl (DVI)</comment>
     <comment xml:lang="nl">TeX apparaat-onafhankelijk bestand</comment>
     <comment xml:lang="sr">ТеХ датотека независна од уређаја (DVI)</comment>
+    <comment xml:lang="sv">Enhetsoberoende TeX-fil</comment>
     <magic priority="50">
       <match type="little16" value="0x02f7" offset="0"/>
     </magic>
@@ -682,18 +753,21 @@ command to generate the output files.
     <comment xml:lang="hu">Enlightenment-téma</comment>
     <comment xml:lang="nl">Enlightenment thema</comment>
     <comment xml:lang="sr">Enlightenment тема</comment>
+    <comment xml:lang="sv">Enlightenment-tema</comment>
     <glob pattern="*.etheme"/>
   </mime-type>
   <mime-type type="application/x-egon">
     <comment>Egon Animator</comment>
     <comment xml:lang="nl">Egon Animator</comment>
     <comment xml:lang="sr">Егон аниматор</comment>
+    <comment xml:lang="sv">Egon-animator</comment>
     <glob pattern="*.egon"/>
   </mime-type>
   <mime-type type="application/x-executable">
     <comment>Executable</comment>
     <comment xml:lang="nl">Uitvoerbaar bestand</comment>
     <comment xml:lang="sr">Извршна</comment>
+    <comment xml:lang="sv">Körbar</comment>
     <magic priority="40">
       <match type="string" value="\177ELF" offset="0">
         <match type="byte" value="1" offset="5">
@@ -718,6 +792,7 @@ command to generate the output files.
     <comment xml:lang="hu">Betűkészletek</comment>
     <comment xml:lang="nl">Lettertypen</comment>
     <comment xml:lang="sr">Фонтови</comment>
+    <comment xml:lang="sv">Typsnitt</comment>
     <magic priority="50">
       <match type="string" value="LWFN" offset="0"/>
       <match type="string" value="LWFN" offset="65"/>
@@ -736,6 +811,7 @@ command to generate the output files.
     <comment xml:lang="hu">Adobe-betűmetrika</comment>
     <comment xml:lang="nl">Adobe lettertype-metrieken</comment>
     <comment xml:lang="sr">Adobe метрика фонта</comment>
+    <comment xml:lang="sv">Adobe-typsnittsmetrik</comment>
     <glob pattern="*.afm"/>
   </mime-type>
   <mime-type type="application/x-font-bdf">
@@ -743,6 +819,7 @@ command to generate the output files.
     <comment xml:lang="hu">BDF-betűkészlet</comment>
     <comment xml:lang="nl">BDF lettertype</comment>
     <comment xml:lang="sr">BDF фонт</comment>
+    <comment xml:lang="sv">BDF-typsnitt</comment>
     <magic priority="50">
       <match type="string" value="STARTFONT\040" offset="0"/>
     </magic>
@@ -753,6 +830,7 @@ command to generate the output files.
     <comment xml:lang="hu">DOS-betűkészlet</comment>
     <comment xml:lang="nl">DOS lettertype</comment>
     <comment xml:lang="sr">DOS фонт</comment>
+    <comment xml:lang="sv">DOS-typsnitt</comment>
     <magic priority="50">
       <match type="string" value="\xff\x46\x4f\x4e" offset="0"/>
       <match type="string" value="\x00\x45\x47\x41" offset="7"/>
@@ -764,6 +842,7 @@ command to generate the output files.
     <comment xml:lang="hu">Adobe FrameMaker-betűkészlet</comment>
     <comment xml:lang="nl">Adobe FrameMaker lettertype</comment>
     <comment xml:lang="sr">Adobe FrameMaker фонт</comment>
+    <comment xml:lang="sv">Adobe FrameMaker-typsnitt</comment>
     <magic priority="50">
       <match type="string" value="&lt;MakerScreenFont" offset="0"/>
     </magic>
@@ -773,6 +852,7 @@ command to generate the output files.
     <comment xml:lang="hu">LIBGRX-betűkészlet</comment>
     <comment xml:lang="nl">LIBGRX lettertype</comment>
     <comment xml:lang="sr">LIBGRX фонт</comment>
+    <comment xml:lang="sv">LIBGRX-typsnitt</comment>
     <magic priority="50">
       <match type="string" value="\x14\x02\x59\x19" offset="0"/>
     </magic>
@@ -782,6 +862,7 @@ command to generate the output files.
     <comment xml:lang="hu">Linux PSF konzolos betűkészlet</comment>
     <comment xml:lang="nl">Linux PSF console lettertype</comment>
     <comment xml:lang="sr">Линукс PSF конзолни фонт</comment>
+    <comment xml:lang="sv">Linux PSF-konsolltypsnitt</comment>
     <magic priority="50">
       <match type="string" value="\x36\x04" offset="0"/>
     </magic>
@@ -792,6 +873,7 @@ command to generate the output files.
     <comment xml:lang="hu">PCF-betűkészlet</comment>
     <comment xml:lang="nl">PCF lettertype</comment>
     <comment xml:lang="sr">PCF фонт</comment>
+    <comment xml:lang="sv">PCF-typsnitt</comment>
     <magic priority="50">
       <match type="string" value="\001fcp" offset="0"/>
     </magic>
@@ -802,6 +884,7 @@ command to generate the output files.
     <comment xml:lang="hu">OpenType-betűkészlet</comment>
     <comment xml:lang="nl">OpenType lettertype</comment>
     <comment xml:lang="sr">OpenType фонт</comment>
+    <comment xml:lang="sv">OpenType-typsnitt</comment>
     <magic priority="50">
       <match type="string" value="OTTO" offset="0"/>
     </magic>
@@ -811,6 +894,7 @@ command to generate the output files.
     <comment xml:lang="hu">Speedo-betűkészlet</comment>
     <comment xml:lang="nl">Speedo lettertype</comment>
     <comment xml:lang="sr">Speedo фонт</comment>
+    <comment xml:lang="sv">Speedo-typsnitt</comment>
     <magic priority="50">
       <match type="string" value="D1.0\015" offset="0"/>
     </magic>
@@ -821,6 +905,7 @@ command to generate the output files.
     <comment xml:lang="hu">SunOS News-betűkészlet</comment>
     <comment xml:lang="nl">SunOS Nieuws lettertype</comment>
     <comment xml:lang="sr">SunOS News фонт</comment>
+    <comment xml:lang="sv">SunOS News-typsnitt</comment>
     <magic priority="50">
       <match type="string" value="StartFont" offset="0"/>
       <match type="string" value="\x13\x7A\x29" offset="0"/>
@@ -832,6 +917,7 @@ command to generate the output files.
     <comment xml:lang="hu">TeX-betűkészlet</comment>
     <comment xml:lang="nl">TeX lettertype</comment>
     <comment xml:lang="sr">ТеХ фонт</comment>
+    <comment xml:lang="sv">TeX-typsnitt</comment>
     <magic priority="50">
       <match type="string" value="\367\203" offset="0"/>
       <match type="string" value="\367\131" offset="0"/>
@@ -843,6 +929,7 @@ command to generate the output files.
     <comment xml:lang="hu">TeX-betűmetrika</comment>
     <comment xml:lang="nl">TeX lettertype-metrieken</comment>
     <comment xml:lang="sr">ТеХ метрика фонта</comment>
+    <comment xml:lang="sv">TeX-typsnittsmetrik</comment>
     <magic priority="50">
       <match type="string" value="\000\021" offset="2"/>
       <match type="string" value="\000\022" offset="2"/>
@@ -853,6 +940,7 @@ command to generate the output files.
     <comment xml:lang="hu">Truetype-betűkészlet</comment>
     <comment xml:lang="nl">Truetype lettertype</comment>
     <comment xml:lang="sr">TrueType фонт</comment>
+    <comment xml:lang="sv">TrueType-typsnitt</comment>
     <magic priority="50">
       <match type="string" value="FFIL" offset="0"/>
       <match type="string" value="FFIL" offset="65"/>
@@ -865,6 +953,7 @@ command to generate the output files.
     <comment xml:lang="hu">V-betűkészlet</comment>
     <comment xml:lang="nl">V lettertype</comment>
     <comment xml:lang="sr">V фонт</comment>
+    <comment xml:lang="sv">V-typsnitt</comment>
     <magic priority="50">
       <match type="string" value="FONT" offset="0"/>
     </magic>
@@ -884,6 +973,7 @@ command to generate the output files.
     <comment>Game Boy rom</comment>
     <comment xml:lang="nl">Game Boy ROM</comment>
     <comment xml:lang="sr">Гејмбој ром</comment>
+    <comment xml:lang="sv">Game Boy-rom</comment>
     <glob pattern="*.gb"/>
   </mime-type>
   <mime-type type="application/x-gdbm">
@@ -897,6 +987,7 @@ command to generate the output files.
     <comment>Genesis rom</comment>
     <comment xml:lang="nl">Genesis ROM</comment>
     <comment xml:lang="sr">Genesis ром</comment>
+    <comment xml:lang="sv">Genesis-rom</comment>
     <glob pattern="*.gen"/>
     <glob pattern="*.md"/>
   </mime-type>
@@ -905,6 +996,7 @@ command to generate the output files.
     <comment xml:lang="hu">Lefordított üzenetek (gépi kód)</comment>
     <comment xml:lang="nl">Vertaalde berichten (machine-leesbaar)</comment>
     <comment xml:lang="sr">Преведене поруке (машинама читљиво)</comment>
+    <comment xml:lang="sv">Översatta meddelanden (maskinläsbara)</comment>
     <glob pattern="*.gmo"/>
   </mime-type>
   <mime-type type="application/x-glade">
@@ -912,6 +1004,7 @@ command to generate the output files.
     <comment xml:lang="hu">Glade-projekt</comment>
     <comment xml:lang="nl">Glade project</comment>
     <comment xml:lang="sr">Глејд пројекат</comment>
+    <comment xml:lang="sv">Glade-projekt</comment>
     <glob pattern="*.glade"/>
   </mime-type>
   <mime-type type="application/x-gmc-link">
@@ -919,6 +1012,7 @@ command to generate the output files.
     <comment xml:lang="hu">GMC-link</comment>
     <comment xml:lang="nl">GMC koppeling</comment>
     <comment xml:lang="sr">GMC веза</comment>
+    <comment xml:lang="sv">GMC-länk</comment>
     <magic priority="50">
       <match type="string" value="URL:" offset="0:32"/>
     </magic>
@@ -927,6 +1021,7 @@ command to generate the output files.
     <comment>GnuCash Workbook</comment>
     <comment xml:lang="nl">GnuCash werkboek</comment>
     <comment xml:lang="sr">ГнуКеш радна свеска</comment>
+    <comment xml:lang="sv">GnuCash-arbetsbok</comment>
     <glob pattern="*.gnucash"/>
     <glob pattern="*.gnc"/>
     <glob pattern="*.xac"/>
@@ -935,6 +1030,7 @@ command to generate the output files.
     <comment>GNUmeric spreadsheet</comment>
     <comment xml:lang="nl">GNUmeric spreadsheet</comment>
     <comment xml:lang="sr">Гнумерик табеларни рачун</comment>
+    <comment xml:lang="sv">GNUmeric-kalkylblad</comment>
     <magic priority="50">
       <match type="string" value="gmr:Workbook" offset="0:64"/>
     </magic>
@@ -944,12 +1040,14 @@ command to generate the output files.
     <comment>graphite - Scientific Graphs</comment>
     <comment xml:lang="nl">graphite - Wetenschappelijke grafieken</comment>
     <comment xml:lang="sr">graphite — научни графикони</comment>
+    <comment xml:lang="sv">graphite - vetenskapliga grafer</comment>
     <glob pattern="*.gra"/>
   </mime-type>
   <mime-type type="application/x-gtar">
     <comment>gtar archive</comment>
     <comment xml:lang="nl">gtar archief</comment>
     <comment xml:lang="sr">гтар архива</comment>
+    <comment xml:lang="sv">gtar-arkiv</comment>
     <glob pattern="*.gtar"/>
   </mime-type>
   <mime-type type="application/x-gtktalog">
@@ -957,6 +1055,7 @@ command to generate the output files.
     <comment xml:lang="hu">Gtktalog-katalógus</comment>
     <comment xml:lang="nl">Gtktalog catalogus</comment>
     <comment xml:lang="sr">Gtktalog каталог</comment>
+    <comment xml:lang="sv">Gtktalog-katalog</comment>
     <magic priority="50">
       <match type="string" value="gtktalog " offset="4"/>
     </magic>
@@ -965,6 +1064,7 @@ command to generate the output files.
     <comment>Gzip file</comment>
     <comment xml:lang="nl">Gzip bestand</comment>
     <comment xml:lang="sr">Gzip датотека</comment>
+    <comment xml:lang="sv">Gzip-fil</comment>
     <magic priority="50">
       <match type="string" value="\037\213" offset="0"/>
     </magic>
@@ -974,6 +1074,7 @@ command to generate the output files.
     <comment>Gzipped PostScript File</comment>
     <comment xml:lang="nl">Gzip-ingepakt PostScript bestand</comment>
     <comment xml:lang="sr">Гзипована ПостСкрипт датотека</comment>
+    <comment xml:lang="sv">Gzippad PostScript-fil</comment>
     <glob pattern="*.ps.gz"/>
   </mime-type>
   <mime-type type="application/x-hdf">
@@ -981,6 +1082,7 @@ command to generate the output files.
     <comment xml:lang="hu">HDF-dokumentum</comment>
     <comment xml:lang="nl">HDF document</comment>
     <comment xml:lang="sr">HDF документ</comment>
+    <comment xml:lang="sv">HDF-dokument</comment>
     <glob pattern="*.hdf"/>
   </mime-type>
   <mime-type type="application/x-ipod-firmware">
@@ -988,6 +1090,7 @@ command to generate the output files.
     <comment xml:lang="hu">iPod-szoftver</comment>
     <comment xml:lang="nl">iPod software</comment>
     <comment xml:lang="sr">iPod програм</comment>
+    <comment xml:lang="sv">iPod-programvara</comment>
     <magic priority="50">
       <match type="string" value="S T O P" offset="0"/>
     </magic>
@@ -997,6 +1100,7 @@ command to generate the output files.
     <comment xml:lang="hu">Java-archívum</comment>
     <comment xml:lang="nl">Java archief</comment>
     <comment xml:lang="sr">Јава архива</comment>
+    <comment xml:lang="sv">Java-arkiv</comment>
     <glob pattern="*.jar"/>
   </mime-type>
   <mime-type type="application/x-java">
@@ -1004,6 +1108,7 @@ command to generate the output files.
     <comment xml:lang="hu">Java-osztály</comment>
     <comment xml:lang="nl">Java klasse</comment>
     <comment xml:lang="sr">Јава класа</comment>
+    <comment xml:lang="sv">Java-klass</comment>
     <magic priority="50">
       <match type="host16" value="0xcafe" offset="0">
         <match type="host16" value="0xbabe" offset="2"/>
@@ -1016,6 +1121,7 @@ command to generate the output files.
     <comment xml:lang="hu">JBuilder-projekt</comment>
     <comment xml:lang="nl">JBuilder project</comment>
     <comment xml:lang="sr">JBuilder пројекат</comment>
+    <comment xml:lang="sv">JBuilder-projekt</comment>
     <glob pattern="*.jpr"/>
     <glob pattern="*.jpx"/>
   </mime-type>
@@ -1024,6 +1130,7 @@ command to generate the output files.
     <comment xml:lang="hu">Karbon14-dokumentum</comment>
     <comment xml:lang="nl">Karbon14 document</comment>
     <comment xml:lang="sr">Karbon14 документ</comment>
+    <comment xml:lang="sv">Karbon14-dokument</comment>
     <magic priority="50">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
@@ -1043,6 +1150,7 @@ command to generate the output files.
     <comment xml:lang="hu">KChart</comment>
     <comment xml:lang="nl">KChart</comment>
     <comment xml:lang="sr">KChart</comment>
+    <comment xml:lang="sv">KChart</comment>
     <magic priority="50">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
@@ -1062,6 +1170,7 @@ command to generate the output files.
     <comment xml:lang="hu">KFormula</comment>
     <comment xml:lang="nl">KFormula</comment>
     <comment xml:lang="sr">KFormula</comment>
+    <comment xml:lang="sv">KFormula</comment>
     <magic priority="50">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
@@ -1081,6 +1190,7 @@ command to generate the output files.
     <comment xml:lang="hu">KIllustrator-dokumentum</comment>
     <comment xml:lang="nl">KIllustrator document</comment>
     <comment xml:lang="sr">KIllustrator документ</comment>
+    <comment xml:lang="sv">KIllustrator-dokument</comment>
     <magic priority="50">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
@@ -1095,6 +1205,7 @@ command to generate the output files.
     <comment xml:lang="hu">Kivio</comment>
     <comment xml:lang="nl">Kivio</comment>
     <comment xml:lang="sr">Kivio</comment>
+    <comment xml:lang="sv">Kivio</comment>
     <magic priority="50">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
@@ -1114,6 +1225,7 @@ command to generate the output files.
     <comment xml:lang="hu">Kontour</comment>
     <comment xml:lang="nl">Kontour</comment>
     <comment xml:lang="sr">Kontour</comment>
+    <comment xml:lang="sv">Kontour</comment>
     <magic priority="50">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
@@ -1133,6 +1245,7 @@ command to generate the output files.
     <comment xml:lang="hu">KPovModeler-fájl</comment>
     <comment xml:lang="nl">KPovModeler bestand</comment>
     <comment xml:lang="sr">KPovModeler датотека</comment>
+    <comment xml:lang="sv">KPovModeler-fil</comment>
     <glob pattern="*.kpm"/>
   </mime-type>
   <mime-type type="application/x-kpresenter">
@@ -1140,6 +1253,7 @@ command to generate the output files.
     <comment xml:lang="hu">KPresenter</comment>
     <comment xml:lang="nl">KPresenter</comment>
     <comment xml:lang="sr">KPresenter</comment>
+    <comment xml:lang="sv">KPresenter</comment>
     <magic priority="50">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
@@ -1160,6 +1274,7 @@ command to generate the output files.
     <comment xml:lang="hu">Krita</comment>
     <comment xml:lang="nl">Krita</comment>
     <comment xml:lang="sr">Крита</comment>
+    <comment xml:lang="sv">Krita</comment>
     <magic priority="50">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
@@ -1179,6 +1294,7 @@ command to generate the output files.
     <comment xml:lang="hu">KSpread</comment>
     <comment xml:lang="nl">KSpread</comment>
     <comment xml:lang="sr">KSpread</comment>
+    <comment xml:lang="sv">KSpread</comment>
     <magic priority="50">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
@@ -1198,6 +1314,7 @@ command to generate the output files.
     <comment xml:lang="hu">KSpread titkosítva</comment>
     <comment xml:lang="nl">KSpread gecodeerd</comment>
     <comment xml:lang="sr">Шифровани KSpread</comment>
+    <comment xml:lang="sv">KSpread-krypterad</comment>
     <magic priority="50">
       <match type="big32" value="0x0d1a2702" offset="0"/>
     </magic>
@@ -1212,6 +1329,7 @@ command to generate the output files.
     <comment xml:lang="hu">Kugar-adatfájl</comment>
     <comment xml:lang="nl">Kugar gegevensbestand</comment>
     <comment xml:lang="sr">Кугар датотека са подацима</comment>
+    <comment xml:lang="sv">Kugar-datafil</comment>
     <glob pattern="*.kud"/>
   </mime-type>
   <mime-type type="application/x-kword">
@@ -1219,6 +1337,7 @@ command to generate the output files.
     <comment xml:lang="hu">KWord</comment>
     <comment xml:lang="nl">KWord</comment>
     <comment xml:lang="sr">KWord</comment>
+    <comment xml:lang="sv">KWord</comment>
     <magic priority="50">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
@@ -1239,6 +1358,7 @@ command to generate the output files.
     <comment xml:lang="hu">KWord titkosítva</comment>
     <comment xml:lang="nl">KWord gecodeerd</comment>
     <comment xml:lang="sr">Шифровани KWord</comment>
+    <comment xml:lang="sv">KWord-krypterad</comment>
     <magic priority="50">
       <match type="big32" value="0x0d1a2701" offset="0"/>
     </magic>
@@ -1248,6 +1368,7 @@ command to generate the output files.
     <comment xml:lang="hu">Lha-archívum</comment>
     <comment xml:lang="nl">Lha archief</comment>
     <comment xml:lang="sr">Lha архиве</comment>
+    <comment xml:lang="sv">LHA-arkiv</comment>
     <magic priority="50">
       <match type="string" value="-lh -" offset="2"/>
       <match type="string" value="-lh0-" offset="2"/>
@@ -1270,12 +1391,14 @@ command to generate the output files.
     <comment xml:lang="hu">LHA-archívum</comment>
     <comment xml:lang="nl">LHA archief</comment>
     <comment xml:lang="sr">LHA архива</comment>
+    <comment xml:lang="sv">LHA-arkiv</comment>
     <glob pattern="*.lhz"/>
   </mime-type>
   <mime-type type="application/x-linguist">
     <comment>Message Catalog</comment>
     <comment xml:lang="nl">Berichtencatalogus</comment>
     <comment xml:lang="sr">Каталог порука</comment>
+    <comment xml:lang="sv">Meddelandekatalog</comment>
     <glob pattern="*.ts"/>
   </mime-type>
   <mime-type type="application/x-lyx">
@@ -1283,6 +1406,7 @@ command to generate the output files.
     <comment xml:lang="hu">LyX-dokumentum</comment>
     <comment xml:lang="nl">LyX document</comment>
     <comment xml:lang="sr">LyX документ</comment>
+    <comment xml:lang="sv">LyX-dokument</comment>
     <magic priority="50">
       <match type="string" value="#LyX" offset="0"/>
     </magic>
@@ -1292,6 +1416,7 @@ command to generate the output files.
     <comment>Lzopped File</comment>
     <comment xml:lang="nl">Lzop-ingepakt bestand</comment>
     <comment xml:lang="sr">Лзоповоана датотека</comment>
+    <comment xml:lang="sv">Lzoppad fil</comment>
     <glob pattern="*.lzo"/>
   </mime-type>
   <mime-type type="application/x-macbinary">
@@ -1299,6 +1424,7 @@ command to generate the output files.
     <comment xml:lang="hu">MacBinary-fájl</comment>
     <comment xml:lang="nl">MacBinary bestand</comment>
     <comment xml:lang="sr">MacBinary датотека</comment>
+    <comment xml:lang="sv">MacBinary-fil</comment>
     <magic priority="50">
       <match type="string" value="mBIN" offset="102"/>
     </magic>
@@ -1308,6 +1434,7 @@ command to generate the output files.
     <comment xml:lang="hu">FrameMaker-cserélhetődokumentum</comment>
     <comment xml:lang="nl">FrameMaker uitwisselingsdocument</comment>
     <comment xml:lang="sr">FrameMaker размењиви документ</comment>
+    <comment xml:lang="sv">FrameMaker-utbytesdokument</comment>
     <glob pattern="*.mif"/>
   </mime-type>
   <mime-type type="application/x-mozilla-bookmarks">
@@ -1315,6 +1442,7 @@ command to generate the output files.
     <comment xml:lang="hu">Mozilla-könyvjelzőfájl</comment>
     <comment xml:lang="nl">Mozilla bladwijzers bestand</comment>
     <comment xml:lang="sr">Mozilla фајл маркера</comment>
+    <comment xml:lang="sv">Mozilla-bokmärkesfil</comment>
     <magic priority="50">
       <match type="string" value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" offset="0:64"/>
     </magic>
@@ -1324,6 +1452,7 @@ command to generate the output files.
     <comment xml:lang="hu">DOS/Windows-program</comment>
     <comment xml:lang="nl">DOS/Windows programma</comment>
     <comment xml:lang="sr">DOS/Windows програм</comment>
+    <comment xml:lang="sv">DOS/Windows-program</comment>
     <magic priority="40">
       <match type="string" value="MZ" offset="0"/>
     </magic>
@@ -1337,18 +1466,21 @@ command to generate the output files.
     <comment>Microsoft Write document</comment>
     <comment xml:lang="nl">Microsoft Write document</comment>
     <comment xml:lang="sr">Микрософт документ Писанке</comment>
+    <comment xml:lang="sv">Microsoft Write-dokument</comment>
     <glob pattern="*.wri"/>
   </mime-type>
   <mime-type type="application/x-msx-rom">
     <comment>MSX rom</comment>
     <comment xml:lang="nl">MSX ROM</comment>
     <comment xml:lang="sr">MSX ром</comment>
+    <comment xml:lang="sv">MSX-rom</comment>
     <glob pattern="*.msx"/>
   </mime-type>
   <mime-type type="application/x-n64-rom">
     <comment>Nintendo64 rom</comment>
     <comment xml:lang="nl">Nintendo64 ROM</comment>
     <comment xml:lang="sr">Нинтендо64 ром</comment>
+    <comment xml:lang="sv">Nintendo64-rom</comment>
     <glob pattern="*.n64"/>
   </mime-type>
   <mime-type type="application/x-nautilus-link">
@@ -1356,6 +1488,7 @@ command to generate the output files.
     <comment xml:lang="hu">Nautilus-link</comment>
     <comment xml:lang="nl">Nautilus koppeling</comment>
     <comment xml:lang="sr">Наутилус веза</comment>
+    <comment xml:lang="sv">Nautiluslänk</comment>
     <magic priority="50">
       <match type="string" value="&lt;nautilus_object nautilus_link" offset="0:32"/>
     </magic>
@@ -1364,6 +1497,7 @@ command to generate the output files.
     <comment>NES rom</comment>
     <comment xml:lang="nl">NES ROM</comment>
     <comment xml:lang="sr">NES ром</comment>
+    <comment xml:lang="sv">NES-rom</comment>
     <glob pattern="*.nes"/>
   </mime-type>
   <mime-type type="application/x-netcdf">
@@ -1371,6 +1505,7 @@ command to generate the output files.
     <comment xml:lang="hu">Unidata netCDF-dokumentum</comment>
     <comment xml:lang="nl">Unidata netCDF document</comment>
     <comment xml:lang="sr">Unidata netCDF документ</comment>
+    <comment xml:lang="sv">Unidata netCDF-dokument</comment>
     <glob pattern="*.cdf"/>
     <glob pattern="*.nc"/>
   </mime-type>
@@ -1379,6 +1514,7 @@ command to generate the output files.
     <comment xml:lang="hu">Netscape-könyvjelzőfájl</comment>
     <comment xml:lang="nl">Netscape bladwijzers bestand</comment>
     <comment xml:lang="sr">Netscape фајл маркера</comment>
+    <comment xml:lang="sv">Netscape-bokmärkesfil</comment>
     <magic priority="50">
       <match type="string" value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" offset="0:64"/>
     </magic>
@@ -1387,6 +1523,7 @@ command to generate the output files.
     <comment>Object Code</comment>
     <comment xml:lang="nl">Object Code</comment>
     <comment xml:lang="sr">Објектни кôд</comment>
+    <comment xml:lang="sv">Objektkod</comment>
     <magic priority="50">
       <match type="string" value="\177ELF" offset="0">
         <match type="byte" value="1" offset="5">
@@ -1405,6 +1542,7 @@ command to generate the output files.
     <comment>Ogg Vorbis audio</comment>
     <comment xml:lang="nl">Ogg Vorbis geluidsbestand</comment>
     <comment xml:lang="sr">Ог-ворбис звучни запис</comment>
+    <comment xml:lang="sv">Ogg Vorbis-ljud</comment>
     <magic priority="50">
       <match type="string" value="OggS" offset="0"/>
     </magic>
@@ -1415,6 +1553,7 @@ command to generate the output files.
     <comment xml:lang="hu">GNU Oleo-munkafüzet</comment>
     <comment xml:lang="nl">GNU Oleo spreadsheet</comment>
     <comment xml:lang="sr">ГНУ Oleo табеларне прорачун</comment>
+    <comment xml:lang="sv">GNU Oleo-kalkylblad</comment>
     <magic priority="50">
       <match type="string" value="Oleo" offset="31"/>
     </magic>
@@ -1425,12 +1564,14 @@ command to generate the output files.
     <comment xml:lang="hu">Palm OS-adatbázis</comment>
     <comment xml:lang="nl">Palm OS gegevensbank</comment>
     <comment xml:lang="sr">Palm OS база података</comment>
+    <comment xml:lang="sv">Palm OS-databas</comment>
   </mime-type>
   <mime-type type="application/x-pef-executable">
     <comment>PEF program</comment>
     <comment xml:lang="hu">PEF-program</comment>
     <comment xml:lang="nl">PEF programma</comment>
     <comment xml:lang="sr">PEF програм</comment>
+    <comment xml:lang="sv">PEF-program</comment>
     <magic priority="50">
       <match type="string" value="Joy!" offset="0"/>
     </magic>
@@ -1439,6 +1580,7 @@ command to generate the output files.
     <comment>PERL program</comment>
     <comment xml:lang="nl">PERL programma</comment>
     <comment xml:lang="sr">Перл програм</comment>
+    <comment xml:lang="sv">PERL-program</comment>
     <magic priority="50">
       <match type="string" value='eval \"exec /usr/local/bin/perl' offset="0"/>
       <match type="string" value="/bin/perl" offset="1:16"/>
@@ -1454,6 +1596,7 @@ command to generate the output files.
     <comment xml:lang="hu">PHP-program</comment>
     <comment xml:lang="nl">PHP script</comment>
     <comment xml:lang="sr">PHP скрипта</comment>
+    <comment xml:lang="sv">PHP-skript</comment>
     <magic priority="80">
       <match type="string" value="&lt;?php" offset="0:64"/>
     </magic>
@@ -1465,6 +1608,7 @@ command to generate the output files.
     <comment>PKCS#12 Certificate Bundle</comment>
     <comment xml:lang="nl">PKCS#12 certificaatbundel</comment>
     <comment xml:lang="sr">PKCS#12 пакет сертификата</comment>
+    <comment xml:lang="sv">PKCS#12-certifikatsamling</comment>
     <glob pattern="*.p12"/>
     <glob pattern="*.pfx"/>
   </mime-type>
@@ -1472,18 +1616,21 @@ command to generate the output files.
     <comment>profiler results</comment>
     <comment xml:lang="nl">profileerder resultaten</comment>
     <comment xml:lang="sr">резултати профилатора</comment>
+    <comment xml:lang="sv">profilerarresultat</comment>
     <glob pattern="gmon.out"/>
   </mime-type>
   <mime-type type="application/x-pw">
     <comment>Pathetic Writer</comment>
     <comment xml:lang="nl">Pathetic Writer</comment>
     <comment xml:lang="sr">Патетични писац</comment>
+    <comment xml:lang="sv">Pathetic Writer</comment>
     <glob pattern="*.pw"/>
   </mime-type>
   <mime-type type="application/x-python">
     <comment>Python program</comment>
     <comment xml:lang="nl">Python programma</comment>
     <comment xml:lang="sr">Питон програм</comment>
+    <comment xml:lang="sv">Python-program</comment>
     <magic priority="50">
       <match type="string" value="#!/bin/python" offset="0"/>
       <match type="string" value="#! /bin/python" offset="0"/>
@@ -1502,6 +1649,7 @@ command to generate the output files.
     <comment>Python bytecode</comment>
     <comment xml:lang="nl">Python bytecode</comment>
     <comment xml:lang="sr">Питонов бајт кôд</comment>
+    <comment xml:lang="sv">Python-bytekod</comment>
     <magic priority="50">
       <match type="big32" value="0x994e0d0a" offset="0"/>
     </magic>
@@ -1512,6 +1660,7 @@ command to generate the output files.
     <comment>Quattro Pro file</comment>
     <comment xml:lang="nl">Quattro Pro bestand</comment>
     <comment xml:lang="sr">Quattro Pro датотека</comment>
+    <comment xml:lang="sv">Quattro Pro-fil</comment>
     <glob pattern="*.wb1"/>
     <glob pattern="*.wb2"/>
     <glob pattern="*.wb3"/>
@@ -1521,12 +1670,14 @@ command to generate the output files.
     <comment xml:lang="hu">Quicken-dokumentum</comment>
     <comment xml:lang="nl">Quicken document</comment>
     <comment xml:lang="sr">Quicken документ</comment>
+    <comment xml:lang="sv">Quicken-dokument</comment>
     <glob pattern="*.qif"/>
   </mime-type>
   <mime-type type="application/x-rar">
     <comment>Rar archive</comment>
     <comment xml:lang="nl">Rar archief</comment>
     <comment xml:lang="sr">РАР архива</comment>
+    <comment xml:lang="sv">Rar-arkiv</comment>
     <magic priority="50">
       <match type="string" value="Rar!" offset="0"/>
     </magic>
@@ -1536,12 +1687,14 @@ command to generate the output files.
     <comment>rejected patch file</comment>
     <comment xml:lang="nl">verworpen patch bestand</comment>
     <comment xml:lang="sr">датотека одбијене закрпе</comment>
+    <comment xml:lang="sv">avvisad patchfil</comment>
     <glob pattern="*.rej"/>
   </mime-type>
   <mime-type type="application/x-rpm">
     <comment>RPM package file</comment>
     <comment xml:lang="nl">RPM pakketbestand</comment>
     <comment xml:lang="sr">RPM пакет</comment>
+    <comment xml:lang="sv">RPM-paketfil</comment>
     <magic priority="50">
       <match type="string" value="\xed\xab\xee\xdb" offset="0"/>
     </magic>
@@ -1551,6 +1704,7 @@ command to generate the output files.
     <comment>Ruby program</comment>
     <comment xml:lang="nl">Ruby programma</comment>
     <comment xml:lang="sr">Ruby програм</comment>
+    <comment xml:lang="sv">Ruby-program</comment>
     <magic>
       <match type="string" value="/bin/env ruby" offset="1:16"/>
     </magic>
@@ -1564,12 +1718,14 @@ command to generate the output files.
     <comment>shell archive</comment>
     <comment xml:lang="nl">shell archief</comment>
     <comment xml:lang="sr">Архива љуске (SHAR)</comment>
+    <comment xml:lang="sv">skalarkiv</comment>
     <glob pattern="*.shar"/>
   </mime-type>
   <mime-type type="application/x-shared-library-la">
     <comment>shared library</comment>
     <comment xml:lang="nl">gedeelde bibliotheek</comment>
     <comment xml:lang="sr">дељена библиотека</comment>
+    <comment xml:lang="sv">delat bibliotek</comment>
     <glob pattern="*.la"/>
   </mime-type>
   <mime-type type="application/x-sharedlib">
@@ -1577,6 +1733,7 @@ command to generate the output files.
     <comment xml:lang="hu">Osztott programkönyvtár</comment>
     <comment xml:lang="nl">Gedeelde bibliotheek</comment>
     <comment xml:lang="sr">Дељена библиотека</comment>
+    <comment xml:lang="sv">Delat bibliotek</comment>
     <magic priority="50">
       <match type="string" value="\177ELF" offset="0">
         <match type="byte" value="1" offset="5">
@@ -1599,6 +1756,7 @@ command to generate the output files.
     <comment>shell script</comment>
     <comment xml:lang="nl">shell script</comment>
     <comment xml:lang="sr">скрипта љуске</comment>
+    <comment xml:lang="sv">skalskript</comment>
     <magic priority="50">
       <match type="string" value="#!/bin/ksh" offset="0"/>
       <match type="string" value="#!/usr/local/bin/ash" offset="0"/>
@@ -1618,6 +1776,7 @@ command to generate the output files.
     <comment>Shockwave Flash Media</comment>
     <comment xml:lang="nl">Shockwave Flash Media</comment>
     <comment xml:lang="sr">Шоквејв бљесак медиј</comment>
+    <comment xml:lang="sv">Shockwave Flash-media</comment>
     <magic priority="50">
       <match type="string" value="FWS" offset="0"/>
     </magic>
@@ -1628,6 +1787,7 @@ command to generate the output files.
     <comment xml:lang="hu">Siag-munkafüzet</comment>
     <comment xml:lang="nl">Siag spreadsheet</comment>
     <comment xml:lang="sr">Siag табеларни прорачун</comment>
+    <comment xml:lang="sv">Siag-kalkylblad</comment>
     <glob pattern="*.siag"/>
   </mime-type>
   <mime-type type="application/x-slp">
@@ -1635,11 +1795,13 @@ command to generate the output files.
     <comment xml:lang="hu">Stampede-csomag</comment>
     <comment xml:lang="nl">Stampede pakket</comment>
     <comment xml:lang="sr">Stampede пакет</comment>
+    <comment xml:lang="sv">Stampede-paket</comment>
   </mime-type>
   <mime-type type="application/x-sms-rom">
     <comment>SMS or Game Gear rom</comment>
     <comment xml:lang="nl">SMS of Game Gear ROM</comment>
     <comment xml:lang="sr">SMS или Game Gear ром</comment>
+    <comment xml:lang="sv">SMS eller Game Gear-rom</comment>
     <glob pattern="*.sms"/>
     <glob pattern="*.gg"/>
   </mime-type>
@@ -1648,6 +1810,7 @@ command to generate the output files.
     <comment xml:lang="hu">Macintosh StuffIt-archívum</comment>
     <comment xml:lang="nl">Macintosh StuffIt archief</comment>
     <comment xml:lang="sr">Мекинтош StuffIt архива</comment>
+    <comment xml:lang="sv">Macintosh StuffIt-arkiv </comment>
     <magic priority="50">
       <match type="string" value="StuffIt " offset="0"/>
       <match type="string" value="SIT!" offset="0"/>
@@ -1658,6 +1821,7 @@ command to generate the output files.
     <comment xml:lang="hu">SV4 CPIO-archívum</comment>
     <comment xml:lang="nl">SV4 CPIO archief</comment>
     <comment xml:lang="sr">SV4 CPIO архива</comment>
+    <comment xml:lang="sv">SV4 CPIO-arkiv</comment>
     <glob pattern="*.sv4cpio"/>
   </mime-type>
   <mime-type type="application/x-sv4crc">
@@ -1665,6 +1829,7 @@ command to generate the output files.
     <comment xml:lang="hu">SV4 CPIP-archívum (CRC-vel)</comment>
     <comment xml:lang="nl">SV4 CPIP archief (met CRC)</comment>
     <comment xml:lang="sr">SV4 CPIP архива (са CRC-ом)</comment>
+    <comment xml:lang="sv">SV4 CPIO-arkiv (med CRC)</comment>
     <glob pattern="*.sv4crc"/>
   </mime-type>
   <mime-type type="application/x-tar">
@@ -1672,6 +1837,7 @@ command to generate the output files.
     <comment xml:lang="hu">Tar-archívum</comment>
     <comment xml:lang="nl">Tar archief</comment>
     <comment xml:lang="sr">Тар архива</comment>
+    <comment xml:lang="sv">Tar-arkiv</comment>
     <magic priority="50">
       <match type="string" value="ustar\0" offset="257"/>
       <match type="string" value="ustar\040\040\0" offset="257"/>
@@ -1682,18 +1848,21 @@ command to generate the output files.
     <comment>Compressed Tar Archive</comment>
     <comment xml:lang="nl">Ingepakt Tar archief</comment>
     <comment xml:lang="sr">Компресована Тар архива</comment>
+    <comment xml:lang="sv">komprimerat tar-arkiv</comment>
     <glob pattern="*.tar.Z"/>
   </mime-type>
   <mime-type type="application/x-tex-gf">
     <comment>Generic Font files</comment>
     <comment xml:lang="nl">Algemene lettertype bestanden</comment>
     <comment xml:lang="sr">Опште датотеке фонтова</comment>
+    <comment xml:lang="sv">Allmänna typsnittsfiler</comment>
     <glob pattern="*.*gf"/>
   </mime-type>
   <mime-type type="application/x-tex-pk">
     <comment>Packed Font file</comment>
     <comment xml:lang="nl">Ingepakt lettertype-bestand</comment>
     <comment xml:lang="sr">Пакована датотека са фонтом</comment>
+    <comment xml:lang="sv">Packad typsnittsfil</comment>
     <glob pattern="*pk"/>
   </mime-type>
   <mime-type type="application/x-tgif">
@@ -1701,6 +1870,7 @@ command to generate the output files.
     <comment xml:lang="hu">TGIF-dokumentum</comment>
     <comment xml:lang="nl">TGIF document</comment>
     <comment xml:lang="sr">TGIF документ</comment>
+    <comment xml:lang="sv">TGIF-dokument</comment>
     <magic priority="50">
       <match type="string" value="%TGIF" offset="0"/>
     </magic>
@@ -1710,6 +1880,7 @@ command to generate the output files.
     <comment>theme</comment>
     <comment xml:lang="nl">thema</comment>
     <comment xml:lang="sr">тема</comment>
+    <comment xml:lang="sv">tema</comment>
     <glob pattern="*.theme"/>
   </mime-type>
   <mime-type type="application/x-toutdoux">
@@ -1717,12 +1888,14 @@ command to generate the output files.
     <comment xml:lang="hu">ToutDoux-dokumentum</comment>
     <comment xml:lang="nl">ToutDoux document</comment>
     <comment xml:lang="sr">ToutDoux документ</comment>
+    <comment xml:lang="sv">ToutDoux-dokument</comment>
   </mime-type>
   <mime-type type="application/x-trash">
     <comment>Backup file</comment>
     <comment xml:lang="hu">Biztonsági mentés</comment>
     <comment xml:lang="nl">Reservekopie-bestand</comment>
     <comment xml:lang="sr">Резервна копија</comment>
+    <comment xml:lang="sv">Säkerhetskopia</comment>
     <glob pattern="*~"/>
     <glob pattern="*%"/>
     <glob pattern="*.bak"/>
@@ -1734,6 +1907,7 @@ command to generate the output files.
     <comment xml:lang="hu">Troff-dokumentum</comment>
     <comment xml:lang="nl">Troff document</comment>
     <comment xml:lang="sr">Troff документ</comment>
+    <comment xml:lang="sv">Troff-dokument</comment>
     <magic priority="50">
       <match type="string" value='.\\\"' offset="0"/>
       <match type="string" value="'\\\&quot;" offset="0"/>
@@ -1748,17 +1922,20 @@ command to generate the output files.
     <comment>Troff document with manpage macros</comment>
     <comment xml:lang="nl">Troff document met man-pagina macro&apos;s</comment>
     <comment xml:lang="sr">Troff документ са макроима за ман странице</comment>
+    <comment xml:lang="sv">Troff-dokument med manualsidemakron</comment>
     <glob pattern="*.man"/>
   </mime-type>
   <mime-type type="application/x-troff-man-compressed">
     <comment>manual page (compressed)</comment>
     <comment xml:lang="nl">handleidingspagina (ingepakt)</comment>
     <comment xml:lang="sr">страна упутства (компресована)</comment>
+    <comment xml:lang="sv">manualsida (komprimerad)</comment>
   </mime-type>
   <mime-type type="application/x-tzo">
     <comment>Lzopped Tar Archive</comment>
     <comment xml:lang="nl">Lzop-ingepakt Tar archief</comment>
     <comment xml:lang="sr">Лзоповоана Тар архива</comment>
+    <comment xml:lang="sv">Lzoppat tar-arkiv</comment>
     <glob pattern="*.tar.lzo"/>
     <glob pattern="*.tzo"/>
   </mime-type>
@@ -1766,6 +1943,7 @@ command to generate the output files.
     <comment>ustar archive</comment>
     <comment xml:lang="nl">ustar archief</comment>
     <comment xml:lang="sr">ustar архива</comment>
+    <comment xml:lang="sv">ustar-arkiv</comment>
     <glob pattern="*.ustar"/>
   </mime-type>
   <mime-type type="application/x-wais-source">
@@ -1773,12 +1951,14 @@ command to generate the output files.
     <comment xml:lang="hu">WAIS-forráskód</comment>
     <comment xml:lang="nl">WAIS broncode</comment>
     <comment xml:lang="sr">WAIS изворни кôд</comment>
+    <comment xml:lang="sv">WAIS-källkod</comment>
     <glob pattern="*.src"/>
   </mime-type>
   <mime-type type="application/x-x509-ca-cert">
     <comment>DER, PEM, or Netscape encoded X.509 certificate</comment>
     <comment xml:lang="nl">DER, PEM of Netscape gecodeerd X.509 certificaat</comment>
     <comment xml:lang="sr">DER, PEM или Нетскејп кодирани сертификат X.509</comment>
+    <comment xml:lang="sv">DER-, PEM- eller Netscape-kodat X.509-certifikat</comment>
     <glob pattern="*.der"/>
     <glob pattern="*.cer"/>
     <glob pattern="*.crt"/>
@@ -1789,12 +1969,14 @@ command to generate the output files.
     <comment>Empty Document</comment>
     <comment xml:lang="nl">Leeg document</comment>
     <comment xml:lang="sr">Празан документ</comment>
+    <comment xml:lang="sv">Tomt dokument</comment>
   </mime-type>
   <mime-type type="application/x-zoo">
     <comment>Zoo archive</comment>
     <comment xml:lang="hu">Zoo-archívum</comment>
     <comment xml:lang="nl">Zoo archief</comment>
     <comment xml:lang="sr">Zoo архива</comment>
+    <comment xml:lang="sv">Zoo-arkiv</comment>
     <magic priority="50">
       <match type="little32" value="0xfdc4a7dc" offset="20"/>
     </magic>
@@ -1805,6 +1987,7 @@ command to generate the output files.
     <comment xml:lang="hu">XHTML-oldal</comment>
     <comment xml:lang="nl">XHTML pagina</comment>
     <comment xml:lang="sr">XHTML страна</comment>
+    <comment xml:lang="sv">XHTML-sida</comment>
     <glob pattern="*.xhtml"/>
     <root-XML namespaceURI='http://www.w3.org/1999/xhtml' localName='html'/>
   </mime-type>
@@ -1813,6 +1996,7 @@ command to generate the output files.
     <comment xml:lang="hu">Zip-archívum</comment>
     <comment xml:lang="nl">Zip archief</comment>
     <comment xml:lang="sr">Zip архива</comment>
+    <comment xml:lang="sv">Zip-arkiv</comment>
     <magic priority="40">
       <match type="string" value="PK\003\004" offset="0"/>
     </magic>
@@ -1823,12 +2007,14 @@ command to generate the output files.
     <comment xml:lang="hu">Dolby Digital hang</comment>
     <comment xml:lang="nl">Dolby Digital geluidsbestand</comment>
     <comment xml:lang="sr">Дигитални Dolby звучни запис</comment>
+    <comment xml:lang="sv">Dolby Digital-ljud</comment>
     <glob pattern="*.ac3"/>
   </mime-type>
   <mime-type type="audio/basic">
     <comment>ULAW (Sun) audio</comment>
     <comment xml:lang="nl">ULAW (Sun) geluidsbestand</comment>
     <comment xml:lang="sr">ULAW (Sun) звучни запис</comment>
+    <comment xml:lang="sv">ULAW-ljud (Sun)</comment>
     <magic priority="40">
       <match type="string" value=".snd" offset="0"/>
     </magic>
@@ -1840,6 +2026,7 @@ command to generate the output files.
     <comment xml:lang="hu">Commodore 64-hang</comment>
     <comment xml:lang="nl">Commodore 64 geluidsbestand</comment>
     <comment xml:lang="sr">Комодор 64 звучни запис</comment>
+    <comment xml:lang="sv">Commodore 64-ljud</comment>
     <magic priority="50">
       <match type="string" value="PSID" offset="0"/>
     </magic>
@@ -1850,11 +2037,13 @@ command to generate the output files.
     <comment>RealAudio broadcast</comment>
     <comment xml:lang="nl">RealAudio uitzending</comment>
     <comment xml:lang="sr">RealAudio емитовање</comment>
+    <comment xml:lang="sv">RealAudio-utsändning</comment>
   </mime-type>
   <mime-type type="audio/x-adpcm">
     <comment>PCM audio</comment>
     <comment xml:lang="nl">PCM geluidsbestand</comment>
     <comment xml:lang="sr">PCM звучни запис</comment>
+    <comment xml:lang="sv">PCM-ljud</comment>
     <magic priority="50">
       <match type="string" value=".snd" offset="0">
         <match type="big32" value="23" offset="12"/>
@@ -1876,6 +2065,7 @@ command to generate the output files.
     <comment xml:lang="hu">AIFC-hang</comment>
     <comment xml:lang="nl">AIFC geluidsbestand</comment>
     <comment xml:lang="sr">AIFC звучни запис</comment>
+    <comment xml:lang="sv">AIFC-ljud</comment>
     <magic priority="50">
       <match type="string" value="AIFC" offset="8"/>
     </magic>
@@ -1884,6 +2074,7 @@ command to generate the output files.
     <comment>AIFF/Amiga/Mac audio</comment>
     <comment xml:lang="nl">AIFF/Amiga/Mac geluidsbestand</comment>
     <comment xml:lang="sr">AIFF/Амига/Мекинтош звучни запис</comment>
+    <comment xml:lang="sv">AIFF/Amiga/Mac-ljud</comment>
     <magic priority="50">
       <match type="string" value="AIFF" offset="8"/>
       <match type="string" value="AIFC" offset="8"/>
@@ -1898,12 +2089,14 @@ command to generate the output files.
     <comment xml:lang="hu">AIFF-hang</comment>
     <comment xml:lang="nl">AIFF geluidsbestand</comment>
     <comment xml:lang="sr">AIFF звучни запис</comment>
+    <comment xml:lang="sv">AIFF-ljud</comment>
   </mime-type>
   <mime-type type="audio/x-it">
     <comment>Impulse Tracker audio</comment>
     <comment xml:lang="hu">Impulse Tracker hang</comment>
     <comment xml:lang="nl">Impulse Tracker geluidsbestand</comment>
     <comment xml:lang="sr">Impulse Tracker звучни запис</comment>
+    <comment xml:lang="sv">Impulse Tracker-ljud</comment>
     <magic priority="50">
       <match type="string" value="IMPM" offset="0"/>
     </magic>
@@ -1915,6 +2108,7 @@ command to generate the output files.
     <comment xml:lang="hu">MIDI-hang</comment>
     <comment xml:lang="nl">MIDI geluidsbestand</comment>
     <comment xml:lang="sr">MIDI звучни запис</comment>
+    <comment xml:lang="sv">MIDI-ljud</comment>
     <magic priority="50">
       <match type="string" value="MThd" offset="0"/>
     </magic>
@@ -1925,6 +2119,7 @@ command to generate the output files.
     <comment>Amiga soundtracker audio</comment>
     <comment xml:lang="nl">Amiga soundtracker geluidsbestand</comment>
     <comment xml:lang="sr">Амига soundtracker звук</comment>
+    <comment xml:lang="sv">Amiga sountracker-ljud</comment>
     <glob pattern="*.mod"/>
     <glob pattern="*.ult"/>
     <glob pattern="*.uni"/>
@@ -1937,6 +2132,7 @@ command to generate the output files.
     <comment>MPEG layer 3 audio</comment>
     <comment xml:lang="nl">MPEG-laag-3 geluidsbestand</comment>
     <comment xml:lang="sr">MPEG слој 3 звучни запис</comment>
+    <comment xml:lang="sv">MPEG lager 3-ljud</comment>
     <magic priority="50">
       <match type="big32" value="0xfffb" offset="0"/>
       <match type="string" value="ID3" offset="0"/>
@@ -1949,17 +2145,20 @@ command to generate the output files.
     <comment xml:lang="hu">MP3-játéklista</comment>
     <comment xml:lang="nl">MP3 geluid-afspeellijst</comment>
     <comment xml:lang="sr">MP3 списак песама</comment>
+    <comment xml:lang="sv">MP3-ljudspellista</comment>
   </mime-type>
   <mime-type type="audio/x-mpeg">
     <comment>MP3 audio</comment>
     <comment xml:lang="hu">MP3-hang</comment>
     <comment xml:lang="nl">MP3 geluidsbestand</comment>
     <comment xml:lang="sr">MP3 звучни запис</comment>
+    <comment xml:lang="sv">MP3-ljud</comment>
   </mime-type>
   <mime-type type="audio/x-mpegurl">
     <comment>Streaming MPEG layer 3 audio</comment>
     <comment xml:lang="nl">Stromende MPEG-laag-3 geluidsgegevens</comment>
     <comment xml:lang="sr">Проточни MPEG3 звучни запис</comment>
+    <comment xml:lang="sv">Flödande MPEG lager 3-ljud</comment>
     <glob pattern="*.m3u"/>
   </mime-type>
   <mime-type type="audio/x-ms-asx">
@@ -1967,6 +2166,7 @@ command to generate the output files.
     <comment xml:lang="hu">Lejátszható felvételek listája</comment>
     <comment xml:lang="nl">Afspeellijst</comment>
     <comment xml:lang="sr">Листа нумера</comment>
+    <comment xml:lang="sv">Spellista</comment>
     <magic priority="50">
       <match type="string" value="ASF " offset="0"/>
       <match type="string" value="&lt;ASX" offset="0"/>
@@ -1977,6 +2177,7 @@ command to generate the output files.
     <comment>RealAudio broadcast</comment>
     <comment xml:lang="nl">RealAudio uitzending</comment>
     <comment xml:lang="sr">RealAudio емитовање</comment>
+    <comment xml:lang="sv">RealAudio-utsändning</comment>
     <magic priority="50">
       <match type="string" value=".ra\375" offset="0"/>
     </magic>
@@ -1989,6 +2190,7 @@ command to generate the output files.
     <comment xml:lang="hu">RIFF-kép</comment>
     <comment xml:lang="nl">RIFF geluidsbestand</comment>
     <comment xml:lang="sr">RIFF звучни запис</comment>
+    <comment xml:lang="sv">RIFF-ljud</comment>
     <magic priority="50">
       <match type="string" value="RIFF" offset="0"/>
     </magic>
@@ -1998,12 +2200,14 @@ command to generate the output files.
     <comment xml:lang="hu">Scream Tracker 3-hang</comment>
     <comment xml:lang="nl">Scream Tracker 3 geluidsbestand</comment>
     <comment xml:lang="sr">Scream Tracker 3 звучни запис</comment>
+    <comment xml:lang="sv">Scream Tracker 3-ljud</comment>
     <glob pattern="*.s3m"/>
   </mime-type>
   <mime-type type="audio/x-scpls">
     <comment>MP3 ShoutCast Playlist</comment>
     <comment xml:lang="nl">MP3 ShoutCast afspeellijst</comment>
     <comment xml:lang="sr">MP3 ShoutCast списак песама</comment>
+    <comment xml:lang="sv">MP3 ShoutCast-spellista</comment>
     <glob pattern="*.pls"/>
   </mime-type>
   <mime-type type="audio/x-stm">
@@ -2011,6 +2215,7 @@ command to generate the output files.
     <comment xml:lang="hu">Scream Tracker-hang</comment>
     <comment xml:lang="nl">Scream Tracker geluidsbestand</comment>
     <comment xml:lang="sr">Scream Tracker звучни запис</comment>
+    <comment xml:lang="sv">Scream Tracker-ljud</comment>
     <glob pattern="*.stm"/>
   </mime-type>
   <mime-type type="audio/x-voc">
@@ -2018,6 +2223,7 @@ command to generate the output files.
     <comment xml:lang="hu">VOC-hang</comment>
     <comment xml:lang="nl">VOC geluidsbestand</comment>
     <comment xml:lang="sr">VOC звучни запис</comment>
+    <comment xml:lang="sv">VOC-ljud</comment>
     <glob pattern="*.voc"/>
   </mime-type>
   <mime-type type="audio/x-wav">
@@ -2025,6 +2231,7 @@ command to generate the output files.
     <comment xml:lang="hu">WAV-hang</comment>
     <comment xml:lang="nl">WAV geluidsbestand</comment>
     <comment xml:lang="sr">WAV звучни запис</comment>
+    <comment xml:lang="sv">WAV-ljud</comment>
     <magic priority="50">
       <match type="string" value="WAVE" offset="8"/>
       <match type="string" value="WAV " offset="8"/>
@@ -2036,6 +2243,7 @@ command to generate the output files.
     <comment xml:lang="hu">Scream Tracker-hangszer</comment>
     <comment xml:lang="nl">Scream Tracker instrument</comment>
     <comment xml:lang="sr">Scream Tracker инструмент</comment>
+    <comment xml:lang="sv">Scream Tracker-instrument</comment>
     <glob pattern="*.xi"/>
   </mime-type>
   <mime-type type="audio/x-xm">
@@ -2043,6 +2251,7 @@ command to generate the output files.
     <comment xml:lang="hu">FastTracker II-hang</comment>
     <comment xml:lang="nl">FastTracker II geluidsbestand</comment>
     <comment xml:lang="sr">FastTracker II аудио запис</comment>
+    <comment xml:lang="sv">FastTracker II-ljud</comment>
     <glob pattern="*.xm"/>
   </mime-type>
   <mime-type type="image/bmp">
@@ -2050,6 +2259,7 @@ command to generate the output files.
     <comment xml:lang="hu">Windows BMP-fájl</comment>
     <comment xml:lang="nl">Windows BMP afbeelding</comment>
     <comment xml:lang="sr">Windows BMP слика</comment>
+    <comment xml:lang="sv">Windows BMP-bild</comment>
     <magic priority="50">
       <match type="string" mask="0xffff00000000ffff" value="BMxxxx\000\000" offset="0"/>
       <match type="string" value="BM" offset="0">
@@ -2064,6 +2274,7 @@ command to generate the output files.
     <comment>Computer Graphics Metafile</comment>
     <comment xml:lang="nl">Computer Graphics Metabestand</comment>
     <comment xml:lang="sr">Метадатотека са рачунарском графиком (CGM)</comment>
+    <comment xml:lang="sv">Computer Graphics Metafil</comment>
     <glob pattern="*.cgm"/>
   </mime-type>
   <mime-type type="image/fax-g3">
@@ -2071,6 +2282,7 @@ command to generate the output files.
     <comment xml:lang="hu">CCITT g3 fax</comment>
     <comment xml:lang="nl">CCITT g3 fax</comment>
     <comment xml:lang="sr">CCITT g3 факс</comment>
+    <comment xml:lang="sv">CCITT g3-fax</comment>
     <glob pattern="*.g3"/>
   </mime-type>
   <mime-type type="image/g3fax">
@@ -2078,12 +2290,14 @@ command to generate the output files.
     <comment xml:lang="hu">G3-faxkép</comment>
     <comment xml:lang="nl">G3 fax afbeelding</comment>
     <comment xml:lang="sr">G3 факс слика</comment>
+    <comment xml:lang="sv">G3-faxbild</comment>
   </mime-type>
   <mime-type type="image/gif">
     <comment>GIF image</comment>
     <comment xml:lang="hu">GIF-kép</comment>
     <comment xml:lang="nl">GIF afbeelding</comment>
     <comment xml:lang="sr">GIF слика</comment>
+    <comment xml:lang="sv">GIF-bild</comment>
     <magic priority="50">
       <match type="string" value="GIF" offset="0"/>
     </magic>
@@ -2094,6 +2308,7 @@ command to generate the output files.
     <comment xml:lang="hu">IEF-kép</comment>
     <comment xml:lang="nl">IEF afbeelding</comment>
     <comment xml:lang="sr">IEF слика</comment>
+    <comment xml:lang="sv">IEF-bild</comment>
     <glob pattern="*.ief"/>
   </mime-type>
   <mime-type type="image/jpeg">
@@ -2101,6 +2316,7 @@ command to generate the output files.
     <comment xml:lang="hu">JPEG-kép</comment>
     <comment xml:lang="nl">JPEG afbeelding</comment>
     <comment xml:lang="sr">JPEG слика</comment>
+    <comment xml:lang="sv">JPEG-bild</comment>
     <magic priority="50">
       <match type="string" value="\377\330\377" offset="0"/>
       <match type="big16" value="0xffd8" offset="0"/>
@@ -2114,6 +2330,7 @@ command to generate the output files.
     <comment xml:lang="hu">PNG-kép</comment>
     <comment xml:lang="nl">PNG afbeelding</comment>
     <comment xml:lang="sr">PNG слика</comment>
+    <comment xml:lang="sv">PNG-bild</comment>
     <magic priority="50">
       <match type="string" value="\x89PNG" offset="0"/>
     </magic>
@@ -2124,6 +2341,7 @@ command to generate the output files.
     <comment xml:lang="hu">Méretezhető vektorgrafika (SVG)</comment>
     <comment xml:lang="nl">Schaalbare vector afbeelding (SVG)</comment>
     <comment xml:lang="sr">Скалабилна векторска графика</comment>
+    <comment xml:lang="sv">Skalbar vektorgrafik</comment>
     <magic priority="80">
       <match type="string" value="&lt;!DOCTYPE svg" offset="0:256"/>
       <match type="string" value="&lt;svg" offset="0:64"/>
@@ -2135,6 +2353,7 @@ command to generate the output files.
     <comment xml:lang="hu">TIFF-kép</comment>
     <comment xml:lang="nl">TIFF afbeelding</comment>
     <comment xml:lang="sr">TIFF слика</comment>
+    <comment xml:lang="sv">TIFF-bild</comment>
     <magic priority="50">
       <match type="string" value="MM\x00\x2a" offset="0"/>
       <match type="string" value="II\x2a\x00" offset="0"/>
@@ -2147,6 +2366,7 @@ command to generate the output files.
     <comment xml:lang="hu">AutoCAD-kép</comment>
     <comment xml:lang="nl">AutoCAD afbeelding</comment>
     <comment xml:lang="sr">AutoCAD слика</comment>
+    <comment xml:lang="sv">AutoCAD-bild</comment>
     <glob pattern="*.dwg"/>
   </mime-type>
   <mime-type type="image/vnd.dxf">
@@ -2154,6 +2374,7 @@ command to generate the output files.
     <comment xml:lang="hu">DXF-vektorgrafika</comment>
     <comment xml:lang="nl">DXF vector afbeelding</comment>
     <comment xml:lang="sr">DXF векторска графика</comment>
+    <comment xml:lang="sv">DXF-vektorgrafik</comment>
     <glob pattern="*.dxf"/>
   </mime-type>
   <mime-type type="image/x-3ds">
@@ -2161,12 +2382,14 @@ command to generate the output files.
     <comment xml:lang="hu">3D Studio-kép</comment>
     <comment xml:lang="nl">3D Studio afbeelding</comment>
     <comment xml:lang="sr">3D Studio слика</comment>
+    <comment xml:lang="sv">3D Studio-bild</comment>
     <glob pattern="*.3ds"/>
   </mime-type>
   <mime-type type="image/x-applix-graphics">
     <comment>Applix Graphics document</comment>
     <comment xml:lang="nl">Applix Graphics document</comment>
     <comment xml:lang="sr">ApplixWare Graphics документ</comment>
+    <comment xml:lang="sv">Applix Graphics-dokument</comment>
     <magic priority="50">
       <match type="string" value="*BEGIN" offset="0">
         <match type="string" value="GRAPHICS" offset="7"/>
@@ -2179,12 +2402,14 @@ command to generate the output files.
     <comment xml:lang="hu">CMU-raszterkép</comment>
     <comment xml:lang="nl">CMU raster afbeelding</comment>
     <comment xml:lang="sr">CMU растерска слика</comment>
+    <comment xml:lang="sv">CMU-rasterbild</comment>
     <glob pattern="*.ras"/>
   </mime-type>
   <mime-type type="image/x-compressed-xcf">
     <comment>compressed GIMP document</comment>
     <comment xml:lang="nl">ingepakt GIMP document</comment>
     <comment xml:lang="sr">компресовани Гимп документ</comment>
+    <comment xml:lang="sv">komprimerat GIMP-dokument</comment>
     <glob pattern="*.xcf.gz"/>
     <glob pattern="*.xcf.bz2"/>
   </mime-type>
@@ -2192,6 +2417,7 @@ command to generate the output files.
     <comment>Digital Imaging and Communications in Medicine image</comment>
     <comment xml:lang="hu">Digital Imaging and Communications in Medicine-kép</comment>
     <comment xml:lang="sr">Слика за дигиталну фотографију и комуникацију у медицини</comment>
+    <comment xml:lang="sv">Bildformat för digital bildbehandling och medicinsk kommunikation</comment>
     <glob pattern="*.dcm"/>
     <magic priority="50">
       <match type="string" value="DCMw" offset="0"/>
@@ -2202,6 +2428,7 @@ command to generate the output files.
     <comment xml:lang="hu">Eszközfüggetlen bitkép</comment>
     <comment xml:lang="nl">Apparaat onafhankelijke bitmap</comment>
     <comment xml:lang="sr">Битмапа независна од уређаја</comment>
+    <comment xml:lang="sv">Enhetsoberoende bitmapp</comment>
     <magic priority="50">
       <match type="string" value="\x28\00\00\00" offset="0"/>
     </magic>
@@ -2220,6 +2447,7 @@ command to generate the output files.
     <comment>Digital Moving Picture Exchange image</comment>
     <comment xml:lang="hu">Digital Moving Picture Exchange-kép</comment>
     <comment xml:lang="sr">Дигитални облик за размену покретних слика</comment>
+    <comment xml:lang="sv">DPX-bild (Digital Moving Picture Exchange)</comment>
     <magic priority="50">
       <match type="big32" value="0x53445058" offset="0"/>
     </magic>
@@ -2228,6 +2456,7 @@ command to generate the output files.
     <comment>Encapsulated PostScript image</comment>
     <comment xml:lang="nl">Ingekapselde Postscript afbeelding</comment>
     <comment xml:lang="sr">Угњеждена ПостСкрипт слика (EPS)</comment>
+    <comment xml:lang="sv">Inkapslad PostScript-bild</comment>
     <magic priority="50">
       <match type="string" value="%!" offset="0">
         <match type="string" value="EPS" offset="15"/>
@@ -2245,6 +2474,7 @@ command to generate the output files.
     <comment xml:lang="hu">Flexible Image Transport System</comment>
     <comment xml:lang="nl">Flexibel afbeeldingstransportsysteem</comment>
     <comment xml:lang="sr">Флексибилни транспортни систем слика</comment>
+    <comment xml:lang="sv">Flexibelt bildtransportssystem</comment>
     <magic priority="50">
       <match type="string" value="SIMPLE  =" offset="0"/>
     </magic>
@@ -2255,6 +2485,7 @@ command to generate the output files.
     <comment xml:lang="hu">FlashPix-kép</comment>
     <comment xml:lang="nl">FlashPix afbeelding</comment>
     <comment xml:lang="sr">FlashPix слика</comment>
+    <comment xml:lang="sv">FlashPix-bild</comment>
     <magic priority="50">
       <match type="big32" value="0x46506978" offset="0"/>
     </magic>
@@ -2264,6 +2495,7 @@ command to generate the output files.
     <comment xml:lang="hu">Truevision Targa-kép</comment>
     <comment xml:lang="nl">Truevision Targa afbeelding</comment>
     <comment xml:lang="sr">Truevision Targa слика</comment>
+    <comment xml:lang="sv">Truevision Targa-bild</comment>
     <magic priority="50">
       <match type="big32" value="0x00000200" offset="0"/>
     </magic>
@@ -2273,6 +2505,7 @@ command to generate the output files.
     <comment>MSWindows Icons</comment>
     <comment xml:lang="nl">MSWindows pictogrammen</comment>
     <comment xml:lang="sr">MS Windows иконе</comment>
+    <comment xml:lang="sv">MSWindows-ikoner</comment>
     <glob pattern="*.ico"/>
   </mime-type>
   <mime-type type="image/x-iff">
@@ -2280,6 +2513,7 @@ command to generate the output files.
     <comment xml:lang="hu">IFF-kép</comment>
     <comment xml:lang="nl">IFF afbeelding</comment>
     <comment xml:lang="sr">IFF слика</comment>
+    <comment xml:lang="sv">IFF-bild</comment>
     <glob pattern="*.iff"/>
   </mime-type>
   <mime-type type="image/x-ilbm">
@@ -2287,6 +2521,7 @@ command to generate the output files.
     <comment xml:lang="hu">ILBM-kép</comment>
     <comment xml:lang="nl">ILBM afbeelding</comment>
     <comment xml:lang="sr">ILBM слика</comment>
+    <comment xml:lang="sv">ILBM-bild</comment>
     <glob pattern="*.ilbm"/>
   </mime-type>
   <mime-type type="image/x-jng">
@@ -2294,6 +2529,7 @@ command to generate the output files.
     <comment xml:lang="hu">JNG-kép</comment>
     <comment xml:lang="nl">JNG afbeelding</comment>
     <comment xml:lang="sr">JNG слика</comment>
+    <comment xml:lang="sv">JNG-bild</comment>
     <glob pattern="*.jng"/>
   </mime-type>
   <mime-type type="image/x-lwo">
@@ -2301,6 +2537,7 @@ command to generate the output files.
     <comment xml:lang="hu">LightWave-objektum</comment>
     <comment xml:lang="nl">LightWave object</comment>
     <comment xml:lang="sr">LightWave објекат</comment>
+    <comment xml:lang="sv">LightWave-objekt</comment>
     <glob pattern="*.lwo"/>
     <glob pattern="*.lwob"/>
   </mime-type>
@@ -2309,12 +2546,14 @@ command to generate the output files.
     <comment xml:lang="hu">LightWave-jelenet</comment>
     <comment xml:lang="nl">LightWave scêne</comment>
     <comment xml:lang="sr">LightWave сцена</comment>
+    <comment xml:lang="sv">LightWave-scen</comment>
     <glob pattern="*.lws"/>
   </mime-type>
   <mime-type type="image/x-msod">
     <comment>MS Office Drawing</comment>
     <comment xml:lang="nl">MS Office tekening</comment>
     <comment xml:lang="sr">MS Office цртеж</comment>
+    <comment xml:lang="sv">MS Office-teckning</comment>
     <glob pattern="*.msod"/>
   </mime-type>
   <mime-type type="image/x-niff">
@@ -2336,6 +2575,7 @@ command to generate the output files.
     <comment>PhotoCD image</comment>
     <comment xml:lang="nl">PhotoCD afbeelding</comment>
     <comment xml:lang="sr">Фото Це-Де слика</comment>
+    <comment xml:lang="sv">PhotoCD-bild</comment>
     <glob pattern="*.pcd"/>
   </mime-type>
   <mime-type type="image/x-portable-anymap">
@@ -2343,11 +2583,13 @@ command to generate the output files.
     <comment xml:lang="hu">PNM-kép</comment>
     <comment xml:lang="nl">PNM afbeelding</comment>
     <comment xml:lang="sr">PNM слика</comment>
+    <comment xml:lang="sv">PNM-bild</comment>
     <glob pattern="*.pnm"/>
   </mime-type>
   <mime-type type="image/x-portable-bitmap">
     <comment>Portable Bitmap File Format</comment>
     <comment xml:lang="sr">Портабилни запис битмапираних датотека</comment>
+    <comment xml:lang="sv">Portabelt bitmapp-filformat</comment>
     <magic priority="50">
       <match type="string" value="P1" offset="0"/>
       <match type="string" value="P4" offset="0"/>
@@ -2357,6 +2599,7 @@ command to generate the output files.
   <mime-type type="image/x-portable-graymap">
     <comment>Portable Graymap File Format</comment>
     <comment xml:lang="sr">Портабилни запис слика у сивим нијансама</comment>
+    <comment xml:lang="sv">Portabelt gråskale-filformat</comment>
     <magic priority="50">
       <match type="string" value="P2" offset="0"/>
       <match type="string" value="P5" offset="0"/>
@@ -2366,6 +2609,7 @@ command to generate the output files.
   <mime-type type="image/x-portable-pixmap">
     <comment>Portable Pixmap File Format</comment>
     <comment xml:lang="sr">Портабилни запис пиксмапа</comment>
+    <comment xml:lang="sv">Portabelt pixmap-filformat</comment>
     <magic priority="50">
       <match type="string" value="P3" offset="0"/>
       <match type="string" value="P6" offset="0"/>
@@ -2377,6 +2621,7 @@ command to generate the output files.
     <comment xml:lang="hu">Photoshop-dokumentum</comment>
     <comment xml:lang="nl">Photoshop document</comment>
     <comment xml:lang="sr">Фотошоп документ</comment>
+    <comment xml:lang="sv">Photoshopdokument</comment>
     <magic priority="50">
       <match type="string" mask="0xffffffff0000ffffffff" value="8BPS  \000\000\000\000" offset="0"/>
     </magic>
@@ -2387,6 +2632,7 @@ command to generate the output files.
     <comment xml:lang="hu">RGB-kép</comment>
     <comment xml:lang="nl">RGB afbeelding</comment>
     <comment xml:lang="sr">RGB слика</comment>
+    <comment xml:lang="sv">RGB-bild</comment>
     <glob pattern="*.rgb"/>
   </mime-type>
   <mime-type type="image/x-sun-raster">
@@ -2394,6 +2640,7 @@ command to generate the output files.
     <comment xml:lang="hu">SUN-raszterfájl</comment>
     <comment xml:lang="nl">SUN rasterbestand</comment>
     <comment xml:lang="sr">SUN растерска датотека</comment>
+    <comment xml:lang="sv">SUN-rasterfil</comment>
     <magic priority="50">
       <match type="big32" value="0x59a66a95" offset="0"/>
     </magic>
@@ -2404,6 +2651,7 @@ command to generate the output files.
     <comment xml:lang="hu">TarGA-kép</comment>
     <comment xml:lang="nl">TarGA afbeelding</comment>
     <comment xml:lang="sr">TarGA слика</comment>
+    <comment xml:lang="sv">TarGA-bild</comment>
     <glob pattern="*.tga"/>
   </mime-type>
   <mime-type type="image/x-wmf">
@@ -2411,6 +2659,7 @@ command to generate the output files.
     <comment xml:lang="hu">Windows MetaFile</comment>
     <comment xml:lang="nl">Windows MetaFile</comment>
     <comment xml:lang="sr">Windows метафајл</comment>
+    <comment xml:lang="sv">Windows-metafil</comment>
     <glob pattern="*.wmf"/>
   </mime-type>
   <mime-type type="image/x-xbitmap">
@@ -2418,12 +2667,14 @@ command to generate the output files.
     <comment xml:lang="hu">X BitMap kép</comment>
     <comment xml:lang="nl">X BitMap afbeelding</comment>
     <comment xml:lang="sr">X битмапирана слика</comment>
+    <comment xml:lang="sv">X-bitmappbild</comment>
     <glob pattern="*.xbm"/>
   </mime-type>
   <mime-type type="image/x-xcf">
     <comment>GIMP native image format</comment>
     <comment xml:lang="nl">GIMP eigen afbeeldingsformaat</comment>
     <comment xml:lang="sr">Природни Гимпов запис слике</comment>
+    <comment xml:lang="sv">Inbyggt GIMP-bildformat</comment>
     <glob pattern="*.xcf"/>
   </mime-type>
   <mime-type type="image/x-xfig">
@@ -2431,6 +2682,7 @@ command to generate the output files.
     <comment xml:lang="hu">XFig-fájl</comment>
     <comment xml:lang="nl">XFig bestand</comment>
     <comment xml:lang="sr">XFig датотека</comment>
+    <comment xml:lang="sv">XFig-fil</comment>
     <glob pattern="*.fig"/>
     <magic priority="50">
       <match type="string" value="#FIG" offset="0"/>
@@ -2441,6 +2693,7 @@ command to generate the output files.
     <comment xml:lang="hu">X PixMap kép</comment>
     <comment xml:lang="nl">X PixMap afbeelding</comment>
     <comment xml:lang="sr">X пискмапа</comment>
+    <comment xml:lang="sv">X-pixmapbild</comment>
     <magic priority="80">
       <match type="string" value="/* XPM" offset="0"/>
     </magic>
@@ -2451,6 +2704,7 @@ command to generate the output files.
     <comment xml:lang="hu">X window-kép</comment>
     <comment xml:lang="nl">X Window afbeelding</comment>
     <comment xml:lang="sr">X прозор слика</comment>
+    <comment xml:lang="sv">X-fönsterbild</comment>
     <glob pattern="*.xwd"/>
   </mime-type>
   <mime-type type="inode/blockdevice">
@@ -2458,59 +2712,70 @@ command to generate the output files.
     <comment xml:lang="hu">Blokkos eszköz</comment>
     <comment xml:lang="nl">Blokapparaat</comment>
     <comment xml:lang="sr">Блок уређај</comment>
+    <comment xml:lang="sv">Blockenhet</comment>
   </mime-type>
   <mime-type type="inode/chardevice">
     <comment>Character Device</comment>
     <comment xml:lang="nl">Teken-georiënteerd apparaat</comment>
     <comment xml:lang="sr">Знаковни уређај</comment>
+    <comment xml:lang="sv">Teckenenhet</comment>
   </mime-type>
   <mime-type type="inode/directory">
     <comment>Directory</comment>
     <comment xml:lang="hu">Könyvtár</comment>
     <comment xml:lang="nl">Map</comment>
     <comment xml:lang="sr">Директоријум</comment>
+    <comment xml:lang="sv">Katalog</comment>
   </mime-type>
   <mime-type type="inode/fifo">
     <comment>Pipe</comment>
     <comment xml:lang="nl">Pijp</comment>
     <comment xml:lang="sr">Цев</comment>
+    <comment xml:lang="sv">Rör</comment>
   </mime-type>
   <mime-type type='inode/mount-point'>
     <sub-class-of type='inode/directory'/>
     <comment>Mount point</comment>
     <comment xml:lang="nl">Koppelingspunt</comment>
     <comment xml:lang="sr">Тачка прикључења</comment>
+    <comment xml:lang="sv">Monteringspunkt</comment>
   </mime-type>
   <mime-type type="inode/socket">
     <comment>Socket</comment>
     <comment xml:lang="hu">Illesztőpont</comment>
     <comment xml:lang="nl">Socket</comment>
     <comment xml:lang="sr">Сокет</comment>
+    <comment xml:lang="sv">Uttag</comment>
   </mime-type>
   <mime-type type="inode/symlink">
     <comment>symbolic link</comment>
     <comment xml:lang="nl">symbolische koppeling</comment>
     <comment xml:lang="sr">симболичка веза</comment>
+    <comment xml:lang="sv">symbolisk länk</comment>
   </mime-type>
   <mime-type type="message/delivery-status">
     <comment>mail delivery report</comment>
     <comment xml:lang="nl">e-mail bezorgingsbericht</comment>
     <comment xml:lang="sr">извештај доставе поруке</comment>
+    <comment xml:lang="sv">e-postleveransrapport</comment>
   </mime-type>
   <mime-type type="message/disposition-notification">
     <comment>mail disposition report</comment>
     <comment xml:lang="nl">e-mail plaatsingsbericht</comment>
     <comment xml:lang="sr">извештај слања поруке</comment>
+    <comment xml:lang="sv">e-postdispositionsrapport</comment>
   </mime-type>
   <mime-type type="message/external-body">
     <comment>reference to remote file</comment>
     <comment xml:lang="nl">verwijzing naar bestand op afstand</comment>
     <comment xml:lang="sr">референца на удаљену датотеку</comment>
+    <comment xml:lang="sv">referens till fjärrfil</comment>
   </mime-type>
   <mime-type type="message/news">
     <comment>Usenet news message</comment>
     <comment xml:lang="nl">Usenet nieuwsbericht</comment>
     <comment xml:lang="sr">Порука са дискусионе групе</comment>
+    <comment xml:lang="sv">Usenet-diskussionsgruppsmeddelande</comment>
     <magic priority="50">
       <match type="string" value="Article" offset="0"/>
       <match type="string" value="Path:" offset="0"/>
@@ -2521,11 +2786,13 @@ command to generate the output files.
     <comment>partial email message</comment>
     <comment xml:lang="nl">gedeeltelijk e-mail bericht</comment>
     <comment xml:lang="sr">делимична е-порука</comment>
+    <comment xml:lang="sv">del av e-postmeddelande</comment>
   </mime-type>
   <mime-type type="message/rfc822">
     <comment>Email message</comment>
     <comment xml:lang="nl">E-mail bericht</comment>
     <comment xml:lang="sr">Е-порука</comment>
+    <comment xml:lang="sv">E-postmeddelande</comment>
     <magic priority="50">
       <match type="string" value="#! rnews" offset="0"/>
       <match type="string" value="Forward to" offset="0"/>
@@ -2542,6 +2809,7 @@ command to generate the output files.
     <comment xml:lang="hu">GNU elektronikus levél</comment>
     <comment xml:lang="nl">GNU e-mail bericht</comment>
     <comment xml:lang="sr">ГНУ е-писмо</comment>
+    <comment xml:lang="sv">GNU-epostmeddelande</comment>
     <glob pattern="RMAIL"/>
   </mime-type>
   <mime-type type="model/vrml">
@@ -2549,58 +2817,69 @@ command to generate the output files.
     <comment xml:lang="hu">VRML-dokumentum</comment>
     <comment xml:lang="nl">VRML document</comment>
     <comment xml:lang="sr">VRML документ</comment>
+    <comment xml:lang="sv">VRML-dokument</comment>
     <glob pattern="*.wrl"/>
   </mime-type>
   <mime-type type="multipart/alternative">
     <comment>message in several formats</comment>
     <comment xml:lang="nl">bericht in verschillende formaten</comment>
     <comment xml:lang="sr">поруке у више записа</comment>
+    <comment xml:lang="sv">meddelande i flera format</comment>
   </mime-type>
   <mime-type type="multipart/appledouble">
     <comment>Macintosh AppleDouble-encoded file</comment>
     <comment xml:lang="hu">Macintosh AppleDouble kódolású fájl</comment>
     <comment xml:lang="nl">Macintosh AppleDouble-gecodeerd bestand</comment>
     <comment xml:lang="sr">Мекинтош AppleDouble-encoded датотека</comment>
+    <comment xml:lang="sv">Macintosh AppleDouble-kodad fil</comment>
   </mime-type>
   <mime-type type="multipart/digest">
     <comment>message digest</comment>
     <comment xml:lang="nl">berichtsamenvatting</comment>
     <comment xml:lang="sr">гомила порука</comment>
+    <comment xml:lang="sv">meddelandesamling</comment>
   </mime-type>
   <mime-type type="multipart/encrypted">
     <comment>encrypted message</comment>
     <comment xml:lang="nl">gecodeerd bericht</comment>
     <comment xml:lang="sr">шифрована порука</comment>
+    <comment xml:lang="sv">krypterat meddelande</comment>
   </mime-type>
   <mime-type type="multipart/mixed">
     <comment>Compound documents</comment>
     <comment xml:lang="nl">Samengestelde documenten</comment>
     <comment xml:lang="sr">Сједињени документи</comment>
+    <comment xml:lang="sv">Sammansatta dokument</comment>
   </mime-type>
   <mime-type type="multipart/related">
     <comment>compound document</comment>
     <comment xml:lang="nl">samengesteld document</comment>
     <comment xml:lang="sr">сједињени документ</comment>
+    <comment xml:lang="sv">sammansatt dokument</comment>
   </mime-type>
   <mime-type type="multipart/report">
     <comment>mail system report</comment>
     <comment xml:lang="nl">e-mail systeembericht</comment>
     <comment xml:lang="sr">извештај поштанског система</comment>
+    <comment xml:lang="sv">e-postsystemrapport</comment>
   </mime-type>
   <mime-type type="multipart/signed">
     <comment>signed message</comment>
     <comment xml:lang="nl">ondertekend bericht</comment>
     <comment xml:lang="sr">потписана порука</comment>
+    <comment xml:lang="sv">signerat meddelande</comment>
   </mime-type>
   <mime-type type="multipart/x-mixed-replace">
     <comment>Stream of data (server push)</comment>
     <comment xml:lang="nl">Stroom gegevens (die server duwt)</comment>
     <comment xml:lang="sr">Проток података (гурање са сервера)</comment>
+    <comment xml:lang="sv">Dataflöde (serverutsändning)</comment>
   </mime-type>
   <mime-type type="text/calendar">
     <comment>iCalendar file</comment>
     <comment xml:lang="nl">iCalendar bestand</comment>
     <comment xml:lang="sr">iCalendar датотека</comment>
+    <comment xml:lang="sv">iCalendar-fil</comment>
     <magic priority="50">
       <match type="string" value="BEGIN:VCALENDAR" offset="0"/>
     </magic>
@@ -2609,6 +2888,7 @@ command to generate the output files.
   <mime-type type="text/css">
     <comment>Cascading Style Sheet</comment>
     <comment xml:lang="sr">Каскадна стилска страна (CSS)</comment>
+    <comment xml:lang="sv">Kaskadstilmall</comment>
     <glob pattern="*.css"/>
     <glob pattern="*.CSSL"/>
   </mime-type>
@@ -2616,23 +2896,27 @@ command to generate the output files.
     <comment>directory information file</comment>
     <comment xml:lang="nl">mapinformatie bestand</comment>
     <comment xml:lang="sr">датотека са подацима о директоријуму</comment>
+    <comment xml:lang="sv">kataloginformationsfil</comment>
   </mime-type>
   <mime-type type="text/enriched">
     <comment>enriched text document</comment>
     <comment xml:lang="nl">verrijkt tekstdocument</comment>
     <comment xml:lang="sr">обогаћени текстуални документ</comment>
+    <comment xml:lang="sv">berikat textdokument</comment>
   </mime-type>
   <mime-type type="text/x-gettext-translation">
     <comment>Translated messages</comment>
     <comment xml:lang="hu">Lefordított üzenetek</comment>
     <comment xml:lang="nl">Vertaalde berichten</comment>
     <comment xml:lang="sr">Преведене поруке</comment>
+    <comment xml:lang="sv">Översatta meddelanden</comment>
     <glob pattern="*.po"/>
   </mime-type>
   <mime-type type="text/html">
     <comment>HTML Page</comment>
     <comment xml:lang="nl">HTML pagina</comment>
     <comment xml:lang="sr">HTML страна</comment>
+    <comment xml:lang="sv">HTML-sida</comment>
     <magic priority="50">
       <match type="string" value="&lt;!DOCTYPE HTML" offset="0:64"/>
       <match type="string" value="&lt;!doctype html" offset="0:64"/>
@@ -2659,18 +2943,21 @@ command to generate the output files.
     <comment>help page</comment>
     <comment xml:lang="nl">hulppagina</comment>
     <comment xml:lang="sr">страна помоћи</comment>
+    <comment xml:lang="sv">hjälpsida</comment>
   </mime-type>
   <mime-type type="text/mathml">
     <comment>MathML document</comment>
     <comment xml:lang="hu">MathML-dokumentum</comment>
     <comment xml:lang="nl">MathML document</comment>
     <comment xml:lang="sr">MathML документ</comment>
+    <comment xml:lang="sv">MathML-dokument</comment>
     <glob pattern="*.mml"/>
   </mime-type>
   <mime-type type="text/plain">
     <comment>Plain Text</comment>
     <comment xml:lang="nl">Platte tekst</comment>
     <comment xml:lang="sr">Обичан текст</comment>
+    <comment xml:lang="sv">Vanlig text</comment>
     <magic priority="50">
       <match type="string" value="This is TeX," offset="0"/>
       <match type="string" value="This is METAFONT," offset="0"/>
@@ -2681,23 +2968,27 @@ command to generate the output files.
   <mime-type type="text/rdf">
     <comment>Resource Description Framework (RDF) file</comment>
     <comment xml:lang="sr">Resource Description Framework (RDF) датотека</comment>
+    <comment xml:lang="sv">Resursbeskrivningsfil</comment>
     <glob pattern="*.rdf"/>
   </mime-type>
   <mime-type type="text/rfc822-headers">
     <comment>email headers</comment>
     <comment xml:lang="nl">e-mail koppen</comment>
     <comment xml:lang="sr">заглавља е-порука</comment>
+    <comment xml:lang="sv">e-posthuvuden</comment>
   </mime-type>
   <mime-type type="text/richtext">
     <comment>rich text document</comment>
     <comment xml:lang="nl">opgemaakt tekstdocument</comment>
     <comment xml:lang="sr">обогаћени текстуални документ</comment>
+    <comment xml:lang="sv">rikt textdokument</comment>
     <glob pattern="*.rtx"/>
   </mime-type>
   <mime-type type="text/rss">
     <comment>RDF Site Summary</comment>
     <comment xml:lang="nl">RDF website samenvatting</comment>
     <comment xml:lang="sr">RDF сажетак странице (RSS)</comment>
+    <comment xml:lang="sv">RDF-webbplatssammanfattning</comment>
     <glob pattern="*.rss"/>
   </mime-type>
   <mime-type type="text/sgml">
@@ -2705,6 +2996,7 @@ command to generate the output files.
     <comment xml:lang="hu">SGML</comment>
     <comment xml:lang="nl">SGML</comment>
     <comment xml:lang="sr">SGML</comment>
+    <comment xml:lang="sv">SGML</comment>
     <glob pattern="*.sgml"/>
     <glob pattern="*.sgm"/>
   </mime-type>
@@ -2713,6 +3005,7 @@ command to generate the output files.
     <comment xml:lang="hu">Spreadsheet Interchange-dokumentum</comment>
     <comment xml:lang="nl">Spreadsheet uitwisselingsdocument</comment>
     <comment xml:lang="sr">Размењиви документ табеларног прорачуна</comment>
+    <comment xml:lang="sv">Spreadsheet Interchange-dokument</comment>
     <magic priority="50">
       <match type="string" value="ID;" offset="0"/>
     </magic>
@@ -2723,6 +3016,7 @@ command to generate the output files.
     <comment>tab-separated text document</comment>
     <comment xml:lang="nl">tab-gescheiden tekstdocument</comment>
     <comment xml:lang="sr">текстуални документ раздвојен табулатором</comment>
+    <comment xml:lang="sv">tabbseparerat textdokument</comment>
     <glob pattern="*.tsv"/>
   </mime-type>
   <mime-type type="text/vnd.wap.wml">
@@ -2730,6 +3024,7 @@ command to generate the output files.
     <comment xml:lang="hu">WML-dokumentum</comment>
     <comment xml:lang="nl">WML document</comment>
     <comment xml:lang="sr">WML документ</comment>
+    <comment xml:lang="sv">WML-dokument</comment>
     <glob pattern="*.wml"/>
   </mime-type>
   <mime-type type="text/x-adasrc">
@@ -2737,6 +3032,7 @@ command to generate the output files.
     <comment xml:lang="hu">Ada-forrás</comment>
     <comment xml:lang="nl">Ada broncode</comment>
     <comment xml:lang="sr">Ада код</comment>
+    <comment xml:lang="sv">Ada-källkod</comment>
     <glob pattern="*.adb"/>
     <glob pattern="*.ads"/>
   </mime-type>
@@ -2744,6 +3040,7 @@ command to generate the output files.
     <comment>authors list</comment>
     <comment xml:lang="nl">auteurslijst</comment>
     <comment xml:lang="sr">списак аутора</comment>
+    <comment xml:lang="sv">författarlista</comment>
     <glob pattern="AUTHORS"/>
   </mime-type>
   <mime-type type="text/x-bibtex">
@@ -2751,6 +3048,7 @@ command to generate the output files.
     <comment xml:lang="hu">Bibliográfiaadatok (bibtex)</comment>
     <comment xml:lang="nl">Bibliografische gegevens (bibtex)</comment>
     <comment xml:lang="sr">Библиографски подаци (бибтех)</comment>
+    <comment xml:lang="sv">Bibliografisk data (bibtex)</comment>
     <glob pattern="*.bib"/>
   </mime-type>
   <mime-type type="text/x-c++hdr">
@@ -2758,6 +3056,7 @@ command to generate the output files.
     <comment xml:lang="hu">C++-fejléc</comment>
     <comment xml:lang="nl">C++ headers</comment>
     <comment xml:lang="sr">C++ заглавља</comment>
+    <comment xml:lang="sv">C++-huvuden</comment>
     <glob pattern="*.hh"/>
   </mime-type>
   <mime-type type="text/x-c++src">
@@ -2765,6 +3064,7 @@ command to generate the output files.
     <comment xml:lang="hu">C++-forrás</comment>
     <comment xml:lang="nl">C++ broncode</comment>
     <comment xml:lang="sr">C++ кôд</comment>
+    <comment xml:lang="sv">C++-källkod</comment>
     <glob pattern="*.cpp"/>
     <glob pattern="*.cxx"/>
     <glob pattern="*.cc"/>
@@ -2776,6 +3076,7 @@ command to generate the output files.
     <comment xml:lang="hu">C-fejléc</comment>
     <comment xml:lang="nl">C headers</comment>
     <comment xml:lang="sr">C заглавља</comment>
+    <comment xml:lang="sv">C-huvuden</comment>
     <glob pattern="*.h"/>
     <glob pattern="*.h++"/>
     <glob pattern="*.hp"/>
@@ -2784,18 +3085,21 @@ command to generate the output files.
     <comment>Text file with comma separated values</comment>
     <comment xml:lang="nl">Tekstbestand met komma-gescheiden waarden</comment>
     <comment xml:lang="sr">Текстуална датотека са вредностима раздвојеним запетама</comment>
+    <comment xml:lang="sv">Textfil med kommaseparerade värden</comment>
     <glob pattern="*.csv"/>
   </mime-type>
   <mime-type type="text/x-copying">
     <comment>software license terms</comment>
     <comment xml:lang="nl">software licentievoorwaarden</comment>
     <comment xml:lang="sr">лиценца за програм</comment>
+    <comment xml:lang="sv">programlicensavtal</comment>
     <glob pattern="COPYING"/>
   </mime-type>
   <mime-type type="text/x-credits">
     <comment>software author credits</comment>
     <comment xml:lang="nl">informatie over auteur</comment>
     <comment xml:lang="sr">заслуге аутора програма</comment>
+    <comment xml:lang="sv">programförfattarlista</comment>
     <glob pattern="CREDITS"/>
   </mime-type>
   <mime-type type="text/x-csrc">
@@ -2803,6 +3107,7 @@ command to generate the output files.
     <comment xml:lang="hu">C-forrás</comment>
     <comment xml:lang="nl">C broncode</comment>
     <comment xml:lang="sr">C кôд</comment>
+    <comment xml:lang="sv">C-källkod</comment>
     <glob pattern="*.c"/>
   </mime-type>
   <mime-type type="text/x-dcl">
@@ -2810,12 +3115,14 @@ command to generate the output files.
     <comment xml:lang="hu">DCL-parancsfájl</comment>
     <comment xml:lang="nl">DCL script</comment>
     <comment xml:lang="sr">DCL скрипта</comment>
+    <comment xml:lang="sv">DCL-skript</comment>
     <glob pattern="*.dcl"/>
   </mime-type>
   <mime-type type="text/x-diff">
     <comment>Differences between files</comment>
     <comment xml:lang="nl">Verschillen tussen bestanden</comment>
     <comment xml:lang="sr">Разлике међу датотекама</comment>
+    <comment xml:lang="sv">Skillnader mellan filer</comment>
     <magic priority="50">
       <match type="string" value="diff\t" offset="0"/>
       <match type="string" value="***\t" offset="0"/>
@@ -2830,12 +3137,14 @@ command to generate the output files.
     <comment xml:lang="hu">DSSSL-dokumentum</comment>
     <comment xml:lang="nl">DSSSL document</comment>
     <comment xml:lang="sr">DSSSL документ</comment>
+    <comment xml:lang="sv">DSSSL-dokument</comment>
     <glob pattern="*.dsl"/>
   </mime-type>
   <mime-type type="text/x-dtd">
     <comment>document type definition</comment>
     <comment xml:lang="nl">documentsoort definitie</comment>
     <comment xml:lang="sr">дефиниција типа датотеке</comment>
+    <comment xml:lang="sv">dokumenttypdefinition</comment>
     <glob pattern="*.dtd"/>
   </mime-type>
   <mime-type type="text/x-emacs-lisp">
@@ -2843,6 +3152,7 @@ command to generate the output files.
     <comment xml:lang="hu">Emacs Lisp-forráskód</comment>
     <comment xml:lang="nl">Emacs Lisp broncode</comment>
     <comment xml:lang="sr">Емакс Лисп изворни кôд</comment>
+    <comment xml:lang="sv">Emacs Lisp-källkod</comment>
     <magic priority="50">
       <match type="string" value="\012(" offset="0"/>
       <match type="string" value=";ELC\023\000\000\000" offset="0"/>
@@ -2854,6 +3164,7 @@ command to generate the output files.
     <comment xml:lang="hu">Fortran-forráskód</comment>
     <comment xml:lang="nl">Fortran broncode</comment>
     <comment xml:lang="sr">Фортран изворни кôд</comment>
+    <comment xml:lang="sv">Fortran-källkod</comment>
     <glob pattern="*.f"/>
   </mime-type>
   <mime-type type="text/x-gtkrc">
@@ -2861,6 +3172,7 @@ command to generate the output files.
     <comment xml:lang="hu">GTK-beállítások</comment>
     <comment xml:lang="nl">GTK configuratie</comment>
     <comment xml:lang="sr">Гтк подешавања</comment>
+    <comment xml:lang="sv">GTK-konfiguration</comment>
     <glob pattern="gtkrc"/>
     <glob pattern=".gtkrc"/>
   </mime-type>
@@ -2869,6 +3181,7 @@ command to generate the output files.
     <comment xml:lang="hu">Haskell-forráskód</comment>
     <comment xml:lang="nl">Haskell broncode</comment>
     <comment xml:lang="sr">Haskell изворни кôд</comment>
+    <comment xml:lang="sv">Haskell-källkod</comment>
     <glob pattern="*.hs"/>
   </mime-type>
   <mime-type type="text/x-idl">
@@ -2876,12 +3189,14 @@ command to generate the output files.
     <comment xml:lang="hu">IDL-dokumentum</comment>
     <comment xml:lang="nl">IDL document</comment>
     <comment xml:lang="sr">IDL документ</comment>
+    <comment xml:lang="sv">IDL-dokument</comment>
     <glob pattern="*.idl"/>
   </mime-type>
   <mime-type type="text/x-install">
     <comment>software installation instructions</comment>
     <comment xml:lang="nl">software installatie instructies</comment>
     <comment xml:lang="sr">упутство за инсталацију програма</comment>
+    <comment xml:lang="sv">programinstallationsinstruktioner</comment>
     <glob pattern="INSTALL"/>
   </mime-type>
   <mime-type type="text/x-java">
@@ -2889,6 +3204,7 @@ command to generate the output files.
     <comment xml:lang="hu">Java-forrás</comment>
     <comment xml:lang="nl">Java broncode</comment>
     <comment xml:lang="sr">Јава кôд</comment>
+    <comment xml:lang="sv">Java-källkod</comment>
     <glob pattern="*.java"/>
   </mime-type>
   <mime-type type="text/x-ksh">
@@ -2896,6 +3212,7 @@ command to generate the output files.
     <comment xml:lang="hu">Korn shell-parancsfájl</comment>
     <comment xml:lang="nl">Korn shell script</comment>
     <comment xml:lang="sr">Korn скрипта окружења</comment>
+    <comment xml:lang="sv">Korn-skalskript</comment>
     <magic priority="50">
       <match type="string" value="/bin/ksh" offset="1:16"/>
     </magic>
@@ -2909,12 +3226,14 @@ command to generate the output files.
     <comment>Literate haskell source code</comment>
     <comment xml:lang="hu">Literális haskell-forráskód</comment>
     <comment xml:lang="sr">Literate haskell изворни кôд</comment>
+    <comment xml:lang="sv">Literate Haskell-källkod</comment>
     <glob pattern="*.lhs"/>
   </mime-type>
   <mime-type type="text/x-log">
     <comment>Application log file</comment>
     <comment xml:lang="nl">Logbestand</comment>
     <comment xml:lang="sr">Дневник програма</comment>
+    <comment xml:lang="sv">Programloggfil</comment>
     <glob pattern="*.log"/>
   </mime-type>
   <mime-type type="text/x-makefile">
@@ -2922,6 +3241,7 @@ command to generate the output files.
     <comment xml:lang="hu">Makefile</comment>
     <comment xml:lang="nl">Makefile</comment>
     <comment xml:lang="sr">Производна датотека</comment>
+    <comment xml:lang="sv">Makefil</comment>
     <glob pattern="makefile*"/>
     <glob pattern="[Mm]akefile"/>
   </mime-type>
@@ -2929,18 +3249,21 @@ command to generate the output files.
     <comment>Qt Meta Object File</comment>
     <comment xml:lang="nl">Qt Meta Object bestand</comment>
     <comment xml:lang="sr">Qt Meta Object датотека</comment>
+    <comment xml:lang="sv">Qt-metaobjektfil</comment>
     <glob pattern="*.moc"/>
   </mime-type>
   <mime-type type="text/x-objcsrc">
     <comment>Objective-C sources</comment>
     <comment xml:lang="nl">Objective-C broncode</comment>
     <comment xml:lang="sr">Објектни-C кôд</comment>
+    <comment xml:lang="sv">Objective-C-källkod</comment>
     <glob pattern="*.m"/>
   </mime-type>
   <mime-type type="text/x-pascal">
     <comment>Pascal sources</comment>
     <comment xml:lang="nl">Pascal broncode</comment>
     <comment xml:lang="sr">Паскал изворни кôд</comment>
+    <comment xml:lang="sv">Pascal-källkod</comment>
     <glob pattern="*.p"/>
     <glob pattern="*.pas"/>
   </mime-type>
@@ -2948,6 +3271,7 @@ command to generate the output files.
     <comment>source code patch</comment>
     <comment xml:lang="nl">broncode patch</comment>
     <comment xml:lang="sr">закрпа изворног кôда</comment>
+    <comment xml:lang="sv">källkodspatch</comment>
     <magic priority="50">
       <match type="string" value="diff " offset="0"/>
       <match type="string" value="Index:" offset="0"/>
@@ -2961,6 +3285,7 @@ command to generate the output files.
     <comment xml:lang="hu">README-dokumentum</comment>
     <comment xml:lang="nl">LEESMIJ document</comment>
     <comment xml:lang="sr">ПРОЧИТАЈМЕ документ</comment>
+    <comment xml:lang="sv">README-dokument</comment>
     <glob pattern="README*"/>
   </mime-type>
   <mime-type type="text/x-scheme">
@@ -2968,6 +3293,7 @@ command to generate the output files.
     <comment xml:lang="hu">Scheme-forráskód</comment>
     <comment xml:lang="nl">Scheme broncode</comment>
     <comment xml:lang="sr">Scheme изворни кôд</comment>
+    <comment xml:lang="sv">Scheme-källkod</comment>
     <glob pattern="*.scm"/>
   </mime-type>
   <mime-type type="text/x-setext">
@@ -2975,6 +3301,7 @@ command to generate the output files.
     <comment xml:lang="hu">Setext-dokumentum</comment>
     <comment xml:lang="nl">Setext document</comment>
     <comment xml:lang="sr">Setext документ</comment>
+    <comment xml:lang="sv">Setext-dokument</comment>
     <glob pattern="*.etx"/>
   </mime-type>
   <mime-type type="text/x-speech">
@@ -2982,12 +3309,14 @@ command to generate the output files.
     <comment xml:lang="hu">Speech-dokumentum</comment>
     <comment xml:lang="nl">Speech document</comment>
     <comment xml:lang="sr">Speech документ</comment>
+    <comment xml:lang="sv">Speech-dokument</comment>
   </mime-type>
   <mime-type type="text/x-sql">
     <comment>SQL code</comment>
     <comment xml:lang="hu">SQL-kód</comment>
     <comment xml:lang="nl">SQL code</comment>
     <comment xml:lang="sr">SQL кôд</comment>
+    <comment xml:lang="sv">SQL-kod</comment>
     <glob pattern="*.sql"/>
   </mime-type>
   <mime-type type="text/x-tcl">
@@ -2995,6 +3324,7 @@ command to generate the output files.
     <comment xml:lang="hu">Tcl-fájl</comment>
     <comment xml:lang="nl">Tcl bestand</comment>
     <comment xml:lang="sr">Tcl датотека</comment>
+    <comment xml:lang="sv">Tcl-fil</comment>
     <glob pattern="*.tcl"/>
     <glob pattern="*.tk"/>
   </mime-type>
@@ -3003,6 +3333,7 @@ command to generate the output files.
     <comment xml:lang="hu">TeX-fájl</comment>
     <comment xml:lang="nl">TeX bestand</comment>
     <comment xml:lang="sr">ТеХ датотека</comment>
+    <comment xml:lang="sv">TeX-fil</comment>
     <glob pattern="*.tex"/>
     <glob pattern="*.ltx"/>
     <glob pattern="*.sty"/>
@@ -3013,6 +3344,7 @@ command to generate the output files.
     <comment xml:lang="hu">TeXInfo-dokumentum</comment>
     <comment xml:lang="nl">TeXInfo document</comment>
     <comment xml:lang="sr">ТеХинфо документ</comment>
+    <comment xml:lang="sv">TeXInfo-dokument</comment>
     <glob pattern="*.texi"/>
     <glob pattern="*.texinfo"/>
   </mime-type>
@@ -3020,18 +3352,21 @@ command to generate the output files.
     <comment>troff me input document</comment>
     <comment xml:lang="nl">troff me invoerdocument</comment>
     <comment xml:lang="sr">troff me улазни документ</comment>
+    <comment xml:lang="sv">troff me-indatadokument</comment>
     <glob pattern="*.me"/>
   </mime-type>
   <mime-type type="text/x-troff-mm">
     <comment>troff mm input document</comment>
     <comment xml:lang="nl">troff mm invoerdocument</comment>
     <comment xml:lang="sr">troff mm улазни документ</comment>
+    <comment xml:lang="sv">troff mm-indatadokument</comment>
     <glob pattern="*.mm"/>
   </mime-type>
   <mime-type type="text/x-troff-ms">
     <comment>troff ms input document</comment>
     <comment xml:lang="nl">troff ms invoerdocument</comment>
     <comment xml:lang="sr">troff ms улазни документ</comment>
+    <comment xml:lang="sv">troff ms-indatadokument</comment>
     <glob pattern="*.ms"/>
   </mime-type>
   <mime-type type="text/x-uri">
@@ -3039,6 +3374,7 @@ command to generate the output files.
     <comment>the location of some resource</comment>
     <comment xml:lang="nl">de locatie van een bron</comment>
     <comment xml:lang="sr">положај неког ресурса</comment>
+    <comment xml:lang="sv">platsen för någon resurs</comment>
     <glob pattern="*.uri"/>
     <glob pattern="*.url"/>
   </mime-type>
@@ -3046,6 +3382,7 @@ command to generate the output files.
     <comment>vCalendar interchange file</comment>
     <comment xml:lang="nl">vCalendar uitwisselingsbestand</comment>
     <comment xml:lang="sr">Датотека за vCalendar размену</comment>
+    <comment xml:lang="sv">vCalendar-utbytesfil</comment>
     <magic priority="50">
       <match type="string" value="BEGIN:VCALENDAR" offset="0"/>
       <match type="string" value="begin:vcalendar" offset="0"/>
@@ -3057,6 +3394,7 @@ command to generate the output files.
     <comment>Electronic Business Card</comment>
     <comment xml:lang="nl">Electronisch adreskaartje</comment>
     <comment xml:lang="sr">Електронска бизнис картица</comment>
+    <comment xml:lang="sv">Elektroniskt visitkort</comment>
     <magic priority="50">
       <match type="string" value="BEGIN:VCARD" offset="0"/>
       <match type="string" value="begin:vcard" offset="0"/>
@@ -3069,6 +3407,7 @@ command to generate the output files.
     <comment xml:lang="hu">XSF:FO-fájl</comment>
     <comment xml:lang="nl">XSL formatterend object bestand</comment>
     <comment xml:lang="sr">Датотека XSL објеката форматирања</comment>
+    <comment xml:lang="sv">XSL-formateringsobjektfil</comment>
     <glob pattern="*.fo"/>
     <glob pattern="*.xslfo"/>
   </mime-type>
@@ -3077,6 +3416,7 @@ command to generate the output files.
     <comment xml:lang="hu">XSLT-stíluslapfájl</comment>
     <comment xml:lang="nl">XSLT stijlblad bestand</comment>
     <comment xml:lang="sr">Датотека са XSLT стилом</comment>
+    <comment xml:lang="sv">XSLT-stilmallsfil</comment>
     <glob pattern="*.xslt"/>
     <glob pattern="*.xsl"/>
   </mime-type>
@@ -3089,6 +3429,7 @@ command to generate the output files.
     <comment>eXtensible Markup Language document</comment>
     <comment xml:lang="nl">Uitbreidbare opmaaktaal document (XML)</comment>
     <comment xml:lang="sr">документ проширивог језика за означавање (XML)</comment>
+    <comment xml:lang="sv">XML-dokument</comment>
     <magic priority="50">
       <match type="string" value="&lt;?xml" offset="0"/>
     </magic>
@@ -3099,11 +3440,13 @@ command to generate the output files.
     <comment xml:lang="hu">ISI-video</comment>
     <comment xml:lang="nl">ISI video</comment>
     <comment xml:lang="sr">ISI видео</comment>
+    <comment xml:lang="sv">ISI-video</comment>
   </mime-type>
   <mime-type type="video/mpeg">
     <comment>MPEG Video</comment>
     <comment xml:lang="nl">MPEG video</comment>
     <comment xml:lang="sr">MPEG видео</comment>
+    <comment xml:lang="sv">MPEG-video</comment>
     <magic priority="50">
       <match type="string" value="\x47\x3f\xff\x10" offset="0"/>
       <match type="big32" value="0x000001b3" offset="0"/>
@@ -3120,6 +3463,7 @@ command to generate the output files.
     <comment>Quicktime Video</comment>
     <comment xml:lang="nl">Quicktime video</comment>
     <comment xml:lang="sr">QuickTime видео</comment>
+    <comment xml:lang="sv">QuickTime-video</comment>
     <magic priority="50">
       <match type="string" value="mdat" offset="12"/>
       <match type="string" value="mdat" offset="4"/>
@@ -3135,18 +3479,21 @@ command to generate the output files.
     <comment xml:lang="hu">Vivo-video</comment>
     <comment xml:lang="nl">Vivo video</comment>
     <comment xml:lang="sr">Vivo видео</comment>
+    <comment xml:lang="sv">Vivo-video</comment>
   </mime-type>
   <mime-type type="video/wavelet">
     <comment>Wavelet video</comment>
     <comment xml:lang="hu">Wavelet-video</comment>
     <comment xml:lang="nl">Wavelet video</comment>
     <comment xml:lang="sr">Wavelet видео</comment>
+    <comment xml:lang="sv">Wavelet-video</comment>
   </mime-type>
   <mime-type type="video/x-anim">
     <comment>ANIM animation</comment>
     <comment xml:lang="hu">ANIM-animáció</comment>
     <comment xml:lang="nl">ANIM animatie</comment>
     <comment xml:lang="sr">ANIM анимација</comment>
+    <comment xml:lang="sv">ANIM-animation</comment>
     <glob pattern="*.anim[1-9j]"/>
   </mime-type>
   <mime-type type="video/x-avi">
@@ -3154,12 +3501,14 @@ command to generate the output files.
     <comment xml:lang="hu">AVI-video</comment>
     <comment xml:lang="nl">AVI video</comment>
     <comment xml:lang="sr">AVI видео</comment>
+    <comment xml:lang="sv">AVI-video</comment>
   </mime-type>
   <mime-type type="video/x-flic">
     <comment>Autodesk's FLIC files</comment>
     <comment xml:lang="hu">Autodesk FLIC-fájl</comment>
     <comment xml:lang="nl">Autodesk&apos;s FLIC bestand</comment>
     <comment xml:lang="sr">Аутодескове FLIC датотеке</comment>
+    <comment xml:lang="sv">Autodesk FLIC-filer</comment>
     <magic priority="50">
       <match type="little16" value="0xAF11" offset="0"/>
       <match type="little16" value="0xAF12" offset="0"/>
@@ -3172,6 +3521,7 @@ command to generate the output files.
     <comment xml:lang="hu">MNG-kép</comment>
     <comment xml:lang="nl">MNG afbeelding</comment>
     <comment xml:lang="sr">MNG слика</comment>
+    <comment xml:lang="sv">MNG-bild</comment>
     <glob pattern="*.mng"/>
   </mime-type>
   <mime-type type="video/x-ms-asf">
@@ -3179,6 +3529,7 @@ command to generate the output files.
     <comment xml:lang="hu">MS ASF-video</comment>
     <comment xml:lang="nl">MS ASF video</comment>
     <comment xml:lang="sr">MS ASF видео</comment>
+    <comment xml:lang="sv">MS ASF-video</comment>
     <glob pattern="*.asf"/>
     <glob pattern="*.asx"/>
     <magic priority="50">
@@ -3190,12 +3541,14 @@ command to generate the output files.
     <comment xml:lang="hu">Microsoft WMV-video</comment>
     <comment xml:lang="nl">Microsoft WMV video</comment>
     <comment xml:lang="sr">Микрософт WMV видео</comment>
+    <comment xml:lang="sv">Microsoft WMV-video</comment>
     <glob pattern="*.wmv"/>
   </mime-type>
   <mime-type type="video/x-msvideo">
     <comment>Microsoft AVI Video</comment>
     <comment xml:lang="nl">Microsoft AVI video</comment>
     <comment xml:lang="sr">Микрософт АВИ видео</comment>
+    <comment xml:lang="sv">Microsoft AVI-video</comment>
     <magic priority="50">
       <match type="string" value="AVI " offset="8"/>
       <match type="string" value="RIFF" offset="0"/>
@@ -3207,6 +3560,7 @@ command to generate the output files.
     <comment xml:lang="hu">Nullsoft-video</comment>
     <comment xml:lang="nl">Nullsoft video</comment>
     <comment xml:lang="sr">Nullsoft видео</comment>
+    <comment xml:lang="sv">Nullsoft-video</comment>
     <magic priority="50">
       <match type="string" value="NSVf" offset="0"/>
     </magic>
@@ -3218,12 +3572,14 @@ command to generate the output files.
     <comment xml:lang="hu">RealVideo-video</comment>
     <comment xml:lang="nl">RealVideo video</comment>
     <comment xml:lang="sr">RealVideo видео</comment>
+    <comment xml:lang="sv">RealVideo-video</comment>
   </mime-type>
   <mime-type type="video/x-sgi-movie">
     <comment>SGI video</comment>
     <comment xml:lang="hu">SGI-video</comment>
     <comment xml:lang="nl">SGI video</comment>
     <comment xml:lang="sr">SGI видео</comment>
+    <comment xml:lang="sv">SGI-video</comment>
     <magic priority="50">
       <match type="string" value="MOVI" offset="0"/>
     </magic>

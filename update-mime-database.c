@@ -28,6 +28,8 @@
 		"For more information about these matters, "		\
 		"see the file named COPYING.\n")
 
+#define MIME_ERROR g_quark_from_static_string("mime-error-quark")
+
 const char *media_types[] = {
 	"text",
 	"application",
@@ -630,42 +632,143 @@ static void getstr(const char *s, GString *out)
 	}
 }
 
-static void parse_value(const char *type, const char *in, GString *parsed_value)
+static void parse_int_value(int bytes, const char *in, const char *in_mask,
+			    GString *parsed_value, char **parsed_mask,
+			    GError **error)
 {
 	char *end;
+	char *out_mask = NULL;
 	long value;
+	int b;
 
-	g_return_if_fail(*in != '\0');
+	value = strtol(in, &end, 0);
+	if (*end != '\0')
+	{
+		g_set_error(error, MIME_ERROR,
+				0, "Value is not a number");
+		return;
+	}
+
+	for (b = 0; b < bytes; b++)
+	{
+		int shift = (bytes - b - 1) * 8;
+		g_string_append_c(parsed_value, (value >> shift) & 0xff);
+	}
+
+	if (in_mask)
+	{
+		int b;
+		long mask;
+		
+		mask = strtol(in_mask, &end, 0);
+		if (*end != '\0')
+		{
+			g_set_error(error, MIME_ERROR, 0,
+				    "Mask is not a number");
+			return;
+		}
+
+		out_mask = g_new(char, bytes);
+		for (b = 0; b < bytes; b++)
+		{
+			int shift = (bytes - b - 1) * 8;
+			out_mask[b] = (mask >> shift) & 0xff;
+		}
+	}
+
+	*parsed_mask = out_mask;
+}
+
+/* 'len' is the length of the value. The mask created will be the same
+ * length.
+ */
+static char *parse_string_mask(const char *mask, int len, GError **error)
+{
+	int i;
+	char *parsed_mask = NULL;
+
+	g_return_val_if_fail(mask != NULL, NULL);
+	g_return_val_if_fail(len > 0, NULL);
+
+	if (mask[0] != '0' || mask[1] != 'x')
+	{
+		g_set_error(error, MIME_ERROR, 0,
+			"String masks must be in base 16 (starting with 0x)");
+		goto err;
+	}
+	mask += 2;
+
+	parsed_mask = g_new0(char, len);
+
+	i = 0; /* Nybble to write to next */
+	while (mask[i])
+	{
+		int c;
+
+		c = hextoint(mask[i]);
+		if (c == -1)
+		{
+			g_set_error(error, MIME_ERROR, 0,
+				"'%c' is not a valid hex digit", mask[i]);
+			goto err;
+		}
+
+		if (i >= len * 2)
+		{
+			g_set_error(error, MIME_ERROR, 0,
+				"Mask is longer than value");
+			goto err;
+		}
+		
+		if (i & 1)
+			parsed_mask[i >> 1] |= c;
+		else
+			parsed_mask[i >> 1] |= c << 4;
+
+		i++;
+	}
+
+	return parsed_mask;
+err:
+	g_return_val_if_fail(error == NULL || *error != NULL, NULL);
+	g_free(parsed_mask);
+	return NULL;
+}
+
+static void parse_value(const char *type, const char *in, const char *in_mask,
+			GString *parsed_value, char **parsed_mask,
+			GError **error)
+{
+	*parsed_mask = NULL;
+
+	if (in == NULL || !in[0])
+	{
+		g_set_error(error, MIME_ERROR, 0, "No value specified");
+		return;
+	}
 
 	if (strstr(type, "16"))
-	{
-		value = strtol(in, &end, 0);
-		g_return_if_fail(*end == '\0');
-		g_string_append_c(parsed_value, (value >> 8) & 0xff);
-		g_string_append_c(parsed_value, value & 0xff);
-	}
+		parse_int_value(2, in, in_mask, parsed_value, parsed_mask,
+				error);
 	else if (strstr(type, "32"))
-	{
-		value = strtol(in, &end, 0);
-		g_return_if_fail(*end == '\0');
-		g_string_append_c(parsed_value, (value >> 24) & 0xff);
-		g_string_append_c(parsed_value, (value >> 16)& 0xff);
-		g_string_append_c(parsed_value, (value >> 8) & 0xff);
-		g_string_append_c(parsed_value, value & 0xff);
-	}
+		parse_int_value(4, in, in_mask, parsed_value, parsed_mask,
+				error);
 	else if (strcmp(type, "byte") == 0)
-	{
-		value = strtol(in, &end, 0);
-		g_return_if_fail(*end == '\0');
-		g_string_append_c(parsed_value, value & 0xff);
-	}
+		parse_int_value(1, in, in_mask, parsed_value, parsed_mask,
+				error);
 	else if (strcmp(type, "string") == 0)
+	{
 		getstr(in, parsed_value);
+		if (in_mask)
+			*parsed_mask = parse_string_mask(in_mask,
+						parsed_value->len, error);
+	}
 	else
 		g_assert_not_reached();
 }
 
-static void write_magic_children(FILE *stream, xmlNode *parent, int indent)
+static void write_magic_children(FILE *stream, xmlNode *parent, int indent,
+				 const guchar *mime_type)
 {
 	GString *parsed_value;
 	xmlNode *node;
@@ -674,6 +777,7 @@ static void write_magic_children(FILE *stream, xmlNode *parent, int indent)
 
 	for (node = parent->xmlChildrenNode; node; node = node->next)
 	{
+		GError *error = NULL;
 		char *offset, *mask, *value, *type;
 		char *parsed_mask = NULL;
 		const char *colon;
@@ -684,9 +788,6 @@ static void write_magic_children(FILE *stream, xmlNode *parent, int indent)
 
 		if (node->type != XML_ELEMENT_NODE)
 			continue;
-
-		for (i = 0; i < indent; i++)
-			fputc('>', stream);
 
 		offset = xmlGetNsProp(node, "offset", NULL);
 		mask = xmlGetNsProp(node, "mask", NULL);
@@ -712,16 +813,19 @@ static void write_magic_children(FILE *stream, xmlNode *parent, int indent)
 			g_warning("Unknown magic type '%s'\n", type);
 
 		g_string_truncate(parsed_value, 0);
-		parse_value(type, value, parsed_value);
+		parse_value(type, value, mask, parsed_value, &parsed_mask,
+			    &error);
 
-		if (mask)
+		if (error)
 		{
-			int i;
-			parsed_mask = g_malloc(parsed_value->len);
-			for (i = 0; i < parsed_value->len; i++)
-				parsed_mask[i] = 0xff;
-			/* TODO: Actually read the mask! */
+			g_print("* Error in magic for type '%s':\n"
+				"*   %s\n", mime_type, error->message);
+			g_error_free(error);
+			continue;
 		}
+
+		for (i = 0; i < indent; i++)
+			fputc('>', stream);
 
 		write32(stream, range_start);
 		write16(stream, parsed_value->len);
@@ -743,7 +847,7 @@ static void write_magic_children(FILE *stream, xmlNode *parent, int indent)
 		g_free(value);
 		g_free(type);
 
-		write_magic_children(stream, node, indent + 1);
+		write_magic_children(stream, node, indent + 1, mime_type);
 	}
 
 	g_string_free(parsed_value, TRUE);
@@ -759,9 +863,10 @@ static void write_magic(FILE *stream, xmlNode *node)
 	type = xmlGetNsProp(node, "type", NULL);
 	g_return_if_fail(type != NULL);
 	fprintf(stream, "[%d:%s]\n", prio, type);
-	g_free(type);
 
-	write_magic_children(stream, node, 0);
+	write_magic_children(stream, node, 0, type);
+
+	g_free(type);
 }
 
 static void delete_old_types(const gchar *mime_dir)

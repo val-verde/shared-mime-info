@@ -1,3 +1,12 @@
+Tue Jan 20 10:22:44 2004  Jonathan Blandford  <jrb@gnome.org>
+
+	* configure.in: Patch from Alex Larsson <alexl@redhat.com> to
+	conditionally disable running update-mimedb for packages.
+
+	* freedesktop.org.xml.in: Patch from Alex Larsson
+	<alexl@redhat.com> to fix up RIFF and shell magic, as well as
+	merging diff files and patch files.
+
 Wed Jan 14 16:45:26 2004  Jonathan Blandford  <jrb@gnome.org>
 
 	* configure.in: I already tagged CVS so I'm releasing 0.13.1 to
@@ -17,7 +26,7 @@ Wed Jan 14 16:23:22 2004  Jonathan Blandford  <jrb@gnome.org>
 
 	* Makefile.am: Make pass distcheck.
 
-	* freedesktop.or.xml.in: Update DTD to deal with xml:lang
+	* freedesktop.org.xml.in: Update DTD to deal with xml:lang
 
 Tue Jan 13 16:32:03 2004  Jonathan Blandford  <jrb@gnome.org>
 

@@ -964,6 +964,10 @@ command to generate the output files.
     <_comment>Lzopped File</_comment>
     <glob pattern="*.lzo"/>
   </mime-type>
+  <mime-type type="application/x-magicpoint">
+    <_comment>MagicPoint presentation</_comment>
+    <glob pattern="*.mgp"/>
+  </mime-type>
   <mime-type type="application/x-macbinary">
     <_comment>MacBinary file</_comment>
     <magic priority="50">
@@ -1201,6 +1205,12 @@ command to generate the output files.
       <match type="string" value="/bin/csh" offset="1:16"/>
       <match type="string" value="/bin/zsh" offset="1:16"/>
       <match type="string" value="/bin/sh" offset="1:16"/>
+      <match type="string" value="#!/usr/bin/env sh" offset="0"/>
+      <match type="string" value="#!/usr/bin/env bash" offset="0"/>
+      <match type="string" value="#!/usr/bin/env csh" offset="0"/>
+      <match type="string" value="#!/usr/bin/env tcsh" offset="0"/>
+      <match type="string" value="#!/usr/bin/env zsh" offset="0"/>
+
     </magic>
     <glob pattern="*.sh"/>
     <glob pattern="*.csh"/>
@@ -1412,7 +1422,7 @@ command to generate the output files.
     <glob pattern="*.it"/>
   </mime-type>
   <mime-type type="audio/midi">
-    <alias type='audio/x-midi'/>
+    <alias type="audio/x-midi"/>
     <_comment>MIDI audio</_comment>
     <magic priority="50">
       <match type="string" value="MThd" offset="0"/>
@@ -1468,7 +1478,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-riff">
     <_comment>RIFF audio</_comment>
-    <magic priority="50">
+    <!-- need to be lower prio than avi -->
+    <magic priority="45">
       <match type="string" value="RIFF" offset="0"/>
     </magic>
   </mime-type>
@@ -2036,17 +2047,6 @@ command to generate the output files.
     <_comment>DCL script</_comment>
     <glob pattern="*.dcl"/>
   </mime-type>
-  <mime-type type="text/x-diff">
-    <_comment>Differences between files</_comment>
-    <magic priority="50">
-      <match type="string" value="diff\t" offset="0"/>
-      <match type="string" value="***\t" offset="0"/>
-      <match type="string" value="Only in\t" offset="0"/>
-      <match type="string" value="Common subdirectories: " offset="0"/>
-    </magic>
-    <glob pattern="*.diff"/>
-    <glob pattern="*.patch"/>
-  </mime-type>
   <mime-type type="text/x-dsl">
     <_comment>DSSSL document</_comment>
     <glob pattern="*.dsl"/>
@@ -2126,14 +2126,19 @@ command to generate the output files.
     <glob pattern="*.pas"/>
   </mime-type>
   <mime-type type="text/x-patch">
-    <_comment>source code patch</_comment>
+    <_comment>Differences between files</_comment>
     <magic priority="50">
+      <match type="string" value="diff\t" offset="0"/>
       <match type="string" value="diff " offset="0"/>
-      <match type="string" value="Index:" offset="0"/>
+      <match type="string" value="***\t" offset="0"/>
       <match type="string" value="*** " offset="0"/>
+      <match type="string" value="Only in\t" offset="0"/>
       <match type="string" value="Only in " offset="0"/>
       <match type="string" value="Common subdirectories: " offset="0"/>
+      <match type="string" value="Index:" offset="0"/>
     </magic>
+    <glob pattern="*.diff"/>
+    <glob pattern="*.patch"/>
   </mime-type>
   <mime-type type="text/x-readme">
     <_comment>README document</_comment>

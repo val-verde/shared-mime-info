@@ -31,7 +31,9 @@ LDFLAGS = @LDFLAGS@ `@PKG_CONFIG@ --libs libxml-2.0 glib-2.0`
 @INTLTOOL_DESKTOP_RULE@
 
 install-data-hook: 
+if ENABLE_UPDATE_MIMEDB
 	$(DESTDIR)"$(bindir)/update-mime-database" "$(DESTDIR)${mimedir}"
+endif
 
 uninstall-hook:
 	for media in text application image audio inode video message model multipart; do rm -f "$(DESTDIR)${mimedir}/$${media}/"*.xml; done

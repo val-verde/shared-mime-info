@@ -1,3 +1,12 @@
+Tue Dec 16 01:57:24 2003  Jonathan Blandford  <jrb@gnome.org>
+
+	* Makefile.am: comment out the UTF-8 changes.  We don't build all
+	that often as we keep the generated file in CVS, and most people
+	won't build it.
+
+	* autogen.sh: add an autogen.sh file, and clean up the build
+	setup.
+
 Tue Nov 18 10:12:38 2003  Jonathan Blandford  <jrb@redhat.com>
 
 	* configure.in (GETTEXT_PACKAGE): add sv.po

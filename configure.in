@@ -74,4 +74,4 @@ AC_C_CONST
 mimedir=['${datadir}/mime']
 AC_SUBST(mimedir)
 
-AC_OUTPUT(Makefile po/Makefile.in m4/Makefile )
+AC_OUTPUT(Makefile po/Makefile.in)

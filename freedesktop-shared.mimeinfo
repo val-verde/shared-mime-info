@@ -6650,45 +6650,6 @@ Comment[xh]=DER, PEM, okanye Netscape e enkhowudiweyo X.509 isiqinisekiso
 Comment[xx]=xx
 Patterns=*.der;*.cer;*.crt;*.cert;*.pem
 
-[MIME-Info application/x-xfig]
-Comment=XFig Document
-Comment[af]=xfig dokument
-Comment[ar]=مستند XFig
-Comment[be]=Дакумэнт XFig
-Comment[bg]=Документ на XFig
-Comment[bs]=XFig dokument
-Comment[cs]=XFig dokument
-Comment[da]=XFig Dokument
-Comment[de]=XFig-Dokument
-Comment[el]=Έγγραφο XFig
-Comment[eo]=XFig-dokumento
-Comment[es]=Documento XFig
-Comment[et]=XFig dokument
-Comment[eu]=XFig Dokumentua
-Comment[fi]=XFig-asiakirja
-Comment[fr]=Document XFig
-Comment[he]=מסמך XFig
-Comment[hu]=XFig dokumentum
-Comment[it]=Documento XFig
-Comment[ja]=XFig ドキュメント
-Comment[lt]=XFig dokumentas
-Comment[lv]=XFig Dokuments
-Comment[nl]=XFig-document
-Comment[nn]=XFig-dokument
-Comment[pt]=Documento XFig
-Comment[pt_BR]=Documento XFig
-Comment[ro]=Document XFig
-Comment[sk]=XFig dokument
-Comment[sl]=Dokument XFig
-Comment[sv]=Xfig-dokument
-Comment[th]=เอกสาร XFig
-Comment[uk]=Документ XFig
-Comment[ven]=Manwalwa a XFig
-Comment[vi]=Tài liệu XFig
-Comment[zh_CN]=XFig 文档
-Comment[zu]=Idokhumente ye XFig
-Contents=50:(string 0 "#FIG")
-
 [MIME-Info application/x-zerosize]
 Comment=Empty Document
 Comment[af]=leeg dokument
@@ -9485,6 +9446,7 @@ Comment[zh_CN]=XFig 文件
 Comment[zh_TW]=XFig 檔案
 Comment[zu]=Ifayela ye XFig
 Patterns=*.fig
+Contents=50:(string 0 "#FIG")
 
 [MIME-Info image/x-xpixmap]
 Comment=X PixMap image

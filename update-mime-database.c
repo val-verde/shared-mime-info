@@ -789,7 +789,7 @@ static void parse_int_value(int bytes, const char *in, const char *in_mask,
 {
 	char *end;
 	char *out_mask = NULL;
-	long value;
+	unsigned long value;
 	int b;
 
 	value = strtol(in, &end, 0);
@@ -803,6 +803,15 @@ static void parse_int_value(int bytes, const char *in, const char *in_mask,
 	{
 		int shift = (bytes - b - 1) * 8;
 		g_string_append_c(parsed_value, (value >> shift) & 0xff);
+	}
+
+	if ((bytes == 1 && (value & ~0xff)) ||
+	    (bytes == 2 && (value & ~0xffff)))
+	{
+		g_set_error(error, MIME_ERROR, 0,
+			    "Number out-of-range (%lx should fit in %d bytes)",
+			    value, bytes);
+		return;
 	}
 
 	if (in_mask)

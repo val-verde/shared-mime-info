@@ -1,3 +1,8 @@
+2004-11-26  Christophe Fergeau  <teuf@gnome.org>
+
+	* update-mime-database.c: (parse_int_value): take value endianness
+	into account when reading the "mask" tag, fixes #1507.
+
 Tue Nov  9 01:52:52 2004  Jonathan Blandford  <jrb@redhat.com>
 
 	* update-mime-database.c: Patch from Matthias Clasen to generate

@@ -878,7 +878,7 @@ static void parse_int_value(int bytes, const char *in, const char *in_mask,
 		out_mask = g_new(char, bytes);
 		for (b = 0; b < bytes; b++)
 		{
-			int shift = (bytes - b - 1) * 8;
+			int shift = (big_endian ? (bytes - b - 1) : b) * 8;
 			out_mask[b] = (mask >> shift) & 0xff;
 		}
 	}

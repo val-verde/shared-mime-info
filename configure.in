@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 
 AC_INIT(freedesktop.org.xml)
-AM_INIT_AUTOMAKE(shared-mime-info, 0.7)
+AM_INIT_AUTOMAKE(shared-mime-info, 0.8)
 
 AM_CONFIG_HEADER(config.h)
 
@@ -63,5 +63,7 @@ fi
 
 dnl Checks for typedefs, structures, and compiler characteristics.
 AC_C_CONST
+
+AC_SUBST([mimedir],         ['${datadir}/mime'])
 
 AC_OUTPUT(Makefile)

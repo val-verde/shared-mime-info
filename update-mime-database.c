@@ -27,6 +27,18 @@
 		"For more information about these matters, "		\
 		"see the file named COPYING.\n")
 
+const char *media_types[] = {
+	"text",
+	"application",
+	"image",
+	"audio",
+	"inode",
+	"video",
+	"message",
+	"model",
+	"multipart",
+};
+
 typedef struct _Type Type;
 typedef struct _Magic Magic;
 
@@ -71,6 +83,7 @@ static Type *get_type(const char *name)
 {
 	const char *slash;
 	Type *type;
+	int i;
 
 	slash = strchr(name, '/');
 	if (!slash || strchr(slash + 1, '/'))
@@ -89,6 +102,14 @@ static Type *get_type(const char *name)
 	g_hash_table_insert(types, g_strdup(name), type);
 
 	type->unknown = NULL;
+
+	for (i = 0; i < G_N_ELEMENTS(media_types); i++)
+	{
+		if (strcmp(media_types[i], type->media) == 0)
+			return type;
+	}
+
+	g_warning("Unknown media type in type '%s'\n", name);
 
 	return type;
 }
@@ -521,6 +542,47 @@ static void write_magic(FILE *stream, xmlNode *node)
 	write_magic_children(stream, node, 0);
 }
 
+static void delete_old_types(const gchar *mime_dir)
+{
+	int i;
+
+	for (i = 0; i < G_N_ELEMENTS(media_types); i++)
+	{
+		gchar *media_dir;
+		DIR   *dir;
+		struct dirent *ent;
+		
+		media_dir = g_strconcat(mime_dir, "/", media_types[i], NULL);
+		dir = opendir(media_dir);
+		g_free(media_dir);
+		if (!dir)
+			continue;
+
+		while ((ent = readdir(dir)))
+		{
+			char *type_name;
+			int l;
+			l = strlen(ent->d_name);
+			if (l < 4 || strcmp(ent->d_name + l - 4, ".xml") != 0)
+				continue;
+
+			type_name = g_strconcat(media_types[i], "/", ent->d_name, NULL);
+			type_name[strlen(type_name) - 4] = '\0';
+			if (!g_hash_table_lookup(types, type_name))
+			{
+				char *path;
+				path = g_strconcat(mime_dir, "/", type_name, ".xml", NULL);
+				g_print("* Removing old info for type %s\n", path);
+				unlink(path);
+				g_free(path);
+			}
+			g_free(type_name);
+		}
+		
+		closedir(dir);
+	}
+}
+
 int main(int argc, char **argv)
 {
 	const char *mime_dir = NULL;
@@ -555,6 +617,8 @@ int main(int argc, char **argv)
 
 	mime_dir = argv[optind];
 	package_dir = g_strconcat(mime_dir, "/packages", NULL);
+
+	g_print("***\n* Updating MIME database in %s...\n", mime_dir);
 	
 	if (access(package_dir, F_OK))
 	{
@@ -571,6 +635,8 @@ int main(int argc, char **argv)
 
 	scan_source_dir(package_dir);
 	g_free(package_dir);
+
+	delete_old_types(mime_dir);
 
 	g_hash_table_foreach(types, write_out_type, (gpointer) mime_dir);
 
@@ -617,6 +683,8 @@ int main(int argc, char **argv)
 
 	g_hash_table_destroy(types);
 	g_hash_table_destroy(globs_hash);
+
+	g_print("***\n");
 	
 	return EXIT_SUCCESS;
 }

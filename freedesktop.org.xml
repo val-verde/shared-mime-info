@@ -4749,6 +4749,10 @@
     <glob pattern="*.vct" />
     <glob pattern="*.gcrd" />
   </mime-type>
+  <mime-type type="text/x-xmi">
+    <comment>XML Metadata Interchange file</comment>
+    <glob pattern="*.xmi" />
+  </mime-type>
   <mime-type type="text/x-xslfo">
     <comment>XSL Formating Object file</comment>
     <comment xml:lang="az">XSL Formatlama Cismi faylı</comment>

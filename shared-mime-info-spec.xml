@@ -160,10 +160,10 @@ The format of the .mime files are described as follows:
 # adding new types.
 			</programlisting>
 When looking up the type for a file, gnome-vfs looks first for an exact-case
-match, then an all upper-case match, then an all lower-case match. If no
-matches are found, or there is no '.' in the name, then the regular
-expression matches are checked. It does this first for rules with priority 2,
-then for those with priority 1. The modification time on the
+match for the extension, then an all upper-case match, then an all lower-case
+match. If no matches are found, or there is no '.' in the name, then the
+regular expression matches are checked. It does this first for rules with
+priority 2, then for those with priority 1. The modification time on the
 <filename>mime-info</filename>
 directories is used to detect changes.
 		</para>
@@ -238,7 +238,7 @@ This spec proposes:
 A standard format for these files.
 			</para></listitem>
 			<listitem><para>
-A standard location for them.
+Standard locations for them.
 			</para></listitem>
 		</itemizedlist>
 
@@ -258,6 +258,7 @@ Patterns=*.htm;*.html;
 Contents=(starts-with "<HTML")
 Hidden=false
 ]]></programlisting>
+<!-- In KDE, single pattern types don't have a trailing ; -->
 		</para>
 		<para>
 Specifically, all KDE-specific tags have been removed, as well as the Icon
@@ -293,11 +294,11 @@ but <filename>IMAGE.GIF</filename> will still use the *.gif pattern.
 	<sect2>
 		<title>Contents matching</title>
 		<para>
-The value of the Contents attribute is a scheme expression. If the expression
-evaluates to a true value then the file is assumed to be of this type.
-Since scanning a file's contents can be very slow, applications may choose
-to do pattern matching first and only fallback to content matching, or not
-perform it at all.
+The value of the Contents attribute is a scheme-like expression. If the
+expression evaluates to a true value then the file is assumed to be of this
+type. Since scanning a file's contents can be very slow, applications may
+choose to do pattern matching first and only fallback to content matching, or
+not perform it at all.
 		</para>
 		<para>
 			<note>
@@ -366,6 +367,11 @@ The directories to be used to load these files are:
 <filename>~/.mime/mime-info</filename>
 				</para></listitem>
 			</itemizedlist>
+Each of these directories contains a number of files with the '.mimeinfo'
+extension. Applications MUST NOT load other files. This is to allow for
+future extensions.
+		</para>
+		<para>
 Programs modifying any of these files MUST update the modification time on
 the parent (<filename>mime-info</filename>) directory so that applications can
 easily detect the change. The rules from the directories in this list take
@@ -382,6 +388,11 @@ The type determined in this way is only a guess, and an application MUST NOT
 trust a file based simply on its MIME type. For example, a downloader should
 not pass a file directly to a launcher application without confirmation simply
 because the type looks `harmless' (eg, text/plain).
+		</para>
+		<para>
+Do not rely on two applications getting the same type for the same file, even
+if they both use this system. The spec allows some leeway in implementation,
+and in any case the programs may be following different versions of the spec.
 		</para>
 	</sect2>
 </sect1>

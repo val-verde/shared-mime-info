@@ -121,7 +121,7 @@ The format is described in the file itself as follows:
 		<title>GNOME</title>
 		<para>
 GNOME uses the gnome-vfs library to determine the MIME type of a file.
-This library loads name-to-type rules from files with a '.mime' extenstion
+This library loads name-to-type rules from files with a '.mime' extension
 in a system-wide directory (set at install time), and merged with those in the
 user's directory. It loads textual descriptions for the types from
 files in the same directories, ending with '.keys'. The file

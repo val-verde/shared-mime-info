@@ -1,0 +1,1523 @@
+# Translation of shared-mime-info-0.15 to Castilian aka Spanish
+# This file is distributed under the same license as the Shared-mime-info package.
+# Copyright (C) 2004 freedesktop.org contributors
+# Quique <quique@sindominio.net>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: shared-mime-info 0.15\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-30 20:01+0200\n"
+"PO-Revision-Date: 2004-09-07 17:00+0200\n"
+"Last-Translator: Quique <quique@sindominio.net>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3.1\n"
+
+#: freedesktop.org.xml.in.h:1
+msgid "3D Studio image"
+msgstr "Imagen de 3D Studio"
+
+#: freedesktop.org.xml.in.h:2
+msgid "AIFC audio"
+msgstr "Audio AIFC"
+
+#: freedesktop.org.xml.in.h:3
+msgid "AIFF audio"
+msgstr "Audio AIFF"
+
+#: freedesktop.org.xml.in.h:4
+msgid "AIFF/Amiga/Mac audio"
+msgstr "Audio AIFF/Amiga/Mac"
+
+#: freedesktop.org.xml.in.h:5
+msgid "ANIM animation"
+msgstr "Animación ANIM"
+
+#: freedesktop.org.xml.in.h:6
+msgid "AR archive"
+msgstr "Archivo AR"
+
+#: freedesktop.org.xml.in.h:7
+msgid "ARJ archive"
+msgstr "Archivo ARJ"
+
+#: freedesktop.org.xml.in.h:8
+msgid "AVI video"
+msgstr "Vídeo AVI"
+
+#: freedesktop.org.xml.in.h:9
+msgid "AWK script"
+msgstr "Script en AWK"
+
+#: freedesktop.org.xml.in.h:10
+msgid "AbiWord document"
+msgstr "Documento de Abiword"
+
+#: freedesktop.org.xml.in.h:11
+msgid "Ada source code"
+msgstr "Código fuente en Ada"
+
+#: freedesktop.org.xml.in.h:12
+msgid "Adobe FrameMaker font"
+msgstr "Tipo de letra de Adobe FrameMaker"
+
+#: freedesktop.org.xml.in.h:13
+msgid "Adobe Illustrator document"
+msgstr "Documento de Adobe Illustrator"
+
+#: freedesktop.org.xml.in.h:14
+msgid "Adobe font metrics"
+msgstr "Métricas de tipo de letra Adobe"
+
+#: freedesktop.org.xml.in.h:15
+msgid "Amiga SoundTracker audio"
+msgstr "Audio de Amiga SoundTracker"
+
+#
+# rl0: 'inset' se traduce por encarte en el 'mundo real', no se si tendrá sentido
+# rl0: traducirlo, he buscado en la red y el ATK no se sigue desarrollando,
+# rl0: así­ que dudo que haya una versión en español que pudiera haber sentado
+# rl0: precedente. (El último intento de poner esto al dí­a data del 2001, está en
+# rl0: SF.net http://atk.sourceforge.net y su actividad es nula.
+#: freedesktop.org.xml.in.h:16
+msgid "Andrew Toolkit inset"
+msgstr "Inset del Andrew Toolkit"
+
+#: freedesktop.org.xml.in.h:17
+msgid "Applix Graphics image"
+msgstr "Imagen de Applix Graphics"
+
+#: freedesktop.org.xml.in.h:18
+msgid "Applix Spreadsheets spreadsheet"
+msgstr "Hoja de cálculo de Applix Spreadsheets"
+
+#: freedesktop.org.xml.in.h:19
+msgid "Applix Words document"
+msgstr "Documento de Applix Words"
+
+#: freedesktop.org.xml.in.h:20
+msgid "AutoCAD image"
+msgstr "Imagen de AutoCAD"
+
+#: freedesktop.org.xml.in.h:21
+msgid "AutoDesk FLIC animation"
+msgstr "Animación de AutoDesk FLIC"
+
+#: freedesktop.org.xml.in.h:22
+msgid "BCPIO document"
+msgstr "Documento BCPIO"
+
+#: freedesktop.org.xml.in.h:23
+msgid "BDF font"
+msgstr "Tipo de letra BDF"
+
+#: freedesktop.org.xml.in.h:24
+msgid "Bibtex bibliographic data"
+msgstr "Datos bibliográficos Bibtex"
+
+#: freedesktop.org.xml.in.h:25
+msgid "BitTorrent seed file"
+msgstr "Fichero semilla BitTorrent"
+
+#: freedesktop.org.xml.in.h:26
+msgid "Blender scene"
+msgstr "Escena de Blender"
+
+#: freedesktop.org.xml.in.h:27
+msgid "C shell script"
+msgstr "Script en C shell"
+
+#: freedesktop.org.xml.in.h:28
+msgid "C source code"
+msgstr "Código fuente en C"
+
+#: freedesktop.org.xml.in.h:29
+msgid "C source code header"
+msgstr "Cabecera de código fuente en C"
+
+#: freedesktop.org.xml.in.h:30
+msgid "C# source code"
+msgstr "Código fuente en C#"
+
+#: freedesktop.org.xml.in.h:31
+msgid "C++ source code"
+msgstr "Código fuente en C++"
+
+#: freedesktop.org.xml.in.h:32
+msgid "C++ source code header"
+msgstr "Cabecera de código fuente en C++"
+
+#: freedesktop.org.xml.in.h:33
+msgid "CCITT G3 fax"
+msgstr "Fax de CCITT G3"
+
+#: freedesktop.org.xml.in.h:34
+msgid "CGI script"
+msgstr "Script CGI"
+
+#
+# rl0: http://europa.eu.int/eurodicautom/Controller he buscado 'raster'
+# rl0:  BTL - UIT79 - 16250 (este es el  código de la traducción)
+# rl0:         a scanning pattern used in generating,recording or reproducing
+# rl0:       television,facsimile or graphics images on a screen
+# rl0:  ES: ráster, cuadrí­cula, trama
+# rl0:  Hay dos referencias más a tratamiento de imágenes y teleco, ambas
+# rl0:  incluyen "ráster" y "trama". Las dos suenan bien y como indica el tipo
+# rl0:  si usas "trama CMU" no habrá problema.
+#: freedesktop.org.xml.in.h:35
+msgid "CMU raster image"
+msgstr "Imagen ráster CMU"
+
+#: freedesktop.org.xml.in.h:36
+msgid "CPIO archive"
+msgstr "Archivo CPIO"
+
+#: freedesktop.org.xml.in.h:37
+msgid "CPIO archive (gzip-compressed)"
+msgstr "Archivo CPIO (comprimido con gzip)"
+
+#: freedesktop.org.xml.in.h:38
+msgid "Cascading Style Sheet"
+msgstr "Hoja de estilo en cascada"
+
+#: freedesktop.org.xml.in.h:39
+msgid "Commodore 64 audio"
+msgstr "Audio de Commodore 64"
+
+#: freedesktop.org.xml.in.h:40
+msgid "Computer Graphics Metafile"
+msgstr "Metafichero de Computer Graphics"
+
+#: freedesktop.org.xml.in.h:41
+msgid "Corel Draw drawing"
+msgstr "Dibujo de Corel Draw"
+
+#: freedesktop.org.xml.in.h:42
+msgid "DCL script"
+msgstr "Script en DCL"
+
+#: freedesktop.org.xml.in.h:43
+msgid "DER/PEM/Netscape-encoded X.509 certificate"
+msgstr "Certificado X.509 codificado con DER/PEM/Netscape"
+
+#: freedesktop.org.xml.in.h:44
+msgid "DOS font"
+msgstr "Tipo de letra DOS"
+
+#: freedesktop.org.xml.in.h:45
+msgid "DOS/Windows executable"
+msgstr "Ejecutable de DOS/Windows"
+
+#: freedesktop.org.xml.in.h:46
+msgid "DSSSL document"
+msgstr "Documento DSSSL"
+
+#: freedesktop.org.xml.in.h:47
+msgid "DXF vector image"
+msgstr "Imagen vectorial DXF"
+
+#: freedesktop.org.xml.in.h:48
+msgid "Debian package"
+msgstr "Paquete Debian"
+
+#: freedesktop.org.xml.in.h:49
+msgid "Device Independant Bitmap"
+msgstr "Mapa de bits independiente del dispositivo"
+
+#: freedesktop.org.xml.in.h:50
+msgid "Dia diagram"
+msgstr "Diagrama de Dia"
+
+#: freedesktop.org.xml.in.h:51
+msgid "Digital Imaging and Communications in Medicine image"
+msgstr "Imagen de Digital Imaging and Communications in Medicine"
+
+#: freedesktop.org.xml.in.h:52
+msgid "Digital Moving Picture Exchange image"
+msgstr "Imagen Digital Moving Picture Exchange"
+
+#: freedesktop.org.xml.in.h:53
+msgid "DjVu image"
+msgstr "Imagen DjVu"
+
+#: freedesktop.org.xml.in.h:54
+msgid "Dolby Digital audio"
+msgstr "Audio Dolby Digital"
+
+#: freedesktop.org.xml.in.h:55
+msgid "Dreamcast ROM"
+msgstr "ROM de Dreamcast"
+
+#: freedesktop.org.xml.in.h:56
+msgid "Egon Animator animation"
+msgstr "Animación de Egon Animator"
+
+#: freedesktop.org.xml.in.h:57
+msgid "Emacs Lisp source code"
+msgstr "Código fuente en Lisp de Emacs"
+
+#: freedesktop.org.xml.in.h:58
+msgid "Encapsulated PostScript image"
+msgstr "Imagen en PostScript encapsulado"
+
+#: freedesktop.org.xml.in.h:59
+msgid "Enlightenment theme"
+msgstr "Tema de Enlightenment"
+
+#: freedesktop.org.xml.in.h:60
+msgid "FLAC audio"
+msgstr "Audio FLAC"
+
+#: freedesktop.org.xml.in.h:61
+msgid "FastTracker II audio"
+msgstr "Audio FastTracker II"
+
+#: freedesktop.org.xml.in.h:62
+msgid "FlashPix image"
+msgstr "Imagen FlashPix"
+
+#: freedesktop.org.xml.in.h:63
+msgid "Flexible Image Transport System"
+msgstr "Sistema flexible de transporte de imágenes"
+
+#: freedesktop.org.xml.in.h:64
+msgid "Fortran source code"
+msgstr "Código fuente en Fortran"
+
+#: freedesktop.org.xml.in.h:65
+msgid "FrameMaker MIF document"
+msgstr "Documento MIF de FrameMaker"
+
+#: freedesktop.org.xml.in.h:66
+msgid "G3 fax image"
+msgstr "Imagen de fax G3"
+
+#: freedesktop.org.xml.in.h:67
+msgid "GIF image"
+msgstr "Imagen GIF"
+
+#: freedesktop.org.xml.in.h:68
+msgid "GIMP image"
+msgstr "Imagen del GIMP"
+
+#: freedesktop.org.xml.in.h:69
+msgid "GIMP image (compressed)"
+msgstr "Imagen del GIMP (comprimida)"
+
+#: freedesktop.org.xml.in.h:70
+msgid "GMC link"
+msgstr "Enlace GMC"
+
+#: freedesktop.org.xml.in.h:71
+msgid "GNU Oleo spreadsheet"
+msgstr "Hoja de cálculo de GNU Oleo"
+
+#: freedesktop.org.xml.in.h:72
+msgid "GNU mail message"
+msgstr "Mensaje de GNU mail"
+
+#: freedesktop.org.xml.in.h:73
+msgid "GTK configuration"
+msgstr "Configuración de GTK"
+
+#: freedesktop.org.xml.in.h:74
+msgid "GTKtalog catalog"
+msgstr "Catálogo de GTKtalog"
+
+#: freedesktop.org.xml.in.h:75
+msgid "Game Boy ROM"
+msgstr "ROM de Game Boy"
+
+#: freedesktop.org.xml.in.h:76
+msgid "Genesis ROM"
+msgstr "ROM de Genesis (Mega Drive)"
+
+#: freedesktop.org.xml.in.h:77
+msgid "Glade project"
+msgstr "Proyecto de Glade"
+
+#: freedesktop.org.xml.in.h:78
+msgid "GnuCash spreadsheet"
+msgstr "Hoja de cálculo de GnuCash"
+
+#: freedesktop.org.xml.in.h:79
+msgid "Gnumeric spreadsheet"
+msgstr "Hoja de cálculo de Gnumeric"
+
+#: freedesktop.org.xml.in.h:80
+msgid "Graphite scientific graph"
+msgstr "Gráfica científica de Graphite"
+
+#: freedesktop.org.xml.in.h:81
+msgid "HDF document"
+msgstr "Documento HDF"
+
+#: freedesktop.org.xml.in.h:82
+msgid "HP Graphics Language (plotter)"
+msgstr "Lenguaje de gráficos HP (plotter)"
+
+#: freedesktop.org.xml.in.h:83
+msgid "HP Printer Control Language file"
+msgstr "Fichero de lenguaje de control de impresora HP"
+
+#: freedesktop.org.xml.in.h:84
+msgid "HTML page"
+msgstr "Página HTML"
+
+#: freedesktop.org.xml.in.h:85
+msgid "Haskell source code"
+msgstr "Código fuente en Haskell"
+
+#: freedesktop.org.xml.in.h:86
+msgid "IDL document"
+msgstr "Documento IDL"
+
+#: freedesktop.org.xml.in.h:87
+msgid "IEF image"
+msgstr "Imagen IEF"
+
+#: freedesktop.org.xml.in.h:88
+msgid "IFF image"
+msgstr "Imagen IFF"
+
+#: freedesktop.org.xml.in.h:89
+msgid "ILBM image"
+msgstr "Imagen ILBM"
+
+#: freedesktop.org.xml.in.h:90
+msgid "ISI video"
+msgstr "Vídeo ISI"
+
+#: freedesktop.org.xml.in.h:91
+msgid "Impulse Tracker audio"
+msgstr "Audio Impulse Tracker"
+
+#: freedesktop.org.xml.in.h:92
+msgid "JBuilder project"
+msgstr "Proyecto JBuilder"
+
+#: freedesktop.org.xml.in.h:93
+msgid "JNG image"
+msgstr "Imagen JNG"
+
+#: freedesktop.org.xml.in.h:94
+msgid "JPEG image"
+msgstr "Imagen JPEG"
+
+#: freedesktop.org.xml.in.h:95
+msgid "JPEG-2000 image"
+msgstr "Imagen JPEG-2000"
+
+#: freedesktop.org.xml.in.h:96
+msgid "Java archive"
+msgstr "Archivo Java"
+
+#: freedesktop.org.xml.in.h:97
+msgid "Java byte code"
+msgstr "Bytecode Java"
+
+#: freedesktop.org.xml.in.h:98
+msgid "Java class"
+msgstr "Clase Java"
+
+#: freedesktop.org.xml.in.h:99
+msgid "Java source code"
+msgstr "Código fuente en Java"
+
+#: freedesktop.org.xml.in.h:100
+msgid "Javascript program"
+msgstr "Programa en Javascript"
+
+#: freedesktop.org.xml.in.h:101
+msgid "KChart chart"
+msgstr "Gráfica de KChart"
+
+#: freedesktop.org.xml.in.h:102
+msgid "KFormula formula"
+msgstr "Fórmula de KFormula"
+
+#: freedesktop.org.xml.in.h:103
+msgid "KIllustrator drawing"
+msgstr "Dibujo de KIllustrator"
+
+#: freedesktop.org.xml.in.h:104
+msgid "KPovModeler scene"
+msgstr "Escena de KPovModeler"
+
+#: freedesktop.org.xml.in.h:105
+msgid "KPresenter presentation"
+msgstr "Presentación de KPresenter"
+
+#: freedesktop.org.xml.in.h:106
+msgid "KSpread spreadsheet"
+msgstr "Hoja de cálculo de KSpread"
+
+#: freedesktop.org.xml.in.h:107
+msgid "KSpread spreadsheet (encrypted)"
+msgstr "Hoja de cálculo de KSpread (cifrada)"
+
+#: freedesktop.org.xml.in.h:108
+msgid "KWord document"
+msgstr "Documento de KWord"
+
+#: freedesktop.org.xml.in.h:109
+msgid "KWord document (encrypted)"
+msgstr "Documento de KWord (cifrado)"
+
+#: freedesktop.org.xml.in.h:110
+msgid "Karbon14 drawing"
+msgstr "Dibujo de Karbon14"
+
+#: freedesktop.org.xml.in.h:111
+msgid "Kivio flowchart"
+msgstr "Diagrama de flujo de Kivio"
+
+#: freedesktop.org.xml.in.h:112
+msgid "Kontour drawing"
+msgstr "Dibujo de Kontour"
+
+#: freedesktop.org.xml.in.h:113
+msgid "Korn shell script"
+msgstr "Script en Korn shell"
+
+#: freedesktop.org.xml.in.h:114
+msgid "Krita document"
+msgstr "Documento de Krita"
+
+#: freedesktop.org.xml.in.h:115
+msgid "Kugar document"
+msgstr "Documento de Kugar"
+
+#: freedesktop.org.xml.in.h:116
+msgid "LHA archive"
+msgstr "Archivo LHA"
+
+#: freedesktop.org.xml.in.h:117
+msgid "LHZ archive"
+msgstr "Archivo LHZ"
+
+#: freedesktop.org.xml.in.h:118
+msgid "LIBGRX font"
+msgstr "Tipo de letra LIBGRX"
+
+#: freedesktop.org.xml.in.h:119
+msgid "LZO archive"
+msgstr "Archivo LZO"
+
+#: freedesktop.org.xml.in.h:120
+msgid "LightWave object"
+msgstr "Objeto LightWave"
+
+#: freedesktop.org.xml.in.h:121
+msgid "LightWave scene"
+msgstr "Escena LightWave"
+
+#: freedesktop.org.xml.in.h:122
+msgid "Linux PSF console font"
+msgstr "Tipo de letra de consola Linux PSF"
+
+#
+# rl0: http://www.dsic.upv.es/users/elp/maria/ISAValencia.html
+# rl0: 'literate programming' = documentación / programación documentada
+# rl0: mi apuesta será 'Haskell documentado', resultará obvio para
+# rl0: quién sepa de qué va la cosa (tiene además una extensión propia, 'lhs').
+#: freedesktop.org.xml.in.h:123
+msgid "Literate haskell source code"
+msgstr "Código fuente en haskell comentado"
+
+#: freedesktop.org.xml.in.h:124
+msgid "Lotus 1-2-3 spreadsheet"
+msgstr "Hoja de cálculo de Lotus 1-2-3"
+
+#: freedesktop.org.xml.in.h:125
+msgid "Lotus AmiPro document"
+msgstr "Documento de Lotus AmiPro"
+
+#: freedesktop.org.xml.in.h:126
+msgid "LyX document"
+msgstr "Documento de LyX"
+
+#: freedesktop.org.xml.in.h:127
+msgid "MIDI audio"
+msgstr "Audio MIDI"
+
+#: freedesktop.org.xml.in.h:128
+msgid "MNG animation"
+msgstr "Animación MNG"
+
+#: freedesktop.org.xml.in.h:129
+msgid "MP3 ShoutCast playlist"
+msgstr "Lista de reproducción MP3 ShoutCast"
+
+#: freedesktop.org.xml.in.h:130
+msgid "MP3 audio"
+msgstr "Audio MP3"
+
+#: freedesktop.org.xml.in.h:131
+msgid "MP3 audio (streamed)"
+msgstr "Audio MP3 (en flujo)"
+
+#: freedesktop.org.xml.in.h:132
+msgid "MP3 playlist"
+msgstr "Lista de reproducción MP3"
+
+#: freedesktop.org.xml.in.h:133
+msgid "MPEG video"
+msgstr "Vídeo MPEG"
+
+#: freedesktop.org.xml.in.h:134
+msgid "MSX ROM"
+msgstr "ROM de MSX"
+
+#: freedesktop.org.xml.in.h:135
+msgid "Macintosh AppleDouble-encoded file"
+msgstr "Fichero Macintosh codificado con AppleDouble"
+
+#: freedesktop.org.xml.in.h:136
+msgid "Macintosh BinHex-encoded file"
+msgstr "Fichero Macintosh codificado con BinHex"
+
+#: freedesktop.org.xml.in.h:137
+msgid "Macintosh MacBinary file"
+msgstr "Fichero de Macintosh MacBinary"
+
+#: freedesktop.org.xml.in.h:138
+msgid "Macintosh Quickdraw/PICT drawing"
+msgstr "Dibujo de Macintosh Quickdraw/PICT"
+
+#: freedesktop.org.xml.in.h:139
+msgid "Macintosh StuffIt archive"
+msgstr "Archivo Macintosh StuffIt"
+
+#: freedesktop.org.xml.in.h:140
+msgid "MagicPoint presentation"
+msgstr "Presentación de MagicPoint"
+
+#: freedesktop.org.xml.in.h:141
+msgid "Makefile"
+msgstr "Makefile"
+
+#: freedesktop.org.xml.in.h:142
+msgid "MathML document"
+msgstr "Documento MathML"
+
+#: freedesktop.org.xml.in.h:143
+msgid "Matroska video"
+msgstr "Vídeo Matroska"
+
+#: freedesktop.org.xml.in.h:144
+msgid "Microsoft ASF video"
+msgstr "Vídeo Microsoft ASF"
+
+#: freedesktop.org.xml.in.h:145
+msgid "Microsoft AVI video"
+msgstr "Vídeo Microsoft AVI"
+
+#: freedesktop.org.xml.in.h:146
+msgid "Microsoft Excel spreadsheet"
+msgstr "Hoja de cálculo de Microsoft Excel"
+
+#: freedesktop.org.xml.in.h:147
+msgid "Microsoft Office drawing"
+msgstr "Dibujo de Microsoft Office"
+
+#: freedesktop.org.xml.in.h:148
+msgid "Microsoft PowerPoint presentation"
+msgstr "Presentación de Microsoft PowerPoint"
+
+#: freedesktop.org.xml.in.h:149
+msgid "Microsoft WMF file"
+msgstr "Fichero Microsoft WMF"
+
+#: freedesktop.org.xml.in.h:150
+msgid "Microsoft WMV video"
+msgstr "Vídeo Microsoft WMV"
+
+#: freedesktop.org.xml.in.h:151
+msgid "Microsoft Windows icon"
+msgstr "Icono de Microsoft Windows"
+
+#: freedesktop.org.xml.in.h:152
+msgid "Microsoft Word document"
+msgstr "Documento de Microsoft Word"
+
+#: freedesktop.org.xml.in.h:153
+msgid "Microsoft Write document"
+msgstr "Documento de Microsoft Write"
+
+#: freedesktop.org.xml.in.h:154
+msgid "Mozilla bookmarks"
+msgstr "Marcadores de Mozilla"
+
+#: freedesktop.org.xml.in.h:155
+msgid "NES ROM"
+msgstr "ROM de NES"
+
+#: freedesktop.org.xml.in.h:156
+msgid "Nautilus link"
+msgstr "Enlace de Nautilus"
+
+#: freedesktop.org.xml.in.h:157
+msgid "Netscape bookmarks"
+msgstr "Marcadores de Netscape"
+
+#: freedesktop.org.xml.in.h:158
+msgid "Nintendo64 ROM"
+msgstr "ROM de Nintendo64"
+
+#: freedesktop.org.xml.in.h:159
+msgid "Nullsoft video"
+msgstr "Vídeo de Nullsoft"
+
+#: freedesktop.org.xml.in.h:160
+msgid "ODA document"
+msgstr "Documento ODA"
+
+#: freedesktop.org.xml.in.h:161
+msgid "OLE2 compound document storage"
+msgstr "Almacenamiento de documentos compuestos OLE2"
+
+#: freedesktop.org.xml.in.h:162
+msgid "Objective-C source code"
+msgstr "Código fuente en Objective-C"
+
+#: freedesktop.org.xml.in.h:163
+msgid "Ogg Vorbis audio"
+msgstr "Audio Ogg Vorbis"
+
+#: freedesktop.org.xml.in.h:164
+msgid "OpenOffice.org Calc spreadsheet"
+msgstr "Hoja de cálculo de OpenOffice.org Calc"
+
+#: freedesktop.org.xml.in.h:165
+msgid "OpenOffice.org Calc spreadsheet template"
+msgstr "Plantilla de hoja de cálculo de OpenOffice.org Calc"
+
+#: freedesktop.org.xml.in.h:166
+msgid "OpenOffice.org Draw drawing"
+msgstr "Dibujo de OpenOffice Draw"
+
+#: freedesktop.org.xml.in.h:167
+msgid "OpenOffice.org Draw drawing template"
+msgstr "Plantilla de dibujo de OpenOffice.org Draw"
+
+#: freedesktop.org.xml.in.h:168
+msgid "OpenOffice.org Impress presentation"
+msgstr "Presentación de OpenOffice.org Impress"
+
+#: freedesktop.org.xml.in.h:169
+msgid "OpenOffice.org Impress presentation template"
+msgstr "Plantilla de presentación de OpenOffice.org Impress"
+
+#: freedesktop.org.xml.in.h:170
+msgid "OpenOffice.org Math formula"
+msgstr "Fórmula de OpenOffice.org Math"
+
+#: freedesktop.org.xml.in.h:171
+msgid "OpenOffice.org Writer document"
+msgstr "Documento de OpenOffice.org Writer"
+
+#: freedesktop.org.xml.in.h:172
+msgid "OpenOffice.org Writer document template"
+msgstr "Plantila de documento de OpenOffice.org Writer"
+
+#: freedesktop.org.xml.in.h:173
+msgid "OpenOffice.org Writer global document"
+msgstr "Documento global de OpenOffice.org Writer"
+
+#: freedesktop.org.xml.in.h:174
+msgid "OpenType font"
+msgstr "Tipo de letra OpenType"
+
+#: freedesktop.org.xml.in.h:175
+msgid "PCF font"
+msgstr "Tipo de letra PCF"
+
+#: freedesktop.org.xml.in.h:176
+msgid "PCM audio"
+msgstr "Audio PCM"
+
+#: freedesktop.org.xml.in.h:177
+msgid "PDF document"
+msgstr "Documento PDF"
+
+#: freedesktop.org.xml.in.h:178
+msgid "PEF executable"
+msgstr "Ejecutable PEF"
+
+#: freedesktop.org.xml.in.h:179
+msgid "PGN chess game"
+msgstr "Juego de ajedrez PGN"
+
+#: freedesktop.org.xml.in.h:180
+msgid "PGP keys"
+msgstr "Claves PGP"
+
+#: freedesktop.org.xml.in.h:181
+msgid "PGP message"
+msgstr "Mensaje PGP"
+
+#: freedesktop.org.xml.in.h:182
+msgid "PGP/MIME-encrypted message header"
+msgstr "Cabecera de mensaje cifrado PGP/MIME"
+
+#: freedesktop.org.xml.in.h:183
+msgid "PHP script"
+msgstr "Script en PHP"
+
+#: freedesktop.org.xml.in.h:184
+msgid "PKCS#12 certificate bundle"
+msgstr "Lote de certificados PCKS#12"
+
+#: freedesktop.org.xml.in.h:185
+msgid "PNG image"
+msgstr "Imagen PNG"
+
+#: freedesktop.org.xml.in.h:186
+msgid "PNM image"
+msgstr "Imagen PNM"
+
+#: freedesktop.org.xml.in.h:187
+msgid "Palm OS database"
+msgstr "Base da datos de Palm OS"
+
+#: freedesktop.org.xml.in.h:188
+msgid "Palmpilot database/document"
+msgstr "Documento/base de datos de Palmpilot"
+
+#: freedesktop.org.xml.in.h:189
+msgid "Pascal source code"
+msgstr "Código fuente en Pascal"
+
+#: freedesktop.org.xml.in.h:190
+msgid "Pathetic Writer document"
+msgstr "Documento de Pathetic Writer"
+
+#: freedesktop.org.xml.in.h:191
+msgid "Perl script"
+msgstr "Script en Perl"
+
+#: freedesktop.org.xml.in.h:192
+msgid "PhotoCD image"
+msgstr "Imagen de PhotoCD"
+
+#: freedesktop.org.xml.in.h:193
+msgid "Photoshop image"
+msgstr "Imagen de Photoshop"
+
+#: freedesktop.org.xml.in.h:194
+msgid "Playlist"
+msgstr "Lista de reproducción"
+
+#: freedesktop.org.xml.in.h:195
+msgid "Portable Bitmap File Format"
+msgstr "Formato de fichero en mapa de bits portable"
+
+#: freedesktop.org.xml.in.h:196
+msgid "Portable Graymap File Format"
+msgstr "Formato de fichero en mapa de grises portable"
+
+#: freedesktop.org.xml.in.h:197
+msgid "Portable Pixmap File Format"
+msgstr "Formato de fichero de pixmap portable"
+
+#: freedesktop.org.xml.in.h:198
+msgid "PostScript document"
+msgstr "Documento PostScript"
+
+#: freedesktop.org.xml.in.h:199
+msgid "PostScript document (gzip-compressed)"
+msgstr "Documento PostScript (comprimido con gzip)"
+
+#: freedesktop.org.xml.in.h:200
+msgid "Python bytecode"
+msgstr "Bytecode Python"
+
+#: freedesktop.org.xml.in.h:201
+msgid "Python script"
+msgstr "Script en Python"
+
+#: freedesktop.org.xml.in.h:202
+msgid "Qt Designer file"
+msgstr "Fichero de Qt Designer"
+
+#: freedesktop.org.xml.in.h:203
+msgid "Qt Meta Object file"
+msgstr "Fichero Qt Meta Object"
+
+#: freedesktop.org.xml.in.h:204
+msgid "Quattro Pro spreadsheet"
+msgstr "Hoja de cálculo Quattro Pro"
+
+#: freedesktop.org.xml.in.h:205
+msgid "QuickTime video"
+msgstr "Vídeo QuickTime"
+
+#: freedesktop.org.xml.in.h:206
+msgid "Quicken document"
+msgstr "Documento de Quicken"
+
+#: freedesktop.org.xml.in.h:207
+msgid "RAR archive"
+msgstr "Archivo RAR"
+
+#: freedesktop.org.xml.in.h:208
+msgid "RDF Site Summary"
+msgstr "Resumen de sitio RDF"
+
+#: freedesktop.org.xml.in.h:209
+msgid "README document"
+msgstr "Documento README"
+
+#: freedesktop.org.xml.in.h:210
+msgid "RGB image"
+msgstr "Imagen RGB"
+
+#: freedesktop.org.xml.in.h:211
+msgid "RIFF audio"
+msgstr "Audio RIFF"
+
+#: freedesktop.org.xml.in.h:212
+msgid "RPM package"
+msgstr "Paquete RPM"
+
+#: freedesktop.org.xml.in.h:213
+msgid "RealAudio broadcast"
+msgstr "Difusión RealAudio"
+
+#: freedesktop.org.xml.in.h:214
+msgid "RealAudio/Video document"
+msgstr "Documento RealAudio/Video"
+
+#: freedesktop.org.xml.in.h:215
+msgid "RealVideo video"
+msgstr "Vídeo RealVideo"
+
+#: freedesktop.org.xml.in.h:216
+msgid "Resource Description Framework (RDF) file"
+msgstr "Fichero de marco de trabajo de descripción de recursos (RDF)"
+
+#: freedesktop.org.xml.in.h:217
+msgid "Rich Text Format"
+msgstr "Formato de texto enriquecido"
+
+#: freedesktop.org.xml.in.h:218
+msgid "Ruby script"
+msgstr "Script en Ruby"
+
+# rl0: mi apuesta persoal serí­a Bitmap codificado RLE
+#: freedesktop.org.xml.in.h:219
+msgid "Run Length Encoded bitmap"
+msgstr "Mapa de bits con codificación del tamaño durante la ejecución"
+
+#: freedesktop.org.xml.in.h:220
+msgid "S/MIME file"
+msgstr "Fichero S/MIME"
+
+#: freedesktop.org.xml.in.h:221
+msgid "SGI video"
+msgstr "Vídeo SGI"
+
+#: freedesktop.org.xml.in.h:222
+msgid "SGML document"
+msgstr "Documento SGML"
+
+#: freedesktop.org.xml.in.h:223
+msgid "SMS/Game Gear ROM"
+msgstr "Rom de SMS/Game Gear"
+
+#: freedesktop.org.xml.in.h:224
+msgid "SQL code"
+msgstr "Código SQL"
+
+#: freedesktop.org.xml.in.h:225
+msgid "SUN Rasterfile image"
+msgstr "Imagen de SUN Rasterfile"
+
+#: freedesktop.org.xml.in.h:226
+msgid "SV4 CPIO archive"
+msgstr "Archivo SV4 CPIO"
+
+#: freedesktop.org.xml.in.h:227
+msgid "SV4 CPIP archive (with CRC)"
+msgstr "Archivo SV4 CPIP (con CRC)"
+
+#: freedesktop.org.xml.in.h:228
+msgid "Scheme source code"
+msgstr "Código fuente en Scheme"
+
+#: freedesktop.org.xml.in.h:229
+msgid "Scream Tracker 3 audio"
+msgstr "Audio Scream Tracker 3"
+
+#: freedesktop.org.xml.in.h:230
+msgid "Scream Tracker audio"
+msgstr "Audio Scream Tracker"
+
+#: freedesktop.org.xml.in.h:231
+msgid "Scream Tracker instrument"
+msgstr "Instrumento Scream Tracker"
+
+#: freedesktop.org.xml.in.h:232
+msgid "Setext document"
+msgstr "Documento Setext"
+
+#: freedesktop.org.xml.in.h:233
+msgid "Shockwave Flash file"
+msgstr "Fichero Shockwave Flash"
+
+#: freedesktop.org.xml.in.h:234
+msgid "Siag spreadsheet"
+msgstr "Hoja de cálculo de Siag"
+
+#: freedesktop.org.xml.in.h:235
+msgid "Silicon Graphics IRIS image"
+msgstr "Imagen de Silicon Graphics IRIS"
+
+#: freedesktop.org.xml.in.h:236
+msgid "Speech document"
+msgstr "Documento Speech"
+
+#: freedesktop.org.xml.in.h:237
+msgid "Speedo font"
+msgstr "Tipo de letra Speedo"
+
+#: freedesktop.org.xml.in.h:238
+msgid "Spreadsheet interchange document"
+msgstr "Documento de intercambio de hojas de cálculo"
+
+#: freedesktop.org.xml.in.h:239
+msgid "Stampede package"
+msgstr "Paquete Stampede"
+
+#: freedesktop.org.xml.in.h:240
+msgid "StarCalc spreadsheet"
+msgstr "Hoja de cálculo de StarCalc"
+
+#: freedesktop.org.xml.in.h:241
+msgid "StarChart chart"
+msgstr "Gráfica de StarChart"
+
+#: freedesktop.org.xml.in.h:242
+msgid "StarDraw drawing"
+msgstr "Dibujo de StarDraw"
+
+#: freedesktop.org.xml.in.h:243
+msgid "StarImpress presentation"
+msgstr "Presentación de StarImpress"
+
+#: freedesktop.org.xml.in.h:244
+msgid "StarMail email"
+msgstr "Correo electrónico de StarMail"
+
+#: freedesktop.org.xml.in.h:245
+msgid "StarMath formula"
+msgstr "Fórmula de StarMath"
+
+#: freedesktop.org.xml.in.h:246
+msgid "StarWriter document"
+msgstr "Documento de StarWriter"
+
+#: freedesktop.org.xml.in.h:247
+msgid "SunOS News font"
+msgstr "Tipo de letra SunOS News"
+
+#: freedesktop.org.xml.in.h:248
+msgid "Synchronized Multimedia Integration Language"
+msgstr "Lenguaje de integración de multimedia sincronizada (SMIL)"
+
+#: freedesktop.org.xml.in.h:249
+msgid "TGIF document"
+msgstr "Documento TGIF"
+
+#: freedesktop.org.xml.in.h:250
+msgid "TIFF image"
+msgstr "Imagen TIFF"
+
+#: freedesktop.org.xml.in.h:251
+msgid "TarGA image"
+msgstr "Imagen TarGA"
+
+#: freedesktop.org.xml.in.h:252
+msgid "Tcl script"
+msgstr "Script en Tcl"
+
+#: freedesktop.org.xml.in.h:253
+msgid "TeX DVI document"
+msgstr "Documento TeX DVI"
+
+#: freedesktop.org.xml.in.h:254
+msgid "TeX document"
+msgstr "Documento TeX"
+
+#: freedesktop.org.xml.in.h:255
+msgid "TeX font"
+msgstr "Tipo de letra de TeX"
+
+#: freedesktop.org.xml.in.h:256
+msgid "TeX font metrics"
+msgstr "Métricas de tipo de letra de TeX"
+
+#: freedesktop.org.xml.in.h:257
+msgid "TeXInfo document"
+msgstr "Documento TeXInfo"
+
+#: freedesktop.org.xml.in.h:258
+msgid "ToutDoux document"
+msgstr "Documento de ToutDoux"
+
+#: freedesktop.org.xml.in.h:259
+msgid "Troff ME input document"
+msgstr "Documento de entrada Troff ME"
+
+#: freedesktop.org.xml.in.h:260
+msgid "Troff MM input document"
+msgstr "Documento de entrada Troff MM"
+
+#: freedesktop.org.xml.in.h:261
+msgid "Troff MS input document"
+msgstr "Documento de entrada Troff MS"
+
+#: freedesktop.org.xml.in.h:262
+msgid "Troff document"
+msgstr "Documento troff"
+
+#: freedesktop.org.xml.in.h:263
+msgid "Troff document (with manpage macros)"
+msgstr "Documento troff (con macros de páginas de manual)"
+
+#: freedesktop.org.xml.in.h:264
+msgid "TrueType font"
+msgstr "Tipo de letra TrueType"
+
+#: freedesktop.org.xml.in.h:265
+msgid "Truevision Targa image"
+msgstr "Imagen Targa Truevision"
+
+#: freedesktop.org.xml.in.h:266
+msgid "ULAW (Sun) audio"
+msgstr "Audio ULAW (Sun)"
+
+#: freedesktop.org.xml.in.h:267
+msgid "UNIX-compressed file"
+msgstr "Fichero comprimido de Unix"
+
+#: freedesktop.org.xml.in.h:268
+msgid "Unidata NetCDF document"
+msgstr "Documento de Unidata NetCDF"
+
+#: freedesktop.org.xml.in.h:269
+msgid "Usenet news message"
+msgstr "Mensaje de noticias de Usenet"
+
+#: freedesktop.org.xml.in.h:270
+msgid "V font"
+msgstr "Tipo de letra V"
+
+#: freedesktop.org.xml.in.h:271
+msgid "VOC audio"
+msgstr "Audio VOC"
+
+#: freedesktop.org.xml.in.h:272
+msgid "VRML document"
+msgstr "Documento VRML"
+
+#: freedesktop.org.xml.in.h:273
+msgid "Vivo video"
+msgstr "Vídeo Vivo"
+
+#: freedesktop.org.xml.in.h:274
+msgid "WAIS source code"
+msgstr "Código fuente WAIS"
+
+#: freedesktop.org.xml.in.h:275
+msgid "WAV audio"
+msgstr "Audio WAV"
+
+#: freedesktop.org.xml.in.h:276
+msgid "WML document"
+msgstr "Documento WML"
+
+#: freedesktop.org.xml.in.h:277
+msgid "Wavelet video"
+msgstr "Vídeo Wavelet"
+
+#: freedesktop.org.xml.in.h:278
+msgid "Windows BMP image"
+msgstr "Imagen BMP de Windows"
+
+#: freedesktop.org.xml.in.h:279
+msgid "Windows cursor"
+msgstr "Cursor de Windows"
+
+#: freedesktop.org.xml.in.h:280
+msgid "WordPerfect document"
+msgstr "Documento de WordPerfect"
+
+#: freedesktop.org.xml.in.h:281
+msgid "WordPerfect/Drawperfect image"
+msgstr "Imagen de WordPerfect/Drawperfect"
+
+#: freedesktop.org.xml.in.h:282
+msgid "X BitMap image"
+msgstr "Imagen BitMap de X"
+
+#: freedesktop.org.xml.in.h:283
+msgid "X PixMap image"
+msgstr "Imagen PixMap de X"
+
+#: freedesktop.org.xml.in.h:284
+msgid "X window image"
+msgstr "Imagen de X window"
+
+#: freedesktop.org.xml.in.h:285
+msgid "X-Motif UIL table"
+msgstr "Tabla de X-Motif UIL"
+
+#: freedesktop.org.xml.in.h:286
+msgid "XBEL bookmarks"
+msgstr "Marcadores XBEL"
+
+#: freedesktop.org.xml.in.h:287
+msgid "XFig image"
+msgstr "Imagen de XFig"
+
+#: freedesktop.org.xml.in.h:288
+msgid "XHTML page"
+msgstr "Página XHTML"
+
+#: freedesktop.org.xml.in.h:289
+msgid "XML Metadata Interchange file"
+msgstr "Fichero de intercambio de metadatos XML"
+
+#: freedesktop.org.xml.in.h:290
+msgid "XSL Formating Object file"
+msgstr "Fichero de objeto de formateo XSL"
+
+#: freedesktop.org.xml.in.h:291
+msgid "XSLT stylesheet"
+msgstr "Hoja de estilo XSLT"
+
+#: freedesktop.org.xml.in.h:292
+msgid "ZIP archive"
+msgstr "Archivo ZIP"
+
+#: freedesktop.org.xml.in.h:293
+msgid "active server page"
+msgstr "página de servidor activo"
+
+#: freedesktop.org.xml.in.h:294
+msgid "application log"
+msgstr "registro de aplicación"
+
+#: freedesktop.org.xml.in.h:295
+msgid "author list"
+msgstr "lista de autores"
+
+#: freedesktop.org.xml.in.h:296
+msgid "backup file"
+msgstr "fichero de respaldo"
+
+#: freedesktop.org.xml.in.h:297
+msgid "block device"
+msgstr "dispositivo de bloques"
+
+#: freedesktop.org.xml.in.h:298
+msgid "bzip archive"
+msgstr "archivo bzip"
+
+#: freedesktop.org.xml.in.h:299
+msgid "character device"
+msgstr "dispositivo de caracteres"
+
+#: freedesktop.org.xml.in.h:300
+msgid "compound document"
+msgstr "documento compuesto"
+
+#: freedesktop.org.xml.in.h:301
+msgid "compound documents"
+msgstr "documentos compuestos"
+
+#: freedesktop.org.xml.in.h:302
+msgid "dBASE document"
+msgstr "documento dBASE"
+
+#: freedesktop.org.xml.in.h:303
+msgid "desktop configuration file"
+msgstr "fichero de configuración del escritorio"
+
+#: freedesktop.org.xml.in.h:304
+msgid "detached OpenPGP signature"
+msgstr "firma OpenPGP separada"
+
+#: freedesktop.org.xml.in.h:305
+msgid "detached S/MIME signature"
+msgstr "firma S/MIME separada"
+
+#: freedesktop.org.xml.in.h:306
+msgid "differences between files"
+msgstr "diferencias entre ficheros"
+
+#: freedesktop.org.xml.in.h:307
+msgid "directory information file"
+msgstr "fichero de información de directorio"
+
+#: freedesktop.org.xml.in.h:308
+msgid "document type definition"
+msgstr "definición de tipo de documento"
+
+#: freedesktop.org.xml.in.h:309
+msgid "eXtensible Markup Language document"
+msgstr "documento de lenguaje de etiquetas extensible (XML)"
+
+#: freedesktop.org.xml.in.h:310
+msgid "electronic business card"
+msgstr "tarjeta de negocios electrónica"
+
+#: freedesktop.org.xml.in.h:311
+msgid "email headers"
+msgstr "cabeceras de correo electrónico"
+
+#: freedesktop.org.xml.in.h:312
+msgid "email message"
+msgstr "mensaje de correo electrónico"
+
+#: freedesktop.org.xml.in.h:313
+msgid "empty document"
+msgstr "documento vacío"
+
+#: freedesktop.org.xml.in.h:314
+msgid "encrypted message"
+msgstr "mensaje cifrado"
+
+#: freedesktop.org.xml.in.h:315
+msgid "enriched text document"
+msgstr "documento de texto enriquecido"
+
+#: freedesktop.org.xml.in.h:316
+msgid "executable"
+msgstr "ejecutable"
+
+#: freedesktop.org.xml.in.h:317
+msgid "folder"
+msgstr "carpeta"
+
+#: freedesktop.org.xml.in.h:318
+msgid "font"
+msgstr "tipo de letra"
+
+#: freedesktop.org.xml.in.h:319
+msgid "generic font file"
+msgstr "tipo de letra genérico"
+
+#: freedesktop.org.xml.in.h:320
+msgid "gtar archive"
+msgstr "archivo gtar"
+
+#: freedesktop.org.xml.in.h:321
+msgid "gzip archive"
+msgstr "archivo gzip"
+
+#: freedesktop.org.xml.in.h:322
+msgid "help page"
+msgstr "página de ayuda"
+
+#: freedesktop.org.xml.in.h:323
+msgid "iCalendar file"
+msgstr "fichero de iCalendar"
+
+#: freedesktop.org.xml.in.h:324
+msgid "iPod firmware"
+msgstr "firmware de iPod"
+
+#: freedesktop.org.xml.in.h:325
+msgid "mail delivery report"
+msgstr "informe de entrega de correo"
+
+#: freedesktop.org.xml.in.h:326
+msgid "mail disposition report"
+msgstr "informe de disposición de correo"
+
+#: freedesktop.org.xml.in.h:327
+msgid "mail system report"
+msgstr "informe del sistema de correo"
+
+#: freedesktop.org.xml.in.h:328
+msgid "manual page (compressed)"
+msgstr "página de manual (comprimida)"
+
+#: freedesktop.org.xml.in.h:329
+msgid "message catalog"
+msgstr "catálogo de mensajes"
+
+#: freedesktop.org.xml.in.h:330
+msgid "message digest"
+msgstr "recopilación de mensajes"
+
+#: freedesktop.org.xml.in.h:331
+msgid "message in several formats"
+msgstr "mensaje en varios formatos"
+
+#: freedesktop.org.xml.in.h:332
+msgid "message translation template"
+msgstr "plantilla de traducción de mensajes"
+
+#: freedesktop.org.xml.in.h:333
+msgid "mount point"
+msgstr "punto de montaje"
+
+#: freedesktop.org.xml.in.h:334
+msgid "object code"
+msgstr "código objeto"
+
+#: freedesktop.org.xml.in.h:335
+msgid "packed font file"
+msgstr "fichero de tipo de letra empaquetada"
+
+#: freedesktop.org.xml.in.h:336
+msgid "partial email message"
+msgstr "mensaje de correo electrónico parcial"
+
+#: freedesktop.org.xml.in.h:337
+msgid "pipe"
+msgstr "tubería"
+
+#: freedesktop.org.xml.in.h:338
+msgid "plain text document"
+msgstr "documento de texto sencillo"
+
+#: freedesktop.org.xml.in.h:339
+msgid "profiler results"
+msgstr "resultados del perfilador"
+
+#: freedesktop.org.xml.in.h:340
+msgid "program crash data"
+msgstr "datos de cuelgue de programa"
+
+#: freedesktop.org.xml.in.h:341
+msgid "raw CD image"
+msgstr "imagen de CD en bruto"
+
+#: freedesktop.org.xml.in.h:342
+msgid "reference to remote file"
+msgstr "referencia a un fichero remoto"
+
+#: freedesktop.org.xml.in.h:343
+msgid "rejected patch"
+msgstr "parche rechazado"
+
+#. Note: text/uri-list is reserved by the XDND protocol!
+#: freedesktop.org.xml.in.h:345
+msgid "resource location"
+msgstr "ubicación del recurso"
+
+#: freedesktop.org.xml.in.h:346
+msgid "rich text document"
+msgstr "documento de texto enriquecido"
+
+#: freedesktop.org.xml.in.h:347
+msgid "scalable SVG image"
+msgstr "imagen escalable SVG"
+
+#: freedesktop.org.xml.in.h:348
+msgid "shared library"
+msgstr "biblioteca compartida"
+
+#: freedesktop.org.xml.in.h:349
+msgid "shared library (la)"
+msgstr "biblioteca compartida (la)"
+
+#: freedesktop.org.xml.in.h:350
+msgid "shell archive"
+msgstr "archivo shell"
+
+#: freedesktop.org.xml.in.h:351
+msgid "shell script"
+msgstr "script en shell"
+
+#: freedesktop.org.xml.in.h:352
+msgid "signed message"
+msgstr "mensaje firmado"
+
+#: freedesktop.org.xml.in.h:353
+msgid "socket"
+msgstr "socket"
+
+#: freedesktop.org.xml.in.h:354
+msgid "software author credits"
+msgstr "créditos a los autores del software"
+
+#: freedesktop.org.xml.in.h:355
+msgid "software installation instructions"
+msgstr "instrucciones de instalación del software"
+
+#: freedesktop.org.xml.in.h:356
+msgid "software license terms"
+msgstr "términos de licencia del software"
+
+#: freedesktop.org.xml.in.h:357
+msgid "stream of data (server push)"
+msgstr "flujo de datos (por iniciativa del servidor)"
+
+#: freedesktop.org.xml.in.h:358
+msgid "symbolic link"
+msgstr "enlace simbólico"
+
+#: freedesktop.org.xml.in.h:359
+msgid "tar archive"
+msgstr "archivo tar"
+
+#: freedesktop.org.xml.in.h:360
+msgid "tar archive (LZO-compressed)"
+msgstr "archivo tar (comprimido con LZO)"
+
+#: freedesktop.org.xml.in.h:361
+msgid "tar archive (bzip-compressed)"
+msgstr "archivo tar (comprimido con bzip)"
+
+#: freedesktop.org.xml.in.h:362
+msgid "tar archive (compressed)"
+msgstr "archivo tar (comprimido)"
+
+#: freedesktop.org.xml.in.h:363
+msgid "tar archive (gzip-compressed)"
+msgstr "archivo tar (comprimido con gzip)"
+
+#: freedesktop.org.xml.in.h:364
+msgid "text document (with comma-separated values)"
+msgstr "documento de texto (con valores separados por comas)"
+
+#: freedesktop.org.xml.in.h:365
+msgid "text document (with tab-separated values)"
+msgstr "documento de texto (con valores separados por tabuladores)"
+
+#: freedesktop.org.xml.in.h:366
+msgid "theme"
+msgstr "tema"
+
+#: freedesktop.org.xml.in.h:367
+msgid "translated messages"
+msgstr "mensajes traducidos"
+
+#: freedesktop.org.xml.in.h:368
+msgid "translated messages (machine-readable)"
+msgstr "mensajes traducidos (legibles por máquinas)"
+
+#: freedesktop.org.xml.in.h:369
+msgid "unknown"
+msgstr "desconocido"
+
+#: freedesktop.org.xml.in.h:370
+msgid "ustar archive"
+msgstr "archivo ustar"
+
+#: freedesktop.org.xml.in.h:371
+msgid "vCalendar interchange file"
+msgstr "fichero de intercambio vCalendar"
+
+#: freedesktop.org.xml.in.h:372
+msgid "zoo archive"
+msgstr "archivo zoo"

@@ -2016,6 +2016,10 @@ command to generate the output files.
     <glob pattern="*.tar.bz"/>
     <glob pattern="*.tar.bz2"/>
   </mime-type>
+  <mime-type type="application/x-cd-image">
+    <comment>A raw CD image</comment>
+    <glob pattern="*.iso"/>
+  </mime-type>
   <mime-type type="application/x-cgi">
     <comment>CGI program</comment>
     <comment xml:lang="az">SGI proqramı</comment>

@@ -786,7 +786,7 @@ static void getstr(const char *s, GString *out)
  */
 static void parse_int_value(int bytes, const char *in, const char *in_mask,
 			    GString *parsed_value, char **parsed_mask,
-			    GError **error)
+			    gboolean big_endian, GError **error)
 {
 	char *end;
 	char *out_mask = NULL;
@@ -802,7 +802,7 @@ static void parse_int_value(int bytes, const char *in, const char *in_mask,
 
 	for (b = 0; b < bytes; b++)
 	{
-		int shift = (bytes - b - 1) * 8;
+		int shift = (big_endian ? (bytes - b - 1) : b) * 8;
 		g_string_append_c(parsed_value, (value >> shift) & 0xff);
 	}
 
@@ -910,13 +910,13 @@ static void parse_value(const char *type, const char *in, const char *in_mask,
 
 	if (strstr(type, "16"))
 		parse_int_value(2, in, in_mask, parsed_value, parsed_mask,
-				error);
+				type[0] == 'b', error);
 	else if (strstr(type, "32"))
 		parse_int_value(4, in, in_mask, parsed_value, parsed_mask,
-				error);
+				type[0] == 'b', error);
 	else if (strcmp(type, "byte") == 0)
 		parse_int_value(1, in, in_mask, parsed_value, parsed_mask,
-				error);
+				FALSE, error);
 	else if (strcmp(type, "string") == 0)
 	{
 		getstr(in, parsed_value);

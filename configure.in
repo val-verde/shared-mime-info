@@ -23,8 +23,8 @@ dnl Check pkg-config is installed
 PKG_CHECK_MODULES(ALL, \
 		  libxml-2.0 >= 2.4 \
                   glib-2.0 >= 2.0.0)
-AC_SUBST (ALL_CFLAGS)
-AC_SUBST (ALL_LIBS)
+AC_SUBST(ALL_CFLAGS)
+AC_SUBST(ALL_LIBS)
 
 dnl Use -Wall, etc if possible
 [

@@ -43,6 +43,8 @@ const char *media_types[] = {
 };
 
 typedef struct _Type Type;
+typedef struct _Magic Magic;
+typedef struct _Match Match;
 
 struct _Type {
 	char *media;
@@ -50,6 +52,22 @@ struct _Type {
 
 	/* contains xmlNodes for elements that are being copied to the output */
 	xmlDoc	*output;
+};
+
+struct _Magic {
+	int priority;
+	Type *type;
+	GList *matches;
+};
+
+struct _Match {
+	long range_start;
+	int range_length;
+	char word_size;
+	int data_length;
+	char *data;
+	char *mask;
+	GList *matches;
 };
 
 /* Maps MIME type names to Types */
@@ -62,7 +80,11 @@ static GHashTable *namespace_hash = NULL;
 static GHashTable *globs_hash = NULL;
 
 /* 'magic' nodes */
-static GPtrArray *magic = NULL;
+static GPtrArray *magic_array = NULL;
+
+/* Static prototypes */
+static Magic *magic_new(xmlNode *node, Type *type, GError **error);
+
 
 static void usage(const char *name)
 {
@@ -81,7 +103,7 @@ static void free_type(gpointer data)
 	g_free(type);
 }
 
-static Type *get_type(const char *name)
+static Type *get_type(const char *name, GError **error)
 {
 	xmlNode *root;
 	xmlNs *ns;
@@ -92,7 +114,8 @@ static Type *get_type(const char *name)
 	slash = strchr(name, '/');
 	if (!slash || strchr(slash + 1, '/'))
 	{
-		g_warning(_("Invalid MIME-type '%s'\n"), name);
+		g_set_error(error, MIME_ERROR, 0,
+				_("Invalid MIME-type '%s'"), name);
 		return NULL;
 	}
 
@@ -120,7 +143,7 @@ static Type *get_type(const char *name)
 			return type;
 	}
 
-	g_warning("Unknown media type in type '%s'\n", name);
+	g_print("* Warning: Unknown media type in type '%s'\n", name);
 
 	return type;
 }
@@ -137,74 +160,6 @@ static gboolean match_node(xmlNode *node,
 		return strcmp(node->name, localName) == 0 && !node->ns;
 }
 
-static gboolean has_non_empty_attr(xmlNode *node, const gchar *name,
-				   GError **error)
-{
-	guchar *value;
-
-	g_return_val_if_fail(error != NULL, FALSE);
-
-	/* xmlHasNsProp is broken */
-
-	value = xmlGetNsProp(node, name, NULL);
-	if (!value)
-	{
-		g_set_error(error, MIME_ERROR, 0,
-				_("Missing '%s' attribute in <match>"), name);
-		return FALSE;
-	}
-
-	if (!*value)
-		g_set_error(error, MIME_ERROR, 0,
-				_("'%s' attribute in <match> is empty"), name);
-
-	xmlFree(value);
-	
-	return !*error;
-}
-
-static gboolean validate_magic(xmlNode *parent, GError **error)
-{
-	xmlNode *node;
-
-	g_return_val_if_fail(error != NULL, FALSE);
-	g_return_val_if_fail(*error == NULL, FALSE);
-
-	for (node = parent->xmlChildrenNode; node; node = node->next)
-	{
-		if (node->type != XML_ELEMENT_NODE)
-			continue;
-
-		if (node->ns == NULL || strcmp(node->ns->href, FREE_NS) != 0)
-		{
-			g_set_error(error, MIME_ERROR, 0,
-				_("Element found with non-freedesktop.org "
-				  "namespace"));
-			return FALSE;
-		}
-
-		if (strcmp(node->name, "match") != 0)
-		{
-			g_set_error(error, MIME_ERROR, 0,
-				_("Expected <match> element, but found "
-				  "<%s> instead"), node->name);
-			return FALSE;
-		}
-				
-		if (!has_non_empty_attr(node, "offset", error))
-			return FALSE;
-		if (!has_non_empty_attr(node, "type", error))
-			return FALSE;
-		if (!has_non_empty_attr(node, "value", error))
-			return FALSE;
-
-		if (!validate_magic(node, error))
-			return FALSE;
-	}
-
-	return TRUE;
-}
-
 static int get_priority(xmlNode *node)
 {
 	char *prio_string;
@@ -213,7 +168,11 @@ static int get_priority(xmlNode *node)
 	prio_string = xmlGetNsProp(node, "priority", NULL);
 	if (prio_string)
 	{
-		p = atoi(prio_string);
+		char *end;
+
+		p = strtol(prio_string, &end, 10);
+		if (*prio_string == '\0' || *end != '\0')
+			p = -1;
 		xmlFree(prio_string);
 		if (p < 0 || p > 100)
 			return -1;
@@ -294,28 +253,17 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 	}
 	else if (strcmp(field->name, "magic") == 0)
 	{
-		xmlNode *copy;
-		gchar *type_name;
+		Magic *magic;
 
-		if (get_priority(field) == -1)
-			g_set_error(error, MIME_ERROR, 0,
-				_("Bad priority in <magic> element"));
-		else if (validate_magic(field, error))
+		magic = magic_new(field, type, error);
+
+		if (!*error)
 		{
-			g_return_val_if_fail(error == NULL || *error == NULL,
-					     FALSE);
-
-			copy = xmlCopyNode(field, 1);
-			type_name = g_strconcat(type->media, "/",
-						type->subtype, NULL);
-			xmlSetNsProp(copy, NULL, "type", type_name);
-			g_free(type_name);
-
-			g_ptr_array_add(magic, copy);
+			g_return_val_if_fail(magic != NULL, FALSE);
+			g_ptr_array_add(magic_array, magic);
 		}
 		else
-			g_return_val_if_fail(error == NULL || *error != NULL,
-					     FALSE);
+			g_return_val_if_fail(magic == NULL, FALSE);
 	}
 	else if (strcmp(field->name, "comment") == 0)
 		return FALSE;	/* Copy through */
@@ -340,7 +288,7 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 			field->name);
 	}
 	
-	return !error;
+	return !*error;
 }
 
 static gboolean has_lang(xmlNode *node, const char *lang)
@@ -390,46 +338,32 @@ static void remove_old(Type *type, xmlNode *new)
 	xmlFree(lang);
 }
 
-static void load_type(xmlNode *node)
+static void load_type(Type *type, xmlNode *node, GError **error)
 {
-	char *type_name;
-	Type *type;
 	xmlNode *field;
-	
-	type_name = xmlGetNsProp(node, "type", NULL);
-	if (!type_name)
-	{
-		g_warning(_("mime-type element has no 'type' attribute\n"));
-		xmlFree(type_name);
-		return;
-	}
 
-	type = get_type(type_name);
-	xmlFree(type_name);
-
-	if (!type)
-		return;
+	g_return_if_fail(type != NULL);
+	g_return_if_fail(node != NULL);
+	g_return_if_fail(error != NULL);
 
 	for (field = node->xmlChildrenNode; field; field = field->next)
 	{
 		xmlNode *copy;
-		GError *error = NULL;
 
 		if (field->type != XML_ELEMENT_NODE)
 			continue;
 
 		if (field->ns && strcmp(field->ns->href, FREE_NS) == 0)
-			if (process_freedesktop_node(type, field, &error))
-				continue;
-
-		if (error)
 		{
-			g_print("* Error in type '%s/%s':\n"
-				"*   %s.\n", type->media, type->subtype,
-				error->message);
-			g_error_free(error);
-			continue;
+			if (process_freedesktop_node(type, field, error))
+			{
+				g_return_if_fail(*error == NULL);
+				continue;
+			}
 		}
+
+		if (*error)
+			return;
 
 		copy = xmlDocCopyNode(field, type->output, 1);
 		
@@ -481,12 +415,52 @@ static void load_source_file(const char *filename)
 
 	for (node = root->xmlChildrenNode; node; node = node->next)
 	{
+		Type *type = NULL;
+		guchar *type_name = NULL;
+		GError *error = NULL;
+
 		if (node->type != XML_ELEMENT_NODE)
 			continue;
 
-		CHECK_NODE(node, FREE_NS, "mime-type");
+		if (!match_node(node, FREE_NS, "mime-type"))
+			g_set_error(&error, MIME_ERROR, 0,
+				_("Excepted <mime-type>, but got wrong name "
+				  "or namespace"));
 
-		load_type(node);
+		if (!error)
+		{
+			type_name = xmlGetNsProp(node, "type", NULL);
+
+			if (!type_name)
+				g_set_error(&error, MIME_ERROR, 0,
+					_("<mime-type> element has no 'type' "
+					  "attribute"));
+		}
+
+		if (type_name)
+		{
+			type = get_type(type_name, &error);
+			xmlFree(type_name);
+		}
+
+		if (!error)
+		{
+			g_return_if_fail(type != NULL);
+			load_type(type, node, &error);
+		}
+		else
+			g_return_if_fail(type == NULL);
+
+		if (error)
+		{
+			g_print("* Error in type '%s/%s'\n"
+				"*   (in %s):\n"
+				"*   %s.\n",
+				type ? type->media : _("unknown"),
+				type ? type->subtype : _("unknown"),
+				filename, error->message);
+			g_error_free(error);
+		}
 	}
 out:
 	xmlFreeDoc(doc);
@@ -627,35 +601,20 @@ static void write_out_type(gpointer key, gpointer value, gpointer data)
 	g_free(filename);
 }
 
-/* (this is really inefficient) */
 static gint cmp_magic(gconstpointer a, gconstpointer b)
 {
-	xmlNode *aa = *(xmlNode **) a;
-	xmlNode *bb = *(xmlNode **) b;
-	char *type_a, *type_b;
-	int pa, pb;
+	Magic *aa = *(Magic **) a;
+	Magic *bb = *(Magic **) b;
 	int retval;
 
-	g_return_val_if_fail(strcmp(aa->name, "magic") == 0, 0);
-	g_return_val_if_fail(strcmp(bb->name, "magic") == 0, 0);
-
-	pa = get_priority(aa);
-	pb = get_priority(bb);
-
-	if (pa > pb)
+	if (aa->priority > bb->priority)
 		return -1;
-	else if (pa < pb)
+	else if (aa->priority < bb->priority)
 		return 1;
 
-	type_a = xmlGetNsProp(aa, "type", NULL);
-	type_b = xmlGetNsProp(bb, "type", NULL);
-	g_return_val_if_fail(type_a != NULL, 0);
-	g_return_val_if_fail(type_b != NULL, 0);
-
-	retval = strcmp(type_a, type_b);
-
-	xmlFree(type_a);
-	xmlFree(type_b);
+	retval = strcmp(aa->type->media, bb->type->media);
+	if (!retval)
+		retval = strcmp(aa->type->subtype, bb->type->subtype);
 
 	return retval;
 }
@@ -911,123 +870,281 @@ static void parse_value(const char *type, const char *in, const char *in_mask,
 		g_assert_not_reached();
 }
 
-static void write_magic_children(FILE *stream, xmlNode *parent, int indent,
-				 const guchar *mime_type)
+static Match *match_new(void)
 {
+	Match *match;
+
+	match = g_new(Match, 1);
+	match->range_start = 0;
+	match->range_length = 1;
+	match->word_size = 1;
+	match->data_length = 0;
+	match->data = NULL;
+	match->mask = NULL;
+	match->matches = NULL;
+
+	return match;
+}
+
+static void match_free(Match *match)
+{
+	GList *next;
+
+	g_return_if_fail(match != NULL);
+
+	for (next = match->matches; next; next = next->next)
+		match_free((Match *) next->data);
+
+	g_list_free(match->matches);
+
+	g_free(match->data);
+	g_free(match->mask);
+
+	g_free(match);
+}
+
+/* Sets match->range_start and match->range_length */
+static void match_offset(Match *match, xmlNode *node, GError **error)
+{
+	char *offset = NULL;
+	char *end;
+
+	offset = xmlGetNsProp(node, "offset", NULL);
+	if (offset == NULL || !*offset)
+	{
+		g_set_error(error, MIME_ERROR, 0, "Missing 'offset' attribute");
+		goto err;
+	}
+
+	match->range_start = strtol(offset, &end, 10);
+	if (*end == ':' && end[1] && match->range_start >= 0)
+	{
+		int last;
+
+		last = strtol(end + 1, &end, 10);
+		if (*end == '\0' && last >= match->range_start)
+			match->range_length = last - match->range_start + 1;
+		else
+			g_set_error(error, MIME_ERROR, 0, "Invalid offset");
+	}
+	else if (*end != '\0')
+		g_set_error(error, MIME_ERROR, 0, "Invalid offset");
+err:
+	xmlFree(offset);
+}
+
+/* Sets match->data, match->data_length and match->mask */
+static void match_value_and_mask(Match *match, xmlNode *node, GError **error)
+{
+	char *mask = NULL;
+	char *value = NULL;
+	char *type = NULL;
+	char *parsed_mask = NULL;
 	GString *parsed_value;
-	xmlNode *node;
+
+	type = xmlGetNsProp(node, "type", NULL);
+	g_return_if_fail(type != NULL);
+
+	mask = xmlGetNsProp(node, "mask", NULL);
+	value = xmlGetNsProp(node, "value", NULL);
 
 	parsed_value = g_string_new(NULL);
 
+	parse_value(type, value, mask, parsed_value,
+			&parsed_mask, error);
+
+	if (*error)
+	{
+		g_string_free(parsed_value, TRUE);
+		g_return_if_fail(parsed_mask == NULL);
+	}
+	else
+	{
+		match->data = parsed_value->str;
+		match->data_length = parsed_value->len;
+		match->mask = parsed_mask;
+
+		g_string_free(parsed_value, FALSE);
+	}
+
+	if (mask)
+		xmlFree(mask);
+	if (value)
+		xmlFree(value);
+	xmlFree(type);
+}
+
+/* Sets match->word_size */
+static void match_word_size(Match *match, xmlNode *node, GError **error)
+{
+	char *type;
+
+	type = xmlGetNsProp(node, "type", NULL);
+
+	if (!type)
+	{
+		g_set_error(error, MIME_ERROR, 0,
+			_("Missing 'type' attribute in <match>"));
+		return;
+	}
+
+	if (strcmp(type, "host16") == 0)
+		match->word_size = 2;
+	else if (strcmp(type, "host32") == 0)
+		match->word_size = 4;
+	else if (!*error && strcmp(type, "big16") &&
+			strcmp(type, "big32") &&
+			strcmp(type, "little16") && strcmp(type, "little32") &&
+			strcmp(type, "string") && strcmp(type, "byte"))
+	{
+		g_set_error(error, MIME_ERROR, 0,
+				"Unknown magic type '%s'", type);
+	}
+
+	xmlFree(type);
+}
+
+/* Turn the list of child nodes of 'parent' into a list of Matches */
+static GList *build_matches(xmlNode *parent, GError **error)
+{
+	xmlNode *node;
+	GList *out = NULL;
+
+	g_return_val_if_fail(error != NULL, NULL);
+
 	for (node = parent->xmlChildrenNode; node; node = node->next)
 	{
-		GError *error = NULL;
-		char *offset, *mask, *value, *type, *end;
-		char *parsed_mask = NULL;
-		int word_size = 1;
-		long range_start;
-		int range_length = 1;
+		Match *match;
 
 		if (node->type != XML_ELEMENT_NODE)
 			continue;
 
-		offset = xmlGetNsProp(node, "offset", NULL);
-		mask = xmlGetNsProp(node, "mask", NULL);
-		value = xmlGetNsProp(node, "value", NULL);
-		type = xmlGetNsProp(node, "type", NULL);
-
-		g_return_if_fail(offset != NULL);
-		g_return_if_fail(value != NULL);
-		g_return_if_fail(type != NULL);
-
-		range_start = strtol(offset, &end, 10);
-		if (!*offset)
-			g_set_error(&error, MIME_ERROR, 0, "Empty offset");
-		else if (*end == ':' && end[1])
+		if (node->ns == NULL || strcmp(node->ns->href, FREE_NS) != 0)
 		{
-			int range_end;
-
-			range_end = strtol(end + 1, &end, 10);
-			if (*end == '\0')
-				range_length = range_end - range_start + 1;
-			else
-				g_set_error(&error, MIME_ERROR, 0,
-						"Invalid offset");
-		}
-		else if (*end != '\0')
-			g_set_error(&error, MIME_ERROR, 0, "Invalid offset");
-
-		if (strcmp(type, "host16") == 0)
-			word_size = 2;
-		else if (strcmp(type, "host32") == 0)
-			word_size = 4;
-		else if (!error && strcmp(type, "big16") &&
-			 strcmp(type, "big32") &&
-			 strcmp(type, "little16") && strcmp(type, "little32") &&
-			 strcmp(type, "string") && strcmp(type, "byte"))
-		{
-			g_set_error(&error, MIME_ERROR, 0,
-				    "Unknown magic type '%s'", type);
+			g_set_error(error, MIME_ERROR, 0,
+				_("Element found with non-freedesktop.org "
+				  "namespace"));
+			break;
 		}
 
-		g_string_truncate(parsed_value, 0);
-		if (!error)
-			parse_value(type, value, mask,
-				    parsed_value, &parsed_mask, &error);
-
-		if (error)
+		if (strcmp(node->name, "match") != 0)
 		{
-			g_print("* Error in magic for type '%s':\n"
-				"*   %s\n", mime_type, error->message);
-			g_error_free(error);
-			continue;
+			g_set_error(error, MIME_ERROR, 0,
+				_("Expected <match> element, but found "
+				  "<%s> instead"), node->name);
+			break;
 		}
+
+		match = match_new();
+		match_offset(match, node, error);
+		if (!*error)
+			match_word_size(match, node, error);
+		if (!*error)
+			match_value_and_mask(match, node, error);
+
+		if (*error)
+		{
+			match_free(match);
+			break;
+		}
+
+		out = g_list_append(out, match);
+
+		match->matches = build_matches(node, error);
+		if (*error)
+			break;
+	}
+
+	return out;
+}
+
+static void magic_free(Magic *magic)
+{
+	GList *next;
+
+	g_return_if_fail(magic != NULL);
+
+	for (next = magic->matches; next; next = next->next)
+		match_free((Match *) next->data);
+	g_list_free(magic->matches);
+
+	g_free(magic);
+}
+
+static Magic *magic_new(xmlNode *node, Type *type, GError **error)
+{
+	Magic *magic = NULL;
+	int prio;
+
+	g_return_val_if_fail(node != NULL, NULL);
+	g_return_val_if_fail(type != NULL, NULL);
+	g_return_val_if_fail(error != NULL, NULL);
+
+	prio = get_priority(node);
+
+	if (prio == -1)
+	{
+		g_set_error(error, MIME_ERROR, 0,
+			_("Bad priority (%d) in <magic> element"), prio);
+	}
+	else
+	{
+		magic = g_new(Magic, 1);
+		magic->priority = prio;
+		magic->type = type;
+		magic->matches = build_matches(node, error);
+
+		if (*error)
+		{
+			gchar *old = (*error)->message;
+			magic_free(magic);
+			magic = NULL;
+			(*error)->message = g_strconcat(
+				_("Error in <match> element: "), old, NULL);
+			g_free(old);
+		}
+	}
+
+	return magic;
+}
+
+static void write_magic_children(FILE *stream, GList *matches, int indent)
+{
+	GList *next;
+
+	for (next = matches; next; next = next->next)
+	{
+		Match *match = (Match *) next->data;
 
 		if (indent)
-			fprintf(stream, "%d>%ld=", indent, range_start);
+			fprintf(stream, "%d>%ld=", indent, match->range_start);
 		else
-			fprintf(stream, ">%ld=", range_start);
+			fprintf(stream, ">%ld=", match->range_start);
 
-		write16(stream, parsed_value->len);
-		fwrite(parsed_value->str, parsed_value->len, 1, stream);
-		if (parsed_mask)
+		write16(stream, match->data_length);
+		fwrite(match->data, match->data_length, 1, stream);
+		if (match->mask)
 		{
 			fputc('&', stream);
-			fwrite(parsed_mask, parsed_value->len, 1, stream);
+			fwrite(match->mask, match->data_length, 1, stream);
 		}
-		if (word_size != 1)
-			fprintf(stream, "~%d", word_size);
-		if (range_length != 1)
-			fprintf(stream, "+%d", range_length);
+		if (match->word_size != 1)
+			fprintf(stream, "~%d", match->word_size);
+		if (match->range_length != 1)
+			fprintf(stream, "+%d", match->range_length);
 
 		fputc('\n', stream);
 
-		xmlFree(offset);
-		xmlFree(mask);
-		xmlFree(value);
-		xmlFree(type);
-
-		write_magic_children(stream, node, indent + 1, mime_type);
+		write_magic_children(stream, match->matches, indent + 1);
 	}
-
-	g_string_free(parsed_value, TRUE);
 }
 
-static void write_magic(FILE *stream, xmlNode *node)
+static void write_magic(FILE *stream, Magic *magic)
 {
-	char *type;
-	int prio;
+	fprintf(stream, "[%d:%s/%s]\n", magic->priority,
+		magic->type->media, magic->type->subtype);
 
-	prio = get_priority(node);
-	g_return_if_fail(prio >= 0 && prio <= 100);
-
-	type = xmlGetNsProp(node, "type", NULL);
-	g_return_if_fail(type != NULL);
-	fprintf(stream, "[%d:%s]\n", prio, type);
-
-	write_magic_children(stream, node, 0, type);
-
-	xmlFree(type);
+	write_magic_children(stream, magic->matches, 0);
 }
 
 static void delete_old_types(const gchar *mime_dir)
@@ -1144,6 +1261,13 @@ int main(int argc, char **argv)
 	mime_dir = argv[optind];
 	package_dir = g_strconcat(mime_dir, "/packages", NULL);
 
+	if (access(mime_dir, W_OK))
+	{
+		g_printerr(_("%s: I don't have write permission on %s.\n"
+			     "Try rerunning me as root.\n"), argv[0], mime_dir);
+		return EXIT_FAILURE;
+	}
+
 	g_print("***\n* Updating MIME database in %s...\n", mime_dir);
 	
 	if (access(package_dir, F_OK))
@@ -1159,7 +1283,7 @@ int main(int argc, char **argv)
 					g_free, NULL);
 	namespace_hash = g_hash_table_new_full(g_str_hash, g_str_equal,
 					g_free, NULL);
-	magic = g_ptr_array_new();
+	magic_array = g_ptr_array_new();
 
 	scan_source_dir(package_dir);
 	g_free(package_dir);
@@ -1197,13 +1321,15 @@ int main(int argc, char **argv)
 					magic_path);
 		fwrite("MIME-Magic\0\n", 1, 12, stream);
 
-		if (magic->len)
-			g_ptr_array_sort(magic, cmp_magic);
-		for (i = 0; i < magic->len; i++)
+		if (magic_array->len)
+			g_ptr_array_sort(magic_array, cmp_magic);
+		for (i = 0; i < magic_array->len; i++)
 		{
-			xmlNode *node = (xmlNode *) magic->pdata[i];
+			Magic *magic = (Magic *) magic_array->pdata[i];
 
-			write_magic(stream, node);
+			write_magic(stream, magic);
+
+			magic_free(magic);
 		}
 		fclose(stream);
 
@@ -1227,12 +1353,7 @@ int main(int argc, char **argv)
 		g_free(ns_path);
 	}
 
-	{
-		int i;
-		for (i = 0; i < magic->len; i++)
-			xmlFreeNode((xmlNode *) magic->pdata[i]);
-		g_ptr_array_free(magic, TRUE);
-	}
+	g_ptr_array_free(magic_array, TRUE);
 
 	g_hash_table_destroy(types);
 	g_hash_table_destroy(globs_hash);

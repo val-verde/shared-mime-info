@@ -16,7 +16,7 @@ dnl i18n
 AC_PROG_INTLTOOL
 GETTEXT_PACKAGE=shared-mime-info
 AC_SUBST(GETTEXT_PACKAGE)
-ALL_LINGUAS="az bg cs cy de el eo es eu fi fr hu it ja ko ms nl nn no pl pt pt_BR sq sr sv uk zh_CN"
+ALL_LINGUAS="az bg cs cy de el eo es eu fi fr hu it ja ko ms nb nl nn no pl pt pt_BR sq sr sv uk zh_CN"
 AM_GLIB_GNU_GETTEXT
 
 dnl Check pkg-config is installed

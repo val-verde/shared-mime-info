@@ -590,6 +590,16 @@ The above example would create a magic file starting with:
 		</para>
 	</sect2>
 	<sect2>
+		<title>Storing the MIME type using Extended Attributes</title>
+		<para>
+An implementation may also get a file's MIME type from the <userinput>user.mime_type</userinput> extended
+attribute. <!-- The attr(5) man page documents this name --> The type given here should normally be used
+in preference to any guessed type, since the user is able to set it explicitly. Applications may choose to
+set the type when saving files. Since many applications and filesystems do not support extended attributes,
+implementations should not rely on this method being available.
+		</para>
+	</sect2>
+	<sect2>
 		<title>Security implications</title>
 		<para>
 The system described in this document is intended to allow different programs

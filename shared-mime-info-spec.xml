@@ -371,8 +371,8 @@ easily detect the change. The rules from the directories in this list take
 precedence over conflicting rules from earlier directories. If a directory
 contains a file called <filename>user.mimeinfo</filename> then it should be
 read after all other files in that directory. This is to allow the user's
-settings to take precedence over all others &mdash; GUI tools for editing
-the MIME types will edit <filename>~/.mime/mime-info/user.mimeinfo</filename>.
+settings to take precedence over all others. GUI tools for editing the MIME
+types will edit <filename>~/.mime/mime-info/user.mimeinfo</filename>.
 		</para>
 	</sect2>
 	<sect2>

@@ -74,7 +74,6 @@ command to generate the output files.
       <match type="string" value="\x31\xbe\x00\x00" offset="0"/>
       <match type="string" value="PO^Q`" offset="0"/>
       <match type="string" value="\376\067\0\043" offset="0"/>
-      <match type="string" value="\320\317\021\340\241\261" offset="0"/>
       <match type="string" value="\333\245-\0\0\0" offset="0"/>
       <match type="string" value="Microsoft Word 6.0 Document" offset="2080"/>
       <match type="string" value="Microsoft Word document data" offset="2112"/>
@@ -1062,6 +1061,14 @@ command to generate the output files.
       <match type="string" value="OggS" offset="0"/>
     </magic>
     <glob pattern="*.ogg"/>
+  </mime-type>
+  <!-- These are typically compount document of various types, so prefer
+       extensions for these -->
+  <mime-type type="application/x-ole-storage">
+    <_comment>OLE2 compound document storage</_comment>
+    <magic priority="50">
+      <match type="string" value="\320\317\021\340\241\261\032\341" offset="0"/>
+    </magic>
   </mime-type>
   <mime-type type="application/x-oleo">
     <_comment>GNU Oleo spreadsheet</_comment>
@@ -2084,6 +2091,10 @@ command to generate the output files.
   <mime-type type="text/x-csrc">
     <_comment>C source code</_comment>
     <glob pattern="*.c"/>
+  </mime-type>
+  <mime-type type="text/x-csharpsrc">
+    <_comment>C# source code</_comment>
+    <glob pattern="*.cs"/>
   </mime-type>
   <mime-type type="text/x-dcl">
     <_comment>DCL script</_comment>

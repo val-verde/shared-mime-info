@@ -1,3 +1,11 @@
+2004-03-03  Alexander Larsson  <alexl@redhat.com>
+
+	* freedesktop.org.xml.in:
+	Add C# mimetype
+	Add application/x-ole-storage mimetype, remove
+	OLE storage match from application/msword, since it
+	matches all sorts of document types using OLE.
+
 Mon Feb 23 23:35:37 2004  Jonathan Blandford  <jrb@gnome.org>
 
 	* po/no.po: new file from Kjartan Maraas.

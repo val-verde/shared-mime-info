@@ -592,14 +592,22 @@ If several patterns match then the longest pattern SHOULD be used. In
 particular, files with multiple extensions (such as
 <filename>Data.tar.gz</filename>) MUST match the longest sequence of extensions
 (eg '*.tar.gz' in preference to '*.gz'). Literal patterns (eg, 'Makefile') must
-be matched before all others. It is acceptable to match patterns of the form
-'*.text' before other wildcarded patterns (that is, to special-case extensions
-using a hash table).
+be matched before all others. It is suggested that patterns beginning with `*.'
+and containing no other special characters (`*?[') should be placed in a hash
+table for efficient lookup, since this covers the majority of the patterns. Thus,
+patterns of this form should be matched before other wildcarded patterns.
 		</para>
 		<para>
 There may be several rules mapping to the same type. They should all be merged.
 If the same pattern is defined twice, then they MUST be ordered by the
 directory the rule came from, as described above.
+		</para>
+		<para>
+Lines beginning with `#' are comments and should be ignored. Everything from
+the `:' character to the newline is part of the pattern; spaces should not be
+stripped. The file is in the UTF-8 encoding. The format of the glob pattern
+is as for fnmatch(3). The format does not allow a pattern to contain a literal
+newline character, but this is not expected to be a problem.
 		</para>
 		<para>
 Common types (such as MS Word Documents) will be provided in the X Desktop

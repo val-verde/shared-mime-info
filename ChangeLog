@@ -1,5 +1,11 @@
 2004-12-08  Christophe Fergeau  <teuf@gnome.org>
 
+	* freedesktop.org.xml:
+	* freedesktop.org.xml.in: added application/x-zip-compressed as an 
+	alias to application/zip.
+
+2004-12-08  Christophe Fergeau  <teuf@gnome.org>
+
 	* Makefile.am: don't override CFLAGS, fixes #2033
 
 2004-12-08  Christophe Fergeau  <teuf@gnome.org>

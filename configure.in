@@ -9,7 +9,7 @@ AM_CONFIG_HEADER(config.h)
 
 GETTEXT_PACKAGE=shared-mime-info
 AC_SUBST(GETTEXT_PACKAGE)
-ALL_LINGUAS="hu nl sv sr"
+ALL_LINGUAS="fi fr hu nl nn sv sr"
 AM_GLIB_GNU_GETTEXT
 
 dnl Check pkg-config is installed
@@ -48,11 +48,8 @@ else
 fi
 ])
 
-dnl Check for libxml
+dnl Check for libxml and glib
 REQUIRE(libxml-2.0, 2.4.0)
-
-dnl Check for glib (if anyone from KDE has a problem with this, you can write
-dnl the replacement code yourself ;-)
 REQUIRE(glib-2.0, 2.0.0)
 
 dnl Checks for programs.

@@ -1,0 +1,26 @@
+shared-mime-info	Version 0.9	29-Jul-2002
+
+Thomas Leonard <tal00r@ecs.soton.ac.uk>
+
+
+Changes since version 0.8:
+
+* Removed bashism in uninstall rule (reported by Filip Van Raemdonck).
+
+* Added manpage (Filip Van Raemdonck).
+
+* Require libxml 2.4.0 (not sure if it's needed, but play it safe).
+
+* Workaround libxml problem where copying nodes lost the namespace
+  (reported by Stephen Watson and Jesse Wagner)
+
+* Added skeleton description for 'action' element.
+
+* Re-worded spec section on user preferences (Filip Van Raemdonck).
+
+* Added extra authors to spec.
+
+* Changed SHOULD to MUST for requiring shared package (suggested by
+  Filip Van Raemdonck).
+
+* Added some error checking to make sure output is writeable.

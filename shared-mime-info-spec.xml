@@ -733,11 +733,15 @@ email attachment, an extended attribute or some other means) then that should
 be used instead of guessing.
 				</para></listitem>
 				<listitem><para>
-If no explicit type is present, the glob rules should be applied to the name to
+If no explicit type is present, magic rules with a priority of 80 or more
+should be tried next. These rules have a very low false-positive rate.
+				</para></listitem>
+				<listitem><para>
+If there is still no match, the glob rules should be applied to the name to
 get the type.
 				</para></listitem>
 				<listitem><para>
-If no glob rules match, the magic rules should be tried next.
+If no glob rules match, the remaining magic rules should be tried next.
 				</para></listitem>
 				<listitem><para>
 If nothing matches, the default type of application/octet-stream should be used
@@ -749,7 +753,7 @@ as text since these can appear in UTF-8 text, unlike control characters.
 			</itemizedlist>
 		</para>
 		<para>
-There are several reasons for checking the glob patterns before the magic.
+There are several reasons for checking most of the glob patterns before the magic.
 Some applications don't check the magic at all, and this makes it more likely
 that both will get the same type. Users can easily understand why calling their
 text file <filename>README.mp3</filename> makes the system think it's an MP3,

@@ -7,10 +7,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info 0.12\n"
+"Project-Id-Version: shared-mime-info 0.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-11-11 13:33-0500\n"
-"PO-Revision-Date: 2004-03-22 15:34+0100\n"
+"POT-Creation-Date: 2004-08-30 20:01+0200\n"
+"PO-Revision-Date: 2004-08-31 14:30+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: freedesktop.org.xml.in.h:1
 msgid "3D Studio image"
-msgstr "Obrázek aplikace 3D Studio"
+msgstr "Obrázek 3D Studio"
 
 #: freedesktop.org.xml.in.h:2
 msgid "AIFC audio"
@@ -38,1398 +38,1468 @@ msgid "ANIM animation"
 msgstr "Animace ANIM"
 
 #: freedesktop.org.xml.in.h:6
+msgid "AR archive"
+msgstr "Archiv AR"
+
+#: freedesktop.org.xml.in.h:7
 msgid "ARJ archive"
 msgstr "Archiv ARJ"
 
-#: freedesktop.org.xml.in.h:7
+#: freedesktop.org.xml.in.h:8
 msgid "AVI video"
 msgstr "Video AVI"
 
-#: freedesktop.org.xml.in.h:8
+#: freedesktop.org.xml.in.h:9
 msgid "AWK script"
 msgstr "Skript AWK"
 
-#: freedesktop.org.xml.in.h:9
-msgid "AbiWord Document"
+#: freedesktop.org.xml.in.h:10
+msgid "AbiWord document"
 msgstr "Dokument AbiWord"
 
-#: freedesktop.org.xml.in.h:10
-msgid "Ada sources"
-msgstr "Zdrojový kód Ada"
-
 #: freedesktop.org.xml.in.h:11
+msgid "Ada source code"
+msgstr "Zdrojový kód v Adě"
+
+#: freedesktop.org.xml.in.h:12
 msgid "Adobe FrameMaker font"
 msgstr "Písmo Adobe FrameMaker"
 
-#: freedesktop.org.xml.in.h:12
-msgid "Adobe Illustrator Document"
+#: freedesktop.org.xml.in.h:13
+msgid "Adobe Illustrator document"
 msgstr "Dokument Adobe Illustrator"
 
-#: freedesktop.org.xml.in.h:13
+#: freedesktop.org.xml.in.h:14
 msgid "Adobe font metrics"
 msgstr "Metrika písma Adobe"
 
-#: freedesktop.org.xml.in.h:14
-msgid "Amiga soundtracker audio"
-msgstr "Zvuk Amiga soundtracker"
-
 #: freedesktop.org.xml.in.h:15
+msgid "Amiga SoundTracker audio"
+msgstr "Zvuk Amiga SoundTracker"
+
+#: freedesktop.org.xml.in.h:16
 msgid "Andrew Toolkit inset"
 msgstr "Andrew Toolkit inset"
 
-#: freedesktop.org.xml.in.h:16
-msgid "Application log file"
-msgstr "Soubor záznamu aplikace"
-
 #: freedesktop.org.xml.in.h:17
-msgid "Applix Graphics document"
-msgstr "Dokument Applix Graphics"
+msgid "Applix Graphics image"
+msgstr "Obrázek Applix Graphics"
 
 #: freedesktop.org.xml.in.h:18
-msgid "Applix Spreadsheets document"
-msgstr "Dokument Applix Spreadsheets"
+msgid "Applix Spreadsheets spreadsheet"
+msgstr "Tabulka Applix Spreadsheets"
 
 #: freedesktop.org.xml.in.h:19
 msgid "Applix Words document"
 msgstr "Dokument Applix Words"
 
 #: freedesktop.org.xml.in.h:20
-msgid "Ar Archives"
-msgstr "Archivy ar"
-
-#: freedesktop.org.xml.in.h:21
 msgid "AutoCAD image"
 msgstr "Obrázek AutoCAD"
 
-#: freedesktop.org.xml.in.h:22
-msgid "Autodesk's FLIC files"
-msgstr "Soubory FLIC Autodesku"
+#: freedesktop.org.xml.in.h:21
+msgid "AutoDesk FLIC animation"
+msgstr "Animace AutoDesk FLIC"
 
-#: freedesktop.org.xml.in.h:23
+#: freedesktop.org.xml.in.h:22
 msgid "BCPIO document"
 msgstr "Dokument BCPIO"
 
-#: freedesktop.org.xml.in.h:24
+#: freedesktop.org.xml.in.h:23
 msgid "BDF font"
 msgstr "Písmo BDF"
 
+#: freedesktop.org.xml.in.h:24
+msgid "Bibtex bibliographic data"
+msgstr "Bibliografická data bibtex"
+
 #: freedesktop.org.xml.in.h:25
-msgid "Backup file"
-msgstr "Záložní soubor"
-
-#: freedesktop.org.xml.in.h:26
-msgid "Bibliographic Data (bibtex)"
-msgstr "Bibliografická data (bibtex)"
-
-#: freedesktop.org.xml.in.h:27
 msgid "BitTorrent seed file"
 msgstr "Soubor BitTorrent"
 
-#: freedesktop.org.xml.in.h:28
-msgid "Blender file"
-msgstr "Soubor Blender"
+#: freedesktop.org.xml.in.h:26
+msgid "Blender scene"
+msgstr "Scéna Blender"
 
-#: freedesktop.org.xml.in.h:29
-msgid "Block Device"
-msgstr "Blokové zařízení"
-
-#: freedesktop.org.xml.in.h:30
-msgid "Bzip file"
-msgstr "Soubor Bzip"
-
-#: freedesktop.org.xml.in.h:31
-msgid "Bzipped Tar Archives"
-msgstr "Archivy tar komprimované bzip"
-
-#: freedesktop.org.xml.in.h:32
-msgid "C headers"
-msgstr "Hlavičky C"
-
-#: freedesktop.org.xml.in.h:33
+#: freedesktop.org.xml.in.h:27
 msgid "C shell script"
 msgstr "Skript C shellu"
 
+#: freedesktop.org.xml.in.h:28
+msgid "C source code"
+msgstr "Zdrojový kód v C"
+
+#: freedesktop.org.xml.in.h:29
+msgid "C source code header"
+msgstr "Hlavička zdrojového kódu v C"
+
+#: freedesktop.org.xml.in.h:30
+msgid "C# source code"
+msgstr "Zdrojový kód v C#"
+
+#: freedesktop.org.xml.in.h:31
+msgid "C++ source code"
+msgstr "Zdrojový kód v C++"
+
+#: freedesktop.org.xml.in.h:32
+msgid "C++ source code header"
+msgstr "Hlavička zdrojového kódu v C++"
+
+#: freedesktop.org.xml.in.h:33
+msgid "CCITT G3 fax"
+msgstr "Fax CCITT G3"
+
 #: freedesktop.org.xml.in.h:34
-msgid "C sources"
-msgstr "Zdrojový kód C"
+msgid "CGI script"
+msgstr "Skript CGI"
 
 #: freedesktop.org.xml.in.h:35
-msgid "C++ headers"
-msgstr "Hlavičky C++"
-
-#: freedesktop.org.xml.in.h:36
-msgid "C++ sources"
-msgstr "Zdrojový kód C++"
-
-#: freedesktop.org.xml.in.h:37
-msgid "CCITT g3 fax"
-msgstr "Fax CCITT g3"
-
-#: freedesktop.org.xml.in.h:38
-msgid "CGI program"
-msgstr "Program CGI"
-
-#: freedesktop.org.xml.in.h:39
 msgid "CMU raster image"
 msgstr "Rastrový obrázek CMU"
 
-#: freedesktop.org.xml.in.h:40
+#: freedesktop.org.xml.in.h:36
 msgid "CPIO archive"
 msgstr "Archiv CPIO"
 
-#: freedesktop.org.xml.in.h:41
+#: freedesktop.org.xml.in.h:37
 msgid "CPIO archive (gzip-compressed)"
 msgstr "Archiv CPIO (komprimovaný gzip)"
 
-#: freedesktop.org.xml.in.h:42
+#: freedesktop.org.xml.in.h:38
 msgid "Cascading Style Sheet"
 msgstr "Cascading Style Sheet"
 
-#: freedesktop.org.xml.in.h:43
-msgid "Character Device"
-msgstr "Znakové zařízení"
-
-#: freedesktop.org.xml.in.h:44
-msgid "Commodore 64 Audio"
+#: freedesktop.org.xml.in.h:39
+msgid "Commodore 64 audio"
 msgstr "Zvuk Commodore 64"
 
-#: freedesktop.org.xml.in.h:45
-msgid "Compound documents"
-msgstr "Složený dokument"
-
-#: freedesktop.org.xml.in.h:46
-msgid "Compressed Tar Archive"
-msgstr "Komprimovaný archiv tar"
-
-#: freedesktop.org.xml.in.h:47
+#: freedesktop.org.xml.in.h:40
 msgid "Computer Graphics Metafile"
 msgstr "Computer Graphics Metafile"
 
-#: freedesktop.org.xml.in.h:48
+#: freedesktop.org.xml.in.h:41
 msgid "Corel Draw drawing"
 msgstr "Kresba Corel Draw"
 
-#: freedesktop.org.xml.in.h:49
+#: freedesktop.org.xml.in.h:42
 msgid "DCL script"
 msgstr "Skript DCL"
 
-#: freedesktop.org.xml.in.h:50
-msgid "DER, PEM, or Netscape encoded X.509 certificate"
-msgstr "Certifikát X.509 kódovaný jako DER, PEM nebo Netscape"
+#: freedesktop.org.xml.in.h:43
+msgid "DER/PEM/Netscape-encoded X.509 certificate"
+msgstr "Certifikát X.509 kódovaný jako DER/PEM/Netscape"
 
-#: freedesktop.org.xml.in.h:51
+#: freedesktop.org.xml.in.h:44
 msgid "DOS font"
 msgstr "Písmo pro DOS"
 
-#: freedesktop.org.xml.in.h:52
-msgid "DOS/Windows program"
-msgstr "Program pro DOS/Windows"
+#: freedesktop.org.xml.in.h:45
+msgid "DOS/Windows executable"
+msgstr "Spustitelný soubor pro DOS/Windows"
 
-#: freedesktop.org.xml.in.h:53
+#: freedesktop.org.xml.in.h:46
 msgid "DSSSL document"
 msgstr "Dokument DSSSL"
 
-#: freedesktop.org.xml.in.h:54
-msgid "DXF vector graphic"
-msgstr "Vektorová grafika DXF"
+#: freedesktop.org.xml.in.h:47
+msgid "DXF vector image"
+msgstr "Vektorový obrázek DXF"
 
-#: freedesktop.org.xml.in.h:55
+#: freedesktop.org.xml.in.h:48
 msgid "Debian package"
 msgstr "Balíček Debianu"
 
-#: freedesktop.org.xml.in.h:56
-msgid "Desktop config file"
-msgstr "Soubor nastavení pracovní plochy"
-
-#: freedesktop.org.xml.in.h:57
-msgid "Detached OpenPGP signature"
-msgstr "Odpojený podpis OpenPGP"
-
-#: freedesktop.org.xml.in.h:58
-msgid "Detached S/MIME signature"
-msgstr "Odpojený podpis S/MIME"
-
-#: freedesktop.org.xml.in.h:59
+#: freedesktop.org.xml.in.h:49
 msgid "Device Independant Bitmap"
 msgstr "Bitmapa nezávislá na zařízení"
 
-#: freedesktop.org.xml.in.h:60
+#: freedesktop.org.xml.in.h:50
 msgid "Dia diagram"
 msgstr "Diagram Dia"
 
-#: freedesktop.org.xml.in.h:61
-msgid "Differences between files"
-msgstr "Rozdíly mezi soubory"
-
-#: freedesktop.org.xml.in.h:62
+#: freedesktop.org.xml.in.h:51
 msgid "Digital Imaging and Communications in Medicine image"
 msgstr "Obrázek Digital Imaging and Communications in Medicine"
 
-#: freedesktop.org.xml.in.h:63
+#: freedesktop.org.xml.in.h:52
 msgid "Digital Moving Picture Exchange image"
 msgstr "Obrázek Digital Moving Picture Exchange"
 
-#: freedesktop.org.xml.in.h:64
-msgid "Directory"
-msgstr "Adresář"
+#: freedesktop.org.xml.in.h:53
+msgid "DjVu image"
+msgstr "Obrázek DjVu"
 
-#: freedesktop.org.xml.in.h:65
+#: freedesktop.org.xml.in.h:54
 msgid "Dolby Digital audio"
 msgstr "Zvuk Dolby Digital"
 
-#: freedesktop.org.xml.in.h:66
-msgid "Dreamcast rom"
+#: freedesktop.org.xml.in.h:55
+msgid "Dreamcast ROM"
 msgstr "ROM pro Dreamcast"
 
-#: freedesktop.org.xml.in.h:67
-msgid "Egon Animator"
-msgstr "Egon Animator"
+#: freedesktop.org.xml.in.h:56
+msgid "Egon Animator animation"
+msgstr "Animace Egon Animator"
 
-#: freedesktop.org.xml.in.h:68
-msgid "Electronic Business Card"
-msgstr "Elektronická navštívenka"
-
-#: freedesktop.org.xml.in.h:69
+#: freedesktop.org.xml.in.h:57
 msgid "Emacs Lisp source code"
 msgstr "Zdrojový kód Emacs Lisp"
 
-#: freedesktop.org.xml.in.h:70
-msgid "Email message"
-msgstr "E-mailová zpráva"
-
-#: freedesktop.org.xml.in.h:71
-msgid "Empty Document"
-msgstr "Prázdný dokument"
-
-#: freedesktop.org.xml.in.h:72
+#: freedesktop.org.xml.in.h:58
 msgid "Encapsulated PostScript image"
 msgstr "Obrázek v zapouzdřeném Postscriptu"
 
-#: freedesktop.org.xml.in.h:73
+#: freedesktop.org.xml.in.h:59
 msgid "Enlightenment theme"
 msgstr "Téma pro Enlightenment"
 
-#: freedesktop.org.xml.in.h:74
-msgid "Executable"
-msgstr "Spustitelný soubor"
+#: freedesktop.org.xml.in.h:60
+msgid "FLAC audio"
+msgstr "Zvuk FLAC"
 
-#: freedesktop.org.xml.in.h:75
+#: freedesktop.org.xml.in.h:61
 msgid "FastTracker II audio"
 msgstr "Zvuk FastTracker II"
 
-#: freedesktop.org.xml.in.h:76
-msgid "FlashPix Image"
+#: freedesktop.org.xml.in.h:62
+msgid "FlashPix image"
 msgstr "Obrázek FlashPix"
 
-#: freedesktop.org.xml.in.h:77
+#: freedesktop.org.xml.in.h:63
 msgid "Flexible Image Transport System"
 msgstr "Flexible Image Transport System"
 
-#: freedesktop.org.xml.in.h:78
-msgid "Fonts"
-msgstr "Písma"
-
-#: freedesktop.org.xml.in.h:79
+#: freedesktop.org.xml.in.h:64
 msgid "Fortran source code"
 msgstr "Zdrojový kód Fortran"
 
-#: freedesktop.org.xml.in.h:80
-msgid "FrameMaker interchange document"
-msgstr "Výměnný dokument FrameMaker"
+#: freedesktop.org.xml.in.h:65
+msgid "FrameMaker MIF document"
+msgstr "Dokument FrameMaker MIF"
 
-#: freedesktop.org.xml.in.h:81
+#: freedesktop.org.xml.in.h:66
 msgid "G3 fax image"
 msgstr "Obrázek G3 fax"
 
-#: freedesktop.org.xml.in.h:82
+#: freedesktop.org.xml.in.h:67
 msgid "GIF image"
 msgstr "Obrázek GIF"
 
-#: freedesktop.org.xml.in.h:83
-msgid "GIMP native image format"
-msgstr "Nativní formát obrázků GIMP"
+#: freedesktop.org.xml.in.h:68
+msgid "GIMP image"
+msgstr "Obrázek GIMP"
 
-#: freedesktop.org.xml.in.h:84
+#: freedesktop.org.xml.in.h:69
+msgid "GIMP image (compressed)"
+msgstr "Obrázek GIMP (komprimovaný)"
+
+#: freedesktop.org.xml.in.h:70
 msgid "GMC link"
 msgstr "Odkaz GMC"
 
-#: freedesktop.org.xml.in.h:85
-msgid "GNU Oleo Spreadsheet"
+#: freedesktop.org.xml.in.h:71
+msgid "GNU Oleo spreadsheet"
 msgstr "Tabulka GNU Oleo"
 
-#: freedesktop.org.xml.in.h:86
+#: freedesktop.org.xml.in.h:72
 msgid "GNU mail message"
 msgstr "E-mailová zpráva GNU"
 
-#: freedesktop.org.xml.in.h:87
-msgid "GNUmeric spreadsheet"
-msgstr "Tabulka GNUmeric"
-
-#: freedesktop.org.xml.in.h:88
+#: freedesktop.org.xml.in.h:73
 msgid "GTK configuration"
 msgstr "Nastavení GTK"
 
-#: freedesktop.org.xml.in.h:89
-msgid "Game Boy rom"
+#: freedesktop.org.xml.in.h:74
+msgid "GTKtalog catalog"
+msgstr "Katalog GTKtalog"
+
+#: freedesktop.org.xml.in.h:75
+msgid "Game Boy ROM"
 msgstr "ROM pro Game Boy"
 
-#: freedesktop.org.xml.in.h:90
-msgid "Generic Font files"
-msgstr "Obecné soubory písem"
-
-#: freedesktop.org.xml.in.h:91
-msgid "Genesis rom"
+#: freedesktop.org.xml.in.h:76
+msgid "Genesis ROM"
 msgstr "ROM pro Genesis"
 
-#: freedesktop.org.xml.in.h:92
+#: freedesktop.org.xml.in.h:77
 msgid "Glade project"
 msgstr "Projekt Glade"
 
-#: freedesktop.org.xml.in.h:93
-msgid "GnuCash Workbook"
-msgstr "Sešit GnuCash"
+#: freedesktop.org.xml.in.h:78
+msgid "GnuCash spreadsheet"
+msgstr "Tabulka GnuCash"
 
-#: freedesktop.org.xml.in.h:94
-msgid "Gtktalog Catalogue"
-msgstr "Katalog Gtktalog"
+#: freedesktop.org.xml.in.h:79
+msgid "Gnumeric spreadsheet"
+msgstr "Tabulka Gnumeric"
 
-#: freedesktop.org.xml.in.h:95
-msgid "Gzip file"
-msgstr "Soubor gzip"
+#: freedesktop.org.xml.in.h:80
+msgid "Graphite scientific graph"
+msgstr "Vědecký graf Graphite"
 
-#: freedesktop.org.xml.in.h:96
-msgid "Gzipped PostScript File"
-msgstr "Soubor PostScript komprimovaný gzip"
-
-#: freedesktop.org.xml.in.h:97
-msgid "Gzipped Tar Archive"
-msgstr "Archiv tar komprimovaný gzip"
-
-#: freedesktop.org.xml.in.h:98
+#: freedesktop.org.xml.in.h:81
 msgid "HDF document"
 msgstr "Dokument HDF"
 
-#: freedesktop.org.xml.in.h:99
-msgid "HTML Page"
+#: freedesktop.org.xml.in.h:82
+msgid "HP Graphics Language (plotter)"
+msgstr "HP Graphics Language (plotter)"
+
+#: freedesktop.org.xml.in.h:83
+msgid "HP Printer Control Language file"
+msgstr "Soubor HP Printer Control Language"
+
+#: freedesktop.org.xml.in.h:84
+msgid "HTML page"
 msgstr "Stránka HTML"
 
-#: freedesktop.org.xml.in.h:100
+#: freedesktop.org.xml.in.h:85
 msgid "Haskell source code"
 msgstr "Zdrojový kód Haskell"
 
-#: freedesktop.org.xml.in.h:101
+#: freedesktop.org.xml.in.h:86
 msgid "IDL document"
 msgstr "Dokument IDL"
 
-#: freedesktop.org.xml.in.h:102
+#: freedesktop.org.xml.in.h:87
 msgid "IEF image"
 msgstr "Obrázek IEF"
 
-#: freedesktop.org.xml.in.h:103
+#: freedesktop.org.xml.in.h:88
 msgid "IFF image"
 msgstr "Obrázek IFF"
 
-#: freedesktop.org.xml.in.h:104
+#: freedesktop.org.xml.in.h:89
 msgid "ILBM image"
 msgstr "Obrázek ILMB"
 
-#: freedesktop.org.xml.in.h:105
+#: freedesktop.org.xml.in.h:90
 msgid "ISI video"
 msgstr "Video ISI"
 
-#: freedesktop.org.xml.in.h:106
+#: freedesktop.org.xml.in.h:91
 msgid "Impulse Tracker audio"
 msgstr "Zvuk Impulse Tracker"
 
-#: freedesktop.org.xml.in.h:107
-msgid "JBuilder Project"
+#: freedesktop.org.xml.in.h:92
+msgid "JBuilder project"
 msgstr "Projekt JBuilder"
 
-#: freedesktop.org.xml.in.h:108
+#: freedesktop.org.xml.in.h:93
 msgid "JNG image"
 msgstr "Obrázek JNG"
 
-#: freedesktop.org.xml.in.h:109
+#: freedesktop.org.xml.in.h:94
 msgid "JPEG image"
 msgstr "Obrázek JPEG"
 
-#: freedesktop.org.xml.in.h:110
-msgid "Java Archive"
+#: freedesktop.org.xml.in.h:95
+msgid "JPEG-2000 image"
+msgstr "Obrázek JPEG-2000"
+
+#: freedesktop.org.xml.in.h:96
+msgid "Java archive"
 msgstr "Archiv Java"
 
-#: freedesktop.org.xml.in.h:111
-msgid "Java Class"
-msgstr "Třída Java"
-
-#: freedesktop.org.xml.in.h:112
+#: freedesktop.org.xml.in.h:97
 msgid "Java byte code"
 msgstr "Java bajtový kód"
 
+#: freedesktop.org.xml.in.h:98
+msgid "Java class"
+msgstr "Třída Java"
+
+#: freedesktop.org.xml.in.h:99
+msgid "Java source code"
+msgstr "Zdrojový kód v Javě"
+
+#: freedesktop.org.xml.in.h:100
+msgid "Javascript program"
+msgstr "Program v Javascriptu"
+
+#: freedesktop.org.xml.in.h:101
+msgid "KChart chart"
+msgstr "Graf Chart"
+
+#: freedesktop.org.xml.in.h:102
+msgid "KFormula formula"
+msgstr "Vzorec KFormula"
+
+#: freedesktop.org.xml.in.h:103
+msgid "KIllustrator drawing"
+msgstr "Kresba KIllustrator"
+
+#: freedesktop.org.xml.in.h:104
+msgid "KPovModeler scene"
+msgstr "Scéna KPovModeler"
+
+#: freedesktop.org.xml.in.h:105
+msgid "KPresenter presentation"
+msgstr "Prezentace KPresenter"
+
+#: freedesktop.org.xml.in.h:106
+msgid "KSpread spreadsheet"
+msgstr "Tabulka KSpread"
+
+#: freedesktop.org.xml.in.h:107
+msgid "KSpread spreadsheet (encrypted)"
+msgstr "Tabulka KSpread (šifrovaná)"
+
+#: freedesktop.org.xml.in.h:108
+msgid "KWord document"
+msgstr "Dokument KWord"
+
+#: freedesktop.org.xml.in.h:109
+msgid "KWord document (encrypted)"
+msgstr "Dokument KWord (šifrovaný)"
+
+#: freedesktop.org.xml.in.h:110
+msgid "Karbon14 drawing"
+msgstr "Kresba Karbon14"
+
+#: freedesktop.org.xml.in.h:111
+msgid "Kivio flowchart"
+msgstr "Vývojový diagram Kivio"
+
+#: freedesktop.org.xml.in.h:112
+msgid "Kontour drawing"
+msgstr "Kresba Kontour"
+
 #: freedesktop.org.xml.in.h:113
-msgid "Java sources"
-msgstr "Zdrojový kód Java"
-
-#: freedesktop.org.xml.in.h:114
-msgid "KChart"
-msgstr "KChart"
-
-#: freedesktop.org.xml.in.h:115
-msgid "KFormula"
-msgstr "KFormula"
-
-#: freedesktop.org.xml.in.h:116
-msgid "KIllustrator document"
-msgstr "Dokument KIllustrator"
-
-#: freedesktop.org.xml.in.h:117
-msgid "KPovModeler File"
-msgstr "Soubor KPovModeler"
-
-#: freedesktop.org.xml.in.h:118
-msgid "KPresenter"
-msgstr "KPresenter"
-
-#: freedesktop.org.xml.in.h:119
-msgid "KSpread"
-msgstr "KSpread"
-
-#: freedesktop.org.xml.in.h:120
-msgid "KSpread Encrypted"
-msgstr "Šifrovaný KSpread"
-
-#: freedesktop.org.xml.in.h:121
-msgid "KWord"
-msgstr "KWord"
-
-#: freedesktop.org.xml.in.h:122
-msgid "KWord Encrypted"
-msgstr "Šifrovaný KWord"
-
-#: freedesktop.org.xml.in.h:123
-msgid "Karbon14 Document"
-msgstr "Dokument Karbon14"
-
-#: freedesktop.org.xml.in.h:124
-msgid "Kivio"
-msgstr "Kivio"
-
-#: freedesktop.org.xml.in.h:125
-msgid "Kontour"
-msgstr "Kontour"
-
-#: freedesktop.org.xml.in.h:126
 msgid "Korn shell script"
 msgstr "Skript Korn shellu"
 
-#: freedesktop.org.xml.in.h:127
-msgid "Krita"
-msgstr "Krita"
+#: freedesktop.org.xml.in.h:114
+msgid "Krita document"
+msgstr "Dokument Krita"
 
-#: freedesktop.org.xml.in.h:128
-msgid "Kugar Data File"
-msgstr "Soubor dat Kugar"
+#: freedesktop.org.xml.in.h:115
+msgid "Kugar document"
+msgstr "Dokument Kugar"
 
-#: freedesktop.org.xml.in.h:129
+#: freedesktop.org.xml.in.h:116
 msgid "LHA archive"
 msgstr "Archiv LHA"
 
-#: freedesktop.org.xml.in.h:130
+#: freedesktop.org.xml.in.h:117
+msgid "LHZ archive"
+msgstr "Archiv LHZ"
+
+#: freedesktop.org.xml.in.h:118
 msgid "LIBGRX font"
 msgstr "Písmo LIBGRX"
 
-#: freedesktop.org.xml.in.h:131
-msgid "Lha Archives"
-msgstr "Archivy lha"
+#: freedesktop.org.xml.in.h:119
+msgid "LZO archive"
+msgstr "Archiv LZO"
 
-#: freedesktop.org.xml.in.h:132
+#: freedesktop.org.xml.in.h:120
 msgid "LightWave object"
 msgstr "Objekt LightWave"
 
-#: freedesktop.org.xml.in.h:133
+#: freedesktop.org.xml.in.h:121
 msgid "LightWave scene"
 msgstr "Scéna LightWave"
 
-#: freedesktop.org.xml.in.h:134
+#: freedesktop.org.xml.in.h:122
 msgid "Linux PSF console font"
 msgstr "Písmo PSF pro konzolu Linuxu"
 
-#: freedesktop.org.xml.in.h:135
+#: freedesktop.org.xml.in.h:123
 msgid "Literate haskell source code"
 msgstr "Zdrojový kód Literate haskell"
 
-#: freedesktop.org.xml.in.h:136
+#: freedesktop.org.xml.in.h:124
 msgid "Lotus 1-2-3 spreadsheet"
 msgstr "Tabulka Lotus 1-2-3"
 
-#: freedesktop.org.xml.in.h:137
+#: freedesktop.org.xml.in.h:125
 msgid "Lotus AmiPro document"
 msgstr "Dokument Lotus AmiPro"
 
-#: freedesktop.org.xml.in.h:138
-msgid "LyX Document"
+#: freedesktop.org.xml.in.h:126
+msgid "LyX document"
 msgstr "Dokument LyX"
 
-#: freedesktop.org.xml.in.h:139
-msgid "Lzopped File"
-msgstr "Soubor komprimovaný lzop"
-
-#: freedesktop.org.xml.in.h:140
-msgid "Lzopped Tar Archive"
-msgstr "Archiv tar komprimovaný lzop"
-
-#: freedesktop.org.xml.in.h:141
+#: freedesktop.org.xml.in.h:127
 msgid "MIDI audio"
 msgstr "Zvuk MIDI"
 
-#: freedesktop.org.xml.in.h:142
-msgid "MNG image"
-msgstr "Obrázek MNG"
+#: freedesktop.org.xml.in.h:128
+msgid "MNG animation"
+msgstr "Animace MNG"
 
-#: freedesktop.org.xml.in.h:143
-msgid "MP3 ShoutCast Playlist"
+#: freedesktop.org.xml.in.h:129
+msgid "MP3 ShoutCast playlist"
 msgstr "Seznam skladeb MP3 ShoutCast"
 
-#: freedesktop.org.xml.in.h:144
+#: freedesktop.org.xml.in.h:130
 msgid "MP3 audio"
 msgstr "Zvuk MP3"
 
-#: freedesktop.org.xml.in.h:145
-msgid "MP3 audio playlist"
+#: freedesktop.org.xml.in.h:131
+msgid "MP3 audio (streamed)"
+msgstr "Zvuk MP3 (stream)"
+
+#: freedesktop.org.xml.in.h:132
+msgid "MP3 playlist"
 msgstr "Seznam skladeb MP3"
 
-#: freedesktop.org.xml.in.h:146
-msgid "MPEG Video"
+#: freedesktop.org.xml.in.h:133
+msgid "MPEG video"
 msgstr "Video MPEG"
 
-#: freedesktop.org.xml.in.h:147
-msgid "MPEG layer 3 audio"
-msgstr "Zvuk MPEG vrstva 3"
-
-#: freedesktop.org.xml.in.h:148
-msgid "MS ASF video"
-msgstr "Video MS ASF"
-
-#: freedesktop.org.xml.in.h:149
-msgid "MS Office Drawing"
-msgstr "Kresba MS Office"
-
-#: freedesktop.org.xml.in.h:150
-msgid "MSWindows Icons"
-msgstr "Ikony MSWindows"
-
-#: freedesktop.org.xml.in.h:151
-msgid "MSX rom"
+#: freedesktop.org.xml.in.h:134
+msgid "MSX ROM"
 msgstr "ROM pro MSX"
 
-#: freedesktop.org.xml.in.h:152
-msgid "MacBinary file"
-msgstr "Soubor MacBinary"
-
-#: freedesktop.org.xml.in.h:153
+#: freedesktop.org.xml.in.h:135
 msgid "Macintosh AppleDouble-encoded file"
 msgstr "Soubor kódovaný Macintosh AppleDouble"
 
-#: freedesktop.org.xml.in.h:154
+#: freedesktop.org.xml.in.h:136
 msgid "Macintosh BinHex-encoded file"
 msgstr "Soubor kódovaný Macintosh BinHex"
 
-#: freedesktop.org.xml.in.h:155
+#: freedesktop.org.xml.in.h:137
+msgid "Macintosh MacBinary file"
+msgstr "Soubor pro Macintosh MacBinary"
+
+#: freedesktop.org.xml.in.h:138
+msgid "Macintosh Quickdraw/PICT drawing"
+msgstr "Kresba Macintosh Quickdraw/PICT"
+
+#: freedesktop.org.xml.in.h:139
 msgid "Macintosh StuffIt archive"
 msgstr "Archiv Macintosh StuffIt"
 
-#: freedesktop.org.xml.in.h:156
+#: freedesktop.org.xml.in.h:140
+msgid "MagicPoint presentation"
+msgstr "Prezentace MagicPoint"
+
+#: freedesktop.org.xml.in.h:141
 msgid "Makefile"
 msgstr "Makefile"
 
-#: freedesktop.org.xml.in.h:157
+#: freedesktop.org.xml.in.h:142
 msgid "MathML document"
 msgstr "Dokument MathML"
 
-#: freedesktop.org.xml.in.h:158
-msgid "Message Catalog"
-msgstr "Katalog zpráv"
+#: freedesktop.org.xml.in.h:143
+msgid "Matroska video"
+msgstr "Video Matroska"
 
-#: freedesktop.org.xml.in.h:159
-msgid "Microsoft AVI Video"
+#: freedesktop.org.xml.in.h:144
+msgid "Microsoft ASF video"
+msgstr "Video Microsoft ASF"
+
+#: freedesktop.org.xml.in.h:145
+msgid "Microsoft AVI video"
 msgstr "Video Microsoft AVI"
 
-#: freedesktop.org.xml.in.h:160
+#: freedesktop.org.xml.in.h:146
 msgid "Microsoft Excel spreadsheet"
 msgstr "Tabulka Microsoft Excel"
 
-#: freedesktop.org.xml.in.h:161
-msgid "Microsoft PowerPoint document"
-msgstr "Dokument Microsoft PowerPoint"
+#: freedesktop.org.xml.in.h:147
+msgid "Microsoft Office drawing"
+msgstr "Kresba Microsoft Office"
 
-#: freedesktop.org.xml.in.h:162
+#: freedesktop.org.xml.in.h:148
+msgid "Microsoft PowerPoint presentation"
+msgstr "Prezentace Microsoft PowerPoint"
+
+#: freedesktop.org.xml.in.h:149
+msgid "Microsoft WMF file"
+msgstr "Soubor Microsoft WMF"
+
+#: freedesktop.org.xml.in.h:150
 msgid "Microsoft WMV video"
 msgstr "Video Microsoft WMV"
 
-#: freedesktop.org.xml.in.h:163
+#: freedesktop.org.xml.in.h:151
+msgid "Microsoft Windows icon"
+msgstr "Ikona Microsoft Windows"
+
+#: freedesktop.org.xml.in.h:152
 msgid "Microsoft Word document"
 msgstr "Dokument Microsoft Word"
 
-#: freedesktop.org.xml.in.h:164
+#: freedesktop.org.xml.in.h:153
 msgid "Microsoft Write document"
 msgstr "Dokument Microsoft Write"
 
-#: freedesktop.org.xml.in.h:165
-msgid "Mount point"
-msgstr "Místo připojení"
+#: freedesktop.org.xml.in.h:154
+msgid "Mozilla bookmarks"
+msgstr "Záložky Mozilla"
 
-#: freedesktop.org.xml.in.h:166
-msgid "Mozilla bookmarks file"
-msgstr "Soubor záložek Mozilla"
-
-#: freedesktop.org.xml.in.h:167
-msgid "NES rom"
+#: freedesktop.org.xml.in.h:155
+msgid "NES ROM"
 msgstr "ROM pro NES"
 
-#: freedesktop.org.xml.in.h:168
+#: freedesktop.org.xml.in.h:156
 msgid "Nautilus link"
 msgstr "Odkaz Nautilus"
 
-#: freedesktop.org.xml.in.h:169
-msgid "Netscape bookmarks file"
-msgstr "Soubor záložek Netscape"
+#: freedesktop.org.xml.in.h:157
+msgid "Netscape bookmarks"
+msgstr "Záložky Netscape"
 
-#: freedesktop.org.xml.in.h:170
-msgid "Nintendo64 rom"
+#: freedesktop.org.xml.in.h:158
+msgid "Nintendo64 ROM"
 msgstr "ROM pro Nintendo64"
 
-#: freedesktop.org.xml.in.h:171
+#: freedesktop.org.xml.in.h:159
 msgid "Nullsoft video"
 msgstr "Video Nullsoft"
 
-#: freedesktop.org.xml.in.h:172
+#: freedesktop.org.xml.in.h:160
 msgid "ODA document"
 msgstr "Dokument ODA"
 
-#: freedesktop.org.xml.in.h:173
-msgid "Object Code"
-msgstr "Objektový kód"
+#: freedesktop.org.xml.in.h:161
+msgid "OLE2 compound document storage"
+msgstr "Úložiště složeného dokumentu OLE2"
 
-#: freedesktop.org.xml.in.h:174
-msgid "Objective-C sources"
-msgstr "Zdrojový kód Objective-C"
+#: freedesktop.org.xml.in.h:162
+msgid "Objective-C source code"
+msgstr "Zdrojový kód v Objective-C"
 
-#: freedesktop.org.xml.in.h:175
+#: freedesktop.org.xml.in.h:163
 msgid "Ogg Vorbis audio"
 msgstr "Zvuk Ogg Vorbis"
 
-#: freedesktop.org.xml.in.h:176
-msgid "OpenOffice Impress presentation"
-msgstr "Prezentace OpenOffice Impress"
+#: freedesktop.org.xml.in.h:164
+msgid "OpenOffice.org Calc spreadsheet"
+msgstr "Tabulka OpenOffice.org Calc"
 
-#: freedesktop.org.xml.in.h:177
-msgid "OpenOffice Impress presentation template"
-msgstr "šablona prezentací OpenOffice Impress"
+#: freedesktop.org.xml.in.h:165
+msgid "OpenOffice.org Calc spreadsheet template"
+msgstr "Šablona tabulky OpenOffice.org Calc"
 
-#: freedesktop.org.xml.in.h:178
-msgid "OpenOffice Math document"
-msgstr "Dokument OpenOffice Math"
+#: freedesktop.org.xml.in.h:166
+msgid "OpenOffice.org Draw drawing"
+msgstr "Kresba OpenOffice.org Draw"
 
-#: freedesktop.org.xml.in.h:179
-msgid "OpenOffice Writer document"
-msgstr "Dokument OpenOffice Writer"
+#: freedesktop.org.xml.in.h:167
+msgid "OpenOffice.org Draw drawing template"
+msgstr "Šablona kresby OpenOffice.org Draw"
 
-#: freedesktop.org.xml.in.h:180
-msgid "OpenOffice Writer global document"
-msgstr "Globální dokument OpenOffice Writer"
+#: freedesktop.org.xml.in.h:168
+msgid "OpenOffice.org Impress presentation"
+msgstr "Prezentace OpenOffice.org Impress"
 
-#: freedesktop.org.xml.in.h:181
-msgid "OpenOffice Writer template"
-msgstr "šablona OpenOffice Writer"
+#: freedesktop.org.xml.in.h:169
+msgid "OpenOffice.org Impress presentation template"
+msgstr "Šablona prezentace OpenOffice.org Impress"
 
-#: freedesktop.org.xml.in.h:182
-msgid "OpenOffice drawing"
-msgstr "Kresba OpenOffice"
+#: freedesktop.org.xml.in.h:170
+msgid "OpenOffice.org Math formula"
+msgstr "Vzorec OpenOffice.org Math"
 
-#: freedesktop.org.xml.in.h:183
-msgid "OpenOffice drawing template"
-msgstr "Šablona kresby OpenOffice"
+#: freedesktop.org.xml.in.h:171
+msgid "OpenOffice.org Writer document"
+msgstr "Dokument OpenOffice.org Writer"
 
-#: freedesktop.org.xml.in.h:184
-msgid "OpenOffice spreadsheet"
-msgstr "Tabulka OpenOffice"
+#: freedesktop.org.xml.in.h:172
+msgid "OpenOffice.org Writer document template"
+msgstr "Šablona dokumentu OpenOffice.org Writer"
 
-#: freedesktop.org.xml.in.h:185
-msgid "OpenOffice spreadsheet template"
-msgstr "Šablona tabulky OpenOffice"
+#: freedesktop.org.xml.in.h:173
+msgid "OpenOffice.org Writer global document"
+msgstr "Globální dokument OpenOffice.org Writer"
 
-#: freedesktop.org.xml.in.h:186
+#: freedesktop.org.xml.in.h:174
 msgid "OpenType font"
 msgstr "Písmo OpenType"
 
-#: freedesktop.org.xml.in.h:187
+#: freedesktop.org.xml.in.h:175
 msgid "PCF font"
 msgstr "Písmo PCF"
 
-#: freedesktop.org.xml.in.h:188
+#: freedesktop.org.xml.in.h:176
 msgid "PCM audio"
 msgstr "Zvuk PCM"
 
-#: freedesktop.org.xml.in.h:189
-msgid "PEF program"
-msgstr "Program PEF"
+#: freedesktop.org.xml.in.h:177
+msgid "PDF document"
+msgstr "Dokument PDF"
 
-#: freedesktop.org.xml.in.h:190
-msgid "PERL program"
-msgstr "Program v PERLu"
+#: freedesktop.org.xml.in.h:178
+msgid "PEF executable"
+msgstr "Spustitelný soubor PEF"
 
-#: freedesktop.org.xml.in.h:191
+#: freedesktop.org.xml.in.h:179
 msgid "PGN chess game"
 msgstr "Šachová hra PGN"
 
-#: freedesktop.org.xml.in.h:192
+#: freedesktop.org.xml.in.h:180
 msgid "PGP keys"
 msgstr "Klíče PGP"
 
-#: freedesktop.org.xml.in.h:193
+#: freedesktop.org.xml.in.h:181
 msgid "PGP message"
 msgstr "Zpráva PGP"
 
-#: freedesktop.org.xml.in.h:194
-msgid "PGP/MIME encrypted message header"
+#: freedesktop.org.xml.in.h:182
+msgid "PGP/MIME-encrypted message header"
 msgstr "Hlavička zašifrované zprávy PGP/MIME"
 
-#: freedesktop.org.xml.in.h:195
+#: freedesktop.org.xml.in.h:183
 msgid "PHP script"
 msgstr "Skript PHP"
 
-#: freedesktop.org.xml.in.h:196
-msgid "PKCS#12 Certificate Bundle"
+#: freedesktop.org.xml.in.h:184
+msgid "PKCS#12 certificate bundle"
 msgstr "Svazek certifikátů PKCS#12"
 
-#: freedesktop.org.xml.in.h:197
+#: freedesktop.org.xml.in.h:185
 msgid "PNG image"
 msgstr "Obrázek PNG"
 
-#: freedesktop.org.xml.in.h:198
+#: freedesktop.org.xml.in.h:186
 msgid "PNM image"
 msgstr "Obrázek PNM"
 
-#: freedesktop.org.xml.in.h:199
-msgid "Packed Font file"
-msgstr "Komprimovaný soubor písma"
-
-#: freedesktop.org.xml.in.h:200
+#: freedesktop.org.xml.in.h:187
 msgid "Palm OS database"
 msgstr "Databáze Palm OS"
 
-#: freedesktop.org.xml.in.h:201
-msgid "Pascal sources"
-msgstr "Zdrojový kód Pascal"
+#: freedesktop.org.xml.in.h:188
+msgid "Palmpilot database/document"
+msgstr "Databáze/dokument Palmpilot"
 
-#: freedesktop.org.xml.in.h:202
-msgid "Pathetic Writer"
-msgstr "Pathetic Writer"
+#: freedesktop.org.xml.in.h:189
+msgid "Pascal source code"
+msgstr "Zdrojový kód v Pascalu"
 
-#: freedesktop.org.xml.in.h:203
-msgid "Pdf Document"
-msgstr "Dokument PDF"
+#: freedesktop.org.xml.in.h:190
+msgid "Pathetic Writer document"
+msgstr "Dokument Pathetic Writer"
 
-#: freedesktop.org.xml.in.h:204
+#: freedesktop.org.xml.in.h:191
+msgid "Perl script"
+msgstr "Skript v Perlu"
+
+#: freedesktop.org.xml.in.h:192
 msgid "PhotoCD image"
 msgstr "Obrázek PhotoCD"
 
-#: freedesktop.org.xml.in.h:205
-msgid "Photoshop document"
-msgstr "Dokument Photoshop"
+#: freedesktop.org.xml.in.h:193
+msgid "Photoshop image"
+msgstr "Obrázek Photoshop"
 
-#: freedesktop.org.xml.in.h:206
-msgid "Pipe"
-msgstr "Roura"
-
-#: freedesktop.org.xml.in.h:207
-msgid "Plain Text"
-msgstr "Čistý text"
-
-#: freedesktop.org.xml.in.h:208
+#: freedesktop.org.xml.in.h:194
 msgid "Playlist"
 msgstr "Seznam skladeb"
 
-#: freedesktop.org.xml.in.h:209
+#: freedesktop.org.xml.in.h:195
 msgid "Portable Bitmap File Format"
 msgstr "Formát souborů Portable Bitmap"
 
-#: freedesktop.org.xml.in.h:210
+#: freedesktop.org.xml.in.h:196
 msgid "Portable Graymap File Format"
 msgstr "Formát souborů Portable Graymap"
 
-#: freedesktop.org.xml.in.h:211
+#: freedesktop.org.xml.in.h:197
 msgid "Portable Pixmap File Format"
 msgstr "Formát souboru Portable Pixmap"
 
-#: freedesktop.org.xml.in.h:212
-msgid "PostScript Document"
+#: freedesktop.org.xml.in.h:198
+msgid "PostScript document"
 msgstr "Dokument PostScript"
 
-#: freedesktop.org.xml.in.h:213
-msgid "Program crash data"
-msgstr "Data o pádu programu"
+#: freedesktop.org.xml.in.h:199
+msgid "PostScript document (gzip-compressed)"
+msgstr "Dokument PostScript (komprimovaný gzip)"
 
-#: freedesktop.org.xml.in.h:214
+#: freedesktop.org.xml.in.h:200
 msgid "Python bytecode"
 msgstr "Bajtový kód Python"
 
-#: freedesktop.org.xml.in.h:215
-msgid "Python program"
-msgstr "Program v Pythonu"
+#: freedesktop.org.xml.in.h:201
+msgid "Python script"
+msgstr "Skript v Pythonu"
 
-#: freedesktop.org.xml.in.h:216
-msgid "Qt Designer File"
+#: freedesktop.org.xml.in.h:202
+msgid "Qt Designer file"
 msgstr "Soubor Qt Designeru"
 
-#: freedesktop.org.xml.in.h:217
-msgid "Qt Meta Object File"
+#: freedesktop.org.xml.in.h:203
+msgid "Qt Meta Object file"
 msgstr "Soubor metaobjektu Qt"
 
-#: freedesktop.org.xml.in.h:218
-msgid "Quattro Pro file"
-msgstr "Soubor Quattro Pro"
+#: freedesktop.org.xml.in.h:204
+msgid "Quattro Pro spreadsheet"
+msgstr "Tabulka Quattro Pro"
 
-#: freedesktop.org.xml.in.h:219
+#: freedesktop.org.xml.in.h:205
+msgid "QuickTime video"
+msgstr "Video QuickTime"
+
+#: freedesktop.org.xml.in.h:206
 msgid "Quicken document"
 msgstr "Dokument Quicken"
 
-#: freedesktop.org.xml.in.h:220
-msgid "Quicktime Video"
-msgstr "Video Quicktime"
+#: freedesktop.org.xml.in.h:207
+msgid "RAR archive"
+msgstr "Archiv RAR"
 
-#: freedesktop.org.xml.in.h:221
+#: freedesktop.org.xml.in.h:208
 msgid "RDF Site Summary"
 msgstr "Sourhn serveru RDF"
 
-#: freedesktop.org.xml.in.h:222
+#: freedesktop.org.xml.in.h:209
 msgid "README document"
 msgstr "Dokument README"
 
-#: freedesktop.org.xml.in.h:223
+#: freedesktop.org.xml.in.h:210
 msgid "RGB image"
 msgstr "Obrázek RGB"
 
-#: freedesktop.org.xml.in.h:224
+#: freedesktop.org.xml.in.h:211
 msgid "RIFF audio"
 msgstr "Zvuk RIFF"
 
-#: freedesktop.org.xml.in.h:225
-msgid "RPM package file"
-msgstr "Soubor balíčku RPM"
+#: freedesktop.org.xml.in.h:212
+msgid "RPM package"
+msgstr "Balíček RPM"
 
-#: freedesktop.org.xml.in.h:226
-msgid "Rar archive"
-msgstr "Archiv rar"
-
-#: freedesktop.org.xml.in.h:227
-msgid "Raw CD image"
-msgstr "Obraz CD"
-
-#: freedesktop.org.xml.in.h:228
+#: freedesktop.org.xml.in.h:213
 msgid "RealAudio broadcast"
 msgstr "Vysílání RealAudio"
 
-#: freedesktop.org.xml.in.h:229
+#: freedesktop.org.xml.in.h:214
 msgid "RealAudio/Video document"
 msgstr "Dokument RealAudio/Video"
 
-#: freedesktop.org.xml.in.h:230
+#: freedesktop.org.xml.in.h:215
 msgid "RealVideo video"
 msgstr "Video RealVideo"
 
-#: freedesktop.org.xml.in.h:231
+#: freedesktop.org.xml.in.h:216
 msgid "Resource Description Framework (RDF) file"
 msgstr "Soubor Resource Description Framework (RDF)"
 
-#: freedesktop.org.xml.in.h:232
+#: freedesktop.org.xml.in.h:217
 msgid "Rich Text Format"
 msgstr "Rich Text Format"
 
-#: freedesktop.org.xml.in.h:233
-msgid "Ruby program"
-msgstr "Program v Ruby"
+#: freedesktop.org.xml.in.h:218
+msgid "Ruby script"
+msgstr "Skript v Ruby"
 
-#: freedesktop.org.xml.in.h:234
+# Ugly...
+#: freedesktop.org.xml.in.h:219
+msgid "Run Length Encoded bitmap"
+msgstr "Run Length Encoded bitmapa"
+
+#: freedesktop.org.xml.in.h:220
 msgid "S/MIME file"
 msgstr "Soubor S/MIME"
 
-#: freedesktop.org.xml.in.h:235
+#: freedesktop.org.xml.in.h:221
 msgid "SGI video"
 msgstr "Video SGI"
 
-#: freedesktop.org.xml.in.h:236
-msgid "SGML"
-msgstr "SGML"
+#: freedesktop.org.xml.in.h:222
+msgid "SGML document"
+msgstr "Dokument SGML"
 
-#: freedesktop.org.xml.in.h:237
-msgid "SMS or Game Gear rom"
-msgstr "ROM pro SMS nebo Game Gear"
+#: freedesktop.org.xml.in.h:223
+msgid "SMS/Game Gear ROM"
+msgstr "ROM pro SMS/Game Gear"
 
-#: freedesktop.org.xml.in.h:238
+#: freedesktop.org.xml.in.h:224
 msgid "SQL code"
 msgstr "Kód SQL"
 
-#: freedesktop.org.xml.in.h:239
-msgid "SUN Rasterfile"
-msgstr "Rastrový obrázek SUN"
+#: freedesktop.org.xml.in.h:225
+msgid "SUN Rasterfile image"
+msgstr "Obrázek SUN Rasterfile"
 
-#: freedesktop.org.xml.in.h:240
+#: freedesktop.org.xml.in.h:226
 msgid "SV4 CPIO archive"
 msgstr "Archiv SV4 CPIO"
 
-#: freedesktop.org.xml.in.h:241
+#: freedesktop.org.xml.in.h:227
 msgid "SV4 CPIP archive (with CRC)"
 msgstr "Archiv SV4 CPIP (s CRC)"
 
-#: freedesktop.org.xml.in.h:242
-msgid "Scalable Vector Graphics"
-msgstr "Scalable Vector Graphics"
-
-#: freedesktop.org.xml.in.h:243
+#: freedesktop.org.xml.in.h:228
 msgid "Scheme source code"
 msgstr "Zdrojový kód Scheme"
 
-#: freedesktop.org.xml.in.h:244
+#: freedesktop.org.xml.in.h:229
 msgid "Scream Tracker 3 audio"
 msgstr "Skladba Scream Tracker 3"
 
-#: freedesktop.org.xml.in.h:245
+#: freedesktop.org.xml.in.h:230
 msgid "Scream Tracker audio"
 msgstr "Skladba Scream Tracker"
 
-#: freedesktop.org.xml.in.h:246
+#: freedesktop.org.xml.in.h:231
 msgid "Scream Tracker instrument"
 msgstr "Nástroj pro Scream Tracker"
 
-#: freedesktop.org.xml.in.h:247
+#: freedesktop.org.xml.in.h:232
 msgid "Setext document"
 msgstr "Dokument Setext"
 
-#: freedesktop.org.xml.in.h:248
-msgid "Shared library"
-msgstr "Sdílená knihovna"
+#: freedesktop.org.xml.in.h:233
+msgid "Shockwave Flash file"
+msgstr "Soubor Shockwave Flash"
 
-#: freedesktop.org.xml.in.h:249
-msgid "Shockwave Flash Media"
-msgstr "Média Shockwave Flash"
-
-#: freedesktop.org.xml.in.h:250
-msgid "Siag Spreadsheet"
+#: freedesktop.org.xml.in.h:234
+msgid "Siag spreadsheet"
 msgstr "Tabulka Siag"
 
-#: freedesktop.org.xml.in.h:251
-msgid "Socket"
-msgstr "Soket"
+#: freedesktop.org.xml.in.h:235
+msgid "Silicon Graphics IRIS image"
+msgstr "Obrázek Silicon Graphics IRIS"
 
-#: freedesktop.org.xml.in.h:252
+#: freedesktop.org.xml.in.h:236
 msgid "Speech document"
 msgstr "Dokument Speech"
 
-#: freedesktop.org.xml.in.h:253
+#: freedesktop.org.xml.in.h:237
 msgid "Speedo font"
 msgstr "Písmo Speedo"
 
-#: freedesktop.org.xml.in.h:254
-msgid "Spreadsheet Interchange document"
-msgstr "Dokument Spreadsheet Interchange"
+#: freedesktop.org.xml.in.h:238
+msgid "Spreadsheet interchange document"
+msgstr "Dokument Spreadsheet interchange"
 
-#: freedesktop.org.xml.in.h:255
+#: freedesktop.org.xml.in.h:239
 msgid "Stampede package"
 msgstr "Balíček Stampede"
 
-#: freedesktop.org.xml.in.h:256
+#: freedesktop.org.xml.in.h:240
 msgid "StarCalc spreadsheet"
 msgstr "Tabulka StarCalc"
 
-#: freedesktop.org.xml.in.h:257
+#: freedesktop.org.xml.in.h:241
 msgid "StarChart chart"
 msgstr "Graf StarChart"
 
-#: freedesktop.org.xml.in.h:258
+#: freedesktop.org.xml.in.h:242
 msgid "StarDraw drawing"
 msgstr "Kresba StarDraw"
 
-#: freedesktop.org.xml.in.h:259
+#: freedesktop.org.xml.in.h:243
 msgid "StarImpress presentation"
 msgstr "Prezentace StarImpress"
 
-#: freedesktop.org.xml.in.h:260
-msgid "StarMail file"
-msgstr "Soubor StarMail"
+#: freedesktop.org.xml.in.h:244
+msgid "StarMail email"
+msgstr "E-mail StarMail"
 
-#: freedesktop.org.xml.in.h:261
-msgid "StarMath document"
-msgstr "Dokument StarMath"
+#: freedesktop.org.xml.in.h:245
+msgid "StarMath formula"
+msgstr "Vzorec StarMath"
 
-#: freedesktop.org.xml.in.h:262
+#: freedesktop.org.xml.in.h:246
 msgid "StarWriter document"
 msgstr "Dokument StarWriter"
 
-#: freedesktop.org.xml.in.h:263
-msgid "Stream of data (server push)"
-msgstr "Proud dat (posílaný serverem)"
-
-#: freedesktop.org.xml.in.h:264
-msgid "Streaming MPEG layer 3 audio"
-msgstr "Vysílaný zvuk MPEG vrstva 3"
-
-#: freedesktop.org.xml.in.h:265
+#: freedesktop.org.xml.in.h:247
 msgid "SunOS News font"
 msgstr "Písmo SunOS News"
 
-#: freedesktop.org.xml.in.h:266
+#: freedesktop.org.xml.in.h:248
 msgid "Synchronized Multimedia Integration Language"
 msgstr "Synchronized Multimedia Integration Language"
 
-#: freedesktop.org.xml.in.h:267
-msgid "TGIF Document"
+#: freedesktop.org.xml.in.h:249
+msgid "TGIF document"
 msgstr "Dokument TGIF"
 
-#: freedesktop.org.xml.in.h:268
-msgid "TIFF Image"
+#: freedesktop.org.xml.in.h:250
+msgid "TIFF image"
 msgstr "Obrázek TIFF"
 
-#: freedesktop.org.xml.in.h:269
-msgid "Tar archive"
-msgstr "Archiv tar"
-
-#: freedesktop.org.xml.in.h:270
+#: freedesktop.org.xml.in.h:251
 msgid "TarGA image"
 msgstr "Obrázek TarGA"
 
-#: freedesktop.org.xml.in.h:271
-msgid "Tcl file"
-msgstr "Soubor Tcl"
+#: freedesktop.org.xml.in.h:252
+msgid "Tcl script"
+msgstr "Skript v Tcl"
 
-#: freedesktop.org.xml.in.h:272
-msgid "TeX Device Independent file"
-msgstr "Soubor TeXu nezávislý na zařízení"
+#: freedesktop.org.xml.in.h:253
+msgid "TeX DVI document"
+msgstr "Dokument TeX DVI"
 
-#: freedesktop.org.xml.in.h:273
-msgid "TeX file"
-msgstr "Soubor TeX"
+#: freedesktop.org.xml.in.h:254
+msgid "TeX document"
+msgstr "Dokument TeX"
 
-#: freedesktop.org.xml.in.h:274
+#: freedesktop.org.xml.in.h:255
 msgid "TeX font"
 msgstr "Písmo TeX"
 
-#: freedesktop.org.xml.in.h:275
+#: freedesktop.org.xml.in.h:256
 msgid "TeX font metrics"
 msgstr "Metrika písma TeX"
 
-#: freedesktop.org.xml.in.h:276
+#: freedesktop.org.xml.in.h:257
 msgid "TeXInfo document"
 msgstr "Dokument TeXInfo"
 
-#: freedesktop.org.xml.in.h:277
-msgid "Text file with comma separated values"
-msgstr "Textový soubor s hodnotami oddělenými čárkami"
-
-#: freedesktop.org.xml.in.h:278
+#: freedesktop.org.xml.in.h:258
 msgid "ToutDoux document"
 msgstr "Dokument ToutDoux"
 
-#: freedesktop.org.xml.in.h:279
-msgid "Translated messages"
-msgstr "Přeložené zprávy"
+#: freedesktop.org.xml.in.h:259
+msgid "Troff ME input document"
+msgstr "Dokument vstupu Troff ME"
 
-#: freedesktop.org.xml.in.h:280
-msgid "Translated messages (machine-readable)"
-msgstr "Přeložené zprávy (čitelné počítačem)"
+#: freedesktop.org.xml.in.h:260
+msgid "Troff MM input document"
+msgstr "Dokument vstupu Troff MM"
 
-#: freedesktop.org.xml.in.h:281
+#: freedesktop.org.xml.in.h:261
+msgid "Troff MS input document"
+msgstr "Dokument vstupu Troff MS"
+
+#: freedesktop.org.xml.in.h:262
 msgid "Troff document"
 msgstr "Dokument troff"
 
-#: freedesktop.org.xml.in.h:282
-msgid "Troff document with manpage macros"
-msgstr "Dokument troff s makry pro stránky man"
+#: freedesktop.org.xml.in.h:263
+msgid "Troff document (with manpage macros)"
+msgstr "Dokument troff (s makry pro stránky man)"
 
-#: freedesktop.org.xml.in.h:283
-msgid "Truetype Font"
-msgstr "Písmo Truetype"
+#: freedesktop.org.xml.in.h:264
+msgid "TrueType font"
+msgstr "Písmo TrueType"
 
-#: freedesktop.org.xml.in.h:284
+#: freedesktop.org.xml.in.h:265
 msgid "Truevision Targa image"
 msgstr "Obrázek Truevision Targa"
 
-#: freedesktop.org.xml.in.h:285
+#: freedesktop.org.xml.in.h:266
 msgid "ULAW (Sun) audio"
 msgstr "Zvuk ULAW (Sun)"
 
-#: freedesktop.org.xml.in.h:286
-msgid "UNIX compressed file"
+#: freedesktop.org.xml.in.h:267
+msgid "UNIX-compressed file"
 msgstr "Soubor komprimovaný v UNIXu"
 
-#: freedesktop.org.xml.in.h:287
-msgid "Unidata netCDF document"
-msgstr "Dokument Unidata netCDF"
+#: freedesktop.org.xml.in.h:268
+msgid "Unidata NetCDF document"
+msgstr "Dokument Unidata NetCDF"
 
-#: freedesktop.org.xml.in.h:288
-msgid "Unknown"
-msgstr "Neznámý"
-
-#: freedesktop.org.xml.in.h:289
+#: freedesktop.org.xml.in.h:269
 msgid "Usenet news message"
 msgstr "Příspěvek do diskusních skupin Usenet"
 
-#: freedesktop.org.xml.in.h:290
+#: freedesktop.org.xml.in.h:270
 msgid "V font"
 msgstr "Písmo V"
 
-#: freedesktop.org.xml.in.h:291
+#: freedesktop.org.xml.in.h:271
 msgid "VOC audio"
 msgstr "Zvuk VOC"
 
-#: freedesktop.org.xml.in.h:292
+#: freedesktop.org.xml.in.h:272
 msgid "VRML document"
 msgstr "Dokument VRML"
 
-#: freedesktop.org.xml.in.h:293
+#: freedesktop.org.xml.in.h:273
 msgid "Vivo video"
 msgstr "Video Vivo"
 
-#: freedesktop.org.xml.in.h:294
+#: freedesktop.org.xml.in.h:274
 msgid "WAIS source code"
 msgstr "Zdrojový kód WAIS"
 
-#: freedesktop.org.xml.in.h:295
+#: freedesktop.org.xml.in.h:275
 msgid "WAV audio"
 msgstr "Zvuk WAV"
 
-#: freedesktop.org.xml.in.h:296
+#: freedesktop.org.xml.in.h:276
 msgid "WML document"
 msgstr "Dokument WML"
 
-#: freedesktop.org.xml.in.h:297
+#: freedesktop.org.xml.in.h:277
 msgid "Wavelet video"
 msgstr "Video Wavelet"
 
-#: freedesktop.org.xml.in.h:298
+#: freedesktop.org.xml.in.h:278
 msgid "Windows BMP image"
 msgstr "Obrázek Windows BMP"
 
-#: freedesktop.org.xml.in.h:299
-msgid "Windows MetaFile"
-msgstr "Windows MetaFile"
+#: freedesktop.org.xml.in.h:279
+msgid "Windows cursor"
+msgstr "Kurzor Windows"
 
-#: freedesktop.org.xml.in.h:300
+#: freedesktop.org.xml.in.h:280
 msgid "WordPerfect document"
 msgstr "Dokument WordPerfect"
 
-#: freedesktop.org.xml.in.h:301
+#: freedesktop.org.xml.in.h:281
+msgid "WordPerfect/Drawperfect image"
+msgstr "Obrázek WordPerfect/Drawperfect"
+
+#: freedesktop.org.xml.in.h:282
 msgid "X BitMap image"
 msgstr "Obrázek X BitMap"
 
-#: freedesktop.org.xml.in.h:302
+#: freedesktop.org.xml.in.h:283
 msgid "X PixMap image"
 msgstr "Obrázek X PixMap"
 
-#: freedesktop.org.xml.in.h:303
+#: freedesktop.org.xml.in.h:284
 msgid "X window image"
 msgstr "Obrázek X window"
 
-#: freedesktop.org.xml.in.h:304
-msgid "XBEL bookmarks file"
-msgstr "Soubor záložek XBEL"
+#: freedesktop.org.xml.in.h:285
+msgid "X-Motif UIL table"
+msgstr "Tabulka X-Motif UIL"
 
-#: freedesktop.org.xml.in.h:305
-msgid "XFig File"
-msgstr "Soubor XFig"
+#: freedesktop.org.xml.in.h:286
+msgid "XBEL bookmarks"
+msgstr "Záložky XBEL"
 
-#: freedesktop.org.xml.in.h:306
-msgid "XHTML Page"
+#: freedesktop.org.xml.in.h:287
+msgid "XFig image"
+msgstr "Obrázek XFig"
+
+#: freedesktop.org.xml.in.h:288
+msgid "XHTML page"
 msgstr "Stránka XHTML"
 
-#: freedesktop.org.xml.in.h:307
+#: freedesktop.org.xml.in.h:289
+msgid "XML Metadata Interchange file"
+msgstr "Soubor XML Metadata Interchange"
+
+#: freedesktop.org.xml.in.h:290
 msgid "XSL Formating Object file"
 msgstr "Soubor objektu formátování XSL"
 
-#: freedesktop.org.xml.in.h:308
-msgid "XSLT Stylesheet file"
-msgstr "Soubor stylesheetu XSLT"
+#: freedesktop.org.xml.in.h:291
+msgid "XSLT stylesheet"
+msgstr "Stylesheet XSLT"
 
-#: freedesktop.org.xml.in.h:309
-msgid "Zip archive"
-msgstr "Archiv zip"
+#: freedesktop.org.xml.in.h:292
+msgid "ZIP archive"
+msgstr "Archiv ZIP"
 
-#: freedesktop.org.xml.in.h:310
-msgid "Zoo archive"
-msgstr "Archiv zoo"
-
-#: freedesktop.org.xml.in.h:311
+#: freedesktop.org.xml.in.h:293
 msgid "active server page"
 msgstr "Active server page"
 
-#: freedesktop.org.xml.in.h:312
-msgid "authors list"
+#: freedesktop.org.xml.in.h:294
+msgid "application log"
+msgstr "Záznam aplikace"
+
+#: freedesktop.org.xml.in.h:295
+msgid "author list"
 msgstr "Seznam autorů"
 
-#: freedesktop.org.xml.in.h:313
+#: freedesktop.org.xml.in.h:296
+msgid "backup file"
+msgstr "Záložní soubor"
+
+#: freedesktop.org.xml.in.h:297
+msgid "block device"
+msgstr "Blokové zařízení"
+
+#: freedesktop.org.xml.in.h:298
+msgid "bzip archive"
+msgstr "Archiv bzip"
+
+#: freedesktop.org.xml.in.h:299
+msgid "character device"
+msgstr "Znakové zařízení"
+
+#: freedesktop.org.xml.in.h:300
 msgid "compound document"
 msgstr "Složený dokument"
 
-#: freedesktop.org.xml.in.h:314
-msgid "compressed GIMP document"
-msgstr "Komprimovaný dokument GIMP"
+#: freedesktop.org.xml.in.h:301
+msgid "compound documents"
+msgstr "Složené dokumenty"
 
-#: freedesktop.org.xml.in.h:315
+#: freedesktop.org.xml.in.h:302
 msgid "dBASE document"
 msgstr "Dokument dBASE"
 
-#: freedesktop.org.xml.in.h:316
+#: freedesktop.org.xml.in.h:303
+msgid "desktop configuration file"
+msgstr "Soubor nastavení pracovní plochy"
+
+#: freedesktop.org.xml.in.h:304
+msgid "detached OpenPGP signature"
+msgstr "Odpojený podpis OpenPGP"
+
+#: freedesktop.org.xml.in.h:305
+msgid "detached S/MIME signature"
+msgstr "Odpojený podpis S/MIME"
+
+#: freedesktop.org.xml.in.h:306
+msgid "differences between files"
+msgstr "Rozdíly mezi soubory"
+
+#: freedesktop.org.xml.in.h:307
 msgid "directory information file"
 msgstr "Soubor informací o adresáři"
 
-#: freedesktop.org.xml.in.h:317
+#: freedesktop.org.xml.in.h:308
 msgid "document type definition"
 msgstr "Definice typu dokumentu"
 
-#: freedesktop.org.xml.in.h:318
+#: freedesktop.org.xml.in.h:309
 msgid "eXtensible Markup Language document"
 msgstr "Dokument eXtensible Markup Language"
 
-#: freedesktop.org.xml.in.h:319
-msgid "email headers"
-msgstr "Hlavičky E-mailu"
+#: freedesktop.org.xml.in.h:310
+msgid "electronic business card"
+msgstr "Elektronická navštívenka"
 
-#: freedesktop.org.xml.in.h:320
+#: freedesktop.org.xml.in.h:311
+msgid "email headers"
+msgstr "Hlavičky e-mailu"
+
+#: freedesktop.org.xml.in.h:312
+msgid "email message"
+msgstr "E-mailová zpráva"
+
+#: freedesktop.org.xml.in.h:313
+msgid "empty document"
+msgstr "Prázdný dokument"
+
+#: freedesktop.org.xml.in.h:314
 msgid "encrypted message"
 msgstr "Zašifrovaná zpráva"
 
-#: freedesktop.org.xml.in.h:321
+#: freedesktop.org.xml.in.h:315
 msgid "enriched text document"
 msgstr "Rozšířený textový dokument"
 
-#: freedesktop.org.xml.in.h:322
-msgid "graphite - Scientific Graphs"
-msgstr "graphite - Vědecké grafy"
+#: freedesktop.org.xml.in.h:316
+msgid "executable"
+msgstr "Spustitelný soubor"
 
-#: freedesktop.org.xml.in.h:323
+#: freedesktop.org.xml.in.h:317
+msgid "folder"
+msgstr "adresář"
+
+#: freedesktop.org.xml.in.h:318
+msgid "font"
+msgstr "Písmo"
+
+#: freedesktop.org.xml.in.h:319
+msgid "generic font file"
+msgstr "Obecný soubor písma"
+
+#: freedesktop.org.xml.in.h:320
 msgid "gtar archive"
 msgstr "Archiv gtar"
 
-#: freedesktop.org.xml.in.h:324
+#: freedesktop.org.xml.in.h:321
+msgid "gzip archive"
+msgstr "Archiv gzip"
+
+#: freedesktop.org.xml.in.h:322
 msgid "help page"
 msgstr "Stránka nápovědy"
 
-#: freedesktop.org.xml.in.h:325
+#: freedesktop.org.xml.in.h:323
 msgid "iCalendar file"
 msgstr "Soubor iCalendar"
 
-#: freedesktop.org.xml.in.h:326
-msgid "iPod software"
-msgstr "Software iPod"
+#: freedesktop.org.xml.in.h:324
+msgid "iPod firmware"
+msgstr "Firmware iPod"
 
-#: freedesktop.org.xml.in.h:327
+#: freedesktop.org.xml.in.h:325
 msgid "mail delivery report"
 msgstr "Zpráva o doručení pošty"
 
-#: freedesktop.org.xml.in.h:328
+#: freedesktop.org.xml.in.h:326
 msgid "mail disposition report"
 msgstr "Zpráva o předání pošty"
 
-#: freedesktop.org.xml.in.h:329
+#: freedesktop.org.xml.in.h:327
 msgid "mail system report"
 msgstr "Zpráva poštovního systému"
 
-#: freedesktop.org.xml.in.h:330
+#: freedesktop.org.xml.in.h:328
 msgid "manual page (compressed)"
 msgstr "Manuálová stránka (komprimovaná)"
 
-#: freedesktop.org.xml.in.h:331
+#: freedesktop.org.xml.in.h:329
+msgid "message catalog"
+msgstr "Katalog zpráv"
+
+#: freedesktop.org.xml.in.h:330
 msgid "message digest"
 msgstr "Digest zpráv"
 
-#: freedesktop.org.xml.in.h:332
+#: freedesktop.org.xml.in.h:331
 msgid "message in several formats"
 msgstr "Zpráva v několika formátech"
 
+#: freedesktop.org.xml.in.h:332
+msgid "message translation template"
+msgstr "Šablona překladu zpráv"
+
 #: freedesktop.org.xml.in.h:333
+msgid "mount point"
+msgstr "Místo připojení"
+
+#: freedesktop.org.xml.in.h:334
+msgid "object code"
+msgstr "Objektový kód"
+
+#: freedesktop.org.xml.in.h:335
+msgid "packed font file"
+msgstr "Komprimovaný soubor písma"
+
+#: freedesktop.org.xml.in.h:336
 msgid "partial email message"
 msgstr "Částečná e-mailová zpráva"
 
-#: freedesktop.org.xml.in.h:334
+#: freedesktop.org.xml.in.h:337
+msgid "pipe"
+msgstr "Roura"
+
+#: freedesktop.org.xml.in.h:338
+msgid "plain text document"
+msgstr "Prostý textový dokument"
+
+#: freedesktop.org.xml.in.h:339
 msgid "profiler results"
 msgstr "Výsledky profileru"
 
-#: freedesktop.org.xml.in.h:335
+#: freedesktop.org.xml.in.h:340
+msgid "program crash data"
+msgstr "Data o pádu programu"
+
+#: freedesktop.org.xml.in.h:341
+msgid "raw CD image"
+msgstr "Obraz CD"
+
+#: freedesktop.org.xml.in.h:342
 msgid "reference to remote file"
 msgstr "Odkaz na vzdálený soubor"
 
-#: freedesktop.org.xml.in.h:336
-msgid "rejected patch file"
-msgstr "Soubor odmítnutého patche"
+#: freedesktop.org.xml.in.h:343
+msgid "rejected patch"
+msgstr "Odmítnutý patch"
+
+#. Note: text/uri-list is reserved by the XDND protocol!
+#: freedesktop.org.xml.in.h:345
+msgid "resource location"
+msgstr "umístění zdroje"
 
 # :-))) Let's leave this in
-#: freedesktop.org.xml.in.h:337
+#: freedesktop.org.xml.in.h:346
 msgid "rich text document"
 msgstr "Bohatý textový dokument"
 
-#: freedesktop.org.xml.in.h:338
+#: freedesktop.org.xml.in.h:347
+msgid "scalable SVG image"
+msgstr "Škálovatelný obrázek SVG"
+
+#: freedesktop.org.xml.in.h:348
 msgid "shared library"
 msgstr "Sdílená knihovna"
 
-#: freedesktop.org.xml.in.h:339
+#: freedesktop.org.xml.in.h:349
+msgid "shared library (la)"
+msgstr "Sdílená knihovna (la)"
+
+#: freedesktop.org.xml.in.h:350
 msgid "shell archive"
 msgstr "Archiv shellu"
 
-#: freedesktop.org.xml.in.h:340
+#: freedesktop.org.xml.in.h:351
 msgid "shell script"
 msgstr "Skript shellu"
 
-#: freedesktop.org.xml.in.h:341
+#: freedesktop.org.xml.in.h:352
 msgid "signed message"
 msgstr "Podepsaná zpráva"
 
-#: freedesktop.org.xml.in.h:342
+#: freedesktop.org.xml.in.h:353
+msgid "socket"
+msgstr "Soket"
+
+#: freedesktop.org.xml.in.h:354
 msgid "software author credits"
 msgstr "Informace o autorovi software"
 
-#: freedesktop.org.xml.in.h:343
+#: freedesktop.org.xml.in.h:355
 msgid "software installation instructions"
 msgstr "Návod k instalaci software"
 
-#: freedesktop.org.xml.in.h:344
+#: freedesktop.org.xml.in.h:356
 msgid "software license terms"
 msgstr "Podmínky licence na software"
 
-#: freedesktop.org.xml.in.h:345
-msgid "source code patch"
-msgstr "Patch zdrojového kódu"
+#: freedesktop.org.xml.in.h:357
+msgid "stream of data (server push)"
+msgstr "Proud dat (posílaný serverem)"
 
-#: freedesktop.org.xml.in.h:346
+#: freedesktop.org.xml.in.h:358
 msgid "symbolic link"
 msgstr "Symbolický odkaz"
 
-#: freedesktop.org.xml.in.h:347
-msgid "tab-separated text document"
-msgstr "Dokument s textem oddělovaným tabulátory"
+#: freedesktop.org.xml.in.h:359
+msgid "tar archive"
+msgstr "Archiv tar"
 
-#: freedesktop.org.xml.in.h:348
-msgid "the location of some resource"
-msgstr "umístění nějakého zdroje"
+#: freedesktop.org.xml.in.h:360
+msgid "tar archive (LZO-compressed)"
+msgstr "Archiv tar (komprimovaný LZO)"
 
-#: freedesktop.org.xml.in.h:349
+#: freedesktop.org.xml.in.h:361
+msgid "tar archive (bzip-compressed)"
+msgstr "Archiv tar (komprimovaný bzip)"
+
+#: freedesktop.org.xml.in.h:362
+msgid "tar archive (compressed)"
+msgstr "Archiv tar (komprimovaný)"
+
+#: freedesktop.org.xml.in.h:363
+msgid "tar archive (gzip-compressed)"
+msgstr "Archiv tar (komprimovaný gzip)"
+
+#: freedesktop.org.xml.in.h:364
+msgid "text document (with comma-separated values)"
+msgstr "Textový soubor (s hodnotami oddělenými čárkami)"
+
+#: freedesktop.org.xml.in.h:365
+msgid "text document (with tab-separated values)"
+msgstr "Textový soubor )s hodnotami oddělenými tabelátory)"
+
+#: freedesktop.org.xml.in.h:366
 msgid "theme"
 msgstr "Téma"
 
-#: freedesktop.org.xml.in.h:350
-msgid "troff me input document"
-msgstr "Dokument vstupu troff me"
+#: freedesktop.org.xml.in.h:367
+msgid "translated messages"
+msgstr "Přeložené zprávy"
 
-#: freedesktop.org.xml.in.h:351
-msgid "troff mm input document"
-msgstr "Dokument vstupu troff mm"
+#: freedesktop.org.xml.in.h:368
+msgid "translated messages (machine-readable)"
+msgstr "Přeložené zprávy (čitelné počítačem)"
 
-#: freedesktop.org.xml.in.h:352
-msgid "troff ms input document"
-msgstr "Dokument vstupu troff ms"
+#: freedesktop.org.xml.in.h:369
+msgid "unknown"
+msgstr "Neznámý"
 
-#: freedesktop.org.xml.in.h:353
+#: freedesktop.org.xml.in.h:370
 msgid "ustar archive"
 msgstr "Archiv ustar"
 
-#: freedesktop.org.xml.in.h:354
+#: freedesktop.org.xml.in.h:371
 msgid "vCalendar interchange file"
 msgstr "Soubor výměny vCalendar"
+
+#: freedesktop.org.xml.in.h:372
+msgid "zoo archive"
+msgstr "Archiv zoo"

@@ -2,54 +2,55 @@
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
 "/usr/share/sgml/docbook/dtd/xml/4.1.2/docbookx.dtd">
 <article id="index">
-	<articleinfo>
-		<authorgroup>
-			<corpauthor>
-				<ulink url="http://www.freedesktop.org">
-				X Desktop Group
-				</ulink>
-			</corpauthor>
-			<author>
-				<firstname>Thomas</firstname>
-				<surname>Leonard</surname>
-				<affiliation>
-					<address><email>tal197@users.sf.net</email></address>
-				</affiliation>
-			</author>
-			<author>
-				<firstname>David</firstname>
-				<surname>Faure</surname>
-				<affiliation>
-					<address><email>david@mandrakesoft.com</email></address>
-				</affiliation>
-			</author>
-			<author>
-				<firstname>Alex</firstname>
-				<surname>Larsson</surname>
-				<affiliation>
-					<address><email>alexl@redhat.com</email></address>
-				</affiliation>
-			</author>
-		</authorgroup>
 
-		<title>Shared MIME-info Database</title>
-		<date>03 May 2002</date>
-	</articleinfo>
+<articleinfo>
+	<authorgroup>
+		<corpauthor>
+			<ulink url="http://www.freedesktop.org">
+			X Desktop Group
+			</ulink>
+		</corpauthor>
+		<author>
+			<firstname>Thomas</firstname>
+			<surname>Leonard</surname>
+			<affiliation>
+				<address><email>tal197@users.sf.net</email></address>
+			</affiliation>
+		</author>
+		<author>
+			<firstname>David</firstname>
+			<surname>Faure</surname>
+			<affiliation>
+				<address><email>david@mandrakesoft.com</email></address>
+			</affiliation>
+		</author>
+		<author>
+			<firstname>Alex</firstname>
+			<surname>Larsson</surname>
+			<affiliation>
+				<address><email>alexl@redhat.com</email></address>
+			</affiliation>
+		</author>
+	</authorgroup>
+
+	<title>Shared MIME-info Database</title>
+	<date>03 May 2002</date>
+</articleinfo>
 <sect1>
 	<title>Introduction</title>
 	<sect2>
 		<title>Version</title>
 		<para>
-This is version 0.7 of the Shared MIME-info Database spec, last updated 03 May 2002.
+This is version 0.7 of the Shared MIME-info Database spec, last updated 07 May 2002.
 		</para>
 	</sect2>
 	<sect2>
 		<title>What is this spec?</title>
 		<para>
-Many programs and desktops use the MIME system to represent the types of
-files. Frequently, it is necessary to work out the correct MIME type for
-a file. This is generally done by examining the file's name or
-contents, and looking up the correct MIME type in a database.
+Many programs and desktops use the MIME system<citation>MIME</citation>
+to represent the types of files. Frequently, it is necessary to work out the
+correct MIME type for a file. This is generally done by examining the file's
+name or contents, and looking up the correct MIME type in a database.
 		</para>
 		<para>
 For interoperability, it is useful for different programs to use the same
@@ -58,7 +59,8 @@ rules for determining the type apply to all programs.
 		</para>
 		<para>
 This specification attempts to unify the type-guessing systems currently in
-use by GNOME, KDE and ROX. Only the name-to-type and contents-to-type mappings
+use by GNOME<citation>GNOME</citation>, KDE<citation>KDE</citation> and
+ROX<citation>ROX</citation>. Only the name-to-type and contents-to-type mappings
 are covered by this spec; other MIME type information, such as the default
 handler for a particular type, or the icon to use to display it in a file
 manager, are not covered since these are a matter of style.
@@ -288,7 +290,8 @@ Standard locations for them.
 	<sect2>
 		<title>File format</title>
 		<para>
-The new format is very similar to the KDE format. However, only the tags used
+The new format is very similar to that described in the Desktop Entries
+Specification<citation>DesktopEntries</citation>. However, only the tags used
 in this example are valid:
 			<programlisting><![CDATA[
 [MIME-Info text/html]
@@ -509,4 +512,27 @@ and in any case the programs may be following different versions of the spec.
 		</para>
 	</sect2>
 </sect1>
+
+<bibliography>
+	<title>References</title>
+
+	<bibliomixed>
+		<abbrev>GNOME</abbrev><citetitle>The GNOME desktop,
+		<ulink url="http://www.gnome.org"/></citetitle>
+	</bibliomixed>
+	<bibliomixed>
+		<abbrev>KDE</abbrev><citetitle>The KDE desktop,
+		<ulink url="http://www.kde.org"/></citetitle>
+	</bibliomixed>
+	<bibliomixed>
+		<abbrev>ROX</abbrev><citetitle>The ROX desktop,
+		<ulink url="http://rox.sourceforge.net"/></citetitle>
+	</bibliomixed>
+	<bibliomixed>
+		<abbrev>DesktopEntries</abbrev><citetitle>Desktop Entry Specification,
+		<ulink url="http://www.freedesktop.org/standards/desktop-entry-spec.html"/>
+		</citetitle>
+	</bibliomixed>
+</bibliography>
+
 </article>

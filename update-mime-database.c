@@ -508,13 +508,6 @@ static gint cmp_magic(gconstpointer a, gconstpointer b)
 	return retval;
 }
 
-static void write32(FILE *stream, guint32 n)
-{
-	guint32 big = GUINT32_TO_BE(n);
-
-	fwrite(&big, sizeof(big), 1, stream);
-}
-
 static void write16(FILE *stream, guint32 n)
 {
 	guint16 big = GUINT16_TO_BE(n);
@@ -784,7 +777,6 @@ static void write_magic_children(FILE *stream, xmlNode *parent, int indent,
 		int word_size = 1;
 		long range_start;
 		int range_length = 1;
-		int i;
 
 		if (node->type != XML_ELEMENT_NODE)
 			continue;
@@ -824,10 +816,11 @@ static void write_magic_children(FILE *stream, xmlNode *parent, int indent,
 			continue;
 		}
 
-		for (i = 0; i < indent; i++)
-			fputc('>', stream);
+		if (indent)
+			fprintf(stream, "%d>%ld=", indent, range_start);
+		else
+			fprintf(stream, ">%ld=", range_start);
 
-		write32(stream, range_start);
 		write16(stream, parsed_value->len);
 		fwrite(parsed_value->str, parsed_value->len, 1, stream);
 		if (parsed_mask)

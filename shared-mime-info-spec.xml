@@ -572,21 +572,21 @@ Each section is introduced by giving the priority and type in brackets.
 Higher priority entries come first.
 <screen>[50:text/x-diff]</screen>
 Each line in the section takes the form:
-<screen>indent start-offset value [ "&amp;" mask ] [ "~" word-size ] [ "+" range-length ] "\n"</screen>
+<screen>[ indent ] ">" start-offset "=" value
+[ "&amp;" mask ] [ "~" word-size ] [ "+" range-length ] "\n"</screen>
 <informaltable>
 	<tgroup cols="3">
 	<thead><row><entry>Part</entry><entry>Example</entry><entry>Meaning</entry></row></thead>
 	<tbody>
 
-	<row><entry>indent</entry><entry>&gt;&gt;</entry><entry>The number of > characters at the
-	start of a line indicates the nesting depth of the rule, as in the traditional file format.
-	</entry></row>
-	<row><entry>start-offset</entry><entry>&lt;offset&gt;</entry><entry>The offset into the
-	file to look for a match (4 byte big endian).</entry></row>
-	<row><entry>value</entry><entry>&lt;size&gt;&lt;value&gt;</entry><entry>
+	<row><entry>indent</entry><entry>0</entry><entry>The nesting
+	depth of the rule, corresponding to the number of '>' characters in the traditional file format.</entry></row>
+	<row><entry>">" start-offset</entry><entry>&gt;4</entry><entry>The offset into the
+	file to look for a match.</entry></row>
+	<row><entry>"=" value</entry><entry>=\0x0\0x2\0x55\0x40</entry><entry>
 	Two bytes giving the (big-endian) length of the value, followed by the value itself.
 	</entry></row>
-	<row><entry>"&amp;" mask</entry><entry>&lt;mask&gt;</entry><entry>
+	<row><entry>"&amp;" mask</entry><entry>&amp;\0xff\0xf0</entry><entry>
 	The mask, which (if present) is exactly the same length as the value.
 	</entry></row>
 	<row><entry>"~" word-size</entry><entry>~2</entry><entry>On little-endian machines, the
@@ -617,11 +617,10 @@ one less than the entry. The test number is an index into the array of tests.
 The text/x-diff above example would (on its own) create this magic file:
 			<programlisting><![CDATA[
 00000000  4d 49 4d 45 2d 4d 61 67  69 63 00 0a 5b 35 30 3a  |MIME-Magic..[50:|
-00000010  74 65 78 74 2f 78 2d 64  69 66 66 5d 0a 00 00 00  |text/x-diff]....|
-00000020  00 00 05 64 69 66 66 09  0a 00 00 00 00 00 04 2a  |...diff........*|
-00000030  2a 2a 09 0a 00 00 00 00  00 17 43 6f 6d 6d 6f 6e  |**........Common|
-00000040  20 73 75 62 64 69 72 65  63 74 6f 72 69 65 73 3a  | subdirectories:|
-00000050  20 0a                                             | .|
+00000010  74 65 78 74 2f 78 2d 64  69 66 66 5d 0a 3e 30 3d  |text/x-diff].>0=|
+00000020  00 05 64 69 66 66 09 0a  3e 30 3d 00 04 2a 2a 2a  |..diff..>0=..***|
+00000030  09 0a 3e 30 3d 00 17 43  6f 6d 6d 6f 6e 20 73 75  |..>0=..Common su|
+00000040  62 64 69 72 65 63 74 6f  72 69 65 73 3a 20 0a     |bdirectories: .|
 ]]></programlisting>
 		</para>
 	</sect2>

@@ -1597,6 +1597,8 @@ command to generate the output files.
     <glob pattern="*.voc"/>
   </mime-type>
   <mime-type type="audio/x-wav">
+    <alias type="audio/wav"/>
+    <alias type="audio/vnd.wave"/>
     <_comment>WAV audio</_comment>
     <magic priority="50">
       <match type="string" value="WAVE" offset="8"/>

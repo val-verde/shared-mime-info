@@ -1,5 +1,10 @@
 2004-12-10  Christophe Fergeau  <teuf@gnome.org>
 
+	* freedesktop.org.xml.in: added audio/wav and audio/vnd.wave aliases
+	for wav files, fixes #1885
+
+2004-12-10  Christophe Fergeau  <teuf@gnome.org>
+
 	* freedesktop.org.xml.in: text/xml+html is a subclass of text/xml, not
 	text/plain
 

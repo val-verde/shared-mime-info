@@ -910,10 +910,10 @@ static void parse_value(const char *type, const char *in, const char *in_mask,
 
 	if (strstr(type, "16"))
 		parse_int_value(2, in, in_mask, parsed_value, parsed_mask,
-				type[0] == 'b', error);
+				type[0] != 'l', error);
 	else if (strstr(type, "32"))
 		parse_int_value(4, in, in_mask, parsed_value, parsed_mask,
-				type[0] == 'b', error);
+				type[0] != 'l', error);
 	else if (strcmp(type, "byte") == 0)
 		parse_int_value(1, in, in_mask, parsed_value, parsed_mask,
 				FALSE, error);

@@ -1,12 +1,24 @@
 shared-mime-info		Thomas Leonard <tal00r@ecs.soton.ac.uk>
 
 
-			Version 0.12 (07-Apr-2003)
+			Version 0.12
 
 * Added *.pm and *.al globs for PERL (Jaap Karssenberg).
 
 * Added a section to the spec about the inode/* MIME types (suggested by
   Jaap Karssenberg).
+
+* Clarify the meaning of nested magic matches.
+
+* Fixed example (lang -> xml:lang) (Christophe Fergeau).
+
+* Change 'case insensitive match' to 'lowercase match'.
+
+* Fixed byte-swapping for little-endian and host-endian matches (reported by
+  Jaap Karssenberg).
+
+* Ignore trailing '/' characters on MIME directory name.
+
 	
 			Version 0.11 (17-Apr-2003)
 

@@ -1,5 +1,11 @@
 2004-08-30  Christophe Fergeau  <teuf@gnome.org>
 
+	* Makefile.am:
+	* configure.in: use m4 macros provided by pkg-config instead of using
+	  our own
+
+2004-08-30  Christophe Fergeau  <teuf@gnome.org>
+
 	* NEWS:
 	* configure.in: raised version number, updated NEWS file
 

@@ -25,8 +25,8 @@ EXTRA_DIST = \
 
 CLEANFILES = intltool-extract intltool-merge intltool-update freedesktop.org.xml
 
-CFLAGS = @CFLAGS@ `@PKG_CONFIG@ --cflags libxml-2.0 glib-2.0`
-LDFLAGS = @LDFLAGS@ `@PKG_CONFIG@ --libs libxml-2.0 glib-2.0`
+CFLAGS = $(ALL_CFLAGS)
+LDFLAGS = $(ALL_LIBS)
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = shared-mime-info.pc

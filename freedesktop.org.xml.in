@@ -68,6 +68,10 @@ command to generate the output files.
       <match type="string" value="must be converted with BinHex" offset="11"/>
     </magic>
   </mime-type>
+  <mime-type type="application/mathematica">
+    <comment xml:lang="en">Mathematica Notebook</comment>
+    <glob pattern="*.nb" />
+  </mime-type>
   <mime-type type="application/octet-stream">
     <_comment>unknown</_comment>
     <magic priority="50">
@@ -82,14 +86,6 @@ command to generate the output files.
   <mime-type type="application/oda">
     <_comment>ODA document</_comment>
     <glob pattern="*.oda"/>
-  </mime-type>
-  <mime-type type="application/x-par2">
-    <comment>PAR2 Parity File</comment>
-    <magic priority="50">
-      <match offset="0" type="string" value="PAR2" />
-    </magic>
-    <glob pattern="*.PAR2" />
-    <glob pattern="*.par2" />
   </mime-type>
   <mime-type type="application/pdf">
     <_comment>PDF document</_comment>
@@ -141,10 +137,6 @@ command to generate the output files.
     <glob pattern="*.smil"/>
     <glob pattern="*.smi"/>
     <glob pattern="*.sml"/>
-  </mime-type>
-  <mime-type type="application/x-chm">
-    <comment>Compiled HTML Help Format</comment>
-    <glob pattern="*.chm"/>
   </mime-type>
   <mime-type type="application/vnd.corel-draw">
     <_comment>Corel Draw drawing</_comment>
@@ -436,6 +428,10 @@ command to generate the output files.
   <mime-type type="application/x-chess-pgn">
     <_comment>PGN chess game</_comment>
     <glob pattern="*.pgn"/>
+  </mime-type>
+  <mime-type type="application/x-chm">
+    <comment>Compiled HTML Help Format</comment>
+    <glob pattern="*.chm"/>
   </mime-type>
   <mime-type type="application/x-class-file">
     <_comment>Java byte code</_comment>
@@ -1128,6 +1124,14 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-palm-database">
     <_comment>Palm OS database</_comment>
+  </mime-type>
+  <mime-type type="application/x-par2">
+    <comment>PAR2 Parity File</comment>
+    <magic priority="50">
+      <match offset="0" type="string" value="PAR2" />
+    </magic>
+    <glob pattern="*.PAR2" />
+    <glob pattern="*.par2" />
   </mime-type>
   <mime-type type="application/x-pef-executable">
     <_comment>PEF executable</_comment>

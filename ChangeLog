@@ -1,5 +1,10 @@
 2004-08-17  Christophe Fergeau  <teuf@gnome.org>
 
+	* mkinstalldirs: add to CVS since it's no longer installed by automake
+	  fixes bug #576
+
+2004-08-17  Christophe Fergeau  <teuf@gnome.org>
+
 	* configure.in: added ko to ALL_LINGUAS
 
 2004-08-16  Alexander Larsson  <alexl@redhat.com>

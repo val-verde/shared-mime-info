@@ -59,6 +59,7 @@ command to generate the output files.
     <comment xml:lang="fr">ajout Andrew Toolkit</comment>
     <comment xml:lang="hu">Andrew Toolkit inset</comment>
     <comment xml:lang="nn">Andrew Toolkit innsats</comment>
+    <comment xml:lang="no">Andrew verktøysett insett</comment>
     <comment xml:lang="sr">Andrew додатаг групе алата</comment>
     <comment xml:lang="sv">Andrew-verktygssamling insatt</comment>
     <glob pattern="*.ez"/>
@@ -70,6 +71,7 @@ command to generate the output files.
     <comment xml:lang="hu">Adobe Illustrator-dokumentum</comment>
     <comment xml:lang="nl">Adobe Illustrator document</comment>
     <comment xml:lang="nn">Adobe Illustrator-dokument</comment>
+    <comment xml:lang="no">Adobe Illustrator-dokument</comment>
     <comment xml:lang="sr">Adobe Illustrator документ</comment>
     <comment xml:lang="sv">Adobe Illustrator-dokument</comment>
     <glob pattern="*.ai"/>
@@ -81,6 +83,7 @@ command to generate the output files.
     <comment xml:lang="hu">Macintosh BinHex kódolású fájl</comment>
     <comment xml:lang="nl">Macintosh BinHex-gecodeerd bestand</comment>
     <comment xml:lang="nn">Macintosh BinHex-koda fil</comment>
+    <comment xml:lang="no">Macintosh BinHe-kodet arkiv</comment>
     <comment xml:lang="sr">Мекинтош BinHex-encoded датотека</comment>
     <comment xml:lang="sv">Macintosh BinHex-kodad fil</comment>
     <magic priority="50">
@@ -94,6 +97,7 @@ command to generate the output files.
     <comment xml:lang="hu">Microsoft Word-dokumentum</comment>
     <comment xml:lang="nl">Microsoft Word document</comment>
     <comment xml:lang="nn">Microsoft Word-dokument</comment>
+    <comment xml:lang="no">Microsoft Word dokument</comment>
     <comment xml:lang="sr">Микрософт Word документ</comment>
     <comment xml:lang="sv">Microsoft Word-dokument</comment>
     <magic priority="50">
@@ -114,6 +118,7 @@ command to generate the output files.
     <comment xml:lang="hu">Ismeretlen</comment>
     <comment xml:lang="nl">Onbekend</comment>
     <comment xml:lang="nn">Ukjend</comment>
+    <comment xml:lang="no">Ukjent</comment>
     <comment xml:lang="sr">Непознато</comment>
     <comment xml:lang="sv">Okänd</comment>
     <magic priority="50">
@@ -132,6 +137,7 @@ command to generate the output files.
     <comment xml:lang="hu">ODA-dokumentum</comment>
     <comment xml:lang="nl">ODA document</comment>
     <comment xml:lang="nn">ODA-dokument</comment>
+    <comment xml:lang="no">ODA-dokument</comment>
     <comment xml:lang="sr">ODA документ</comment>
     <comment xml:lang="sv">ODA-dokument</comment>
     <glob pattern="*.oda"/>
@@ -142,6 +148,7 @@ command to generate the output files.
     <comment xml:lang="fr">document Pdf</comment>
     <comment xml:lang="nl">Pdf document</comment>
     <comment xml:lang="nn">PDF-dokument</comment>
+    <comment xml:lang="no">Pdf-dokument</comment>
     <comment xml:lang="sr">ПДФ документ</comment>
     <comment xml:lang="sv">Pdf-dokument</comment>
     <magic priority="50">
@@ -156,6 +163,7 @@ command to generate the output files.
     <comment xml:lang="hu">PGP-üzenet</comment>
     <comment xml:lang="nl">PGP bericht</comment>
     <comment xml:lang="nn">PGP-melding</comment>
+    <comment xml:lang="no">PGP-melding</comment>
     <comment xml:lang="sr">PGP порука</comment>
     <comment xml:lang="sv">PGP-meddelande</comment>
     <glob pattern="*.pgp"/>
@@ -176,6 +184,7 @@ command to generate the output files.
     <comment xml:lang="hu">PGP-kulcs</comment>
     <comment xml:lang="nl">PGP sleutels</comment>
     <comment xml:lang="nn">PGP-nøkler</comment>
+    <comment xml:lang="no">PGP-nøkler</comment>
     <comment xml:lang="sr">PGP кључ</comment>
     <comment xml:lang="sv">PGP-nycklar</comment>
   </mime-type>
@@ -185,6 +194,7 @@ command to generate the output files.
     <comment xml:lang="fr">signature détachée OpenPGP</comment>
     <comment xml:lang="nl">Losstaande OpenPGP ondertekening</comment>
     <comment xml:lang="nn">Fråkopla OpenPGP-signatur</comment>
+    <comment xml:lang="no">Frakoblet OpenPGP-signatur</comment>
     <comment xml:lang="sr">Одвојени ОпенПГП потпис</comment>
     <comment xml:lang="sv">Frikopplad PGP-signatur</comment>
   </mime-type>
@@ -195,6 +205,7 @@ command to generate the output files.
     <comment xml:lang="hu">S/MIME-fájl</comment>
     <comment xml:lang="nl">S/MIME bestand</comment>
     <comment xml:lang="nn">S/MIME-fil</comment>
+    <comment xml:lang="no">S/MIME-fil</comment>
     <comment xml:lang="sr">S/MIME датотека</comment>
     <comment xml:lang="sv">S/MIME-fil</comment>
   </mime-type>
@@ -204,6 +215,7 @@ command to generate the output files.
     <comment xml:lang="fr">signature détachée S/MIME</comment>
     <comment xml:lang="nl">Losstaande S/MIME ondertekening</comment>
     <comment xml:lang="nn">Fråkopla S/MIME-signatur</comment>
+    <comment xml:lang="no">Frakoblet S/MIME-signatur</comment>
     <comment xml:lang="sr">Одвојени S/MIME потпис</comment>
     <comment xml:lang="sv">Frikopplad S/MIME-signatur</comment>
     <glob pattern="*.p7s"/>
@@ -214,6 +226,7 @@ command to generate the output files.
     <comment xml:lang="fr">document PostScript</comment>
     <comment xml:lang="nl">PostScript document</comment>
     <comment xml:lang="nn">PostScript-dokument</comment>
+    <comment xml:lang="no">PostScript-dokument</comment>
     <comment xml:lang="sr">ПостСкрипт документ</comment>
     <comment xml:lang="sv">PostScript-dokument</comment>
     <magic priority="50">
@@ -228,6 +241,7 @@ command to generate the output files.
     <comment xml:lang="fr">Rich Text Format</comment>
     <comment xml:lang="nl">Rijke Tekst Formaat</comment>
     <comment xml:lang="nn">Rik tekst-dokument</comment>
+    <comment xml:lang="no">Rik tekst-format</comment>
     <comment xml:lang="sr">Обогаћени текстуални запис (RTF)</comment>
     <comment xml:lang="sv">Rikt textdokument</comment>
     <magic priority="50">
@@ -254,6 +268,7 @@ command to generate the output files.
     <comment xml:lang="hu">Corel Draw-rajz</comment>
     <comment xml:lang="nl">Corel Draw tekening</comment>
     <comment xml:lang="nn">Corel Draw-teikning</comment>
+    <comment xml:lang="no">Corel Draw-tegning</comment>
     <comment xml:lang="sr">Corel Draw цртеж</comment>
     <comment xml:lang="sv">Corel Draw-teckning</comment>
     <magic priority="50">
@@ -268,6 +283,7 @@ command to generate the output files.
     <comment xml:lang="hu">Lotus 1-2-3-munkafüzet</comment>
     <comment xml:lang="nl">Lotus 1-2-3 spreadsheet</comment>
     <comment xml:lang="nn">Lotus 1-2-3 rekneark</comment>
+    <comment xml:lang="no">Lotus 1-2-3 regneark</comment>
     <comment xml:lang="sr">Lotus 1-2-3 табеларни прорачун</comment>
     <comment xml:lang="sv">Lotus 1-2-3-kalkylblad</comment>
     <magic priority="50">
@@ -286,6 +302,7 @@ command to generate the output files.
     <comment xml:lang="hu">Microsoft Excel-munkafüzet</comment>
     <comment xml:lang="nl">Microsoft Excel spreadsheet</comment>
     <comment xml:lang="nn">Microsoft Excel reikneark</comment>
+    <comment xml:lang="no">Microsoft Excel regneark</comment>
     <comment xml:lang="sr">Микрософт Ексел табеларни прорачун</comment>
     <comment xml:lang="sv">Microsoft Excel-kalkylblad</comment>
     <magic priority="50">
@@ -307,6 +324,7 @@ command to generate the output files.
     <comment xml:lang="hu">Microsoft PowerPoint-dokumentum</comment>
     <comment xml:lang="nl">Microsoft PowerPoint document</comment>
     <comment xml:lang="nn">Microsoft PowerPoint-dokument</comment>
+    <comment xml:lang="no">Microsoft PowerPoint dokument</comment>
     <comment xml:lang="sr">Микрософт ПауерПоинт документ</comment>
     <comment xml:lang="sv">Microsoft PowerPoint-dokument</comment>
     <glob pattern="*.ppz"/>
@@ -321,6 +339,7 @@ command to generate the output files.
     <comment xml:lang="hu">Microsoft Word-dokumentum</comment>
     <comment xml:lang="nl">Microsoft Word document</comment>
     <comment xml:lang="nn">Microsoft Word-dokument</comment>
+    <comment xml:lang="no">Microsoft Word dokument</comment>
     <comment xml:lang="sr">Микрософт Word документ</comment>
     <comment xml:lang="sv">Microsoft Word-dokument</comment>
   </mime-type>
@@ -331,6 +350,7 @@ command to generate the output files.
     <comment xml:lang="hu">RealAudio/Video-dokumentum</comment>
     <comment xml:lang="nl">RealAudio/Video document</comment>
     <comment xml:lang="nn">RealAudio/Video-dokument</comment>
+    <comment xml:lang="no">RealAudio/Video-dokument</comment>
     <comment xml:lang="sr">RealAudio/Video документ</comment>
     <comment xml:lang="sv">RealAudio/Video-dokument</comment>
   </mime-type>
@@ -341,6 +361,7 @@ command to generate the output files.
     <comment xml:lang="hu">StarCalc-munkafüzet</comment>
     <comment xml:lang="nl">StarCalc spreadsheet</comment>
     <comment xml:lang="nn">StarCalc-rekneark</comment>
+    <comment xml:lang="no">StarCalc-regneark</comment>
     <comment xml:lang="sr">StarCalc табеларни прорачун</comment>
     <comment xml:lang="sv">StarCalc-kalkylblad</comment>
     <glob pattern="*.sdc"/>
@@ -352,6 +373,7 @@ command to generate the output files.
     <comment xml:lang="hu">StarChart-grafikon</comment>
     <comment xml:lang="nl">StarChart grafiek</comment>
     <comment xml:lang="nn">StarChart-graf</comment>
+    <comment xml:lang="no">StarChart graf</comment>
     <comment xml:lang="sr">StarChart графикон</comment>
     <comment xml:lang="sv">StarChart-diagram</comment>
     <glob pattern="*.sds"/>
@@ -363,6 +385,7 @@ command to generate the output files.
     <comment xml:lang="hu">StarDraw-rajz</comment>
     <comment xml:lang="nl">StarDraw tekening</comment>
     <comment xml:lang="nn">StarDraw-teikning</comment>
+    <comment xml:lang="no">StarDraw tegning</comment>
     <comment xml:lang="sr">StarDraw drawing</comment>
     <comment xml:lang="sv">StarDraw-teckning</comment>
     <glob pattern="*.sda"/>
@@ -374,6 +397,7 @@ command to generate the output files.
     <comment xml:lang="hu">StarImpress-bemutató</comment>
     <comment xml:lang="nl">StarImpress presentatie</comment>
     <comment xml:lang="nn">StarImpress-presentasjon</comment>
+    <comment xml:lang="no">StarImpress-presentasjon</comment>
     <comment xml:lang="sr">StarImpress презентација</comment>
     <comment xml:lang="sv">StarImpress-presentation</comment>
     <glob pattern="*.sdd"/>
@@ -386,6 +410,7 @@ command to generate the output files.
     <comment xml:lang="hu">StarMail-fájl</comment>
     <comment xml:lang="nl">StarMail bestand</comment>
     <comment xml:lang="nn">StarMail-fil</comment>
+    <comment xml:lang="no">StarMail-fil</comment>
     <comment xml:lang="sr">StarMail датотека</comment>
     <comment xml:lang="sv">StarMail-fil</comment>
     <glob pattern="*.smd"/>
@@ -397,6 +422,7 @@ command to generate the output files.
     <comment xml:lang="hu">StarMath-dokumentum</comment>
     <comment xml:lang="nl">StarMath document</comment>
     <comment xml:lang="nn">StarMath-dokument</comment>
+    <comment xml:lang="no">StarMath-dokument</comment>
     <comment xml:lang="sr">StarMath документ</comment>
     <comment xml:lang="sv">StarMath-dokument</comment>
     <glob pattern="*.smf"/>
@@ -408,6 +434,7 @@ command to generate the output files.
     <comment xml:lang="hu">StarWriter-dokumentum</comment>
     <comment xml:lang="nl">StarWriter document</comment>
     <comment xml:lang="nn">StarWriter document</comment>
+    <comment xml:lang="no">StarWriter-dokument</comment>
     <comment xml:lang="sr">StarWriter документ</comment>
     <comment xml:lang="sv">StarWriter-dokument</comment>
     <glob pattern="*.sdw"/>
@@ -420,6 +447,7 @@ command to generate the output files.
     <comment xml:lang="fr">chiffrier OpenOffice</comment>
     <comment xml:lang="nl">OpenOffice spreadsheet</comment>
     <comment xml:lang="nn">OpenOffice.org-rekneark</comment>
+    <comment xml:lang="no">OpenOffice regneark</comment>
     <comment xml:lang="sr">OpenOffice табеларни рачун</comment>
     <comment xml:lang="sv">OpenOffice-kalkylblad</comment>
     <glob pattern="*.sxc"/>
@@ -430,6 +458,7 @@ command to generate the output files.
     <comment xml:lang="fr">canevas de chiffrier OpenOffice</comment>
     <comment xml:lang="nl">OpenOffice spreadsheet sjabloon</comment>
     <comment xml:lang="nn">OpenOffice.org-reknearkmal</comment>
+    <comment xml:lang="no">OpenOffice regnearkmal</comment>
     <comment xml:lang="sr">OpenOffice шаблон табеларног прорачуна</comment>
     <comment xml:lang="sv">OpenOffice-kalkylbladsmall</comment>
     <glob pattern="*.stc"/>
@@ -440,6 +469,7 @@ command to generate the output files.
     <comment xml:lang="fr">dessin OpenOffice</comment>
     <comment xml:lang="nl">OpenOffice tekening</comment>
     <comment xml:lang="nn">OpenOffice.org-teikning</comment>
+    <comment xml:lang="no">OpenOffice tegning</comment>
     <comment xml:lang="sr">OpenOffice цртеж</comment>
     <comment xml:lang="sv">OpenOffice-teckning</comment>
     <glob pattern="*.sxd"/>
@@ -450,6 +480,7 @@ command to generate the output files.
     <comment xml:lang="fr">canevas de dessin OpenOffice</comment>
     <comment xml:lang="nl">OpenOffice tekening sjabloon</comment>
     <comment xml:lang="nn">OpenOffice.org-teikningsmal</comment>
+    <comment xml:lang="no">OpenOffice tegningsmal</comment>
     <comment xml:lang="sr">OpenOffice шаблон цртежа</comment>
     <comment xml:lang="sv">OpenOffice-teckningsmall</comment>
     <glob pattern="*.std"/>
@@ -460,6 +491,7 @@ command to generate the output files.
     <comment xml:lang="fr">présentation OpenOffice Impress</comment>
     <comment xml:lang="nl">OpenOffice Impress presentatie</comment>
     <comment xml:lang="nn">OpenOffice.org Impress-presentasjon</comment>
+    <comment xml:lang="no">OpenOffice Impress-presentasjon</comment>
     <comment xml:lang="sr">OpenOffice Impress презентација</comment>
     <comment xml:lang="sv">OpenOffice Impress-presentation</comment>
     <glob pattern="*.sxi"/>
@@ -470,6 +502,7 @@ command to generate the output files.
     <comment xml:lang="fr">canevas de présentation OpenOffice Impress</comment>
     <comment xml:lang="nl">OpenOffice Impress presentatie sjabloon</comment>
     <comment xml:lang="nn">OpenOffice.org Impress-presentasjonsmal</comment>
+    <comment xml:lang="no">OpenOffice Impress-presentasjonsmal</comment>
     <comment xml:lang="sr">OpenOffice Impress шаблон презентације</comment>
     <comment xml:lang="sv">OpenOffice Impress-presentationsmall</comment>
     <glob pattern="*.sti"/>
@@ -480,6 +513,7 @@ command to generate the output files.
     <comment xml:lang="fr">document OpenOffice Math</comment>
     <comment xml:lang="nl">OpenOffice Math document</comment>
     <comment xml:lang="nn">OpenOffice.org Math-dokument</comment>
+    <comment xml:lang="no">OpenOffice Math-dokument</comment>
     <comment xml:lang="sr">OpenOffice Math документ</comment>
     <comment xml:lang="sv">OpenOffice Math-dokument</comment>
     <glob pattern="*.sxm"/>
@@ -490,6 +524,7 @@ command to generate the output files.
     <comment xml:lang="fr">document OpenOffice Writer</comment>
     <comment xml:lang="nl">OpenOffice Writer document</comment>
     <comment xml:lang="nn">OpenOffice.org Writer-dokument</comment>
+    <comment xml:lang="no">OpenOffice Writer-dokument</comment>
     <comment xml:lang="sr">OpenOffice Writer документ</comment>
     <comment xml:lang="sv">OpenOffice Writer-dokument</comment>
     <glob pattern="*.sxw"/>
@@ -500,6 +535,7 @@ command to generate the output files.
     <comment xml:lang="fr">document global OpenOffice Writer</comment>
     <comment xml:lang="nl">OpenOffice Writer globaal document</comment>
     <comment xml:lang="nn">Globalt OpenOffice.org Writer-dokument</comment>
+    <comment xml:lang="no">Globalt OpenOffice Writer-dokument</comment>
     <comment xml:lang="sr">OpenOffice Writer глобални документ</comment>
     <comment xml:lang="sv">OpenOffice Writer-globaldokument</comment>
     <glob pattern="*.sxg"/>
@@ -510,6 +546,7 @@ command to generate the output files.
     <comment xml:lang="fr">canevas OpenOffice Writer</comment>
     <comment xml:lang="nl">OpenOffice Writer sjabloon</comment>
     <comment xml:lang="nn">OpenOffice.org Writer-dokumentmal</comment>
+    <comment xml:lang="no">OpenOffice Writer-dokumentmal</comment>
     <comment xml:lang="sr">OpenOffice Writer шаблон</comment>
     <comment xml:lang="sv">OpenOffice Writer-mall</comment>
     <glob pattern="*.stw"/>
@@ -521,6 +558,7 @@ command to generate the output files.
     <comment xml:lang="hu">WordPerfect-dokumentum</comment>
     <comment xml:lang="nl">WordPerfect document</comment>
     <comment xml:lang="nn">WordPerfect-dokument</comment>
+    <comment xml:lang="no">WordPerfect-dokument</comment>
     <comment xml:lang="sr">WordPerfect документ</comment>
     <comment xml:lang="sv">WordPerfect-dokument</comment>
     <magic priority="50">
@@ -536,6 +574,7 @@ command to generate the output files.
     <comment xml:lang="hu">XBEL-könyvjelzőfájl</comment>
     <comment xml:lang="nl">XBEL bladwijzers bestand</comment>
     <comment xml:lang="nn">XBEL-bokmerkefil</comment>
+    <comment xml:lang="no">XBEL-bokmerkefil</comment>
     <comment xml:lang="sr">XBEL датотека маркера</comment>
     <comment xml:lang="sv">XBEL-bokmärkesfil</comment>
     <magic priority="50">
@@ -550,6 +589,7 @@ command to generate the output files.
     <comment xml:lang="hu">AbiWord-dokumentum</comment>
     <comment xml:lang="nl">AbiWord document</comment>
     <comment xml:lang="nn">AbiWord-dokument</comment>
+    <comment xml:lang="no">AbiWord-dokument</comment>
     <comment xml:lang="sr">AbiWord документ</comment>
     <comment xml:lang="sv">AbiWord-dokument</comment>
     <magic priority="50">
@@ -567,6 +607,7 @@ command to generate the output files.
     <comment xml:lang="hu">Lotus AmiPro-dokumentum</comment>
     <comment xml:lang="nl">Lotus AmiPro document</comment>
     <comment xml:lang="nn">Lotus AmiPro-dokument</comment>
+    <comment xml:lang="no">Lotus AmiPro-dokument</comment>
     <comment xml:lang="sr">Лотус АмиПро документ</comment>
     <comment xml:lang="sv">Lotus AmiPro-dokument</comment>
     <glob pattern="*.sam"/>
@@ -577,6 +618,7 @@ command to generate the output files.
     <comment xml:lang="fr">document Applix Spreadsheets</comment>
     <comment xml:lang="nl">Applix Spreadsheets document</comment>
     <comment xml:lang="nn">Applix Spreadsheets-dokument</comment>
+    <comment xml:lang="no">Applix Spreadsheets-regneark</comment>
     <comment xml:lang="sr">Applix Spreadsheets документ</comment>
     <comment xml:lang="sv">Applix Spreadsheets-dokument</comment>
     <magic priority="50">
@@ -593,6 +635,7 @@ command to generate the output files.
     <comment xml:lang="fr">document Applix Words</comment>
     <comment xml:lang="nl">Applix Words document</comment>
     <comment xml:lang="nn">Applix Words dokument</comment>
+    <comment xml:lang="no">Applix Words-dokument</comment>
     <comment xml:lang="sr">Applix Words документ</comment>
     <comment xml:lang="sv">Applix Words-dokument</comment>
     <magic priority="50">
@@ -619,6 +662,7 @@ command to generate the output files.
     <comment xml:lang="hu">Ar-archívum</comment>
     <comment xml:lang="nl">Ar archief</comment>
     <comment xml:lang="nn">Ar-arkiv</comment>
+    <comment xml:lang="no">Ar-arkiv</comment>
     <comment xml:lang="sr">Ar архива</comment>
     <comment xml:lang="sv">Ar-arkiv</comment>
     <magic priority="50">
@@ -634,6 +678,7 @@ command to generate the output files.
     <comment xml:lang="hu">ARJ-archívum</comment>
     <comment xml:lang="nl">ARJ archief</comment>
     <comment xml:lang="nn">ARJ-arkiv</comment>
+    <comment xml:lang="no">ARJ-arkiv</comment>
     <comment xml:lang="sr">ARJ архива</comment>
     <comment xml:lang="sv">ARJ-arkiv</comment>
     <magic priority="50">
@@ -647,6 +692,7 @@ command to generate the output files.
     <comment xml:lang="fr">page active du serveur</comment>
     <comment xml:lang="nl">actieve server pagina</comment>
     <comment xml:lang="nn">active server page</comment>
+    <comment xml:lang="no">active server page</comment>
     <comment xml:lang="sr">Активна серверска страна</comment>
     <comment xml:lang="sv">aktiv serversida</comment>
     <glob pattern="*.asp"/>
@@ -658,6 +704,7 @@ command to generate the output files.
     <comment xml:lang="hu">AWK-szkript</comment>
     <comment xml:lang="nl">AWK script</comment>
     <comment xml:lang="nn">WAK-skript</comment>
+    <comment xml:lang="no">AWK-skript</comment>
     <comment xml:lang="sr">AWK скрипта</comment>
     <comment xml:lang="sv">AWK-skript</comment>
     <magic priority="50">
@@ -680,6 +727,7 @@ command to generate the output files.
     <comment xml:lang="hu">BCPIO-dokumentum</comment>
     <comment xml:lang="nl">BCPIO document</comment>
     <comment xml:lang="nn">BCPIO-dokument</comment>
+    <comment xml:lang="no">BCPIO-dokument</comment>
     <comment xml:lang="sr">BCPIO документ</comment>
     <comment xml:lang="sv">BCPIO-dokument</comment>
     <glob pattern="*.bcpio"/>
@@ -690,6 +738,7 @@ command to generate the output files.
     <comment xml:lang="fr">fichier racine BitTorrent</comment>
     <comment xml:lang="nl">BitTorrent zaad-bestand</comment>
     <comment xml:lang="nn">Nedlastingsfil for BitTorrent</comment>
+    <comment xml:lang="no">Fil med utgangsverdi for BitTorrent</comment>
     <comment xml:lang="sr">Датотека са БитТорентовим полазиштима</comment>
     <comment xml:lang="sv">BitTorrent-fröfil</comment>
     <magic priority="50">
@@ -704,6 +753,7 @@ command to generate the output files.
     <comment xml:lang="hu">Blender-fájl</comment>
     <comment xml:lang="nl">Blender bestand</comment>
     <comment xml:lang="nn">Blender-fil</comment>
+    <comment xml:lang="no">Blender-fil</comment>
     <comment xml:lang="sr">Блендер датотека</comment>
     <comment xml:lang="sv">Blender-fil</comment>
     <glob pattern="*.blender"/>
@@ -720,6 +770,7 @@ command to generate the output files.
     <comment xml:lang="hu">Bzip-fájl</comment>
     <comment xml:lang="nl">Bzip bestand</comment>
     <comment xml:lang="nn">Bzip-fil</comment>
+    <comment xml:lang="no">Bzip-fil</comment>
     <comment xml:lang="sr">Bzip датотека</comment>
     <comment xml:lang="sv">Bzip-fil</comment>
     <magic priority="50">
@@ -734,6 +785,7 @@ command to generate the output files.
     <comment xml:lang="fr">archives Bzipp Tar</comment>
     <comment xml:lang="nl">Bzip-ingepakt Tar archief</comment>
     <comment xml:lang="nn">Tar-arkiv pakka med bzip</comment>
+    <comment xml:lang="no">Bzippet tar-arkiv</comment>
     <comment xml:lang="sr">Бзипована ТАР архива</comment>
     <comment xml:lang="sv">Bzippade tar-arkiv</comment>
     <glob pattern="*.tar.bz"/>
@@ -756,6 +808,7 @@ command to generate the output files.
     <comment xml:lang="hu">CGI-program</comment>
     <comment xml:lang="nl">CGI programma</comment>
     <comment xml:lang="nn">CGI-program</comment>
+    <comment xml:lang="no">CGI-program</comment>
     <comment xml:lang="sr">CGI програм</comment>
     <comment xml:lang="sv">CGI-program</comment>
     <glob pattern="*.cgi"/>
@@ -767,6 +820,7 @@ command to generate the output files.
     <comment xml:lang="hu">PGN-sakkjátszma</comment>
     <comment xml:lang="nl">PGN schaakspel</comment>
     <comment xml:lang="nn">PGN-sjakkspel</comment>
+    <comment xml:lang="no">PGN skakspil</comment>
     <comment xml:lang="sr">PGN шаховска игра</comment>
     <comment xml:lang="sv">PGN-schackparti</comment>
     <glob pattern="*.pgn"/>
@@ -778,6 +832,7 @@ command to generate the output files.
     <comment xml:lang="hu">Java-bájtkód</comment>
     <comment xml:lang="nl">Java byte code</comment>
     <comment xml:lang="nn">Jave byte-kode</comment>
+    <comment xml:lang="no">Java-bytekode</comment>
     <comment xml:lang="sr">Java бајтни кôд</comment>
     <comment xml:lang="sv">Java-bytekod</comment>
   </mime-type>
@@ -787,6 +842,7 @@ command to generate the output files.
     <comment xml:lang="fr">fichier UNIX compressé</comment>
     <comment xml:lang="nl">UNIX ingepakt bestand</comment>
     <comment xml:lang="nn">UNIX-komprimert fil</comment>
+    <comment xml:lang="no">UNIX komprimert fil</comment>
     <comment xml:lang="sr">UNIX компресована датотека</comment>
     <comment xml:lang="sv">UNIX-komprimerad fil</comment>
     <magic priority="50">
@@ -800,6 +856,7 @@ command to generate the output files.
     <comment xml:lang="fr">archive Tar gzippé</comment>
     <comment xml:lang="nl">Gzip-ingepakt Tar archief</comment>
     <comment xml:lang="nn">Tar-arkiv pakka med Gzip</comment>
+    <comment xml:lang="no">Gzippet tar-arkiv</comment>
     <comment xml:lang="sr">Гзипована Тар архива</comment>
     <comment xml:lang="sv">Gzippat tar-arkiv</comment>
     <glob pattern="*.tar.gz"/>
@@ -837,6 +894,7 @@ command to generate the output files.
     <comment xml:lang="hu">CPIO-archívum</comment>
     <comment xml:lang="nl">CPIO archief</comment>
     <comment xml:lang="nn">CPIO-arkiv</comment>
+    <comment xml:lang="no">CPIO-arkiv</comment>
     <comment xml:lang="sr">CPIO архива</comment>
     <comment xml:lang="sv">CPIO-arkiv</comment>
     <magic priority="50">
@@ -853,6 +911,7 @@ command to generate the output files.
     <comment xml:lang="fr">archive CPIO (compressé gzip)</comment>
     <comment xml:lang="nl">CPIO archief (gzip-ingepakt)</comment>
     <comment xml:lang="nn">CPIO-arkiv (gzip-pakka)</comment>
+    <comment xml:lang="no">CPIO-arkiv (gzip-komprimert)</comment>
     <comment xml:lang="sr">CPIO архива (компресована gzip-ом)</comment>
     <comment xml:lang="sv">CPIO-arkiv (gzip-komprimerat)</comment>
     <glob pattern="*.cpio.gz"/>
@@ -864,6 +923,7 @@ command to generate the output files.
     <comment xml:lang="hu">C shell-parancsfájl</comment>
     <comment xml:lang="nl">C shell script</comment>
     <comment xml:lang="nn">C-skalskript</comment>
+    <comment xml:lang="no">C-skallskript</comment>
     <comment xml:lang="sr">C скрипта окружења</comment>
     <comment xml:lang="sv">Skalskript (csh)</comment>
   </mime-type>
@@ -873,6 +933,7 @@ command to generate the output files.
     <comment xml:lang="fr">document dBASE</comment>
     <comment xml:lang="nl">dBASE document</comment>
     <comment xml:lang="nn">dBASE-dokument</comment>
+    <comment xml:lang="no">dBASE-dokument</comment>
     <comment xml:lang="sr">dBASE документ</comment>
     <comment xml:lang="sv">dBASE-dokument</comment>
     <glob pattern="*.dbf"/>
@@ -888,6 +949,7 @@ command to generate the output files.
     <comment xml:lang="fr">rom Dreamcast</comment>
     <comment xml:lang="nl">Dreamcast ROM</comment>
     <comment xml:lang="nn">Dreamcast-ROM</comment>
+    <comment xml:lang="no">Dreamcast-rom</comment>
     <comment xml:lang="sr">Dreamcast ром</comment>
     <comment xml:lang="sv">Dreamcast-rom</comment>
     <glob pattern="*.dc"/>
@@ -899,6 +961,7 @@ command to generate the output files.
     <comment xml:lang="hu">Debian-csomag</comment>
     <comment xml:lang="nl">Debian pakket</comment>
     <comment xml:lang="nn">Debian pakke</comment>
+    <comment xml:lang="no">Debian pakke</comment>
     <comment xml:lang="sr">Debian пакет</comment>
     <comment xml:lang="sv">Debianpaket</comment>
     <magic priority="50">
@@ -943,6 +1006,7 @@ command to generate the output files.
     <comment xml:lang="hu">Dia-diagram</comment>
     <comment xml:lang="nl">Dia diagram</comment>
     <comment xml:lang="nn">Dia diagram</comment>
+    <comment xml:lang="no">Dia-diagram</comment>
     <comment xml:lang="sr">Диа дијаграм</comment>
     <comment xml:lang="sv">Dia-diagram</comment>
     <glob pattern="*.dia"/>
@@ -968,6 +1032,7 @@ command to generate the output files.
     <comment xml:lang="hu">Enlightenment-téma</comment>
     <comment xml:lang="nl">Enlightenment thema</comment>
     <comment xml:lang="nn">Enlightenment-tema</comment>
+    <comment xml:lang="no">Enlightenment tema</comment>
     <comment xml:lang="sr">Enlightenment тема</comment>
     <comment xml:lang="sv">Enlightenment-tema</comment>
     <glob pattern="*.etheme"/>
@@ -978,6 +1043,7 @@ command to generate the output files.
     <comment xml:lang="fr">animateur Egon</comment>
     <comment xml:lang="nl">Egon Animator</comment>
     <comment xml:lang="nn">Egon Animator</comment>
+    <comment xml:lang="no">Egon animator</comment>
     <comment xml:lang="sr">Егон аниматор</comment>
     <comment xml:lang="sv">Egon-animator</comment>
     <glob pattern="*.egon"/>
@@ -988,6 +1054,7 @@ command to generate the output files.
     <comment xml:lang="fr">Exécutable</comment>
     <comment xml:lang="nl">Uitvoerbaar bestand</comment>
     <comment xml:lang="nn">Røyrbar</comment>
+    <comment xml:lang="no">Kjørbar</comment>
     <comment xml:lang="sr">Извршна</comment>
     <comment xml:lang="sv">Körbar</comment>
     <magic priority="40">
@@ -1016,6 +1083,7 @@ command to generate the output files.
     <comment xml:lang="hu">Betűkészletek</comment>
     <comment xml:lang="nl">Lettertypen</comment>
     <comment xml:lang="nn">Skrifttypar</comment>
+    <comment xml:lang="no">Skrifter</comment>
     <comment xml:lang="sr">Фонтови</comment>
     <comment xml:lang="sv">Typsnitt</comment>
     <magic priority="50">
@@ -1038,6 +1106,7 @@ command to generate the output files.
     <comment xml:lang="hu">Adobe-betűmetrika</comment>
     <comment xml:lang="nl">Adobe lettertype-metrieken</comment>
     <comment xml:lang="nn">Adobe skrifttypemetrikk</comment>
+    <comment xml:lang="no">Adobe skrifttypefil</comment>
     <comment xml:lang="sr">Adobe метрика фонта</comment>
     <comment xml:lang="sv">Adobe-typsnittsmetrik</comment>
     <glob pattern="*.afm"/>
@@ -1049,6 +1118,7 @@ command to generate the output files.
     <comment xml:lang="hu">BDF-betűkészlet</comment>
     <comment xml:lang="nl">BDF lettertype</comment>
     <comment xml:lang="nn">BDF-skrifttype</comment>
+    <comment xml:lang="no">BDF-skrifttype</comment>
     <comment xml:lang="sr">BDF фонт</comment>
     <comment xml:lang="sv">BDF-typsnitt</comment>
     <magic priority="50">
@@ -1063,6 +1133,7 @@ command to generate the output files.
     <comment xml:lang="hu">DOS-betűkészlet</comment>
     <comment xml:lang="nl">DOS lettertype</comment>
     <comment xml:lang="nn">DOS-skrifttype</comment>
+    <comment xml:lang="no">DOS-skrifttype</comment>
     <comment xml:lang="sr">DOS фонт</comment>
     <comment xml:lang="sv">DOS-typsnitt</comment>
     <magic priority="50">
@@ -1078,6 +1149,7 @@ command to generate the output files.
     <comment xml:lang="hu">Adobe FrameMaker-betűkészlet</comment>
     <comment xml:lang="nl">Adobe FrameMaker lettertype</comment>
     <comment xml:lang="nn">Adobe FrameMaker skrifttype</comment>
+    <comment xml:lang="no">Adobe FrameMaker skrifttype</comment>
     <comment xml:lang="sr">Adobe FrameMaker фонт</comment>
     <comment xml:lang="sv">Adobe FrameMaker-typsnitt</comment>
     <magic priority="50">
@@ -1091,6 +1163,7 @@ command to generate the output files.
     <comment xml:lang="hu">LIBGRX-betűkészlet</comment>
     <comment xml:lang="nl">LIBGRX lettertype</comment>
     <comment xml:lang="nn">LIBGRX skrifttype</comment>
+    <comment xml:lang="no">LIBGRX-skrifttype</comment>
     <comment xml:lang="sr">LIBGRX фонт</comment>
     <comment xml:lang="sv">LIBGRX-typsnitt</comment>
     <magic priority="50">
@@ -1104,6 +1177,7 @@ command to generate the output files.
     <comment xml:lang="hu">Linux PSF konzolos betűkészlet</comment>
     <comment xml:lang="nl">Linux PSF console lettertype</comment>
     <comment xml:lang="nn">Linux PSF konsoll-skrifttype</comment>
+    <comment xml:lang="no">Linux PSF konsollskrifttype</comment>
     <comment xml:lang="sr">Линукс PSF конзолни фонт</comment>
     <comment xml:lang="sv">Linux PSF-konsolltypsnitt</comment>
     <magic priority="50">
@@ -1118,6 +1192,7 @@ command to generate the output files.
     <comment xml:lang="hu">PCF-betűkészlet</comment>
     <comment xml:lang="nl">PCF lettertype</comment>
     <comment xml:lang="nn">PCF-skrifttype</comment>
+    <comment xml:lang="no">PCF-skrifttype</comment>
     <comment xml:lang="sr">PCF фонт</comment>
     <comment xml:lang="sv">PCF-typsnitt</comment>
     <magic priority="50">
@@ -1132,6 +1207,7 @@ command to generate the output files.
     <comment xml:lang="hu">OpenType-betűkészlet</comment>
     <comment xml:lang="nl">OpenType lettertype</comment>
     <comment xml:lang="nn">OpenType-skrifttype</comment>
+    <comment xml:lang="no">OpenType-skrifttype</comment>
     <comment xml:lang="sr">OpenType фонт</comment>
     <comment xml:lang="sv">OpenType-typsnitt</comment>
     <magic priority="50">
@@ -1145,6 +1221,7 @@ command to generate the output files.
     <comment xml:lang="hu">Speedo-betűkészlet</comment>
     <comment xml:lang="nl">Speedo lettertype</comment>
     <comment xml:lang="nn">Speedo-skrifttype</comment>
+    <comment xml:lang="no">Speedo-skrifttype</comment>
     <comment xml:lang="sr">Speedo фонт</comment>
     <comment xml:lang="sv">Speedo-typsnitt</comment>
     <magic priority="50">
@@ -1159,6 +1236,7 @@ command to generate the output files.
     <comment xml:lang="hu">SunOS News-betűkészlet</comment>
     <comment xml:lang="nl">SunOS Nieuws lettertype</comment>
     <comment xml:lang="nn">SunOS NEWS-skrifttype</comment>
+    <comment xml:lang="no">SunOS News-skrifttype</comment>
     <comment xml:lang="sr">SunOS News фонт</comment>
     <comment xml:lang="sv">SunOS News-typsnitt</comment>
     <magic priority="50">
@@ -1174,6 +1252,7 @@ command to generate the output files.
     <comment xml:lang="hu">TeX-betűkészlet</comment>
     <comment xml:lang="nl">TeX lettertype</comment>
     <comment xml:lang="nn">TeX-skrifttype</comment>
+    <comment xml:lang="no">TeX-skrift</comment>
     <comment xml:lang="sr">ТеХ фонт</comment>
     <comment xml:lang="sv">TeX-typsnitt</comment>
     <magic priority="50">
@@ -1189,6 +1268,7 @@ command to generate the output files.
     <comment xml:lang="hu">TeX-betűmetrika</comment>
     <comment xml:lang="nl">TeX lettertype-metrieken</comment>
     <comment xml:lang="nn">TeX skrifttypemetrikk</comment>
+    <comment xml:lang="no">TeX skrifttypemetrikk</comment>
     <comment xml:lang="sr">ТеХ метрика фонта</comment>
     <comment xml:lang="sv">TeX-typsnittsmetrik</comment>
     <magic priority="50">
@@ -1203,6 +1283,7 @@ command to generate the output files.
     <comment xml:lang="hu">Truetype-betűkészlet</comment>
     <comment xml:lang="nl">Truetype lettertype</comment>
     <comment xml:lang="nn">TrueType-skrifttype</comment>
+    <comment xml:lang="no">TrueType-skrift</comment>
     <comment xml:lang="sr">TrueType фонт</comment>
     <comment xml:lang="sv">TrueType-typsnitt</comment>
     <magic priority="50">
@@ -1219,6 +1300,7 @@ command to generate the output files.
     <comment xml:lang="hu">V-betűkészlet</comment>
     <comment xml:lang="nl">V lettertype</comment>
     <comment xml:lang="nn">V-skrifttype</comment>
+    <comment xml:lang="no">V-skrift</comment>
     <comment xml:lang="sr">V фонт</comment>
     <comment xml:lang="sv">V-typsnitt</comment>
     <magic priority="50">
@@ -1242,6 +1324,7 @@ command to generate the output files.
     <comment xml:lang="fr">rom Game Boy</comment>
     <comment xml:lang="nl">Game Boy ROM</comment>
     <comment xml:lang="nn">Game Boy-ROM</comment>
+    <comment xml:lang="no">Game Boy-rom</comment>
     <comment xml:lang="sr">Гејмбој ром</comment>
     <comment xml:lang="sv">Game Boy-rom</comment>
     <glob pattern="*.gb"/>
@@ -1259,6 +1342,7 @@ command to generate the output files.
     <comment xml:lang="fr">rom Genesis</comment>
     <comment xml:lang="nl">Genesis ROM</comment>
     <comment xml:lang="nn">Genesis-ROM</comment>
+    <comment xml:lang="no">Genesis-rom</comment>
     <comment xml:lang="sr">Genesis ром</comment>
     <comment xml:lang="sv">Genesis-rom</comment>
     <glob pattern="*.gen"/>
@@ -1282,6 +1366,7 @@ command to generate the output files.
     <comment xml:lang="hu">Glade-projekt</comment>
     <comment xml:lang="nl">Glade project</comment>
     <comment xml:lang="nn">Glade prosjekt</comment>
+    <comment xml:lang="no">Glade prosjekt</comment>
     <comment xml:lang="sr">Глејд пројекат</comment>
     <comment xml:lang="sv">Glade-projekt</comment>
     <glob pattern="*.glade"/>
@@ -1293,6 +1378,7 @@ command to generate the output files.
     <comment xml:lang="hu">GMC-link</comment>
     <comment xml:lang="nl">GMC koppeling</comment>
     <comment xml:lang="nn">GMC-lenkje</comment>
+    <comment xml:lang="no">GMC-lenke</comment>
     <comment xml:lang="sr">GMC веза</comment>
     <comment xml:lang="sv">GMC-länk</comment>
     <magic priority="50">
@@ -1305,6 +1391,7 @@ command to generate the output files.
     <comment xml:lang="fr">GnuCash Workbook</comment>
     <comment xml:lang="nl">GnuCash werkboek</comment>
     <comment xml:lang="nn">GnuCash-arbeidsbok</comment>
+    <comment xml:lang="no">GnuCash-arbeidsbok</comment>
     <comment xml:lang="sr">ГнуКеш радна свеска</comment>
     <comment xml:lang="sv">GnuCash-arbetsbok</comment>
     <glob pattern="*.gnucash"/>
@@ -1317,6 +1404,7 @@ command to generate the output files.
     <comment xml:lang="fr">chiffrier GNUmeric</comment>
     <comment xml:lang="nl">GNUmeric spreadsheet</comment>
     <comment xml:lang="nn">Gnumeric-rekneark</comment>
+    <comment xml:lang="no">GNUmeric-regneark</comment>
     <comment xml:lang="sr">Гнумерик табеларни рачун</comment>
     <comment xml:lang="sv">GNUmeric-kalkylblad</comment>
     <magic priority="50">
@@ -1340,6 +1428,7 @@ command to generate the output files.
     <comment xml:lang="fr">archive gtar</comment>
     <comment xml:lang="nl">gtar archief</comment>
     <comment xml:lang="nn">gtar-arkiv</comment>
+    <comment xml:lang="no">gtar-arkiv</comment>
     <comment xml:lang="sr">гтар архива</comment>
     <comment xml:lang="sv">gtar-arkiv</comment>
     <glob pattern="*.gtar"/>
@@ -1351,6 +1440,7 @@ command to generate the output files.
     <comment xml:lang="hu">Gtktalog-katalógus</comment>
     <comment xml:lang="nl">Gtktalog catalogus</comment>
     <comment xml:lang="nn">Gtktalog-katalog</comment>
+    <comment xml:lang="no">Gtktalog katalog</comment>
     <comment xml:lang="sr">Gtktalog каталог</comment>
     <comment xml:lang="sv">Gtktalog-katalog</comment>
     <magic priority="50">
@@ -1363,6 +1453,7 @@ command to generate the output files.
     <comment xml:lang="fr">fichier Gzip</comment>
     <comment xml:lang="nl">Gzip bestand</comment>
     <comment xml:lang="nn">Gzip-pakka fil</comment>
+    <comment xml:lang="no">Gzip-fil</comment>
     <comment xml:lang="sr">Gzip датотека</comment>
     <comment xml:lang="sv">Gzip-fil</comment>
     <magic priority="50">
@@ -1387,6 +1478,7 @@ command to generate the output files.
     <comment xml:lang="hu">HDF-dokumentum</comment>
     <comment xml:lang="nl">HDF document</comment>
     <comment xml:lang="nn">HDF-dokument</comment>
+    <comment xml:lang="no">HDF-dokument</comment>
     <comment xml:lang="sr">HDF документ</comment>
     <comment xml:lang="sv">HDF-dokument</comment>
     <glob pattern="*.hdf"/>
@@ -1398,6 +1490,7 @@ command to generate the output files.
     <comment xml:lang="hu">iPod-szoftver</comment>
     <comment xml:lang="nl">iPod software</comment>
     <comment xml:lang="nn">iPod-programvare</comment>
+    <comment xml:lang="no">iPod-programvare</comment>
     <comment xml:lang="sr">iPod програм</comment>
     <comment xml:lang="sv">iPod-programvara</comment>
     <magic priority="50">
@@ -1411,6 +1504,7 @@ command to generate the output files.
     <comment xml:lang="hu">Java-archívum</comment>
     <comment xml:lang="nl">Java archief</comment>
     <comment xml:lang="nn">Java-kodearkiv</comment>
+    <comment xml:lang="no">Java-arkiv</comment>
     <comment xml:lang="sr">Јава архива</comment>
     <comment xml:lang="sv">Java-arkiv</comment>
     <glob pattern="*.jar"/>
@@ -1422,6 +1516,7 @@ command to generate the output files.
     <comment xml:lang="hu">Java-osztály</comment>
     <comment xml:lang="nl">Java klasse</comment>
     <comment xml:lang="nn">Java-klasse</comment>
+    <comment xml:lang="no">Java-klasse</comment>
     <comment xml:lang="sr">Јава класа</comment>
     <comment xml:lang="sv">Java-klass</comment>
     <magic priority="50">
@@ -1438,6 +1533,7 @@ command to generate the output files.
     <comment xml:lang="hu">JBuilder-projekt</comment>
     <comment xml:lang="nl">JBuilder project</comment>
     <comment xml:lang="nn">JBuilder-prosjekt</comment>
+    <comment xml:lang="no">JBuilder prosjekt</comment>
     <comment xml:lang="sr">JBuilder пројекат</comment>
     <comment xml:lang="sv">JBuilder-projekt</comment>
     <glob pattern="*.jpr"/>
@@ -1473,6 +1569,7 @@ command to generate the output files.
     <comment xml:lang="hu">KChart</comment>
     <comment xml:lang="nl">KChart</comment>
     <comment xml:lang="nn">KChart</comment>
+    <comment xml:lang="no">KChart</comment>
     <comment xml:lang="sr">KChart</comment>
     <comment xml:lang="sv">KChart</comment>
     <magic priority="50">
@@ -1496,6 +1593,7 @@ command to generate the output files.
     <comment xml:lang="hu">KFormula</comment>
     <comment xml:lang="nl">KFormula</comment>
     <comment xml:lang="nn">KFormula</comment>
+    <comment xml:lang="no">KFormula</comment>
     <comment xml:lang="sr">KFormula</comment>
     <comment xml:lang="sv">KFormula</comment>
     <magic priority="50">
@@ -1519,6 +1617,7 @@ command to generate the output files.
     <comment xml:lang="hu">KIllustrator-dokumentum</comment>
     <comment xml:lang="nl">KIllustrator document</comment>
     <comment xml:lang="nn">KIllustrator-dokument</comment>
+    <comment xml:lang="no">KIllustrator-dokument</comment>
     <comment xml:lang="sr">KIllustrator документ</comment>
     <comment xml:lang="sv">KIllustrator-dokument</comment>
     <magic priority="50">
@@ -1537,6 +1636,7 @@ command to generate the output files.
     <comment xml:lang="hu">Kivio</comment>
     <comment xml:lang="nl">Kivio</comment>
     <comment xml:lang="nn">Kivio</comment>
+    <comment xml:lang="no">Kivio</comment>
     <comment xml:lang="sr">Kivio</comment>
     <comment xml:lang="sv">Kivio</comment>
     <magic priority="50">
@@ -1560,6 +1660,7 @@ command to generate the output files.
     <comment xml:lang="hu">Kontour</comment>
     <comment xml:lang="nl">Kontour</comment>
     <comment xml:lang="nn">Kontour</comment>
+    <comment xml:lang="no">Kontour</comment>
     <comment xml:lang="sr">Kontour</comment>
     <comment xml:lang="sv">Kontour</comment>
     <magic priority="50">
@@ -1594,6 +1695,7 @@ command to generate the output files.
     <comment xml:lang="hu">KPresenter</comment>
     <comment xml:lang="nl">KPresenter</comment>
     <comment xml:lang="nn">KPresenter</comment>
+    <comment xml:lang="no">KPresenter</comment>
     <comment xml:lang="sr">KPresenter</comment>
     <comment xml:lang="sv">KPresenter</comment>
     <magic priority="50">
@@ -1618,6 +1720,7 @@ command to generate the output files.
     <comment xml:lang="hu">Krita</comment>
     <comment xml:lang="nl">Krita</comment>
     <comment xml:lang="nn">Krita</comment>
+    <comment xml:lang="no">Krita</comment>
     <comment xml:lang="sr">Крита</comment>
     <comment xml:lang="sv">Krita</comment>
     <magic priority="50">
@@ -1641,6 +1744,7 @@ command to generate the output files.
     <comment xml:lang="hu">KSpread</comment>
     <comment xml:lang="nl">KSpread</comment>
     <comment xml:lang="nn">KSpread</comment>
+    <comment xml:lang="no">KSpread</comment>
     <comment xml:lang="sr">KSpread</comment>
     <comment xml:lang="sv">KSpread</comment>
     <magic priority="50">
@@ -1664,6 +1768,7 @@ command to generate the output files.
     <comment xml:lang="hu">KSpread titkosítva</comment>
     <comment xml:lang="nl">KSpread gecodeerd</comment>
     <comment xml:lang="nn">Kryptert KSpread</comment>
+    <comment xml:lang="no">KSpread kryptert</comment>
     <comment xml:lang="sr">Шифровани KSpread</comment>
     <comment xml:lang="sv">KSpread-krypterad</comment>
     <magic priority="50">
@@ -1693,6 +1798,7 @@ command to generate the output files.
     <comment xml:lang="hu">KWord</comment>
     <comment xml:lang="nl">KWord</comment>
     <comment xml:lang="nn">KWord</comment>
+    <comment xml:lang="no">KWord</comment>
     <comment xml:lang="sr">KWord</comment>
     <comment xml:lang="sv">KWord</comment>
     <magic priority="50">
@@ -1730,6 +1836,7 @@ command to generate the output files.
     <comment xml:lang="hu">Lha-archívum</comment>
     <comment xml:lang="nl">Lha archief</comment>
     <comment xml:lang="nn">Lha-arkiv</comment>
+    <comment xml:lang="no">Lha-arkiv</comment>
     <comment xml:lang="sr">Lha архиве</comment>
     <comment xml:lang="sv">LHA-arkiv</comment>
     <magic priority="50">
@@ -1756,6 +1863,7 @@ command to generate the output files.
     <comment xml:lang="hu">LHA-archívum</comment>
     <comment xml:lang="nl">LHA archief</comment>
     <comment xml:lang="nn">LHA-arkiv</comment>
+    <comment xml:lang="no">LHA-arkiv</comment>
     <comment xml:lang="sr">LHA архива</comment>
     <comment xml:lang="sv">LHA-arkiv</comment>
     <glob pattern="*.lhz"/>
@@ -1766,6 +1874,7 @@ command to generate the output files.
     <comment xml:lang="fr">catalogue Message</comment>
     <comment xml:lang="nl">Berichtencatalogus</comment>
     <comment xml:lang="nn">Meldingskatalog</comment>
+    <comment xml:lang="no">Meldingskatalog</comment>
     <comment xml:lang="sr">Каталог порука</comment>
     <comment xml:lang="sv">Meddelandekatalog</comment>
     <glob pattern="*.ts"/>
@@ -1777,6 +1886,7 @@ command to generate the output files.
     <comment xml:lang="hu">LyX-dokumentum</comment>
     <comment xml:lang="nl">LyX document</comment>
     <comment xml:lang="nn">LyX-dokument</comment>
+    <comment xml:lang="no">LyX-dokument</comment>
     <comment xml:lang="sr">LyX документ</comment>
     <comment xml:lang="sv">LyX-dokument</comment>
     <magic priority="50">
@@ -1790,6 +1900,7 @@ command to generate the output files.
     <comment xml:lang="fr">fichier Lzopped</comment>
     <comment xml:lang="nl">Lzop-ingepakt bestand</comment>
     <comment xml:lang="nn">Fil pakka med Lzop</comment>
+    <comment xml:lang="no">Lzoppet fil</comment>
     <comment xml:lang="sr">Лзоповоана датотека</comment>
     <comment xml:lang="sv">Lzoppad fil</comment>
     <glob pattern="*.lzo"/>
@@ -1801,6 +1912,7 @@ command to generate the output files.
     <comment xml:lang="hu">MacBinary-fájl</comment>
     <comment xml:lang="nl">MacBinary bestand</comment>
     <comment xml:lang="nn">MacBinary-fil</comment>
+    <comment xml:lang="no">MacBinary-fil</comment>
     <comment xml:lang="sr">MacBinary датотека</comment>
     <comment xml:lang="sv">MacBinary-fil</comment>
     <magic priority="50">
@@ -1814,6 +1926,7 @@ command to generate the output files.
     <comment xml:lang="hu">FrameMaker-cserélhetődokumentum</comment>
     <comment xml:lang="nl">FrameMaker uitwisselingsdocument</comment>
     <comment xml:lang="nn">FrameMaker interchange dokument</comment>
+    <comment xml:lang="no">FrameMaker-utvekslingsdokument</comment>
     <comment xml:lang="sr">FrameMaker размењиви документ</comment>
     <comment xml:lang="sv">FrameMaker-utbytesdokument</comment>
     <glob pattern="*.mif"/>
@@ -1825,6 +1938,7 @@ command to generate the output files.
     <comment xml:lang="hu">Mozilla-könyvjelzőfájl</comment>
     <comment xml:lang="nl">Mozilla bladwijzers bestand</comment>
     <comment xml:lang="nn">Bokmerkefil for Mozilla</comment>
+    <comment xml:lang="no">Bokmerkefil for Mozilla</comment>
     <comment xml:lang="sr">Mozilla фајл маркера</comment>
     <comment xml:lang="sv">Mozilla-bokmärkesfil</comment>
     <magic priority="50">
@@ -1838,6 +1952,7 @@ command to generate the output files.
     <comment xml:lang="hu">DOS/Windows-program</comment>
     <comment xml:lang="nl">DOS/Windows programma</comment>
     <comment xml:lang="nn">DOS/Windows program</comment>
+    <comment xml:lang="no">DOS/Windows-program</comment>
     <comment xml:lang="sr">DOS/Windows програм</comment>
     <comment xml:lang="sv">DOS/Windows-program</comment>
     <magic priority="40">
@@ -1855,6 +1970,7 @@ command to generate the output files.
     <comment xml:lang="fr">document Microsoft Write</comment>
     <comment xml:lang="nl">Microsoft Write document</comment>
     <comment xml:lang="nn">Microsoft Write -dokument</comment>
+    <comment xml:lang="no">Microsoft Write-dokument</comment>
     <comment xml:lang="sr">Микрософт документ Писанке</comment>
     <comment xml:lang="sv">Microsoft Write-dokument</comment>
     <glob pattern="*.wri"/>
@@ -1865,6 +1981,7 @@ command to generate the output files.
     <comment xml:lang="fr">rom MSX</comment>
     <comment xml:lang="nl">MSX ROM</comment>
     <comment xml:lang="nn">MSX-ROM</comment>
+    <comment xml:lang="no">MSX-rom</comment>
     <comment xml:lang="sr">MSX ром</comment>
     <comment xml:lang="sv">MSX-rom</comment>
     <glob pattern="*.msx"/>
@@ -1875,6 +1992,7 @@ command to generate the output files.
     <comment xml:lang="fr">rom Nintendo64</comment>
     <comment xml:lang="nl">Nintendo64 ROM</comment>
     <comment xml:lang="nn">Nintendo64-ROM</comment>
+    <comment xml:lang="no">Nintendo64-rom</comment>
     <comment xml:lang="sr">Нинтендо64 ром</comment>
     <comment xml:lang="sv">Nintendo64-rom</comment>
     <glob pattern="*.n64"/>
@@ -1886,6 +2004,7 @@ command to generate the output files.
     <comment xml:lang="hu">Nautilus-link</comment>
     <comment xml:lang="nl">Nautilus koppeling</comment>
     <comment xml:lang="nn">Nautilus-lenke</comment>
+    <comment xml:lang="no">Nautilus-lenke</comment>
     <comment xml:lang="sr">Наутилус веза</comment>
     <comment xml:lang="sv">Nautiluslänk</comment>
     <magic priority="50">
@@ -1898,6 +2017,7 @@ command to generate the output files.
     <comment xml:lang="fr">rom NES</comment>
     <comment xml:lang="nl">NES ROM</comment>
     <comment xml:lang="nn">NES-ROM</comment>
+    <comment xml:lang="no">NES-rom</comment>
     <comment xml:lang="sr">NES ром</comment>
     <comment xml:lang="sv">NES-rom</comment>
     <glob pattern="*.nes"/>
@@ -1909,6 +2029,7 @@ command to generate the output files.
     <comment xml:lang="hu">Unidata netCDF-dokumentum</comment>
     <comment xml:lang="nl">Unidata netCDF document</comment>
     <comment xml:lang="nn">Unidata netCDF-dokument</comment>
+    <comment xml:lang="no">Unidata netCDF-dokument</comment>
     <comment xml:lang="sr">Unidata netCDF документ</comment>
     <comment xml:lang="sv">Unidata netCDF-dokument</comment>
     <glob pattern="*.cdf"/>
@@ -1921,6 +2042,7 @@ command to generate the output files.
     <comment xml:lang="hu">Netscape-könyvjelzőfájl</comment>
     <comment xml:lang="nl">Netscape bladwijzers bestand</comment>
     <comment xml:lang="nn">Bokmerkefil for Netscape</comment>
+    <comment xml:lang="no">Bokmerkefil for Netscape</comment>
     <comment xml:lang="sr">Netscape фајл маркера</comment>
     <comment xml:lang="sv">Netscape-bokmärkesfil</comment>
     <magic priority="50">
@@ -1933,6 +2055,7 @@ command to generate the output files.
     <comment xml:lang="fr">code Objet</comment>
     <comment xml:lang="nl">Object Code</comment>
     <comment xml:lang="nn">Objektkode</comment>
+    <comment xml:lang="no">Objektkode</comment>
     <comment xml:lang="sr">Објектни кôд</comment>
     <comment xml:lang="sv">Objektkod</comment>
     <magic priority="50">
@@ -1955,6 +2078,7 @@ command to generate the output files.
     <comment xml:lang="fr">audio Ogg Vorbis</comment>
     <comment xml:lang="nl">Ogg Vorbis geluidsbestand</comment>
     <comment xml:lang="nn">Ogg Vorbis-lyd</comment>
+    <comment xml:lang="no">Ogg Vorbis-lyd</comment>
     <comment xml:lang="sr">Ог-ворбис звучни запис</comment>
     <comment xml:lang="sv">Ogg Vorbis-ljud</comment>
     <magic priority="50">
@@ -1969,6 +2093,7 @@ command to generate the output files.
     <comment xml:lang="hu">GNU Oleo-munkafüzet</comment>
     <comment xml:lang="nl">GNU Oleo spreadsheet</comment>
     <comment xml:lang="nn">GNU Oleo-rekneark</comment>
+    <comment xml:lang="no">GNU Oleo regneark</comment>
     <comment xml:lang="sr">ГНУ Oleo табеларне прорачун</comment>
     <comment xml:lang="sv">GNU Oleo-kalkylblad</comment>
     <magic priority="50">
@@ -1983,6 +2108,7 @@ command to generate the output files.
     <comment xml:lang="hu">Palm OS-adatbázis</comment>
     <comment xml:lang="nl">Palm OS gegevensbank</comment>
     <comment xml:lang="nn">Palm OS-database</comment>
+    <comment xml:lang="no">Palm OS-database</comment>
     <comment xml:lang="sr">Palm OS база података</comment>
     <comment xml:lang="sv">Palm OS-databas</comment>
   </mime-type>
@@ -1993,6 +2119,7 @@ command to generate the output files.
     <comment xml:lang="hu">PEF-program</comment>
     <comment xml:lang="nl">PEF programma</comment>
     <comment xml:lang="nn">PEF-program</comment>
+    <comment xml:lang="no">PEF-program</comment>
     <comment xml:lang="sr">PEF програм</comment>
     <comment xml:lang="sv">PEF-program</comment>
     <magic priority="50">
@@ -2005,6 +2132,7 @@ command to generate the output files.
     <comment xml:lang="fr">programme PERL</comment>
     <comment xml:lang="nl">PERL programma</comment>
     <comment xml:lang="nn">Perl-program</comment>
+    <comment xml:lang="no">PERL-program</comment>
     <comment xml:lang="sr">Перл програм</comment>
     <comment xml:lang="sv">PERL-program</comment>
     <magic priority="50">
@@ -2024,6 +2152,7 @@ command to generate the output files.
     <comment xml:lang="hu">PHP-program</comment>
     <comment xml:lang="nl">PHP script</comment>
     <comment xml:lang="nn">PHP-skript</comment>
+    <comment xml:lang="no">PHP-skript</comment>
     <comment xml:lang="sr">PHP скрипта</comment>
     <comment xml:lang="sv">PHP-skript</comment>
     <magic priority="80">
@@ -2050,6 +2179,7 @@ command to generate the output files.
     <comment xml:lang="fr">résultat du profileur</comment>
     <comment xml:lang="nl">profileerder resultaten</comment>
     <comment xml:lang="nn">profileringsresultat</comment>
+    <comment xml:lang="no">profileingsresultat</comment>
     <comment xml:lang="sr">резултати профилатора</comment>
     <comment xml:lang="sv">profilerarresultat</comment>
     <glob pattern="gmon.out"/>
@@ -2070,6 +2200,7 @@ command to generate the output files.
     <comment xml:lang="fr">programme Python</comment>
     <comment xml:lang="nl">Python programma</comment>
     <comment xml:lang="nn">Python-program</comment>
+    <comment xml:lang="no">Python-program</comment>
     <comment xml:lang="sr">Питон програм</comment>
     <comment xml:lang="sv">Python-program</comment>
     <magic priority="50">
@@ -2092,6 +2223,7 @@ command to generate the output files.
     <comment xml:lang="fr">bytecode Python</comment>
     <comment xml:lang="nl">Python bytecode</comment>
     <comment xml:lang="nn">Python-bytekode</comment>
+    <comment xml:lang="no">Python-bytekode</comment>
     <comment xml:lang="sr">Питонов бајт кôд</comment>
     <comment xml:lang="sv">Python-bytekod</comment>
     <magic priority="50">
@@ -2119,6 +2251,7 @@ command to generate the output files.
     <comment xml:lang="hu">Quicken-dokumentum</comment>
     <comment xml:lang="nl">Quicken document</comment>
     <comment xml:lang="nn">Quicken-dokument</comment>
+    <comment xml:lang="no">Quicken-dokument</comment>
     <comment xml:lang="sr">Quicken документ</comment>
     <comment xml:lang="sv">Quicken-dokument</comment>
     <glob pattern="*.qif"/>
@@ -2129,6 +2262,7 @@ command to generate the output files.
     <comment xml:lang="fr">archive Rar</comment>
     <comment xml:lang="nl">Rar archief</comment>
     <comment xml:lang="nn">Rar-arkiv</comment>
+    <comment xml:lang="no">Rar-arkiv</comment>
     <comment xml:lang="sr">РАР архива</comment>
     <comment xml:lang="sv">Rar-arkiv</comment>
     <magic priority="50">
@@ -2142,6 +2276,7 @@ command to generate the output files.
     <comment xml:lang="fr">fichier rejeté de correctifs « patch »</comment>
     <comment xml:lang="nl">verworpen patch bestand</comment>
     <comment xml:lang="nn">fil avvist av patch</comment>
+    <comment xml:lang="no">avvist patchfil</comment>
     <comment xml:lang="sr">датотека одбијене закрпе</comment>
     <comment xml:lang="sv">avvisad patchfil</comment>
     <glob pattern="*.rej"/>
@@ -2152,6 +2287,7 @@ command to generate the output files.
     <comment xml:lang="fr">fichier package RPM</comment>
     <comment xml:lang="nl">RPM pakketbestand</comment>
     <comment xml:lang="nn">RPM-pakkefil</comment>
+    <comment xml:lang="no">RPM-pakkefil</comment>
     <comment xml:lang="sr">RPM пакет</comment>
     <comment xml:lang="sv">RPM-paketfil</comment>
     <magic priority="50">
@@ -2165,6 +2301,7 @@ command to generate the output files.
     <comment xml:lang="fr">programme Ruby</comment>
     <comment xml:lang="nl">Ruby programma</comment>
     <comment xml:lang="nn">Ruby-program</comment>
+    <comment xml:lang="no">Ruby-program</comment>
     <comment xml:lang="sr">Ruby програм</comment>
     <comment xml:lang="sv">Ruby-program</comment>
     <magic>
@@ -2182,6 +2319,7 @@ command to generate the output files.
     <comment xml:lang="fr">archive shell</comment>
     <comment xml:lang="nl">shell archief</comment>
     <comment xml:lang="nn">skal-arkiv</comment>
+    <comment xml:lang="no">skallarkiv</comment>
     <comment xml:lang="sr">Архива љуске (SHAR)</comment>
     <comment xml:lang="sv">skalarkiv</comment>
     <glob pattern="*.shar"/>
@@ -2192,6 +2330,7 @@ command to generate the output files.
     <comment xml:lang="fr">librairie partagée « shared »</comment>
     <comment xml:lang="nl">gedeelde bibliotheek</comment>
     <comment xml:lang="nn">delt bibliotek</comment>
+    <comment xml:lang="no">delt bibliotek</comment>
     <comment xml:lang="sr">дељена библиотека</comment>
     <comment xml:lang="sv">delat bibliotek</comment>
     <glob pattern="*.la"/>
@@ -2203,6 +2342,7 @@ command to generate the output files.
     <comment xml:lang="hu">Osztott programkönyvtár</comment>
     <comment xml:lang="nl">Gedeelde bibliotheek</comment>
     <comment xml:lang="nn">Delt bibliotek</comment>
+    <comment xml:lang="no">Delt bibliotek</comment>
     <comment xml:lang="sr">Дељена библиотека</comment>
     <comment xml:lang="sv">Delat bibliotek</comment>
     <magic priority="50">
@@ -2229,6 +2369,7 @@ command to generate the output files.
     <comment xml:lang="fr">script shell</comment>
     <comment xml:lang="nl">shell script</comment>
     <comment xml:lang="nn">skalskript</comment>
+    <comment xml:lang="no">skallskript</comment>
     <comment xml:lang="sr">скрипта љуске</comment>
     <comment xml:lang="sv">skalskript</comment>
     <magic priority="50">
@@ -2266,6 +2407,7 @@ command to generate the output files.
     <comment xml:lang="hu">Siag-munkafüzet</comment>
     <comment xml:lang="nl">Siag spreadsheet</comment>
     <comment xml:lang="nn">Siag-rekneark</comment>
+    <comment xml:lang="no">Siag-regneark</comment>
     <comment xml:lang="sr">Siag табеларни прорачун</comment>
     <comment xml:lang="sv">Siag-kalkylblad</comment>
     <glob pattern="*.siag"/>
@@ -2277,6 +2419,7 @@ command to generate the output files.
     <comment xml:lang="hu">Stampede-csomag</comment>
     <comment xml:lang="nl">Stampede pakket</comment>
     <comment xml:lang="nn">Stampede-pakke</comment>
+    <comment xml:lang="no">Stampede-pakke</comment>
     <comment xml:lang="sr">Stampede пакет</comment>
     <comment xml:lang="sv">Stampede-paket</comment>
   </mime-type>
@@ -2298,6 +2441,7 @@ command to generate the output files.
     <comment xml:lang="hu">Macintosh StuffIt-archívum</comment>
     <comment xml:lang="nl">Macintosh StuffIt archief</comment>
     <comment xml:lang="nn">Macintosh StuffIt arkiv</comment>
+    <comment xml:lang="no">Macintosh StuffIt arkiv</comment>
     <comment xml:lang="sr">Мекинтош StuffIt архива</comment>
     <comment xml:lang="sv">Macintosh StuffIt-arkiv </comment>
     <magic priority="50">
@@ -2312,6 +2456,7 @@ command to generate the output files.
     <comment xml:lang="hu">SV4 CPIO-archívum</comment>
     <comment xml:lang="nl">SV4 CPIO archief</comment>
     <comment xml:lang="nn">SV4 CPIO-arkiv</comment>
+    <comment xml:lang="no">SV4 CPIO-arkiv</comment>
     <comment xml:lang="sr">SV4 CPIO архива</comment>
     <comment xml:lang="sv">SV4 CPIO-arkiv</comment>
     <glob pattern="*.sv4cpio"/>
@@ -2323,6 +2468,7 @@ command to generate the output files.
     <comment xml:lang="hu">SV4 CPIP-archívum (CRC-vel)</comment>
     <comment xml:lang="nl">SV4 CPIP archief (met CRC)</comment>
     <comment xml:lang="nn">SV4 CPIP arkiv (med SRS)</comment>
+    <comment xml:lang="no">SV4 CPIO-arkiv (med CRC)</comment>
     <comment xml:lang="sr">SV4 CPIP архива (са CRC-ом)</comment>
     <comment xml:lang="sv">SV4 CPIO-arkiv (med CRC)</comment>
     <glob pattern="*.sv4crc"/>
@@ -2334,6 +2480,7 @@ command to generate the output files.
     <comment xml:lang="hu">Tar-archívum</comment>
     <comment xml:lang="nl">Tar archief</comment>
     <comment xml:lang="nn">Tar-arkiv</comment>
+    <comment xml:lang="no">Tar-arkiv</comment>
     <comment xml:lang="sr">Тар архива</comment>
     <comment xml:lang="sv">Tar-arkiv</comment>
     <magic priority="50">
@@ -2348,6 +2495,7 @@ command to generate the output files.
     <comment xml:lang="fr">archive Tar compressé</comment>
     <comment xml:lang="nl">Ingepakt Tar archief</comment>
     <comment xml:lang="nn">Pakka tar-arkiv</comment>
+    <comment xml:lang="no">Komprimert tar-arkiv</comment>
     <comment xml:lang="sr">Компресована Тар архива</comment>
     <comment xml:lang="sv">komprimerat tar-arkiv</comment>
     <glob pattern="*.tar.Z"/>
@@ -2379,6 +2527,7 @@ command to generate the output files.
     <comment xml:lang="hu">TGIF-dokumentum</comment>
     <comment xml:lang="nl">TGIF document</comment>
     <comment xml:lang="nn">TGIF-dokument</comment>
+    <comment xml:lang="no">TGIF-dokument</comment>
     <comment xml:lang="sr">TGIF документ</comment>
     <comment xml:lang="sv">TGIF-dokument</comment>
     <magic priority="50">
@@ -2392,6 +2541,7 @@ command to generate the output files.
     <comment xml:lang="fr">thème</comment>
     <comment xml:lang="nl">thema</comment>
     <comment xml:lang="nn">drakt</comment>
+    <comment xml:lang="no">tema</comment>
     <comment xml:lang="sr">тема</comment>
     <comment xml:lang="sv">tema</comment>
     <glob pattern="*.theme"/>
@@ -2403,6 +2553,7 @@ command to generate the output files.
     <comment xml:lang="hu">ToutDoux-dokumentum</comment>
     <comment xml:lang="nl">ToutDoux document</comment>
     <comment xml:lang="nn">ToutDoux-dokument</comment>
+    <comment xml:lang="no">ToutDoux-dokument</comment>
     <comment xml:lang="sr">ToutDoux документ</comment>
     <comment xml:lang="sv">ToutDoux-dokument</comment>
   </mime-type>
@@ -2413,6 +2564,7 @@ command to generate the output files.
     <comment xml:lang="hu">Biztonsági mentés</comment>
     <comment xml:lang="nl">Reservekopie-bestand</comment>
     <comment xml:lang="nn">Tryggleikskopi</comment>
+    <comment xml:lang="no">Sikkerhetskopi</comment>
     <comment xml:lang="sr">Резервна копија</comment>
     <comment xml:lang="sv">Säkerhetskopia</comment>
     <glob pattern="*~"/>
@@ -2428,6 +2580,7 @@ command to generate the output files.
     <comment xml:lang="hu">Troff-dokumentum</comment>
     <comment xml:lang="nl">Troff document</comment>
     <comment xml:lang="nn">Troff-dokument</comment>
+    <comment xml:lang="no">Troff-dokument</comment>
     <comment xml:lang="sr">Troff документ</comment>
     <comment xml:lang="sv">Troff-dokument</comment>
     <magic priority="50">
@@ -2456,6 +2609,7 @@ command to generate the output files.
     <comment xml:lang="fr">man pages (compressés)</comment>
     <comment xml:lang="nl">handleidingspagina (ingepakt)</comment>
     <comment xml:lang="nn">manualside (pakka)</comment>
+    <comment xml:lang="no">manualside (komprimert)</comment>
     <comment xml:lang="sr">страна упутства (компресована)</comment>
     <comment xml:lang="sv">manualsida (komprimerad)</comment>
   </mime-type>
@@ -2465,6 +2619,7 @@ command to generate the output files.
     <comment xml:lang="fr">archive Tar Lzoppé</comment>
     <comment xml:lang="nl">Lzop-ingepakt Tar archief</comment>
     <comment xml:lang="nn">Tar-arkiv pakka med Lzop</comment>
+    <comment xml:lang="no">Lzoppet tar-arkiv</comment>
     <comment xml:lang="sr">Лзоповоана Тар архива</comment>
     <comment xml:lang="sv">Lzoppat tar-arkiv</comment>
     <glob pattern="*.tar.lzo"/>
@@ -2476,6 +2631,7 @@ command to generate the output files.
     <comment xml:lang="fr">archive ustar</comment>
     <comment xml:lang="nl">ustar archief</comment>
     <comment xml:lang="nn">ustar-arkiv</comment>
+    <comment xml:lang="no">ustar-arkiv</comment>
     <comment xml:lang="sr">ustar архива</comment>
     <comment xml:lang="sv">ustar-arkiv</comment>
     <glob pattern="*.ustar"/>
@@ -2487,6 +2643,7 @@ command to generate the output files.
     <comment xml:lang="hu">WAIS-forráskód</comment>
     <comment xml:lang="nl">WAIS broncode</comment>
     <comment xml:lang="nn">WAIS-kjeldekode</comment>
+    <comment xml:lang="no">WAIS-kildekode</comment>
     <comment xml:lang="sr">WAIS изворни кôд</comment>
     <comment xml:lang="sv">WAIS-källkod</comment>
     <glob pattern="*.src"/>
@@ -2511,6 +2668,7 @@ command to generate the output files.
     <comment xml:lang="fr">document vide</comment>
     <comment xml:lang="nl">Leeg document</comment>
     <comment xml:lang="nn">Tomt dokument</comment>
+    <comment xml:lang="no">Tomt dokument</comment>
     <comment xml:lang="sr">Празан документ</comment>
     <comment xml:lang="sv">Tomt dokument</comment>
   </mime-type>
@@ -2521,6 +2679,7 @@ command to generate the output files.
     <comment xml:lang="hu">Zoo-archívum</comment>
     <comment xml:lang="nl">Zoo archief</comment>
     <comment xml:lang="nn">Zoo-arkiv</comment>
+    <comment xml:lang="no">Zoo-arkiv</comment>
     <comment xml:lang="sr">Zoo архива</comment>
     <comment xml:lang="sv">Zoo-arkiv</comment>
     <magic priority="50">
@@ -2535,6 +2694,7 @@ command to generate the output files.
     <comment xml:lang="hu">XHTML-oldal</comment>
     <comment xml:lang="nl">XHTML pagina</comment>
     <comment xml:lang="nn">XHTML-side</comment>
+    <comment xml:lang="no">XHTML-side</comment>
     <comment xml:lang="sr">XHTML страна</comment>
     <comment xml:lang="sv">XHTML-sida</comment>
     <glob pattern="*.xhtml"/>
@@ -2547,6 +2707,7 @@ command to generate the output files.
     <comment xml:lang="hu">Zip-archívum</comment>
     <comment xml:lang="nl">Zip archief</comment>
     <comment xml:lang="nn">Zip-arkiv</comment>
+    <comment xml:lang="no">Zip-arkiv</comment>
     <comment xml:lang="sr">Zip архива</comment>
     <comment xml:lang="sv">Zip-arkiv</comment>
     <magic priority="40">
@@ -2561,6 +2722,7 @@ command to generate the output files.
     <comment xml:lang="hu">Dolby Digital hang</comment>
     <comment xml:lang="nl">Dolby Digital geluidsbestand</comment>
     <comment xml:lang="nn">Dolby Digital lyd</comment>
+    <comment xml:lang="no">Dolby digital lyd</comment>
     <comment xml:lang="sr">Дигитални Dolby звучни запис</comment>
     <comment xml:lang="sv">Dolby Digital-ljud</comment>
     <glob pattern="*.ac3"/>
@@ -2571,6 +2733,7 @@ command to generate the output files.
     <comment xml:lang="fr">ULAW (Sun) audio</comment>
     <comment xml:lang="nl">ULAW (Sun) geluidsbestand</comment>
     <comment xml:lang="nn">ULAW (Sun)-lyd</comment>
+    <comment xml:lang="no">ULAW-lyd (Sun)</comment>
     <comment xml:lang="sr">ULAW (Sun) звучни запис</comment>
     <comment xml:lang="sv">ULAW-ljud (Sun)</comment>
     <magic priority="40">
@@ -2586,6 +2749,7 @@ command to generate the output files.
     <comment xml:lang="hu">Commodore 64-hang</comment>
     <comment xml:lang="nl">Commodore 64 geluidsbestand</comment>
     <comment xml:lang="nn">Commodore 64-lyd</comment>
+    <comment xml:lang="no">Commodore 64-lyd</comment>
     <comment xml:lang="sr">Комодор 64 звучни запис</comment>
     <comment xml:lang="sv">Commodore 64-ljud</comment>
     <magic priority="50">
@@ -2600,6 +2764,7 @@ command to generate the output files.
     <comment xml:lang="fr">diffusion RealAudio</comment>
     <comment xml:lang="nl">RealAudio uitzending</comment>
     <comment xml:lang="nn">RealAudio-kringkasting</comment>
+    <comment xml:lang="no">RealAudio-sending</comment>
     <comment xml:lang="sr">RealAudio емитовање</comment>
     <comment xml:lang="sv">RealAudio-utsändning</comment>
   </mime-type>
@@ -2609,6 +2774,7 @@ command to generate the output files.
     <comment xml:lang="fr">audio PCM</comment>
     <comment xml:lang="nl">PCM geluidsbestand</comment>
     <comment xml:lang="nn">PCM-lyd</comment>
+    <comment xml:lang="no">PCM-lyd</comment>
     <comment xml:lang="sr">PCM звучни запис</comment>
     <comment xml:lang="sv">PCM-ljud</comment>
     <magic priority="50">
@@ -2634,6 +2800,7 @@ command to generate the output files.
     <comment xml:lang="hu">AIFC-hang</comment>
     <comment xml:lang="nl">AIFC geluidsbestand</comment>
     <comment xml:lang="nn">AIFC-lyd</comment>
+    <comment xml:lang="no">AIFC-lyd</comment>
     <comment xml:lang="sr">AIFC звучни запис</comment>
     <comment xml:lang="sv">AIFC-ljud</comment>
     <magic priority="50">
@@ -2646,6 +2813,7 @@ command to generate the output files.
     <comment xml:lang="fr">audio AIFF/Amiga/Mac</comment>
     <comment xml:lang="nl">AIFF/Amiga/Mac geluidsbestand</comment>
     <comment xml:lang="nn">AIFF/Amiga/Mac-lyd</comment>
+    <comment xml:lang="no">AIFF/Amiga/Mac-lyd</comment>
     <comment xml:lang="sr">AIFF/Амига/Мекинтош звучни запис</comment>
     <comment xml:lang="sv">AIFF/Amiga/Mac-ljud</comment>
     <magic priority="50">
@@ -2664,6 +2832,7 @@ command to generate the output files.
     <comment xml:lang="hu">AIFF-hang</comment>
     <comment xml:lang="nl">AIFF geluidsbestand</comment>
     <comment xml:lang="nn">AIFF-lyd</comment>
+    <comment xml:lang="no">AIFF-lyd</comment>
     <comment xml:lang="sr">AIFF звучни запис</comment>
     <comment xml:lang="sv">AIFF-ljud</comment>
   </mime-type>
@@ -2674,6 +2843,7 @@ command to generate the output files.
     <comment xml:lang="hu">Impulse Tracker hang</comment>
     <comment xml:lang="nl">Impulse Tracker geluidsbestand</comment>
     <comment xml:lang="nn">Impulse Tracker lyd</comment>
+    <comment xml:lang="no">Impulse Tracker-lyd</comment>
     <comment xml:lang="sr">Impulse Tracker звучни запис</comment>
     <comment xml:lang="sv">Impulse Tracker-ljud</comment>
     <magic priority="50">
@@ -2689,6 +2859,7 @@ command to generate the output files.
     <comment xml:lang="hu">MIDI-hang</comment>
     <comment xml:lang="nl">MIDI geluidsbestand</comment>
     <comment xml:lang="nn">MIDI-lyd</comment>
+    <comment xml:lang="no">MIDI-lyd</comment>
     <comment xml:lang="sr">MIDI звучни запис</comment>
     <comment xml:lang="sv">MIDI-ljud</comment>
     <magic priority="50">
@@ -2703,6 +2874,7 @@ command to generate the output files.
     <comment xml:lang="fr">soundtracker audio Amiga</comment>
     <comment xml:lang="nl">Amiga soundtracker geluidsbestand</comment>
     <comment xml:lang="nn">Amiga soundtracker-lyd</comment>
+    <comment xml:lang="no">Amiga soundtracker-lyd</comment>
     <comment xml:lang="sr">Амига soundtracker звук</comment>
     <comment xml:lang="sv">Amiga sountracker-ljud</comment>
     <glob pattern="*.mod"/>
@@ -2719,6 +2891,7 @@ command to generate the output files.
     <comment xml:lang="fr">audio layer 3 MPEG</comment>
     <comment xml:lang="nl">MPEG-laag-3 geluidsbestand</comment>
     <comment xml:lang="nn">MPEG layer 3-lyd</comment>
+    <comment xml:lang="no">MPEG lag 3-lyd</comment>
     <comment xml:lang="sr">MPEG слој 3 звучни запис</comment>
     <comment xml:lang="sv">MPEG lager 3-ljud</comment>
     <magic priority="50">
@@ -2735,6 +2908,7 @@ command to generate the output files.
     <comment xml:lang="hu">MP3-játéklista</comment>
     <comment xml:lang="nl">MP3 geluid-afspeellijst</comment>
     <comment xml:lang="nn">MP3-lyd spelelister</comment>
+    <comment xml:lang="no">MP3-lydavspillingsliste</comment>
     <comment xml:lang="sr">MP3 списак песама</comment>
     <comment xml:lang="sv">MP3-ljudspellista</comment>
   </mime-type>
@@ -2745,6 +2919,7 @@ command to generate the output files.
     <comment xml:lang="hu">MP3-hang</comment>
     <comment xml:lang="nl">MP3 geluidsbestand</comment>
     <comment xml:lang="nn">MP3-lyd</comment>
+    <comment xml:lang="no">MP3-lyd</comment>
     <comment xml:lang="sr">MP3 звучни запис</comment>
     <comment xml:lang="sv">MP3-ljud</comment>
   </mime-type>
@@ -2765,6 +2940,7 @@ command to generate the output files.
     <comment xml:lang="hu">Lejátszható felvételek listája</comment>
     <comment xml:lang="nl">Afspeellijst</comment>
     <comment xml:lang="nn">Speleliste</comment>
+    <comment xml:lang="no">Spilleliste</comment>
     <comment xml:lang="sr">Листа нумера</comment>
     <comment xml:lang="sv">Spellista</comment>
     <magic priority="50">
@@ -2779,6 +2955,7 @@ command to generate the output files.
     <comment xml:lang="fr">diffusion RealAudio</comment>
     <comment xml:lang="nl">RealAudio uitzending</comment>
     <comment xml:lang="nn">RealAudio-kringkasting</comment>
+    <comment xml:lang="no">RealAudio-sending</comment>
     <comment xml:lang="sr">RealAudio емитовање</comment>
     <comment xml:lang="sv">RealAudio-utsändning</comment>
     <magic priority="50">
@@ -2795,6 +2972,7 @@ command to generate the output files.
     <comment xml:lang="hu">RIFF-kép</comment>
     <comment xml:lang="nl">RIFF geluidsbestand</comment>
     <comment xml:lang="nn">RIFF-lyd</comment>
+    <comment xml:lang="no">RIFF-lyd</comment>
     <comment xml:lang="sr">RIFF звучни запис</comment>
     <comment xml:lang="sv">RIFF-ljud</comment>
     <magic priority="50">
@@ -2808,6 +2986,7 @@ command to generate the output files.
     <comment xml:lang="hu">Scream Tracker 3-hang</comment>
     <comment xml:lang="nl">Scream Tracker 3 geluidsbestand</comment>
     <comment xml:lang="nn">Sream Tracker 3 lyd</comment>
+    <comment xml:lang="no">Scream Tracker 3-lyd</comment>
     <comment xml:lang="sr">Scream Tracker 3 звучни запис</comment>
     <comment xml:lang="sv">Scream Tracker 3-ljud</comment>
     <glob pattern="*.s3m"/>
@@ -2829,6 +3008,7 @@ command to generate the output files.
     <comment xml:lang="hu">Scream Tracker-hang</comment>
     <comment xml:lang="nl">Scream Tracker geluidsbestand</comment>
     <comment xml:lang="nn">Scream Tracker lyd</comment>
+    <comment xml:lang="no">Scream Tracker-lyd</comment>
     <comment xml:lang="sr">Scream Tracker звучни запис</comment>
     <comment xml:lang="sv">Scream Tracker-ljud</comment>
     <glob pattern="*.stm"/>
@@ -2840,6 +3020,7 @@ command to generate the output files.
     <comment xml:lang="hu">VOC-hang</comment>
     <comment xml:lang="nl">VOC geluidsbestand</comment>
     <comment xml:lang="nn">VOC-lyd</comment>
+    <comment xml:lang="no">VOC-lyd</comment>
     <comment xml:lang="sr">VOC звучни запис</comment>
     <comment xml:lang="sv">VOC-ljud</comment>
     <glob pattern="*.voc"/>
@@ -2851,6 +3032,7 @@ command to generate the output files.
     <comment xml:lang="hu">WAV-hang</comment>
     <comment xml:lang="nl">WAV geluidsbestand</comment>
     <comment xml:lang="nn">WAV-lyd</comment>
+    <comment xml:lang="no">WAV-lyd</comment>
     <comment xml:lang="sr">WAV звучни запис</comment>
     <comment xml:lang="sv">WAV-ljud</comment>
     <magic priority="50">
@@ -2866,6 +3048,7 @@ command to generate the output files.
     <comment xml:lang="hu">Scream Tracker-hangszer</comment>
     <comment xml:lang="nl">Scream Tracker instrument</comment>
     <comment xml:lang="nn">Scream Tracker instrument</comment>
+    <comment xml:lang="no">Scream Tracker-instrument</comment>
     <comment xml:lang="sr">Scream Tracker инструмент</comment>
     <comment xml:lang="sv">Scream Tracker-instrument</comment>
     <glob pattern="*.xi"/>
@@ -2877,6 +3060,7 @@ command to generate the output files.
     <comment xml:lang="hu">FastTracker II-hang</comment>
     <comment xml:lang="nl">FastTracker II geluidsbestand</comment>
     <comment xml:lang="nn">FastTracker II lyd</comment>
+    <comment xml:lang="no">FastTracker II-lyd</comment>
     <comment xml:lang="sr">FastTracker II аудио запис</comment>
     <comment xml:lang="sv">FastTracker II-ljud</comment>
     <glob pattern="*.xm"/>
@@ -2888,6 +3072,7 @@ command to generate the output files.
     <comment xml:lang="hu">Windows BMP-fájl</comment>
     <comment xml:lang="nl">Windows BMP afbeelding</comment>
     <comment xml:lang="nn">Windows BMP-bilete</comment>
+    <comment xml:lang="no">Windows BMP-bilde</comment>
     <comment xml:lang="sr">Windows BMP слика</comment>
     <comment xml:lang="sv">Windows BMP-bild</comment>
     <magic priority="50">
@@ -2928,6 +3113,7 @@ command to generate the output files.
     <comment xml:lang="hu">G3-faxkép</comment>
     <comment xml:lang="nl">G3 fax afbeelding</comment>
     <comment xml:lang="nn">G3 faksbilete</comment>
+    <comment xml:lang="no">G3-faksbilde</comment>
     <comment xml:lang="sr">G3 факс слика</comment>
     <comment xml:lang="sv">G3-faxbild</comment>
   </mime-type>
@@ -2938,6 +3124,7 @@ command to generate the output files.
     <comment xml:lang="hu">GIF-kép</comment>
     <comment xml:lang="nl">GIF afbeelding</comment>
     <comment xml:lang="nn">GIF-bilete</comment>
+    <comment xml:lang="no">GIF-bilde</comment>
     <comment xml:lang="sr">GIF слика</comment>
     <comment xml:lang="sv">GIF-bild</comment>
     <magic priority="50">
@@ -2952,6 +3139,7 @@ command to generate the output files.
     <comment xml:lang="hu">IEF-kép</comment>
     <comment xml:lang="nl">IEF afbeelding</comment>
     <comment xml:lang="nn">IEF-bilete</comment>
+    <comment xml:lang="no">IEF-bilde</comment>
     <comment xml:lang="sr">IEF слика</comment>
     <comment xml:lang="sv">IEF-bild</comment>
     <glob pattern="*.ief"/>
@@ -2963,6 +3151,7 @@ command to generate the output files.
     <comment xml:lang="hu">JPEG-kép</comment>
     <comment xml:lang="nl">JPEG afbeelding</comment>
     <comment xml:lang="nn">JPEG-bilete</comment>
+    <comment xml:lang="no">JPEG-bilde</comment>
     <comment xml:lang="sr">JPEG слика</comment>
     <comment xml:lang="sv">JPEG-bild</comment>
     <magic priority="50">
@@ -2980,6 +3169,7 @@ command to generate the output files.
     <comment xml:lang="hu">PNG-kép</comment>
     <comment xml:lang="nl">PNG afbeelding</comment>
     <comment xml:lang="nn">PNG-bilete</comment>
+    <comment xml:lang="no">PNG-bilde</comment>
     <comment xml:lang="sr">PNG слика</comment>
     <comment xml:lang="sv">PNG-bild</comment>
     <magic priority="50">
@@ -2994,6 +3184,7 @@ command to generate the output files.
     <comment xml:lang="hu">Méretezhető vektorgrafika (SVG)</comment>
     <comment xml:lang="nl">Schaalbare vector afbeelding (SVG)</comment>
     <comment xml:lang="nn">Skalerbar vektorgrafikk (SVG)</comment>
+    <comment xml:lang="no">Skalerbar vektorgrafikk</comment>
     <comment xml:lang="sr">Скалабилна векторска графика</comment>
     <comment xml:lang="sv">Skalbar vektorgrafik</comment>
     <magic priority="80">
@@ -3009,6 +3200,7 @@ command to generate the output files.
     <comment xml:lang="hu">TIFF-kép</comment>
     <comment xml:lang="nl">TIFF afbeelding</comment>
     <comment xml:lang="nn">TIFF-bilete</comment>
+    <comment xml:lang="no">TIFF-bilde</comment>
     <comment xml:lang="sr">TIFF слика</comment>
     <comment xml:lang="sv">TIFF-bild</comment>
     <magic priority="50">
@@ -3025,6 +3217,7 @@ command to generate the output files.
     <comment xml:lang="hu">AutoCAD-kép</comment>
     <comment xml:lang="nl">AutoCAD afbeelding</comment>
     <comment xml:lang="nn">AutoCAD-bilete</comment>
+    <comment xml:lang="no">AutoCAD-bilde</comment>
     <comment xml:lang="sr">AutoCAD слика</comment>
     <comment xml:lang="sv">AutoCAD-bild</comment>
     <glob pattern="*.dwg"/>
@@ -3036,6 +3229,7 @@ command to generate the output files.
     <comment xml:lang="hu">DXF-vektorgrafika</comment>
     <comment xml:lang="nl">DXF vector afbeelding</comment>
     <comment xml:lang="nn">DXF vektorgrafikk</comment>
+    <comment xml:lang="no">DXF-vektorgrafikk</comment>
     <comment xml:lang="sr">DXF векторска графика</comment>
     <comment xml:lang="sv">DXF-vektorgrafik</comment>
     <glob pattern="*.dxf"/>
@@ -3047,6 +3241,7 @@ command to generate the output files.
     <comment xml:lang="hu">3D Studio-kép</comment>
     <comment xml:lang="nl">3D Studio afbeelding</comment>
     <comment xml:lang="nn">3D Studio-bilete</comment>
+    <comment xml:lang="no">3D Studio-bilde</comment>
     <comment xml:lang="sr">3D Studio слика</comment>
     <comment xml:lang="sv">3D Studio-bild</comment>
     <glob pattern="*.3ds"/>
@@ -3057,6 +3252,7 @@ command to generate the output files.
     <comment xml:lang="fr">document Applix Graphicsd</comment>
     <comment xml:lang="nl">Applix Graphics document</comment>
     <comment xml:lang="nn">Applix Graphics-dokument</comment>
+    <comment xml:lang="no">Applix Graphics-dokument</comment>
     <comment xml:lang="sr">ApplixWare Graphics документ</comment>
     <comment xml:lang="sv">Applix Graphics-dokument</comment>
     <magic priority="50">
@@ -3073,6 +3269,7 @@ command to generate the output files.
     <comment xml:lang="hu">CMU-raszterkép</comment>
     <comment xml:lang="nl">CMU raster afbeelding</comment>
     <comment xml:lang="nn">CMU raster-bilete</comment>
+    <comment xml:lang="no">CMU-rasterbilde</comment>
     <comment xml:lang="sr">CMU растерска слика</comment>
     <comment xml:lang="sv">CMU-rasterbild</comment>
     <glob pattern="*.ras"/>
@@ -3083,6 +3280,7 @@ command to generate the output files.
     <comment xml:lang="fr">document GIMP compressé</comment>
     <comment xml:lang="nl">ingepakt GIMP document</comment>
     <comment xml:lang="nn">pakka GIMP-dokument</comment>
+    <comment xml:lang="no">komprimert GIMP-dokument</comment>
     <comment xml:lang="sr">компресовани Гимп документ</comment>
     <comment xml:lang="sv">komprimerat GIMP-dokument</comment>
     <glob pattern="*.xcf.gz"/>
@@ -3094,6 +3292,7 @@ command to generate the output files.
     <comment xml:lang="fr">image « Digital Imaging and Communications in Medicine »</comment>
     <comment xml:lang="hu">Digital Imaging and Communications in Medicine-kép</comment>
     <comment xml:lang="nn">Digital Imaging and Communications in Medicine-bilete</comment>
+    <comment xml:lang="no">Digital Imaging and Communications in Medicine-bilde</comment>
     <comment xml:lang="sr">Слика за дигиталну фотографију и комуникацију у медицини</comment>
     <comment xml:lang="sv">Bildformat för digital bildbehandling och medicinsk kommunikation</comment>
     <glob pattern="*.dcm"/>
@@ -3108,6 +3307,7 @@ command to generate the output files.
     <comment xml:lang="hu">Eszközfüggetlen bitkép</comment>
     <comment xml:lang="nl">Apparaat onafhankelijke bitmap</comment>
     <comment xml:lang="nn">Einingsuavhengig bitkart</comment>
+    <comment xml:lang="no">Enhetsuavhengig bitkart</comment>
     <comment xml:lang="sr">Битмапа независна од уређаја</comment>
     <comment xml:lang="sv">Enhetsoberoende bitmapp</comment>
     <magic priority="50">
@@ -3135,6 +3335,7 @@ command to generate the output files.
     <comment xml:lang="hu">Digital Moving Picture Exchange-kép</comment>
     <comment xml:lang="nl">Digital Moving Picture Exchange afbeelding</comment>
     <comment xml:lang="nn">Digital Moving Picture Exchange-bilete</comment>
+    <comment xml:lang="no">Digital Moving Pitcure Exchange bilde</comment>
     <comment xml:lang="sr">Дигитални облик за размену покретних слика</comment>
     <comment xml:lang="sv">DPX-bild (Digital Moving Picture Exchange)</comment>
     <magic priority="50">
@@ -3168,6 +3369,7 @@ command to generate the output files.
     <comment xml:lang="hu">Flexible Image Transport System</comment>
     <comment xml:lang="nl">Flexibel afbeeldingstransportsysteem</comment>
     <comment xml:lang="nn">Flexible Image Transport System</comment>
+    <comment xml:lang="no">Fleksibelt bildetransportsystem</comment>
     <comment xml:lang="sr">Флексибилни транспортни систем слика</comment>
     <comment xml:lang="sv">Flexibelt bildtransportssystem</comment>
     <magic priority="50">
@@ -3182,6 +3384,7 @@ command to generate the output files.
     <comment xml:lang="hu">FlashPix-kép</comment>
     <comment xml:lang="nl">FlashPix afbeelding</comment>
     <comment xml:lang="nn">FlashPix-bilete</comment>
+    <comment xml:lang="no">FlashPix-bilde</comment>
     <comment xml:lang="sr">FlashPix слика</comment>
     <comment xml:lang="sv">FlashPix-bild</comment>
     <magic priority="50">
@@ -3195,6 +3398,7 @@ command to generate the output files.
     <comment xml:lang="hu">Truevision Targa-kép</comment>
     <comment xml:lang="nl">Truevision Targa afbeelding</comment>
     <comment xml:lang="nn">Truevision Targa-bilete</comment>
+    <comment xml:lang="no">Truevision Targa-bilde</comment>
     <comment xml:lang="sr">Truevision Targa слика</comment>
     <comment xml:lang="sv">Truevision Targa-bild</comment>
     <magic priority="50">
@@ -3208,6 +3412,7 @@ command to generate the output files.
     <comment xml:lang="fr">icônes MSWindows</comment>
     <comment xml:lang="nl">MSWindows pictogrammen</comment>
     <comment xml:lang="nn">MS Windows-ikon</comment>
+    <comment xml:lang="no">MS Windows-ikoner</comment>
     <comment xml:lang="sr">MS Windows иконе</comment>
     <comment xml:lang="sv">MSWindows-ikoner</comment>
     <glob pattern="*.ico"/>
@@ -3219,6 +3424,7 @@ command to generate the output files.
     <comment xml:lang="hu">IFF-kép</comment>
     <comment xml:lang="nl">IFF afbeelding</comment>
     <comment xml:lang="nn">IFF-bilete</comment>
+    <comment xml:lang="no">IFF-bilde</comment>
     <comment xml:lang="sr">IFF слика</comment>
     <comment xml:lang="sv">IFF-bild</comment>
     <glob pattern="*.iff"/>
@@ -3230,6 +3436,7 @@ command to generate the output files.
     <comment xml:lang="hu">ILBM-kép</comment>
     <comment xml:lang="nl">ILBM afbeelding</comment>
     <comment xml:lang="nn">ILMB-bilete</comment>
+    <comment xml:lang="no">ILBM-bilde</comment>
     <comment xml:lang="sr">ILBM слика</comment>
     <comment xml:lang="sv">ILBM-bild</comment>
     <glob pattern="*.ilbm"/>
@@ -3241,6 +3448,7 @@ command to generate the output files.
     <comment xml:lang="hu">JNG-kép</comment>
     <comment xml:lang="nl">JNG afbeelding</comment>
     <comment xml:lang="nn">JNG-bilete</comment>
+    <comment xml:lang="no">JNG-bilde</comment>
     <comment xml:lang="sr">JNG слика</comment>
     <comment xml:lang="sv">JNG-bild</comment>
     <glob pattern="*.jng"/>
@@ -3252,6 +3460,7 @@ command to generate the output files.
     <comment xml:lang="hu">LightWave-objektum</comment>
     <comment xml:lang="nl">LightWave object</comment>
     <comment xml:lang="nn">LightWave-objekt</comment>
+    <comment xml:lang="no">LightWave-objekt</comment>
     <comment xml:lang="sr">LightWave објекат</comment>
     <comment xml:lang="sv">LightWave-objekt</comment>
     <glob pattern="*.lwo"/>
@@ -3264,6 +3473,7 @@ command to generate the output files.
     <comment xml:lang="hu">LightWave-jelenet</comment>
     <comment xml:lang="nl">LightWave scêne</comment>
     <comment xml:lang="nn">LightWave-scene</comment>
+    <comment xml:lang="no">LightWave-scene</comment>
     <comment xml:lang="sr">LightWave сцена</comment>
     <comment xml:lang="sv">LightWave-scen</comment>
     <glob pattern="*.lws"/>
@@ -3274,6 +3484,7 @@ command to generate the output files.
     <comment xml:lang="fr">dessin MS Office</comment>
     <comment xml:lang="nl">MS Office tekening</comment>
     <comment xml:lang="nn">MS Office-teikning</comment>
+    <comment xml:lang="no">MS Office-tegning</comment>
     <comment xml:lang="sr">MS Office цртеж</comment>
     <comment xml:lang="sv">MS Office-teckning</comment>
     <glob pattern="*.msod"/>
@@ -3299,6 +3510,7 @@ command to generate the output files.
     <comment xml:lang="fr">image PhotoCD</comment>
     <comment xml:lang="nl">PhotoCD afbeelding</comment>
     <comment xml:lang="nn">Photo CD-bilete</comment>
+    <comment xml:lang="no">PhotoCD-bilde</comment>
     <comment xml:lang="sr">Фото Це-Де слика</comment>
     <comment xml:lang="sv">PhotoCD-bild</comment>
     <glob pattern="*.pcd"/>
@@ -3310,6 +3522,7 @@ command to generate the output files.
     <comment xml:lang="hu">PNM-kép</comment>
     <comment xml:lang="nl">PNM afbeelding</comment>
     <comment xml:lang="nn">PNM-bilete</comment>
+    <comment xml:lang="no">PNM-bilde</comment>
     <comment xml:lang="sr">PNM слика</comment>
     <comment xml:lang="sv">PNM-bild</comment>
     <glob pattern="*.pnm"/>
@@ -3363,6 +3576,7 @@ command to generate the output files.
     <comment xml:lang="hu">Photoshop-dokumentum</comment>
     <comment xml:lang="nl">Photoshop document</comment>
     <comment xml:lang="nn">Photoshop-dokument</comment>
+    <comment xml:lang="no">Photoshop-dokument</comment>
     <comment xml:lang="sr">Фотошоп документ</comment>
     <comment xml:lang="sv">Photoshopdokument</comment>
     <magic priority="50">
@@ -3377,6 +3591,7 @@ command to generate the output files.
     <comment xml:lang="hu">RGB-kép</comment>
     <comment xml:lang="nl">RGB afbeelding</comment>
     <comment xml:lang="nn">RGB-bilete</comment>
+    <comment xml:lang="no">RGB-bilde</comment>
     <comment xml:lang="sr">RGB слика</comment>
     <comment xml:lang="sv">RGB-bild</comment>
     <glob pattern="*.rgb"/>
@@ -3388,6 +3603,7 @@ command to generate the output files.
     <comment xml:lang="hu">SUN-raszterfájl</comment>
     <comment xml:lang="nl">SUN rasterbestand</comment>
     <comment xml:lang="nn">SUN-rasterfil</comment>
+    <comment xml:lang="no">SUN rasterfil</comment>
     <comment xml:lang="sr">SUN растерска датотека</comment>
     <comment xml:lang="sv">SUN-rasterfil</comment>
     <magic priority="50">
@@ -3402,6 +3618,7 @@ command to generate the output files.
     <comment xml:lang="hu">TarGA-kép</comment>
     <comment xml:lang="nl">TarGA afbeelding</comment>
     <comment xml:lang="nn">TarGA-bilete</comment>
+    <comment xml:lang="no">TarGA-bilde</comment>
     <comment xml:lang="sr">TarGA слика</comment>
     <comment xml:lang="sv">TarGA-bild</comment>
     <glob pattern="*.tga"/>
@@ -3413,6 +3630,7 @@ command to generate the output files.
     <comment xml:lang="hu">Windows MetaFile</comment>
     <comment xml:lang="nl">Windows MetaFile</comment>
     <comment xml:lang="nn">Windows metafil</comment>
+    <comment xml:lang="no">Windows metafil</comment>
     <comment xml:lang="sr">Windows метафајл</comment>
     <comment xml:lang="sv">Windows-metafil</comment>
     <glob pattern="*.wmf"/>
@@ -3424,6 +3642,7 @@ command to generate the output files.
     <comment xml:lang="hu">X BitMap kép</comment>
     <comment xml:lang="nl">X BitMap afbeelding</comment>
     <comment xml:lang="nn">Bilete i X Bitmap-format</comment>
+    <comment xml:lang="no">X-bitmapbilde</comment>
     <comment xml:lang="sr">X битмапирана слика</comment>
     <comment xml:lang="sv">X-bitmappbild</comment>
     <glob pattern="*.xbm"/>
@@ -3445,6 +3664,7 @@ command to generate the output files.
     <comment xml:lang="hu">XFig-fájl</comment>
     <comment xml:lang="nl">XFig bestand</comment>
     <comment xml:lang="nn">XFig-fil</comment>
+    <comment xml:lang="no">XFig-fil</comment>
     <comment xml:lang="sr">XFig датотека</comment>
     <comment xml:lang="sv">XFig-fil</comment>
     <glob pattern="*.fig"/>
@@ -3459,6 +3679,7 @@ command to generate the output files.
     <comment xml:lang="hu">X PixMap kép</comment>
     <comment xml:lang="nl">X PixMap afbeelding</comment>
     <comment xml:lang="nn">Bilete i X Bitmap-format</comment>
+    <comment xml:lang="no">X-pixmapbilde</comment>
     <comment xml:lang="sr">X пискмапа</comment>
     <comment xml:lang="sv">X-pixmapbild</comment>
     <magic priority="80">
@@ -3473,6 +3694,7 @@ command to generate the output files.
     <comment xml:lang="hu">X window-kép</comment>
     <comment xml:lang="nl">X Window afbeelding</comment>
     <comment xml:lang="nn">X window bilete</comment>
+    <comment xml:lang="no">X-Windows skjermbilde</comment>
     <comment xml:lang="sr">X прозор слика</comment>
     <comment xml:lang="sv">X-fönsterbild</comment>
     <glob pattern="*.xwd"/>
@@ -3484,6 +3706,7 @@ command to generate the output files.
     <comment xml:lang="hu">Blokkos eszköz</comment>
     <comment xml:lang="nl">Blokapparaat</comment>
     <comment xml:lang="nn">Blokk-eining</comment>
+    <comment xml:lang="no">Blokkenhet</comment>
     <comment xml:lang="sr">Блок уређај</comment>
     <comment xml:lang="sv">Blockenhet</comment>
   </mime-type>
@@ -3493,6 +3716,7 @@ command to generate the output files.
     <comment xml:lang="fr">périphérique de caractères</comment>
     <comment xml:lang="nl">Teken-georiënteerd apparaat</comment>
     <comment xml:lang="nn">Teikneining</comment>
+    <comment xml:lang="no">Tegnenhet</comment>
     <comment xml:lang="sr">Знаковни уређај</comment>
     <comment xml:lang="sv">Teckenenhet</comment>
   </mime-type>
@@ -3503,6 +3727,7 @@ command to generate the output files.
     <comment xml:lang="hu">Könyvtár</comment>
     <comment xml:lang="nl">Map</comment>
     <comment xml:lang="nn">Katalog</comment>
+    <comment xml:lang="no">Katalog</comment>
     <comment xml:lang="sr">Директоријум</comment>
     <comment xml:lang="sv">Katalog</comment>
   </mime-type>
@@ -3512,6 +3737,7 @@ command to generate the output files.
     <comment xml:lang="fr">Pipe</comment>
     <comment xml:lang="nl">Pijp</comment>
     <comment xml:lang="nn">Røyr</comment>
+    <comment xml:lang="no">Rør</comment>
     <comment xml:lang="sr">Цев</comment>
     <comment xml:lang="sv">Rör</comment>
   </mime-type>
@@ -3522,6 +3748,7 @@ command to generate the output files.
     <comment xml:lang="fr">point d&apos;accès « mount point »</comment>
     <comment xml:lang="nl">Koppelingspunt</comment>
     <comment xml:lang="nn">Monteringspunkt</comment>
+    <comment xml:lang="no">Monteringspunkt</comment>
     <comment xml:lang="sr">Тачка прикључења</comment>
     <comment xml:lang="sv">Monteringspunkt</comment>
   </mime-type>
@@ -3532,6 +3759,7 @@ command to generate the output files.
     <comment xml:lang="hu">Illesztőpont</comment>
     <comment xml:lang="nl">Socket</comment>
     <comment xml:lang="nn">Sokkel</comment>
+    <comment xml:lang="no">Socket</comment>
     <comment xml:lang="sr">Сокет</comment>
     <comment xml:lang="sv">Uttag</comment>
   </mime-type>
@@ -3541,6 +3769,7 @@ command to generate the output files.
     <comment xml:lang="fr">lien symbolique</comment>
     <comment xml:lang="nl">symbolische koppeling</comment>
     <comment xml:lang="nn">symbolsk lenkje</comment>
+    <comment xml:lang="no">symbolsk lenke</comment>
     <comment xml:lang="sr">симболичка веза</comment>
     <comment xml:lang="sv">symbolisk länk</comment>
   </mime-type>
@@ -3568,6 +3797,7 @@ command to generate the output files.
     <comment xml:lang="fr">référence au fichier distant</comment>
     <comment xml:lang="nl">verwijzing naar bestand op afstand</comment>
     <comment xml:lang="nn">referanse til fil over nettverk</comment>
+    <comment xml:lang="no">referanse til ekstern fil</comment>
     <comment xml:lang="sr">референца на удаљену датотеку</comment>
     <comment xml:lang="sv">referens till fjärrfil</comment>
   </mime-type>
@@ -3577,6 +3807,7 @@ command to generate the output files.
     <comment xml:lang="fr">message des nouvelles « news » Usenet</comment>
     <comment xml:lang="nl">Usenet nieuwsbericht</comment>
     <comment xml:lang="nn">USENET diskusjonsmelding</comment>
+    <comment xml:lang="no">Usenet nyhetsmelding</comment>
     <comment xml:lang="sr">Порука са дискусионе групе</comment>
     <comment xml:lang="sv">Usenet-diskussionsgruppsmeddelande</comment>
     <magic priority="50">
@@ -3591,6 +3822,7 @@ command to generate the output files.
     <comment xml:lang="fr">message partiel de courriel</comment>
     <comment xml:lang="nl">gedeeltelijk e-mail bericht</comment>
     <comment xml:lang="nn">del av e-post-melding</comment>
+    <comment xml:lang="no">del av e-postmelding</comment>
     <comment xml:lang="sr">делимична е-порука</comment>
     <comment xml:lang="sv">del av e-postmeddelande</comment>
   </mime-type>
@@ -3600,6 +3832,7 @@ command to generate the output files.
     <comment xml:lang="fr">message de courriel</comment>
     <comment xml:lang="nl">E-mail bericht</comment>
     <comment xml:lang="nn">E-postmelding</comment>
+    <comment xml:lang="no">E-postmelding</comment>
     <comment xml:lang="sr">Е-порука</comment>
     <comment xml:lang="sv">E-postmeddelande</comment>
     <magic priority="50">
@@ -3620,6 +3853,7 @@ command to generate the output files.
     <comment xml:lang="hu">GNU elektronikus levél</comment>
     <comment xml:lang="nl">GNU e-mail bericht</comment>
     <comment xml:lang="nn">GNU e-postmelding</comment>
+    <comment xml:lang="no">GNU e-postmelding</comment>
     <comment xml:lang="sr">ГНУ е-писмо</comment>
     <comment xml:lang="sv">GNU-epostmeddelande</comment>
     <glob pattern="RMAIL"/>
@@ -3631,6 +3865,7 @@ command to generate the output files.
     <comment xml:lang="hu">VRML-dokumentum</comment>
     <comment xml:lang="nl">VRML document</comment>
     <comment xml:lang="nn">VRML-dokument</comment>
+    <comment xml:lang="no">VRML-dokument</comment>
     <comment xml:lang="sr">VRML документ</comment>
     <comment xml:lang="sv">VRML-dokument</comment>
     <glob pattern="*.wrl"/>
@@ -3641,6 +3876,7 @@ command to generate the output files.
     <comment xml:lang="fr">message en format divers</comment>
     <comment xml:lang="nl">bericht in verschillende formaten</comment>
     <comment xml:lang="nn">melding i fleire format</comment>
+    <comment xml:lang="no">melding i flere formater</comment>
     <comment xml:lang="sr">поруке у више записа</comment>
     <comment xml:lang="sv">meddelande i flera format</comment>
   </mime-type>
@@ -3651,6 +3887,7 @@ command to generate the output files.
     <comment xml:lang="hu">Macintosh AppleDouble kódolású fájl</comment>
     <comment xml:lang="nl">Macintosh AppleDouble-gecodeerd bestand</comment>
     <comment xml:lang="nn">Macintosh AppleDouble-koda fil</comment>
+    <comment xml:lang="no">dokument kodet med Macintosh AppleDouble</comment>
     <comment xml:lang="sr">Мекинтош AppleDouble-encoded датотека</comment>
     <comment xml:lang="sv">Macintosh AppleDouble-kodad fil</comment>
   </mime-type>
@@ -3669,6 +3906,7 @@ command to generate the output files.
     <comment xml:lang="fr">message encrypté</comment>
     <comment xml:lang="nl">gecodeerd bericht</comment>
     <comment xml:lang="nn">kryptert melding</comment>
+    <comment xml:lang="no">kryptert melding</comment>
     <comment xml:lang="sr">шифрована порука</comment>
     <comment xml:lang="sv">krypterat meddelande</comment>
   </mime-type>
@@ -3678,6 +3916,7 @@ command to generate the output files.
     <comment xml:lang="fr">document Compound</comment>
     <comment xml:lang="nl">Samengestelde documenten</comment>
     <comment xml:lang="nn">Samansette dokument</comment>
+    <comment xml:lang="no">Sammensatt dokument</comment>
     <comment xml:lang="sr">Сједињени документи</comment>
     <comment xml:lang="sv">Sammansatta dokument</comment>
   </mime-type>
@@ -3687,6 +3926,7 @@ command to generate the output files.
     <comment xml:lang="fr">document lié « compound »</comment>
     <comment xml:lang="nl">samengesteld document</comment>
     <comment xml:lang="nn">samansett dokument</comment>
+    <comment xml:lang="no">sammensatt dokument</comment>
     <comment xml:lang="sr">сједињени документ</comment>
     <comment xml:lang="sv">sammansatt dokument</comment>
   </mime-type>
@@ -3705,6 +3945,7 @@ command to generate the output files.
     <comment xml:lang="fr">message signé</comment>
     <comment xml:lang="nl">ondertekend bericht</comment>
     <comment xml:lang="nn">signert melding</comment>
+    <comment xml:lang="no">signert melding</comment>
     <comment xml:lang="sr">потписана порука</comment>
     <comment xml:lang="sv">signerat meddelande</comment>
   </mime-type>
@@ -3723,6 +3964,7 @@ command to generate the output files.
     <comment xml:lang="fr">fichier iCalendar</comment>
     <comment xml:lang="nl">iCalendar bestand</comment>
     <comment xml:lang="nn">iCalendar-fil</comment>
+    <comment xml:lang="no">iCalender-fil</comment>
     <comment xml:lang="sr">iCalendar датотека</comment>
     <comment xml:lang="sv">iCalendar-fil</comment>
     <magic priority="50">
@@ -3736,6 +3978,7 @@ command to generate the output files.
     <comment xml:lang="fr">Cascading Style Sheet</comment>
     <comment xml:lang="nl">Cascading Style Sheet</comment>
     <comment xml:lang="nn">Overlappande stilark (CSS)</comment>
+    <comment xml:lang="no">Cascading style sheet</comment>
     <comment xml:lang="sr">Каскадна стилска страна (CSS)</comment>
     <comment xml:lang="sv">Kaskadstilmall</comment>
     <glob pattern="*.css"/>
@@ -3766,6 +4009,7 @@ command to generate the output files.
     <comment xml:lang="hu">Lefordított üzenetek</comment>
     <comment xml:lang="nl">Vertaalde berichten</comment>
     <comment xml:lang="nn">Omsette meldingar</comment>
+    <comment xml:lang="no">Oversatte meldinger</comment>
     <comment xml:lang="sr">Преведене поруке</comment>
     <comment xml:lang="sv">Översatta meddelanden</comment>
     <glob pattern="*.po"/>
@@ -3776,6 +4020,7 @@ command to generate the output files.
     <comment xml:lang="fr">page HTML</comment>
     <comment xml:lang="nl">HTML pagina</comment>
     <comment xml:lang="nn">HTML-side</comment>
+    <comment xml:lang="no">HTML-side</comment>
     <comment xml:lang="sr">HTML страна</comment>
     <comment xml:lang="sv">HTML-sida</comment>
     <magic priority="50">
@@ -3806,6 +4051,7 @@ command to generate the output files.
     <comment xml:lang="fr">page d&apos;aide</comment>
     <comment xml:lang="nl">hulppagina</comment>
     <comment xml:lang="nn">hjelpeside</comment>
+    <comment xml:lang="no">hjelpside</comment>
     <comment xml:lang="sr">страна помоћи</comment>
     <comment xml:lang="sv">hjälpsida</comment>
   </mime-type>
@@ -3816,6 +4062,7 @@ command to generate the output files.
     <comment xml:lang="hu">MathML-dokumentum</comment>
     <comment xml:lang="nl">MathML document</comment>
     <comment xml:lang="nn">MathML-dokument</comment>
+    <comment xml:lang="no">MathML-dokument</comment>
     <comment xml:lang="sr">MathML документ</comment>
     <comment xml:lang="sv">MathML-dokument</comment>
     <glob pattern="*.mml"/>
@@ -3826,6 +4073,7 @@ command to generate the output files.
     <comment xml:lang="fr">texte ordinaire</comment>
     <comment xml:lang="nl">Platte tekst</comment>
     <comment xml:lang="nn">Vanleg tekst</comment>
+    <comment xml:lang="no">Vanlig tekst</comment>
     <comment xml:lang="sr">Обичан текст</comment>
     <comment xml:lang="sv">Vanlig text</comment>
     <magic priority="50">
@@ -3851,6 +4099,7 @@ command to generate the output files.
     <comment xml:lang="fr">en-tête de courriel</comment>
     <comment xml:lang="nl">e-mail koppen</comment>
     <comment xml:lang="nn">e-post-hovud</comment>
+    <comment xml:lang="no">e-posthode</comment>
     <comment xml:lang="sr">заглавља е-порука</comment>
     <comment xml:lang="sv">e-posthuvuden</comment>
   </mime-type>
@@ -3860,6 +4109,7 @@ command to generate the output files.
     <comment xml:lang="fr">document « rich text »</comment>
     <comment xml:lang="nl">opgemaakt tekstdocument</comment>
     <comment xml:lang="nn">rik tekst-dokument</comment>
+    <comment xml:lang="no">rik tekst-dokument</comment>
     <comment xml:lang="sr">обогаћени текстуални документ</comment>
     <comment xml:lang="sv">rikt textdokument</comment>
     <glob pattern="*.rtx"/>
@@ -3881,6 +4131,7 @@ command to generate the output files.
     <comment xml:lang="hu">SGML</comment>
     <comment xml:lang="nl">SGML</comment>
     <comment xml:lang="nn">SGML</comment>
+    <comment xml:lang="no">SGML</comment>
     <comment xml:lang="sr">SGML</comment>
     <comment xml:lang="sv">SGML</comment>
     <glob pattern="*.sgml"/>
@@ -3893,6 +4144,7 @@ command to generate the output files.
     <comment xml:lang="hu">Spreadsheet Interchange-dokumentum</comment>
     <comment xml:lang="nl">Spreadsheet uitwisselingsdocument</comment>
     <comment xml:lang="nn">Spreadsheet interchange dokument</comment>
+    <comment xml:lang="no">Dokument for regnearkutveksling</comment>
     <comment xml:lang="sr">Размењиви документ табеларног прорачуна</comment>
     <comment xml:lang="sv">Spreadsheet Interchange-dokument</comment>
     <magic priority="50">
@@ -3907,6 +4159,7 @@ command to generate the output files.
     <comment xml:lang="fr">document texte séparé par des tabulations</comment>
     <comment xml:lang="nl">tab-gescheiden tekstdocument</comment>
     <comment xml:lang="nn">tabulatordelt tekstdokument</comment>
+    <comment xml:lang="no">tabulatorseparert tekstdokument</comment>
     <comment xml:lang="sr">текстуални документ раздвојен табулатором</comment>
     <comment xml:lang="sv">tabbseparerat textdokument</comment>
     <glob pattern="*.tsv"/>
@@ -3918,6 +4171,7 @@ command to generate the output files.
     <comment xml:lang="hu">WML-dokumentum</comment>
     <comment xml:lang="nl">WML document</comment>
     <comment xml:lang="nn">WML-dokument</comment>
+    <comment xml:lang="no">WML-dokument</comment>
     <comment xml:lang="sr">WML документ</comment>
     <comment xml:lang="sv">WML-dokument</comment>
     <glob pattern="*.wml"/>
@@ -3929,6 +4183,7 @@ command to generate the output files.
     <comment xml:lang="hu">Ada-forrás</comment>
     <comment xml:lang="nl">Ada broncode</comment>
     <comment xml:lang="nn">Ada-kjeldekode</comment>
+    <comment xml:lang="no">Ada-kildekode</comment>
     <comment xml:lang="sr">Ада код</comment>
     <comment xml:lang="sv">Ada-källkod</comment>
     <glob pattern="*.adb"/>
@@ -3940,6 +4195,7 @@ command to generate the output files.
     <comment xml:lang="fr">listes d&apos;auteurs</comment>
     <comment xml:lang="nl">auteurslijst</comment>
     <comment xml:lang="nn">forfattarliste</comment>
+    <comment xml:lang="no">forfatterliste</comment>
     <comment xml:lang="sr">списак аутора</comment>
     <comment xml:lang="sv">författarlista</comment>
     <glob pattern="AUTHORS"/>
@@ -3962,6 +4218,7 @@ command to generate the output files.
     <comment xml:lang="hu">C++-fejléc</comment>
     <comment xml:lang="nl">C++ headers</comment>
     <comment xml:lang="nn">C++-kode-hovud</comment>
+    <comment xml:lang="no">C++-headere</comment>
     <comment xml:lang="sr">C++ заглавља</comment>
     <comment xml:lang="sv">C++-huvuden</comment>
     <glob pattern="*.hh"/>
@@ -3973,6 +4230,7 @@ command to generate the output files.
     <comment xml:lang="hu">C++-forrás</comment>
     <comment xml:lang="nl">C++ broncode</comment>
     <comment xml:lang="nn">C++-kjeldekode</comment>
+    <comment xml:lang="no">C++-kildekode</comment>
     <comment xml:lang="sr">C++ кôд</comment>
     <comment xml:lang="sv">C++-källkod</comment>
     <glob pattern="*.cpp"/>
@@ -3988,6 +4246,7 @@ command to generate the output files.
     <comment xml:lang="hu">C-fejléc</comment>
     <comment xml:lang="nl">C headers</comment>
     <comment xml:lang="nn">C-kode-hovud</comment>
+    <comment xml:lang="no">C-headere</comment>
     <comment xml:lang="sr">C заглавља</comment>
     <comment xml:lang="sv">C-huvuden</comment>
     <glob pattern="*.h"/>
@@ -4010,6 +4269,7 @@ command to generate the output files.
     <comment xml:lang="fr">termes de la license du logiciel</comment>
     <comment xml:lang="nl">software licentievoorwaarden</comment>
     <comment xml:lang="nn">lisensvilkår for programvare</comment>
+    <comment xml:lang="no">lisensbestemmelser for programvare</comment>
     <comment xml:lang="sr">лиценца за програм</comment>
     <comment xml:lang="sv">programlicensavtal</comment>
     <glob pattern="COPYING"/>
@@ -4020,6 +4280,7 @@ command to generate the output files.
     <comment xml:lang="fr">crédits des auteurs pour le logiciel</comment>
     <comment xml:lang="nl">informatie over auteur</comment>
     <comment xml:lang="nn">forfattarliste for programvare</comment>
+    <comment xml:lang="no">forfatterliste for programvare</comment>
     <comment xml:lang="sr">заслуге аутора програма</comment>
     <comment xml:lang="sv">programförfattarlista</comment>
     <glob pattern="CREDITS"/>
@@ -4031,6 +4292,7 @@ command to generate the output files.
     <comment xml:lang="hu">C-forrás</comment>
     <comment xml:lang="nl">C broncode</comment>
     <comment xml:lang="nn">C-kjeldekode</comment>
+    <comment xml:lang="no">C-kildekode</comment>
     <comment xml:lang="sr">C кôд</comment>
     <comment xml:lang="sv">C-källkod</comment>
     <glob pattern="*.c"/>
@@ -4042,6 +4304,7 @@ command to generate the output files.
     <comment xml:lang="hu">DCL-parancsfájl</comment>
     <comment xml:lang="nl">DCL script</comment>
     <comment xml:lang="nn">DCL-skript</comment>
+    <comment xml:lang="no">DCL-skript</comment>
     <comment xml:lang="sr">DCL скрипта</comment>
     <comment xml:lang="sv">DCL-skript</comment>
     <glob pattern="*.dcl"/>
@@ -4052,6 +4315,7 @@ command to generate the output files.
     <comment xml:lang="fr">différences entre fichiers</comment>
     <comment xml:lang="nl">Verschillen tussen bestanden</comment>
     <comment xml:lang="nn">Skilnadar mellom filer</comment>
+    <comment xml:lang="no">Forskjeller mellom filer</comment>
     <comment xml:lang="sr">Разлике међу датотекама</comment>
     <comment xml:lang="sv">Skillnader mellan filer</comment>
     <magic priority="50">
@@ -4070,6 +4334,7 @@ command to generate the output files.
     <comment xml:lang="hu">DSSSL-dokumentum</comment>
     <comment xml:lang="nl">DSSSL document</comment>
     <comment xml:lang="nn">DSSSL-dokument</comment>
+    <comment xml:lang="no">DSSSL-dokument</comment>
     <comment xml:lang="sr">DSSSL документ</comment>
     <comment xml:lang="sv">DSSSL-dokument</comment>
     <glob pattern="*.dsl"/>
@@ -4091,6 +4356,7 @@ command to generate the output files.
     <comment xml:lang="hu">Emacs Lisp-forráskód</comment>
     <comment xml:lang="nl">Emacs Lisp broncode</comment>
     <comment xml:lang="nn">Emacs Lisp kjeldekode</comment>
+    <comment xml:lang="no">Emacs Lisp-kildekode</comment>
     <comment xml:lang="sr">Емакс Лисп изворни кôд</comment>
     <comment xml:lang="sv">Emacs Lisp-källkod</comment>
     <magic priority="50">
@@ -4106,6 +4372,7 @@ command to generate the output files.
     <comment xml:lang="hu">Fortran-forráskód</comment>
     <comment xml:lang="nl">Fortran broncode</comment>
     <comment xml:lang="nn">Fortran-kjeldekode</comment>
+    <comment xml:lang="no">Fortran-kildekode</comment>
     <comment xml:lang="sr">Фортран изворни кôд</comment>
     <comment xml:lang="sv">Fortran-källkod</comment>
     <glob pattern="*.f"/>
@@ -4117,6 +4384,7 @@ command to generate the output files.
     <comment xml:lang="hu">GTK-beállítások</comment>
     <comment xml:lang="nl">GTK configuratie</comment>
     <comment xml:lang="nn">GTK-oppsett</comment>
+    <comment xml:lang="no">GTK-konfigurasjon</comment>
     <comment xml:lang="sr">Гтк подешавања</comment>
     <comment xml:lang="sv">GTK-konfiguration</comment>
     <glob pattern="gtkrc"/>
@@ -4129,6 +4397,7 @@ command to generate the output files.
     <comment xml:lang="hu">Haskell-forráskód</comment>
     <comment xml:lang="nl">Haskell broncode</comment>
     <comment xml:lang="nn">Haskell-kjeldekode</comment>
+    <comment xml:lang="no">Haskell-kildekode</comment>
     <comment xml:lang="sr">Haskell изворни кôд</comment>
     <comment xml:lang="sv">Haskell-källkod</comment>
     <glob pattern="*.hs"/>
@@ -4140,6 +4409,7 @@ command to generate the output files.
     <comment xml:lang="hu">IDL-dokumentum</comment>
     <comment xml:lang="nl">IDL document</comment>
     <comment xml:lang="nn">IDL-dokument</comment>
+    <comment xml:lang="no">IDL-dokument</comment>
     <comment xml:lang="sr">IDL документ</comment>
     <comment xml:lang="sv">IDL-dokument</comment>
     <glob pattern="*.idl"/>
@@ -4150,6 +4420,7 @@ command to generate the output files.
     <comment xml:lang="fr">instructions d&apos;installation du logiciel</comment>
     <comment xml:lang="nl">software installatie instructies</comment>
     <comment xml:lang="nn">rettleiing i installering av programvare</comment>
+    <comment xml:lang="no">installationsinstruksjoner for programvare</comment>
     <comment xml:lang="sr">упутство за инсталацију програма</comment>
     <comment xml:lang="sv">programinstallationsinstruktioner</comment>
     <glob pattern="INSTALL"/>
@@ -4161,6 +4432,7 @@ command to generate the output files.
     <comment xml:lang="hu">Java-forrás</comment>
     <comment xml:lang="nl">Java broncode</comment>
     <comment xml:lang="nn">Java kjeldekode</comment>
+    <comment xml:lang="no">Java-kildekode</comment>
     <comment xml:lang="sr">Јава кôд</comment>
     <comment xml:lang="sv">Java-källkod</comment>
     <glob pattern="*.java"/>
@@ -4172,6 +4444,7 @@ command to generate the output files.
     <comment xml:lang="hu">Korn shell-parancsfájl</comment>
     <comment xml:lang="nl">Korn shell script</comment>
     <comment xml:lang="nn">Korn skalskript</comment>
+    <comment xml:lang="no">Korn-skall skript</comment>
     <comment xml:lang="sr">Korn скрипта окружења</comment>
     <comment xml:lang="sv">Korn-skalskript</comment>
     <magic priority="50">
@@ -4189,6 +4462,7 @@ command to generate the output files.
     <comment xml:lang="fr">code source Literate haskell</comment>
     <comment xml:lang="hu">Literális haskell-forráskód</comment>
     <comment xml:lang="nn">Literate haskell-kjeldekode</comment>
+    <comment xml:lang="no">Literate haskell-kildekode</comment>
     <comment xml:lang="sr">Literate haskell изворни кôд</comment>
     <comment xml:lang="sv">Literate Haskell-källkod</comment>
     <glob pattern="*.lhs"/>
@@ -4199,6 +4473,7 @@ command to generate the output files.
     <comment xml:lang="fr">fichier journal de l&apos;application</comment>
     <comment xml:lang="nl">Logbestand</comment>
     <comment xml:lang="nn">Programloggfil</comment>
+    <comment xml:lang="no">Loggfil for applikasjon</comment>
     <comment xml:lang="sr">Дневник програма</comment>
     <comment xml:lang="sv">Programloggfil</comment>
     <glob pattern="*.log"/>
@@ -4210,6 +4485,7 @@ command to generate the output files.
     <comment xml:lang="hu">Makefile</comment>
     <comment xml:lang="nl">Makefile</comment>
     <comment xml:lang="nn">Makefile</comment>
+    <comment xml:lang="no">Makefile</comment>
     <comment xml:lang="sr">Производна датотека</comment>
     <comment xml:lang="sv">Makefil</comment>
     <glob pattern="makefile*"/>
@@ -4231,6 +4507,7 @@ command to generate the output files.
     <comment xml:lang="fr">sources Objectives-C</comment>
     <comment xml:lang="nl">Objective-C broncode</comment>
     <comment xml:lang="nn">Objective C-kjeldekode</comment>
+    <comment xml:lang="no">Objective-C-kildekode</comment>
     <comment xml:lang="sr">Објектни-C кôд</comment>
     <comment xml:lang="sv">Objective-C-källkod</comment>
     <glob pattern="*.m"/>
@@ -4241,6 +4518,7 @@ command to generate the output files.
     <comment xml:lang="fr">sources Pascal</comment>
     <comment xml:lang="nl">Pascal broncode</comment>
     <comment xml:lang="nn">Pascal-kjeldekode</comment>
+    <comment xml:lang="no">Pascal-kildekode</comment>
     <comment xml:lang="sr">Паскал изворни кôд</comment>
     <comment xml:lang="sv">Pascal-källkod</comment>
     <glob pattern="*.p"/>
@@ -4252,6 +4530,7 @@ command to generate the output files.
     <comment xml:lang="fr">correctif « patche » du code source</comment>
     <comment xml:lang="nl">broncode patch</comment>
     <comment xml:lang="nn">fil med retting av kjeldekode</comment>
+    <comment xml:lang="no">kildekodefiks</comment>
     <comment xml:lang="sr">закрпа изворног кôда</comment>
     <comment xml:lang="sv">källkodspatch</comment>
     <magic priority="50">
@@ -4269,6 +4548,7 @@ command to generate the output files.
     <comment xml:lang="hu">README-dokumentum</comment>
     <comment xml:lang="nl">LEESMIJ document</comment>
     <comment xml:lang="nn">README-dokument</comment>
+    <comment xml:lang="no">README-dokument</comment>
     <comment xml:lang="sr">ПРОЧИТАЈМЕ документ</comment>
     <comment xml:lang="sv">README-dokument</comment>
     <glob pattern="README*"/>
@@ -4280,6 +4560,7 @@ command to generate the output files.
     <comment xml:lang="hu">Scheme-forráskód</comment>
     <comment xml:lang="nl">Scheme broncode</comment>
     <comment xml:lang="nn">Scheme kjeldekode</comment>
+    <comment xml:lang="no">Scheme-kildekode</comment>
     <comment xml:lang="sr">Scheme изворни кôд</comment>
     <comment xml:lang="sv">Scheme-källkod</comment>
     <glob pattern="*.scm"/>
@@ -4291,6 +4572,7 @@ command to generate the output files.
     <comment xml:lang="hu">Setext-dokumentum</comment>
     <comment xml:lang="nl">Setext document</comment>
     <comment xml:lang="nn">Setext-dokument</comment>
+    <comment xml:lang="no">Setext-dokument</comment>
     <comment xml:lang="sr">Setext документ</comment>
     <comment xml:lang="sv">Setext-dokument</comment>
     <glob pattern="*.etx"/>
@@ -4302,6 +4584,7 @@ command to generate the output files.
     <comment xml:lang="hu">Speech-dokumentum</comment>
     <comment xml:lang="nl">Speech document</comment>
     <comment xml:lang="nn">Syntetisk tale</comment>
+    <comment xml:lang="no">Speech-dokument</comment>
     <comment xml:lang="sr">Speech документ</comment>
     <comment xml:lang="sv">Speech-dokument</comment>
   </mime-type>
@@ -4312,6 +4595,7 @@ command to generate the output files.
     <comment xml:lang="hu">SQL-kód</comment>
     <comment xml:lang="nl">SQL code</comment>
     <comment xml:lang="nn">SQL-kode</comment>
+    <comment xml:lang="no">SQL-kildekode</comment>
     <comment xml:lang="sr">SQL кôд</comment>
     <comment xml:lang="sv">SQL-kod</comment>
     <glob pattern="*.sql"/>
@@ -4323,6 +4607,7 @@ command to generate the output files.
     <comment xml:lang="hu">Tcl-fájl</comment>
     <comment xml:lang="nl">Tcl bestand</comment>
     <comment xml:lang="nn">Tcl-fil</comment>
+    <comment xml:lang="no">Tcl-fil</comment>
     <comment xml:lang="sr">Tcl датотека</comment>
     <comment xml:lang="sv">Tcl-fil</comment>
     <glob pattern="*.tcl"/>
@@ -4335,6 +4620,7 @@ command to generate the output files.
     <comment xml:lang="hu">TeX-fájl</comment>
     <comment xml:lang="nl">TeX bestand</comment>
     <comment xml:lang="nn">TeX-fil</comment>
+    <comment xml:lang="no">TeX-fil</comment>
     <comment xml:lang="sr">ТеХ датотека</comment>
     <comment xml:lang="sv">TeX-fil</comment>
     <glob pattern="*.tex"/>
@@ -4349,6 +4635,7 @@ command to generate the output files.
     <comment xml:lang="hu">TeXInfo-dokumentum</comment>
     <comment xml:lang="nl">TeXInfo document</comment>
     <comment xml:lang="nn">TeXInfo-dokument</comment>
+    <comment xml:lang="no">TeXInfo-dokument</comment>
     <comment xml:lang="sr">ТеХинфо документ</comment>
     <comment xml:lang="sv">TeXInfo-dokument</comment>
     <glob pattern="*.texi"/>
@@ -4360,6 +4647,7 @@ command to generate the output files.
     <comment xml:lang="fr">document d&apos;entrée « troff me »</comment>
     <comment xml:lang="nl">troff me invoerdocument</comment>
     <comment xml:lang="nn">troff me inndata-dokument</comment>
+    <comment xml:lang="no">troff me inndatadokument</comment>
     <comment xml:lang="sr">troff me улазни документ</comment>
     <comment xml:lang="sv">troff me-indatadokument</comment>
     <glob pattern="*.me"/>
@@ -4370,6 +4658,7 @@ command to generate the output files.
     <comment xml:lang="fr">document d&apos;entrée « troff mm »</comment>
     <comment xml:lang="nl">troff mm invoerdocument</comment>
     <comment xml:lang="nn">troff mm inndata-dokument</comment>
+    <comment xml:lang="no">troff mm inndatadokument</comment>
     <comment xml:lang="sr">troff mm улазни документ</comment>
     <comment xml:lang="sv">troff mm-indatadokument</comment>
     <glob pattern="*.mm"/>
@@ -4380,6 +4669,7 @@ command to generate the output files.
     <comment xml:lang="fr">document d&apos;entrée « troff ms »</comment>
     <comment xml:lang="nl">troff ms invoerdocument</comment>
     <comment xml:lang="nn">troff ms inndata-dokument</comment>
+    <comment xml:lang="no">troff ms inndatadokument</comment>
     <comment xml:lang="sr">troff ms улазни документ</comment>
     <comment xml:lang="sv">troff ms-indatadokument</comment>
     <glob pattern="*.ms"/>
@@ -4402,6 +4692,7 @@ command to generate the output files.
     <comment xml:lang="fr">fichier « vCalendar interchange »</comment>
     <comment xml:lang="nl">vCalendar uitwisselingsbestand</comment>
     <comment xml:lang="nn">vCalendar-utvekslingsfil</comment>
+    <comment xml:lang="no">vCalendar-utvekslingsfil</comment>
     <comment xml:lang="sr">Датотека за vCalendar размену</comment>
     <comment xml:lang="sv">vCalendar-utbytesfil</comment>
     <magic priority="50">
@@ -4417,6 +4708,7 @@ command to generate the output files.
     <comment xml:lang="fr">carte d&apos;affaire électronique</comment>
     <comment xml:lang="nl">Electronisch adreskaartje</comment>
     <comment xml:lang="nn">Elektronisk visittkort</comment>
+    <comment xml:lang="no">Elektronisk visittkort</comment>
     <comment xml:lang="sr">Електронска бизнис картица</comment>
     <comment xml:lang="sv">Elektroniskt visitkort</comment>
     <magic priority="50">
@@ -4445,6 +4737,7 @@ command to generate the output files.
     <comment xml:lang="hu">XSLT-stíluslapfájl</comment>
     <comment xml:lang="nl">XSLT stijlblad bestand</comment>
     <comment xml:lang="nn">XSLT-stilark</comment>
+    <comment xml:lang="no">XSLT-stilarkfil</comment>
     <comment xml:lang="sr">Датотека са XSLT стилом</comment>
     <comment xml:lang="sv">XSLT-stilmallsfil</comment>
     <glob pattern="*.xslt"/>
@@ -4475,6 +4768,7 @@ command to generate the output files.
     <comment xml:lang="hu">ISI-video</comment>
     <comment xml:lang="nl">ISI video</comment>
     <comment xml:lang="nn">ISI video</comment>
+    <comment xml:lang="no">ISI-film</comment>
     <comment xml:lang="sr">ISI видео</comment>
     <comment xml:lang="sv">ISI-video</comment>
   </mime-type>
@@ -4484,6 +4778,7 @@ command to generate the output files.
     <comment xml:lang="fr">vidéo MPEG</comment>
     <comment xml:lang="nl">MPEG video</comment>
     <comment xml:lang="nn">MPEG-video</comment>
+    <comment xml:lang="no">MPEG-film</comment>
     <comment xml:lang="sr">MPEG видео</comment>
     <comment xml:lang="sv">MPEG-video</comment>
     <magic priority="50">
@@ -4504,6 +4799,7 @@ command to generate the output files.
     <comment xml:lang="fr">vidéo Quicktime</comment>
     <comment xml:lang="nl">Quicktime video</comment>
     <comment xml:lang="nn">QuickTime-film</comment>
+    <comment xml:lang="no">Quicktime-film</comment>
     <comment xml:lang="sr">QuickTime видео</comment>
     <comment xml:lang="sv">QuickTime-video</comment>
     <magic priority="50">
@@ -4523,6 +4819,7 @@ command to generate the output files.
     <comment xml:lang="hu">Vivo-video</comment>
     <comment xml:lang="nl">Vivo video</comment>
     <comment xml:lang="nn">Vivo-film</comment>
+    <comment xml:lang="no">Vivo-film</comment>
     <comment xml:lang="sr">Vivo видео</comment>
     <comment xml:lang="sv">Vivo-video</comment>
   </mime-type>
@@ -4533,6 +4830,7 @@ command to generate the output files.
     <comment xml:lang="hu">Wavelet-video</comment>
     <comment xml:lang="nl">Wavelet video</comment>
     <comment xml:lang="nn">Wavelet video</comment>
+    <comment xml:lang="no">Wavelet-film</comment>
     <comment xml:lang="sr">Wavelet видео</comment>
     <comment xml:lang="sv">Wavelet-video</comment>
   </mime-type>
@@ -4543,6 +4841,7 @@ command to generate the output files.
     <comment xml:lang="hu">ANIM-animáció</comment>
     <comment xml:lang="nl">ANIM animatie</comment>
     <comment xml:lang="nn">ANIM-animasjon</comment>
+    <comment xml:lang="no">ANIM-animasjon</comment>
     <comment xml:lang="sr">ANIM анимација</comment>
     <comment xml:lang="sv">ANIM-animation</comment>
     <glob pattern="*.anim[1-9j]"/>
@@ -4554,6 +4853,7 @@ command to generate the output files.
     <comment xml:lang="hu">AVI-video</comment>
     <comment xml:lang="nl">AVI video</comment>
     <comment xml:lang="nn">AVI-video</comment>
+    <comment xml:lang="no">AVI-film</comment>
     <comment xml:lang="sr">AVI видео</comment>
     <comment xml:lang="sv">AVI-video</comment>
   </mime-type>
@@ -4564,6 +4864,7 @@ command to generate the output files.
     <comment xml:lang="hu">Autodesk FLIC-fájl</comment>
     <comment xml:lang="nl">Autodesk&apos;s FLIC bestand</comment>
     <comment xml:lang="nn">FLIC-filer frå Autodesk</comment>
+    <comment xml:lang="no">Autodesk FLIC-filer</comment>
     <comment xml:lang="sr">Аутодескове FLIC датотеке</comment>
     <comment xml:lang="sv">Autodesk FLIC-filer</comment>
     <magic priority="50">
@@ -4580,6 +4881,7 @@ command to generate the output files.
     <comment xml:lang="hu">MNG-kép</comment>
     <comment xml:lang="nl">MNG afbeelding</comment>
     <comment xml:lang="nn">MNG-bilete</comment>
+    <comment xml:lang="no">MNG-bilde</comment>
     <comment xml:lang="sr">MNG слика</comment>
     <comment xml:lang="sv">MNG-bild</comment>
     <glob pattern="*.mng"/>
@@ -4591,6 +4893,7 @@ command to generate the output files.
     <comment xml:lang="hu">MS ASF-video</comment>
     <comment xml:lang="nl">MS ASF video</comment>
     <comment xml:lang="nn">MS ASF-video</comment>
+    <comment xml:lang="no">MS ASF-film</comment>
     <comment xml:lang="sr">MS ASF видео</comment>
     <comment xml:lang="sv">MS ASF-video</comment>
     <glob pattern="*.asf"/>
@@ -4606,6 +4909,7 @@ command to generate the output files.
     <comment xml:lang="hu">Microsoft WMV-video</comment>
     <comment xml:lang="nl">Microsoft WMV video</comment>
     <comment xml:lang="nn">Microsoft WMV-film</comment>
+    <comment xml:lang="no">Microsoft WMV-film</comment>
     <comment xml:lang="sr">Микрософт WMV видео</comment>
     <comment xml:lang="sv">Microsoft WMV-video</comment>
     <glob pattern="*.wmv"/>
@@ -4616,6 +4920,7 @@ command to generate the output files.
     <comment xml:lang="fr">vidéo Microsoft AVI</comment>
     <comment xml:lang="nl">Microsoft AVI video</comment>
     <comment xml:lang="nn">Microsoft AVI-film</comment>
+    <comment xml:lang="no">Microsoft AVI-film</comment>
     <comment xml:lang="sr">Микрософт АВИ видео</comment>
     <comment xml:lang="sv">Microsoft AVI-video</comment>
     <magic priority="50">
@@ -4631,6 +4936,7 @@ command to generate the output files.
     <comment xml:lang="hu">Nullsoft-video</comment>
     <comment xml:lang="nl">Nullsoft video</comment>
     <comment xml:lang="nn">Nullsoft video</comment>
+    <comment xml:lang="no">Nullsoft video</comment>
     <comment xml:lang="sr">Nullsoft видео</comment>
     <comment xml:lang="sv">Nullsoft-video</comment>
     <magic priority="50">
@@ -4646,6 +4952,7 @@ command to generate the output files.
     <comment xml:lang="hu">RealVideo-video</comment>
     <comment xml:lang="nl">RealVideo video</comment>
     <comment xml:lang="nn">RealVideo-film</comment>
+    <comment xml:lang="no">RealVideo film</comment>
     <comment xml:lang="sr">RealVideo видео</comment>
     <comment xml:lang="sv">RealVideo-video</comment>
   </mime-type>
@@ -4656,6 +4963,7 @@ command to generate the output files.
     <comment xml:lang="hu">SGI-video</comment>
     <comment xml:lang="nl">SGI video</comment>
     <comment xml:lang="nn">SGI-video</comment>
+    <comment xml:lang="no">SGI-film</comment>
     <comment xml:lang="sr">SGI видео</comment>
     <comment xml:lang="sv">SGI-video</comment>
     <magic priority="50">

@@ -31,6 +31,27 @@
 				<address><email>alexl@redhat.com</email></address>
 			</affiliation>
 		</author>
+		<author>
+			<firstname>Seth</firstname>
+			<surname>Nickell</surname>
+			<affiliation>
+				<address><email>snickell@stanford.edu</email></address>
+			</affiliation>
+		</author>
+		<author>
+			<firstname>Keith</firstname>
+			<surname>Packard</surname>
+			<affiliation>
+				<address><email>keithp@keithp.com</email></address>
+			</affiliation>
+		</author>
+		<author>
+			<firstname>Waldo</firstname>
+			<surname>Bastian</surname>
+			<affiliation>
+				<address><email>bastian@kde.org</email></address>
+			</affiliation>
+		</author>
 	</authorgroup>
 
 	<title>Shared MIME-info Database</title>
@@ -514,7 +535,7 @@ directory the rule came from, as described above.
 		</para>
 		<para>
 Common types (such as MS Word Documents) will be provided in the X Desktop
-Group's package, which SHOULD be required by all applications using this
+Group's package, which MUST be required by all applications using this
 specification. Since each application will then only be providing information
 about its own types, conflicts should be rare.
 		</para>

@@ -1532,7 +1532,7 @@ command to generate the output files.
     <glob pattern="*.cgm"/>
   </mime-type>
   <mime-type type="image/fax-g3">
-    <_comment>CCITT g3 fax</_comment>
+    <_comment>CCITT G3 fax</_comment>
     <glob pattern="*.g3"/>
   </mime-type>
   <mime-type type="image/g3fax">
@@ -1609,7 +1609,7 @@ command to generate the output files.
     <glob pattern="*.ras"/>
   </mime-type>
   <mime-type type="image/x-compressed-xcf">
-    <_comment>compressed GIMP document</_comment>
+    <_comment>GIMP image (compressed)</_comment>
     <glob pattern="*.xcf.gz"/>
     <glob pattern="*.xcf.bz2"/>
   </mime-type>
@@ -1668,7 +1668,7 @@ command to generate the output files.
     <glob pattern="*.fits"/>
   </mime-type>
   <mime-type type="image/x-fpx">
-    <_comment>FlashPix Image</_comment>
+    <_comment>FlashPix image</_comment>
     <magic priority="50">
       <match type="big32" value="0x46506978" offset="0"/>
     </magic>
@@ -1976,12 +1976,12 @@ command to generate the output files.
     <glob pattern="*.rss"/>
   </mime-type>
   <mime-type type="text/sgml">
-    <_comment>SGML</_comment>
+    <_comment>SGML document</_comment>
     <glob pattern="*.sgml"/>
     <glob pattern="*.sgm"/>
   </mime-type>
   <mime-type type="text/spreadsheet">
-    <_comment>Spreadsheet Interchange document</_comment>
+    <_comment>Spreadsheet interchange document</_comment>
     <magic priority="50">
       <match type="string" value="ID;" offset="0"/>
     </magic>
@@ -2218,7 +2218,7 @@ command to generate the output files.
     <glob pattern="*.xslfo"/>
   </mime-type>
   <mime-type type="text/x-xslt">
-    <_comment>XSLT Stylesheet file</_comment>
+    <_comment>XSLT stylesheet</_comment>
     <glob pattern="*.xslt"/>
     <glob pattern="*.xsl"/>
   </mime-type>

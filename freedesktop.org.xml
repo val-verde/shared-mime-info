@@ -3174,15 +3174,15 @@
     <glob pattern="*.cgm" />
   </mime-type>
   <mime-type type="image/fax-g3">
-    <comment>CCITT g3 fax</comment>
-    <comment xml:lang="fi">CCITT g3 -faksi</comment>
-    <comment xml:lang="fr">télécopie CCITT g3</comment>
-    <comment xml:lang="hu">CCITT g3 fax</comment>
-    <comment xml:lang="nl">CCITT g3 fax</comment>
-    <comment xml:lang="nn">CCITT g3-fax</comment>
-    <comment xml:lang="no">CCITT g3 fax</comment>
-    <comment xml:lang="sr">CCITT g3 факс</comment>
-    <comment xml:lang="sv">CCITT g3-fax</comment>
+    <comment>CCITT G3 fax</comment>
+    <comment xml:lang="fi">CCITT G3 fax</comment>
+    <comment xml:lang="fr">CCITT G3 fax</comment>
+    <comment xml:lang="hu">CCITT G3 fax</comment>
+    <comment xml:lang="nl">CCITT G3 fax</comment>
+    <comment xml:lang="nn">CCITT G3 fax</comment>
+    <comment xml:lang="no">CCITT G3 fax</comment>
+    <comment xml:lang="sr">CCITT G3 fax</comment>
+    <comment xml:lang="sv">CCITT G3 fax</comment>
     <glob pattern="*.g3" />
   </mime-type>
   <mime-type type="image/g3fax">
@@ -3355,15 +3355,15 @@
     <glob pattern="*.ras" />
   </mime-type>
   <mime-type type="image/x-compressed-xcf">
-    <comment>compressed GIMP document</comment>
-    <comment xml:lang="fi">pakattu GIMP-asiakirja</comment>
-    <comment xml:lang="fr">document GIMP compressé</comment>
-    <comment xml:lang="hu">tömörített GIMP-dokumentum</comment>
-    <comment xml:lang="nl">ingepakt GIMP document</comment>
-    <comment xml:lang="nn">pakka GIMP-dokument</comment>
-    <comment xml:lang="no">komprimert GIMP-dokument</comment>
-    <comment xml:lang="sr">компресовани Гимп документ</comment>
-    <comment xml:lang="sv">komprimerat GIMP-dokument</comment>
+    <comment>GIMP image (compressed)</comment>
+    <comment xml:lang="fi">GIMP image (compressed)</comment>
+    <comment xml:lang="fr">GIMP image (compressed)</comment>
+    <comment xml:lang="hu">GIMP image (compressed)</comment>
+    <comment xml:lang="nl">GIMP image (compressed)</comment>
+    <comment xml:lang="nn">GIMP image (compressed)</comment>
+    <comment xml:lang="no">GIMP image (compressed)</comment>
+    <comment xml:lang="sr">GIMP image (compressed)</comment>
+    <comment xml:lang="sv">GIMP image (compressed)</comment>
     <glob pattern="*.xcf.gz" />
     <glob pattern="*.xcf.bz2" />
   </mime-type>
@@ -3470,15 +3470,15 @@
     <glob pattern="*.fits" />
   </mime-type>
   <mime-type type="image/x-fpx">
-    <comment>FlashPix Image</comment>
-    <comment xml:lang="fi">FlashPix-kuva</comment>
-    <comment xml:lang="fr">image FlashPix</comment>
-    <comment xml:lang="hu">FlashPix-kép</comment>
-    <comment xml:lang="nl">FlashPix afbeelding</comment>
-    <comment xml:lang="nn">FlashPix-bilete</comment>
-    <comment xml:lang="no">FlashPix-bilde</comment>
-    <comment xml:lang="sr">FlashPix слика</comment>
-    <comment xml:lang="sv">FlashPix-bild</comment>
+    <comment>FlashPix image</comment>
+    <comment xml:lang="fi">FlashPix image</comment>
+    <comment xml:lang="fr">FlashPix image</comment>
+    <comment xml:lang="hu">FlashPix image</comment>
+    <comment xml:lang="nl">FlashPix image</comment>
+    <comment xml:lang="nn">FlashPix image</comment>
+    <comment xml:lang="no">FlashPix image</comment>
+    <comment xml:lang="sr">FlashPix image</comment>
+    <comment xml:lang="sv">FlashPix image</comment>
     <magic priority="50">
       <match offset="0" type="big32" value="0x46506978" />
     </magic>
@@ -4266,28 +4266,28 @@
     <glob pattern="*.rss" />
   </mime-type>
   <mime-type type="text/sgml">
-    <comment>SGML</comment>
-    <comment xml:lang="fi">SGML</comment>
-    <comment xml:lang="fr">SGML</comment>
-    <comment xml:lang="hu">SGML</comment>
-    <comment xml:lang="nl">SGML</comment>
-    <comment xml:lang="nn">SGML</comment>
-    <comment xml:lang="no">SGML</comment>
-    <comment xml:lang="sr">SGML</comment>
-    <comment xml:lang="sv">SGML</comment>
+    <comment>SGML document</comment>
+    <comment xml:lang="fi">SGML document</comment>
+    <comment xml:lang="fr">SGML document</comment>
+    <comment xml:lang="hu">SGML document</comment>
+    <comment xml:lang="nl">SGML document</comment>
+    <comment xml:lang="nn">SGML document</comment>
+    <comment xml:lang="no">SGML document</comment>
+    <comment xml:lang="sr">SGML document</comment>
+    <comment xml:lang="sv">SGML document</comment>
     <glob pattern="*.sgml" />
     <glob pattern="*.sgm" />
   </mime-type>
   <mime-type type="text/spreadsheet">
-    <comment>Spreadsheet Interchange document</comment>
-    <comment xml:lang="fi">taulukkovälitysasiakirja</comment>
-    <comment xml:lang="fr">document Spreadsheet Interchange</comment>
-    <comment xml:lang="hu">Spreadsheet Interchange-dokumentum</comment>
-    <comment xml:lang="nl">Spreadsheet uitwisselingsdocument</comment>
-    <comment xml:lang="nn">Spreadsheet interchange dokument</comment>
-    <comment xml:lang="no">Dokument for regnearkutveksling</comment>
-    <comment xml:lang="sr">Размењиви документ табеларног прорачуна</comment>
-    <comment xml:lang="sv">Spreadsheet Interchange-dokument</comment>
+    <comment>Spreadsheet interchange document</comment>
+    <comment xml:lang="fi">Spreadsheet interchange document</comment>
+    <comment xml:lang="fr">Spreadsheet interchange document</comment>
+    <comment xml:lang="hu">Spreadsheet interchange document</comment>
+    <comment xml:lang="nl">Spreadsheet interchange document</comment>
+    <comment xml:lang="nn">Spreadsheet interchange document</comment>
+    <comment xml:lang="no">Spreadsheet interchange document</comment>
+    <comment xml:lang="sr">Spreadsheet interchange document</comment>
+    <comment xml:lang="sv">Spreadsheet interchange document</comment>
     <magic priority="50">
       <match offset="0" type="string" value="ID;" />
     </magic>
@@ -4884,15 +4884,15 @@
     <glob pattern="*.xslfo" />
   </mime-type>
   <mime-type type="text/x-xslt">
-    <comment>XSLT Stylesheet file</comment>
-    <comment xml:lang="fi">XSLT-tyylitiedosto</comment>
-    <comment xml:lang="fr">fichier XSLT Stylesheet</comment>
-    <comment xml:lang="hu">XSLT-stíluslapfájl</comment>
-    <comment xml:lang="nl">XSLT stijlblad bestand</comment>
-    <comment xml:lang="nn">XSLT-stilark</comment>
-    <comment xml:lang="no">XSLT-stilarkfil</comment>
-    <comment xml:lang="sr">Датотека са XSLT стилом</comment>
-    <comment xml:lang="sv">XSLT-stilmallsfil</comment>
+    <comment>XSLT stylesheet</comment>
+    <comment xml:lang="fi">XSLT stylesheet</comment>
+    <comment xml:lang="fr">XSLT stylesheet</comment>
+    <comment xml:lang="hu">XSLT stylesheet</comment>
+    <comment xml:lang="nl">XSLT stylesheet</comment>
+    <comment xml:lang="nn">XSLT stylesheet</comment>
+    <comment xml:lang="no">XSLT stylesheet</comment>
+    <comment xml:lang="sr">XSLT stylesheet</comment>
+    <comment xml:lang="sv">XSLT stylesheet</comment>
     <glob pattern="*.xslt" />
     <glob pattern="*.xsl" />
   </mime-type>

@@ -1,0 +1,28 @@
+This package contains:
+
+- The freedesktop.org shared MIME database spec.
+- The merged GNOME and KDE databases, in the new format.
+- The update-mime-database command, used to install new MIME data.
+
+
+To install:
+
+Do the usual:
+	
+	$ ./configure
+	$ make
+	$ make install
+
+If you want to install to your home directory, change the last step to:
+
+	$ make install mimedir=$HOME/.mime bindir=$HOME/bin
+
+You'll need to make sure that $HOME/bin is in your PATH, of course.
+
+See http://www.freedesktop.org/standards/shared-mime-info.html for more
+information.
+
+
+Thomas Leonard <tal00r@ecs.soton.ac.uk>
+
+24-Jul-2002

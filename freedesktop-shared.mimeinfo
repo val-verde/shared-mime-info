@@ -1,71 +1,9 @@
 # This is the freedesktop.org shared MIME info database.
 # This file was built semi-automatically from many other files. Comments have
-# been brought across in many cases. # Anyone wanting to tidy this file up is
+# been brought across in many cases. Anyone wanting to tidy this file up is
 # more than welcome! Sorry for any lost credits, etc.
 #
 # -- Thomas Leonard <tal197@users.sourceforge.net>
-
-
-# XXX: Need to proofread the Contents checks!
-
-
-# Random comments that didn't want to go anywhere else:
-
-# Disable zip because detecting StarOffice files correctly is more imporant in the release
-# than detecting the occasional zip file without an extension
-#0	string		PK\003\004				application/zip
-# The contributor claims:
-#   I couldn't find a real magic number for these, however, this
-#   -appears- to work.  Note that it might catch other files, too,
-#   so BE CAREFUL!
-#
-# Note that title and author appear in the two 20-byte chunks
-# at decimal offsets 2 and 22, respectively, but they are XOR'ed with
-# 255 (hex FF)! DL format SUCKS BIG ROCKS.
-#
-#				DL file version 1 , medium format (160x100, 4 images/screen)
-#0	byte		1	video/unknown
-#0	byte		2	video/unknown
-#
-#0       string          BEGIN                   application/x-awk
-# this first will upset you if you're a PL/1 shop... (are there any left?)
-# in which case rm it; ascmagic will catch real C programs
-#					C or REXX program text
-#0	string		/*		text/x-c
-#					C++ program text
-#0	string		//		text/x-c++
-# Squeeze and Crunch...
-# These numbers were gleaned from the Unix versions of the programs to
-# handle these formats.  Note that I can only uncrunch, not crunch, and
-# I didn't have a crunched file handy, so the crunch number is untested.
-#				Keith Waclena <keith@cerberus.uchicago.edu>
-#0	leshort		0x76FF		squeezed data (CP/M, DOS)
-#0	leshort		0x76FE		crunched data (CP/M, DOS)
-# Freeze
-#0	string		\037\237	Frozen file 2.1
-#0	string		\037\236	Frozen file 1.0 (or gzip 0.5)
-# lzh?
-#0	string		\037\240	LZH compressed data
-# [GRR 950115:  is this also Creative Labs?  Guessing that first line
-#  should be string instead of unknown-endian long...]
-#0	long		0x4e54524b	MultiTrack sound data
-#0	string		NTRK		MultiTrack sound data
-# [GRR 950115:  probably all of the shorts and longs should be leshort/lelong]
-#0	string		\367\203	TeX generic font data
-#0	string		\367\131	TeX packed font data
-#0	string		\367\312	TeX virtual font data
-#>7      string          MACRO		application/x-applix
-#>7      string          BUILDER		application/x-applix
-#0	string		IC		icon
-#0	string		PI		pointer
-#0	string		CI		color icon
-#0	string		CP		color pointer
-#0	string		BA		bitmap array
-#------------------------------------------------------------------------------
-# .mmv, mpeg transport stream created by movieshaker
-#------------------------------------------------------------------------------
-# animation formats, originally from vax@ccwf.cc.utexas.edu (VaX#n8)
-
 
 [MIME-Info application/andrew-inset]
 Comment=Andrew Toolkit inset
@@ -1689,7 +1627,7 @@ Comment[xh]=Ushicilelo lukawonke-wonke kunye namaxwebhu eMbali e Ar
 Comment[xx]=xx
 Comment[zh_CN]=Ar 归档文件
 Comment[zh_TW]=Ar 壓縮文件
-Contents=50:(or (string 0 "=<ar>") (string 0 "!<arch>"))
+Contents=50:(or (string 0 "<ar>") (string 0 "!<arch>"))
 Patterns=*.a
 
 [MIME-Info application/x-arj]
@@ -1935,7 +1873,6 @@ Comment[xx]=xx
 Comment[zh_CN]=Bzip 文件
 Comment[zh_TW]=Bzip 檔案
 Comment[zu]=Ifayile ye Bzip
-# BZIP2
 Contents=50:(string 0 "BZh")
 Patterns=*.bz;*.bz2
 
@@ -2153,14 +2090,6 @@ Comment[xx]=xx
 Comment[zh_CN]=UNIX 压缩文件
 Comment[zh_TW]=UNIX 壓縮檔案
 Comment[zu]=Ifayile enciphisiwe yeUNIX
-# compress:  file(1) magic for pure-compression formats (no archives)
-#
-# compress, gzip, pack, compact, huf, squeeze, crunch, freeze, yabba, whap, etc.
-#
-# Formats for various forms of compressed data
-# Formats for "compress" proper have been moved into "compress.c",
-# because it tries to uncompress it to figure out what's inside.
-# standard unix compress
 Contents=50:(string 0 "\037\235")
 Patterns=*.Z
 
@@ -2286,7 +2215,7 @@ Comment[zu]=Idata yeprogremu yedata eshabalile
 # UNIX core dump file may produce too many false hits, so we include one
 # byte of the version number as well; DU 5.0 appears only to be up to
 # version 2.
-Contents=50:(or (or (string 0 "\177ELF            \004" 0xffffffff000000000000000000000000ff) (and (string 0 "\177ELF") (byte 5 "1") (little16 16 "4"))) (and (string 0 "\177ELF") (byte 5 "2") (big16 16 "4")) (string 0 "Core\001") (string 0 "Core\002"))
+Contents=50: (or (string 0 "\177ELF            \004" 0xffffffff000000000000000000000000ff) (and (string 0 "\177ELF") (byte 5 "1") (little16 16 "4")) (and (string 0 "\177ELF") (byte 5 "2") (big16 16 "4")) (string 0 "Core\001") (string 0 "Core\002"))
 Patterns=core
 
 [MIME-Info application/x-cpio]
@@ -2599,7 +2528,7 @@ Comment[zu]=Ifayile yohlanganiso le Desktop
 # desktop entry spec to allow this
 #
 # KDE desktop file
-Contents=50:(or (string 0:32 "[Desktop Entry]") (string 0 "[Desktop Entry]") (string 0 "[Desktop Action") (string 0 "[KDE Desktop Entry]") (string 0 "# Config File") (string 0 "# KDE Config File"))
+Contents=50:(or (string 0:32 "[Desktop Entry]") (string 0 "[Desktop Action") (string 0 "[KDE Desktop Entry]") (string 0 "# Config File") (string 0 "# KDE Config File"))
 Patterns=*.desktop;*.kdelnk
 
 [MIME-Info application/x-dia-diagram]
@@ -2702,7 +2631,7 @@ Comment[zu]=Ifayile Ezimeleyo yecebo le TeX
 # correct TeX magic for Linux (and maybe more)
 # from Peter Tobias (tobias@server.et-inf.fho-emden.de)
 #
-Contents=50:(or (string 0 "\367\002") (little16 0 "0x02f7"))
+Contents=50:(little16 0 "0x02f7")
 Patterns=*.dvi
 
 [MIME-Info application/x-e-theme]
@@ -2831,27 +2760,8 @@ Comment[xx]=xx
 Comment[zh_CN]=可执行文件
 Comment[zh_TW]=可執行的
 Comment[zu]=Ephumelelisiwe
-# DOS
-# adi: file(1) magic for ADi's objects
-# From Gregory McGarry <g.mcgarry@ieee.org>
-#------------------------------------------------------------------------------
-# alliant:  file(1) magic for Alliant FX series a.out files
-#
-# If the FX series is the one that had a processor with a 68K-derived
-# instruction set, the "short" should probably become "beshort" and the
-# "long" should probably become "belong".
-# If it's the i860-based one, they should probably become either the
-# big-endian or little-endian versions, depending on the mode they ran
-# the 860 in....
-#-----------------------------------------------------------
-# alpha architecture description
-#------------------------------------------------------------------------------
-# amigaos:  file(1) magic for AmigaOS binary formats:
-#
-# From ignatios@cs.uni-bonn.de (Ignatios Souvatzis)
-# Some formats are still missing: AmigaOS special IFF's, e.g.: FORM....CTLG
-# (the others should be separate, anyway)
-Contents=50:(or (or (or (or (or (or (or (or (or (or (or (or (or (or (or (string 0 "\177ELF") (string 0 "MZ")) (and (string 0 "\177ELF") (byte 5 "1") (little16 16 "2"))) (and (string 0 "\177ELF") (byte 5 "2") (big16 16 "2")) (string 0 "MZ") (little16 0 "0x521c")) (and (little16 0 "0x521c") (little32 18 "&02"))) (and (little16 0 "0x521c") (little32 18 "^02") (little32 18 "&01"))) (and (little16 0 "0x521c") (little32 18 "^02") (little32 18 "^01"))) (and (little16 0 "0x521c") (little32 18 "&010"))) (and (little16 0 "0x521c") (little32 18 "^010")) (host16 0 "0420") (host16 0 "0421") (little16 0 "0603")) (and (little16 0 "0603") (little16 22 "!020000" 030000))) (and (little16 0 "0603") (little16 24 "0410"))) (and (little16 0 "0603") (little16 24 "0413"))) (and (little16 0 "0603") (little16 22 "!0" 020000))) (and (little16 0 "0603") (little32 16 "!0"))) (and (little16 0 "0603") (little32 16 "0"))) (and (little16 0 "0603") (little16 24 "0407")) (big32 0 "0x000003f3"))
+# Removed some Amiga stuff. Lower priority as some shared libraries are more specific.
+Contents=40:(or (and (string 0 "\177ELF") (byte 5 "1") (little16 16 "2")) (and (string 0 "\177ELF") (byte 5 "2") (big16 16 "2")) (string 0 "MZ") (little16 0 "0x521c") (host16 0 "0420") (host16 0 "0421") (little16 0 "0603"))
 Patterns=*.exe
 
 [MIME-Info application/x-font]
@@ -3288,7 +3198,7 @@ Comment[zh]=TeX metrics 字型檔
 # There is no way to detect TeX Font Metric (*.tfm) files without
 # breaking them apart and reading the data.  The following patterns
 # match most *.tfm files generated by METAFONT or afm2tfm.
-Contents=50:(or (or (or (string 2 "\000\022") (string 2 "\000\021")) (and (string 2 "\000\021") (string 33 ">\0")) (string 2 "\000\022")) (and (string 2 "\000\022") (string 33 ">\0")))
+Contents=50:(or (string 2 "\000\021") (string 2 "\000\022"))
 
 [MIME-Info application/x-font-ttf]
 Comment=Truetype Font
@@ -3923,7 +3833,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Java 类
 Comment[zu]=Iqoqo lwe Java
 # Java
-Contents=50:(or (string 0 "\312\376\272\276") (and (host16 0 "0xcafe") (host16 2 "0xbabe")))
+Contents=50:(and (host16 0 "0xcafe") (host16 2 "0xbabe"))
 Patterns=*.class
 
 [MIME-Info application/x-jbuilder-project]
@@ -4254,7 +4164,8 @@ Contents=50:(big32 0 "0x0d1a2702")
 
 [MIME-Info application/x-ksysv-package]
 # KSysV init packages
-Contents=50:(and (string 4 "KSysV") (byte 15 ">0x01"))
+# Removed (byte 15) > 0x01 as we can't do >, and it wasn't much of a restriction anyway
+Contents=50:(string 4 "KSysV")
 
 [MIME-Info application/x-kugar]
 Comment=Kugar Data File
@@ -4568,7 +4479,8 @@ Comment[ven]=Manwalwa a LyX
 Comment[vi]=Tài liệu LYX
 Comment[zh_CN]=LyX 文档
 Comment[zu]=Idokhumente ye LyX
-Contents=50:(string 0 "#LyX 1")
+Contents=50:(string 0 "#LyX")
+Patterns=*.lyx
 
 [MIME-Info application/x-lzop]
 Comment=Lzopped File
@@ -5593,7 +5505,7 @@ Comment[zh_CN]=RPM 包文件
 Comment[zh_TW]=RPM 套件檔案
 Comment[zu]=Ifayiela elipakishiwe le RPM
 # The below ignores the details available (architecture, type, version)
-Contents=50:(or (string 0 "\xed\xab\xee\xdb") (and (big16 0 "0xedab") (big16 2 "0xeedb")))
+Contents=50:(string 0 "\xed\xab\xee\xdb")
 Patterns=*.rpm
 
 [MIME-Info application/x-sc]
@@ -5632,40 +5544,6 @@ Comment[uk]=архів оболонки
 Comment[wa]=årtchive shell
 Comment[zh]=shell 檔
 Patterns=*.shar
-
-[MIME-Info application/x-shared-library]
-Comment=shared library
-Comment[az]=paylaşdırılmış kitabxana
-Comment[ca]=biblioteca compartida
-Comment[da]=delt bibliotek
-Comment[de]=dynamische Bibliothek
-Comment[el]=διαμοιραζόμενη βιβλιοθήκη
-Comment[es]=librería compartida
-Comment[et]=ühisteek
-Comment[fi]=jaettu kirjasto
-Comment[fr]=Bibliothèque partagée
-Comment[gl]=biblioteca compartida
-Comment[hu]=osztott programkönyvtár
-Comment[it]=libreria condivisa
-Comment[ja]=共有ライブラリ
-Comment[ko]=공유 라이브러리
-Comment[ms]=pustaka terkongsi
-Comment[nl]=gedeelde bibliotheek
-Comment[nn]=delt bibliotek
-Comment[no]=delt bibliotek
-Comment[pl]=biblioteka dzielona
-Comment[pt]=biblioteca partilhada
-Comment[ro]=bibliotecă comună
-Comment[ru]=разделяемая библиотека
-Comment[sk]=zdieľaná knižnica
-Comment[sl]=deljena knižnjica
-Comment[sv]=delat bibliotek
-Comment[tr]=paylaşılmış kütüphane
-Comment[uk]=спільна бібліотека
-Comment[wa]=pårteye lîvreye
-Comment[zh]=共享库
-Contents=50:(string 0 "\177ELF            \003" 0xffffffff000000000000000000000000ff)
-Patterns=*.so
 
 [MIME-Info application/x-shared-library-la]
 Comment=shared library
@@ -5756,7 +5634,10 @@ Comment[xx]=xx
 Comment[zh_CN]=共享库
 Comment[zh_TW]=共享程式庫
 Comment[zu]=Isitholalwazi Ehlkukanisayo
-Contents=50:(or (or (or (or (or (or (and (string 0 "\177ELF") (byte 5 "1") (little16 16 "3")) (and (string 0 "\177ELF") (byte 5 "2") (big16 16 "3"))) (and (host16 0 "0420") (host16 2 "&0x0020"))) (and (host16 0 "0420") (host32 16 ">0"))) (and (host16 0 "0421") (host16 2 "&0x0020"))) (and (host16 0 "0421") (host32 16 ">0"))) (and (little16 0 "0603") (little16 22 "020000" 030000)) (big32 0 "0x000003e7"))
+# Removed some complicated stuff for Amiga and Alliant systems
+Contents=50:(or (and (string 0 "\177ELF") (byte 5 "1") (little16 16 "3")) (and (string 0 "\177ELF") (byte 5 "2") (big16 16 "3")) (and (little16 0 "0603") (little16 22 "020000" 030000)) (string 0 "\177ELF            \003" 0xffffffff000000000000000000000000ff))
+Patterns=*.so
+
 
 [MIME-Info application/x-shellscript]
 Comment=shell script
@@ -5812,14 +5693,6 @@ Comment[xh]=ushicilelo phantsi lweqokobhe
 Comment[xx]=xx
 Comment[zh_CN]=shell 脚本
 Comment[zu]=ushicilelo phantsi lwegololodo
-#0       string          :\ shell archive or commands for antique kernel text
-# korn shell magic, sent by George Wu, gwu@clyde.att.com
-# bash shell magic, from Peter Tobias (tobias@server.et-inf.fho-emden.de)
-#
-# zsh/ash/ae/nawk/gawk magic from cameron@cs.unsw.oz.au (Cameron Simpson)
-#0       string          #!/usr/local/bin/ae     Neil Brown's ae
-#0       string          #!\ /usr/local/bin/ae   Neil Brown's ae
-# Shell archives
 Contents=50:(or (string 0 "#!/bin/ksh") (string 0 "#!/usr/local/bin/ash") (string 0 "#!/usr/local/tcsh") (string 10 "# This is a shell archive") (string 1:16 "/bin/bash") (string 1:16 "/bin/nawk") (string 1:16 "/bin/tcsh") (string 1:16 "/bin/csh") (string 1:16 "/bin/zsh") (string 1:16 "/bin/sh"))
 Patterns=*.sh;*.csh
 
@@ -6913,7 +6786,7 @@ Comment[zh_TW]=Zoo 壓縮文件
 # Zoo archiver
 # DF: the continuation lines are a bit useless, since the mimetype is
 # already set at the top level -> commenting out.
-Contents=50:(or (string 20 "\375\304\247\334") (little32 20 "0xfdc4a7dc"))
+Contents=50:(little32 20 "0xfdc4a7dc")
 Patterns=*.zoo
 
 [MIME-Info application/zip]
@@ -6974,7 +6847,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Zip 归档文件
 Comment[zh_TW]=Zip 壓縮文件
 #KOffice documents post v1.1 (may 1 2002) using zip as a wrapper
-Contents=50:(string 0 "PK\003\004")
+Contents=40:(string 0 "PK\003\004")
 Patterns=*.zip
 
 [MIME-Info audio/ac3]
@@ -7060,7 +6933,7 @@ Comment[zu]=ULAW (Ilanga) ezwakalayo
 # audio:  file(1) magic for sound formats
 # from Jan Nicolai Langfeldt <janl@ifi.uio.no>,
 # Sun/NeXT audio data
-Contents=50:(or (or (or (or (or (or (or (string 0 ".snd") (and (string 0 ".snd") (big32 12 "1"))) (and (string 0 ".snd") (big32 12 "2"))) (and (string 0 ".snd") (big32 12 "3"))) (and (string 0 ".snd") (big32 12 "4"))) (and (string 0 ".snd") (big32 12 "5"))) (and (string 0 ".snd") (big32 12 "6"))) (and (string 0 ".snd") (big32 12 "7")))
+Contents=40:(string 0 ".snd")
 Patterns=*.au;*.snd
 
 [MIME-Info audio/prs.sid]
@@ -7199,7 +7072,7 @@ Comment[zu]=PCM ezwakalayo
 # that uses little-endian encoding and has a different magic number
 # (0x0064732E in little-endian encoding).
 #                                       compressed (G.721 ADPCM)
-Contents=50:(or (or (or (or (or (or (or (or (and (string 0 ".snd") (big32 12 "23")) (and (little32 0 "0x0064732E") (little32 12 "1"))) (and (little32 0 "0x0064732E") (little32 12 "2"))) (and (little32 0 "0x0064732E") (little32 12 "3"))) (and (little32 0 "0x0064732E") (little32 12 "4"))) (and (little32 0 "0x0064732E") (little32 12 "5"))) (and (little32 0 "0x0064732E") (little32 12 "6"))) (and (little32 0 "0x0064732E") (little32 12 "7"))) (and (little32 0 "0x0064732E") (little32 12 "23")))
+Contents=50:(or (and (string 0 ".snd") (big32 12 "23")) (and (little32 0 "0x0064732E") (or (little32 12 "1") (little32 12 "2") (little32 12 "3") (little32 12 "4") (little32 12 "5") (little32 12 "6") (little32 12 "7") (little32 12 "23"))))
 
 [MIME-Info audio/x-aifc]
 Comment=AIFC audio
@@ -7695,8 +7568,7 @@ Comment[xx]=xx
 Comment[zh_CN]=RealAudio 广播
 Comment[zh_TW]=RealAudio 廣播
 Comment[zu]=Ukusakaza Kwangempela Okuzwakalayo
-#
-Contents=50:(or (string 0 ".ra\375") (big32 0 "0x2e7261fd"))
+Contents=50:(string 0 ".ra\375")
 Patterns=*.ra;*.ram;*.rm
 
 [MIME-Info audio/x-riff]
@@ -7939,8 +7811,7 @@ Comment[xx]=xx
 Comment[zh_CN]=WAV 音频文件
 Comment[zh_TW]=WAV 聲音文件
 Comment[zu]=WAV ezwakalayo
-#					- WAVE format
-Contents=50:(or (or (string 8 "WAVE") (string 8 "WAV ")) (and (string 0 "RIFF") (string 8 "WAVE")))
+Contents=50:(or (string 8 "WAVE") (string 8 "WAV "))
 Patterns=*.wav
 
 [MIME-Info audio/x-xi]
@@ -8071,7 +7942,7 @@ Comment[zu]=Umfanekiso wamawindi e BMP
 #(OS/2 1.x format)
 #(OS/2 2.x format)
 # (Windows 3.x format)
-Contents=50:(or (or (or (string 0 "BMxxxx\000\000" 0xffff00000000ffff) (and (string 0 "BM") (byte 14 "12"))) (and (string 0 "BM") (byte 14 "64"))) (and (string 0 "BM") (byte 14 "40")))
+Contents=50:(or (string 0 "BMxxxx\000\000" 0xffff00000000ffff) (and (string 0 "BM") (or (byte 14 "12") (byte 14 "64") (byte 14 "40"))))
 Patterns=*.bmp
 
 [MIME-Info image/cgm]
@@ -8251,7 +8122,7 @@ Comment[xx]=xx
 Comment[zh_CN]=GIF 图像
 Comment[zh_TW]=GIF 影像
 Comment[zu]=Umfanekiso we GIF
-Contents=50:(or (string 0 "GIF8") (string 0 "GIF"))
+Contents=50:(string 0 "GIF")
 Patterns=*.gif
 
 [MIME-Info image/ief]
@@ -8509,10 +8380,10 @@ Comment[xx]=xx
 Comment[zh_CN]=TIFF 图像
 Comment[zh_TW]=TIFF 影像
 Comment[zu]=Umfanekiso we TIFF
-# TIFF and friends
-#					TIFF file, big-endian
-#					TIFF file, little-endian
-Contents=50:(or (string 0 "IIN1") (string 0 "MM\x00\x2a") (string 0 "II\x2a\x00") (string 0 "MM") (string 0 "II"))
+# TIFF file, big-endian
+# TIFF file, little-endian
+# Rules did match anything starting MM or II, but that seemed too general...
+Contents=50:(or (string 0 "MM\x00\x2a") (string 0 "II\x2a\x00"))
 Patterns=*.tif;*.tiff
 
 [MIME-Info image/vnd.dwg]
@@ -8736,7 +8607,7 @@ Patterns=*.xcf.gz;*.xcf.bz2
 
 [MIME-Info image/x-djvu]
 # DjVu (Leon Bottou <leonb@research.att.com>):
-Contents=50:(or (or (or (and (string 4 "FORM") (string 12 "DJVU")) (and (string 4 "FORM") (string 12 "DJVM"))) (and (string 4 "FORM") (string 12 "BM44"))) (and (string 4 "FORM") (string 12 "PM44")))
+Contents=50:(and (string 4 "FORM") (or (string 12 "DJVU") (string 12 "DJVM") (string 12 "BM44") (string 12 "PM44")))
 
 [MIME-Info image/x-eps]
 Comment=Encapsulated PostScript image
@@ -9087,7 +8958,6 @@ Patterns=*.msod
 
 [MIME-Info image/x-niff]
 # NIFF (Navy Interchange File Format, a modification of TIFF)
-# [GRR:  this *must* go before TIFF]
 Contents=80:(string 0 "IIN1")
 
 [MIME-Info image/x-pcx]
@@ -9096,7 +8966,7 @@ Contents=80:(string 0 "IIN1")
 # Version 2.8 w/ palette
 # Version 2.8 w/o pallete
 # Version 3.0
-Contents=50:(or (or (or (and (byte 0 "10") (byte 1 "0")) (and (byte 0 "10") (byte 1 "2"))) (and (byte 0 "10") (byte 1 "3"))) (and (byte 0 "10") (byte 1 "5")))
+Contents=50:(and (byte 0 "10") (or (byte 1 "0") (byte 1 "2") (byte 1 "3") (byte 1 "5")))
 
 [MIME-Info image/x-photo-cd]
 Comment=PhotoCD image
@@ -9227,21 +9097,8 @@ Comment[ven]=Muiti wa Bitimepe
 Comment[xx]=xx
 Comment[zh_CN]=Portable Bitmap 文件格式
 Comment[zu]=Ifomathi Yefayela Yephathekayo i Bitmap
-#------------------------------------------------------------------------------
-# images:  file(1) magic for image formats (see also "c-lang" for XPM bitmaps)
-#
-# originally from jef@helios.ee.lbl.gov (Jef Poskanzer),
-# additions by janl@ifi.uio.no as well as others. Jan also suggested
-# merging several one- and two-line files into here.
-#
-# XXX - byte order for GIF and TIFF fields?
-# [GRR:  TIFF allows both byte orders; GIF is probably little-endian]
-#
-# [GRR:  what the hell is this doing in here?]
-#0	string		xbtoa		btoa'd file
-# PBMPLUS
-#					PBM file
-#					PBM "rawbits" file
+# PBM file
+# PBM "rawbits" file
 Contents=50:(or (string 0 "P1") (string 0 "P4"))
 Patterns=*.pbm
 
@@ -9693,7 +9550,7 @@ Comment[zu]=Umfanekiso we X PixMap
 #
 # XPM icons (Greg Roelofs, newt@uchicago.edu)
 # ideally should go into "images", but entries below would tag XPM as C source
-Contents=80:(or (string 0 "/* XPM */") (string 0 "/* XPM"))
+Contents=80:(string 0 "/* XPM")
 Patterns=*.xpm
 
 [MIME-Info image/x-xwindowdump]
@@ -10886,7 +10743,7 @@ Comment[zh_CN]=HTML 页面
 Comment[zh_TW]=HTML 頁面
 Comment[zu]=Iphepha le HTML
 # from Daniel Quinlan <quinlan@yggdrasil.com>
-Contents=50:(or (string 0:64 "<!DOCTYPE HTML") (string 0:64 "<!doctype html") (string 0:64 "<HEAD") (string 0:64 "<head") (string 0:64 "<TITLE") (string 0:64 "<title") (string 0:64 "<html") (string 0:64 "<HTML") (string 0 "<HEAD") (string 0 "<head") (string 0 "<BODY") (string 0 "<body") (string 0 "<TITLE") (string 0 "<title") (string 0 "<html") (string 0 "<HTML") (string 0 "<!--") (string 0 "<h1") (string 0 "<H1") (string 0 "<!doctype HTML") (string 0 "<!DOCTYPE HTML") (string 0 "<!doctype html") (string 0 "<!DOCTYPE html"))
+Contents=50:(or (string 0:64 "<!DOCTYPE HTML") (string 0:64 "<!doctype html") (string 0:64 "<HEAD") (string 0:64 "<head") (string 0:64 "<TITLE") (string 0:64 "<title") (string 0:64 "<html") (string 0:64 "<HTML") (string 0 "<BODY") (string 0 "<body") (string 0 "<TITLE") (string 0 "<title") (string 0 "<!--") (string 0 "<h1") (string 0 "<H1") (string 0 "<!doctype HTML") (string 0 "<!DOCTYPE html"))
 Patterns=*.html;*.htm
 
 [MIME-Info text/htmlh]
@@ -12199,7 +12056,7 @@ Comment[tr]=Korn kabuk betiği
 Comment[uk]=скрипт Korn Shell
 Comment[wa]=scripe Korn shell
 Comment[zh]=Korn shell 描述語言檔
-Contents=50:(or (string 0 "#!/bin/ksh") (string 1:16 "/bin/ksh"))
+Contents=50:(string 1:16 "/bin/ksh")
 
 [MIME-Info text/x-ksysv-log]
 # KSysV logfiles
@@ -12263,57 +12120,6 @@ Comment[zh_CN]=应用程序记录文件
 Comment[zh_TW]=應用日志文件
 Comment[zu]=Isicelo sesigodo sefayela
 Patterns=*.log
-
-[MIME-Info text/x-lyx]
-Comment=LyX - document
-Comment[af]=lyx - dokument
-Comment[ar]=مستند LyX
-Comment[az]=LyX - sənəd
-Comment[be]=Дакумэнт LyX
-Comment[bg]=Документ на LyX
-Comment[bs]=LyX - dokument
-Comment[cs]=Dokument LyXu
-Comment[da]=LyX-dokument
-Comment[de]=LyX-Dokument
-Comment[el]=Έγγραφο LyX
-Comment[eo]=LyX-dokumento
-Comment[es]=Documento de LyX
-Comment[et]=LyX dokument
-Comment[eu]=LyX - dokumentua
-Comment[fi]=LyX -asiakirja
-Comment[fr]=Document LyX
-Comment[he]=מסמך LyX
-Comment[hu]=LyX dokumentum
-Comment[is]=LyX skjal
-Comment[it]=Documento LyX
-Comment[ja]=Lyxドキュメント
-Comment[lt]=LyX – dokumentas
-Comment[lv]=LyX - dokuments
-Comment[mt]=Dokument Lyx
-Comment[nb]=Lyx-dokument
-Comment[nn]=LyX-dokument
-Comment[pl]=Dokument LyXa
-Comment[pt]=Documento do LyX
-Comment[pt_BR]=Documento do Lyx
-Comment[ro]=Document LyX
-Comment[ru]=Документ LyX
-Comment[sk]=LyX dokument
-Comment[sl]=Dokument za LyX
-Comment[sr]=LyX - dokument
-Comment[sv]=Lyx-dokument
-Comment[ta]=LyX - ¬Å½õ
-Comment[th]=เอกสาร - LyX
-Comment[tr]=Lyx - belgesi
-Comment[uk]=Документ LyX
-Comment[ven]=Manwalwa a Lyx
-Comment[vi]=Tài liệu - LyX
-Comment[xh]=uxwebhu lwe - LyX
-Comment[xx]=xx
-Comment[zh_CN]=LyX - 文档
-Comment[zh_TW]=LyX - 文件
-Comment[zu]=Idokhumente ye - LyX
-Contents=50:(string 0 "#LyX")
-Patterns=*.lyx
 
 [MIME-Info text/x-makefile]
 Comment=Makefile
@@ -13156,25 +12962,6 @@ Comment[zh_CN]=XSLT 风格表单文件
 Comment[zu]=Ifayela Lephepha lesitayela se XSLT
 Patterns=*.xslt
 
-[MIME-Info text/x-zsh]
-Comment=Z shell script
-Comment[da]=Z-skalprogram
-Comment[de]=Z-Shell-Skript
-Comment[es]=archivo de comandos de Z shell
-Comment[et]=Z käsukeele skript
-Comment[fi]=Z-komentotulkkiskripti
-Comment[ko]=Z 쉘 스크립트
-Comment[ms]=Skrip shell Z
-Comment[no]=Z-skallskript
-Comment[pl]=Skrypt powłoki Z
-Comment[pt]=Script de Consola Z
-Comment[ru]=Скрипт оболочки типа Zsh
-Comment[sk]=skript Z shellu
-Comment[sl]=skripta za lupino Z
-Comment[sv]=Z-skalskript
-Comment[uk]=скрипт оболонки Z
-Contents=50:(string 0 "#!/bin/zsh")
-
 [MIME-Info text/xmcd]
 # xmcd database file for kscd
 Contents=50:(string 0 "# xmcd")
@@ -13229,7 +13016,8 @@ Comment[zh_TW]=可延伸標記語言文件(XML)
 Comment[zu]=eXtensible Markup ulimi idokhumenti
 # Extensible markup language (XML), a subset of SGML
 # from Marc Prud'hommeaux (marc@apocalypse.org)
-Contents=50:(or (string 0 "<?xml") (string 0 "<?XML") (string 0 "<?Xml"))
+# Removed case-variations, as XML is case sensitive.
+Contents=50:(string 0 "<?xml")
 Patterns=*.xml
 
 [MIME-Info video/isivideo]
@@ -13312,7 +13100,7 @@ Comment[xx]=xx
 Comment[zh_CN]=MPEG 视频文件
 Comment[zh_TW]=MPEG 視頻文件
 Comment[zu]=MPEG Vidiyo
-Contents=50:(or (string 0 "\000\000\001\272") (string 0 "\000\000\001\263") (string 0 "\x47\x3f\xff\x10") (big32 0 "0x000001b3") (big32 0 "0x000001ba"))
+Contents=50:(or (string 0 "\x47\x3f\xff\x10") (big32 0 "0x000001b3") (big32 0 "0x000001ba"))
 Patterns=*.mpeg;*.mpg;*.mp2;*.mpe;*.vob;*.dat
 
 [MIME-Info video/quicktime]
@@ -13557,7 +13345,7 @@ Comment[zh_TW]=Autodesk FLIC 文件
 Comment[zu]=Amafayela e Autodesk's FLIC files
 # FLI animation format
 # FLC animation format
-Contents=50:(or (string 4 "\x11\xAF") (string 4 "\x12\xAF") (little16 0 "0xAF11") (little16 0 "0xAF12"))
+Contents=50:(or (little16 0 "0xAF11") (little16 0 "0xAF12"))
 Patterns=*.fli;*.flc
 
 [MIME-Info video/x-mng]
@@ -13701,7 +13489,7 @@ Comment[xx]=xx
 Comment[zh_CN]=微软 AVI 视频文件
 Comment[zh_TW]=微軟 AVI 視頻文件
 Comment[zu]=Microsoft AVI Vidiyo
-Contents=50:(or (string 8 "AVI ") (and (string 0 "RIFF") (string 8 "AVI ")))
+Contents=50:(or (string 8 "AVI ") (and (string 0 "RIFF")))
 Patterns=*.avi
 
 [MIME-Info video/x-real-video]

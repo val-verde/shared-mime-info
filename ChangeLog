@@ -1,3 +1,10 @@
+Fri Apr  1 14:33:54 2005  Jonathan Blandford  <jrb@redhat.com>
+
+	* shared-mime-info-spec.xml:
+	* update-mime-database.c: Patch from Matthias Clasen
+	<mclasen@redhat.com> to make the MIME Cache contain an mmappable
+	binary format.
+
 === shared-mime-info 0.16 ===
 Tue Mar 22 14:33:31 2005  Jonathan Blandford  <jrb@redhat.com>
 

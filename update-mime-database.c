@@ -1507,6 +1507,1061 @@ static void free_string_list(gpointer data)
   g_slist_free(list);
 }
 
+#define ALIGN_VALUE(this, boundary) \
+  (( ((unsigned long)(this)) + (((unsigned long)(boundary)) -1)) & (~(((unsigned long)(boundary))-1)))
+
+
+static gint
+write_data (FILE *cache, const gchar *n, gint len)
+{
+  gchar *s;
+  int i, l;
+  
+  l = ALIGN_VALUE (len, 4);
+  
+  s = g_malloc0 (l);
+  memcpy (s, n, len);
+
+  i = fwrite (s, l, 1, cache);
+
+  return i == 1;
+  
+}
+
+static gint
+write_string (FILE *cache, const gchar *n)
+{
+  return write_data (cache, n, strlen (n) + 1);
+}
+
+static gboolean
+write_card16 (FILE *cache, guint16 n)
+{
+  int i;
+  gchar s[2];
+
+  *((guint16 *)s) = GUINT16_TO_BE (n);
+  
+  i = fwrite (s, 2, 1, cache);
+
+  return i == 1;
+}
+
+static gboolean
+write_card32 (FILE *cache, guint32 n)
+{
+  int i;
+  gchar s[4];
+
+  *((guint32 *)s) = GUINT32_TO_BE (n);
+  
+  i = fwrite (s, 4, 1, cache);
+
+  return i == 1;
+}
+
+#define MAJOR_VERSION 1
+#define MINOR_VERSION 0
+
+static gboolean
+write_header (FILE *cache,   
+	      gint  alias_offset,
+	      gint  parent_offset,
+	      gint  literal_offset,
+	      gint  suffix_offset,
+	      gint  glob_offset,
+	      gint  magic_offset,
+	      gint  namespace_offset,
+	      gint *offset)
+{
+  *offset = 32;
+
+  return (write_card16 (cache, MAJOR_VERSION) &&
+	  write_card16 (cache, MINOR_VERSION) &&
+	  write_card32 (cache, alias_offset) &&
+	  write_card32 (cache, parent_offset) &&
+	  write_card32 (cache, literal_offset) &&
+	  write_card32 (cache, suffix_offset) &&
+	  write_card32 (cache, glob_offset) &&
+	  write_card32 (cache, magic_offset) &&
+	  write_card32 (cache, namespace_offset));
+}
+
+
+typedef gboolean (FilterFunc) (gpointer key);
+typedef gchar ** (GetValueFunc) (gpointer data, gchar *key);
+
+typedef struct
+{
+  FILE         *cache;
+  GHashTable   *pool;
+  guint         offset;
+  GetValueFunc *get_value;
+  gpointer      data;
+  gboolean      error;
+} MapData;
+
+static void
+write_map_entry (gpointer key,
+		 gpointer data)
+{
+  MapData *map_data = (MapData *)data;
+  gchar **values;
+  guint offset, i;
+
+
+  values = (* map_data->get_value) (map_data->data, key);
+  for (i = 0; values[i]; i++)
+    {
+      offset = GPOINTER_TO_UINT (g_hash_table_lookup (map_data->pool, values[i]));
+      if (offset == 0)
+	{
+	  g_printerr ("Missing string: '%s'\n", values[i]);
+	  map_data->error = TRUE;  
+	}
+      
+      if (!write_card32 (map_data->cache, offset))
+	map_data->error = TRUE;
+
+      map_data->offset += 4;
+    }
+
+  g_strfreev (values);
+}
+
+typedef struct 
+{
+  FilterFunc *filter;
+  GPtrArray  *keys;
+} FilterData;
+
+static void 
+add_key (gpointer key, 
+	 gpointer value, 
+	 gpointer data)
+{
+  FilterData *filter_data = (FilterData *)data;
+
+  if (!filter_data->filter || (* filter_data->filter) (key))
+    g_ptr_array_add (filter_data->keys, key);
+}
+
+static gboolean
+write_map (FILE         *cache,
+	   GHashTable   *strings,
+	   GHashTable   *map,
+	   FilterFunc   *filter,
+           GetValueFunc *get_value,
+	   guint        *offset)
+{
+  GPtrArray *keys;
+  MapData map_data;
+  FilterData filter_data;
+
+  keys = g_ptr_array_new ();
+  
+  filter_data.keys = keys;
+  filter_data.filter = filter;
+  g_hash_table_foreach (map, add_key, &filter_data);
+
+  g_ptr_array_sort (keys, strcmp2);
+
+  if (!write_card32 (cache, keys->len))
+    return FALSE;
+
+  map_data.cache = cache;
+  map_data.pool = strings;
+  map_data.get_value = get_value;
+  map_data.data = map;
+  map_data.offset = *offset;
+  map_data.error = FALSE;
+
+  g_ptr_array_foreach (keys, write_map_entry, &map_data);
+
+  *offset = map_data.offset;
+
+  return !map_data.error;
+}
+
+static gchar **
+get_type_value (gpointer  data, 
+		gchar    *key)
+{
+  Type *type;
+  gchar **result;
+
+  type = (Type *)g_hash_table_lookup ((GHashTable *)data, key);
+  
+  result = g_new0 (gchar *, 3);
+  result[0] = g_strdup (key);
+  result[1] = g_strdup_printf ("%s/%s", type->media, type->subtype);
+
+  return result;
+}
+
+static gboolean
+write_alias_cache (FILE       *cache, 
+		   GHashTable *strings,
+		   guint      *offset)
+{
+  return write_map (cache, strings, alias_hash, NULL, get_type_value, offset);
+}
+		   
+static void
+write_parent_entry (gpointer key,
+		    gpointer data)
+{
+  gchar *mimetype = (gchar *)key;
+  MapData *map_data = (MapData *)data;
+  guint parents_offset, offset;
+  GList *parents;
+
+  parents = (GList *)g_hash_table_lookup (subclass_hash, mimetype);
+  offset = GPOINTER_TO_UINT (g_hash_table_lookup (map_data->pool, mimetype));
+  if (offset == 0)
+    {
+      g_printerr ("Missing string: '%s'\n", (gchar *)key);
+      map_data->error = TRUE;  
+    }
+
+  parents_offset = map_data->offset;
+  map_data->offset += 4 + 4 * g_list_length (parents);
+
+  if (!write_card32 (map_data->cache, offset) ||
+      !write_card32 (map_data->cache, parents_offset))
+    map_data->error = TRUE;
+}
+
+static void
+write_parent_list (gpointer key,
+		   gpointer data)
+{
+  gchar *mimetype = (gchar *)key;
+  MapData *map_data = (MapData *)data;
+  guint offset;
+  GList *parents, *p;
+
+  parents = (GList *)g_hash_table_lookup (subclass_hash, mimetype);
+
+  if (!write_card32 (map_data->cache, g_list_length (parents)))
+    map_data->error = TRUE;
+
+  for (p = parents; p; p = p->next)
+    {
+      gchar *parent = (gchar *)p->data;
+      
+      offset = GPOINTER_TO_UINT (g_hash_table_lookup (map_data->pool, parent));
+      if (offset == 0)
+	{
+	  g_printerr ("Missing string: '%s'\n", parent);
+	  map_data->error = TRUE;  
+	}
+      
+      if (!write_card32 (map_data->cache, offset))
+	map_data->error = TRUE;
+    }
+
+  map_data->offset += 4 + 4 * g_list_length (parents);
+}
+
+static gboolean
+write_parent_cache (FILE       *cache,
+		    GHashTable *strings,
+		    guint      *offset)
+{
+  GPtrArray *keys;
+  MapData map_data;
+  FilterData filter_data;
+
+  keys = g_ptr_array_new ();
+
+  filter_data.keys = keys;
+  filter_data.filter = NULL;
+  g_hash_table_foreach (subclass_hash, add_key, &filter_data);
+
+  g_ptr_array_sort (keys, strcmp2);
+
+  if (!write_card32 (cache, keys->len))
+    return FALSE;
+
+  map_data.cache = cache;
+  map_data.pool = strings;
+  map_data.offset = *offset + 4 + keys->len * 8;
+  map_data.error = FALSE;
+
+  g_ptr_array_foreach (keys, write_parent_entry, &map_data);
+
+  map_data.offset = *offset + 4 + keys->len * 8;
+  g_ptr_array_foreach (keys, write_parent_list, &map_data);
+
+  *offset = map_data.offset;
+
+  return !map_data.error;
+}
+
+typedef enum 
+{
+  GLOB_LITERAL,
+  GLOB_SIMPLE,
+  GLOB_FULL
+} GlobType;
+
+static GlobType
+glob_type (gchar *glob)
+{
+  gchar *ptr;
+  gboolean maybe_in_simple_glob = FALSE;
+  gboolean first_char = TRUE;
+
+  ptr = glob;
+
+  while (*ptr != '\0')
+    {
+      if (*ptr == '*' && first_char)
+	maybe_in_simple_glob = TRUE;
+      else if (*ptr == '\\' || *ptr == '[' || *ptr == '?' || *ptr == '*')
+	return GLOB_FULL;
+      
+      first_char = FALSE;
+      ptr = g_utf8_next_char (ptr);
+    }
+
+  if (maybe_in_simple_glob)
+    return GLOB_SIMPLE;
+
+  return GLOB_LITERAL;
+}
+
+static gboolean
+is_literal_glob (gpointer key)
+{
+  return glob_type ((gchar *)key) == GLOB_LITERAL;
+}
+
+static gboolean
+is_simple_glob (gpointer key)
+{
+  return glob_type ((gchar *)key) == GLOB_SIMPLE;
+}
+
+static gboolean
+is_full_glob (gpointer key)
+{
+  return glob_type ((gchar *)key) == GLOB_FULL;
+}
+
+static gboolean
+write_literal_cache (FILE       *cache,
+		     GHashTable *strings,
+		     guint      *offset)
+{
+  return write_map (cache, strings, globs_hash, is_literal_glob, 
+		    get_type_value, offset); 
+}
+
+static gboolean
+write_glob_cache (FILE       *cache,
+		  GHashTable *strings,
+		  guint      *offset)
+{
+  return write_map (cache, strings, globs_hash, is_full_glob, 
+		    get_type_value, offset); 
+}
+
+typedef struct _SuffixEntry SuffixEntry;
+
+struct _SuffixEntry
+{
+  gunichar character;
+  gchar *mimetype;
+  GList *children;
+  guint size;
+  guint depth;
+};
+
+static GList *
+insert_suffix (gunichar *suffix, 
+	       gchar    *mimetype,
+	       GList    *suffixes)
+{
+  GList *l;
+  SuffixEntry *s = NULL;
+
+  for (l = suffixes; l; l = l->next)
+    {
+      s = (SuffixEntry *)l->data;
+
+      if (s->character > suffix[0])
+	{
+	  s = g_new0 (SuffixEntry, 1);
+	  s->character = suffix[0];
+	  s->mimetype = NULL;
+	  s->children = NULL;
+
+	  suffixes = g_list_insert_before (suffixes, l, s);
+	}
+
+      if (s->character == suffix[0])
+	break;
+    }
+
+  if (!s || s->character != suffix[0])
+    {
+      s = g_new0 (SuffixEntry, 1);
+      s->character = suffix[0];
+      s->mimetype = NULL;
+      s->children = NULL;
+
+      suffixes = g_list_append (suffixes, s);
+    }
+
+  if (suffix[1] == 0)
+    {
+      if (s->mimetype != NULL)
+	g_printerr ("Glob conflict: %s, %s\n", s->mimetype, mimetype);
+      
+      s->mimetype = mimetype;
+    }
+  else
+    s->children = insert_suffix (suffix + 1, mimetype, s->children);
+
+  return suffixes;
+}
+
+static void
+build_suffixes (gpointer key,
+		gpointer value,
+		gpointer data)
+{
+  gchar *glob = (gchar *)key;
+  Type *type = (Type *)value;
+  GList **suffixes = (GList **)data;
+  gunichar *suffix;
+  gchar *mimetype;
+  
+  mimetype = g_strdup_printf ("%s/%s", type->media, type->subtype);
+
+  if (is_simple_glob (glob))
+    {
+      suffix = g_utf8_to_ucs4 (glob + 1, -1, NULL, NULL, NULL);
+      
+      if (suffix == NULL)
+	{
+	  g_printerr ("Glob '%s' is not valid UTF-8\n", glob);
+	  return;
+	}
+
+      *suffixes = insert_suffix (suffix, mimetype, *suffixes);
+
+      g_free (suffix);
+    }
+}
+
+static void
+calculate_size (SuffixEntry *entry)
+{
+  GList *s;
+
+  entry->size = 0;
+  entry->depth = 0;
+  for (s = entry->children; s; s= s->next)
+    {
+      SuffixEntry *child = (SuffixEntry *)s->data;
+
+      calculate_size (child);
+      entry->size += 1 + child->size;
+      entry->depth = MAX (entry->depth, child->depth + 1);
+    }
+}
+
+static gboolean 
+write_suffix_entries (FILE        *cache, 
+		      guint        depth,
+		      SuffixEntry *entry,
+		      GHashTable *strings, 
+		      guint      *child_offset)
+{
+  GList *c;
+  guint offset;
+
+  if (depth > 0)
+    {
+      gboolean error = FALSE;
+
+      for (c = entry->children; c; c = c->next)
+	{
+	  SuffixEntry *child = (SuffixEntry *)c->data;
+	  if (!write_suffix_entries (cache, depth - 1, child, strings, child_offset))
+	    error = TRUE;
+	}
+
+      return !error;
+    }
+    
+  write_card32 (cache, entry->character);
+
+  if (entry->mimetype)
+    {
+      offset = GPOINTER_TO_UINT(g_hash_table_lookup (strings, entry->mimetype));
+      if (offset == 0)
+	{
+	  g_printerr ("Missing string: '%s'\n", entry->mimetype);
+	  return FALSE;
+	}
+    }
+  else
+    offset = 0;
+
+  if (!write_card32 (cache, offset))
+    return FALSE;
+  
+  if (!write_card32 (cache, g_list_length (entry->children)))
+    return FALSE;
+  
+  if (!write_card32 (cache, *child_offset))
+    return FALSE;
+
+  *child_offset += 16 * g_list_length (entry->children);
+
+  return TRUE;
+}
+
+static gboolean
+write_suffix_cache (FILE        *cache, 
+		    GHashTable *strings, 
+		    guint      *offset)
+{
+  GList *suffixes, *s;
+  guint n_entries;
+  guint child_offset;
+  guint depth, d;
+
+  suffixes = NULL;
+
+  g_hash_table_foreach (globs_hash, build_suffixes, &suffixes);
+
+  n_entries = g_list_length (suffixes);
+
+  *offset += 8;
+  child_offset = *offset + 16 * n_entries;
+  depth = 0;
+  for (s = suffixes; s; s= s->next)
+    {
+      SuffixEntry *entry = (SuffixEntry *)s->data;
+      calculate_size (entry);
+      depth = MAX (depth, entry->depth + 1);
+    }
+
+  if (!write_card32 (cache, n_entries) || !write_card32 (cache, *offset))
+    return FALSE;
+
+  for (d = 0; d < depth; d++)
+    {
+      for (s = suffixes; s; s = s->next)
+	{
+	  SuffixEntry *entry = (SuffixEntry *)s->data;
+	  
+	  if (!write_suffix_entries (cache,  d, entry, strings, &child_offset))
+	    return FALSE;
+	}
+    }
+
+  *offset = child_offset;
+
+  return TRUE;
+}
+
+typedef struct {
+  FILE       *cache;
+  GHashTable *strings;
+  GList      *matches;
+  guint       offset;
+  gboolean    error;
+} WriteMatchData;
+
+
+static void
+write_match (gpointer key,
+	     gpointer data)
+{
+  Magic *magic = (Magic *)key;
+  WriteMatchData *mdata = (WriteMatchData *)data;
+  gchar *mimetype;
+  guint offset;
+
+  if (!write_card32 (mdata->cache, magic->priority))
+    {
+      mdata->error = TRUE;
+      return;
+    }
+
+  mimetype = g_strdup_printf ("%s/%s", magic->type->media, magic->type->subtype);
+  offset = GPOINTER_TO_UINT (g_hash_table_lookup (mdata->strings, mimetype));
+  if (offset == 0)
+    {
+      g_printerr ("Missing string: '%s'\n", mimetype);
+      g_free (mimetype);
+      mdata->error = TRUE;
+      return;
+    }
+  g_free (mimetype);
+  
+  if (!write_card32 (mdata->cache, offset))
+    {
+      mdata->error = TRUE;
+      return;
+    }
+
+  if (!write_card32 (mdata->cache, g_list_length (magic->matches)))
+    {
+      mdata->error = TRUE;
+      return;
+    }
+
+    offset = mdata->offset + 32 * g_list_index (mdata->matches, magic->matches->data);
+
+  if (!write_card32 (mdata->cache, offset))
+    {
+      mdata->error = TRUE;
+      return;
+    }
+}
+
+static gboolean
+write_matchlet (FILE           *cache,
+		Match          *match,
+		GList          *matches,
+		gint            offset,
+		gint           *offset2)
+{
+  if (!write_card32 (cache, match->range_start) ||
+      !write_card32 (cache, match->range_length) ||
+      !write_card32 (cache, match->word_size) ||
+      !write_card32 (cache, match->data_length) ||
+      !write_card32 (cache, *offset2))
+    return FALSE;
+  
+  *offset2 = ALIGN_VALUE (*offset2 + match->data_length, 4);
+      
+  if (match->mask)
+    {
+      if (!write_card32 (cache, *offset2))
+	return FALSE;
+      
+      *offset2 = ALIGN_VALUE (*offset2 + match->data_length, 4);
+    }
+  else
+    {
+      if (!write_card32 (cache, 0))
+	return FALSE;
+    }
+
+  if (match->matches)
+    {
+      if (!write_card32 (cache, g_list_length (match->matches)) ||
+	  !write_card32 (cache, offset + 32 * g_list_index (matches, match->matches->data)))
+	return FALSE;
+    }
+  else
+    {
+      if (!write_card32 (cache, 0) ||
+	  !write_card32 (cache, 0))
+	return FALSE;
+    }
+
+  return TRUE;
+}  
+
+static gboolean
+write_matchlet_data (FILE           *cache,
+		     Match          *match,
+		     gint           *offset2)
+{
+  if (!write_data (cache, match->data, match->data_length))
+    return FALSE;
+  
+  *offset2 = ALIGN_VALUE (*offset2 + match->data_length, 4);
+
+  if (match->mask)
+    {
+      if (!write_data (cache, match->mask, match->data_length))
+	return FALSE;
+
+      *offset2 = ALIGN_VALUE (*offset2 + match->data_length, 4);
+    }
+
+  return TRUE;
+}
+
+static void
+collect_matches_list (GList *list, GList **matches)
+{
+  GList *l;
+
+  for (l = list; l; l = l->next)
+    *matches = g_list_prepend (*matches, l->data);
+
+  for (l = list; l; l = l->next)
+    {  
+      Match *match = (Match *)l->data;
+      collect_matches_list (match->matches, matches);
+    }
+}
+
+static void
+collect_matches (gpointer key, gpointer data)
+{
+  Magic *magic = (Magic *)key;
+  GList **matches = (GList **)data;
+
+  collect_matches_list (magic->matches, matches);
+}
+
+static gboolean
+write_magic_cache (FILE        *cache, 
+		   GHashTable *strings, 
+		   guint      *offset)
+{
+  guint n_entries, max_extent, offset2;
+  GList *m;
+  WriteMatchData data;
+  
+  data.matches = NULL;
+  g_ptr_array_foreach (magic_array, collect_matches, &data.matches);
+  data.matches = g_list_reverse (data.matches);
+
+  max_extent = 0;
+  for (m = data.matches; m; m = m->next)
+    {
+      Match *match = (Match *)m->data;
+      max_extent = MAX (max_extent, match->data_length + match->range_start + match->range_length);
+    }
+
+  n_entries = magic_array->len;
+
+  *offset += 12;
+  
+  if (!write_card32 (cache, n_entries) ||
+      !write_card32 (cache, max_extent) ||
+      !write_card32 (cache, *offset))
+    return FALSE;
+
+  *offset += 16 * n_entries;
+
+  data.cache = cache;
+  data.strings = strings;
+  data.offset = *offset;
+  data.error = FALSE;
+
+  offset2 = *offset + 32 * g_list_length (data.matches);
+
+  g_ptr_array_foreach (magic_array, write_match, &data);
+  for (m = data.matches; m; m = m->next)
+    {
+      Match *match = (Match *)m->data;
+      write_matchlet (cache, match, data.matches, *offset, &offset2);
+    }
+
+  for (m = data.matches; m; m = m->next)
+    {
+      Match *match = (Match *)m->data;
+      write_matchlet_data (cache, match, &offset2);
+    }
+
+  *offset = offset2;
+
+  g_list_free (data.matches);
+
+  return !data.error;
+}
+
+static gchar **
+get_namespace_value (gpointer  data, 
+		     gchar    *key)
+{
+  Type *type;
+  gchar **result;
+  gchar *space;
+
+  type = (Type *)g_hash_table_lookup ((GHashTable *)data, key);
+  
+  result = g_new0 (gchar *, 4);
+  space = strchr (key, ' ');
+  if (*space)
+    {
+      *space = '\0';
+      result[0] = g_strdup (key);
+      result[1] = g_strdup (space + 1);
+      *space = ' ';
+    }
+  else 
+    result[0] = g_strdup (key);
+
+  result[2] = g_strdup_printf ("%s/%s", type->media, type->subtype);
+
+  return result;
+}
+
+static gboolean
+write_namespace_cache (FILE       *cache,
+		       GHashTable *strings,
+		       guint      *offset)
+{
+  return write_map (cache, strings, namespace_hash, NULL, 
+		    get_namespace_value, offset); 
+}
+
+static void
+collect_alias (gpointer key,
+	       gpointer value,
+	       gpointer data)
+{
+  GHashTable *strings = (GHashTable *)data;
+  Type *type = (Type *)value;
+  gchar *mimetype;
+  
+  mimetype = g_strdup_printf ("%s/%s", type->media, type->subtype);
+  g_hash_table_insert (strings, key, NULL);
+  g_hash_table_insert (strings, mimetype, NULL);
+}
+
+
+static void
+collect_parents (gpointer key,
+		 gpointer value,
+		 gpointer data)
+{
+  GList *parents = (GList *)value;
+  GHashTable *strings = (GHashTable *)data;
+  GList *p;
+  
+  g_hash_table_insert (strings, key, NULL);
+  for (p = parents; p; p = p->next)
+    g_hash_table_insert (strings, p->data, NULL);
+}
+
+static void
+collect_glob (gpointer key,
+	      gpointer value,
+	      gpointer data)
+{
+  gchar *glob = (gchar *)key;
+  Type *type = (Type *)value;
+  gchar *mimetype;
+
+  mimetype = g_strdup_printf ("%s/%s", type->media, type->subtype);
+
+  GHashTable *strings = (GHashTable *)data;
+
+  switch (glob_type (glob))
+    {
+    case GLOB_LITERAL:
+    case GLOB_FULL:
+      g_hash_table_insert (strings, glob, NULL);
+      break;
+    default:
+      break;
+    }
+
+  g_hash_table_insert (strings, mimetype, NULL);
+}
+
+static void
+collect_magic (gpointer key,
+	       gpointer data)
+{
+  Magic *magic = (Magic *)key;
+  GHashTable *strings = (GHashTable *)data;
+  gchar *mimetype;
+  
+  mimetype = g_strdup_printf ("%s/%s", magic->type->media, magic->type->subtype);
+  g_hash_table_insert (strings, mimetype, NULL);
+}
+
+static void
+collect_namespace (gpointer key,
+		   gpointer value,
+		   gpointer data)
+{
+  gchar *ns = (gchar *)key;
+  Type *type = (Type *)value;
+  GHashTable *strings = (GHashTable *)data;
+  gchar *mimetype;
+  gchar *space;
+
+  mimetype = g_strdup_printf ("%s/%s", type->media, type->subtype);
+  g_hash_table_insert (strings, mimetype, NULL);
+  
+  space = strchr (ns, ' ');
+
+  if (space)
+    {
+      *space = '\0';
+      g_hash_table_insert (strings, g_strdup (ns), NULL);
+      g_hash_table_insert (strings, space + 1, NULL);
+      *space = ' ';
+    }
+  else     
+    g_hash_table_insert (strings, ns, NULL);
+}
+
+
+static void
+collect_strings (GHashTable *strings)
+{
+  g_hash_table_foreach (alias_hash, collect_alias, strings); 
+  g_hash_table_foreach (subclass_hash, collect_parents, strings); 
+  g_hash_table_foreach (globs_hash, collect_glob, strings); 
+  g_ptr_array_foreach (magic_array, collect_magic, strings); 
+  g_hash_table_foreach (namespace_hash, collect_namespace, strings); 
+}
+
+typedef struct 
+{
+  FILE       *cache;
+  GHashTable *strings;
+  guint       offset;
+  gboolean    error;
+} StringData;
+
+static void
+write_one_string (gpointer key,
+		  gpointer value,
+		  gpointer data)
+{
+  gchar *str = (gchar *)key;
+  StringData *sdata = (StringData *)data;
+
+  if (!write_string (sdata->cache, str))
+    sdata->error = TRUE;
+
+  g_hash_table_insert (sdata->strings, str, GUINT_TO_POINTER (sdata->offset));
+  
+  sdata->offset = ALIGN_VALUE (sdata->offset + strlen (str) + 1, 4);
+}
+
+static gboolean
+write_strings (FILE       *cache, 
+	       GHashTable *strings,       
+	       guint      *offset)
+{
+  StringData data;
+
+  data.cache = cache;
+  data.strings = strings;
+  data.offset = *offset;
+  data.error = FALSE;
+
+  g_hash_table_foreach (strings, write_one_string, &data);
+
+  *offset = data.offset;
+
+  return !data.error;
+}
+
+static gboolean 
+write_cache (FILE *cache)
+{
+  guint alias_offset;
+  guint parent_offset;
+  guint literal_offset;
+  guint suffix_offset;
+  guint glob_offset;
+  guint magic_offset;
+  guint namespace_offset;
+  guint offset;
+  GHashTable *strings;
+
+  offset = 0;
+  if (!write_header (cache, 0, 0, 0, 0, 0, 0, 0, &offset))
+    {
+      g_printerr ("Failed to write header\n");
+      return FALSE;
+    }
+
+  strings = g_hash_table_new (g_str_hash, g_str_equal);
+  collect_strings (strings);
+  if (!write_strings (cache, strings, &offset))
+    {
+      g_printerr ("Failed to write strings\n");
+      return FALSE;
+    }
+  g_print ("Wrote %d strings\n", g_hash_table_size (strings));
+
+  alias_offset = offset;
+  if (!write_alias_cache (cache, strings, &offset))
+    {
+      g_printerr ("Failed to write alias list\n");
+      return FALSE;
+    }
+  g_print ("Wrote aliases at %x - %x\n", alias_offset, offset);
+
+  parent_offset = offset;
+  if (!write_parent_cache (cache, strings, &offset))
+    {
+      g_printerr ("Failed to write parent list\n");
+      return FALSE;
+    }
+  g_print ("Wrote parents at %x - %x\n", parent_offset, offset);
+
+  literal_offset = offset;
+  if (!write_literal_cache (cache, strings, &offset))
+    {
+      g_printerr ("Failed to write literal list\n");
+      return FALSE;
+    }
+  g_print ("Wrote literal globs at %x - %x\n", literal_offset, offset);
+
+  suffix_offset = offset;
+  if (!write_suffix_cache (cache, strings, &offset))
+    {
+      g_printerr ("Failed to write suffix list\n");
+      return FALSE;
+    }
+  g_print ("Wrote suffix globs at %x - %x\n", suffix_offset, offset);
+
+  glob_offset = offset;
+  if (!write_glob_cache (cache, strings, &offset))
+    {
+      g_printerr ("Failed to write glob list\n");
+      return FALSE;
+    }
+  g_print ("Wrote full globs at %x - %x\n", glob_offset, offset);
+
+  magic_offset = offset;
+  if (!write_magic_cache (cache, strings, &offset))
+    {
+      g_printerr ("Failed to write magic list\n");
+      return FALSE;
+    }
+  g_print ("Wrote magic at %x - %x\n", magic_offset, offset);
+
+  namespace_offset = offset;
+  if (!write_namespace_cache (cache, strings, &offset))
+    {
+      g_printerr ("Failed to write namespace list\n");
+      return FALSE;
+    }
+  g_print ("Wrote namespace list at %x - %x\n", namespace_offset, offset);
+
+  rewind (cache);
+  offset = 0; 
+
+  if (!write_header (cache, 
+		     alias_offset, parent_offset, literal_offset,
+		     suffix_offset, glob_offset, magic_offset, 
+		     namespace_offset, &offset))
+    {
+      g_printerr ("Failed to rewrite header\n");
+      return FALSE;
+    }
+
+  g_hash_table_destroy (strings);
+
+  return TRUE;
+}
+
+
 int main(int argc, char **argv)
 {
 	char *mime_dir = NULL;
@@ -1626,8 +2681,6 @@ int main(int argc, char **argv)
 			Magic *magic = (Magic *) magic_array->pdata[i];
 
 			write_magic(stream, magic);
-
-			magic_free(magic);
 		}
 		fclose(stream);
 
@@ -1683,7 +2736,23 @@ int main(int argc, char **argv)
 		g_free(path);
 	}
 
+	{
+		FILE *stream;
+		char *path;
+		
+		path = g_strconcat(mime_dir, "/mime.cache.new", NULL);
+		stream = fopen(path, "wb");
+		if (!stream)
+			g_error("Failed to open '%s' for writing\n",
+				path);
+		
+		write_cache(stream);
 
+		atomic_update(path);
+		g_free(path);
+	}
+
+	g_ptr_array_foreach(magic_array, (GFunc)magic_free, NULL);
 	g_ptr_array_free(magic_array, TRUE);
 
 	g_hash_table_destroy(types);

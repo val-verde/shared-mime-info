@@ -1,5 +1,7 @@
 #include <config.h>
 
+/* TODO: Remove duplicate comment fields */
+
 #define N_(x) x
 #define _(x) (x)
 
@@ -209,11 +211,22 @@ out:
 	xmlFreeDoc(doc);
 }
 
+static gint strcmp2(gconstpointer a, gconstpointer b)
+{
+	const char *aa = *(char **) a;
+	const char *bb = *(char **) b;
+
+	return strcmp(aa, bb);
+}
+
 static void scan_source_dir(const char *path)
 {
 	DIR *dir;
 	struct dirent *ent;
 	char *filename;
+	GPtrArray *files;
+	int i;
+	gboolean have_override = FALSE;
 
 	dir = opendir(path);
 	if (!dir)
@@ -222,21 +235,39 @@ static void scan_source_dir(const char *path)
 		exit(EXIT_FAILURE);
 	}
 
+	files = g_ptr_array_new();
 	while ((ent = readdir(dir)))
 	{
 		int l;
-
-		/* Only process files with names ending in '.xml' */
 		l = strlen(ent->d_name);
 		if (l < 4 || strcmp(ent->d_name + l - 4, ".xml") != 0)
 			continue;
-		
-		filename = g_strconcat(path, "/", ent->d_name, NULL);
+		if (strcmp(ent->d_name, "Override.xml") == 0)
+		{
+			have_override = TRUE;
+			continue;
+		}
+		g_ptr_array_add(files, g_strdup(ent->d_name));
+	}
+	closedir(dir);
+
+	g_ptr_array_sort(files, strcmp2);
+
+	if (have_override)
+		g_ptr_array_add(files, g_strdup("Override.xml"));
+
+	for (i = 0; i < files->len; i++)
+	{
+		gchar *leaf = (gchar *) files->pdata[i];
+
+		filename = g_strconcat(path, "/", leaf, NULL);
 		load_source_file(filename);
 		g_free(filename);
 	}
 
-	closedir(dir);
+	for (i = 0; i < files->len; i++)
+		g_free(files->pdata[i]);
+	g_ptr_array_free(files, TRUE);
 }
 
 /* Save doc as XML as filename, 0 on success or -1 on failure */
@@ -492,6 +523,13 @@ int main(int argc, char **argv)
 			write_magic(stream, node);
 		}
 		fclose(stream);
+	}
+
+	{
+		int i;
+		for (i = 0; i < magic->len; i++)
+			xmlFreeNode((xmlNode *) magic->pdata[i]);
+		g_ptr_array_free(magic, TRUE);
 	}
 
 	g_hash_table_destroy(types);

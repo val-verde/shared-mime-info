@@ -1,3 +1,8 @@
+2004-03-19  Alexander Larsson  <alexl@redhat.com>
+
+	* freedesktop.org.xml.in:
+	application/x-archive needs lower prio than application/x-deb
+
 Fri Mar 19 01:31:44 2004  Jonathan Blandford  <jrb@gnome.org>
 
 	* configure.in (GETTEXT_PACKAGE): add cy.po

@@ -37,6 +37,7 @@
 <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
   <mime-type type="application/andrew-inset">
     <comment>Andrew Toolkit inset</comment>
+    <comment xml:lang="cy">Mewnosodiad Andrew Toolkit</comment>
     <comment xml:lang="fi">Andrew Toolkit -osio</comment>
     <comment xml:lang="fr">ajout Andrew Toolkit</comment>
     <comment xml:lang="hu">Andrew Toolkit inset</comment>
@@ -48,10 +49,12 @@
   </mime-type>
   <mime-type type="application/illustrator">
     <comment>Adobe Illustrator document</comment>
+    <comment xml:lang="no">Adobe Illustrator-dokument</comment>
     <glob pattern="*.ai" />
   </mime-type>
   <mime-type type="application/mac-binhex40">
     <comment>Macintosh BinHex-encoded file</comment>
+    <comment xml:lang="cy">Ffeil BinHex-amgodwyd Macintosh</comment>
     <comment xml:lang="fi">Macintosh BinHex -koodattu tiedosto</comment>
     <comment xml:lang="fr">fichier encode Macintosh BinHex</comment>
     <comment xml:lang="hu">Macintosh BinHex kódolású fájl</comment>
@@ -66,6 +69,7 @@
   </mime-type>
   <mime-type type="application/msword">
     <comment>Microsoft Word document</comment>
+    <comment xml:lang="cy">Dogfen Miscrosoft Word</comment>
     <comment xml:lang="fi">Microsoft Word -asiakirja</comment>
     <comment xml:lang="fr">document Microsoft Word</comment>
     <comment xml:lang="hu">Microsoft Word-dokumentum</comment>
@@ -78,7 +82,6 @@
       <match offset="0" type="string" value="\x31\xbe\x00\x00" />
       <match offset="0" type="string" value="PO^Q`" />
       <match offset="0" type="string" value="\376\067\0\043" />
-      <match offset="0" type="string" value="\320\317\021\340\241\261" />
       <match offset="0" type="string" value="\333\245-\0\0\0" />
       <match offset="2080" type="string" value="Microsoft Word 6.0 Document" />
       <match offset="2112" type="string" value="Microsoft Word document data" />
@@ -87,6 +90,7 @@
   </mime-type>
   <mime-type type="application/octet-stream">
     <comment>unknown</comment>
+    <comment xml:lang="no">ukjent</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\037\036" />
       <match offset="0" type="host16" value="017437" />
@@ -98,6 +102,7 @@
   </mime-type>
   <mime-type type="application/oda">
     <comment>ODA document</comment>
+    <comment xml:lang="cy">Dogfen ODA</comment>
     <comment xml:lang="fi">ODA-asiakirja</comment>
     <comment xml:lang="fr">document ODA</comment>
     <comment xml:lang="hu">ODA-dokumentum</comment>
@@ -110,6 +115,7 @@
   </mime-type>
   <mime-type type="application/pdf">
     <comment>PDF document</comment>
+    <comment xml:lang="no">PDF-dokument</comment>
     <magic priority="50">
       <match offset="0" type="string" value="%PDF-" />
     </magic>
@@ -117,6 +123,7 @@
   </mime-type>
   <mime-type type="application/pgp">
     <comment>PGP message</comment>
+    <comment xml:lang="cy">Neges PGP</comment>
     <comment xml:lang="fi">PGP-viesti</comment>
     <comment xml:lang="fr">message PGP</comment>
     <comment xml:lang="hu">PGP-üzenet</comment>
@@ -129,9 +136,11 @@
   </mime-type>
   <mime-type type="application/pgp-encrypted">
     <comment>PGP/MIME-encrypted message header</comment>
+    <comment xml:lang="no">PGP/MIME-kryptert meldingshode</comment>
   </mime-type>
   <mime-type type="application/pgp-keys">
     <comment>PGP keys</comment>
+    <comment xml:lang="cy">Allweddi PGP</comment>
     <comment xml:lang="fi">PGP-avainrengas</comment>
     <comment xml:lang="fr">clés PGP</comment>
     <comment xml:lang="hu">PGP-kulcs</comment>
@@ -143,9 +152,11 @@
   </mime-type>
   <mime-type type="application/pgp-signature">
     <comment>detached OpenPGP signature</comment>
+    <comment xml:lang="no">frakoblet OpenPGP-signatur</comment>
   </mime-type>
   <mime-type type="application/pkcs7-mime">
     <comment>S/MIME file</comment>
+    <comment xml:lang="cy">Ffeil S/MIME</comment>
     <comment xml:lang="fi">S/MIME-tiedosto</comment>
     <comment xml:lang="fr">fichier S/MIME</comment>
     <comment xml:lang="hu">S/MIME-fájl</comment>
@@ -157,10 +168,12 @@
   </mime-type>
   <mime-type type="application/pkcs7-signature">
     <comment>detached S/MIME signature</comment>
+    <comment xml:lang="no">frakoblet S/MIME-signatur</comment>
     <glob pattern="*.p7s" />
   </mime-type>
   <mime-type type="application/postscript">
     <comment>PostScript document</comment>
+    <comment xml:lang="no">PostScript-dokument</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\004%!" />
       <match offset="0" type="string" value="%!" />
@@ -169,6 +182,7 @@
   </mime-type>
   <mime-type type="application/rtf">
     <comment>Rich Text Format</comment>
+    <comment xml:lang="cy">Dogfen Testun Gyfoethog</comment>
     <comment xml:lang="fi">RTF-asiakirja</comment>
     <comment xml:lang="fr">Rich Text Format</comment>
     <comment xml:lang="hu">RTF-fájl</comment>
@@ -184,6 +198,7 @@
   </mime-type>
   <mime-type type="application/smil">
     <comment>Synchronized Multimedia Integration Language</comment>
+    <comment xml:lang="cy">Iaith Integreiddio Aml-Gyfrwng wedi ei Chydweddu</comment>
     <comment xml:lang="fi">Synchronized Multimedia Integration Language</comment>
     <comment xml:lang="fr">Synchronized Multimedia Integration Language</comment>
     <comment xml:lang="hu">Szinkronizált multimédiaintegrációs nyelv</comment>
@@ -197,6 +212,7 @@
   </mime-type>
   <mime-type type="application/vnd.corel-draw">
     <comment>Corel Draw drawing</comment>
+    <comment xml:lang="cy">Darlun Corel Draw</comment>
     <comment xml:lang="fi">Corel Draw -piirros</comment>
     <comment xml:lang="fr">dessin Corel Draw</comment>
     <comment xml:lang="hu">Corel Draw-rajz</comment>
@@ -220,6 +236,7 @@
   </mime-type>
   <mime-type type="application/vnd.lotus-1-2-3">
     <comment>Lotus 1-2-3 spreadsheet</comment>
+    <comment xml:lang="cy">Taenlen Lotus 1-2-3</comment>
     <comment xml:lang="fi">Lotus 1-2-3 -taulukko</comment>
     <comment xml:lang="fr">chiffrier Lotus 1-2-3</comment>
     <comment xml:lang="hu">Lotus 1-2-3-munkafüzet</comment>
@@ -239,6 +256,7 @@
   </mime-type>
   <mime-type type="application/vnd.ms-excel">
     <comment>Microsoft Excel spreadsheet</comment>
+    <comment xml:lang="cy">Taenlen Microsoft Excel</comment>
     <comment xml:lang="fi">Microsoft Excel -taulukko</comment>
     <comment xml:lang="fr">chiffrier Microsoft Excel</comment>
     <comment xml:lang="hu">Microsoft Excel-munkafüzet</comment>
@@ -261,6 +279,7 @@
   </mime-type>
   <mime-type type="application/vnd.ms-powerpoint">
     <comment>Microsoft PowerPoint presentation</comment>
+    <comment xml:lang="no">Microsoft PowerPoint-presentasjon</comment>
     <glob pattern="*.ppz" />
     <glob pattern="*.ppt" />
     <glob pattern="*.pps" />
@@ -268,6 +287,7 @@
   </mime-type>
   <mime-type type="application/vnd.ms-word">
     <comment>Microsoft Word document</comment>
+    <comment xml:lang="cy">Dogfen Miscrosoft Word</comment>
     <comment xml:lang="fi">Microsoft Word -asiakirja</comment>
     <comment xml:lang="fr">document Microsoft Word</comment>
     <comment xml:lang="hu">Microsoft Word-dokumentum</comment>
@@ -283,6 +303,7 @@
   </mime-type>
   <mime-type type="application/vnd.rn-realmedia">
     <comment>RealAudio/Video document</comment>
+    <comment xml:lang="cy">Dogfen RealAudio neu RealVideo</comment>
     <comment xml:lang="fi">RealAudio/Video-asiakirja</comment>
     <comment xml:lang="fr">document RealAudio/Video</comment>
     <comment xml:lang="hu">RealAudio/Video-dokumentum</comment>
@@ -294,6 +315,7 @@
   </mime-type>
   <mime-type type="application/vnd.stardivision.calc">
     <comment>StarCalc spreadsheet</comment>
+    <comment xml:lang="cy">Taenlen StarCalc</comment>
     <comment xml:lang="fi">StarCalc-taulukko</comment>
     <comment xml:lang="fr">chiffier StarCalc</comment>
     <comment xml:lang="hu">StarCalc-munkafüzet</comment>
@@ -306,6 +328,7 @@
   </mime-type>
   <mime-type type="application/vnd.stardivision.chart">
     <comment>StarChart chart</comment>
+    <comment xml:lang="cy">Siart StarChart</comment>
     <comment xml:lang="fi">StarChart-kaavio</comment>
     <comment xml:lang="fr">graphique StarChart</comment>
     <comment xml:lang="hu">StarChart-grafikon</comment>
@@ -318,6 +341,7 @@
   </mime-type>
   <mime-type type="application/vnd.stardivision.draw">
     <comment>StarDraw drawing</comment>
+    <comment xml:lang="cy">Darlun StarDraw</comment>
     <comment xml:lang="fi">StarDraw-piirros</comment>
     <comment xml:lang="fr">dessin StarDraw</comment>
     <comment xml:lang="hu">StarDraw-rajz</comment>
@@ -330,6 +354,7 @@
   </mime-type>
   <mime-type type="application/vnd.stardivision.impress">
     <comment>StarImpress presentation</comment>
+    <comment xml:lang="cy">Cyflwyniad StarImpress</comment>
     <comment xml:lang="fi">StarImpress-esitys</comment>
     <comment xml:lang="fr">présentation StarImpress</comment>
     <comment xml:lang="hu">StarImpress-bemutató</comment>
@@ -343,14 +368,17 @@
   </mime-type>
   <mime-type type="application/vnd.stardivision.mail">
     <comment>StarMail email</comment>
+    <comment xml:lang="no">StarMail-melding</comment>
     <glob pattern="*.smd" />
   </mime-type>
   <mime-type type="application/vnd.stardivision.math">
     <comment>StarMath formula</comment>
+    <comment xml:lang="no">StarMath-formel</comment>
     <glob pattern="*.smf" />
   </mime-type>
   <mime-type type="application/vnd.stardivision.writer">
     <comment>StarWriter document</comment>
+    <comment xml:lang="cy">Dogfen StarWriter</comment>
     <comment xml:lang="fi">StarWriter-asiakirja</comment>
     <comment xml:lang="fr">document StarWriter</comment>
     <comment xml:lang="hu">StarWriter-dokumentum</comment>
@@ -365,46 +393,57 @@
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc">
     <comment>OpenOffice.org Calc spreadsheet</comment>
+    <comment xml:lang="no">OpenOffice.org Calc-regneark</comment>
     <glob pattern="*.sxc" />
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc.template">
     <comment>OpenOffice.org Calc spreadsheet template</comment>
+    <comment xml:lang="no">OpenOffice.org Calc-regnearkmal</comment>
     <glob pattern="*.stc" />
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw">
     <comment>OpenOffice.org Draw drawing</comment>
+    <comment xml:lang="no">OpenOffice.org Draw-tegning</comment>
     <glob pattern="*.sxd" />
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw.template">
     <comment>OpenOffice.org Draw drawing template</comment>
+    <comment xml:lang="no">OpenOffice.org Draw-tegningsmal</comment>
     <glob pattern="*.std" />
   </mime-type>
   <mime-type type="application/vnd.sun.xml.impress">
     <comment>OpenOffice.org Impress presentation</comment>
+    <comment xml:lang="no">OpenOffice.org Impress-presentasjon</comment>
     <glob pattern="*.sxi" />
   </mime-type>
   <mime-type type="application/vnd.sun.xml.impress.template">
     <comment>OpenOffice.org Impress presentation template</comment>
+    <comment xml:lang="no">OpenOffice.org Impress-presentasjonsmal</comment>
     <glob pattern="*.sti" />
   </mime-type>
   <mime-type type="application/vnd.sun.xml.math">
     <comment>OpenOffice.org Math formula</comment>
+    <comment xml:lang="no">OpenOffice.org Math-dokument</comment>
     <glob pattern="*.sxm" />
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer">
     <comment>OpenOffice.org Writer document</comment>
+    <comment xml:lang="no">OpenOffice.org Writer-dokument</comment>
     <glob pattern="*.sxw" />
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer.global">
     <comment>OpenOffice.org Writer global document</comment>
+    <comment xml:lang="no">Globalt OpenOffice.org Writer-dokument</comment>
     <glob pattern="*.sxg" />
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer.template">
     <comment>OpenOffice.org Writer document template</comment>
+    <comment xml:lang="no">OpenOffice.org Writer-dokumentmal</comment>
     <glob pattern="*.stw" />
   </mime-type>
   <mime-type type="application/wordperfect">
     <comment>WordPerfect document</comment>
+    <comment xml:lang="cy">Dogfen WordPerfect</comment>
     <comment xml:lang="fi">WordPerfect-asiakirja</comment>
     <comment xml:lang="fr">document WordPerfect</comment>
     <comment xml:lang="hu">WordPerfect-dokumentum</comment>
@@ -421,6 +460,7 @@
   </mime-type>
   <mime-type type="application/xbell">
     <comment>XBEL bookmarks</comment>
+    <comment xml:lang="no">XBEL-bokmerker</comment>
     <magic priority="50">
       <match offset="0:64" type="string" value="&lt;!DOCTYPE\ xbel" />
     </magic>
@@ -428,6 +468,7 @@
   </mime-type>
   <mime-type type="application/x-abiword">
     <comment>AbiWord document</comment>
+    <comment xml:lang="no">AbiWord-dokument</comment>
     <magic priority="50">
       <match offset="0:64" type="string" value="&lt;abiword" />
       <match offset="0:64" type="string" value="&lt;!DOCTYPE abiword" />
@@ -438,6 +479,7 @@
   </mime-type>
   <mime-type type="application/x-amipro">
     <comment>Lotus AmiPro document</comment>
+    <comment xml:lang="cy">Dogfen Lotus AmiPro</comment>
     <comment xml:lang="fi">Lotus AmiPro -asiakirja</comment>
     <comment xml:lang="fr">document Lotus AmiPro</comment>
     <comment xml:lang="hu">Lotus AmiPro-dokumentum</comment>
@@ -450,6 +492,7 @@
   </mime-type>
   <mime-type type="application/x-applix-spreadsheet">
     <comment>Applix Spreadsheets spreadsheet</comment>
+    <comment xml:lang="no">Applix Spreadsheets-regneark</comment>
     <magic priority="50">
       <match offset="0" type="string" value="*BEGIN SPREADSHEETS" />
       <match offset="0" type="string" value="*BEGIN">
@@ -460,6 +503,7 @@
   </mime-type>
   <mime-type type="application/x-applix-word">
     <comment>Applix Words document</comment>
+    <comment xml:lang="cy">Dogfen Applix Words</comment>
     <comment xml:lang="fi">Applix Words -asiakirja</comment>
     <comment xml:lang="fr">document Applix Words</comment>
     <comment xml:lang="hu">Applix Words-dokumentum</comment>
@@ -477,17 +521,18 @@
   </mime-type>
   <mime-type type="application/x-arc">
     <magic priority="50">
-      <match mask="0x8080ffff" offset="0" type="little32" value="0x0000081a" />
-      <match mask="0x8080ffff" offset="0" type="little32" value="0x0000091a" />
-      <match mask="0x8080ffff" offset="0" type="little32" value="0x0000021a" />
-      <match mask="0x8080ffff" offset="0" type="little32" value="0x0000031a" />
-      <match mask="0x8080ffff" offset="0" type="little32" value="0x0000041a" />
-      <match mask="0x8080ffff" offset="0" type="little32" value="0x0000061a" />
+      <match offset="0" type="little32" value="0x0000081a" mask="0x8080ffff" />
+      <match offset="0" type="little32" value="0x0000091a" mask="0x8080ffff" />
+      <match offset="0" type="little32" value="0x0000021a" mask="0x8080ffff" />
+      <match offset="0" type="little32" value="0x0000031a" mask="0x8080ffff" />
+      <match offset="0" type="little32" value="0x0000041a" mask="0x8080ffff" />
+      <match offset="0" type="little32" value="0x0000061a" mask="0x8080ffff" />
     </magic>
   </mime-type>
   <mime-type type="application/x-archive">
     <comment>AR archive</comment>
-    <magic priority="50">
+    <comment xml:lang="no">AR-arkiv</comment>
+    <magic priority="45">
       <match offset="0" type="string" value="&lt;ar&gt;" />
       <match offset="0" type="string" value="!&lt;arch&gt;" />
     </magic>
@@ -495,6 +540,7 @@
   </mime-type>
   <mime-type type="application/x-arj">
     <comment>ARJ archive</comment>
+    <comment xml:lang="cy">Archif ARJ</comment>
     <comment xml:lang="fi">ARJ-arkisto</comment>
     <comment xml:lang="fr">archive ARJ</comment>
     <comment xml:lang="hu">ARJ-archívum</comment>
@@ -510,6 +556,7 @@
   </mime-type>
   <mime-type type="application/x-asp">
     <comment>active server page</comment>
+    <comment xml:lang="cy">tudalen ASP</comment>
     <comment xml:lang="fi">aktiivinen palvelinsivu</comment>
     <comment xml:lang="fr">page active du serveur</comment>
     <comment xml:lang="hu">ASP (active server page)</comment>
@@ -522,6 +569,7 @@
   </mime-type>
   <mime-type type="application/x-awk">
     <comment>AWK script</comment>
+    <comment xml:lang="cy">Sgript AWK</comment>
     <comment xml:lang="fi">AWK-skripti</comment>
     <comment xml:lang="fr">script AWK</comment>
     <comment xml:lang="hu">AWK-szkript</comment>
@@ -545,6 +593,7 @@
   </mime-type>
   <mime-type type="application/x-bcpio">
     <comment>BCPIO document</comment>
+    <comment xml:lang="cy">Dogfen BCPIO</comment>
     <comment xml:lang="fi">BCPIO-asiakirja</comment>
     <comment xml:lang="fr">document BCPIO</comment>
     <comment xml:lang="hu">BCPIO-dokumentum</comment>
@@ -557,6 +606,7 @@
   </mime-type>
   <mime-type type="application/x-bittorrent">
     <comment>BitTorrent seed file</comment>
+    <comment xml:lang="cy">Ffeil hadu BitTorrent</comment>
     <comment xml:lang="fi">BitTorrent-siementiedosto</comment>
     <comment xml:lang="fr">fichier racine BitTorrent</comment>
     <comment xml:lang="hu">BitTorrent-magfájl</comment>
@@ -572,6 +622,7 @@
   </mime-type>
   <mime-type type="application/x-blender">
     <comment>Blender scene</comment>
+    <comment xml:lang="no">Blender-scene</comment>
     <glob pattern="*.blender" />
     <glob pattern="*.blend" />
     <glob pattern="*.BLEND" />
@@ -581,6 +632,7 @@
   </mime-type>
   <mime-type type="application/x-bzip">
     <comment>bzip archive</comment>
+    <comment xml:lang="no">bzip-arkiv</comment>
     <magic priority="50">
       <match offset="0" type="string" value="BZh" />
     </magic>
@@ -589,19 +641,23 @@
   </mime-type>
   <mime-type type="application/x-bzip-compressed-tar">
     <comment>tar archive (bzip-compressed)</comment>
+    <comment xml:lang="no">tar-arkiv (bzip-komprimert)</comment>
     <glob pattern="*.tar.bz" />
     <glob pattern="*.tar.bz2" />
   </mime-type>
   <mime-type type="application/x-cd-image">
     <comment>raw CD image</comment>
+    <comment xml:lang="no">rått CD-bilde</comment>
     <glob pattern="*.iso" />
   </mime-type>
   <mime-type type="application/x-cgi">
     <comment>CGI script</comment>
+    <comment xml:lang="no">CGI-skript</comment>
     <glob pattern="*.cgi" />
   </mime-type>
   <mime-type type="application/x-chess-pgn">
     <comment>PGN chess game</comment>
+    <comment xml:lang="cy">Gêm wyddbwyll PGN</comment>
     <comment xml:lang="fi">PGN-šakkipeli</comment>
     <comment xml:lang="fr">jeu d&apos;échec PGN</comment>
     <comment xml:lang="hu">PGN-sakkjátszma</comment>
@@ -614,6 +670,7 @@
   </mime-type>
   <mime-type type="application/x-class-file">
     <comment>Java byte code</comment>
+    <comment xml:lang="cy">Côd beit Java</comment>
     <comment xml:lang="fi">Java-tavukoodi</comment>
     <comment xml:lang="fr">code byte Java</comment>
     <comment xml:lang="hu">Java-bájtkód</comment>
@@ -625,6 +682,7 @@
   </mime-type>
   <mime-type type="application/x-compress">
     <comment>UNIX-compressed file</comment>
+    <comment xml:lang="no">UNIX-komprimert fil</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\037\235" />
     </magic>
@@ -632,13 +690,14 @@
   </mime-type>
   <mime-type type="application/x-compressed-tar">
     <comment>tar archive (gzip-compressed)</comment>
+    <comment xml:lang="no">tar-arkiv (gzip-komprimert)</comment>
     <glob pattern="*.tar.gz" />
     <glob pattern="*.tgz" />
   </mime-type>
   <mime-type type="application/x-core">
     <comment>program crash data</comment>
     <magic priority="50">
-      <match mask="0xffffffff000000000000000000000000ff" offset="0" type="string" value="\177ELF            \004" />
+      <match offset="0" type="string" value="\177ELF            \004" mask="0xffffffff000000000000000000000000ff" />
       <match offset="0" type="string" value="\177ELF">
         <match offset="5" type="byte" value="1">
           <match offset="16" type="little16" value="4" />
@@ -656,6 +715,7 @@
   </mime-type>
   <mime-type type="application/x-cpio">
     <comment>CPIO archive</comment>
+    <comment xml:lang="cy">Archif CPIO</comment>
     <comment xml:lang="fi">CPIO-arkisto</comment>
     <comment xml:lang="fr">archive CPIO</comment>
     <comment xml:lang="hu">CPIO-archívum</comment>
@@ -674,6 +734,7 @@
   </mime-type>
   <mime-type type="application/x-cpio-compressed">
     <comment>CPIO archive (gzip-compressed)</comment>
+    <comment xml:lang="cy">Archif CPIO (gywasgwyd drwy gzip)</comment>
     <comment xml:lang="fi">CPIO-arkisto (gzip-pakattu)</comment>
     <comment xml:lang="fr">archive CPIO (compressé gzip)</comment>
     <comment xml:lang="hu">CPIO-archívum (Gzip-pel tömörítve)</comment>
@@ -686,6 +747,7 @@
   </mime-type>
   <mime-type type="application/x-csh">
     <comment>C shell script</comment>
+    <comment xml:lang="cy">Sgript plisgyn C</comment>
     <comment xml:lang="fi">Csh-komentotiedosto</comment>
     <comment xml:lang="fr">script C shell</comment>
     <comment xml:lang="hu">C shell-parancsfájl</comment>
@@ -697,6 +759,7 @@
   </mime-type>
   <mime-type type="application/x-dbase">
     <comment>dBASE document</comment>
+    <comment xml:lang="cy">Dogfen dBASE</comment>
     <comment xml:lang="fi">dBASE-asiakirja</comment>
     <comment xml:lang="fr">document dBASE</comment>
     <comment xml:lang="hu">dBASE-dokumentum</comment>
@@ -714,10 +777,12 @@
   </mime-type>
   <mime-type type="application/x-dc-rom">
     <comment>Dreamcast ROM</comment>
+    <comment xml:lang="no">Dreamcast-ROM</comment>
     <glob pattern="*.dc" />
   </mime-type>
   <mime-type type="application/x-deb">
     <comment>Debian package</comment>
+    <comment xml:lang="cy">Pecyn Debian</comment>
     <comment xml:lang="fi">Debian-paketti</comment>
     <comment xml:lang="fr">package Debian</comment>
     <comment xml:lang="hu">Debian-csomag</comment>
@@ -735,10 +800,12 @@
   </mime-type>
   <mime-type type="application/x-designer">
     <comment>Qt Designer file</comment>
+    <comment xml:lang="no">Qt Designer-fil</comment>
     <glob pattern="*.ui" />
   </mime-type>
   <mime-type type="application/x-desktop">
     <comment>desktop configuration file</comment>
+    <comment xml:lang="no">konfigurasjonsfil for skrivebordet</comment>
     <magic priority="50">
       <match offset="0:32" type="string" value="[Desktop Entry]" />
       <match offset="0" type="string" value="[Desktop Action" />
@@ -751,6 +818,7 @@
   </mime-type>
   <mime-type type="application/x-dia-diagram">
     <comment>Dia diagram</comment>
+    <comment xml:lang="cy">Diagram Dia</comment>
     <comment xml:lang="fi">Dia-kaavio</comment>
     <comment xml:lang="fr">diagramme Dia</comment>
     <comment xml:lang="hu">Dia-diagram</comment>
@@ -763,6 +831,7 @@
   </mime-type>
   <mime-type type="application/x-dvi">
     <comment>TeX DVI document</comment>
+    <comment xml:lang="no">TeX DVI-dokument</comment>
     <magic priority="50">
       <match offset="0" type="little16" value="0x02f7" />
     </magic>
@@ -770,6 +839,7 @@
   </mime-type>
   <mime-type type="application/x-e-theme">
     <comment>Enlightenment theme</comment>
+    <comment xml:lang="cy">Thema Enlightenment</comment>
     <comment xml:lang="fi">Enlightenment-teema</comment>
     <comment xml:lang="fr">thème « Enlightenment »</comment>
     <comment xml:lang="hu">Enlightenment-téma</comment>
@@ -782,10 +852,12 @@
   </mime-type>
   <mime-type type="application/x-egon">
     <comment>Egon Animator animation</comment>
+    <comment xml:lang="no">Egon animator-animasjon</comment>
     <glob pattern="*.egon" />
   </mime-type>
   <mime-type type="application/x-executable">
     <comment>executable</comment>
+    <comment xml:lang="no">kjørbar</comment>
     <magic priority="40">
       <match offset="0" type="string" value="\177ELF">
         <match offset="5" type="byte" value="1">
@@ -807,6 +879,7 @@
   </mime-type>
   <mime-type type="application/x-font-type1">
     <comment>font</comment>
+    <comment xml:lang="no">skrift</comment>
     <magic priority="50">
       <match offset="0" type="string" value="LWFN" />
       <match offset="65" type="string" value="LWFN" />
@@ -822,6 +895,7 @@
   </mime-type>
   <mime-type type="application/x-font-afm">
     <comment>Adobe font metrics</comment>
+    <comment xml:lang="cy">Metrigau Ffont Adobe</comment>
     <comment xml:lang="fi">Adobe-kirjasinmitat</comment>
     <comment xml:lang="fr">métriques de fonte Adobe</comment>
     <comment xml:lang="hu">Adobe-betűmetrika</comment>
@@ -834,6 +908,7 @@
   </mime-type>
   <mime-type type="application/x-font-bdf">
     <comment>BDF font</comment>
+    <comment xml:lang="cy">Ffont BDF</comment>
     <comment xml:lang="fi">BDF-kirjasin</comment>
     <comment xml:lang="fr">fonte BDF</comment>
     <comment xml:lang="hu">BDF-betűkészlet</comment>
@@ -849,6 +924,7 @@
   </mime-type>
   <mime-type type="application/x-font-dos">
     <comment>DOS font</comment>
+    <comment xml:lang="cy">Ffont DOS</comment>
     <comment xml:lang="fi">DOS-kirjasin</comment>
     <comment xml:lang="fr">fonte DOS</comment>
     <comment xml:lang="hu">DOS-betűkészlet</comment>
@@ -865,6 +941,7 @@
   </mime-type>
   <mime-type type="application/x-font-framemaker">
     <comment>Adobe FrameMaker font</comment>
+    <comment xml:lang="cy">Ffont Adobe FrameMaker</comment>
     <comment xml:lang="fi">Adobe FrameMaker -kirjasin</comment>
     <comment xml:lang="fr">fonte Adobe FrameMaker</comment>
     <comment xml:lang="hu">Adobe FrameMaker-betűkészlet</comment>
@@ -879,6 +956,7 @@
   </mime-type>
   <mime-type type="application/x-font-libgrx">
     <comment>LIBGRX font</comment>
+    <comment xml:lang="cy">Ffont LIBGRX</comment>
     <comment xml:lang="fi">LIBGRX-kirjasin</comment>
     <comment xml:lang="fr">fonte LIBGRX</comment>
     <comment xml:lang="hu">LIBGRX-betűkészlet</comment>
@@ -893,6 +971,7 @@
   </mime-type>
   <mime-type type="application/x-font-linux-psf">
     <comment>Linux PSF console font</comment>
+    <comment xml:lang="cy">Ffont Linux PSF</comment>
     <comment xml:lang="fi">Linux PSF -konsolikirjasin</comment>
     <comment xml:lang="fr">fonte console Linux PSF</comment>
     <comment xml:lang="hu">Linux PSF konzolos betűkészlet</comment>
@@ -908,6 +987,7 @@
   </mime-type>
   <mime-type type="application/x-font-pcf">
     <comment>PCF font</comment>
+    <comment xml:lang="cy">Ffont PCF</comment>
     <comment xml:lang="fi">PCF-kirjasin</comment>
     <comment xml:lang="fr">fonte PCF</comment>
     <comment xml:lang="hu">PCF-betűkészlet</comment>
@@ -923,6 +1003,7 @@
   </mime-type>
   <mime-type type="application/x-font-otf">
     <comment>OpenType font</comment>
+    <comment xml:lang="cy">Ffont OpenType</comment>
     <comment xml:lang="fi">OpenType-kirjasin</comment>
     <comment xml:lang="fr">fonte OpenType</comment>
     <comment xml:lang="hu">OpenType-betűkészlet</comment>
@@ -937,6 +1018,7 @@
   </mime-type>
   <mime-type type="application/x-font-speedo">
     <comment>Speedo font</comment>
+    <comment xml:lang="cy">Ffont Speedo</comment>
     <comment xml:lang="fi">Speedo-kirjasin</comment>
     <comment xml:lang="fr">fonte Speedo</comment>
     <comment xml:lang="hu">Speedo-betűkészlet</comment>
@@ -952,6 +1034,7 @@
   </mime-type>
   <mime-type type="application/x-font-sunos-news">
     <comment>SunOS News font</comment>
+    <comment xml:lang="cy">Ffont SunOS News</comment>
     <comment xml:lang="fi">SunOS News -kirjasin</comment>
     <comment xml:lang="fr">fonte SunOS News</comment>
     <comment xml:lang="hu">SunOS News-betűkészlet</comment>
@@ -968,6 +1051,7 @@
   </mime-type>
   <mime-type type="application/x-font-tex">
     <comment>TeX font</comment>
+    <comment xml:lang="cy">Ffont TeX</comment>
     <comment xml:lang="fi">TeX-kirjasin</comment>
     <comment xml:lang="fr">fonte TeX</comment>
     <comment xml:lang="hu">TeX-betűkészlet</comment>
@@ -984,6 +1068,7 @@
   </mime-type>
   <mime-type type="application/x-font-tex-tfm">
     <comment>TeX font metrics</comment>
+    <comment xml:lang="cy">Metrigau Ffont TeX</comment>
     <comment xml:lang="fi">TeX-kirjasinmitat</comment>
     <comment xml:lang="fr">métriques de fonte TeX</comment>
     <comment xml:lang="hu">TeX-betűmetrika</comment>
@@ -999,6 +1084,7 @@
   </mime-type>
   <mime-type type="application/x-font-ttf">
     <comment>TrueType font</comment>
+    <comment xml:lang="no">TrueType-skrift</comment>
     <magic priority="50">
       <match offset="0" type="string" value="FFIL" />
       <match offset="65" type="string" value="FFIL" />
@@ -1008,6 +1094,7 @@
   </mime-type>
   <mime-type type="application/x-font-vfont">
     <comment>V font</comment>
+    <comment xml:lang="cy">Ffont V</comment>
     <comment xml:lang="fi">V-kirjasin</comment>
     <comment xml:lang="fr">fonte V</comment>
     <comment xml:lang="hu">V-betűkészlet</comment>
@@ -1033,6 +1120,7 @@
   </mime-type>
   <mime-type type="application/x-gameboy-rom">
     <comment>Game Boy ROM</comment>
+    <comment xml:lang="no">Game Boy-ROM</comment>
     <glob pattern="*.gb" />
   </mime-type>
   <mime-type type="application/x-gdbm">
@@ -1044,15 +1132,18 @@
   </mime-type>
   <mime-type type="application/x-genesis-rom">
     <comment>Genesis ROM</comment>
+    <comment xml:lang="no">Genesis-ROM</comment>
     <glob pattern="*.gen" />
     <glob pattern="*.md" />
   </mime-type>
   <mime-type type="application/x-gettext-translation">
     <comment>translated messages (machine-readable)</comment>
+    <comment xml:lang="no">oversatte meldinger (maskinlesbar)</comment>
     <glob pattern="*.gmo" />
   </mime-type>
   <mime-type type="application/x-glade">
     <comment>Glade project</comment>
+    <comment xml:lang="cy">Prosiect Glade</comment>
     <comment xml:lang="fi">Glade-projekti</comment>
     <comment xml:lang="fr">projet Glade</comment>
     <comment xml:lang="hu">Glade-projekt</comment>
@@ -1065,6 +1156,7 @@
   </mime-type>
   <mime-type type="application/x-gmc-link">
     <comment>GMC link</comment>
+    <comment xml:lang="cy">Cyswllt GMC</comment>
     <comment xml:lang="fi">GMC-linkki</comment>
     <comment xml:lang="fr">lien GMC</comment>
     <comment xml:lang="hu">GMC-link</comment>
@@ -1079,12 +1171,14 @@
   </mime-type>
   <mime-type type="application/x-gnucash">
     <comment>GnuCash spreadsheet</comment>
+    <comment xml:lang="no">GnuCash-regneark</comment>
     <glob pattern="*.gnucash" />
     <glob pattern="*.gnc" />
     <glob pattern="*.xac" />
   </mime-type>
   <mime-type type="application/x-gnumeric">
     <comment>Gnumeric spreadsheet</comment>
+    <comment xml:lang="no">Gnumeric-regneark</comment>
     <magic priority="50">
       <match offset="0:64" type="string" value="gmr:Workbook" />
     </magic>
@@ -1096,6 +1190,7 @@
   </mime-type>
   <mime-type type="application/x-gtar">
     <comment>gtar archive</comment>
+    <comment xml:lang="cy">archif gtar</comment>
     <comment xml:lang="fi">gtar-arkisto</comment>
     <comment xml:lang="fr">archive gtar</comment>
     <comment xml:lang="hu">gtar-archívum</comment>
@@ -1108,12 +1203,14 @@
   </mime-type>
   <mime-type type="application/x-gtktalog">
     <comment>GTKtalog catalog</comment>
+    <comment xml:lang="no">GTKtalog-katalog</comment>
     <magic priority="50">
       <match offset="4" type="string" value="gtktalog " />
     </magic>
   </mime-type>
   <mime-type type="application/x-gzip">
     <comment>gzip archive</comment>
+    <comment xml:lang="no">gzip-arkiv</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\037\213" />
     </magic>
@@ -1121,10 +1218,12 @@
   </mime-type>
   <mime-type type="application/x-gzpostscript">
     <comment>PostScript document (gzip-compressed)</comment>
+    <comment xml:lang="no">PostScript-dokument (gzip-komprimert)</comment>
     <glob pattern="*.ps.gz" />
   </mime-type>
   <mime-type type="application/x-hdf">
     <comment>HDF document</comment>
+    <comment xml:lang="cy">Dogfen HDF</comment>
     <comment xml:lang="fi">HDF-asiakirja</comment>
     <comment xml:lang="fr">document HDF</comment>
     <comment xml:lang="hu">HDF-dokumentum</comment>
@@ -1137,16 +1236,19 @@
   </mime-type>
   <mime-type type="application/x-ipod-firmware">
     <comment>iPod firmware</comment>
+    <comment xml:lang="no">iPod-firmware</comment>
     <magic priority="50">
       <match offset="0" type="string" value="S T O P" />
     </magic>
   </mime-type>
   <mime-type type="application/x-jar">
     <comment>Java archive</comment>
+    <comment xml:lang="no">Java-arkiv</comment>
     <glob pattern="*.jar" />
   </mime-type>
   <mime-type type="application/x-java">
     <comment>Java class</comment>
+    <comment xml:lang="no">Java-klasse</comment>
     <magic priority="50">
       <match offset="0" type="host16" value="0xcafe">
         <match offset="2" type="host16" value="0xbabe" />
@@ -1156,11 +1258,13 @@
   </mime-type>
   <mime-type type="application/x-jbuilder-project">
     <comment>JBuilder project</comment>
+    <comment xml:lang="no">JBuilder-prosjekt</comment>
     <glob pattern="*.jpr" />
     <glob pattern="*.jpx" />
   </mime-type>
   <mime-type type="application/x-karbon">
     <comment>Karbon14 drawing</comment>
+    <comment xml:lang="no">Karbon14-tegning</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\037\213">
         <match offset="10" type="string" value="KOffice">
@@ -1177,6 +1281,7 @@
   </mime-type>
   <mime-type type="application/x-kchart">
     <comment>KChart chart</comment>
+    <comment xml:lang="no">KChart-graf</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\037\213">
         <match offset="10" type="string" value="KOffice">
@@ -1193,6 +1298,7 @@
   </mime-type>
   <mime-type type="application/x-kformula">
     <comment>KFormula formula</comment>
+    <comment xml:lang="no">KFormula-formel</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\037\213">
         <match offset="10" type="string" value="KOffice">
@@ -1209,6 +1315,7 @@
   </mime-type>
   <mime-type type="application/x-killustrator">
     <comment>KIllustrator drawing</comment>
+    <comment xml:lang="no">KIllustrator-tegning</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\037\213">
         <match offset="10" type="string" value="KOffice">
@@ -1220,6 +1327,7 @@
   </mime-type>
   <mime-type type="application/x-kivio">
     <comment>Kivio flowchart</comment>
+    <comment xml:lang="no">Kivio-flytdiagram</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\037\213">
         <match offset="10" type="string" value="KOffice">
@@ -1236,6 +1344,7 @@
   </mime-type>
   <mime-type type="application/x-kontour">
     <comment>Kontour drawing</comment>
+    <comment xml:lang="no">Kontour-tegning</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\037\213">
         <match offset="10" type="string" value="KOffice">
@@ -1256,6 +1365,7 @@
   </mime-type>
   <mime-type type="application/x-kpresenter">
     <comment>KPresenter presentation</comment>
+    <comment xml:lang="no">KPresenter-presentasjon</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\037\213">
         <match offset="10" type="string" value="KOffice">
@@ -1273,6 +1383,7 @@
   </mime-type>
   <mime-type type="application/x-krita">
     <comment>Krita document</comment>
+    <comment xml:lang="no">Krita-dokument</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\037\213">
         <match offset="10" type="string" value="KOffice">
@@ -1289,6 +1400,7 @@
   </mime-type>
   <mime-type type="application/x-kspread">
     <comment>KSpread spreadsheet</comment>
+    <comment xml:lang="no">KSpread-regneark</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\037\213">
         <match offset="10" type="string" value="KOffice">
@@ -1305,6 +1417,7 @@
   </mime-type>
   <mime-type type="application/x-kspread-crypt">
     <comment>KSpread spreadsheet (encrypted)</comment>
+    <comment xml:lang="no">KSpread-regneark (kryptert)</comment>
     <magic priority="50">
       <match offset="0" type="big32" value="0x0d1a2702" />
     </magic>
@@ -1316,10 +1429,12 @@
   </mime-type>
   <mime-type type="application/x-kugar">
     <comment>Kugar document</comment>
+    <comment xml:lang="no">Kugar-dokument</comment>
     <glob pattern="*.kud" />
   </mime-type>
   <mime-type type="application/x-kword">
     <comment>KWord document</comment>
+    <comment xml:lang="no">KWord-dokument</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\037\213">
         <match offset="10" type="string" value="KOffice">
@@ -1337,12 +1452,14 @@
   </mime-type>
   <mime-type type="application/x-kword-crypt">
     <comment>KWord document (encrypted)</comment>
+    <comment xml:lang="no">KWord-dokument (kryptert)</comment>
     <magic priority="50">
       <match offset="0" type="big32" value="0x0d1a2701" />
     </magic>
   </mime-type>
   <mime-type type="application/x-lha">
     <comment>LHA archive</comment>
+    <comment xml:lang="cy">Archif LHA</comment>
     <comment xml:lang="fi">LHA-arkisto</comment>
     <comment xml:lang="fr">archive LHA</comment>
     <comment xml:lang="hu">LHA-archívum</comment>
@@ -1370,14 +1487,17 @@
   </mime-type>
   <mime-type type="application/x-lhz">
     <comment>LHZ archive</comment>
+    <comment xml:lang="no">LHZ-arkiv</comment>
     <glob pattern="*.lhz" />
   </mime-type>
   <mime-type type="application/x-linguist">
     <comment>message catalog</comment>
+    <comment xml:lang="no">meldingskatalog</comment>
     <glob pattern="*.ts" />
   </mime-type>
   <mime-type type="application/x-lyx">
     <comment>LyX document</comment>
+    <comment xml:lang="no">LyX-dokument</comment>
     <magic priority="50">
       <match offset="0" type="string" value="#LyX" />
     </magic>
@@ -1385,30 +1505,36 @@
   </mime-type>
   <mime-type type="application/x-lzop">
     <comment>LZO archive</comment>
+    <comment xml:lang="no">LZO-arkiv</comment>
     <glob pattern="*.lzo" />
   </mime-type>
   <mime-type type="application/x-magicpoint">
     <comment>MagicPoint presentation</comment>
+    <comment xml:lang="no">MagicPoint-presentasjon</comment>
     <glob pattern="*.mgp" />
   </mime-type>
   <mime-type type="application/x-macbinary">
     <comment>Macintosh MacBinary file</comment>
+    <comment xml:lang="no">Macintosh MacBinary-fil</comment>
     <magic priority="50">
       <match offset="102" type="string" value="mBIN" />
     </magic>
   </mime-type>
   <mime-type type="application/x-mif">
     <comment>FrameMaker MIF document</comment>
+    <comment xml:lang="no">FrameMaker MIF-dokument</comment>
     <glob pattern="*.mif" />
   </mime-type>
   <mime-type type="application/x-mozilla-bookmarks">
     <comment>Mozilla bookmarks</comment>
+    <comment xml:lang="no">Mozilla-bokmerker</comment>
     <magic priority="50">
       <match offset="0:64" type="string" value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" />
     </magic>
   </mime-type>
   <mime-type type="application/x-ms-dos-executable">
     <comment>DOS/Windows executable</comment>
+    <comment xml:lang="no">Kjørbar fil for DOS/Windows</comment>
     <magic priority="40">
       <match offset="0" type="string" value="MZ" />
     </magic>
@@ -1420,6 +1546,7 @@
   </mime-type>
   <mime-type type="application/x-mswrite">
     <comment>Microsoft Write document</comment>
+    <comment xml:lang="cy">Dogfen Microsoft Write</comment>
     <comment xml:lang="fi">Microsoft Write -asiakirja</comment>
     <comment xml:lang="fr">document Microsoft Write</comment>
     <comment xml:lang="hu">Microsoft Write-dokumentum</comment>
@@ -1432,14 +1559,17 @@
   </mime-type>
   <mime-type type="application/x-msx-rom">
     <comment>MSX ROM</comment>
+    <comment xml:lang="no">MSX-ROM</comment>
     <glob pattern="*.msx" />
   </mime-type>
   <mime-type type="application/x-n64-rom">
     <comment>Nintendo64 ROM</comment>
+    <comment xml:lang="no">Nintendo64-ROM</comment>
     <glob pattern="*.n64" />
   </mime-type>
   <mime-type type="application/x-nautilus-link">
     <comment>Nautilus link</comment>
+    <comment xml:lang="cy">Cyswllt Nautilus</comment>
     <comment xml:lang="fi">Nautilus-linkki</comment>
     <comment xml:lang="fr">lien Nautilus</comment>
     <comment xml:lang="hu">Nautilus-link</comment>
@@ -1454,21 +1584,25 @@
   </mime-type>
   <mime-type type="application/x-nes-rom">
     <comment>NES ROM</comment>
+    <comment xml:lang="no">NES ROM</comment>
     <glob pattern="*.nes" />
   </mime-type>
   <mime-type type="application/x-netcdf">
     <comment>Unidata NetCDF document</comment>
+    <comment xml:lang="no">Unidata NetCDF-dokument</comment>
     <glob pattern="*.cdf" />
     <glob pattern="*.nc" />
   </mime-type>
   <mime-type type="application/x-netscape-bookmarks">
     <comment>Netscape bookmarks</comment>
+    <comment xml:lang="no">Netscape-bokmerker</comment>
     <magic priority="50">
       <match offset="0:64" type="string" value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" />
     </magic>
   </mime-type>
   <mime-type type="application/x-object">
     <comment>object code</comment>
+    <comment xml:lang="no">objektkode</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\177ELF">
         <match offset="5" type="byte" value="1">
@@ -1485,6 +1619,7 @@
   </mime-type>
   <mime-type type="application/ogg">
     <comment>Ogg Vorbis audio</comment>
+    <comment xml:lang="cy">Sain Ogg Vorbis</comment>
     <comment xml:lang="fi">Ogg Vorbis -ääni</comment>
     <comment xml:lang="fr">audio Ogg Vorbis</comment>
     <comment xml:lang="hu">Ogg Vorbis-hangfájl</comment>
@@ -1498,8 +1633,16 @@
     </magic>
     <glob pattern="*.ogg" />
   </mime-type>
+  
+  <mime-type type="application/x-ole-storage">
+    <comment>OLE2 compound document storage</comment>
+    <magic priority="50">
+      <match offset="0" type="string" value="\320\317\021\340\241\261\032\341" />
+    </magic>
+  </mime-type>
   <mime-type type="application/x-oleo">
     <comment>GNU Oleo spreadsheet</comment>
+    <comment xml:lang="no">GNU Oleo regneark</comment>
     <magic priority="50">
       <match offset="31" type="string" value="Oleo" />
     </magic>
@@ -1507,6 +1650,7 @@
   </mime-type>
   <mime-type type="application/x-palm-database">
     <comment>Palm OS database</comment>
+    <comment xml:lang="cy">Cronfa Ddata Palm OS</comment>
     <comment xml:lang="fi">Palm OS -tietokanta</comment>
     <comment xml:lang="fr">base de données Palm OS</comment>
     <comment xml:lang="hu">Palm OS-adatbázis</comment>
@@ -1518,12 +1662,14 @@
   </mime-type>
   <mime-type type="application/x-pef-executable">
     <comment>PEF executable</comment>
+    <comment xml:lang="no">PEF-kjørbar</comment>
     <magic priority="50">
       <match offset="0" type="string" value="Joy!" />
     </magic>
   </mime-type>
   <mime-type type="application/x-perl">
     <comment>Perl script</comment>
+    <comment xml:lang="no">Perl skript</comment>
     <magic priority="50">
       <match offset="0" type="string" value='eval \"exec /usr/local/bin/perl' />
       <match offset="1:16" type="string" value="/bin/perl" />
@@ -1536,6 +1682,7 @@
   </mime-type>
   <mime-type type="application/x-php">
     <comment>PHP script</comment>
+    <comment xml:lang="cy">Sgript PHP</comment>
     <comment xml:lang="fi">PHP-skripti</comment>
     <comment xml:lang="fr">script PHP</comment>
     <comment xml:lang="hu">PHP-program</comment>
@@ -1553,11 +1700,13 @@
   </mime-type>
   <mime-type type="application/x-pkcs12">
     <comment>PKCS#12 certificate bundle</comment>
+    <comment xml:lang="no">PKCS#12 sertifikathaug</comment>
     <glob pattern="*.p12" />
     <glob pattern="*.pfx" />
   </mime-type>
   <mime-type type="application/x-profile">
     <comment>profiler results</comment>
+    <comment xml:lang="cy">canlyniadau proffeilio</comment>
     <comment xml:lang="fi">profilointitulokset</comment>
     <comment xml:lang="fr">résultat du profileur</comment>
     <comment xml:lang="hu">profiler-eredmények</comment>
@@ -1570,10 +1719,12 @@
   </mime-type>
   <mime-type type="application/x-pw">
     <comment>Pathetic Writer document</comment>
+    <comment xml:lang="no">Pathetic Writer-dokument</comment>
     <glob pattern="*.pw" />
   </mime-type>
   <mime-type type="application/x-python">
     <comment>Python script</comment>
+    <comment xml:lang="no">Python-skript</comment>
     <magic priority="50">
       <match offset="0" type="string" value="#!/bin/python" />
       <match offset="0" type="string" value="#! /bin/python" />
@@ -1590,6 +1741,7 @@
   </mime-type>
   <mime-type type="application/x-python-bytecode">
     <comment>Python bytecode</comment>
+    <comment xml:lang="cy">Côd beit Python</comment>
     <comment xml:lang="fi">Python-tavukoodi</comment>
     <comment xml:lang="fr">bytecode Python</comment>
     <comment xml:lang="hu">Python-bytekód</comment>
@@ -1606,12 +1758,14 @@
   </mime-type>
   <mime-type type="application/x-quattropro">
     <comment>Quattro Pro spreadsheet</comment>
+    <comment xml:lang="no">Quattro Pro-regneark</comment>
     <glob pattern="*.wb1" />
     <glob pattern="*.wb2" />
     <glob pattern="*.wb3" />
   </mime-type>
   <mime-type type="application/x-qw">
     <comment>Quicken document</comment>
+    <comment xml:lang="cy">Dogfen Quicken</comment>
     <comment xml:lang="fi">Quicken-asiakirja</comment>
     <comment xml:lang="fr">document Quicken</comment>
     <comment xml:lang="hu">Quicken-dokumentum</comment>
@@ -1624,6 +1778,7 @@
   </mime-type>
   <mime-type type="application/x-rar">
     <comment>RAR archive</comment>
+    <comment xml:lang="no">RAR-arkiv</comment>
     <magic priority="50">
       <match offset="0" type="string" value="Rar!" />
     </magic>
@@ -1631,10 +1786,12 @@
   </mime-type>
   <mime-type type="application/x-reject">
     <comment>rejected patch</comment>
+    <comment xml:lang="no">avvist patchfil</comment>
     <glob pattern="*.rej" />
   </mime-type>
   <mime-type type="application/x-rpm">
     <comment>RPM package</comment>
+    <comment xml:lang="no">RPM-pakke</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\xed\xab\xee\xdb" />
     </magic>
@@ -1642,6 +1799,7 @@
   </mime-type>
   <mime-type type="application/x-ruby">
     <comment>Ruby script</comment>
+    <comment xml:lang="no">Ruby-skript</comment>
     <magic>
       <match offset="1:16" type="string" value="/bin/env ruby" />
     </magic>
@@ -1653,6 +1811,7 @@
   </mime-type>
   <mime-type type="application/x-shar">
     <comment>shell archive</comment>
+    <comment xml:lang="cy">archif plisgyn</comment>
     <comment xml:lang="fi">komentotulkkiarkisto</comment>
     <comment xml:lang="fr">archive shell</comment>
     <comment xml:lang="hu">héjarchívum</comment>
@@ -1665,10 +1824,12 @@
   </mime-type>
   <mime-type type="application/x-shared-library-la">
     <comment>shared library (la)</comment>
+    <comment xml:lang="no">delt bibliotek (la)</comment>
     <glob pattern="*.la" />
   </mime-type>
   <mime-type type="application/x-sharedlib">
     <comment>shared library</comment>
+    <comment xml:lang="cy">llyfrgell wedi ei rhannu</comment>
     <comment xml:lang="fi">jaettu kirjasto</comment>
     <comment xml:lang="fr">librairie partagée « shared »</comment>
     <comment xml:lang="hu">osztott programkönyvtár</comment>
@@ -1689,14 +1850,15 @@
         </match>
       </match>
       <match offset="0" type="little16" value="0603">
-        <match mask="030000" offset="22" type="little16" value="020000" />
+        <match offset="22" type="little16" value="020000" mask="030000" />
       </match>
-      <match mask="0xffffffff000000000000000000000000ff" offset="0" type="string" value="\177ELF            \003" />
+      <match offset="0" type="string" value="\177ELF            \003" mask="0xffffffff000000000000000000000000ff" />
     </magic>
     <glob pattern="*.so" />
   </mime-type>
   <mime-type type="application/x-shellscript">
     <comment>shell script</comment>
+    <comment xml:lang="cy">sgript plisgyn</comment>
     <comment xml:lang="fi">komentojono</comment>
     <comment xml:lang="fr">script shell</comment>
     <comment xml:lang="hu">parancsfájl</comment>
@@ -1728,6 +1890,7 @@
   </mime-type>
   <mime-type type="application/x-shockwave-flash">
     <comment>Shockwave Flash file</comment>
+    <comment xml:lang="no">Shockwave Flash-fil</comment>
     <magic priority="50">
       <match offset="0" type="string" value="FWS" />
     </magic>
@@ -1735,10 +1898,12 @@
   </mime-type>
   <mime-type type="application/x-siag">
     <comment>Siag spreadsheet</comment>
+    <comment xml:lang="no">Siag-regneark</comment>
     <glob pattern="*.siag" />
   </mime-type>
   <mime-type type="application/x-slp">
     <comment>Stampede package</comment>
+    <comment xml:lang="cy">Pecyn Stampede</comment>
     <comment xml:lang="fi">Stampede-paketti</comment>
     <comment xml:lang="fr">package Stampede</comment>
     <comment xml:lang="hu">Stampede-csomag</comment>
@@ -1750,11 +1915,13 @@
   </mime-type>
   <mime-type type="application/x-sms-rom">
     <comment>SMS/Game Gear ROM</comment>
+    <comment xml:lang="no">SMS/Game Gear-ROM</comment>
     <glob pattern="*.sms" />
     <glob pattern="*.gg" />
   </mime-type>
   <mime-type type="application/x-stuffit">
     <comment>Macintosh StuffIt archive</comment>
+    <comment xml:lang="cy">Archif Macintosh StuffIt</comment>
     <comment xml:lang="fi">Macintosh StuffIt -arkisto</comment>
     <comment xml:lang="fr">archive Macintosh StuffIt</comment>
     <comment xml:lang="hu">Macintosh StuffIt-archívum</comment>
@@ -1770,6 +1937,7 @@
   </mime-type>
   <mime-type type="application/x-sv4cpio">
     <comment>SV4 CPIO archive</comment>
+    <comment xml:lang="cy">Archif CPIO SV4</comment>
     <comment xml:lang="fi">SV4 CPIO -arkisto</comment>
     <comment xml:lang="fr">archive SV4 CPIO</comment>
     <comment xml:lang="hu">SV4 CPIO-archívum</comment>
@@ -1782,6 +1950,7 @@
   </mime-type>
   <mime-type type="application/x-sv4crc">
     <comment>SV4 CPIP archive (with CRC)</comment>
+    <comment xml:lang="cy">Archif CPIP SV4 (efo CRC)</comment>
     <comment xml:lang="fi">SV4 CPIP -arkisto (CRC:llä)</comment>
     <comment xml:lang="fr">archive SV4 CPIP (avec CRC)</comment>
     <comment xml:lang="hu">SV4 CPIP-archívum (CRC-vel)</comment>
@@ -1794,6 +1963,7 @@
   </mime-type>
   <mime-type type="application/x-tar">
     <comment>tar archive</comment>
+    <comment xml:lang="no">tar-arkiv</comment>
     <magic priority="50">
       <match offset="257" type="string" value="ustar\0" />
       <match offset="257" type="string" value="ustar\040\040\0" />
@@ -1802,18 +1972,22 @@
   </mime-type>
   <mime-type type="application/x-tarz">
     <comment>tar archive (compressed)</comment>
+    <comment xml:lang="no">tar-arkiv (komprimert)</comment>
     <glob pattern="*.tar.Z" />
   </mime-type>
   <mime-type type="application/x-tex-gf">
     <comment>generic font file</comment>
+    <comment xml:lang="no">vanlig skriftfil</comment>
     <glob pattern="*.*gf" />
   </mime-type>
   <mime-type type="application/x-tex-pk">
     <comment>packed font file</comment>
+    <comment xml:lang="no">pakket skriftfil</comment>
     <glob pattern="*pk" />
   </mime-type>
   <mime-type type="application/x-tgif">
     <comment>TGIF document</comment>
+    <comment xml:lang="no">TGIF-dokument</comment>
     <magic priority="50">
       <match offset="0" type="string" value="%TGIF" />
     </magic>
@@ -1821,6 +1995,7 @@
   </mime-type>
   <mime-type type="application/x-theme">
     <comment>theme</comment>
+    <comment xml:lang="cy">thema</comment>
     <comment xml:lang="fi">teema</comment>
     <comment xml:lang="fr">thème</comment>
     <comment xml:lang="hu">téma</comment>
@@ -1833,6 +2008,7 @@
   </mime-type>
   <mime-type type="application/x-toutdoux">
     <comment>ToutDoux document</comment>
+    <comment xml:lang="cy">Dogfen ToutDoux</comment>
     <comment xml:lang="fi">ToutDoux-asiakirja</comment>
     <comment xml:lang="fr">document ToutDoux</comment>
     <comment xml:lang="hu">ToutDoux-dokumentum</comment>
@@ -1844,6 +2020,7 @@
   </mime-type>
   <mime-type type="application/x-trash">
     <comment>backup file</comment>
+    <comment xml:lang="no">sikkerhetskopi</comment>
     <glob pattern="*~" />
     <glob pattern="*%" />
     <glob pattern="*.bak" />
@@ -1852,6 +2029,7 @@
   </mime-type>
   <mime-type type="application/x-troff">
     <comment>Troff document</comment>
+    <comment xml:lang="cy">Dogfen troff</comment>
     <comment xml:lang="fi">Troff-asiakirja</comment>
     <comment xml:lang="fr">document Troff</comment>
     <comment xml:lang="hu">Troff-dokumentum</comment>
@@ -1876,6 +2054,7 @@
   </mime-type>
   <mime-type type="application/x-troff-man-compressed">
     <comment>manual page (compressed)</comment>
+    <comment xml:lang="cy">tudalen llawlyfr (wedi ei gywasgu)</comment>
     <comment xml:lang="fi">manuaalisivu (pakattu)</comment>
     <comment xml:lang="fr">man pages (compressés)</comment>
     <comment xml:lang="hu">kézikönyvoldal (tömörített)</comment>
@@ -1887,11 +2066,13 @@
   </mime-type>
   <mime-type type="application/x-tzo">
     <comment>tar archive (LZO-compressed)</comment>
+    <comment xml:lang="no">tar-arkiv (LZO-komprimert)</comment>
     <glob pattern="*.tar.lzo" />
     <glob pattern="*.tzo" />
   </mime-type>
   <mime-type type="application/x-ustar">
     <comment>ustar archive</comment>
+    <comment xml:lang="cy">archif ustar</comment>
     <comment xml:lang="fi">ustar-arkisto</comment>
     <comment xml:lang="fr">archive ustar</comment>
     <comment xml:lang="hu">ustar-archívum</comment>
@@ -1904,6 +2085,7 @@
   </mime-type>
   <mime-type type="application/x-wais-source">
     <comment>WAIS source code</comment>
+    <comment xml:lang="cy">Ffynhonnell Rhaglen WAIS</comment>
     <comment xml:lang="fi">WAIS-lähdekoodi</comment>
     <comment xml:lang="fr">code source WAIS</comment>
     <comment xml:lang="hu">WAIS-forráskód</comment>
@@ -1920,6 +2102,7 @@
   </mime-type>
   <mime-type type="application/x-x509-ca-cert">
     <comment>DER/PEM/Netscape-encoded X.509 certificate</comment>
+    <comment xml:lang="no">DER/PEM/Netscape-kodet X.509-sertifikat</comment>
     <glob pattern="*.der" />
     <glob pattern="*.cer" />
     <glob pattern="*.crt" />
@@ -1928,9 +2111,11 @@
   </mime-type>
   <mime-type type="application/x-zerosize">
     <comment>empty document</comment>
+    <comment xml:lang="no">tomt dokument</comment>
   </mime-type>
   <mime-type type="application/x-zoo">
     <comment>zoo archive</comment>
+    <comment xml:lang="no">zoo-arkiv</comment>
     <magic priority="50">
       <match offset="20" type="little32" value="0xfdc4a7dc" />
     </magic>
@@ -1938,11 +2123,13 @@
   </mime-type>
   <mime-type type="application/xhtml+xml">
     <comment>XHTML page</comment>
+    <comment xml:lang="no">XHTML-side</comment>
     <glob pattern="*.xhtml" />
     <root-XML namespaceURI='http://www.w3.org/1999/xhtml' localName='html' />
   </mime-type>
   <mime-type type="application/zip">
     <comment>ZIP archive</comment>
+    <comment xml:lang="no">ZIP-arkiv</comment>
     <magic priority="40">
       <match offset="0" type="string" value="PK\003\004" />
     </magic>
@@ -1950,6 +2137,7 @@
   </mime-type>
   <mime-type type="audio/ac3">
     <comment>Dolby Digital audio</comment>
+    <comment xml:lang="cy">Sain Dolby Digital</comment>
     <comment xml:lang="fi">Dolby Digital -ääni</comment>
     <comment xml:lang="fr">audio Dolby Digital audio</comment>
     <comment xml:lang="hu">Dolby Digital hang</comment>
@@ -1962,6 +2150,7 @@
   </mime-type>
   <mime-type type="audio/basic">
     <comment>ULAW (Sun) audio</comment>
+    <comment xml:lang="cy">Sain ULAW (Sun)</comment>
     <comment xml:lang="fi">ULAW (Sun) -ääni</comment>
     <comment xml:lang="fr">ULAW (Sun) audio</comment>
     <comment xml:lang="hu">ULAW (Sun) hangfájl</comment>
@@ -1978,6 +2167,7 @@
   </mime-type>
   <mime-type type="audio/prs.sid">
     <comment>Commodore 64 audio</comment>
+    <comment xml:lang="no">Commodore 64-lyd</comment>
     <magic priority="50">
       <match offset="0" type="string" value="PSID" />
     </magic>
@@ -1986,6 +2176,7 @@
   </mime-type>
   <mime-type type="audio/vnd.rn-realaudio">
     <comment>RealAudio broadcast</comment>
+    <comment xml:lang="cy">Darllediad RealAudio</comment>
     <comment xml:lang="fi">RealAudio-yleislähetys</comment>
     <comment xml:lang="fr">diffusion RealAudio</comment>
     <comment xml:lang="hu">RealAudio-sugárzás</comment>
@@ -1997,6 +2188,7 @@
   </mime-type>
   <mime-type type="audio/x-adpcm">
     <comment>PCM audio</comment>
+    <comment xml:lang="cy">Sain PCM</comment>
     <comment xml:lang="fi">PCM-ääni</comment>
     <comment xml:lang="fr">audio PCM</comment>
     <comment xml:lang="hu">PCM-hang</comment>
@@ -2023,6 +2215,7 @@
   </mime-type>
   <mime-type type="audio/x-aifc">
     <comment>AIFC audio</comment>
+    <comment xml:lang="cy">Sain AIFC</comment>
     <comment xml:lang="fi">AIFC-ääni</comment>
     <comment xml:lang="fr">audio AIFC</comment>
     <comment xml:lang="hu">AIFC-hang</comment>
@@ -2037,6 +2230,7 @@
   </mime-type>
   <mime-type type="audio/x-aiff">
     <comment>AIFF/Amiga/Mac audio</comment>
+    <comment xml:lang="cy">Sain AIFF/Amiga/Mac</comment>
     <comment xml:lang="fi">AIFF/Amiga/Mac-ääni</comment>
     <comment xml:lang="fr">audio AIFF/Amiga/Mac</comment>
     <comment xml:lang="hu">AIFF/Amiga/Mac-hang</comment>
@@ -2056,6 +2250,7 @@
   </mime-type>
   <mime-type type="audio/x-aiffc">
     <comment>AIFF audio</comment>
+    <comment xml:lang="cy">Sain AIFF</comment>
     <comment xml:lang="fi">AIFF-ääni</comment>
     <comment xml:lang="fr">audio AIFF</comment>
     <comment xml:lang="hu">AIFF-hang</comment>
@@ -2067,6 +2262,7 @@
   </mime-type>
   <mime-type type="audio/x-it">
     <comment>Impulse Tracker audio</comment>
+    <comment xml:lang="cy">Sain Impulse Tracker</comment>
     <comment xml:lang="fi">Impulse Tracker -ääni</comment>
     <comment xml:lang="fr">audio Impulse Tracker</comment>
     <comment xml:lang="hu">Impulse Tracker hang</comment>
@@ -2082,11 +2278,13 @@
   </mime-type>
   <mime-type type="audio/x-flac">
     <comment>FLAC audio</comment>
+    <comment xml:lang="no">FLAC-lyd</comment>
     <glob pattern="*.flac" />
   </mime-type>
   <mime-type type="audio/midi">
     <alias type="audio/x-midi" />
     <comment>MIDI audio</comment>
+    <comment xml:lang="cy">Sain MIDI</comment>
     <comment xml:lang="fi">MIDI-ääni</comment>
     <comment xml:lang="fr">audio MIDI</comment>
     <comment xml:lang="hu">MIDI-hang</comment>
@@ -2103,6 +2301,7 @@
   </mime-type>
   <mime-type type="audio/x-mod">
     <comment>Amiga SoundTracker audio</comment>
+    <comment xml:lang="no">Amiga SoundTracker-lyd</comment>
     <glob pattern="*.mod" />
     <glob pattern="*.ult" />
     <glob pattern="*.uni" />
@@ -2113,6 +2312,7 @@
   </mime-type>
   <mime-type type="audio/x-mp3">
     <comment>MP3 audio</comment>
+    <comment xml:lang="cy">Sain MP3</comment>
     <comment xml:lang="fi">MP3-ääni</comment>
     <comment xml:lang="fr">audio MP3</comment>
     <comment xml:lang="hu">MP3-hang</comment>
@@ -2124,15 +2324,17 @@
     <magic priority="50">
       <match offset="0" type="big32" value="0xfffb" />
       <match offset="0" type="string" value="ID3" />
-      <match mask="0xfff0" offset="0" type="big16" value="0xfff0" />
+      <match offset="0" type="big16" value="0xfff0" mask="0xfff0" />
     </magic>
     <glob pattern="*.mp3" />
   </mime-type>
   <mime-type type="audio/x-mp3-playlist">
     <comment>MP3 playlist</comment>
+    <comment xml:lang="no">MP3-spilleliste</comment>
   </mime-type>
   <mime-type type="audio/x-mpeg">
     <comment>MP3 audio</comment>
+    <comment xml:lang="cy">Sain MP3</comment>
     <comment xml:lang="fi">MP3-ääni</comment>
     <comment xml:lang="fr">audio MP3</comment>
     <comment xml:lang="hu">MP3-hang</comment>
@@ -2144,10 +2346,12 @@
   </mime-type>
   <mime-type type="audio/x-mpegurl">
     <comment>MP3 audio (streamed)</comment>
+    <comment xml:lang="no">MP3-lyd (streaming)</comment>
     <glob pattern="*.m3u" />
   </mime-type>
   <mime-type type="audio/x-ms-asx">
     <comment>Playlist</comment>
+    <comment xml:lang="cy">Rhestr Chwarae</comment>
     <comment xml:lang="fi">soittolista</comment>
     <comment xml:lang="fr">Playlist</comment>
     <comment xml:lang="hu">Lejátszható felvételek listája</comment>
@@ -2164,6 +2368,7 @@
   </mime-type>
   <mime-type type="audio/x-pn-realaudio">
     <comment>RealAudio broadcast</comment>
+    <comment xml:lang="cy">Darllediad RealAudio</comment>
     <comment xml:lang="fi">RealAudio-yleislähetys</comment>
     <comment xml:lang="fr">diffusion RealAudio</comment>
     <comment xml:lang="hu">RealAudio-sugárzás</comment>
@@ -2181,6 +2386,7 @@
   </mime-type>
   <mime-type type="audio/x-riff">
     <comment>RIFF audio</comment>
+    <comment xml:lang="cy">Sain RIFF</comment>
     <comment xml:lang="fi">RIFF-ääni</comment>
     <comment xml:lang="fr">audio RIFF</comment>
     <comment xml:lang="hu">RIFF-kép</comment>
@@ -2196,6 +2402,7 @@
   </mime-type>
   <mime-type type="audio/x-s3m">
     <comment>Scream Tracker 3 audio</comment>
+    <comment xml:lang="cy">Sain Scream Tracker 3</comment>
     <comment xml:lang="fi">Scream Tracker 3 -ääni</comment>
     <comment xml:lang="fr">aiudio Scream Tracker 3</comment>
     <comment xml:lang="hu">Scream Tracker 3-hang</comment>
@@ -2208,10 +2415,12 @@
   </mime-type>
   <mime-type type="audio/x-scpls">
     <comment>MP3 ShoutCast playlist</comment>
+    <comment xml:lang="no">MP3 ShoutCast-spilleliste</comment>
     <glob pattern="*.pls" />
   </mime-type>
   <mime-type type="audio/x-stm">
     <comment>Scream Tracker audio</comment>
+    <comment xml:lang="cy">Sain Scream Tracker</comment>
     <comment xml:lang="fi">Scream Tracker -ääni</comment>
     <comment xml:lang="fr">audio Scream Tracker</comment>
     <comment xml:lang="hu">Scream Tracker-hang</comment>
@@ -2224,6 +2433,7 @@
   </mime-type>
   <mime-type type="audio/x-voc">
     <comment>VOC audio</comment>
+    <comment xml:lang="cy">Sain VOC</comment>
     <comment xml:lang="fi">VOC-ääni</comment>
     <comment xml:lang="fr">audio VOC</comment>
     <comment xml:lang="hu">VOC-hang</comment>
@@ -2236,6 +2446,7 @@
   </mime-type>
   <mime-type type="audio/x-wav">
     <comment>WAV audio</comment>
+    <comment xml:lang="cy">Sain WAV</comment>
     <comment xml:lang="fi">WAV-ääni</comment>
     <comment xml:lang="fr">audio WAV</comment>
     <comment xml:lang="hu">WAV-hang</comment>
@@ -2252,6 +2463,7 @@
   </mime-type>
   <mime-type type="audio/x-xi">
     <comment>Scream Tracker instrument</comment>
+    <comment xml:lang="cy">Offeryn Scream Tracker</comment>
     <comment xml:lang="fi">Scream Tracker -soitin</comment>
     <comment xml:lang="fr">instrument Scream Tracker</comment>
     <comment xml:lang="hu">Scream Tracker-hangszer</comment>
@@ -2264,6 +2476,7 @@
   </mime-type>
   <mime-type type="audio/x-xm">
     <comment>FastTracker II audio</comment>
+    <comment xml:lang="cy">Sain FastTracker II</comment>
     <comment xml:lang="fi">FastTracker II -ääni</comment>
     <comment xml:lang="fr">audio FastTracker II</comment>
     <comment xml:lang="hu">FastTracker II-hang</comment>
@@ -2276,6 +2489,7 @@
   </mime-type>
   <mime-type type="image/bmp">
     <comment>Windows BMP image</comment>
+    <comment xml:lang="cy">Delwedd BMP Windows</comment>
     <comment xml:lang="fi">Windows BMP -kuva</comment>
     <comment xml:lang="fr">image Windows BMP</comment>
     <comment xml:lang="hu">Windows BMP-fájl</comment>
@@ -2285,7 +2499,7 @@
     <comment xml:lang="sr">Windows BMP слика</comment>
     <comment xml:lang="sv">Windows BMP-bild</comment>
     <magic priority="50">
-      <match mask="0xffff00000000ffff" offset="0" type="string" value="BMxxxx\000\000" />
+      <match offset="0" type="string" value="BMxxxx\000\000" mask="0xffff00000000ffff" />
       <match offset="0" type="string" value="BM">
         <match offset="14" type="byte" value="12" />
         <match offset="14" type="byte" value="64" />
@@ -2296,21 +2510,25 @@
   </mime-type>
   <mime-type type="image/cgm">
     <comment>Computer Graphics Metafile</comment>
+    <comment xml:lang="cy">Delwedd ffurf CGM</comment>
     <comment xml:lang="fi">Computer Graphics -metatiedosto</comment>
     <comment xml:lang="fr">métafichier Computer Graphics</comment>
     <comment xml:lang="hu">Computer Graphics-metafájl</comment>
     <comment xml:lang="nl">Computer Graphics Metabestand</comment>
     <comment xml:lang="nn">Computer Graphics Metafile</comment>
+    <comment xml:lang="no">Computer Graphics Metafile</comment>
     <comment xml:lang="sr">Метадатотека са рачунарском графиком (CGM)</comment>
     <comment xml:lang="sv">Computer Graphics Metafil</comment>
     <glob pattern="*.cgm" />
   </mime-type>
   <mime-type type="image/fax-g3">
     <comment>CCITT G3 fax</comment>
+    <comment xml:lang="no">CCITT G3-faks</comment>
     <glob pattern="*.g3" />
   </mime-type>
   <mime-type type="image/g3fax">
     <comment>G3 fax image</comment>
+    <comment xml:lang="cy">Delwedd Ffacs G3</comment>
     <comment xml:lang="fi">G3-faksikuva</comment>
     <comment xml:lang="fr">image de télécopie G3 « fax »</comment>
     <comment xml:lang="hu">G3-faxkép</comment>
@@ -2322,6 +2540,7 @@
   </mime-type>
   <mime-type type="image/gif">
     <comment>GIF image</comment>
+    <comment xml:lang="cy">Delwedd GIF</comment>
     <comment xml:lang="fi">GIF-kuva</comment>
     <comment xml:lang="fr">image GIF</comment>
     <comment xml:lang="hu">GIF-kép</comment>
@@ -2337,6 +2556,7 @@
   </mime-type>
   <mime-type type="image/ief">
     <comment>IEF image</comment>
+    <comment xml:lang="cy">Delwedd IEF</comment>
     <comment xml:lang="fi">IEF-kuva</comment>
     <comment xml:lang="fr">image IEF</comment>
     <comment xml:lang="hu">IEF-kép</comment>
@@ -2349,6 +2569,7 @@
   </mime-type>
   <mime-type type="image/jpeg">
     <comment>JPEG image</comment>
+    <comment xml:lang="cy">Delwedd JPEG</comment>
     <comment xml:lang="fi">JPEG-kuva</comment>
     <comment xml:lang="fr">image JPEG</comment>
     <comment xml:lang="hu">JPEG-kép</comment>
@@ -2377,6 +2598,7 @@
   </mime-type>
   <mime-type type="image/png">
     <comment>PNG image</comment>
+    <comment xml:lang="cy">Delwedd PNG</comment>
     <comment xml:lang="fi">PNG-kuva</comment>
     <comment xml:lang="fr">image PNG</comment>
     <comment xml:lang="hu">PNG-kép</comment>
@@ -2396,6 +2618,7 @@
   </mime-type>
   <mime-type type="image/svg+xml">
     <comment>scalable SVG image</comment>
+    <comment xml:lang="no">skalerbart SVG-bilde</comment>
     <magic priority="80">
       <match offset="0:256" type="string" value="&lt;!DOCTYPE svg" />
       <match offset="0:64" type="string" value="&lt;svg" />
@@ -2404,6 +2627,7 @@
   </mime-type>
   <mime-type type="image/tiff">
     <comment>TIFF image</comment>
+    <comment xml:lang="no">TIFF-bilde</comment>
     <magic priority="50">
       <match offset="0" type="string" value="MM\x00\x2a" />
       <match offset="0" type="string" value="II\x2a\x00" />
@@ -2413,6 +2637,7 @@
   </mime-type>
   <mime-type type="image/vnd.dwg">
     <comment>AutoCAD image</comment>
+    <comment xml:lang="cy">Delwedd AutoCAD</comment>
     <comment xml:lang="fi">AutoCAD-kuva</comment>
     <comment xml:lang="fr">image AutoCAD</comment>
     <comment xml:lang="hu">AutoCAD-kép</comment>
@@ -2425,10 +2650,12 @@
   </mime-type>
   <mime-type type="image/vnd.dxf">
     <comment>DXF vector image</comment>
+    <comment xml:lang="no">DXF-vektorgrafikk</comment>
     <glob pattern="*.dxf" />
   </mime-type>
   <mime-type type="image/x-3ds">
     <comment>3D Studio image</comment>
+    <comment xml:lang="cy">Delwedd &quot;3D Studio&quot;</comment>
     <comment xml:lang="fi">3D Studio -kuva</comment>
     <comment xml:lang="fr">image 3D Studio</comment>
     <comment xml:lang="hu">3D Studio-kép</comment>
@@ -2441,6 +2668,7 @@
   </mime-type>
   <mime-type type="image/x-applix-graphics">
     <comment>Applix Graphics image</comment>
+    <comment xml:lang="no">Applix Graphics-dokument</comment>
     <magic priority="50">
       <match offset="0" type="string" value="*BEGIN">
         <match offset="7" type="string" value="GRAPHICS" />
@@ -2450,6 +2678,7 @@
   </mime-type>
   <mime-type type="image/x-cmu-raster">
     <comment>CMU raster image</comment>
+    <comment xml:lang="cy">Delwedd raster CMU</comment>
     <comment xml:lang="fi">CMU-rasterikuva</comment>
     <comment xml:lang="fr">image raster CMU</comment>
     <comment xml:lang="hu">CMU-raszterkép</comment>
@@ -2462,11 +2691,13 @@
   </mime-type>
   <mime-type type="image/x-compressed-xcf">
     <comment>GIMP image (compressed)</comment>
+    <comment xml:lang="no">GIMP-bilde (komprimert)</comment>
     <glob pattern="*.xcf.gz" />
     <glob pattern="*.xcf.bz2" />
   </mime-type>
   <mime-type type="image/x-dcm">
     <comment>Digital Imaging and Communications in Medicine image</comment>
+    <comment xml:lang="cy">Delwedd DCIM (Digital Imaging and Communications in Medicine)</comment>
     <comment xml:lang="fi">Digital Imaging and Communications in Medicine -kuva</comment>
     <comment xml:lang="fr">image « Digital Imaging and Communications in Medicine »</comment>
     <comment xml:lang="hu">Digital Imaging and Communications in Medicine-kép</comment>
@@ -2481,6 +2712,7 @@
   </mime-type>
   <mime-type type="image/x-dib">
     <comment>Device Independant Bitmap</comment>
+    <comment xml:lang="cy">Didfap Dyfais-Annibynol</comment>
     <comment xml:lang="fi">laiteriippumaton bittikartta</comment>
     <comment xml:lang="fr">bitmap indépendant du périphérique</comment>
     <comment xml:lang="hu">Eszközfüggetlen bitkép</comment>
@@ -2511,6 +2743,7 @@
   </mime-type>
   <mime-type type="image/dpx">
     <comment>Digital Moving Picture Exchange image</comment>
+    <comment xml:lang="cy">Delwedd Digital Moving Picture Exchange</comment>
     <comment xml:lang="fi">Digital Moving Picture Exchange -kuva</comment>
     <comment xml:lang="fr">image « Digital Moving Picture Exchange »</comment>
     <comment xml:lang="hu">Digital Moving Picture Exchange-kép</comment>
@@ -2525,6 +2758,7 @@
   </mime-type>
   <mime-type type="image/x-eps">
     <comment>Encapsulated PostScript image</comment>
+    <comment xml:lang="cy">Delwedd PostScript wedi ei chrisialu</comment>
     <comment xml:lang="fi">kapsuloitu PostScript-kuva</comment>
     <comment xml:lang="fr">image encapsulé PostScript</comment>
     <comment xml:lang="hu">Encapsulated PostScript-kép</comment>
@@ -2546,6 +2780,7 @@
   </mime-type>
   <mime-type type="image/x-fits">
     <comment>Flexible Image Transport System</comment>
+    <comment xml:lang="cy">System Trosgludo Delweddau Hyblyg</comment>
     <comment xml:lang="fi">Flexible Image Transport System</comment>
     <comment xml:lang="fr">système de transport « Flexible Image »</comment>
     <comment xml:lang="hu">Flexible Image Transport System</comment>
@@ -2561,12 +2796,14 @@
   </mime-type>
   <mime-type type="image/x-fpx">
     <comment>FlashPix image</comment>
+    <comment xml:lang="no">FlashPix-bilde</comment>
     <magic priority="50">
       <match offset="0" type="big32" value="0x46506978" />
     </magic>
   </mime-type>
   <mime-type type="image/x-icb">
     <comment>Truevision Targa image</comment>
+    <comment xml:lang="cy">Delwedd Targa Truevision</comment>
     <comment xml:lang="fi">Truevision Targa -kuva</comment>
     <comment xml:lang="fr">image Truevision Targa</comment>
     <comment xml:lang="hu">Truevision Targa-kép</comment>
@@ -2582,10 +2819,12 @@
   </mime-type>
   <mime-type type="image/x-ico">
     <comment>Microsoft Windows icon</comment>
+    <comment xml:lang="no">Microsoft Windows-ikon</comment>
     <glob pattern="*.ico" />
   </mime-type>
   <mime-type type="image/x-iff">
     <comment>IFF image</comment>
+    <comment xml:lang="cy">Delwedd IFF</comment>
     <comment xml:lang="fi">IFF-kuva</comment>
     <comment xml:lang="fr">image IFF</comment>
     <comment xml:lang="hu">IFF-kép</comment>
@@ -2598,6 +2837,7 @@
   </mime-type>
   <mime-type type="image/x-ilbm">
     <comment>ILBM image</comment>
+    <comment xml:lang="cy">Delwedd ILBM</comment>
     <comment xml:lang="fi">ILBM-kuva</comment>
     <comment xml:lang="fr">image ILBM</comment>
     <comment xml:lang="hu">ILBM-kép</comment>
@@ -2610,6 +2850,7 @@
   </mime-type>
   <mime-type type="image/x-jng">
     <comment>JNG image</comment>
+    <comment xml:lang="cy">Delwedd JNG</comment>
     <comment xml:lang="fi">JNG-kuva</comment>
     <comment xml:lang="fr">image JNG</comment>
     <comment xml:lang="hu">JNG-kép</comment>
@@ -2622,6 +2863,7 @@
   </mime-type>
   <mime-type type="image/x-lwo">
     <comment>LightWave object</comment>
+    <comment xml:lang="cy">Gwrthrych LightWave</comment>
     <comment xml:lang="fi">LightWave-esine</comment>
     <comment xml:lang="fr">objet LightWave</comment>
     <comment xml:lang="hu">LightWave-objektum</comment>
@@ -2635,6 +2877,7 @@
   </mime-type>
   <mime-type type="image/x-lws">
     <comment>LightWave scene</comment>
+    <comment xml:lang="cy">Golygfa LightWave</comment>
     <comment xml:lang="fi">LightWave-maisema</comment>
     <comment xml:lang="fr">scène LightWave</comment>
     <comment xml:lang="hu">LightWave-jelenet</comment>
@@ -2647,6 +2890,7 @@
   </mime-type>
   <mime-type type="image/x-msod">
     <comment>Microsoft Office drawing</comment>
+    <comment xml:lang="no">Microsoft Office-tegning</comment>
     <glob pattern="*.msod" />
   </mime-type>
   <mime-type type="image/x-niff">
@@ -2666,6 +2910,7 @@
   </mime-type>
   <mime-type type="image/x-photo-cd">
     <comment>PhotoCD image</comment>
+    <comment xml:lang="cy">Delwedd PhotoCD</comment>
     <comment xml:lang="fi">PhotoCD-kuva</comment>
     <comment xml:lang="fr">image PhotoCD</comment>
     <comment xml:lang="hu">PhotoCD-kép</comment>
@@ -2678,6 +2923,7 @@
   </mime-type>
   <mime-type type="image/x-portable-anymap">
     <comment>PNM image</comment>
+    <comment xml:lang="cy">Delwedd PNM</comment>
     <comment xml:lang="fi">PNM-kuva</comment>
     <comment xml:lang="fr">image PNM</comment>
     <comment xml:lang="hu">PNM-kép</comment>
@@ -2690,6 +2936,7 @@
   </mime-type>
   <mime-type type="image/x-portable-bitmap">
     <comment>Portable Bitmap File Format</comment>
+    <comment xml:lang="cy">Ffeiliau Fformat Pixfap Cludadwy</comment>
     <comment xml:lang="fi">siirrettävä bittikarttatiedostomuoto</comment>
     <comment xml:lang="fr">format de fichier Portable Bitmap</comment>
     <comment xml:lang="nl">Portable Bitmap bestandsformaat</comment>
@@ -2704,6 +2951,7 @@
   </mime-type>
   <mime-type type="image/x-portable-graymap">
     <comment>Portable Graymap File Format</comment>
+    <comment xml:lang="cy">Ffeiliau Fformat Llwydfap Cludadwy</comment>
     <comment xml:lang="fi">siirrettävä harmaasävytiedostomuoto</comment>
     <comment xml:lang="fr">format de fichier Portable Graymap</comment>
     <comment xml:lang="nl">Portable Graymap bestandsformaat</comment>
@@ -2718,10 +2966,12 @@
   </mime-type>
   <mime-type type="image/x-portable-pixmap">
     <comment>Portable Pixmap File Format</comment>
+    <comment xml:lang="cy">Delwedd Pixmap Cludadwy</comment>
     <comment xml:lang="fi">siirrettävä pikselikarttatiedostomuoto</comment>
     <comment xml:lang="fr">format de fichier Portable Pixmap</comment>
     <comment xml:lang="nl">Portable Pixmap bestandsformaat</comment>
     <comment xml:lang="nn">Portable Pixmap File-format</comment>
+    <comment xml:lang="no">Portabelt Pixmap-filformat</comment>
     <comment xml:lang="sr">Портабилни запис пиксмапа</comment>
     <comment xml:lang="sv">Portabelt pixmap-filformat</comment>
     <magic priority="50">
@@ -2732,13 +2982,15 @@
   </mime-type>
   <mime-type type="image/x-psd">
     <comment>Photoshop image</comment>
+    <comment xml:lang="no">Photoshop-bilde</comment>
     <magic priority="50">
-      <match mask="0xffffffff0000ffffffff" offset="0" type="string" value="8BPS  \000\000\000\000" />
+      <match offset="0" type="string" value="8BPS  \000\000\000\000" mask="0xffffffff0000ffffffff" />
     </magic>
     <glob pattern="*.psd" />
   </mime-type>
   <mime-type type="image/x-rgb">
     <comment>RGB image</comment>
+    <comment xml:lang="cy">Delwedd RGB</comment>
     <comment xml:lang="fi">RGB-kuva</comment>
     <comment xml:lang="fr">image RGB</comment>
     <comment xml:lang="hu">RGB-kép</comment>
@@ -2755,6 +3007,7 @@
   </mime-type>
   <mime-type type="image/x-sun-raster">
     <comment>SUN Rasterfile image</comment>
+    <comment xml:lang="no">SUN rasterfil-bilde</comment>
     <magic priority="50">
       <match offset="0" type="big32" value="0x59a66a95" />
     </magic>
@@ -2762,6 +3015,7 @@
   </mime-type>
   <mime-type type="image/x-tga">
     <comment>TarGA image</comment>
+    <comment xml:lang="cy">Delwedd TarGA</comment>
     <comment xml:lang="fi">TarGA-kuva</comment>
     <comment xml:lang="fr">image TarGA</comment>
     <comment xml:lang="hu">TarGA-kép</comment>
@@ -2778,10 +3032,12 @@
   </mime-type>
   <mime-type type="image/x-wmf">
     <comment>Microsoft WMF file</comment>
+    <comment xml:lang="no">Microsoft WMF-fil</comment>
     <glob pattern="*.wmf" />
   </mime-type>
   <mime-type type="image/x-xbitmap">
     <comment>X BitMap image</comment>
+    <comment xml:lang="cy">Delwedd didfap X</comment>
     <comment xml:lang="fi">X BitMap -kuva</comment>
     <comment xml:lang="fr">image X BitMap</comment>
     <comment xml:lang="hu">X BitMap kép</comment>
@@ -2794,10 +3050,12 @@
   </mime-type>
   <mime-type type="image/x-xcf">
     <comment>GIMP image</comment>
+    <comment xml:lang="no">GIMP-bilde</comment>
     <glob pattern="*.xcf" />
   </mime-type>
   <mime-type type="image/x-xfig">
     <comment>XFig image</comment>
+    <comment xml:lang="no">XFig-bilde</comment>
     <glob pattern="*.fig" />
     <magic priority="50">
       <match offset="0" type="string" value="#FIG" />
@@ -2805,6 +3063,7 @@
   </mime-type>
   <mime-type type="image/x-xpixmap">
     <comment>X PixMap image</comment>
+    <comment xml:lang="cy">Delwedd picsfap X</comment>
     <comment xml:lang="fi">X PixMap -kuva</comment>
     <comment xml:lang="fr">image X PixMap</comment>
     <comment xml:lang="hu">X PixMap kép</comment>
@@ -2820,6 +3079,7 @@
   </mime-type>
   <mime-type type="image/x-xwindowdump">
     <comment>X window image</comment>
+    <comment xml:lang="cy">Delwedd ffenest X</comment>
     <comment xml:lang="fi">X-ikkunakuva</comment>
     <comment xml:lang="fr">image X window</comment>
     <comment xml:lang="hu">X window-kép</comment>
@@ -2832,25 +3092,32 @@
   </mime-type>
   <mime-type type="inode/blockdevice">
     <comment>block device</comment>
+    <comment xml:lang="no">blokkenhet</comment>
   </mime-type>
   <mime-type type="inode/chardevice">
     <comment>character device</comment>
+    <comment xml:lang="no">tegnenhet</comment>
   </mime-type>
   <mime-type type="inode/directory">
     <comment>folder</comment>
+    <comment xml:lang="no">mappe</comment>
   </mime-type>
   <mime-type type="inode/fifo">
     <comment>pipe</comment>
+    <comment xml:lang="no">rør</comment>
   </mime-type>
   <mime-type type='inode/mount-point'>
     <sub-class-of type='inode/directory' />
     <comment>mount point</comment>
+    <comment xml:lang="no">monteringspunkt</comment>
   </mime-type>
   <mime-type type="inode/socket">
     <comment>socket</comment>
+    <comment xml:lang="no">plugg</comment>
   </mime-type>
   <mime-type type="inode/symlink">
     <comment>symbolic link</comment>
+    <comment xml:lang="cy">cyswllt symbolaidd</comment>
     <comment xml:lang="fi">symbolinen linkki</comment>
     <comment xml:lang="fr">lien symbolique</comment>
     <comment xml:lang="hu">szimbolikus link</comment>
@@ -2862,26 +3129,31 @@
   </mime-type>
   <mime-type type="message/delivery-status">
     <comment>mail delivery report</comment>
+    <comment xml:lang="cy">Adroddiad trosgludo post</comment>
     <comment xml:lang="fi">viestin jakeluilmoitus</comment>
     <comment xml:lang="fr">rapport de livraison de courriels</comment>
     <comment xml:lang="hu">jelentés levélkézbesítésről</comment>
     <comment xml:lang="nl">e-mail bezorgingsbericht</comment>
     <comment xml:lang="nn">e-post-leveringsrapport</comment>
+    <comment xml:lang="no">e-postleveranserapport</comment>
     <comment xml:lang="sr">извештај доставе поруке</comment>
     <comment xml:lang="sv">e-postleveransrapport</comment>
   </mime-type>
   <mime-type type="message/disposition-notification">
     <comment>mail disposition report</comment>
+    <comment xml:lang="cy">adroddiad ffurf post</comment>
     <comment xml:lang="fi">viestin kuittausilmoitus</comment>
     <comment xml:lang="fr">rapport de disposition de courriels</comment>
     <comment xml:lang="hu">jelentés levélkidobásról</comment>
     <comment xml:lang="nl">e-mail plaatsingsbericht</comment>
     <comment xml:lang="nn">e-post-disposisjonsrapport</comment>
+    <comment xml:lang="no">e-postdispositionsrapport</comment>
     <comment xml:lang="sr">извештај слања поруке</comment>
     <comment xml:lang="sv">e-postdispositionsrapport</comment>
   </mime-type>
   <mime-type type="message/external-body">
     <comment>reference to remote file</comment>
+    <comment xml:lang="cy">cyfeiriad at ffeil bell</comment>
     <comment xml:lang="fi">viittaus etätiedostoon</comment>
     <comment xml:lang="fr">référence au fichier distant</comment>
     <comment xml:lang="hu">hivatkozás távoli fájlra</comment>
@@ -2893,6 +3165,7 @@
   </mime-type>
   <mime-type type="message/news">
     <comment>Usenet news message</comment>
+    <comment xml:lang="cy">Neges newyddion Usenet</comment>
     <comment xml:lang="fi">nyyssiviesti</comment>
     <comment xml:lang="fr">message des nouvelles « news » Usenet</comment>
     <comment xml:lang="hu">USENET-hírcsoportüzenet</comment>
@@ -2909,6 +3182,7 @@
   </mime-type>
   <mime-type type="message/partial">
     <comment>partial email message</comment>
+    <comment xml:lang="cy">darn o neges e-bost</comment>
     <comment xml:lang="fi">osittainen sähköpostiviesti</comment>
     <comment xml:lang="fr">message partiel de courriel</comment>
     <comment xml:lang="hu">részleges elektronikus levél</comment>
@@ -2920,6 +3194,7 @@
   </mime-type>
   <mime-type type="message/rfc822">
     <comment>email message</comment>
+    <comment xml:lang="no">e-postmelding</comment>
     <magic priority="50">
       <match offset="0" type="string" value="#! rnews" />
       <match offset="0" type="string" value="Forward to" />
@@ -2933,6 +3208,7 @@
   </mime-type>
   <mime-type type="message/x-gnu-rmail">
     <comment>GNU mail message</comment>
+    <comment xml:lang="cy">Neges E-Bost GNU</comment>
     <comment xml:lang="fi">GNU-postiviesti</comment>
     <comment xml:lang="fr">message de courriel GNU</comment>
     <comment xml:lang="hu">GNU elektronikus levél</comment>
@@ -2945,6 +3221,7 @@
   </mime-type>
   <mime-type type="model/vrml">
     <comment>VRML document</comment>
+    <comment xml:lang="cy">Dogfen VRML</comment>
     <comment xml:lang="fi">VRML-asiakirja</comment>
     <comment xml:lang="fr">document VRML</comment>
     <comment xml:lang="hu">VRML-dokumentum</comment>
@@ -2957,6 +3234,7 @@
   </mime-type>
   <mime-type type="multipart/alternative">
     <comment>message in several formats</comment>
+    <comment xml:lang="cy">neges mewn sawl fformat</comment>
     <comment xml:lang="fi">viesti useissa muodoissa</comment>
     <comment xml:lang="fr">message en format divers</comment>
     <comment xml:lang="hu">többféle formátumú üzenet</comment>
@@ -2968,6 +3246,7 @@
   </mime-type>
   <mime-type type="multipart/appledouble">
     <comment>Macintosh AppleDouble-encoded file</comment>
+    <comment xml:lang="cy">Ffeil AppleDouble-amgodedig Macintosh</comment>
     <comment xml:lang="fi">Macintosh AppleDouble -koodattu tiedosto</comment>
     <comment xml:lang="fr">fichier encodé Macintosh AppleDouble</comment>
     <comment xml:lang="hu">Macintosh AppleDouble kódolású fájl</comment>
@@ -2979,16 +3258,19 @@
   </mime-type>
   <mime-type type="multipart/digest">
     <comment>message digest</comment>
+    <comment xml:lang="cy">crynodeb negeseuon</comment>
     <comment xml:lang="fi">viestikokoelma</comment>
     <comment xml:lang="fr">digesteur de messages</comment>
     <comment xml:lang="hu">ömlesztett üzenet</comment>
     <comment xml:lang="nl">berichtsamenvatting</comment>
     <comment xml:lang="nn">meldingsamandrag</comment>
+    <comment xml:lang="no">medldingssamling</comment>
     <comment xml:lang="sr">гомила порука</comment>
     <comment xml:lang="sv">meddelandesamling</comment>
   </mime-type>
   <mime-type type="multipart/encrypted">
     <comment>encrypted message</comment>
+    <comment xml:lang="cy">Neges wedi ei hamgryptio</comment>
     <comment xml:lang="fi">salattu viesti</comment>
     <comment xml:lang="fr">message encrypté</comment>
     <comment xml:lang="hu">titkosított üzenet</comment>
@@ -3000,9 +3282,11 @@
   </mime-type>
   <mime-type type="multipart/mixed">
     <comment>compound documents</comment>
+    <comment xml:lang="no">sammensatte dokumenter</comment>
   </mime-type>
   <mime-type type="multipart/related">
     <comment>compound document</comment>
+    <comment xml:lang="cy">dogfen gyfansawdd</comment>
     <comment xml:lang="fi">yhdisteasiakirja</comment>
     <comment xml:lang="fr">document lié « compound »</comment>
     <comment xml:lang="hu">összetett dokumentum</comment>
@@ -3014,16 +3298,19 @@
   </mime-type>
   <mime-type type="multipart/report">
     <comment>mail system report</comment>
+    <comment xml:lang="cy">adroddiad system bost</comment>
     <comment xml:lang="fi">viestijärjestelmän ilmoitus</comment>
     <comment xml:lang="fr">rapport système de courriels</comment>
     <comment xml:lang="hu">levelezőrendszer jelentése</comment>
     <comment xml:lang="nl">e-mail systeembericht</comment>
     <comment xml:lang="nn">e-post-systemrapport</comment>
+    <comment xml:lang="no">e-postsystemrapport</comment>
     <comment xml:lang="sr">извештај поштанског система</comment>
     <comment xml:lang="sv">e-postsystemrapport</comment>
   </mime-type>
   <mime-type type="multipart/signed">
     <comment>signed message</comment>
+    <comment xml:lang="cy">neges lofnodwyd</comment>
     <comment xml:lang="fi">allekirjoitettu viesti</comment>
     <comment xml:lang="fr">message signé</comment>
     <comment xml:lang="hu">aláírt üzenet</comment>
@@ -3035,9 +3322,11 @@
   </mime-type>
   <mime-type type="multipart/x-mixed-replace">
     <comment>stream of data (server push)</comment>
+    <comment xml:lang="no">datastrøm (server push)</comment>
   </mime-type>
   <mime-type type="text/calendar">
     <comment>iCalendar file</comment>
+    <comment xml:lang="cy">Ffeil iCalendar</comment>
     <comment xml:lang="fi">iCalendar-tiedosto</comment>
     <comment xml:lang="fr">fichier iCalendar</comment>
     <comment xml:lang="hu">iCalendar-file</comment>
@@ -3053,6 +3342,7 @@
   </mime-type>
   <mime-type type="text/css">
     <comment>Cascading Style Sheet</comment>
+    <comment xml:lang="cy">Taflen Arddull Rhaeadrol</comment>
     <comment xml:lang="fi">CSS-tyylisäännöstö</comment>
     <comment xml:lang="fr">Cascading Style Sheet</comment>
     <comment xml:lang="hu">CSS-stíluslap</comment>
@@ -3066,30 +3356,36 @@
   </mime-type>
   <mime-type type="text/directory">
     <comment>directory information file</comment>
+    <comment xml:lang="cy">Ffeil gwybodaeth cyfeiriadur</comment>
     <comment xml:lang="fi">hakemistoinfotiedosto</comment>
     <comment xml:lang="fr">fichier d&apos;information répertoire</comment>
     <comment xml:lang="hu">könyvtár-információs fájl</comment>
     <comment xml:lang="nl">mapinformatie bestand</comment>
     <comment xml:lang="nn">katalog-informasjonsfil</comment>
+    <comment xml:lang="no">kataloginformasjonsfil</comment>
     <comment xml:lang="sr">датотека са подацима о директоријуму</comment>
     <comment xml:lang="sv">kataloginformationsfil</comment>
   </mime-type>
   <mime-type type="text/enriched">
     <comment>enriched text document</comment>
+    <comment xml:lang="cy">Dogfen testun wedi ei gyfoethogi</comment>
     <comment xml:lang="fi">rikastettu tekstiasiakirja</comment>
     <comment xml:lang="fr">document  « enriched text »</comment>
     <comment xml:lang="hu">enriched text dokumentum</comment>
     <comment xml:lang="nl">verrijkt tekstdocument</comment>
     <comment xml:lang="nn">rik tekst tekstdokument</comment>
+    <comment xml:lang="no">riktekst-dokument</comment>
     <comment xml:lang="sr">обогаћени текстуални документ</comment>
     <comment xml:lang="sv">berikat textdokument</comment>
   </mime-type>
   <mime-type type="text/x-gettext-translation">
     <comment>translated messages</comment>
+    <comment xml:lang="no">oversatte meldinger</comment>
     <glob pattern="*.po" />
   </mime-type>
   <mime-type type="text/html">
     <comment>HTML page</comment>
+    <comment xml:lang="no">HTML-side</comment>
     <magic priority="50">
       <match offset="0:64" type="string" value="&lt;!DOCTYPE HTML" />
       <match offset="0:64" type="string" value="&lt;!doctype html" />
@@ -3114,6 +3410,7 @@
   </mime-type>
   <mime-type type="text/htmlh">
     <comment>help page</comment>
+    <comment xml:lang="cy">tudalen gymorth</comment>
     <comment xml:lang="fi">ohjesivu</comment>
     <comment xml:lang="fr">page d&apos;aide</comment>
     <comment xml:lang="hu">súgóoldal</comment>
@@ -3125,6 +3422,7 @@
   </mime-type>
   <mime-type type="text/mathml">
     <comment>MathML document</comment>
+    <comment xml:lang="cy">Dogfen MathML</comment>
     <comment xml:lang="fi">MathML-asiakirja</comment>
     <comment xml:lang="fr">document MathML</comment>
     <comment xml:lang="hu">MathML-dokumentum</comment>
@@ -3137,6 +3435,7 @@
   </mime-type>
   <mime-type type="text/plain">
     <comment>plain text document</comment>
+    <comment xml:lang="no">vanlig tekstdokument</comment>
     <magic priority="50">
       <match offset="0" type="string" value="This is TeX," />
       <match offset="0" type="string" value="This is METAFONT," />
@@ -3146,6 +3445,7 @@
   </mime-type>
   <mime-type type="text/rdf">
     <comment>Resource Description Framework (RDF) file</comment>
+    <comment xml:lang="cy">Ffeil RDF (Resource Description Framework)</comment>
     <comment xml:lang="fi">Resource Description Framework (RDF) -tiedosto</comment>
     <comment xml:lang="fr">fichier Resource Description Framework (RDF)</comment>
     <comment xml:lang="hu">RDF (erőforrásleíró) -fájl</comment>
@@ -3157,6 +3457,7 @@
   </mime-type>
   <mime-type type="text/rfc822-headers">
     <comment>email headers</comment>
+    <comment xml:lang="cy">penawdau e-bost</comment>
     <comment xml:lang="fi">sähköpostiotsakkeet</comment>
     <comment xml:lang="fr">en-tête de courriel</comment>
     <comment xml:lang="hu">levélfejléc</comment>
@@ -3168,6 +3469,7 @@
   </mime-type>
   <mime-type type="text/richtext">
     <comment>rich text document</comment>
+    <comment xml:lang="cy">dogfen testun gyfoethog (rtf)</comment>
     <comment xml:lang="fi">RTF-asiakirja</comment>
     <comment xml:lang="fr">document « rich text »</comment>
     <comment xml:lang="hu">rich text-dokumentum</comment>
@@ -3180,22 +3482,26 @@
   </mime-type>
   <mime-type type="text/rss">
     <comment>RDF Site Summary</comment>
+    <comment xml:lang="cy">Crynodeb Safle RDF</comment>
     <comment xml:lang="fi">RDF-sivuston tiivistelmä</comment>
     <comment xml:lang="fr">sommaire RDF Site</comment>
     <comment xml:lang="hu">RDF-webhelyinformáció</comment>
     <comment xml:lang="nl">RDF website samenvatting</comment>
     <comment xml:lang="nn">RDF-sidesamandrag</comment>
+    <comment xml:lang="no">RDF-strøm</comment>
     <comment xml:lang="sr">RDF сажетак странице (RSS)</comment>
     <comment xml:lang="sv">RDF-webbplatssammanfattning</comment>
     <glob pattern="*.rss" />
   </mime-type>
   <mime-type type="text/sgml">
     <comment>SGML document</comment>
+    <comment xml:lang="no">SGML-dokument</comment>
     <glob pattern="*.sgml" />
     <glob pattern="*.sgm" />
   </mime-type>
   <mime-type type="text/spreadsheet">
     <comment>Spreadsheet interchange document</comment>
+    <comment xml:lang="no">Dokument for regnearkutveksling</comment>
     <magic priority="50">
       <match offset="0" type="string" value="ID;" />
     </magic>
@@ -3204,10 +3510,12 @@
   </mime-type>
   <mime-type type="text/tab-separated-values">
     <comment>text document (with tab-separated values)</comment>
+    <comment xml:lang="no">tekstdokument (med tabulatorseparerte verdier)</comment>
     <glob pattern="*.tsv" />
   </mime-type>
   <mime-type type="text/vnd.wap.wml">
     <comment>WML document</comment>
+    <comment xml:lang="cy">Dogfen WML</comment>
     <comment xml:lang="fi">WML-asiakirja</comment>
     <comment xml:lang="fr">document WML</comment>
     <comment xml:lang="hu">WML-dokumentum</comment>
@@ -3220,23 +3528,28 @@
   </mime-type>
   <mime-type type="text/x-adasrc">
     <comment>Ada source code</comment>
+    <comment xml:lang="no">Ada-kildekode</comment>
     <glob pattern="*.adb" />
     <glob pattern="*.ads" />
   </mime-type>
   <mime-type type="text/x-authors">
     <comment>author list</comment>
+    <comment xml:lang="no">forfatterliste</comment>
     <glob pattern="AUTHORS" />
   </mime-type>
   <mime-type type="text/x-bibtex">
     <comment>Bibtex bibliographic data</comment>
+    <comment xml:lang="no">Bibtex bibliografiske data</comment>
     <glob pattern="*.bib" />
   </mime-type>
   <mime-type type="text/x-c++hdr">
     <comment>C++ source code header</comment>
+    <comment xml:lang="no">C++-kildekodeheader</comment>
     <glob pattern="*.hh" />
   </mime-type>
   <mime-type type="text/x-c++src">
     <comment>C++ source code</comment>
+    <comment xml:lang="no">C++-kildekode</comment>
     <glob pattern="*.cpp" />
     <glob pattern="*.cxx" />
     <glob pattern="*.cc" />
@@ -3245,16 +3558,19 @@
   </mime-type>
   <mime-type type="text/x-chdr">
     <comment>C source code header</comment>
+    <comment xml:lang="no">C-kildekodeheader</comment>
     <glob pattern="*.h" />
     <glob pattern="*.h++" />
     <glob pattern="*.hp" />
   </mime-type>
   <mime-type type="text/x-comma-separated-values">
     <comment>text document (with comma-separated values)</comment>
+    <comment xml:lang="no">tekstdokument (med kommaseparerte verdier)</comment>
     <glob pattern="*.csv" />
   </mime-type>
   <mime-type type="text/x-copying">
     <comment>software license terms</comment>
+    <comment xml:lang="cy">termau trwydded meddalwedd</comment>
     <comment xml:lang="fi">ohjelmiston lisenssiehdot</comment>
     <comment xml:lang="fr">termes de la license du logiciel</comment>
     <comment xml:lang="hu">szoftver felhasználási szerződése</comment>
@@ -3267,6 +3583,7 @@
   </mime-type>
   <mime-type type="text/x-credits">
     <comment>software author credits</comment>
+    <comment xml:lang="cy">clodau awduron meddalwedd</comment>
     <comment xml:lang="fi">ohjelmiston tekijäluettelo</comment>
     <comment xml:lang="fr">crédits des auteurs pour le logiciel</comment>
     <comment xml:lang="hu">szoftver szerzőinek felsorolása</comment>
@@ -3279,10 +3596,16 @@
   </mime-type>
   <mime-type type="text/x-csrc">
     <comment>C source code</comment>
+    <comment xml:lang="no">C-kildekode</comment>
     <glob pattern="*.c" />
+  </mime-type>
+  <mime-type type="text/x-csharp">
+    <comment>C# source code</comment>
+    <glob pattern="*.cs" />
   </mime-type>
   <mime-type type="text/x-dcl">
     <comment>DCL script</comment>
+    <comment xml:lang="cy">Sgript DCL</comment>
     <comment xml:lang="fi">DCL-komentotiedosto</comment>
     <comment xml:lang="fr">script DCL</comment>
     <comment xml:lang="hu">DCL-parancsfájl</comment>
@@ -3295,6 +3618,7 @@
   </mime-type>
   <mime-type type="text/x-dsl">
     <comment>DSSSL document</comment>
+    <comment xml:lang="cy">Dogfen DSSSL</comment>
     <comment xml:lang="fi">DSSSL-asiakirja</comment>
     <comment xml:lang="fr">document DSSSL</comment>
     <comment xml:lang="hu">DSSSL-dokumentum</comment>
@@ -3307,17 +3631,20 @@
   </mime-type>
   <mime-type type="text/x-dtd">
     <comment>document type definition</comment>
+    <comment xml:lang="cy">Diffiniad math dogfen</comment>
     <comment xml:lang="fi">asiakirjatyypin määritelmä</comment>
     <comment xml:lang="fr">définition des types de document</comment>
     <comment xml:lang="hu">dokumentumtípus definíciója</comment>
     <comment xml:lang="nl">documentsoort definitie</comment>
     <comment xml:lang="nn">dokumenttypedefinisjon</comment>
+    <comment xml:lang="no">dokumenttypdefinisjon</comment>
     <comment xml:lang="sr">дефиниција типа датотеке</comment>
     <comment xml:lang="sv">dokumenttypdefinition</comment>
     <glob pattern="*.dtd" />
   </mime-type>
   <mime-type type="text/x-emacs-lisp">
     <comment>Emacs Lisp source code</comment>
+    <comment xml:lang="cy">Ffynhonnell rhaglen EMACS LISP</comment>
     <comment xml:lang="fi">Emacs Lisp -lähdekoodi</comment>
     <comment xml:lang="fr">code source Emacs Lisp</comment>
     <comment xml:lang="hu">Emacs Lisp-forráskód</comment>
@@ -3334,6 +3661,7 @@
   </mime-type>
   <mime-type type="text/x-fortran">
     <comment>Fortran source code</comment>
+    <comment xml:lang="cy">Ffynhonnell rhaglen FORTRAN</comment>
     <comment xml:lang="fi">Fortran-lähdekoodi</comment>
     <comment xml:lang="fr">code source Fortran</comment>
     <comment xml:lang="hu">Fortran-forráskód</comment>
@@ -3346,6 +3674,7 @@
   </mime-type>
   <mime-type type="text/x-gtkrc">
     <comment>GTK configuration</comment>
+    <comment xml:lang="cy">Ffurfosodiad GTK</comment>
     <comment xml:lang="fi">GTK-asetukset</comment>
     <comment xml:lang="fr">configuration GTK</comment>
     <comment xml:lang="hu">GTK-beállítások</comment>
@@ -3359,6 +3688,7 @@
   </mime-type>
   <mime-type type="text/x-haskell">
     <comment>Haskell source code</comment>
+    <comment xml:lang="cy">Ffynhonnell rhaglen Haskell</comment>
     <comment xml:lang="fi">Haskell-lähdekoodi</comment>
     <comment xml:lang="fr">code source Haskell</comment>
     <comment xml:lang="hu">Haskell-forráskód</comment>
@@ -3371,6 +3701,7 @@
   </mime-type>
   <mime-type type="text/x-idl">
     <comment>IDL document</comment>
+    <comment xml:lang="cy">Dogfen IDL</comment>
     <comment xml:lang="fi">IDL-asiakirja</comment>
     <comment xml:lang="fr">document IDL</comment>
     <comment xml:lang="hu">IDL-dokumentum</comment>
@@ -3383,6 +3714,7 @@
   </mime-type>
   <mime-type type="text/x-install">
     <comment>software installation instructions</comment>
+    <comment xml:lang="cy">cyfarwyddiadau gosod meddalwedd</comment>
     <comment xml:lang="fi">ohjelmiston asennusohjeet</comment>
     <comment xml:lang="fr">instructions d&apos;installation du logiciel</comment>
     <comment xml:lang="hu">szoftvertelepítési leírás</comment>
@@ -3395,10 +3727,12 @@
   </mime-type>
   <mime-type type="text/x-java">
     <comment>Java source code</comment>
+    <comment xml:lang="no">Java-kildekode</comment>
     <glob pattern="*.java" />
   </mime-type>
   <mime-type type="text/x-ksh">
     <comment>Korn shell script</comment>
+    <comment xml:lang="cy">Sgript plisgyn Korn</comment>
     <comment xml:lang="fi">Ksh-komentotiedosto</comment>
     <comment xml:lang="fr">script Korn shell</comment>
     <comment xml:lang="hu">Korn shell-parancsfájl</comment>
@@ -3418,6 +3752,7 @@
   </mime-type>
   <mime-type type="text/x-literate-haskell">
     <comment>Literate haskell source code</comment>
+    <comment xml:lang="cy">Ffynhonnell Haskell llenyddol</comment>
     <comment xml:lang="fi">Literate haskell -lähdekoodi</comment>
     <comment xml:lang="fr">code source Literate haskell</comment>
     <comment xml:lang="hu">Literális haskell-forráskód</comment>
@@ -3429,10 +3764,12 @@
   </mime-type>
   <mime-type type="text/x-log">
     <comment>application log</comment>
+    <comment xml:lang="no">applikasjonslogg</comment>
     <glob pattern="*.log" />
   </mime-type>
   <mime-type type="text/x-makefile">
     <comment>Makefile</comment>
+    <comment xml:lang="cy">Ffeil &quot;make&quot;</comment>
     <comment xml:lang="fi">Makefile</comment>
     <comment xml:lang="fr">makefile</comment>
     <comment xml:lang="hu">Makefile</comment>
@@ -3446,19 +3783,23 @@
   </mime-type>
   <mime-type type="text/x-moc">
     <comment>Qt Meta Object file</comment>
+    <comment xml:lang="no">Qt metaobjektfil</comment>
     <glob pattern="*.moc" />
   </mime-type>
   <mime-type type="text/x-objcsrc">
     <comment>Objective-C source code</comment>
+    <comment xml:lang="no">Objective-C-kildekode</comment>
     <glob pattern="*.m" />
   </mime-type>
   <mime-type type="text/x-pascal">
     <comment>Pascal source code</comment>
+    <comment xml:lang="no">Pascal-kildekode</comment>
     <glob pattern="*.p" />
     <glob pattern="*.pas" />
   </mime-type>
   <mime-type type="text/x-patch">
     <comment>differences between files</comment>
+    <comment xml:lang="no">forskjeller mellom filer</comment>
     <magic priority="50">
       <match offset="0" type="string" value="diff\t" />
       <match offset="0" type="string" value="diff " />
@@ -3474,6 +3815,7 @@
   </mime-type>
   <mime-type type="text/x-readme">
     <comment>README document</comment>
+    <comment xml:lang="cy">Dogfen README</comment>
     <comment xml:lang="fi">LUEMINUT-asiakirja</comment>
     <comment xml:lang="fr">document README</comment>
     <comment xml:lang="hu">README-dokumentum</comment>
@@ -3486,6 +3828,7 @@
   </mime-type>
   <mime-type type="text/x-scheme">
     <comment>Scheme source code</comment>
+    <comment xml:lang="cy">Ffynhonnell Rhaglen Scheme</comment>
     <comment xml:lang="fi">Scheme-lähdekoodi</comment>
     <comment xml:lang="fr">code source Scheme</comment>
     <comment xml:lang="hu">Scheme-forráskód</comment>
@@ -3498,6 +3841,7 @@
   </mime-type>
   <mime-type type="text/x-setext">
     <comment>Setext document</comment>
+    <comment xml:lang="cy">Dogfen Setext</comment>
     <comment xml:lang="fi">Setext-asiakirja</comment>
     <comment xml:lang="fr">document Setext</comment>
     <comment xml:lang="hu">Setext-dokumentum</comment>
@@ -3510,6 +3854,7 @@
   </mime-type>
   <mime-type type="text/x-speech">
     <comment>Speech document</comment>
+    <comment xml:lang="cy">Dogfen leferydd</comment>
     <comment xml:lang="fi">puheasiakirja</comment>
     <comment xml:lang="fr">document Speech</comment>
     <comment xml:lang="hu">Speech-dokumentum</comment>
@@ -3521,6 +3866,7 @@
   </mime-type>
   <mime-type type="text/x-sql">
     <comment>SQL code</comment>
+    <comment xml:lang="cy">Côd SQL</comment>
     <comment xml:lang="fi">SQL-koodi</comment>
     <comment xml:lang="fr">code SQL</comment>
     <comment xml:lang="hu">SQL-kód</comment>
@@ -3533,11 +3879,13 @@
   </mime-type>
   <mime-type type="text/x-tcl">
     <comment>Tcl script</comment>
+    <comment xml:lang="no">Tcl-skript</comment>
     <glob pattern="*.tcl" />
     <glob pattern="*.tk" />
   </mime-type>
   <mime-type type="text/x-tex">
     <comment>TeX document</comment>
+    <comment xml:lang="no">TeX-dokument</comment>
     <glob pattern="*.tex" />
     <glob pattern="*.ltx" />
     <glob pattern="*.sty" />
@@ -3545,6 +3893,7 @@
   </mime-type>
   <mime-type type="text/x-texinfo">
     <comment>TeXInfo document</comment>
+    <comment xml:lang="cy">Dogfen TeXInfo</comment>
     <comment xml:lang="fi">TeXInfo-asiakirja</comment>
     <comment xml:lang="fr">document TeXInfo</comment>
     <comment xml:lang="hu">TeXInfo-dokumentum</comment>
@@ -3558,14 +3907,17 @@
   </mime-type>
   <mime-type type="text/x-troff-me">
     <comment>Troff ME input document</comment>
+    <comment xml:lang="no">Troff ME-inndatadokument</comment>
     <glob pattern="*.me" />
   </mime-type>
   <mime-type type="text/x-troff-mm">
     <comment>Troff MM input document</comment>
+    <comment xml:lang="no">Troff MM-inndatadokument</comment>
     <glob pattern="*.mm" />
   </mime-type>
   <mime-type type="text/x-troff-ms">
     <comment>Troff MS input document</comment>
+    <comment xml:lang="no">Troff MS-inndatadokument</comment>
     <glob pattern="*.ms" />
   </mime-type>
   <mime-type type="text/x-uil">
@@ -3575,11 +3927,13 @@
   <mime-type type="text/x-uri">
     
     <comment>resource location</comment>
+    <comment xml:lang="no">ressurslokasjon</comment>
     <glob pattern="*.uri" />
     <glob pattern="*.url" />
   </mime-type>
   <mime-type type="text/x-vcalendar">
     <comment>vCalendar interchange file</comment>
+    <comment xml:lang="cy">Ffeil gyfnewid vCalendar</comment>
     <comment xml:lang="fi">vCalendar-välitystiedosto</comment>
     <comment xml:lang="fr">fichier « vCalendar interchange »</comment>
     <comment xml:lang="nl">vCalendar uitwisselingsbestand</comment>
@@ -3596,6 +3950,7 @@
   </mime-type>
   <mime-type type="text/x-vcard">
     <comment>electronic business card</comment>
+    <comment xml:lang="no">elektronisk visittkort</comment>
     <magic priority="50">
       <match offset="0" type="string" value="BEGIN:VCARD" />
       <match offset="0" type="string" value="begin:vcard" />
@@ -3605,6 +3960,7 @@
   </mime-type>
   <mime-type type="text/x-xslfo">
     <comment>XSL Formating Object file</comment>
+    <comment xml:lang="cy">Ffeil gwrthrych ffurfwedd XSL</comment>
     <comment xml:lang="fi">XSL-muotoiluobjektitiedosto</comment>
     <comment xml:lang="fr">fichier objet XSL Formating</comment>
     <comment xml:lang="hu">XSF:FO-fájl</comment>
@@ -3617,6 +3973,7 @@
   </mime-type>
   <mime-type type="text/x-xslt">
     <comment>XSLT stylesheet</comment>
+    <comment xml:lang="no">XSLT-stilark</comment>
     <glob pattern="*.xslt" />
     <glob pattern="*.xsl" />
   </mime-type>
@@ -3627,6 +3984,7 @@
   </mime-type>
   <mime-type type="text/xml">
     <comment>eXtensible Markup Language document</comment>
+    <comment xml:lang="cy">Dogfen XML (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language)</comment>
     <comment xml:lang="fi">laajennettava merkintäkielinen asiakirja (XML)</comment>
     <comment xml:lang="fr">document XML « eXtensible Markup Language »</comment>
     <comment xml:lang="hu">XML-dokumentum</comment>
@@ -3641,6 +3999,7 @@
   </mime-type>
   <mime-type type="video/isivideo">
     <comment>ISI video</comment>
+    <comment xml:lang="cy">Fideo ISI</comment>
     <comment xml:lang="fi">ISI-video</comment>
     <comment xml:lang="fr">vidéo ISI</comment>
     <comment xml:lang="hu">ISI-video</comment>
@@ -3652,6 +4011,7 @@
   </mime-type>
   <mime-type type="video/mpeg">
     <comment>MPEG video</comment>
+    <comment xml:lang="no">MPEG-film</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\x47\x3f\xff\x10" />
       <match offset="0" type="big32" value="0x000001b3" />
@@ -3666,6 +4026,7 @@
   </mime-type>
   <mime-type type="video/quicktime">
     <comment>QuickTime video</comment>
+    <comment xml:lang="no">Quicktime-film</comment>
     <magic priority="50">
       <match offset="12" type="string" value="mdat" />
       <match offset="4" type="string" value="mdat" />
@@ -3678,6 +4039,7 @@
   </mime-type>
   <mime-type type="video/vivo">
     <comment>Vivo video</comment>
+    <comment xml:lang="cy">Fideo Vivo</comment>
     <comment xml:lang="fi">Vivo-video</comment>
     <comment xml:lang="fr">vidéo Vivo</comment>
     <comment xml:lang="hu">Vivo-video</comment>
@@ -3689,6 +4051,7 @@
   </mime-type>
   <mime-type type="video/wavelet">
     <comment>Wavelet video</comment>
+    <comment xml:lang="cy">Fideo Wavelet</comment>
     <comment xml:lang="fi">Wavelet-video</comment>
     <comment xml:lang="fr">vidéo Wavelet</comment>
     <comment xml:lang="hu">Wavelet-video</comment>
@@ -3700,6 +4063,7 @@
   </mime-type>
   <mime-type type="video/x-anim">
     <comment>ANIM animation</comment>
+    <comment xml:lang="cy">Animeiddiad ANIM</comment>
     <comment xml:lang="fi">ANIM-animaatio</comment>
     <comment xml:lang="fr">animation ANIM</comment>
     <comment xml:lang="hu">ANIM-animáció</comment>
@@ -3712,6 +4076,7 @@
   </mime-type>
   <mime-type type="video/x-avi">
     <comment>AVI video</comment>
+    <comment xml:lang="cy">Fideo AVI</comment>
     <comment xml:lang="fi">AVI-video</comment>
     <comment xml:lang="fr">vidéo AVI</comment>
     <comment xml:lang="hu">AVI-video</comment>
@@ -3723,6 +4088,7 @@
   </mime-type>
   <mime-type type="video/x-flic">
     <comment>AutoDesk FLIC animation</comment>
+    <comment xml:lang="no">AutoDesk FLIC-animasjon</comment>
     <magic priority="50">
       <match offset="0" type="little16" value="0xAF11" />
       <match offset="0" type="little16" value="0xAF12" />
@@ -3732,10 +4098,12 @@
   </mime-type>
   <mime-type type="video/x-mng">
     <comment>MNG animation</comment>
+    <comment xml:lang="no">MNG-animasjon</comment>
     <glob pattern="*.mng" />
   </mime-type>
   <mime-type type="video/x-ms-asf">
     <comment>Microsoft ASF video</comment>
+    <comment xml:lang="no">Microsoft ASF-film</comment>
     <glob pattern="*.asf" />
     <glob pattern="*.asx" />
     <magic priority="50">
@@ -3744,6 +4112,7 @@
   </mime-type>
   <mime-type type="video/x-ms-wmv">
     <comment>Microsoft WMV video</comment>
+    <comment xml:lang="cy">Video Microsoft WMV</comment>
     <comment xml:lang="fi">Microsoft WMV -video</comment>
     <comment xml:lang="fr">vidéo Microsoft WMV</comment>
     <comment xml:lang="hu">Microsoft WMV-video</comment>
@@ -3756,6 +4125,7 @@
   </mime-type>
   <mime-type type="video/x-msvideo">
     <comment>Microsoft AVI video</comment>
+    <comment xml:lang="no">Microsoft AVI-film</comment>
     <magic priority="50">
       <match offset="8" type="string" value="AVI " />
       <match offset="0" type="string" value="RIFF" />
@@ -3764,6 +4134,7 @@
   </mime-type>
   <mime-type type="video/x-nsv">
     <comment>Nullsoft video</comment>
+    <comment xml:lang="cy">Fideo Nullsoft</comment>
     <comment xml:lang="fi">Nullsoft-video</comment>
     <comment xml:lang="fr">vidéo Nullsoft</comment>
     <comment xml:lang="hu">Nullsoft-video</comment>
@@ -3780,6 +4151,7 @@
   </mime-type>
   <mime-type type="video/x-real-video">
     <comment>RealVideo video</comment>
+    <comment xml:lang="cy">Fideo RealVideo</comment>
     <comment xml:lang="fi">RealVideo-video</comment>
     <comment xml:lang="fr">vidéo RealVideos</comment>
     <comment xml:lang="hu">RealVideo-video</comment>
@@ -3791,6 +4163,7 @@
   </mime-type>
   <mime-type type="video/x-sgi-movie">
     <comment>SGI video</comment>
+    <comment xml:lang="cy">Video SGI</comment>
     <comment xml:lang="fi">SGI-video</comment>
     <comment xml:lang="fr">vidéo SGI</comment>
     <comment xml:lang="hu">SGI-video</comment>

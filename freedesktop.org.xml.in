@@ -1184,7 +1184,7 @@ command to generate the output files.
     <_comment>Pathetic Writer document</_comment>
     <glob pattern="*.pw"/>
   </mime-type>
-  <mime-type type="application/x-python">
+  <mime-type type="text/x-python">
     <sub-class-of type="text/plain"/>
     <_comment>Python script</_comment>
     <magic priority="50">

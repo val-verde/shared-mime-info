@@ -101,6 +101,7 @@ Comment[tr]=Macintosh BinHex-şifreli dosya
 Comment[uk]=файл закодований Macintosh BinHex
 Comment[wa]=årtchive Macintosh ecodêye avou BinHex
 Comment[zh]=Macintosh BinHex编码文件
+Contents=50:(string 11 "must be converted with BinHex")
 
 [MIME-Info application/msword]
 Comment=Microsoft Word document
@@ -159,6 +160,7 @@ Comment[xx]=xx
 Comment[zh_CN]=微软 Word 文档
 Comment[zh_TW]=微軟 Word 文件
 Comment[zu]=Idokhumente ye Microsoft Word
+Contents=50:(or (string 0 "\x31\xbe\x00\x00") (string 0 "PO^Q`"))
 Patterns=*.doc
 
 [MIME-Info application/octet-stream]
@@ -315,6 +317,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Pdf 文档
 Comment[zh_TW]=Pdf 文件
 Comment[zu]=Idokhumente yePdf
+Contents=50:(string 0 "%PDF-")
 Patterns=*.pdf
 
 [MIME-Info application/pgp]
@@ -591,6 +594,7 @@ Comment[xx]=xx
 Comment[zh_CN]=PostScript 文档
 Comment[zh_TW]=PostScript 文件
 Comment[zu]=Idokhumente ye PostScript
+Contents=50:(or (string 0 "\004%!") (string 0 "%!"))
 Patterns=*.ps
 
 [MIME-Info application/rtf]
@@ -638,6 +642,7 @@ Comment[xx]=xx
 Comment[zh_CN]=RTF 文字格式
 Comment[zh_TW]=Rich 文字格式
 Comment[zu]=Ifomathi Yokubhaliweyo Okubalulekile
+Contents=50:(string 0 "{\\rtf")
 Patterns=*.rtf
 
 [MIME-Info application/smil]
@@ -719,6 +724,7 @@ Comment[tr]=Lotus 1-2-3 hesap tablosu
 Comment[uk]=таблиця Lotus 1-2-3
 Comment[wa]=foye tåvleu Lotus 1-2-3
 Comment[zh]=Lotus 1-2-3电子表格
+Contents=50:(string 0 "\x00\x00\x02\x00")
 Patterns=*.123;*.wk1;*.wk3;*.wk4;*.wks
 
 [MIME-Info application/vnd.ms-excel]
@@ -1327,6 +1333,7 @@ Comment[xx]=xx
 Comment[zh_CN]=WordPerfect 文档
 Comment[zh_TW]=WordPerfect 文件
 Comment[zu]=Idokumente ye WordPerfect
+Contents=50:(string 1 "WPC")
 Patterns=*.wpd
 
 [MIME-Info application/x-abiword]
@@ -1381,6 +1388,7 @@ Comment[xx]=xx
 Comment[zh_CN]=AbiWord 文档
 Comment[zh_TW]=AbiWord 文件
 Comment[zu]=U AbiWord Document
+Contents=50:(or (string 0:64 "<abiword") (string 0:64 "<!DOCTYPE abiword"))
 Patterns=*.abw;*.abw.gz;*.zabw
 
 [MIME-Info application/x-amipro]
@@ -1471,6 +1479,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Applix 电子表格文档
 Comment[zh_TW]=Applix 電子表格文件
 Comment[zu]=Idokhumente yamaphepha aluliweyo eApplix
+Contents=50:(string 0 "*BEGIN SPREADSHEETS")
 Patterns=*.as
 
 [MIME-Info application/x-applix-word]
@@ -1826,6 +1835,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Bzip 文件
 Comment[zh_TW]=Bzip 檔案
 Comment[zu]=Ifayile ye Bzip
+Contents=50:(string 0 "BZh")
 Patterns=*.bz;*.bz2
 
 [MIME-Info application/x-bzip-compressed-tar]
@@ -2042,6 +2052,7 @@ Comment[xx]=xx
 Comment[zh_CN]=UNIX 压缩文件
 Comment[zh_TW]=UNIX 壓縮檔案
 Comment[zu]=Ifayile enciphisiwe yeUNIX
+Contents=50:(string 0 "\037\235")
 Patterns=*.Z
 
 [MIME-Info application/x-compressed-tar]
@@ -2159,6 +2170,7 @@ Comment[xx]=xx
 Comment[zh_CN]=程序崩溃数据
 Comment[zh_TW]=程式 crash 資料
 Comment[zu]=Idata yeprogremu yedata eshabalile
+Contents=50:(string 0 "\177ELF            \004" 0xffffffff000000000000000000000000ff)
 Patterns=core
 
 [MIME-Info application/x-cpio]
@@ -2460,6 +2472,7 @@ Comment[xx]=xx
 Comment[zh_CN]=桌面配置文件
 Comment[zh_TW]=桌面設定檔案檔案
 Comment[zu]=Ifayile yohlanganiso le Desktop
+Contents=50:(string 0:32 "[Desktop Entry]")
 Patterns=*.desktop;*.kdelnk
 
 [MIME-Info application/x-dia-diagram]
@@ -2550,6 +2563,7 @@ Comment[xx]=xx
 Comment[zh_CN]=TeX 设备无关文件
 Comment[zh_TW]=與裝置無關的 Tex 檔案
 Comment[zu]=Ifayile Ezimeleyo yecebo le TeX
+Contents=50:(string 0 "\367\002")
 Patterns=*.dvi
 
 [MIME-Info application/x-e-theme]
@@ -2678,6 +2692,7 @@ Comment[xx]=xx
 Comment[zh_CN]=可执行文件
 Comment[zh_TW]=可執行的
 Comment[zu]=Ephumelelisiwe
+Contents=50:(or (string 0 "\177ELF") (string 0 "MZ"))
 Patterns=*.exe
 
 [MIME-Info application/x-font]
@@ -2734,6 +2749,7 @@ Comment[xh]=Imigca
 Comment[xx]=xx
 Comment[zh_CN]=字体
 Comment[zh_TW]=字體
+Contents=50:(or (string 0 "LWFN") (string 65 "LWFN") (string 0 "%!PS-AdobeFont-1.") (string 6 "%!PS-AdobeFont-1."))
 Patterns=*.pfa;*.pfb;*.gsf;*.pcf.Z
 
 [MIME-Info application/x-font-afm]
@@ -2801,6 +2817,7 @@ Comment[tr]=BDF yazıtipi
 Comment[uk]=шрифт BDF
 Comment[wa]=fonte BCF
 Comment[zh]=BDF字体
+Contents=50:(string 0 "STARTFONT\040")
 Patterns=*.bdf
 
 [MIME-Info application/x-font-dos]
@@ -2835,6 +2852,7 @@ Comment[tr]=DOS yazıtipi
 Comment[uk]=шрифт DOS
 Comment[wa]=fonte DOS
 Comment[zh]=DOS字体
+Contents=50:(or (string 0 "\xff\x46\x4f\x4e") (string 7 "\x00\x45\x47\x41") (string 7 "\x00\x56\x49\x44"))
 
 [MIME-Info application/x-font-framemaker]
 Comment=Adobe FrameMaker font
@@ -2868,6 +2886,7 @@ Comment[tr]=Adobe FrameMaker yazıtipi
 Comment[uk]=шрифт Adobe FrameMaker
 Comment[wa]=fonte Adobe FrameMaker
 Comment[zh]=Adobe FrameMaker字体
+Contents=50:(string 0 "<MakerScreenFont")
 
 [MIME-Info application/x-font-libgrx]
 Comment=LIBGRX font
@@ -2901,6 +2920,7 @@ Comment[tr]=LIBGRX yazıtipi
 Comment[uk]=шрифт LIBGRX
 Comment[wa]=fonte LIBGRX
 Comment[zh]=LIBGRX字体
+Contents=50:(string 0 "\x14\x02\x59\x19")
 
 [MIME-Info application/x-font-linux-psf]
 Comment=Linux PSF console font
@@ -2933,6 +2953,7 @@ Comment[tr]=Linux PSF konsol yazıtipi
 Comment[uk]=консольний шрифт Linux PSF
 Comment[wa]=fonte PSF pol conzôle Linux
 Comment[zh]=Linux PSF控制台字体
+Contents=50:(string 0 "\x36\x04")
 Patterns=*.psf
 
 [MIME-Info application/x-font-pcf]
@@ -2967,6 +2988,7 @@ Comment[tr]=PCF yazıtipi
 Comment[uk]=шрифт PCF
 Comment[wa]=fonte PCF
 Comment[zh]=PCF字体
+Contents=50:(string 0 "\001fcp")
 Patterns=*.pcf
 
 [MIME-Info application/x-font-speedo]
@@ -3001,6 +3023,7 @@ Comment[tr]=Speedo yazıtipi
 Comment[uk]=шрифт Speedo
 Comment[wa]=fonte Speedo
 Comment[zh]=Speedo字体
+Contents=50:(string 0 "D1.0\015")
 Patterns=*.spd
 
 [MIME-Info application/x-font-sunos-news]
@@ -3035,6 +3058,7 @@ Comment[tr]=SunOS News yazıtipi
 Comment[uk]=шрифт SunOS News
 Comment[wa]=fonte SunOS News
 Comment[zh]=SunOS News字体
+Contents=50:(or (string 0 "StartFont") (string 0 "\x13\x7A\x29") (string 8 "\x13\x7A\x2B"))
 
 [MIME-Info application/x-font-tex]
 Comment=TeX font
@@ -3068,6 +3092,7 @@ Comment[tr]=TeX yazıtipi
 Comment[uk]=шрифт TeX
 Comment[wa]=fonte TeX
 Comment[zh]=TeX字体
+Contents=50:(or (string 0 "\367\203") (string 0 "\367\131") (string 0 "\367\312"))
 
 [MIME-Info application/x-font-tex-tfm]
 Comment=TeX font metrics
@@ -3100,6 +3125,7 @@ Comment[tr]=TeX yazıtipi ölçüleri
 Comment[uk]=метрики шрифта TeX
 Comment[wa]=metrikes di fonte TeX
 Comment[zh]=TeX metrics 字型檔
+Contents=50:(string 2 "\000\022")
 
 [MIME-Info application/x-font-ttf]
 Comment=Truetype Font
@@ -3159,6 +3185,7 @@ Comment[xh]=Umgca wodidi oluyinyaniso
 Comment[xx]=xx
 Comment[zh_CN]=Truetype 字体
 Comment[zh_TW]=Truetype 字體
+Contents=50:(or (string 0 "FFIL") (string 65 "FFIL") (string 0 "\000\001\000\000\000"))
 Patterns=*.ttf
 
 [MIME-Info application/x-font-vfont]
@@ -3193,6 +3220,7 @@ Comment[tr]=V yazıtipi
 Comment[uk]=шрифт V
 Comment[wa]=fonte «V Font»
 Comment[zh]=V字体
+Contents=50:(string 0 "FONT")
 
 [MIME-Info application/x-gameboy-rom]
 Comment=Game Boy rom
@@ -3299,6 +3327,7 @@ Comment[tr]=GMC bağlantısı
 Comment[uk]=посилання GMC
 Comment[wa]=loyén GMC
 Comment[zh]=GMC 連結
+Contents=50:(string 0:32 "URL:")
 
 [MIME-Info application/x-gnucash]
 Comment=GnuCash Workbook
@@ -3378,6 +3407,7 @@ Comment[xx]=xx
 Comment[zh_CN]=GNUmeric 电子表格
 Comment[zh_TW]=GNUmeric 電子表格
 Comment[zu]=GNUmeric ikhasi lolwando
+Contents=50:(string 0:64 "gmr:Workbook")
 Patterns=*.gnumeric
 
 [MIME-Info application/x-graphite]
@@ -3490,6 +3520,7 @@ Comment[sl]=katalog Gtktalog
 Comment[sv]=Gtktalog-katalog
 Comment[uk]=каталог Gtktalog
 Comment[zh]=Gnumeric目录
+Contents=50:(string 4 "gtktalog ")
 
 [MIME-Info application/x-gzip]
 Comment=Gzip file
@@ -3714,6 +3745,7 @@ Comment[xh]=Uhlobo lwe Java
 Comment[xx]=xx
 Comment[zh_CN]=Java 类
 Comment[zu]=Iqoqo lwe Java
+Contents=50:(string 0 "\312\376\272\276")
 Patterns=*.class
 
 [MIME-Info application/x-jbuilder-project]
@@ -4205,6 +4237,7 @@ Comment[xh]=Ushicilelo lukawonke-wonke nexwebhu leMbali le Lha
 Comment[xx]=xx
 Comment[zh_CN]=Lha 归档文件
 Comment[zh_TW]=Lha 壓縮檔案
+Contents=50:(or (string 2 "-lh0-") (string 2 "-lh1-") (string 2 "-lz4-") (string 2 "-lz5-") (string 2 "-lzs-") (string 2 "-lh40-") (string 2 "-lhd-") (string 2 "-lh2-") (string 2 "-lh3-") (string 2 "-lh4-") (string 2 "-lh5-"))
 Patterns=*.lha;*.lzh
 
 [MIME-Info application/x-lhz]
@@ -4545,6 +4578,7 @@ Comment[tr]=Nautilus bağlantısı
 Comment[uk]=посилання Nautilus
 Comment[wa]=loyén Nautilus
 Comment[zh]=Nautilus 連結
+Contents=50:(string 0:32 "<nautilus_object nautilus_link")
 
 [MIME-Info application/x-nes-rom]
 Comment=NES rom
@@ -4705,6 +4739,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Ogg Vorbis 音频文件
 Comment[zh_TW]=Ogg Vorbis 聲音檔案
 Comment[zu]=Ogg Vorbis ozwakalayo
+Contents=50:(string 0 "OggS")
 Patterns=*.ogg
 
 [MIME-Info application/x-oleo]
@@ -4737,6 +4772,7 @@ Comment[tr]=GNU Oleo Hesap tablosu
 Comment[uk]=таблиця GNU Oleo
 Comment[wa]=foye tåvleu GNU Oleo
 Comment[zh]=GNU Oleo电子表格
+Contents=50:(string 31 "Oleo")
 Patterns=*.oleo
 
 [MIME-Info application/x-palm-database]
@@ -4803,6 +4839,7 @@ Comment[tr]=PEF yazılımı
 Comment[uk]=програма PEF
 Comment[wa]=programe PEF
 Comment[zh]=PEF程序
+Contents=50:(string 0 "Joy!")
 
 [MIME-Info application/x-perl]
 Comment=PERL program
@@ -4858,6 +4895,7 @@ Comment[xx]=xx
 Comment[zh_CN]=PERL 程序
 Comment[zh_TW]=PERL 程式
 Comment[zu]=PERL iprogremu
+Contents=50:(or (string 0 "#!/bin/perl") (string 1:16 "/bin/perl"))
 Patterns=*.pl;*.perl
 
 [MIME-Info application/x-php]
@@ -4891,6 +4929,8 @@ Comment[tr]=PHP betiği
 Comment[uk]=скрипт PHP
 Comment[wa]=scripe PHP
 Comment[zh]=PHP脚本
+# PHP rules need to go before HTML
+Contents=80:(string 0:64 "<?php")
 Patterns=*.php;*.php3;*.php4
 
 [MIME-Info application/x-pkcs12]
@@ -5242,6 +5282,7 @@ Comment[xh]=ushiccilelo lukawonke-wonke nexwebhu leMbali le Rar
 Comment[xx]=xx
 Comment[zh_CN]=Rar 归档文件
 Comment[zh_TW]=Rar 壓縮檔案
+Contents=50:(string 0 "Rar!")
 Patterns=*.rar
 
 [MIME-Info application/x-reject]
@@ -5334,6 +5375,7 @@ Comment[xx]=xx
 Comment[zh_CN]=RPM 包文件
 Comment[zh_TW]=RPM 套件檔案
 Comment[zu]=Ifayiela elipakishiwe le RPM
+Contents=50:(string 0 "\xed\xab\xee\xdb")
 Patterns=*.rpm
 
 [MIME-Info application/x-shar]
@@ -5400,6 +5442,7 @@ Comment[tr]=paylaşılmış kütüphane
 Comment[uk]=спільна бібліотека
 Comment[wa]=pårteye lîvreye
 Comment[zh]=共享库
+Contents=50:(string 0 "\177ELF            \003" 0xffffffff000000000000000000000000ff)
 Patterns=*.so
 
 [MIME-Info application/x-shared-library-la]
@@ -5546,6 +5589,7 @@ Comment[xh]=ushicilelo phantsi lweqokobhe
 Comment[xx]=xx
 Comment[zh_CN]=shell 脚本
 Comment[zu]=ushicilelo phantsi lwegololodo
+Contents=50:(or (string 0 "#!/bin/sh") (string 0 "#!/bin/bash") (string 0 "#!/bin/csh") (string 1:16 "/bin/sh") (string 1:16 "/bin/bash") (string 1:16 "/bin/csh"))
 Patterns=*.sh;*.csh
 
 [MIME-Info application/x-shockwave-flash]
@@ -5583,6 +5627,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Shockwave Flash 媒体文件
 Comment[zh_TW]=Shockwave Flash 媒體檔案
 Comment[zu]=Igagasi lokuthuka Flash Media
+Contents=50:(string 0 "FWS")
 Patterns=*.swf
 
 [MIME-Info application/x-siag]
@@ -5718,6 +5763,7 @@ Comment[tr]=Macintosh StuffIt arşivi
 Comment[uk]=архів Macintosh StuffIt
 Comment[wa]=årtchive Macintosh ecodêye avou StuffIt
 Comment[zh]=Macintosh StuffIt存档
+Contents=50:(or (string 0 "StuffIt ") (string 0 "SIT!"))
 
 [MIME-Info application/x-sv4cpio]
 Comment=SV4 CPIO archive
@@ -6626,6 +6672,7 @@ Comment[xh]=Ushicilelo lukawonke-wonke lwendawo egcina izilwanyane
 Comment[xx]=xx
 Comment[zh_CN]=Zoo 归档文件
 Comment[zh_TW]=Zoo 壓縮文件
+Contents=50:(string 20 "\375\304\247\334")
 Patterns=*.zoo
 
 [MIME-Info application/zip]
@@ -6767,6 +6814,7 @@ Comment[xx]=xx
 Comment[zh_CN]=ULAW (Sun) 音频文件
 Comment[zh_TW]=ULAW (Sun) 聲音文件
 Comment[zu]=ULAW (Ilanga) ezwakalayo
+Contents=50:(string 0 ".snd")
 Patterns=*.au;*.snd
 
 [MIME-Info audio/prs.sid]
@@ -6792,6 +6840,7 @@ Comment[sl]=zvok Commodore 64
 Comment[sv]=Commodore 64-ljud
 Comment[uk]=аудіо 64 Audio
 Comment[zh]=Commodore 64声频
+Contents=50:(string 0 "PSID")
 Patterns=*.sid;*.psid
 
 [MIME-Info audio/vnd.rn-realaudio]
@@ -6933,6 +6982,7 @@ Comment[tr]=AIFC sesi
 Comment[uk]=аудіо AIFC
 Comment[wa]=son AIFC
 Comment[zh]=AIFC声频
+Contents=50:(string 8 "AIFC")
 
 [MIME-Info audio/x-aiff]
 Comment=AIFF/Amiga audio
@@ -6983,6 +7033,7 @@ Comment[xx]=xx
 Comment[zh_CN]=AIFF/Amiga 音频文件
 Comment[zh_TW]=AIFF/Amiga 聲音文件
 Comment[zu]=AIFF/Amiga ezwakalayo
+Contents=50:(string 8 "AIFF")
 Patterns=*.aiff;*.aif;*.aifc
 
 [MIME-Info audio/x-aiffc]
@@ -7049,6 +7100,7 @@ Comment[tr]=Impulse Tracker sesi
 Comment[uk]=аудіо Impulse Tracker
 Comment[wa]=son Impulse Tracker
 Comment[zh]=Impulse Tracker声频
+Contents=50:(string 0 "IMPM")
 Patterns=*.it
 
 [MIME-Info audio/x-midi]
@@ -7102,6 +7154,7 @@ Comment[xx]=xx
 Comment[zh_CN]=MIDI 音频文件
 Comment[zh_TW]=MIDI 聲音文件
 Comment[zu]=MIDI ezwakalayo
+Contents=50:(string 0 "MThd")
 Patterns=*.mid;*.midi
 
 [MIME-Info audio/x-mod]
@@ -7384,6 +7437,7 @@ Comment[xx]=xx
 Comment[zh_CN]=RealAudio 广播
 Comment[zh_TW]=RealAudio 廣播
 Comment[zu]=Ukusakaza Kwangempela Okuzwakalayo
+Contents=50:(string 0 ".ra\375")
 Patterns=*.ra;*.ram;*.rm
 
 [MIME-Info audio/x-riff]
@@ -7417,6 +7471,7 @@ Comment[tr]=RIFF sesi
 Comment[uk]=аудіо RIFF
 Comment[wa]=son RIFF
 Comment[zh]=RIFF声频
+Contents=50:(string 0 "RIFF")
 
 [MIME-Info audio/x-s3m]
 Comment=Scream Tracker 3 audio
@@ -7624,6 +7679,7 @@ Comment[xx]=xx
 Comment[zh_CN]=WAV 音频文件
 Comment[zh_TW]=WAV 聲音文件
 Comment[zu]=WAV ezwakalayo
+Contents=50:(or (string 8 "WAVE") (string 8 "WAV "))
 Patterns=*.wav
 
 [MIME-Info audio/x-xi]
@@ -7750,6 +7806,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Windows BMP 图像
 Comment[zh_TW]=Windows BMP 影像
 Comment[zu]=Umfanekiso wamawindi e BMP
+Contents=50:(string 0 "BMxxxx\000\000" 0xffff00000000ffff)
 Patterns=*.bmp
 
 [MIME-Info image/cgm]
@@ -7929,6 +7986,7 @@ Comment[xx]=xx
 Comment[zh_CN]=GIF 图像
 Comment[zh_TW]=GIF 影像
 Comment[zu]=Umfanekiso we GIF
+Contents=50:(string 0 "GIF8")
 Patterns=*.gif
 
 [MIME-Info image/ief]
@@ -8024,6 +8082,7 @@ Comment[xx]=xx
 Comment[zh_CN]=JPEG 图像
 Comment[zh_TW]=JPEG 影像
 Comment[zu]=Umfanekiso we JPEG
+Contents=50:(string 0 "\377\330\377")
 Patterns=*.jpeg;*.jpg;*.jpe
 
 [MIME-Info image/png]
@@ -8085,6 +8144,7 @@ Comment[xx]=xx
 Comment[zh_CN]=PNG 图像
 Comment[zh_TW]=PNG 影像
 Comment[zu]=Umfanekiso we PNG
+Contents=50:(string 0 "\x89PNG")
 Patterns=*.png
 
 [MIME-Info image/svg+xml]
@@ -8121,6 +8181,8 @@ Comment[xx]=xx
 Comment[zh_CN]=可缩放向量图
 Comment[zh_TW]=可縮放向量圖
 Comment[zu]=Imidwebo elinganiselekayo ye Vector
+# SVG rules need to go before HTML
+Contents=80:(or (string 0:256 "<!DOCTYPE svg") (string 0:64 "<svg"))
 Patterns=*.svg
 
 [MIME-Info image/tiff]
@@ -8182,6 +8244,7 @@ Comment[xx]=xx
 Comment[zh_CN]=TIFF 图像
 Comment[zh_TW]=TIFF 影像
 Comment[zu]=Umfanekiso we TIFF
+Contents=50:(or (string 0 "IIN1") (string 0 "MM\x00\x2a") (string 0 "II\x2a\x00"))
 Patterns=*.tif;*.tiff
 
 [MIME-Info image/vnd.dwg]
@@ -8986,6 +9049,7 @@ Comment[tr]=Photoshop belgesi
 Comment[uk]=документ Photoshop
 Comment[wa]=documint Photoshop
 Comment[zh]=Photoshop文档
+Contents=50:(string 0 "8BPS  \000\000\000\000" 0xffffffff0000ffffffff)
 Patterns=*.psd
 
 [MIME-Info image/x-rgb]
@@ -9314,6 +9378,8 @@ Comment[xx]=xx
 Comment[zh_CN]=X 点图图像
 Comment[zh_TW]=X 點圖影像
 Comment[zu]=Umfanekiso we X PixMap
+# XPM rule needs to go before text/x-csrc rule, if any
+Contents=80:(string 0 "/* XPM */")
 Patterns=*.xpm
 
 [MIME-Info image/x-xwindowdump]
@@ -9804,6 +9870,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Usenet 新闻消息
 Comment[zh_TW]=Usenet 新聞消息
 Comment[zu]=Umyalezo wezindaba wokusebenzisa uxhumaniso
+Contents=50:(or (string 0 "Path:") (string 0 "Xref:") (string 0 "Article"))
 
 [MIME-Info message/partial]
 Comment=partial email message
@@ -9886,6 +9953,7 @@ Comment[xx]=xx
 Comment[zh_CN]=电子邮件
 Comment[zh_TW]=電子郵件
 Comment[zu]=Umyalezo Wemeyili
+Contents=50:(or (string 0 "Return-Path:") (string 0 "From:") (string 0 "Received:"))
 
 [MIME-Info message/x-gnu-rmail]
 Comment=GNU mail message
@@ -10333,6 +10401,7 @@ Comment[xx]=xx
 Comment[zh_CN]=iCalendar 文件
 Comment[zh_TW]=ICalendar 文件
 Comment[zu]=Ifayela Yekhalenda
+Contents=50:(string 0 "BEGIN:VCALENDAR")
 Patterns=*.ics
 
 [MIME-Info text/css]
@@ -10499,6 +10568,7 @@ Comment[xx]=xx
 Comment[zh_CN]=HTML 页面
 Comment[zh_TW]=HTML 頁面
 Comment[zu]=Iphepha le HTML
+Contents=50:(or (string 0:64 "<!DOCTYPE HTML") (string 0:64 "<!doctype html") (string 0:64 "<HEAD") (string 0:64 "<head") (string 0:64 "<TITLE") (string 0:64 "<title") (string 0:64 "<html") (string 0:64 "<HTML"))
 Patterns=*.html;*.htm
 
 [MIME-Info text/htmlh]
@@ -10835,6 +10905,7 @@ Comment[sv]=Spreadsheet Interchange-dokument
 Comment[tr]=Hesap tablosu Değiş tokuş belgesi
 Comment[uk]=документ Spreadsheet Interchange
 Comment[zh]=Spreadsheet互换文档
+Contents=50:(string 0 "ID;")
 Patterns=*.sylk;*.slk
 
 [MIME-Info text/tab-separated-values]
@@ -11216,7 +11287,7 @@ Comment[ca]=Fitxer de text amb valors separats per comes
 Comment[cs]=Text s hodnotami oddělenými čárkami
 Comment[da]=Tekstfilter med komma-adskilte værdier
 Comment[de]=Textdatei mit Werten, die durch Komma getrennt sind
-Comment[el]=Αρχείο κειμένου  με τιμές διαχωριζόμενες με 
+Comment[el]=Αρχείο κειμένου  με τιμές διαχωριζόμενες με
 Comment[eo]=Tekstdosiero (Komo-apartigitaj valoroj)
 Comment[es]=Archivo de texto con valores separados por comas
 Comment[et]=Komaga eraldatud väljadega tekstifail
@@ -11800,6 +11871,7 @@ Comment[tr]=Korn kabuk betiği
 Comment[uk]=скрипт Korn Shell
 Comment[wa]=scripe Korn shell
 Comment[zh]=Korn shell 描述語言檔
+Contents=50:(or (string 0 "#!/bin/ksh") (string 1:16 "/bin/ksh"))
 
 [MIME-Info text/x-literate-haskell]
 Comment=Literate haskell source code
@@ -11908,6 +11980,7 @@ Comment[xx]=xx
 Comment[zh_CN]=LyX - 文档
 Comment[zh_TW]=LyX - 文件
 Comment[zu]=Idokhumente ye - LyX
+Contents=50:(string 0 "#LyX")
 Patterns=*.lyx
 
 [MIME-Info text/x-makefile]
@@ -12135,6 +12208,7 @@ Comment[tr]=kaynak kod yaması
 Comment[uk]=латка вихідного коду
 Comment[wa]=patch di côde soûrdant
 Comment[zh]=源代码补丁
+Contents=50:(or (string 0 "diff ") (string 0 "Index:") (string 0 "*** ") (string 0 "Only in ") (string 0 "Common subdirectories: "))
 
 [MIME-Info text/x-readme]
 Comment=README document
@@ -12669,6 +12743,7 @@ Comment[xx]=xx
 Comment[zh_CN]=电子商业卡片
 Comment[zh_TW]=電子商業卡片
 Comment[zu]=Elikagesi Ikhadi Lebhizinisi
+Contents=50:(string 0 "BEGIN:VCARD")
 Patterns=*.vct;*.gcrd
 
 [MIME-Info text/x-xslfo]
@@ -12764,6 +12839,7 @@ Comment[sk]=skript Z shellu
 Comment[sl]=skripta za lupino Z
 Comment[sv]=Z-skalskript
 Comment[uk]=скрипт оболонки Z
+Contents=50:(string 0 "#!/bin/zsh")
 
 [MIME-Info text/xml]
 Comment=eXtensible Markup Language document
@@ -12895,6 +12971,7 @@ Comment[xx]=xx
 Comment[zh_CN]=MPEG 视频文件
 Comment[zh_TW]=MPEG 視頻文件
 Comment[zu]=MPEG Vidiyo
+Contents=50:(or (string 0 "\000\000\001\272") (string 0 "\000\000\001\263") (string 0 "\x47\x3f\xff\x10"))
 Patterns=*.mpeg;*.mpg;*.mp2;*.mpe;*.vob;*.dat
 
 [MIME-Info video/quicktime]
@@ -12947,6 +13024,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Quicktime 视频文件
 Comment[zh_TW]=Quicktime 視頻文件
 Comment[zu]=Ividiyo Yesikhathi Esheshayo
+Contents=50:(or (string 4 "moov") (string 4 "mdat") (string 12 "mdat"))
 Patterns=*.qt;*.mov;*.moov;*.qtvr
 
 [MIME-Info video/vivo]
@@ -13136,6 +13214,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Autodesk FLIC 文件
 Comment[zh_TW]=Autodesk FLIC 文件
 Comment[zu]=Amafayela e Autodesk's FLIC files
+Contents=50:(or (string 4 "\x11\xAF") (string 4 "\x12\xAF"))
 Patterns=*.fli;*.flc
 
 [MIME-Info video/x-mng]
@@ -13279,6 +13358,7 @@ Comment[xx]=xx
 Comment[zh_CN]=微软 AVI 视频文件
 Comment[zh_TW]=微軟 AVI 視頻文件
 Comment[zu]=Microsoft AVI Vidiyo
+Contents=50:(string 8 "AVI ")
 Patterns=*.avi
 
 [MIME-Info video/x-real-video]
@@ -13344,4 +13424,5 @@ Comment[tr]=SGI videosu
 Comment[uk]=відео SGI
 Comment[wa]=vidéyo SGI
 Comment[zh]=SGI影像
+Contents=50:(string 0 "MOVI")
 Patterns=*.movie

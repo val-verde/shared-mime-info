@@ -566,7 +566,7 @@ Each section is introduced by giving the priority and type in brackets.
 Higher priority entries come first.
 <screen>[50:text/x-diff]</screen>
 Each line in the section takes the form:
-<screen>indent start-offset "=" value [ "&amp;" mask ] [ "~" word-size ] [ "+" range-length ] "\n"</screen>
+<screen>indent start-offset value [ "&amp;" mask ] [ "~" word-size ] [ "+" range-length ] "\n"</screen>
 <informaltable>
 	<tgroup cols="3">
 	<thead><row><entry>Part</entry><entry>Example</entry><entry>Meaning</entry></row></thead>
@@ -612,8 +612,8 @@ The text/x-diff above example would (on its own) create this magic file:
 			<programlisting><![CDATA[
 00000000  4d 49 4d 45 2d 4d 61 67  69 63 00 0a 5b 35 30 3a  |MIME-Magic..[50:|
 00000010  74 65 78 74 2f 78 2d 64  69 66 66 5d 0a 00 00 00  |text/x-diff]....|
-00000020  00 00 05 64 69 66 66 20  0a 00 00 00 00 00 04 2a  |...diff .......*|
-00000030  2a 2a 20 0a 00 00 00 00  00 17 43 6f 6d 6d 6f 6e  |** .......Common|
+00000020  00 00 05 64 69 66 66 09  0a 00 00 00 00 00 04 2a  |...diff........*|
+00000030  2a 2a 09 0a 00 00 00 00  00 17 43 6f 6d 6d 6f 6e  |**........Common|
 00000040  20 73 75 62 64 69 72 65  63 74 6f 72 69 65 73 3a  | subdirectories:|
 00000050  20 0a                                             | .|
 ]]></programlisting>

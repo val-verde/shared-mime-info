@@ -723,7 +723,6 @@ static void write_magic_children(FILE *stream, xmlNode *parent, int indent)
 			/* TODO: Actually read the mask! */
 		}
 
-		fputc('=', stream);
 		write32(stream, range_start);
 		write16(stream, parsed_value->len);
 		fwrite(parsed_value->str, parsed_value->len, 1, stream);

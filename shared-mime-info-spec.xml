@@ -17,53 +17,12 @@
 				<address><email>tal197@users.sf.net</email></address>
 			</affiliation>
 		</author>
-		<author>
-			<firstname>David</firstname>
-			<surname>Faure</surname>
-			<affiliation>
-				<address><email>david@mandrakesoft.com</email></address>
-			</affiliation>
-		</author>
-		<author>
-			<firstname>Alex</firstname>
-			<surname>Larsson</surname>
-			<affiliation>
-				<address><email>alexl@redhat.com</email></address>
-			</affiliation>
-		</author>
-		<author>
-			<firstname>Seth</firstname>
-			<surname>Nickell</surname>
-			<affiliation>
-				<address><email>snickell@stanford.edu</email></address>
-			</affiliation>
-		</author>
-		<author>
-			<firstname>Keith</firstname>
-			<surname>Packard</surname>
-			<affiliation>
-				<address><email>keithp@keithp.com</email></address>
-			</affiliation>
-		</author>
-		<author>
-			<firstname>Waldo</firstname>
-			<surname>Bastian</surname>
-			<affiliation>
-				<address><email>bastian@kde.org</email></address>
-			</affiliation>
-		</author>
-		<author>
-			<firstname>Filip</firstname>
-			<surname>Van Raemdonck</surname>
-			<affiliation>
-				<address><email>mechanix@debian.org</email></address>
-			</affiliation>
-		</author>
 	</authorgroup>
 
 	<title>Shared MIME-info Database</title>
 	<date>29 Jul 2002</date>
 </articleinfo>
+
 <sect1>
 	<title>Introduction</title>
 	<sect2>
@@ -614,6 +573,30 @@ Override.xml mentioned in <xref linkend="s2_layout"/>. Information such as
 "text/html files need to be opened with Mozilla" should NOT go in the database.
 		</para>
 	</sect2>
+</sect1>
+
+<sect1>
+	<title>Contributors</title>
+	<simplelist>
+		<member>
+			Thomas Leonard <email>tal197@users.sf.net</email>
+		</member>
+		<member>
+			David Faure <email>david@mandrakesoft.com</email>
+		</member>
+		<member>
+			Alex Larsson <email>alexl@redhat.com</email>
+		</member>
+		<member>
+			Seth Nickell <email>snickell@stanford.edu</email>
+		</member>
+		<member>
+			Keith Packard <email>keithp@keithp.com</email>
+		</member>
+		<member>
+			Filip Van Raemdonck <email>mechanix@debian.org</email>
+		</member>
+	</simplelist>
 </sect1>
 
 <bibliography>

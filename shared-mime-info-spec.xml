@@ -317,7 +317,7 @@ Standard locations for all the files, and methods of resolving conflicts.
 Further, the existing databases have been merged into a single package
 <citation>SharedMIME</citation>.
 	</para>
-	<sect2>
+	<sect2 id="s2_layout">
 		<title>Directory layout</title>
 		<para>
 There are two important requirements for the way the MIME database is stored:
@@ -435,6 +435,11 @@ attributes. Each element corresponds to one line of
 <manvolnum>1</manvolnum></citerefentry>'s <filename>magic.mime</filename> file.
 They can be nested in the same way to provide the equivalent of continuation
 lines.
+				</para></listitem>
+				<listitem><para>
+<userinput>action</userinput> elements introduce an action that can be performed on files of this
+type. There may be several actions for each type. The format for this element has not yet been
+decided.
 				</para></listitem>
 				<listitem><para>
 <userinput>comment</userinput> elements give a human-readable textual description of the MIME
@@ -588,14 +593,18 @@ and in any case the programs may be following different versions of the spec.
 		</para>
 	</sect2>
 	<sect2>
-		<title>User preferences</title>
+		<title>User modification</title>
 		<para>
-The MIME database is NOT intended to store user preferences. Although users can edit the database,
-this is only to provide corrections and to allow them to install software themselves. Information such
-as "text/html files should be opened with Mozilla" should NOT go in the database. However, it may be
-used to store static information, such as "Mozilla can view text/html files",
-and even information such as "Galeon is the GNOME default text/html browser" (via an extension element
-with a GNOME namespace).
+The MIME database is NOT intended to store user preferences. Users should never
+edit the database. If they wish to make corrections or provide MIME entries for
+software that doesn't provide these itself, they should do so by means of the
+Override.xml mentioned in <xref linkend="s2_layout"/>. Information such as
+"text/html files need to be opened with Mozilla" should NOT go in the database.
+		</para>
+		<para>
+However, using extension elements introduced by additional namespaces (like a
+GNOME namespace), the database may be used to store static information, such as
+"Galeon is the GNOME default text/html browser".
 		</para>
 	</sect2>
 </sect1>

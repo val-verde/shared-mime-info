@@ -46,7 +46,7 @@ struct _Type {
 	char *media;
 	char *subtype;
 
-	GList	*unknown;	/* xmlNodes for 3rd party extensions */
+	xmlNode	*unknown;	/* contains xmlNodes for 3rd party extensions */
 };
 
 /* Maps MIME type names to Types */
@@ -66,15 +66,11 @@ static void usage(const char *name)
 static void free_type(gpointer data)
 {
 	Type *type = (Type *) data;
-	GList *next;
 
 	g_free(type->media);
 	g_free(type->subtype);
 
-	for (next = type->unknown; next; next = next->next)
-		xmlFreeNode((xmlNode *) next->data);
-
-	g_list_free(type->unknown);
+	xmlFreeNode(type->unknown);
 
 	g_free(type);
 }
@@ -101,7 +97,7 @@ static Type *get_type(const char *name)
 	type->subtype = g_strdup(slash + 1);
 	g_hash_table_insert(types, g_strdup(name), type);
 
-	type->unknown = NULL;
+	type->unknown = xmlNewNode(NULL, "unknown");
 
 	for (i = 0; i < G_N_ELEMENTS(media_types); i++)
 	{
@@ -128,7 +124,7 @@ static gboolean match_node(xmlNode *node,
 
 /* 'field' was found in the definition of 'type' and has the freedesktop.org
  * namespace. If it's a known field, process it and return TRUE, else
- * return FALSE to add it to the unknown fields list (copied to output).
+ * return FALSE to add it to the unknown fields node (copied to output).
  */
 static gboolean process_freedesktop_node(Type *type, xmlNode *field)
 {
@@ -191,7 +187,7 @@ static gboolean has_lang(xmlNode *node, const char *lang)
  */
 static void remove_old(Type *type, xmlNode *new)
 {
-	GList *next;
+	xmlNode *field;
 	gchar *lang;
 
 	if (new->ns == NULL || strcmp(new->ns->href, FREE_NS) != 0)
@@ -204,14 +200,13 @@ static void remove_old(Type *type, xmlNode *new)
 	if (!lang)
 		lang = xmlGetNsProp(new, "lang", NULL); /* (libxml) */
 
-	for (next = type->unknown; next; next = next->next)
+	for (field = type->unknown; field; field = field->next)
 	{
-		xmlNode *node = (xmlNode *) next->data;
-
-		if (match_node(node, FREE_NS, "comment") &&
-		    has_lang(node, lang))
+		if (match_node(field, FREE_NS, "comment") &&
+		    has_lang(field, lang))
 		{
-			type->unknown = g_list_remove(type->unknown, node);
+			xmlUnlinkNode(field);
+			xmlFreeNode(field);
 			break;
 		}
 	}
@@ -257,7 +252,7 @@ static void load_type(xmlNode *node)
 
 		remove_old(type, field);
 
-		type->unknown = g_list_append(type->unknown, copy);
+		xmlAddChild(type->unknown, copy);
 	}
 }
 
@@ -396,9 +391,8 @@ static void write_out_type(gpointer key, gpointer value, gpointer data)
 	const char *type_name = (char *) key;
 	char *media, *filename;
 	xmlDoc *doc;
-	xmlNode *root;
+	xmlNode *root, *src;
 	xmlNs *ns;
-	GList *field;
 
 	media = g_strconcat(mime_dir, "/", type->media, NULL);
 	mkdir(media, 0755);
@@ -419,9 +413,9 @@ static void write_out_type(gpointer key, gpointer value, gpointer data)
 	xmlAddChild(root, xmlNewDocComment(doc,
 		"Created automatically by update-mime-database. DO NOT EDIT!"));
 
-	for (field = type->unknown; field; field = field->next)
+	for (src = type->unknown->xmlChildrenNode; src; src = src->next)
 	{
-		xmlNode *copy, *src = (xmlNode *) field->data;
+		xmlNode *copy;
 
 		copy = xmlDocCopyNode(src, doc, 1);
 

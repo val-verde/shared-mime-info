@@ -566,7 +566,7 @@ Each section is introduced by giving the priority and type in brackets.
 Higher priority entries come first.
 <screen>[50:text/x-diff]</screen>
 Each line in the section takes the form:
-<screen>indent start-offset value [ "&amp;" mask ] [ "~" word-size ] [ "+" range-length ] "\n"</screen>
+<screen>indent start-offset "=" value [ "&amp;" mask ] [ "~" word-size ] [ "+" range-length ] "\n"</screen>
 <informaltable>
 	<tgroup cols="3">
 	<thead><row><entry>Part</entry><entry>Example</entry><entry>Meaning</entry></row></thead>

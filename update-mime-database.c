@@ -132,6 +132,27 @@ static gboolean match_node(xmlNode *node,
 		return strcmp(node->name, localName) == 0 && !node->ns;
 }
 
+static gboolean validate_magic(xmlNode *parent)
+{
+	xmlNode *node;
+
+	for (node = parent->xmlChildrenNode; node; node = node->next)
+	{
+		if (node->type != XML_ELEMENT_NODE)
+			continue;
+		if (!xmlHasNsProp(node, "offset", NULL))
+			return FALSE;
+		if (!xmlHasNsProp(node, "type", NULL))
+			return FALSE;
+		if (!xmlHasNsProp(node, "value", NULL))
+			return FALSE;
+		if (!validate_magic(node))
+			return FALSE;
+	}
+
+	return TRUE;
+}
+
 /* 'field' was found in the definition of 'type' and has the freedesktop.org
  * namespace. If it's a known field, process it and return TRUE, else
  * return FALSE to add it to the output XML document.
@@ -153,13 +174,20 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field)
 	{
 		xmlNode *copy;
 		gchar *type_name;
-		
-		copy = xmlCopyNode(field, 1);
-		type_name = g_strconcat(type->media, "/", type->subtype, NULL);
-		xmlSetNsProp(copy, NULL, "type", type_name);
-		g_free(type_name);
 
-		g_ptr_array_add(magic, copy);
+		if (validate_magic(field))
+		{
+			copy = xmlCopyNode(field, 1);
+			type_name = g_strconcat(type->media, "/",
+						type->subtype, NULL);
+			xmlSetNsProp(copy, NULL, "type", type_name);
+			g_free(type_name);
+
+			g_ptr_array_add(magic, copy);
+		}
+		else
+			g_print("Skipping invalid magic for type '%s/%s'\n",
+				type->media, type->subtype);
 	}
 	else if (strcmp(field->name, "comment") == 0)
 		return FALSE;	/* Copy through */
@@ -695,6 +723,7 @@ static void write_magic_children(FILE *stream, xmlNode *parent, int indent)
 			/* TODO: Actually read the mask! */
 		}
 
+		fputc('=', stream);
 		write32(stream, range_start);
 		write16(stream, parsed_value->len);
 		fwrite(parsed_value->str, parsed_value->len, 1, stream);

@@ -1,5 +1,8 @@
 2004-07-05  Ole Laursen  <olau@hardworking.dk>
 
+	* .cvsignore, shared-mime-info.pot: Removed shared-mime-info.pot
+	from CVS, since it is a generated file.
+
 	* da.po: Added Danish translation.
 
 2004-04-11  Christian Neumair  <chris@gnome-de.org>

@@ -5360,6 +5360,8 @@ command to generate the output files.
       <match type="string" value="/bin/env perl" offset="1:16"/>
     </magic>
     <glob pattern="*.pl"/>
+    <glob pattern="*.pm"/><!-- module -->
+    <glob pattern="*.al"/><!-- autoloader -->
     <glob pattern="*.perl"/>
   </mime-type>
   <mime-type type="application/x-php">

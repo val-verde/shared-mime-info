@@ -1,5 +1,7 @@
 ## Process this file with automake to produce Makefile.in
 
+SUBDIRS=po
+
 AUTOMAKE_OPTIONS = foreign
 
 packagesdir = $(mimedir)/packages
@@ -10,7 +12,7 @@ update_mime_database_SOURCES = update-mime-database.c
 
 man_MANS = update-mime-database.1
 
-EXTRA_DIST = config.rpath  shared-mime-info-spec.xml $(packages_DATA) README $(man_MANS)
+EXTRA_DIST = shared-mime-info-spec.xml freedesktop.org.xml.in $(packages_DATA) README $(man_MANS)
 
 CFLAGS = @CFLAGS@ `@PKG_CONFIG@ --cflags libxml-2.0 glib-2.0`
 LDFLAGS = @LDFLAGS@ `@PKG_CONFIG@ --libs libxml-2.0 glib-2.0`
@@ -18,22 +20,15 @@ LDFLAGS = @LDFLAGS@ `@PKG_CONFIG@ --libs libxml-2.0 glib-2.0`
 @INTLTOOL_XML_RULE@
 @INTLTOOL_DESKTOP_RULE@
 
-install-data-hook:
-	"${bindir}/update-mime-database" "${mimedir}"
+install-data-hook: 
+	$(DESTDIR)"$(bindir)/update-mime-database" "$(DESTDIR)${mimedir}"
 
 uninstall-hook:
-	for media in text application image audio inode video message model multipart; do rm -f "${mimedir}/$${media}/"*.xml; done
-	rm -f "${mimedir}/globs"
-	rm -f "${mimedir}/magic"
+	for media in text application image audio inode video message model multipart; do rm -f "$(DESTDIR)${mimedir}/$${media}/"*.xml; done
+	rm -f "$(DESTDIR)${mimedir}/globs"
+	rm -f "$(DESTDIR)${mimedir}/magic"
+	rm -f "$(DESTDIR)${mimedir}/XMLnamespaces"
 
 check:
 	xmllint --noout --valid $(srcdir)/freedesktop.org.xml
 
-
-## I'd prefer to kep these tests in, but it breaks on too many machines.
-##
-##all-local:
-##	@if locale | grep -q UTF; then echo "*** intltool doesn't like UTF-8 locales.  Try rerunning with eg: LANG=en_US"; /bin/rm -f freedesktop.org.xml; exit 1; fi
-##
-##dist-hook:
-##	@if locale | grep -q UTF; then echo "*** intltool doesn't like UTF-8 locales.  Try rerunning with eg: LANG=en_US"; /bin/rm -f freedesktop.org.xml; exit 1; fi

@@ -7,6 +7,7 @@
   <!ATTLIST mime-type type CDATA #REQUIRED>
 
   <!ELEMENT comment (#PCDATA)>
+  <!ATTLIST comment xml:lang CDATA #IMPLIED>
 
   <!ELEMENT glob EMPTY>
   <!ATTLIST glob pattern CDATA #REQUIRED>
@@ -3316,6 +3317,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/vnd.djvu">
    <comment>DjVu image</comment>
+   <comment xml:lang="nn">DjVu-bilete</comment>
+   <comment xml:lang="no">DjVu-bilde</comment>
    <magic priority="50">
      <match type="string" value="FORM" offset="4">
        <match type="string" value="DJVU" offset="12"/>

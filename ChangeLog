@@ -1,3 +1,11 @@
+Wed Jan 14 16:23:22 2004  Jonathan Blandford  <jrb@gnome.org>
+
+	* configure.in: Released version 0.12.
+
+	* Makefile.am: Make pass distcheck.
+
+	* freedesktop.or.xml.in: Update DTD to deal with xml:lang
+
 Tue Jan 13 16:32:03 2004  Jonathan Blandford  <jrb@gnome.org>
 
 	* po/no.po: new translation

@@ -676,7 +676,7 @@ Comment[xx]=xx
 Comment[zh_CN]=PostScript 文档
 Comment[zh_TW]=PostScript 文件
 Comment[zu]=Idokhumente ye PostScript
-Contents=50:(or (string 0 "\004%!") (string 0 "%!") (string 0 "%!") (string 0 "\004%!")) # XXX: Has dups
+Contents=50:(or (string 0 "\004%!") (string 0 "%!"))
 Patterns=*.ps
 
 [MIME-Info application/rtf]
@@ -1417,7 +1417,7 @@ Comment[xx]=xx
 Comment[zh_CN]=WordPerfect 文档
 Comment[zh_TW]=WordPerfect 文件
 Comment[zu]=Idokumente ye WordPerfect
-Contents=50:(or (string 1 "WPC") (belong 0 "0xff575053c405") (string 1 "WPC")) # XXX: Has dups
+Contents=50:(or (string 1 "WPC") (belong 0 "0xff575053c405"))
 Patterns=*.wpd
 
 [MIME-Info application/x-abiword]
@@ -4435,7 +4435,7 @@ Comment[zh_CN]=Lha 归档文件
 Comment[zh_TW]=Lha 壓縮檔案
 # LHARC/LHA archiver (Greg Roelofs, newt@uchicago.edu)
 #	[never seen any but the last; -lh4- reported in comp.compression:]
-Contents=50:(or (string 2 "-lh0-") (string 2 "-lh1-") (string 2 "-lz4-") (string 2 "-lz5-") (string 2 "-lzs-") (string 2 "-lh40-") (string 2 "-lhd-") (string 2 "-lh2-") (string 2 "-lh3-") (string 2 "-lh4-") (string 2 "-lh5-") (string 2 "-lh0-") (string 2 "-lh1-") (string 2 "-lz4-") (string 2 "-lz5-") (string 2 "-lzs-") (string 2 "-lh -") (string 2 "-lhd-") (string 2 "-lh2-") (string 2 "-lh3-") (string 2 "-lh4-") (string 2 "-lh5-")) # XXX: Has dups
+Contents=50:(or (string 2 "-lh -") (string 2 "-lh0-") (string 2 "-lh1-") (string 2 "-lh2-") (string 2 "-lh3-") (string 2 "-lh4-") (string 2 "-lh5-") (string 2 "-lh40-") (string 2 "-lhd-") (string 2 "-lz4-") (string 2 "-lz5-") (string 2 "-lzs-"))
 Patterns=*.lha;*.lzh
 
 [MIME-Info application/x-lhz]
@@ -5109,7 +5109,7 @@ Comment[zu]=PERL iprogremu
 # For Larry Wall's perl language.  The ``eval'' line recognizes an
 # outrageously clever hack for USG systems.
 #                               Keith Waclena <keith@cerberus.uchicago.edu>
-Contents=50:(or (string 0 "#!/bin/perl") (string 1:16 "/bin/perl") (string 0 "#!/bin/perl") (string 0 "#! /bin/perl") (string 0 "eval \"exec /bin/perl") (string 0 "#!/usr/bin/perl") (string 0 "#! /usr/bin/perl") (string 0 "eval \"exec /usr/bin/perl") (string 0 "#!/usr/local/bin/perl") (string 0 "#! /usr/local/bin/perl") (string 0 "eval \"exec /usr/local/bin/perl")) # XXX: Has dups
+Contents=50:(or (string 0 "eval \"exec /usr/local/bin/perl") (string 1:16 "/bin/perl"))
 Patterns=*.pl;*.perl
 
 [MIME-Info application/x-php]
@@ -5820,7 +5820,7 @@ Comment[zu]=ushicilelo phantsi lwegololodo
 #0       string          #!/usr/local/bin/ae     Neil Brown's ae
 #0       string          #!\ /usr/local/bin/ae   Neil Brown's ae
 # Shell archives
-Contents=50:(or (string 0 "#!/bin/sh") (string 0 "#!/bin/bash") (string 0 "#!/bin/csh") (string 1:16 "/bin/sh") (string 1:16 "/bin/bash") (string 1:16 "/bin/csh") (string 0 "#!/bin/sh") (string 0 "#! /bin/sh") (string 0 "#!/bin/csh") (string 0 "#! /bin/csh") (string 0 "#!/bin/ksh") (string 0 "#! /bin/ksh") (string 0 "#!/bin/zsh") (string 0 "#! /bin/zsh") (string 0 "#!/bin/tcsh") (string 0 "#! /bin/tcsh") (string 0 "#!/usr/local/tcsh") (string 0 "#! /usr/local/tcsh") (string 0 "#!/usr/local/bin/tcsh") (string 0 "#! /usr/local/bin/tcsh") (string 0 "#!/bin/bash") (string 0 "#! /bin/bash") (string 0 "#!/usr/local/bin/bash") (string 0 "#! /usr/local/bin/bash") (string 0 "#!/usr/local/bin/zsh") (string 0 "#! /usr/local/bin/zsh") (string 0 "#!/usr/local/bin/ash") (string 0 "#! /usr/local/bin/ash") (string 0 "#!/bin/nawk") (string 0 "#! /bin/nawk") (string 0 "#!/usr/bin/nawk") (string 0 "#! /usr/bin/nawk") (string 0 "#!/usr/local/bin/nawk") (string 0 "#! /usr/local/bin/nawk") (string 10 "# This is a shell archive")) # XXX: Has dups
+Contents=50:(or (string 0 "#!/bin/ksh") (string 0 "#!/usr/local/bin/ash") (string 0 "#!/usr/local/tcsh") (string 10 "# This is a shell archive") (string 1:16 "/bin/bash") (string 1:16 "/bin/nawk") (string 1:16 "/bin/tcsh") (string 1:16 "/bin/csh") (string 1:16 "/bin/zsh") (string 1:16 "/bin/sh"))
 Patterns=*.sh;*.csh
 
 [MIME-Info application/x-shockwave-flash]
@@ -10184,7 +10184,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Usenet 新闻消息
 Comment[zh_TW]=Usenet 新聞消息
 Comment[zu]=Umyalezo wezindaba wokusebenzisa uxhumaniso
-Contents=50:(or (string 0 "Path:") (string 0 "Xref:") (string 0 "Article") (string 0 "Path:") (string 0 "Xref:") (string 0 "Article") (string 0 "Path:") (string 0 "Xref:") (string 0 "Article")) # XXX: Has dups
+Contents=50:(or (string 0 "Article") (string 0 "Path:") (string 0 "Xref:"))
 
 [MIME-Info message/partial]
 Comment=partial email message
@@ -10270,7 +10270,7 @@ Comment[zu]=Umyalezo Wemeyili
 # There are tests to ascmagic.c to cope with mail and news.
 # news and mail
 #0       string          BABYL           message/x-gnu-rmail
-Contents=50:(or (string 0 "Return-Path:") (string 0 "From:") (string 0 "Received:") (string 0 "Relay-Version:") (string 0 "#! rnews") (string 0 "N#! rnews") (string 0 "Forward to") (string 0 "Pipe to") (string 0 "Return-Path:") (string 0 "From:") (string 0 "Return-Path:") (string 0 "From:") (string 0 "Received:")) # XXX: Has dups
+Contents=50:(or (string 0 "#! rnews") (string 0 "Forward to") (string 0 "From:") (string 0 "N#! rnews") (string 0 "Pipe to") (string 0 "Received:") (string 0 "Relay-Version:") (string 0 "Return-Path:"))
 
 [MIME-Info message/x-gnu-rmail]
 Comment=GNU mail message
@@ -13365,7 +13365,7 @@ Comment[xx]=xx
 Comment[zh_CN]=Quicktime 视频文件
 Comment[zh_TW]=Quicktime 視頻文件
 Comment[zu]=Ividiyo Yesikhathi Esheshayo
-Contents=50:(or (string 4 "moov") (string 4 "mdat") (string 12 "mdat") (string 4 "moov") (string 4 "mdat")) # XXX: Has dups
+Contents=50:(or (string 12 "mdat") (string 4 "mdat") (string 4 "moov"))
 Patterns=*.qt;*.mov;*.moov;*.qtvr
 
 [MIME-Info video/vivo]

@@ -1614,15 +1614,19 @@ command to generate the output files.
       <match type="string" value="\x28\00\00\00" offset="0"/>
     </magic>
   </mime-type>
-  <mime-type type="image/x-djvu">
-    <magic priority="50">
-      <match type="string" value="FORM" offset="4">
-        <match type="string" value="DJVU" offset="12"/>
-        <match type="string" value="DJVM" offset="12"/>
-        <match type="string" value="BM44" offset="12"/>
-        <match type="string" value="PM44" offset="12"/>
-      </match>
-    </magic>
+  <mime-type type="image/vnd.djvu">
+   <_comment>DjVu image</_comment>
+   <magic priority="50">
+     <match type="string" value="FORM" offset="4">
+       <match type="string" value="DJVU" offset="12"/>
+       <match type="string" value="DJVM" offset="12"/>
+       <match type="string" value="BM44" offset="12"/>
+       <match type="string" value="PM44" offset="12"/>
+     </match>
+   </magic>
+   <glob pattern="*.djvu"/>
+   <glob pattern="*.djv"/>
+   <alias type="image/x-djvu"/>
   </mime-type>
   <mime-type type="image/dpx">
     <_comment>Digital Moving Picture Exchange image</_comment>

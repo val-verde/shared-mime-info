@@ -1683,6 +1683,7 @@ command to generate the output files.
     <glob pattern="*.rle"/>
   </mime-type>
   <mime-type type="image/svg+xml">
+    <sub-class-of type="text/xml"/>
     <_comment>scalable SVG image</_comment>
     <magic priority="80">
       <match type="string" value="&lt;!DOCTYPE svg" offset="0:256"/>
@@ -2073,6 +2074,7 @@ command to generate the output files.
     <glob pattern="*.asc"/>
   </mime-type>
   <mime-type type="text/rdf">
+    <sub-class-of type="text/plain"/>
     <_comment>Resource Description Framework (RDF) file</_comment>
     <glob pattern="*.rdf"/>
   </mime-type>
@@ -2080,10 +2082,12 @@ command to generate the output files.
     <_comment>email headers</_comment>
   </mime-type>
   <mime-type type="text/richtext">
+    <sub-class-of type="text/plain"/>
     <_comment>rich text document</_comment>
     <glob pattern="*.rtx"/>
   </mime-type>
   <mime-type type="text/rss">
+    <sub-class-of type="text/plain"/>
     <_comment>RDF Site Summary</_comment>
     <glob pattern="*.rss"/>
   </mime-type>
@@ -2101,6 +2105,7 @@ command to generate the output files.
     <glob pattern="*.slk"/>
   </mime-type>
   <mime-type type="text/tab-separated-values">
+    <sub-class-of type="text/plain"/>
     <_comment>text document (with tab-separated values)</_comment>
     <glob pattern="*.tsv"/>
   </mime-type>
@@ -2109,23 +2114,28 @@ command to generate the output files.
     <glob pattern="*.wml"/>
   </mime-type>
   <mime-type type="text/x-adasrc">
+    <sub-class-of type="text/plain"/>
     <_comment>Ada source code</_comment>
     <glob pattern="*.adb"/>
     <glob pattern="*.ads"/>
   </mime-type>
   <mime-type type="text/x-authors">
+    <sub-class-of type="text/plain"/>
     <_comment>author list</_comment>
     <glob pattern="AUTHORS"/>
   </mime-type>
   <mime-type type="text/x-bibtex">
+    <sub-class-of type="text/plain"/>
     <_comment>Bibtex bibliographic data</_comment>
     <glob pattern="*.bib"/>
   </mime-type>
   <mime-type type="text/x-c++hdr">
+    <sub-class-of type="text/plain"/>
     <_comment>C++ source code header</_comment>
     <glob pattern="*.hh"/>
   </mime-type>
   <mime-type type="text/x-c++src">
+    <sub-class-of type="text/plain"/>
     <_comment>C++ source code</_comment>
     <glob pattern="*.cpp"/>
     <glob pattern="*.cxx"/>
@@ -2134,32 +2144,39 @@ command to generate the output files.
     <glob pattern="*.c++"/>
   </mime-type>
   <mime-type type="text/x-chdr">
+    <sub-class-of type="text/plain"/>
     <_comment>C source code header</_comment>
     <glob pattern="*.h"/>
     <glob pattern="*.h++"/>
     <glob pattern="*.hp"/>
   </mime-type>
   <mime-type type="text/x-comma-separated-values">
+    <sub-class-of type="text/plain"/>
     <_comment>text document (with comma-separated values)</_comment>
     <glob pattern="*.csv"/>
   </mime-type>
   <mime-type type="text/x-copying">
+    <sub-class-of type="text/plain"/>
     <_comment>software license terms</_comment>
     <glob pattern="COPYING"/>
   </mime-type>
   <mime-type type="text/x-credits">
+    <sub-class-of type="text/plain"/>
     <_comment>software author credits</_comment>
     <glob pattern="CREDITS"/>
   </mime-type>
   <mime-type type="text/x-csrc">
+    <sub-class-of type="text/plain"/>
     <_comment>C source code</_comment>
     <glob pattern="*.c"/>
   </mime-type>
   <mime-type type="text/x-csharp">
+    <sub-class-of type="text/plain"/>
     <_comment>C# source code</_comment>
     <glob pattern="*.cs"/>
   </mime-type>
   <mime-type type="text/x-dcl">
+    <sub-class-of type="text/plain"/>
     <_comment>DCL script</_comment>
     <glob pattern="*.dcl"/>
   </mime-type>
@@ -2168,14 +2185,17 @@ command to generate the output files.
     <glob pattern="*.dsl"/>
   </mime-type>
   <mime-type type="text/x-dsrc">
+    <sub-class-of type="text/plain"/>
     <_comment>D source code</_comment>
     <glob pattern="*.d"/>
   </mime-type>
   <mime-type type="text/x-dtd">
+    <sub-class-of type="text/plain"/>
     <_comment>document type definition</_comment>
     <glob pattern="*.dtd"/>
   </mime-type>
   <mime-type type="text/x-emacs-lisp">
+    <sub-class-of type="text/plain"/>
     <_comment>Emacs Lisp source code</_comment>
     <magic priority="50">
       <match type="string" value="\012(" offset="0"/>
@@ -2184,14 +2204,17 @@ command to generate the output files.
     <glob pattern="*.el"/>
   </mime-type>
   <mime-type type="text/x-fortran">
+    <sub-class-of type="text/plain"/>
     <_comment>Fortran source code</_comment>
     <glob pattern="*.f"/>
   </mime-type>
   <mime-type type="text/x-gettext-translation">
+    <sub-class-of type="text/plain"/>
     <_comment>translated messages</_comment>
     <glob pattern="*.po"/>
   </mime-type>
   <mime-type type="text/x-gettext-translation-template">
+    <sub-class-of type="text/plain"/>
     <_comment>message translation template</_comment>
     <glob pattern="*.pot"/>
   </mime-type>
@@ -2220,58 +2243,71 @@ command to generate the output files.
     <glob pattern="*.htm"/>
   </mime-type>
   <mime-type type="text/x-gtkrc">
+    <sub-class-of type="text/plain"/>
     <_comment>GTK configuration</_comment>
     <glob pattern="gtkrc"/>
     <glob pattern=".gtkrc"/>
   </mime-type>
   <mime-type type="text/x-haskell">
+    <sub-class-of type="text/plain"/>
     <_comment>Haskell source code</_comment>
     <glob pattern="*.hs"/>
   </mime-type>
   <mime-type type="text/x-idl">
+    <sub-class-of type="text/plain"/>
     <_comment>IDL document</_comment>
     <glob pattern="*.idl"/>
   </mime-type>
   <mime-type type="text/x-install">
+    <sub-class-of type="text/plain"/>
     <_comment>software installation instructions</_comment>
     <glob pattern="INSTALL"/>
   </mime-type>
   <mime-type type="text/x-java">
+    <sub-class-of type="text/plain"/>
     <_comment>Java source code</_comment>
     <glob pattern="*.java"/>
   </mime-type>
   <mime-type type="text/x-ksysv-log">
+    <sub-class-of type="text/plain"/>
     <magic priority="50">
       <match type="string" value="KDE System V Init Editor" offset="0"/>
     </magic>
   </mime-type>
   <mime-type type="text/x-literate-haskell">
+    <sub-class-of type="text/plain"/>
     <_comment>Literate haskell source code</_comment>
     <glob pattern="*.lhs"/>
   </mime-type>
   <mime-type type="text/x-log">
+    <sub-class-of type="text/plain"/>
     <_comment>application log</_comment>
     <glob pattern="*.log"/>
   </mime-type>
   <mime-type type="text/x-makefile">
+    <sub-class-of type="text/plain"/>
     <_comment>Makefile</_comment>
     <glob pattern="makefile*"/>
     <glob pattern="[Mm]akefile"/>
   </mime-type>
   <mime-type type="text/x-moc">
+    <sub-class-of type="text/plain"/>
     <_comment>Qt Meta Object file</_comment>
     <glob pattern="*.moc"/>
   </mime-type>
   <mime-type type="text/x-objcsrc">
+    <sub-class-of type="text/plain"/>
     <_comment>Objective-C source code</_comment>
     <glob pattern="*.m"/>
   </mime-type>
   <mime-type type="text/x-pascal">
+    <sub-class-of type="text/plain"/>
     <_comment>Pascal source code</_comment>
     <glob pattern="*.p"/>
     <glob pattern="*.pas"/>
   </mime-type>
   <mime-type type="text/x-patch">
+    <sub-class-of type="text/plain"/>
     <_comment>differences between files</_comment>
     <magic priority="50">
       <match type="string" value="diff\t" offset="0"/>
@@ -2305,14 +2341,17 @@ command to generate the output files.
     <glob pattern="*.py"/>
   </mime-type>
   <mime-type type="text/x-readme">
+    <sub-class-of type="text/plain"/>
     <_comment>README document</_comment>
     <glob pattern="README*"/>
   </mime-type>
   <mime-type type="text/x-scheme">
+    <sub-class-of type="text/plain"/>
     <_comment>Scheme source code</_comment>
     <glob pattern="*.scm"/>
   </mime-type>
   <mime-type type="text/x-setext">
+    <sub-class-of type="text/plain"/>
     <_comment>Setext document</_comment>
     <glob pattern="*.etx"/>
   </mime-type>
@@ -2320,15 +2359,18 @@ command to generate the output files.
     <_comment>Speech document</_comment>
   </mime-type>
   <mime-type type="text/x-sql">
+    <sub-class-of type="text/plain"/>
     <_comment>SQL code</_comment>
     <glob pattern="*.sql"/>
   </mime-type>
   <mime-type type="text/x-tcl">
+    <sub-class-of type="text/plain"/>
     <_comment>Tcl script</_comment>
     <glob pattern="*.tcl"/>
     <glob pattern="*.tk"/>
   </mime-type>
   <mime-type type="text/x-tex">
+    <sub-class-of type="text/plain"/>
     <_comment>TeX document</_comment>
     <glob pattern="*.tex"/>
     <glob pattern="*.ltx"/>
@@ -2336,6 +2378,7 @@ command to generate the output files.
     <glob pattern="*.cls"/>
   </mime-type>
   <mime-type type="text/x-texinfo">
+    <sub-class-of type="text/plain"/>
     <_comment>TeXInfo document</_comment>
     <glob pattern="*.texi"/>
     <glob pattern="*.texinfo"/>
@@ -2372,7 +2415,9 @@ command to generate the output files.
     <glob pattern="*.xslfo"/>
   </mime-type>
   <mime-type type="text/x-xslt">
+    <sub-class-of type="text/plain"/>
     <_comment>XSLT stylesheet</_comment>
+    <sub-class-of type="text/xml"/>
     <glob pattern="*.xslt"/>
     <glob pattern="*.xsl"/>
   </mime-type>
@@ -2382,6 +2427,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="text/xml">
+    <sub-class-of type="text/plain"/>
     <_comment>eXtensible Markup Language document</_comment>
     <magic priority="50">
       <match type="string" value="&lt;?xml" offset="0"/>

@@ -2027,7 +2027,7 @@ command to generate the output files.
     <_comment>stream of data (server push)</_comment>
   </mime-type>
   <mime-type type="text/calendar">
-    <alias type=="text/x-vcalendar"/>
+    <alias type="text/x-vcalendar"/>
     <_comment>vCalendar interchange file</_comment>
     <magic priority="50">
       <match type="string" value="BEGIN:VCALENDAR" offset="0"/>

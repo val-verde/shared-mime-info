@@ -1,5 +1,10 @@
 2004-12-10  Christophe Fergeau  <teuf@gnome.org>
 
+	* freedesktop.org.xml: sync with freedesktop.org.xml.in content
+	* freedesktop.org.xml.in: fixed malformed XML doc
+
+2004-12-10  Christophe Fergeau  <teuf@gnome.org>
+
 	* freedesktop.org.xml.in: Cleanup for "text executable" types
 	(shellscripts and other scripts). Patch from David Faure
 	(faure@kde.org), fixes #618.

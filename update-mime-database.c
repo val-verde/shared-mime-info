@@ -4,6 +4,7 @@
 #define _(x) (x)
 
 #include <string.h>
+#include <ctype.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
@@ -40,7 +41,6 @@ const char *media_types[] = {
 };
 
 typedef struct _Type Type;
-typedef struct _Magic Magic;
 
 struct _Type {
 	char *media;
@@ -58,7 +58,7 @@ static GHashTable *globs_hash = NULL;
 
 /* 'magic' nodes */
 static GPtrArray *magic = NULL;
-	     
+
 static void usage(const char *name)
 {
 	fprintf(stderr, _("Usage: %s [-hv] MIME-DIR\n"), name);
@@ -407,19 +407,25 @@ static void write_out_type(gpointer key, gpointer value, gpointer data)
 {
 	Type *type = (Type *) value;
 	const char *mime_dir = (char *) data;
-	char *media, *filename;
+	char *media, *filename, *new_name;
 
 	media = g_strconcat(mime_dir, "/", type->media, NULL);
 	mkdir(media, 0755);
 
-	filename = g_strconcat(media, "/", type->subtype, ".xml", NULL);
+	filename = g_strconcat(media, "/", type->subtype, ".xml.new", NULL);
 	g_free(media);
 	media = NULL;
 	
 	if (save_xml_file(type->output, filename) != 0)
 		g_warning("Failed to write out '%s'\n", filename);
 
+	new_name = g_strndup(filename, strlen(filename) - 4);
+	if (rename(filename, new_name))
+		g_warning("Failed to rename %s as %s\n",
+				filename, new_name);
+
 	g_free(filename);
+	g_free(new_name);
 }
 
 static int get_priority(xmlNode *node)
@@ -432,6 +438,7 @@ static int get_priority(xmlNode *node)
 	{
 		p = atoi(prio_string);
 		g_free(prio_string);
+		g_return_val_if_fail(p >= 0 && p <= 100, 50);
 		return p;
 	}
 	else
@@ -454,9 +461,9 @@ static gint cmp_magic(gconstpointer a, gconstpointer b)
 	pb = get_priority(bb);
 
 	if (pa > pb)
-		return 1;
-	else if (pa < pb)
 		return -1;
+	else if (pa < pb)
+		return 1;
 
 	type_a = xmlGetNsProp(aa, "type", NULL);
 	type_b = xmlGetNsProp(bb, "type", NULL);
@@ -471,14 +478,181 @@ static gint cmp_magic(gconstpointer a, gconstpointer b)
 	return retval;
 }
 
+static void write32(FILE *stream, guint32 n)
+{
+	guint32 big = GUINT32_TO_BE(n);
+
+	fwrite(&big, sizeof(big), 1, stream);
+}
+
+static void write16(FILE *stream, guint32 n)
+{
+	guint16 big = GUINT16_TO_BE(n);
+
+	g_return_if_fail(n <= 0xffff);
+
+	fwrite(&big, sizeof(big), 1, stream);
+}
+
+/* Single hex char to int; -1 if not a hex char.
+ * From file(1).
+ */
+static int hextoint(int c)
+{
+	if (!isascii((unsigned char) c))
+		return -1;
+	if (isdigit((unsigned char) c))
+		return c - '0';
+	if ((c >= 'a')&&(c <= 'f'))
+		return c + 10 - 'a';
+	if (( c>= 'A')&&(c <= 'F'))
+		return c + 10 - 'A';
+	return -1;
+}
+
+/*
+ * Convert a string containing C character escapes.  Stop at an unescaped
+ * space or tab.
+ * Copy the converted version to "p", returning its length in *slen.
+ * Return updated scan pointer as function result.
+ * Stolen from file(1) and heavily modified.
+ */
+static void getstr(const char *s, GString *out)
+{
+	int	c;
+	int	val;
+
+	while ((c = *s++) != '\0') {
+		if(c == '\\') {
+			switch(c = *s++) {
+
+			case '\0':
+				return;
+
+			default:
+				g_string_append_c(out, (char) c);
+				break;
+
+			case 'n':
+				g_string_append_c(out, '\n');
+				break;
+
+			case 'r':
+				g_string_append_c(out, '\r');
+				break;
+
+			case 'b':
+				g_string_append_c(out, '\b');
+				break;
+
+			case 't':
+				g_string_append_c(out, '\t');
+				break;
+
+			case 'f':
+				g_string_append_c(out, '\f');
+				break;
+
+			case 'v':
+				g_string_append_c(out, '\v');
+				break;
+
+			/* \ and up to 3 octal digits */
+			case '0':
+			case '1':
+			case '2':
+			case '3':
+			case '4':
+			case '5':
+			case '6':
+			case '7':
+				val = c - '0';
+				c = *s++;  /* try for 2 */
+				if(c >= '0' && c <= '7') {
+					val = (val<<3) | (c - '0');
+					c = *s++;  /* try for 3 */
+					if(c >= '0' && c <= '7')
+						val = (val<<3) | (c-'0');
+					else
+						--s;
+				}
+				else
+					--s;
+				g_string_append_c(out, (char)val);
+				break;
+
+			/* \x and up to 2 hex digits */
+			case 'x':
+				val = 'x';	/* Default if no digits */
+				c = hextoint(*s++);	/* Get next char */
+				if (c >= 0) {
+					val = c;
+					c = hextoint(*s++);
+					if (c >= 0)
+						val = (val << 4) + c;
+					else
+						--s;
+				} else
+					--s;
+				g_string_append_c(out, (char)val);
+				break;
+			}
+		} else
+			g_string_append_c(out, (char)c);
+	}
+}
+
+static void parse_value(const char *type, const char *in, GString *parsed_value)
+{
+	char *end;
+	long value;
+
+	g_return_if_fail(*in != '\0');
+
+	if (strstr(type, "16"))
+	{
+		value = strtol(in, &end, 0);
+		g_return_if_fail(*end == '\0');
+		g_string_append_c(parsed_value, (value >> 8) & 0xff);
+		g_string_append_c(parsed_value, value & 0xff);
+	}
+	else if (strstr(type, "32"))
+	{
+		value = strtol(in, &end, 0);
+		g_return_if_fail(*end == '\0');
+		g_string_append_c(parsed_value, (value >> 24) & 0xff);
+		g_string_append_c(parsed_value, (value >> 16)& 0xff);
+		g_string_append_c(parsed_value, (value >> 8) & 0xff);
+		g_string_append_c(parsed_value, value & 0xff);
+	}
+	else if (strcmp(type, "byte") == 0)
+	{
+		value = strtol(in, &end, 0);
+		g_return_if_fail(*end == '\0');
+		g_string_append_c(parsed_value, value & 0xff);
+	}
+	else if (strcmp(type, "string") == 0)
+		getstr(in, parsed_value);
+	else
+		g_assert_not_reached();
+}
+
 static void write_magic_children(FILE *stream, xmlNode *parent, int indent)
 {
-	int i;
+	GString *parsed_value;
 	xmlNode *node;
+
+	parsed_value = g_string_new(NULL);
 
 	for (node = parent->xmlChildrenNode; node; node = node->next)
 	{
-		char *offset, *mask, *value;
+		char *offset, *mask, *value, *type;
+		char *parsed_mask = NULL;
+		const char *colon;
+		int word_size = 1;
+		long range_start;
+		int range_length = 1;
+		int i;
 
 		if (node->type != XML_ELEMENT_NODE)
 			continue;
@@ -489,23 +663,62 @@ static void write_magic_children(FILE *stream, xmlNode *parent, int indent)
 		offset = xmlGetNsProp(node, "offset", NULL);
 		mask = xmlGetNsProp(node, "mask", NULL);
 		value = xmlGetNsProp(node, "value", NULL);
+		type = xmlGetNsProp(node, "type", NULL);
+
+		g_return_if_fail(offset != NULL);
+		g_return_if_fail(value != NULL);
+		g_return_if_fail(type != NULL);
+
+		range_start = atol(offset);
+		colon = strchr(offset, ':');
+		if (colon)
+			range_length = atol(colon + 1) - range_start + 1;
+
+		if (strcmp(type, "host16") == 0)
+			word_size = 2;
+		else if (strcmp(type, "host32") == 0)
+			word_size = 4;
+		else if (strcmp(type, "big16") && strcmp(type, "big32") &&
+			 strcmp(type, "little16") && strcmp(type, "little32") &&
+			 strcmp(type, "string") && strcmp(type, "byte"))
+			g_warning("Unknown magic type '%s'\n", type);
+
+		g_string_truncate(parsed_value, 0);
+		parse_value(type, value, parsed_value);
 
 		if (mask)
-			fprintf(stream, "%s\t%s&%s\t%s",
-					offset,
-					node->name,
-					mask,
-					value);
-		else
-			fprintf(stream, "%s\t%s\t%s",
-					offset,
-					node->name,
-					value);
-		g_free(offset);
+		{
+			int i;
+			parsed_mask = g_malloc(parsed_value->len);
+			for (i = 0; i < parsed_value->len; i++)
+				parsed_mask[i] = 0xff;
+			/* TODO: Actually read the mask! */
+		}
+
+		write32(stream, range_start);
+		write16(stream, parsed_value->len);
+		fwrite(parsed_value->str, parsed_value->len, 1, stream);
+		if (parsed_mask)
+		{
+			fputc('&', stream);
+			fwrite(parsed_mask, parsed_value->len, 1, stream);
+		}
+		if (word_size != 1)
+			fprintf(stream, "~%d", word_size);
+		if (range_length != 1)
+			fprintf(stream, "+%d", range_length);
 
 		fputc('\n', stream);
+
+		g_free(offset);
+		g_free(mask);
+		g_free(value);
+		g_free(type);
+
 		write_magic_children(stream, node, indent + 1);
 	}
+
+	g_string_free(parsed_value, TRUE);
 }
 
 static void write_magic(FILE *stream, xmlNode *node)
@@ -547,13 +760,16 @@ static void delete_old_types(const gchar *mime_dir)
 			if (l < 4 || strcmp(ent->d_name + l - 4, ".xml") != 0)
 				continue;
 
-			type_name = g_strconcat(media_types[i], "/", ent->d_name, NULL);
+			type_name = g_strconcat(media_types[i], "/",
+						ent->d_name, NULL);
 			type_name[strlen(type_name) - 4] = '\0';
 			if (!g_hash_table_lookup(types, type_name))
 			{
 				char *path;
-				path = g_strconcat(mime_dir, "/", type_name, ".xml", NULL);
-				g_print("* Removing old info for type %s\n", path);
+				path = g_strconcat(mime_dir, "/",
+						type_name, ".xml", NULL);
+				g_print("* Removing old info for type %s\n",
+						path);
 				unlink(path);
 				g_free(path);
 			}
@@ -641,15 +857,14 @@ int main(int argc, char **argv)
 	{
 		FILE *stream;
 		char *magic_path;
-		int  i;
+		int i;
 		magic_path = g_strconcat(mime_dir, "/magic", NULL);
 		stream = fopen(magic_path, "wb");
 		if (!stream)
 			g_error("Failed to open '%s' for writing\n", magic_path);
 		g_free(magic_path);
-		fprintf(stream,
-			"# This file was automatically generated by the\n"
-			"# update-mime-database command. DO NOT EDIT!\n");
+		fwrite("MIME-Magic\0\n", 1, 12, stream);
+
 		if (magic->len)
 			g_ptr_array_sort(magic, cmp_magic);
 		for (i = 0; i < magic->len; i++)

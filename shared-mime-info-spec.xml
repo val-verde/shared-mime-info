@@ -1,6 +1,9 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
-"/usr/share/sgml/docbook/dtd/xml/4.1.2/docbookx.dtd">
+"/usr/share/sgml/docbook/dtd/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY updated "26 Feb 2003">
+  <!ENTITY version "0.11-pre">
+]>
 <article id="index">
 
 <articleinfo>
@@ -20,7 +23,7 @@
 	</authorgroup>
 
 	<title>Shared MIME-info Database</title>
-	<date>05 Sep 2002</date>
+	<date>&updated;</date>
 </articleinfo>
 
 <sect1>
@@ -28,7 +31,7 @@
 	<sect2>
 		<title>Version</title>
 		<para>
-This is version 0.10 of the Shared MIME-info Database spec, last updated 05 Sep 2002.</para>
+This is version &version; of the Shared MIME-info Database spec, last updated &updated;.</para>
 	</sect2>
 	<sect2>
 		<title>What is this spec?</title>
@@ -271,7 +274,7 @@ fundamental disagreements between developers. Everyone is keen to see them
 merged.
 	</para>
 	<para>
-This spec proposes:
+This specification proposes:
 
 		<itemizedlist>
 			<listitem><para>
@@ -390,6 +393,13 @@ and in any order:
 <userinput>glob</userinput> elements have a <userinput>pattern</userinput> attribute. Any file
 whose name matches this pattern will be given this MIME type (subject to conflicting rules in
 other files, of course).
+		</para>
+		<para>
+KDE's glob system replaces GNOME's and ROX's ext/regex fields, since it
+is trivial to detect a pattern in the form '*.ext' and store it in an
+extension hash table internally. The full power of regular expressions was
+not being used by either desktop, and glob patterns are more suitable for
+filename matching anyway.
 				</para></listitem>
 				<listitem><para>
 <userinput>magic</userinput> elements contain a list of
@@ -399,23 +409,44 @@ numbers should be used for more generic types (such as 'gzip compressed data')
 and higher values for specific subtypes (such as a word processor format that
 happens to use gzip to compress the file). The default priority value is 50.
 				</para><para>
-Each <userinput>match</userinput> element must have a type of
+Each <userinput>match</userinput> element has a number of attributes:
+
+<informaltable>
+	<tgroup cols="3">
+	<thead><row><entry>Attribute</entry><entry>Required?</entry><entry>Value</entry></row></thead>
+	<tbody>
+
+	<row><entry>type</entry><entry>Yes</entry><entry>
 <userinput>string</userinput>, <userinput>host16</userinput>,
 <userinput>host32</userinput>, <userinput>big16</userinput>,
 <userinput>big32</userinput>, <userinput>little16</userinput>,
-<userinput>little32</userinput> or <userinput>byte</userinput>. It must also have
-<userinput>offset</userinput>, <userinput>value</userinput> and, optionally,
-<userinput>mask</userinput> attributes. Each element corresponds to one line of
+<userinput>little32</userinput> or <userinput>byte</userinput>.
+	</entry></row>
+
+	<row><entry>offset</entry><entry>Yes</entry><entry>The byte offset(s)
+	in the file to check. This may be a single number or a range in the
+	form `start:end', indicating that all offsets in the range should be
+	checked. The range is inclusive.</entry></row>
+
+	<row><entry>value</entry><entry>Yes</entry><entry>
+	The value to compare the file contents with, in the format indicated by the type
+	attribute.
+	</entry></row>
+
+	<row><entry>mask</entry><entry>No</entry><entry>
+	The number to AND the value in the file with before comparing it to `value'. The
+	mask can start with `0x' to indicate a hexadecimal value, or with `0' to indicate
+	octal.
+	</entry></row>
+
+	</tbody></tgroup>
+</informaltable>
+
+Each element corresponds to one line of
 <citerefentry><refentrytitle>file</refentrytitle>
 <manvolnum>1</manvolnum></citerefentry>'s <filename>magic.mime</filename> file.
 They can be nested in the same way to provide the equivalent of continuation
 lines.
-				</para></listitem>
-				<listitem><para>
-<userinput>action</userinput> elements introduce an action that can be performed on files of this
-type. There may be several actions for each type. The format for this element has not yet been
-decided. Applications which can handle arbitrary streams of data can indicate
-this by setting an action for the type `application/octet-stream'.
 				</para></listitem>
 				<listitem><para>
 <userinput>comment</userinput> elements give a human-readable textual description of the MIME
@@ -440,8 +471,8 @@ Here is an example source file, named <filename>diff.xml</filename>:
     <comment xml:lang="af">verskille tussen lêers</comment>
     ...
     <magic priority="50">
-      <match type="string" offset="0" value="diff	"/>
-      <match type="string" offset="0" value="***	"/>
+      <match type="string" offset="0" value="diff\t"/>
+      <match type="string" offset="0" value="***\t"/>
       <match type="string" offset="0" value="Common subdirectories: "/>
     </magic>
     <glob pattern="*.diff"/>
@@ -493,13 +524,6 @@ text/x-diff:*.patch
 ]]></programlisting>
 		</para>
 		<para>
-KDE's glob system replaces GNOME's and ROX's ext/regex fields, since it
-is trivial to detect a pattern in the form '*.ext' and store it in an
-extension hash table internally. The full power of regular expressions was
-not being used by either desktop, and glob patterns are more suitable for
-filename matching anyway.
-		</para>
-		<para>
 Applications MUST first try a case-sensitive match, then a case-insensitive
 one. This is so that <filename>main.C</filename> will be seen as a C++ file,
 but <filename>IMAGE.GIF</filename> will still use the *.gif pattern.
@@ -531,66 +555,67 @@ about its own types, conflicts should be rare.
 The magic data is stored in a binary format for ease of parsing. The old magic database
 had complex escaping rules; these are now handled by <command>update-mime-database</command>.
 		</para><para>
-The file starts with the magic string "MIME-Magic" followed by two zero bytes.
+The file starts with the magic string "MIME-Magic\0\n".
 There is no version number in the file. Incompatible changes will be handled by
 creating both the current `magic' file and a newer `magic2' in the new format.
 Where possible, compatible changes only will be made.
+All numbers are big-endian, so need to be byte-swapped on little-endian machines.
 		</para><para>
-The file is made of a sequence of entries, each corresponding to one line of file's magic
-file. All numbers are big-endian, so need to be byte-swapped on little-endian machines.
-Each entry has the following format:
+The rest of the file is made up of a sequence of small sections.
+Each section is introduced by giving the priority and type in brackets.
+Higher priority entries come first.
+<screen>[50:text/x-diff]</screen>
+Each line in the section takes the form:
+<screen>indent start-offset value [ "&amp;" mask ] [ "~" word-size ] [ "+" range-length ] "\n"</screen>
 <informaltable>
 	<tgroup cols="3">
-	<thead><row><entry>Byte offset</entry><entry>Size</entry><entry>Value</entry></row></thead>
+	<thead><row><entry>Part</entry><entry>Example</entry><entry>Meaning</entry></row></thead>
 	<tbody>
 
-	<row><entry>0</entry><entry>1</entry><entry>Indent</entry></row>
-	<row><entry>1</entry><entry>1</entry><entry>Priority (0-100)</entry></row>
-	<row><entry>2</entry><entry>1</entry><entry>Word size (1, 2, 4, 8) bytes</entry></row>
-	<row><entry>3</entry><entry>1</entry><entry>Flags</entry></row>
-	<row><entry>4</entry><entry>4</entry><entry>Range start (byte offset)</entry></row>
-	<row><entry>8</entry><entry>4</entry><entry>Range end (byte offset)</entry></row>
-	<row><entry>12</entry><entry>4</entry><entry>Total entry size</entry></row>
-	<row><entry>18</entry><entry>2</entry><entry>Value length (bytes)</entry></row>
-
-	<row><entry>20</entry><entry>-</entry><entry>Value, mask, type name, and unused data</entry></row>
-	
+	<row><entry>indent</entry><entry>&gt;&gt;</entry><entry>The number of > characters at the
+	start of a line indicates the nesting depth of the rule, as in the traditional file format.
+	</entry></row>
+	<row><entry>start-offset</entry><entry>&lt;offset&gt;</entry><entry>The offset into the
+	file to look for a match (4 byte big endian).</entry></row>
+	<row><entry>value</entry><entry>&lt;size&gt;&lt;value&gt;</entry><entry>
+	Two bytes giving the (big-endian) length of the value, followed by the value itself.
+	</entry></row>
+	<row><entry>"&amp;" mask</entry><entry>&lt;mask&gt;</entry><entry>
+	The mask, which (if present) is exactly the same length as the value.
+	</entry></row>
+	<row><entry>"~" word-size</entry><entry>~2</entry><entry>On little-endian machines, the
+	size of each group to byte-swap.</entry></row>
+	<row><entry>"+" range-length</entry><entry>+8</entry><entry>The length of the region
+	in the file to check.
+	</entry></row>
 	</tbody>
 	</tgroup>
 </informaltable>
 		</para><para>
-Indent corresponds to the nesting depth of the rule. Top-level rules have an indent of zero. The parent
-of an entry is the preceding entry with an indent one less than the entry.
+Note that the start-offset, value, value length and mask are all binary,
+whereas everything else is textual.
 		</para><para>
-The word size is used for byte-swapping. Little-endian systems should reverse the order of groups of bytes
-in the value and mask if this is greater than one. This only affects `host'
-matches (`big32' entries still have a word size of 1, for example, because no swapping is necessary, whereas
-`host32' has a word size of 4).
+The word size is used for byte-swapping. Little-endian systems should reverse
+the order of groups of bytes in the value and mask if this is greater than one.
+This only affects `host' matches (`big32' entries still have a word size of 1,
+for example, because no swapping is necessary, whereas `host32' has a word size
+of 4).
 		</para><para>
-Bit 0 of the flags byte indicates that a mask is present. Bit 1 indicates that
-the entry should be skipped. All other bits should be ignored. If bit 0 is 1,
-then the value is followed by a mask of the same size.
+The range-length, word-size and mask components are optional. If missing, the range-length
+defaults to 1, the word-size is 1, and the mask is all one bits.
 		</para><para>
-The range start and end points are byte offsets into the file being checked. All offsets from the start to the
-end inclusive should be checked. They will be equal if only one offset is to be checked. These values are
-big endian.
+Indent corresponds to the nesting depth of the rule. Top-level rules have an
+indent of zero. The parent of an entry is the preceding entry with an indent
+one less than the entry. The test number is an index into the array of tests.
 		</para><para>
-The total entry size (also big-endian) gives the offset to the next entry from the start of this one. This
-is always a multiple of four.
-		</para><para>
-The value length is a 2 byte big-endian number, giving the number of bytes used for the value. If a mask
-is present, it follows directly after the value and is the same size. The MIME type name comes last, and is
-a nul-terminated string.
-		</para><para>
-There may be any amount unused space at the end of each entry. This is for future expansion and/or padding.
-		</para><para>
-The above example would create a magic file starting with:
+The text/x-diff above example would (on its own) create this magic file:
 			<programlisting><![CDATA[
-4d 49 4d 45 2d 4d 61 67 69 63 00 00
-
-00 32 01 00 00 00 00 00 00 00 00 00
-00 00 00 23 00 05 64 69 66 66 20 74
-65 78 74 2f 78 2d 64 69 66 66 00
+00000000  4d 49 4d 45 2d 4d 61 67  69 63 00 0a 5b 35 30 3a  |MIME-Magic..[50:|
+00000010  74 65 78 74 2f 78 2d 64  69 66 66 5d 0a 00 00 00  |text/x-diff]....|
+00000020  00 00 05 64 69 66 66 20  0a 00 00 00 00 00 04 2a  |...diff .......*|
+00000030  2a 2a 20 0a 00 00 00 00  00 17 43 6f 6d 6d 6f 6e  |** .......Common|
+00000040  20 73 75 62 64 69 72 65  63 74 6f 72 69 65 73 3a  | subdirectories:|
+00000050  20 0a                                             | .|
 ]]></programlisting>
 		</para>
 	</sect2>

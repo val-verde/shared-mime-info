@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
 "/usr/share/sgml/docbook/dtd/xml/4.1.2/docbookx.dtd" [
-  <!ENTITY updated "05 Mar 2003">
+  <!ENTITY updated "17 Apr 2003">
   <!ENTITY version "0.11-preview">
 ]>
 <article id="index">
@@ -361,14 +361,15 @@ This specification uses the XDG Base Directory Specification<citation>BaseDir</c
 define the prefixes below which the database is stored.
 In the rest of this document, paths shown with the prefix
 <filename>&lt;MIME&gt;</filename> indicate the files should be loaded from
-the <filename>mime</filename> subdirectory of every directory in <envar>XDG_DIRS</envar>.
+the <filename>mime</filename> subdirectory of every directory in
+<envar>XDG_DATA_HOME</envar>:<envar>XDG_DATA_DIRS</envar>.
 		</para>
 		<para>
 For example, when using the default paths, <quote>Load all the
 <filename>&lt;MIME&gt;/text/html.xml</filename> files</quote> means to
 load <filename>/usr/share/mime/text/html.xml</filename>,
 <filename>/usr/local/share/mime/text/html.xml</filename>, and
-<filename>~/.share/mime/text/html.xml</filename> (if they exist).
+<filename>~/.local/share/mime/text/html.xml</filename> (if they exist).
 		</para>
 		<para>
 Each application that wishes to contribute to the MIME database will install a

@@ -1184,23 +1184,6 @@ command to generate the output files.
     <_comment>Pathetic Writer document</_comment>
     <glob pattern="*.pw"/>
   </mime-type>
-  <mime-type type="text/x-python">
-    <sub-class-of type="text/plain"/>
-    <_comment>Python script</_comment>
-    <magic priority="50">
-      <match type="string" value="#!/bin/python" offset="0"/>
-      <match type="string" value="#! /bin/python" offset="0"/>
-      <match type="string" value='eval \"exec /bin/python' offset="0"/>
-      <match type="string" value="#!/usr/bin/python" offset="0"/>
-      <match type="string" value="#! /usr/bin/python" offset="0"/>
-      <match type="string" value='eval \"exec /usr/bin/python' offset="0"/>
-      <match type="string" value="#!/usr/local/bin/python" offset="0"/>
-      <match type="string" value="#! /usr/local/bin/python" offset="0"/>
-      <match type="string" value='eval \"exec /usr/local/bin/python' offset="0"/>
-      <match type="string" value='/bin/env python' offset="1:16"/>
-    </magic>
-    <glob pattern="*.py"/>
-  </mime-type>
   <mime-type type="application/x-python-bytecode">
     <_comment>Python bytecode</_comment>
     <magic priority="50">
@@ -2050,38 +2033,6 @@ command to generate the output files.
   <mime-type type="text/enriched">
     <_comment>enriched text document</_comment>
   </mime-type>
-  <mime-type type="text/x-gettext-translation">
-    <_comment>translated messages</_comment>
-    <glob pattern="*.po"/>
-  </mime-type>
-  <mime-type type="text/x-gettext-translation-template">
-    <_comment>message translation template</_comment>
-    <glob pattern="*.pot"/>
-  </mime-type>
-  <mime-type type="text/html">
-    <_comment>HTML page</_comment>
-    <magic priority="50">
-      <match type="string" value="&lt;!DOCTYPE HTML" offset="0:64"/>
-      <match type="string" value="&lt;!doctype html" offset="0:64"/>
-      <match type="string" value="&lt;HEAD" offset="0:64"/>
-      <match type="string" value="&lt;head" offset="0:64"/>
-      <match type="string" value="&lt;TITLE" offset="0:64"/>
-      <match type="string" value="&lt;title" offset="0:64"/>
-      <match type="string" value="&lt;html" offset="0:64"/>
-      <match type="string" value="&lt;HTML" offset="0:64"/>
-      <match type="string" value="&lt;BODY" offset="0"/>
-      <match type="string" value="&lt;body" offset="0"/>
-      <match type="string" value="&lt;TITLE" offset="0"/>
-      <match type="string" value="&lt;title" offset="0"/>
-      <match type="string" value="&lt;!--" offset="0"/>
-      <match type="string" value="&lt;h1" offset="0"/>
-      <match type="string" value="&lt;H1" offset="0"/>
-      <match type="string" value="&lt;!doctype HTML" offset="0"/>
-      <match type="string" value="&lt;!DOCTYPE html" offset="0"/>
-    </magic>
-    <glob pattern="*.html"/>
-    <glob pattern="*.htm"/>
-  </mime-type>
   <mime-type type="text/htmlh">
     <_comment>help page</_comment>
   </mime-type>
@@ -2210,6 +2161,38 @@ command to generate the output files.
     <_comment>Fortran source code</_comment>
     <glob pattern="*.f"/>
   </mime-type>
+  <mime-type type="text/x-gettext-translation">
+    <_comment>translated messages</_comment>
+    <glob pattern="*.po"/>
+  </mime-type>
+  <mime-type type="text/x-gettext-translation-template">
+    <_comment>message translation template</_comment>
+    <glob pattern="*.pot"/>
+  </mime-type>
+  <mime-type type="text/html">
+    <_comment>HTML page</_comment>
+    <magic priority="50">
+      <match type="string" value="&lt;!DOCTYPE HTML" offset="0:64"/>
+      <match type="string" value="&lt;!doctype html" offset="0:64"/>
+      <match type="string" value="&lt;HEAD" offset="0:64"/>
+      <match type="string" value="&lt;head" offset="0:64"/>
+      <match type="string" value="&lt;TITLE" offset="0:64"/>
+      <match type="string" value="&lt;title" offset="0:64"/>
+      <match type="string" value="&lt;html" offset="0:64"/>
+      <match type="string" value="&lt;HTML" offset="0:64"/>
+      <match type="string" value="&lt;BODY" offset="0"/>
+      <match type="string" value="&lt;body" offset="0"/>
+      <match type="string" value="&lt;TITLE" offset="0"/>
+      <match type="string" value="&lt;title" offset="0"/>
+      <match type="string" value="&lt;!--" offset="0"/>
+      <match type="string" value="&lt;h1" offset="0"/>
+      <match type="string" value="&lt;H1" offset="0"/>
+      <match type="string" value="&lt;!doctype HTML" offset="0"/>
+      <match type="string" value="&lt;!DOCTYPE html" offset="0"/>
+    </magic>
+    <glob pattern="*.html"/>
+    <glob pattern="*.htm"/>
+  </mime-type>
   <mime-type type="text/x-gtkrc">
     <_comment>GTK configuration</_comment>
     <glob pattern="gtkrc"/>
@@ -2282,6 +2265,23 @@ command to generate the output files.
     </magic>
     <glob pattern="*.diff"/>
     <glob pattern="*.patch"/>
+  </mime-type>
+  <mime-type type="text/x-python">
+    <sub-class-of type="text/plain"/>
+    <_comment>Python script</_comment>
+    <magic priority="50">
+      <match type="string" value="#!/bin/python" offset="0"/>
+      <match type="string" value="#! /bin/python" offset="0"/>
+      <match type="string" value='eval \"exec /bin/python' offset="0"/>
+      <match type="string" value="#!/usr/bin/python" offset="0"/>
+      <match type="string" value="#! /usr/bin/python" offset="0"/>
+      <match type="string" value='eval \"exec /usr/bin/python' offset="0"/>
+      <match type="string" value="#!/usr/local/bin/python" offset="0"/>
+      <match type="string" value="#! /usr/local/bin/python" offset="0"/>
+      <match type="string" value='eval \"exec /usr/local/bin/python' offset="0"/>
+      <match type="string" value='/bin/env python' offset="1:16"/>
+    </magic>
+    <glob pattern="*.py"/>
   </mime-type>
   <mime-type type="text/x-readme">
     <_comment>README document</_comment>

@@ -354,7 +354,7 @@ changes take effect.
 The files created by <command>update-mime-database</command> are:
 			<itemizedlist>
 				<listitem><para>
-<filename>&lt;MIME&gt;/globs</filename> (contains a mapping from extensions to MIME types)
+<filename>&lt;MIME&gt;/globs</filename> (contains a mapping from names to MIME types)
 				</para></listitem>
 				<listitem><para>
 <filename>&lt;MIME&gt;/magic</filename> (contains a mapping from file contents to MIME types)
@@ -507,8 +507,9 @@ with other information about the same type.
 These files have a <userinput>mime-type</userinput> element as the root node. The format is
 as described above. They are created by merging all the <userinput>mime-type</userinput>
 elements from the source files and creating one output file per MIME type. Each file may contain
-information from multiple source files. The <userinput>magic</userinput> and
-<userinput>glob</userinput> elements will have been removed.
+information from multiple source files. The <userinput>magic</userinput>,
+<userinput>glob</userinput> and <userinput>root-XML</userinput> elements will
+have been removed.
 		</para>
 		<para>
 The example source file given above would (on its own) create an output file called

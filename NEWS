@@ -1,5 +1,34 @@
 shared-mime-info		Thomas Leonard <tal00r@ecs.soton.ac.uk>
 
+	
+			Version 0.11 (17-Apr-2003)
+
+* 'make install' validates the common types file against the DTD.
+
+* Install instructions updated for new XDG Base Directory Specification.
+
+* Added new <root-XML> element to identify XML files by
+  (namespaceURI, localName) pairs.
+
+* Minor updates to the database itself.
+
+* Added short discussion of ACAP Media Type Dataset Class to spec.
+
+* Updated spec to use XDG Base Directory Specification for paths.
+
+* Clarifications to glob matching section.
+
+* Added a 'Recommended checking order' section to help interoperability.
+
+* Greatly improved error reporting in update-mime-database, and commented
+  the code more.
+
+* Fixed possible segfault if a MIME type was defined twice with no xml:lang
+  in the same directory.
+
+* When update-mime-database is run, warn the user if the MIME directory
+  given isn't in the search path.
+
 
 			Version 0.10 (03-Mar-2003)
 

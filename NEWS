@@ -1,3 +1,17 @@
+shared-mime-info 0.16  (2004-03-22)
+
+* Mime Types Changes:
+- Added application/mathematica
+- Added application/stuffit
+- Fixed application/vnd.lotus-1-2-3 and other office types
+- Added application/vnd.oasis.opendocument
+- Even more types now inherit from text/plain
+- Added text/x-gettext-translation
+- Fixed up text/x-python
+
+* Lots of new translations:
+   - bg eo es eu it ja ms nb pl pt pt_BR ru sq uk zh_CN
+
 shared-mime-info 0.15  (2004-08-30)
 
 * Mime Types Changes:

@@ -160,6 +160,7 @@
     <comment xml:lang="pl">nieznany typ</comment>
     <comment xml:lang="pt">desconhecido</comment>
     <comment xml:lang="pt_BR">Desconhecido</comment>
+    <comment xml:lang="ru">неизвестный</comment>
     <comment xml:lang="sq">nuk njihet</comment>
     <comment xml:lang="sr">непознато</comment>
     <comment xml:lang="sv">okänd</comment>
@@ -269,6 +270,7 @@
     <comment xml:lang="pl">Wiadomość PGP</comment>
     <comment xml:lang="pt">mensagem PGP</comment>
     <comment xml:lang="pt_BR">Mensagem PGP</comment>
+    <comment xml:lang="ru">сообщение PGP</comment>
     <comment xml:lang="sq">Mesazh PGP</comment>
     <comment xml:lang="sr">PGP порука</comment>
     <comment xml:lang="sv">PGP-meddelande</comment>
@@ -331,6 +333,7 @@
     <comment xml:lang="pl">Klucze PGP</comment>
     <comment xml:lang="pt">chaves PGP</comment>
     <comment xml:lang="pt_BR">Chaves PGP</comment>
+    <comment xml:lang="ru">ключи PGP</comment>
     <comment xml:lang="sq">Kyçe PGP</comment>
     <comment xml:lang="sr">PGP кључ</comment>
     <comment xml:lang="sv">PGP-nycklar</comment>
@@ -360,6 +363,7 @@
     <comment xml:lang="pl">oddzielony podpis OpenPGP</comment>
     <comment xml:lang="pt">assinatura OpenPGP solta</comment>
     <comment xml:lang="pt_BR">Assinatura OpenPGP destacada</comment>
+    <comment xml:lang="ru">отсоединенная подпись OpenPGP</comment>
     <comment xml:lang="sq">firmë e palidhur OpenPGP</comment>
     <comment xml:lang="sr">одвојени ОпенПГП потпис</comment>
     <comment xml:lang="sv">frikopplad OpenPGP-signatur</comment>
@@ -421,6 +425,7 @@
     <comment xml:lang="pl">oddzielony podpis S/MIME</comment>
     <comment xml:lang="pt">assinatura S/MIME solta</comment>
     <comment xml:lang="pt_BR">Assinatura S/MIME destacada</comment>
+    <comment xml:lang="ru">отсоединенная подпись S/MIME</comment>
     <comment xml:lang="sq">firmë e palidhur S/MIME</comment>
     <comment xml:lang="sr">одвојени S/MIME потпис</comment>
     <comment xml:lang="sv">frikopplad S/MIME-signatur</comment>
@@ -677,6 +682,7 @@
   <mime-type type="application/vnd.mozilla.xul+xml">
     <sub-class-of type="text/xml"/>
     <comment>XML User Interface Language document</comment>
+    <comment xml:lang="nb">XML-dokument for brukergrensesnitt</comment>
     <glob pattern="*.xul"/>
   </mime-type>
  <mime-type type="application/vnd.ms-excel">
@@ -786,6 +792,7 @@
       <comment xml:lang="pl">Dokument Microsoft Word</comment>
       <comment xml:lang="pt">documento do Microsoft Word</comment>
       <comment xml:lang="pt_BR">Documento do Microsoft Word</comment>
+      <comment xml:lang="ru">документ Microsoft Word</comment>
       <comment xml:lang="sq">Dokument Microsoft Word</comment>
       <comment xml:lang="sr">Микрософт Word документ</comment>
       <comment xml:lang="sv">Microsoft Word-dokument</comment>
@@ -1241,6 +1248,7 @@
     <comment xml:lang="pl">Prezentacja OpenOffice.org Impress</comment>
     <comment xml:lang="pt">apresentação do OpenOffice.org Impress</comment>
     <comment xml:lang="pt_BR">Apresentação do OpenOffice.org Impress</comment>
+    <comment xml:lang="ru">презентация OpenOffice.org Impress</comment>
     <comment xml:lang="sq">Prezantim OpenOffice.org Impress</comment>
     <comment xml:lang="sr">OpenOffice.org Impress презентација</comment>
     <comment xml:lang="sv">OpenOffice.org Impress-presentation</comment>
@@ -1272,6 +1280,7 @@
     <comment xml:lang="pl">Szablon prezentacji OpenOffice.org Impress</comment>
     <comment xml:lang="pt">modelo de apresentação do OpenOffice.org Impress</comment>
     <comment xml:lang="pt_BR">Modelo de apresentação do OpenOffice.org Impress</comment>
+    <comment xml:lang="ru">шаблон презентации OpenOffice.org Impress</comment>
     <comment xml:lang="sq">Model prezantimi OpenOffice.org Impress</comment>
     <comment xml:lang="sr">OpenOffice.org Impress шаблон презентације</comment>
     <comment xml:lang="sv">OpenOffice.org Impress-presentationsmall</comment>
@@ -1334,6 +1343,7 @@
     <comment xml:lang="pl">Dokument OpenOffice.org Writer</comment>
     <comment xml:lang="pt">documento do OpenOffice.org Writer</comment>
     <comment xml:lang="pt_BR">Documento do OpenOffice.org Writer</comment>
+    <comment xml:lang="ru">документ OpenOffice.org Writer</comment>
     <comment xml:lang="sq">Dokument OpenOffice.org Writer</comment>
     <comment xml:lang="sr">OpenOffice.org Writer документ</comment>
     <comment xml:lang="sv">OpenOffice.org Writer-dokument</comment>
@@ -1396,6 +1406,7 @@
     <comment xml:lang="pl">Szablon dokumentu OpenOffice.org Writer</comment>
     <comment xml:lang="pt">modelo de documento do OpenOffice.org Writer</comment>
     <comment xml:lang="pt_BR">Modelo de documento do OpenOffice.org Writer</comment>
+    <comment xml:lang="ru">шаблон документа OpenOffice.org Writer</comment>
     <comment xml:lang="sq">Model dokumenti OpenOffice.org Writer</comment>
     <comment xml:lang="sr">OpenOffice.org шаблон Writer документа</comment>
     <comment xml:lang="sv">OpenOffice.org Writer-dokumentmall</comment>
@@ -1487,6 +1498,7 @@
     <comment xml:lang="pl">Dokument WordPerfect</comment>
     <comment xml:lang="pt">documento do WordPerfect</comment>
     <comment xml:lang="pt_BR">Documento do WordPerfect</comment>
+    <comment xml:lang="ru">документ WordPerfect</comment>
     <comment xml:lang="sq">Dokument WordPerfect</comment>
     <comment xml:lang="sr">WordPerfect документ</comment>
     <comment xml:lang="sv">WordPerfect-dokument</comment>
@@ -1557,6 +1569,7 @@
     <comment xml:lang="pl">Dokument AbiWord</comment>
     <comment xml:lang="pt">documento AbiWord</comment>
     <comment xml:lang="pt_BR">Documento do AbiWord</comment>
+    <comment xml:lang="ru">документ AbiWord</comment>
     <comment xml:lang="sq">Dokument AbiWord</comment>
     <comment xml:lang="sr">Абиворд документ</comment>
     <comment xml:lang="sv">AbiWord-dokument</comment>
@@ -1597,6 +1610,7 @@
     <comment xml:lang="pl">Dokument Lotus AmiPro</comment>
     <comment xml:lang="pt">documento Lotus AmiPro</comment>
     <comment xml:lang="pt_BR">Documento do Lotus AmiPro</comment>
+    <comment xml:lang="ru">документ Lotus AmiPro</comment>
     <comment xml:lang="sq">Dokument Lotus AmiPro</comment>
     <comment xml:lang="sr">Лотус АмиПро документ</comment>
     <comment xml:lang="sv">Lotus AmiPro-dokument</comment>
@@ -1750,6 +1764,7 @@
     <comment xml:lang="pl">Archiwum ARJ</comment>
     <comment xml:lang="pt">arquivo ARJ</comment>
     <comment xml:lang="pt_BR">Arquivo ARJ</comment>
+    <comment xml:lang="ru">архив ARJ</comment>
     <comment xml:lang="sq">Arkiv ARJ</comment>
     <comment xml:lang="sr">ARJ архива</comment>
     <comment xml:lang="sv">ARJ-arkiv</comment>
@@ -1967,6 +1982,7 @@
     <comment xml:lang="pl">archiwum bzip</comment>
     <comment xml:lang="pt">arquivo bzip</comment>
     <comment xml:lang="pt_BR">Arquivo bzip</comment>
+    <comment xml:lang="ru">архив bzip</comment>
     <comment xml:lang="sq">arkiv bzip</comment>
     <comment xml:lang="sr">бзип архива</comment>
     <comment xml:lang="sv">bzip-arkiv</comment>
@@ -2001,6 +2017,7 @@
     <comment xml:lang="pl">archiwum tar (kompresja bzip)</comment>
     <comment xml:lang="pt">arquivo tar (comprimido com bzip)</comment>
     <comment xml:lang="pt_BR">Arquivo tar (compactado com bzip)</comment>
+    <comment xml:lang="ru">архив tar (сжатый bzip)</comment>
     <comment xml:lang="sq">arkiv Tar (i kompresuar me bzip)</comment>
     <comment xml:lang="sr">тar архива (bzip-компресована)</comment>
     <comment xml:lang="sv">tar-arkiv (bzip-komprimerat)</comment>
@@ -2196,6 +2213,7 @@
     <comment xml:lang="pl">archiwum tar (kompresja gzip)</comment>
     <comment xml:lang="pt">arquivo tar (comprimido com gzip)</comment>
     <comment xml:lang="pt_BR">Arquivo tar (compactado com gzip)</comment>
+    <comment xml:lang="ru">архив tar (сжатый gzip)</comment>
     <comment xml:lang="sq">arkiv tar (i kompresuar me gzip)</comment>
     <comment xml:lang="sr">тar архива (gzip-компресована)</comment>
     <comment xml:lang="sv">tar-arkiv (gzip-komprimerat)</comment>
@@ -2274,6 +2292,7 @@
     <comment xml:lang="pl">Archiwum CPIO</comment>
     <comment xml:lang="pt">arquivo CPIO</comment>
     <comment xml:lang="pt_BR">Arquivo CPIO</comment>
+    <comment xml:lang="ru">архив CPIO</comment>
     <comment xml:lang="sq">Arkiv CPIO</comment>
     <comment xml:lang="sr">CPIO архива</comment>
     <comment xml:lang="sv">CPIO-arkiv</comment>
@@ -2456,6 +2475,7 @@
     <comment xml:lang="pl">Pakiet Debiana</comment>
     <comment xml:lang="pt">pacote Debian</comment>
     <comment xml:lang="pt_BR">Pacote Debian</comment>
+    <comment xml:lang="ru">пакет Debian</comment>
     <comment xml:lang="sq">Paketë Debian</comment>
     <comment xml:lang="sr">Debian пакет</comment>
     <comment xml:lang="sv">Debianpaket</comment>
@@ -2565,6 +2585,7 @@
     <comment xml:lang="pl">Diagram programu Dia</comment>
     <comment xml:lang="pt">diagrama Dia</comment>
     <comment xml:lang="pt_BR">Diagrama do Dia</comment>
+    <comment xml:lang="ru">диаграмма Dia</comment>
     <comment xml:lang="sq">Diagramë Dia</comment>
     <comment xml:lang="sr">Диа дијаграм</comment>
     <comment xml:lang="sv">Dia-diagram</comment>
@@ -2694,6 +2715,7 @@
     <comment xml:lang="pl">plik uruchamialny</comment>
     <comment xml:lang="pt">executável</comment>
     <comment xml:lang="pt_BR">executável</comment>
+    <comment xml:lang="ru">исполняемый</comment>
     <comment xml:lang="sq">e ekzekutueshme</comment>
     <comment xml:lang="sr">извршна</comment>
     <comment xml:lang="sv">körbar fil</comment>
@@ -2742,6 +2764,7 @@
     <comment xml:lang="pl">czcionka</comment>
     <comment xml:lang="pt">tipo de letra</comment>
     <comment xml:lang="pt_BR">Fonte</comment>
+    <comment xml:lang="ru">шрифт</comment>
     <comment xml:lang="sq">gërmë</comment>
     <comment xml:lang="sr">фонт</comment>
     <comment xml:lang="sv">typsnitt</comment>
@@ -3211,6 +3234,7 @@
     <comment xml:lang="pl">Czcionka TrueType</comment>
     <comment xml:lang="pt">tipo de letra TrueType</comment>
     <comment xml:lang="pt_BR">Fonte TrueType</comment>
+    <comment xml:lang="ru">шрифт TrueType</comment>
     <comment xml:lang="sq">Gërma TrueType</comment>
     <comment xml:lang="sr">Трутајп фонт</comment>
     <comment xml:lang="sv">Truetype-typsnitt</comment>
@@ -3362,6 +3386,7 @@
     <comment xml:lang="pl">przetłumaczone komunikaty (czytelne dla maszyny)</comment>
     <comment xml:lang="pt">mensagens traduzidas (leitura pelo computador)</comment>
     <comment xml:lang="pt_BR">Mensagens traduzidas (legível por máquinas)</comment>
+    <comment xml:lang="ru">переводы сообщений (откомпилированые)</comment>
     <comment xml:lang="sq">mesazhe të përkthyer (të lexueshme nga makina)</comment>
     <comment xml:lang="sr">преведене поруке (машинама читљиво)</comment>
     <comment xml:lang="sv">översatta meddelanden (maskinläsbara)</comment>
@@ -3495,6 +3520,7 @@
     <comment xml:lang="pl">Arkusz kalkulacyjny Gnumeric</comment>
     <comment xml:lang="pt">folha de cálculo Gnumeric</comment>
     <comment xml:lang="pt_BR">Planilha do Gnumeric</comment>
+    <comment xml:lang="ru">книга электронной таблицы Gnumeric</comment>
     <comment xml:lang="sq">Fletë llogaritëse Gnumeric</comment>
     <comment xml:lang="sr">Гнумерик табеларни рачун</comment>
     <comment xml:lang="sv">Gnumeric-kalkylblad</comment>
@@ -3561,6 +3587,7 @@
     <comment xml:lang="pl">archiwum gtar</comment>
     <comment xml:lang="pt">arquivo gtar</comment>
     <comment xml:lang="pt_BR">Arquivo gtar</comment>
+    <comment xml:lang="ru">архив gtar</comment>
     <comment xml:lang="sq">arkiv gtar</comment>
     <comment xml:lang="sr">гтар архива</comment>
     <comment xml:lang="sv">gtar-arkiv</comment>
@@ -3625,6 +3652,7 @@
     <comment xml:lang="pl">archiwum gzip</comment>
     <comment xml:lang="pt">arquivo gzip</comment>
     <comment xml:lang="pt_BR">Arquivo gzip</comment>
+    <comment xml:lang="ru">архив gzip</comment>
     <comment xml:lang="sq">arkiv gzip</comment>
     <comment xml:lang="sr">гзип архива</comment>
     <comment xml:lang="sv">gzip-arkiv</comment>
@@ -3756,6 +3784,7 @@
     <comment xml:lang="pl">Archiwum Java</comment>
     <comment xml:lang="pt">arquivo Java</comment>
     <comment xml:lang="pt_BR">Pacote Java</comment>
+    <comment xml:lang="ru">архив Java</comment>
     <comment xml:lang="sq">Arkiv Java</comment>
     <comment xml:lang="sr">Јава архива</comment>
     <comment xml:lang="sv">Java-arkiv</comment>
@@ -3802,6 +3831,7 @@
   <mime-type type="application/x-java-jnlp-file">
     <sub-class-of type="text/xml"/>
     <comment>Java Network Launched Application</comment>
+    <comment xml:lang="nb">Java-program startet over nettverket</comment>
     <glob pattern="*.jnlp"/>
     <magic priority="50">
       <match value="&lt;jnlp" type="string" offset="0:64"/>
@@ -3862,6 +3892,7 @@
     <comment xml:lang="pl">Projekt JBuilder</comment>
     <comment xml:lang="pt">projecto JBuilder</comment>
     <comment xml:lang="pt_BR">Projeto do JBuilder</comment>
+    <comment xml:lang="ru">проект JBuilder</comment>
     <comment xml:lang="sq">Projekt JBuilder</comment>
     <comment xml:lang="sr">JBuilder пројекат</comment>
     <comment xml:lang="sv">JBuilder-projekt</comment>
@@ -3937,6 +3968,7 @@
     <comment xml:lang="pl">Wykres KChart</comment>
     <comment xml:lang="pt">gráfico KChart</comment>
     <comment xml:lang="pt_BR">Gráfico do KChart</comment>
+    <comment xml:lang="ru">диаграмма KChart</comment>
     <comment xml:lang="sq">Grafik KChart</comment>
     <comment xml:lang="sr">KChart графикон</comment>
     <comment xml:lang="sv">KChart-diagram</comment>
@@ -3980,6 +4012,7 @@
     <comment xml:lang="pl">Formuła KFormula</comment>
     <comment xml:lang="pt">fórmula KFormula</comment>
     <comment xml:lang="pt_BR">Fórmula do KFormula</comment>
+    <comment xml:lang="ru">формула KFormula</comment>
     <comment xml:lang="sq">Formulë KFormula</comment>
     <comment xml:lang="sr">KFormula формула</comment>
     <comment xml:lang="sv">KFormula-formel</comment>
@@ -4345,6 +4378,7 @@
     <comment xml:lang="pl">Dokument Kuguar</comment>
     <comment xml:lang="pt">documento Kugar</comment>
     <comment xml:lang="pt_BR">Documento do Kugar</comment>
+    <comment xml:lang="ru">документ Kugar</comment>
     <comment xml:lang="sq">Dokument Kugar</comment>
     <comment xml:lang="sr">Kugar документ</comment>
     <comment xml:lang="sv">Kugar-dokument</comment>
@@ -4377,6 +4411,7 @@
     <comment xml:lang="pl">Dokument KWord</comment>
     <comment xml:lang="pt">documento KWord</comment>
     <comment xml:lang="pt_BR">Documento do KWord</comment>
+    <comment xml:lang="ru">документ KWord</comment>
     <comment xml:lang="sq">Dokument KWord</comment>
     <comment xml:lang="sr">KWord документ</comment>
     <comment xml:lang="sv">KWord-dokument</comment>
@@ -4456,6 +4491,7 @@
     <comment xml:lang="pl">Archiwum LHA</comment>
     <comment xml:lang="pt">arquivo LHA</comment>
     <comment xml:lang="pt_BR">Arquivo LHA</comment>
+    <comment xml:lang="ru">архив LHA</comment>
     <comment xml:lang="sq">Arkiv LHA</comment>
     <comment xml:lang="sr">LHA архива</comment>
     <comment xml:lang="sv">LHA-arkiv</comment>
@@ -4502,6 +4538,7 @@
     <comment xml:lang="pl">Archiwum LHZ</comment>
     <comment xml:lang="pt">arquivo LHZ</comment>
     <comment xml:lang="pt_BR">Arquivo LZH</comment>
+    <comment xml:lang="ru">архив LHZ</comment>
     <comment xml:lang="sq">Arkiv LHZ</comment>
     <comment xml:lang="sr">LHZ архива</comment>
     <comment xml:lang="sv">LHZ-arkiv</comment>
@@ -4597,6 +4634,7 @@
     <comment xml:lang="pl">Archiwum LZO</comment>
     <comment xml:lang="pt">arquivo LZO</comment>
     <comment xml:lang="pt_BR">Arquivo LZO</comment>
+    <comment xml:lang="ru">архив LZO</comment>
     <comment xml:lang="sq">Arkiv LZO</comment>
     <comment xml:lang="sr">LZO архива</comment>
     <comment xml:lang="sv">LZO-arkiv</comment>
@@ -4759,6 +4797,7 @@
     <comment xml:lang="pl">Zakładki Mozilli</comment>
     <comment xml:lang="pt">marcadores do Mozilla</comment>
     <comment xml:lang="pt_BR">Marcadores do Mozilla</comment>
+    <comment xml:lang="ru">закладки Mozilla</comment>
     <comment xml:lang="sq">Libërshënues të Mozilla</comment>
     <comment xml:lang="sr">Mozilla обележивачи</comment>
     <comment xml:lang="sv">Mozilla-bokmärken</comment>
@@ -4833,6 +4872,7 @@
     <comment xml:lang="pl">Dokument Microsoft Write</comment>
     <comment xml:lang="pt">documento do Microsoft Write</comment>
     <comment xml:lang="pt_BR">Documento do Microsoft Write</comment>
+    <comment xml:lang="ru">документ Microsoft Write</comment>
     <comment xml:lang="sq">Dokument Microsoft Write</comment>
     <comment xml:lang="sr">Микрософт документ Писанке</comment>
     <comment xml:lang="sv">Microsoft Write-dokument</comment>
@@ -5028,6 +5068,7 @@
     <comment xml:lang="pl">Zakładki Netscape</comment>
     <comment xml:lang="pt">marcadores do Netscape</comment>
     <comment xml:lang="pt_BR">Marcadores do Netscape</comment>
+    <comment xml:lang="ru">закладки Netskape</comment>
     <comment xml:lang="sq">Libërshënues të Netscape</comment>
     <comment xml:lang="sr">Нетскејп обележивачи</comment>
     <comment xml:lang="sv">Netscape-bokmärken</comment>
@@ -5106,6 +5147,7 @@
     <comment xml:lang="pl">Plik dźwiękowy Ogg Vorbis</comment>
     <comment xml:lang="pt">áudio Ogg Vorbis</comment>
     <comment xml:lang="pt_BR">Áudio do Ogg Vorbis</comment>
+    <comment xml:lang="ru">Ogg Vorbis аудио</comment>
     <comment xml:lang="sq">Audio Ogg Vorbis</comment>
     <comment xml:lang="sr">Ог-ворбис звучни запис</comment>
     <comment xml:lang="sv">Ogg Vorbis-ljud</comment>
@@ -5282,6 +5324,7 @@
     <comment xml:lang="pl">Skrypt w Perlu</comment>
     <comment xml:lang="pt">'script' Perl</comment>
     <comment xml:lang="pt_BR">Script Perl</comment>
+    <comment xml:lang="ru">скрипт Perl</comment>
     <comment xml:lang="sq">Script Perl</comment>
     <comment xml:lang="sr">Перл скрипта</comment>
     <comment xml:lang="sv">Perlskript</comment>
@@ -5324,6 +5367,7 @@
     <comment xml:lang="pl">Skrypt w PHP</comment>
     <comment xml:lang="pt">'script' PHP</comment>
     <comment xml:lang="pt_BR">Script PHP</comment>
+    <comment xml:lang="ru">скрипт PHP</comment>
     <comment xml:lang="sq">Script PHP</comment>
     <comment xml:lang="sr">PHP скрипта</comment>
     <comment xml:lang="sv">PHP-skript</comment>
@@ -5557,6 +5601,7 @@
     <comment xml:lang="pl">Archiwum RAR</comment>
     <comment xml:lang="pt">arquivo RAR</comment>
     <comment xml:lang="pt_BR">Arquivo RAR</comment>
+    <comment xml:lang="ru">архив RAR</comment>
     <comment xml:lang="sq">Arkiv RAR</comment>
     <comment xml:lang="sr">РАР архива</comment>
     <comment xml:lang="sv">RAR-arkiv</comment>
@@ -5591,6 +5636,7 @@
     <comment xml:lang="pl">odrzucona łata</comment>
     <comment xml:lang="pt">ficheiro de patch rejeitado</comment>
     <comment xml:lang="pt_BR">Arquivo de patch rejeitado</comment>
+    <comment xml:lang="ru">отвергнутый патч</comment>
     <comment xml:lang="sq">patch i papranuar</comment>
     <comment xml:lang="sr">одбијена закрпа</comment>
     <comment xml:lang="sv">avvisad programfix</comment>
@@ -5622,6 +5668,7 @@
     <comment xml:lang="pl">Pakiet RPM</comment>
     <comment xml:lang="pt">pacote RPM</comment>
     <comment xml:lang="pt_BR">Pacote RPM</comment>
+    <comment xml:lang="ru">RPM пакет</comment>
     <comment xml:lang="sq">Paketë RPM</comment>
     <comment xml:lang="sr">RPM пакет</comment>
     <comment xml:lang="sv">RPM-paket</comment>
@@ -5658,6 +5705,7 @@
     <comment xml:lang="pl">Skrypt Ruby</comment>
     <comment xml:lang="pt">'script' Ruby</comment>
     <comment xml:lang="pt_BR">Script Ruby</comment>
+    <comment xml:lang="ru">скрипт Ruby</comment>
     <comment xml:lang="sq">Script Ruby</comment>
     <comment xml:lang="sr">Руби скрипта</comment>
     <comment xml:lang="sv">Ruby-skript</comment>
@@ -5728,6 +5776,7 @@
     <comment xml:lang="pl">biblioteka współdzielona (la)</comment>
     <comment xml:lang="pt">biblioteca partilhada (la)</comment>
     <comment xml:lang="pt_BR">Biblioteca compartilhada (la)</comment>
+    <comment xml:lang="ru">разделяемая библиотека (la)</comment>
     <comment xml:lang="sq">librari e përbashkët (la)</comment>
     <comment xml:lang="sr">дељена библиотека (la)</comment>
     <comment xml:lang="sv">delat bibliotek (la)</comment>
@@ -5760,6 +5809,7 @@
     <comment xml:lang="pl">biblioteka współdzielona</comment>
     <comment xml:lang="pt">biblioteca partilhada</comment>
     <comment xml:lang="pt_BR">Biblioteca compartilhada</comment>
+    <comment xml:lang="ru">разделяемая библиотека</comment>
     <comment xml:lang="sq">librari e përbashkët</comment>
     <comment xml:lang="sr">дељена библиотека</comment>
     <comment xml:lang="sv">delat bibliotek</comment>
@@ -6082,6 +6132,7 @@
     <comment xml:lang="pl">archiwum tar</comment>
     <comment xml:lang="pt">arquivo tar</comment>
     <comment xml:lang="pt_BR">Arquivo tar</comment>
+    <comment xml:lang="ru">архив tar</comment>
     <comment xml:lang="sq">arkiv tar</comment>
     <comment xml:lang="sr">тар архива</comment>
     <comment xml:lang="sv">tar-arkiv</comment>
@@ -6116,6 +6167,7 @@
     <comment xml:lang="pl">archiwum tar (skompresowane)</comment>
     <comment xml:lang="pt">arquivo tar (comprimido)</comment>
     <comment xml:lang="pt_BR">Arquivo tar (compactado)</comment>
+    <comment xml:lang="ru">архив tar (сжатый)</comment>
     <comment xml:lang="sq">arkiv tar (i kompresuar)</comment>
     <comment xml:lang="sr">тar архива (компресована)</comment>
     <comment xml:lang="sv">tar-arkiv (komprimerat)</comment>
@@ -6244,6 +6296,7 @@
     <comment xml:lang="pl">motyw</comment>
     <comment xml:lang="pt">tema</comment>
     <comment xml:lang="pt_BR">Tema</comment>
+    <comment xml:lang="ru">тема</comment>
     <comment xml:lang="sq">tema</comment>
     <comment xml:lang="sr">тема</comment>
     <comment xml:lang="sv">tema</comment>
@@ -6307,6 +6360,7 @@
     <comment xml:lang="pl">plik zapasowy</comment>
     <comment xml:lang="pt">cópia de segurança</comment>
     <comment xml:lang="pt_BR">Arquivo de backup</comment>
+    <comment xml:lang="ru">файл запасной копии</comment>
     <comment xml:lang="sq">file backup</comment>
     <comment xml:lang="sr">резервна копија</comment>
     <comment xml:lang="sv">säkerhetskopia</comment>
@@ -6446,6 +6500,7 @@
     <comment xml:lang="pl">archiwum tar (kompresja LZO)</comment>
     <comment xml:lang="pt">arquivo tar (comprimido com LZO)</comment>
     <comment xml:lang="pt_BR">Arquivo tar (compactado com LZO)</comment>
+    <comment xml:lang="ru">архив tar (сжатый LZO)</comment>
     <comment xml:lang="sq">arkiv Tar (i kompresuar me LZO)</comment>
     <comment xml:lang="sr">Tar архива (LZO-компресована)</comment>
     <comment xml:lang="sv">tar-arkiv (LZO-komprimerat)</comment>
@@ -6480,6 +6535,7 @@
     <comment xml:lang="pl">archiwum ustar</comment>
     <comment xml:lang="pt">arquivo ustar</comment>
     <comment xml:lang="pt_BR">Arquivo ustar</comment>
+    <comment xml:lang="ru">архив ustar</comment>
     <comment xml:lang="sq">arkiv ustar</comment>
     <comment xml:lang="sr">ustar архива</comment>
     <comment xml:lang="sv">ustar-arkiv</comment>
@@ -6607,6 +6663,7 @@
     <comment xml:lang="pl">pusty dokument</comment>
     <comment xml:lang="pt">documento vazio</comment>
     <comment xml:lang="pt_BR">Documento vazio</comment>
+    <comment xml:lang="ru">пустой документ</comment>
     <comment xml:lang="sq">dokument bosh</comment>
     <comment xml:lang="sr">празан документ</comment>
     <comment xml:lang="sv">tomt dokument</comment>
@@ -6637,6 +6694,7 @@
     <comment xml:lang="pl">archiwum zoo</comment>
     <comment xml:lang="pt">arquivo zoo</comment>
     <comment xml:lang="pt_BR">Arquivo zoo</comment>
+    <comment xml:lang="ru">архив zoo</comment>
     <comment xml:lang="sq">arkiv zoo</comment>
     <comment xml:lang="sr">zoo архива</comment>
     <comment xml:lang="sv">zoo-arkiv</comment>
@@ -6705,6 +6763,7 @@
     <comment xml:lang="pl">Archiwum ZIP</comment>
     <comment xml:lang="pt">arquivo ZIP</comment>
     <comment xml:lang="pt_BR">Arquivo ZIP</comment>
+    <comment xml:lang="ru">архив ZIP</comment>
     <comment xml:lang="sq">Arkiv ZIP</comment>
     <comment xml:lang="sr">Зип архива</comment>
     <comment xml:lang="sv">ZIP-arkiv</comment>
@@ -7033,6 +7092,7 @@
     <comment xml:lang="pl">Plik dźwiękowy FLAC</comment>
     <comment xml:lang="pt">áudio FLAC</comment>
     <comment xml:lang="pt_BR">Áudio FLAC</comment>
+    <comment xml:lang="ru">FLAC аудио</comment>
     <comment xml:lang="sq">Audio FLAC</comment>
     <comment xml:lang="sr">FLAC звучни запис</comment>
     <comment xml:lang="sv">FLAC-ljud</comment>
@@ -7080,6 +7140,7 @@
   </mime-type>
   <mime-type type="audio/x-m4a">
     <comment>MP4 audio</comment>
+    <comment xml:lang="nb">MP4-lyd</comment>
     <magic priority="50">
       <match value="ftypM4A" type="string" offset="0"/>
     </magic>
@@ -7149,6 +7210,7 @@
     <comment xml:lang="pl">Plik dźwiękowy MP3</comment>
     <comment xml:lang="pt">áudio MP3</comment>
     <comment xml:lang="pt_BR">Áudio MP3</comment>
+    <comment xml:lang="ru">MP3 аудио</comment>
     <comment xml:lang="sq">Audio MP3</comment>
     <comment xml:lang="sr">MP3 звучни запис</comment>
     <comment xml:lang="sv">MP3-ljud</comment>
@@ -7216,6 +7278,7 @@
     <comment xml:lang="pl">Plik dźwiękowy MP3</comment>
     <comment xml:lang="pt">áudio MP3</comment>
     <comment xml:lang="pt_BR">Áudio MP3</comment>
+    <comment xml:lang="ru">MP3 аудио</comment>
     <comment xml:lang="sq">Audio MP3</comment>
     <comment xml:lang="sr">MP3 звучни запис</comment>
     <comment xml:lang="sv">MP3-ljud</comment>
@@ -7529,6 +7592,7 @@
     <comment xml:lang="pl">Plik dźwiękowy WAV</comment>
     <comment xml:lang="pt">áudio WAV</comment>
     <comment xml:lang="pt_BR">Áudio WAV</comment>
+    <comment xml:lang="ru">WAV аудио</comment>
     <comment xml:lang="sq">Audio WAV</comment>
     <comment xml:lang="sr">WAV звучни запис</comment>
     <comment xml:lang="sv">WAV-ljud</comment>
@@ -7767,6 +7831,7 @@
     <comment xml:lang="pl">Obraz GIF</comment>
     <comment xml:lang="pt">imagem GIF</comment>
     <comment xml:lang="pt_BR">Imagem GIF</comment>
+    <comment xml:lang="ru">изображение GIF</comment>
     <comment xml:lang="sq">Figurë GIF</comment>
     <comment xml:lang="sr">GIF слика</comment>
     <comment xml:lang="sv">GIF-bild</comment>
@@ -7836,6 +7901,7 @@
     <comment xml:lang="pl">Obraz JPEG</comment>
     <comment xml:lang="pt">imagem JPEG</comment>
     <comment xml:lang="pt_BR">Imagem JPEG</comment>
+    <comment xml:lang="ru">изображение JPEG</comment>
     <comment xml:lang="sq">Figurë JPEG</comment>
     <comment xml:lang="sr">JPEG слика</comment>
     <comment xml:lang="sv">JPEG-bild</comment>
@@ -7872,6 +7938,7 @@
     <comment xml:lang="pl">Obraz JPEG-2000</comment>
     <comment xml:lang="pt">imagem JPEG-2000</comment>
     <comment xml:lang="pt_BR">Imagem JPEG-2000</comment>
+    <comment xml:lang="ru">изображение JPEG-2000</comment>
     <comment xml:lang="sq">Figurë JPEG-2000</comment>
     <comment xml:lang="sr">JPEG-2000 слика</comment>
     <comment xml:lang="sv">JPEG-2000-bild</comment>
@@ -7999,6 +8066,7 @@
     <comment xml:lang="pl">skalowalny obraz SVG</comment>
     <comment xml:lang="pt">imagem SVG escalável</comment>
     <comment xml:lang="pt_BR">Imagem escalável SVG</comment>
+    <comment xml:lang="ru">масштабируемое SVG изображение </comment>
     <comment xml:lang="sq">Figurë e shkallëzueshme SVG</comment>
     <comment xml:lang="sr">скалабилна СВГ слика</comment>
     <comment xml:lang="sv">skalbar SVG-bild</comment>
@@ -8136,6 +8204,7 @@
     <comment xml:lang="pl">Obraz 3D Studio</comment>
     <comment xml:lang="pt">imagem 3D Studio</comment>
     <comment xml:lang="pt_BR">Imagem do 3D Studio</comment>
+    <comment xml:lang="ru">изображение 3D Studio</comment>
     <comment xml:lang="sq">Figurë 3D Studio</comment>
     <comment xml:lang="sr">3D Studio слика</comment>
     <comment xml:lang="sv">3D Studio-bild</comment>
@@ -8236,6 +8305,7 @@
     <comment xml:lang="pl">Obraz GIMPa (skompresowany)</comment>
     <comment xml:lang="pt">imagem do GIMP (comprimida)</comment>
     <comment xml:lang="pt_BR">Imagem do GIMP (compactada)</comment>
+    <comment xml:lang="ru">изображение GIMP (сжатое)</comment>
     <comment xml:lang="sq">Figurë GIMP (e kompresuar)</comment>
     <comment xml:lang="sr">Гимп слика (компресована)</comment>
     <comment xml:lang="sv">GIMP-bild (komprimerad)</comment>
@@ -8556,6 +8626,7 @@
     <comment xml:lang="pl">Ikona Microsoft Windows</comment>
     <comment xml:lang="pt">ícone do Microsoft Windows</comment>
     <comment xml:lang="pt_BR">Ícone do Microsoft Windows</comment>
+    <comment xml:lang="ru">иконка Microsoft Windows</comment>
     <comment xml:lang="sq">Ikonë Microsoft Windows</comment>
     <comment xml:lang="sr">Микрософт Виндуз икона</comment>
     <comment xml:lang="sv">Microsoft Windows-ikon</comment>
@@ -9131,6 +9202,7 @@
     <comment xml:lang="pl">Kursor Windows</comment>
     <comment xml:lang="pt">cursor Windows</comment>
     <comment xml:lang="pt_BR">Cursor do Windows</comment>
+    <comment xml:lang="ru">курсор Windows</comment>
     <comment xml:lang="sq">Kursor Windows</comment>
     <comment xml:lang="sr">Виндуз курзор</comment>
     <comment xml:lang="sv">Windows-markör</comment>
@@ -9226,6 +9298,7 @@
     <comment xml:lang="pl">Obraz GIMPa</comment>
     <comment xml:lang="pt">imagem do GIMP</comment>
     <comment xml:lang="pt_BR">Imagem do GIMP</comment>
+    <comment xml:lang="ru">изображение GIMP</comment>
     <comment xml:lang="sq">Figurë GIMP</comment>
     <comment xml:lang="sr">Гимп слика</comment>
     <comment xml:lang="sv">GIMP-bild</comment>
@@ -9360,6 +9433,7 @@
     <comment xml:lang="pl">urządzenie blokowe</comment>
     <comment xml:lang="pt">dispositivo de bloco</comment>
     <comment xml:lang="pt_BR">Dispositivo de bloco</comment>
+    <comment xml:lang="ru">блочное устройство</comment>
     <comment xml:lang="sq">dispozitiv me blloqe</comment>
     <comment xml:lang="sr">блок уређај</comment>
     <comment xml:lang="sv">blockenhet</comment>
@@ -9390,6 +9464,7 @@
     <comment xml:lang="pl">urządzenie znakowe</comment>
     <comment xml:lang="pt">dispositivo de caracteres</comment>
     <comment xml:lang="pt_BR">Dispositivo de caractere</comment>
+    <comment xml:lang="ru">символьное устройство</comment>
     <comment xml:lang="sq">dispozitiv me karaktere</comment>
     <comment xml:lang="sr">знаковни уређај</comment>
     <comment xml:lang="sv">teckenenhet</comment>
@@ -9420,6 +9495,7 @@
     <comment xml:lang="pl">folder</comment>
     <comment xml:lang="pt">pasta</comment>
     <comment xml:lang="pt_BR">Pasta</comment>
+    <comment xml:lang="ru">папка</comment>
     <comment xml:lang="sq">kartelë</comment>
     <comment xml:lang="sr">директоријум</comment>
     <comment xml:lang="sv">mapp</comment>
@@ -9481,6 +9557,7 @@
     <comment xml:lang="pl">punkt montowania</comment>
     <comment xml:lang="pt">ponto de montagem</comment>
     <comment xml:lang="pt_BR">Ponto de montagem</comment>
+    <comment xml:lang="ru">точка монтирования</comment>
     <comment xml:lang="sq">pikë montimi</comment>
     <comment xml:lang="sr">тачка прикључења</comment>
     <comment xml:lang="sv">monteringspunkt</comment>
@@ -9541,6 +9618,7 @@
     <comment xml:lang="pl">dowiązanie symboliczne</comment>
     <comment xml:lang="pt">ligação simbólica</comment>
     <comment xml:lang="pt_BR">Ligação simbólica</comment>
+    <comment xml:lang="ru">символическая ссылка</comment>
     <comment xml:lang="sq">lidhje simbolike</comment>
     <comment xml:lang="sr">симболичка веза</comment>
     <comment xml:lang="sv">symbolisk länk</comment>
@@ -9574,6 +9652,7 @@
     <comment xml:lang="pl">raport z dostarczenia poczty</comment>
     <comment xml:lang="pt">relatório de entrega de e-mail</comment>
     <comment xml:lang="pt_BR">Relatório de entrega de correspondência</comment>
+    <comment xml:lang="ru">отчет о доставке сообщения</comment>
     <comment xml:lang="sq">raport mbi dorzimin e mesazhit</comment>
     <comment xml:lang="sr">извештај доставе поруке</comment>
     <comment xml:lang="sv">e-postleveransrapport</comment>
@@ -9736,6 +9815,7 @@
     <comment xml:lang="pl">wiadomość e-mail</comment>
     <comment xml:lang="pt">mensagem de e-mail</comment>
     <comment xml:lang="pt_BR">Mensagem de correio</comment>
+    <comment xml:lang="ru">почтовое сообщение</comment>
     <comment xml:lang="sq">mesazh poste</comment>
     <comment xml:lang="sr">е-порука</comment>
     <comment xml:lang="sv">e-postmeddelande</comment>
@@ -9811,6 +9891,7 @@
     <comment xml:lang="pl">Dokument VRML</comment>
     <comment xml:lang="pt">documento VRML</comment>
     <comment xml:lang="pt_BR">Documento VRML</comment>
+    <comment xml:lang="ru">документ VRML</comment>
     <comment xml:lang="sq">Dokument VRML</comment>
     <comment xml:lang="sr">VRML документ</comment>
     <comment xml:lang="sv">VRML-dokument</comment>
@@ -9939,6 +10020,7 @@
     <comment xml:lang="pl">zaszyfrowany list</comment>
     <comment xml:lang="pt">mensagem cifrada</comment>
     <comment xml:lang="pt_BR">Mensagem criptografada</comment>
+    <comment xml:lang="ru">зашифрованное сообщение</comment>
     <comment xml:lang="sq">mesazh i kriptuar</comment>
     <comment xml:lang="sr">шифрована порука</comment>
     <comment xml:lang="sv">krypterat meddelande</comment>
@@ -10064,6 +10146,7 @@
     <comment xml:lang="pl">podpisana wiadomości</comment>
     <comment xml:lang="pt">mensagem assinada</comment>
     <comment xml:lang="pt_BR">Mensagem assinada</comment>
+    <comment xml:lang="ru">подписанное сообщение</comment>
     <comment xml:lang="sq">mesazh i firmosur</comment>
     <comment xml:lang="sr">потписана порука</comment>
     <comment xml:lang="sv">signerat meddelande</comment>
@@ -10173,6 +10256,7 @@
   <mime-type type="text/directory">
     <alias type="text/x-vcard"/>
     <comment>Electronic Business Card</comment>
+    <comment xml:lang="sv">Elektroniskt visitkort</comment>
     <magic priority="50">
       <match value="BEGIN:VCARD" type="string" offset="0"/>
       <match value="begin:vcard" type="string" offset="0"/>
@@ -10237,6 +10321,7 @@
     <comment xml:lang="pl">strona pomocy</comment>
     <comment xml:lang="pt">página de ajuda</comment>
     <comment xml:lang="pt_BR">Página de ajuda</comment>
+    <comment xml:lang="ru">страница помощи</comment>
     <comment xml:lang="sq">faqe ndihme</comment>
     <comment xml:lang="sr">страна помоћи</comment>
     <comment xml:lang="sv">hjälpsida</comment>
@@ -10369,6 +10454,7 @@
     <comment xml:lang="pl">nagłówki listu e-mail</comment>
     <comment xml:lang="pt">cabeçalhos de e-mail</comment>
     <comment xml:lang="pt_BR">Cabeçalhos de e-mail</comment>
+    <comment xml:lang="ru">почтовые заголовки</comment>
     <comment xml:lang="sq">headers e email</comment>
     <comment xml:lang="sr">заглавља е-порука</comment>
     <comment xml:lang="sv">e-posthuvuden</comment>
@@ -10532,6 +10618,7 @@
     <comment xml:lang="pl">dokument tekstowy (z wartościami oddzielonymi tabulacjami)</comment>
     <comment xml:lang="pt">documento de texto (com valores separados por tabuladores)</comment>
     <comment xml:lang="pt_BR">Documento texto (com valores separados por tabulação)</comment>
+    <comment xml:lang="ru">текстовый документ (TAB в качестве разделителя)</comment>
     <comment xml:lang="sq">dokumet teksti (me vlera të ndara me tab)</comment>
     <comment xml:lang="sr">текстуална датотека (са вредностима раздвојеним табулаторима)</comment>
     <comment xml:lang="sv">textdokument (med tabulatorseparerade värden)</comment>
@@ -10796,6 +10883,7 @@
     <comment xml:lang="pl">dokument tekstowy (z wartościami oddzielonymi przecinkami)</comment>
     <comment xml:lang="pt">documento de texto (com valores separados por vírgulas)</comment>
     <comment xml:lang="pt_BR">Documento texto (com valores separados por vírgula)</comment>
+    <comment xml:lang="ru">текстовый документ (ЗАПЯТАЯ в качестве разделителя)</comment>
     <comment xml:lang="sq">dokumet teksti (me vlera të ndara me presje)</comment>
     <comment xml:lang="sr">текстуална датотека (са вредностима раздвојеним запетама)</comment>
     <comment xml:lang="sv">textdokument (med kommaseparerade värden)</comment>
@@ -10829,6 +10917,7 @@
     <comment xml:lang="pl">warunki licencji programu</comment>
     <comment xml:lang="pt">termos de licença de aplicação</comment>
     <comment xml:lang="pt_BR">Termos de licença do software</comment>
+    <comment xml:lang="ru">лицензионное соглашение</comment>
     <comment xml:lang="sq">kushtet e liçencës së programit</comment>
     <comment xml:lang="sr">лиценца за програм</comment>
     <comment xml:lang="sv">programlicensavtal</comment>
@@ -11002,6 +11091,7 @@
   <mime-type type="text/x-dsrc">
     <sub-class-of type="text/plain"/>
     <comment>D source code</comment>
+    <comment xml:lang="nb">D-kildekode</comment>
     <glob pattern="*.d"/>
   </mime-type>
   <mime-type type="text/x-dtd">
@@ -11134,6 +11224,7 @@
     <comment xml:lang="pl">przetłumaczone komunikaty</comment>
     <comment xml:lang="pt">mensagens traduzidas</comment>
     <comment xml:lang="pt_BR">Mensagens traduzidas</comment>
+    <comment xml:lang="ru">переводы сообщений</comment>
     <comment xml:lang="sq">mesazhe të përkthyer</comment>
     <comment xml:lang="sr">преведене поруке</comment>
     <comment xml:lang="sv">översatta meddelanden</comment>
@@ -11164,6 +11255,7 @@
     <comment xml:lang="pl">szablon tłumaczenia wiadomości</comment>
     <comment xml:lang="pt">modelo de tradução de mensagens</comment>
     <comment xml:lang="pt_BR">Modelo de tradução de mensagens</comment>
+    <comment xml:lang="ru">шаблон переводов сообщений</comment>
     <comment xml:lang="sq">template me mesazhe përkthimi</comment>
     <comment xml:lang="sr">шаблон за превод порука</comment>
     <comment xml:lang="sv">meddelandeöversättningsmall</comment>
@@ -11195,6 +11287,7 @@
     <comment xml:lang="pl">Strona HTML</comment>
     <comment xml:lang="pt">página HTML</comment>
     <comment xml:lang="pt_BR">Página HTML</comment>
+    <comment xml:lang="ru">страница HTML</comment>
     <comment xml:lang="sq">Faqe HTML</comment>
     <comment xml:lang="sr">HTML страна</comment>
     <comment xml:lang="sv">HTML-sida</comment>
@@ -11318,6 +11411,7 @@
     <comment xml:lang="pl">Dokument IDL</comment>
     <comment xml:lang="pt">documento IDL</comment>
     <comment xml:lang="pt_BR">Documento IDL</comment>
+    <comment xml:lang="ru">документ IDL</comment>
     <comment xml:lang="sq">Dokument IDL</comment>
     <comment xml:lang="sr">IDL документ</comment>
     <comment xml:lang="sv">IDL-dokument</comment>
@@ -11351,6 +11445,7 @@
     <comment xml:lang="pl">instrukcje instalacji programu</comment>
     <comment xml:lang="pt">instruções de instalação de aplicação</comment>
     <comment xml:lang="pt_BR">Instruções de instalação do software</comment>
+    <comment xml:lang="ru">инструкции по установке программы</comment>
     <comment xml:lang="sq">udhëzime mbi instalimin e programit</comment>
     <comment xml:lang="sr">упутство за инсталацију програма</comment>
     <comment xml:lang="sv">programinstallationsinstruktioner</comment>
@@ -11615,6 +11710,7 @@
     <comment xml:lang="pl">różnica pomiędzy plikami</comment>
     <comment xml:lang="pt">diferenças entre ficheiros</comment>
     <comment xml:lang="pt_BR">Diferenças entre arquivos</comment>
+    <comment xml:lang="ru">различия между файлами</comment>
     <comment xml:lang="sq">diferenca midis files</comment>
     <comment xml:lang="sr">разлике међу датотекама</comment>
     <comment xml:lang="sv">skillnader mellan filer</comment>
@@ -12291,6 +12387,7 @@
     <comment xml:lang="pl">Plik wideo MPEG</comment>
     <comment xml:lang="pt">vídeo MPEG</comment>
     <comment xml:lang="pt_BR">Vídeo MPEG</comment>
+    <comment xml:lang="ru">MPEG видео</comment>
     <comment xml:lang="sq">Video MPEG</comment>
     <comment xml:lang="sr">MPEG видео</comment>
     <comment xml:lang="sv">MPEG-video</comment>

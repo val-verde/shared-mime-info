@@ -45,6 +45,8 @@ uninstall-hook:
 	for media in text application image audio inode video message model multipart; do rm -f "$(DESTDIR)${mimedir}/$${media}/"*.xml; done
 	rm -f "$(DESTDIR)${mimedir}/globs"
 	rm -f "$(DESTDIR)${mimedir}/magic"
+	rm -f "$(DESTDIR)${mimedir}/aliases"
+	rm -f "$(DESTDIR)${mimedir}/subclasses"
 	rm -f "$(DESTDIR)${mimedir}/XMLnamespaces"
 
 check:

@@ -68,18 +68,6 @@ command to generate the output files.
       <match type="string" value="must be converted with BinHex" offset="11"/>
     </magic>
   </mime-type>
-  <mime-type type="application/msword">
-    <_comment>Microsoft Word document</_comment>
-    <magic priority="50">
-      <match type="string" value="\x31\xbe\x00\x00" offset="0"/>
-      <match type="string" value="PO^Q`" offset="0"/>
-      <match type="string" value="\376\067\0\043" offset="0"/>
-      <match type="string" value="\333\245-\0\0\0" offset="0"/>
-      <match type="string" value="Microsoft Word 6.0 Document" offset="2080"/>
-      <match type="string" value="Microsoft Word document data" offset="2112"/>
-    </magic>
-    <glob pattern="*.doc"/>
-  </mime-type>
   <mime-type type="application/octet-stream">
     <_comment>unknown</_comment>
     <magic priority="50">
@@ -182,6 +170,7 @@ command to generate the output files.
     <glob pattern="*.xla"/>
     <glob pattern="*.xlt"/>
     <glob pattern="*.xld"/>
+    <alias type="application/msexcel"/>
   </mime-type>
   <mime-type type="application/vnd.ms-powerpoint">
     <_comment>Microsoft PowerPoint presentation</_comment>
@@ -195,6 +184,16 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.ms-word">
     <_comment>Microsoft Word document</_comment>
+    <magic priority="50">
+      <match type="string" value="\x31\xbe\x00\x00" offset="0"/>
+      <match type="string" value="PO^Q`" offset="0"/>
+      <match type="string" value="\376\067\0\043" offset="0"/>
+      <match type="string" value="\333\245-\0\0\0" offset="0"/>
+      <match type="string" value="Microsoft Word 6.0 Document" offset="2080"/>
+      <match type="string" value="Microsoft Word document data" offset="2112"/>
+    </magic>
+    <glob pattern="*.doc"/>
+    <alias type="application/msword"/>
   </mime-type>
   <mime-type type="application/vnd.palm">
     <_comment>Palmpilot database/document</_comment>
@@ -1411,9 +1410,6 @@ command to generate the output files.
     <glob pattern="*.sid"/>
     <glob pattern="*.psid"/>
   </mime-type>
-  <mime-type type="audio/vnd.rn-realaudio">
-    <_comment>RealAudio broadcast</_comment>
-  </mime-type>
   <mime-type type="audio/x-adpcm">
     <_comment>PCM audio</_comment>
     <magic priority="50">
@@ -1517,6 +1513,7 @@ command to generate the output files.
     <glob pattern="*.ra"/>
     <glob pattern="*.ram"/>
     <glob pattern="*.rm"/>
+    <alias type="audio/vnd.rn-realaudio"/>
   </mime-type>
   <mime-type type="audio/x-riff">
     <_comment>RIFF audio</_comment>
@@ -1884,8 +1881,8 @@ command to generate the output files.
   <mime-type type="inode/fifo">
     <_comment>pipe</_comment>
   </mime-type>
-  <mime-type type='inode/mount-point'>
-    <sub-class-of type='inode/directory'/>
+  <mime-type type="inode/mount-point">
+    <sub-class-of type="inode/directory"/>
     <_comment>mount point</_comment>
   </mime-type>
   <mime-type type="inode/socket">

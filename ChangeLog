@@ -1,3 +1,9 @@
+Fri Jul  9 12:24:04 2004  Thomas Leonard  <tal00r@ecs.soton.ac.uk>
+
+	* freedesktop.org.xml.in: Merged the two msword types by making them
+	aliases. Same thing for the two msexcel types and the two realaudio
+	types (part of patch from David Faure, in #619).
+
 Fri Apr 23 11:44:23 2004  Jonathan Blandford  <jrb@gnome.org>
 
 	* freedesktop.org.xml.in: Added text/x-xmi, #543

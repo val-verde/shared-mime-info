@@ -3498,6 +3498,10 @@ command to generate the output files.
     <glob pattern="*.gen"/>
     <glob pattern="*.md"/>
   </mime-type>
+  <mime-type type="application/x-gettext-translation">
+    <comment>Translated messages (machine-readable)</comment>
+    <glob pattern="*.gmo"/>
+  </mime-type>
   <mime-type type="application/x-glade">
     <comment>Glade project</comment>
     <comment xml:lang="az">Gleyd lahiyəsi</comment>
@@ -11110,6 +11114,10 @@ command to generate the output files.
     <comment xml:lang="uk">розширений текстовий документ</comment>
     <comment xml:lang="wa">documint tecse eritchî</comment>
     <comment xml:lang="zh">enriched 文字檔</comment>
+  </mime-type>
+  <mime-type type="text/x-gettext-translation">
+    <comment>Translated messages</comment>
+    <glob pattern="*.po"/>
   </mime-type>
   <mime-type type="text/html">
     <comment>HTML Page</comment>

@@ -1,3 +1,9 @@
+2004-12-02  Dan Winship  <danw@novell.com>
+
+	* Makefile.am (CLEANFILES, DISTCLEANFILES): Fix. intltool stuff
+	shouldn't be in CLEANFILES, or "make clean; make" will fail
+	(#1845)
+
 2004-12-02  Christophe Fergeau  <teuf@gnome.org>
 
 	* freedesktop.org.xml:

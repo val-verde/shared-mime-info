@@ -23,7 +23,8 @@ EXTRA_DIST = \
 	intltool-update.in		\
 	shared-mime-info.pc.in
 
-CLEANFILES = intltool-extract intltool-merge intltool-update freedesktop.org.xml
+CLEANFILES = freedesktop.org.xml
+DISTCLEANFILES = intltool-extract intltool-merge intltool-update
 
 CFLAGS = $(ALL_CFLAGS)
 LDFLAGS = $(ALL_LIBS)

@@ -46,7 +46,8 @@ struct _Type {
 	char *media;
 	char *subtype;
 
-	xmlNode	*unknown;	/* contains xmlNodes for 3rd party extensions */
+	/* contains xmlNodes for elements that are being copied to the output */
+	xmlDoc	*output;
 };
 
 /* Maps MIME type names to Types */
@@ -70,13 +71,15 @@ static void free_type(gpointer data)
 	g_free(type->media);
 	g_free(type->subtype);
 
-	xmlFreeNode(type->unknown);
+	xmlFreeDoc(type->output);
 
 	g_free(type);
 }
 
 static Type *get_type(const char *name)
 {
+	xmlNode *root;
+	xmlNs *ns;
 	const char *slash;
 	Type *type;
 	int i;
@@ -97,7 +100,14 @@ static Type *get_type(const char *name)
 	type->subtype = g_strdup(slash + 1);
 	g_hash_table_insert(types, g_strdup(name), type);
 
-	type->unknown = xmlNewNode(NULL, "unknown");
+	type->output = xmlNewDoc("1.0");
+	root = xmlNewDocNode(type->output, NULL, "mime-type", NULL);
+	ns = xmlNewNs(root, FREE_NS, NULL);
+	xmlSetNs(root, ns);
+	xmlDocSetRootElement(type->output, root);
+	xmlSetNsProp(root, NULL, "type", name);
+	xmlAddChild(root, xmlNewDocComment(type->output,
+		"Created automatically by update-mime-database. DO NOT EDIT!"));
 
 	for (i = 0; i < G_N_ELEMENTS(media_types); i++)
 	{
@@ -124,7 +134,7 @@ static gboolean match_node(xmlNode *node,
 
 /* 'field' was found in the definition of 'type' and has the freedesktop.org
  * namespace. If it's a known field, process it and return TRUE, else
- * return FALSE to add it to the unknown fields node (copied to output).
+ * return FALSE to add it to the output XML document.
  */
 static gboolean process_freedesktop_node(Type *type, xmlNode *field)
 {
@@ -170,8 +180,6 @@ static gboolean has_lang(xmlNode *node, const char *lang)
 
 	lang2 = xmlGetNsProp(node, "lang", XML_NS);
 	if (!lang2)
-		lang2 = xmlGetNsProp(node, "lang", NULL); /* (libxml) */
-	if (!lang2)
 		return !lang;
 
 	if (strcmp(lang, lang2) == 0)
@@ -187,7 +195,7 @@ static gboolean has_lang(xmlNode *node, const char *lang)
  */
 static void remove_old(Type *type, xmlNode *new)
 {
-	xmlNode *field;
+	xmlNode *field, *fields;
 	gchar *lang;
 
 	if (new->ns == NULL || strcmp(new->ns->href, FREE_NS) != 0)
@@ -197,10 +205,9 @@ static void remove_old(Type *type, xmlNode *new)
 		return;
 
 	lang = xmlGetNsProp(new, "lang", XML_NS);
-	if (!lang)
-		lang = xmlGetNsProp(new, "lang", NULL); /* (libxml) */
 
-	for (field = type->unknown; field; field = field->next)
+	fields = xmlDocGetRootElement(type->output);
+	for (field = fields->xmlChildrenNode; field; field = field->next)
 	{
 		if (match_node(field, FREE_NS, "comment") &&
 		    has_lang(field, lang))
@@ -245,14 +252,26 @@ static void load_type(xmlNode *node)
 			if (process_freedesktop_node(type, field))
 				continue;
 
-		/* Note that libxml helpfully removes the namespace
-		 * from xml:lang when copying. Nice.
+		copy = xmlDocCopyNode(field, type->output, 1);
+		
+		/* Ugly hack to stop the xmlns= attributes appearing on
+		 * every node...
 		 */
-		copy = xmlCopyNode(field, 1);
+		if (copy->ns && copy->ns->prefix == NULL &&
+			strcmp(copy->ns->href, FREE_NS) == 0)
+		{
+			if (copy->nsDef)
+			{
+				/* Still used somewhere... */
+				/* xmlFreeNsList(copy->nsDef); */
+				/* (this leaks) */
+				copy->nsDef = NULL;
+			}
+		}
 
 		remove_old(type, field);
 
-		xmlAddChild(type->unknown, copy);
+		xmlAddChild(xmlDocGetRootElement(type->output), copy);
 	}
 }
 
@@ -388,11 +407,7 @@ static void write_out_type(gpointer key, gpointer value, gpointer data)
 {
 	Type *type = (Type *) value;
 	const char *mime_dir = (char *) data;
-	const char *type_name = (char *) key;
 	char *media, *filename;
-	xmlDoc *doc;
-	xmlNode *root, *src;
-	xmlNs *ns;
 
 	media = g_strconcat(mime_dir, "/", type->media, NULL);
 	mkdir(media, 0755);
@@ -401,37 +416,9 @@ static void write_out_type(gpointer key, gpointer value, gpointer data)
 	g_free(media);
 	media = NULL;
 	
-	doc = xmlNewDoc("1.0");
-	root = xmlNewDocNode(doc, NULL, "mime-type", NULL);
-	ns = xmlNewNs(root, FREE_NS, NULL);
-	xmlSetNs(root, ns);
-
-	xmlSetNsProp(root, NULL, "type", type_name);
-
-	xmlDocSetRootElement(doc, root);
-
-	xmlAddChild(root, xmlNewDocComment(doc,
-		"Created automatically by update-mime-database. DO NOT EDIT!"));
-
-	for (src = type->unknown->xmlChildrenNode; src; src = src->next)
-	{
-		xmlNode *copy;
-
-		copy = xmlDocCopyNode(src, doc, 1);
-
-		xmlAddChild(root, copy);
-
-		if (copy->ns && copy->ns->prefix == NULL &&
-			strcmp(copy->ns->href, FREE_NS) == 0)
-		{
-			copy->nsDef = NULL;	/* Yuck! */
-		}
-	}
-
-	if (save_xml_file(doc, filename) != 0)
+	if (save_xml_file(type->output, filename) != 0)
 		g_warning("Failed to write out '%s'\n", filename);
 
-	xmlFreeDoc(doc);
 	g_free(filename);
 }
 
@@ -608,6 +595,8 @@ int main(int argc, char **argv)
 		usage(argv[0]);
 		return EXIT_FAILURE;
 	}
+
+	LIBXML_TEST_VERSION;
 
 	mime_dir = argv[optind];
 	package_dir = g_strconcat(mime_dir, "/packages", NULL);

@@ -42,7 +42,7 @@ fi
 ])
 
 dnl Check for libxml
-REQUIRE(libxml-2.0, 2.0.0)
+REQUIRE(libxml-2.0, 2.4.0)
 
 dnl Check for glib (if anyone from KDE has a problem with this, you can write
 dnl the replacement code yourself ;-)

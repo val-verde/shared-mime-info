@@ -3,6 +3,8 @@ shared-mime-info		Thomas Leonard <tal00r@ecs.soton.ac.uk>
 
 			Version 0.10 (03-Mar-2003)
 
+* Ensure that all changes to generated files happen atomically.
+
 * Change to half-text, half-binary format to make parsing the magic file
   much easier.
 

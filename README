@@ -15,11 +15,11 @@ Do the usual:
 
 If you want to install to your home directory, you should instead do:
 
-	$ ./configure --prefix=$HOME
+	$ ./configure --prefix=$HOME/.local
 	$ make
-	$ make install mimedir=$HOME/.mime
+	$ make install
 
-You'll need to make sure that $HOME/bin is in your PATH, of course.
+You'll need to make sure that $HOME/.local/bin is in your PATH, of course.
 
 See http://www.freedesktop.org/standards/shared-mime-info.html for more
 information.

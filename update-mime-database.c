@@ -9,6 +9,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <glib.h>
+#include <errno.h>
 #include <dirent.h>
 #include <libxml/parser.h>
 #include <libxml/tree.h>
@@ -1293,6 +1294,67 @@ static void write_namespaces(FILE *stream)
 	g_ptr_array_free(lines, TRUE);
 }
 
+/* Issue a warning if 'path' won't be found by applications */
+static void check_in_path_xdg_data(const char *mime_path)
+{
+	struct stat path_info, dir_info;
+	const char *env;
+	char **dirs;
+	char *path;
+	int i, n;
+
+	path = g_path_get_dirname(mime_path);
+
+	if (stat(path, &path_info))
+	{
+		g_printerr("Can't stat '%s' directory: %s",
+				path, g_strerror(errno));
+		goto out;
+	}
+
+	env = getenv("XDG_DATA_DIRS");
+	if (!env)
+		env = "/usr/local/share/:/usr/share/";
+	dirs = g_strsplit(env, ":", 0);
+	g_return_if_fail(dirs != NULL);
+	for (n = 0; dirs[n]; n++)
+		;
+	env = getenv("XDG_DATA_HOME");
+	if (env)
+		dirs[n] = g_strdup(env);
+	else
+		dirs[n] = g_build_filename(g_get_home_dir(), ".local",
+						"share", NULL);
+	n++;
+	
+	for (i = 0; i < n; i++)
+	{
+		if (stat(dirs[i], &dir_info) == 0 &&
+		    dir_info.st_ino == path_info.st_ino &&
+		    dir_info.st_dev == path_info.st_dev)
+			break;
+	}
+
+	if (i == n)
+	{
+		g_print(_("\nNote that '%s' is not in the search path\n"
+			"set by the XDG_DATA_HOME and XDG_DATA_DIRS\n"
+			"environment variables, so applications may not\n"
+			"be able to find it until you set them. The\n"
+			"directories currently searched are:\n\n"), path);
+		g_print("- %s\n", dirs[n - 1]);
+		for (i = 0; i < n - 1; i++)
+			g_print("- %s\n", dirs[i]);
+		g_print("\n");
+	}
+
+	for (i = 0; i < n; i++)
+		g_free(dirs[i]);
+	g_free(dirs);
+out:
+	g_free(path);
+}
+
 int main(int argc, char **argv)
 {
 	const char *mime_dir = NULL;
@@ -1338,7 +1400,7 @@ int main(int argc, char **argv)
 	}
 
 	g_print("***\n* Updating MIME database in %s...\n", mime_dir);
-	
+
 	if (access(package_dir, F_OK))
 	{
 		fprintf(stderr,
@@ -1429,6 +1491,8 @@ int main(int argc, char **argv)
 	g_hash_table_destroy(namespace_hash);
 
 	g_print("***\n");
-	
+
+	check_in_path_xdg_data(mime_dir);
+
 	return EXIT_SUCCESS;
 }

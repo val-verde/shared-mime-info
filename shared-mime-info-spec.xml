@@ -1,8 +1,8 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
 "/usr/share/sgml/docbook/dtd/xml/4.1.2/docbookx.dtd" [
-  <!ENTITY updated "17 Apr 2003">
-  <!ENTITY version "0.11">
+  <!ENTITY updated "09 Oct 2003">
+  <!ENTITY version "0.12">
 ]>
 <article id="index">
 
@@ -73,253 +73,15 @@ interpreted as described in RFC 2119<citation>RFC-2119</citation>.
 		</para>
 	</sect2>
 </sect1>
-<sect1>
-	<title>Overview of previous systems</title>
-	<sect2>
-		<title>KDE</title>
-		<para>
-KDE uses <filename>.desktop</filename> files, with Type=MimeType, one file
-per type to determine type from file name. The files are arranged in the
-filesystem to mirror the two-level MIME type hierarchy.
-The syntax is very similar to other <filename>.desktop</filename> files,
-with Name=, Comment= etc.
-		</para>
-		<para>
-Example file:
-			<programlisting><![CDATA[
-[Desktop Entry]
-Encoding=UTF-8
-MimeType=application/x-kword
-Comment=KWord
-Comment[af]=kword
-[... etc. other translations ]
-Icon=kword
-Type=MimeType
-Patterns=*.kwd;*.kwt;
-X-KDE-AutoEmbed=false
-
-[Property::X-KDE-NativeExtension]
-Type=QString
-Value=.kwd
-]]></programlisting>
-		</para>
-		<para>
-KDE does not have a separate system for specifying extension matches, but
-uses case-sensitive glob patterns for everything.
-		</para>
-		<para>
-A single file stores all the rules for recognising files by content. This
-is almost identical to <citerefentry><refentrytitle>file</refentrytitle>
-<manvolnum>1</manvolnum></citerefentry>'s <filename>magic.mime</filename>
-database file, but without the encoding field.
-		</para>
-		<para>
-The format is described in the file itself as follows:
-		<programlisting><![CDATA[
-# The format is 4-5 columns:
-#    Column #1: byte number to begin checking from, ">" indicates continuation
-#    Column #2: type of data to match
-#    Column #3: contents of data to match
-#    Column #4: MIME type of result
-]]></programlisting>
-		</para>
-	</sect2>
-	<sect2>
-		<title>GNOME</title>
-		<para>
-GNOME uses the gnome-vfs library to determine the MIME type of a file.
-This library loads name-to-type rules from files with a '.mime' extension
-in a system-wide directory (set at install time), and merged with those in the
-user's directory. It loads textual descriptions for the types from
-files in the same directories, ending with '.keys'. The file
-<filename>gnome-vfs.mime</filename> in the system directory is always loaded
-first (allowing everything else to override it). The file
-<filename>user.mime</filename> in the user's directory is always loaded
-last, making these settings take precedence over all others.
-		</para>
-		<para>
-The format of the .mime files are described as follows:
-			<programlisting>
-# Mime types as provided by the GNOME libraries for GNOME.
-#
-# Applications can provide more mime types by installing other
-# .mime files in the PREFIX/share/mime-info directory.
-#
-# The format of this file is:
-#
-# mime-type
-#	ext[,prio]:	list of extensions for this mime-type
-#	regex[,prio]:	a regular expression that matches the filename
-#
-# more than one ext: and regex: fields can be present.
-#
-# prio is the priority for the match, the default is 1. This is required
-# to distinguish composed filenames, for example .gz has a priority of 1
-# and .tar.gz has a priority of 2 (thus a file having the filename
-# something.tar.gz will match the mime-type for tar.gz before the mime-type
-# for .gz
-#
-# The values in this file are kept in alphabetical order for convenience.
-# Please maintain this when adding new types. Also consider adding a
-# human-readable description to gnome-vfs.keys when adding a new type here.
-#
-# Also do please not add illegal mime types, observe the mime standard when
-# adding new types.
-			</programlisting>
-When looking up the type for a file, gnome-vfs looks first for an exact-case
-match for the extension, then an all upper-case match, then an all lower-case
-match. If no matches are found, or there is no '.' in the name, then the
-regular expression matches are checked. It does this first for rules with
-priority 2, then for those with priority 1. The modification time on the
-<filename>mime-info</filename>
-directories is used to detect changes.
-		</para>
-		<para>
-The .keys files contain type-to-description rules, eg:
-			<programlisting>
-application/msword
-	description=Microsoft Word document
-	[de]description=Microsoft Word-Dokument
-	...
-			</programlisting>
-Guidelines for writing descriptions can be found in the
-<filename>mime-descriptions-guidelines.txt</filename> file.
-		</para>
-		<para>
-The format for magic entries is defined as:
-			<programlisting><![CDATA[
-# The format of magic entries is:
-#
-#     offset_start[:offset_end] pattern_type pattern [&pattern_mask] type
-#
-# <offset_start> and <offset_end> are decimal numbers (file offsets).
-#
-# <pattern_type> is (byte | short | long | string | date | beshort |
-#                    belong | bedate | leshort | lelong | ledate).
-#
-# <pattern> is an ASCII string with non-printable characters escaped
-# as hex or octal escape sequences, and spaces and other important
-# whitespace escaped with '\'.
-#
-# <pattern_mask> is a string of hex digits. The mask must be the same
-# length as the pattern.
-#
-# <type> is a valid MIME type.
-#
-# Order magic patterns such that ambiguous ones (such as
-# application/x-ms-dos-executable) are at the end of the list and
-# therefore get applied last.
-#
-# Avoid rules that require a seek deep into the examined file. If you
-# must, locate such rules at the end of the list so that they get
-# applied last
-#
-# When designing new document formats, make them easily recognizable
-# by defining a sufficiently unique magic pattern near the document
-# start. A good pattern is at least four bytes long and contains one
-# or two non-printable characters so that text files won't be
-# misidentified.
-]]></programlisting>
-		</para>
-	</sect2>
-	<sect2>
-		<title>ROX</title>
-		<para>
-Note that ROX is now using this specification. This section details the
-previous implementation.
-		</para>
-		<para>
-ROX searches <filename>MIME-info</filename> directories in
-<envar>CHOICESPATH</envar> (<filename>~/Choices/MIME-info:/usr/local/share/Choices/MIME-info:/usr/share/Choices/MIME-info</filename> by
-default). Files from earlier directories override those in later ones, but
-the order within a directory is not specified.
-		</para>
-		<para>
-The files are in the same format as GNOME, except:
-			<itemizedlist>
-				<listitem><para>
-There are no .keys files, so files of all extensions are loaded.
-				</para></listitem>
-				<listitem><para>
-The priority is ignored.
-				</para></listitem>
-				<listitem><para>
-A case-sensitive match is tried first, then a lower-case match. No upper-case
-match is tried.
-				</para></listitem>
-				<listitem><para>
-Multiple extensions are allowed. Eg:
-					<programlisting>
-application/x-compressed-postscript
-	ext: ps.gz eps.gz
-					</programlisting>
-				</para></listitem>
-			</itemizedlist>
-		</para>
-		<para>
-When looking up the type for a file, ROX starts with the first '.'
-and tries a case-sensitive match of the remaining text against the extensions.
-The it tries again with the filename in lower-case. It then tries again
-from the second '.', and so on. If no type is found, it tries the regular
-expressions.
-		</para>
-		<para>
-ROX has no rules for determining a file's type from its contents.
-		</para>
-	</sect2>
-	<sect2>
-		<title>ACAP Media Type Dataset Class</title>
-		<para>
-The ACAP Media Type Dataset Class<citation>ACAP</citation> draft proposes a
-network-based solution to the problem.  The sytem is intended mainly to allow
-email clients to find a viewer application for an attachment. The draft gives
-the following example of a record for the `image/jpeg' type:
-		</para>
-<programlisting>
-attribute                            value
----------                            -----
-entry                                JPEG image
-mediatype.common.type                image/jpeg
-mediatype.common.extension           jpg
-mediatype.common.extensionOther      (jpeg jpe jfif jfi)
-mediatype.common.description         JPEG is an image format most
-				     suitable for compressing photographs
-mediatype.common.suppressWarning     1
-mediatype.macOS.type.bin             JPEG
-mediatype.macOS.creator.bin          JVWR
-mediatype.macOS.creator.name         JPEG View
-mediatype.macOS.action.edit.bin      8BIM
-mediatype.macOS.action.edit.name     Adobe Photoshop
-mediatype.unix.action.view           xv
-</programlisting>
-		<para>
-Finding a type involves sending a query to a remote database, which is intended
-to allow companies to configure MIME information on a company-wide basis. The
-system is designed to allow a single database to be shared between different
-platforms.
-		</para>
-		<para>
-It is not designed for handing a large number of lookups quickly, making the
-system too slow for use in file managers and similar. Both its name and
-contents matching are more primitive than other systems; only extensions can be
-matched, case is ignored, and the contents matching can only match an exact
-string at the start of the file. It provides similar information to this
-specification, except that it defines many items of platform-specific
-information in the core specification, instead of using namespacing to allow
-vendor extensions.
-		</para>
-	</sect2>
-</sect1>
-
-
 
 <sect1>
 	<title>Unified system</title>
 	<para>
-In discussions about these systems, it was clear that the differences between
-the databases were simply a result of them being separate, and not due to any
-fundamental disagreements between developers. Everyone is keen to see them
-merged.
+In discussions about the previous systems used by GNOME, KDE and ROX (see the
+"History and related systems" document), it was clear that the differences
+between the databases were simply a result of them being separate, and not due
+to any fundamental disagreements between developers. Everyone is keen to see
+them merged.
 	</para>
 	<para>
 This specification proposes:
@@ -496,6 +258,19 @@ Each element corresponds to one line of
 <manvolnum>1</manvolnum></citerefentry>'s <filename>magic.mime</filename> file.
 They can be nested in the same way to provide the equivalent of continuation
 lines. That is, <![CDATA[<a><b/><c/></a>]]> means 'a and (b or c)'.
+				</para></listitem>
+				<listitem><para>
+<userinput>alias</userinput> elements indicate that the type is also sometimes
+known by another name, given by the <userinput>type</userinput> attribute. For
+example, <userinput>audio/midi</userinput> has an alias of
+<userinput>audio/x-midi</userinput>. Note that there should not be a
+<userinput>mime-type</userinput> element defining each alias; a single
+element defines the canonical name for the type and lists all its aliases.
+				</para></listitem>
+				<listitem><para>
+<userinput>sub-class-of</userinput> elements indicate that any data of this
+type is also some other type, given by the <userinput>type</userinput>
+attribute. See <xref linkend="subclassing"/>.
 				</para></listitem>
 				<listitem><para>
 <userinput>comment</userinput> elements give a human-readable textual description of the MIME
@@ -720,6 +495,42 @@ applications and filesystems do not support extended attributes,
 implementations MUST NOT rely on this method being available.
 		</para>
 	</sect2>
+	<sect2 id="subclassing">
+		<title>Subclassing</title>
+		<para>
+A type is a subclass of another type if any instance of the first type is
+also an instance of the second. For example, all image/svg files are also
+text/xml, text/plain and application/octet-stream files. Subclassing is about
+the format, rather than the catagory of the data (for example, there is no
+'generic spreadsheet' class that all spreadsheets inherit from).
+		</para>
+		<para>
+Some subclass rules are implicit:
+			<itemizedlist>
+<listitem><para>All text/* types are subclasses of text/plain.</para></listitem>
+<listitem><para>All streamable types (ie, everything except the inode/* types)
+are subclasses of application/octet-stream.</para></listitem>
+			</itemizedlist>
+In addition to these rules, explicit subclass information may be given using
+the <userinput>sub-class-of</userinput> element.
+		</para>
+		<para>
+Note that some file formats are also compressed files (application/x-jar files
+are also application/zip files). However, this is different to a case such as a
+compressed postscript file, which is not a valid postscript file itself (so
+application/x-gzpostscript does not inherit from application/postscript,
+because an application that can handle the latter may not cope with the
+former).
+		</para>
+		<para>
+Some types may or may not be instances of other types. For example, a
+spreadsheet file may be compressed or not. It is a valid spreadsheet file
+either way, but only inherits from application/x-gzip in one case. This
+information cannot be represented statically; instead an application
+interested in this information should run all of the magic rules, and
+use the list of types returned as the subclasses.
+		</para>
+	</sect2>
 	<sect2>
 		<title>Recommended checking order</title>
 		<para>
@@ -776,9 +587,14 @@ to the standard types of object found in a Unix filesystem:
 			<member>inode/chardevice</member>
 			<member>inode/directory</member>
 			<member>inode/fifo</member>
+			<member>inode/mount-point</member>
 			<member>inode/socket</member>
 			<member>inode/symlink</member>
 		</simplelist>
+		<para>
+An inode/mount-point is a subclass of inode/directory. It can be useful when adding extra
+actions for these directories, such as 'mount' or 'eject'.
+		</para>
 	</sect2>
 	<sect2>
 		<title>Security implications</title>

@@ -3,7 +3,7 @@
   <!ELEMENT mime-info (mime-type)+>
   <!ATTLIST mime-info xmlns CDATA #FIXED "http://www.freedesktop.org/standards/shared-mime-info">
 
-  <!ELEMENT mime-type (comment|glob|magic|root-XML)*>
+  <!ELEMENT mime-type (comment|glob|magic|root-XML|alias|sub-class-of)*>
   <!ATTLIST mime-type type CDATA #REQUIRED>
 
   <!ELEMENT comment (#PCDATA)>
@@ -25,6 +25,14 @@
   <!ATTLIST root-XML
   	namespaceURI CDATA #REQUIRED
 	localName CDATA #REQUIRED>
+
+  <!ELEMENT alias EMPTY>
+  <!ATTLIST alias
+  	type CDATA #REQUIRED>
+
+  <!ELEMENT sub-class-of EMPTY>
+  <!ATTLIST sub-class-of
+  	type CDATA #REQUIRED>
 ]>
 
 <!-- 
@@ -7636,6 +7644,7 @@ command to generate the output files.
     <glob pattern="*.it"/>
   </mime-type>
   <mime-type type="audio/midi">
+    <alias type='audio/x-midi'/>
     <comment>MIDI audio</comment>
     <comment xml:lang="af">midi audio</comment>
     <comment xml:lang="ar">ملف MIDI صوتي</comment>
@@ -10282,6 +10291,10 @@ command to generate the output files.
     <comment xml:lang="zh_CN">管道</comment>
     <comment xml:lang="zh_TW">管線</comment>
     <comment xml:lang="zu">Ipayipi</comment>
+  </mime-type>
+  <mime-type type='inode/mount-point'>
+    <sub-class-of type='inode/directory'/>
+    <comment>Mount point</comment>
   </mime-type>
   <mime-type type="inode/socket">
     <comment>Socket</comment>

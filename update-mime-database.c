@@ -60,7 +60,8 @@ struct _Type {
 	char *subtype;
 
 	/* Contains xmlNodes for elements that are being copied to the output.
-	 * That is, <comment> nodes and anything with an unknown namespace.
+	 * That is, <comment>, <sub-class-of> and <alias> nodes, and anything
+	 * with an unknown namespace.
 	 */
 	xmlDoc	*output;
 };
@@ -288,7 +289,22 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 			g_return_val_if_fail(magic == NULL, FALSE);
 	}
 	else if (strcmp(field->name, "comment") == 0)
-		return FALSE;	/* Copy through */
+		return FALSE;
+	else if (strcmp(field->name, "alias") == 0 ||
+		 strcmp(field->name, "sub-class-of") == 0)
+	{
+		char *other_type;
+		gboolean valid;
+		other_type = xmlGetNsProp(field, "type", NULL);
+		valid = other_type && strchr(other_type, '/');
+		xmlFree(other_type);
+		if (valid)
+			return FALSE;	/* Copy through */
+
+		g_set_error(error, MIME_ERROR, 0,
+			_("Incorrect or missing 'type' attribute "
+			  "in <%s>"), field->name);
+	}
 	else if (strcmp(field->name, "root-XML") == 0)
 	{
 		char *namespaceURI, *localName;

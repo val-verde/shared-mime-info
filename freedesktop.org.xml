@@ -177,6 +177,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/smil">
     <comment>Synchronized Multimedia Integration Language</comment>
+    <comment xml:lang="nl">Gesynchroniseerde multimedia integratie taal</comment>
     <comment xml:lang="sr">Синхронизовани језик за интеграцију мултимедије (SMIL)</comment>
     <glob pattern="*.smil"/>
     <glob pattern="*.smi"/>
@@ -195,6 +196,7 @@ command to generate the output files.
   <mime-type type="application/vnd.lotus-1-2-3">
     <comment>Lotus 1-2-3 spreadsheet</comment>
     <comment xml:lang="hu">Lotus 1-2-3-munkafüzet</comment>
+    <comment xml:lang="nl">Lotus 1-2-3 spreadsheet</comment>
     <comment xml:lang="sr">Lotus 1-2-3 табеларни прорачун</comment>
     <magic priority="50">
       <match type="string" value="\x00\x00\x02\x00" offset="0"/>
@@ -208,6 +210,7 @@ command to generate the output files.
   <mime-type type="application/vnd.ms-excel">
     <comment>Microsoft Excel spreadsheet</comment>
     <comment xml:lang="hu">Microsoft Excel-munkafüzet</comment>
+    <comment xml:lang="nl">Microsoft Excel spreadsheet</comment>
     <comment xml:lang="sr">Микрософт Ексел табеларни прорачун</comment>
     <magic priority="50">
       <match type="string" value="Microsoft Excel 5.0 Worksheet" offset="2080"/>
@@ -246,12 +249,14 @@ command to generate the output files.
   <mime-type type="application/vnd.stardivision.calc">
     <comment>StarCalc spreadsheet</comment>
     <comment xml:lang="hu">StarCalc-munkafüzet</comment>
+    <comment xml:lang="nl">StarCalc spreadsheet</comment>
     <comment xml:lang="sr">StarCalc табеларни прорачун</comment>
     <glob pattern="*.sdc"/>
   </mime-type>
   <mime-type type="application/vnd.stardivision.chart">
     <comment>StarChart chart</comment>
     <comment xml:lang="hu">StarChart-grafikon</comment>
+    <comment xml:lang="nl">StarChart grafiek</comment>
     <comment xml:lang="sr">StarChart графикон</comment>
     <glob pattern="*.sds"/>
   </mime-type>
@@ -295,11 +300,13 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc">
     <comment>OpenOffice spreadsheet</comment>
+    <comment xml:lang="nl">OpenOffice spreadsheet</comment>
     <comment xml:lang="sr">OpenOffice табеларни рачун</comment>
     <glob pattern="*.sxc"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc.template">
     <comment>OpenOffice spreadsheet template</comment>
+    <comment xml:lang="nl">OpenOffice spreadsheet sjabloon</comment>
     <comment xml:lang="sr">OpenOffice шаблон табеларног прорачуна</comment>
     <glob pattern="*.stc"/>
   </mime-type>
@@ -394,6 +401,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-applix-spreadsheet">
     <comment>Applix Spreadsheets document</comment>
+    <comment xml:lang="nl">Applix Spreadsheets document</comment>
     <comment xml:lang="sr">Applix Spreadsheets документ</comment>
     <magic priority="50">
       <match type="string" value="*BEGIN SPREADSHEETS" offset="0"/>
@@ -405,6 +413,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-applix-word">
     <comment>Applix Words document</comment>
+    <comment xml:lang="nl">Applix Words document</comment>
     <comment xml:lang="sr">Applix Words документ</comment>
     <magic priority="50">
       <match type="string" value="*BEGIN" offset="0">
@@ -509,6 +518,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-bzip-compressed-tar">
     <comment>Bzipped Tar Archives</comment>
+    <comment xml:lang="nl">Bzip-ingepakt Tar archief</comment>
     <comment xml:lang="sr">Бзипована ТАР архива</comment>
     <glob pattern="*.tar.bz"/>
     <glob pattern="*.tar.bz2"/>
@@ -550,6 +560,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-compressed-tar">
     <comment>Gzipped Tar Archive</comment>
+    <comment xml:lang="nl">Gzip-ingepakt Tar archief</comment>
     <comment xml:lang="sr">Гзипована Тар архива</comment>
     <glob pattern="*.tar.gz"/>
     <glob pattern="*.tgz"/>
@@ -652,6 +663,7 @@ command to generate the output files.
   <mime-type type="application/x-dia-diagram">
     <comment>Dia diagram</comment>
     <comment xml:lang="hu">Dia-diagram</comment>
+    <comment xml:lang="nl">Dia diagram</comment>
     <comment xml:lang="sr">Диа дијаграм</comment>
     <glob pattern="*.dia"/>
   </mime-type>
@@ -807,6 +819,7 @@ command to generate the output files.
   <mime-type type="application/x-font-sunos-news">
     <comment>SunOS News font</comment>
     <comment xml:lang="hu">SunOS News-betűkészlet</comment>
+    <comment xml:lang="nl">SunOS Nieuws lettertype</comment>
     <comment xml:lang="sr">SunOS News фонт</comment>
     <magic priority="50">
       <match type="string" value="StartFont" offset="0"/>
@@ -920,6 +933,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-gnumeric">
     <comment>GNUmeric spreadsheet</comment>
+    <comment xml:lang="nl">GNUmeric spreadsheet</comment>
     <comment xml:lang="sr">Гнумерик табеларни рачун</comment>
     <magic priority="50">
       <match type="string" value="gmr:Workbook" offset="0:64"/>
@@ -928,6 +942,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-graphite">
     <comment>graphite - Scientific Graphs</comment>
+    <comment xml:lang="nl">graphite - Wetenschappelijke grafieken</comment>
     <comment xml:lang="sr">graphite — научни графикони</comment>
     <glob pattern="*.gra"/>
   </mime-type>
@@ -957,6 +972,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-gzpostscript">
     <comment>Gzipped PostScript File</comment>
+    <comment xml:lang="nl">Gzip-ingepakt PostScript bestand</comment>
     <comment xml:lang="sr">Гзипована ПостСкрипт датотека</comment>
     <glob pattern="*.ps.gz"/>
   </mime-type>
@@ -1274,6 +1290,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-lzop">
     <comment>Lzopped File</comment>
+    <comment xml:lang="nl">Lzop-ingepakt bestand</comment>
     <comment xml:lang="sr">Лзоповоана датотека</comment>
     <glob pattern="*.lzo"/>
   </mime-type>
@@ -1289,6 +1306,7 @@ command to generate the output files.
   <mime-type type="application/x-mif">
     <comment>FrameMaker interchange document</comment>
     <comment xml:lang="hu">FrameMaker-cserélhetődokumentum</comment>
+    <comment xml:lang="nl">FrameMaker uitwisselingsdocument</comment>
     <comment xml:lang="sr">FrameMaker размењиви документ</comment>
     <glob pattern="*.mif"/>
   </mime-type>
@@ -1395,6 +1413,7 @@ command to generate the output files.
   <mime-type type="application/x-oleo">
     <comment>GNU Oleo Spreadsheet</comment>
     <comment xml:lang="hu">GNU Oleo-munkafüzet</comment>
+    <comment xml:lang="nl">GNU Oleo spreadsheet</comment>
     <comment xml:lang="sr">ГНУ Oleo табеларне прорачун</comment>
     <magic priority="50">
       <match type="string" value="Oleo" offset="31"/>
@@ -1451,11 +1470,13 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-profile">
     <comment>profiler results</comment>
+    <comment xml:lang="nl">profileerder resultaten</comment>
     <comment xml:lang="sr">резултати профилатора</comment>
     <glob pattern="gmon.out"/>
   </mime-type>
   <mime-type type="application/x-pw">
     <comment>Pathetic Writer</comment>
+    <comment xml:lang="nl">Pathetic Writer</comment>
     <comment xml:lang="sr">Патетични писац</comment>
     <glob pattern="*.pw"/>
   </mime-type>
@@ -1513,6 +1534,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-reject">
     <comment>rejected patch file</comment>
+    <comment xml:lang="nl">verworpen patch bestand</comment>
     <comment xml:lang="sr">датотека одбијене закрпе</comment>
     <glob pattern="*.rej"/>
   </mime-type>
@@ -1604,6 +1626,7 @@ command to generate the output files.
   <mime-type type="application/x-siag">
     <comment>Siag Spreadsheet</comment>
     <comment xml:lang="hu">Siag-munkafüzet</comment>
+    <comment xml:lang="nl">Siag spreadsheet</comment>
     <comment xml:lang="sr">Siag табеларни прорачун</comment>
     <glob pattern="*.siag"/>
   </mime-type>
@@ -1669,6 +1692,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-tex-pk">
     <comment>Packed Font file</comment>
+    <comment xml:lang="nl">Ingepakt lettertype-bestand</comment>
     <comment xml:lang="sr">Пакована датотека са фонтом</comment>
     <glob pattern="*pk"/>
   </mime-type>
@@ -1728,10 +1752,12 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-troff-man-compressed">
     <comment>manual page (compressed)</comment>
+    <comment xml:lang="nl">handleidingspagina (ingepakt)</comment>
     <comment xml:lang="sr">страна упутства (компресована)</comment>
   </mime-type>
   <mime-type type="application/x-tzo">
     <comment>Lzopped Tar Archive</comment>
+    <comment xml:lang="nl">Lzop-ingepakt Tar archief</comment>
     <comment xml:lang="sr">Лзоповоана Тар архива</comment>
     <glob pattern="*.tar.lzo"/>
     <glob pattern="*.tzo"/>
@@ -1822,6 +1848,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/vnd.rn-realaudio">
     <comment>RealAudio broadcast</comment>
+    <comment xml:lang="nl">RealAudio uitzending</comment>
     <comment xml:lang="sr">RealAudio емитовање</comment>
   </mime-type>
   <mime-type type="audio/x-adpcm">
@@ -1948,6 +1975,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-pn-realaudio">
     <comment>RealAudio broadcast</comment>
+    <comment xml:lang="nl">RealAudio uitzending</comment>
     <comment xml:lang="sr">RealAudio емитовање</comment>
     <magic priority="50">
       <match type="string" value=".ra\375" offset="0"/>
@@ -2094,6 +2122,7 @@ command to generate the output files.
   <mime-type type="image/svg+xml">
     <comment>Scalable Vector Graphics</comment>
     <comment xml:lang="hu">Méretezhető vektorgrafika (SVG)</comment>
+    <comment xml:lang="nl">Schaalbare vector afbeelding (SVG)</comment>
     <comment xml:lang="sr">Скалабилна векторска графика</comment>
     <magic priority="80">
       <match type="string" value="&lt;!DOCTYPE svg" offset="0:256"/>
@@ -2123,6 +2152,7 @@ command to generate the output files.
   <mime-type type="image/vnd.dxf">
     <comment>DXF vector graphic</comment>
     <comment xml:lang="hu">DXF-vektorgrafika</comment>
+    <comment xml:lang="nl">DXF vector afbeelding</comment>
     <comment xml:lang="sr">DXF векторска графика</comment>
     <glob pattern="*.dxf"/>
   </mime-type>
@@ -2135,6 +2165,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/x-applix-graphics">
     <comment>Applix Graphics document</comment>
+    <comment xml:lang="nl">Applix Graphics document</comment>
     <comment xml:lang="sr">ApplixWare Graphics документ</comment>
     <magic priority="50">
       <match type="string" value="*BEGIN" offset="0">
@@ -2212,6 +2243,7 @@ command to generate the output files.
   <mime-type type="image/x-fits">
     <comment>Flexible Image Transport System</comment>
     <comment xml:lang="hu">Flexible Image Transport System</comment>
+    <comment xml:lang="nl">Flexibel afbeeldingstransportsysteem</comment>
     <comment xml:lang="sr">Флексибилни транспортни систем слика</comment>
     <magic priority="50">
       <match type="string" value="SIMPLE  =" offset="0"/>
@@ -2429,6 +2461,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="inode/chardevice">
     <comment>Character Device</comment>
+    <comment xml:lang="nl">Teken-georiënteerd apparaat</comment>
     <comment xml:lang="sr">Знаковни уређај</comment>
   </mime-type>
   <mime-type type="inode/directory">
@@ -2466,6 +2499,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="message/disposition-notification">
     <comment>mail disposition report</comment>
+    <comment xml:lang="nl">e-mail plaatsingsbericht</comment>
     <comment xml:lang="sr">извештај слања поруке</comment>
   </mime-type>
   <mime-type type="message/external-body">
@@ -2519,6 +2553,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="multipart/alternative">
     <comment>message in several formats</comment>
+    <comment xml:lang="nl">bericht in verschillende formaten</comment>
     <comment xml:lang="sr">поруке у више записа</comment>
   </mime-type>
   <mime-type type="multipart/appledouble">
@@ -2529,6 +2564,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="multipart/digest">
     <comment>message digest</comment>
+    <comment xml:lang="nl">berichtsamenvatting</comment>
     <comment xml:lang="sr">гомила порука</comment>
   </mime-type>
   <mime-type type="multipart/encrypted">
@@ -2675,6 +2711,7 @@ command to generate the output files.
   <mime-type type="text/spreadsheet">
     <comment>Spreadsheet Interchange document</comment>
     <comment xml:lang="hu">Spreadsheet Interchange-dokumentum</comment>
+    <comment xml:lang="nl">Spreadsheet uitwisselingsdocument</comment>
     <comment xml:lang="sr">Размењиви документ табеларног прорачуна</comment>
     <magic priority="50">
       <match type="string" value="ID;" offset="0"/>
@@ -2757,6 +2794,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-credits">
     <comment>software author credits</comment>
+    <comment xml:lang="nl">informatie over auteur</comment>
     <comment xml:lang="sr">заслуге аутора програма</comment>
     <glob pattern="CREDITS"/>
   </mime-type>
@@ -2908,6 +2946,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-patch">
     <comment>source code patch</comment>
+    <comment xml:lang="nl">broncode patch</comment>
     <comment xml:lang="sr">закрпа изворног кôда</comment>
     <magic priority="50">
       <match type="string" value="diff " offset="0"/>
@@ -2979,16 +3018,19 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-troff-me">
     <comment>troff me input document</comment>
+    <comment xml:lang="nl">troff me invoerdocument</comment>
     <comment xml:lang="sr">troff me улазни документ</comment>
     <glob pattern="*.me"/>
   </mime-type>
   <mime-type type="text/x-troff-mm">
     <comment>troff mm input document</comment>
+    <comment xml:lang="nl">troff mm invoerdocument</comment>
     <comment xml:lang="sr">troff mm улазни документ</comment>
     <glob pattern="*.mm"/>
   </mime-type>
   <mime-type type="text/x-troff-ms">
     <comment>troff ms input document</comment>
+    <comment xml:lang="nl">troff ms invoerdocument</comment>
     <comment xml:lang="sr">troff ms улазни документ</comment>
     <glob pattern="*.ms"/>
   </mime-type>
@@ -3013,6 +3055,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-vcard">
     <comment>Electronic Business Card</comment>
+    <comment xml:lang="nl">Electronisch adreskaartje</comment>
     <comment xml:lang="sr">Електронска бизнис картица</comment>
     <magic priority="50">
       <match type="string" value="BEGIN:VCARD" offset="0"/>
@@ -3024,6 +3067,7 @@ command to generate the output files.
   <mime-type type="text/x-xslfo">
     <comment>XSL Formating Object file</comment>
     <comment xml:lang="hu">XSF:FO-fájl</comment>
+    <comment xml:lang="nl">XSL formatterend object bestand</comment>
     <comment xml:lang="sr">Датотека XSL објеката форматирања</comment>
     <glob pattern="*.fo"/>
     <glob pattern="*.xslfo"/>
@@ -3043,6 +3087,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/xml">
     <comment>eXtensible Markup Language document</comment>
+    <comment xml:lang="nl">Uitbreidbare opmaaktaal document (XML)</comment>
     <comment xml:lang="sr">документ проширивог језика за означавање (XML)</comment>
     <magic priority="50">
       <match type="string" value="&lt;?xml" offset="0"/>

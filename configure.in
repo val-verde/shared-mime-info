@@ -1,9 +1,16 @@
 dnl Process this file with autoconf to produce a configure script.
 
-AC_INIT(freedesktop.org.xml)
+AC_INIT(freedesktop.org.xml.in)
 AM_INIT_AUTOMAKE(shared-mime-info, 0.12)
 
+AC_PROG_INTLTOOL
+
 AM_CONFIG_HEADER(config.h)
+
+GETTEXT_PACKAGE=shared-mime-info
+AC_SUBST(GETTEXT_PACKAGE)
+ALL_LINGUAS=""
+AM_GLIB_GNU_GETTEXT
 
 dnl Check pkg-config is installed
 if test -z "$PKG_CONFIG"; then
@@ -67,4 +74,4 @@ AC_C_CONST
 mimedir=['${datadir}/mime']
 AC_SUBST(mimedir)
 
-AC_OUTPUT(Makefile)
+AC_OUTPUT(Makefile po/Makefile.in m4/Makefile )

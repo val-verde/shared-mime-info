@@ -1,5 +1,10 @@
 2004-11-26  Christophe Fergeau  <teuf@gnome.org>
 
+	* freedesktop.org.xml.in: added application/x-java-jnlp-file, fixes 
+	#1118
+
+2004-11-26  Christophe Fergeau  <teuf@gnome.org>
+
 	* update-mime-database.c: (parse_int_value), (match_offset): use 
 	strtoul when reading an unsigned long, not strtol, fixes #1506
 

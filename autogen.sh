@@ -2,6 +2,12 @@
 # Run this to generate all the initial makefiles, etc.
 
 set -e
+ 
+srcdir=`dirname $0`
+test -z "$srcdir" && srcdir=.
+
+ORIGDIR=`pwd`
+cd $srcdir
 
 ARGV0=$0
 
@@ -44,4 +50,6 @@ do_cmd automake --add-missing
 
 do_cmd autoconf
 
-do_cmd ./configure --enable-maintainer-mode ${1+"$@"} && echo "Now type \`make' to compile" || exit 1
+cd $ORIGDIR || exit $?
+
+do_cmd $srcdir/configure --enable-maintainer-mode ${1+"$@"} && echo "Now type \`make' to compile" || exit 1

@@ -1,3 +1,8 @@
+Mon Nov  1 14:47:02 2004  Jonathan Blandford  <jrb@redhat.com>
+
+	* autogen.sh: Patch from Thomas Fitzsimmons <fitzsim@redhat.com>
+	to add support for building modules in separate build directories
+
 2004-10-20  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: add magic for audio/x-scpls

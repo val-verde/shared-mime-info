@@ -1357,7 +1357,7 @@ out:
 
 int main(int argc, char **argv)
 {
-	const char *mime_dir = NULL;
+	char *mime_dir = NULL;
 	char *package_dir = NULL;
 	int opt;
 
@@ -1390,6 +1390,17 @@ int main(int argc, char **argv)
 	LIBXML_TEST_VERSION;
 
 	mime_dir = argv[optind];
+
+	/* Strip trailing / characters */
+	{
+		int l = strlen(mime_dir);
+		while (l > 1 && mime_dir[l - 1] == '/')
+		{
+			l--;
+			mime_dir[l] = '\0';
+		}
+	}
+
 	package_dir = g_strconcat(mime_dir, "/packages", NULL);
 
 	if (access(mime_dir, W_OK))

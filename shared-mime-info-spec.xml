@@ -258,23 +258,71 @@ Patterns=*.htm;*.html
 Contents=(starts-with "<HTML")
 Hidden=false
 ]]></programlisting>
-The entries in Patterns are separated by semicolons. There is no trailing
-semicolon.
 		</para>
 		<para>
-Specifically, all KDE-specific tags have been removed, as well as the Icon
-field. Although all desktops need a way to determine the icon for a particular
-type, the icon used will depend on desktop, and not only on the file type.
+All KDE-specific tags have been removed, as well as the Icon field. Although
+all desktops need a way to determine the icon for a particular type, the icon
+used will depend on desktop, and not only on the file type.
+		</para>
+		<para>
 The type should be a standard MIME type where possible. If a special media type
 is required for non-file objects (directories, pipes, etc), then the media
 type 'inode' may be used.
 		</para>
 		<para>
+The entries in Patterns are separated by semicolons. There is no trailing
+semicolon.
+		</para>
+		<para>
 Although not part of the name-to-type mapping, the Comment field is left in
-for the sake of not having too many files. The Hidden field is usually not
-present. It is used to indicate that this entry replaces all information for
-this MIME type read so far, instead of being merged with other records for
-the same type. The intent is to let users entirely replace existing types.
+for the sake of not having too many files.
+		</para>
+		<para>
+The Hidden field is usually not present. It is used to indicate that this entry
+replaces all information for this MIME type read so far, instead of being
+merged with other records for the same type. The intent is to let users
+entirely replace existing types.
+		</para>
+	</sect2>
+	<sect2>
+		<title>Directory layout</title>
+		<para>
+Unlike the KDE system, the files are not arranged in the filesystem by type.
+This approach is only possible for a tightly coordinated system. Consider,
+for example, that ROX-Filer adds a mapping from
+<filename>.DirIcon</filename> to 'image/png'. This cannot be specified in
+a file called <filename>image/png.desktop</filename> without conflicting
+with existing definitions for the type.
+		</para>
+		<para>
+Since files are not named by type, each file may contain multiple types. The
+files should instead be named by the package that they come from to avoid
+conflicts and reduce loading times.
+		</para>
+		<para>
+The directories to be used to load these files are:
+
+			<itemizedlist>
+				<listitem><para>
+<filename>/usr/share/mime/mime-info</filename>
+				</para></listitem>
+				<listitem><para>
+<filename>/usr/local/share/mime/mime-info</filename>
+				</para></listitem>
+				<listitem><para>
+<filename>~/.mime/mime-info</filename>
+				</para></listitem>
+			</itemizedlist>
+Each of these directories contains a number of files with the '.mimeinfo'
+extension. Applications MUST NOT try to load other files. This is to allow for
+future extensions.
+		</para>
+		<para>
+Programs modifying any of these files MUST update the modification time on
+the parent (<filename>mime-info</filename>) directory so that applications can
+easily detect the change. The rules from the directories in this list take
+precedence over conflicting rules from earlier directories. Thus, the user's
+settings take precedence over all others.
 		</para>
 	</sect2>
 	<sect2>
@@ -293,12 +341,41 @@ but <filename>IMAGE.GIF</filename> will still use the *.gif pattern.
 		</para>
 	</sect2>
 	<sect2>
+		<title>Dealing with conflicts</title>
+		<para>
+If several patterns match then the longest pattern SHOULD be used. In
+particular, files with multiple extensions (such as
+<filename>Data.tar.gz</filename>) MUST match the longest sequence of extensions
+(eg '*.tar.gz' in preference to '*.gz'). Literal patterns (eg, 'Makefile') must
+be matched before all others. It is acceptable to match patterns of the form
+'*.text' before other wildcarded patterns (that is, to special-case extensions
+using a hash table).
+		</para>
+		<para>
+If the same pattern is defined twice, then they MUST be ordered by the
+directory the rule came from (this is to allow users to override the system
+defaults if, for example, they are using a common extension to mean something
+else). If they came from the same directory, either can be used.
+		</para>
+		<para>
+If the same type is defined in several places, the Patterns and Comments
+MUST be merged. If two different comments are provided for the same
+MIME type in the same language, they should be ordered by directory as before.
+		</para>
+		<para>
+Common types (such as MS Word Documents) will be provided in the X Desktop
+Group's package, which SHOULD be required by all applications using this
+specification. Since each application will then only be providing information
+about its own types, conflicts should be rare.
+		</para>
+	</sect2>
+	<sect2>
 		<title>Contents matching</title>
 		<para>
 The value of the Contents attribute is a scheme-like expression. If the
 expression evaluates to a true value then the file is assumed to be of this
 type. Since scanning a file's contents can be very slow, applications may
-choose to do pattern matching first and only fallback to content matching, or
+choose to do pattern matching first and only fall back to content matching, or
 not perform it at all.
 		</para>
 		<para>
@@ -360,7 +437,7 @@ Functions may return integers or strings. 'True' is represented by the integer
 						<row>
 <entry>(/ 20 2 2)</entry><entry>5</entry>
 <entry>The first argument divided by the
-product of the remaining arguments.</entry>
+product of the remaining arguments</entry>
 						</row>
 						<row>
 <entry>(&gt; 1 2)</entry><entry>0</entry>
@@ -375,6 +452,18 @@ product of the remaining arguments.</entry>
 <entry>True iff the first aguement is equal to the second</entry>
 						</row>
 						<row>
+<entry>(not size)</entry><entry>1</entry>
+<entry>True iff argument is false (0 or "")</entry>
+						</row>
+						<row>
+<entry>(and "one" 2 3)</entry><entry>3</entry>
+<entry>The first false argument, or the last argument if none are false</entry>
+						</row>
+						<row>
+<entry>(or 0 "" 2 0)</entry><entry>2</entry>
+<entry>The first true argument, or the last argument if none are true</entry>
+						</row>
+						<row>
 <entry>size</entry><entry>32</entry>
 <entry>The size of the file in bytes</entry>
 						</row>
@@ -384,92 +473,35 @@ product of the remaining arguments.</entry>
 starts with the given sequence of bytes</entry>
 						</row>
 						<row>
-<entry>(not size)</entry><entry>1</entry>
-<entry>True iff argument is false (0 or "")</entry>
+<entry>(byte-at 4)</entry>
+<entry>5</entry><entry>The single byte at the given file offset</entry>
 						</row>
 						<row>
-<entry>(and "one" 2 3)</entry><entry>3</entry>
-<entry>The first false argument, or the last argument if none are false.</entry>
+<entry>(big-16 4)</entry>
+<entry>256</entry><entry>The big-endian 16-bit signed integer at
+file offsets 4 and 5</entry>
 						</row>
 						<row>
-<entry>(or 0 "" 2 0)</entry><entry>2</entry>
-<entry>The first true argument, or the last argument if none are true.</entry>
+<entry>(little-16 4)</entry>
+<entry>1</entry><entry>The little-endian 16-bit signed integer at
+file offsets 4 and 5</entry>
+						</row>
+						<row>
+<entry>big-32, little-32, big-64, little-64</entry>
+<entry>65536, 1, 4294967296, 1</entry>
+<entry>As above, but for 32- and 64- bit numbers</entry>
+						</row>
+						<row>
+<entry>(string-at 1 5)</entry>
+<entry>"Hello"</entry><entry>The string of bytes starting at the offset
+given by the first argument and of length given by the second argument
+</entry>
 						</row>
 					</tbody>
 				</tgroup>
 			</informaltable>
 <userinput>and</userinput> and <userinput>or</userinput> should only evaluate
 as many arguments as are necessary to determine the result.
-		</para>
-	</sect2>
-	<sect2>
-		<title>Dealing with conflicts</title>
-		<para>
-If several patterns match then the longest pattern SHOULD be used. In
-particular, files with multiple extensions (such as
-<filename>Data.tar.gz</filename>) MUST match the longest sequence of extensions
-(eg '*.tar.gz' in preference to '*.gz'). Literal patterns (eg, 'Makefile') must
-be matched before all others. It is acceptable to match patterns of the form
-'*.text' before other wildcarded patterns (that is, to special-case extensions
-using a hash table).
-		</para>
-		<para>
-If the same pattern is defined twice, then they SHOULD be ordered by the
-directory the rule came from (this is to allow users to override the system
-defaults if, for example, they are using a common extension to mean something
-else). If they came from the same directory, either can be used.
-		</para>
-		<para>
-If the same type is defined in several places, the Patterns and Comments
-MUST be merged. If two different comments are provided for the same
-MIME type in the same language, they should be ordered by directory as before.
-		</para>
-		<para>
-Common types (such as MS Word Documents) will be provided in the X Desktop
-Group's package, which SHOULD be required by all applications using this
-specification. Since each application will then only be providing information
-about its own type, conflicts should be rare.
-		</para>
-	</sect2>
-	<sect2>
-		<title>Directory layout</title>
-		<para>
-Unlike the KDE system, the files are not arranged in the filesystem by type.
-This approach is only possible for a tightly coordinated system. Consider,
-for example, that ROX-Filer adds a mapping from
-<filename>.DirIcon</filename> to 'image/png'. This cannot be specified in
-a file called <filename>image/png.desktop</filename> without conflicting
-with existing definitions for the type.
-		</para>
-		<para>
-Since files are not named by type, each file may contain multiple types. The
-files should be named by the package that they come from to avoid conflicts
-and reduce loading times.
-		</para>
-		<para>
-The directories to be used to load these files are:
-
-			<itemizedlist>
-				<listitem><para>
-<filename>/usr/share/mime/mime-info</filename>
-				</para></listitem>
-				<listitem><para>
-<filename>/usr/local/share/mime/mime-info</filename>
-				</para></listitem>
-				<listitem><para>
-<filename>~/.mime/mime-info</filename>
-				</para></listitem>
-			</itemizedlist>
-Each of these directories contains a number of files with the '.mimeinfo'
-extension. Applications MUST NOT load other files. This is to allow for
-future extensions.
-		</para>
-		<para>
-Programs modifying any of these files MUST update the modification time on
-the parent (<filename>mime-info</filename>) directory so that applications can
-easily detect the change. The rules from the directories in this list take
-precedence over conflicting rules from earlier directories. Thus, the user's
-settings take precedence over all others.
 		</para>
 	</sect2>
 	<sect2>

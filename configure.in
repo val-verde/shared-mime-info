@@ -9,7 +9,7 @@ AM_CONFIG_HEADER(config.h)
 
 GETTEXT_PACKAGE=shared-mime-info
 AC_SUBST(GETTEXT_PACKAGE)
-ALL_LINGUAS="fi fr hu nl nn no sv sr"
+ALL_LINGUAS="cy fi fr hu nl nn no sv sr"
 AM_GLIB_GNU_GETTEXT
 
 dnl Check pkg-config is installed

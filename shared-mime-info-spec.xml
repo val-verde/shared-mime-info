@@ -26,14 +26,14 @@
 		</authorgroup>
 
 		<title>Shared MIME-info Database</title>
-		<date>25 April 2002</date>
+		<date>26 April 2002</date>
 	</articleinfo>
 <sect1>
 	<title>Introduction</title>
 	<sect2>
 		<title>Version</title>
 		<para>
-This is version 0.5 of the Shared MIME-info Database spec, last updated 25 April 2002.
+This is version 0.6 of the Shared MIME-info Database spec, last updated 26 April 2002.
 		</para>
 	</sect2>
 	<sect2>
@@ -255,7 +255,7 @@ Comment=HTML document
 Comment[af]=...
 [... etc. other translations ]
 Patterns=*.htm;*.html
-Contents=(starts-with "<HTML")
+Contents=(strcmp-at 0 "<HTML")
 Hidden=false
 ]]></programlisting>
 		</para>
@@ -381,9 +381,9 @@ not perform it at all.
 		<para>
 An expression is a list of space-separated items surrounded by parenthesis, eg:
 			<programlisting><![CDATA[
-(starts-with "<?xml ")
+(strcmp-at 0 "<?xml ")
 ]]></programlisting>
-The first element of the list (<userinput>starts-with</userinput> in this
+The first element of the list (<userinput>strcmp-at</userinput> in this
 example) is the name of a function. The remaining elements are its arguments.
 The result of evaluating the expression is the result of applying the function
 to the arguments. Each argument may be:
@@ -441,15 +441,15 @@ product of the remaining arguments</entry>
 						</row>
 						<row>
 <entry>(&gt; 1 2)</entry><entry>0</entry>
-<entry>True iff the first aguement is greater than the second</entry>
+<entry>True iff the first argument is greater than the second</entry>
 						</row>
 						<row>
 <entry>(&lt; 1 2)</entry><entry>1</entry>
-<entry>True iff the first aguement is less than the second</entry>
+<entry>True iff the first argument is less than the second</entry>
 						</row>
 						<row>
 <entry>(= 1 2)</entry><entry>0</entry>
-<entry>True iff the first aguement is equal to the second</entry>
+<entry>True iff the first argument is equal to the second</entry>
 						</row>
 						<row>
 <entry>(not size)</entry><entry>1</entry>
@@ -464,43 +464,70 @@ product of the remaining arguments</entry>
 <entry>The first true argument, or the last argument if none are true</entry>
 						</row>
 						<row>
-<entry>size</entry><entry>32</entry>
+<entry>(&amp; 3 6)</entry><entry>2</entry>
+<entry>Bit-wise AND of the arguments</entry>
+						</row>
+						<row>
+<entry>(| 3 6)</entry><entry>7</entry>
+<entry>Bit-wise OR of the arguments</entry>
+						</row>
+						<row>
+<entry>(^ 3 6)</entry><entry>5</entry>
+<entry>Bit-wise XOR of the arguments</entry>
+						</row>
+						<row>
+<entry>size</entry><entry>10</entry>
 <entry>The size of the file in bytes</entry>
 						</row>
 						<row>
-<entry>(starts-with "GIF89a")</entry>
-<entry>1</entry><entry>True iff the file
-starts with the given sequence of bytes</entry>
+<entry>(strcmp-at 0 "Hello")</entry>
+<entry>1</entry><entry>True iff the string starting at the file offset given by the
+first argument matches the second argument</entry>
 						</row>
 						<row>
-<entry>(byte-at 4)</entry>
-<entry>5</entry><entry>The single byte at the given file offset</entry>
+<entry>(byte-at 0)</entry>
+<entry>72</entry><entry>The signed byte at the given file offset</entry>
 						</row>
 						<row>
 <entry>(big-16 4)</entry>
-<entry>256</entry><entry>The big-endian 16-bit signed integer at
-file offsets 4 and 5</entry>
+<entry>28503</entry><entry>The big-endian 16-bit signed integer starting
+at the given file offset.</entry>
 						</row>
 						<row>
 <entry>(little-16 4)</entry>
-<entry>1</entry><entry>The little-endian 16-bit signed integer at
-file offsets 4 and 5</entry>
+<entry>22383</entry><entry>The little-endian 16-bit signed integer starting
+at the given file offset.</entry>
 						</row>
 						<row>
-<entry>big-32, little-32, big-64, little-64</entry>
-<entry>65536, 1, 4294967296, 1</entry>
-<entry>As above, but for 32- and 64- bit numbers</entry>
+<entry>(big-32 0)</entry>
+<entry>1214606444</entry>
+<entry>As above, but for a 32-bit big-endian integer</entry>
 						</row>
 						<row>
-<entry>(string-at 1 5)</entry>
-<entry>"Hello"</entry><entry>The string of bytes starting at the offset
+<entry>(little-32 0)</entry>
+<entry>1819043144</entry>
+<entry>As above, but for a 32-bit little-endian integer</entry>
+						</row>
+						<row>
+<entry>(big-64 0)</entry>
+<entry>5216694956358856562</entry>
+<entry>As above, but for a 64-bit big-endian integer</entry>
+						</row>
+						<row>
+<entry>(little-64 0)</entry>
+<entry>8245905578810697032</entry>
+<entry>As above, but for a 64-bit little-endian integer</entry>
+						</row>
+						<row>
+<entry>(string-at 4 6)</entry>
+<entry>"oWorld"</entry><entry>The string of bytes starting at the offset
 given by the first argument and of length given by the second argument
 </entry>
 						</row>
 					</tbody>
 				</tgroup>
 			</informaltable>
-<userinput>and</userinput> and <userinput>or</userinput> should only evaluate
+The <userinput>and</userinput> and <userinput>or</userinput> functions should only evaluate
 as many arguments as are necessary to determine the result.
 		</para>
 	</sect2>

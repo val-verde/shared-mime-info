@@ -2288,6 +2288,10 @@ command to generate the output files.
     <glob pattern="*.vct"/>
     <glob pattern="*.gcrd"/>
   </mime-type>
+  <mime-type type="text/x-xmi">
+    <_comment>XML Metadata Interchange file</_comment>
+    <glob pattern="*.xmi"/>
+  </mime-type>
   <mime-type type="text/x-xslfo">
     <_comment>XSL Formating Object file</_comment>
     <glob pattern="*.fo"/>

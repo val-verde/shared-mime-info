@@ -20,7 +20,7 @@
 	</authorgroup>
 
 	<title>Shared MIME-info Database</title>
-	<date>29 Jul 2002</date>
+	<date>05 Sep 2002</date>
 </articleinfo>
 
 <sect1>
@@ -28,7 +28,7 @@
 	<sect2>
 		<title>Version</title>
 		<para>
-This is version 0.9 of the Shared MIME-info Database spec, last updated 29 Jul 2002.</para>
+This is version 0.10 of the Shared MIME-info Database spec, last updated 05 Sep 2002.</para>
 	</sect2>
 	<sect2>
 		<title>What is this spec?</title>
@@ -255,6 +255,9 @@ ROX has no rules for determining a file's type from its contents.
 		</para>
 	</sect2>
 </sect1>
+
+
+
 <sect1>
 	<title>Unified system</title>
 	<para>
@@ -520,31 +523,69 @@ about its own types, conflicts should be rare.
 	<sect2>
 		<title>The magic files</title>
 		<para>
-These files have a similar format to
-<citerefentry><refentrytitle>file</refentrytitle>
-<manvolnum>1</manvolnum></citerefentry>'s <filename>magic.mime</filename> file.
-Each line may be either a comment (starting with '#'), a new type (starting with '[') or
-a rule to match (anything else).
+The magic data is stored in a binary format for ease of parsing. The old magic database
+had complex escaping rules; these are now handled by <command>update-mime-database</command>.
 		</para><para>
-Type lines are in the form "[" PRIORITY ":" TYPE "]".
+The file starts with the magic string "MIME-Magic" followed by two zero bytes.
+There is no version number in the file. Incompatible changes will be handled by
+creating both the current `magic' file and a newer `magic2' in the new format.
+Where possible, compatible changes only will be made.
 		</para><para>
-Match lines are in the form ">"* START [":" END] TAB TYPE ["&amp;" MASK] TAB VALUE.
-The offsets may be a range in the form START:END. The rule is considered to match if there is
-a match at either of these offsets, or at any offset in-between. The line may start with zero
-or more ">" characters, as for the normal file syntax. Whitespace in the value (after the tab)
-is significant, and fields are separated by exactly one tab character.
-		</para>
-		<para>
-The above example would create a magic file with these contents:
+The file is made of a sequence of entries, each corresponding to one line of file's magic
+file. All numbers are big-endian, so need to be byte-swapped on little-endian machines.
+Each entry has the following format:
+<informaltable>
+	<tgroup cols="3">
+	<thead><row><entry>Byte offset</entry><entry>Size</entry><entry>Value</entry></row></thead>
+	<tbody>
+
+	<row><entry>0</entry><entry>1</entry><entry>Indent</entry></row>
+	<row><entry>1</entry><entry>1</entry><entry>Priority (0-100)</entry></row>
+	<row><entry>2</entry><entry>1</entry><entry>Word size (1, 2, 4, 8) bytes</entry></row>
+	<row><entry>3</entry><entry>1</entry><entry>Flags</entry></row>
+	<row><entry>4</entry><entry>4</entry><entry>Range start (byte offset)</entry></row>
+	<row><entry>8</entry><entry>4</entry><entry>Range end (byte offset)</entry></row>
+	<row><entry>12</entry><entry>4</entry><entry>Total entry size</entry></row>
+	<row><entry>18</entry><entry>2</entry><entry>Value length (bytes)</entry></row>
+
+	<row><entry>20</entry><entry>-</entry><entry>Value, mask, type name, and unused data</entry></row>
+	
+	</tbody>
+	</tgroup>
+</informaltable>
+		</para><para>
+Indent corresponds to the nesting depth of the rule. Top-level rules have an indent of zero. The parent
+of an entry is the preceding entry with an indent one less than the entry.
+		</para><para>
+The word size is used for byte-swapping. Little-endian systems should reverse the order of groups of bytes
+in the value and mask if this is greater than one. This only affects `host'
+matches (`big32' entries still have a word size of 1, for example, because no swapping is necessary, whereas
+`host32' has a word size of 4).
+		</para><para>
+Bit 0 of the flags byte indicates that a mask is present. Bit 1 indicates that
+the entry should be skipped. All other bits should be ignored. If bit 0 is 1,
+then the value is followed by a mask of the same size.
+		</para><para>
+The range start and end points are byte offsets into the file being checked. All offsets from the start to the
+end inclusive should be checked. They will be equal if only one offset is to be checked. These values are
+big endian.
+		</para><para>
+The total entry size (also big-endian) gives the offset to the next entry from the start of this one. This
+is always a multiple of four.
+		</para><para>
+The value length is a 2 byte big-endian number, giving the number of bytes used for the value. If a mask
+is present, it follows directly after the value and is the same size. The MIME type name comes last, and is
+a nul-terminated string.
+		</para><para>
+There may be any amount unused space at the end of each entry. This is for future expansion and/or padding.
+		</para><para>
+The above example would create a magic file starting with:
 			<programlisting><![CDATA[
-# This file was automatically generated by the
-# update-mime-database command. DO NOT EDIT!
-...
-[50:text/x-diff]
-0	string	diff 
-0	string	*** 
-0	string	Common subdirectories: 
-...
+4d 49 4d 45 2d 4d 61 67 69 63 00 00
+
+00 32 01 00 00 00 00 00 00 00 00 00
+00 00 00 23 00 05 64 69 66 66 20 74
+65 78 74 2f 78 2d 64 69 66 66 00
 ]]></programlisting>
 		</para>
 	</sect2>
@@ -596,6 +637,9 @@ Override.xml mentioned in <xref linkend="s2_layout"/>. Information such as
 		</member>
 		<member>
 			Filip Van Raemdonck <email>mechanix@debian.org</email>
+		</member>
+		<member>
+			Christos Zoulas <email>christos@zoulas.com</email>
 		</member>
 	</simplelist>
 </sect1>

@@ -907,6 +907,8 @@ command to generate the output files.
     <comment xml:lang="zu">Idokumente ye Microsoft PowerPoint</comment>
     <glob pattern="*.ppz"/>
     <glob pattern="*.ppt"/>
+    <glob pattern="*.pps"/>
+    <glob pattern="*.pot"/>
   </mime-type>
   <mime-type type="application/vnd.ms-word">
     <comment>Microsoft Word document</comment>

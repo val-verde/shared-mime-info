@@ -20,7 +20,7 @@
 #define FREE_NS "http://www.freedesktop.org/standards/shared-mime-info"
 
 #define COPYING								\
-	     N_("Copyright (C) 2002 Thomas Leonard.\n"			\
+	     N_("Copyright (C) 2003 Thomas Leonard.\n"			\
 		"update-mime-database comes with ABSOLUTELY NO WARRANTY,\n" \
 		"to the extent permitted by law.\n"			\
 		"You may redistribute copies of update-mime-database\n"	\

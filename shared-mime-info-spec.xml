@@ -57,6 +57,12 @@ This specification attempts to unify the MIME database systems currently in
 use by GNOME<citation>GNOME</citation>, KDE<citation>KDE</citation> and
 ROX<citation>ROX</citation>, and provide room for future extensibility.
 		</para>
+		<para>
+The MIME database does NOT store user preferences (such as a user's preferred
+application for handling files of a particular type). It may be used to store
+static information, such as that files of a certain type may be viewed with
+a particular application.
+		</para>
 	</sect2>
 	<sect2>
 		<title>Language used in this specification</title>

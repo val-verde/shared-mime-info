@@ -151,6 +151,14 @@ command to generate the output files.
     </magic>
     <glob pattern="*.cdr"/>
   </mime-type>
+  <mime-type type="application/vnd.hp-hpgl">
+    <_comment>HP Graphics Language (plotter)</_comment>
+    <glob pattern="*.hpgl"/>
+  </mime-type>
+  <mime-type type="application/vnd.hp-pcl">
+    <_comment>HP Printer Control Language file</_comment>
+    <glob pattern="*.pcl"/>
+  </mime-type>
   <mime-type type="application/vnd.lotus-1-2-3">
     <_comment>Lotus 1-2-3 spreadsheet</_comment>
     <magic priority="50">
@@ -185,6 +193,10 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.ms-word">
     <_comment>Microsoft Word document</_comment>
+  </mime-type>
+  <mime-type type="application/vnd.palm">
+    <_comment>Palmpilot database/document</_comment>
+    <glob pattern="*.pdb"/>
   </mime-type>
   <mime-type type="application/vnd.rn-realmedia">
     <_comment>RealAudio/Video document</_comment>
@@ -1323,6 +1335,10 @@ command to generate the output files.
     <_comment>WAIS source code</_comment>
     <glob pattern="*.src"/>
   </mime-type>
+  <mime-type type="application/x-wpg">
+    <_comment>WordPerfect/Drawperfect image</_comment>
+    <glob pattern="*.wpg"/>
+  </mime-type>
   <mime-type type="application/x-x509-ca-cert">
     <_comment>DER/PEM/Netscape-encoded X.509 certificate</_comment>
     <glob pattern="*.der"/>
@@ -1563,12 +1579,26 @@ command to generate the output files.
     <glob pattern="*.jpg"/>
     <glob pattern="*.jpe"/>
   </mime-type>
+  <mime-type type="image/jpeg2000">
+    <_comment>JPEG-2000 image</_comment>
+    <glob pattern="*.jp2"/>
+  </mime-type>
+  <mime-type type="image/x-pict">
+    <_comment>Macintosh Quickdraw/PICT drawing</_comment>
+    <glob pattern="*.pict"/>
+    <glob pattern="*.pict1"/>
+    <glob pattern="*.pict2"/>
+  </mime-type>
   <mime-type type="image/png">
     <_comment>PNG image</_comment>
     <magic priority="50">
       <match type="string" value="\x89PNG" offset="0"/>
     </magic>
     <glob pattern="*.png"/>
+  </mime-type>
+  <mime-type type="image/rle">
+    <_comment>Run Length Encoded bitmap</_comment>
+    <glob pattern="*.rle"/>
   </mime-type>
   <mime-type type="image/svg+xml">
     <_comment>scalable SVG image</_comment>
@@ -1771,6 +1801,10 @@ command to generate the output files.
     <_comment>RGB image</_comment>
     <glob pattern="*.rgb"/>
   </mime-type>
+  <mime-type type="image/x-sgi">
+    <_comment>Silicon Graphics IRIS image</_comment>
+    <glob pattern="*.sgi"/>
+  </mime-type>
   <mime-type type="image/x-sun-raster">
     <_comment>SUN Rasterfile image</_comment>
     <magic priority="50">
@@ -1781,6 +1815,10 @@ command to generate the output files.
   <mime-type type="image/x-tga">
     <_comment>TarGA image</_comment>
     <glob pattern="*.tga"/>
+  </mime-type>
+  <mime-type type="image/x-win-bitmap">
+    <_comment>Windows cursor</_comment>
+    <glob pattern="*.cur"/>
   </mime-type>
   <mime-type type="image/x-wmf">
     <_comment>Microsoft WMF file</_comment>
@@ -2191,6 +2229,10 @@ command to generate the output files.
   <mime-type type="text/x-troff-ms">
     <_comment>Troff MS input document</_comment>
     <glob pattern="*.ms"/>
+  </mime-type>
+  <mime-type type="text/x-uil">
+    <_comment>X-Motif UIL table</_comment>
+    <glob pattern="*.uil"/>
   </mime-type>
   <mime-type type="text/x-uri">
     <!-- Note: text/uri-list is reserved by the XDND protocol! -->

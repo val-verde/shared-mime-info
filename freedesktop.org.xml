@@ -13260,6 +13260,12 @@ command to generate the output files.
     <comment xml:lang="zh">troff ms输入文档</comment>
     <glob pattern="*.ms"/>
   </mime-type>
+  <mime-type type="text/x-uri">
+    <!-- Note: text/uri-list is reserved by the XDND protocol! -->
+    <comment>the location of some resource</comment>
+    <glob pattern="*.uri"/>
+    <glob pattern="*.url"/>
+  </mime-type>
   <mime-type type="text/x-vcalendar">
     <comment>vCalendar interchange file</comment>
     <comment xml:lang="af">vcalendar uitruil lêer</comment>

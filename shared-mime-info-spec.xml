@@ -52,6 +52,13 @@
 				<address><email>bastian@kde.org</email></address>
 			</affiliation>
 		</author>
+		<author>
+			<firstname>Filip</firstname>
+			<surname>Van Raemdonck</surname>
+			<affiliation>
+				<address><email>mechanix@debian.org</email></address>
+			</affiliation>
+		</author>
 	</authorgroup>
 
 	<title>Shared MIME-info Database</title>
@@ -439,7 +446,8 @@ lines.
 				<listitem><para>
 <userinput>action</userinput> elements introduce an action that can be performed on files of this
 type. There may be several actions for each type. The format for this element has not yet been
-decided.
+decided. Applications which can handle arbitrary streams of data can indicate
+this by setting an action for the type `application/octet-stream'.
 				</para></listitem>
 				<listitem><para>
 <userinput>comment</userinput> elements give a human-readable textual description of the MIME
@@ -450,7 +458,11 @@ to provide the text in multiple languages.
 Applications may also define their own elements, provided they are namespaced to prevent collisions.
 Unknown elements are copied directly to the output XML files like <userinput>comment</userinput>
 elements.
-		</para><para>
+A typical use for this would be to indicate the default handler application for a particular desktop
+("Galeon is the GNOME default text/html browser"). Note that this doesn't indicate the user's preferred
+application, only the (fixed) default.
+		</para>
+		<para>
 Here is an example source file, named <filename>diff.xml</filename>:
 		<programlisting><![CDATA[
 <?xml version="1.0"?>
@@ -600,11 +612,6 @@ edit the database. If they wish to make corrections or provide MIME entries for
 software that doesn't provide these itself, they should do so by means of the
 Override.xml mentioned in <xref linkend="s2_layout"/>. Information such as
 "text/html files need to be opened with Mozilla" should NOT go in the database.
-		</para>
-		<para>
-However, using extension elements introduced by additional namespaces (like a
-GNOME namespace), the database may be used to store static information, such as
-"Galeon is the GNOME default text/html browser".
 		</para>
 	</sect2>
 </sect1>

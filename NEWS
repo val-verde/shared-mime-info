@@ -1,10 +1,44 @@
 shared-mime-info		Thomas Leonard    http://www.freedesktop.org
 
+			Version 0.14 (21-Mar-2004)
+
+* upped the mozilla/netscape bookmarks priority.
+
+* change xbell to x-xbel
+
+* Add matroska video mime type
+
+* application/x-archive needs lower prio than application/x-deb
+
+* Change C# mimetype to text/x-csharp
+
+* Add application/x-ole-storage mimetype, remove OLE storage match from
+  application/msword, since it matches all sorts of document types using
+  OLE.
+
+* add types from ImageMagick
+
+* add .flac detection.
+
+* make MIME descriptions more consistant with each other (patch from
+  Christian Neumair).
+
+* add a package-config file
+
+* conditionally disable running update-mimedb for packages.
+
+* fix up RIFF and shell magic, as well as merging diff files and patch files.
+
+* New az, cy, and no translations.
+
+			Version 0.13.1 (01-Jan-2003)
 
 * Specify number of characters to test when checking for text files
   (requested by Jaap Karssenberg).
 
 * Added <alias> and <sub-class-of> fields.
+
+
 
 			Version 0.12 (28-Aug-2003)
 

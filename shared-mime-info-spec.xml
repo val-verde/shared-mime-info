@@ -392,19 +392,20 @@ whose name matches this pattern will be given this MIME type (subject to conflic
 other files, of course).
 				</para></listitem>
 				<listitem><para>
-<userinput>magic</userinput> elements contain a list of match elements, any of which may match,
-and an optional <userinput>priority</userinput> attribute for all of the contained rules. Low numbers
-should be used for more generic types (such as 'gzip compressed data') and higher values for specific
-subtypes (such as a word processor format that happens to use gzip to compress the file).
-The default priority value is 50.
+<userinput>magic</userinput> elements contain a list of
+<userinput>match</userinput> elements, any of which may match, and an optional
+<userinput>priority</userinput> attribute for all of the contained rules. Low
+numbers should be used for more generic types (such as 'gzip compressed data')
+and higher values for specific subtypes (such as a word processor format that
+happens to use gzip to compress the file). The default priority value is 50.
 				</para><para>
-Each child element can be any of <userinput>string</userinput>, <userinput>host16</userinput>,
+Each <userinput>match</userinput> element must have a type of
+<userinput>string</userinput>, <userinput>host16</userinput>,
 <userinput>host32</userinput>, <userinput>big16</userinput>,
 <userinput>big32</userinput>, <userinput>little16</userinput>,
-<userinput>little32</userinput> or <userinput>byte</userinput>. Each of these elements has
-<userinput>offset</userinput>, <userinput>type</userinput>,
-<userinput>value</userinput> and, optionally, <userinput>mask</userinput>
-attributes. Each element corresponds to one line of
+<userinput>little32</userinput> or <userinput>byte</userinput>. It must also have
+<userinput>offset</userinput>, <userinput>value</userinput> and, optionally,
+<userinput>mask</userinput> attributes. Each element corresponds to one line of
 <citerefentry><refentrytitle>file</refentrytitle>
 <manvolnum>1</manvolnum></citerefentry>'s <filename>magic.mime</filename> file.
 They can be nested in the same way to provide the equivalent of continuation
@@ -439,9 +440,9 @@ Here is an example source file, named <filename>diff.xml</filename>:
     <comment xml:lang="af">verskille tussen lêers</comment>
     ...
     <magic priority="50">
-      <string offset="0" value="diff	"/>
-      <string offset="0" value="***	"/>
-      <string offset="0" value="Common subdirectories: "/>
+      <match type="string" offset="0" value="diff	"/>
+      <match type="string" offset="0" value="***	"/>
+      <match type="string" offset="0" value="Common subdirectories: "/>
     </magic>
     <glob pattern="*.diff"/>
     <glob pattern="*.patch"/>

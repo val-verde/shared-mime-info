@@ -1,0 +1,336 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+"/usr/share/sgml/docbook/dtd/xml/4.1.2/docbookx.dtd">
+<article id="index">
+	<articleinfo>
+		<authorgroup>
+			<corpauthor>
+				<ulink url="http://www.freedesktop.org">
+				X Desktop Group
+				</ulink>
+			</corpauthor>
+			<author>
+				<firstname>Thomas</firstname>
+				<surname>Leonard</surname>
+				<affiliation>
+					<address><email>tal197@users.sf.net</email></address>
+				</affiliation>
+			</author>
+		</authorgroup>
+
+		<title>Shared MIME-info Database</title>
+		<date>15 April 2002</date>
+	</articleinfo>
+<sect1>
+	<title>Introduction</title>
+	<sect2>
+		<title>Version</title>
+		<para>
+This is version 0.2 of the Shared MIME-info Database spec, last updated 15 April 2002.
+		</para>
+	</sect2>
+	<sect2>
+		<title>What is this spec?</title>
+		<para>
+Many programs and desktops use the MIME system to represent the types of
+files. Frequently, it is necessary to work out the correct MIME type for
+a file. This is generally done by examining the file's name or
+contents, and looking up the correct MIME type in a database.
+		</para>
+		<para>
+For interoperability, it is useful for different programs to use the same
+database so that different programs agree on the type of a file and new
+rules for determining the type apply to all programs.
+		</para>
+		<para>
+This specification attempts to unify the type-guessing systems currently in
+use by GNOME, KDE and ROX. Only the name-to-type mapping is covered by this
+spec; other MIME type information, such as the default handler for a particular
+type, or the icon to use to display it in a file manager, are not covered since
+these are a matter of style.
+		</para>
+	</sect2>
+	<sect2>
+		<title>Language used in this specification</title>
+		<para>
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
+"SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be
+interpreted as described in RFC 2119.  
+		</para>
+	</sect2>
+</sect1>
+<sect1>
+	<title>Overview of previous systems</title>
+	<sect2>
+		<title>KDE</title>
+		<para>
+KDE uses <filename>.desktop</filename> files, with Type=MimeType, one file
+per file. The files are arranges in the filesystem to mirror the two-level
+MIME type hierarchy.
+The syntax is very similar to other <filename>.desktop</filename> files,
+with Name=, Comment= etc.
+		</para>
+		<para>
+Example file:
+			<programlisting><![CDATA[
+[Desktop Entry]
+Encoding=UTF-8
+MimeType=application/x-kword
+Comment=KWord
+Comment[af]=kword
+[... etc. other translations ]
+Icon=kword
+Type=MimeType
+Patterns=*.kwd;*.kwt;
+X-KDE-AutoEmbed=false
+
+[Property::X-KDE-NativeExtension]
+Type=QString
+Value=.kwd
+]]></programlisting>
+		</para>
+		<para>
+KDE does not have a separate system for specifying extension matches, but
+uses glob patterns for everything.
+		</para>
+	</sect2>
+	<sect2>
+		<title>GNOME</title>
+		<para>
+GNOME uses the gnome-vfs library to determine the MIME type of a file.
+This library loads name-to-type rules from files with a '.mime' extenstion
+in a system-wide directory (set at install time), and merged with those in the
+user's directory. It loads textual descriptions for the types from
+files in the same directories, ending with '.keys'. The file
+<filename>gnome-vfs.mime</filename> in the system directory is always loaded
+first (allowing everything else to override it). The file
+<filename>user.mime</filename> in the user's directory is always loaded
+last, making these settings take precedence over all others.
+		</para>
+		<para>
+The format of the .mime files are described as follows:
+			<programlisting>
+# Mime types as provided by the GNOME libraries for GNOME.
+#
+# Applications can provide more mime types by installing other
+# .mime files in the PREFIX/share/mime-info directory.
+#
+# The format of this file is:
+#
+# mime-type
+#	ext[,prio]:	list of extensions for this mime-type
+#	regex[,prio]:	a regular expression that matches the filename
+#
+# more than one ext: and regex: fields can be present.
+#
+# prio is the priority for the match, the default is 1. This is required
+# to distinguish composed filenames, for example .gz has a priority of 1
+# and .tar.gz has a priority of 2 (thus a file having the filename
+# something.tar.gz will match the mime-type for tar.gz before the mime-type
+# for .gz
+#
+# The values in this file are kept in alphabetical order for convenience.
+# Please maintain this when adding new types. Also consider adding a
+# human-readable description to gnome-vfs.keys when adding a new type here.
+#
+# Also do please not add illegal mime types, observe the mime standard when
+# adding new types.
+			</programlisting>
+When looking up the type for a file, gnome-vfs looks first for an exact-case
+match, then an all upper-case match, then an all lower-case match. If no
+matches are found, or there is no '.' in the name, then the regular
+expression matches are checked. It does this first for rules with priority 2,
+then for those with priority 1. The modification time on the
+<filename>mime-info</filename>
+directories is used to detect changes.
+		</para>
+		<para>
+The .keys files contain type-to-description rules, eg:
+			<programlisting>
+application/msword
+	description=Microsoft Word document
+	[de]description=Microsoft Word-Dokument
+	...
+			</programlisting>
+Guidelines for writing descriptions can be found in the
+<filename>mime-descriptions-guidelines.txt</filename> file.
+		</para>
+
+	</sect2>
+	<sect2>
+		<title>ROX</title>
+		<para>
+ROX searches <filename>MIME-info</filename> directories in
+<envar>CHOICESPATH</envar> (<filename>~/Choices/MIME-info:/usr/local/share/Choices/MIME-info:/usr/share/Choices/MIME-info</filename> by
+default). Files from earlier directories override those in later ones, but
+the order within a directory is not specified.
+		</para>
+		<para>
+The files are in the same format as GNOME, except:
+			<itemizedlist>
+				<listitem><para>
+There are no .keys files, so files of all extensions are loaded.
+				</para></listitem>
+				<listitem><para>
+The priority is ignored.
+				</para></listitem>
+				<listitem><para>
+A case-sensitive match is tried first, then a lower-case match. No upper-case
+match is tried.
+				</para></listitem>
+				<listitem><para>
+Multiple extensions are allowed. Eg:
+					<programlisting>
+application/x-compressed-postscript
+	ext: ps.gz eps.gz
+					</programlisting>
+				</para></listitem>
+			</itemizedlist>
+		</para>
+		<para>
+When looking up the type for a file, ROX starts with the first '.'
+and tries a case-sensitive match of the remaining text against the extensions.
+The it tries again with the filename in lower-case. It then tries again
+from the second '.', and so on. If no type is found, it tries the regular
+expressions.
+		</para>
+	</sect2>
+</sect1>
+<sect1>
+	<title>Unified system</title>
+	<para>
+In discussions about these systems, it was clear that the differences between
+the databases were simply a result of them being separate, and not due to any
+fundamental disagreements between developers. Everyone is keen to see them
+merged.
+	</para>
+	<para>
+This spec proposes:
+
+		<itemizedlist>
+			<listitem><para>
+A standard format for these files.
+			</para></listitem>
+			<listitem><para>
+A standard location for them.
+			</para></listitem>
+		</itemizedlist>
+
+	</para>
+	<sect2>
+		<title>File format</title>
+		<para>
+The new format is very similar to the KDE format. However, only the tags used
+in this example are valid:
+			<programlisting><![CDATA[
+[MIME-Info text/html]
+Encoding=UTF-8
+Comment=HTML document
+Comment[af]=...
+[... etc. other translations ]
+Patterns=*.htm;*.html;
+]]></programlisting>
+		</para>
+		<para>
+Specifically, all KDE-specific tags have been removed, as well as the Icon
+field. Although all desktops need a way to determine the icon for a particular
+type, the icon used will depend on desktop, and not only on the file type.
+		</para>
+		<para>
+Although not part of the name-to-type mapping, the Comment field is left in
+for the sake of not having too many files.
+		</para>
+	</sect2>
+	<sect2>
+		<title>Pattern matching</title>
+		<para>
+KDE's Patterns field replaces GNOME's and ROX's ext/regex fields, since it
+is trivial to detect a pattern in the form '*.ext' and store it in an
+extension hash table internally. The full power of regular expressions was
+not being used by either desktop, and glob patterns are more suitable for
+filename matching anyway.
+		</para>
+		<para>
+Applications MUST first try a case-sensitive match, then a case-insensitive
+one. This is so that <filename>main.C</filename> will be seen as a C++ file,
+but <filename>IMAGE.GIF</filename> will still use the *.gif pattern.
+		</para>
+	</sect2>
+	<sect2>
+		<title>Dealing with conflicts</title>
+		<para>
+If several patterns match then the longest pattern SHOULD be used. In
+particular, files with multiple extensions (such as
+<filename>Data.tar.gz</filename>) MUST match the longest sequence of extensions
+(eg '*.tar.gz' in preference to '*.gz'). Literal patterns (eg, 'Makefile') must
+be matched before all others. It is acceptable to match patterns of the form
+'*.text' before other wildcarded patterns (that is, to special-case extensions
+using a hash table).
+		</para>
+		<para>
+If the same pattern is defined twice, then they SHOULD be ordered by the
+directory the rule came from (this is to allow users to override the system
+defaults if, for example, they are using a common extension to mean something
+else). If they came from the same directory, either can be used.
+		</para>
+		<para>
+If the same type is defined in several places, the Patterns and Comments
+MUST be merged. If two different comments are provided for the same
+MIME type in the same language, they should be ordered by directory as before.
+		</para>
+		<para>
+Common types (such as MS Word Documents) will be provided in the X Desktop
+Group's package, which SHOULD be required by all applications using this
+specification. Since each application will then only be providing information
+about its own type, conflicts should be rare.
+		</para>
+	</sect2>
+	<sect2>
+		<title>Directory layout</title>
+		<para>
+Unlike the KDE system, the files are not arranged in the filesystem by type.
+This approach is only possible for a tightly coordinated system. Consider,
+for example, that ROX-Filer adds a mapping from
+<filename>.DirIcon</filename> to 'image/png'. This cannot be specified in
+a file called <filename>image/png.desktop</filename> without conflicting
+with existing definitions for the type.
+		</para>
+		<para>
+Since files are not named by type, each file may contain multiple types. The
+files should be named by the package that they come from to avoid conflicts
+and reduce loading times.
+		</para>
+		<para>
+The directories to be used to load these files are:
+
+			<itemizedlist>
+				<listitem><para>
+<filename>/usr/share/mime/mime-info</filename>
+				</para></listitem>
+				<listitem><para>
+<filename>/usr/local/share/mime/mime-info</filename>
+				</para></listitem>
+				<listitem><para>
+<filename>~/.mime/mime-info</filename>
+				</para></listitem>
+			</itemizedlist>
+Programs modifying any of these files MUST update the modification time on
+the parent (<filename>mime-info</filename>) directory so that applications can
+easily detect the change. The rules from the directories in this list take
+precedence over conflicting rules from earlier directories. Thus, the user's
+settings take precedence over all others.
+		</para>
+	</sect2>
+	<sect2>
+		<title>Security implications</title>
+		<para>
+The system described in this document is intended to allow different programs
+to see the same file as having the same type. This is to help interoperability.
+The type determined in this way is only a guess, and an application MUST NOT
+trust a file based simply on its MIME type. For example, a downloader should
+not pass a file directly to a launcher application without confirmation simply
+because the type looks `harmless' (eg, text/plain).
+		</para>
+	</sect2>
+</sect1>
+</article>

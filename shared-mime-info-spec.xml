@@ -285,7 +285,8 @@ A standard format for these files.
 Standard locations for them.
 			</para></listitem>
 		</itemizedlist>
-
+Further, the existing databases have been merged into a single package
+<citation>SharedMIME</citation>.
 	</para>
 	<sect2>
 		<title>File format</title>
@@ -538,6 +539,12 @@ and in any case the programs may be following different versions of the spec.
 		<ulink url="http://www.freedesktop.org/standards/desktop-entry-spec.html"/>
 		</citetitle>
 	</bibliomixed>
+	<bibliomixed>
+		<abbrev>SharedMIME</abbrev><citetitle>Shared MIME-info Database
+		<ulink url="http://www.freedesktop.org/standards/shared-mime-info.html"/>
+		</citetitle>
+	</bibliomixed>
+
 </bibliography>
 
 </article>

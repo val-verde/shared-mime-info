@@ -2153,6 +2153,10 @@ command to generate the output files.
     <_comment>DSSSL document</_comment>
     <glob pattern="*.dsl"/>
   </mime-type>
+  <mime-type type="text/x-dsrc">
+    <_comment>D source code</_comment>
+    <glob pattern="*.d"/>
+  </mime-type>
   <mime-type type="text/x-dtd">
     <_comment>document type definition</_comment>
     <glob pattern="*.dtd"/>

@@ -20,12 +20,18 @@ EXTRA_DIST = \
 	$(man_MANS)			\
 	intltool-extract.in		\
 	intltool-merge.in		\
-	intltool-update.in
+	intltool-update.in		\
+	shared-mime-info.pc.in
 
 CLEANFILES = intltool-extract intltool-merge intltool-update freedesktop.org.xml
 
 CFLAGS = @CFLAGS@ `@PKG_CONFIG@ --cflags libxml-2.0 glib-2.0`
 LDFLAGS = @LDFLAGS@ `@PKG_CONFIG@ --libs libxml-2.0 glib-2.0`
+
+pkgconfigdir = $(libdir)/pkgconfig
+pkgconfig_DATA = shared-mime-info.pc
+
+$(pkgconfig_DATA): config.status
 
 @INTLTOOL_XML_RULE@
 @INTLTOOL_DESKTOP_RULE@

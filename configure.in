@@ -77,4 +77,8 @@ AC_C_CONST
 mimedir=['${datadir}/mime']
 AC_SUBST(mimedir)
 
-AC_OUTPUT(Makefile po/Makefile.in)
+AC_OUTPUT(
+Makefile
+shared-mime-info.pc
+po/Makefile.in
+)

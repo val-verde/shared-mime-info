@@ -40,6 +40,7 @@
     <comment xml:lang="az">Andrew Toolkit sənədi</comment>
     <comment xml:lang="cs">Andrew Toolkit inset</comment>
     <comment xml:lang="cy">Mewnosodiad Andrew Toolkit</comment>
+    <comment xml:lang="da">Andrew Toolkit indsæt</comment>
     <comment xml:lang="de">Andrew Toolkit-Inset</comment>
     <comment xml:lang="fi">Andrew Toolkit -osio</comment>
     <comment xml:lang="fr">ajout Andrew Toolkit</comment>
@@ -52,6 +53,7 @@
   </mime-type>
   <mime-type type="application/illustrator">
     <comment>Adobe Illustrator document</comment>
+    <comment xml:lang="da">Adobe Illustrator-dokument</comment>
     <comment xml:lang="de">Adobe Illustrator-Dokument</comment>
     <comment xml:lang="no">Adobe Illustrator-dokument</comment>
     <comment xml:lang="sv">Adobe Illustrator-dokument</comment>
@@ -62,6 +64,7 @@
     <comment xml:lang="az">Macintosh BinHex-kodlanmış fayl</comment>
     <comment xml:lang="cs">Soubor kódovaný Macintosh BinHex</comment>
     <comment xml:lang="cy">Ffeil BinHex-amgodwyd Macintosh</comment>
+    <comment xml:lang="da">Macintosh BinHex-kodet fil</comment>
     <comment xml:lang="de">Macintosh-Datei (BinHex-kodiert)</comment>
     <comment xml:lang="fi">Macintosh BinHex -koodattu tiedosto</comment>
     <comment xml:lang="fr">fichier encode Macintosh BinHex</comment>
@@ -75,32 +78,9 @@
       <match offset="11" type="string" value="must be converted with BinHex" />
     </magic>
   </mime-type>
-  <mime-type type="application/msword">
-    <comment>Microsoft Word document</comment>
-    <comment xml:lang="az">Microsoft Word sənədi</comment>
-    <comment xml:lang="cs">Dokument Microsoft Word</comment>
-    <comment xml:lang="cy">Dogfen Miscrosoft Word</comment>
-    <comment xml:lang="de">Microsoft Word-Dokument</comment>
-    <comment xml:lang="fi">Microsoft Word -asiakirja</comment>
-    <comment xml:lang="fr">document Microsoft Word</comment>
-    <comment xml:lang="hu">Microsoft Word-dokumentum</comment>
-    <comment xml:lang="nl">Microsoft Word document</comment>
-    <comment xml:lang="nn">Microsoft Word-dokument</comment>
-    <comment xml:lang="no">Microsoft Word dokument</comment>
-    <comment xml:lang="sr">Микрософт Word документ</comment>
-    <comment xml:lang="sv">Microsoft Word-dokument</comment>
-    <magic priority="50">
-      <match offset="0" type="string" value="\x31\xbe\x00\x00" />
-      <match offset="0" type="string" value="PO^Q`" />
-      <match offset="0" type="string" value="\376\067\0\043" />
-      <match offset="0" type="string" value="\333\245-\0\0\0" />
-      <match offset="2080" type="string" value="Microsoft Word 6.0 Document" />
-      <match offset="2112" type="string" value="Microsoft Word document data" />
-    </magic>
-    <glob pattern="*.doc" />
-  </mime-type>
   <mime-type type="application/octet-stream">
     <comment>unknown</comment>
+    <comment xml:lang="da">ukendt</comment>
     <comment xml:lang="de">unbekannt</comment>
     <comment xml:lang="no">ukjent</comment>
     <magic priority="50">
@@ -117,6 +97,7 @@
     <comment xml:lang="az">ODA sənədi</comment>
     <comment xml:lang="cs">Dokument ODA</comment>
     <comment xml:lang="cy">Dogfen ODA</comment>
+    <comment xml:lang="da">ODA-dokument</comment>
     <comment xml:lang="de">ODA-Dokument</comment>
     <comment xml:lang="fi">ODA-asiakirja</comment>
     <comment xml:lang="fr">document ODA</comment>
@@ -131,6 +112,7 @@
   <mime-type type="application/pdf">
     <comment>PDF document</comment>
     <comment xml:lang="cy">Dogfen PDF</comment>
+    <comment xml:lang="da">PDF-dokument</comment>
     <comment xml:lang="de">PDF-Dokument</comment>
     <comment xml:lang="nn">PDF-dokument</comment>
     <comment xml:lang="no">PDF-dokument</comment>
@@ -146,6 +128,7 @@
     <comment xml:lang="az">PGP ismarışı</comment>
     <comment xml:lang="cs">Zpráva PGP</comment>
     <comment xml:lang="cy">Neges PGP</comment>
+    <comment xml:lang="da">PGP-meddelelse</comment>
     <comment xml:lang="de">PGP-Nachricht</comment>
     <comment xml:lang="fi">PGP-viesti</comment>
     <comment xml:lang="fr">message PGP</comment>
@@ -159,6 +142,7 @@
   </mime-type>
   <mime-type type="application/pgp-encrypted">
     <comment>PGP/MIME-encrypted message header</comment>
+    <comment xml:lang="da">PGP/MIME-krypteret meddelelseshoved</comment>
     <comment xml:lang="de">PGP/MIME-verschlüsselter Nachrichtenkopf</comment>
     <comment xml:lang="no">PGP/MIME-kryptert meldingshode</comment>
   </mime-type>
@@ -167,6 +151,7 @@
     <comment xml:lang="az">PGP açarları</comment>
     <comment xml:lang="cs">Klíče PGP</comment>
     <comment xml:lang="cy">Allweddi PGP</comment>
+    <comment xml:lang="da">PGP-nøgler </comment>
     <comment xml:lang="de">PGP-Schlüssel</comment>
     <comment xml:lang="fi">PGP-avainrengas</comment>
     <comment xml:lang="fr">clés PGP</comment>
@@ -179,6 +164,7 @@
   </mime-type>
   <mime-type type="application/pgp-signature">
     <comment>detached OpenPGP signature</comment>
+    <comment xml:lang="da">frigjort OpenPGP-signatur</comment>
     <comment xml:lang="de">isolierte OpenPGP-Signatur</comment>
     <comment xml:lang="no">frakoblet OpenPGP-signatur</comment>
   </mime-type>
@@ -187,6 +173,7 @@
     <comment xml:lang="az">S/MIME faylı</comment>
     <comment xml:lang="cs">Soubor S/MIME</comment>
     <comment xml:lang="cy">Ffeil S/MIME</comment>
+    <comment xml:lang="da">S/MIME-fil</comment>
     <comment xml:lang="de">S/MIME-Datei</comment>
     <comment xml:lang="fi">S/MIME-tiedosto</comment>
     <comment xml:lang="fr">fichier S/MIME</comment>
@@ -199,12 +186,14 @@
   </mime-type>
   <mime-type type="application/pkcs7-signature">
     <comment>detached S/MIME signature</comment>
+    <comment xml:lang="da">frigjort S/MIME-signatur</comment>
     <comment xml:lang="de">isolierte S/MIME-Signatur</comment>
     <comment xml:lang="no">frakoblet S/MIME-signatur</comment>
     <glob pattern="*.p7s" />
   </mime-type>
   <mime-type type="application/postscript">
     <comment>PostScript document</comment>
+    <comment xml:lang="da">PostScript-dokument</comment>
     <comment xml:lang="de">PostScript-Dokument</comment>
     <comment xml:lang="no">PostScript-dokument</comment>
     <comment xml:lang="sv">PostScript-dokument</comment>
@@ -219,6 +208,7 @@
     <comment xml:lang="az">Zəngin Mətn Formatı</comment>
     <comment xml:lang="cs">Rich Text Format</comment>
     <comment xml:lang="cy">Dogfen Testun Gyfoethog</comment>
+    <comment xml:lang="da">Rigt tekst-dokument</comment>
     <comment xml:lang="de">Richt-Text-Format</comment>
     <comment xml:lang="fi">RTF-asiakirja</comment>
     <comment xml:lang="fr">Rich Text Format</comment>
@@ -238,6 +228,7 @@
     <comment xml:lang="az">Sinxronlaşdırılmış Multemediya İnteqrasiya Dili</comment>
     <comment xml:lang="cs">Synchronized Multimedia Integration Language</comment>
     <comment xml:lang="cy">Iaith Integreiddio Aml-Gyfrwng wedi ei Chydweddu</comment>
+    <comment xml:lang="da">Synchronized Multimedia Integration Language</comment>
     <comment xml:lang="de">SMIL-Dokument</comment>
     <comment xml:lang="fi">Synchronized Multimedia Integration Language</comment>
     <comment xml:lang="fr">Synchronized Multimedia Integration Language</comment>
@@ -255,6 +246,7 @@
     <comment xml:lang="az">Corel Draw çəkimi</comment>
     <comment xml:lang="cs">Kresba Corel Draw</comment>
     <comment xml:lang="cy">Darlun Corel Draw</comment>
+    <comment xml:lang="da">Corel Draw-tegning</comment>
     <comment xml:lang="de">Corel Draw-Zeichnung</comment>
     <comment xml:lang="fi">Corel Draw -piirros</comment>
     <comment xml:lang="fr">dessin Corel Draw</comment>
@@ -271,11 +263,13 @@
   </mime-type>
   <mime-type type="application/vnd.hp-hpgl">
     <comment>HP Graphics Language (plotter)</comment>
+    <comment xml:lang="da">HP Graphics Language (plotter)</comment>
     <comment xml:lang="de">HP-Grafiksprache (Plotter)</comment>
     <glob pattern="*.hpgl" />
   </mime-type>
   <mime-type type="application/vnd.hp-pcl">
     <comment>HP Printer Control Language file</comment>
+    <comment xml:lang="da">HP Printer Control Language-fil</comment>
     <comment xml:lang="de">HP-Druckersteuerungs-Sprachdatei</comment>
     <glob pattern="*.pcl" />
   </mime-type>
@@ -284,6 +278,7 @@
     <comment xml:lang="az">Lotus 1-2-3 hesab cədvəli</comment>
     <comment xml:lang="cs">Tabulka Lotus 1-2-3</comment>
     <comment xml:lang="cy">Taenlen Lotus 1-2-3</comment>
+    <comment xml:lang="da">Lotus 1-2-3-regneark</comment>
     <comment xml:lang="de">Lotus 1-2-3-Tabellendokument</comment>
     <comment xml:lang="fi">Lotus 1-2-3 -taulukko</comment>
     <comment xml:lang="fr">chiffrier Lotus 1-2-3</comment>
@@ -307,6 +302,7 @@
     <comment xml:lang="az">Microsoft Excel hesab cədvəli</comment>
     <comment xml:lang="cs">Tabulka Microsoft Excel</comment>
     <comment xml:lang="cy">Taenlen Microsoft Excel</comment>
+    <comment xml:lang="da">Microsoft Excel-regneark</comment>
     <comment xml:lang="de">Microsoft Excel-Tabellendokument</comment>
     <comment xml:lang="fi">Microsoft Excel -taulukko</comment>
     <comment xml:lang="fr">chiffrier Microsoft Excel</comment>
@@ -327,9 +323,11 @@
     <glob pattern="*.xla" />
     <glob pattern="*.xlt" />
     <glob pattern="*.xld" />
+    <alias type="application/msexcel" />
   </mime-type>
   <mime-type type="application/vnd.ms-powerpoint">
     <comment>Microsoft PowerPoint presentation</comment>
+    <comment xml:lang="da">Microsoft PowerPoint-præsentation</comment>
     <comment xml:lang="de">Microsoft PowerPoint-Präsentation</comment>
     <comment xml:lang="no">Microsoft PowerPoint-presentasjon</comment>
     <glob pattern="*.ppz" />
@@ -345,6 +343,7 @@
     <comment xml:lang="az">Microsoft Word sənədi</comment>
     <comment xml:lang="cs">Dokument Microsoft Word</comment>
     <comment xml:lang="cy">Dogfen Miscrosoft Word</comment>
+    <comment xml:lang="da">Microsoft Word-dokument</comment>
     <comment xml:lang="de">Microsoft Word-Dokument</comment>
     <comment xml:lang="fi">Microsoft Word -asiakirja</comment>
     <comment xml:lang="fr">document Microsoft Word</comment>
@@ -354,9 +353,20 @@
     <comment xml:lang="no">Microsoft Word dokument</comment>
     <comment xml:lang="sr">Микрософт Word документ</comment>
     <comment xml:lang="sv">Microsoft Word-dokument</comment>
+    <magic priority="50">
+      <match offset="0" type="string" value="\x31\xbe\x00\x00" />
+      <match offset="0" type="string" value="PO^Q`" />
+      <match offset="0" type="string" value="\376\067\0\043" />
+      <match offset="0" type="string" value="\333\245-\0\0\0" />
+      <match offset="2080" type="string" value="Microsoft Word 6.0 Document" />
+      <match offset="2112" type="string" value="Microsoft Word document data" />
+    </magic>
+    <glob pattern="*.doc" />
+    <alias type="application/msword" />
   </mime-type>
   <mime-type type="application/vnd.palm">
     <comment>Palmpilot database/document</comment>
+    <comment xml:lang="da">Palmpilot-database/dokument</comment>
     <comment xml:lang="de">Palmpilot-Datenbank/-Dokument</comment>
     <glob pattern="*.pdb" />
   </mime-type>
@@ -365,6 +375,7 @@
     <comment xml:lang="az">RealAudio/Video sənədi</comment>
     <comment xml:lang="cs">Dokument RealAudio/Video</comment>
     <comment xml:lang="cy">Dogfen RealAudio neu RealVideo</comment>
+    <comment xml:lang="da">RealAudio/Video-dokument</comment>
     <comment xml:lang="de">RealAudio/Video-Dokument</comment>
     <comment xml:lang="fi">RealAudio/Video-asiakirja</comment>
     <comment xml:lang="fr">document RealAudio/Video</comment>
@@ -380,6 +391,7 @@
     <comment xml:lang="az">StarCalc hesab cədvəli</comment>
     <comment xml:lang="cs">Tabulka StarCalc</comment>
     <comment xml:lang="cy">Taenlen StarCalc</comment>
+    <comment xml:lang="da">StarCalc-regneark</comment>
     <comment xml:lang="de">StarCalc-Tabellendokument</comment>
     <comment xml:lang="fi">StarCalc-taulukko</comment>
     <comment xml:lang="fr">chiffier StarCalc</comment>
@@ -396,6 +408,7 @@
     <comment xml:lang="az">StarChart cədvəli</comment>
     <comment xml:lang="cs">Graf StarChart</comment>
     <comment xml:lang="cy">Siart StarChart</comment>
+    <comment xml:lang="da">StarChart-diagram</comment>
     <comment xml:lang="de">StarChart-Diagramm</comment>
     <comment xml:lang="fi">StarChart-kaavio</comment>
     <comment xml:lang="fr">graphique StarChart</comment>
@@ -412,6 +425,7 @@
     <comment xml:lang="az">StarDraw çəkimi</comment>
     <comment xml:lang="cs">Kresba StarDraw</comment>
     <comment xml:lang="cy">Darlun StarDraw</comment>
+    <comment xml:lang="da">StarDraw-tegning</comment>
     <comment xml:lang="de">StarDraw-Zeichnung</comment>
     <comment xml:lang="fi">StarDraw-piirros</comment>
     <comment xml:lang="fr">dessin StarDraw</comment>
@@ -428,6 +442,7 @@
     <comment xml:lang="az">StarImpress təqdimatı</comment>
     <comment xml:lang="cs">Prezentace StarImpress</comment>
     <comment xml:lang="cy">Cyflwyniad StarImpress</comment>
+    <comment xml:lang="da">StarImpress-præsentation</comment>
     <comment xml:lang="de">StarImpress-Präsentation</comment>
     <comment xml:lang="fi">StarImpress-esitys</comment>
     <comment xml:lang="fr">présentation StarImpress</comment>
@@ -442,12 +457,14 @@
   </mime-type>
   <mime-type type="application/vnd.stardivision.mail">
     <comment>StarMail email</comment>
+    <comment xml:lang="da">StarMail-e-brev</comment>
     <comment xml:lang="de">StarMail-E-Mail</comment>
     <comment xml:lang="no">StarMail-melding</comment>
     <glob pattern="*.smd" />
   </mime-type>
   <mime-type type="application/vnd.stardivision.math">
     <comment>StarMath formula</comment>
+    <comment xml:lang="da">StarMath-formel</comment>
     <comment xml:lang="de">StarMath-Formel</comment>
     <comment xml:lang="no">StarMath-formel</comment>
     <glob pattern="*.smf" />
@@ -457,6 +474,7 @@
     <comment xml:lang="az">StarWriter sənədi</comment>
     <comment xml:lang="cs">Dokument StarWriter</comment>
     <comment xml:lang="cy">Dogfen StarWriter</comment>
+    <comment xml:lang="da">StarWriter-dokument</comment>
     <comment xml:lang="de">StarWriter-Dokument</comment>
     <comment xml:lang="fi">StarWriter-asiakirja</comment>
     <comment xml:lang="fr">document StarWriter</comment>
@@ -472,30 +490,35 @@
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc">
     <comment>OpenOffice.org Calc spreadsheet</comment>
+    <comment xml:lang="da">OpenOffice.org Calc-regneark</comment>
     <comment xml:lang="de">OpenOffice.org Calc-Tabellendokumen</comment>
     <comment xml:lang="no">OpenOffice.org Calc-regneark</comment>
     <glob pattern="*.sxc" />
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc.template">
     <comment>OpenOffice.org Calc spreadsheet template</comment>
+    <comment xml:lang="da">OpenOffice.org Calc-regnearksskabelon</comment>
     <comment xml:lang="de">OpenOffice.org Calc-Vorlage für Tabellendokument</comment>
     <comment xml:lang="no">OpenOffice.org Calc-regnearkmal</comment>
     <glob pattern="*.stc" />
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw">
     <comment>OpenOffice.org Draw drawing</comment>
+    <comment xml:lang="da">OpenOffice.org Draw-tegning</comment>
     <comment xml:lang="de">OpenOffice.org Draw-Zeichnung</comment>
     <comment xml:lang="no">OpenOffice.org Draw-tegning</comment>
     <glob pattern="*.sxd" />
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw.template">
     <comment>OpenOffice.org Draw drawing template</comment>
+    <comment xml:lang="da">OpenOffice.org Draw-tegningsskabelon</comment>
     <comment xml:lang="de">OpenOffice.org·Draw-Zeichnungsvorlage</comment>
     <comment xml:lang="no">OpenOffice.org Draw-tegningsmal</comment>
     <glob pattern="*.std" />
   </mime-type>
   <mime-type type="application/vnd.sun.xml.impress">
     <comment>OpenOffice.org Impress presentation</comment>
+    <comment xml:lang="da">OpenOffice.org Impress-præsentation</comment>
     <comment xml:lang="de">OpenOffice.org·Impress-Präsentation</comment>
     <comment xml:lang="no">OpenOffice.org Impress-presentasjon</comment>
     <comment xml:lang="sv">OpenOffice.org Impress-presentation</comment>
@@ -503,6 +526,7 @@
   </mime-type>
   <mime-type type="application/vnd.sun.xml.impress.template">
     <comment>OpenOffice.org Impress presentation template</comment>
+    <comment xml:lang="da">OpenOffice.org Impress-præsentationsskabelon</comment>
     <comment xml:lang="de">OpenOffice.org·Impress-Präsentationsvorlage</comment>
     <comment xml:lang="no">OpenOffice.org Impress-presentasjonsmal</comment>
     <comment xml:lang="sv">OpenOffice.org Impress-presentationsmall</comment>
@@ -510,12 +534,14 @@
   </mime-type>
   <mime-type type="application/vnd.sun.xml.math">
     <comment>OpenOffice.org Math formula</comment>
+    <comment xml:lang="da">OpenOffice.org Math-formel</comment>
     <comment xml:lang="de">OpenOffice.org·Math-Formel</comment>
     <comment xml:lang="no">OpenOffice.org Math-dokument</comment>
     <glob pattern="*.sxm" />
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer">
     <comment>OpenOffice.org Writer document</comment>
+    <comment xml:lang="da">OpenOffice.org Writer-dokument</comment>
     <comment xml:lang="de">OpenOffice.org·Writer-Dokument</comment>
     <comment xml:lang="no">OpenOffice.org Writer-dokument</comment>
     <comment xml:lang="sv">OpenOffice.org Writer-dokument</comment>
@@ -523,6 +549,7 @@
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer.global">
     <comment>OpenOffice.org Writer global document</comment>
+    <comment xml:lang="da">OpenOffice.org Writer-globalt dokument</comment>
     <comment xml:lang="de">OpenOffice.org·Writer-Globaldokument</comment>
     <comment xml:lang="no">Globalt OpenOffice.org Writer-dokument</comment>
     <comment xml:lang="sv">OpenOffice.org Writer-globaldokument</comment>
@@ -530,6 +557,7 @@
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer.template">
     <comment>OpenOffice.org Writer document template</comment>
+    <comment xml:lang="da">OpenOffice.org Writer-dokumentskabelon</comment>
     <comment xml:lang="de">OpenOffice.org·Writer-Dokumentenvorlage</comment>
     <comment xml:lang="no">OpenOffice.org Writer-dokumentmal</comment>
     <glob pattern="*.stw" />
@@ -539,6 +567,7 @@
     <comment xml:lang="az">WordPerfect sənədi</comment>
     <comment xml:lang="cs">Dokument WordPerfect</comment>
     <comment xml:lang="cy">Dogfen WordPerfect</comment>
+    <comment xml:lang="da">WordPerfect-dokument</comment>
     <comment xml:lang="de">WordPerfect-Dokument</comment>
     <comment xml:lang="fi">WordPerfect-asiakirja</comment>
     <comment xml:lang="fr">document WordPerfect</comment>
@@ -556,6 +585,7 @@
   </mime-type>
   <mime-type type="application/x-xbel">
     <comment>XBEL bookmarks</comment>
+    <comment xml:lang="da">XBEL-bogmærker</comment>
     <comment xml:lang="de">XBEL-Lesezeichen</comment>
     <comment xml:lang="no">XBEL-bokmerker</comment>
     <magic priority="50">
@@ -565,6 +595,7 @@
   </mime-type>
   <mime-type type="application/x-abiword">
     <comment>AbiWord document</comment>
+    <comment xml:lang="da">AbiWord-dokument</comment>
     <comment xml:lang="de">AbiWord-Dokument</comment>
     <comment xml:lang="no">AbiWord-dokument</comment>
     <comment xml:lang="sv">AbiWord-dokument</comment>
@@ -582,6 +613,7 @@
     <comment xml:lang="az">Lotus AmiPro sənədi</comment>
     <comment xml:lang="cs">Dokument Lotus AmiPro</comment>
     <comment xml:lang="cy">Dogfen Lotus AmiPro</comment>
+    <comment xml:lang="da">Lotus AmiPro-dokument</comment>
     <comment xml:lang="de">Lotus AmiPro-Dokument</comment>
     <comment xml:lang="fi">Lotus AmiPro -asiakirja</comment>
     <comment xml:lang="fr">document Lotus AmiPro</comment>
@@ -595,6 +627,7 @@
   </mime-type>
   <mime-type type="application/x-applix-spreadsheet">
     <comment>Applix Spreadsheets spreadsheet</comment>
+    <comment xml:lang="da">Applix Spreadsheets-regneark</comment>
     <comment xml:lang="de">Applix Spreadsheets-Tabellendokument</comment>
     <comment xml:lang="no">Applix Spreadsheets-regneark</comment>
     <magic priority="50">
@@ -610,6 +643,7 @@
     <comment xml:lang="az">Applix Words sənədi</comment>
     <comment xml:lang="cs">Dokument Applix Words</comment>
     <comment xml:lang="cy">Dogfen Applix Words</comment>
+    <comment xml:lang="da">Applix Words-dokument</comment>
     <comment xml:lang="de">Applix Words-Dokument</comment>
     <comment xml:lang="fi">Applix Words -asiakirja</comment>
     <comment xml:lang="fr">document Applix Words</comment>
@@ -638,6 +672,7 @@
   </mime-type>
   <mime-type type="application/x-archive">
     <comment>AR archive</comment>
+    <comment xml:lang="da">AR-arkiv</comment>
     <comment xml:lang="de">AR-Archiv</comment>
     <comment xml:lang="no">AR-arkiv</comment>
     <magic priority="45">
@@ -651,6 +686,7 @@
     <comment xml:lang="az">ARJ arxivi</comment>
     <comment xml:lang="cs">Archiv ARJ</comment>
     <comment xml:lang="cy">Archif ARJ</comment>
+    <comment xml:lang="da">ARJ-arkiv</comment>
     <comment xml:lang="de">ARJ-Archiv</comment>
     <comment xml:lang="fi">ARJ-arkisto</comment>
     <comment xml:lang="fr">archive ARJ</comment>
@@ -670,6 +706,7 @@
     <comment xml:lang="az">active server page sənədi</comment>
     <comment xml:lang="cs">Active server page</comment>
     <comment xml:lang="cy">tudalen ASP</comment>
+    <comment xml:lang="da">aktiv serverside</comment>
     <comment xml:lang="de">Active-Server-Page-Seite</comment>
     <comment xml:lang="fi">aktiivinen palvelinsivu</comment>
     <comment xml:lang="fr">page active du serveur</comment>
@@ -686,6 +723,7 @@
     <comment xml:lang="az">AWK skripti</comment>
     <comment xml:lang="cs">Skript AWK</comment>
     <comment xml:lang="cy">Sgript AWK</comment>
+    <comment xml:lang="da">AWK-program</comment>
     <comment xml:lang="de">AWK-Skript</comment>
     <comment xml:lang="fi">AWK-skripti</comment>
     <comment xml:lang="fr">script AWK</comment>
@@ -713,6 +751,7 @@
     <comment xml:lang="az">BCPIO sənədi</comment>
     <comment xml:lang="cs">Dokument BCPIO</comment>
     <comment xml:lang="cy">Dogfen BCPIO</comment>
+    <comment xml:lang="da">BCPIO-dokument</comment>
     <comment xml:lang="de">BCPIO-Dokument</comment>
     <comment xml:lang="fi">BCPIO-asiakirja</comment>
     <comment xml:lang="fr">document BCPIO</comment>
@@ -729,6 +768,7 @@
     <comment xml:lang="az">BitTorrent seed faylı</comment>
     <comment xml:lang="cs">Soubor BitTorrent</comment>
     <comment xml:lang="cy">Ffeil hadu BitTorrent</comment>
+    <comment xml:lang="da">BitTorrent-frøfil</comment>
     <comment xml:lang="de">BitTorrent-Seed-Datei</comment>
     <comment xml:lang="fi">BitTorrent-siementiedosto</comment>
     <comment xml:lang="fr">fichier racine BitTorrent</comment>
@@ -745,6 +785,7 @@
   </mime-type>
   <mime-type type="application/x-blender">
     <comment>Blender scene</comment>
+    <comment xml:lang="da">Blender-scene</comment>
     <comment xml:lang="de">Blender-Szene</comment>
     <comment xml:lang="no">Blender-scene</comment>
     <glob pattern="*.blender" />
@@ -756,6 +797,7 @@
   </mime-type>
   <mime-type type="application/x-bzip">
     <comment>bzip archive</comment>
+    <comment xml:lang="da">bzip-arkiv</comment>
     <comment xml:lang="de">bzip-Archiv</comment>
     <comment xml:lang="no">bzip-arkiv</comment>
     <magic priority="50">
@@ -766,6 +808,7 @@
   </mime-type>
   <mime-type type="application/x-bzip-compressed-tar">
     <comment>tar archive (bzip-compressed)</comment>
+    <comment xml:lang="da">tar-arkiv (bzip-komprimeret)</comment>
     <comment xml:lang="de">tar-Archiv (bzip-komprimiert)</comment>
     <comment xml:lang="no">tar-arkiv (bzip-komprimert)</comment>
     <glob pattern="*.tar.bz" />
@@ -773,12 +816,14 @@
   </mime-type>
   <mime-type type="application/x-cd-image">
     <comment>raw CD image</comment>
+    <comment xml:lang="da">rå CD-aftryk</comment>
     <comment xml:lang="de">CD-Roh-Image</comment>
     <comment xml:lang="no">rått CD-bilde</comment>
     <glob pattern="*.iso" />
   </mime-type>
   <mime-type type="application/x-cgi">
     <comment>CGI script</comment>
+    <comment xml:lang="da">CGI-program</comment>
     <comment xml:lang="de">CGI-Skript</comment>
     <comment xml:lang="no">CGI-skript</comment>
     <glob pattern="*.cgi" />
@@ -788,6 +833,7 @@
     <comment xml:lang="az">PGN şahmat oyunu</comment>
     <comment xml:lang="cs">Šachová hra PGN</comment>
     <comment xml:lang="cy">Gêm wyddbwyll PGN</comment>
+    <comment xml:lang="da">PGN-skakspil</comment>
     <comment xml:lang="de">PGN-Schachspiel</comment>
     <comment xml:lang="fi">PGN-šakkipeli</comment>
     <comment xml:lang="fr">jeu d&apos;échec PGN</comment>
@@ -804,6 +850,7 @@
     <comment xml:lang="az">Java bayt kodu</comment>
     <comment xml:lang="cs">Java bajtový kód</comment>
     <comment xml:lang="cy">Côd beit Java</comment>
+    <comment xml:lang="da">Java-bytekode</comment>
     <comment xml:lang="de">Java-Bytecode</comment>
     <comment xml:lang="fi">Java-tavukoodi</comment>
     <comment xml:lang="fr">code byte Java</comment>
@@ -816,6 +863,7 @@
   </mime-type>
   <mime-type type="application/x-compress">
     <comment>UNIX-compressed file</comment>
+    <comment xml:lang="da">UNIX-komprimeret fil</comment>
     <comment xml:lang="de">UNIX-komprimierte Datei</comment>
     <comment xml:lang="no">UNIX-komprimert fil</comment>
     <magic priority="50">
@@ -825,6 +873,7 @@
   </mime-type>
   <mime-type type="application/x-compressed-tar">
     <comment>tar archive (gzip-compressed)</comment>
+    <comment xml:lang="da">tar-arkiv (gzip-komprimeret)</comment>
     <comment xml:lang="de">tar-Archiv (gzip-komprimiert)</comment>
     <comment xml:lang="no">tar-arkiv (gzip-komprimert)</comment>
     <glob pattern="*.tar.gz" />
@@ -832,6 +881,7 @@
   </mime-type>
   <mime-type type="application/x-core">
     <comment>program crash data</comment>
+    <comment xml:lang="da">programnedbrudsdata</comment>
     <comment xml:lang="de">Daten zu Programmabsturz</comment>
     <magic priority="50">
       <match mask="0xffffffff000000000000000000000000ff" offset="0" type="string" value="\177ELF            \004" />
@@ -855,6 +905,7 @@
     <comment xml:lang="az">CPIO arxivi</comment>
     <comment xml:lang="cs">Archiv CPIO</comment>
     <comment xml:lang="cy">Archif CPIO</comment>
+    <comment xml:lang="da">CPIO-arkiv</comment>
     <comment xml:lang="de">CPIO-Archiv</comment>
     <comment xml:lang="fi">CPIO-arkisto</comment>
     <comment xml:lang="fr">archive CPIO</comment>
@@ -877,6 +928,7 @@
     <comment xml:lang="az">CPIO arxivi (gzip ilə sıxışdırılmış)</comment>
     <comment xml:lang="cs">Archiv CPIO (komprimovaný gzip)</comment>
     <comment xml:lang="cy">Archif CPIO (gywasgwyd drwy gzip)</comment>
+    <comment xml:lang="da">CPIO-arkiv (gzip-komprimeret)</comment>
     <comment xml:lang="de">CPIO-Archiv (gzip-komprimiert)</comment>
     <comment xml:lang="fi">CPIO-arkisto (gzip-pakattu)</comment>
     <comment xml:lang="fr">archive CPIO (compressé gzip)</comment>
@@ -893,6 +945,7 @@
     <comment xml:lang="az">C qabıq skripti</comment>
     <comment xml:lang="cs">Skript C shellu</comment>
     <comment xml:lang="cy">Sgript plisgyn C</comment>
+    <comment xml:lang="da">C-skalprogram</comment>
     <comment xml:lang="de">C-Shell-Skript</comment>
     <comment xml:lang="fi">Csh-komentotiedosto</comment>
     <comment xml:lang="fr">script C shell</comment>
@@ -908,6 +961,7 @@
     <comment xml:lang="az">dBASE sənədi</comment>
     <comment xml:lang="cs">Dokument dBASE</comment>
     <comment xml:lang="cy">Dogfen dBASE</comment>
+    <comment xml:lang="da">dBASE-dokument</comment>
     <comment xml:lang="de">dBASE-Dokument</comment>
     <comment xml:lang="fi">dBASE-asiakirja</comment>
     <comment xml:lang="fr">document dBASE</comment>
@@ -926,6 +980,7 @@
   </mime-type>
   <mime-type type="application/x-dc-rom">
     <comment>Dreamcast ROM</comment>
+    <comment xml:lang="da">Dreamcast-rom</comment>
     <comment xml:lang="de">Dreamcast-ROM</comment>
     <comment xml:lang="no">Dreamcast-ROM</comment>
     <glob pattern="*.dc" />
@@ -935,6 +990,7 @@
     <comment xml:lang="az">Debian paketi</comment>
     <comment xml:lang="cs">Balíček Debianu</comment>
     <comment xml:lang="cy">Pecyn Debian</comment>
+    <comment xml:lang="da">Debianpakke</comment>
     <comment xml:lang="de">Debian-Paket</comment>
     <comment xml:lang="fi">Debian-paketti</comment>
     <comment xml:lang="fr">package Debian</comment>
@@ -953,6 +1009,7 @@
   </mime-type>
   <mime-type type="application/x-designer">
     <comment>Qt Designer file</comment>
+    <comment xml:lang="da">Qt Designer-fil</comment>
     <comment xml:lang="de">QT Designer-Datei</comment>
     <comment xml:lang="no">Qt Designer-fil</comment>
     <comment xml:lang="sv">Qt Designer-fil</comment>
@@ -960,6 +1017,7 @@
   </mime-type>
   <mime-type type="application/x-desktop">
     <comment>desktop configuration file</comment>
+    <comment xml:lang="da">skrivebordskonfigurationsfil</comment>
     <comment xml:lang="de">Desktop-Konfigurationsdatei</comment>
     <comment xml:lang="no">konfigurasjonsfil for skrivebordet</comment>
     <magic priority="50">
@@ -977,6 +1035,7 @@
     <comment xml:lang="az">Dia diaqramı</comment>
     <comment xml:lang="cs">Diagram Dia</comment>
     <comment xml:lang="cy">Diagram Dia</comment>
+    <comment xml:lang="da">Dia-diagram</comment>
     <comment xml:lang="de">Dia-Diagramm</comment>
     <comment xml:lang="fi">Dia-kaavio</comment>
     <comment xml:lang="fr">diagramme Dia</comment>
@@ -990,6 +1049,7 @@
   </mime-type>
   <mime-type type="application/x-dvi">
     <comment>TeX DVI document</comment>
+    <comment xml:lang="da">TeX DVI-dokument</comment>
     <comment xml:lang="de">TeX-DVI-Dokument</comment>
     <comment xml:lang="no">TeX DVI-dokument</comment>
     <magic priority="50">
@@ -1002,6 +1062,7 @@
     <comment xml:lang="az">Enlightenment örtüyü</comment>
     <comment xml:lang="cs">Téma pro Enlightenment</comment>
     <comment xml:lang="cy">Thema Enlightenment</comment>
+    <comment xml:lang="da">Enlightenment-tema</comment>
     <comment xml:lang="de">Enlightenment-Thema</comment>
     <comment xml:lang="fi">Enlightenment-teema</comment>
     <comment xml:lang="fr">thème « Enlightenment »</comment>
@@ -1015,12 +1076,14 @@
   </mime-type>
   <mime-type type="application/x-egon">
     <comment>Egon Animator animation</comment>
+    <comment xml:lang="da">Egon Animator-animation</comment>
     <comment xml:lang="de">Egon Animator-Animation</comment>
     <comment xml:lang="no">Egon animator-animasjon</comment>
     <glob pattern="*.egon" />
   </mime-type>
   <mime-type type="application/x-executable">
     <comment>executable</comment>
+    <comment xml:lang="da">kørbar</comment>
     <comment xml:lang="de">Programm</comment>
     <comment xml:lang="no">kjørbar</comment>
     <comment xml:lang="sv">körbar</comment>
@@ -1045,6 +1108,7 @@
   </mime-type>
   <mime-type type="application/x-font-type1">
     <comment>font</comment>
+    <comment xml:lang="da">skrifttype</comment>
     <comment xml:lang="de">Schrift</comment>
     <comment xml:lang="no">skrift</comment>
     <comment xml:lang="sv">typsnitt</comment>
@@ -1066,6 +1130,7 @@
     <comment xml:lang="az">Adobe yazı növü metrikləri</comment>
     <comment xml:lang="cs">Metrika písma Adobe</comment>
     <comment xml:lang="cy">Metrigau Ffont Adobe</comment>
+    <comment xml:lang="da">Adobe skrifttypefil</comment>
     <comment xml:lang="de">Adobe-Schriftmetriken</comment>
     <comment xml:lang="fi">Adobe-kirjasinmitat</comment>
     <comment xml:lang="fr">métriques de fonte Adobe</comment>
@@ -1082,6 +1147,7 @@
     <comment xml:lang="az">BDF yazı növü</comment>
     <comment xml:lang="cs">Písmo BDF</comment>
     <comment xml:lang="cy">Ffont BDF</comment>
+    <comment xml:lang="da">BDF-skrifttype</comment>
     <comment xml:lang="de">BDF-Schrift</comment>
     <comment xml:lang="fi">BDF-kirjasin</comment>
     <comment xml:lang="fr">fonte BDF</comment>
@@ -1101,6 +1167,7 @@
     <comment xml:lang="az">DOS yazı növü</comment>
     <comment xml:lang="cs">Písmo pro DOS</comment>
     <comment xml:lang="cy">Ffont DOS</comment>
+    <comment xml:lang="da">DOS-skrifttype</comment>
     <comment xml:lang="de">DOS-Schrift</comment>
     <comment xml:lang="fi">DOS-kirjasin</comment>
     <comment xml:lang="fr">fonte DOS</comment>
@@ -1121,6 +1188,7 @@
     <comment xml:lang="az">Adobe FrameMaker yazı növü</comment>
     <comment xml:lang="cs">Písmo Adobe FrameMaker</comment>
     <comment xml:lang="cy">Ffont Adobe FrameMaker</comment>
+    <comment xml:lang="da">Adobe FrameMaker-skrifttype</comment>
     <comment xml:lang="de">Adobe FrameMaker-Schrift</comment>
     <comment xml:lang="fi">Adobe FrameMaker -kirjasin</comment>
     <comment xml:lang="fr">fonte Adobe FrameMaker</comment>
@@ -1139,6 +1207,7 @@
     <comment xml:lang="az">LIBGRX yazı növü</comment>
     <comment xml:lang="cs">Písmo LIBGRX</comment>
     <comment xml:lang="cy">Ffont LIBGRX</comment>
+    <comment xml:lang="da">LIBGRX-skrifttype</comment>
     <comment xml:lang="de">LIBGRX-Schrift</comment>
     <comment xml:lang="fi">LIBGRX-kirjasin</comment>
     <comment xml:lang="fr">fonte LIBGRX</comment>
@@ -1157,6 +1226,7 @@
     <comment xml:lang="az">Linux PSF konsol yazı növü</comment>
     <comment xml:lang="cs">Písmo PSF pro konzolu Linuxu</comment>
     <comment xml:lang="cy">Ffont Linux PSF</comment>
+    <comment xml:lang="da">Linux PSF-konsolskrifttype</comment>
     <comment xml:lang="de">Linux-PSF-Konsolenschrift</comment>
     <comment xml:lang="fi">Linux PSF -konsolikirjasin</comment>
     <comment xml:lang="fr">fonte console Linux PSF</comment>
@@ -1176,6 +1246,7 @@
     <comment xml:lang="az">PCF yazı növü</comment>
     <comment xml:lang="cs">Písmo PCF</comment>
     <comment xml:lang="cy">Ffont PCF</comment>
+    <comment xml:lang="da">PCF-skrifttype</comment>
     <comment xml:lang="de">PCF-Schrift</comment>
     <comment xml:lang="fi">PCF-kirjasin</comment>
     <comment xml:lang="fr">fonte PCF</comment>
@@ -1195,6 +1266,7 @@
     <comment xml:lang="az">OpenType yazı növü</comment>
     <comment xml:lang="cs">Písmo OpenType</comment>
     <comment xml:lang="cy">Ffont OpenType</comment>
+    <comment xml:lang="da">OpenType-skrifttype</comment>
     <comment xml:lang="de">OpenType-Schrift</comment>
     <comment xml:lang="fi">OpenType-kirjasin</comment>
     <comment xml:lang="fr">fonte OpenType</comment>
@@ -1213,6 +1285,7 @@
     <comment xml:lang="az">Speedo yazı növü</comment>
     <comment xml:lang="cs">Písmo Speedo</comment>
     <comment xml:lang="cy">Ffont Speedo</comment>
+    <comment xml:lang="da">Speedo-skrifttype</comment>
     <comment xml:lang="de">Speedo-Schrift</comment>
     <comment xml:lang="fi">Speedo-kirjasin</comment>
     <comment xml:lang="fr">fonte Speedo</comment>
@@ -1232,6 +1305,7 @@
     <comment xml:lang="az">SunOS News yazı növü</comment>
     <comment xml:lang="cs">Písmo SunOS News</comment>
     <comment xml:lang="cy">Ffont SunOS News</comment>
+    <comment xml:lang="da">SunOS News-skrifttype</comment>
     <comment xml:lang="de">SunOS News-Schrift</comment>
     <comment xml:lang="fi">SunOS News -kirjasin</comment>
     <comment xml:lang="fr">fonte SunOS News</comment>
@@ -1252,6 +1326,7 @@
     <comment xml:lang="az">TeX yazı növü</comment>
     <comment xml:lang="cs">Písmo TeX</comment>
     <comment xml:lang="cy">Ffont TeX</comment>
+    <comment xml:lang="da">TeX-skrifttype</comment>
     <comment xml:lang="de">TeX-Schrift</comment>
     <comment xml:lang="fi">TeX-kirjasin</comment>
     <comment xml:lang="fr">fonte TeX</comment>
@@ -1272,6 +1347,7 @@
     <comment xml:lang="az">TeX yazı növü metrikləri</comment>
     <comment xml:lang="cs">Metrika písma TeX</comment>
     <comment xml:lang="cy">Metrigau Ffont TeX</comment>
+    <comment xml:lang="da">TeX-skrifttypeinformation</comment>
     <comment xml:lang="de">TeX-Schriftmetriken</comment>
     <comment xml:lang="fi">TeX-kirjasinmitat</comment>
     <comment xml:lang="fr">métriques de fonte TeX</comment>
@@ -1288,6 +1364,7 @@
   </mime-type>
   <mime-type type="application/x-font-ttf">
     <comment>TrueType font</comment>
+    <comment xml:lang="da">TrueType-skrifttype</comment>
     <comment xml:lang="de">TrueType-Schrift</comment>
     <comment xml:lang="no">TrueType-skrift</comment>
     <magic priority="50">
@@ -1302,6 +1379,7 @@
     <comment xml:lang="az">V yazı növü</comment>
     <comment xml:lang="cs">Písmo V</comment>
     <comment xml:lang="cy">Ffont V</comment>
+    <comment xml:lang="da">V-skrifttype</comment>
     <comment xml:lang="de">V-Schrift</comment>
     <comment xml:lang="fi">V-kirjasin</comment>
     <comment xml:lang="fr">fonte V</comment>
@@ -1328,6 +1406,7 @@
   </mime-type>
   <mime-type type="application/x-gameboy-rom">
     <comment>Game Boy ROM</comment>
+    <comment xml:lang="da">Game Boy-rom</comment>
     <comment xml:lang="de">Game Boy-ROM</comment>
     <comment xml:lang="no">Game Boy-ROM</comment>
     <glob pattern="*.gb" />
@@ -1341,6 +1420,7 @@
   </mime-type>
   <mime-type type="application/x-genesis-rom">
     <comment>Genesis ROM</comment>
+    <comment xml:lang="da">Genesis-rom</comment>
     <comment xml:lang="de">Genesis-ROM</comment>
     <comment xml:lang="no">Genesis-ROM</comment>
     <glob pattern="*.gen" />
@@ -1348,6 +1428,7 @@
   </mime-type>
   <mime-type type="application/x-gettext-translation">
     <comment>translated messages (machine-readable)</comment>
+    <comment xml:lang="da">oversatte meddelelser (maskinlæsbare)</comment>
     <comment xml:lang="de">übersetzte Meldungen (maschinenlesbar)</comment>
     <comment xml:lang="no">oversatte meldinger (maskinlesbar)</comment>
     <glob pattern="*.gmo" />
@@ -1357,6 +1438,7 @@
     <comment xml:lang="az">Glade layihəsi</comment>
     <comment xml:lang="cs">Projekt Glade</comment>
     <comment xml:lang="cy">Prosiect Glade</comment>
+    <comment xml:lang="da">Glade-projekt</comment>
     <comment xml:lang="de">Glade-Projekt</comment>
     <comment xml:lang="fi">Glade-projekti</comment>
     <comment xml:lang="fr">projet Glade</comment>
@@ -1373,6 +1455,7 @@
     <comment xml:lang="az">GMC körpüsü</comment>
     <comment xml:lang="cs">Odkaz GMC</comment>
     <comment xml:lang="cy">Cyswllt GMC</comment>
+    <comment xml:lang="da">GMC-henvisning</comment>
     <comment xml:lang="de">GMC-Link</comment>
     <comment xml:lang="fi">GMC-linkki</comment>
     <comment xml:lang="fr">lien GMC</comment>
@@ -1388,6 +1471,7 @@
   </mime-type>
   <mime-type type="application/x-gnucash">
     <comment>GnuCash spreadsheet</comment>
+    <comment xml:lang="da">GnuCash-regneark</comment>
     <comment xml:lang="de">GnuCash-Tabellendokument</comment>
     <comment xml:lang="no">GnuCash-regneark</comment>
     <glob pattern="*.gnucash" />
@@ -1396,6 +1480,7 @@
   </mime-type>
   <mime-type type="application/x-gnumeric">
     <comment>Gnumeric spreadsheet</comment>
+    <comment xml:lang="da">Gnumeric-regneark</comment>
     <comment xml:lang="de">Gnumeric-Tabellendokument</comment>
     <comment xml:lang="no">Gnumeric-regneark</comment>
     <comment xml:lang="sv">Gnumeric-kalkylblad</comment>
@@ -1406,6 +1491,7 @@
   </mime-type>
   <mime-type type="application/x-graphite">
     <comment>Graphite scientific graph</comment>
+    <comment xml:lang="da">Graphite-videnskabelig graf</comment>
     <comment xml:lang="de">wissenschaftlicher Graphite-Graph</comment>
     <glob pattern="*.gra" />
   </mime-type>
@@ -1414,6 +1500,7 @@
     <comment xml:lang="az">gtar arxivi</comment>
     <comment xml:lang="cs">Archiv gtar</comment>
     <comment xml:lang="cy">archif gtar</comment>
+    <comment xml:lang="da">gtar-arkiv</comment>
     <comment xml:lang="de">gtar-Archiv</comment>
     <comment xml:lang="fi">gtar-arkisto</comment>
     <comment xml:lang="fr">archive gtar</comment>
@@ -1427,6 +1514,7 @@
   </mime-type>
   <mime-type type="application/x-gtktalog">
     <comment>GTKtalog catalog</comment>
+    <comment xml:lang="da">GTKtalog-katalog</comment>
     <comment xml:lang="de">GTKtalog-Katalog</comment>
     <comment xml:lang="no">GTKtalog-katalog</comment>
     <magic priority="50">
@@ -1435,6 +1523,7 @@
   </mime-type>
   <mime-type type="application/x-gzip">
     <comment>gzip archive</comment>
+    <comment xml:lang="da">gzip-arkiv</comment>
     <comment xml:lang="de">gzip-Archiv</comment>
     <comment xml:lang="no">gzip-arkiv</comment>
     <comment xml:lang="sv">gzip-arkiv</comment>
@@ -1445,6 +1534,7 @@
   </mime-type>
   <mime-type type="application/x-gzpostscript">
     <comment>PostScript document (gzip-compressed)</comment>
+    <comment xml:lang="da">PostScript-dokument (gzip-komprimeret)</comment>
     <comment xml:lang="de">PostScript-Dokument (gzip-komprimiert)</comment>
     <comment xml:lang="no">PostScript-dokument (gzip-komprimert)</comment>
     <glob pattern="*.ps.gz" />
@@ -1454,6 +1544,7 @@
     <comment xml:lang="az">HDF sənədi</comment>
     <comment xml:lang="cs">Dokument HDF</comment>
     <comment xml:lang="cy">Dogfen HDF</comment>
+    <comment xml:lang="da">HDF-dokument</comment>
     <comment xml:lang="de">HDF-Dokument</comment>
     <comment xml:lang="fi">HDF-asiakirja</comment>
     <comment xml:lang="fr">document HDF</comment>
@@ -1467,6 +1558,7 @@
   </mime-type>
   <mime-type type="application/x-ipod-firmware">
     <comment>iPod firmware</comment>
+    <comment xml:lang="da">iPod-styreprogram</comment>
     <comment xml:lang="de">iPod-Firmware</comment>
     <comment xml:lang="no">iPod-firmware</comment>
     <magic priority="50">
@@ -1475,6 +1567,7 @@
   </mime-type>
   <mime-type type="application/x-jar">
     <comment>Java archive</comment>
+    <comment xml:lang="da">Java-arkiv</comment>
     <comment xml:lang="de">Java-Archiv</comment>
     <comment xml:lang="no">Java-arkiv</comment>
     <comment xml:lang="sv">Java-arkiv</comment>
@@ -1482,6 +1575,7 @@
   </mime-type>
   <mime-type type="application/x-java">
     <comment>Java class</comment>
+    <comment xml:lang="da">Java-klasse</comment>
     <comment xml:lang="de">Java-Klasse</comment>
     <comment xml:lang="no">Java-klasse</comment>
     <comment xml:lang="sv">Java-klass</comment>
@@ -1494,11 +1588,13 @@
   </mime-type>
   <mime-type type="application/x-javascript">
     <comment>Javascript program</comment>
+    <comment xml:lang="da">Javascript-program</comment>
     <comment xml:lang="de">Javascript-Programm</comment>
     <glob pattern="*.js" />
   </mime-type>
   <mime-type type="application/x-jbuilder-project">
     <comment>JBuilder project</comment>
+    <comment xml:lang="da">JBuilder-projekt</comment>
     <comment xml:lang="de">JBuilder-Projekt</comment>
     <comment xml:lang="no">JBuilder-prosjekt</comment>
     <glob pattern="*.jpr" />
@@ -1506,6 +1602,7 @@
   </mime-type>
   <mime-type type="application/x-karbon">
     <comment>Karbon14 drawing</comment>
+    <comment xml:lang="da">Karbon14-tegning</comment>
     <comment xml:lang="de">Karbon14-Zeichnung</comment>
     <comment xml:lang="no">Karbon14-tegning</comment>
     <magic priority="50">
@@ -1524,6 +1621,7 @@
   </mime-type>
   <mime-type type="application/x-kchart">
     <comment>KChart chart</comment>
+    <comment xml:lang="da">KChart-diagram</comment>
     <comment xml:lang="de">KChart-Diagramm</comment>
     <comment xml:lang="no">KChart-graf</comment>
     <magic priority="50">
@@ -1542,6 +1640,7 @@
   </mime-type>
   <mime-type type="application/x-kformula">
     <comment>KFormula formula</comment>
+    <comment xml:lang="da">KFormula-formel</comment>
     <comment xml:lang="de">KFormula-Formel</comment>
     <comment xml:lang="no">KFormula-formel</comment>
     <magic priority="50">
@@ -1560,6 +1659,7 @@
   </mime-type>
   <mime-type type="application/x-killustrator">
     <comment>KIllustrator drawing</comment>
+    <comment xml:lang="da">KIllustrator-tegning</comment>
     <comment xml:lang="de">KIllustrator-Zeichnung</comment>
     <comment xml:lang="no">KIllustrator-tegning</comment>
     <magic priority="50">
@@ -1573,6 +1673,7 @@
   </mime-type>
   <mime-type type="application/x-kivio">
     <comment>Kivio flowchart</comment>
+    <comment xml:lang="da">Kivio-rutediagram</comment>
     <comment xml:lang="de">Kivio-Flussdiagramm</comment>
     <comment xml:lang="no">Kivio-flytdiagram</comment>
     <magic priority="50">
@@ -1591,6 +1692,7 @@
   </mime-type>
   <mime-type type="application/x-kontour">
     <comment>Kontour drawing</comment>
+    <comment xml:lang="da">Kontour-tegning</comment>
     <comment xml:lang="de">Kontour-Zeichnung</comment>
     <comment xml:lang="no">Kontour-tegning</comment>
     <magic priority="50">
@@ -1609,11 +1711,13 @@
   </mime-type>
   <mime-type type="application/x-kpovmodeler">
     <comment>KPovModeler scene</comment>
+    <comment xml:lang="da">KPovModeler-scene</comment>
     <comment xml:lang="de">KPovModeler-Szene</comment>
     <glob pattern="*.kpm" />
   </mime-type>
   <mime-type type="application/x-kpresenter">
     <comment>KPresenter presentation</comment>
+    <comment xml:lang="da">KPresenter-præsentation</comment>
     <comment xml:lang="de">KPresenter-Präsentation</comment>
     <comment xml:lang="no">KPresenter-presentasjon</comment>
     <comment xml:lang="sv">KPresenter-presentation</comment>
@@ -1634,6 +1738,7 @@
   </mime-type>
   <mime-type type="application/x-krita">
     <comment>Krita document</comment>
+    <comment xml:lang="da">Krita-dokument</comment>
     <comment xml:lang="de">Krita-Dokument</comment>
     <comment xml:lang="no">Krita-dokument</comment>
     <magic priority="50">
@@ -1652,6 +1757,7 @@
   </mime-type>
   <mime-type type="application/x-kspread">
     <comment>KSpread spreadsheet</comment>
+    <comment xml:lang="da">KSpread-regneark</comment>
     <comment xml:lang="de">KSpread-Tabellendokument</comment>
     <comment xml:lang="no">KSpread-regneark</comment>
     <magic priority="50">
@@ -1670,6 +1776,7 @@
   </mime-type>
   <mime-type type="application/x-kspread-crypt">
     <comment>KSpread spreadsheet (encrypted)</comment>
+    <comment xml:lang="da">KSpread-regneark (krypteret)</comment>
     <comment xml:lang="de">KSpread-Tabellendokument (verschlüsselt)</comment>
     <comment xml:lang="no">KSpread-regneark (kryptert)</comment>
     <magic priority="50">
@@ -1683,6 +1790,7 @@
   </mime-type>
   <mime-type type="application/x-kugar">
     <comment>Kugar document</comment>
+    <comment xml:lang="da">Kugar-dokument</comment>
     <comment xml:lang="de">Kugar-Dokument</comment>
     <comment xml:lang="no">Kugar-dokument</comment>
     <glob pattern="*.kud" />
@@ -1690,6 +1798,7 @@
   <mime-type type="application/x-kword">
     <comment>KWord document</comment>
     <comment xml:lang="cy">Dogfen KWord</comment>
+    <comment xml:lang="da">KWord-dokument</comment>
     <comment xml:lang="de">KWord-Dokument</comment>
     <comment xml:lang="nn">KWord-dokument</comment>
     <comment xml:lang="no">KWord-dokument</comment>
@@ -1711,6 +1820,7 @@
   </mime-type>
   <mime-type type="application/x-kword-crypt">
     <comment>KWord document (encrypted)</comment>
+    <comment xml:lang="da">KWord-dokument (krypteret)</comment>
     <comment xml:lang="de">KWord-Dokument (verschlüsselt)</comment>
     <comment xml:lang="no">KWord-dokument (kryptert)</comment>
     <magic priority="50">
@@ -1722,6 +1832,7 @@
     <comment xml:lang="az">LHA arxivi</comment>
     <comment xml:lang="cs">Archiv LHA</comment>
     <comment xml:lang="cy">Archif LHA</comment>
+    <comment xml:lang="da">LHA-arkiv</comment>
     <comment xml:lang="de">LHA-Archiv</comment>
     <comment xml:lang="fi">LHA-arkisto</comment>
     <comment xml:lang="fr">archive LHA</comment>
@@ -1750,18 +1861,21 @@
   </mime-type>
   <mime-type type="application/x-lhz">
     <comment>LHZ archive</comment>
+    <comment xml:lang="da">LHZ-arkiv</comment>
     <comment xml:lang="de">LHZ-Archiv</comment>
     <comment xml:lang="no">LHZ-arkiv</comment>
     <glob pattern="*.lhz" />
   </mime-type>
   <mime-type type="application/x-linguist">
     <comment>message catalog</comment>
+    <comment xml:lang="da">meddelelseskatalog</comment>
     <comment xml:lang="de">Nachrichtenkatalog</comment>
     <comment xml:lang="no">meldingskatalog</comment>
     <glob pattern="*.ts" />
   </mime-type>
   <mime-type type="application/x-lyx">
     <comment>LyX document</comment>
+    <comment xml:lang="da">LyX-dokument</comment>
     <comment xml:lang="de">LyX-Dokument</comment>
     <comment xml:lang="no">LyX-dokument</comment>
     <comment xml:lang="sv">LyX-dokument</comment>
@@ -1772,6 +1886,7 @@
   </mime-type>
   <mime-type type="application/x-lzop">
     <comment>LZO archive</comment>
+    <comment xml:lang="da">LZO-arkiv</comment>
     <comment xml:lang="de">LZO-Archiv</comment>
     <comment xml:lang="no">LZO-arkiv</comment>
     <glob pattern="*.lzo" />
@@ -1779,6 +1894,7 @@
   <mime-type type="application/x-magicpoint">
     <comment>MagicPoint presentation</comment>
     <comment xml:lang="cy">Cyflwyniad MagicPoint</comment>
+    <comment xml:lang="da">MagicPoint-præsentation</comment>
     <comment xml:lang="de">MagicPoint-Präsentation</comment>
     <comment xml:lang="nn">MagicPoint-presentasjon</comment>
     <comment xml:lang="no">MagicPoint-presentasjon</comment>
@@ -1788,6 +1904,7 @@
   </mime-type>
   <mime-type type="application/x-macbinary">
     <comment>Macintosh MacBinary file</comment>
+    <comment xml:lang="da">Macintosh MacBinary-fil</comment>
     <comment xml:lang="de">Macintosh-MacBinary-Datei</comment>
     <comment xml:lang="no">Macintosh MacBinary-fil</comment>
     <magic priority="50">
@@ -1796,6 +1913,7 @@
   </mime-type>
   <mime-type type="application/x-matroska">
     <comment>Matroska video</comment>
+    <comment xml:lang="da">Matroska-video</comment>
     <comment xml:lang="de">Matroska-Video</comment>
     <comment xml:lang="no">Matroska-film</comment>
     <magic priority="50">
@@ -1805,12 +1923,14 @@
   </mime-type>
   <mime-type type="application/x-mif">
     <comment>FrameMaker MIF document</comment>
+    <comment xml:lang="da">FrameMaker MIF-dokument</comment>
     <comment xml:lang="de">FrameMaker-MIF-Dokument</comment>
     <comment xml:lang="no">FrameMaker MIF-dokument</comment>
     <glob pattern="*.mif" />
   </mime-type>
   <mime-type type="application/x-mozilla-bookmarks">
     <comment>Mozilla bookmarks</comment>
+    <comment xml:lang="da">Mozilla-bogmærker</comment>
     <comment xml:lang="de">Mozilla-Lesezeichen</comment>
     <comment xml:lang="no">Mozilla-bokmerker</comment>
     <magic priority="80">
@@ -1819,11 +1939,13 @@
   </mime-type>
   <mime-type type="application/x-ms-dos-executable">
     <comment>DOS/Windows executable</comment>
+    <comment xml:lang="da">DOS/Windows-kørbar</comment>
     <comment xml:lang="de">DOS/Windows-Programm</comment>
     <comment xml:lang="no">Kjørbar fil for DOS/Windows</comment>
-    <magic priority="40">
+    <magic priority="50">
       <match offset="0" type="string" value="MZ" />
     </magic>
+    <glob pattern="*.exe" />
   </mime-type>
   <mime-type type="application/x-mswinurl">
     <magic priority="50">
@@ -1835,6 +1957,7 @@
     <comment xml:lang="az">Microsoft Write sənədi</comment>
     <comment xml:lang="cs">Dokument Microsoft Write</comment>
     <comment xml:lang="cy">Dogfen Microsoft Write</comment>
+    <comment xml:lang="da">Microsoft Write-dokument</comment>
     <comment xml:lang="de">Microsoft Write-Dokument</comment>
     <comment xml:lang="fi">Microsoft Write -asiakirja</comment>
     <comment xml:lang="fr">document Microsoft Write</comment>
@@ -1849,6 +1972,7 @@
   <mime-type type="application/x-msx-rom">
     <comment>MSX ROM</comment>
     <comment xml:lang="cy">ROM MSX</comment>
+    <comment xml:lang="da">MSX-rom</comment>
     <comment xml:lang="de">MSX-ROM</comment>
     <comment xml:lang="nn">MSX-ROM</comment>
     <comment xml:lang="no">MSX-ROM</comment>
@@ -1858,6 +1982,7 @@
   </mime-type>
   <mime-type type="application/x-n64-rom">
     <comment>Nintendo64 ROM</comment>
+    <comment xml:lang="da">Nintendo64-rom</comment>
     <comment xml:lang="de">Nintendo64-ROM</comment>
     <comment xml:lang="no">Nintendo64-ROM</comment>
     <glob pattern="*.n64" />
@@ -1867,6 +1992,7 @@
     <comment xml:lang="az">Nautilus körpüsü</comment>
     <comment xml:lang="cs">Odkaz Nautilus</comment>
     <comment xml:lang="cy">Cyswllt Nautilus</comment>
+    <comment xml:lang="da">Nautilus-henvisning</comment>
     <comment xml:lang="de">Nautilus-Link</comment>
     <comment xml:lang="fi">Nautilus-linkki</comment>
     <comment xml:lang="fr">lien Nautilus</comment>
@@ -1883,6 +2009,7 @@
   <mime-type type="application/x-nes-rom">
     <comment>NES ROM</comment>
     <comment xml:lang="cy">ROM NES</comment>
+    <comment xml:lang="da">NES-rom</comment>
     <comment xml:lang="de">NES-ROM</comment>
     <comment xml:lang="nn">NES-ROM</comment>
     <comment xml:lang="no">NES ROM</comment>
@@ -1892,6 +2019,7 @@
   </mime-type>
   <mime-type type="application/x-netcdf">
     <comment>Unidata NetCDF document</comment>
+    <comment xml:lang="da">Unidata NetCDF-dokument</comment>
     <comment xml:lang="de">Unidata-NetCDF-Dokument</comment>
     <comment xml:lang="no">Unidata NetCDF-dokument</comment>
     <glob pattern="*.cdf" />
@@ -1899,6 +2027,7 @@
   </mime-type>
   <mime-type type="application/x-netscape-bookmarks">
     <comment>Netscape bookmarks</comment>
+    <comment xml:lang="da">Netscape-bogmærker</comment>
     <comment xml:lang="de">Netscape-Lesezeichen</comment>
     <comment xml:lang="no">Netscape-bokmerker</comment>
     <magic priority="80">
@@ -1907,6 +2036,7 @@
   </mime-type>
   <mime-type type="application/x-object">
     <comment>object code</comment>
+    <comment xml:lang="da">objektkode</comment>
     <comment xml:lang="de">Objekt-Code</comment>
     <comment xml:lang="no">objektkode</comment>
     <magic priority="50">
@@ -1928,6 +2058,7 @@
     <comment xml:lang="az">Ogg Vorbis audio faylı</comment>
     <comment xml:lang="cs">Zvuk Ogg Vorbis</comment>
     <comment xml:lang="cy">Sain Ogg Vorbis</comment>
+    <comment xml:lang="da">Ogg Vorbis-lyd</comment>
     <comment xml:lang="de">Ogg Vorbis-Audio</comment>
     <comment xml:lang="fi">Ogg Vorbis -ääni</comment>
     <comment xml:lang="fr">audio Ogg Vorbis</comment>
@@ -1945,6 +2076,7 @@
   
   <mime-type type="application/x-ole-storage">
     <comment>OLE2 compound document storage</comment>
+    <comment xml:lang="da">OLE2-sammensat dokument-lager</comment>
     <comment xml:lang="de">OLE2-Verbunddokumentenspeicher</comment>
     <magic priority="50">
       <match offset="0" type="string" value="\320\317\021\340\241\261\032\341" />
@@ -1952,6 +2084,7 @@
   </mime-type>
   <mime-type type="application/x-oleo">
     <comment>GNU Oleo spreadsheet</comment>
+    <comment xml:lang="da">GNU Oleo-regneark</comment>
     <comment xml:lang="de">GNU-Oleo-Tabellendokument</comment>
     <comment xml:lang="no">GNU Oleo regneark</comment>
     <magic priority="50">
@@ -1964,6 +2097,7 @@
     <comment xml:lang="az">Palm OS mə&apos;lumat bazası</comment>
     <comment xml:lang="cs">Databáze Palm OS</comment>
     <comment xml:lang="cy">Cronfa Ddata Palm OS</comment>
+    <comment xml:lang="da">Palm OS-database</comment>
     <comment xml:lang="de">Palm OS-Datenbank</comment>
     <comment xml:lang="fi">Palm OS -tietokanta</comment>
     <comment xml:lang="fr">base de données Palm OS</comment>
@@ -1976,6 +2110,7 @@
   </mime-type>
   <mime-type type="application/x-pef-executable">
     <comment>PEF executable</comment>
+    <comment xml:lang="da">PEF-kørbar</comment>
     <comment xml:lang="de">PEF-Programm</comment>
     <comment xml:lang="no">PEF-kjørbar</comment>
     <magic priority="50">
@@ -1985,6 +2120,7 @@
   <mime-type type="application/x-perl">
     <comment>Perl script</comment>
     <comment xml:lang="cy">Sgript Perl</comment>
+    <comment xml:lang="da">Perl-program</comment>
     <comment xml:lang="de">Perl-Skript</comment>
     <comment xml:lang="nn">Perl skript</comment>
     <comment xml:lang="no">Perl skript</comment>
@@ -2005,6 +2141,7 @@
     <comment xml:lang="az">PHP skripti</comment>
     <comment xml:lang="cs">Skript PHP</comment>
     <comment xml:lang="cy">Sgript PHP</comment>
+    <comment xml:lang="da">PHP-program</comment>
     <comment xml:lang="de">PHP-Skript</comment>
     <comment xml:lang="fi">PHP-skripti</comment>
     <comment xml:lang="fr">script PHP</comment>
@@ -2023,6 +2160,7 @@
   </mime-type>
   <mime-type type="application/x-pkcs12">
     <comment>PKCS#12 certificate bundle</comment>
+    <comment xml:lang="da">PKCS#12-certifikatsbundt</comment>
     <comment xml:lang="de">PKCS#12-Zertifikatspaket</comment>
     <comment xml:lang="no">PKCS#12 sertifikathaug</comment>
     <glob pattern="*.p12" />
@@ -2033,6 +2171,7 @@
     <comment xml:lang="az">profiler nəticələri</comment>
     <comment xml:lang="cs">Výsledky profileru</comment>
     <comment xml:lang="cy">canlyniadau proffeilio</comment>
+    <comment xml:lang="da">profileringsresultater</comment>
     <comment xml:lang="de">Profiler-Ergebnisse</comment>
     <comment xml:lang="fi">profilointitulokset</comment>
     <comment xml:lang="fr">résultat du profileur</comment>
@@ -2046,12 +2185,14 @@
   </mime-type>
   <mime-type type="application/x-pw">
     <comment>Pathetic Writer document</comment>
+    <comment xml:lang="da">Pathetic Writer-dokument</comment>
     <comment xml:lang="de">Pathetic Writer-Dokument</comment>
     <comment xml:lang="no">Pathetic Writer-dokument</comment>
     <glob pattern="*.pw" />
   </mime-type>
   <mime-type type="application/x-python">
     <comment>Python script</comment>
+    <comment xml:lang="da">Python-program</comment>
     <comment xml:lang="de">Python-Skript</comment>
     <comment xml:lang="no">Python-skript</comment>
     <comment xml:lang="sv">Pythonskript</comment>
@@ -2074,6 +2215,7 @@
     <comment xml:lang="az">Python bayt kodu</comment>
     <comment xml:lang="cs">Bajtový kód Python</comment>
     <comment xml:lang="cy">Côd beit Python</comment>
+    <comment xml:lang="da">Python-bytekode</comment>
     <comment xml:lang="de">Python-Bytecode</comment>
     <comment xml:lang="fi">Python-tavukoodi</comment>
     <comment xml:lang="fr">bytecode Python</comment>
@@ -2091,6 +2233,7 @@
   </mime-type>
   <mime-type type="application/x-quattropro">
     <comment>Quattro Pro spreadsheet</comment>
+    <comment xml:lang="da">Quattro Pro-regneark</comment>
     <comment xml:lang="de">Quattro Pro-Tabellendokument</comment>
     <comment xml:lang="no">Quattro Pro-regneark</comment>
     <glob pattern="*.wb1" />
@@ -2102,6 +2245,7 @@
     <comment xml:lang="az">Quicken sənədi</comment>
     <comment xml:lang="cs">Dokument Quicken</comment>
     <comment xml:lang="cy">Dogfen Quicken</comment>
+    <comment xml:lang="da">Quicken-dokument</comment>
     <comment xml:lang="de">Quicken-Dokument</comment>
     <comment xml:lang="fi">Quicken-asiakirja</comment>
     <comment xml:lang="fr">document Quicken</comment>
@@ -2116,6 +2260,7 @@
   <mime-type type="application/x-rar">
     <comment>RAR archive</comment>
     <comment xml:lang="cy">Archif RAR</comment>
+    <comment xml:lang="da">RAR-arkiv</comment>
     <comment xml:lang="de">RAR-Archiv</comment>
     <comment xml:lang="nn">RAR-arkiv</comment>
     <comment xml:lang="no">RAR-arkiv</comment>
@@ -2128,12 +2273,14 @@
   </mime-type>
   <mime-type type="application/x-reject">
     <comment>rejected patch</comment>
+    <comment xml:lang="da">afvist tekstlap</comment>
     <comment xml:lang="de">abgelehnter Patch</comment>
     <comment xml:lang="no">avvist patchfil</comment>
     <glob pattern="*.rej" />
   </mime-type>
   <mime-type type="application/x-rpm">
     <comment>RPM package</comment>
+    <comment xml:lang="da">RPM-pakke</comment>
     <comment xml:lang="de">RPM-Paket</comment>
     <comment xml:lang="no">RPM-pakke</comment>
     <comment xml:lang="sv">RPM-paket</comment>
@@ -2144,6 +2291,7 @@
   </mime-type>
   <mime-type type="application/x-ruby">
     <comment>Ruby script</comment>
+    <comment xml:lang="da">Ruby-program</comment>
     <comment xml:lang="de">Ruby-Skript</comment>
     <comment xml:lang="no">Ruby-skript</comment>
     <magic>
@@ -2160,6 +2308,7 @@
     <comment xml:lang="az">qabıq arxivi</comment>
     <comment xml:lang="cs">Archiv shellu</comment>
     <comment xml:lang="cy">archif plisgyn</comment>
+    <comment xml:lang="da">skalarkiv</comment>
     <comment xml:lang="de">Shell-Archiv</comment>
     <comment xml:lang="fi">komentotulkkiarkisto</comment>
     <comment xml:lang="fr">archive shell</comment>
@@ -2173,6 +2322,7 @@
   </mime-type>
   <mime-type type="application/x-shared-library-la">
     <comment>shared library (la)</comment>
+    <comment xml:lang="da">delt bibliotek (la)</comment>
     <comment xml:lang="de">gemeinsame Bibliothek (la)</comment>
     <comment xml:lang="no">delt bibliotek (la)</comment>
     <glob pattern="*.la" />
@@ -2182,6 +2332,7 @@
     <comment xml:lang="az">bölüşülmüş kitabxana</comment>
     <comment xml:lang="cs">Sdílená knihovna</comment>
     <comment xml:lang="cy">llyfrgell wedi ei rhannu</comment>
+    <comment xml:lang="da">delt bibliotek</comment>
     <comment xml:lang="de">gemeinsame Bibliothek</comment>
     <comment xml:lang="fi">jaettu kirjasto</comment>
     <comment xml:lang="fr">librairie partagée « shared »</comment>
@@ -2214,6 +2365,7 @@
     <comment xml:lang="az">qabıq skripti</comment>
     <comment xml:lang="cs">Skript shellu</comment>
     <comment xml:lang="cy">sgript plisgyn</comment>
+    <comment xml:lang="da">skalprogram</comment>
     <comment xml:lang="de">Shell-Skript</comment>
     <comment xml:lang="fi">komentojono</comment>
     <comment xml:lang="fr">script shell</comment>
@@ -2246,6 +2398,7 @@
   </mime-type>
   <mime-type type="application/x-shockwave-flash">
     <comment>Shockwave Flash file</comment>
+    <comment xml:lang="da">Shockwave Flash-fil</comment>
     <comment xml:lang="de">Shockwave Flash-Datei</comment>
     <comment xml:lang="no">Shockwave Flash-fil</comment>
     <magic priority="50">
@@ -2255,6 +2408,7 @@
   </mime-type>
   <mime-type type="application/x-siag">
     <comment>Siag spreadsheet</comment>
+    <comment xml:lang="da">Siag-regneark</comment>
     <comment xml:lang="de">Slag-Tabellendokument</comment>
     <comment xml:lang="no">Siag-regneark</comment>
     <comment xml:lang="sv">Siag-kalkylblad</comment>
@@ -2265,6 +2419,7 @@
     <comment xml:lang="az">Stampede paketi</comment>
     <comment xml:lang="cs">Balíček Stampede</comment>
     <comment xml:lang="cy">Pecyn Stampede</comment>
+    <comment xml:lang="da">Stampede-pakke</comment>
     <comment xml:lang="de">Stampede-Paket</comment>
     <comment xml:lang="fi">Stampede-paketti</comment>
     <comment xml:lang="fr">package Stampede</comment>
@@ -2277,6 +2432,7 @@
   </mime-type>
   <mime-type type="application/x-sms-rom">
     <comment>SMS/Game Gear ROM</comment>
+    <comment xml:lang="da">SMS/Game Gear-rom</comment>
     <comment xml:lang="de">SMS/Game Gear-ROM</comment>
     <comment xml:lang="no">SMS/Game Gear-ROM</comment>
     <glob pattern="*.sms" />
@@ -2287,6 +2443,7 @@
     <comment xml:lang="az">Macintosh StuffIt arxivi</comment>
     <comment xml:lang="cs">Archiv Macintosh StuffIt</comment>
     <comment xml:lang="cy">Archif Macintosh StuffIt</comment>
+    <comment xml:lang="da">Macintosh StuffIt-arkiv</comment>
     <comment xml:lang="de">Macintosh StuffIt-Archiv</comment>
     <comment xml:lang="fi">Macintosh StuffIt -arkisto</comment>
     <comment xml:lang="fr">archive Macintosh StuffIt</comment>
@@ -2306,6 +2463,7 @@
     <comment xml:lang="az">SV4 CPIO arxivi</comment>
     <comment xml:lang="cs">Archiv SV4 CPIO</comment>
     <comment xml:lang="cy">Archif CPIO SV4</comment>
+    <comment xml:lang="da">SV4 CPIO-arkiv</comment>
     <comment xml:lang="de">SV4-CPIO-Archiv</comment>
     <comment xml:lang="fi">SV4 CPIO -arkisto</comment>
     <comment xml:lang="fr">archive SV4 CPIO</comment>
@@ -2322,6 +2480,7 @@
     <comment xml:lang="az">SV4 CPIP arxivi (CRC ilə)</comment>
     <comment xml:lang="cs">Archiv SV4 CPIP (s CRC)</comment>
     <comment xml:lang="cy">Archif CPIP SV4 (efo CRC)</comment>
+    <comment xml:lang="da">SV4 CPIP-arkiv (med CRC)</comment>
     <comment xml:lang="de">SV4-CPIP-Archiv (mit CRC)</comment>
     <comment xml:lang="fi">SV4 CPIP -arkisto (CRC:llä)</comment>
     <comment xml:lang="fr">archive SV4 CPIP (avec CRC)</comment>
@@ -2335,6 +2494,7 @@
   </mime-type>
   <mime-type type="application/x-tar">
     <comment>tar archive</comment>
+    <comment xml:lang="da">tar-arkiv</comment>
     <comment xml:lang="de">tar-Archiv</comment>
     <comment xml:lang="no">tar-arkiv</comment>
     <magic priority="50">
@@ -2345,24 +2505,28 @@
   </mime-type>
   <mime-type type="application/x-tarz">
     <comment>tar archive (compressed)</comment>
+    <comment xml:lang="da">tar-arkiv (komprimeret)</comment>
     <comment xml:lang="de">tar-Archiv (komprimiert)</comment>
     <comment xml:lang="no">tar-arkiv (komprimert)</comment>
     <glob pattern="*.tar.Z" />
   </mime-type>
   <mime-type type="application/x-tex-gf">
     <comment>generic font file</comment>
+    <comment xml:lang="da">general skrifttypefil</comment>
     <comment xml:lang="de">generische Schriftdatei</comment>
     <comment xml:lang="no">vanlig skriftfil</comment>
     <glob pattern="*.*gf" />
   </mime-type>
   <mime-type type="application/x-tex-pk">
     <comment>packed font file</comment>
+    <comment xml:lang="da">pakket skrifttypefil</comment>
     <comment xml:lang="de">gepackte Schriftdatei</comment>
     <comment xml:lang="no">pakket skriftfil</comment>
     <glob pattern="*pk" />
   </mime-type>
   <mime-type type="application/x-tgif">
     <comment>TGIF document</comment>
+    <comment xml:lang="da">TGIF-dokument</comment>
     <comment xml:lang="de">TGIF-Dokument</comment>
     <comment xml:lang="no">TGIF-dokument</comment>
     <comment xml:lang="sv">TGIF-dokument</comment>
@@ -2376,6 +2540,7 @@
     <comment xml:lang="az">örtük</comment>
     <comment xml:lang="cs">Téma</comment>
     <comment xml:lang="cy">thema</comment>
+    <comment xml:lang="da">tema</comment>
     <comment xml:lang="de">Thema</comment>
     <comment xml:lang="fi">teema</comment>
     <comment xml:lang="fr">thème</comment>
@@ -2392,6 +2557,7 @@
     <comment xml:lang="az">ToutDoux sənədi</comment>
     <comment xml:lang="cs">Dokument ToutDoux</comment>
     <comment xml:lang="cy">Dogfen ToutDoux</comment>
+    <comment xml:lang="da">ToutDoux-dokument</comment>
     <comment xml:lang="de">ToutDoux-Dokument</comment>
     <comment xml:lang="fi">ToutDoux-asiakirja</comment>
     <comment xml:lang="fr">document ToutDoux</comment>
@@ -2404,6 +2570,7 @@
   </mime-type>
   <mime-type type="application/x-trash">
     <comment>backup file</comment>
+    <comment xml:lang="da">sikkerhedskopi</comment>
     <comment xml:lang="de">Sicherungsdatei</comment>
     <comment xml:lang="no">sikkerhetskopi</comment>
     <glob pattern="*~" />
@@ -2417,6 +2584,7 @@
     <comment xml:lang="az">Troff sənədi</comment>
     <comment xml:lang="cs">Dokument troff</comment>
     <comment xml:lang="cy">Dogfen troff</comment>
+    <comment xml:lang="da">Troff-dokument</comment>
     <comment xml:lang="de">Troff-Dokument</comment>
     <comment xml:lang="fi">Troff-asiakirja</comment>
     <comment xml:lang="fr">document Troff</comment>
@@ -2438,6 +2606,7 @@
   </mime-type>
   <mime-type type="application/x-troff-man">
     <comment>Troff document (with manpage macros)</comment>
+    <comment xml:lang="da">Troff-dokument (med manualsidemakroer)</comment>
     <comment xml:lang="de">Troff-Dokument (mit man-Seitenmakros)</comment>
     <glob pattern="*.man" />
   </mime-type>
@@ -2446,6 +2615,7 @@
     <comment xml:lang="az">man səhifəsi (sıxışdırılmış)</comment>
     <comment xml:lang="cs">Manuálová stránka (komprimovaná)</comment>
     <comment xml:lang="cy">tudalen llawlyfr (wedi ei gywasgu)</comment>
+    <comment xml:lang="da">manualside (komprimeret)</comment>
     <comment xml:lang="de">Handbuchseite (komprimiert)</comment>
     <comment xml:lang="fi">manuaalisivu (pakattu)</comment>
     <comment xml:lang="fr">man pages (compressés)</comment>
@@ -2458,6 +2628,7 @@
   </mime-type>
   <mime-type type="application/x-tzo">
     <comment>tar archive (LZO-compressed)</comment>
+    <comment xml:lang="da">tar-arkiv (LZO-komprimeret)</comment>
     <comment xml:lang="de">tar-Archiv (LZO-komprimiert)</comment>
     <comment xml:lang="no">tar-arkiv (LZO-komprimert)</comment>
     <glob pattern="*.tar.lzo" />
@@ -2468,6 +2639,7 @@
     <comment xml:lang="az">ustar arxivi</comment>
     <comment xml:lang="cs">Archiv ustar</comment>
     <comment xml:lang="cy">archif ustar</comment>
+    <comment xml:lang="da">ustar-arkiv</comment>
     <comment xml:lang="de">ustar-Archiv</comment>
     <comment xml:lang="fi">ustar-arkisto</comment>
     <comment xml:lang="fr">archive ustar</comment>
@@ -2484,6 +2656,7 @@
     <comment xml:lang="az">WAIS mənbə faylı</comment>
     <comment xml:lang="cs">Zdrojový kód WAIS</comment>
     <comment xml:lang="cy">Ffynhonnell Rhaglen WAIS</comment>
+    <comment xml:lang="da">WAIS-kildekode</comment>
     <comment xml:lang="de">WAIS-Quelltext</comment>
     <comment xml:lang="fi">WAIS-lähdekoodi</comment>
     <comment xml:lang="fr">code source WAIS</comment>
@@ -2497,11 +2670,13 @@
   </mime-type>
   <mime-type type="application/x-wpg">
     <comment>WordPerfect/Drawperfect image</comment>
+    <comment xml:lang="da">WordPerfect/Drawperfect-billede</comment>
     <comment xml:lang="de">WordPerfect/DrawPerfect-Bild</comment>
     <glob pattern="*.wpg" />
   </mime-type>
   <mime-type type="application/x-x509-ca-cert">
     <comment>DER/PEM/Netscape-encoded X.509 certificate</comment>
+    <comment xml:lang="da">DER/PEM/Netscape-encoded X.509-certifikat</comment>
     <comment xml:lang="de">DER/PEM/Netscape-kodiertes X.509-Zertifikat</comment>
     <comment xml:lang="no">DER/PEM/Netscape-kodet X.509-sertifikat</comment>
     <glob pattern="*.der" />
@@ -2512,12 +2687,14 @@
   </mime-type>
   <mime-type type="application/x-zerosize">
     <comment>empty document</comment>
+    <comment xml:lang="da">tomt dokument</comment>
     <comment xml:lang="de">leeres Dokument</comment>
     <comment xml:lang="no">tomt dokument</comment>
     <comment xml:lang="sv">tomt dokument</comment>
   </mime-type>
   <mime-type type="application/x-zoo">
     <comment>zoo archive</comment>
+    <comment xml:lang="da">zoo-arkiv</comment>
     <comment xml:lang="de">zoo-Archiv</comment>
     <comment xml:lang="no">zoo-arkiv</comment>
     <magic priority="50">
@@ -2527,6 +2704,7 @@
   </mime-type>
   <mime-type type="application/xhtml+xml">
     <comment>XHTML page</comment>
+    <comment xml:lang="da">XHTML-side</comment>
     <comment xml:lang="de">XHTML-Seite</comment>
     <comment xml:lang="no">XHTML-side</comment>
     <comment xml:lang="sv">XHTML-sida</comment>
@@ -2535,6 +2713,7 @@
   </mime-type>
   <mime-type type="application/zip">
     <comment>ZIP archive</comment>
+    <comment xml:lang="da">ZIP-arkiv</comment>
     <comment xml:lang="de">ZIP-Archiv</comment>
     <comment xml:lang="no">ZIP-arkiv</comment>
     <magic priority="40">
@@ -2547,6 +2726,7 @@
     <comment xml:lang="az">Dolby Digital audio</comment>
     <comment xml:lang="cs">Zvuk Dolby Digital</comment>
     <comment xml:lang="cy">Sain Dolby Digital</comment>
+    <comment xml:lang="da">Dolby Ditital-lyd</comment>
     <comment xml:lang="de">Dolby Digital-Audio</comment>
     <comment xml:lang="fi">Dolby Digital -ääni</comment>
     <comment xml:lang="fr">audio Dolby Digital audio</comment>
@@ -2563,6 +2743,7 @@
     <comment xml:lang="az">ULAW (Sun) audio faylı</comment>
     <comment xml:lang="cs">Zvuk ULAW (Sun)</comment>
     <comment xml:lang="cy">Sain ULAW (Sun)</comment>
+    <comment xml:lang="da">ULAW (Sun)-lyd</comment>
     <comment xml:lang="de">ULAW (Sun)-Audio</comment>
     <comment xml:lang="fi">ULAW (Sun) -ääni</comment>
     <comment xml:lang="fr">ULAW (Sun) audio</comment>
@@ -2580,6 +2761,7 @@
   </mime-type>
   <mime-type type="audio/prs.sid">
     <comment>Commodore 64 audio</comment>
+    <comment xml:lang="da">Commodore 64-lyd</comment>
     <comment xml:lang="de">Commodore 64-Audio</comment>
     <comment xml:lang="no">Commodore 64-lyd</comment>
     <comment xml:lang="sv">Commodore 64-ljud</comment>
@@ -2589,26 +2771,12 @@
     <glob pattern="*.sid" />
     <glob pattern="*.psid" />
   </mime-type>
-  <mime-type type="audio/vnd.rn-realaudio">
-    <comment>RealAudio broadcast</comment>
-    <comment xml:lang="az">RealAudio yayımı</comment>
-    <comment xml:lang="cs">Vysílání RealAudio</comment>
-    <comment xml:lang="cy">Darllediad RealAudio</comment>
-    <comment xml:lang="de">RealAudio-Broadcast</comment>
-    <comment xml:lang="fi">RealAudio-yleislähetys</comment>
-    <comment xml:lang="fr">diffusion RealAudio</comment>
-    <comment xml:lang="hu">RealAudio-sugárzás</comment>
-    <comment xml:lang="nl">RealAudio uitzending</comment>
-    <comment xml:lang="nn">RealAudio-kringkasting</comment>
-    <comment xml:lang="no">RealAudio-sending</comment>
-    <comment xml:lang="sr">RealAudio емитовање</comment>
-    <comment xml:lang="sv">RealAudio-utsändning</comment>
-  </mime-type>
   <mime-type type="audio/x-adpcm">
     <comment>PCM audio</comment>
     <comment xml:lang="az">PCM audio faylı</comment>
     <comment xml:lang="cs">Zvuk PCM</comment>
     <comment xml:lang="cy">Sain PCM</comment>
+    <comment xml:lang="da">PCM-lyd</comment>
     <comment xml:lang="de">PCM-Audio</comment>
     <comment xml:lang="fi">PCM-ääni</comment>
     <comment xml:lang="fr">audio PCM</comment>
@@ -2639,6 +2807,7 @@
     <comment xml:lang="az">AIFC audio faylı</comment>
     <comment xml:lang="cs">Zvuk AIFC</comment>
     <comment xml:lang="cy">Sain AIFC</comment>
+    <comment xml:lang="da">AIFC-lyd</comment>
     <comment xml:lang="de">AIFC-Audio</comment>
     <comment xml:lang="fi">AIFC-ääni</comment>
     <comment xml:lang="fr">audio AIFC</comment>
@@ -2657,6 +2826,7 @@
     <comment xml:lang="az">AIFF/Amiga/Mac audio faylı</comment>
     <comment xml:lang="cs">Zvuk AIFF/Amiga/Mac</comment>
     <comment xml:lang="cy">Sain AIFF/Amiga/Mac</comment>
+    <comment xml:lang="da">AIFF/Amiga/Mac-lyd</comment>
     <comment xml:lang="de">AIFF/Amiga/Mac-Audio</comment>
     <comment xml:lang="fi">AIFF/Amiga/Mac-ääni</comment>
     <comment xml:lang="fr">audio AIFF/Amiga/Mac</comment>
@@ -2680,6 +2850,7 @@
     <comment xml:lang="az">AIFF audio faylı</comment>
     <comment xml:lang="cs">Zvuk AIFF</comment>
     <comment xml:lang="cy">Sain AIFF</comment>
+    <comment xml:lang="da">AIFC-lyd</comment>
     <comment xml:lang="de">AIFF-Audio</comment>
     <comment xml:lang="fi">AIFF-ääni</comment>
     <comment xml:lang="fr">audio AIFF</comment>
@@ -2695,6 +2866,7 @@
     <comment xml:lang="az">Impulse Tracker audio faylı</comment>
     <comment xml:lang="cs">Zvuk Impulse Tracker</comment>
     <comment xml:lang="cy">Sain Impulse Tracker</comment>
+    <comment xml:lang="da">Impulse Tracker-lyd</comment>
     <comment xml:lang="de">Impulse Tracker-Audio</comment>
     <comment xml:lang="fi">Impulse Tracker -ääni</comment>
     <comment xml:lang="fr">audio Impulse Tracker</comment>
@@ -2711,6 +2883,7 @@
   </mime-type>
   <mime-type type="audio/x-flac">
     <comment>FLAC audio</comment>
+    <comment xml:lang="da">FLAC-lyd</comment>
     <comment xml:lang="de">FLAC-Audio</comment>
     <comment xml:lang="no">FLAC-lyd</comment>
     <glob pattern="*.flac" />
@@ -2721,6 +2894,7 @@
     <comment xml:lang="az">MIDI audio faylı</comment>
     <comment xml:lang="cs">Zvuk MIDI</comment>
     <comment xml:lang="cy">Sain MIDI</comment>
+    <comment xml:lang="da">MIDI-lyd</comment>
     <comment xml:lang="de">MIDI-Audio</comment>
     <comment xml:lang="fi">MIDI-ääni</comment>
     <comment xml:lang="fr">audio MIDI</comment>
@@ -2738,6 +2912,7 @@
   </mime-type>
   <mime-type type="audio/x-mod">
     <comment>Amiga SoundTracker audio</comment>
+    <comment xml:lang="da">Amiga SoundTracker-lyd</comment>
     <comment xml:lang="de">Amiga SoundTracker-Audio</comment>
     <comment xml:lang="no">Amiga SoundTracker-lyd</comment>
     <glob pattern="*.mod" />
@@ -2753,6 +2928,7 @@
     <comment xml:lang="az">MP3 audio faylı</comment>
     <comment xml:lang="cs">Zvuk MP3</comment>
     <comment xml:lang="cy">Sain MP3</comment>
+    <comment xml:lang="da">MP3-lyd</comment>
     <comment xml:lang="de">MP3-Audio</comment>
     <comment xml:lang="fi">MP3-ääni</comment>
     <comment xml:lang="fr">audio MP3</comment>
@@ -2771,6 +2947,7 @@
   </mime-type>
   <mime-type type="audio/x-mp3-playlist">
     <comment>MP3 playlist</comment>
+    <comment xml:lang="da">MP3-afspilningsliste</comment>
     <comment xml:lang="de">MP3-Wiedergabeliste</comment>
     <comment xml:lang="no">MP3-spilleliste</comment>
   </mime-type>
@@ -2779,6 +2956,7 @@
     <comment xml:lang="az">MP3 audio faylı</comment>
     <comment xml:lang="cs">Zvuk MP3</comment>
     <comment xml:lang="cy">Sain MP3</comment>
+    <comment xml:lang="da">MP3-lyd</comment>
     <comment xml:lang="de">MP3-Audio</comment>
     <comment xml:lang="fi">MP3-ääni</comment>
     <comment xml:lang="fr">audio MP3</comment>
@@ -2791,6 +2969,7 @@
   </mime-type>
   <mime-type type="audio/x-mpegurl">
     <comment>MP3 audio (streamed)</comment>
+    <comment xml:lang="da">MP3-lyd (strøm)</comment>
     <comment xml:lang="de">MP3-Audio (Stream)</comment>
     <comment xml:lang="no">MP3-lyd (streaming)</comment>
     <glob pattern="*.m3u" />
@@ -2800,6 +2979,7 @@
     <comment xml:lang="az">Çalğı siyahısı</comment>
     <comment xml:lang="cs">Seznam skladeb</comment>
     <comment xml:lang="cy">Rhestr Chwarae</comment>
+    <comment xml:lang="da">Afspilningsliste</comment>
     <comment xml:lang="de">Wiedergabeliste</comment>
     <comment xml:lang="fi">soittolista</comment>
     <comment xml:lang="fr">Playlist</comment>
@@ -2820,6 +3000,7 @@
     <comment xml:lang="az">RealAudio yayımı</comment>
     <comment xml:lang="cs">Vysílání RealAudio</comment>
     <comment xml:lang="cy">Darllediad RealAudio</comment>
+    <comment xml:lang="da">RealAudio-udsendelse</comment>
     <comment xml:lang="de">RealAudio-Broadcast</comment>
     <comment xml:lang="fi">RealAudio-yleislähetys</comment>
     <comment xml:lang="fr">diffusion RealAudio</comment>
@@ -2835,12 +3016,14 @@
     <glob pattern="*.ra" />
     <glob pattern="*.ram" />
     <glob pattern="*.rm" />
+    <alias type="audio/vnd.rn-realaudio" />
   </mime-type>
   <mime-type type="audio/x-riff">
     <comment>RIFF audio</comment>
     <comment xml:lang="az">RIFF audio faylı</comment>
     <comment xml:lang="cs">Zvuk RIFF</comment>
     <comment xml:lang="cy">Sain RIFF</comment>
+    <comment xml:lang="da">RIFF-lyd</comment>
     <comment xml:lang="de">RIFF-Audio</comment>
     <comment xml:lang="fi">RIFF-ääni</comment>
     <comment xml:lang="fr">audio RIFF</comment>
@@ -2860,6 +3043,7 @@
     <comment xml:lang="az">Scream Tracker 3 audio faylı</comment>
     <comment xml:lang="cs">Skladba Scream Tracker 3</comment>
     <comment xml:lang="cy">Sain Scream Tracker 3</comment>
+    <comment xml:lang="da">Scream Tracker 3-lyd</comment>
     <comment xml:lang="de">Scream Tracker 3-Audio</comment>
     <comment xml:lang="fi">Scream Tracker 3 -ääni</comment>
     <comment xml:lang="fr">aiudio Scream Tracker 3</comment>
@@ -2873,6 +3057,7 @@
   </mime-type>
   <mime-type type="audio/x-scpls">
     <comment>MP3 ShoutCast playlist</comment>
+    <comment xml:lang="da">MP3 ShoutCast-afspilningsliste</comment>
     <comment xml:lang="de">MP3-ShoutCast-Wiedergabeliste</comment>
     <comment xml:lang="no">MP3 ShoutCast-spilleliste</comment>
     <glob pattern="*.pls" />
@@ -2882,6 +3067,7 @@
     <comment xml:lang="az">Scream Tracker audio faylı</comment>
     <comment xml:lang="cs">Skladba Scream Tracker</comment>
     <comment xml:lang="cy">Sain Scream Tracker</comment>
+    <comment xml:lang="da">Scream Tracker-lyd</comment>
     <comment xml:lang="de">Scream Tracker-Audio</comment>
     <comment xml:lang="fi">Scream Tracker -ääni</comment>
     <comment xml:lang="fr">audio Scream Tracker</comment>
@@ -2898,6 +3084,7 @@
     <comment xml:lang="az">VOC audio faylı</comment>
     <comment xml:lang="cs">Zvuk VOC</comment>
     <comment xml:lang="cy">Sain VOC</comment>
+    <comment xml:lang="da">VOC-lyd</comment>
     <comment xml:lang="de">VOC-Audio</comment>
     <comment xml:lang="fi">VOC-ääni</comment>
     <comment xml:lang="fr">audio VOC</comment>
@@ -2914,6 +3101,7 @@
     <comment xml:lang="az">WAV audio faylı</comment>
     <comment xml:lang="cs">Zvuk WAV</comment>
     <comment xml:lang="cy">Sain WAV</comment>
+    <comment xml:lang="da">WAV-lyd</comment>
     <comment xml:lang="de">WAV-Audio</comment>
     <comment xml:lang="fi">WAV-ääni</comment>
     <comment xml:lang="fr">audio WAV</comment>
@@ -2934,6 +3122,7 @@
     <comment xml:lang="az">Scream Tracker instrumenti</comment>
     <comment xml:lang="cs">Nástroj pro Scream Tracker</comment>
     <comment xml:lang="cy">Offeryn Scream Tracker</comment>
+    <comment xml:lang="da">Scream Tracker-instrument</comment>
     <comment xml:lang="de">Scream Tracker-Instrument</comment>
     <comment xml:lang="fi">Scream Tracker -soitin</comment>
     <comment xml:lang="fr">instrument Scream Tracker</comment>
@@ -2950,6 +3139,7 @@
     <comment xml:lang="az">FastTracker II audio faylı</comment>
     <comment xml:lang="cs">Zvuk FastTracker II</comment>
     <comment xml:lang="cy">Sain FastTracker II</comment>
+    <comment xml:lang="da">FastTracker II-lyd</comment>
     <comment xml:lang="de">FastTracker II-Audio</comment>
     <comment xml:lang="fi">FastTracker II -ääni</comment>
     <comment xml:lang="fr">audio FastTracker II</comment>
@@ -2966,6 +3156,7 @@
     <comment xml:lang="az">Windows BMP rəsmi</comment>
     <comment xml:lang="cs">Obrázek Windows BMP</comment>
     <comment xml:lang="cy">Delwedd BMP Windows</comment>
+    <comment xml:lang="da">Windows BMP-billede</comment>
     <comment xml:lang="de">Windows-BMP-Bild</comment>
     <comment xml:lang="fi">Windows BMP -kuva</comment>
     <comment xml:lang="fr">image Windows BMP</comment>
@@ -2990,6 +3181,7 @@
     <comment xml:lang="az">Kompüter Qrafikası Meta Faylı</comment>
     <comment xml:lang="cs">Computer Graphics Metafile</comment>
     <comment xml:lang="cy">Delwedd ffurf CGM</comment>
+    <comment xml:lang="da">Computer Graphics Metafile-billede</comment>
     <comment xml:lang="de">CGM-Datei</comment>
     <comment xml:lang="fi">Computer Graphics -metatiedosto</comment>
     <comment xml:lang="fr">métafichier Computer Graphics</comment>
@@ -3003,6 +3195,7 @@
   </mime-type>
   <mime-type type="image/fax-g3">
     <comment>CCITT G3 fax</comment>
+    <comment xml:lang="da">CCITT G3-fax</comment>
     <comment xml:lang="de">CCITT-G3-Fax</comment>
     <comment xml:lang="no">CCITT G3-faks</comment>
     <glob pattern="*.g3" />
@@ -3012,6 +3205,7 @@
     <comment xml:lang="az">G3 faks rəsmi</comment>
     <comment xml:lang="cs">Obrázek G3 fax</comment>
     <comment xml:lang="cy">Delwedd Ffacs G3</comment>
+    <comment xml:lang="da">G3-faxbillede</comment>
     <comment xml:lang="de">G3-Faxbild</comment>
     <comment xml:lang="fi">G3-faksikuva</comment>
     <comment xml:lang="fr">image de télécopie G3 « fax »</comment>
@@ -3027,6 +3221,7 @@
     <comment xml:lang="az">GIF rəsmi</comment>
     <comment xml:lang="cs">Obrázek GIF</comment>
     <comment xml:lang="cy">Delwedd GIF</comment>
+    <comment xml:lang="da">GIF-billede</comment>
     <comment xml:lang="de">GIF-Bild</comment>
     <comment xml:lang="fi">GIF-kuva</comment>
     <comment xml:lang="fr">image GIF</comment>
@@ -3046,6 +3241,7 @@
     <comment xml:lang="az">IEF rəsmi</comment>
     <comment xml:lang="cs">Obrázek IEF</comment>
     <comment xml:lang="cy">Delwedd IEF</comment>
+    <comment xml:lang="da">IEF-billede</comment>
     <comment xml:lang="de">IEF-Bild</comment>
     <comment xml:lang="fi">IEF-kuva</comment>
     <comment xml:lang="fr">image IEF</comment>
@@ -3062,6 +3258,7 @@
     <comment xml:lang="az">JPEG rəsmi</comment>
     <comment xml:lang="cs">Obrázek JPEG</comment>
     <comment xml:lang="cy">Delwedd JPEG</comment>
+    <comment xml:lang="da">JPEG-billede</comment>
     <comment xml:lang="de">JPEG-Bild</comment>
     <comment xml:lang="fi">JPEG-kuva</comment>
     <comment xml:lang="fr">image JPEG</comment>
@@ -3081,11 +3278,13 @@
   </mime-type>
   <mime-type type="image/jpeg2000">
     <comment>JPEG-2000 image</comment>
+    <comment xml:lang="da">JPEG2000-billede</comment>
     <comment xml:lang="de">JPEG-2000-Bild</comment>
     <glob pattern="*.jp2" />
   </mime-type>
   <mime-type type="image/x-pict">
     <comment>Macintosh Quickdraw/PICT drawing</comment>
+    <comment xml:lang="da">Macintosh Quickdraw/PICT-tegning</comment>
     <comment xml:lang="de">Macintosh Quickdraw/PICT-Zeichnung</comment>
     <glob pattern="*.pict" />
     <glob pattern="*.pict1" />
@@ -3096,6 +3295,7 @@
     <comment xml:lang="az">PNG rəsmi</comment>
     <comment xml:lang="cs">Obrázek PNG</comment>
     <comment xml:lang="cy">Delwedd PNG</comment>
+    <comment xml:lang="da">PNG-billede</comment>
     <comment xml:lang="de">PNG-Bild</comment>
     <comment xml:lang="fi">PNG-kuva</comment>
     <comment xml:lang="fr">image PNG</comment>
@@ -3112,11 +3312,13 @@
   </mime-type>
   <mime-type type="image/rle">
     <comment>Run Length Encoded bitmap</comment>
+    <comment xml:lang="da">RLE-billede</comment>
     <comment xml:lang="de">RLE-Bitmap</comment>
     <glob pattern="*.rle" />
   </mime-type>
   <mime-type type="image/svg+xml">
     <comment>scalable SVG image</comment>
+    <comment xml:lang="da">skalérbart SVG-billede</comment>
     <comment xml:lang="de">skalierbares SVG-Bild</comment>
     <comment xml:lang="no">skalerbart SVG-bilde</comment>
     <magic priority="80">
@@ -3127,6 +3329,7 @@
   </mime-type>
   <mime-type type="image/tiff">
     <comment>TIFF image</comment>
+    <comment xml:lang="da">TIFF-billede</comment>
     <comment xml:lang="de">TIFF-Bild</comment>
     <comment xml:lang="no">TIFF-bilde</comment>
     <comment xml:lang="sv">TIFF-bild</comment>
@@ -3142,6 +3345,7 @@
     <comment xml:lang="az">AutoCAD rəsmi</comment>
     <comment xml:lang="cs">Obrázek AutoCAD</comment>
     <comment xml:lang="cy">Delwedd AutoCAD</comment>
+    <comment xml:lang="da">AutoCAD-billede</comment>
     <comment xml:lang="de">AutoCAD-Bild</comment>
     <comment xml:lang="fi">AutoCAD-kuva</comment>
     <comment xml:lang="fr">image AutoCAD</comment>
@@ -3155,6 +3359,7 @@
   </mime-type>
   <mime-type type="image/vnd.dxf">
     <comment>DXF vector image</comment>
+    <comment xml:lang="da">DXF-vektorbillede</comment>
     <comment xml:lang="de">DXF-Vektorbild</comment>
     <comment xml:lang="no">DXF-vektorgrafikk</comment>
     <glob pattern="*.dxf" />
@@ -3164,6 +3369,7 @@
     <comment xml:lang="az">3D Studio rəsmi</comment>
     <comment xml:lang="cs">Obrázek aplikace 3D Studio</comment>
     <comment xml:lang="cy">Delwedd &quot;3D Studio&quot;</comment>
+    <comment xml:lang="da">3D Studio-billede</comment>
     <comment xml:lang="de">3D Studio-Bild</comment>
     <comment xml:lang="fi">3D Studio -kuva</comment>
     <comment xml:lang="fr">image 3D Studio</comment>
@@ -3177,6 +3383,7 @@
   </mime-type>
   <mime-type type="image/x-applix-graphics">
     <comment>Applix Graphics image</comment>
+    <comment xml:lang="da">Applix Graphics-billede</comment>
     <comment xml:lang="de">Applix Graphics-Bild</comment>
     <comment xml:lang="no">Applix Graphics-dokument</comment>
     <magic priority="50">
@@ -3191,6 +3398,7 @@
     <comment xml:lang="az">CMU raster rəsmi</comment>
     <comment xml:lang="cs">Rastrový obrázek CMU</comment>
     <comment xml:lang="cy">Delwedd raster CMU</comment>
+    <comment xml:lang="da">CMU-rasterbillede</comment>
     <comment xml:lang="de">CMU-Rasterbild</comment>
     <comment xml:lang="fi">CMU-rasterikuva</comment>
     <comment xml:lang="fr">image raster CMU</comment>
@@ -3204,6 +3412,7 @@
   </mime-type>
   <mime-type type="image/x-compressed-xcf">
     <comment>GIMP image (compressed)</comment>
+    <comment xml:lang="da">GIMP-billede (komprimeret)</comment>
     <comment xml:lang="de">GIMP-Bild (komprimiert)</comment>
     <comment xml:lang="no">GIMP-bilde (komprimert)</comment>
     <glob pattern="*.xcf.gz" />
@@ -3214,6 +3423,7 @@
     <comment xml:lang="az">Dijital Rəsm və Tibbdə Rabitə rəsmi</comment>
     <comment xml:lang="cs">Obrázek Digital Imaging and Communications in Medicine</comment>
     <comment xml:lang="cy">Delwedd DCIM (Digital Imaging and Communications in Medicine)</comment>
+    <comment xml:lang="da">Digital Imaging and Communications in Medicine-billede</comment>
     <comment xml:lang="de">DICOM-Bild</comment>
     <comment xml:lang="fi">Digital Imaging and Communications in Medicine -kuva</comment>
     <comment xml:lang="fr">image « Digital Imaging and Communications in Medicine »</comment>
@@ -3232,6 +3442,7 @@
     <comment xml:lang="az">Avadanlıqdan Müstəqil Bitmap</comment>
     <comment xml:lang="cs">Bitmapa nezávislá na zařízení</comment>
     <comment xml:lang="cy">Didfap Dyfais-Annibynol</comment>
+    <comment xml:lang="da">Enhedsuafhængigt billede</comment>
     <comment xml:lang="de">Geräteunabhängige Bitmap</comment>
     <comment xml:lang="fi">laiteriippumaton bittikartta</comment>
     <comment xml:lang="fr">bitmap indépendant du périphérique</comment>
@@ -3247,6 +3458,7 @@
   </mime-type>
   <mime-type type="image/vnd.djvu">
    <comment>DjVu image</comment>
+   <comment xml:lang="da">DjVu-billede</comment>
    <comment xml:lang="de">DjVu-Bild</comment>
    <comment xml:lang="nn">DjVu-bilete</comment>
    <comment xml:lang="no">DjVu-bilde</comment>
@@ -3267,6 +3479,7 @@
     <comment xml:lang="az">Digital Moving Picture Exchange rəsmi</comment>
     <comment xml:lang="cs">Obrázek Digital Moving Picture Exchange</comment>
     <comment xml:lang="cy">Delwedd Digital Moving Picture Exchange</comment>
+    <comment xml:lang="da">Digital Moving Picture Exchange-billede</comment>
     <comment xml:lang="de">DPX-Bild</comment>
     <comment xml:lang="fi">Digital Moving Picture Exchange -kuva</comment>
     <comment xml:lang="fr">image « Digital Moving Picture Exchange »</comment>
@@ -3285,6 +3498,7 @@
     <comment xml:lang="az">Encapsulated PostScript rəsmi</comment>
     <comment xml:lang="cs">Obrázek v zapouzdřeném Postscriptu</comment>
     <comment xml:lang="cy">Delwedd PostScript wedi ei chrisialu</comment>
+    <comment xml:lang="da">Encapsulated PostScript-billede</comment>
     <comment xml:lang="de">EPS-Bild</comment>
     <comment xml:lang="fi">kapsuloitu PostScript-kuva</comment>
     <comment xml:lang="fr">image encapsulé PostScript</comment>
@@ -3310,6 +3524,7 @@
     <comment xml:lang="az">Flexible Rəsm Transport Sistemi</comment>
     <comment xml:lang="cs">Flexible Image Transport System</comment>
     <comment xml:lang="cy">System Trosgludo Delweddau Hyblyg</comment>
+    <comment xml:lang="da">FlashPix-billedtransportsystem</comment>
     <comment xml:lang="de">FITS-Dokument</comment>
     <comment xml:lang="fi">Flexible Image Transport System</comment>
     <comment xml:lang="fr">système de transport « Flexible Image »</comment>
@@ -3326,6 +3541,7 @@
   </mime-type>
   <mime-type type="image/x-fpx">
     <comment>FlashPix image</comment>
+    <comment xml:lang="da">FlashPix-billede</comment>
     <comment xml:lang="de">FlashPix-Bild</comment>
     <comment xml:lang="no">FlashPix-bilde</comment>
     <magic priority="50">
@@ -3337,6 +3553,7 @@
     <comment xml:lang="az">Truevision Targa rəsmi</comment>
     <comment xml:lang="cs">Obrázek Truevision Targa</comment>
     <comment xml:lang="cy">Delwedd Targa Truevision</comment>
+    <comment xml:lang="da">Truevision Targa-billede</comment>
     <comment xml:lang="de">Truevision-Targa-Bild</comment>
     <comment xml:lang="fi">Truevision Targa -kuva</comment>
     <comment xml:lang="fr">image Truevision Targa</comment>
@@ -3353,6 +3570,7 @@
   </mime-type>
   <mime-type type="image/x-ico">
     <comment>Microsoft Windows icon</comment>
+    <comment xml:lang="da">Microsoft Windows-ikon</comment>
     <comment xml:lang="de">Microsoft Windows-Symbol</comment>
     <comment xml:lang="no">Microsoft Windows-ikon</comment>
     <glob pattern="*.ico" />
@@ -3362,6 +3580,7 @@
     <comment xml:lang="az">IFF rəsmi</comment>
     <comment xml:lang="cs">Obrázek IFF</comment>
     <comment xml:lang="cy">Delwedd IFF</comment>
+    <comment xml:lang="da">IFF-billede</comment>
     <comment xml:lang="de">IFF-Bild</comment>
     <comment xml:lang="fi">IFF-kuva</comment>
     <comment xml:lang="fr">image IFF</comment>
@@ -3378,6 +3597,7 @@
     <comment xml:lang="az">ILBM rəsmi</comment>
     <comment xml:lang="cs">Obrázek ILMB</comment>
     <comment xml:lang="cy">Delwedd ILBM</comment>
+    <comment xml:lang="da">ILBM-billede</comment>
     <comment xml:lang="de">ILBM-Bild</comment>
     <comment xml:lang="fi">ILBM-kuva</comment>
     <comment xml:lang="fr">image ILBM</comment>
@@ -3394,6 +3614,7 @@
     <comment xml:lang="az">JNG rəsmi</comment>
     <comment xml:lang="cs">Obrázek JNG</comment>
     <comment xml:lang="cy">Delwedd JNG</comment>
+    <comment xml:lang="da">JNG-billede</comment>
     <comment xml:lang="de">JNG-Bild</comment>
     <comment xml:lang="fi">JNG-kuva</comment>
     <comment xml:lang="fr">image JNG</comment>
@@ -3410,6 +3631,7 @@
     <comment xml:lang="az">LightWave cismi</comment>
     <comment xml:lang="cs">Objekt LightWave</comment>
     <comment xml:lang="cy">Gwrthrych LightWave</comment>
+    <comment xml:lang="da">LightWave-objekt</comment>
     <comment xml:lang="de">LightWave-Objekt</comment>
     <comment xml:lang="fi">LightWave-esine</comment>
     <comment xml:lang="fr">objet LightWave</comment>
@@ -3427,6 +3649,7 @@
     <comment xml:lang="az">LightWave səhnəsi</comment>
     <comment xml:lang="cs">Scéna LightWave</comment>
     <comment xml:lang="cy">Golygfa LightWave</comment>
+    <comment xml:lang="da">LightWave-scene</comment>
     <comment xml:lang="de">LightWave-Szene</comment>
     <comment xml:lang="fi">LightWave-maisema</comment>
     <comment xml:lang="fr">scène LightWave</comment>
@@ -3440,6 +3663,7 @@
   </mime-type>
   <mime-type type="image/x-msod">
     <comment>Microsoft Office drawing</comment>
+    <comment xml:lang="da">Microsoft Office-tegning</comment>
     <comment xml:lang="de">Microsoft Office-Zeichnung</comment>
     <comment xml:lang="no">Microsoft Office-tegning</comment>
     <glob pattern="*.msod" />
@@ -3464,6 +3688,7 @@
     <comment xml:lang="az">PhotoCD rəsmi</comment>
     <comment xml:lang="cs">Obrázek PhotoCD</comment>
     <comment xml:lang="cy">Delwedd PhotoCD</comment>
+    <comment xml:lang="da">PhotoCD-billede</comment>
     <comment xml:lang="de">PhotoCD-Bild</comment>
     <comment xml:lang="fi">PhotoCD-kuva</comment>
     <comment xml:lang="fr">image PhotoCD</comment>
@@ -3480,6 +3705,7 @@
     <comment xml:lang="az">PNM rəsmi</comment>
     <comment xml:lang="cs">Obrázek PNM</comment>
     <comment xml:lang="cy">Delwedd PNM</comment>
+    <comment xml:lang="da">PNM-billede</comment>
     <comment xml:lang="de">PNM-Bild</comment>
     <comment xml:lang="fi">PNM-kuva</comment>
     <comment xml:lang="fr">image PNM</comment>
@@ -3496,6 +3722,7 @@
     <comment xml:lang="az">Portable Bitmap Fayl Formatı</comment>
     <comment xml:lang="cs">Formát souborů Portable Bitmap</comment>
     <comment xml:lang="cy">Ffeiliau Fformat Pixfap Cludadwy</comment>
+    <comment xml:lang="da">Portable Bitmap-filformat</comment>
     <comment xml:lang="de">Portables Bitmap-Dateiformat</comment>
     <comment xml:lang="fi">siirrettävä bittikarttatiedostomuoto</comment>
     <comment xml:lang="fr">format de fichier Portable Bitmap</comment>
@@ -3514,6 +3741,7 @@
     <comment xml:lang="az">Portable Graymap Fayl Formatı</comment>
     <comment xml:lang="cs">Formát souborů Portable Graymap</comment>
     <comment xml:lang="cy">Ffeiliau Fformat Llwydfap Cludadwy</comment>
+    <comment xml:lang="da">Portable Graymap-filformat</comment>
     <comment xml:lang="de">Portables Greymap-Dateiformat</comment>
     <comment xml:lang="fi">siirrettävä harmaasävytiedostomuoto</comment>
     <comment xml:lang="fr">format de fichier Portable Graymap</comment>
@@ -3532,6 +3760,7 @@
     <comment xml:lang="az">Portable Pixmap Fayl Formatı</comment>
     <comment xml:lang="cs">Formát souboru Portable Pixmap</comment>
     <comment xml:lang="cy">Delwedd Pixmap Cludadwy</comment>
+    <comment xml:lang="da">Portable Pixmap-filformat</comment>
     <comment xml:lang="de">Portables Pixmap-Dateiformat</comment>
     <comment xml:lang="fi">siirrettävä pikselikarttatiedostomuoto</comment>
     <comment xml:lang="fr">format de fichier Portable Pixmap</comment>
@@ -3548,6 +3777,7 @@
   </mime-type>
   <mime-type type="image/x-psd">
     <comment>Photoshop image</comment>
+    <comment xml:lang="da">Photoshop-billede</comment>
     <comment xml:lang="de">Photoshop-Bild</comment>
     <comment xml:lang="no">Photoshop-bilde</comment>
     <magic priority="50">
@@ -3560,6 +3790,7 @@
     <comment xml:lang="az">RGB rəsmi</comment>
     <comment xml:lang="cs">Obrázek RGB</comment>
     <comment xml:lang="cy">Delwedd RGB</comment>
+    <comment xml:lang="da">RGB-billede</comment>
     <comment xml:lang="de">RGB-Bild</comment>
     <comment xml:lang="fi">RGB-kuva</comment>
     <comment xml:lang="fr">image RGB</comment>
@@ -3573,11 +3804,13 @@
   </mime-type>
   <mime-type type="image/x-sgi">
     <comment>Silicon Graphics IRIS image</comment>
+    <comment xml:lang="da">Silicon Graphics IRIS-billede</comment>
     <comment xml:lang="de">Silicon Graphics-IRIS-Bild</comment>
     <glob pattern="*.sgi" />
   </mime-type>
   <mime-type type="image/x-sun-raster">
     <comment>SUN Rasterfile image</comment>
+    <comment xml:lang="da">SUN-rasterbillede</comment>
     <comment xml:lang="de">SUN-Rasterfile-Bild</comment>
     <comment xml:lang="no">SUN rasterfil-bilde</comment>
     <magic priority="50">
@@ -3590,6 +3823,7 @@
     <comment xml:lang="az">TarGA rəsmi</comment>
     <comment xml:lang="cs">Obrázek TarGA</comment>
     <comment xml:lang="cy">Delwedd TarGA</comment>
+    <comment xml:lang="da">TarGA-billede</comment>
     <comment xml:lang="de">TarGA-Bild</comment>
     <comment xml:lang="fi">TarGA-kuva</comment>
     <comment xml:lang="fr">image TarGA</comment>
@@ -3603,11 +3837,13 @@
   </mime-type>
   <mime-type type="image/x-win-bitmap">
     <comment>Windows cursor</comment>
+    <comment xml:lang="da">Windows-markør</comment>
     <comment xml:lang="de">Windows-Cursor</comment>
     <glob pattern="*.cur" />
   </mime-type>
   <mime-type type="image/x-wmf">
     <comment>Microsoft WMF file</comment>
+    <comment xml:lang="da">Microsoft WMV-fil</comment>
     <comment xml:lang="de">Microsoft-WMF-Datei</comment>
     <comment xml:lang="no">Microsoft WMF-fil</comment>
     <glob pattern="*.wmf" />
@@ -3617,6 +3853,7 @@
     <comment xml:lang="az">X BitMap rəsmi</comment>
     <comment xml:lang="cs">Obrázek X BitMap</comment>
     <comment xml:lang="cy">Delwedd didfap X</comment>
+    <comment xml:lang="da">X BitMap-billede</comment>
     <comment xml:lang="de">X-BitMap-Bild</comment>
     <comment xml:lang="fi">X BitMap -kuva</comment>
     <comment xml:lang="fr">image X BitMap</comment>
@@ -3630,6 +3867,7 @@
   </mime-type>
   <mime-type type="image/x-xcf">
     <comment>GIMP image</comment>
+    <comment xml:lang="da">GIMP-billede</comment>
     <comment xml:lang="de">GIMP-Bild</comment>
     <comment xml:lang="no">GIMP-bilde</comment>
     <comment xml:lang="sv">GIMP-bild</comment>
@@ -3637,6 +3875,7 @@
   </mime-type>
   <mime-type type="image/x-xfig">
     <comment>XFig image</comment>
+    <comment xml:lang="da">XFig-billede</comment>
     <comment xml:lang="de">XFig-Bild</comment>
     <comment xml:lang="no">XFig-bilde</comment>
     <glob pattern="*.fig" />
@@ -3649,6 +3888,7 @@
     <comment xml:lang="az">X PixMap rəsmi</comment>
     <comment xml:lang="cs">Obrázek X PixMap</comment>
     <comment xml:lang="cy">Delwedd picsfap X</comment>
+    <comment xml:lang="da">X PixMap-billede</comment>
     <comment xml:lang="de">X-PixMap-Bild</comment>
     <comment xml:lang="fi">X PixMap -kuva</comment>
     <comment xml:lang="fr">image X PixMap</comment>
@@ -3668,6 +3908,7 @@
     <comment xml:lang="az">X window rəsmi</comment>
     <comment xml:lang="cs">Obrázek X window</comment>
     <comment xml:lang="cy">Delwedd ffenest X</comment>
+    <comment xml:lang="da">X-billede</comment>
     <comment xml:lang="de">X-Window-Bild</comment>
     <comment xml:lang="fi">X-ikkunakuva</comment>
     <comment xml:lang="fr">image X window</comment>
@@ -3681,34 +3922,40 @@
   </mime-type>
   <mime-type type="inode/blockdevice">
     <comment>block device</comment>
+    <comment xml:lang="da">blokenhed</comment>
     <comment xml:lang="de">Blockgerät</comment>
     <comment xml:lang="no">blokkenhet</comment>
   </mime-type>
   <mime-type type="inode/chardevice">
     <comment>character device</comment>
+    <comment xml:lang="da">tegnenhed</comment>
     <comment xml:lang="de">Character-Device</comment>
     <comment xml:lang="no">tegnenhet</comment>
   </mime-type>
   <mime-type type="inode/directory">
     <comment>folder</comment>
+    <comment xml:lang="da">mappe</comment>
     <comment xml:lang="de">Ordner</comment>
     <comment xml:lang="no">mappe</comment>
     <comment xml:lang="sv">mapp</comment>
   </mime-type>
   <mime-type type="inode/fifo">
     <comment>pipe</comment>
+    <comment xml:lang="da">datakanal</comment>
     <comment xml:lang="de">Pipe</comment>
     <comment xml:lang="no">rør</comment>
     <comment xml:lang="sv">rör</comment>
   </mime-type>
-  <mime-type type='inode/mount-point'>
-    <sub-class-of type='inode/directory' />
+  <mime-type type="inode/mount-point">
+    <sub-class-of type="inode/directory" />
     <comment>mount point</comment>
+    <comment xml:lang="da">monteringspunkt</comment>
     <comment xml:lang="de">Einbindepunkt</comment>
     <comment xml:lang="no">monteringspunkt</comment>
   </mime-type>
   <mime-type type="inode/socket">
     <comment>socket</comment>
+    <comment xml:lang="da">sokkel</comment>
     <comment xml:lang="de">Socket</comment>
     <comment xml:lang="no">plugg</comment>
   </mime-type>
@@ -3717,6 +3964,7 @@
     <comment xml:lang="az">simvolik körpü</comment>
     <comment xml:lang="cs">Symbolický odkaz</comment>
     <comment xml:lang="cy">cyswllt symbolaidd</comment>
+    <comment xml:lang="da">symbolsk henvisning</comment>
     <comment xml:lang="de">Symbolischer Link</comment>
     <comment xml:lang="fi">symbolinen linkki</comment>
     <comment xml:lang="fr">lien symbolique</comment>
@@ -3732,6 +3980,7 @@
     <comment xml:lang="az">poçt yollama raportu</comment>
     <comment xml:lang="cs">Zpráva o doručení pošty</comment>
     <comment xml:lang="cy">Adroddiad trosgludo post</comment>
+    <comment xml:lang="da">postleveringsrapport</comment>
     <comment xml:lang="de">E-Mail-Zustellungsbericht</comment>
     <comment xml:lang="fi">viestin jakeluilmoitus</comment>
     <comment xml:lang="fr">rapport de livraison de courriels</comment>
@@ -3747,6 +3996,7 @@
     <comment xml:lang="az">poçt qayıtma raportu</comment>
     <comment xml:lang="cs">Zpráva o předání pošty</comment>
     <comment xml:lang="cy">adroddiad ffurf post</comment>
+    <comment xml:lang="da">postdisponeringsrapport</comment>
     <comment xml:lang="de">E-Mail-Übertragungsbericht</comment>
     <comment xml:lang="fi">viestin kuittausilmoitus</comment>
     <comment xml:lang="fr">rapport de disposition de courriels</comment>
@@ -3762,6 +4012,7 @@
     <comment xml:lang="az">uzaq fayla göstəriş</comment>
     <comment xml:lang="cs">Odkaz na vzdálený soubor</comment>
     <comment xml:lang="cy">cyfeiriad at ffeil bell</comment>
+    <comment xml:lang="da">reference til fjern fil</comment>
     <comment xml:lang="de">Verweis auf entfernte Datei</comment>
     <comment xml:lang="fi">viittaus etätiedostoon</comment>
     <comment xml:lang="fr">référence au fichier distant</comment>
@@ -3777,6 +4028,7 @@
     <comment xml:lang="az">Usenet xəbərlər ismarışı</comment>
     <comment xml:lang="cs">Příspěvek do diskusních skupin Usenet</comment>
     <comment xml:lang="cy">Neges newyddion Usenet</comment>
+    <comment xml:lang="da">Usenet-nyhedsmeddelelse</comment>
     <comment xml:lang="de">Usenet-News-Nachricht</comment>
     <comment xml:lang="fi">nyyssiviesti</comment>
     <comment xml:lang="fr">message des nouvelles « news » Usenet</comment>
@@ -3797,6 +4049,7 @@
     <comment xml:lang="az">qismi poçt ismarışı</comment>
     <comment xml:lang="cs">Částečná e-mailová zpráva</comment>
     <comment xml:lang="cy">darn o neges e-bost</comment>
+    <comment xml:lang="da">delvis postmeddelelse</comment>
     <comment xml:lang="de">E-Mail-Nachrichtenfragment</comment>
     <comment xml:lang="fi">osittainen sähköpostiviesti</comment>
     <comment xml:lang="fr">message partiel de courriel</comment>
@@ -3809,6 +4062,7 @@
   </mime-type>
   <mime-type type="message/rfc822">
     <comment>email message</comment>
+    <comment xml:lang="da">postmeddelelse</comment>
     <comment xml:lang="de">E-Mail-Nachricht</comment>
     <comment xml:lang="no">e-postmelding</comment>
     <comment xml:lang="sv">e-postmeddelande</comment>
@@ -3828,6 +4082,7 @@
     <comment xml:lang="az">GNU poçt ismarışı</comment>
     <comment xml:lang="cs">E-mailová zpráva GNU</comment>
     <comment xml:lang="cy">Neges E-Bost GNU</comment>
+    <comment xml:lang="da">GNU-postmeddelelse</comment>
     <comment xml:lang="de">GNU-Mail-Nachricht</comment>
     <comment xml:lang="fi">GNU-postiviesti</comment>
     <comment xml:lang="fr">message de courriel GNU</comment>
@@ -3844,6 +4099,7 @@
     <comment xml:lang="az">VRML sənədi</comment>
     <comment xml:lang="cs">Dokument VRML</comment>
     <comment xml:lang="cy">Dogfen VRML</comment>
+    <comment xml:lang="da">VRML-dokument</comment>
     <comment xml:lang="de">VRML-Dokument</comment>
     <comment xml:lang="fi">VRML-asiakirja</comment>
     <comment xml:lang="fr">document VRML</comment>
@@ -3860,6 +4116,7 @@
     <comment xml:lang="az">verici formatlarında ismarış</comment>
     <comment xml:lang="cs">Zpráva v několika formátech</comment>
     <comment xml:lang="cy">neges mewn sawl fformat</comment>
+    <comment xml:lang="da">meddelelse i flere formater</comment>
     <comment xml:lang="de">Nachricht in mehreren Formaten</comment>
     <comment xml:lang="fi">viesti useissa muodoissa</comment>
     <comment xml:lang="fr">message en format divers</comment>
@@ -3875,6 +4132,7 @@
     <comment xml:lang="az">Macintosh AppleDouble-kodlanmış fayl</comment>
     <comment xml:lang="cs">Soubor kódovaný Macintosh AppleDouble</comment>
     <comment xml:lang="cy">Ffeil AppleDouble-amgodedig Macintosh</comment>
+    <comment xml:lang="da">Macintosh AppleDouble-kodet fil</comment>
     <comment xml:lang="de">Macintosh-Datei (AppleDouble-kodiert)</comment>
     <comment xml:lang="fi">Macintosh AppleDouble -koodattu tiedosto</comment>
     <comment xml:lang="fr">fichier encodé Macintosh AppleDouble</comment>
@@ -3890,6 +4148,7 @@
     <comment xml:lang="az">ismarış daycesti</comment>
     <comment xml:lang="cs">Digest zpráv</comment>
     <comment xml:lang="cy">crynodeb negeseuon</comment>
+    <comment xml:lang="da">meddelelsessammendrag</comment>
     <comment xml:lang="de">Nachrichtensammlung</comment>
     <comment xml:lang="fi">viestikokoelma</comment>
     <comment xml:lang="fr">digesteur de messages</comment>
@@ -3905,6 +4164,7 @@
     <comment xml:lang="az">şifrələnmiş ismarış</comment>
     <comment xml:lang="cs">Zašifrovaná zpráva</comment>
     <comment xml:lang="cy">Neges wedi ei hamgryptio</comment>
+    <comment xml:lang="da">krypteret meddelelse</comment>
     <comment xml:lang="de">verschlüsselte Nachricht</comment>
     <comment xml:lang="fi">salattu viesti</comment>
     <comment xml:lang="fr">message encrypté</comment>
@@ -3917,6 +4177,7 @@
   </mime-type>
   <mime-type type="multipart/mixed">
     <comment>compound documents</comment>
+    <comment xml:lang="da">sammensatte dokumenter</comment>
     <comment xml:lang="de">Verbunddokumente</comment>
     <comment xml:lang="no">sammensatte dokumenter</comment>
   </mime-type>
@@ -3925,6 +4186,7 @@
     <comment xml:lang="az">birləşik sənəd</comment>
     <comment xml:lang="cs">Složený dokument</comment>
     <comment xml:lang="cy">dogfen gyfansawdd</comment>
+    <comment xml:lang="da">sammensat dokument</comment>
     <comment xml:lang="de">Verbunddokument</comment>
     <comment xml:lang="fi">yhdisteasiakirja</comment>
     <comment xml:lang="fr">document lié « compound »</comment>
@@ -3940,6 +4202,7 @@
     <comment xml:lang="az">poçt sistemi raportu</comment>
     <comment xml:lang="cs">Zpráva poštovního systému</comment>
     <comment xml:lang="cy">adroddiad system bost</comment>
+    <comment xml:lang="da">postsystemrapport</comment>
     <comment xml:lang="de">E-Mail-Systembericht</comment>
     <comment xml:lang="fi">viestijärjestelmän ilmoitus</comment>
     <comment xml:lang="fr">rapport système de courriels</comment>
@@ -3955,6 +4218,7 @@
     <comment xml:lang="az">imzalanmış ismarış</comment>
     <comment xml:lang="cs">Podepsaná zpráva</comment>
     <comment xml:lang="cy">neges lofnodwyd</comment>
+    <comment xml:lang="da">signeret meddelelse</comment>
     <comment xml:lang="de">signierte Nachricht</comment>
     <comment xml:lang="fi">allekirjoitettu viesti</comment>
     <comment xml:lang="fr">message signé</comment>
@@ -3967,6 +4231,7 @@
   </mime-type>
   <mime-type type="multipart/x-mixed-replace">
     <comment>stream of data (server push)</comment>
+    <comment xml:lang="da">datastrøm (server-skubbet)</comment>
     <comment xml:lang="de">Datenstrom (Server-Push)</comment>
     <comment xml:lang="no">datastrøm (server push)</comment>
   </mime-type>
@@ -3975,6 +4240,7 @@
     <comment xml:lang="az">iCalendar faylı</comment>
     <comment xml:lang="cs">Soubor iCalendar</comment>
     <comment xml:lang="cy">Ffeil iCalendar</comment>
+    <comment xml:lang="da">iCalendar-fil</comment>
     <comment xml:lang="de">iCalendar-Datei</comment>
     <comment xml:lang="fi">iCalendar-tiedosto</comment>
     <comment xml:lang="fr">fichier iCalendar</comment>
@@ -3994,6 +4260,7 @@
     <comment xml:lang="az">Stil Layları (CSS)</comment>
     <comment xml:lang="cs">Cascading Style Sheet</comment>
     <comment xml:lang="cy">Taflen Arddull Rhaeadrol</comment>
+    <comment xml:lang="da">CSS-stilark</comment>
     <comment xml:lang="de">CSS-Stylesheet</comment>
     <comment xml:lang="fi">CSS-tyylisäännöstö</comment>
     <comment xml:lang="fr">Cascading Style Sheet</comment>
@@ -4011,6 +4278,7 @@
     <comment xml:lang="az">cərgə mə&apos;lumat faylı</comment>
     <comment xml:lang="cs">Soubor informací o adresáři</comment>
     <comment xml:lang="cy">Ffeil gwybodaeth cyfeiriadur</comment>
+    <comment xml:lang="da">mappeinformationsfil</comment>
     <comment xml:lang="de">Verzeichnisinformationsdatei</comment>
     <comment xml:lang="fi">hakemistoinfotiedosto</comment>
     <comment xml:lang="fr">fichier d&apos;information répertoire</comment>
@@ -4026,6 +4294,7 @@
     <comment xml:lang="az">zəngin mətn sənədi</comment>
     <comment xml:lang="cs">Rozšířený textový dokument</comment>
     <comment xml:lang="cy">Dogfen testun wedi ei gyfoethogi</comment>
+    <comment xml:lang="da">beriget tekstdokument</comment>
     <comment xml:lang="de">angereichertes Textdokument</comment>
     <comment xml:lang="fi">rikastettu tekstiasiakirja</comment>
     <comment xml:lang="fr">document  « enriched text »</comment>
@@ -4038,17 +4307,20 @@
   </mime-type>
   <mime-type type="text/x-gettext-translation">
     <comment>translated messages</comment>
+    <comment xml:lang="da">oversatte meddelelser</comment>
     <comment xml:lang="de">übersetzte Meldungen</comment>
     <comment xml:lang="no">oversatte meldinger</comment>
     <glob pattern="*.po" />
   </mime-type>
   <mime-type type="text/x-gettext-translation-template">
     <comment>message translation template</comment>
+    <comment xml:lang="da">meddelselsoversættelsesskabelon</comment>
     <comment xml:lang="de">Vorlage zur Nachrichtenübersetzung</comment>
     <glob pattern="*.pot" />
   </mime-type>
   <mime-type type="text/html">
     <comment>HTML page</comment>
+    <comment xml:lang="da">HTML-side</comment>
     <comment xml:lang="de">HTML-Seite</comment>
     <comment xml:lang="no">HTML-side</comment>
     <comment xml:lang="sv">HTML-sida</comment>
@@ -4079,6 +4351,7 @@
     <comment xml:lang="az">yardım səhifəsi</comment>
     <comment xml:lang="cs">Stránka nápovědy</comment>
     <comment xml:lang="cy">tudalen gymorth</comment>
+    <comment xml:lang="da">hjælpeside</comment>
     <comment xml:lang="de">Hilfeseite</comment>
     <comment xml:lang="fi">ohjesivu</comment>
     <comment xml:lang="fr">page d&apos;aide</comment>
@@ -4094,6 +4367,7 @@
     <comment xml:lang="az">MathML sənədi</comment>
     <comment xml:lang="cs">Dokument MathML</comment>
     <comment xml:lang="cy">Dogfen MathML</comment>
+    <comment xml:lang="da">MathML-dokument</comment>
     <comment xml:lang="de">MathML-Dokument</comment>
     <comment xml:lang="fi">MathML-asiakirja</comment>
     <comment xml:lang="fr">document MathML</comment>
@@ -4107,6 +4381,7 @@
   </mime-type>
   <mime-type type="text/plain">
     <comment>plain text document</comment>
+    <comment xml:lang="da">ren tekst-dokument</comment>
     <comment xml:lang="de">einfaches Textdokument</comment>
     <comment xml:lang="no">vanlig tekstdokument</comment>
     <magic priority="50">
@@ -4121,6 +4396,7 @@
     <comment xml:lang="az">Mənbə İzahat Çərçivəsi (RDF) faylı</comment>
     <comment xml:lang="cs">Soubor Resource Description Framework (RDF)</comment>
     <comment xml:lang="cy">Ffeil RDF (Resource Description Framework)</comment>
+    <comment xml:lang="da">RDF-fil</comment>
     <comment xml:lang="de">Ressourcenbeschreibungs-Framework (RDF)-Datei</comment>
     <comment xml:lang="fi">Resource Description Framework (RDF) -tiedosto</comment>
     <comment xml:lang="fr">fichier Resource Description Framework (RDF)</comment>
@@ -4136,6 +4412,7 @@
     <comment xml:lang="az">epoçt başlıqları</comment>
     <comment xml:lang="cs">Hlavičky E-mailu</comment>
     <comment xml:lang="cy">penawdau e-bost</comment>
+    <comment xml:lang="da">posthoveder</comment>
     <comment xml:lang="de">E-Mail-Kopfzeilen</comment>
     <comment xml:lang="fi">sähköpostiotsakkeet</comment>
     <comment xml:lang="fr">en-tête de courriel</comment>
@@ -4151,6 +4428,7 @@
     <comment xml:lang="az">zəngin mətn sənədi</comment>
     <comment xml:lang="cs">Bohatý textový dokument</comment>
     <comment xml:lang="cy">dogfen testun gyfoethog (rtf)</comment>
+    <comment xml:lang="da">rig tekst-dokument</comment>
     <comment xml:lang="de">RTF-Textdokument</comment>
     <comment xml:lang="fi">RTF-asiakirja</comment>
     <comment xml:lang="fr">document « rich text »</comment>
@@ -4167,6 +4445,7 @@
     <comment xml:lang="az">RDF Sayt İcmalı</comment>
     <comment xml:lang="cs">Sourhn serveru RDF</comment>
     <comment xml:lang="cy">Crynodeb Safle RDF</comment>
+    <comment xml:lang="da">RDF-sidesammendrag</comment>
     <comment xml:lang="de">RDF-Seitenzusammenfassung</comment>
     <comment xml:lang="fi">RDF-sivuston tiivistelmä</comment>
     <comment xml:lang="fr">sommaire RDF Site</comment>
@@ -4181,6 +4460,7 @@
   <mime-type type="text/sgml">
     <comment>SGML document</comment>
     <comment xml:lang="cy">Dogfen SGML</comment>
+    <comment xml:lang="da">SGML-dokument</comment>
     <comment xml:lang="de">SGML-Dokument</comment>
     <comment xml:lang="nn">SGML-dokument</comment>
     <comment xml:lang="no">SGML-dokument</comment>
@@ -4191,6 +4471,7 @@
   </mime-type>
   <mime-type type="text/spreadsheet">
     <comment>Spreadsheet interchange document</comment>
+    <comment xml:lang="da">Regnearksudvekslingsdokument</comment>
     <comment xml:lang="de">Tabellenkalkulations-Austauschdokument</comment>
     <comment xml:lang="no">Dokument for regnearkutveksling</comment>
     <magic priority="50">
@@ -4201,6 +4482,7 @@
   </mime-type>
   <mime-type type="text/tab-separated-values">
     <comment>text document (with tab-separated values)</comment>
+    <comment xml:lang="da">tekst dokument (med tabulator-adskilte værdier)</comment>
     <comment xml:lang="de">Textdokument·(Werte·durch·Tabulatorzeichen·unterteilt)</comment>
     <comment xml:lang="no">tekstdokument (med tabulatorseparerte verdier)</comment>
     <glob pattern="*.tsv" />
@@ -4210,6 +4492,7 @@
     <comment xml:lang="az">WML sənədi</comment>
     <comment xml:lang="cs">Dokument WML</comment>
     <comment xml:lang="cy">Dogfen WML</comment>
+    <comment xml:lang="da">WML-dokument</comment>
     <comment xml:lang="de">WML-Dokument</comment>
     <comment xml:lang="fi">WML-asiakirja</comment>
     <comment xml:lang="fr">document WML</comment>
@@ -4223,6 +4506,7 @@
   </mime-type>
   <mime-type type="text/x-adasrc">
     <comment>Ada source code</comment>
+    <comment xml:lang="da">Ada-kildekode</comment>
     <comment xml:lang="de">Ada-Quelltext</comment>
     <comment xml:lang="no">Ada-kildekode</comment>
     <glob pattern="*.adb" />
@@ -4230,24 +4514,28 @@
   </mime-type>
   <mime-type type="text/x-authors">
     <comment>author list</comment>
+    <comment xml:lang="da">forfatterliste</comment>
     <comment xml:lang="de">Autorenliste</comment>
     <comment xml:lang="no">forfatterliste</comment>
     <glob pattern="AUTHORS" />
   </mime-type>
   <mime-type type="text/x-bibtex">
     <comment>Bibtex bibliographic data</comment>
+    <comment xml:lang="da">Bibtex-litteraturdata</comment>
     <comment xml:lang="de">bibliographische Bibitex-Daten</comment>
     <comment xml:lang="no">Bibtex bibliografiske data</comment>
     <glob pattern="*.bib" />
   </mime-type>
   <mime-type type="text/x-c++hdr">
     <comment>C++ source code header</comment>
+    <comment xml:lang="da">C++-inkluderingskildekode</comment>
     <comment xml:lang="de">C++-Quelltext-Header</comment>
     <comment xml:lang="no">C++-kildekodeheader</comment>
     <glob pattern="*.hh" />
   </mime-type>
   <mime-type type="text/x-c++src">
     <comment>C++ source code</comment>
+    <comment xml:lang="da">C++-kildekode</comment>
     <comment xml:lang="de">C++-Quelltext</comment>
     <comment xml:lang="no">C++-kildekode</comment>
     <glob pattern="*.cpp" />
@@ -4259,6 +4547,7 @@
   <mime-type type="text/x-chdr">
     <comment>C source code header</comment>
     <comment xml:lang="cy">Penawd Rhaglen C</comment>
+    <comment xml:lang="da">C-inkluderingskildekode</comment>
     <comment xml:lang="de">C-Quelltext-Header</comment>
     <comment xml:lang="nn">C-kjeldekode-header</comment>
     <comment xml:lang="no">C-kildekodeheader</comment>
@@ -4270,6 +4559,7 @@
   </mime-type>
   <mime-type type="text/x-comma-separated-values">
     <comment>text document (with comma-separated values)</comment>
+    <comment xml:lang="da">tekst dokument (med komma-adskilte værdier)</comment>
     <comment xml:lang="de">Textdokument (Werte durch Kommata unterteilt)</comment>
     <comment xml:lang="no">tekstdokument (med kommaseparerte verdier)</comment>
     <glob pattern="*.csv" />
@@ -4279,6 +4569,7 @@
     <comment xml:lang="az">proqram tə&apos;minatını lisenziya qaydaları</comment>
     <comment xml:lang="cs">Podmínky licence na software</comment>
     <comment xml:lang="cy">termau trwydded meddalwedd</comment>
+    <comment xml:lang="da">programlicens</comment>
     <comment xml:lang="de">Software-Lizenzbedingungen</comment>
     <comment xml:lang="fi">ohjelmiston lisenssiehdot</comment>
     <comment xml:lang="fr">termes de la license du logiciel</comment>
@@ -4295,6 +4586,7 @@
     <comment xml:lang="az">proqram müəllifləri sənədi</comment>
     <comment xml:lang="cs">Informace o autorovi software</comment>
     <comment xml:lang="cy">clodau awduron meddalwedd</comment>
+    <comment xml:lang="da">bidragydere</comment>
     <comment xml:lang="de">Software-Impressum</comment>
     <comment xml:lang="fi">ohjelmiston tekijäluettelo</comment>
     <comment xml:lang="fr">crédits des auteurs pour le logiciel</comment>
@@ -4308,12 +4600,14 @@
   </mime-type>
   <mime-type type="text/x-csrc">
     <comment>C source code</comment>
+    <comment xml:lang="da">C-kildekode</comment>
     <comment xml:lang="de">C-Quelltext</comment>
     <comment xml:lang="no">C-kildekode</comment>
     <glob pattern="*.c" />
   </mime-type>
   <mime-type type="text/x-csharp">
     <comment>C# source code</comment>
+    <comment xml:lang="da">C#-kildekode</comment>
     <comment xml:lang="de">C#-Quelltext</comment>
     <glob pattern="*.cs" />
   </mime-type>
@@ -4322,6 +4616,7 @@
     <comment xml:lang="az">DCL skripti</comment>
     <comment xml:lang="cs">Skript DCL</comment>
     <comment xml:lang="cy">Sgript DCL</comment>
+    <comment xml:lang="da">DCL-program</comment>
     <comment xml:lang="de">DCL-Skript</comment>
     <comment xml:lang="fi">DCL-komentotiedosto</comment>
     <comment xml:lang="fr">script DCL</comment>
@@ -4338,6 +4633,7 @@
     <comment xml:lang="az">DSSSL sənədi</comment>
     <comment xml:lang="cs">Dokument DSSSL</comment>
     <comment xml:lang="cy">Dogfen DSSSL</comment>
+    <comment xml:lang="da">DSSSL-dokument</comment>
     <comment xml:lang="de">DSSSL-Dokument</comment>
     <comment xml:lang="fi">DSSSL-asiakirja</comment>
     <comment xml:lang="fr">document DSSSL</comment>
@@ -4354,6 +4650,7 @@
     <comment xml:lang="az">sənəd növü tə&apos;yini</comment>
     <comment xml:lang="cs">Definice typu dokumentu</comment>
     <comment xml:lang="cy">Diffiniad math dogfen</comment>
+    <comment xml:lang="da">dokumenttypedefinition</comment>
     <comment xml:lang="de">Dokumenttypenbeschreibung (DTD)</comment>
     <comment xml:lang="fi">asiakirjatyypin määritelmä</comment>
     <comment xml:lang="fr">définition des types de document</comment>
@@ -4370,6 +4667,7 @@
     <comment xml:lang="az">Emacs Lisp mənbə kodu</comment>
     <comment xml:lang="cs">Zdrojový kód Emacs Lisp</comment>
     <comment xml:lang="cy">Ffynhonnell rhaglen EMACS LISP</comment>
+    <comment xml:lang="da">Emacs Lisp-kildekode</comment>
     <comment xml:lang="de">Emacs-Lisp-Quelltext</comment>
     <comment xml:lang="fi">Emacs Lisp -lähdekoodi</comment>
     <comment xml:lang="fr">code source Emacs Lisp</comment>
@@ -4390,6 +4688,7 @@
     <comment xml:lang="az">Fortran mənbə kodu</comment>
     <comment xml:lang="cs">Zdrojový kód Fortran</comment>
     <comment xml:lang="cy">Ffynhonnell rhaglen FORTRAN</comment>
+    <comment xml:lang="da">Fortran-kildekode</comment>
     <comment xml:lang="de">Fortran-Quelltext</comment>
     <comment xml:lang="fi">Fortran-lähdekoodi</comment>
     <comment xml:lang="fr">code source Fortran</comment>
@@ -4406,6 +4705,7 @@
     <comment xml:lang="az">GTK qurğusu</comment>
     <comment xml:lang="cs">Nastavení GTK</comment>
     <comment xml:lang="cy">Ffurfosodiad GTK</comment>
+    <comment xml:lang="da">GTK-konfiguration</comment>
     <comment xml:lang="de">GTK-Konfiguration</comment>
     <comment xml:lang="fi">GTK-asetukset</comment>
     <comment xml:lang="fr">configuration GTK</comment>
@@ -4423,6 +4723,7 @@
     <comment xml:lang="az">Haskell mənbə kodu</comment>
     <comment xml:lang="cs">Zdrojový kód Haskell</comment>
     <comment xml:lang="cy">Ffynhonnell rhaglen Haskell</comment>
+    <comment xml:lang="da">Haskell-kildekode</comment>
     <comment xml:lang="de">Haskell-Quelltext</comment>
     <comment xml:lang="fi">Haskell-lähdekoodi</comment>
     <comment xml:lang="fr">code source Haskell</comment>
@@ -4439,6 +4740,7 @@
     <comment xml:lang="az">IDL sənədi</comment>
     <comment xml:lang="cs">Dokument IDL</comment>
     <comment xml:lang="cy">Dogfen IDL</comment>
+    <comment xml:lang="da">IDL-dokument</comment>
     <comment xml:lang="de">IDL-Dokument</comment>
     <comment xml:lang="fi">IDL-asiakirja</comment>
     <comment xml:lang="fr">document IDL</comment>
@@ -4455,6 +4757,7 @@
     <comment xml:lang="az">proqram tə&apos;minatını qurma tə&apos;limatları</comment>
     <comment xml:lang="cs">Návod k instalaci software</comment>
     <comment xml:lang="cy">cyfarwyddiadau gosod meddalwedd</comment>
+    <comment xml:lang="da">installationsinstruktioner</comment>
     <comment xml:lang="de">Software-Installationsanleitung</comment>
     <comment xml:lang="fi">ohjelmiston asennusohjeet</comment>
     <comment xml:lang="fr">instructions d&apos;installation du logiciel</comment>
@@ -4468,6 +4771,7 @@
   </mime-type>
   <mime-type type="text/x-java">
     <comment>Java source code</comment>
+    <comment xml:lang="da">Java-kildekode</comment>
     <comment xml:lang="de">Java-Quelltext</comment>
     <comment xml:lang="no">Java-kildekode</comment>
     <glob pattern="*.java" />
@@ -4477,6 +4781,7 @@
     <comment xml:lang="az">Korn qabıq skripti</comment>
     <comment xml:lang="cs">Skript Korn shellu</comment>
     <comment xml:lang="cy">Sgript plisgyn Korn</comment>
+    <comment xml:lang="da">Korn-skalprogram</comment>
     <comment xml:lang="de">Korn-Shell-Skript</comment>
     <comment xml:lang="fi">Ksh-komentotiedosto</comment>
     <comment xml:lang="fr">script Korn shell</comment>
@@ -4500,6 +4805,7 @@
     <comment xml:lang="az">Literate haskell mənbə kodu</comment>
     <comment xml:lang="cs">Zdrojový kód Literate haskell</comment>
     <comment xml:lang="cy">Ffynhonnell Haskell llenyddol</comment>
+    <comment xml:lang="da">Literate Haskell-kildekode</comment>
     <comment xml:lang="de">Literate Haskell-Quelltext</comment>
     <comment xml:lang="fi">Literate haskell -lähdekoodi</comment>
     <comment xml:lang="fr">code source Literate haskell</comment>
@@ -4512,6 +4818,7 @@
   </mime-type>
   <mime-type type="text/x-log">
     <comment>application log</comment>
+    <comment xml:lang="da">programlog</comment>
     <comment xml:lang="de">Anwendungsprotokoll</comment>
     <comment xml:lang="no">applikasjonslogg</comment>
     <glob pattern="*.log" />
@@ -4521,6 +4828,7 @@
     <comment xml:lang="az">İnşa faylı</comment>
     <comment xml:lang="cs">Makefile</comment>
     <comment xml:lang="cy">Ffeil &quot;make&quot;</comment>
+    <comment xml:lang="da">Bygningsfil</comment>
     <comment xml:lang="de">Makefile</comment>
     <comment xml:lang="fi">Makefile</comment>
     <comment xml:lang="fr">makefile</comment>
@@ -4535,18 +4843,21 @@
   </mime-type>
   <mime-type type="text/x-moc">
     <comment>Qt Meta Object file</comment>
+    <comment xml:lang="da">Qt Meta Object-fil</comment>
     <comment xml:lang="de">QT-Meta-Objektdatei</comment>
     <comment xml:lang="no">Qt metaobjektfil</comment>
     <glob pattern="*.moc" />
   </mime-type>
   <mime-type type="text/x-objcsrc">
     <comment>Objective-C source code</comment>
+    <comment xml:lang="da">Objektiv C-kildekode</comment>
     <comment xml:lang="de">Objective-C-Quelltext</comment>
     <comment xml:lang="no">Objective-C-kildekode</comment>
     <glob pattern="*.m" />
   </mime-type>
   <mime-type type="text/x-pascal">
     <comment>Pascal source code</comment>
+    <comment xml:lang="da">Pascal-kildekode</comment>
     <comment xml:lang="de">Pascal-Quelltext</comment>
     <comment xml:lang="no">Pascal-kildekode</comment>
     <glob pattern="*.p" />
@@ -4554,6 +4865,7 @@
   </mime-type>
   <mime-type type="text/x-patch">
     <comment>differences between files</comment>
+    <comment xml:lang="da">forskel mellem filer</comment>
     <comment xml:lang="de">Unterschied zwischen Dateien</comment>
     <comment xml:lang="no">forskjeller mellom filer</comment>
     <magic priority="50">
@@ -4574,6 +4886,7 @@
     <comment xml:lang="az">README sənədi</comment>
     <comment xml:lang="cs">Dokument README</comment>
     <comment xml:lang="cy">Dogfen README</comment>
+    <comment xml:lang="da">README-dokument</comment>
     <comment xml:lang="de">README-Dokument</comment>
     <comment xml:lang="fi">LUEMINUT-asiakirja</comment>
     <comment xml:lang="fr">document README</comment>
@@ -4590,6 +4903,7 @@
     <comment xml:lang="az">Sxem mənbə kodu</comment>
     <comment xml:lang="cs">Zdrojový kód Scheme</comment>
     <comment xml:lang="cy">Ffynhonnell Rhaglen Scheme</comment>
+    <comment xml:lang="da">Scheme-kildekode</comment>
     <comment xml:lang="de">Scheme-Quelltext</comment>
     <comment xml:lang="fi">Scheme-lähdekoodi</comment>
     <comment xml:lang="fr">code source Scheme</comment>
@@ -4606,6 +4920,7 @@
     <comment xml:lang="az">Setext sənədi</comment>
     <comment xml:lang="cs">Dokument Setext</comment>
     <comment xml:lang="cy">Dogfen Setext</comment>
+    <comment xml:lang="da">Setext-dokument</comment>
     <comment xml:lang="de">Setext-Dokument</comment>
     <comment xml:lang="fi">Setext-asiakirja</comment>
     <comment xml:lang="fr">document Setext</comment>
@@ -4622,6 +4937,7 @@
     <comment xml:lang="az">Danışıq sənədi</comment>
     <comment xml:lang="cs">Dokument Speech</comment>
     <comment xml:lang="cy">Dogfen leferydd</comment>
+    <comment xml:lang="da">Speech-dokument</comment>
     <comment xml:lang="de">Sprachdokument</comment>
     <comment xml:lang="fi">puheasiakirja</comment>
     <comment xml:lang="fr">document Speech</comment>
@@ -4637,6 +4953,7 @@
     <comment xml:lang="az">SQL kodu</comment>
     <comment xml:lang="cs">Kód SQL</comment>
     <comment xml:lang="cy">Côd SQL</comment>
+    <comment xml:lang="da">SQL-kode</comment>
     <comment xml:lang="de">SQL-Befehle</comment>
     <comment xml:lang="fi">SQL-koodi</comment>
     <comment xml:lang="fr">code SQL</comment>
@@ -4650,6 +4967,7 @@
   </mime-type>
   <mime-type type="text/x-tcl">
     <comment>Tcl script</comment>
+    <comment xml:lang="da">Tcl-program</comment>
     <comment xml:lang="de">Tcl-Skript</comment>
     <comment xml:lang="no">Tcl-skript</comment>
     <comment xml:lang="sv">Tcl-skript</comment>
@@ -4659,6 +4977,7 @@
   <mime-type type="text/x-tex">
     <comment>TeX document</comment>
     <comment xml:lang="cy">Dogfen TeX </comment>
+    <comment xml:lang="da">TeX-dokument</comment>
     <comment xml:lang="de">TeX-Dokument</comment>
     <comment xml:lang="nn">TeX-dokument</comment>
     <comment xml:lang="no">TeX-dokument</comment>
@@ -4674,6 +4993,7 @@
     <comment xml:lang="az">TeXInfo sənədi</comment>
     <comment xml:lang="cs">Dokument TeXInfo</comment>
     <comment xml:lang="cy">Dogfen TeXInfo</comment>
+    <comment xml:lang="da">TeXInfo-dokument</comment>
     <comment xml:lang="de">TeXInfo-Dokument</comment>
     <comment xml:lang="fi">TeXInfo-asiakirja</comment>
     <comment xml:lang="fr">document TeXInfo</comment>
@@ -4688,30 +5008,35 @@
   </mime-type>
   <mime-type type="text/x-troff-me">
     <comment>Troff ME input document</comment>
+    <comment xml:lang="da">Troff ME inddata-dokument</comment>
     <comment xml:lang="de">Troff-ME-Eingabedokument</comment>
     <comment xml:lang="no">Troff ME-inndatadokument</comment>
     <glob pattern="*.me" />
   </mime-type>
   <mime-type type="text/x-troff-mm">
     <comment>Troff MM input document</comment>
+    <comment xml:lang="da">Troff MM inddata-dokument</comment>
     <comment xml:lang="de">Troff-MM-Eingabedokument</comment>
     <comment xml:lang="no">Troff MM-inndatadokument</comment>
     <glob pattern="*.mm" />
   </mime-type>
   <mime-type type="text/x-troff-ms">
     <comment>Troff MS input document</comment>
+    <comment xml:lang="da">Troff MS inddata-dokument</comment>
     <comment xml:lang="de">Troff-MS-Eingabedokument</comment>
     <comment xml:lang="no">Troff MS-inndatadokument</comment>
     <glob pattern="*.ms" />
   </mime-type>
   <mime-type type="text/x-uil">
     <comment>X-Motif UIL table</comment>
+    <comment xml:lang="da">X-Motif UIL-tabel</comment>
     <comment xml:lang="de">X-Motif-UIL-Tabelle</comment>
     <glob pattern="*.uil" />
   </mime-type>
   <mime-type type="text/x-uri">
     
     <comment>resource location</comment>
+    <comment xml:lang="da">resurseplacering</comment>
     <comment xml:lang="de">Ressourcenort</comment>
     <comment xml:lang="no">ressurslokasjon</comment>
     <glob pattern="*.uri" />
@@ -4722,6 +5047,7 @@
     <comment xml:lang="az">vCalendar dəyişmə faylı</comment>
     <comment xml:lang="cs">Soubor výměny vCalendar</comment>
     <comment xml:lang="cy">Ffeil gyfnewid vCalendar</comment>
+    <comment xml:lang="da">vCalendar-udvekslingsfil</comment>
     <comment xml:lang="de">vCalendar-Austauschdatei</comment>
     <comment xml:lang="fi">vCalendar-välitystiedosto</comment>
     <comment xml:lang="fr">fichier « vCalendar interchange »</comment>
@@ -4739,6 +5065,7 @@
   </mime-type>
   <mime-type type="text/x-vcard">
     <comment>electronic business card</comment>
+    <comment xml:lang="da">elektronisk visitkort</comment>
     <comment xml:lang="de">elektronische Visitenkarte</comment>
     <comment xml:lang="no">elektronisk visittkort</comment>
     <comment xml:lang="sv">elektroniskt visitkort</comment>
@@ -4751,6 +5078,8 @@
   </mime-type>
   <mime-type type="text/x-xmi">
     <comment>XML Metadata Interchange file</comment>
+    <comment xml:lang="da">XML-metadataudvekslingsfil</comment>
+    <comment xml:lang="de">XML-Metadaten-Austauschdatei</comment>
     <glob pattern="*.xmi" />
   </mime-type>
   <mime-type type="text/x-xslfo">
@@ -4758,6 +5087,7 @@
     <comment xml:lang="az">XSL Formatlama Cismi faylı</comment>
     <comment xml:lang="cs">Soubor objektu formátování XSL</comment>
     <comment xml:lang="cy">Ffeil gwrthrych ffurfwedd XSL</comment>
+    <comment xml:lang="da">XML-formateringsobjektfil</comment>
     <comment xml:lang="de">XSL-Formatierungsobjektdatei</comment>
     <comment xml:lang="fi">XSL-muotoiluobjektitiedosto</comment>
     <comment xml:lang="fr">fichier objet XSL Formating</comment>
@@ -4771,6 +5101,7 @@
   </mime-type>
   <mime-type type="text/x-xslt">
     <comment>XSLT stylesheet</comment>
+    <comment xml:lang="da">XSLT-stilark</comment>
     <comment xml:lang="de">XSLT-Stylesheet</comment>
     <comment xml:lang="no">XSLT-stilark</comment>
     <glob pattern="*.xslt" />
@@ -4786,6 +5117,7 @@
     <comment xml:lang="az">eXtensible Markup Language sənədi</comment>
     <comment xml:lang="cs">Dokument eXtensible Markup Language</comment>
     <comment xml:lang="cy">Dogfen XML (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language)</comment>
+    <comment xml:lang="da">eXtensible Markup Language-dokument</comment>
     <comment xml:lang="de">XML-Dokument</comment>
     <comment xml:lang="fi">laajennettava merkintäkielinen asiakirja (XML)</comment>
     <comment xml:lang="fr">document XML « eXtensible Markup Language »</comment>
@@ -4804,6 +5136,7 @@
     <comment xml:lang="az">ISI video faylı</comment>
     <comment xml:lang="cs">Video ISI</comment>
     <comment xml:lang="cy">Fideo ISI</comment>
+    <comment xml:lang="da">ISI-video</comment>
     <comment xml:lang="de">ISI-Video</comment>
     <comment xml:lang="fi">ISI-video</comment>
     <comment xml:lang="fr">vidéo ISI</comment>
@@ -4816,6 +5149,7 @@
   </mime-type>
   <mime-type type="video/mpeg">
     <comment>MPEG video</comment>
+    <comment xml:lang="da">MPEG-video</comment>
     <comment xml:lang="de">MPEG-Video</comment>
     <comment xml:lang="no">MPEG-film</comment>
     <comment xml:lang="sv">MPEG-video</comment>
@@ -4833,6 +5167,7 @@
   </mime-type>
   <mime-type type="video/quicktime">
     <comment>QuickTime video</comment>
+    <comment xml:lang="da">QuickTime-video</comment>
     <comment xml:lang="de">QuickTime-Video</comment>
     <comment xml:lang="no">Quicktime-film</comment>
     <magic priority="50">
@@ -4850,6 +5185,7 @@
     <comment xml:lang="az">Vivo video faylı</comment>
     <comment xml:lang="cs">Video Vivo</comment>
     <comment xml:lang="cy">Fideo Vivo</comment>
+    <comment xml:lang="da">Vivo-video</comment>
     <comment xml:lang="de">Vivo-Video</comment>
     <comment xml:lang="fi">Vivo-video</comment>
     <comment xml:lang="fr">vidéo Vivo</comment>
@@ -4865,6 +5201,7 @@
     <comment xml:lang="az">Wavelet video faylı</comment>
     <comment xml:lang="cs">Video Wavelet</comment>
     <comment xml:lang="cy">Fideo Wavelet</comment>
+    <comment xml:lang="da">Wavelet-video</comment>
     <comment xml:lang="de">Wavelet-Video</comment>
     <comment xml:lang="fi">Wavelet-video</comment>
     <comment xml:lang="fr">vidéo Wavelet</comment>
@@ -4880,6 +5217,7 @@
     <comment xml:lang="az">ANIM animasiyası</comment>
     <comment xml:lang="cs">Animace ANIM</comment>
     <comment xml:lang="cy">Animeiddiad ANIM</comment>
+    <comment xml:lang="da">ANIM-animation</comment>
     <comment xml:lang="de">ANIM-Animation</comment>
     <comment xml:lang="fi">ANIM-animaatio</comment>
     <comment xml:lang="fr">animation ANIM</comment>
@@ -4896,6 +5234,7 @@
     <comment xml:lang="az">AVI video faylı</comment>
     <comment xml:lang="cs">Video AVI</comment>
     <comment xml:lang="cy">Fideo AVI</comment>
+    <comment xml:lang="da">AVI-video</comment>
     <comment xml:lang="de">AVI-Video</comment>
     <comment xml:lang="fi">AVI-video</comment>
     <comment xml:lang="fr">vidéo AVI</comment>
@@ -4908,6 +5247,7 @@
   </mime-type>
   <mime-type type="video/x-flic">
     <comment>AutoDesk FLIC animation</comment>
+    <comment xml:lang="da">AutoDesk FLIC-animation</comment>
     <comment xml:lang="de">AutoDesk-FLIC-Animation</comment>
     <comment xml:lang="no">AutoDesk FLIC-animasjon</comment>
     <magic priority="50">
@@ -4919,12 +5259,14 @@
   </mime-type>
   <mime-type type="video/x-mng">
     <comment>MNG animation</comment>
+    <comment xml:lang="da">MNG-animation</comment>
     <comment xml:lang="de">MNG-Animation</comment>
     <comment xml:lang="no">MNG-animasjon</comment>
     <glob pattern="*.mng" />
   </mime-type>
   <mime-type type="video/x-ms-asf">
     <comment>Microsoft ASF video</comment>
+    <comment xml:lang="da">Microsoft ASF-video</comment>
     <comment xml:lang="de">Microsoft-ASF-Video</comment>
     <comment xml:lang="no">Microsoft ASF-film</comment>
     <glob pattern="*.asf" />
@@ -4938,6 +5280,7 @@
     <comment xml:lang="az">Microsoft WMV video faylı</comment>
     <comment xml:lang="cs">Video Microsoft WMV</comment>
     <comment xml:lang="cy">Video Microsoft WMV</comment>
+    <comment xml:lang="da">Microsoft WMV-video</comment>
     <comment xml:lang="de">Microsoft-WMV-Video</comment>
     <comment xml:lang="fi">Microsoft WMV -video</comment>
     <comment xml:lang="fr">vidéo Microsoft WMV</comment>
@@ -4951,6 +5294,7 @@
   </mime-type>
   <mime-type type="video/x-msvideo">
     <comment>Microsoft AVI video</comment>
+    <comment xml:lang="da">Microsoft AVI-video</comment>
     <comment xml:lang="de">Microsoft-AVI-Video</comment>
     <comment xml:lang="no">Microsoft AVI-film</comment>
     <comment xml:lang="sv">Microsoft AVI-video</comment>
@@ -4965,6 +5309,7 @@
     <comment xml:lang="az">Nullsoft video faylı</comment>
     <comment xml:lang="cs">Video Nullsoft</comment>
     <comment xml:lang="cy">Fideo Nullsoft</comment>
+    <comment xml:lang="da">Nullsoft-video</comment>
     <comment xml:lang="de">Nullsoft-Video</comment>
     <comment xml:lang="fi">Nullsoft-video</comment>
     <comment xml:lang="fr">vidéo Nullsoft</comment>
@@ -4985,6 +5330,7 @@
     <comment xml:lang="az">RealVideo video faylı</comment>
     <comment xml:lang="cs">Video RealVideo</comment>
     <comment xml:lang="cy">Fideo RealVideo</comment>
+    <comment xml:lang="da">RealVideo-video</comment>
     <comment xml:lang="de">RealVideo-Video</comment>
     <comment xml:lang="fi">RealVideo-video</comment>
     <comment xml:lang="fr">vidéo RealVideos</comment>
@@ -5000,6 +5346,7 @@
     <comment xml:lang="az">SGI video faylı</comment>
     <comment xml:lang="cs">Video SGI</comment>
     <comment xml:lang="cy">Video SGI</comment>
+    <comment xml:lang="da">SGI-video</comment>
     <comment xml:lang="de">SGI-Video</comment>
     <comment xml:lang="fi">SGI-video</comment>
     <comment xml:lang="fr">vidéo SGI</comment>

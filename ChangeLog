@@ -1,3 +1,9 @@
+2004-07-25  Christian Neumair  <chris@gnome-de.org>
+
+	* freedesktop.xml.in: Add "*.exe" glob pattern to
+	application/x-ms-dos-executable, raise magic priority over
+	application/x-executable.
+
 Fri Jul  9 12:24:04 2004  Thomas Leonard  <tal00r@ecs.soton.ac.uk>
 
 	* freedesktop.org.xml.in: Merged the two msword types by making them

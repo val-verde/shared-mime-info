@@ -23,17 +23,24 @@
 					<address><email>david@mandrakesoft.com</email></address>
 				</affiliation>
 			</author>
+			<author>
+				<firstname>Alex</firstname>
+				<surname>Larsson</surname>
+				<affiliation>
+					<address><email>alexl@devserv.devel.redhat.com</email></address>
+				</affiliation>
+			</author>
 		</authorgroup>
 
 		<title>Shared MIME-info Database</title>
-		<date>26 April 2002</date>
+		<date>03 May 2002</date>
 	</articleinfo>
 <sect1>
 	<title>Introduction</title>
 	<sect2>
 		<title>Version</title>
 		<para>
-This is version 0.6 of the Shared MIME-info Database spec, last updated 26 April 2002.
+This is version 0.7 of the Shared MIME-info Database spec, last updated 03 May 2002.
 		</para>
 	</sect2>
 	<sect2>
@@ -289,7 +296,7 @@ Comment=HTML document
 Comment[af]=...
 [... etc. other translations ]
 Patterns=*.htm;*.html
-Contents=(strcmp-at 0 "<HTML")
+Contents=50:(string 0:64 "<HTML")
 Hidden=false
 ]]></programlisting>
 		</para>
@@ -410,164 +417,80 @@ about its own types, conflicts should be rare.
 	<sect2>
 		<title>Contents matching</title>
 		<para>
-The value of the Contents attribute is a scheme-like expression. If the
-expression evaluates to a true value then the file is assumed to be of this
-type. Since scanning a file's contents can be very slow, applications may
-choose to do pattern matching first and only fall back to content matching, or
-not perform it at all.
+The value of the Contents attribute contains a priority and an expression.
+If several expressions match for one file, the one with the highest priority is used.
+As a guide, priorities should be between 1 and 100, with 50 being the normal case.
+Generic types (such as XML or GZip-compressed files) should have lower priorities.
+		</para><para>
+Since scanning a file's contents can be very slow, applications may choose to
+do pattern matching first and only fall back to content matching, or not
+perform it at all.
 		</para>
 		<para>
-An expression is a list of space-separated items surrounded by parenthesis, eg:
+The basic building blocks of expressions are bracketed lists containing a type,
+an offset (or range of offsets), the data to match and, optionally, a mask. For
+example:
 			<programlisting><![CDATA[
-(strcmp-at 0 "<?xml ")
+(string 0 "%PDF-")
+(string 0 "\177ELF")
+(string	0:64 "<svg")
+(string 0 "BMxxxx\000\000" 0xffff00000000ffff)
 ]]></programlisting>
-The first element of the list (<userinput>strcmp-at</userinput> in this
-example) is the name of a function. The remaining elements are its arguments.
-The result of evaluating the expression is the result of applying the function
-to the arguments. Each argument may be:
-			<variablelist>
-				<varlistentry><term>An integer</term>
-					<listitem><para>
-A 64-bit signed integer, such as <userinput>32</userinput>.
-					</para></listitem>
-				</varlistentry>
-				<varlistentry><term>A string</term>
-					<listitem><para>
-A string of characters with C-style escaping. This string contains the
-sequence of bytes &lt;0, 8, 9, 10&gt;: <userinput>"\0\010\t\xa"</userinput>.
-					</para></listitem>
-				</varlistentry>
-				<varlistentry><term>A symbol</term>
-					<listitem><para>
-A symbol is a constant for the file being tested. For example,
-<userinput>size</userinput> evaluates to the file's size.
-					</para></listitem>
-				</varlistentry>
-				<varlistentry><term>A list</term>
-					<listitem><para>
-Lists may be nested. Each sub-list is evaluated in the same way as the top-level
-list, eg <userinput>(+ (* 3 2) (* 4 3))</userinput> is 18.
-					</para></listitem>
-				</varlistentry>
-			</variablelist>
-Functions may return integers or strings. 'True' is represented by the integer
-1, and False by 0. The following functions and symbols are provided:
+The first element of the list is the type of the data (see the table below), the
+second is the range of offsets to check, the third is the value to match and
+the last, if present, is the mask.
+			</para>
+			<para>
+Integers have the usual C-style prefixes (0 for octal numbers, 0x for hexadecimal).
+Strings have C-style escaping. This string contains the sequence of bytes
+&lt;0, 8, 9, 10&gt;: <userinput>"\0\010\t\xa"</userinput>.
+			</para>
+			<para>
+A range gives the range of valid starting offsets. If the end of the range is omitted then
+it is assumed to be the same as the start (that is, the match is only checked at one point
+in the file).
+			</para>
+			<para>
+The possible types of match are listed below:
+			</para>
 			<informaltable>
 				<tgroup cols="3">
 					<thead>
 						<row>
-<entry>Function example</entry><entry>Result</entry><entry>Description</entry>
+<entry>Type</entry><entry>Description</entry>
 						</row>
 					</thead>
 					<tbody>
-						<row>
-<entry>(+ 1 2 3)</entry><entry>6</entry>
-<entry>The sum of the arguments</entry>
-						</row>
-						<row>
-<entry>(- 10 6 6)</entry><entry>-2</entry>
-<entry>The first argument minus the sum of the remaining arguments</entry>
-						</row>
-						<row>
-<entry>(* 2 2 3)</entry><entry>12</entry>
-<entry>The product of the arguments</entry>
-						</row>
-						<row>
-<entry>(/ 20 2 2)</entry><entry>5</entry>
-<entry>The first argument divided by the
-product of the remaining arguments</entry>
-						</row>
-						<row>
-<entry>(&gt; 1 2)</entry><entry>0</entry>
-<entry>True iff the first argument is greater than the second</entry>
-						</row>
-						<row>
-<entry>(&lt; 1 2)</entry><entry>1</entry>
-<entry>True iff the first argument is less than the second</entry>
-						</row>
-						<row>
-<entry>(= 1 2)</entry><entry>0</entry>
-<entry>True iff the first argument is equal to the second</entry>
-						</row>
-						<row>
-<entry>(not size)</entry><entry>1</entry>
-<entry>True iff argument is false (0 or "")</entry>
-						</row>
-						<row>
-<entry>(and "one" 2 3)</entry><entry>3</entry>
-<entry>The first false argument, or the last argument if none are false</entry>
-						</row>
-						<row>
-<entry>(or 0 "" 2 0)</entry><entry>2</entry>
-<entry>The first true argument, or the last argument if none are true</entry>
-						</row>
-						<row>
-<entry>(&amp; 3 6)</entry><entry>2</entry>
-<entry>Bit-wise AND of the arguments</entry>
-						</row>
-						<row>
-<entry>(| 3 6)</entry><entry>7</entry>
-<entry>Bit-wise OR of the arguments</entry>
-						</row>
-						<row>
-<entry>(^ 3 6)</entry><entry>5</entry>
-<entry>Bit-wise XOR of the arguments</entry>
-						</row>
-						<row>
-<entry>size</entry><entry>10</entry>
-<entry>The size of the file in bytes</entry>
-						</row>
-						<row>
-<entry>(strcmp-at 0 "Hello")</entry>
-<entry>1</entry><entry>True iff the string starting at the file offset given by the
-first argument matches the second argument</entry>
-						</row>
-						<row>
-<entry>(byte-at 0)</entry>
-<entry>72</entry><entry>The signed byte at the given file offset</entry>
-						</row>
-						<row>
-<entry>(big-16 4)</entry>
-<entry>28503</entry><entry>The big-endian 16-bit signed integer starting
-at the given file offset.</entry>
-						</row>
-						<row>
-<entry>(little-16 4)</entry>
-<entry>22383</entry><entry>The little-endian 16-bit signed integer starting
-at the given file offset.</entry>
-						</row>
-						<row>
-<entry>(big-32 0)</entry>
-<entry>1214606444</entry>
-<entry>As above, but for a 32-bit big-endian integer</entry>
-						</row>
-						<row>
-<entry>(little-32 0)</entry>
-<entry>1819043144</entry>
-<entry>As above, but for a 32-bit little-endian integer</entry>
-						</row>
-						<row>
-<entry>(big-64 0)</entry>
-<entry>5216694956358856562</entry>
-<entry>As above, but for a 64-bit big-endian integer</entry>
-						</row>
-						<row>
-<entry>(little-64 0)</entry>
-<entry>8245905578810697032</entry>
-<entry>As above, but for a 64-bit little-endian integer</entry>
-						</row>
-						<row>
-<entry>(string-at 4 6)</entry>
-<entry>"oWorld"</entry><entry>The string of bytes starting at the offset
-given by the first argument and of length given by the second argument
-</entry>
-						</row>
+<row><entry>string</entry><entry>String of bytes</entry></row>
+<row><entry>byte</entry><entry>Single byte</entry></row>
+<row><entry>big16</entry><entry>16-bit big-endian integer</entry></row>
+<row><entry>big32</entry><entry>32-bit big-endian integer</entry></row>
+<row><entry>little16</entry><entry>16-bit little-endian integer</entry></row>
+<row><entry>little32</entry><entry>32-bit little-endian integer</entry></row>
+<row><entry>host16</entry><entry>16-bit integer in host-order</entry></row>
+<row><entry>host32</entry><entry>32-bit integer in host-order</entry></row>
 					</tbody>
 				</tgroup>
 			</informaltable>
-The <userinput>and</userinput> and <userinput>or</userinput> functions should only evaluate
-as many arguments as are necessary to determine the result.
-		</para>
+			<para>
+These basic expressions may be combined using the <userinput>and</userinput> and
+<userinput>or</userinput> syntax, eg:
+			<programlisting><![CDATA[
+(and (string 0 "\037\213") (string 10 "KOffice") (string 18 "application/x-kchart\004\006"))
+]]></programlisting>
+The <userinput>and</userinput> keyword corresponds to a more-deeply indented continuation
+line in the original <citerefentry><refentrytitle>file</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry> syntax, while <userinput>or</userinput> corresponds
+to elements at the same indentation. They may be nested in the obvious (scheme-like)
+fashion.
+			</para>
+			<para>
+Since many formats have sub-formats (for example, KOffice stores its files in
+GZip format, with a generic KOffice marker and a specific application marker),
+it may be a useful optimisation to spot the same subexpression (eg
+<userinput>(string 10 "KOffice")</userinput>) being used in several types and
+only check it once.
+			</para>
 	</sect2>
 	<sect2>
 		<title>Security implications</title>

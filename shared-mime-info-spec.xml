@@ -216,6 +216,10 @@ The format for magic entries is defined as:
 	<sect2>
 		<title>ROX</title>
 		<para>
+Note that ROX is now using this specification. This section details the
+previous implementation.
+		</para>
+		<para>
 ROX searches <filename>MIME-info</filename> directories in
 <envar>CHOICESPATH</envar> (<filename>~/Choices/MIME-info:/usr/local/share/Choices/MIME-info:/usr/share/Choices/MIME-info</filename> by
 default). Files from earlier directories override those in later ones, but

@@ -1,3 +1,9 @@
+2004-12-08  Christophe Fergeau  <teuf@gnome.org>
+
+	* freedesktop.org.xml:
+	* freedesktop.org.xml.in: change main mp3 mime type to audio/mpeg,
+	add audio/x-mp3 as an alias for this mime type.
+
 2004-12-02  Dan Winship  <danw@novell.com>
 
 	* Makefile.am (CLEANFILES, DISTCLEANFILES): Fix. intltool stuff

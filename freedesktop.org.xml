@@ -6719,7 +6719,8 @@
     <glob pattern="*.mtm"/>
     <glob pattern="*.669"/>
   </mime-type>
-  <mime-type type="audio/x-mp3">
+  <mime-type type="audio/mpeg">
+    <alias type="audio/x-mp3"/>
     <comment>MP3 audio</comment>
     <comment xml:lang="az">MP3 audio faylı</comment>
     <comment xml:lang="bg">Аудио файл, формат MP3</comment>

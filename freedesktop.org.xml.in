@@ -3,11 +3,11 @@
   <!ELEMENT mime-info (mime-type)+>
   <!ATTLIST mime-info xmlns CDATA #FIXED "http://www.freedesktop.org/standards/shared-mime-info">
 
-  <!ELEMENT mime-type (comment|glob|magic|root-XML|alias|sub-class-of)*>
+  <!ELEMENT mime-type (_comment|glob|magic|root-XML|alias|sub-class-of)*>
   <!ATTLIST mime-type type CDATA #REQUIRED>
 
-  <!ELEMENT comment (#PCDATA)>
-  <!ATTLIST comment xml:lang CDATA #IMPLIED>
+  <!ELEMENT _comment (#PCDATA)>
+  <!ATTLIST _comment xml:lang CDATA #IMPLIED>
 
   <!ELEMENT glob EMPTY>
   <!ATTLIST glob pattern CDATA #REQUIRED>
@@ -1537,7 +1537,8 @@ command to generate the output files.
     <glob pattern="*.mtm"/>
     <glob pattern="*.669"/>
   </mime-type>
-  <mime-type type="audio/x-mp3">
+  <mime-type type="audio/mpeg">
+    <alias type="audio/x-mp3" />
     <_comment>MP3 audio</_comment>
     <magic priority="50">
       <match type="big32" value="0xfffb" offset="0"/>

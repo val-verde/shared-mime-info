@@ -759,6 +759,24 @@ the user can often rename the file to fix the problem.
 		</para>
 	</sect2>
 	<sect2>
+		<title>Non-regular files</title>
+		<para>
+Sometimes it is useful to assign MIME types to other objects in the filesystem,
+such as directories, sockets and device files. This could be useful when looking up
+an icon for a type, or for providing a textual description of one of these objects.
+The media type 'inode' is provided for this purpose, with the following types corresponding
+to the standard types of object found in a Unix filesystem:
+		</para>
+		<simplelist>
+			<member>inode/blockdevice</member>
+			<member>inode/chardevice</member>
+			<member>inode/directory</member>
+			<member>inode/fifo</member>
+			<member>inode/socket</member>
+			<member>inode/symlink</member>
+		</simplelist>
+	</sect2>
+	<sect2>
 		<title>Security implications</title>
 		<para>
 The system described in this document is intended to allow different programs

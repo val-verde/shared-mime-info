@@ -2,6 +2,8 @@
 
 SUBDIRS=po
 
+INCLUDES = $(ALL_CFLAGS)
+
 AUTOMAKE_OPTIONS = foreign
 
 packagesdir = $(mimedir)/packages

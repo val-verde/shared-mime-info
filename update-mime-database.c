@@ -1538,11 +1538,10 @@ static gboolean
 write_card16 (FILE *cache, guint16 n)
 {
   int i;
-  gchar s[2];
 
-  *((guint16 *)s) = GUINT16_TO_BE (n);
+  n = GUINT16_TO_BE (n);
   
-  i = fwrite (s, 2, 1, cache);
+  i = fwrite ((char *)&n, 2, 1, cache);
 
   return i == 1;
 }
@@ -1551,11 +1550,10 @@ static gboolean
 write_card32 (FILE *cache, guint32 n)
 {
   int i;
-  gchar s[4];
 
-  *((guint32 *)s) = GUINT32_TO_BE (n);
+  n = GUINT32_TO_BE (n);
   
-  i = fwrite (s, 4, 1, cache);
+  i = fwrite ((char *)&n, 4, 1, cache);
 
   return i == 1;
 }
@@ -1673,7 +1671,7 @@ write_map (FILE         *cache,
   map_data.pool = strings;
   map_data.get_value = get_value;
   map_data.data = map;
-  map_data.offset = *offset;
+  map_data.offset = *offset + 4;
   map_data.error = FALSE;
 
   g_ptr_array_foreach (keys, write_map_entry, &map_data);
@@ -2462,6 +2460,7 @@ write_strings (FILE       *cache,
 static gboolean 
 write_cache (FILE *cache)
 {
+  guint strings_offset;
   guint alias_offset;
   guint parent_offset;
   guint literal_offset;
@@ -2481,12 +2480,15 @@ write_cache (FILE *cache)
 
   strings = g_hash_table_new (g_str_hash, g_str_equal);
   collect_strings (strings);
+  strings_offset = offset;
+
   if (!write_strings (cache, strings, &offset))
     {
       g_printerr ("Failed to write strings\n");
       return FALSE;
     }
-  g_print ("Wrote %d strings\n", g_hash_table_size (strings));
+  g_print ("Wrote %d strings at %x - %x\n", 
+	   g_hash_table_size (strings), strings_offset, offset);
 
   alias_offset = offset;
   if (!write_alias_cache (cache, strings, &offset))

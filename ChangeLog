@@ -1,3 +1,9 @@
+Fri Apr  8 23:34:27 2005  Jonathan Blandford  <jrb@redhat.com>
+
+	* update-mime-database.c: Patch from Matthias Clasen
+	<mclasen@redhat.com> to adjust one offset after adding the
+	namespace table.  Produced cache now works.
+
 2005-04-07  Bastien Nocera  <hadess@hadess.net>
 
 	* Makefile.am: work-around for old versions of automake

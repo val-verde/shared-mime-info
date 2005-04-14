@@ -161,6 +161,7 @@
     <comment xml:lang="pt">desconhecido</comment>
     <comment xml:lang="pt_BR">Desconhecido</comment>
     <comment xml:lang="ru">неизвестный</comment>
+    <comment xml:lang="rw">itazwi</comment>
     <comment xml:lang="sq">nuk njihet</comment>
     <comment xml:lang="sr">непознато</comment>
     <comment xml:lang="sv">okänd</comment>
@@ -1583,6 +1584,10 @@
     <glob pattern="*.abw.CRASHED"/>
     <glob pattern="*.abw.gz"/>
     <glob pattern="*.zabw"/>
+  </mime-type>
+  <mime-type type="application/x-cue">
+    <comment>CD image cuesheet</comment>
+    <glob pattern="*.cue"/>
   </mime-type>
   <mime-type type="application/x-amipro">
     <comment>Lotus AmiPro document</comment>

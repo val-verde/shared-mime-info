@@ -379,6 +379,10 @@ command to generate the output files.
     <glob pattern="*.abw.gz"/>
     <glob pattern="*.zabw"/>
   </mime-type>
+  <mime-type type="application/x-cue">
+    <_comment>CD image cuesheet</_comment>
+    <glob pattern="*.cue"/>
+  </mime-type>
   <mime-type type="application/x-amipro">
     <_comment>Lotus AmiPro document</_comment>
     <glob pattern="*.sam"/>

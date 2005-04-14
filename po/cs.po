@@ -1,16 +1,15 @@
 # Czech translation of shared-mime-info
 # based on Slovak translation of gnome-mime-data
 # Copyright (C) 2002 Free Software Foundation, Inc.
-# Copyright (C) 2003, 2004 Miloslav Trmac <mitr@volny.cz>
+# Copyright (C) 2003, 2004, 2005 Miloslav Trmac <mitr@volny.cz>
 # Michal Bukovjan <bukm@centrum.cz>, 2002.
-# Miloslav Trmac <mitr@volny.cz>, 2003, 2004.
-#
+# Miloslav Trmac <mitr@volny.cz>, 2003 - 2005.
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info 0.15\n"
+"Project-Id-Version: shared-mime-info 0.16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-03-22 14:40-0500\n"
-"PO-Revision-Date: 2004-08-31 14:30+0200\n"
+"PO-Revision-Date: 2005-04-14 23:16+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -182,9 +181,8 @@ msgid "Corel Draw drawing"
 msgstr "Kresba Corel Draw"
 
 #: ../freedesktop.org.xml.in.h:42
-#, fuzzy
 msgid "D source code"
-msgstr "Zdrojový kód v C"
+msgstr "Zdrojový kód v D"
 
 #: ../freedesktop.org.xml.in.h:43
 msgid "DCL script"
@@ -247,7 +245,6 @@ msgid "Egon Animator animation"
 msgstr "Animace Egon Animator"
 
 #: ../freedesktop.org.xml.in.h:58
-#, fuzzy
 msgid "Electronic Business Card"
 msgstr "Elektronická navštívenka"
 
@@ -409,7 +406,7 @@ msgstr "Obrázek JPEG-2000"
 
 #: ../freedesktop.org.xml.in.h:98
 msgid "Java Network Launched Application"
-msgstr ""
+msgstr "Aplikace v Javě spouštěná ze sítě"
 
 #: ../freedesktop.org.xml.in.h:99
 msgid "Java archive"
@@ -556,9 +553,8 @@ msgid "MP3 playlist"
 msgstr "Seznam skladeb MP3"
 
 #: ../freedesktop.org.xml.in.h:135
-#, fuzzy
 msgid "MP4 audio"
-msgstr "Zvuk MP3"
+msgstr "Zvuk MP4"
 
 #: ../freedesktop.org.xml.in.h:136
 msgid "MPEG video"
@@ -685,71 +681,60 @@ msgid "Ogg Vorbis audio"
 msgstr "Zvuk Ogg Vorbis"
 
 #: ../freedesktop.org.xml.in.h:167
-#, fuzzy
 msgid "OpenDocument Chart"
-msgstr "Dokument ODA"
+msgstr "Graf OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:168
 msgid "OpenDocument Database"
-msgstr ""
+msgstr "Databáze OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:169
 msgid "OpenDocument Drawing"
-msgstr ""
+msgstr "Kresba OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:170
-#, fuzzy
 msgid "OpenDocument Drawing Template"
-msgstr "Šablona kresby OpenOffice.org Draw"
+msgstr "Šablona kresby OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:171
 msgid "OpenDocument Formula"
-msgstr ""
+msgstr "Vzorec OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:172
-#, fuzzy
 msgid "OpenDocument HTML Document Template"
-msgstr "Šablona dokumentu OpenOffice.org Writer"
+msgstr "Šablona HTML dokumentu OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:173
-#, fuzzy
 msgid "OpenDocument Image"
-msgstr "Dokument ODA"
+msgstr "Obrázek OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:174
-#, fuzzy
 msgid "OpenDocument Master Document"
-msgstr "Dokument OpenOffice.org Writer"
+msgstr "Hlavní dokument OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:175
-#, fuzzy
 msgid "OpenDocument Presentation"
-msgstr "Prezentace KPresenter"
+msgstr "Prezentace OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:176
-#, fuzzy
 msgid "OpenDocument Presentation Template"
-msgstr "Šablona prezentace OpenOffice.org Impress"
+msgstr "Šablona prezentace OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:177
-#, fuzzy
 msgid "OpenDocument Spreadsheet"
-msgstr "Tabulka Gnumeric"
+msgstr "Tabulka OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:178
-#, fuzzy
 msgid "OpenDocument Spreadsheet Template"
-msgstr "Šablona tabulky OpenOffice.org Calc"
+msgstr "Šablona tabulky OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:179
-#, fuzzy
 msgid "OpenDocument Text"
-msgstr "Dokument ODA"
+msgstr "Text OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:180
-#, fuzzy
 msgid "OpenDocument Text Template"
-msgstr "Šablona dokumentu OpenOffice.org Writer"
+msgstr "Šablona textu OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:181
 msgid "OpenOffice.org Calc spreadsheet"
@@ -1085,9 +1070,8 @@ msgid "StarWriter document"
 msgstr "Dokument StarWriter"
 
 #: ../freedesktop.org.xml.in.h:264
-#, fuzzy
 msgid "StuffIt archive"
-msgstr "Archiv Macintosh StuffIt"
+msgstr "Archiv StuffIt"
 
 #: ../freedesktop.org.xml.in.h:265
 msgid "SunOS News font"
@@ -1262,9 +1246,8 @@ msgid "XML Metadata Interchange file"
 msgstr "Soubor XML Metadata Interchange"
 
 #: ../freedesktop.org.xml.in.h:308
-#, fuzzy
 msgid "XML User Interface Language document"
-msgstr "Dokument eXtensible Markup Language"
+msgstr "Dokument XML User Interface Language"
 
 #: ../freedesktop.org.xml.in.h:309
 msgid "XSL Formating Object file"

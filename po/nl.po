@@ -1,17 +1,17 @@
 # Dutch translation of shared-mime-info.
-# Copyright (C) 2003, 2004 Free Software Foundation, Inc.
+# Copyright (C) 2003, 2004, 2005 Free Software Foundation, Inc.
 # This file is distributed under the same license as the shared-mime-info package.
-# Elros Cyriatan <cyriatan@fastmail.fm>, 2003, 2004.
+# Taco Witte <tcwitte@cs.uu.nl>, 2003, 2004, 2005.
 #
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info 0.15\n"
+"Project-Id-Version: shared-mime-info 0.16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-03-22 14:40-0500\n"
-"PO-Revision-Date: 2004-09-01 22:48+0200\n"
-"Last-Translator: Elros Cyriatan <cyriatan@fastmail.fm>\n"
-"Language-Team: Dutch <vertaling@nl.linux.org>\n"
+"PO-Revision-Date: 2005-04-14 12:33+0200\n"
+"Last-Translator: Taco Witte <tcwitte@cs.uu.nl>\n"
+"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,15 +22,15 @@ msgstr "3D Studio-afbeelding"
 
 #: ../freedesktop.org.xml.in.h:2
 msgid "AIFC audio"
-msgstr "AIFC-geluid"
+msgstr "AIFC-audio"
 
 #: ../freedesktop.org.xml.in.h:3
 msgid "AIFF audio"
-msgstr "AIFF-geluid"
+msgstr "AIFF-audio"
 
 #: ../freedesktop.org.xml.in.h:4
 msgid "AIFF/Amiga/Mac audio"
-msgstr "AIFF/Amiga/Mac-geluid"
+msgstr "AIFF/Amiga/Mac-audio"
 
 #: ../freedesktop.org.xml.in.h:5
 msgid "ANIM animation"
@@ -74,11 +74,11 @@ msgstr "Adobe-lettertype-metrieken"
 
 #: ../freedesktop.org.xml.in.h:15
 msgid "Amiga SoundTracker audio"
-msgstr "Amiga SoundTracker-geluid"
+msgstr "Amiga SoundTracker-audio"
 
 #: ../freedesktop.org.xml.in.h:16
 msgid "Andrew Toolkit inset"
-msgstr ""
+msgstr "Andrew Toolkit-invoegsel"
 
 #: ../freedesktop.org.xml.in.h:17
 msgid "Applix Graphics image"
@@ -170,7 +170,7 @@ msgstr "Cascading Style Sheet"
 
 #: ../freedesktop.org.xml.in.h:39
 msgid "Commodore 64 audio"
-msgstr "Commodore 64-geluid"
+msgstr "Commodore 64-audio"
 
 #: ../freedesktop.org.xml.in.h:40
 msgid "Computer Graphics Metafile"
@@ -181,9 +181,8 @@ msgid "Corel Draw drawing"
 msgstr "Corel Draw-tekening"
 
 #: ../freedesktop.org.xml.in.h:42
-#, fuzzy
 msgid "D source code"
-msgstr "C-broncode"
+msgstr "D-broncode"
 
 #: ../freedesktop.org.xml.in.h:43
 msgid "DCL script"
@@ -235,7 +234,7 @@ msgstr "DjVu-afbeelding"
 
 #: ../freedesktop.org.xml.in.h:55
 msgid "Dolby Digital audio"
-msgstr "Dolby Digital-geluid"
+msgstr "Dolby Digital-audio"
 
 #: ../freedesktop.org.xml.in.h:56
 msgid "Dreamcast ROM"
@@ -246,9 +245,8 @@ msgid "Egon Animator animation"
 msgstr "Egon Animator-animatie"
 
 #: ../freedesktop.org.xml.in.h:58
-#, fuzzy
 msgid "Electronic Business Card"
-msgstr "electronische adreskaart"
+msgstr "Electronische visitekaartje"
 
 #: ../freedesktop.org.xml.in.h:59
 msgid "Emacs Lisp source code"
@@ -264,11 +262,11 @@ msgstr "Enlightenment-thema"
 
 #: ../freedesktop.org.xml.in.h:62
 msgid "FLAC audio"
-msgstr "FLAC-geluid"
+msgstr "FLAC-audio"
 
 #: ../freedesktop.org.xml.in.h:63
 msgid "FastTracker II audio"
-msgstr "FastTracker II-geluid"
+msgstr "FastTracker II-audio"
 
 #: ../freedesktop.org.xml.in.h:64
 msgid "FlashPix image"
@@ -276,7 +274,7 @@ msgstr "FlashPix-afbeelding"
 
 #: ../freedesktop.org.xml.in.h:65
 msgid "Flexible Image Transport System"
-msgstr ""
+msgstr "Flexibel afbeeldingstransportsysteem"
 
 #: ../freedesktop.org.xml.in.h:66
 msgid "Fortran source code"
@@ -388,7 +386,7 @@ msgstr "ISI-video"
 
 #: ../freedesktop.org.xml.in.h:93
 msgid "Impulse Tracker audio"
-msgstr "Impulse Tracker-geluid"
+msgstr "Impulse Tracker-audio"
 
 #: ../freedesktop.org.xml.in.h:94
 msgid "JBuilder project"
@@ -408,7 +406,7 @@ msgstr "JPEG-2000-afbeelding"
 
 #: ../freedesktop.org.xml.in.h:98
 msgid "Java Network Launched Application"
-msgstr ""
+msgstr "Over het netwerk gestarte Java-toepassing"
 
 #: ../freedesktop.org.xml.in.h:99
 msgid "Java archive"
@@ -533,7 +531,7 @@ msgstr "LyX-document"
 
 #: ../freedesktop.org.xml.in.h:129
 msgid "MIDI audio"
-msgstr "MIDI-geluid"
+msgstr "MIDI-audio"
 
 #: ../freedesktop.org.xml.in.h:130
 msgid "MNG animation"
@@ -545,20 +543,19 @@ msgstr "MP3 ShoutCast-afspeellijst"
 
 #: ../freedesktop.org.xml.in.h:132
 msgid "MP3 audio"
-msgstr "MP3-geluid"
+msgstr "MP3-audio"
 
 #: ../freedesktop.org.xml.in.h:133
 msgid "MP3 audio (streamed)"
-msgstr "MP3-geluid (gestroomd)"
+msgstr "MP3-audio (gestroomd)"
 
 #: ../freedesktop.org.xml.in.h:134
 msgid "MP3 playlist"
 msgstr "MP3-afspeellijst"
 
 #: ../freedesktop.org.xml.in.h:135
-#, fuzzy
 msgid "MP4 audio"
-msgstr "MP3-geluid"
+msgstr "MP4-audio"
 
 #: ../freedesktop.org.xml.in.h:136
 msgid "MPEG video"
@@ -682,74 +679,63 @@ msgstr "Objective-C-broncode"
 
 #: ../freedesktop.org.xml.in.h:166
 msgid "Ogg Vorbis audio"
-msgstr "Ogg Vorbis-geluid"
+msgstr "Ogg Vorbis-audio"
 
 #: ../freedesktop.org.xml.in.h:167
-#, fuzzy
 msgid "OpenDocument Chart"
-msgstr "ODA-document"
+msgstr "OpenDocument-grafiek"
 
 #: ../freedesktop.org.xml.in.h:168
 msgid "OpenDocument Database"
-msgstr ""
+msgstr "OpenDocument-gegevensbank"
 
 #: ../freedesktop.org.xml.in.h:169
 msgid "OpenDocument Drawing"
-msgstr ""
+msgstr "OpenDocument-tekening"
 
 #: ../freedesktop.org.xml.in.h:170
-#, fuzzy
 msgid "OpenDocument Drawing Template"
-msgstr "OpenOffice.org Draw-sjabloon voor tekening"
+msgstr "OpenDocument sjabloon voor tekening"
 
 #: ../freedesktop.org.xml.in.h:171
 msgid "OpenDocument Formula"
-msgstr ""
+msgstr "OpenDocument-formule"
 
 #: ../freedesktop.org.xml.in.h:172
-#, fuzzy
 msgid "OpenDocument HTML Document Template"
-msgstr "OpenOffice.org Writer-sjabloon voor document"
+msgstr "OpenDocument sjabloon voor HTML-document"
 
 #: ../freedesktop.org.xml.in.h:173
-#, fuzzy
 msgid "OpenDocument Image"
-msgstr "ODA-document"
+msgstr "OpenDocument-afbeelding"
 
 #: ../freedesktop.org.xml.in.h:174
-#, fuzzy
 msgid "OpenDocument Master Document"
-msgstr "OpenOffice.org Writer-document"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:175
-#, fuzzy
 msgid "OpenDocument Presentation"
-msgstr "KPresenter-presentatie"
+msgstr "OpenDocument-presentatie"
 
 #: ../freedesktop.org.xml.in.h:176
-#, fuzzy
 msgid "OpenDocument Presentation Template"
-msgstr "OpenOffice.org Impress-sjabloon voor presentatie"
+msgstr "OpenDocument sjabloon voor presentatie"
 
 #: ../freedesktop.org.xml.in.h:177
-#, fuzzy
 msgid "OpenDocument Spreadsheet"
-msgstr "Gnumeric-rekenblad"
+msgstr "OpenDocument-rekenblad"
 
 #: ../freedesktop.org.xml.in.h:178
-#, fuzzy
 msgid "OpenDocument Spreadsheet Template"
-msgstr "OpenOffice.org Calc-sjabloon voor rekenblad"
+msgstr "OpenDocument sjabloon voor rekenblad"
 
 #: ../freedesktop.org.xml.in.h:179
-#, fuzzy
 msgid "OpenDocument Text"
-msgstr "ODA-document"
+msgstr "OpenDocument-tekst"
 
 #: ../freedesktop.org.xml.in.h:180
-#, fuzzy
 msgid "OpenDocument Text Template"
-msgstr "OpenOffice.org Writer-sjabloon voor document"
+msgstr "OpenDocument sjabloon voor tekst"
 
 #: ../freedesktop.org.xml.in.h:181
 msgid "OpenOffice.org Calc spreadsheet"
@@ -801,7 +787,7 @@ msgstr "PCF-lettertype"
 
 #: ../freedesktop.org.xml.in.h:193
 msgid "PCM audio"
-msgstr "PCM-geluid"
+msgstr "PCM-audio"
 
 #: ../freedesktop.org.xml.in.h:194
 msgid "PDF document"
@@ -941,7 +927,7 @@ msgstr "RGB-afbeelding"
 
 #: ../freedesktop.org.xml.in.h:228
 msgid "RIFF audio"
-msgstr "RIFF-geluid"
+msgstr "RIFF-audio"
 
 #: ../freedesktop.org.xml.in.h:229
 msgid "RPM package"
@@ -1013,11 +999,11 @@ msgstr "Scheme-broncode"
 
 #: ../freedesktop.org.xml.in.h:246
 msgid "Scream Tracker 3 audio"
-msgstr "Scream Tracker 3-geluid"
+msgstr "Scream Tracker 3-audio"
 
 #: ../freedesktop.org.xml.in.h:247
 msgid "Scream Tracker audio"
-msgstr "Scream Tracker-geluid"
+msgstr "Scream Tracker-audio"
 
 #: ../freedesktop.org.xml.in.h:248
 msgid "Scream Tracker instrument"
@@ -1084,9 +1070,8 @@ msgid "StarWriter document"
 msgstr "StarWriter-document"
 
 #: ../freedesktop.org.xml.in.h:264
-#, fuzzy
 msgid "StuffIt archive"
-msgstr "Macintosh StuffIt-archief"
+msgstr "StuffIt-archief"
 
 #: ../freedesktop.org.xml.in.h:265
 msgid "SunOS News font"
@@ -1166,7 +1151,7 @@ msgstr "Truevision Targa-afbeelding"
 
 #: ../freedesktop.org.xml.in.h:284
 msgid "ULAW (Sun) audio"
-msgstr "ULAW (Sun) geluid"
+msgstr "ULAW (Sun) audio"
 
 #: ../freedesktop.org.xml.in.h:285
 msgid "UNIX-compressed file"
@@ -1186,7 +1171,7 @@ msgstr "V-lettertype"
 
 #: ../freedesktop.org.xml.in.h:289
 msgid "VOC audio"
-msgstr "VOC-geluid"
+msgstr "VOC-audio"
 
 #: ../freedesktop.org.xml.in.h:290
 msgid "VRML document"
@@ -1202,7 +1187,7 @@ msgstr "WAIS-broncode"
 
 #: ../freedesktop.org.xml.in.h:293
 msgid "WAV audio"
-msgstr "WAV-geluid"
+msgstr "WAV-audio"
 
 #: ../freedesktop.org.xml.in.h:294
 msgid "WML document"
@@ -1261,9 +1246,8 @@ msgid "XML Metadata Interchange file"
 msgstr "XML Metagegevens-uitwisselingsbestand"
 
 #: ../freedesktop.org.xml.in.h:308
-#, fuzzy
 msgid "XML User Interface Language document"
-msgstr "Uitbreidbare opmaaktaal-document (XML)"
+msgstr "XML gebruikersinterfacetaal-document"
 
 #: ../freedesktop.org.xml.in.h:309
 msgid "XSL Formating Object file"

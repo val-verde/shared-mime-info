@@ -139,6 +139,11 @@
   <mime-type type="application/mathematica">
     <comment xml:lang="en">Mathematica Notebook</comment>
     <glob pattern="*.nb"/>
+    <magic priority="50">
+      <match value="(*******" type="string" offset="0">
+        <match value="Mathematica-Compatible Notebook" type="string" offset="0:256"/>
+      </match>
+    </magic>
   </mime-type>
   <mime-type type="application/octet-stream">
     <comment>unknown</comment>
@@ -1655,6 +1660,11 @@
       <match value="&lt;!DOCTYPE\ xbel" type="string" offset="0:64"/>
     </magic>
     <glob pattern="*.xbel"/>
+  </mime-type>
+  <mime-type type="application/x-7z-compressed">
+     <sub-class-of type="application/octet-stream"/>
+     <comment>7-zip archive</comment>
+     <glob pattern="*.7z"/>
   </mime-type>
   <mime-type type="application/x-abiword">
     <comment>AbiWord document</comment>
@@ -5935,7 +5945,9 @@
     <comment xml:lang="zh_TW">Ruby 描述語言檔</comment>
     <magic>
       <match value="/bin/env ruby" type="string" offset="1:16"/>
+      <match value="/bin/ruby" type="string" offset="1:16"/>
     </magic>
+    <glob pattern="*.rb"/>
   </mime-type>
   <mime-type type="application/x-sc">
     <magic priority="50">
@@ -12651,8 +12663,9 @@
     <glob pattern="*.fo"/>
     <glob pattern="*.xslfo"/>
   </mime-type>
-  <mime-type type="text/x-xslt">
+  <mime-type type="application/xslt+xml">
     <sub-class-of type="text/plain"/>
+    <sub-class-of type="text/xml"/>
     <comment>XSLT stylesheet</comment>
     <comment xml:lang="bg">Стилове, формат XSLT</comment>
     <comment xml:lang="cs">Stylesheet XSLT</comment>
@@ -12681,7 +12694,6 @@
     <comment xml:lang="sv">XSLT-stilmall</comment>
     <comment xml:lang="uk">Стильова сторінка XSLT</comment>
     <comment xml:lang="zh_CN">XSLT 样式表</comment>
-    <sub-class-of type="text/xml"/>
     <glob pattern="*.xslt"/>
     <glob pattern="*.xsl"/>
   </mime-type>

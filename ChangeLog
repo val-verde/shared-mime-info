@@ -1,5 +1,10 @@
 2005-04-16  Christophe Fergeau  <teuf@gnome.org>
 
+	* freedesktop.org.xml.in: marked image/x-eps as a subclass of 
+	  PostScript files, fix part of bug #2686
+
+2005-04-16  Christophe Fergeau  <teuf@gnome.org>
+
 	* freedesktop.org.xml.in: added *.hpp glob to C++ headers, fixes #2923
 
 2005-04-16  Christophe Fergeau  <teuf@gnome.org>

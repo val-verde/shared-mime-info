@@ -2503,10 +2503,10 @@ command to generate the output files.
     <glob pattern="*.fo"/>
     <glob pattern="*.xslfo"/>
   </mime-type>
-  <mime-type type="text/x-xslt">
+  <mime-type type="application/xslt+xml">
     <sub-class-of type="text/plain"/>
-    <_comment>XSLT stylesheet</_comment>
     <sub-class-of type="text/xml"/>
+    <_comment>XSLT stylesheet</_comment>
     <glob pattern="*.xslt"/>
     <glob pattern="*.xsl"/>
   </mime-type>

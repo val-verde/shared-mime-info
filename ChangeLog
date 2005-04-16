@@ -1,5 +1,12 @@
 2005-04-16  Christophe Fergeau  <teuf@gnome.org>
 
+	* .cvsignore:
+	* freedesktop.org.xml.in: use application/xslt+xml for xslt
+	stylesheets, maybe it will need to be changed to text/xml or
+	application/xml, I'm unsure about what's best, this is bug #2928
+
+2005-04-16  Christophe Fergeau  <teuf@gnome.org>
+
 	* .cvsignore: minor update, fixes #2091, patch by Loic Minier
 
 2005-04-16  Christophe Fergeau  <teuf@gnome.org>

@@ -375,6 +375,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.xbel"/>
   </mime-type>
+  <mime-type type="application/x-7z-compressed">
+     <sub-class-of type="application/octet-stream"/>
+     <comment>7-zip archive</comment>
+     <glob pattern="*.7z"/>
+  </mime-type>
   <mime-type type="application/x-abiword">
     <_comment>AbiWord document</_comment>
     <magic priority="50">

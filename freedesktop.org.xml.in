@@ -155,6 +155,14 @@ command to generate the output files.
     <alias type="application/x-stuffit"/>
     <alias type="application/x-sit"/>
   </mime-type>
+  <mime-type type="application/x-gedcom">
+    <_comment>Family history file</_comment>
+    <magic priority="50">
+      <match type="string" value="0 HEAD" offset="0"/>
+    </magic>
+    <glob pattern="*.ged"/>
+    <glob pattern="*.gedcom"/>
+  </mime-type>
   <mime-type type="application/vnd.corel-draw">
     <_comment>Corel Draw drawing</_comment>
     <magic priority="50">

@@ -1613,12 +1613,21 @@ command to generate the output files.
     <glob pattern="*.mid"/>
     <glob pattern="*.midi"/>
   </mime-type>
-  <mime-type type="audio/x-m4a">
-    <_comment>MP4 audio</_comment>
+  <mime-type type="audio/mp4">
+    <_comment>MPEG-4 audio</_comment>
+    <alias type="audio/x-m4a"/>
     <magic priority="50">
       <match type="string" value="ftypM4A" offset="0"/>
     </magic>
     <glob pattern="*.m4a"/>
+  </mime-type>
+  <mime-type type="video/mp4">
+    <_comment>MPEG-4 video</_comment>
+    <magic priority="50">
+      <match type="string" value="ftypisom" offset="4"/>
+      <match type="string" value="ftypmp42" offset="4"/>
+    </magic>
+    <glob pattern="*.mp4"/>
   </mime-type>
   <mime-type type="audio/x-mod">
     <_comment>Amiga SoundTracker audio</_comment>

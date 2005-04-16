@@ -1,3 +1,9 @@
+2005-04-17  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: change audio/x-m4a mime-type to audio/mp4,
+	add audio/x-m4a as an alias, add video/mp4 detection
+	(from: http://www.ietf.org/internet-drafts/draft-lim-mpeg4-mime-03.txt)
+
 2005-04-16  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: add application/x-gedcom as a mime-type

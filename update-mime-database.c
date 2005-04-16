@@ -18,7 +18,7 @@
 
 #define XML_NS XML_XML_NAMESPACE
 #define XMLNS_NS "http://www.w3.org/2000/xmlns/"
-#define FREE_NS "http://www.freedesktop.org/standards/shared-mime-info"
+#define FREE_NS (xmlChar *)"http://www.freedesktop.org/standards/shared-mime-info"
 
 #define COPYING								\
 	     N_("Copyright (C) 2003 Thomas Leonard.\n"			\
@@ -121,6 +121,16 @@ static void free_type(gpointer data)
 	g_free(type);
 }
 
+/* Ugly workaround to shut up gcc4 warnings about signedness issues
+ * (xmlChar is typedef'ed to unsigned char)
+ */
+static char *my_xmlGetNsProp (xmlNodePtr node, 
+			      const char *name,
+			      const xmlChar *namespace)
+{
+	return (char *)xmlGetNsProp (node, (xmlChar *)name, namespace);
+}
+
 /* If we've seen this type before, return the existing object.
  * Otherwise, create a new one. Checks that the name looks sensible;
  * if not, sets error and returns NULL.
@@ -151,14 +161,14 @@ static Type *get_type(const char *name, GError **error)
 	type->subtype = g_strdup(slash + 1);
 	g_hash_table_insert(types, g_strdup(name), type);
 
-	type->output = xmlNewDoc("1.0");
-	root = xmlNewDocNode(type->output, NULL, "mime-type", NULL);
+	type->output = xmlNewDoc((xmlChar *)"1.0");
+	root = xmlNewDocNode(type->output, NULL, (xmlChar *)"mime-type", NULL);
 	ns = xmlNewNs(root, FREE_NS, NULL);
 	xmlSetNs(root, ns);
 	xmlDocSetRootElement(type->output, root);
-	xmlSetNsProp(root, NULL, "type", name);
+	xmlSetNsProp(root, NULL, (xmlChar *)"type", (xmlChar *)name);
 	xmlAddChild(root, xmlNewDocComment(type->output,
-		"Created automatically by update-mime-database. DO NOT EDIT!"));
+		(xmlChar *)"Created automatically by update-mime-database. DO NOT EDIT!"));
 
 	for (i = 0; i < G_N_ELEMENTS(media_types); i++)
 	{
@@ -178,10 +188,10 @@ static gboolean match_node(xmlNode *node,
 {
 	if (namespaceURI)
 		return node->ns &&
-			strcmp(node->ns->href, namespaceURI) == 0 &&
-			strcmp(node->name, localName) == 0;
+			strcmp((char *)node->ns->href, namespaceURI) == 0 &&
+  		        strcmp((char *)node->name, localName) == 0;
 	else
-		return strcmp(node->name, localName) == 0 && !node->ns;
+		return strcmp((char *)node->name, localName) == 0 && !node->ns;
 }
 
 /* Return the priority of a <magic> node.
@@ -193,7 +203,7 @@ static int get_priority(xmlNode *node)
 	char *prio_string;
 	int p;
 
-	prio_string = xmlGetNsProp(node, "priority", NULL);
+	prio_string = my_xmlGetNsProp(node, "priority", NULL);
 	if (prio_string)
 	{
 		char *end;
@@ -211,8 +221,8 @@ static int get_priority(xmlNode *node)
 }
 
 /* Process a <root-XML> element by adding a rule to namespace_hash */
-static void add_namespace(Type *type, const guchar *namespaceURI,
-			  const guchar *localName, GError **error)
+static void add_namespace(Type *type, const char *namespaceURI,
+			  const char *localName, GError **error)
 {
 	g_return_if_fail(type != NULL);
 
@@ -259,11 +269,11 @@ static void add_namespace(Type *type, const guchar *namespaceURI,
 static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 					 GError **error)
 {
-	if (strcmp(field->name, "glob") == 0)
+	if (strcmp((char *)field->name, "glob") == 0)
 	{
 		gchar *pattern;
 		
-		pattern = xmlGetNsProp(field, "pattern", NULL);
+		pattern = my_xmlGetNsProp(field, "pattern", NULL);
 
 		if (pattern && *pattern)
 		{
@@ -280,7 +290,7 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 				  "element"));
 		}
 	}
-	else if (strcmp(field->name, "magic") == 0)
+	else if (strcmp((char *)field->name, "magic") == 0)
 	{
 		Magic *magic;
 
@@ -294,16 +304,16 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 		else
 			g_return_val_if_fail(magic == NULL, FALSE);
 	}
-	else if (strcmp(field->name, "comment") == 0)
+	else if (strcmp((char *)field->name, "comment") == 0)
 		return FALSE;
-	else if (strcmp(field->name, "alias") == 0 ||
-		 strcmp(field->name, "sub-class-of") == 0)
+	else if (strcmp((char *)field->name, "alias") == 0 ||
+		 strcmp((char *)field->name, "sub-class-of") == 0)
 	{
 		char *other_type;
 		gboolean valid;
 		GSList *list, *nlist;
 
-		other_type = xmlGetNsProp(field, "type", NULL);
+		other_type = my_xmlGetNsProp(field, "type", NULL);
 		valid = other_type && strchr(other_type, '/');
 		if (valid)
 		{
@@ -313,7 +323,7 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 						   type->media,
 						   type->subtype);
 			
-			if (strcmp(field->name, "alias") == 0)
+			if (strcmp((char *)field->name, "alias") == 0)
 				g_hash_table_insert(alias_hash,
 						    g_strdup(other_type), type);
 				
@@ -336,12 +346,12 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 			_("Incorrect or missing 'type' attribute "
 			  "in <%s>"), field->name);
 	}
-	else if (strcmp(field->name, "root-XML") == 0)
+	else if (strcmp((char *)field->name, "root-XML") == 0)
 	{
 		char *namespaceURI, *localName;
 
-		namespaceURI = xmlGetNsProp(field, "namespaceURI", NULL);
-		localName = xmlGetNsProp(field, "localName", NULL);
+		namespaceURI = my_xmlGetNsProp(field, "namespaceURI", NULL);
+		localName = my_xmlGetNsProp(field, "localName", NULL);
 
 		add_namespace(type, namespaceURI, localName, error);
 
@@ -367,7 +377,7 @@ static gboolean has_lang(xmlNode *node, const char *lang)
 {
 	char *lang2;
 
-	lang2 = xmlGetNsProp(node, "lang", XML_NS);
+	lang2 = my_xmlGetNsProp(node, "lang", XML_NS);
 	if (!lang2)
 		return !lang;
 
@@ -386,20 +396,20 @@ static gboolean has_lang(xmlNode *node, const char *lang)
 static void remove_old(Type *type, xmlNode *new)
 {
 	xmlNode *field, *fields;
-	gchar *lang;
+	char *lang;
 
-	if (new->ns == NULL || strcmp(new->ns->href, FREE_NS) != 0)
+	if (new->ns == NULL || xmlStrcmp(new->ns->href, FREE_NS) != 0)
 		return;	/* No idea what we're doing -- leave it in! */
 
-	if (strcmp(new->name, "comment") != 0)
+	if (strcmp((char *)new->name, "comment") != 0)
 		return;
 
-	lang = xmlGetNsProp(new, "lang", XML_NS);
+	lang = my_xmlGetNsProp(new, "lang", XML_NS);
 
 	fields = xmlDocGetRootElement(type->output);
 	for (field = fields->xmlChildrenNode; field; field = field->next)
 	{
-		if (match_node(field, FREE_NS, "comment") &&
+		if (match_node(field, (char *)FREE_NS, "comment") &&
 		    has_lang(field, lang))
 		{
 			xmlUnlinkNode(field);
@@ -429,7 +439,7 @@ static void load_type(Type *type, xmlNode *node, GError **error)
 		if (field->type != XML_ELEMENT_NODE)
 			continue;
 
-		if (field->ns && strcmp(field->ns->href, FREE_NS) == 0)
+		if (field->ns && xmlStrcmp(field->ns->href, FREE_NS) == 0)
 		{
 			if (process_freedesktop_node(type, field, error))
 			{
@@ -447,7 +457,7 @@ static void load_type(Type *type, xmlNode *node, GError **error)
 		 * every node...
 		 */
 		if (copy->ns && copy->ns->prefix == NULL &&
-			strcmp(copy->ns->href, FREE_NS) == 0)
+			xmlStrcmp(copy->ns->href, FREE_NS) == 0)
 		{
 			if (copy->nsDef)
 			{
@@ -482,7 +492,7 @@ static void load_source_file(const char *filename)
 
 	root = xmlDocGetRootElement(doc);
 
-	if (root->ns == NULL || strcmp(root->ns->href, FREE_NS) != 0)
+	if (root->ns == NULL || xmlStrcmp(root->ns->href, FREE_NS) != 0)
 	{
 		g_print("* Wrong namespace on document element\n"
 			"*   in '%s'\n"
@@ -490,7 +500,7 @@ static void load_source_file(const char *filename)
 		goto out;
 	}
 	
-	if (strcmp(root->name, "mime-info") != 0)
+	if (strcmp((char *)root->name, "mime-info") != 0)
 	{
 		g_print("* Root element <%s> is not <mime-info>\n"
 			"*   (in '%s')\n", root->name, filename);
@@ -500,20 +510,20 @@ static void load_source_file(const char *filename)
 	for (node = root->xmlChildrenNode; node; node = node->next)
 	{
 		Type *type = NULL;
-		guchar *type_name = NULL;
+		char *type_name = NULL;
 		GError *error = NULL;
 
 		if (node->type != XML_ELEMENT_NODE)
 			continue;
 
-		if (!match_node(node, FREE_NS, "mime-type"))
+		if (!match_node(node, (char *)FREE_NS, "mime-type"))
 			g_set_error(&error, MIME_ERROR, 0,
 				_("Excepted <mime-type>, but got wrong name "
 				  "or namespace"));
 
 		if (!error)
 		{
-			type_name = xmlGetNsProp(node, "type", NULL);
+			type_name = my_xmlGetNsProp(node, "type", NULL);
 
 			if (!type_name)
 				g_set_error(&error, MIME_ERROR, 0,
@@ -652,9 +662,9 @@ static void write_out_glob(gpointer key, gpointer value, gpointer data)
 }
 
 /* Renames pathname by removing the .new extension */
-static void atomic_update(const guchar *pathname)
+static void atomic_update(const gchar *pathname)
 {
-	guchar *new_name;
+	gchar *new_name;
 	int len;
 
 	len = strlen(pathname);
@@ -1029,7 +1039,7 @@ static void match_offset(Match *match, xmlNode *node, GError **error)
 	char *offset = NULL;
 	char *end;
 
-	offset = xmlGetNsProp(node, "offset", NULL);
+	offset = my_xmlGetNsProp(node, "offset", NULL);
 	if (offset == NULL || !*offset)
 	{
 		g_set_error(error, MIME_ERROR, 0, "Missing 'offset' attribute");
@@ -1084,11 +1094,11 @@ static void match_value_and_mask(Match *match, xmlNode *node, GError **error)
 	char *parsed_mask = NULL;
 	GString *parsed_value;
 
-	type = xmlGetNsProp(node, "type", NULL);
+	type = my_xmlGetNsProp(node, "type", NULL);
 	g_return_if_fail(type != NULL);
 
-	mask = xmlGetNsProp(node, "mask", NULL);
-	value = xmlGetNsProp(node, "value", NULL);
+	mask = my_xmlGetNsProp(node, "mask", NULL);
+	value = my_xmlGetNsProp(node, "value", NULL);
 
 	parsed_value = g_string_new(NULL);
 
@@ -1121,7 +1131,7 @@ static void match_word_size(Match *match, xmlNode *node, GError **error)
 {
 	char *type;
 
-	type = xmlGetNsProp(node, "type", NULL);
+	type = my_xmlGetNsProp(node, "type", NULL);
 
 	if (!type)
 	{
@@ -1161,7 +1171,7 @@ static GList *build_matches(xmlNode *parent, GError **error)
 		if (node->type != XML_ELEMENT_NODE)
 			continue;
 
-		if (node->ns == NULL || strcmp(node->ns->href, FREE_NS) != 0)
+		if (node->ns == NULL || xmlStrcmp(node->ns->href, FREE_NS) != 0)
 		{
 			g_set_error(error, MIME_ERROR, 0,
 				_("Element found with non-freedesktop.org "
@@ -1169,7 +1179,7 @@ static GList *build_matches(xmlNode *parent, GError **error)
 			break;
 		}
 
-		if (strcmp(node->name, "match") != 0)
+		if (strcmp((char *)node->name, "match") != 0)
 		{
 			g_set_error(error, MIME_ERROR, 0,
 				_("Expected <match> element, but found "
@@ -1347,7 +1357,7 @@ static void delete_old_types(const gchar *mime_dir)
 static void add_ns(gpointer key, gpointer value, gpointer data)
 {
 	GPtrArray *lines = (GPtrArray *) data;
-	const guchar *ns = (guchar *) key;
+	const gchar *ns = (gchar *) key;
 	Type *type = (Type *) value;
 
 	g_ptr_array_add(lines, g_strconcat(ns, " ", type->media,
@@ -1405,7 +1415,7 @@ static void write_subclasses(FILE *stream)
 static void add_alias(gpointer key, gpointer value, gpointer data)
 {
 	GPtrArray *lines = (GPtrArray *) data;
-	const guchar *alias = (guchar *) key;
+	const gchar *alias = (gchar *) key;
 	Type *type = (Type *) value;
 	
 	g_ptr_array_add(lines, g_strconcat(alias, " ", type->media,
@@ -1570,7 +1580,7 @@ write_header (FILE *cache,
 	      gint  glob_offset,
 	      gint  magic_offset,
 	      gint  namespace_offset,
-	      gint *offset)
+	      guint *offset)
 {
   *offset = 32;
 
@@ -2220,7 +2230,8 @@ write_magic_cache (FILE        *cache,
 		   GHashTable *strings, 
 		   guint      *offset)
 {
-  guint n_entries, max_extent, offset2;
+  guint n_entries, max_extent;
+  gint offset2;
   GList *m;
   WriteMatchData data;
   

@@ -55,6 +55,7 @@
     <comment xml:lang="ko">Andrew 툴킷 inset</comment>
     <comment xml:lang="ms">Inset Andrew Toolkit</comment>
     <comment xml:lang="nb">Andrew verktøysett insett</comment>
+    <comment xml:lang="nl">Andrew Toolkit-invoegsel</comment>
     <comment xml:lang="nn">Andrew Toolkit innsats</comment>
     <comment xml:lang="no">Andrew verktøysett insett</comment>
     <comment xml:lang="pl">Pakiet narzędziowy Andrew</comment>
@@ -64,6 +65,7 @@
     <comment xml:lang="sr">Andrew додатаг групе алата</comment>
     <comment xml:lang="sv">Andrew-verktygssamling insatt</comment>
     <comment xml:lang="uk">вкладка Andrew Toolkit</comment>
+    <comment xml:lang="zh_TW">Andrew Toolkit 元件檔</comment>
     <glob pattern="*.ez"/>
   </mime-type>
   <mime-type type="application/illustrator">
@@ -95,6 +97,7 @@
     <comment xml:lang="sv">Adobe Illustrator-dokument</comment>
     <comment xml:lang="uk">Документ Adobe Illustrator</comment>
     <comment xml:lang="zh_CN">Adobe Illustrator 文档</comment>
+    <comment xml:lang="zh_TW">Adobe Illustrator 文件</comment>
     <glob pattern="*.ai"/>
   </mime-type>
   <mime-type type="application/mac-binhex40">
@@ -128,6 +131,7 @@
     <comment xml:lang="sv">Macintosh BinHex-kodad fil</comment>
     <comment xml:lang="uk">Файл закодований Macintosh BinHex</comment>
     <comment xml:lang="zh_CN">Macintosh BinHex 编码的文件</comment>
+    <comment xml:lang="zh_TW">Macintosh BinHex 編碼檔</comment>
     <magic priority="50">
       <match value="must be converted with BinHex" type="string" offset="11"/>
     </magic>
@@ -167,6 +171,7 @@
     <comment xml:lang="sv">okänd</comment>
     <comment xml:lang="uk">невідомо</comment>
     <comment xml:lang="zh_CN">未知</comment>
+    <comment xml:lang="zh_TW">不明</comment>
     <magic priority="50">
       <match value="\037\036" type="string" offset="0"/>
       <match value="017437" type="host16" offset="0"/>
@@ -207,6 +212,7 @@
     <comment xml:lang="sv">ODA-dokument</comment>
     <comment xml:lang="uk">Документ ODA</comment>
     <comment xml:lang="zh_CN">ODA 文档</comment>
+    <comment xml:lang="zh_TW">ODA 文件</comment>
     <glob pattern="*.oda"/>
   </mime-type>
   <mime-type type="application/pdf">
@@ -239,6 +245,7 @@
     <comment xml:lang="sv">PDF-dokument</comment>
     <comment xml:lang="uk">Документ PDF</comment>
     <comment xml:lang="zh_CN">PDF 文档</comment>
+    <comment xml:lang="zh_TW">PDF 文件</comment>
     <magic priority="50">
       <match value="%PDF-" type="string" offset="0"/>
     </magic>
@@ -277,6 +284,7 @@
     <comment xml:lang="sv">PGP-meddelande</comment>
     <comment xml:lang="uk">Повідомлення PGP</comment>
     <comment xml:lang="zh_CN">PGP 信件</comment>
+    <comment xml:lang="zh_TW">PGP 訊息</comment>
     <glob pattern="*.pgp"/>
   </mime-type>
   <mime-type type="application/pgp-encrypted">
@@ -307,6 +315,7 @@
     <comment xml:lang="sv">PGP/MIME-krypterat meddelandehuvud</comment>
     <comment xml:lang="uk">Заголовок шифрованого PGP/MIME повідомлення</comment>
     <comment xml:lang="zh_CN">PGP/MIME 加密的信件头</comment>
+    <comment xml:lang="zh_TW">PGP/MIME 加密訊息標頭</comment>
   </mime-type>
   <mime-type type="application/pgp-keys">
     <comment>PGP keys</comment>
@@ -340,6 +349,7 @@
     <comment xml:lang="sv">PGP-nycklar</comment>
     <comment xml:lang="uk">Ключі PGP</comment>
     <comment xml:lang="zh_CN">PGP 密钥</comment>
+    <comment xml:lang="zh_TW">PGP 鑰匙</comment>
   </mime-type>
   <mime-type type="application/pgp-signature">
     <comment>detached OpenPGP signature</comment>
@@ -402,6 +412,7 @@
     <comment xml:lang="sv">S/MIME-fil</comment>
     <comment xml:lang="uk">Файл S/MIME</comment>
     <comment xml:lang="zh_CN">S/MIME 文件</comment>
+    <comment xml:lang="zh_TW">S/MIME 檔</comment>
   </mime-type>
   <mime-type type="application/pkcs7-signature">
     <comment>detached S/MIME signature</comment>
@@ -463,6 +474,7 @@
     <comment xml:lang="sv">Postscript-dokument</comment>
     <comment xml:lang="uk">Документ PostScript</comment>
     <comment xml:lang="zh_CN">PostScript 文档</comment>
+    <comment xml:lang="zh_TW">PostScript 文件</comment>
     <magic priority="50">
       <match value="\004%!" type="string" offset="0"/>
       <match value="%!" type="string" offset="0"/>
@@ -500,6 +512,7 @@
     <comment xml:lang="sv">Rikt textdokument</comment>
     <comment xml:lang="uk">Форматований текс (RTF)</comment>
     <comment xml:lang="zh_CN">RTF 丰富文本格式</comment>
+    <comment xml:lang="zh_TW">RTF 文件</comment>
     <magic priority="50">
       <match value="{\\rtf" type="string" offset="0"/>
     </magic>
@@ -539,6 +552,10 @@
   </mime-type>
   <mime-type type="application/stuffit">
     <comment>StuffIt archive</comment>
+    <comment xml:lang="cs">Archiv StuffIt</comment>
+    <comment xml:lang="fi">StuffIt-arkisto</comment>
+    <comment xml:lang="nl">StuffIt-archief</comment>
+    <comment xml:lang="zh_TW">StuffIt 保存檔</comment>
     <magic priority="50">
       <match value="StuffIt" type="string" offset="0"/>
     </magic>
@@ -577,6 +594,7 @@
     <comment xml:lang="sv">Corel Draw-teckning</comment>
     <comment xml:lang="uk">Малюнок Corel Draw</comment>
     <comment xml:lang="zh_CN">Corel Draw 绘图</comment>
+    <comment xml:lang="zh_TW">Corel Draw 繪圖</comment>
     <magic priority="50">
       <match value="CDR vrsn" type="string" offset="8"/>
     </magic>
@@ -609,6 +627,7 @@
     <comment xml:lang="sv">HP-grafikspråk (plotter)</comment>
     <comment xml:lang="uk">Графічна мова HP (плоттер)</comment>
     <comment xml:lang="zh_CN">HP 图形语言(绘图仪)</comment>
+    <comment xml:lang="zh_TW">HP 繪圖語言 (plotter)</comment>
     <glob pattern="*.hpgl"/>
   </mime-type>
   <mime-type type="application/vnd.hp-pcl">
@@ -638,6 +657,7 @@
     <comment xml:lang="sv">HP Printer Control Language-fil</comment>
     <comment xml:lang="uk">Файл на графічній мові PCL HP</comment>
     <comment xml:lang="zh_CN">HP 打印机控制语言(PCL)文件</comment>
+    <comment xml:lang="zh_TW">HP PCL 檔</comment>
     <glob pattern="*.pcl"/>
   </mime-type>
   <mime-type type="application/vnd.lotus-1-2-3">
@@ -671,6 +691,7 @@
     <comment xml:lang="sv">Lotus 1-2-3-kalkylblad</comment>
     <comment xml:lang="uk">Ел.таблиця Lotus 1-2-3</comment>
     <comment xml:lang="zh_CN">Lotus 1-2-3 工作簿</comment>
+    <comment xml:lang="zh_TW">Lotus 1-2-3 試算表</comment>
     <magic priority="50">
       <match value="\x00\x00\x02\x00\x06\x04\x06\x00\x08\x00\x00\x00\x00\x00" type="string" offset="0"/>
     </magic>
@@ -683,9 +704,19 @@
   <mime-type type="application/vnd.mozilla.xul+xml">
     <sub-class-of type="text/xml"/>
     <comment>XML User Interface Language document</comment>
+    <comment xml:lang="cs">Dokument XML User Interface Language</comment>
+    <comment xml:lang="fi">XML-käyttöliittymäkieli-asiakirja</comment>
     <comment xml:lang="nb">XML-dokument for brukergrensesnitt</comment>
+    <comment xml:lang="nl">XML gebruikersinterfacetaal-document</comment>
     <glob pattern="*.xul"/>
   </mime-type>
+  <mime-type type="application/vnd.ms-access">
+    <comment>Microsoft Access Jet Database</comment>
+    <magic priority="50">
+      <match value="\x00\x01\x00\x00Standard Jet DB" type="string" offset="0"/>
+    </magic>
+    <glob pattern="*.mdb"/>
+ </mime-type>
  <mime-type type="application/vnd.ms-excel">
     <comment>Microsoft Excel spreadsheet</comment>
     <comment xml:lang="az">Microsoft Excel hesab cədvəli</comment>
@@ -717,6 +748,7 @@
     <comment xml:lang="sv">Microsoft Excel-kalkylblad</comment>
     <comment xml:lang="uk">Ел.таблиця Microsoft Excel</comment>
     <comment xml:lang="zh_CN">Microsoft Excel 工作簿</comment>
+    <comment xml:lang="zh_TW">微軟 Excel 試算表</comment>
     <magic priority="50">
       <match value="Microsoft Excel 5.0 Worksheet" type="string" offset="2080"/>
     </magic>
@@ -759,6 +791,7 @@
     <comment xml:lang="sv">Microsoft PowerPoint-presentation</comment>
     <comment xml:lang="uk">Презентація Microsoft PowerPoint</comment>
     <comment xml:lang="zh_CN">Microsoft PowerPoint 演示文稿</comment>
+    <comment xml:lang="zh_TW">微軟 PowerPoint 簡報</comment>
     <glob pattern="*.ppz"/>
     <glob pattern="*.ppt"/>
     <glob pattern="*.pps"/>
@@ -799,6 +832,7 @@
       <comment xml:lang="sv">Microsoft Word-dokument</comment>
       <comment xml:lang="uk">Документ Microsoft Word</comment>
       <comment xml:lang="zh_CN">Microsoft Word 文档</comment>
+      <comment xml:lang="zh_TW">微軟 Word 文件</comment>
     <magic priority="50">
       <match value="\x31\xbe\x00\x00" type="string" offset="0"/>
       <match value="PO^Q`" type="string" offset="0"/>
@@ -837,6 +871,7 @@
     <comment xml:lang="sv">Palmpilot-databas/dokument</comment>
     <comment xml:lang="uk">База даних/документ Palmpilot</comment>
     <comment xml:lang="zh_CN">Palmpilot 数据库/文档</comment>
+    <comment xml:lang="zh_TW">Palmpilot 數據庫/文件</comment>
     <glob pattern="*.pdb"/>
   </mime-type>
   <mime-type type="application/vnd.rn-realmedia">
@@ -870,6 +905,7 @@
     <comment xml:lang="sv">RealAudio/Video-dokument</comment>
     <comment xml:lang="uk">Документ RealAudio/Video</comment>
     <comment xml:lang="zh_CN">RealAudio/Video 文档</comment>
+    <comment xml:lang="zh_TW">RealAudio/Video 文件</comment>
   </mime-type>
   <mime-type type="application/vnd.stardivision.calc">
     <comment>StarCalc spreadsheet</comment>
@@ -902,6 +938,7 @@
     <comment xml:lang="sv">StarCalc-kalkylblad</comment>
     <comment xml:lang="uk">Ел.таблиця StarCalc</comment>
     <comment xml:lang="zh_CN">StarCalc 工作簿</comment>
+    <comment xml:lang="zh_TW">StarCalc 試算表</comment>
     <glob pattern="*.sdc"/>
   </mime-type>
   <mime-type type="application/vnd.stardivision.chart">
@@ -935,6 +972,7 @@
     <comment xml:lang="sv">StarChart-diagram</comment>
     <comment xml:lang="uk">Діаграма StarChart</comment>
     <comment xml:lang="zh_CN">StarChart 图表</comment>
+    <comment xml:lang="zh_TW">StarChart 圖表</comment>
     <glob pattern="*.sds"/>
   </mime-type>
   <mime-type type="application/vnd.stardivision.draw">
@@ -968,6 +1006,7 @@
     <comment xml:lang="sv">StarDraw-teckning</comment>
     <comment xml:lang="uk">Малюнок StarDraw</comment>
     <comment xml:lang="zh_CN">StarDraw 绘图</comment>
+    <comment xml:lang="zh_TW">StarDraw 繪圖</comment>
     <glob pattern="*.sda"/>
   </mime-type>
   <mime-type type="application/vnd.stardivision.impress">
@@ -1001,6 +1040,7 @@
     <comment xml:lang="sv">StarImpress-presentation</comment>
     <comment xml:lang="uk">Презентація StarImpress</comment>
     <comment xml:lang="zh_CN">StarImpress 演示文稿</comment>
+    <comment xml:lang="zh_TW">StarImpress 簡報檔</comment>
     <glob pattern="*.sdd"/>
     <glob pattern="*.sdp"/>
   </mime-type>
@@ -1033,6 +1073,7 @@
     <comment xml:lang="sv">StarMail-e-post</comment>
     <comment xml:lang="uk">Поштове повідомлення StarMail</comment>
     <comment xml:lang="zh_CN">StarMail 电子邮件</comment>
+    <comment xml:lang="zh_TW">StarMail 郵件</comment>
     <glob pattern="*.smd"/>
   </mime-type>
   <mime-type type="application/vnd.stardivision.math">
@@ -1064,6 +1105,7 @@
     <comment xml:lang="sv">StarMath-formel</comment>
     <comment xml:lang="uk">Формула StarMath</comment>
     <comment xml:lang="zh_CN">StarMath 公式</comment>
+    <comment xml:lang="zh_TW">StarMath 算式</comment>
     <glob pattern="*.smf"/>
   </mime-type>
   <mime-type type="application/vnd.stardivision.writer">
@@ -1097,6 +1139,7 @@
     <comment xml:lang="sv">StarWriter-dokument</comment>
     <comment xml:lang="uk">Документ StarWriter</comment>
     <comment xml:lang="zh_CN">StarWriter 文档</comment>
+    <comment xml:lang="zh_TW">StarWriter 文件</comment>
     <glob pattern="*.sdw"/>
     <glob pattern="*.vor"/>
     <glob pattern="*.sgl"/>
@@ -1130,6 +1173,7 @@
     <comment xml:lang="sv">OpenOffice.org Calc-kalkylblad</comment>
     <comment xml:lang="uk">Ел.таблиця OpenOffice.org Calc</comment>
     <comment xml:lang="zh_CN">OpenOffice.org Calc 工作簿</comment>
+    <comment xml:lang="zh_TW">OpenOffice.org Calc 試算表</comment>
     <glob pattern="*.sxc"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc.template">
@@ -1161,6 +1205,7 @@
     <comment xml:lang="sv">OpenOffice.org Calc-kalkylbladsmall</comment>
     <comment xml:lang="uk">Шаблон ел.таблиці OpenOffice.org Calc</comment>
     <comment xml:lang="zh_CN">OpenOffice.org Calc 工作簿模板</comment>
+    <comment xml:lang="zh_TW">OpenOffice.org Calc 試算表範本</comment>
     <glob pattern="*.stc"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw">
@@ -1192,6 +1237,7 @@
     <comment xml:lang="sv">OpenOffice.org Draw-teckning</comment>
     <comment xml:lang="uk">Малюнок OpenOffice.org Draw</comment>
     <comment xml:lang="zh_CN">OpenOffice.org Draw 绘图</comment>
+    <comment xml:lang="zh_TW">OpenOffice.org Draw 繪圖</comment>
     <glob pattern="*.sxd"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw.template">
@@ -1223,6 +1269,7 @@
     <comment xml:lang="sv">OpenOffice.org Draw-teckningsmall</comment>
     <comment xml:lang="uk">Шаблон малюнку OpenOffice.org Draw</comment>
     <comment xml:lang="zh_CN">OpenOffice.org Draw 绘图模板</comment>
+    <comment xml:lang="zh_TW">OpenOffice.org Draw 繪圖範本</comment>
     <glob pattern="*.std"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.impress">
@@ -1255,6 +1302,7 @@
     <comment xml:lang="sv">OpenOffice.org Impress-presentation</comment>
     <comment xml:lang="uk">Презентація OpenOffice.org Impress</comment>
     <comment xml:lang="zh_CN">OpenOffice.org Impress 演示文稿</comment>
+    <comment xml:lang="zh_TW">OpenOffice.org Impress 簡報</comment>
     <glob pattern="*.sxi"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.impress.template">
@@ -1287,6 +1335,7 @@
     <comment xml:lang="sv">OpenOffice.org Impress-presentationsmall</comment>
     <comment xml:lang="uk">Шаблон презентації OpenOffice.org Impress</comment>
     <comment xml:lang="zh_CN">OpenOffice.org Impress 演示文稿模板</comment>
+    <comment xml:lang="zh_TW">OpenOffice.org Impress 簡報範本</comment>
     <glob pattern="*.sti"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.math">
@@ -1318,6 +1367,7 @@
     <comment xml:lang="sv">OpenOffice.org Math-formel</comment>
     <comment xml:lang="uk">Формула OpenOffice.org Math</comment>
     <comment xml:lang="zh_CN">OpenOffice.org Math 公式</comment>
+    <comment xml:lang="zh_TW">OpenOffice.org Math 算式</comment>
     <glob pattern="*.sxm"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer">
@@ -1350,6 +1400,7 @@
     <comment xml:lang="sv">OpenOffice.org Writer-dokument</comment>
     <comment xml:lang="uk">Документ OpenOffice.org Writer</comment>
     <comment xml:lang="zh_CN">OpenOffice.org Writer 文档</comment>
+    <comment xml:lang="zh_TW">OpenOffice.org Writer 文件</comment>
     <glob pattern="*.sxw"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer.global">
@@ -1381,6 +1432,7 @@
     <comment xml:lang="sv">OpenOffice.org Writer-globaldokument</comment>
     <comment xml:lang="uk">Глобальний документ OpenOffice.org Writer</comment>
     <comment xml:lang="zh_CN">OpenOffice.org Writer 全局文档</comment>
+    <comment xml:lang="zh_TW">OpenOffice.org Writer 主控文件</comment>
     <glob pattern="*.sxg"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer.template">
@@ -1413,62 +1465,118 @@
     <comment xml:lang="sv">OpenOffice.org Writer-dokumentmall</comment>
     <comment xml:lang="uk">Шаблон документу OpenOffice.org Writer</comment>
     <comment xml:lang="zh_CN">OpenOffice.org Writer 文档模板</comment>
+    <comment xml:lang="zh_TW">OpenOffice.org Writer 文件範本</comment>
     <glob pattern="*.stw"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text">
     <comment>OpenDocument Text</comment>
+    <comment xml:lang="cs">Text OpenDocument</comment>
+    <comment xml:lang="fi">OpenDocument-teksti</comment>
+    <comment xml:lang="nl">OpenDocument-tekst</comment>
+    <comment xml:lang="zh_TW">OpenDocument 文書</comment>
     <glob pattern="*.odt"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-template">
     <comment>OpenDocument Text Template</comment>
+    <comment xml:lang="cs">Šablona textu OpenDocument</comment>
+    <comment xml:lang="fi">OpenDocument-tekstimalli</comment>
+    <comment xml:lang="nl">OpenDocument sjabloon voor tekst</comment>
+    <comment xml:lang="zh_TW">OpenDocument 文書範本</comment>
     <glob pattern="*.ott"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-web">
     <comment>OpenDocument HTML Document Template</comment>
+    <comment xml:lang="cs">Šablona HTML dokumentu OpenDocument</comment>
+    <comment xml:lang="fi">OpenDocument-HTML-asiakirjamalli</comment>
+    <comment xml:lang="nl">OpenDocument sjabloon voor HTML-document</comment>
+    <comment xml:lang="zh_TW">OpenDocument HTML 文件範本</comment>
     <glob pattern="*.oth"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-master">
     <comment>OpenDocument Master Document</comment>
+    <comment xml:lang="cs">Hlavní dokument OpenDocument</comment>
+    <comment xml:lang="fi">OpenDocument-perusasiakirja</comment>
+    <comment xml:lang="zh_TW">OpenDocument 主文件</comment>
     <glob pattern="*.odm"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.graphics">
     <comment>OpenDocument Drawing</comment>
+    <comment xml:lang="cs">Kresba OpenDocument</comment>
+    <comment xml:lang="fi">OpenDocument-piirros</comment>
+    <comment xml:lang="nl">OpenDocument-tekening</comment>
+    <comment xml:lang="zh_TW">OpenDocument 繪圖</comment>
     <glob pattern="*.odg"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.graphics-template">
     <comment>OpenDocument Drawing Template</comment>
+    <comment xml:lang="cs">Šablona kresby OpenDocument</comment>
+    <comment xml:lang="fi">OpenDocument-piirrosmalli</comment>
+    <comment xml:lang="nl">OpenDocument sjabloon voor tekening</comment>
+    <comment xml:lang="zh_TW">OpenDocument 繪圖範本</comment>
     <glob pattern="*.otg"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.presentation">
     <comment>OpenDocument Presentation</comment>
+    <comment xml:lang="cs">Prezentace OpenDocument</comment>
+    <comment xml:lang="fi">OpenDocument-esitys</comment>
+    <comment xml:lang="nl">OpenDocument-presentatie</comment>
+    <comment xml:lang="zh_TW">OpenDocument 簡報</comment>
     <glob pattern="*.odp"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.presentation-template">
     <comment>OpenDocument Presentation Template</comment>
+    <comment xml:lang="cs">Šablona prezentace OpenDocument</comment>
+    <comment xml:lang="fi">OpenDocument-esitysmalli</comment>
+    <comment xml:lang="nl">OpenDocument sjabloon voor presentatie</comment>
+    <comment xml:lang="zh_TW">OpenDocument 簡報範本</comment>
     <glob pattern="*.otp"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.spreadsheet">
     <comment>OpenDocument Spreadsheet</comment>
+    <comment xml:lang="cs">Tabulka OpenDocument</comment>
+    <comment xml:lang="fi">OpenDocument-taulukko</comment>
+    <comment xml:lang="nl">OpenDocument-rekenblad</comment>
+    <comment xml:lang="zh_TW">OpenDocument 試算表</comment>
     <glob pattern="*.ods"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.spreadsheet-template">
     <comment>OpenDocument Spreadsheet Template</comment>
+    <comment xml:lang="cs">Šablona tabulky OpenDocument</comment>
+    <comment xml:lang="fi">OpenDocument-taulukkomalli</comment>
+    <comment xml:lang="nl">OpenDocument sjabloon voor rekenblad</comment>
+    <comment xml:lang="zh_TW">OpenDocument 試算表範本</comment>
     <glob pattern="*.ots"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.chart">
     <comment>OpenDocument Chart</comment>
+    <comment xml:lang="cs">Graf OpenDocument</comment>
+    <comment xml:lang="fi">OpenDocument-kaavio</comment>
+    <comment xml:lang="nl">OpenDocument-grafiek</comment>
+    <comment xml:lang="zh_TW">OpenDocument 圖表</comment>
     <glob pattern="*.odc"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.formula">
     <comment>OpenDocument Formula</comment>
+    <comment xml:lang="cs">Vzorec OpenDocument</comment>
+    <comment xml:lang="fi">OpenDocument-kaava</comment>
+    <comment xml:lang="nl">OpenDocument-formule</comment>
+    <comment xml:lang="zh_TW">OpenDocument 算式</comment>
     <glob pattern="*.odf"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.database">
     <comment>OpenDocument Database</comment>
+    <comment xml:lang="cs">Databáze OpenDocument</comment>
+    <comment xml:lang="fi">OpenDocument-tietokanta</comment>
+    <comment xml:lang="nl">OpenDocument-gegevensbank</comment>
+    <comment xml:lang="zh_TW">OpenDocument 數據庫</comment>
     <glob pattern="*.odb"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.image">
     <comment>OpenDocument Image</comment>
+    <comment xml:lang="cs">Obrázek OpenDocument</comment>
+    <comment xml:lang="fi">OpenDocument-kuva</comment>
+    <comment xml:lang="nl">OpenDocument-afbeelding</comment>
+    <comment xml:lang="zh_TW">OpenDocument 圖片</comment>
     <glob pattern="*.odi"/>
   </mime-type>
   <mime-type type="application/vnd.wordperfect">
@@ -1505,6 +1613,7 @@
     <comment xml:lang="sv">WordPerfect-dokument</comment>
     <comment xml:lang="uk">документ WordPerfect</comment>
     <comment xml:lang="zh_CN">WordPerfect 文档</comment>
+    <comment xml:lang="zh_TW">WordPerfect 文件</comment>
     <magic priority="50">
       <match value="WPC" type="string" offset="1"/>
       
@@ -1541,6 +1650,7 @@
     <comment xml:lang="sv">XBEL-bokmärken</comment>
     <comment xml:lang="uk">Закладки XBEL</comment>
     <comment xml:lang="zh_CN">XBEL 书签</comment>
+    <comment xml:lang="zh_TW">XBEL 格式書籤</comment>
     <magic priority="50">
       <match value="&lt;!DOCTYPE\ xbel" type="string" offset="0:64"/>
     </magic>
@@ -1576,6 +1686,7 @@
     <comment xml:lang="sv">AbiWord-dokument</comment>
     <comment xml:lang="uk">Документ AbiWord</comment>
     <comment xml:lang="zh_CN">AbiWord 文档</comment>
+    <comment xml:lang="zh_TW">AbiWord 文件</comment>
     <magic priority="50">
       <match value="&lt;abiword" type="string" offset="0:64"/>
       <match value="&lt;!DOCTYPE abiword" type="string" offset="0:64"/>
@@ -1621,6 +1732,7 @@
     <comment xml:lang="sv">Lotus AmiPro-dokument</comment>
     <comment xml:lang="uk">Документ Lotus AmiPro</comment>
     <comment xml:lang="zh_CN">Lotus AmiPro 文档</comment>
+    <comment xml:lang="zh_TW">Lotus AmiPro 文件</comment>
     <glob pattern="*.sam"/>
   </mime-type>
   <mime-type type="application/x-applix-spreadsheet">
@@ -1652,6 +1764,7 @@
     <comment xml:lang="sv">Applix Spreadsheets-kalkylblad</comment>
     <comment xml:lang="uk">Ел.таблиця Applix Spreadsheets</comment>
     <comment xml:lang="zh_CN">Applix Spreadsheets 工作簿</comment>
+    <comment xml:lang="zh_TW">Applix Spreadsheets 試算表</comment>
     <magic priority="50">
       <match value="*BEGIN SPREADSHEETS" type="string" offset="0"/>
       <match value="*BEGIN" type="string" offset="0">
@@ -1691,6 +1804,7 @@
     <comment xml:lang="sv">Applix Words-dokument</comment>
     <comment xml:lang="uk">Документ Applix Words</comment>
     <comment xml:lang="zh_CN">Applix Words 文档</comment>
+    <comment xml:lang="zh_TW">Applix Words 文件</comment>
     <magic priority="50">
       <match value="*BEGIN" type="string" offset="0">
         <match value="WORDS" type="string" offset="7"/>
@@ -1737,6 +1851,7 @@
     <comment xml:lang="sv">AR-arkiv</comment>
     <comment xml:lang="uk">Архів AR</comment>
     <comment xml:lang="zh_CN">AR 压缩包</comment>
+    <comment xml:lang="zh_TW">AR 保存檔</comment>
     <magic priority="45">
       <match value="&lt;ar&gt;" type="string" offset="0"/>
       <match value="!&lt;arch&gt;" type="string" offset="0"/>
@@ -1775,6 +1890,7 @@
     <comment xml:lang="sv">ARJ-arkiv</comment>
     <comment xml:lang="uk">Архів ARJ</comment>
     <comment xml:lang="zh_CN">ARJ 压缩包</comment>
+    <comment xml:lang="zh_TW">ARJ 保存檔</comment>
     <magic priority="50">
       <match value="0xea60" type="little16" offset="0"/>
     </magic>
@@ -1846,6 +1962,7 @@
     <comment xml:lang="sv">AWK-skript</comment>
     <comment xml:lang="uk">Сценарій AWK</comment>
     <comment xml:lang="zh_CN">AWK 脚本</comment>
+    <comment xml:lang="zh_TW">AWK 描述語言檔</comment>
     <magic priority="50">
       <match value="#!/bin/gawk" type="string" offset="0"/>
       <match value="#! /bin/gawk" type="string" offset="0"/>
@@ -1890,6 +2007,7 @@
     <comment xml:lang="sv">BCPIO-dokument</comment>
     <comment xml:lang="uk">Документ BCPIO</comment>
     <comment xml:lang="zh_CN">BCPIO 文档</comment>
+    <comment xml:lang="zh_TW">BCPIO 文件</comment>
     <glob pattern="*.bcpio"/>
   </mime-type>
   <mime-type type="application/x-bittorrent">
@@ -1923,6 +2041,7 @@
     <comment xml:lang="sv">BitTorrent-fröfil</comment>
     <comment xml:lang="uk">файл початкового значення BitTorrent</comment>
     <comment xml:lang="zh_CN">BitTorrent 种子文件</comment>
+    <comment xml:lang="zh_TW">BitTorrent 種子檔案</comment>
     <magic priority="50">
       <match value="d8:announce" type="string" offset="0"/>
     </magic>
@@ -1993,6 +2112,7 @@
     <comment xml:lang="sv">bzip-arkiv</comment>
     <comment xml:lang="uk">архів bzip</comment>
     <comment xml:lang="zh_CN">bzip 压缩包</comment>
+    <comment xml:lang="zh_TW">bzip 保存檔</comment>
     <magic priority="50">
       <match value="BZh" type="string" offset="0"/>
     </magic>
@@ -2028,6 +2148,7 @@
     <comment xml:lang="sv">tar-arkiv (bzip-komprimerat)</comment>
     <comment xml:lang="uk">архів tar (стиснений bzip)</comment>
     <comment xml:lang="zh_CN">tar 压缩包(bzip 压缩)</comment>
+    <comment xml:lang="zh_TW">tar 保存檔 (bzip 格式壓縮)</comment>
     <glob pattern="*.tar.bz"/>
     <glob pattern="*.tar.bz2"/>
   </mime-type>
@@ -2091,6 +2212,7 @@
     <comment xml:lang="sv">CGI-skript</comment>
     <comment xml:lang="uk">Сценарій CGI</comment>
     <comment xml:lang="zh_CN">CGI 脚本</comment>
+    <comment xml:lang="zh_TW">CGI 描述語言檔</comment>
     <glob pattern="*.cgi"/>
   </mime-type>
   <mime-type type="application/x-chess-pgn">
@@ -2124,6 +2246,7 @@
     <comment xml:lang="sv">PGN-schackparti</comment>
     <comment xml:lang="uk">Гра у шахи PGN</comment>
     <comment xml:lang="zh_CN">PNG 象棋游戏</comment>
+    <comment xml:lang="zh_TW">PGN 國際象棋紀錄檔</comment>
     <glob pattern="*.pgn"/>
   </mime-type>
   <mime-type type="application/x-chm">
@@ -2161,6 +2284,7 @@
     <comment xml:lang="sv">Java-bytekod</comment>
     <comment xml:lang="uk">Байт-код Java</comment>
     <comment xml:lang="zh_CN">Java 字节码</comment>
+    <comment xml:lang="zh_TW">Java 位元碼</comment>
   </mime-type>
   <mime-type type="application/x-compress">
     <comment>UNIX-compressed file</comment>
@@ -2190,6 +2314,7 @@
     <comment xml:lang="sv">UNIX-komprimerad fil</comment>
     <comment xml:lang="uk">Стиснений файл UNIX</comment>
     <comment xml:lang="zh_CN">UNIX-compress 压缩的文件</comment>
+    <comment xml:lang="zh_TW">UNIX compress 格式壓縮檔</comment>
     <magic priority="50">
       <match value="\037\235" type="string" offset="0"/>
     </magic>
@@ -2224,6 +2349,7 @@
     <comment xml:lang="sv">tar-arkiv (gzip-komprimerat)</comment>
     <comment xml:lang="uk">архів tar (стиснений gzip)</comment>
     <comment xml:lang="zh_CN">tar 压缩包(gzip 压缩)</comment>
+    <comment xml:lang="zh_TW">tar 保存檔 (gzip 格式壓縮)</comment>
     <glob pattern="*.tar.gz"/>
     <glob pattern="*.tgz"/>
   </mime-type>
@@ -2303,6 +2429,7 @@
     <comment xml:lang="sv">CPIO-arkiv</comment>
     <comment xml:lang="uk">Архів CPIO</comment>
     <comment xml:lang="zh_CN">CPIO 压缩包</comment>
+    <comment xml:lang="zh_TW">CPIO 保存檔</comment>
     <magic priority="50">
       <match value="070707" type="host16" offset="0"/>
       <match value="070701" type="string" offset="0"/>
@@ -2342,6 +2469,7 @@
     <comment xml:lang="sv">CPIO-arkiv (gzip-komprimerat)</comment>
     <comment xml:lang="uk">Архів CPIO (стиснений gzip)</comment>
     <comment xml:lang="zh_CN">CPIO 压缩包(gzip 压缩)</comment>
+    <comment xml:lang="zh_TW">CPIO 保存檔 (gzip 格式壓縮)</comment>
     <glob pattern="*.cpio.gz"/>
   </mime-type>
   <mime-type type="application/x-csh">
@@ -2377,6 +2505,7 @@
     <comment xml:lang="sv">Skalskript (csh)</comment>
     <comment xml:lang="uk">Сценарій C shell</comment>
     <comment xml:lang="zh_CN">C shell 脚本</comment>
+    <comment xml:lang="zh_TW">C shell 描述語言檔</comment>
     <magic>
       <match value="/bin/tcsh" type="string" offset="1:16"/>
       <match value="/bin/csh" type="string" offset="1:16"/>
@@ -2452,6 +2581,7 @@
     <comment xml:lang="sv">Dreamcast-rom</comment>
     <comment xml:lang="uk">ПЗП Dreamcast</comment>
     <comment xml:lang="zh_CN">Dreamcast ROM</comment>
+    <comment xml:lang="zh_TW">Dreamcast ROM</comment>
     <glob pattern="*.dc"/>
   </mime-type>
   <mime-type type="application/x-deb">
@@ -2486,6 +2616,7 @@
     <comment xml:lang="sv">Debianpaket</comment>
     <comment xml:lang="uk">Пакет Debian</comment>
     <comment xml:lang="zh_CN">Debian 软件包</comment>
+    <comment xml:lang="zh_TW">Debian 套件</comment>
     <magic priority="50">
       <match value="!&lt;arch&gt;" type="string" offset="0">
         <match value="debian" type="string" offset="8"/>
@@ -2522,6 +2653,7 @@
     <comment xml:lang="sv">Qt Designer-fil</comment>
     <comment xml:lang="uk">Файл програми Qt-дизайнер</comment>
     <comment xml:lang="zh_CN">Qt 设计师文件</comment>
+    <comment xml:lang="zh_TW">Qt Designer 檔案</comment>
     <glob pattern="*.ui"/>
   </mime-type>
   <mime-type type="application/x-desktop">
@@ -2596,6 +2728,7 @@
     <comment xml:lang="sv">Dia-diagram</comment>
     <comment xml:lang="uk">Діаграма Dia</comment>
     <comment xml:lang="zh_CN">Dia 图表</comment>
+    <comment xml:lang="zh_TW">Dia 圖表</comment>
     <glob pattern="*.dia"/>
   </mime-type>
   <mime-type type="application/x-dvi">
@@ -2627,6 +2760,7 @@
     <comment xml:lang="sv">TeX DVI-dokument</comment>
     <comment xml:lang="uk">Документ TeX DVI</comment>
     <comment xml:lang="zh_CN">TeX DVI 文档</comment>
+    <comment xml:lang="zh_TW">TeX DVI 文件</comment>
     <magic priority="50">
       <match value="0x02f7" type="little16" offset="0"/>
     </magic>
@@ -2663,6 +2797,7 @@
     <comment xml:lang="sv">Enlightenment-tema</comment>
     <comment xml:lang="uk">Тема Enlightenment</comment>
     <comment xml:lang="zh_CN">Enlightenment 主题</comment>
+    <comment xml:lang="zh_TW">Enlightenment 佈景檔</comment>
     <glob pattern="*.etheme"/>
   </mime-type>
   <mime-type type="application/x-egon">
@@ -2694,6 +2829,7 @@
     <comment xml:lang="sv">Egon Animator-animation</comment>
     <comment xml:lang="uk">Анімація Egon Animator</comment>
     <comment xml:lang="zh_CN">Egon Animator 动画</comment>
+    <comment xml:lang="zh_TW">Egon Animator 動畫</comment>
     <glob pattern="*.egon"/>
   </mime-type>
   <mime-type type="application/x-executable">
@@ -2726,6 +2862,7 @@
     <comment xml:lang="sv">körbar fil</comment>
     <comment xml:lang="uk">виконуваний файл</comment>
     <comment xml:lang="zh_CN">可执行文件</comment>
+    <comment xml:lang="zh_TW">可執行檔</comment>
     <magic priority="40">
       <match value="\177ELF" type="string" offset="0">
         <match value="1" type="byte" offset="5">
@@ -2775,6 +2912,7 @@
     <comment xml:lang="sv">typsnitt</comment>
     <comment xml:lang="uk">шрифт</comment>
     <comment xml:lang="zh_CN">字体</comment>
+    <comment xml:lang="zh_TW">字型</comment>
     <magic priority="50">
       <match value="LWFN" type="string" offset="0"/>
       <match value="LWFN" type="string" offset="65"/>
@@ -2818,6 +2956,7 @@
     <comment xml:lang="sr">Adobe метрика фонта</comment>
     <comment xml:lang="sv">Adobe-typsnittsmetrik</comment>
     <comment xml:lang="uk">Метрики шрифту Adobe</comment>
+    <comment xml:lang="zh_TW">Adobe 字型描述檔</comment>
     <glob pattern="*.afm"/>
   </mime-type>
   <mime-type type="application/x-font-bdf">
@@ -2851,6 +2990,7 @@
     <comment xml:lang="sv">BDF-typsnitt</comment>
     <comment xml:lang="uk">Шрифт BDF</comment>
     <comment xml:lang="zh_CN">BDF 字体</comment>
+    <comment xml:lang="zh_TW">BDF 字型檔</comment>
     <magic priority="50">
       <match value="STARTFONT\040" type="string" offset="0"/>
     </magic>
@@ -2887,6 +3027,7 @@
     <comment xml:lang="sv">DOS-typsnitt</comment>
     <comment xml:lang="uk">Шрифт DOS</comment>
     <comment xml:lang="zh_CN">DOS 字体</comment>
+    <comment xml:lang="zh_TW">DOS 字型檔</comment>
     <magic priority="50">
       <match value="\xff\x46\x4f\x4e" type="string" offset="0"/>
       <match value="\x00\x45\x47\x41" type="string" offset="7"/>
@@ -2924,6 +3065,7 @@
     <comment xml:lang="sv">Adobe FrameMaker-typsnitt</comment>
     <comment xml:lang="uk">Шрифт Adobe FrameMaker</comment>
     <comment xml:lang="zh_CN">Adobe FrameMaker 字体</comment>
+    <comment xml:lang="zh_TW">Adobe FrameMaker 字型檔</comment>
     <magic priority="50">
       <match value="&lt;MakerScreenFont" type="string" offset="0"/>
     </magic>
@@ -2959,6 +3101,7 @@
     <comment xml:lang="sv">LIBGRX-typsnitt</comment>
     <comment xml:lang="uk">Шрифт LIBGRX</comment>
     <comment xml:lang="zh_CN">LIBGRX 字体</comment>
+    <comment xml:lang="zh_TW">LIBGRX 字型檔</comment>
     <magic priority="50">
       <match value="\x14\x02\x59\x19" type="string" offset="0"/>
     </magic>
@@ -2994,6 +3137,7 @@
     <comment xml:lang="sv">Linux PSF-konsolltypsnitt</comment>
     <comment xml:lang="uk">Консольний шрифт Linux PSF</comment>
     <comment xml:lang="zh_CN">Linux PSF 控制台字体</comment>
+    <comment xml:lang="zh_TW">Linux PSF console 字型檔</comment>
     <magic priority="50">
       <match value="\x36\x04" type="string" offset="0"/>
     </magic>
@@ -3030,6 +3174,7 @@
     <comment xml:lang="sv">PCF-typsnitt</comment>
     <comment xml:lang="uk">Шрифт PCF</comment>
     <comment xml:lang="zh_CN">PCF 字体</comment>
+    <comment xml:lang="zh_TW">PCF 字型檔</comment>
     <magic priority="50">
       <match value="\001fcp" type="string" offset="0"/>
     </magic>
@@ -3066,6 +3211,7 @@
     <comment xml:lang="sv">OpenType-typsnitt</comment>
     <comment xml:lang="uk">Шрифт OpenType</comment>
     <comment xml:lang="zh_CN">OpenType 字体</comment>
+    <comment xml:lang="zh_TW">OpenType 字型檔</comment>
     <magic priority="50">
       <match value="OTTO" type="string" offset="0"/>
     </magic>
@@ -3101,6 +3247,7 @@
     <comment xml:lang="sv">Speedo-typsnitt</comment>
     <comment xml:lang="uk">Шрифт Speedo</comment>
     <comment xml:lang="zh_CN">Speedo 字体</comment>
+    <comment xml:lang="zh_TW">Speedo 字型檔</comment>
     <magic priority="50">
       <match value="D1.0\015" type="string" offset="0"/>
     </magic>
@@ -3137,6 +3284,7 @@
     <comment xml:lang="sv">SunOS News-typsnitt</comment>
     <comment xml:lang="uk">Шрифт SunOS News</comment>
     <comment xml:lang="zh_CN">SunOS News 字体</comment>
+    <comment xml:lang="zh_TW">SunOS News 字型檔</comment>
     <magic priority="50">
       <match value="StartFont" type="string" offset="0"/>
       <match value="\x13\x7A\x29" type="string" offset="0"/>
@@ -3174,6 +3322,7 @@
     <comment xml:lang="sv">TeX-typsnitt</comment>
     <comment xml:lang="uk">Шрифт TeX</comment>
     <comment xml:lang="zh_CN">TeX 字体</comment>
+    <comment xml:lang="zh_TW">TeX 字型檔</comment>
     <magic priority="50">
       <match value="\367\203" type="string" offset="0"/>
       <match value="\367\131" type="string" offset="0"/>
@@ -3210,6 +3359,7 @@
     <comment xml:lang="sr">ТеХ метрика фонта</comment>
     <comment xml:lang="sv">TeX-typsnittsmetrik</comment>
     <comment xml:lang="uk">Метрики шрифту TeX</comment>
+    <comment xml:lang="zh_TW">TeX 字型描述檔</comment>
     <magic priority="50">
       <match value="\000\021" type="string" offset="2"/>
       <match value="\000\022" type="string" offset="2"/>
@@ -3245,6 +3395,7 @@
     <comment xml:lang="sv">Truetype-typsnitt</comment>
     <comment xml:lang="uk">Шрифт TrueType</comment>
     <comment xml:lang="zh_CN">TrueType 字体</comment>
+    <comment xml:lang="zh_TW">TrueType 字型檔</comment>
     <magic priority="50">
       <match value="FFIL" type="string" offset="0"/>
       <match value="FFIL" type="string" offset="65"/>
@@ -3283,6 +3434,7 @@
     <comment xml:lang="sv">V-typsnitt</comment>
     <comment xml:lang="uk">V-шрифт</comment>
     <comment xml:lang="zh_CN">V 字体</comment>
+    <comment xml:lang="zh_TW">V 字型檔</comment>
     <magic priority="50">
       <match value="FONT" type="string" offset="0"/>
     </magic>
@@ -3327,6 +3479,7 @@
     <comment xml:lang="sv">Game Boy-rom</comment>
     <comment xml:lang="uk">ПЗП Game Boy</comment>
     <comment xml:lang="zh_CN">Game Boy ROM</comment>
+    <comment xml:lang="zh_TW">Game Boy ROM</comment>
     <glob pattern="*.gb"/>
   </mime-type>
   <mime-type type="application/x-gdbm">
@@ -3365,6 +3518,7 @@
     <comment xml:lang="sv">Genesis-rom</comment>
     <comment xml:lang="uk">ПЗП Genesis</comment>
     <comment xml:lang="zh_CN">Genesis ROM</comment>
+    <comment xml:lang="zh_TW">Genesis ROM</comment>
     <glob pattern="*.gen"/>
     <glob pattern="*.md"/>
   </mime-type>
@@ -3397,6 +3551,7 @@
     <comment xml:lang="sv">översatta meddelanden (maskinläsbara)</comment>
     <comment xml:lang="uk">перекладені повідомлення (у машинній формі)</comment>
     <comment xml:lang="zh_CN">翻译的消息(机读)</comment>
+    <comment xml:lang="zh_TW">翻譯訊息 (可讓程式讀取的格式)</comment>
     <glob pattern="*.gmo"/>
   </mime-type>
   <mime-type type="application/x-glade">
@@ -3431,6 +3586,7 @@
     <comment xml:lang="sv">Glade-projekt</comment>
     <comment xml:lang="uk">Проект Glade</comment>
     <comment xml:lang="zh_CN">Glade 工程</comment>
+    <comment xml:lang="zh_TW">Glade 專案</comment>
     <glob pattern="*.glade"/>
   </mime-type>
   <mime-type type="application/x-gmc-link">
@@ -3464,6 +3620,7 @@
     <comment xml:lang="sv">GMC-länk</comment>
     <comment xml:lang="uk">Посилання GMC</comment>
     <comment xml:lang="zh_CN">GMC 链接</comment>
+    <comment xml:lang="zh_TW">GMC 鏈結</comment>
     <magic priority="50">
       <match value="URL:" type="string" offset="0:32"/>
     </magic>
@@ -3497,6 +3654,7 @@
     <comment xml:lang="sv">GnuCash-kalkylblad</comment>
     <comment xml:lang="uk">Ел.таблиця GnuCash</comment>
     <comment xml:lang="zh_CN">GnuCash 工作簿</comment>
+    <comment xml:lang="zh_TW">GnuCash 試算表</comment>
     <glob pattern="*.gnucash"/>
     <glob pattern="*.gnc"/>
     <glob pattern="*.xac"/>
@@ -3531,6 +3689,7 @@
     <comment xml:lang="sv">Gnumeric-kalkylblad</comment>
     <comment xml:lang="uk">Ел.таблиця Gnumeric</comment>
     <comment xml:lang="zh_CN">Gnumeric 工作簿</comment>
+    <comment xml:lang="zh_TW">Gnumeric 試算表</comment>
     <magic priority="50">
       <match value="gmr:Workbook" type="string" offset="0:64"/>
     </magic>
@@ -3564,6 +3723,7 @@
     <comment xml:lang="sv">Vetenskaplig Graphite-grafer</comment>
     <comment xml:lang="uk">Наукова графіка Graphite</comment>
     <comment xml:lang="zh_CN">Graphite 科学图形</comment>
+    <comment xml:lang="zh_TW">Graphite 科學圖表</comment>
     <glob pattern="*.gra"/>
   </mime-type>
   <mime-type type="application/x-gtar">
@@ -3598,6 +3758,7 @@
     <comment xml:lang="sv">gtar-arkiv</comment>
     <comment xml:lang="uk">архів gtar</comment>
     <comment xml:lang="zh_CN">gtar 压缩包</comment>
+    <comment xml:lang="zh_TW">gtar 保存檔</comment>
     <glob pattern="*.gtar"/>
   </mime-type>
   <mime-type type="application/x-gtktalog">
@@ -3629,6 +3790,7 @@
     <comment xml:lang="sv">GTKtalog-katalog</comment>
     <comment xml:lang="uk">Каталог GTKtalog</comment>
     <comment xml:lang="zh_CN">GTKtalog 目录</comment>
+    <comment xml:lang="zh_TW">GTKtalog 光碟目錄</comment>
     <magic priority="50">
       <match value="gtktalog " type="string" offset="4"/>
     </magic>
@@ -3663,6 +3825,7 @@
     <comment xml:lang="sv">gzip-arkiv</comment>
     <comment xml:lang="uk">архів gzip</comment>
     <comment xml:lang="zh_CN">gzip 压缩包</comment>
+    <comment xml:lang="zh_TW">gzip 保存檔</comment>
     <magic priority="50">
       <match value="\037\213" type="string" offset="0"/>
     </magic>
@@ -3697,6 +3860,7 @@
     <comment xml:lang="sv">Postscript-dokument (gzip-komprimerat)</comment>
     <comment xml:lang="uk">Документ PostScript (стиснене gzip)</comment>
     <comment xml:lang="zh_CN">PostScript 文档(gzip 压缩)</comment>
+    <comment xml:lang="zh_TW">PostScript 文件 (gzip 格式壓縮)</comment>
     <glob pattern="*.ps.gz"/>
   </mime-type>
   <mime-type type="application/x-hdf">
@@ -3730,6 +3894,7 @@
     <comment xml:lang="sv">HDF-dokument</comment>
     <comment xml:lang="uk">Документ HDF</comment>
     <comment xml:lang="zh_CN">HDF 文档</comment>
+    <comment xml:lang="zh_TW">HDF 文件</comment>
     <glob pattern="*.hdf"/>
   </mime-type>
   <mime-type type="application/x-ipod-firmware">
@@ -3761,6 +3926,7 @@
     <comment xml:lang="sv">fast iPod-program</comment>
     <comment xml:lang="uk">мікропрограма iPod</comment>
     <comment xml:lang="zh_CN">iPod 固件</comment>
+    <comment xml:lang="zh_TW">iPod 韌體</comment>
     <magic priority="50">
       <match value="S T O P" type="string" offset="0"/>
     </magic>
@@ -3795,6 +3961,7 @@
     <comment xml:lang="sv">Java-arkiv</comment>
     <comment xml:lang="uk">Архів Java</comment>
     <comment xml:lang="zh_CN">Java 压缩包</comment>
+    <comment xml:lang="zh_TW">Java 保存檔</comment>
     <glob pattern="*.jar"/>
   </mime-type>
   <mime-type type="application/x-java">
@@ -3826,6 +3993,7 @@
     <comment xml:lang="sv">Java-klass</comment>
     <comment xml:lang="uk">Клас Java</comment>
     <comment xml:lang="zh_CN">Java 类</comment>
+    <comment xml:lang="zh_TW">Java class</comment>
     <magic priority="50">
       <match value="0xcafe" type="host16" offset="0">
         <match value="0xbabe" type="host16" offset="2"/>
@@ -3836,7 +4004,10 @@
   <mime-type type="application/x-java-jnlp-file">
     <sub-class-of type="text/xml"/>
     <comment>Java Network Launched Application</comment>
+    <comment xml:lang="cs">Aplikace v Javě spouštěná ze sítě</comment>
+    <comment xml:lang="fi">Verkosta käynnistettävä Java-sovellus</comment>
     <comment xml:lang="nb">Java-program startet over nettverket</comment>
+    <comment xml:lang="nl">Over het netwerk gestarte Java-toepassing</comment>
     <glob pattern="*.jnlp"/>
     <magic priority="50">
       <match value="&lt;jnlp" type="string" offset="0:64"/>
@@ -3871,6 +4042,7 @@
     <comment xml:lang="sv">Javascript-program</comment>
     <comment xml:lang="uk">Програма на мові Javascript</comment>
     <comment xml:lang="zh_CN">Javascript 程序</comment>
+    <comment xml:lang="zh_TW">Javascript 程式</comment>
     <glob pattern="*.js"/>
   </mime-type>
   <mime-type type="application/x-jbuilder-project">
@@ -3903,6 +4075,7 @@
     <comment xml:lang="sv">JBuilder-projekt</comment>
     <comment xml:lang="uk">Проект JBuilder</comment>
     <comment xml:lang="zh_CN">JBuilder 工程</comment>
+    <comment xml:lang="zh_TW">JBuilder 專案</comment>
     <glob pattern="*.jpr"/>
     <glob pattern="*.jpx"/>
   </mime-type>
@@ -3935,6 +4108,7 @@
     <comment xml:lang="sv">Karbon14-teckning</comment>
     <comment xml:lang="uk">Малюнок Karbon14</comment>
     <comment xml:lang="zh_CN">Karbon14 绘图</comment>
+    <comment xml:lang="zh_TW">Karbon14 繪圖</comment>
     <magic priority="50">
       <match value="\037\213" type="string" offset="0">
         <match value="KOffice" type="string" offset="10">
@@ -3979,6 +4153,7 @@
     <comment xml:lang="sv">KChart-diagram</comment>
     <comment xml:lang="uk">Діаграма KChart</comment>
     <comment xml:lang="zh_CN">KChart 图表</comment>
+    <comment xml:lang="zh_TW">KChart 圖表</comment>
     <magic priority="50">
       <match value="\037\213" type="string" offset="0">
         <match value="KOffice" type="string" offset="10">
@@ -4023,6 +4198,7 @@
     <comment xml:lang="sv">KFormula-formel</comment>
     <comment xml:lang="uk">Формула KFormula</comment>
     <comment xml:lang="zh_CN">KFormula 公式</comment>
+    <comment xml:lang="zh_TW">KFormula 算式</comment>
     <magic priority="50">
       <match value="\037\213" type="string" offset="0">
         <match value="KOffice" type="string" offset="10">
@@ -4066,6 +4242,7 @@
     <comment xml:lang="sv">KIllustrator-teckning</comment>
     <comment xml:lang="uk">Малюнок KIllustrator</comment>
     <comment xml:lang="zh_CN">KIllustrator 绘图</comment>
+    <comment xml:lang="zh_TW">KIllustrator 繪圖</comment>
     <magic priority="50">
       <match value="\037\213" type="string" offset="0">
         <match value="KOffice" type="string" offset="10">
@@ -4104,6 +4281,7 @@
     <comment xml:lang="sv">Kivio-flödesschema</comment>
     <comment xml:lang="uk">Діаграма потоків Kivio</comment>
     <comment xml:lang="zh_CN">Kivio 流程图</comment>
+    <comment xml:lang="zh_TW">Kivio 圖表</comment>
     <magic priority="50">
       <match value="\037\213" type="string" offset="0">
         <match value="KOffice" type="string" offset="10">
@@ -4147,6 +4325,7 @@
     <comment xml:lang="sv">Kontour-teckning</comment>
     <comment xml:lang="uk">Малюнок Kontour</comment>
     <comment xml:lang="zh_CN">Kontour 绘图</comment>
+    <comment xml:lang="zh_TW">Kontour 繪圖</comment>
     <magic priority="50">
       <match value="\037\213" type="string" offset="0">
         <match value="KOffice" type="string" offset="10">
@@ -4220,6 +4399,7 @@
     <comment xml:lang="sv">KPresenter-presentation</comment>
     <comment xml:lang="uk">Презентація KPresenter</comment>
     <comment xml:lang="zh_CN">KPresenter 演示文稿</comment>
+    <comment xml:lang="zh_TW">KPresenter 簡報檔</comment>
     <magic priority="50">
       <match value="\037\213" type="string" offset="0">
         <match value="KOffice" type="string" offset="10">
@@ -4264,6 +4444,7 @@
     <comment xml:lang="sv">Krita-dokument</comment>
     <comment xml:lang="uk">Документ Krita</comment>
     <comment xml:lang="zh_CN">Krita 文档</comment>
+    <comment xml:lang="zh_TW">Krita 文件</comment>
     <magic priority="50">
       <match value="\037\213" type="string" offset="0">
         <match value="KOffice" type="string" offset="10">
@@ -4307,6 +4488,7 @@
     <comment xml:lang="sv">KSpread-kalkylblad</comment>
     <comment xml:lang="uk">Ел.таблиця KSpread</comment>
     <comment xml:lang="zh_CN">KSpread 工作簿</comment>
+    <comment xml:lang="zh_TW">KSpread 試算表</comment>
     <magic priority="50">
       <match value="\037\213" type="string" offset="0">
         <match value="KOffice" type="string" offset="10">
@@ -4350,6 +4532,7 @@
     <comment xml:lang="sv">KSpread-kalkylblad (krypterat)</comment>
     <comment xml:lang="uk">Ел.таблиця KSpread (зашифрована)</comment>
     <comment xml:lang="zh_CN">KSpread 加密工作簿</comment>
+    <comment xml:lang="zh_TW">KSpread 試算表 (已加密)</comment>
     <magic priority="50">
       <match value="0x0d1a2702" type="big32" offset="0"/>
     </magic>
@@ -4389,6 +4572,7 @@
     <comment xml:lang="sv">Kugar-dokument</comment>
     <comment xml:lang="uk">Документ Kugar</comment>
     <comment xml:lang="zh_CN">Kugar 文档</comment>
+    <comment xml:lang="zh_TW">Kugar 文件</comment>
     <glob pattern="*.kud"/>
   </mime-type>
   <mime-type type="application/x-kword">
@@ -4422,6 +4606,7 @@
     <comment xml:lang="sv">KWord-dokument</comment>
     <comment xml:lang="uk">Документ KWord</comment>
     <comment xml:lang="zh_CN">KWord 文档</comment>
+    <comment xml:lang="zh_TW">KWord 文件</comment>
     <magic priority="50">
       <match value="\037\213" type="string" offset="0">
         <match value="KOffice" type="string" offset="10">
@@ -4466,6 +4651,7 @@
     <comment xml:lang="sv">KWord-dokument (krypterat)</comment>
     <comment xml:lang="uk">Документ KWord (зашифрований)</comment>
     <comment xml:lang="zh_CN">KWord 加密文档</comment>
+    <comment xml:lang="zh_TW">KWord 文件 (已加密)</comment>
     <magic priority="50">
       <match value="0x0d1a2701" type="big32" offset="0"/>
     </magic>
@@ -4502,6 +4688,7 @@
     <comment xml:lang="sv">LHA-arkiv</comment>
     <comment xml:lang="uk">Архів LHA</comment>
     <comment xml:lang="zh_CN">LHA 压缩包</comment>
+    <comment xml:lang="zh_TW">LHA 保存檔</comment>
     <magic priority="50">
       <match value="-lh -" type="string" offset="2"/>
       <match value="-lh0-" type="string" offset="2"/>
@@ -4549,6 +4736,7 @@
     <comment xml:lang="sv">LHZ-arkiv</comment>
     <comment xml:lang="uk">Архів LHZ</comment>
     <comment xml:lang="zh_CN">LHZ 压缩包</comment>
+    <comment xml:lang="zh_TW">LHZ 保存檔</comment>
     <glob pattern="*.lhz"/>
   </mime-type>
   <mime-type type="application/x-linguist">
@@ -4610,6 +4798,7 @@
     <comment xml:lang="sv">LyX-dokument</comment>
     <comment xml:lang="uk">Документ LyX</comment>
     <comment xml:lang="zh_CN">LyX 文档</comment>
+    <comment xml:lang="zh_TW">LyX 文件</comment>
     <magic priority="50">
       <match value="#LyX" type="string" offset="0"/>
     </magic>
@@ -4645,6 +4834,7 @@
     <comment xml:lang="sv">LZO-arkiv</comment>
     <comment xml:lang="uk">Архів LZO</comment>
     <comment xml:lang="zh_CN">LZO 压缩包</comment>
+    <comment xml:lang="zh_TW">LZO 保存檔</comment>
     <glob pattern="*.lzo"/>
   </mime-type>
   <mime-type type="application/x-magicpoint">
@@ -4678,6 +4868,7 @@
     <comment xml:lang="sv">MagicPoint-presentation</comment>
     <comment xml:lang="uk">Презентація MagicPoint</comment>
     <comment xml:lang="zh_CN">MagicPoint 演示文稿</comment>
+    <comment xml:lang="zh_TW">MagicPoint 簡報檔</comment>
     <glob pattern="*.mgp"/>
   </mime-type>
   <mime-type type="application/x-macbinary">
@@ -4709,6 +4900,7 @@
     <comment xml:lang="sv">Macintosh MacBinary-fil</comment>
     <comment xml:lang="uk">Файл Macintosh MacBinary</comment>
     <comment xml:lang="zh_CN">Macintosh MacBinary 文件</comment>
+    <comment xml:lang="zh_TW">Macintosh MacBinary 檔</comment>
     <magic priority="50">
       <match value="mBIN" type="string" offset="102"/>
     </magic>
@@ -4742,6 +4934,7 @@
     <comment xml:lang="sv">Matroska-video</comment>
     <comment xml:lang="uk">Відео-кліп Matroska</comment>
     <comment xml:lang="zh_CN">Matroska 视频</comment>
+    <comment xml:lang="zh_TW">Matroska 影音檔</comment>
     <magic priority="50">
       <match value="matroska" type="string" offset="8"/>
     </magic>
@@ -4776,6 +4969,7 @@
     <comment xml:lang="sv">FrameMaker MIF-dokument</comment>
     <comment xml:lang="uk">Документ FrameMaker MIF</comment>
     <comment xml:lang="zh_CN">FrameMaker MIF 文档</comment>
+    <comment xml:lang="zh_TW">FrameMaker MIF 文件</comment>
     <glob pattern="*.mif"/>
   </mime-type>
   <mime-type type="application/x-mozilla-bookmarks">
@@ -4808,6 +5002,7 @@
     <comment xml:lang="sv">Mozilla-bokmärken</comment>
     <comment xml:lang="uk">Закладки Mozilla</comment>
     <comment xml:lang="zh_CN">Mozilla 书签</comment>
+    <comment xml:lang="zh_TW">Mozilla 書籤</comment>
     <magic priority="80">
       <match value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" type="string" offset="0:64"/>
     </magic>
@@ -4841,6 +5036,7 @@
     <comment xml:lang="sv">Körbar DOS/Windows-fil</comment>
     <comment xml:lang="uk">Виконуваний файл DOS/Windows</comment>
     <comment xml:lang="zh_CN">DOS/Windows 可执行文件</comment>
+    <comment xml:lang="zh_TW">DOS/Windows 可執行檔</comment>
     <magic priority="50">
       <match value="MZ" type="string" offset="0"/>
     </magic>
@@ -4883,6 +5079,7 @@
     <comment xml:lang="sv">Microsoft Write-dokument</comment>
     <comment xml:lang="uk">Документ Microsoft Write</comment>
     <comment xml:lang="zh_CN">Microsoft 书写器文档</comment>
+    <comment xml:lang="zh_TW">微軟 Write 文件</comment>
     <glob pattern="*.wri"/>
   </mime-type>
   <mime-type type="application/x-msx-rom">
@@ -4915,6 +5112,7 @@
     <comment xml:lang="sv">MSX-rom</comment>
     <comment xml:lang="uk">ПЗП MSX</comment>
     <comment xml:lang="zh_CN">MSX ROM</comment>
+    <comment xml:lang="zh_TW">MSX ROM</comment>
     <glob pattern="*.msx"/>
   </mime-type>
   <mime-type type="application/x-n64-rom">
@@ -4946,6 +5144,7 @@
     <comment xml:lang="sv">Nintendo64-rom</comment>
     <comment xml:lang="uk">ПЗП Nintendo64</comment>
     <comment xml:lang="zh_CN">Nintendo64 ROM</comment>
+    <comment xml:lang="zh_TW">超任64 ROM</comment>
     <glob pattern="*.n64"/>
   </mime-type>
   <mime-type type="application/x-nautilus-link">
@@ -4980,6 +5179,7 @@
     <comment xml:lang="sv">Nautiluslänk</comment>
     <comment xml:lang="uk">Посилання Nautilus</comment>
     <comment xml:lang="zh_CN">Nautilus 链接</comment>
+    <comment xml:lang="zh_TW">Nautilus 鏈結</comment>
     <magic priority="50">
       <match value="&lt;nautilus_object nautilus_link" type="string" offset="0:32"/>
     </magic>
@@ -5014,6 +5214,7 @@
     <comment xml:lang="sv">NES-rom</comment>
     <comment xml:lang="uk">ПЗП NES</comment>
     <comment xml:lang="zh_CN">NES ROM</comment>
+    <comment xml:lang="zh_TW">NES ROM</comment>
     <glob pattern="*.nes"/>
   </mime-type>
   <mime-type type="application/x-netcdf">
@@ -5045,6 +5246,7 @@
     <comment xml:lang="sv">Unidata NetCDF-dokument</comment>
     <comment xml:lang="uk">Документ Unidata NetCDF</comment>
     <comment xml:lang="zh_CN">Unidata NetCDF 文档</comment>
+    <comment xml:lang="zh_TW">Unidata NetCDF 圖形</comment>
     <glob pattern="*.cdf"/>
     <glob pattern="*.nc"/>
   </mime-type>
@@ -5079,6 +5281,7 @@
     <comment xml:lang="sv">Netscape-bokmärken</comment>
     <comment xml:lang="uk">Закладки Netscape</comment>
     <comment xml:lang="zh_CN">Netscape 书签</comment>
+    <comment xml:lang="zh_TW">Netscape 書籤</comment>
     <magic priority="80">
       <match value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" type="string" offset="0:64"/>
     </magic>
@@ -5146,7 +5349,7 @@
     <comment xml:lang="ko">Ogg Vorbis 오디오</comment>
     <comment xml:lang="ms">Audio Ogg Vorbis</comment>
     <comment xml:lang="nb">Ogg Vorbis-lyd</comment>
-    <comment xml:lang="nl">Ogg Vorbis-geluid</comment>
+    <comment xml:lang="nl">Ogg Vorbis-audio</comment>
     <comment xml:lang="nn">Ogg Vorbis-lyd</comment>
     <comment xml:lang="no">Ogg Vorbis-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy Ogg Vorbis</comment>
@@ -5158,6 +5361,7 @@
     <comment xml:lang="sv">Ogg Vorbis-ljud</comment>
     <comment xml:lang="uk">Звук Ogg Vorbis</comment>
     <comment xml:lang="zh_CN">Ogg Vorbis 音频</comment>
+    <comment xml:lang="zh_TW">Ogg Vorbis 音效</comment>
     <magic priority="50">
       <match value="OggS" type="string" offset="0"/>
     </magic>
@@ -5224,6 +5428,7 @@
     <comment xml:lang="sv">GNU Oleo-kalkylblad</comment>
     <comment xml:lang="uk">Ел.таблиця GNU Oleo</comment>
     <comment xml:lang="zh_CN">GNU Oleo 工作簿</comment>
+    <comment xml:lang="zh_TW">GNU Oleo 試算表</comment>
     <magic priority="50">
       <match value="Oleo" type="string" offset="31"/>
     </magic>
@@ -5260,6 +5465,7 @@
     <comment xml:lang="sv">Palm OS-databas</comment>
     <comment xml:lang="uk">База даних Palm OS</comment>
     <comment xml:lang="zh_CN">Palm OS 数据库</comment>
+    <comment xml:lang="zh_TW">Palm OS 資料庫</comment>
   </mime-type>
   <mime-type type="application/x-par2">
     <comment>PAR2 Parity File</comment>
@@ -5298,6 +5504,7 @@
     <comment xml:lang="sv">Körbar PEF-fil</comment>
     <comment xml:lang="uk">Виконуваний файл PEF</comment>
     <comment xml:lang="zh_CN">PEF 可执行文件</comment>
+    <comment xml:lang="zh_TW">PEF 可執行檔</comment>
     <magic priority="50">
       <match value="Joy!" type="string" offset="0"/>
     </magic>
@@ -5335,6 +5542,7 @@
     <comment xml:lang="sv">Perlskript</comment>
     <comment xml:lang="uk">Сценарій на Perl</comment>
     <comment xml:lang="zh_CN">Perl 脚本</comment>
+    <comment xml:lang="zh_TW">Perl 描述語言檔</comment>
     <magic priority="50">
       <match value='eval \"exec /usr/local/bin/perl' type="string" offset="0"/>
       <match value="/bin/perl" type="string" offset="1:16"/>
@@ -5378,6 +5586,7 @@
     <comment xml:lang="sv">PHP-skript</comment>
     <comment xml:lang="uk">Сценарій PHP</comment>
     <comment xml:lang="zh_CN">PHP 脚本</comment>
+    <comment xml:lang="zh_TW">PHP 描述語言檔</comment>
     <magic priority="80">
       <match value="&lt;?php" type="string" offset="0:64"/>
     </magic>
@@ -5413,6 +5622,7 @@
     <comment xml:lang="sv">PKCS#12-certifikatsamling</comment>
     <comment xml:lang="uk">Комплект сертифікатів PKCS#12</comment>
     <comment xml:lang="zh_CN">PKCS#12 证书束</comment>
+    <comment xml:lang="zh_TW">PKCS#12 憑證檔</comment>
     <glob pattern="*.p12"/>
     <glob pattern="*.pfx"/>
   </mime-type>
@@ -5476,6 +5686,7 @@
     <comment xml:lang="sv">Pathetic Writer-dokument</comment>
     <comment xml:lang="uk">Документ Pathetic Writer</comment>
     <comment xml:lang="zh_CN">Pathetic Writer 文档</comment>
+    <comment xml:lang="zh_TW">Pathetic Writer 文件</comment>
     <glob pattern="*.pw"/>
   </mime-type>
   <mime-type type="application/x-python-bytecode">
@@ -5509,6 +5720,7 @@
     <comment xml:lang="sv">Python-bytekod</comment>
     <comment xml:lang="uk">Байт-код Python</comment>
     <comment xml:lang="zh_CN">Python 字节码</comment>
+    <comment xml:lang="zh_TW">Python 位元碼</comment>
     <magic priority="50">
       <match value="0x994e0d0a" type="big32" offset="0"/>
     </magic>
@@ -5544,6 +5756,7 @@
     <comment xml:lang="sv">Quattro Pro-kalkylblad</comment>
     <comment xml:lang="uk">Ел.таблиця Quattro Pro</comment>
     <comment xml:lang="zh_CN">Quattro Pro 工作簿</comment>
+    <comment xml:lang="zh_TW">Quattro Pro 試算表</comment>
     <glob pattern="*.wb1"/>
     <glob pattern="*.wb2"/>
     <glob pattern="*.wb3"/>
@@ -5579,6 +5792,7 @@
     <comment xml:lang="sv">Quicken-dokument</comment>
     <comment xml:lang="uk">Документ Quicken</comment>
     <comment xml:lang="zh_CN">Quicken 文档</comment>
+    <comment xml:lang="zh_TW">Quicken 文件</comment>
     <glob pattern="*.qif"/>
   </mime-type>
   <mime-type type="application/x-rar">
@@ -5612,6 +5826,7 @@
     <comment xml:lang="sv">RAR-arkiv</comment>
     <comment xml:lang="uk">Архів RAR</comment>
     <comment xml:lang="zh_CN">RAR 压缩包</comment>
+    <comment xml:lang="zh_TW">RAR 保存檔</comment>
     <magic priority="50">
       <match value="Rar!" type="string" offset="0"/>
     </magic>
@@ -5679,6 +5894,7 @@
     <comment xml:lang="sv">RPM-paket</comment>
     <comment xml:lang="uk">Пакет RPM</comment>
     <comment xml:lang="zh_CN">RPM 软件包</comment>
+    <comment xml:lang="zh_TW">RPM 套件</comment>
     <magic priority="50">
       <match value="\xed\xab\xee\xdb" type="string" offset="0"/>
     </magic>
@@ -5716,6 +5932,7 @@
     <comment xml:lang="sv">Ruby-skript</comment>
     <comment xml:lang="uk">Сценарій Ruby</comment>
     <comment xml:lang="zh_CN">Ruby 脚本</comment>
+    <comment xml:lang="zh_TW">Ruby 描述語言檔</comment>
     <magic>
       <match value="/bin/env ruby" type="string" offset="1:16"/>
     </magic>
@@ -5787,6 +6004,7 @@
     <comment xml:lang="sv">delat bibliotek (la)</comment>
     <comment xml:lang="uk">спільна бібліотека (la)</comment>
     <comment xml:lang="zh_CN">共享库(la)</comment>
+    <comment xml:lang="zh_TW">分享函式庫 (la)</comment>
     <glob pattern="*.la"/>
   </mime-type>
   <mime-type type="application/x-sharedlib">
@@ -5820,6 +6038,7 @@
     <comment xml:lang="sv">delat bibliotek</comment>
     <comment xml:lang="uk">спільна бібліотека</comment>
     <comment xml:lang="zh_CN">共享库</comment>
+    <comment xml:lang="zh_TW">分享函式庫</comment>
     <magic priority="50">
       <match value="\177ELF" type="string" offset="0">
         <match value="1" type="byte" offset="5">
@@ -5912,6 +6131,7 @@
     <comment xml:lang="sv">Shockwave Flash-fil</comment>
     <comment xml:lang="uk">Файл Shockwave Flash</comment>
     <comment xml:lang="zh_CN">Shockwave Flash 文件</comment>
+    <comment xml:lang="zh_TW">Shockwave Flash 檔</comment>
     <magic priority="50">
       <match value="FWS" type="string" offset="0"/>
     </magic>
@@ -5946,6 +6166,7 @@
     <comment xml:lang="sv">Siag-kalkylblad</comment>
     <comment xml:lang="uk">Ел.таблиця Siag</comment>
     <comment xml:lang="zh_CN">Siag 工作簿</comment>
+    <comment xml:lang="zh_TW">Siag 試算表</comment>
     <glob pattern="*.siag"/>
   </mime-type>
   <mime-type type="application/x-slp">
@@ -5979,6 +6200,7 @@
     <comment xml:lang="sv">Stampede-paket</comment>
     <comment xml:lang="uk">Пакет Stampede</comment>
     <comment xml:lang="zh_CN">Stampede 软件包</comment>
+    <comment xml:lang="zh_TW">Stampede 套件</comment>
   </mime-type>
   <mime-type type="application/x-sms-rom">
     <comment>SMS/Game Gear ROM</comment>
@@ -6009,6 +6231,7 @@
     <comment xml:lang="sv">SMS/Game Gear-rom</comment>
     <comment xml:lang="uk">ПЗП SMS/Game Gear</comment>
     <comment xml:lang="zh_CN">SMS/Game Gear ROM</comment>
+    <comment xml:lang="zh_TW">SMS/Game Gear ROM</comment>
     <glob pattern="*.sms"/>
     <glob pattern="*.gg"/>
   </mime-type>
@@ -6043,6 +6266,7 @@
     <comment xml:lang="sv">Macintosh StuffIt-arkiv </comment>
     <comment xml:lang="uk">Архів Macintosh StuffIt</comment>
     <comment xml:lang="zh_CN">Macintosh StuffIt 压缩包</comment>
+    <comment xml:lang="zh_TW">Macintosh StuffIt 保存檔</comment>
     <magic priority="50">
       <match value="StuffIt " type="string" offset="0"/>
       <match value="SIT!" type="string" offset="0"/>
@@ -6079,6 +6303,7 @@
     <comment xml:lang="sv">SV4 CPIO-arkiv</comment>
     <comment xml:lang="uk">Архів SV4 CPIO</comment>
     <comment xml:lang="zh_CN">SV4 CPIO 压缩包</comment>
+    <comment xml:lang="zh_TW">SV4 CPIO 保存檔</comment>
     <glob pattern="*.sv4cpio"/>
   </mime-type>
   <mime-type type="application/x-sv4crc">
@@ -6112,6 +6337,7 @@
     <comment xml:lang="sv">SV4 CPIO-arkiv (med CRC)</comment>
     <comment xml:lang="uk">Архів SV4 CPIP (з CRC)</comment>
     <comment xml:lang="zh_CN">SV4 CPIP 压缩包(带 CRC)</comment>
+    <comment xml:lang="zh_TW">SV4 CPIP 保存檔 (具有 CRC)</comment>
     <glob pattern="*.sv4crc"/>
   </mime-type>
   <mime-type type="application/x-tar">
@@ -6143,6 +6369,7 @@
     <comment xml:lang="sv">tar-arkiv</comment>
     <comment xml:lang="uk">архів tar</comment>
     <comment xml:lang="zh_CN">tar 压缩包</comment>
+    <comment xml:lang="zh_TW">tar 保存檔</comment>
     <magic priority="50">
       <match value="ustar\0" type="string" offset="257"/>
       <match value="ustar\040\040\0" type="string" offset="257"/>
@@ -6178,6 +6405,7 @@
     <comment xml:lang="sv">tar-arkiv (komprimerat)</comment>
     <comment xml:lang="uk">архів tar (стиснений)</comment>
     <comment xml:lang="zh_CN">tar 压缩包(compress 压缩)</comment>
+    <comment xml:lang="zh_TW">tar 保存檔 (compress 格式壓縮)</comment>
     <glob pattern="*.tar.Z"/>
   </mime-type>
   <mime-type type="application/x-tex-gf">
@@ -6307,6 +6535,7 @@
     <comment xml:lang="sv">tema</comment>
     <comment xml:lang="uk">тема</comment>
     <comment xml:lang="zh_CN">主题</comment>
+    <comment xml:lang="zh_TW">佈景主題</comment>
     <glob pattern="*.theme"/>
   </mime-type>
   <mime-type type="application/x-toutdoux">
@@ -6340,6 +6569,7 @@
     <comment xml:lang="sv">ToutDoux-dokument</comment>
     <comment xml:lang="uk">Документ ToutDoux</comment>
     <comment xml:lang="zh_CN">ToutDoux 文档</comment>
+    <comment xml:lang="zh_TW">ToutDoux 文件</comment>
   </mime-type>
   <mime-type type="application/x-trash">
     <comment>backup file</comment>
@@ -6371,6 +6601,7 @@
     <comment xml:lang="sv">säkerhetskopia</comment>
     <comment xml:lang="uk">резервна копія</comment>
     <comment xml:lang="zh_CN">备份文件</comment>
+    <comment xml:lang="zh_TW">備份檔</comment>
     <glob pattern="*~"/>
     <glob pattern="*%"/>
     <glob pattern="*.bak"/>
@@ -6409,6 +6640,7 @@
     <comment xml:lang="sv">Troff-dokument</comment>
     <comment xml:lang="uk">Документ Troff</comment>
     <comment xml:lang="zh_CN">Troff 文档</comment>
+    <comment xml:lang="zh_TW">Troff 文件</comment>
     <magic priority="50">
       <match value='.\\\"' type="string" offset="0"/>
       <match value="'\\\&quot;" type="string" offset="0"/>
@@ -6511,6 +6743,7 @@
     <comment xml:lang="sv">tar-arkiv (LZO-komprimerat)</comment>
     <comment xml:lang="uk">архів tar (стиснений LZO)</comment>
     <comment xml:lang="zh_CN">tar 压缩包(LZO 压缩)</comment>
+    <comment xml:lang="zh_TW">tar 保存檔 (LZO 格式壓縮)</comment>
     <glob pattern="*.tar.lzo"/>
     <glob pattern="*.tzo"/>
   </mime-type>
@@ -6546,6 +6779,7 @@
     <comment xml:lang="sv">ustar-arkiv</comment>
     <comment xml:lang="uk">архів ustar</comment>
     <comment xml:lang="zh_CN">ustar 压缩包</comment>
+    <comment xml:lang="zh_TW">ustar 保存檔</comment>
     <glob pattern="*.ustar"/>
   </mime-type>
   <mime-type type="application/x-wais-source">
@@ -6579,6 +6813,7 @@
     <comment xml:lang="sv">WAIS-källkod</comment>
     <comment xml:lang="uk">Вихідний код на мові WAIS</comment>
     <comment xml:lang="zh_CN">WAIS 源代码</comment>
+    <comment xml:lang="zh_TW">WAIS 源代碼</comment>
     <glob pattern="*.src"/>
   </mime-type>
   <mime-type type="application/x-wpg">
@@ -6608,6 +6843,7 @@
     <comment xml:lang="sv">WordPerfect/Drawperfect-bild</comment>
     <comment xml:lang="uk">Зображення WordPerfect/Drawperfect</comment>
     <comment xml:lang="zh_CN">WordPerfect/Drawperfect 图像</comment>
+    <comment xml:lang="zh_TW">WordPerfect/Drawperfect 圖片</comment>
     <glob pattern="*.wpg"/>
   </mime-type>
   <mime-type type="application/x-x509-ca-cert">
@@ -6674,6 +6910,7 @@
     <comment xml:lang="sv">tomt dokument</comment>
     <comment xml:lang="uk">порожній документ</comment>
     <comment xml:lang="zh_CN">空文档</comment>
+    <comment xml:lang="zh_TW">空白文件</comment>
   </mime-type>
   <mime-type type="application/x-zoo">
     <comment>zoo archive</comment>
@@ -6705,6 +6942,7 @@
     <comment xml:lang="sv">zoo-arkiv</comment>
     <comment xml:lang="uk">архів zoo</comment>
     <comment xml:lang="zh_CN">zoo 压缩包</comment>
+    <comment xml:lang="zh_TW">zoo 保存檔</comment>
     <magic priority="50">
       <match value="0xfdc4a7dc" type="little32" offset="20"/>
     </magic>
@@ -6740,6 +6978,7 @@
     <comment xml:lang="sv">XHTML-sida</comment>
     <comment xml:lang="uk">Сторінка XHTML</comment>
     <comment xml:lang="zh_CN">XHTML 页面</comment>
+    <comment xml:lang="zh_TW">XHTML 網頁</comment>
     <glob pattern="*.xhtml"/>
     <root-XML namespaceURI='http://www.w3.org/1999/xhtml' localName='html'/>
   </mime-type>
@@ -6774,6 +7013,7 @@
     <comment xml:lang="sv">ZIP-arkiv</comment>
     <comment xml:lang="uk">Архів ZIP</comment>
     <comment xml:lang="zh_CN">ZIP 压缩包</comment>
+    <comment xml:lang="zh_TW">ZIP 保存檔</comment>
     <magic priority="40">
       <match value="PK\003\004" type="string" offset="0"/>
     </magic>
@@ -6799,7 +7039,7 @@
     <comment xml:lang="ko">돌비 디지털 오디오</comment>
     <comment xml:lang="ms">Audio Digital Dolby</comment>
     <comment xml:lang="nb">Dolby digital lyd</comment>
-    <comment xml:lang="nl">Dolby Digital-geluid</comment>
+    <comment xml:lang="nl">Dolby Digital-audio</comment>
     <comment xml:lang="nn">Dolby Digital lyd</comment>
     <comment xml:lang="no">Dolby digital lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy Dolby Digital</comment>
@@ -6810,6 +7050,7 @@
     <comment xml:lang="sv">Dolby Digital-ljud</comment>
     <comment xml:lang="uk">Звук Dolby Digital</comment>
     <comment xml:lang="zh_CN">杜比数字音频</comment>
+    <comment xml:lang="zh_TW">杜比數碼音效</comment>
     <glob pattern="*.ac3"/>
   </mime-type>
   <mime-type type="audio/basic">
@@ -6832,7 +7073,7 @@
     <comment xml:lang="ko">ULAW (Sun) 오디오</comment>
     <comment xml:lang="ms">Audio ULAW (Sun)</comment>
     <comment xml:lang="nb">ULAW-lyd (Sun)</comment>
-    <comment xml:lang="nl">ULAW (Sun) geluid</comment>
+    <comment xml:lang="nl">ULAW (Sun) audio</comment>
     <comment xml:lang="nn">ULAW (Sun)-lyd</comment>
     <comment xml:lang="no">ULAW-lyd (Sun)</comment>
     <comment xml:lang="pl">Plik dźwiękowy ULAW (Sun)</comment>
@@ -6843,6 +7084,7 @@
     <comment xml:lang="sv">ULAW-ljud (Sun)</comment>
     <comment xml:lang="uk">Звук ULAW (Sun)</comment>
     <comment xml:lang="zh_CN">ULAW (Sun) 音频</comment>
+    <comment xml:lang="zh_TW">ULAW (Sun) 音效</comment>
     <magic priority="40">
       <match value=".snd" type="string" offset="0"/>
     </magic>
@@ -6867,7 +7109,7 @@
     <comment xml:lang="ko">Commodore 64 오디오</comment>
     <comment xml:lang="ms">Audio Commodore 64</comment>
     <comment xml:lang="nb">Commodore 64-lyd</comment>
-    <comment xml:lang="nl">Commodore 64-geluid</comment>
+    <comment xml:lang="nl">Commodore 64-audio</comment>
     <comment xml:lang="nn">Commodore 64-lyd</comment>
     <comment xml:lang="no">Commodore 64-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy Commodore 64</comment>
@@ -6878,6 +7120,7 @@
     <comment xml:lang="sv">Commodore 64-ljud</comment>
     <comment xml:lang="uk">Звук Commodore 64</comment>
     <comment xml:lang="zh_CN">Commodore 64 音频</comment>
+    <comment xml:lang="zh_TW">Commodore 64 音效</comment>
     <magic priority="50">
       <match value="PSID" type="string" offset="0"/>
     </magic>
@@ -6904,7 +7147,7 @@
     <comment xml:lang="ko">PCM 오디오</comment>
     <comment xml:lang="ms">Audio PCM</comment>
     <comment xml:lang="nb">PCM-lyd</comment>
-    <comment xml:lang="nl">PCM-geluid</comment>
+    <comment xml:lang="nl">PCM-audio</comment>
     <comment xml:lang="nn">PCM-lyd</comment>
     <comment xml:lang="no">PCM-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy PCM</comment>
@@ -6915,6 +7158,7 @@
     <comment xml:lang="sv">PCM-ljud</comment>
     <comment xml:lang="uk">Звук PCM</comment>
     <comment xml:lang="zh_CN">PCM 音频</comment>
+    <comment xml:lang="zh_TW">PCM 音效</comment>
     <magic priority="50">
       <match value=".snd" type="string" offset="0">
         <match value="23" type="big32" offset="12"/>
@@ -6951,7 +7195,7 @@
     <comment xml:lang="ko">AIFC 오디오</comment>
     <comment xml:lang="ms">Audio AIFC</comment>
     <comment xml:lang="nb">AIFC-lyd</comment>
-    <comment xml:lang="nl">AIFC-geluid</comment>
+    <comment xml:lang="nl">AIFC-audio</comment>
     <comment xml:lang="nn">AIFC-lyd</comment>
     <comment xml:lang="no">AIFC-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy AIFC</comment>
@@ -6962,6 +7206,7 @@
     <comment xml:lang="sv">AIFC-ljud</comment>
     <comment xml:lang="uk">Звук AIFC</comment>
     <comment xml:lang="zh_CN">AIFC 音频</comment>
+    <comment xml:lang="zh_TW">AIFC 音效</comment>
     <magic priority="50">
       <match value="AIFC" type="string" offset="8"/>
     </magic>
@@ -6985,7 +7230,7 @@
     <comment xml:lang="ko">AIFF/Amiga/Mac 오디오</comment>
     <comment xml:lang="ms">Audio AIFF/Amiga/Mac</comment>
     <comment xml:lang="nb">AIFF/Amiga/Mac-lyd</comment>
-    <comment xml:lang="nl">AIFF/Amiga/Mac-geluid</comment>
+    <comment xml:lang="nl">AIFF/Amiga/Mac-audio</comment>
     <comment xml:lang="nn">AIFF/Amiga/Mac-lyd</comment>
     <comment xml:lang="no">AIFF/Amiga/Mac-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy AIFF/Amiga/Mac</comment>
@@ -6996,6 +7241,7 @@
     <comment xml:lang="sv">AIFF/Amiga/Mac-ljud</comment>
     <comment xml:lang="uk">Звук AIFF/Amiga/Mac</comment>
     <comment xml:lang="zh_CN">AIFF/Amiga/Mac 音频</comment>
+    <comment xml:lang="zh_TW">AIFF/Amiga/Mac 音效</comment>
     <magic priority="50">
       <match value="AIFF" type="string" offset="8"/>
       <match value="AIFC" type="string" offset="8"/>
@@ -7025,7 +7271,7 @@
     <comment xml:lang="ko">AIFF 오디오</comment>
     <comment xml:lang="ms">Audio AIFF</comment>
     <comment xml:lang="nb">AIFF-lyd</comment>
-    <comment xml:lang="nl">AIFF-geluid</comment>
+    <comment xml:lang="nl">AIFF-audio</comment>
     <comment xml:lang="nn">AIFF-lyd</comment>
     <comment xml:lang="no">AIFF-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy AIFF</comment>
@@ -7036,6 +7282,7 @@
     <comment xml:lang="sv">AIFF-ljud</comment>
     <comment xml:lang="uk">Звук AIFF</comment>
     <comment xml:lang="zh_CN">AIFF 音频</comment>
+    <comment xml:lang="zh_TW">AIFF 音效</comment>
   </mime-type>
   <mime-type type="audio/x-it">
     <comment>Impulse Tracker audio</comment>
@@ -7057,7 +7304,7 @@
     <comment xml:lang="ko">Impulse Tracker 오디오</comment>
     <comment xml:lang="ms">Audio Impulse Tracker</comment>
     <comment xml:lang="nb">Impulse Tracker-lyd</comment>
-    <comment xml:lang="nl">Impulse Tracker-geluid</comment>
+    <comment xml:lang="nl">Impulse Tracker-audio</comment>
     <comment xml:lang="nn">Impulse Tracker lyd</comment>
     <comment xml:lang="no">Impulse Tracker-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy Impulse Trackera</comment>
@@ -7068,6 +7315,7 @@
     <comment xml:lang="sv">Impulse Tracker-ljud</comment>
     <comment xml:lang="uk">Звук Impulse Tracker</comment>
     <comment xml:lang="zh_CN">Impulse Tracker 音频</comment>
+    <comment xml:lang="zh_TW">Impulse Tracker 音效</comment>
     <magic priority="50">
       <match value="IMPM" type="string" offset="0"/>
     </magic>
@@ -7091,7 +7339,7 @@
     <comment xml:lang="ko">FLAC 오디오</comment>
     <comment xml:lang="ms">Audio FLAC</comment>
     <comment xml:lang="nb">FLAC-lyd</comment>
-    <comment xml:lang="nl">FLAC-geluid</comment>
+    <comment xml:lang="nl">FLAC-audio</comment>
     <comment xml:lang="nn">FLAC-lyd</comment>
     <comment xml:lang="no">FLAC-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy FLAC</comment>
@@ -7103,6 +7351,7 @@
     <comment xml:lang="sv">FLAC-ljud</comment>
     <comment xml:lang="uk">Звук FLAC</comment>
     <comment xml:lang="zh_CN">FLAC 音频</comment>
+    <comment xml:lang="zh_TW">FLAC 音效</comment>
     <glob pattern="*.flac"/>
   </mime-type>
   <mime-type type="audio/midi">
@@ -7126,7 +7375,7 @@
     <comment xml:lang="ko">미디 오디오</comment>
     <comment xml:lang="ms">Audio MIDI</comment>
     <comment xml:lang="nb">MIDI-lyd</comment>
-    <comment xml:lang="nl">MIDI-geluid</comment>
+    <comment xml:lang="nl">MIDI-audio</comment>
     <comment xml:lang="nn">MIDI-lyd</comment>
     <comment xml:lang="no">MIDI-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy MIDI</comment>
@@ -7137,6 +7386,7 @@
     <comment xml:lang="sv">MIDI-ljud</comment>
     <comment xml:lang="uk">Звук MIDI</comment>
     <comment xml:lang="zh_CN">MIDI 音频</comment>
+    <comment xml:lang="zh_TW">MIDI 音效</comment>
     <magic priority="50">
       <match value="MThd" type="string" offset="0"/>
     </magic>
@@ -7145,7 +7395,11 @@
   </mime-type>
   <mime-type type="audio/x-m4a">
     <comment>MP4 audio</comment>
+    <comment xml:lang="cs">Zvuk MP4</comment>
+    <comment xml:lang="fi">MP4-ääni</comment>
     <comment xml:lang="nb">MP4-lyd</comment>
+    <comment xml:lang="nl">MP4-audio</comment>
+    <comment xml:lang="zh_TW">MP4 音效</comment>
     <magic priority="50">
       <match value="ftypM4A" type="string" offset="0"/>
     </magic>
@@ -7169,7 +7423,7 @@
     <comment xml:lang="ko">Amiga SoundTracker 오디오</comment>
     <comment xml:lang="ms">Audio Amiga Soundtracker</comment>
     <comment xml:lang="nb">Amiga SoundTracker-lyd</comment>
-    <comment xml:lang="nl">Amiga SoundTracker-geluid</comment>
+    <comment xml:lang="nl">Amiga SoundTracker-audio</comment>
     <comment xml:lang="nn">Amiga soundtracker-lyd</comment>
     <comment xml:lang="no">Amiga SoundTracker-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy Amiga SoundTracker</comment>
@@ -7180,6 +7434,7 @@
     <comment xml:lang="sv">Amiga SoundTracker-ljud</comment>
     <comment xml:lang="uk">Звук Amiga SoundTracker</comment>
     <comment xml:lang="zh_CN">Amiga SoundTracker 音频</comment>
+    <comment xml:lang="zh_TW">Amiga SoundTracker 音效</comment>
     <glob pattern="*.mod"/>
     <glob pattern="*.ult"/>
     <glob pattern="*.uni"/>
@@ -7209,7 +7464,7 @@
     <comment xml:lang="ko">MP3 오디오</comment>
     <comment xml:lang="ms">Audio MP3</comment>
     <comment xml:lang="nb">MP3-lyd</comment>
-    <comment xml:lang="nl">MP3-geluid</comment>
+    <comment xml:lang="nl">MP3-audio</comment>
     <comment xml:lang="nn">MP3-lyd</comment>
     <comment xml:lang="no">MP3-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy MP3</comment>
@@ -7221,6 +7476,7 @@
     <comment xml:lang="sv">MP3-ljud</comment>
     <comment xml:lang="uk">Звук MP3</comment>
     <comment xml:lang="zh_CN">MP3 音频</comment>
+    <comment xml:lang="zh_TW">MP3 音效</comment>
     <magic priority="50">
       <match value="0xfffb" type="big32" offset="0"/>
       <match value="ID3" type="string" offset="0"/>
@@ -7256,6 +7512,7 @@
     <comment xml:lang="sv">MP3-spellista</comment>
     <comment xml:lang="uk">Список програвання MP3</comment>
     <comment xml:lang="zh_CN">MP3 播放列表</comment>
+    <comment xml:lang="zh_TW">MP3 播放清單</comment>
   </mime-type>
   <mime-type type="audio/x-mpeg">
     <comment>MP3 audio</comment>
@@ -7277,7 +7534,7 @@
     <comment xml:lang="ko">MP3 오디오</comment>
     <comment xml:lang="ms">Audio MP3</comment>
     <comment xml:lang="nb">MP3-lyd</comment>
-    <comment xml:lang="nl">MP3-geluid</comment>
+    <comment xml:lang="nl">MP3-audio</comment>
     <comment xml:lang="nn">MP3-lyd</comment>
     <comment xml:lang="no">MP3-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy MP3</comment>
@@ -7289,6 +7546,7 @@
     <comment xml:lang="sv">MP3-ljud</comment>
     <comment xml:lang="uk">Звук MP3</comment>
     <comment xml:lang="zh_CN">MP3 音频</comment>
+    <comment xml:lang="zh_TW">MP3 音效</comment>
   </mime-type>
   <mime-type type="audio/x-mpegurl">
     <comment>MP3 audio (streamed)</comment>
@@ -7307,7 +7565,7 @@
     <comment xml:lang="ko">MP3 오디오 (스트림)</comment>
     <comment xml:lang="ms">Audio MP3 (aliran)</comment>
     <comment xml:lang="nb">MP3-lyd (streaming)</comment>
-    <comment xml:lang="nl">MP3-geluid (gestroomd)</comment>
+    <comment xml:lang="nl">MP3-audio (gestroomd)</comment>
     <comment xml:lang="nn">Strauma MP3-lyd</comment>
     <comment xml:lang="no">MP3-lyd (streaming)</comment>
     <comment xml:lang="pl">Dźwięk MP3 (strumień)</comment>
@@ -7318,6 +7576,7 @@
     <comment xml:lang="sv">MP3-ljud (flöde)</comment>
     <comment xml:lang="uk">Звук MP3 (потоковий)</comment>
     <comment xml:lang="zh_CN">MP3 流式音频</comment>
+    <comment xml:lang="zh_TW">MP3 音效 (串流)</comment>
     <glob pattern="*.m3u"/>
     <magic priority="50">
       <match value="#EXTM3U" type="string" offset="0"/>
@@ -7354,6 +7613,7 @@
     <comment xml:lang="sv">Spellista</comment>
     <comment xml:lang="uk">Список програвання</comment>
     <comment xml:lang="zh_CN">播放列表</comment>
+    <comment xml:lang="zh_TW">播放清單</comment>
     <magic priority="50">
       <match value="ASF " type="string" offset="0"/>
       <match value="&lt;ASX" type="string" offset="0"/>
@@ -7390,12 +7650,15 @@
     <comment xml:lang="sv">RealAudio-utsändning</comment>
     <comment xml:lang="uk">Радіомовлення RealAudio</comment>
     <comment xml:lang="zh_CN">RealAudio 广播</comment>
+    <comment xml:lang="zh_TW">RealAudio 廣播</comment>
     <magic priority="50">
       <match value=".ra\375" type="string" offset="0"/>
+      <match value=".RMF" type="string" offset="0"/>
     </magic>
     <glob pattern="*.ra"/>
     <glob pattern="*.ram"/>
     <glob pattern="*.rm"/>
+    <glob pattern="*.rmvb"/>
     <alias type="audio/vnd.rn-realaudio"/>
   </mime-type>
   <mime-type type="audio/x-riff">
@@ -7418,7 +7681,7 @@
     <comment xml:lang="ko">RIFF 오디오</comment>
     <comment xml:lang="ms">Audio RIFF</comment>
     <comment xml:lang="nb">RIFF-lyd</comment>
-    <comment xml:lang="nl">RIFF-geluid</comment>
+    <comment xml:lang="nl">RIFF-audio</comment>
     <comment xml:lang="nn">RIFF-lyd</comment>
     <comment xml:lang="no">RIFF-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy RIFF</comment>
@@ -7429,6 +7692,7 @@
     <comment xml:lang="sv">RIFF-ljud</comment>
     <comment xml:lang="uk">Звук RIFF</comment>
     <comment xml:lang="zh_CN">RIFF 音频</comment>
+    <comment xml:lang="zh_TW">RIFF 音效</comment>
     
     <magic priority="45">
       <match value="RIFF" type="string" offset="0"/>
@@ -7454,7 +7718,7 @@
     <comment xml:lang="ko">Scream Tracker 3 오디오</comment>
     <comment xml:lang="ms">Audio Scream Tracker 3</comment>
     <comment xml:lang="nb">Scream Tracker 3-lyd</comment>
-    <comment xml:lang="nl">Scream Tracker 3-geluid</comment>
+    <comment xml:lang="nl">Scream Tracker 3-audio</comment>
     <comment xml:lang="nn">Sream Tracker 3 lyd</comment>
     <comment xml:lang="no">Scream Tracker 3-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy Scream Trackera 3</comment>
@@ -7465,6 +7729,7 @@
     <comment xml:lang="sv">Scream Tracker 3-ljud</comment>
     <comment xml:lang="uk">Звук Scream Tracker 3</comment>
     <comment xml:lang="zh_CN">Scheme Tracker 3 音频</comment>
+    <comment xml:lang="zh_TW">Scream Tracker 3 音效</comment>
     <glob pattern="*.s3m"/>
   </mime-type>
   <mime-type type="audio/x-scpls">
@@ -7496,6 +7761,7 @@
     <comment xml:lang="sv">MP3 ShoutCast-spellista</comment>
     <comment xml:lang="uk">Список програвання MP3 ShoutCast</comment>
     <comment xml:lang="zh_CN">MP3 ShoutCast 播放列表</comment>
+    <comment xml:lang="zh_TW">MP3 ShoutCast 播放清單</comment>
     <magic priority="50">
       <match value="[playlist]" type="string" offset="0"/>
       <match value="[Playlist]" type="string" offset="0"/>
@@ -7523,7 +7789,7 @@
     <comment xml:lang="ko">Scream Tracker 오디오</comment>
     <comment xml:lang="ms">Audio Scream Tracker</comment>
     <comment xml:lang="nb">Scream Tracker-lyd</comment>
-    <comment xml:lang="nl">Scream Tracker-geluid</comment>
+    <comment xml:lang="nl">Scream Tracker-audio</comment>
     <comment xml:lang="nn">Scream Tracker lyd</comment>
     <comment xml:lang="no">Scream Tracker-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy Scream Tracker</comment>
@@ -7534,6 +7800,7 @@
     <comment xml:lang="sv">Scream Tracker-ljud</comment>
     <comment xml:lang="uk">Звук Scream Tracker</comment>
     <comment xml:lang="zh_CN">Scream Tracker 音频</comment>
+    <comment xml:lang="zh_TW">Scream Tracker 音效</comment>
     <glob pattern="*.stm"/>
   </mime-type>
   <mime-type type="audio/x-voc">
@@ -7556,7 +7823,7 @@
     <comment xml:lang="ko">VOC 오디오</comment>
     <comment xml:lang="ms">Audio VOC</comment>
     <comment xml:lang="nb">VOC-lyd</comment>
-    <comment xml:lang="nl">VOC-geluid</comment>
+    <comment xml:lang="nl">VOC-audio</comment>
     <comment xml:lang="nn">VOC-lyd</comment>
     <comment xml:lang="no">VOC-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy VOC</comment>
@@ -7567,6 +7834,7 @@
     <comment xml:lang="sv">VOC-ljud</comment>
     <comment xml:lang="uk">Звук VOC</comment>
     <comment xml:lang="zh_CN">VOC 音频</comment>
+    <comment xml:lang="zh_TW">VOC 音效</comment>
     <glob pattern="*.voc"/>
   </mime-type>
   <mime-type type="audio/x-wav">
@@ -7591,7 +7859,7 @@
     <comment xml:lang="ko">WAV 오디오</comment>
     <comment xml:lang="ms">Audio VOC</comment>
     <comment xml:lang="nb">WAV-lyd</comment>
-    <comment xml:lang="nl">WAV-geluid</comment>
+    <comment xml:lang="nl">WAV-audio</comment>
     <comment xml:lang="nn">WAV-lyd</comment>
     <comment xml:lang="no">WAV-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy WAV</comment>
@@ -7603,6 +7871,7 @@
     <comment xml:lang="sv">WAV-ljud</comment>
     <comment xml:lang="uk">Звук WAV</comment>
     <comment xml:lang="zh_CN">WAV 音频</comment>
+    <comment xml:lang="zh_TW">WAV 音效</comment>
     <magic priority="50">
       <match value="WAVE" type="string" offset="8"/>
       <match value="WAV " type="string" offset="8"/>
@@ -7640,6 +7909,7 @@
     <comment xml:lang="sv">Scream Tracker-instrument</comment>
     <comment xml:lang="uk">Інструмент Scream Tracker</comment>
     <comment xml:lang="zh_CN">Scream Tracker 乐器</comment>
+    <comment xml:lang="zh_TW">Scream Tracker 樂器檔</comment>
     <glob pattern="*.xi"/>
   </mime-type>
   <mime-type type="audio/x-xm">
@@ -7662,7 +7932,7 @@
     <comment xml:lang="ko">FastTracker II 오디오</comment>
     <comment xml:lang="ms">Audio FastTracker II</comment>
     <comment xml:lang="nb">FastTracker II-lyd</comment>
-    <comment xml:lang="nl">FastTracker II-geluid</comment>
+    <comment xml:lang="nl">FastTracker II-audio</comment>
     <comment xml:lang="nn">FastTracker II lyd</comment>
     <comment xml:lang="no">FastTracker II-lyd</comment>
     <comment xml:lang="pl">Plik dźwiękowy FastTrackera II</comment>
@@ -7673,6 +7943,7 @@
     <comment xml:lang="sv">FastTracker II-ljud</comment>
     <comment xml:lang="uk">Звук FastTracker II</comment>
     <comment xml:lang="zh_CN">FastTracker II 音频</comment>
+    <comment xml:lang="zh_TW">FastTracker II 音效</comment>
     <glob pattern="*.xm"/>
   </mime-type>
   <mime-type type="image/bmp">
@@ -7706,6 +7977,7 @@
     <comment xml:lang="sv">Windows BMP-bild</comment>
     <comment xml:lang="uk">Зображення Windows BMP</comment>
     <comment xml:lang="zh_CN">Windows BMP 图像</comment>
+    <comment xml:lang="zh_TW">Windows BMP 圖片</comment>
     <magic priority="50">
       <match value="BMxxxx\000\000" type="string" offset="0" mask="0xffff00000000ffff"/>
       <match value="BM" type="string" offset="0">
@@ -7745,6 +8017,7 @@
     <comment xml:lang="sv">Computer Graphics Metafil</comment>
     <comment xml:lang="uk">Метафайл комп'ютерної графіки</comment>
     <comment xml:lang="zh_CN">CGM 计算机图像元文件</comment>
+    <comment xml:lang="zh_TW">CGM 圖片</comment>
     <glob pattern="*.cgm"/>
   </mime-type>
   <mime-type type="image/fax-g3">
@@ -7776,6 +8049,7 @@
     <comment xml:lang="sv">CCITT G3-fax</comment>
     <comment xml:lang="uk">Факс CCITT G3</comment>
     <comment xml:lang="zh_CN">CCITT G3 传真</comment>
+    <comment xml:lang="zh_TW">CCITT G3 傳真檔</comment>
     <glob pattern="*.g3"/>
   </mime-type>
   <mime-type type="image/g3fax">
@@ -7809,6 +8083,7 @@
     <comment xml:lang="sv">G3-faxbild</comment>
     <comment xml:lang="uk">Факс G3</comment>
     <comment xml:lang="zh_CN">G3 传真文档</comment>
+    <comment xml:lang="zh_TW">G3 傳真圖</comment>
   </mime-type>
   <mime-type type="image/gif">
     <comment>GIF image</comment>
@@ -7842,6 +8117,7 @@
     <comment xml:lang="sv">GIF-bild</comment>
     <comment xml:lang="uk">Зображення GIF</comment>
     <comment xml:lang="zh_CN">GIF 图像</comment>
+    <comment xml:lang="zh_TW">GIF 圖片</comment>
     <magic priority="50">
       <match value="GIF" type="string" offset="0"/>
     </magic>
@@ -7878,6 +8154,7 @@
     <comment xml:lang="sv">IEF-bild</comment>
     <comment xml:lang="uk">Зображення IEF</comment>
     <comment xml:lang="zh_CN">IEF 图像</comment>
+    <comment xml:lang="zh_TW">IEF 圖片</comment>
     <glob pattern="*.ief"/>
   </mime-type>
   <mime-type type="image/jpeg">
@@ -7912,6 +8189,7 @@
     <comment xml:lang="sv">JPEG-bild</comment>
     <comment xml:lang="uk">Зображення JPEG</comment>
     <comment xml:lang="zh_CN">JPEG 图像</comment>
+    <comment xml:lang="zh_TW">JPEG 圖片</comment>
     <magic priority="50">
       <match value="\377\330\377" type="string" offset="0"/>
       <match value="0xffd8" type="big16" offset="0"/>
@@ -7949,6 +8227,7 @@
     <comment xml:lang="sv">JPEG-2000-bild</comment>
     <comment xml:lang="uk">Зображення JPEG-2000</comment>
     <comment xml:lang="zh_CN">JPEG-2000 图像</comment>
+    <comment xml:lang="zh_TW">JPEG-2000 圖片</comment>
     <glob pattern="*.jp2"/>
   </mime-type>
   <mime-type type="image/x-pict">
@@ -7978,6 +8257,7 @@
     <comment xml:lang="sv">Macintosh Quickdraw/PICT-teckning</comment>
     <comment xml:lang="uk">Малюнок Macintosh Quickdraw/PICT</comment>
     <comment xml:lang="zh_CN">Macintosh Quickdraw/PICT 绘图</comment>
+    <comment xml:lang="zh_TW">Macintosh Quickdraw/PICT 繪圖</comment>
     <glob pattern="*.pict"/>
     <glob pattern="*.pict1"/>
     <glob pattern="*.pict2"/>
@@ -8013,6 +8293,7 @@
     <comment xml:lang="sv">PNG-bild</comment>
     <comment xml:lang="uk">Зображення PNG</comment>
     <comment xml:lang="zh_CN">PNG 图像</comment>
+    <comment xml:lang="zh_TW">PNG 圖片</comment>
     <magic priority="50">
       <match value="\x89PNG" type="string" offset="0"/>
     </magic>
@@ -8045,6 +8326,7 @@
     <comment xml:lang="sv">Körlängdskodad bitmapp</comment>
     <comment xml:lang="uk">растрове зображення біжучої довжини</comment>
     <comment xml:lang="zh_CN">等长编码位图</comment>
+    <comment xml:lang="zh_TW">RLE 點陣圖</comment>
     <glob pattern="*.rle"/>
   </mime-type>
   <mime-type type="image/svg+xml">
@@ -8112,6 +8394,7 @@
     <comment xml:lang="sv">TIFF-bild</comment>
     <comment xml:lang="uk">Зображення TIFF</comment>
     <comment xml:lang="zh_CN">TIFF 图像</comment>
+    <comment xml:lang="zh_TW">TIFF 圖片</comment>
     <magic priority="50">
       <match value="MM\x00\x2a" type="string" offset="0"/>
       <match value="II\x2a\x00" type="string" offset="0"/>
@@ -8150,6 +8433,7 @@
     <comment xml:lang="sv">AutoCAD-bild</comment>
     <comment xml:lang="uk">Зображення AutoCAD</comment>
     <comment xml:lang="zh_CN">AutoCAD 图像</comment>
+    <comment xml:lang="zh_TW">AutoCAD 圖片</comment>
     <glob pattern="*.dwg"/>
   </mime-type>
   <mime-type type="image/vnd.dxf">
@@ -8181,6 +8465,7 @@
     <comment xml:lang="sv">DXF-vektorbild</comment>
     <comment xml:lang="uk">Векторне зображення DXF</comment>
     <comment xml:lang="zh_CN">DXF 矢量图像</comment>
+    <comment xml:lang="zh_TW">DXF 向量圖</comment>
     <glob pattern="*.dxf"/>
   </mime-type>
   <mime-type type="image/x-3ds">
@@ -8215,6 +8500,7 @@
     <comment xml:lang="sv">3D Studio-bild</comment>
     <comment xml:lang="uk">Зображення 3D Studio</comment>
     <comment xml:lang="zh_CN">3D Studio 图像</comment>
+    <comment xml:lang="zh_TW">3D Studio 圖片</comment>
     <glob pattern="*.3ds"/>
   </mime-type>
   <mime-type type="image/x-applix-graphics">
@@ -8246,6 +8532,7 @@
     <comment xml:lang="sv">Applix Graphics-bild</comment>
     <comment xml:lang="uk">Зображення Applix Graphics</comment>
     <comment xml:lang="zh_CN">Applix Graphics 图像</comment>
+    <comment xml:lang="zh_TW">Applix Graphics 圖片</comment>
     <magic priority="50">
       <match value="*BEGIN" type="string" offset="0">
         <match value="GRAPHICS" type="string" offset="7"/>
@@ -8284,6 +8571,7 @@
     <comment xml:lang="sv">CMU-rasterbild</comment>
     <comment xml:lang="uk">Растрове зображення CMU</comment>
     <comment xml:lang="zh_CN">CMU 矢量图像</comment>
+    <comment xml:lang="zh_TW">CMU raster 圖片</comment>
     <glob pattern="*.ras"/>
   </mime-type>
   <mime-type type="image/x-compressed-xcf">
@@ -8316,6 +8604,7 @@
     <comment xml:lang="sv">GIMP-bild (komprimerad)</comment>
     <comment xml:lang="uk">Зображення GIMP (стиснене)</comment>
     <comment xml:lang="zh_CN">GIMP 图像(压缩)</comment>
+    <comment xml:lang="zh_TW">GIMP 圖片 (經壓縮)</comment>
     <glob pattern="*.xcf.gz"/>
     <glob pattern="*.xcf.bz2"/>
   </mime-type>
@@ -8348,6 +8637,7 @@
     <comment xml:lang="sr">Слика за дигиталну фотографију и комуникацију у медицини</comment>
     <comment xml:lang="sv">Bildformat för digital bildbehandling och medicinsk kommunikation</comment>
     <comment xml:lang="uk">Зображення формату цифрового зображення та зв'язку у медицині</comment>
+    <comment xml:lang="zh_TW">DICOM 醫學影像</comment>
     <glob pattern="*.dcm"/>
     <magic priority="50">
       <match value="DICM" type="string" offset="128"/>
@@ -8384,6 +8674,7 @@
     <comment xml:lang="sv">Enhetsoberoende bitmapp</comment>
     <comment xml:lang="uk">Растрове зображення незалежне від пристрою</comment>
     <comment xml:lang="zh_CN">设备无关位图</comment>
+    <comment xml:lang="zh_TW">DIB 點陣圖</comment>
     <magic priority="50">
       <match value="\x28\00\00\00" type="string" offset="0"/>
     </magic>
@@ -8417,6 +8708,7 @@
    <comment xml:lang="sv">DjVu-bild</comment>
    <comment xml:lang="uk">Зображення DjVu</comment>
    <comment xml:lang="zh_CN">DjVu 图像</comment>
+   <comment xml:lang="zh_TW">DjVu 圖片</comment>
    <magic priority="50">
      <match value="FORM" type="string" offset="4">
        <match value="DJVU" type="string" offset="12"/>
@@ -8459,11 +8751,13 @@
     <comment xml:lang="sr">Дигитални облик за размену покретних слика</comment>
     <comment xml:lang="sv">DPX-bild (Digital Moving Picture Exchange)</comment>
     <comment xml:lang="uk">Зображення обміну цифровими фільмами</comment>
+    <comment xml:lang="zh_TW">DPX 圖片</comment>
     <magic priority="50">
       <match value="0x53445058" type="big32" offset="0"/>
     </magic>
   </mime-type>
   <mime-type type="image/x-eps">
+    <sub-class-of type="application/postscript"/>
     <comment>Encapsulated PostScript image</comment>
     <comment xml:lang="az">Encapsulated PostScript rəsmi</comment>
     <comment xml:lang="bg">Изображение, формат енкапсулиран PostScript</comment>
@@ -8493,6 +8787,7 @@
     <comment xml:lang="sv">Inkapslad Postscript-bild</comment>
     <comment xml:lang="uk">Зображення інкапсульоване у PostScript</comment>
     <comment xml:lang="zh_CN">EPS 封装的 PostScript 图像</comment>
+    <comment xml:lang="zh_TW">Encapsulated PostScript 文件</comment>
     <magic priority="50">
       <match value="%!" type="string" offset="0">
         <match value="EPS" type="string" offset="15"/>
@@ -8523,6 +8818,7 @@
     <comment xml:lang="ko">Flexible Image Transport System</comment>
     <comment xml:lang="ms">Sistem pengangkutan imej fleksibel</comment>
     <comment xml:lang="nb">Fleksibelt bildetransportsystem</comment>
+    <comment xml:lang="nl">Flexibel afbeeldingstransportsysteem</comment>
     <comment xml:lang="nn">Flexible Image Transport System</comment>
     <comment xml:lang="no">Fleksibelt bildetransportsystem</comment>
     <comment xml:lang="pl">Uniwersalny system przenoszenia obrazów (FITS)</comment>
@@ -8533,6 +8829,7 @@
     <comment xml:lang="sv">Flexibelt bildtransportssystem</comment>
     <comment xml:lang="uk">Гнучка система передавання зображення</comment>
     <comment xml:lang="zh_CN">FITS 灵活图像传送系统</comment>
+    <comment xml:lang="zh_TW">FITS 圖片</comment>
     <magic priority="50">
       <match value="SIMPLE  =" type="string" offset="0"/>
     </magic>
@@ -8567,6 +8864,7 @@
     <comment xml:lang="sv">FlashPix-bild</comment>
     <comment xml:lang="uk">Зображення FlashPix</comment>
     <comment xml:lang="zh_CN">FlashPix 图像</comment>
+    <comment xml:lang="zh_TW">FlashPix 圖片</comment>
     <magic priority="50">
       <match value="0x46506978" type="big32" offset="0"/>
     </magic>
@@ -8602,6 +8900,7 @@
     <comment xml:lang="sv">Truevision Targa-bild</comment>
     <comment xml:lang="uk">Зображення Truevision Targa</comment>
     <comment xml:lang="zh_CN">Truevision Targa 图像</comment>
+    <comment xml:lang="zh_TW">Truevision Targa 圖片</comment>
     <magic priority="50">
       <match value="0x00000200" type="big32" offset="0"/>
     </magic>
@@ -8637,6 +8936,7 @@
     <comment xml:lang="sv">Microsoft Windows-ikon</comment>
     <comment xml:lang="uk">Значок Microsoft Windows</comment>
     <comment xml:lang="zh_CN">Microsoft Windows 图标</comment>
+    <comment xml:lang="zh_TW">微軟 Windows 圖示</comment>
     <glob pattern="*.ico"/>
   </mime-type>
   <mime-type type="image/x-iff">
@@ -8670,6 +8970,7 @@
     <comment xml:lang="sv">IFF-bild</comment>
     <comment xml:lang="uk">Зображення IFF</comment>
     <comment xml:lang="zh_CN">IFF 图像</comment>
+    <comment xml:lang="zh_TW">IFF 圖片</comment>
     <glob pattern="*.iff"/>
   </mime-type>
   <mime-type type="image/x-ilbm">
@@ -8703,6 +9004,7 @@
     <comment xml:lang="sv">ILBM-bild</comment>
     <comment xml:lang="uk">Зображення ILBM</comment>
     <comment xml:lang="zh_CN">ILBM 图像</comment>
+    <comment xml:lang="zh_TW">ILBM 圖片</comment>
     <glob pattern="*.ilbm"/>
   </mime-type>
   <mime-type type="image/x-jng">
@@ -8736,6 +9038,7 @@
     <comment xml:lang="sv">JNG-bild</comment>
     <comment xml:lang="uk">Зображення JNG</comment>
     <comment xml:lang="zh_CN">JNG 图像</comment>
+    <comment xml:lang="zh_TW">JNG 圖片</comment>
     <glob pattern="*.jng"/>
   </mime-type>
   <mime-type type="image/x-lwo">
@@ -8769,6 +9072,7 @@
     <comment xml:lang="sv">LightWave-objekt</comment>
     <comment xml:lang="uk">Об'єкт LightWave</comment>
     <comment xml:lang="zh_CN">LightWave 对象</comment>
+    <comment xml:lang="zh_TW">LightWave 物件</comment>
     <glob pattern="*.lwo"/>
     <glob pattern="*.lwob"/>
   </mime-type>
@@ -8803,6 +9107,7 @@
     <comment xml:lang="sv">LightWave-scen</comment>
     <comment xml:lang="uk">Сцена LightWave</comment>
     <comment xml:lang="zh_CN">LightWave 场景</comment>
+    <comment xml:lang="zh_TW">LightWave 場景</comment>
     <glob pattern="*.lws"/>
   </mime-type>
   <mime-type type="image/x-msod">
@@ -8834,6 +9139,7 @@
     <comment xml:lang="sv">Microsoft Office-teckning</comment>
     <comment xml:lang="uk">Малюнок Microsoft Office</comment>
     <comment xml:lang="zh_CN">Microsoft Office 绘图</comment>
+    <comment xml:lang="zh_TW">微軟 Office 繪圖</comment>
     <glob pattern="*.msod"/>
   </mime-type>
   <mime-type type="image/x-niff">
@@ -8882,6 +9188,7 @@
     <comment xml:lang="sv">PhotoCD-bild</comment>
     <comment xml:lang="uk">Зображення PhotoCD</comment>
     <comment xml:lang="zh_CN">PhotoCD 图像</comment>
+    <comment xml:lang="zh_TW">PhotoCD 圖片</comment>
     <glob pattern="*.pcd"/>
   </mime-type>
   <mime-type type="image/x-portable-anymap">
@@ -8915,6 +9222,7 @@
     <comment xml:lang="sv">PNM-bild</comment>
     <comment xml:lang="uk">Зображення PNM</comment>
     <comment xml:lang="zh_CN">PNM 图像</comment>
+    <comment xml:lang="zh_TW">PNM 圖片</comment>
     <glob pattern="*.pnm"/>
   </mime-type>
   <mime-type type="image/x-portable-bitmap">
@@ -8945,6 +9253,7 @@
     <comment xml:lang="sv">Portabelt bitmapp-filformat</comment>
     <comment xml:lang="uk">Переносне бітове зображення</comment>
     <comment xml:lang="zh_CN">便携式位图文件格式</comment>
+    <comment xml:lang="zh_TW">Portable Bitmap 圖片</comment>
     <magic priority="50">
       <match value="P1" type="string" offset="0"/>
       <match value="P4" type="string" offset="0"/>
@@ -8979,6 +9288,7 @@
     <comment xml:lang="sv">Portabelt gråskale-filformat</comment>
     <comment xml:lang="uk">Файл у форматі переносного Graymap</comment>
     <comment xml:lang="zh_CN">便携式灰度图文件格式</comment>
+    <comment xml:lang="zh_TW">Portable Graymap 圖片</comment>
     <magic priority="50">
       <match value="P2" type="string" offset="0"/>
       <match value="P5" type="string" offset="0"/>
@@ -9014,6 +9324,7 @@
     <comment xml:lang="sv">Portabelt pixmap-filformat</comment>
     <comment xml:lang="uk">Переносне точкове зображення</comment>
     <comment xml:lang="zh_CN">便携式像素图文件格式</comment>
+    <comment xml:lang="zh_TW">Portable Pixmap 圖片</comment>
     <magic priority="50">
       <match value="P3" type="string" offset="0"/>
       <match value="P6" type="string" offset="0"/>
@@ -9049,6 +9360,7 @@
     <comment xml:lang="sv">Photoshop-bild</comment>
     <comment xml:lang="uk">Зображення Photoshop</comment>
     <comment xml:lang="zh_CN">Photoshop 图像</comment>
+    <comment xml:lang="zh_TW">Photoshop 圖片</comment>
     <magic priority="50">
       <match value="8BPS  \000\000\000\000" type="string" offset="0" mask="0xffffffff0000ffffffff"/>
     </magic>
@@ -9085,6 +9397,7 @@
     <comment xml:lang="sv">RGB-bild</comment>
     <comment xml:lang="uk">Зображення RGB</comment>
     <comment xml:lang="zh_CN">RGB 图像</comment>
+    <comment xml:lang="zh_TW">RGB 圖片</comment>
     <glob pattern="*.rgb"/>
   </mime-type>
   <mime-type type="image/x-sgi">
@@ -9115,6 +9428,7 @@
     <comment xml:lang="sv">Silicon Graphics IRIS-bild</comment>
     <comment xml:lang="uk">Зображення Silicon Graphics IRIS</comment>
     <comment xml:lang="zh_CN">Silicon Graphics IRIS 图像</comment>
+    <comment xml:lang="zh_TW">Silicon Graphics IRIS 圖片</comment>
     <glob pattern="*.sgi"/>
   </mime-type>
   <mime-type type="image/x-sun-raster">
@@ -9146,6 +9460,7 @@
     <comment xml:lang="sv">SUN Rasterfile-bild</comment>
     <comment xml:lang="uk">Зображення SUN Rasterfile</comment>
     <comment xml:lang="zh_CN">SUN Rasterfile 图像</comment>
+    <comment xml:lang="zh_TW">SUN Rasterfile 圖片</comment>
     <magic priority="50">
       <match value="0x59a66a95" type="big32" offset="0"/>
     </magic>
@@ -9182,6 +9497,7 @@
     <comment xml:lang="sv">TarGA-bild</comment>
     <comment xml:lang="uk">Зображення TarGA</comment>
     <comment xml:lang="zh_CN">TarGA 图像</comment>
+    <comment xml:lang="zh_TW">TarGA 圖片</comment>
     <glob pattern="*.tga"/>
   </mime-type>
   <mime-type type="image/x-win-bitmap">
@@ -9213,6 +9529,7 @@
     <comment xml:lang="sv">Windows-markör</comment>
     <comment xml:lang="uk">Курсор Windows</comment>
     <comment xml:lang="zh_CN">Windows 光标</comment>
+    <comment xml:lang="zh_TW">Windows 滑鼠指標</comment>
     <glob pattern="*.cur"/>
   </mime-type>
   <mime-type type="image/x-wmf">
@@ -9244,6 +9561,7 @@
     <comment xml:lang="sv">Microsoft WMF-fil</comment>
     <comment xml:lang="uk">Файл Microsoft WMF</comment>
     <comment xml:lang="zh_CN">Microsoft WMF 文件</comment>
+    <comment xml:lang="zh_TW">微軟 WMF 圖片</comment>
     <glob pattern="*.wmf"/>
   </mime-type>
   <mime-type type="image/x-xbitmap">
@@ -9277,6 +9595,7 @@
     <comment xml:lang="sv">X-bitmappbild</comment>
     <comment xml:lang="uk">Зображення X BitMap</comment>
     <comment xml:lang="zh_CN">X BitMap 图像</comment>
+    <comment xml:lang="zh_TW">X BitMap 圖片</comment>
     <glob pattern="*.xbm"/>
   </mime-type>
   <mime-type type="image/x-xcf">
@@ -9309,6 +9628,7 @@
     <comment xml:lang="sv">GIMP-bild</comment>
     <comment xml:lang="uk">Зображення GIMP</comment>
     <comment xml:lang="zh_CN">GIMP 图像</comment>
+    <comment xml:lang="zh_TW">GIMP 圖片</comment>
     <glob pattern="*.xcf"/>
   </mime-type>
   <mime-type type="image/x-xfig">
@@ -9340,6 +9660,7 @@
     <comment xml:lang="sv">XFig-bild</comment>
     <comment xml:lang="uk">Зображення XFig</comment>
     <comment xml:lang="zh_CN">XFig 图像</comment>
+    <comment xml:lang="zh_TW">XFig 圖片</comment>
     <glob pattern="*.fig"/>
     <magic priority="50">
       <match value="#FIG" type="string" offset="0"/>
@@ -9376,6 +9697,7 @@
     <comment xml:lang="sv">X-pixmappbild</comment>
     <comment xml:lang="uk">Зображення X PixMap</comment>
     <comment xml:lang="zh_CN">X PixMap 图像</comment>
+    <comment xml:lang="zh_TW">X PixMap 圖片</comment>
     <magic priority="80">
       <match value="/* XPM" type="string" offset="0"/>
     </magic>
@@ -9412,6 +9734,7 @@
     <comment xml:lang="sv">X-fönsterbild</comment>
     <comment xml:lang="uk">Зображення X window</comment>
     <comment xml:lang="zh_CN">X window 图像</comment>
+    <comment xml:lang="zh_TW">X window 圖片</comment>
     <glob pattern="*.xwd"/>
   </mime-type>
   <mime-type type="inode/blockdevice">
@@ -9444,6 +9767,7 @@
     <comment xml:lang="sv">blockenhet</comment>
     <comment xml:lang="uk">блочний пристрій</comment>
     <comment xml:lang="zh_CN">块设备</comment>
+    <comment xml:lang="zh_TW">區塊裝置</comment>
   </mime-type>
   <mime-type type="inode/chardevice">
     <comment>character device</comment>
@@ -9475,6 +9799,7 @@
     <comment xml:lang="sv">teckenenhet</comment>
     <comment xml:lang="uk">символьний пристрій</comment>
     <comment xml:lang="zh_CN">字符设备</comment>
+    <comment xml:lang="zh_TW">字元裝置</comment>
   </mime-type>
   <mime-type type="inode/directory">
     <comment>folder</comment>
@@ -9506,6 +9831,7 @@
     <comment xml:lang="sv">mapp</comment>
     <comment xml:lang="uk">тека</comment>
     <comment xml:lang="zh_CN">文件夹</comment>
+    <comment xml:lang="zh_TW">資料夾</comment>
   </mime-type>
   <mime-type type="inode/fifo">
     <comment>pipe</comment>
@@ -9536,6 +9862,7 @@
     <comment xml:lang="sv">rör</comment>
     <comment xml:lang="uk">канал</comment>
     <comment xml:lang="zh_CN">管道</comment>
+    <comment xml:lang="zh_TW">管線</comment>
   </mime-type>
   <mime-type type="inode/mount-point">
     <sub-class-of type="inode/directory"/>
@@ -9568,6 +9895,7 @@
     <comment xml:lang="sv">monteringspunkt</comment>
     <comment xml:lang="uk">точка монутвання</comment>
     <comment xml:lang="zh_CN">挂载点</comment>
+    <comment xml:lang="zh_TW">掛載點</comment>
   </mime-type>
   <mime-type type="inode/socket">
     <comment>socket</comment>
@@ -9597,6 +9925,7 @@
     <comment xml:lang="sv">uttag</comment>
     <comment xml:lang="uk">гніздо</comment>
     <comment xml:lang="zh_CN">套接字</comment>
+    <comment xml:lang="zh_TW">socket</comment>
   </mime-type>
   <mime-type type="inode/symlink">
     <comment>symbolic link</comment>
@@ -9629,6 +9958,7 @@
     <comment xml:lang="sv">symbolisk länk</comment>
     <comment xml:lang="uk">символічне посилання</comment>
     <comment xml:lang="zh_CN">符号链接</comment>
+    <comment xml:lang="zh_TW">符號鏈結</comment>
   </mime-type>
   <mime-type type="message/delivery-status">
     <sub-class-of type="text/plain"/>
@@ -9757,6 +10087,7 @@
     <comment xml:lang="sv">Usenet-diskussionsgruppsmeddelande</comment>
     <comment xml:lang="uk">Повідомлення новин Usenet</comment>
     <comment xml:lang="zh_CN">Usenet 新闻信</comment>
+    <comment xml:lang="zh_TW">Usenet 新聞組訊息</comment>
     <magic priority="50">
       <match value="Article" type="string" offset="0"/>
       <match value="Path:" type="string" offset="0"/>
@@ -9826,6 +10157,7 @@
     <comment xml:lang="sv">e-postmeddelande</comment>
     <comment xml:lang="uk">повідомлення email</comment>
     <comment xml:lang="zh_CN">电子邮件</comment>
+    <comment xml:lang="zh_TW">電子郵件內容</comment>
     <magic priority="50">
       <match value="#! rnews" type="string" offset="0"/>
       <match value="Forward to" type="string" offset="0"/>
@@ -9868,6 +10200,7 @@
     <comment xml:lang="sv">GNU-epostmeddelande</comment>
     <comment xml:lang="uk">Поштове повідомлення GNU</comment>
     <comment xml:lang="zh_CN">GNU mail 信件</comment>
+    <comment xml:lang="zh_TW">GNU 郵件訊息</comment>
     <glob pattern="RMAIL"/>
   </mime-type>
   <mime-type type="model/vrml">
@@ -9902,6 +10235,7 @@
     <comment xml:lang="sv">VRML-dokument</comment>
     <comment xml:lang="uk">Документ VRML</comment>
     <comment xml:lang="zh_CN">VRML 文档</comment>
+    <comment xml:lang="zh_TW">VRML 文件</comment>
     <glob pattern="*.wrl"/>
   </mime-type>
   <mime-type type="multipart/alternative">
@@ -9967,6 +10301,7 @@
     <comment xml:lang="sv">Macintosh AppleDouble-kodad fil</comment>
     <comment xml:lang="uk">Файл закодований Macintosh AppleDouble</comment>
     <comment xml:lang="zh_CN">Macintosh AppleDouble 编码的文件</comment>
+    <comment xml:lang="zh_TW">Macintosh AppleDouble 編碼檔</comment>
   </mime-type>
   <mime-type type="multipart/digest">
     <comment>message digest</comment>
@@ -10061,6 +10396,7 @@
     <comment xml:lang="sv">sammansatta dokument</comment>
     <comment xml:lang="uk">складні документи</comment>
     <comment xml:lang="zh_CN">组合文档</comment>
+    <comment xml:lang="zh_TW">複合文件</comment>
   </mime-type>
   <mime-type type="multipart/related">
     <comment>compound document</comment>
@@ -10093,6 +10429,7 @@
     <comment xml:lang="sv">sammansatt dokument</comment>
     <comment xml:lang="uk">складний документ</comment>
     <comment xml:lang="zh_CN">组合文档</comment>
+    <comment xml:lang="zh_TW">複合文件</comment>
   </mime-type>
   <mime-type type="multipart/report">
     <comment>mail system report</comment>
@@ -10261,7 +10598,11 @@
   <mime-type type="text/directory">
     <alias type="text/x-vcard"/>
     <comment>Electronic Business Card</comment>
+    <comment xml:lang="cs">Elektronická navštívenka</comment>
+    <comment xml:lang="fi">sähköinen käyntikortti</comment>
+    <comment xml:lang="nl">Electronische visitekaartje</comment>
     <comment xml:lang="sv">Elektroniskt visitkort</comment>
+    <comment xml:lang="zh_TW">電子名片</comment>
     <magic priority="50">
       <match value="BEGIN:VCARD" type="string" offset="0"/>
       <match value="begin:vcard" type="string" offset="0"/>
@@ -10365,6 +10706,7 @@
     <comment xml:lang="sv">MathML-dokument</comment>
     <comment xml:lang="uk">Документ MathML</comment>
     <comment xml:lang="zh_CN">MathML 文档</comment>
+    <comment xml:lang="zh_TW">MathML 文件</comment>
     <glob pattern="*.mml"/>
   </mime-type>
   <mime-type type="text/plain">
@@ -10395,6 +10737,7 @@
     <comment xml:lang="sv">vanligt textdokument</comment>
     <comment xml:lang="uk">звичайний текстовий документ</comment>
     <comment xml:lang="zh_CN">纯文本文档</comment>
+    <comment xml:lang="zh_TW">普通文本檔</comment>
     <magic priority="50">
       <match value="This is TeX," type="string" offset="0"/>
       <match value="This is METAFONT," type="string" offset="0"/>
@@ -10465,6 +10808,7 @@
     <comment xml:lang="sv">e-posthuvuden</comment>
     <comment xml:lang="uk">заголовки email</comment>
     <comment xml:lang="zh_CN">电子邮件头</comment>
+    <comment xml:lang="zh_TW">電子郵件標頭</comment>
   </mime-type>
   <mime-type type="text/richtext">
     <sub-class-of type="text/plain"/>
@@ -10562,6 +10906,7 @@
     <comment xml:lang="sv">SGML-dokument</comment>
     <comment xml:lang="uk">Документ SGML</comment>
     <comment xml:lang="zh_CN">SGML 文档</comment>
+    <comment xml:lang="zh_TW">SGML 文件</comment>
     <glob pattern="*.sgml"/>
     <glob pattern="*.sgm"/>
   </mime-type>
@@ -10662,6 +11007,7 @@
     <comment xml:lang="sv">WML-dokument</comment>
     <comment xml:lang="uk">Документ WML</comment>
     <comment xml:lang="zh_CN">WML 文档</comment>
+    <comment xml:lang="zh_TW">WML 文件</comment>
     <glob pattern="*.wml"/>
   </mime-type>
   <mime-type type="text/x-adasrc">
@@ -10694,6 +11040,7 @@
     <comment xml:lang="sv">Ada-källkod</comment>
     <comment xml:lang="uk">Вихідний код на мові Ada</comment>
     <comment xml:lang="zh_CN">Ada 源代码</comment>
+    <comment xml:lang="zh_TW">Ada 源代碼</comment>
     <glob pattern="*.adb"/>
     <glob pattern="*.ads"/>
   </mime-type>
@@ -10727,6 +11074,7 @@
     <comment xml:lang="sv">författarlista</comment>
     <comment xml:lang="uk">перелік авторів</comment>
     <comment xml:lang="zh_CN">作者列表</comment>
+    <comment xml:lang="zh_TW">作者清單</comment>
     <glob pattern="AUTHORS"/>
   </mime-type>
   <mime-type type="text/x-bibtex">
@@ -10758,6 +11106,7 @@
     <comment xml:lang="sr">Библиографски подаци (бибтех)</comment>
     <comment xml:lang="sv">Bibliografiska Bibtex-data</comment>
     <comment xml:lang="uk">Бібліографічні дані Bibtex</comment>
+    <comment xml:lang="zh_TW">Bibtex 參考書目資料</comment>
     <glob pattern="*.bib"/>
   </mime-type>
   <mime-type type="text/x-c++hdr">
@@ -10790,7 +11139,9 @@
     <comment xml:lang="sv">C++-källkodshuvud</comment>
     <comment xml:lang="uk">Файл заголовку мови C++</comment>
     <comment xml:lang="zh_CN">C++ 源代码头文件</comment>
+    <comment xml:lang="zh_TW">C++ 源代碼標頭檔</comment>
     <glob pattern="*.hh"/>
+    <glob pattern="*.hpp"/>
   </mime-type>
   <mime-type type="text/x-c++src">
     <sub-class-of type="text/plain"/>
@@ -10822,6 +11173,7 @@
     <comment xml:lang="sv">C++-källkod</comment>
     <comment xml:lang="uk">Вихідний код на мові C++</comment>
     <comment xml:lang="zh_CN">C++ 源代码</comment>
+    <comment xml:lang="zh_TW">C++ 源代碼</comment>
     <glob pattern="*.cpp"/>
     <glob pattern="*.cxx"/>
     <glob pattern="*.cc"/>
@@ -10859,6 +11211,7 @@
     <comment xml:lang="sv">C-källkodshuvud</comment>
     <comment xml:lang="uk">Файл заголовку мови C</comment>
     <comment xml:lang="zh_CN">C 源代码头文件</comment>
+    <comment xml:lang="zh_TW">C 源代碼標頭檔</comment>
     <glob pattern="*.h"/>
     <glob pattern="*.h++"/>
     <glob pattern="*.hp"/>
@@ -10993,6 +11346,7 @@
     <comment xml:lang="sv">C-källkod</comment>
     <comment xml:lang="uk">Вихідний код на мові C</comment>
     <comment xml:lang="zh_CN">C 源代码</comment>
+    <comment xml:lang="zh_TW">C 源代碼</comment>
     <glob pattern="*.c"/>
   </mime-type>
   <mime-type type="text/x-csharp">
@@ -11024,6 +11378,7 @@
     <comment xml:lang="sv">C#-källkod</comment>
     <comment xml:lang="uk">Вихідний код на мові C#</comment>
     <comment xml:lang="zh_CN">C# 源代码</comment>
+    <comment xml:lang="zh_TW">C# 源代碼</comment>
     <glob pattern="*.cs"/>
   </mime-type>
   <mime-type type="text/x-dcl">
@@ -11058,6 +11413,7 @@
     <comment xml:lang="sv">DCL-skript</comment>
     <comment xml:lang="uk">Сценарій DCL</comment>
     <comment xml:lang="zh_CN">DCL 脚本</comment>
+    <comment xml:lang="zh_TW">DCL 描述語言檔</comment>
     <glob pattern="*.dcl"/>
   </mime-type>
   <mime-type type="text/x-dsl">
@@ -11091,12 +11447,17 @@
     <comment xml:lang="sv">DSSSL-dokument</comment>
     <comment xml:lang="uk">Документ DSSSL</comment>
     <comment xml:lang="zh_CN">DSSSL 文档</comment>
+    <comment xml:lang="zh_TW">DSSSL 文件</comment>
     <glob pattern="*.dsl"/>
   </mime-type>
   <mime-type type="text/x-dsrc">
     <sub-class-of type="text/plain"/>
     <comment>D source code</comment>
+    <comment xml:lang="cs">Zdrojový kód v D</comment>
+    <comment xml:lang="fi">D-lähdekoodi</comment>
     <comment xml:lang="nb">D-kildekode</comment>
+    <comment xml:lang="nl">D-broncode</comment>
+    <comment xml:lang="zh_TW">D 源代碼</comment>
     <glob pattern="*.d"/>
   </mime-type>
   <mime-type type="text/x-dtd">
@@ -11164,6 +11525,7 @@
     <comment xml:lang="sv">Emacs Lisp-källkod</comment>
     <comment xml:lang="uk">Вихідний код на мові Emacs Lisp</comment>
     <comment xml:lang="zh_CN">Emacs Lisp 源代码</comment>
+    <comment xml:lang="zh_TW">Emacs Lisp 源代碼</comment>
     <magic priority="50">
       <match value="\012(" type="string" offset="0"/>
       <match value=";ELC\023\000\000\000" type="string" offset="0"/>
@@ -11202,7 +11564,10 @@
     <comment xml:lang="sv">Fortran-källkod</comment>
     <comment xml:lang="uk">Вихідний код на мові Fortran</comment>
     <comment xml:lang="zh_CN">Fortran 源代码</comment>
+    <comment xml:lang="zh_TW">Fortran 源代碼</comment>
     <glob pattern="*.f"/>
+    <glob pattern="*.f9[05]"/>
+    <glob pattern="*.for"/>
   </mime-type>
   <mime-type type="text/x-gettext-translation">
     <sub-class-of type="text/plain"/>
@@ -11235,6 +11600,7 @@
     <comment xml:lang="sv">översatta meddelanden</comment>
     <comment xml:lang="uk">перекладені повідомлення</comment>
     <comment xml:lang="zh_CN">翻译的消息</comment>
+    <comment xml:lang="zh_TW">翻譯訊息</comment>
     <glob pattern="*.po"/>
   </mime-type>
   <mime-type type="text/x-gettext-translation-template">
@@ -11298,6 +11664,7 @@
     <comment xml:lang="sv">HTML-sida</comment>
     <comment xml:lang="uk">Сторінка HTML</comment>
     <comment xml:lang="zh_CN">HTML 页面</comment>
+    <comment xml:lang="zh_TW">HTML 檔</comment>
     <magic priority="50">
       <match value="&lt;!DOCTYPE HTML" type="string" offset="0:64"/>
       <match value="&lt;!doctype html" type="string" offset="0:64"/>
@@ -11352,6 +11719,7 @@
     <comment xml:lang="sv">GTK-konfiguration</comment>
     <comment xml:lang="uk">Конфігурація GTK</comment>
     <comment xml:lang="zh_CN">GTK 配置</comment>
+    <comment xml:lang="zh_TW">GTK 設定檔</comment>
     <glob pattern="gtkrc"/>
     <glob pattern=".gtkrc"/>
   </mime-type>
@@ -11387,6 +11755,7 @@
     <comment xml:lang="sv">Haskell-källkod</comment>
     <comment xml:lang="uk">Вихідний код на мові Haskell</comment>
     <comment xml:lang="zh_CN">Haskell 源代码</comment>
+    <comment xml:lang="zh_TW">Haskell 源代碼</comment>
     <glob pattern="*.hs"/>
   </mime-type>
   <mime-type type="text/x-idl">
@@ -11422,6 +11791,7 @@
     <comment xml:lang="sv">IDL-dokument</comment>
     <comment xml:lang="uk">Документ IDL</comment>
     <comment xml:lang="zh_CN">IDL 文档</comment>
+    <comment xml:lang="zh_TW">IDL 文件</comment>
     <glob pattern="*.idl"/>
   </mime-type>
   <mime-type type="text/x-install">
@@ -11456,6 +11826,7 @@
     <comment xml:lang="sv">programinstallationsinstruktioner</comment>
     <comment xml:lang="uk">інструкції з встановлення програми</comment>
     <comment xml:lang="zh_CN">软件安装指南</comment>
+    <comment xml:lang="zh_TW">軟體安裝指引</comment>
     <glob pattern="INSTALL"/>
   </mime-type>
   <mime-type type="text/x-java">
@@ -11488,6 +11859,7 @@
     <comment xml:lang="sv">Java-källkod</comment>
     <comment xml:lang="uk">Вихідний код на мові Java</comment>
     <comment xml:lang="zh_CN">Java 源代码</comment>
+    <comment xml:lang="zh_TW">Java 源代碼</comment>
     <glob pattern="*.java"/>
   </mime-type>
   <mime-type type="text/x-ksysv-log">
@@ -11527,6 +11899,7 @@
     <comment xml:lang="sv">Literate Haskell-källkod</comment>
     <comment xml:lang="uk">Письменний вихідний код на мові haskell</comment>
     <comment xml:lang="zh_CN">Literate haskell 源代码</comment>
+    <comment xml:lang="zh_TW">Literate haskell 源代碼</comment>
     <glob pattern="*.lhs"/>
   </mime-type>
   <mime-type type="text/x-log">
@@ -11558,6 +11931,7 @@
     <comment xml:lang="sv">programlogg</comment>
     <comment xml:lang="uk">журнал програми</comment>
     <comment xml:lang="zh_CN">应用程序日志</comment>
+    <comment xml:lang="zh_TW">程式紀錄檔</comment>
     <glob pattern="*.log"/>
   </mime-type>
   <mime-type type="text/x-makefile">
@@ -11592,6 +11966,7 @@
     <comment xml:lang="sv">Makefil</comment>
     <comment xml:lang="uk">Файл проекту make</comment>
     <comment xml:lang="zh_CN">Makefile</comment>
+    <comment xml:lang="zh_TW">Makefile</comment>
     <glob pattern="makefile*"/>
     <glob pattern="[Mm]akefile"/>
   </mime-type>
@@ -11624,6 +11999,7 @@
     <comment xml:lang="sv">Qt Meta Object-fil</comment>
     <comment xml:lang="uk">Файл мета-об'єкт Qt</comment>
     <comment xml:lang="zh_CN">Qt 元对象文件</comment>
+    <comment xml:lang="zh_TW">Qt Meta 目標文件</comment>
     <glob pattern="*.moc"/>
   </mime-type>
   <mime-type type="text/x-objcsrc">
@@ -11656,6 +12032,7 @@
     <comment xml:lang="sv">Objective-C-källkod</comment>
     <comment xml:lang="uk">Вихідний код на мові Objective-C</comment>
     <comment xml:lang="zh_CN">Objective-C 源代码</comment>
+    <comment xml:lang="zh_TW">Objective-C 源代碼</comment>
     <glob pattern="*.m"/>
   </mime-type>
   <mime-type type="text/x-pascal">
@@ -11688,6 +12065,7 @@
     <comment xml:lang="sv">Pascal-källkod</comment>
     <comment xml:lang="uk">Вихідний код на мові Pascal</comment>
     <comment xml:lang="zh_CN">Pascal 源代码</comment>
+    <comment xml:lang="zh_TW">Pascal 源代碼</comment>
     <glob pattern="*.p"/>
     <glob pattern="*.pas"/>
   </mime-type>
@@ -11721,6 +12099,7 @@
     <comment xml:lang="sv">skillnader mellan filer</comment>
     <comment xml:lang="uk">різниця між файлами</comment>
     <comment xml:lang="zh_CN">文件的区别</comment>
+    <comment xml:lang="zh_TW">檔案內容差異</comment>
     <magic priority="50">
       <match value="diff\t" type="string" offset="0"/>
       <match value="diff " type="string" offset="0"/>
@@ -11765,6 +12144,7 @@
     <comment xml:lang="sv">Pythonskript</comment>
     <comment xml:lang="uk">Сценарій на мові Python</comment>
     <comment xml:lang="zh_CN">Python 脚本</comment>
+    <comment xml:lang="zh_TW">Python 描述語言檔</comment>
     <magic priority="50">
       <match value="#!/bin/python" type="string" offset="0"/>
       <match value="#! /bin/python" type="string" offset="0"/>
@@ -11811,6 +12191,7 @@
     <comment xml:lang="sv">README-dokument</comment>
     <comment xml:lang="uk">Документ README</comment>
     <comment xml:lang="zh_CN">README 文档</comment>
+    <comment xml:lang="zh_TW">README 說明文件</comment>
     <glob pattern="README*"/>
   </mime-type>
   <mime-type type="text/x-scheme">
@@ -11845,6 +12226,7 @@
     <comment xml:lang="sv">Scheme-källkod</comment>
     <comment xml:lang="uk">Вихідний файл на мові Scheme</comment>
     <comment xml:lang="zh_CN">Scheme 源代码</comment>
+    <comment xml:lang="zh_TW">Scheme 源代碼</comment>
     <glob pattern="*.scm"/>
   </mime-type>
   <mime-type type="text/x-setext">
@@ -11879,6 +12261,7 @@
     <comment xml:lang="sv">Setext-dokument</comment>
     <comment xml:lang="uk">Документ Setext</comment>
     <comment xml:lang="zh_CN">Setext 文档</comment>
+    <comment xml:lang="zh_TW">Setext 文件</comment>
     <glob pattern="*.etx"/>
   </mime-type>
   <mime-type type="text/x-speech">
@@ -11912,6 +12295,7 @@
     <comment xml:lang="sv">Speech-dokument</comment>
     <comment xml:lang="uk">Документ Speech</comment>
     <comment xml:lang="zh_CN">Speech 文档</comment>
+    <comment xml:lang="zh_TW">Speech 語音合成檔</comment>
   </mime-type>
   <mime-type type="text/x-sql">
     <sub-class-of type="text/plain"/>
@@ -11945,6 +12329,7 @@
     <comment xml:lang="sv">SQL-kod</comment>
     <comment xml:lang="uk">Код SQL</comment>
     <comment xml:lang="zh_CN">SQL 代码</comment>
+    <comment xml:lang="zh_TW">SQL 碼</comment>
     <glob pattern="*.sql"/>
   </mime-type>
   <mime-type type="text/x-tcl">
@@ -11977,6 +12362,7 @@
     <comment xml:lang="sv">Tcl-skript</comment>
     <comment xml:lang="uk">Сценарій Tcl</comment>
     <comment xml:lang="zh_CN">Tcl 脚本</comment>
+    <comment xml:lang="zh_TW">Tcl 描述語言檔</comment>
     <glob pattern="*.tcl"/>
     <glob pattern="*.tk"/>
   </mime-type>
@@ -12011,6 +12397,7 @@
     <comment xml:lang="sv">TeX-dokument</comment>
     <comment xml:lang="uk">Документ TeX</comment>
     <comment xml:lang="zh_CN">TeX 文档</comment>
+    <comment xml:lang="zh_TW">TeX 文件</comment>
     <glob pattern="*.tex"/>
     <glob pattern="*.ltx"/>
     <glob pattern="*.sty"/>
@@ -12048,6 +12435,7 @@
     <comment xml:lang="sv">TeXInfo-dokument</comment>
     <comment xml:lang="uk">Документ TeXInfo</comment>
     <comment xml:lang="zh_CN">TeXInfo 文档</comment>
+    <comment xml:lang="zh_TW">TeXInfo 文件</comment>
     <glob pattern="*.texi"/>
     <glob pattern="*.texinfo"/>
   </mime-type>
@@ -12331,6 +12719,7 @@
     <comment xml:lang="sv">XML-dokument</comment>
     <comment xml:lang="uk">документу на розширюваній мові розмітки</comment>
     <comment xml:lang="zh_CN">XML 扩展标记语言文档</comment>
+    <comment xml:lang="zh_TW">XML 文件</comment>
     <magic priority="50">
       <match value="&lt;?xml" type="string" offset="0"/>
     </magic>
@@ -12367,6 +12756,7 @@
     <comment xml:lang="sv">ISI-video</comment>
     <comment xml:lang="uk">Відео-кліп ISI</comment>
     <comment xml:lang="zh_CN">ISI 视频</comment>
+    <comment xml:lang="zh_TW">ISI 影音檔</comment>
   </mime-type>
   <mime-type type="video/mpeg">
     <comment>MPEG video</comment>
@@ -12398,6 +12788,7 @@
     <comment xml:lang="sv">MPEG-video</comment>
     <comment xml:lang="uk">Відео-кліп MPEG</comment>
     <comment xml:lang="zh_CN">MPEG 视频</comment>
+    <comment xml:lang="zh_TW">MPEG 影音檔</comment>
     <magic priority="50">
       <match value="\x47\x3f\xff\x10" type="string" offset="0"/>
       <match value="0x000001b3" type="big32" offset="0"/>
@@ -12439,6 +12830,7 @@
     <comment xml:lang="sv">Quicktime-video</comment>
     <comment xml:lang="uk">Відео-кліп QuickTime</comment>
     <comment xml:lang="zh_CN">QuickTime 视频</comment>
+    <comment xml:lang="zh_TW">QuickTime 影音檔</comment>
     <magic priority="50">
       <match value="mdat" type="string" offset="12"/>
       <match value="mdat" type="string" offset="4"/>
@@ -12480,6 +12872,7 @@
     <comment xml:lang="sv">Vivo-video</comment>
     <comment xml:lang="uk">Відео Vivo</comment>
     <comment xml:lang="zh_CN">Vivo 视频</comment>
+    <comment xml:lang="zh_TW">Vivo 影音檔</comment>
   </mime-type>
   <mime-type type="video/wavelet">
     <comment>Wavelet video</comment>
@@ -12512,6 +12905,7 @@
     <comment xml:lang="sv">Wavelet-video</comment>
     <comment xml:lang="uk">Відео-кліп Wavelet</comment>
     <comment xml:lang="zh_CN">Wavelet 视频</comment>
+    <comment xml:lang="zh_TW">Wavelet 影音檔</comment>
   </mime-type>
   <mime-type type="video/x-anim">
     <comment>ANIM animation</comment>
@@ -12544,6 +12938,7 @@
     <comment xml:lang="sv">ANIM-animation</comment>
     <comment xml:lang="uk">Анімація ANIM</comment>
     <comment xml:lang="zh_CN">ANIM 动画</comment>
+    <comment xml:lang="zh_TW">ANIM 動畫</comment>
     <glob pattern="*.anim[1-9j]"/>
   </mime-type>
   <mime-type type="video/x-avi">
@@ -12577,6 +12972,7 @@
     <comment xml:lang="sv">AVI-video</comment>
     <comment xml:lang="uk">Відео-кліп AVI</comment>
     <comment xml:lang="zh_CN">AVI 视频</comment>
+    <comment xml:lang="zh_TW">AVI 影音檔</comment>
   </mime-type>
   <mime-type type="video/x-flic">
     <comment>AutoDesk FLIC animation</comment>
@@ -12607,6 +13003,7 @@
     <comment xml:lang="sv">AutoDesk FLIC-animation</comment>
     <comment xml:lang="uk">Анімація AutoDesk FLIC</comment>
     <comment xml:lang="zh_CN">AutoDesk FLIC 动画</comment>
+    <comment xml:lang="zh_TW">AutoDesk FLIC 動畫</comment>
     <magic priority="50">
       <match value="0xAF11" type="little16" offset="0"/>
       <match value="0xAF12" type="little16" offset="0"/>
@@ -12643,6 +13040,7 @@
     <comment xml:lang="sv">MNG-animation</comment>
     <comment xml:lang="uk">Анімація MNG</comment>
     <comment xml:lang="zh_CN">MNG 动画</comment>
+    <comment xml:lang="zh_TW">MNG 動畫</comment>
     <glob pattern="*.mng"/>
   </mime-type>
   <mime-type type="video/x-ms-asf">
@@ -12674,6 +13072,7 @@
     <comment xml:lang="sv">Microsoft ASF-video</comment>
     <comment xml:lang="uk">Відео-кліп Microsoft ASF</comment>
     <comment xml:lang="zh_CN">Microsoft ASF 视频</comment>
+    <comment xml:lang="zh_TW">微軟 ASF 影音檔</comment>
     <glob pattern="*.asf"/>
     <glob pattern="*.asx"/>
     <magic priority="50">
@@ -12711,6 +13110,7 @@
     <comment xml:lang="sv">Microsoft WMV-video</comment>
     <comment xml:lang="uk">Відео-кліп Microsoft WMV</comment>
     <comment xml:lang="zh_CN">Microsoft WMV 视频</comment>
+    <comment xml:lang="zh_TW">微軟 WMV 影音檔</comment>
     <glob pattern="*.wmv"/>
   </mime-type>
   <mime-type type="video/x-msvideo">
@@ -12742,6 +13142,7 @@
     <comment xml:lang="sv">Microsoft AVI-video</comment>
     <comment xml:lang="uk">Відео-кліп Microsoft AVI</comment>
     <comment xml:lang="zh_CN">Microsoft AVI 视频</comment>
+    <comment xml:lang="zh_TW">微軟 AVI 影音檔</comment>
     <magic priority="50">
       <match value="AVI " type="string" offset="8"/>
       <match value="RIFF" type="string" offset="0"/>
@@ -12779,6 +13180,7 @@
     <comment xml:lang="sv">Nullsoft-video</comment>
     <comment xml:lang="uk">Відео-кліп Nullsoft</comment>
     <comment xml:lang="zh_CN">Nullsoft 视频</comment>
+    <comment xml:lang="zh_TW">Nullsoft 影音檔</comment>
     <magic priority="50">
       <match value="NSVf" type="string" offset="0"/>
     </magic>
@@ -12816,6 +13218,7 @@
     <comment xml:lang="sv">RealVideo-video</comment>
     <comment xml:lang="uk">Відео-кліп RealVideo</comment>
     <comment xml:lang="zh_CN">RealVideo 视频</comment>
+    <comment xml:lang="zh_TW">RealVideo 影音檔</comment>
   </mime-type>
   <mime-type type="video/x-sgi-movie">
     <comment>SGI video</comment>
@@ -12848,6 +13251,7 @@
     <comment xml:lang="sv">SGI-video</comment>
     <comment xml:lang="uk">Відео-кліп SGI</comment>
     <comment xml:lang="zh_CN">SGI 视频</comment>
+    <comment xml:lang="zh_TW">SGI 影音檔</comment>
     <magic priority="50">
       <match value="MOVI" type="string" offset="0"/>
     </magic>

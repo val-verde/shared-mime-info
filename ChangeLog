@@ -1,3 +1,9 @@
+2005-04-16  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml: sync with freedesktop.org.xml.in content
+	* freedesktop.org.xml.in: add ".RMF" as a  magic for RealMedia
+	files, also add the rmvb suffix for "Real Media Variable Bitrate" files
+
 2005-04-16  Christophe Fergeau  <teuf@gnome.org>
 
 	* freedesktop.org.xml.in: added application/vnd.ms-access, patch from

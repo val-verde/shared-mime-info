@@ -1,5 +1,10 @@
 2005-04-16  Christophe Fergeau  <teuf@gnome.org>
 
+	* freedesktop.org.xml.in: added magic pattern and glob pattern for
+	ruby files, patch by Ilmari Heikkinen, fixes #2154
+
+2005-04-16  Christophe Fergeau  <teuf@gnome.org>
+
 	* freedesktop.org.xml.in: added mime type for 7-zip
 
 2005-04-16  Bastien Nocera  <hadess@hadess.net>

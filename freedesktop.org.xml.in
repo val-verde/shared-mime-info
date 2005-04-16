@@ -1317,7 +1317,9 @@ command to generate the output files.
     <_comment>Ruby script</_comment>
     <magic>
       <match type="string" value="/bin/env ruby" offset="1:16"/>
+      <match type="string" value="/bin/ruby" offset="1:16"/>
     </magic>
+    <glob pattern="*.rb"/>
   </mime-type>
   <mime-type type="application/x-sc">
     <magic priority="50">

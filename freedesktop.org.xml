@@ -140,9 +140,9 @@
     <comment xml:lang="en">Mathematica Notebook</comment>
     <glob pattern="*.nb"/>
     <magic priority="50">
-      <match value="(*******" type="string" offset="0">
-        <match value="Mathematica-Compatible Notebook" type="string" offset="0:256"/>
-      </match>
+      <match value="(************** Content-type: application/mathematica" type="string" offset="0"/>
+      <match value="This notebook can be used on any computer system with Mathematica" type="string" offset="100:256"/>
+      <match value="This is a Mathematica Notebook file.  It contains ASCII text" type="string" offset="10:256"/>
     </magic>
   </mime-type>
   <mime-type type="application/octet-stream">

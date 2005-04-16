@@ -1,5 +1,9 @@
 2005-04-16  Christophe Fergeau  <teuf@gnome.org>
 
+	* freedesktop.org.xml.in: added *.hpp glob to C++ headers, fixes #2923
+
+2005-04-16  Christophe Fergeau  <teuf@gnome.org>
+
 	* update-mime-database.c: (my_xmlGetNsProp), (get_type),
 	(match_node), (get_priority), (add_namespace),
 	(process_freedesktop_node), (has_lang), (remove_old), (load_type),

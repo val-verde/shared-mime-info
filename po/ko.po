@@ -1,12 +1,12 @@
 # shared-mime-info korean translation (based on gnome-mime-data)
-# Young-Ho Cha <ganadist at mizi.com>, 2004.
+# Young-Ho Cha <ganadist at mizi.com>, 2004, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info 0.15\n"
+"Project-Id-Version: shared-mime-info 0.16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-03-22 14:40-0500\n"
-"PO-Revision-Date: 2004-09-06 13:52+0900\n"
+"PO-Revision-Date: 2005-04-16 00:55+0900\n"
 "Last-Translator: Young-Ho Cha <ganadist@gmail.com>\n"
 "Language-Team: Korean <translation-team-ko@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -178,9 +178,8 @@ msgid "Corel Draw drawing"
 msgstr "코렐 드로우 드로잉"
 
 #: ../freedesktop.org.xml.in.h:42
-#, fuzzy
 msgid "D source code"
-msgstr "C 소스 코드"
+msgstr "D 소스 코드"
 
 #: ../freedesktop.org.xml.in.h:43
 msgid "DCL script"
@@ -245,7 +244,6 @@ msgid "Egon Animator animation"
 msgstr "Egon 애니메이터"
 
 #: ../freedesktop.org.xml.in.h:58
-#, fuzzy
 msgid "Electronic Business Card"
 msgstr "전자 명함"
 
@@ -408,7 +406,7 @@ msgstr "JPEG-2000 그림"
 
 #: ../freedesktop.org.xml.in.h:98
 msgid "Java Network Launched Application"
-msgstr ""
+msgstr "자바 네트워크 실행 프로그램"
 
 #: ../freedesktop.org.xml.in.h:99
 msgid "Java archive"
@@ -555,9 +553,8 @@ msgid "MP3 playlist"
 msgstr "MP3 연주목록"
 
 #: ../freedesktop.org.xml.in.h:135
-#, fuzzy
 msgid "MP4 audio"
-msgstr "MP3 오디오"
+msgstr "MP4 오디오"
 
 #: ../freedesktop.org.xml.in.h:136
 msgid "MPEG video"
@@ -684,71 +681,60 @@ msgid "Ogg Vorbis audio"
 msgstr "Ogg Vorbis 오디오"
 
 #: ../freedesktop.org.xml.in.h:167
-#, fuzzy
 msgid "OpenDocument Chart"
-msgstr "ODA 문서"
+msgstr "OpenDocument 챠트"
 
 #: ../freedesktop.org.xml.in.h:168
 msgid "OpenDocument Database"
-msgstr ""
+msgstr "OpenDocument 데이터베이스"
 
 #: ../freedesktop.org.xml.in.h:169
 msgid "OpenDocument Drawing"
-msgstr ""
+msgstr "OpenDocument 그림"
 
 #: ../freedesktop.org.xml.in.h:170
-#, fuzzy
 msgid "OpenDocument Drawing Template"
-msgstr "OpenOffice.org Draw 그림 문서틀"
+msgstr "OpenDocument 그림틀"
 
 #: ../freedesktop.org.xml.in.h:171
 msgid "OpenDocument Formula"
-msgstr ""
+msgstr "OpenDocument 수식"
 
 #: ../freedesktop.org.xml.in.h:172
-#, fuzzy
 msgid "OpenDocument HTML Document Template"
-msgstr "OpenOffice.org Writer 문서틀"
+msgstr "OpenDocument HTML 문서틀"
 
 #: ../freedesktop.org.xml.in.h:173
-#, fuzzy
 msgid "OpenDocument Image"
-msgstr "ODA 문서"
+msgstr "OpenDocument 그림"
 
 #: ../freedesktop.org.xml.in.h:174
-#, fuzzy
 msgid "OpenDocument Master Document"
-msgstr "OpenOffice.org Writer 문서"
+msgstr "OpenDocument Master 문서"
 
 #: ../freedesktop.org.xml.in.h:175
-#, fuzzy
 msgid "OpenDocument Presentation"
-msgstr "KPresenter 프리젠테이션"
+msgstr "OpenDocument 프리젠테이션"
 
 #: ../freedesktop.org.xml.in.h:176
-#, fuzzy
 msgid "OpenDocument Presentation Template"
-msgstr "OpenOffice.org Impress 프리젠테이션 문서틀"
+msgstr "OpenDocument 프리젠테이션 문서틀"
 
 #: ../freedesktop.org.xml.in.h:177
-#, fuzzy
 msgid "OpenDocument Spreadsheet"
-msgstr "Gnumeric 스프레드시트"
+msgstr "OpenDocument 스프레드시트"
 
 #: ../freedesktop.org.xml.in.h:178
-#, fuzzy
 msgid "OpenDocument Spreadsheet Template"
-msgstr "OpenOffice.org Calc 스프레드시트 문서틀"
+msgstr "OpenDocument 스프레드시트 문서틀"
 
 #: ../freedesktop.org.xml.in.h:179
-#, fuzzy
 msgid "OpenDocument Text"
-msgstr "ODA 문서"
+msgstr "OpenDocument 텍스트"
 
 #: ../freedesktop.org.xml.in.h:180
-#, fuzzy
 msgid "OpenDocument Text Template"
-msgstr "OpenOffice.org Writer 문서틀"
+msgstr "OpenDocument 텍스트 문서틀"
 
 #: ../freedesktop.org.xml.in.h:181
 msgid "OpenOffice.org Calc spreadsheet"
@@ -1083,9 +1069,8 @@ msgid "StarWriter document"
 msgstr "StarWriter 문서"
 
 #: ../freedesktop.org.xml.in.h:264
-#, fuzzy
 msgid "StuffIt archive"
-msgstr "맥킨토시 StuffIt 아카이브"
+msgstr "StuffIt 아카이브"
 
 #: ../freedesktop.org.xml.in.h:265
 msgid "SunOS News font"
@@ -1260,9 +1245,8 @@ msgid "XML Metadata Interchange file"
 msgstr "XML 메타데이터 교환 파일"
 
 #: ../freedesktop.org.xml.in.h:308
-#, fuzzy
 msgid "XML User Interface Language document"
-msgstr "확장 마크업 언어 문서"
+msgstr "XML 사용자 인터페이스 언어 문서"
 
 #: ../freedesktop.org.xml.in.h:309
 msgid "XSL Formating Object file"
@@ -1581,11 +1565,5 @@ msgstr "vCalendar 교환 파일"
 msgid "zoo archive"
 msgstr "zoo 아카이브"
 
-#~ msgid "Korn shell script"
-#~ msgstr "콘쉘 스크립트"
-
-#~ msgid "directory information file"
-#~ msgstr "디렉토리 정보 파일"
-
-#~ msgid "iCalendar file"
-#~ msgstr "iCalendar 파일"
+#~ msgid "CD image cuesheet"
+#~ msgstr "CD 이미지 큐시트"

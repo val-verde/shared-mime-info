@@ -1,22 +1,23 @@
 # Bulgarian translation of shared-mime PO file.
 # Copyright (C) 2002 Free Software Foundation, Inc.
-# Alexander Shopov <al_shopov@yahoo.com>, 2002;
-# Yanko Kaneti <yaneti@declera.com>, 2002;
-# Vladimir Petkov <vpetkov@i-space.org>, 2004, small updates for completeness
-# Alexander Shopov <ash@contact.bg>, 2004 complete rewrite, syncing with Gnome and KDE
-# 
-# 
+# Alexander Shopov <ash@contact.bg>, 2002.
+# Yanko Kaneti <yaneti@declera.com>, 2002.
+# Vladimir Petkov <vpetkov@i-space.org>, 2004.
+# Alexander Shopov <ash@contact.bg>, 2004.
+# Alexander Shopov <ash@contact.bg>, 2005.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime 0.14\n"
+"Project-Id-Version: shared-mime-info 0.16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-03-22 14:40-0500\n"
-"PO-Revision-Date: 2004-07-24 08:35+0300\n"
+"PO-Revision-Date: 2005-05-20 18:41+0300\n"
 "Last-Translator: Alexander Shopov <ash@contact.bg>\n"
-"Language-Team: Bulgarian <dict@linux.zonebg.com>\n"
+"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../freedesktop.org.xml.in.h:1
 msgid "3D Studio image"
@@ -88,11 +89,11 @@ msgstr "Изображение, формат Applix Graphics"
 
 #: ../freedesktop.org.xml.in.h:18
 msgid "Applix Spreadsheets spreadsheet"
-msgstr "Таблица, формат Applix·Spreadsheets"
+msgstr "Таблица, формат Applix Spreadsheets"
 
 #: ../freedesktop.org.xml.in.h:19
 msgid "Applix Words document"
-msgstr "Документ, формат Applix·Words"
+msgstr "Документ, формат Applix Words"
 
 #: ../freedesktop.org.xml.in.h:20
 msgid "AutoCAD image"
@@ -100,7 +101,7 @@ msgstr "Изображение, формат AutoCAD"
 
 #: ../freedesktop.org.xml.in.h:21
 msgid "AutoDesk FLIC animation"
-msgstr "Анимация, формат AutoDesk·FLIC"
+msgstr "Анимация, формат AutoDesk FLIC"
 
 #: ../freedesktop.org.xml.in.h:22
 msgid "BCPIO document"
@@ -148,7 +149,7 @@ msgstr "Заглавен файл на C++"
 
 #: ../freedesktop.org.xml.in.h:33
 msgid "CCITT G3 fax"
-msgstr "Факс, формат CCITT·G3"
+msgstr "Факс, формат CCITT G3"
 
 #: ../freedesktop.org.xml.in.h:34
 msgid "CGI script"
@@ -176,16 +177,15 @@ msgstr "Аудио файл, формат Commodore 64"
 
 #: ../freedesktop.org.xml.in.h:40
 msgid "Computer Graphics Metafile"
-msgstr "Метафайл, формат Computer·Graphics"
+msgstr "Метафайл, формат Computer Graphics"
 
 #: ../freedesktop.org.xml.in.h:41
 msgid "Corel Draw drawing"
-msgstr "Чертеж, формат Corel·Draw·"
+msgstr "Чертеж, формат Corel Draw"
 
 #: ../freedesktop.org.xml.in.h:42
-#, fuzzy
 msgid "D source code"
-msgstr "Изходен код на C"
+msgstr "Изходен код на D"
 
 #: ../freedesktop.org.xml.in.h:43
 msgid "DCL script"
@@ -245,10 +245,9 @@ msgstr "ROM, формат Dreamcast"
 
 #: ../freedesktop.org.xml.in.h:57
 msgid "Egon Animator animation"
-msgstr "Анимация, формат Egon·Animator"
+msgstr "Анимация, формат Egon Animator"
 
 #: ../freedesktop.org.xml.in.h:58
-#, fuzzy
 msgid "Electronic Business Card"
 msgstr "Електронна визитна картичка"
 
@@ -278,7 +277,7 @@ msgstr "Изображение, формат FlashPix"
 
 #: ../freedesktop.org.xml.in.h:65
 msgid "Flexible Image Transport System"
-msgstr "Данни, формат Flexible·Image·Transport·System"
+msgstr "Данни, формат Flexible Image Transport System"
 
 #: ../freedesktop.org.xml.in.h:66
 msgid "Fortran source code"
@@ -286,7 +285,7 @@ msgstr "Изходен код на Fortran"
 
 #: ../freedesktop.org.xml.in.h:67
 msgid "FrameMaker MIF document"
-msgstr "Документ, формат FrameMaker·MIF"
+msgstr "Документ, формат FrameMaker MIF"
 
 #: ../freedesktop.org.xml.in.h:68
 msgid "G3 fax image"
@@ -358,7 +357,7 @@ msgstr "Файл за плотер, формат HP GL"
 
 #: ../freedesktop.org.xml.in.h:85
 msgid "HP Printer Control Language file"
-msgstr "Файл за принтер, формат HP·PCL"
+msgstr "Файл за принтер, формат HP PCL"
 
 #: ../freedesktop.org.xml.in.h:86
 msgid "HTML page"
@@ -410,7 +409,7 @@ msgstr "Изображение, формат JPEG-2000"
 
 #: ../freedesktop.org.xml.in.h:98
 msgid "Java Network Launched Application"
-msgstr ""
+msgstr "Мрежови стартер за Java"
 
 #: ../freedesktop.org.xml.in.h:99
 msgid "Java archive"
@@ -526,7 +525,7 @@ msgstr "Таблица, формат Lotus 1-2-3"
 
 #: ../freedesktop.org.xml.in.h:127
 msgid "Lotus AmiPro document"
-msgstr "Документ, формат Lotus·AmiPro"
+msgstr "Документ, формат Lotus AmiPro"
 
 #: ../freedesktop.org.xml.in.h:128
 msgid "LyX document"
@@ -542,7 +541,7 @@ msgstr "Анимация, формат MNG"
 
 #: ../freedesktop.org.xml.in.h:131
 msgid "MP3 ShoutCast playlist"
-msgstr "Списък със звуци, формат MP3·ShoutCast"
+msgstr "Списък със звуци, формат MP3 ShoutCast"
 
 #: ../freedesktop.org.xml.in.h:132
 msgid "MP3 audio"
@@ -557,9 +556,8 @@ msgid "MP3 playlist"
 msgstr "Списък със звуци, MP3"
 
 #: ../freedesktop.org.xml.in.h:135
-#, fuzzy
 msgid "MP4 audio"
-msgstr "Аудио файл, формат MP3"
+msgstr "Аудио файл, формат MP4"
 
 #: ../freedesktop.org.xml.in.h:136
 msgid "MPEG video"
@@ -583,7 +581,7 @@ msgstr "Файл, формат MacBinary"
 
 #: ../freedesktop.org.xml.in.h:141
 msgid "Macintosh Quickdraw/PICT drawing"
-msgstr "Чертеж, формат Macintosh·Quickdraw/PICT"
+msgstr "Чертеж, формат Macintosh Quickdraw/PICT"
 
 #: ../freedesktop.org.xml.in.h:142
 msgid "Macintosh StuffIt archive"
@@ -643,7 +641,7 @@ msgstr "Документ, формат Microsoft Word"
 
 #: ../freedesktop.org.xml.in.h:156
 msgid "Microsoft Write document"
-msgstr "Документ, формат Microsoft·Write"
+msgstr "Документ, формат Microsoft Write"
 
 #: ../freedesktop.org.xml.in.h:157
 msgid "Mozilla bookmarks"
@@ -686,71 +684,60 @@ msgid "Ogg Vorbis audio"
 msgstr "Аудио файл, формат Ogg Vorbis"
 
 #: ../freedesktop.org.xml.in.h:167
-#, fuzzy
 msgid "OpenDocument Chart"
-msgstr "Документ, формат ODA"
+msgstr "Чертеж, формат OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:168
 msgid "OpenDocument Database"
-msgstr ""
+msgstr "База от данни, формат OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:169
 msgid "OpenDocument Drawing"
-msgstr ""
+msgstr "Чертеж, формат OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:170
-#, fuzzy
 msgid "OpenDocument Drawing Template"
-msgstr "Шаблон за чертежи, формат OpenOffice.org·Draw"
+msgstr "Шаблон за чертежи, формат OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:171
 msgid "OpenDocument Formula"
-msgstr ""
+msgstr "Формула, формат OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:172
-#, fuzzy
 msgid "OpenDocument HTML Document Template"
-msgstr "Шаблон за документи, формат OpenOffice.org Writer"
+msgstr "Шаблон за документи на HTML, формат OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:173
-#, fuzzy
 msgid "OpenDocument Image"
-msgstr "Документ, формат ODA"
+msgstr "Изображение, формат OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:174
-#, fuzzy
 msgid "OpenDocument Master Document"
-msgstr "Документ, формат OpenOffice.org Writer"
+msgstr "Обхващащ документ, формат OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:175
-#, fuzzy
 msgid "OpenDocument Presentation"
-msgstr "Презентация, формат KPresenter"
+msgstr "Презентация, формат OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:176
-#, fuzzy
 msgid "OpenDocument Presentation Template"
-msgstr "Шаблон за презентации, формат OpenOffice.org Impress"
+msgstr "Шаблон за презентации, формат OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:177
-#, fuzzy
 msgid "OpenDocument Spreadsheet"
-msgstr "Таблица, формат Gnumeric"
+msgstr "Таблица, формат OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:178
-#, fuzzy
 msgid "OpenDocument Spreadsheet Template"
-msgstr "Шаблон за таблици, формат OpenOffice.org Calc"
+msgstr "Шаблон за таблици, формат OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:179
-#, fuzzy
 msgid "OpenDocument Text"
-msgstr "Документ, формат ODA"
+msgstr "Документ, формат OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:180
-#, fuzzy
 msgid "OpenDocument Text Template"
-msgstr "Шаблон за документи, формат OpenOffice.org Writer"
+msgstr "Шаблон за документи, формат OpenDocument"
 
 #: ../freedesktop.org.xml.in.h:181
 msgid "OpenOffice.org Calc spreadsheet"
@@ -766,7 +753,7 @@ msgstr "Чертеж, формат OpenOffice.org Draw"
 
 #: ../freedesktop.org.xml.in.h:184
 msgid "OpenOffice.org Draw drawing template"
-msgstr "Шаблон за чертежи, формат OpenOffice.org·Draw"
+msgstr "Шаблон за чертежи, формат OpenOffice.org Draw"
 
 #: ../freedesktop.org.xml.in.h:185
 msgid "OpenOffice.org Impress presentation"
@@ -846,7 +833,7 @@ msgstr "Изображение, формат PNM"
 
 #: ../freedesktop.org.xml.in.h:204
 msgid "Palm OS database"
-msgstr "База данни за Palm·OS"
+msgstr "База данни за Palm OS"
 
 #: ../freedesktop.org.xml.in.h:205
 msgid "Palmpilot database/document"
@@ -858,7 +845,7 @@ msgstr "Изходен код на Pascal"
 
 #: ../freedesktop.org.xml.in.h:207
 msgid "Pathetic Writer document"
-msgstr "Документ, формат Pathetic·Writer"
+msgstr "Документ, формат Pathetic Writer"
 
 #: ../freedesktop.org.xml.in.h:208
 msgid "Perl script"
@@ -878,15 +865,15 @@ msgstr "Списък с песни"
 
 #: ../freedesktop.org.xml.in.h:212
 msgid "Portable Bitmap File Format"
-msgstr "Изображение, формат Portable·Bitmap"
+msgstr "Изображение, формат Portable Bitmap"
 
 #: ../freedesktop.org.xml.in.h:213
 msgid "Portable Graymap File Format"
-msgstr "Изображение, формат Portable·Graymap"
+msgstr "Изображение, формат Portable Graymap"
 
 #: ../freedesktop.org.xml.in.h:214
 msgid "Portable Pixmap File Format"
-msgstr "Изображение, формат Portable·Pixmap"
+msgstr "Изображение, формат Portable Pixmap"
 
 #: ../freedesktop.org.xml.in.h:215
 msgid "PostScript document"
@@ -906,15 +893,15 @@ msgstr "Скрипт на Python"
 
 #: ../freedesktop.org.xml.in.h:219
 msgid "Qt Designer file"
-msgstr "Файл, формат Qt·Designer"
+msgstr "Файл, формат Qt Designer"
 
 #: ../freedesktop.org.xml.in.h:220
 msgid "Qt Meta Object file"
-msgstr "Файл, формат Qt·Meta·Object"
+msgstr "Файл, формат Qt Meta Object"
 
 #: ../freedesktop.org.xml.in.h:221
 msgid "Quattro Pro spreadsheet"
-msgstr "Таблица, формат Quattro·Pro"
+msgstr "Таблица, формат Quattro Pro"
 
 #: ../freedesktop.org.xml.in.h:222
 msgid "QuickTime video"
@@ -966,7 +953,7 @@ msgstr "Файл за обобщение, формат RDF"
 
 #: ../freedesktop.org.xml.in.h:234
 msgid "Rich Text Format"
-msgstr "Документ, формат Rich·Text"
+msgstr "Документ, формат Rich Text"
 
 #: ../freedesktop.org.xml.in.h:235
 msgid "Ruby script"
@@ -1038,7 +1025,7 @@ msgstr "Таблица, формат Siag"
 
 #: ../freedesktop.org.xml.in.h:252
 msgid "Silicon Graphics IRIS image"
-msgstr "Изображение, формат Silicon·Graphics·IRIS"
+msgstr "Изображение, формат Silicon Graphics IRIS"
 
 #: ../freedesktop.org.xml.in.h:253
 msgid "Speech document"
@@ -1085,13 +1072,12 @@ msgid "StarWriter document"
 msgstr "Документ, формат StarWriter"
 
 #: ../freedesktop.org.xml.in.h:264
-#, fuzzy
 msgid "StuffIt archive"
-msgstr "Архив, формат Macintosh StuffIt"
+msgstr "Архив, формат StuffIt"
 
 #: ../freedesktop.org.xml.in.h:265
 msgid "SunOS News font"
-msgstr "Шрифт, формат SunOS·News"
+msgstr "Шрифт, формат SunOS News"
 
 #: ../freedesktop.org.xml.in.h:266
 msgid "Synchronized Multimedia Integration Language"
@@ -1115,7 +1101,7 @@ msgstr "Скрипт на Tcl"
 
 #: ../freedesktop.org.xml.in.h:271
 msgid "TeX DVI document"
-msgstr "Документ, формат TeX·DVI"
+msgstr "Документ, формат TeX DVI"
 
 #: ../freedesktop.org.xml.in.h:272
 msgid "TeX document"
@@ -1147,7 +1133,7 @@ msgstr "Изходен документ, формат Troff ММ"
 
 #: ../freedesktop.org.xml.in.h:279
 msgid "Troff MS input document"
-msgstr "Изходен документ, формат Troff·MS"
+msgstr "Изходен документ, формат Troff MS"
 
 #: ../freedesktop.org.xml.in.h:280
 msgid "Troff document"
@@ -1167,7 +1153,7 @@ msgstr "Изображение, формат Truevision Targa"
 
 #: ../freedesktop.org.xml.in.h:284
 msgid "ULAW (Sun) audio"
-msgstr "Аудио файл, формат ULAW·(Sun)"
+msgstr "Аудио файл, формат ULAW (Sun)"
 
 #: ../freedesktop.org.xml.in.h:285
 msgid "UNIX-compressed file"
@@ -1175,11 +1161,11 @@ msgstr "Файл, компресиран за UNIX"
 
 #: ../freedesktop.org.xml.in.h:286
 msgid "Unidata NetCDF document"
-msgstr "Документ, формат Unidata·NetCDF"
+msgstr "Документ, формат Unidata NetCDF"
 
 #: ../freedesktop.org.xml.in.h:287
 msgid "Usenet news message"
-msgstr "Съобщение, формат Usenet·news"
+msgstr "Съобщение, формат Usenet news"
 
 #: ../freedesktop.org.xml.in.h:288
 msgid "V font"
@@ -1231,11 +1217,11 @@ msgstr "Изображение, формат WordPerfect/Drawperfect"
 
 #: ../freedesktop.org.xml.in.h:300
 msgid "X BitMap image"
-msgstr "Изображение, формат X·BitMap"
+msgstr "Изображение, формат X BitMap"
 
 #: ../freedesktop.org.xml.in.h:301
 msgid "X PixMap image"
-msgstr "Изображение, формат X·PixMap"
+msgstr "Изображение, формат X PixMap"
 
 #: ../freedesktop.org.xml.in.h:302
 msgid "X window image"
@@ -1243,7 +1229,7 @@ msgstr "Изображение, формат X Window"
 
 #: ../freedesktop.org.xml.in.h:303
 msgid "X-Motif UIL table"
-msgstr "Таблица, формат X-Motif·UIL"
+msgstr "Таблица, формат X-Motif UIL"
 
 #: ../freedesktop.org.xml.in.h:304
 msgid "XBEL bookmarks"
@@ -1259,12 +1245,11 @@ msgstr "Страница, формат XHTML"
 
 #: ../freedesktop.org.xml.in.h:307
 msgid "XML Metadata Interchange file"
-msgstr "Файл за обмяна, формат XML·Metadata"
+msgstr "Файл за обмяна, формат XML Metadata"
 
 #: ../freedesktop.org.xml.in.h:308
-#, fuzzy
 msgid "XML User Interface Language document"
-msgstr "Документ, формат XML"
+msgstr "Описание на потребителски интерфейс, формат XML"
 
 #: ../freedesktop.org.xml.in.h:309
 msgid "XSL Formating Object file"
@@ -1280,7 +1265,7 @@ msgstr "Архив, формат ZIP"
 
 #: ../freedesktop.org.xml.in.h:312
 msgid "active server page"
-msgstr "Страница, формат Active·Server"
+msgstr "Страница, формат Active Server"
 
 #: ../freedesktop.org.xml.in.h:313
 msgid "application log"
@@ -1460,7 +1445,7 @@ msgstr "Данни от забиване на програма"
 
 #: ../freedesktop.org.xml.in.h:357
 msgid "raw CD image"
-msgstr "Изображение, формат raw·CD"
+msgstr "Изображение, формат raw CD"
 
 #: ../freedesktop.org.xml.in.h:358
 msgid "reference to remote file"
@@ -1477,7 +1462,7 @@ msgstr "Местоположение на ресурс"
 
 #: ../freedesktop.org.xml.in.h:362
 msgid "rich text document"
-msgstr "Документ, формат rich·text"
+msgstr "Документ, формат rich text"
 
 #: ../freedesktop.org.xml.in.h:363
 msgid "scalable SVG image"
@@ -1582,6 +1567,18 @@ msgstr "Файл за обмяна, формат vCalendar"
 #: ../freedesktop.org.xml.in.h:388
 msgid "zoo archive"
 msgstr "Архив, формат zoo"
+
+#~ msgid "CD image cuesheet"
+#~ msgstr "Описание на изображение на CD"
+
+#~ msgid "Family history file"
+#~ msgstr "Файл с родословно дърво"
+
+#~ msgid "MPEG-4 audio"
+#~ msgstr "Аудио файл, формат MPEG-4"
+
+#~ msgid "MPEG-4 video"
+#~ msgstr "Видео файл, формат MPEG-4"
 
 #~ msgid "Korn shell script"
 #~ msgstr "Срипт за обвивката Korn"

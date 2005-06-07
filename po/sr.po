@@ -2,13 +2,14 @@
 # Copyright (C) 2003 Free Software Foundation, Inc.
 # Aleksandar Urosevic <urke@gmx.net>, 2003.
 # Danilo Segan <dsegan@gmx.net>, 2003, 2004.
+# Aleksandar Jelenak <jelenak@verizon.net>, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info 0.15\n"
+"Project-Id-Version: shared-mime-info 0.16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-03-22 14:40-0500\n"
-"PO-Revision-Date: 2004-08-31 19:15+0200\n"
+"PO-Revision-Date: 2005-05-10 01:04-0400\n"
 "Last-Translator: Danilo Segan <dsegan@gmx.net>\n"
 "Language-Team: Serbian <gnu@prevod.org>\n"
 "MIME-Version: 1.0\n"
@@ -181,9 +182,8 @@ msgid "Corel Draw drawing"
 msgstr "Corel Draw цртеж"
 
 #: ../freedesktop.org.xml.in.h:42
-#, fuzzy
 msgid "D source code"
-msgstr "C изворни ко̂д"
+msgstr "D изворни ко̂д"
 
 #: ../freedesktop.org.xml.in.h:43
 msgid "DCL script"
@@ -199,7 +199,7 @@ msgstr "DOS фонт"
 
 #: ../freedesktop.org.xml.in.h:46
 msgid "DOS/Windows executable"
-msgstr "ДОС/Виндуз извршна датотека"
+msgstr "ДОС/Виндоуз извршна датотека"
 
 #: ../freedesktop.org.xml.in.h:47
 msgid "DSSSL document"
@@ -246,7 +246,6 @@ msgid "Egon Animator animation"
 msgstr "Егон аниматор анимација"
 
 #: ../freedesktop.org.xml.in.h:58
-#, fuzzy
 msgid "Electronic Business Card"
 msgstr "електронска бизнис картица"
 
@@ -408,7 +407,7 @@ msgstr "JPEG-2000 слика"
 
 #: ../freedesktop.org.xml.in.h:98
 msgid "Java Network Launched Application"
-msgstr ""
+msgstr "Мрежно покренута Јава апликација"
 
 #: ../freedesktop.org.xml.in.h:99
 msgid "Java archive"
@@ -555,9 +554,8 @@ msgid "MP3 playlist"
 msgstr "MP3 списак песама"
 
 #: ../freedesktop.org.xml.in.h:135
-#, fuzzy
 msgid "MP4 audio"
-msgstr "MP3 звучни запис"
+msgstr "MP4 звучни запис"
 
 #: ../freedesktop.org.xml.in.h:136
 msgid "MPEG video"
@@ -684,71 +682,60 @@ msgid "Ogg Vorbis audio"
 msgstr "Ог-ворбис звучни запис"
 
 #: ../freedesktop.org.xml.in.h:167
-#, fuzzy
 msgid "OpenDocument Chart"
-msgstr "ODA документ"
+msgstr "OpenDocument графикон"
 
 #: ../freedesktop.org.xml.in.h:168
 msgid "OpenDocument Database"
-msgstr ""
+msgstr "OpenDocument база података"
 
 #: ../freedesktop.org.xml.in.h:169
 msgid "OpenDocument Drawing"
-msgstr ""
+msgstr "OpenDocument цртеж"
 
 #: ../freedesktop.org.xml.in.h:170
-#, fuzzy
 msgid "OpenDocument Drawing Template"
-msgstr "OpenOffice.org шаблон цртежа"
+msgstr "OpenDocument шаблон цртежа"
 
 #: ../freedesktop.org.xml.in.h:171
 msgid "OpenDocument Formula"
-msgstr ""
+msgstr "OpenDocument формула"
 
 #: ../freedesktop.org.xml.in.h:172
-#, fuzzy
 msgid "OpenDocument HTML Document Template"
-msgstr "OpenOffice.org шаблон Writer документа"
+msgstr "OpenDocument шаблон HTML документа"
 
 #: ../freedesktop.org.xml.in.h:173
-#, fuzzy
 msgid "OpenDocument Image"
-msgstr "ODA документ"
+msgstr "OpenDocument снимак"
 
 #: ../freedesktop.org.xml.in.h:174
-#, fuzzy
 msgid "OpenDocument Master Document"
-msgstr "OpenOffice.org Writer документ"
+msgstr "OpenDocument главни документ"
 
 #: ../freedesktop.org.xml.in.h:175
-#, fuzzy
 msgid "OpenDocument Presentation"
-msgstr "Документ/Презентација"
+msgstr "OpenDocument презентација"
 
 #: ../freedesktop.org.xml.in.h:176
-#, fuzzy
 msgid "OpenDocument Presentation Template"
-msgstr "Документ/Презентација"
+msgstr "OpenDocument "
 
 #: ../freedesktop.org.xml.in.h:177
-#, fuzzy
 msgid "OpenDocument Spreadsheet"
-msgstr "Документ/Табеларни прорачуни"
+msgstr "OpenDocument прорачунска табела"
 
 #: ../freedesktop.org.xml.in.h:178
-#, fuzzy
 msgid "OpenDocument Spreadsheet Template"
-msgstr "Документ/Табеларни прорачуни"
+msgstr "OpenDocument шаблон прорачунске табеле"
 
 #: ../freedesktop.org.xml.in.h:179
-#, fuzzy
 msgid "OpenDocument Text"
-msgstr "Документ/ТеКС"
+msgstr "OpenDocument текст"
 
 #: ../freedesktop.org.xml.in.h:180
-#, fuzzy
 msgid "OpenDocument Text Template"
-msgstr "OpenOffice.org шаблон Writer документа"
+msgstr "OpenDocument шаблон текста"
 
 #: ../freedesktop.org.xml.in.h:181
 msgid "OpenOffice.org Calc spreadsheet"
@@ -1084,9 +1071,8 @@ msgid "StarWriter document"
 msgstr "StarWriter документ"
 
 #: ../freedesktop.org.xml.in.h:264
-#, fuzzy
 msgid "StuffIt archive"
-msgstr "Мекинтош StuffIt архива"
+msgstr "StuffIt архива"
 
 #: ../freedesktop.org.xml.in.h:265
 msgid "SunOS News font"
@@ -1261,9 +1247,8 @@ msgid "XML Metadata Interchange file"
 msgstr "XML датотека за размену метаподатака"
 
 #: ../freedesktop.org.xml.in.h:308
-#, fuzzy
 msgid "XML User Interface Language document"
-msgstr "документ проширивог језика за означавање (XML)"
+msgstr "документ корисничке спреге проширивог језика за означавање (XML)"
 
 #: ../freedesktop.org.xml.in.h:309
 msgid "XSL Formating Object file"
@@ -1622,8 +1607,7 @@ msgstr "zoo архива"
 #~ msgstr "Не могу оба атрибута „namespaceURI“ и „localName“ бити празни"
 
 #~ msgid "namespaceURI and localName cannot contain spaces or newlines"
-#~ msgstr ""
-#~ "Не могу „namespaceURI“ и „localName“ садржати размаке или нове редове"
+#~ msgstr "Не могу „namespaceURI“ и „localName“ садржати размаке или нове редове"
 
 #~ msgid "Missing 'pattern' attribute in <glob> element"
 #~ msgstr "Недостаје атрибут „pattern“ у елементу <glob>"

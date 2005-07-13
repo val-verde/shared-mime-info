@@ -92,6 +92,7 @@
     <comment xml:lang="pl">Dokument Adobe Illustratora</comment>
     <comment xml:lang="pt">documento Adobe Illustrator</comment>
     <comment xml:lang="pt_BR">Documento do Adobe Illustrator</comment>
+    <comment xml:lang="ru">документ Adobe Illustrator</comment>
     <comment xml:lang="sq">Dokument Adobe Illustrator</comment>
     <comment xml:lang="sr">Адоуби Илустратор документ</comment>
     <comment xml:lang="sv">Adobe Illustrator-dokument</comment>
@@ -212,6 +213,7 @@
     <comment xml:lang="pl">Dokument ODA</comment>
     <comment xml:lang="pt">documento ODA</comment>
     <comment xml:lang="pt_BR">Documento ODA</comment>
+    <comment xml:lang="ru">документ ODA</comment>
     <comment xml:lang="sq">Dokument ODA</comment>
     <comment xml:lang="sr">ODA документ</comment>
     <comment xml:lang="sv">ODA-dokument</comment>
@@ -245,6 +247,7 @@
     <comment xml:lang="pl">Dokument PDF</comment>
     <comment xml:lang="pt">documento PDF</comment>
     <comment xml:lang="pt_BR">Documento PDF</comment>
+    <comment xml:lang="ru">документ PDF</comment>
     <comment xml:lang="sq">Dokument PDF</comment>
     <comment xml:lang="sr">PDF документ</comment>
     <comment xml:lang="sv">PDF-dokument</comment>
@@ -315,6 +318,7 @@
     <comment xml:lang="pl">Nagłówek listu zaszyfrowanego PGP/MIME</comment>
     <comment xml:lang="pt">cabeçalho de mensagem cifrada com PGP/MIME</comment>
     <comment xml:lang="pt_BR">Cabeçalho de mensagem criptografada PGP/MIME</comment>
+    <comment xml:lang="ru">заголовок зашифрованного сообщения PGP/MIME</comment>
     <comment xml:lang="sq">Header mesazhi të kriptuar PGP/MIME</comment>
     <comment xml:lang="sr">ПГП/МИМЕ шифровано заглавље поруке</comment>
     <comment xml:lang="sv">PGP/MIME-krypterat meddelandehuvud</comment>
@@ -474,6 +478,7 @@
     <comment xml:lang="pl">Dokument Postscript</comment>
     <comment xml:lang="pt">documento PostScript</comment>
     <comment xml:lang="pt_BR">Documento PostScript</comment>
+    <comment xml:lang="ru">документ PostScript</comment>
     <comment xml:lang="sq">Dokument PostScript</comment>
     <comment xml:lang="sr">ПостСкрипт документ</comment>
     <comment xml:lang="sv">Postscript-dokument</comment>
@@ -490,7 +495,7 @@
     <sub-class-of type="text/plain"/>
     <comment>Rich Text Format</comment>
     <comment xml:lang="az">Zəngin Mətn Formatı</comment>
-    <comment xml:lang="bg">Документ, формат Rich·Text</comment>
+    <comment xml:lang="bg">Документ, формат Rich Text</comment>
     <comment xml:lang="cs">Rich Text Format</comment>
     <comment xml:lang="cy">Dogfen Testun Gyfoethog</comment>
     <comment xml:lang="da">Rigt tekst-dokument</comment>
@@ -557,9 +562,14 @@
   </mime-type>
   <mime-type type="application/stuffit">
     <comment>StuffIt archive</comment>
+    <comment xml:lang="bg">Архив, формат StuffIt</comment>
     <comment xml:lang="cs">Archiv StuffIt</comment>
     <comment xml:lang="fi">StuffIt-arkisto</comment>
+    <comment xml:lang="fr">archive StuffIt</comment>
+    <comment xml:lang="ko">StuffIt 아카이브</comment>
     <comment xml:lang="nl">StuffIt-archief</comment>
+    <comment xml:lang="ru">архив StuffIt</comment>
+    <comment xml:lang="sr">StuffIt архива</comment>
     <comment xml:lang="zh_TW">StuffIt 保存檔</comment>
     <magic priority="50">
       <match value="StuffIt" type="string" offset="0"/>
@@ -568,10 +578,18 @@
     <alias type="application/x-stuffit"/>
     <alias type="application/x-sit"/>
   </mime-type>
+  <mime-type type="application/x-gedcom">
+    <comment>Family history file</comment>
+    <magic priority="50">
+      <match value="0 HEAD" type="string" offset="0"/>
+    </magic>
+    <glob pattern="*.ged"/>
+    <glob pattern="*.gedcom"/>
+  </mime-type>
   <mime-type type="application/vnd.corel-draw">
     <comment>Corel Draw drawing</comment>
     <comment xml:lang="az">Corel Draw çəkimi</comment>
-    <comment xml:lang="bg">Чертеж, формат Corel·Draw·</comment>
+    <comment xml:lang="bg">Чертеж, формат Corel Draw</comment>
     <comment xml:lang="cs">Kresba Corel Draw</comment>
     <comment xml:lang="cy">Darlun Corel Draw</comment>
     <comment xml:lang="da">Corel Draw-tegning</comment>
@@ -594,6 +612,7 @@
     <comment xml:lang="pl">Rysunek Corel Draw</comment>
     <comment xml:lang="pt">desenho Corel Draw</comment>
     <comment xml:lang="pt_BR">Desenho do Corel Draw</comment>
+    <comment xml:lang="ru">изображение Corel Draw</comment>
     <comment xml:lang="sq">Vizatim Corel Draw</comment>
     <comment xml:lang="sr">Corel Draw цртеж</comment>
     <comment xml:lang="sv">Corel Draw-teckning</comment>
@@ -627,6 +646,7 @@
     <comment xml:lang="pl">Język grafiki HP (ploter)</comment>
     <comment xml:lang="pt">Linguagem de Gráficos HP (plotter)</comment>
     <comment xml:lang="pt_BR">Linguagem de Gráficos HP (plotter)</comment>
+    <comment xml:lang="ru">HP Graphics Language (плоттер)</comment>
     <comment xml:lang="sq">Gjuhë HP Graphics (plotter)</comment>
     <comment xml:lang="sr">ХП графички језик (плотер, HPGL)</comment>
     <comment xml:lang="sv">HP-grafikspråk (plotter)</comment>
@@ -637,7 +657,7 @@
   </mime-type>
   <mime-type type="application/vnd.hp-pcl">
     <comment>HP Printer Control Language file</comment>
-    <comment xml:lang="bg">Файл за принтер, формат HP·PCL</comment>
+    <comment xml:lang="bg">Файл за принтер, формат HP PCL</comment>
     <comment xml:lang="cs">Soubor HP Printer Control Language</comment>
     <comment xml:lang="da">HP Printer Control Language-fil</comment>
     <comment xml:lang="de">HP-Druckersteuerungs-Sprachdatei</comment>
@@ -657,6 +677,7 @@
     <comment xml:lang="pl">Plik języka sterowania drukarki HP</comment>
     <comment xml:lang="pt">ficheiro de Linguagem de Controlo de Impressora HP</comment>
     <comment xml:lang="pt_BR">Arquivo de Linguagem de Controle de Impressora HP</comment>
+    <comment xml:lang="ru">файл HP PCL (язык управления принтером Hewlett-Packard)</comment>
     <comment xml:lang="sq">File i gjuhës së kontrollit për Printer HP</comment>
     <comment xml:lang="sr">Датотека на језику за управљање ХП штампачима (PCL)</comment>
     <comment xml:lang="sv">HP Printer Control Language-fil</comment>
@@ -691,6 +712,7 @@
     <comment xml:lang="pl">Arkusz programu Lotus 1-2-3</comment>
     <comment xml:lang="pt">folha de cálculo Lotus 1-2-3</comment>
     <comment xml:lang="pt_BR">Planilha do Lotus 1-2-3</comment>
+    <comment xml:lang="ru">электронная таблица Lotus 1-2-3</comment>
     <comment xml:lang="sq">Fletë llogaritëse Lotus 1-2-3</comment>
     <comment xml:lang="sr">Lotus 1-2-3 табеларни прорачун</comment>
     <comment xml:lang="sv">Lotus 1-2-3-kalkylblad</comment>
@@ -709,10 +731,14 @@
   <mime-type type="application/vnd.mozilla.xul+xml">
     <sub-class-of type="text/xml"/>
     <comment>XML User Interface Language document</comment>
+    <comment xml:lang="bg">Описание на потребителски интерфейс, формат XML</comment>
     <comment xml:lang="cs">Dokument XML User Interface Language</comment>
     <comment xml:lang="fi">XML-käyttöliittymäkieli-asiakirja</comment>
+    <comment xml:lang="fr">document usager d'interface du langage XML</comment>
+    <comment xml:lang="ko">XML 사용자 인터페이스 언어 문서</comment>
     <comment xml:lang="nb">XML-dokument for brukergrensesnitt</comment>
     <comment xml:lang="nl">XML gebruikersinterfacetaal-document</comment>
+    <comment xml:lang="sr">документ корисничке спреге проширивог језика за означавање (XML)</comment>
     <glob pattern="*.xul"/>
   </mime-type>
   <mime-type type="application/vnd.ms-access">
@@ -748,6 +774,7 @@
     <comment xml:lang="pl">Arkusz kalkulacyjny Microsoft Excel</comment>
     <comment xml:lang="pt">folha de cálculo do Microsoft Excel</comment>
     <comment xml:lang="pt_BR">Planilha do Microsoft Excel</comment>
+    <comment xml:lang="ru">электронная таблица Microsoft Excel</comment>
     <comment xml:lang="sq">Fletë llogaritëse Microsoft Excel</comment>
     <comment xml:lang="sr">Микрософт Ексел табеларни прорачун</comment>
     <comment xml:lang="sv">Microsoft Excel-kalkylblad</comment>
@@ -791,6 +818,7 @@
     <comment xml:lang="pl">Prezentacja Microsoft PowerPoint</comment>
     <comment xml:lang="pt">apresentação do Microsoft PowerPoint</comment>
     <comment xml:lang="pt_BR">Apresentação do Microsoft PowerPoint</comment>
+    <comment xml:lang="ru">презентация Microsoft PowerPoint</comment>
     <comment xml:lang="sq">Prezantim Microsoft PowerPoint</comment>
     <comment xml:lang="sr">Микрософт ПауерПоинт презентација</comment>
     <comment xml:lang="sv">Microsoft PowerPoint-presentation</comment>
@@ -871,6 +899,7 @@
     <comment xml:lang="pl">Baza danych/dokument Palmpilota</comment>
     <comment xml:lang="pt">documento/base de dados da Palmpilot</comment>
     <comment xml:lang="pt_BR">Banco de Dados/Documento do Palmpilot</comment>
+    <comment xml:lang="ru">документ/база данных Palmpilot</comment>
     <comment xml:lang="sq">Dokument/databazë Palmpilot</comment>
     <comment xml:lang="sr">Палмпилот база/документ</comment>
     <comment xml:lang="sv">Palmpilot-databas/dokument</comment>
@@ -1173,6 +1202,7 @@
     <comment xml:lang="pl">Arkusz kalkulacyjny OpenOffice.org Calc</comment>
     <comment xml:lang="pt">folha de cálculo do OpenOffice.org Calc</comment>
     <comment xml:lang="pt_BR">Planilha do OpenOffice.org Calc</comment>
+    <comment xml:lang="ru">OpenOffice.org Calc электронная таблица</comment>
     <comment xml:lang="sq">Fletë llogaritëse e OpenOffice.org Calc</comment>
     <comment xml:lang="sr">OpenOffice.org табеларни рачун</comment>
     <comment xml:lang="sv">OpenOffice.org Calc-kalkylblad</comment>
@@ -1205,6 +1235,7 @@
     <comment xml:lang="pl">Szablon arkusza kalkulacyjnego OpenOffice.org Calc</comment>
     <comment xml:lang="pt">modelo de folha de cálculo do OpenOffice.org Calc</comment>
     <comment xml:lang="pt_BR">Modelo de planilha do OpenOffice.org Calc</comment>
+    <comment xml:lang="ru">шаблон электронной таблицы OpenOffice.org Calc</comment>
     <comment xml:lang="sq">Model flete llogaritëse OpenOffice.org Calc</comment>
     <comment xml:lang="sr">OpenOffice.org шаблон табеларног прорачуна</comment>
     <comment xml:lang="sv">OpenOffice.org Calc-kalkylbladsmall</comment>
@@ -1237,6 +1268,7 @@
     <comment xml:lang="pl">Rysunek OpenOffice.org Draw</comment>
     <comment xml:lang="pt">desenho do OpenOffice.org Draw</comment>
     <comment xml:lang="pt_BR">Desenho do OpenOffice.org Draw</comment>
+    <comment xml:lang="ru">изображение OpenOffice.org Draw</comment>
     <comment xml:lang="sq">Vizatim OpenOffice.org Draw</comment>
     <comment xml:lang="sr">OpenOffice.org цртеж</comment>
     <comment xml:lang="sv">OpenOffice.org Draw-teckning</comment>
@@ -1247,7 +1279,7 @@
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw.template">
     <comment>OpenOffice.org Draw drawing template</comment>
-    <comment xml:lang="bg">Шаблон за чертежи, формат OpenOffice.org·Draw</comment>
+    <comment xml:lang="bg">Шаблон за чертежи, формат OpenOffice.org Draw</comment>
     <comment xml:lang="cs">Šablona kresby OpenOffice.org Draw</comment>
     <comment xml:lang="da">OpenOffice.org Draw-tegningsskabelon</comment>
     <comment xml:lang="de">OpenOffice.org·Draw-Zeichnungsvorlage</comment>
@@ -1269,6 +1301,7 @@
     <comment xml:lang="pl">Szablon rysunku OpenOffice.org Draw</comment>
     <comment xml:lang="pt">modelo de desenho do OpenOffice.org Draw</comment>
     <comment xml:lang="pt_BR">Modelo de desenho do OpenOffice.org Draw</comment>
+    <comment xml:lang="ru">шаблон изображения OpenOffice.org Draw</comment>
     <comment xml:lang="sq">Model vizatimi OpenOffice.org Draw</comment>
     <comment xml:lang="sr">OpenOffice.org шаблон цртежа</comment>
     <comment xml:lang="sv">OpenOffice.org Draw-teckningsmall</comment>
@@ -1367,6 +1400,7 @@
     <comment xml:lang="pl">Formuła OpenOffice.org Math</comment>
     <comment xml:lang="pt">fórmula do OpenOffice.org Math</comment>
     <comment xml:lang="pt_BR">Fórmula do OpenOffice.org Math</comment>
+    <comment xml:lang="ru">формула OpenOffice.org Math</comment>
     <comment xml:lang="sq">Formulë OpenOffice.org Math</comment>
     <comment xml:lang="sr">OpenOffice.org Math документ</comment>
     <comment xml:lang="sv">OpenOffice.org Math-formel</comment>
@@ -1432,6 +1466,7 @@
     <comment xml:lang="pl">Globalny dokument OpenOffice.org Writer</comment>
     <comment xml:lang="pt">documento global do OpenOffice.org Writer</comment>
     <comment xml:lang="pt_BR">Documento global do OpenOffice.org Writer</comment>
+    <comment xml:lang="ru">основной документ OpenOffice.org Writer</comment>
     <comment xml:lang="sq">Dokument global OpenOffice.org Writer</comment>
     <comment xml:lang="sr">OpenOffice.org Writer глобални документ</comment>
     <comment xml:lang="sv">OpenOffice.org Writer-globaldokument</comment>
@@ -1475,112 +1510,182 @@
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text">
     <comment>OpenDocument Text</comment>
+    <comment xml:lang="bg">Документ, формат OpenDocument</comment>
     <comment xml:lang="cs">Text OpenDocument</comment>
     <comment xml:lang="fi">OpenDocument-teksti</comment>
+    <comment xml:lang="fr">OpenDocument Text</comment>
+    <comment xml:lang="ko">OpenDocument 텍스트</comment>
     <comment xml:lang="nl">OpenDocument-tekst</comment>
+    <comment xml:lang="ru">OpenDocument Текст</comment>
+    <comment xml:lang="sr">OpenDocument текст</comment>
     <comment xml:lang="zh_TW">OpenDocument 文書</comment>
     <glob pattern="*.odt"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-template">
     <comment>OpenDocument Text Template</comment>
+    <comment xml:lang="bg">Шаблон за документи, формат OpenDocument</comment>
     <comment xml:lang="cs">Šablona textu OpenDocument</comment>
     <comment xml:lang="fi">OpenDocument-tekstimalli</comment>
+    <comment xml:lang="fr">OpenDocument Text Template</comment>
+    <comment xml:lang="ko">OpenDocument 텍스트 문서틀</comment>
     <comment xml:lang="nl">OpenDocument sjabloon voor tekst</comment>
+    <comment xml:lang="ru">шаблон документа OpenDocument</comment>
+    <comment xml:lang="sr">OpenDocument шаблон текста</comment>
     <comment xml:lang="zh_TW">OpenDocument 文書範本</comment>
     <glob pattern="*.ott"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-web">
     <comment>OpenDocument HTML Document Template</comment>
+    <comment xml:lang="bg">Шаблон за документи на HTML, формат OpenDocument</comment>
     <comment xml:lang="cs">Šablona HTML dokumentu OpenDocument</comment>
     <comment xml:lang="fi">OpenDocument-HTML-asiakirjamalli</comment>
+    <comment xml:lang="fr">OpenDocument HTML Document Template</comment>
+    <comment xml:lang="ko">OpenDocument HTML 문서틀</comment>
     <comment xml:lang="nl">OpenDocument sjabloon voor HTML-document</comment>
+    <comment xml:lang="ru">шаблон документа OpenDocument HTML</comment>
+    <comment xml:lang="sr">OpenDocument шаблон HTML документа</comment>
     <comment xml:lang="zh_TW">OpenDocument HTML 文件範本</comment>
     <glob pattern="*.oth"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-master">
     <comment>OpenDocument Master Document</comment>
+    <comment xml:lang="bg">Обхващащ документ, формат OpenDocument</comment>
     <comment xml:lang="cs">Hlavní dokument OpenDocument</comment>
     <comment xml:lang="fi">OpenDocument-perusasiakirja</comment>
+    <comment xml:lang="fr">OpenDocument Master Document</comment>
+    <comment xml:lang="ko">OpenDocument Master 문서</comment>
+    <comment xml:lang="ru">Основной документ OpenDocument</comment>
+    <comment xml:lang="sr">OpenDocument главни документ</comment>
     <comment xml:lang="zh_TW">OpenDocument 主文件</comment>
     <glob pattern="*.odm"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.graphics">
     <comment>OpenDocument Drawing</comment>
+    <comment xml:lang="bg">Чертеж, формат OpenDocument</comment>
     <comment xml:lang="cs">Kresba OpenDocument</comment>
     <comment xml:lang="fi">OpenDocument-piirros</comment>
+    <comment xml:lang="fr">OpenDocument Drawing</comment>
+    <comment xml:lang="ko">OpenDocument 그림</comment>
     <comment xml:lang="nl">OpenDocument-tekening</comment>
+    <comment xml:lang="ru">Изображение OpenDocument</comment>
+    <comment xml:lang="sr">OpenDocument цртеж</comment>
     <comment xml:lang="zh_TW">OpenDocument 繪圖</comment>
     <glob pattern="*.odg"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.graphics-template">
     <comment>OpenDocument Drawing Template</comment>
+    <comment xml:lang="bg">Шаблон за чертежи, формат OpenDocument</comment>
     <comment xml:lang="cs">Šablona kresby OpenDocument</comment>
     <comment xml:lang="fi">OpenDocument-piirrosmalli</comment>
+    <comment xml:lang="fr">OpenDocument Drwaing Template</comment>
+    <comment xml:lang="ko">OpenDocument 그림틀</comment>
     <comment xml:lang="nl">OpenDocument sjabloon voor tekening</comment>
+    <comment xml:lang="ru">Шаблон изображения OpenDocument</comment>
+    <comment xml:lang="sr">OpenDocument шаблон цртежа</comment>
     <comment xml:lang="zh_TW">OpenDocument 繪圖範本</comment>
     <glob pattern="*.otg"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.presentation">
     <comment>OpenDocument Presentation</comment>
+    <comment xml:lang="bg">Презентация, формат OpenDocument</comment>
     <comment xml:lang="cs">Prezentace OpenDocument</comment>
     <comment xml:lang="fi">OpenDocument-esitys</comment>
+    <comment xml:lang="fr">OpenDocument Presentation</comment>
+    <comment xml:lang="ko">OpenDocument 프리젠테이션</comment>
     <comment xml:lang="nl">OpenDocument-presentatie</comment>
+    <comment xml:lang="ru">презентация OpenDocument</comment>
+    <comment xml:lang="sr">OpenDocument презентација</comment>
     <comment xml:lang="zh_TW">OpenDocument 簡報</comment>
     <glob pattern="*.odp"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.presentation-template">
     <comment>OpenDocument Presentation Template</comment>
+    <comment xml:lang="bg">Шаблон за презентации, формат OpenDocument</comment>
     <comment xml:lang="cs">Šablona prezentace OpenDocument</comment>
     <comment xml:lang="fi">OpenDocument-esitysmalli</comment>
+    <comment xml:lang="fr">OpenDOcument Presentation Template</comment>
+    <comment xml:lang="ko">OpenDocument 프리젠테이션 문서틀</comment>
     <comment xml:lang="nl">OpenDocument sjabloon voor presentatie</comment>
+    <comment xml:lang="ru">шаблон презентации OpenDocument</comment>
+    <comment xml:lang="sr">OpenDocument </comment>
     <comment xml:lang="zh_TW">OpenDocument 簡報範本</comment>
     <glob pattern="*.otp"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.spreadsheet">
     <comment>OpenDocument Spreadsheet</comment>
+    <comment xml:lang="bg">Таблица, формат OpenDocument</comment>
     <comment xml:lang="cs">Tabulka OpenDocument</comment>
     <comment xml:lang="fi">OpenDocument-taulukko</comment>
+    <comment xml:lang="fr">OpenDocument Spreadsheet</comment>
+    <comment xml:lang="ko">OpenDocument 스프레드시트</comment>
     <comment xml:lang="nl">OpenDocument-rekenblad</comment>
+    <comment xml:lang="ru">книга электронной таблицы OpenDocument</comment>
+    <comment xml:lang="sr">OpenDocument прорачунска табела</comment>
     <comment xml:lang="zh_TW">OpenDocument 試算表</comment>
     <glob pattern="*.ods"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.spreadsheet-template">
     <comment>OpenDocument Spreadsheet Template</comment>
+    <comment xml:lang="bg">Шаблон за таблици, формат OpenDocument</comment>
     <comment xml:lang="cs">Šablona tabulky OpenDocument</comment>
     <comment xml:lang="fi">OpenDocument-taulukkomalli</comment>
+    <comment xml:lang="fr">OpenDocument Spreadsheet Template</comment>
+    <comment xml:lang="ko">OpenDocument 스프레드시트 문서틀</comment>
     <comment xml:lang="nl">OpenDocument sjabloon voor rekenblad</comment>
+    <comment xml:lang="ru">OpenDocument Шаблон Электронной Таблицы</comment>
+    <comment xml:lang="sr">OpenDocument шаблон прорачунске табеле</comment>
     <comment xml:lang="zh_TW">OpenDocument 試算表範本</comment>
     <glob pattern="*.ots"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.chart">
     <comment>OpenDocument Chart</comment>
+    <comment xml:lang="bg">Чертеж, формат OpenDocument</comment>
     <comment xml:lang="cs">Graf OpenDocument</comment>
     <comment xml:lang="fi">OpenDocument-kaavio</comment>
+    <comment xml:lang="fr">OpenDocument Chart</comment>
+    <comment xml:lang="ko">OpenDocument 챠트</comment>
     <comment xml:lang="nl">OpenDocument-grafiek</comment>
+    <comment xml:lang="ru">Диаграмма OpenDocument</comment>
+    <comment xml:lang="sr">OpenDocument графикон</comment>
     <comment xml:lang="zh_TW">OpenDocument 圖表</comment>
     <glob pattern="*.odc"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.formula">
     <comment>OpenDocument Formula</comment>
+    <comment xml:lang="bg">Формула, формат OpenDocument</comment>
     <comment xml:lang="cs">Vzorec OpenDocument</comment>
     <comment xml:lang="fi">OpenDocument-kaava</comment>
+    <comment xml:lang="fr">OpenDocument Formula</comment>
+    <comment xml:lang="ko">OpenDocument 수식</comment>
     <comment xml:lang="nl">OpenDocument-formule</comment>
+    <comment xml:lang="ru">OpenDocument Формула</comment>
+    <comment xml:lang="sr">OpenDocument формула</comment>
     <comment xml:lang="zh_TW">OpenDocument 算式</comment>
     <glob pattern="*.odf"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.database">
     <comment>OpenDocument Database</comment>
+    <comment xml:lang="bg">База от данни, формат OpenDocument</comment>
     <comment xml:lang="cs">Databáze OpenDocument</comment>
     <comment xml:lang="fi">OpenDocument-tietokanta</comment>
+    <comment xml:lang="fr">OpenDucument Database</comment>
+    <comment xml:lang="ko">OpenDocument 데이터베이스</comment>
     <comment xml:lang="nl">OpenDocument-gegevensbank</comment>
+    <comment xml:lang="ru">база данных OpenDocument</comment>
+    <comment xml:lang="sr">OpenDocument база података</comment>
     <comment xml:lang="zh_TW">OpenDocument 數據庫</comment>
     <glob pattern="*.odb"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.image">
     <comment>OpenDocument Image</comment>
+    <comment xml:lang="bg">Изображение, формат OpenDocument</comment>
     <comment xml:lang="cs">Obrázek OpenDocument</comment>
     <comment xml:lang="fi">OpenDocument-kuva</comment>
+    <comment xml:lang="fr">OpenDocument Image</comment>
+    <comment xml:lang="ko">OpenDocument 그림</comment>
     <comment xml:lang="nl">OpenDocument-afbeelding</comment>
+    <comment xml:lang="ru">OpenDocument Изображение</comment>
+    <comment xml:lang="sr">OpenDocument снимак</comment>
     <comment xml:lang="zh_TW">OpenDocument 圖片</comment>
     <glob pattern="*.odi"/>
   </mime-type>
@@ -1713,7 +1818,7 @@
   <mime-type type="application/x-amipro">
     <comment>Lotus AmiPro document</comment>
     <comment xml:lang="az">Lotus AmiPro sənədi</comment>
-    <comment xml:lang="bg">Документ, формат Lotus·AmiPro</comment>
+    <comment xml:lang="bg">Документ, формат Lotus AmiPro</comment>
     <comment xml:lang="cs">Dokument Lotus AmiPro</comment>
     <comment xml:lang="cy">Dogfen Lotus AmiPro</comment>
     <comment xml:lang="da">Lotus AmiPro-dokument</comment>
@@ -1747,7 +1852,7 @@
   </mime-type>
   <mime-type type="application/x-applix-spreadsheet">
     <comment>Applix Spreadsheets spreadsheet</comment>
-    <comment xml:lang="bg">Таблица, формат Applix·Spreadsheets</comment>
+    <comment xml:lang="bg">Таблица, формат Applix Spreadsheets</comment>
     <comment xml:lang="cs">Tabulka Applix Spreadsheets</comment>
     <comment xml:lang="da">Applix Spreadsheets-regneark</comment>
     <comment xml:lang="de">Applix Spreadsheets-Tabellendokument</comment>
@@ -1769,6 +1874,7 @@
     <comment xml:lang="pl">Arkusz Applix Spreadsheets</comment>
     <comment xml:lang="pt">folha de cálculo Applix Spreadsheets</comment>
     <comment xml:lang="pt_BR">Planilha do Applix Spreadsheets</comment>
+    <comment xml:lang="ru">электронная таблица Applix Spreadsheets</comment>
     <comment xml:lang="sq">Fletë llogaritjesh Applix Spreadsheets</comment>
     <comment xml:lang="sr">Applix табеларни документ</comment>
     <comment xml:lang="sv">Applix Spreadsheets-kalkylblad</comment>
@@ -1786,7 +1892,7 @@
   <mime-type type="application/x-applix-word">
     <comment>Applix Words document</comment>
     <comment xml:lang="az">Applix Words sənədi</comment>
-    <comment xml:lang="bg">Документ, формат Applix·Words</comment>
+    <comment xml:lang="bg">Документ, формат Applix Words</comment>
     <comment xml:lang="cs">Dokument Applix Words</comment>
     <comment xml:lang="cy">Dogfen Applix Words</comment>
     <comment xml:lang="da">Applix Words-dokument</comment>
@@ -1809,6 +1915,7 @@
     <comment xml:lang="pl">Dokument Applix Words</comment>
     <comment xml:lang="pt">documento Applix Words</comment>
     <comment xml:lang="pt_BR">Documento do Applix Words</comment>
+    <comment xml:lang="ru">документ Applix Words</comment>
     <comment xml:lang="sq">Dokument Applix Words</comment>
     <comment xml:lang="sr">Applix Words документ</comment>
     <comment xml:lang="sv">Applix Words-dokument</comment>
@@ -1856,6 +1963,7 @@
     <comment xml:lang="pl">Archiwum AR</comment>
     <comment xml:lang="pt">arquivo AR</comment>
     <comment xml:lang="pt_BR">Arquivo AR</comment>
+    <comment xml:lang="ru">архив AR</comment>
     <comment xml:lang="sq">Arkiv AR</comment>
     <comment xml:lang="sr">АР архива</comment>
     <comment xml:lang="sv">AR-arkiv</comment>
@@ -1910,7 +2018,7 @@
     <sub-class-of type="text/plain"/>
     <comment>active server page</comment>
     <comment xml:lang="az">active server page sənədi</comment>
-    <comment xml:lang="bg">Страница, формат Active·Server</comment>
+    <comment xml:lang="bg">Страница, формат Active Server</comment>
     <comment xml:lang="cs">Active server page</comment>
     <comment xml:lang="cy">tudalen ASP</comment>
     <comment xml:lang="da">aktiv serverside</comment>
@@ -1967,6 +2075,7 @@
     <comment xml:lang="pl">Skrypt AWK</comment>
     <comment xml:lang="pt">'script' AWK</comment>
     <comment xml:lang="pt_BR">Script AWK</comment>
+    <comment xml:lang="ru">скрипт AWK</comment>
     <comment xml:lang="sq">Script AWK</comment>
     <comment xml:lang="sr">AWK скрипта</comment>
     <comment xml:lang="sv">AWK-skript</comment>
@@ -2012,6 +2121,7 @@
     <comment xml:lang="pl">Dokument BCPIO</comment>
     <comment xml:lang="pt">documento BCPIO</comment>
     <comment xml:lang="pt_BR">Documento BCPIO</comment>
+    <comment xml:lang="ru">документ BCPIO</comment>
     <comment xml:lang="sq">Dokument BCPIO</comment>
     <comment xml:lang="sr">BCPIO документ</comment>
     <comment xml:lang="sv">BCPIO-dokument</comment>
@@ -2046,6 +2156,7 @@
     <comment xml:lang="pl">Plik ziarna Bittorrent</comment>
     <comment xml:lang="pt">ficheiro de origem BitTorrent</comment>
     <comment xml:lang="pt_BR">Arquivo semente BitTorrent</comment>
+    <comment xml:lang="ru">файл источника BitTorrent</comment>
     <comment xml:lang="sq">File bazë BitTorrent</comment>
     <comment xml:lang="sr">Датотека са БитТорентовим полазиштима</comment>
     <comment xml:lang="sv">BitTorrent-fröfil</comment>
@@ -2081,6 +2192,7 @@
     <comment xml:lang="pl">Scena programu Blender</comment>
     <comment xml:lang="pt">cenário Blender</comment>
     <comment xml:lang="pt_BR">Cena do Blender</comment>
+    <comment xml:lang="ru">сцена Blender</comment>
     <comment xml:lang="sq">Skenë Blender</comment>
     <comment xml:lang="sr">Блендер сцена</comment>
     <comment xml:lang="sv">Blender-scen</comment>
@@ -2164,7 +2276,7 @@
   </mime-type>
   <mime-type type="application/x-cd-image">
     <comment>raw CD image</comment>
-    <comment xml:lang="bg">Изображение, формат raw·CD</comment>
+    <comment xml:lang="bg">Изображение, формат raw CD</comment>
     <comment xml:lang="cs">Obraz CD</comment>
     <comment xml:lang="da">rå CD-aftryk</comment>
     <comment xml:lang="de">CD-Roh-Image</comment>
@@ -2217,6 +2329,7 @@
     <comment xml:lang="pl">Skrypt CGI</comment>
     <comment xml:lang="pt">'script' CGI</comment>
     <comment xml:lang="pt_BR">Script CGI</comment>
+    <comment xml:lang="ru">CGI скрипт</comment>
     <comment xml:lang="sq">Script CGI</comment>
     <comment xml:lang="sr">CGI скрипта</comment>
     <comment xml:lang="sv">CGI-skript</comment>
@@ -2251,6 +2364,7 @@
     <comment xml:lang="pl">Plik PGN (gra w szachy)</comment>
     <comment xml:lang="pt">jogo de xadrês PGN</comment>
     <comment xml:lang="pt_BR">Jogo de xadrez PGN</comment>
+    <comment xml:lang="ru">шахматная партия PGN</comment>
     <comment xml:lang="sq">Lojë shahu PGN</comment>
     <comment xml:lang="sr">PGN шаховска игра</comment>
     <comment xml:lang="sv">PGN-schackparti</comment>
@@ -2289,6 +2403,7 @@
     <comment xml:lang="pl">Kod bajtowy Javy</comment>
     <comment xml:lang="pt">'byte-code' Java</comment>
     <comment xml:lang="pt_BR">Código compilado Java</comment>
+    <comment xml:lang="ru">байт-код Java</comment>
     <comment xml:lang="sq">Byte code Java</comment>
     <comment xml:lang="sr">Јава бајтни ко̂д</comment>
     <comment xml:lang="sv">Java-bytekod</comment>
@@ -2474,6 +2589,7 @@
     <comment xml:lang="pl">Archiwum CPIO (kompresja gzip)</comment>
     <comment xml:lang="pt">arquivo CPIO (comprimido com gzip)</comment>
     <comment xml:lang="pt_BR">Arquivo CPIO (compactado com gzip)</comment>
+    <comment xml:lang="ru">архив CPIO (сжатый gzip)</comment>
     <comment xml:lang="sq">Arkiv CPIO (kompresuar me gzip)</comment>
     <comment xml:lang="sr">CPIO архива (компресована gzip-ом)</comment>
     <comment xml:lang="sv">CPIO-arkiv (gzip-komprimerat)</comment>
@@ -2510,6 +2626,7 @@
     <comment xml:lang="pl">Skrypt powłoki csh</comment>
     <comment xml:lang="pt">'script' de consola C</comment>
     <comment xml:lang="pt_BR">Script de shell C</comment>
+    <comment xml:lang="ru">C shell скрипт</comment>
     <comment xml:lang="sq">Script shell C</comment>
     <comment xml:lang="sr">C скрипта окружења</comment>
     <comment xml:lang="sv">Skalskript (csh)</comment>
@@ -2586,6 +2703,7 @@
     <comment xml:lang="pl">Dreamcast - plik z ROM-em</comment>
     <comment xml:lang="pt">ROM Dreamcast</comment>
     <comment xml:lang="pt_BR">ROM do Dreamcast</comment>
+    <comment xml:lang="ru">Dreamcast ROM </comment>
     <comment xml:lang="sq">ROM Dreamcast</comment>
     <comment xml:lang="sr">Dreamcast ROM</comment>
     <comment xml:lang="sv">Dreamcast-rom</comment>
@@ -2636,7 +2754,7 @@
   </mime-type>
   <mime-type type="application/x-designer">
     <comment>Qt Designer file</comment>
-    <comment xml:lang="bg">Файл, формат Qt·Designer</comment>
+    <comment xml:lang="bg">Файл, формат Qt Designer</comment>
     <comment xml:lang="cs">Soubor Qt Designeru</comment>
     <comment xml:lang="da">Qt Designer-fil</comment>
     <comment xml:lang="de">QT Designer-Datei</comment>
@@ -2658,6 +2776,7 @@
     <comment xml:lang="pl">Plik Qt Designera</comment>
     <comment xml:lang="pt">ficheiro do Qt Designer</comment>
     <comment xml:lang="pt_BR">Arquivo do Qt Designer</comment>
+    <comment xml:lang="ru">файл Qt Designer</comment>
     <comment xml:lang="sq">File Qt Designer</comment>
     <comment xml:lang="sr">Qt Designer датотека</comment>
     <comment xml:lang="sv">Qt Designer-fil</comment>
@@ -2743,7 +2862,7 @@
   </mime-type>
   <mime-type type="application/x-dvi">
     <comment>TeX DVI document</comment>
-    <comment xml:lang="bg">Документ, формат TeX·DVI</comment>
+    <comment xml:lang="bg">Документ, формат TeX DVI</comment>
     <comment xml:lang="cs">Dokument TeX DVI</comment>
     <comment xml:lang="da">TeX DVI-dokument</comment>
     <comment xml:lang="de">TeX-DVI-Dokument</comment>
@@ -2802,6 +2921,7 @@
     <comment xml:lang="pl">Motyw Enlightenmenta</comment>
     <comment xml:lang="pt">tema Enlightenment</comment>
     <comment xml:lang="pt_BR">Tema do Enlightenment</comment>
+    <comment xml:lang="ru">темя для Enlightenment</comment>
     <comment xml:lang="sq">Tema Enlightenment</comment>
     <comment xml:lang="sr">Enlightenment тема</comment>
     <comment xml:lang="sv">Enlightenment-tema</comment>
@@ -2812,7 +2932,7 @@
   </mime-type>
   <mime-type type="application/x-egon">
     <comment>Egon Animator animation</comment>
-    <comment xml:lang="bg">Анимация, формат Egon·Animator</comment>
+    <comment xml:lang="bg">Анимация, формат Egon Animator</comment>
     <comment xml:lang="cs">Animace Egon Animator</comment>
     <comment xml:lang="da">Egon Animator-animation</comment>
     <comment xml:lang="de">Egon Animator-Animation</comment>
@@ -2834,6 +2954,7 @@
     <comment xml:lang="pl">Animacja Egon Animator</comment>
     <comment xml:lang="pt">animação Egon Animator</comment>
     <comment xml:lang="pt_BR">Animação do Egon Animator</comment>
+    <comment xml:lang="ru">анимация Egon Animator</comment>
     <comment xml:lang="sq">Animim Egon Animator</comment>
     <comment xml:lang="sr">Егон аниматор анимација</comment>
     <comment xml:lang="sv">Egon Animator-animation</comment>
@@ -2962,6 +3083,7 @@
     <comment xml:lang="pl">Metryka czcionki Adobe</comment>
     <comment xml:lang="pt">métrica de tipos de letra Adobe</comment>
     <comment xml:lang="pt_BR">Métricas de fonte Adobe</comment>
+    <comment xml:lang="ru">метрики шрифта Adobe</comment>
     <comment xml:lang="sq">Gërma Adobe metrics</comment>
     <comment xml:lang="sr">Adobe метрика фонта</comment>
     <comment xml:lang="sv">Adobe-typsnittsmetrik</comment>
@@ -2995,6 +3117,7 @@
     <comment xml:lang="pl">Czcionka BDF</comment>
     <comment xml:lang="pt">tipo de letra BDF</comment>
     <comment xml:lang="pt_BR">Fonte BDF</comment>
+    <comment xml:lang="ru">шрифт BDF</comment>
     <comment xml:lang="sq">Gërma BDF</comment>
     <comment xml:lang="sr">BDF фонт</comment>
     <comment xml:lang="sv">BDF-typsnitt</comment>
@@ -3032,6 +3155,7 @@
     <comment xml:lang="pl">Czcionka DOS</comment>
     <comment xml:lang="pt">tipo de letra DOS</comment>
     <comment xml:lang="pt_BR">Fonte do DOS</comment>
+    <comment xml:lang="ru">шрифт DOS</comment>
     <comment xml:lang="sq">Gërmë DOS</comment>
     <comment xml:lang="sr">DOS фонт</comment>
     <comment xml:lang="sv">DOS-typsnitt</comment>
@@ -3070,6 +3194,7 @@
     <comment xml:lang="pl">Czcionka Adobe FrameMakera</comment>
     <comment xml:lang="pt">tipo de letra Adobe FrameMaker</comment>
     <comment xml:lang="pt_BR">Fonte do Adobe FrameMaker</comment>
+    <comment xml:lang="ru">шрифт Adobe FrameMaker</comment>
     <comment xml:lang="sq">Gërma Adobe FrameMaker</comment>
     <comment xml:lang="sr">Adobe FrameMaker фонт</comment>
     <comment xml:lang="sv">Adobe FrameMaker-typsnitt</comment>
@@ -3106,6 +3231,7 @@
     <comment xml:lang="pl">Czcionka LIBGRX</comment>
     <comment xml:lang="pt">tipo de letra LIBGRX</comment>
     <comment xml:lang="pt_BR">Fonte LIBGRX</comment>
+    <comment xml:lang="ru">шрифт LIBGRX</comment>
     <comment xml:lang="sq">Gërma LIBGRX</comment>
     <comment xml:lang="sr">LIBGRX фонт</comment>
     <comment xml:lang="sv">LIBGRX-typsnitt</comment>
@@ -3142,6 +3268,7 @@
     <comment xml:lang="pl">Czcionka konsoli PSF Linuksa</comment>
     <comment xml:lang="pt">tipo de letra de consola Linux PSF</comment>
     <comment xml:lang="pt_BR">Fonte de console Linux PSF</comment>
+    <comment xml:lang="ru">консольный PSF шрифт Linux</comment>
     <comment xml:lang="sq">Gërma për konsolë Linux PSF</comment>
     <comment xml:lang="sr">Линукс PSF конзолни фонт</comment>
     <comment xml:lang="sv">Linux PSF-konsolltypsnitt</comment>
@@ -3179,6 +3306,7 @@
     <comment xml:lang="pl">Czcionka PCF</comment>
     <comment xml:lang="pt">tipo de letra PCF</comment>
     <comment xml:lang="pt_BR">Fonte PCF</comment>
+    <comment xml:lang="ru">шрифт PCF</comment>
     <comment xml:lang="sq">Gërma PCF</comment>
     <comment xml:lang="sr">PCF фонт</comment>
     <comment xml:lang="sv">PCF-typsnitt</comment>
@@ -3216,6 +3344,7 @@
     <comment xml:lang="pl">Czcionka OpenType</comment>
     <comment xml:lang="pt">tipo de letra OpenType</comment>
     <comment xml:lang="pt_BR">Fonte OpenType</comment>
+    <comment xml:lang="ru">шрифт OpenType</comment>
     <comment xml:lang="sq">Gërma OpenType</comment>
     <comment xml:lang="sr">OpenType фонт</comment>
     <comment xml:lang="sv">OpenType-typsnitt</comment>
@@ -3266,7 +3395,7 @@
   <mime-type type="application/x-font-sunos-news">
     <comment>SunOS News font</comment>
     <comment xml:lang="az">SunOS News yazı növü</comment>
-    <comment xml:lang="bg">Шрифт, формат SunOS·News</comment>
+    <comment xml:lang="bg">Шрифт, формат SunOS News</comment>
     <comment xml:lang="cs">Písmo SunOS News</comment>
     <comment xml:lang="cy">Ffont SunOS News</comment>
     <comment xml:lang="da">SunOS News-skrifttype</comment>
@@ -3484,6 +3613,7 @@
     <comment xml:lang="pl">Game Boy - plik z ROM-em</comment>
     <comment xml:lang="pt">ROM Game Boy</comment>
     <comment xml:lang="pt_BR">ROM do Game Boy</comment>
+    <comment xml:lang="ru">ROM для приставки Game Boy</comment>
     <comment xml:lang="sq">ROM Game Boy</comment>
     <comment xml:lang="sr">Гејмбој РОМ</comment>
     <comment xml:lang="sv">Game Boy-rom</comment>
@@ -3523,6 +3653,7 @@
     <comment xml:lang="pl">Genesis - plik z ROM-em</comment>
     <comment xml:lang="pt">ROM Genesis</comment>
     <comment xml:lang="pt_BR">ROM do Gênesis (Mega Drive)</comment>
+    <comment xml:lang="ru">Genesis ROM </comment>
     <comment xml:lang="sq">ROM Genesis</comment>
     <comment xml:lang="sr">Genesis РОМ</comment>
     <comment xml:lang="sv">Genesis-rom</comment>
@@ -3591,6 +3722,7 @@
     <comment xml:lang="pl">Projekt Glade</comment>
     <comment xml:lang="pt">projecto Glade</comment>
     <comment xml:lang="pt_BR">Projeto do Glade</comment>
+    <comment xml:lang="ru">Проект Glade</comment>
     <comment xml:lang="sq">Projekt Glade</comment>
     <comment xml:lang="sr">Глејд пројекат</comment>
     <comment xml:lang="sv">Glade-projekt</comment>
@@ -3625,6 +3757,7 @@
     <comment xml:lang="pl">Odnośnik GMC</comment>
     <comment xml:lang="pt">'link' GMC</comment>
     <comment xml:lang="pt_BR">Link GMC</comment>
+    <comment xml:lang="ru">GMC ссылка</comment>
     <comment xml:lang="sq">Lidhje GMC</comment>
     <comment xml:lang="sr">GMC веза</comment>
     <comment xml:lang="sv">GMC-länk</comment>
@@ -3659,6 +3792,7 @@
     <comment xml:lang="pl">Arkusz kalkulacyjny GnuCash</comment>
     <comment xml:lang="pt">folha de cálculo GnuCash</comment>
     <comment xml:lang="pt_BR">Planilha do GnuCash</comment>
+    <comment xml:lang="ru">электронная таблица GnuCash</comment>
     <comment xml:lang="sq">Fletë llogaritëse GnuCash</comment>
     <comment xml:lang="sr">ГнуКеш табеларни прорачун</comment>
     <comment xml:lang="sv">GnuCash-kalkylblad</comment>
@@ -3865,6 +3999,7 @@
     <comment xml:lang="pl">Dokument Postscript (kompresja gzip)</comment>
     <comment xml:lang="pt">documento PostScript (comprimido com gzip)</comment>
     <comment xml:lang="pt_BR">Documento PostScript (compactado com gzip)</comment>
+    <comment xml:lang="ru">документ PostScript (сжатый gzip)</comment>
     <comment xml:lang="sq">Dokument PostScript (i kompresuar me gzip)</comment>
     <comment xml:lang="sr">Постскрипт документ (компресована gzip-ом)</comment>
     <comment xml:lang="sv">Postscript-dokument (gzip-komprimerat)</comment>
@@ -3899,6 +4034,7 @@
     <comment xml:lang="pl">Dokument HDF</comment>
     <comment xml:lang="pt">documento HDF</comment>
     <comment xml:lang="pt_BR">Documento HDF</comment>
+    <comment xml:lang="ru">документ HDF</comment>
     <comment xml:lang="sq">Dokument HDF</comment>
     <comment xml:lang="sr">HDF документ</comment>
     <comment xml:lang="sv">HDF-dokument</comment>
@@ -3998,6 +4134,7 @@
     <comment xml:lang="pl">Klasa Java</comment>
     <comment xml:lang="pt">classe Java</comment>
     <comment xml:lang="pt_BR">Classe Java</comment>
+    <comment xml:lang="ru">класс Java</comment>
     <comment xml:lang="sq">Klasë Java</comment>
     <comment xml:lang="sr">Јава класа</comment>
     <comment xml:lang="sv">Java-klass</comment>
@@ -4014,10 +4151,14 @@
   <mime-type type="application/x-java-jnlp-file">
     <sub-class-of type="text/xml"/>
     <comment>Java Network Launched Application</comment>
+    <comment xml:lang="bg">Мрежови стартер за Java</comment>
     <comment xml:lang="cs">Aplikace v Javě spouštěná ze sítě</comment>
     <comment xml:lang="fi">Verkosta käynnistettävä Java-sovellus</comment>
+    <comment xml:lang="fr">Application JAVA exécutée à travers le réseau</comment>
+    <comment xml:lang="ko">자바 네트워크 실행 프로그램</comment>
     <comment xml:lang="nb">Java-program startet over nettverket</comment>
     <comment xml:lang="nl">Over het netwerk gestarte Java-toepassing</comment>
+    <comment xml:lang="sr">Мрежно покренута Јава апликација</comment>
     <glob pattern="*.jnlp"/>
     <magic priority="50">
       <match value="&lt;jnlp" type="string" offset="0:64"/>
@@ -4047,6 +4188,7 @@
     <comment xml:lang="pl">Pogram Javascript</comment>
     <comment xml:lang="pt">programa Javascript</comment>
     <comment xml:lang="pt_BR">Programa Javascript</comment>
+    <comment xml:lang="ru">программа Javascript</comment>
     <comment xml:lang="sq">program Javascript</comment>
     <comment xml:lang="sr">Јаваскрипт програм</comment>
     <comment xml:lang="sv">Javascript-program</comment>
@@ -4113,6 +4255,7 @@
     <comment xml:lang="pl">Rysunek Karbon14</comment>
     <comment xml:lang="pt">desenho Karbon14</comment>
     <comment xml:lang="pt_BR">Desenho do Karbon14</comment>
+    <comment xml:lang="ru">изображение Karbon14</comment>
     <comment xml:lang="sq">Vizatim Karbon14</comment>
     <comment xml:lang="sr">Karbon14 цртеж</comment>
     <comment xml:lang="sv">Karbon14-teckning</comment>
@@ -4247,6 +4390,7 @@
     <comment xml:lang="pl">Rysunek KIllustratora</comment>
     <comment xml:lang="pt">desenho KIllustrator</comment>
     <comment xml:lang="pt_BR">Desenho do KIllustrator</comment>
+    <comment xml:lang="ru">изображение KIllustrator</comment>
     <comment xml:lang="sq">Vizatim KIllustrator</comment>
     <comment xml:lang="sr">KIllustrator цртеж</comment>
     <comment xml:lang="sv">KIllustrator-teckning</comment>
@@ -4286,6 +4430,7 @@
     <comment xml:lang="pl">Diagram przepływów Kivio</comment>
     <comment xml:lang="pt">gráfico de fluxo Kivio</comment>
     <comment xml:lang="pt_BR">Fluxograma do Kivio</comment>
+    <comment xml:lang="ru">рисунок Kivio</comment>
     <comment xml:lang="sq">Diagramë Kivio</comment>
     <comment xml:lang="sr">Kivio дијаграм</comment>
     <comment xml:lang="sv">Kivio-flödesschema</comment>
@@ -4330,6 +4475,7 @@
     <comment xml:lang="pl">Rysunek Kontour</comment>
     <comment xml:lang="pt">desenho Kontour</comment>
     <comment xml:lang="pt_BR">Desenho do Kontour</comment>
+    <comment xml:lang="ru">изображение Kontour</comment>
     <comment xml:lang="sq">Vizatim Kontour</comment>
     <comment xml:lang="sr">Kontour цртеж</comment>
     <comment xml:lang="sv">Kontour-teckning</comment>
@@ -4373,6 +4519,7 @@
     <comment xml:lang="pl">Scena KPovModeler</comment>
     <comment xml:lang="pt">cenário KPovModeler</comment>
     <comment xml:lang="pt_BR">Cena do KPovModeler</comment>
+    <comment xml:lang="ru">сцена KPovModeler</comment>
     <comment xml:lang="sq">Skenë KPovModeler</comment>
     <comment xml:lang="sr">KPovModeler сцена</comment>
     <comment xml:lang="sv">KPovModeler-scen</comment>
@@ -4404,6 +4551,7 @@
     <comment xml:lang="pl">Prezentacja programu KPresenter</comment>
     <comment xml:lang="pt">apresentação KPresenter</comment>
     <comment xml:lang="pt_BR">Apresentação do KPresenter</comment>
+    <comment xml:lang="ru">презентация KPresenter</comment>
     <comment xml:lang="sq">Prezantim i KPresenter</comment>
     <comment xml:lang="sr">KPresenter презентација</comment>
     <comment xml:lang="sv">KPresenter-presentation</comment>
@@ -4449,6 +4597,7 @@
     <comment xml:lang="pl">Dokument Krita</comment>
     <comment xml:lang="pt">documento Krita</comment>
     <comment xml:lang="pt_BR">Documento do Krita</comment>
+    <comment xml:lang="ru">документ Krita</comment>
     <comment xml:lang="sq">Dokument Krita</comment>
     <comment xml:lang="sr">Krita документ</comment>
     <comment xml:lang="sv">Krita-dokument</comment>
@@ -4493,6 +4642,7 @@
     <comment xml:lang="pl">Arkusz programu KSpread</comment>
     <comment xml:lang="pt">folha de cálculo KSpread</comment>
     <comment xml:lang="pt_BR">Planilha do KSpread</comment>
+    <comment xml:lang="ru">электронная таблица KSpread</comment>
     <comment xml:lang="sq">Fletë llogaritëse KSpread</comment>
     <comment xml:lang="sr">KSpread табеларни прорачун</comment>
     <comment xml:lang="sv">KSpread-kalkylblad</comment>
@@ -4537,6 +4687,7 @@
     <comment xml:lang="pl">Arkusz programu KSpread (zaszyfowany)</comment>
     <comment xml:lang="pt">folha de cálculo KSpread (cifrada)</comment>
     <comment xml:lang="pt_BR">Planilha do KSpread (criptografada)</comment>
+    <comment xml:lang="ru">электронная таблица KSpread (зашифрованная)</comment>
     <comment xml:lang="sq">Fletë llogaritëse KSpread (e kriptuar)</comment>
     <comment xml:lang="sr">KSpread табеларни прорачун (шифровани)</comment>
     <comment xml:lang="sv">KSpread-kalkylblad (krypterat)</comment>
@@ -4656,6 +4807,7 @@
     <comment xml:lang="pl">Dokument KWord (zaszyfrowany)</comment>
     <comment xml:lang="pt">documento KWord (cifrado)</comment>
     <comment xml:lang="pt_BR">Documento do KWord (criptografado)</comment>
+    <comment xml:lang="ru">документ KWord (зашифрованный)</comment>
     <comment xml:lang="sq">Dokument KWord (i kriptuar)</comment>
     <comment xml:lang="sr">KWord документ (шифровани)</comment>
     <comment xml:lang="sv">KWord-dokument (krypterat)</comment>
@@ -4803,6 +4955,7 @@
     <comment xml:lang="pl">Dokument LyXa</comment>
     <comment xml:lang="pt">documento LyX</comment>
     <comment xml:lang="pt_BR">Documento LyX</comment>
+    <comment xml:lang="ru">документ LyX</comment>
     <comment xml:lang="sq">Dokument LyX</comment>
     <comment xml:lang="sr">LyX документ</comment>
     <comment xml:lang="sv">LyX-dokument</comment>
@@ -4873,6 +5026,7 @@
     <comment xml:lang="pl">Prezentacja programu MagicPoint</comment>
     <comment xml:lang="pt">apresentação MagicPoint</comment>
     <comment xml:lang="pt_BR">Apresentação do MagicPoint</comment>
+    <comment xml:lang="ru">презентация MagicPoint</comment>
     <comment xml:lang="sq">Prezantim MagicPoint</comment>
     <comment xml:lang="sr">MagicPoint презентација</comment>
     <comment xml:lang="sv">MagicPoint-presentation</comment>
@@ -4905,6 +5059,7 @@
     <comment xml:lang="pl">Plik MacBinary Macintosha</comment>
     <comment xml:lang="pt">ficheiro MacBinary de Macintosh</comment>
     <comment xml:lang="pt_BR">Arquivo do Macintosh MacBinary</comment>
+    <comment xml:lang="ru">Macintosh MacBinary файл</comment>
     <comment xml:lang="sq">File MacBinary Macintosh</comment>
     <comment xml:lang="sr">Мекинтош MacBinary датотека</comment>
     <comment xml:lang="sv">Macintosh MacBinary-fil</comment>
@@ -4939,6 +5094,7 @@
     <comment xml:lang="pl">Plik wideo Matroska</comment>
     <comment xml:lang="pt">vídeo Matroska</comment>
     <comment xml:lang="pt_BR">Vídeo Matroska</comment>
+    <comment xml:lang="ru">Matroska видео</comment>
     <comment xml:lang="sq">Video Matroska</comment>
     <comment xml:lang="sr">Матрошка видео</comment>
     <comment xml:lang="sv">Matroska-video</comment>
@@ -4952,7 +5108,7 @@
   </mime-type>
   <mime-type type="application/x-mif">
     <comment>FrameMaker MIF document</comment>
-    <comment xml:lang="bg">Документ, формат FrameMaker·MIF</comment>
+    <comment xml:lang="bg">Документ, формат FrameMaker MIF</comment>
     <comment xml:lang="cs">Dokument FrameMaker MIF</comment>
     <comment xml:lang="da">FrameMaker MIF-dokument</comment>
     <comment xml:lang="de">FrameMaker-MIF-Dokument</comment>
@@ -4974,6 +5130,7 @@
     <comment xml:lang="pl">Dokument MIF FrameMakera</comment>
     <comment xml:lang="pt">documento MIF do FrameMaker</comment>
     <comment xml:lang="pt_BR">Documento MIF do FrameMaker</comment>
+    <comment xml:lang="ru">документ FrameMaker MIF</comment>
     <comment xml:lang="sq">Dokument FrameMaker MIF</comment>
     <comment xml:lang="sr">FrameMaker MIF документ</comment>
     <comment xml:lang="sv">FrameMaker MIF-dokument</comment>
@@ -5041,8 +5198,9 @@
     <comment xml:lang="pl">Program DOS/Windows</comment>
     <comment xml:lang="pt">executável DOS/Windows</comment>
     <comment xml:lang="pt_BR">Executável do DOS/Windows</comment>
+    <comment xml:lang="ru">исполняемый файл DOS/Windows</comment>
     <comment xml:lang="sq">I ekzekutueshëm DOS/Windows</comment>
-    <comment xml:lang="sr">ДОС/Виндуз извршна датотека</comment>
+    <comment xml:lang="sr">ДОС/Виндоуз извршна датотека</comment>
     <comment xml:lang="sv">Körbar DOS/Windows-fil</comment>
     <comment xml:lang="uk">Виконуваний файл DOS/Windows</comment>
     <comment xml:lang="zh_CN">DOS/Windows 可执行文件</comment>
@@ -5060,7 +5218,7 @@
   <mime-type type="application/x-mswrite">
     <comment>Microsoft Write document</comment>
     <comment xml:lang="az">Microsoft Write sənədi</comment>
-    <comment xml:lang="bg">Документ, формат Microsoft·Write</comment>
+    <comment xml:lang="bg">Документ, формат Microsoft Write</comment>
     <comment xml:lang="cs">Dokument Microsoft Write</comment>
     <comment xml:lang="cy">Dogfen Microsoft Write</comment>
     <comment xml:lang="da">Microsoft Write-dokument</comment>
@@ -5117,6 +5275,7 @@
     <comment xml:lang="pl">MSX - plik z ROM-em</comment>
     <comment xml:lang="pt">ROM MSX</comment>
     <comment xml:lang="pt_BR">ROM do MSX</comment>
+    <comment xml:lang="ru">MSX ROM </comment>
     <comment xml:lang="sq">ROM MSX</comment>
     <comment xml:lang="sr">MSX ром</comment>
     <comment xml:lang="sv">MSX-rom</comment>
@@ -5149,6 +5308,7 @@
     <comment xml:lang="pl">Nintendo64 - plik z ROM-em</comment>
     <comment xml:lang="pt">ROM Nintendo64</comment>
     <comment xml:lang="pt_BR">ROM do Nintendo64</comment>
+    <comment xml:lang="ru">Nintendo64 ROM</comment>
     <comment xml:lang="sq">ROM Nintendo64</comment>
     <comment xml:lang="sr">Нинтендо64 РОМ</comment>
     <comment xml:lang="sv">Nintendo64-rom</comment>
@@ -5219,6 +5379,7 @@
     <comment xml:lang="pl">NES - plik z ROM-em</comment>
     <comment xml:lang="pt">ROM NES</comment>
     <comment xml:lang="pt_BR">ROM do NES</comment>
+    <comment xml:lang="ru">NES ROM </comment>
     <comment xml:lang="sq">ROM NES</comment>
     <comment xml:lang="sr">NES ром</comment>
     <comment xml:lang="sv">NES-rom</comment>
@@ -5229,7 +5390,7 @@
   </mime-type>
   <mime-type type="application/x-netcdf">
     <comment>Unidata NetCDF document</comment>
-    <comment xml:lang="bg">Документ, формат Unidata·NetCDF</comment>
+    <comment xml:lang="bg">Документ, формат Unidata NetCDF</comment>
     <comment xml:lang="cs">Dokument Unidata NetCDF</comment>
     <comment xml:lang="da">Unidata NetCDF-dokument</comment>
     <comment xml:lang="de">Unidata-NetCDF-Dokument</comment>
@@ -5433,6 +5594,7 @@
     <comment xml:lang="pl">Arkusz kalkulacyjny GNU Oleo</comment>
     <comment xml:lang="pt">folha de cálculo GNU Oleo</comment>
     <comment xml:lang="pt_BR">Planilha do GNU Oleo</comment>
+    <comment xml:lang="ru">электронная таблица GNU Oleo</comment>
     <comment xml:lang="sq">Fletë llogaritjesh GNU Oleo</comment>
     <comment xml:lang="sr">ГНУ Oleo табеларни прорачун</comment>
     <comment xml:lang="sv">GNU Oleo-kalkylblad</comment>
@@ -5447,7 +5609,7 @@
   <mime-type type="application/x-palm-database">
     <comment>Palm OS database</comment>
     <comment xml:lang="az">Palm OS mə'lumat bazası</comment>
-    <comment xml:lang="bg">База данни за Palm·OS</comment>
+    <comment xml:lang="bg">База данни за Palm OS</comment>
     <comment xml:lang="cs">Databáze Palm OS</comment>
     <comment xml:lang="cy">Cronfa Ddata Palm OS</comment>
     <comment xml:lang="da">Palm OS-database</comment>
@@ -5470,6 +5632,7 @@
     <comment xml:lang="pl">Baza Danych Palm OS</comment>
     <comment xml:lang="pt">base de dados do Palm OS</comment>
     <comment xml:lang="pt_BR">Banco de dados do Palm OS</comment>
+    <comment xml:lang="ru">база данных Palm OS</comment>
     <comment xml:lang="sq">Bankë të dhënash Palm OS</comment>
     <comment xml:lang="sr">Palm OS база података</comment>
     <comment xml:lang="sv">Palm OS-databas</comment>
@@ -5627,6 +5790,7 @@
     <comment xml:lang="pl">Pakiet certyfikatu PKCS#12</comment>
     <comment xml:lang="pt">conjunto de certificados PKCS#12</comment>
     <comment xml:lang="pt_BR">Pacote de certificados PKCS#12</comment>
+    <comment xml:lang="ru">сертификат PKCS#12</comment>
     <comment xml:lang="sq">Çertifikatë PKCS#12</comment>
     <comment xml:lang="sr">PKCS#12 пакет сертификата</comment>
     <comment xml:lang="sv">PKCS#12-certifikatsamling</comment>
@@ -5671,7 +5835,7 @@
   </mime-type>
   <mime-type type="application/x-pw">
     <comment>Pathetic Writer document</comment>
-    <comment xml:lang="bg">Документ, формат Pathetic·Writer</comment>
+    <comment xml:lang="bg">Документ, формат Pathetic Writer</comment>
     <comment xml:lang="cs">Dokument Pathetic Writer</comment>
     <comment xml:lang="da">Pathetic Writer-dokument</comment>
     <comment xml:lang="de">Pathetic Writer-Dokument</comment>
@@ -5691,6 +5855,7 @@
     <comment xml:lang="pl">Dokument Pathetic Writer</comment>
     <comment xml:lang="pt">documento do Pathetic Writer</comment>
     <comment xml:lang="pt_BR">Documento do Pathetic Writer</comment>
+    <comment xml:lang="ru">документ Pathetic Writer</comment>
     <comment xml:lang="sq">Dokument Pathetic Writer</comment>
     <comment xml:lang="sr">Документ Патетичног писца</comment>
     <comment xml:lang="sv">Pathetic Writer-dokument</comment>
@@ -5725,6 +5890,7 @@
     <comment xml:lang="pl">Kod bajtowy Pythona</comment>
     <comment xml:lang="pt">código binário Python</comment>
     <comment xml:lang="pt_BR">Código compilado Python</comment>
+    <comment xml:lang="ru">байткод Python</comment>
     <comment xml:lang="sq">Bytecode Python</comment>
     <comment xml:lang="sr">Питонов бајт ко̂д</comment>
     <comment xml:lang="sv">Python-bytekod</comment>
@@ -5739,7 +5905,7 @@
   </mime-type>
   <mime-type type="application/x-quattropro">
     <comment>Quattro Pro spreadsheet</comment>
-    <comment xml:lang="bg">Таблица, формат Quattro·Pro</comment>
+    <comment xml:lang="bg">Таблица, формат Quattro Pro</comment>
     <comment xml:lang="cs">Tabulka Quattro Pro</comment>
     <comment xml:lang="da">Quattro Pro-regneark</comment>
     <comment xml:lang="de">Quattro Pro-Tabellendokument</comment>
@@ -5761,6 +5927,7 @@
     <comment xml:lang="pl">Arkusz kalkulacyjny Quattro Pro</comment>
     <comment xml:lang="pt">folha de cálculo Quattro Pro</comment>
     <comment xml:lang="pt_BR">Planilha do Quattro Pro</comment>
+    <comment xml:lang="ru">электронная таблица Quattro Pro</comment>
     <comment xml:lang="sq">Fletë llogaritëse Quattro Pro</comment>
     <comment xml:lang="sr">Quattro Pro табеларни рачун</comment>
     <comment xml:lang="sv">Quattro Pro-kalkylblad</comment>
@@ -5797,6 +5964,7 @@
     <comment xml:lang="pl">Dokument Quicken</comment>
     <comment xml:lang="pt">documento Quicken</comment>
     <comment xml:lang="pt_BR">Documento do Quicken</comment>
+    <comment xml:lang="ru">документ Quicken</comment>
     <comment xml:lang="sq">Dokument Quicken</comment>
     <comment xml:lang="sr">Quicken документ</comment>
     <comment xml:lang="sv">Quicken-dokument</comment>
@@ -6149,6 +6317,13 @@
     </magic>
     <glob pattern="*.swf"/>
   </mime-type>
+  <mime-type type="application/x-shorten">
+    <comment>Shorten audio</comment>
+    <magic priority="50">
+      <match value="ajkg" type="string" offset="0"/>
+    </magic>
+    <glob pattern="*.shn"/>
+  </mime-type>
   <mime-type type="application/x-siag">
     <comment>Siag spreadsheet</comment>
     <comment xml:lang="bg">Таблица, формат Siag</comment>
@@ -6273,6 +6448,7 @@
     <comment xml:lang="pl">Archiwum StuffIt dla Macintosha</comment>
     <comment xml:lang="pt">arquivo StuffIt de Macintosh</comment>
     <comment xml:lang="pt_BR">Arquivo Macintosh StuffIt</comment>
+    <comment xml:lang="ru">архив Macintosh StuffIt</comment>
     <comment xml:lang="sq">Arkiv Macintosh StuffIt</comment>
     <comment xml:lang="sr">Мекинтош StuffIt архива</comment>
     <comment xml:lang="sv">Macintosh StuffIt-arkiv </comment>
@@ -6881,6 +7057,7 @@
     <comment xml:lang="pl">Certyfikat X.509 DER/PEM/Netscape-zakodowany</comment>
     <comment xml:lang="pt">certificado X.509 codificado com DER/PEM/Netscape</comment>
     <comment xml:lang="pt_BR">Certificado X.509 codificado com DER/PEM/Netscape</comment>
+    <comment xml:lang="ru">DER/PEM/Netscape-шифрованый сертификат X.509</comment>
     <comment xml:lang="sq">Çertifikatë DER/PEM/Netscape-encoded X.509</comment>
     <comment xml:lang="sr">DER, PEM или Нетскејп кодирани сертификат X.509</comment>
     <comment xml:lang="sv">DER/PEM/Netscape-kodat X.509-certifikat</comment>
@@ -7057,6 +7234,7 @@
     <comment xml:lang="pl">Plik dźwiękowy Dolby Digital</comment>
     <comment xml:lang="pt">áudio Dolby Digital</comment>
     <comment xml:lang="pt_BR">Áudio Dolby Digital</comment>
+    <comment xml:lang="ru">Dolby Digital аудио</comment>
     <comment xml:lang="sq">Audio Dolby Digital</comment>
     <comment xml:lang="sr">Дигитални Dolby звучни запис</comment>
     <comment xml:lang="sv">Dolby Digital-ljud</comment>
@@ -7068,7 +7246,7 @@
   <mime-type type="audio/basic">
     <comment>ULAW (Sun) audio</comment>
     <comment xml:lang="az">ULAW (Sun) audio faylı</comment>
-    <comment xml:lang="bg">Аудио файл, формат ULAW·(Sun)</comment>
+    <comment xml:lang="bg">Аудио файл, формат ULAW (Sun)</comment>
     <comment xml:lang="cs">Zvuk ULAW (Sun)</comment>
     <comment xml:lang="cy">Sain ULAW (Sun)</comment>
     <comment xml:lang="da">ULAW (Sun)-lyd</comment>
@@ -7127,6 +7305,7 @@
     <comment xml:lang="pl">Plik dźwiękowy Commodore 64</comment>
     <comment xml:lang="pt">áudio Commodore 64</comment>
     <comment xml:lang="pt_BR">Áudio Commodore 64</comment>
+    <comment xml:lang="ru">Commodore 64 аудио</comment>
     <comment xml:lang="sq">Audio Commodore 64</comment>
     <comment xml:lang="sr">Комодор 64 звучни запис</comment>
     <comment xml:lang="sv">Commodore 64-ljud</comment>
@@ -7165,6 +7344,7 @@
     <comment xml:lang="pl">Plik dźwiękowy PCM</comment>
     <comment xml:lang="pt">áudio PCM</comment>
     <comment xml:lang="pt_BR">Áudio PCM</comment>
+    <comment xml:lang="ru">PCM аудио</comment>
     <comment xml:lang="sq">Audio PCM</comment>
     <comment xml:lang="sr">PCM звучни запис</comment>
     <comment xml:lang="sv">PCM-ljud</comment>
@@ -7213,6 +7393,7 @@
     <comment xml:lang="pl">Plik dźwiękowy AIFC</comment>
     <comment xml:lang="pt">áudio AIFC</comment>
     <comment xml:lang="pt_BR">Áudio AIFC</comment>
+    <comment xml:lang="ru">AIFC аудио</comment>
     <comment xml:lang="sq">Audio AIFC</comment>
     <comment xml:lang="sr">AIFC звучни запис</comment>
     <comment xml:lang="sv">AIFC-ljud</comment>
@@ -7248,6 +7429,7 @@
     <comment xml:lang="pl">Plik dźwiękowy AIFF/Amiga/Mac</comment>
     <comment xml:lang="pt">áudio AIFF/Amiga/Mac</comment>
     <comment xml:lang="pt_BR">Áudio AIFF/Amiga/Mac</comment>
+    <comment xml:lang="ru">AIFF/Amiga/Mac аудио</comment>
     <comment xml:lang="sq">Audio AIFF/Amiga/Mac</comment>
     <comment xml:lang="sr">AIFF/Амига/Мекинтош звучни запис</comment>
     <comment xml:lang="sv">AIFF/Amiga/Mac-ljud</comment>
@@ -7289,6 +7471,7 @@
     <comment xml:lang="pl">Plik dźwiękowy AIFF</comment>
     <comment xml:lang="pt">áudio AIFF</comment>
     <comment xml:lang="pt_BR">Áudio AIFF</comment>
+    <comment xml:lang="ru">AIFF аудио</comment>
     <comment xml:lang="sq">Audio AIFF</comment>
     <comment xml:lang="sr">AIFF звучни запис</comment>
     <comment xml:lang="sv">AIFF-ljud</comment>
@@ -7322,6 +7505,7 @@
     <comment xml:lang="pl">Plik dźwiękowy Impulse Trackera</comment>
     <comment xml:lang="pt">áudio Impulse Tracker</comment>
     <comment xml:lang="pt_BR">Áudio Impulse Tracker</comment>
+    <comment xml:lang="ru">Impulse Tracker аудио</comment>
     <comment xml:lang="sq">Audio Impulse Tracker</comment>
     <comment xml:lang="sr">Impulse Tracker звучни запис</comment>
     <comment xml:lang="sv">Impulse Tracker-ljud</comment>
@@ -7393,6 +7577,7 @@
     <comment xml:lang="pl">Plik dźwiękowy MIDI</comment>
     <comment xml:lang="pt">áudio MIDI</comment>
     <comment xml:lang="pt_BR">Áudio MIDI</comment>
+    <comment xml:lang="ru">MIDI аудио</comment>
     <comment xml:lang="sq">Audio MIDI</comment>
     <comment xml:lang="sr">MIDI звучни запис</comment>
     <comment xml:lang="sv">MIDI-ljud</comment>
@@ -7405,17 +7590,21 @@
     <glob pattern="*.mid"/>
     <glob pattern="*.midi"/>
   </mime-type>
-  <mime-type type="audio/x-m4a">
-    <comment>MP4 audio</comment>
-    <comment xml:lang="cs">Zvuk MP4</comment>
-    <comment xml:lang="fi">MP4-ääni</comment>
-    <comment xml:lang="nb">MP4-lyd</comment>
-    <comment xml:lang="nl">MP4-audio</comment>
-    <comment xml:lang="zh_TW">MP4 音效</comment>
+  <mime-type type="audio/mp4">
+    <comment>MPEG-4 audio</comment>
+    <alias type="audio/x-m4a"/>
     <magic priority="50">
       <match value="ftypM4A" type="string" offset="0"/>
     </magic>
     <glob pattern="*.m4a"/>
+  </mime-type>
+  <mime-type type="video/mp4">
+    <comment>MPEG-4 video</comment>
+    <magic priority="50">
+      <match value="ftypisom" type="string" offset="4"/>
+      <match value="ftypmp42" type="string" offset="4"/>
+    </magic>
+    <glob pattern="*.mp4"/>
   </mime-type>
   <mime-type type="audio/x-mod">
     <comment>Amiga SoundTracker audio</comment>
@@ -7441,6 +7630,7 @@
     <comment xml:lang="pl">Plik dźwiękowy Amiga SoundTracker</comment>
     <comment xml:lang="pt">áudio SoundTracker do Amiga</comment>
     <comment xml:lang="pt_BR">Áudio Amiga SoundTracker</comment>
+    <comment xml:lang="ru">Amiga Sound Tracker аудио</comment>
     <comment xml:lang="sq">Audio Amiga SoundTracker</comment>
     <comment xml:lang="sr">Амига soundtracker звук</comment>
     <comment xml:lang="sv">Amiga SoundTracker-ljud</comment>
@@ -7519,6 +7709,7 @@
     <comment xml:lang="pl">Lista odtwarzania MP3</comment>
     <comment xml:lang="pt">lista de reprodução de MP3</comment>
     <comment xml:lang="pt_BR">Lista de Reprodução MP3</comment>
+    <comment xml:lang="ru">список воспроизведения MP3</comment>
     <comment xml:lang="sq">Listë titujsh MP3</comment>
     <comment xml:lang="sr">MP3 списак песама</comment>
     <comment xml:lang="sv">MP3-spellista</comment>
@@ -7583,6 +7774,7 @@
     <comment xml:lang="pl">Dźwięk MP3 (strumień)</comment>
     <comment xml:lang="pt">áudio MP3 (em fluxo)</comment>
     <comment xml:lang="pt_BR">Áudio MP3 (em fluxo)</comment>
+    <comment xml:lang="ru">MP3 аудио (потоковое)</comment>
     <comment xml:lang="sq">Audio MP3 (streamed)</comment>
     <comment xml:lang="sr">MP3 звучни запис (непрекидан)</comment>
     <comment xml:lang="sv">MP3-ljud (flöde)</comment>
@@ -7620,6 +7812,7 @@
     <comment xml:lang="pl">Lista odtwarzania</comment>
     <comment xml:lang="pt">lista de reprodução</comment>
     <comment xml:lang="pt_BR">Lista de reprodução</comment>
+    <comment xml:lang="ru">Список композиций</comment>
     <comment xml:lang="sq">Lista e riprodhimit të melodive</comment>
     <comment xml:lang="sr">Списак песама</comment>
     <comment xml:lang="sv">Spellista</comment>
@@ -7746,7 +7939,7 @@
   </mime-type>
   <mime-type type="audio/x-scpls">
     <comment>MP3 ShoutCast playlist</comment>
-    <comment xml:lang="bg">Списък със звуци, формат MP3·ShoutCast</comment>
+    <comment xml:lang="bg">Списък със звуци, формат MP3 ShoutCast</comment>
     <comment xml:lang="cs">Seznam skladeb MP3 ShoutCast</comment>
     <comment xml:lang="da">MP3 ShoutCast-afspilningsliste</comment>
     <comment xml:lang="de">MP3-ShoutCast-Wiedergabeliste</comment>
@@ -7768,6 +7961,7 @@
     <comment xml:lang="pl">Lista odtwarzania MP3 ShoutCast</comment>
     <comment xml:lang="pt">lista de reprodução MP3 ShoutCast</comment>
     <comment xml:lang="pt_BR">Lista de Reprodução MP3 ShoutCast</comment>
+    <comment xml:lang="ru">список песен MP3 ShoutCast</comment>
     <comment xml:lang="sq">Listë titujsh MP3 ShoutCast</comment>
     <comment xml:lang="sr">MP3 ShoutCast списак песама</comment>
     <comment xml:lang="sv">MP3 ShoutCast-spellista</comment>
@@ -7950,6 +8144,7 @@
     <comment xml:lang="pl">Plik dźwiękowy FastTrackera II</comment>
     <comment xml:lang="pt">áudio FastTracker II</comment>
     <comment xml:lang="pt_BR">Áudio FastTracker II</comment>
+    <comment xml:lang="ru">FastTracker II аудио</comment>
     <comment xml:lang="sq">Audio FastTracker II</comment>
     <comment xml:lang="sr">FastTracker II аудио запис</comment>
     <comment xml:lang="sv">FastTracker II-ljud</comment>
@@ -8003,7 +8198,7 @@
   <mime-type type="image/cgm">
     <comment>Computer Graphics Metafile</comment>
     <comment xml:lang="az">Kompüter Qrafikası Meta Faylı</comment>
-    <comment xml:lang="bg">Метафайл, формат Computer·Graphics</comment>
+    <comment xml:lang="bg">Метафайл, формат Computer Graphics</comment>
     <comment xml:lang="cs">Computer Graphics Metafile</comment>
     <comment xml:lang="cy">Delwedd ffurf CGM</comment>
     <comment xml:lang="da">Computer Graphics Metafile-billede</comment>
@@ -8024,6 +8219,7 @@
     <comment xml:lang="pl">Metaplik grafiki komputerowej (CGM)</comment>
     <comment xml:lang="pt">Computer Graphics Metafile</comment>
     <comment xml:lang="pt_BR">Meta-arquivo do Computer Graphics</comment>
+    <comment xml:lang="ru">метафайл компьютерной графики</comment>
     <comment xml:lang="sq">Metafile Computer Graphics</comment>
     <comment xml:lang="sr">Метадатотека са рачунарском графиком (CGM)</comment>
     <comment xml:lang="sv">Computer Graphics Metafil</comment>
@@ -8034,7 +8230,7 @@
   </mime-type>
   <mime-type type="image/fax-g3">
     <comment>CCITT G3 fax</comment>
-    <comment xml:lang="bg">Факс, формат CCITT·G3</comment>
+    <comment xml:lang="bg">Факс, формат CCITT G3</comment>
     <comment xml:lang="cs">Fax CCITT G3</comment>
     <comment xml:lang="da">CCITT G3-fax</comment>
     <comment xml:lang="de">CCITT-G3-Fax</comment>
@@ -8056,6 +8252,7 @@
     <comment xml:lang="pl">Faks CCITT G3</comment>
     <comment xml:lang="pt">fax CCITT G3</comment>
     <comment xml:lang="pt_BR">Fax do CCITT G3</comment>
+    <comment xml:lang="ru">факс CCITT G3</comment>
     <comment xml:lang="sq">Fax CCITT G3</comment>
     <comment xml:lang="sr">CCITT g3 факс</comment>
     <comment xml:lang="sv">CCITT G3-fax</comment>
@@ -8090,6 +8287,7 @@
     <comment xml:lang="pl">Obraz faksowy G3</comment>
     <comment xml:lang="pt">imagem de fax G3</comment>
     <comment xml:lang="pt_BR">Imagem de fax G3</comment>
+    <comment xml:lang="ru">факсовое изображение G3</comment>
     <comment xml:lang="sq">Figurë Fax G3</comment>
     <comment xml:lang="sr">G3 факс слика</comment>
     <comment xml:lang="sv">G3-faxbild</comment>
@@ -8161,6 +8359,7 @@
     <comment xml:lang="pl">Obraz IEF</comment>
     <comment xml:lang="pt">imagem IEF</comment>
     <comment xml:lang="pt_BR">Imagem IEF</comment>
+    <comment xml:lang="ru">изображение IEF</comment>
     <comment xml:lang="sq">Figurë IEF</comment>
     <comment xml:lang="sr">IEF слика</comment>
     <comment xml:lang="sv">IEF-bild</comment>
@@ -8244,7 +8443,7 @@
   </mime-type>
   <mime-type type="image/x-pict">
     <comment>Macintosh Quickdraw/PICT drawing</comment>
-    <comment xml:lang="bg">Чертеж, формат Macintosh·Quickdraw/PICT</comment>
+    <comment xml:lang="bg">Чертеж, формат Macintosh Quickdraw/PICT</comment>
     <comment xml:lang="cs">Kresba Macintosh Quickdraw/PICT</comment>
     <comment xml:lang="da">Macintosh Quickdraw/PICT-tegning</comment>
     <comment xml:lang="de">Macintosh Quickdraw/PICT-Zeichnung</comment>
@@ -8264,6 +8463,7 @@
     <comment xml:lang="pl">Rysunek Quickdraw/PICT Macintosha</comment>
     <comment xml:lang="pt">desenho Quickdraw/PICT de Macintosh</comment>
     <comment xml:lang="pt_BR">Desenho do Macintosh Quickdraw/PICT</comment>
+    <comment xml:lang="ru">изображение Macintosh Quickdraw/PICT</comment>
     <comment xml:lang="sq">Vizatim Macintosh Quickdraw/PICT</comment>
     <comment xml:lang="sr">Мекинтош Quickdraw/PICT цртеж</comment>
     <comment xml:lang="sv">Macintosh Quickdraw/PICT-teckning</comment>
@@ -8300,6 +8500,7 @@
     <comment xml:lang="pl">Obraz PNG</comment>
     <comment xml:lang="pt">imagem PNG</comment>
     <comment xml:lang="pt_BR">Imagem PNG</comment>
+    <comment xml:lang="ru">изображение PNG</comment>
     <comment xml:lang="sq">Figurë PNG</comment>
     <comment xml:lang="sr">PNG слика</comment>
     <comment xml:lang="sv">PNG-bild</comment>
@@ -8440,6 +8641,7 @@
     <comment xml:lang="pl">Obraz AutoCAD</comment>
     <comment xml:lang="pt">imagem AutoCAD</comment>
     <comment xml:lang="pt_BR">Imagem do AutoCAD</comment>
+    <comment xml:lang="ru">изображение AutoCad</comment>
     <comment xml:lang="sq">Figurë AutoCAD</comment>
     <comment xml:lang="sr">AutoCAD слика</comment>
     <comment xml:lang="sv">AutoCAD-bild</comment>
@@ -8472,6 +8674,7 @@
     <comment xml:lang="pl">Obraz wektorowy DXF</comment>
     <comment xml:lang="pt">imagem de vectores DXF</comment>
     <comment xml:lang="pt_BR">Imagem vetorial DXF</comment>
+    <comment xml:lang="ru">векторное изображение DXF</comment>
     <comment xml:lang="sq">Imazh vektorial DFX</comment>
     <comment xml:lang="sr">DXF векторска графика</comment>
     <comment xml:lang="sv">DXF-vektorbild</comment>
@@ -8539,6 +8742,7 @@
     <comment xml:lang="pl">Obraz Applix Graphics</comment>
     <comment xml:lang="pt">imagem Applix Graphics</comment>
     <comment xml:lang="pt_BR">Imagem do Applix Graphics</comment>
+    <comment xml:lang="ru">изображение Applix Graphics</comment>
     <comment xml:lang="sq">Figurë Applix Graphics</comment>
     <comment xml:lang="sr">Applix графички документ</comment>
     <comment xml:lang="sv">Applix Graphics-bild</comment>
@@ -8578,6 +8782,7 @@
     <comment xml:lang="pl">Obraz rastrowy CMU</comment>
     <comment xml:lang="pt">imagem rasterizada CMU</comment>
     <comment xml:lang="pt_BR">Imagem raster CMU</comment>
+    <comment xml:lang="ru">растровое изображение CMU</comment>
     <comment xml:lang="sq">Figurë raster CMU</comment>
     <comment xml:lang="sr">CMU растерска слика</comment>
     <comment xml:lang="sv">CMU-rasterbild</comment>
@@ -8681,6 +8886,7 @@
     <comment xml:lang="pl">Bitmapa niezależna od urządzenia</comment>
     <comment xml:lang="pt">'Bitmap' Independente do Dispositivo</comment>
     <comment xml:lang="pt_BR">Bitmap Independente de Aparelho</comment>
+    <comment xml:lang="ru">устройствонезависимое битовое изображение</comment>
     <comment xml:lang="sq">Device Independant Bitmap</comment>
     <comment xml:lang="sr">Битмапа независна од уређаја</comment>
     <comment xml:lang="sv">Enhetsoberoende bitmapp</comment>
@@ -8715,6 +8921,7 @@
    <comment xml:lang="pl">Obraz DjVu</comment>
    <comment xml:lang="pt">imagem DjVu</comment>
    <comment xml:lang="pt_BR">Imagem DjVu</comment>
+   <comment xml:lang="ru">изображение в формате DjVu</comment>
    <comment xml:lang="sq">Figurë DjVu</comment>
    <comment xml:lang="sr">DjVu слика</comment>
    <comment xml:lang="sv">DjVu-bild</comment>
@@ -8794,6 +9001,7 @@
     <comment xml:lang="pl">Obraz Encapsulated PostScript</comment>
     <comment xml:lang="pt">imagem em Postscript Encapsulado</comment>
     <comment xml:lang="pt_BR">Imagem PostScript Encapsulada</comment>
+    <comment xml:lang="ru">изображение Encapsulated PostScript</comment>
     <comment xml:lang="sq">Figurë Encapsulated PostScript</comment>
     <comment xml:lang="sr">Угњеждена ПостСкрипт слика (EPS)</comment>
     <comment xml:lang="sv">Inkapslad Postscript-bild</comment>
@@ -8815,7 +9023,7 @@
   <mime-type type="image/x-fits">
     <comment>Flexible Image Transport System</comment>
     <comment xml:lang="az">Flexible Rəsm Transport Sistemi</comment>
-    <comment xml:lang="bg">Данни, формат Flexible·Image·Transport·System</comment>
+    <comment xml:lang="bg">Данни, формат Flexible Image Transport System</comment>
     <comment xml:lang="cs">Flexible Image Transport System</comment>
     <comment xml:lang="cy">System Trosgludo Delweddau Hyblyg</comment>
     <comment xml:lang="da">FlashPix-billedtransportsystem</comment>
@@ -8871,6 +9079,7 @@
     <comment xml:lang="pl">Obraz FlashPix</comment>
     <comment xml:lang="pt">imagem FlashPix</comment>
     <comment xml:lang="pt_BR">Imagem FlashPix</comment>
+    <comment xml:lang="ru">изображение FlashPix</comment>
     <comment xml:lang="sq">Figurë FlashPix</comment>
     <comment xml:lang="sr">FlashPix слика</comment>
     <comment xml:lang="sv">FlashPix-bild</comment>
@@ -8977,6 +9186,7 @@
     <comment xml:lang="pl">Obraz IFF</comment>
     <comment xml:lang="pt">imagem IFF</comment>
     <comment xml:lang="pt_BR">Imagem IFF</comment>
+    <comment xml:lang="ru">изображение IFF</comment>
     <comment xml:lang="sq">Figurë IFF</comment>
     <comment xml:lang="sr">IFF слика</comment>
     <comment xml:lang="sv">IFF-bild</comment>
@@ -9011,6 +9221,7 @@
     <comment xml:lang="pl">Obraz ILBM</comment>
     <comment xml:lang="pt">imagem ILBM</comment>
     <comment xml:lang="pt_BR">Imagem ILBM</comment>
+    <comment xml:lang="ru">изображение ILBM</comment>
     <comment xml:lang="sq">Figurë ILBM</comment>
     <comment xml:lang="sr">ILBM слика</comment>
     <comment xml:lang="sv">ILBM-bild</comment>
@@ -9045,6 +9256,7 @@
     <comment xml:lang="pl">Obraz JNG</comment>
     <comment xml:lang="pt">imagem JNG</comment>
     <comment xml:lang="pt_BR">Imagem JNG</comment>
+    <comment xml:lang="ru">изображение JNG</comment>
     <comment xml:lang="sq">Figurë JNG</comment>
     <comment xml:lang="sr">JNG слика</comment>
     <comment xml:lang="sv">JNG-bild</comment>
@@ -9079,6 +9291,7 @@
     <comment xml:lang="pl">Obiekt LightWave</comment>
     <comment xml:lang="pt">Objecto LightWave</comment>
     <comment xml:lang="pt_BR">Objeto LightWave</comment>
+    <comment xml:lang="ru">объект LightWave</comment>
     <comment xml:lang="sq">Objekt LightWave</comment>
     <comment xml:lang="sr">LightWave објекат</comment>
     <comment xml:lang="sv">LightWave-objekt</comment>
@@ -9114,6 +9327,7 @@
     <comment xml:lang="pl">Scena Lightwave</comment>
     <comment xml:lang="pt">cenário LightWave</comment>
     <comment xml:lang="pt_BR">Cena LightWave</comment>
+    <comment xml:lang="ru">сцена LightWave</comment>
     <comment xml:lang="sq">Skenë LightWave</comment>
     <comment xml:lang="sr">LightWave сцена</comment>
     <comment xml:lang="sv">LightWave-scen</comment>
@@ -9146,6 +9360,7 @@
     <comment xml:lang="pl">Rysunek Microsoft Office</comment>
     <comment xml:lang="pt">desenho do Microsoft Office</comment>
     <comment xml:lang="pt_BR">Desenho Microsoft Office</comment>
+    <comment xml:lang="ru">изображение Microsoft Office</comment>
     <comment xml:lang="sq">Vizatim Microsoft Office</comment>
     <comment xml:lang="sr">Микрософт Офис цртеж</comment>
     <comment xml:lang="sv">Microsoft Office-teckning</comment>
@@ -9195,6 +9410,7 @@
     <comment xml:lang="pl">Obraz PhotoCD</comment>
     <comment xml:lang="pt">imagem de PhotoCD</comment>
     <comment xml:lang="pt_BR">Imagem de PhotoCD</comment>
+    <comment xml:lang="ru">изображение PhotoCD</comment>
     <comment xml:lang="sq">Imazh PhotoCD</comment>
     <comment xml:lang="sr">Фото Це-Де слика</comment>
     <comment xml:lang="sv">PhotoCD-bild</comment>
@@ -9229,6 +9445,7 @@
     <comment xml:lang="pl">Obraz PNM</comment>
     <comment xml:lang="pt">imagem PNM</comment>
     <comment xml:lang="pt_BR">Imagem PNM</comment>
+    <comment xml:lang="ru">изображение PNM</comment>
     <comment xml:lang="sq">Figurë PNM</comment>
     <comment xml:lang="sr">PNM слика</comment>
     <comment xml:lang="sv">PNM-bild</comment>
@@ -9240,7 +9457,7 @@
   <mime-type type="image/x-portable-bitmap">
     <comment>Portable Bitmap File Format</comment>
     <comment xml:lang="az">Portable Bitmap Fayl Formatı</comment>
-    <comment xml:lang="bg">Изображение, формат Portable·Bitmap</comment>
+    <comment xml:lang="bg">Изображение, формат Portable Bitmap</comment>
     <comment xml:lang="cs">Formát souborů Portable Bitmap</comment>
     <comment xml:lang="cy">Ffeiliau Fformat Pixfap Cludadwy</comment>
     <comment xml:lang="da">Portable Bitmap-filformat</comment>
@@ -9275,7 +9492,7 @@
   <mime-type type="image/x-portable-graymap">
     <comment>Portable Graymap File Format</comment>
     <comment xml:lang="az">Portable Graymap Fayl Formatı</comment>
-    <comment xml:lang="bg">Изображение, формат Portable·Graymap</comment>
+    <comment xml:lang="bg">Изображение, формат Portable Graymap</comment>
     <comment xml:lang="cs">Formát souborů Portable Graymap</comment>
     <comment xml:lang="cy">Ffeiliau Fformat Llwydfap Cludadwy</comment>
     <comment xml:lang="da">Portable Graymap-filformat</comment>
@@ -9310,7 +9527,7 @@
   <mime-type type="image/x-portable-pixmap">
     <comment>Portable Pixmap File Format</comment>
     <comment xml:lang="az">Portable Pixmap Fayl Formatı</comment>
-    <comment xml:lang="bg">Изображение, формат Portable·Pixmap</comment>
+    <comment xml:lang="bg">Изображение, формат Portable Pixmap</comment>
     <comment xml:lang="cs">Formát souboru Portable Pixmap</comment>
     <comment xml:lang="cy">Delwedd Pixmap Cludadwy</comment>
     <comment xml:lang="da">Portable Pixmap-filformat</comment>
@@ -9367,6 +9584,7 @@
     <comment xml:lang="pl">Obraz Photoshopa</comment>
     <comment xml:lang="pt">imagem do Photoshop</comment>
     <comment xml:lang="pt_BR">Imagem do Photoshop</comment>
+    <comment xml:lang="ru">изображение Photoshop</comment>
     <comment xml:lang="sq">Figurë Photoshop</comment>
     <comment xml:lang="sr">Фотошоп слика</comment>
     <comment xml:lang="sv">Photoshop-bild</comment>
@@ -9414,7 +9632,7 @@
   </mime-type>
   <mime-type type="image/x-sgi">
     <comment>Silicon Graphics IRIS image</comment>
-    <comment xml:lang="bg">Изображение, формат Silicon·Graphics·IRIS</comment>
+    <comment xml:lang="bg">Изображение, формат Silicon Graphics IRIS</comment>
     <comment xml:lang="cs">Obrázek Silicon Graphics IRIS</comment>
     <comment xml:lang="da">Silicon Graphics IRIS-billede</comment>
     <comment xml:lang="de">Silicon Graphics-IRIS-Bild</comment>
@@ -9568,6 +9786,7 @@
     <comment xml:lang="pl">Plik WMF Microsoftu</comment>
     <comment xml:lang="pt">vídeo WMF da Microsoft</comment>
     <comment xml:lang="pt_BR">Arquivo Microsoft WMF</comment>
+    <comment xml:lang="ru">Microsoft WMF файл</comment>
     <comment xml:lang="sq">File Microsoft WMF</comment>
     <comment xml:lang="sr">Микрософт WMF датотека</comment>
     <comment xml:lang="sv">Microsoft WMF-fil</comment>
@@ -9579,7 +9798,7 @@
   <mime-type type="image/x-xbitmap">
     <comment>X BitMap image</comment>
     <comment xml:lang="az">X BitMap rəsmi</comment>
-    <comment xml:lang="bg">Изображение, формат X·BitMap</comment>
+    <comment xml:lang="bg">Изображение, формат X BitMap</comment>
     <comment xml:lang="cs">Obrázek X BitMap</comment>
     <comment xml:lang="cy">Delwedd didfap X</comment>
     <comment xml:lang="da">X BitMap-billede</comment>
@@ -9681,7 +9900,7 @@
   <mime-type type="image/x-xpixmap">
     <comment>X PixMap image</comment>
     <comment xml:lang="az">X PixMap rəsmi</comment>
-    <comment xml:lang="bg">Изображение, формат X·PixMap</comment>
+    <comment xml:lang="bg">Изображение, формат X PixMap</comment>
     <comment xml:lang="cs">Obrázek X PixMap</comment>
     <comment xml:lang="cy">Delwedd picsfap X</comment>
     <comment xml:lang="da">X PixMap-billede</comment>
@@ -10072,7 +10291,7 @@
     <sub-class-of type="text/plain"/>
     <comment>Usenet news message</comment>
     <comment xml:lang="az">Usenet xəbərlər ismarışı</comment>
-    <comment xml:lang="bg">Съобщение, формат Usenet·news</comment>
+    <comment xml:lang="bg">Съобщение, формат Usenet news</comment>
     <comment xml:lang="cs">Příspěvek do diskusních skupin Usenet</comment>
     <comment xml:lang="cy">Neges newyddion Usenet</comment>
     <comment xml:lang="da">Usenet-nyhedsmeddelelse</comment>
@@ -10207,6 +10426,7 @@
     <comment xml:lang="pl">Wiadomość pocztowa GNU</comment>
     <comment xml:lang="pt">mensagem de e-mail GNU</comment>
     <comment xml:lang="pt_BR">Mensagem de correio GNU</comment>
+    <comment xml:lang="ru">GNU почтовое сообщение</comment>
     <comment xml:lang="sq">Mesazh poste GNU</comment>
     <comment xml:lang="sr">ГНУ е-писмо</comment>
     <comment xml:lang="sv">GNU-epostmeddelande</comment>
@@ -10610,9 +10830,14 @@
   <mime-type type="text/directory">
     <alias type="text/x-vcard"/>
     <comment>Electronic Business Card</comment>
+    <comment xml:lang="bg">Електронна визитна картичка</comment>
     <comment xml:lang="cs">Elektronická navštívenka</comment>
     <comment xml:lang="fi">sähköinen käyntikortti</comment>
+    <comment xml:lang="fr">carte d'affaire électronique</comment>
+    <comment xml:lang="ko">전자 명함</comment>
     <comment xml:lang="nl">Electronische visitekaartje</comment>
+    <comment xml:lang="ru">электронная визитная карточка</comment>
+    <comment xml:lang="sr">електронска бизнис картица</comment>
     <comment xml:lang="sv">Elektroniskt visitkort</comment>
     <comment xml:lang="zh_TW">電子名片</comment>
     <magic priority="50">
@@ -10713,6 +10938,7 @@
     <comment xml:lang="pl">Dokument MathML</comment>
     <comment xml:lang="pt">documento MathML</comment>
     <comment xml:lang="pt_BR">Documento MathML</comment>
+    <comment xml:lang="ru">документ MathML</comment>
     <comment xml:lang="sq">Dokument MathML</comment>
     <comment xml:lang="sr">MathML документ</comment>
     <comment xml:lang="sv">MathML-dokument</comment>
@@ -10826,7 +11052,7 @@
     <sub-class-of type="text/plain"/>
     <comment>rich text document</comment>
     <comment xml:lang="az">zəngin mətn sənədi</comment>
-    <comment xml:lang="bg">Документ, формат rich·text</comment>
+    <comment xml:lang="bg">Документ, формат rich text</comment>
     <comment xml:lang="cs">Bohatý textový dokument</comment>
     <comment xml:lang="cy">dogfen testun gyfoethog (rtf)</comment>
     <comment xml:lang="da">rig tekst-dokument</comment>
@@ -11047,6 +11273,7 @@
     <comment xml:lang="pl">Kod źródłowy w Ada</comment>
     <comment xml:lang="pt">código fonte Ada</comment>
     <comment xml:lang="pt_BR">Código fonte Ada</comment>
+    <comment xml:lang="ru">программа на языке Ada</comment>
     <comment xml:lang="sq">Kod burues Ada</comment>
     <comment xml:lang="sr">Ада изворни ко̂д</comment>
     <comment xml:lang="sv">Ada-källkod</comment>
@@ -11114,6 +11341,7 @@
     <comment xml:lang="pl">Dane bibliograficzne Bibtex</comment>
     <comment xml:lang="pt">dados bibliográficos Bibtex</comment>
     <comment xml:lang="pt_BR">Dados bibliográficos Bibtex</comment>
+    <comment xml:lang="ru">библиографические данные Bibtex</comment>
     <comment xml:lang="sq">E dhënë bibliografike Bibtex</comment>
     <comment xml:lang="sr">Библиографски подаци (бибтех)</comment>
     <comment xml:lang="sv">Bibliografiska Bibtex-data</comment>
@@ -11146,6 +11374,7 @@
     <comment xml:lang="pl">Plik nagłówkowy w C++</comment>
     <comment xml:lang="pt">cabeçalho de código fonte C++</comment>
     <comment xml:lang="pt_BR">Cabeçalho de código fonte C++</comment>
+    <comment xml:lang="ru">заголовочный файл языка C++</comment>
     <comment xml:lang="sq">Header kod burues C++</comment>
     <comment xml:lang="sr">C++ заглавља изворног ко̂да</comment>
     <comment xml:lang="sv">C++-källkodshuvud</comment>
@@ -11180,6 +11409,7 @@
     <comment xml:lang="pl">Kod źródłowy w C++</comment>
     <comment xml:lang="pt">código fonte C++</comment>
     <comment xml:lang="pt_BR">Código fonte C++</comment>
+    <comment xml:lang="ru">программа на языке C++</comment>
     <comment xml:lang="sq">Kod burues C++</comment>
     <comment xml:lang="sr">C++ изворни ко̂д</comment>
     <comment xml:lang="sv">C++-källkod</comment>
@@ -11218,6 +11448,7 @@
     <comment xml:lang="pl">Plik nagłówkowy w C</comment>
     <comment xml:lang="pt">cabeçalho de código fonte C</comment>
     <comment xml:lang="pt_BR">Cabeçalho de código fonte C</comment>
+    <comment xml:lang="ru">заголовочный файл языка C</comment>
     <comment xml:lang="sq">Header kod burues C</comment>
     <comment xml:lang="sr">C заглавља изворног ко̂да</comment>
     <comment xml:lang="sv">C-källkodshuvud</comment>
@@ -11353,6 +11584,7 @@
     <comment xml:lang="pl">Kod źródłowy w C</comment>
     <comment xml:lang="pt">código fonte C</comment>
     <comment xml:lang="pt_BR">Código fonte C</comment>
+    <comment xml:lang="ru">программа на языке C</comment>
     <comment xml:lang="sq">Kod burues C</comment>
     <comment xml:lang="sr">C изворни ко̂д</comment>
     <comment xml:lang="sv">C-källkod</comment>
@@ -11385,6 +11617,7 @@
     <comment xml:lang="pl">Kod źródłowy w C#</comment>
     <comment xml:lang="pt">código fonte C#</comment>
     <comment xml:lang="pt_BR">Código fonte C#</comment>
+    <comment xml:lang="ru">программа на языке C#</comment>
     <comment xml:lang="sq">Kod burues C#</comment>
     <comment xml:lang="sr">C# изворни ко̂д</comment>
     <comment xml:lang="sv">C#-källkod</comment>
@@ -11420,6 +11653,7 @@
     <comment xml:lang="pl">Skrypt DCL</comment>
     <comment xml:lang="pt">'script' DCL</comment>
     <comment xml:lang="pt_BR">Script DCL</comment>
+    <comment xml:lang="ru">скрипт DCL</comment>
     <comment xml:lang="sq">Script DCL</comment>
     <comment xml:lang="sr">DCL скрипта</comment>
     <comment xml:lang="sv">DCL-skript</comment>
@@ -11454,6 +11688,7 @@
     <comment xml:lang="pl">Dokument DSSSL</comment>
     <comment xml:lang="pt">documento DSSSL</comment>
     <comment xml:lang="pt_BR">Documento DSSSL</comment>
+    <comment xml:lang="ru">документ DSSSL</comment>
     <comment xml:lang="sq">Dokument DSSSL</comment>
     <comment xml:lang="sr">DSSSL документ</comment>
     <comment xml:lang="sv">DSSSL-dokument</comment>
@@ -11465,10 +11700,15 @@
   <mime-type type="text/x-dsrc">
     <sub-class-of type="text/plain"/>
     <comment>D source code</comment>
+    <comment xml:lang="bg">Изходен код на D</comment>
     <comment xml:lang="cs">Zdrojový kód v D</comment>
     <comment xml:lang="fi">D-lähdekoodi</comment>
+    <comment xml:lang="fr">code source D</comment>
+    <comment xml:lang="ko">D 소스 코드</comment>
     <comment xml:lang="nb">D-kildekode</comment>
     <comment xml:lang="nl">D-broncode</comment>
+    <comment xml:lang="ru">программа на языке D</comment>
+    <comment xml:lang="sr">D изворни ко̂д</comment>
     <comment xml:lang="zh_TW">D 源代碼</comment>
     <glob pattern="*.d"/>
   </mime-type>
@@ -11532,6 +11772,7 @@
     <comment xml:lang="pl">Plik źródłowy Emacs Lisp</comment>
     <comment xml:lang="pt">código fonte Emacs Lisp</comment>
     <comment xml:lang="pt_BR">Código fonte Lisp do Emacs</comment>
+    <comment xml:lang="ru">исходный код программы Emacs Lisp</comment>
     <comment xml:lang="sq">Kod burues Emacs Lisp</comment>
     <comment xml:lang="sr">Емакс Лисп изворни ко̂д</comment>
     <comment xml:lang="sv">Emacs Lisp-källkod</comment>
@@ -11571,6 +11812,7 @@
     <comment xml:lang="pl">Kod źródłowy Fortrana</comment>
     <comment xml:lang="pt">código fonte Fortran</comment>
     <comment xml:lang="pt_BR">Código fonte Fortran</comment>
+    <comment xml:lang="ru">исходные коды на языке Fortran</comment>
     <comment xml:lang="sq">Kod burues Fortran</comment>
     <comment xml:lang="sr">Фортран изворни ко̂д</comment>
     <comment xml:lang="sv">Fortran-källkod</comment>
@@ -11726,6 +11968,7 @@
     <comment xml:lang="pl">Konfiguracja GTK</comment>
     <comment xml:lang="pt">configuração GTK</comment>
     <comment xml:lang="pt_BR">Configuração do GTK</comment>
+    <comment xml:lang="ru">конфигурация GTK</comment>
     <comment xml:lang="sq">Konfigurimi GTK</comment>
     <comment xml:lang="sr">Гтк подешавања</comment>
     <comment xml:lang="sv">GTK-konfiguration</comment>
@@ -11762,6 +12005,7 @@
     <comment xml:lang="pl">Kod źródłowy w Haskellu</comment>
     <comment xml:lang="pt">código fonte Haskell</comment>
     <comment xml:lang="pt_BR">Código fonte Haskell</comment>
+    <comment xml:lang="ru">исходный код на языке Haskell</comment>
     <comment xml:lang="sq">Kod burues Haskell</comment>
     <comment xml:lang="sr">Haskell изворни ко̂д</comment>
     <comment xml:lang="sv">Haskell-källkod</comment>
@@ -11866,6 +12110,7 @@
     <comment xml:lang="pl">Kod źródłowy Javy</comment>
     <comment xml:lang="pt">código fonte Java</comment>
     <comment xml:lang="pt_BR">Código fonte Java</comment>
+    <comment xml:lang="ru">исходный код на языке Java</comment>
     <comment xml:lang="sq">Kod burues Java</comment>
     <comment xml:lang="sr">Јава изворни ко̂д</comment>
     <comment xml:lang="sv">Java-källkod</comment>
@@ -11973,6 +12218,7 @@
     <comment xml:lang="pl">Plik sterujący dla make</comment>
     <comment xml:lang="pt">Makefile</comment>
     <comment xml:lang="pt_BR">Makefile (arquivo do make)</comment>
+    <comment xml:lang="ru">Makefile (файл сборки)</comment>
     <comment xml:lang="sq">Makefile</comment>
     <comment xml:lang="sr">Производна датотека</comment>
     <comment xml:lang="sv">Makefil</comment>
@@ -11985,7 +12231,7 @@
   <mime-type type="text/x-moc">
     <sub-class-of type="text/plain"/>
     <comment>Qt Meta Object file</comment>
-    <comment xml:lang="bg">Файл, формат Qt·Meta·Object</comment>
+    <comment xml:lang="bg">Файл, формат Qt Meta Object</comment>
     <comment xml:lang="cs">Soubor metaobjektu Qt</comment>
     <comment xml:lang="da">Qt Meta Object-fil</comment>
     <comment xml:lang="de">QT-Meta-Objektdatei</comment>
@@ -12006,6 +12252,7 @@
     <comment xml:lang="pl">Plik meta obiektu Qt</comment>
     <comment xml:lang="pt">ficheiro de Meta Objecto Qt</comment>
     <comment xml:lang="pt_BR">Arquivo Qt Meta Object</comment>
+    <comment xml:lang="ru">файл Метаобъекта Qt</comment>
     <comment xml:lang="sq">File Qt Meta Object</comment>
     <comment xml:lang="sr">Qt Meta Object датотека</comment>
     <comment xml:lang="sv">Qt Meta Object-fil</comment>
@@ -12039,6 +12286,7 @@
     <comment xml:lang="pl">Kod źródłowy w Obiektowym C</comment>
     <comment xml:lang="pt">código fonte Objective-C</comment>
     <comment xml:lang="pt_BR">Código fonte Objective-C</comment>
+    <comment xml:lang="ru">исходный код Objective-C </comment>
     <comment xml:lang="sq">Kod burues C objekt</comment>
     <comment xml:lang="sr">Објектни-C изворни ко̂д</comment>
     <comment xml:lang="sv">Objective-C-källkod</comment>
@@ -12072,6 +12320,7 @@
     <comment xml:lang="pl">Kod źródłowy Pascala</comment>
     <comment xml:lang="pt">código fonte Pascal</comment>
     <comment xml:lang="pt_BR">Código fonte Pascal</comment>
+    <comment xml:lang="ru">исходный код на языке Pascal</comment>
     <comment xml:lang="sq">Kod burues Pascal</comment>
     <comment xml:lang="sr">Паскал изворни ко̂д</comment>
     <comment xml:lang="sv">Pascal-källkod</comment>
@@ -12151,6 +12400,7 @@
     <comment xml:lang="pl">Skrypt Pythona</comment>
     <comment xml:lang="pt">'script' Python</comment>
     <comment xml:lang="pt_BR">Script Python</comment>
+    <comment xml:lang="ru">скрипт Python</comment>
     <comment xml:lang="sq">Script Python</comment>
     <comment xml:lang="sr">Питон скрипта</comment>
     <comment xml:lang="sv">Pythonskript</comment>
@@ -12515,7 +12765,7 @@
   </mime-type>
   <mime-type type="text/x-troff-ms">
     <comment>Troff MS input document</comment>
-    <comment xml:lang="bg">Изходен документ, формат Troff·MS</comment>
+    <comment xml:lang="bg">Изходен документ, формат Troff MS</comment>
     <comment xml:lang="cs">Dokument vstupu Troff MS</comment>
     <comment xml:lang="da">Troff MS inddata-dokument</comment>
     <comment xml:lang="de">Troff-MS-Eingabedokument</comment>
@@ -12546,7 +12796,7 @@
   </mime-type>
   <mime-type type="text/x-uil">
     <comment>X-Motif UIL table</comment>
-    <comment xml:lang="bg">Таблица, формат X-Motif·UIL</comment>
+    <comment xml:lang="bg">Таблица, формат X-Motif UIL</comment>
     <comment xml:lang="cs">Tabulka X-Motif UIL</comment>
     <comment xml:lang="da">X-Motif UIL-tabel</comment>
     <comment xml:lang="de">X-Motif-UIL-Tabelle</comment>
@@ -12606,7 +12856,7 @@
   </mime-type>
   <mime-type type="text/x-xmi">
     <comment>XML Metadata Interchange file</comment>
-    <comment xml:lang="bg">Файл за обмяна, формат XML·Metadata</comment>
+    <comment xml:lang="bg">Файл за обмяна, формат XML Metadata</comment>
     <comment xml:lang="cs">Soubor XML Metadata Interchange</comment>
     <comment xml:lang="da">XML-metadataudvekslingsfil</comment>
     <comment xml:lang="de">XML-Metadaten-Austauschdatei</comment>
@@ -12763,6 +13013,7 @@
     <comment xml:lang="pl">Plik wideo ISI</comment>
     <comment xml:lang="pt">vídeoISI</comment>
     <comment xml:lang="pt_BR">Vídeo ISI</comment>
+    <comment xml:lang="ru">ISI видео</comment>
     <comment xml:lang="sq">Video ISI</comment>
     <comment xml:lang="sr">ISI видео</comment>
     <comment xml:lang="sv">ISI-video</comment>
@@ -12837,6 +13088,7 @@
     <comment xml:lang="pl">Film QuickTime</comment>
     <comment xml:lang="pt">vídeo QuickTime</comment>
     <comment xml:lang="pt_BR">Vídeo do QuickTime</comment>
+    <comment xml:lang="ru">QuickTime видео</comment>
     <comment xml:lang="sq">Video QuickTime</comment>
     <comment xml:lang="sr">QuickTime видео</comment>
     <comment xml:lang="sv">Quicktime-video</comment>
@@ -12945,6 +13197,7 @@
     <comment xml:lang="pl">Plik animacji ANIM</comment>
     <comment xml:lang="pt">animação ANIM</comment>
     <comment xml:lang="pt_BR">Animação ANIM</comment>
+    <comment xml:lang="ru">ANIM анимация</comment>
     <comment xml:lang="sq">Animim ANIM</comment>
     <comment xml:lang="sr">ANIM анимација</comment>
     <comment xml:lang="sv">ANIM-animation</comment>
@@ -12979,6 +13232,7 @@
     <comment xml:lang="pl">Plik wideo AVI</comment>
     <comment xml:lang="pt">vídeo AVI</comment>
     <comment xml:lang="pt_BR">Vídeo AVI</comment>
+    <comment xml:lang="ru">AVi видео</comment>
     <comment xml:lang="sq">Video AVI</comment>
     <comment xml:lang="sr">AVI видео</comment>
     <comment xml:lang="sv">AVI-video</comment>
@@ -12988,7 +13242,7 @@
   </mime-type>
   <mime-type type="video/x-flic">
     <comment>AutoDesk FLIC animation</comment>
-    <comment xml:lang="bg">Анимация, формат AutoDesk·FLIC</comment>
+    <comment xml:lang="bg">Анимация, формат AutoDesk FLIC</comment>
     <comment xml:lang="cs">Animace AutoDesk FLIC</comment>
     <comment xml:lang="da">AutoDesk FLIC-animation</comment>
     <comment xml:lang="de">AutoDesk-FLIC-Animation</comment>
@@ -13010,6 +13264,7 @@
     <comment xml:lang="pl">Animacja AutoDesk FLIC</comment>
     <comment xml:lang="pt">animação FLIC AutoDesk</comment>
     <comment xml:lang="pt_BR">Animação do AutoDesk FLIC</comment>
+    <comment xml:lang="ru">анимация AutoDesc FLIC</comment>
     <comment xml:lang="sq">Animim AutoDesc FLIC</comment>
     <comment xml:lang="sr">Аутодеск FLIC анимација</comment>
     <comment xml:lang="sv">AutoDesk FLIC-animation</comment>
@@ -13047,6 +13302,7 @@
     <comment xml:lang="pl">Animacja MNG</comment>
     <comment xml:lang="pt">animação MNG</comment>
     <comment xml:lang="pt_BR">Animação MNG</comment>
+    <comment xml:lang="ru">анимация MNG</comment>
     <comment xml:lang="sq">Animim MNG</comment>
     <comment xml:lang="sr">MNG анимација</comment>
     <comment xml:lang="sv">MNG-animation</comment>
@@ -13079,6 +13335,7 @@
     <comment xml:lang="pl">Plik wideo ASF Microsoftu</comment>
     <comment xml:lang="pt">vídeo ASF da Microsoft</comment>
     <comment xml:lang="pt_BR">Vídeo Microsoft ASF</comment>
+    <comment xml:lang="ru">видео Microsoft ASF</comment>
     <comment xml:lang="sq">Video Microsoft ASF</comment>
     <comment xml:lang="sr">Микрософт ASF видео</comment>
     <comment xml:lang="sv">Microsoft ASF-video</comment>
@@ -13089,6 +13346,7 @@
     <glob pattern="*.asx"/>
     <magic priority="50">
       <match value="0x3026b275" type="big32" offset="0"/>
+      <match value="[Reference]" type="string" offset="0"/>
     </magic>
   </mime-type>
   <mime-type type="video/x-ms-wmv">
@@ -13117,6 +13375,7 @@
     <comment xml:lang="pl">Plik wideo WMV Microsoftu</comment>
     <comment xml:lang="pt">vídeo WMV da Microsoft</comment>
     <comment xml:lang="pt_BR">Vídeo Microsoft WMV</comment>
+    <comment xml:lang="ru">Microsoft WMV видео</comment>
     <comment xml:lang="sq">Video Microsoft WMV</comment>
     <comment xml:lang="sr">Микрософт WMV видео</comment>
     <comment xml:lang="sv">Microsoft WMV-video</comment>
@@ -13149,6 +13408,7 @@
     <comment xml:lang="pl">Plik wideo AVI Microsoftu</comment>
     <comment xml:lang="pt">vídeo AVI da Microsoft</comment>
     <comment xml:lang="pt_BR">Vídeo Microsoft AVI</comment>
+    <comment xml:lang="ru">Microsoft AVI видео</comment>
     <comment xml:lang="sq">Video Microsoft AVI</comment>
     <comment xml:lang="sr">Микрософт АВИ видео</comment>
     <comment xml:lang="sv">Microsoft AVI-video</comment>
@@ -13187,6 +13447,7 @@
     <comment xml:lang="pl">Plik wideo Nullsoft</comment>
     <comment xml:lang="pt">vídeo Nullsoft</comment>
     <comment xml:lang="pt_BR">Vídeo do Nulsoft</comment>
+    <comment xml:lang="ru">Nullsoft видео</comment>
     <comment xml:lang="sq">Video Nullsoft</comment>
     <comment xml:lang="sr">Nullsoft видео</comment>
     <comment xml:lang="sv">Nullsoft-video</comment>

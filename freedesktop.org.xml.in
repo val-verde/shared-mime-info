@@ -2616,6 +2616,7 @@ command to generate the output files.
     <glob pattern="*.asx"/>
     <magic priority="50">
       <match type="big32" value="0x3026b275" offset="0"/>
+      <match type="string" value="[Reference]" offset="0"/>
     </magic>
   </mime-type>
   <mime-type type="video/x-ms-wmv">

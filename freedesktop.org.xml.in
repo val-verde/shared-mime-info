@@ -465,6 +465,7 @@ command to generate the output files.
     <glob pattern="*.asp"/>
   </mime-type>
   <mime-type type="application/x-awk">
+    <sub-class-of type="application/x-executable"/>
     <sub-class-of type="text/plain"/>
     <_comment>AWK script</_comment>
     <magic priority="50">
@@ -1372,6 +1373,7 @@ command to generate the output files.
     <glob pattern="*.so"/>
   </mime-type>
   <mime-type type="application/x-shellscript">
+    <sub-class-of type="application/x-executable"/>
     <sub-class-of type="text/plain"/>
     <_comment>shell script</_comment>
     <magic priority="50">

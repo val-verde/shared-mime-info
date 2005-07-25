@@ -1638,6 +1638,15 @@ command to generate the output files.
     </magic>
     <glob pattern="*.mp4"/>
   </mime-type>
+  <mime-type type="video/3gpp">
+    <_comment>3GPP video</_comment>
+    <sub-class-of type="video/mp4"/>
+    <magic priority="50">
+      <match type="string" value="ftyp3gp" offset="4"/>
+    </magic>
+    <glob pattern="*.3gp"/>
+    <glob pattern="*.3gpp"/>
+  </mime-type>
   <mime-type type="audio/x-mod">
     <_comment>Amiga SoundTracker audio</_comment>
     <glob pattern="*.mod"/>

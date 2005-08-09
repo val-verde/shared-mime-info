@@ -69,7 +69,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/mathematica">
-    <comment xml:lang="en">Mathematica Notebook</comment>
+    <_comment>Mathematica Notebook</_comment>
     <glob pattern="*.nb" />
     <magic priority="50">
       <match value="(************** Content-type: application/mathematica"
@@ -1864,6 +1864,17 @@ command to generate the output files.
     <magic priority="50">
       <match type="string" value="DICM" offset="128"/>
     </magic>
+  </mime-type>
+  <mime-type type="application/docbook+xml">
+    <sub-class-of type="text/xml"/>
+    <_comment>DocBook XML document</_comment>
+    <magic priority="60">
+      <match value="&lt;?xml" type="string" offset="0">
+        <match value="-//OASIS//DTD DocBook XML" type="string" offset="0:100"/>
+        <match value="-//KDE//DTD DocBook XML" type="string" offset="0:100"/>
+      </match>
+    </magic>
+    <glob pattern="*.docbook"/>
   </mime-type>
   <mime-type type="image/x-dib">
     <_comment>Device Independant Bitmap</_comment>

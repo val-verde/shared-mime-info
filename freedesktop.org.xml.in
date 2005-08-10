@@ -1868,7 +1868,7 @@ command to generate the output files.
   <mime-type type="application/docbook+xml">
     <sub-class-of type="text/xml"/>
     <_comment>DocBook XML document</_comment>
-    <magic priority="60">
+    <magic priority="90">
       <match value="&lt;?xml" type="string" offset="0">
         <match value="-//OASIS//DTD DocBook XML" type="string" offset="0:100"/>
         <match value="-//KDE//DTD DocBook XML" type="string" offset="0:100"/>

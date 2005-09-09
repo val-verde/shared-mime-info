@@ -1,21 +1,20 @@
-# translation of shared-mime-info-0.15.po to Basque
-# basque translation of shared-mime-info.
-# Copyright (C) 2004 Free Software Foundation, Inc.
+# translation of shared-mime-info-0.16.po to Basque
+# Copyright (C) 2004, 2005 Free Software Foundation, Inc.
 # This file is distributed under the same license as the shared-mime-info package.
-# Mikel Olasagasti <hey_neken@euskal.org>, 2004.
-# IÃ±aki LarraÃ±aga Murgoitio <dooteo@euskalgnu.org>, 2004.
+# Mikel Olasagasti <hey_neken@euskal.org>, 2004, 2005.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2004.
 # 
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info-0.15\n"
+"Project-Id-Version: shared-mime-info-0.16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-03-22 14:40-0500\n"
-"PO-Revision-Date: 2004-09-03 21:41+0200\n"
-"Last-Translator: Mikel Olasagasti <hey_neken@euskal.org>\n"
+"PO-Revision-Date: 2005-08-21 20:56+0200\n"
+"Last-Translator: Mikel Olasagasti <hey_neken@mundurat.net>\n"
 "Language-Team: Basque <translation-team-eu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../freedesktop.org.xml.in.h:1
@@ -183,9 +182,8 @@ msgid "Corel Draw drawing"
 msgstr "Corel Draw-eko marrazkia"
 
 #: ../freedesktop.org.xml.in.h:42
-#, fuzzy
 msgid "D source code"
-msgstr "C iturburu-kodea"
+msgstr "D iturburu-kodea"
 
 #: ../freedesktop.org.xml.in.h:43
 msgid "DCL script"
@@ -248,9 +246,8 @@ msgid "Egon Animator animation"
 msgstr "Egon Animator-eko animazioa"
 
 #: ../freedesktop.org.xml.in.h:58
-#, fuzzy
 msgid "Electronic Business Card"
-msgstr "enpresako txartel elektronikoa"
+msgstr "Enpresako txartel elektronikoa"
 
 #: ../freedesktop.org.xml.in.h:59
 msgid "Emacs Lisp source code"
@@ -410,7 +407,7 @@ msgstr "JPEG-2000 irudia"
 
 #: ../freedesktop.org.xml.in.h:98
 msgid "Java Network Launched Application"
-msgstr ""
+msgstr "Sareko Java aplikazioa"
 
 #: ../freedesktop.org.xml.in.h:99
 msgid "Java archive"
@@ -557,9 +554,8 @@ msgid "MP3 playlist"
 msgstr "MP3 erreprodukzio-zerrenda"
 
 #: ../freedesktop.org.xml.in.h:135
-#, fuzzy
 msgid "MP4 audio"
-msgstr "MP3 audioa"
+msgstr "MP4 audioa"
 
 #: ../freedesktop.org.xml.in.h:136
 msgid "MPEG video"
@@ -686,71 +682,60 @@ msgid "Ogg Vorbis audio"
 msgstr "Ogg Vorbis audioa"
 
 #: ../freedesktop.org.xml.in.h:167
-#, fuzzy
 msgid "OpenDocument Chart"
-msgstr "ODA dokumentua"
+msgstr "OpenDocument diagrama"
 
 #: ../freedesktop.org.xml.in.h:168
 msgid "OpenDocument Database"
-msgstr ""
+msgstr "OpenDocument datubasea"
 
 #: ../freedesktop.org.xml.in.h:169
 msgid "OpenDocument Drawing"
-msgstr ""
+msgstr "OpenDocument marrazketa"
 
 #: ../freedesktop.org.xml.in.h:170
-#, fuzzy
 msgid "OpenDocument Drawing Template"
-msgstr "OpenOffice.org Draw txantiloia"
+msgstr "OpenDocument marrazketa txantiloia"
 
 #: ../freedesktop.org.xml.in.h:171
 msgid "OpenDocument Formula"
-msgstr ""
+msgstr "OpenDocument formula"
 
 #: ../freedesktop.org.xml.in.h:172
-#, fuzzy
 msgid "OpenDocument HTML Document Template"
-msgstr "OpenOffice.org Writer txantiloia"
+msgstr "OpenDocument HTML dokumentu txantiloia"
 
 #: ../freedesktop.org.xml.in.h:173
-#, fuzzy
 msgid "OpenDocument Image"
-msgstr "ODA dokumentua"
+msgstr "OpenDocument irudia"
 
 #: ../freedesktop.org.xml.in.h:174
-#, fuzzy
 msgid "OpenDocument Master Document"
-msgstr "OpenOffice.org Writer dokumentua"
+msgstr "OpenDocument master dokumentua"
 
 #: ../freedesktop.org.xml.in.h:175
-#, fuzzy
 msgid "OpenDocument Presentation"
-msgstr "Kpresenter aurkezpena"
+msgstr "OpenDocument aurkezpena"
 
 #: ../freedesktop.org.xml.in.h:176
-#, fuzzy
 msgid "OpenDocument Presentation Template"
-msgstr "OpenOffice.org Impress txantiloia"
+msgstr "OpenDocument aurkezpen txantiloia"
 
 #: ../freedesktop.org.xml.in.h:177
-#, fuzzy
 msgid "OpenDocument Spreadsheet"
-msgstr "Gnumeric kalkulu-orria"
+msgstr "OpenDocument kalkulu-orria"
 
 #: ../freedesktop.org.xml.in.h:178
-#, fuzzy
 msgid "OpenDocument Spreadsheet Template"
-msgstr "OpenOffice.org Calc txantiloia"
+msgstr "OpenDocument kalkulu-orri txantiloia"
 
 #: ../freedesktop.org.xml.in.h:179
-#, fuzzy
 msgid "OpenDocument Text"
-msgstr "ODA dokumentua"
+msgstr "OpenDocument testua"
 
 #: ../freedesktop.org.xml.in.h:180
-#, fuzzy
 msgid "OpenDocument Text Template"
-msgstr "OpenOffice.org Writer txantiloia"
+msgstr "OpenDocument testu txantiloia"
 
 #: ../freedesktop.org.xml.in.h:181
 msgid "OpenOffice.org Calc spreadsheet"
@@ -1085,9 +1070,8 @@ msgid "StarWriter document"
 msgstr "StarWriter dokumentua"
 
 #: ../freedesktop.org.xml.in.h:264
-#, fuzzy
 msgid "StuffIt archive"
-msgstr "Macintosh StuffIt artxiboa"
+msgstr "StuffIt artxiboa"
 
 #: ../freedesktop.org.xml.in.h:265
 msgid "SunOS News font"
@@ -1262,9 +1246,8 @@ msgid "XML Metadata Interchange file"
 msgstr "XML meta-datuan trukatze fitxategia"
 
 #: ../freedesktop.org.xml.in.h:308
-#, fuzzy
 msgid "XML User Interface Language document"
-msgstr "eXtensible Markup Language dokumentua"
+msgstr "XML erabiltzaile interfizie lengoai dokumentua"
 
 #: ../freedesktop.org.xml.in.h:309
 msgid "XSL Formating Object file"

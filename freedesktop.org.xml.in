@@ -162,6 +162,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ged"/>
     <glob pattern="*.gedcom"/>
+    <alias type="text/gedcom"/>
   </mime-type>
   <mime-type type="application/vnd.corel-draw">
     <_comment>Corel Draw drawing</_comment>

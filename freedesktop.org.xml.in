@@ -1638,6 +1638,8 @@ command to generate the output files.
       <match type="string" value="ftypmp42" offset="4"/>
     </magic>
     <glob pattern="*.mp4"/>
+    <glob pattern="*.m4v"/>
+    <alias type="video/x-m4v"/>
   </mime-type>
   <mime-type type="video/3gpp">
     <_comment>3GPP video</_comment>

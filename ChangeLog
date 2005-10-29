@@ -1,5 +1,10 @@
 2005-10-29  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: add "application/x-go-sgf" MIME type. Thanks
+	to Peter Lundqvist. Fixes #592.
+
+2005-10-29  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: add "application/x-sqlite" MIME type. Thanks
 	to Jarosław Staniek. Fixes #3178.
 

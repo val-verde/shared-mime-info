@@ -200,6 +200,16 @@ command to generate the output files.
     <glob pattern="*.gedcom"/>
     <alias type="text/gedcom"/>
   </mime-type>
+  <mime-type type="application/x-go-sgf">
+    <sub-class-of type="text/plain"/>
+    <!-- translators: a record is in this context a description of a board game
+    		      that has been played, and that can be played back again:
+		      http://www.red-bean.com/sgf/ -->
+    <comment>SGF record</comment>
+    <acronym>SGF</acronym>
+    <expanded-acronym>Smart Game Format</expanded-acronym>
+    <glob pattern="*.sgf"/>
+  </mime-type>
   <mime-type type="application/vnd.corel-draw">
     <_comment>Corel Draw drawing</_comment>
     <magic priority="80">

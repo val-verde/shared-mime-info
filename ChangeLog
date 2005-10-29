@@ -1,5 +1,10 @@
 2005-10-29  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: make "application/mathematica" subclass of
+	"text/plain". Thanks to Shaun McCance. Fixes #4345.
+
+2005-10-29  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: fix corel draw magic string, add aliases.
 	Thanks to Stewart Jeacocke. Fixes #3136.
 

@@ -1,5 +1,10 @@
 2005-10-29  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: don't mark <acronym/> and
+	<expanded-acronym/> for translation.
+
+2005-10-29  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: make "application/mathematica" subclass of
 	"text/plain". Thanks to Shaun McCance. Fixes #4345.
 

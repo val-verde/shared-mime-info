@@ -173,6 +173,13 @@ command to generate the output files.
     <glob pattern="*.smi"/>
     <glob pattern="*.sml"/>
   </mime-type>
+  <mime-type type="application/x-sqlite">
+    <_comment>SQLite database</_comment>
+    <magic>
+      <match type="string" value="** This file contains an SQLite" offset="0"/>
+      <match type="string" value="SQLite format 3" offset="0"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/stuffit">
     <_comment>StuffIt archive</_comment>
     <magic priority="50">

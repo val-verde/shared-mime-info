@@ -3,11 +3,20 @@
   <!ELEMENT mime-info (mime-type)+>
   <!ATTLIST mime-info xmlns CDATA #FIXED "http://www.freedesktop.org/standards/shared-mime-info">
 
-  <!ELEMENT mime-type (comment|glob|magic|root-XML|alias|sub-class-of)*>
+  <!ELEMENT mime-type (comment|acronym|expanded-acronym|glob|magic|root-XML|alias|sub-class-of)*>
   <!ATTLIST mime-type type CDATA #REQUIRED>
 
+  <!-- a comment describing a document with the respective MIME type. Example: "WMV video" -->
   <!ELEMENT comment (#PCDATA)>
   <!ATTLIST comment xml:lang CDATA #IMPLIED>
+
+  <!-- a comment describing a the respective unexpanded MIME type acronym. Example: "WMV" -->
+  <!ELEMENT acronym (#PCDATA)>
+  <!ATTLIST acronym xml:lang CDATA #IMPLIED>
+
+  <!-- a comment describing a the respective unexpanded MIME type acronym. Example: "Windows Media Video" -->
+  <!ELEMENT expanded-acronym (#PCDATA)>
+  <!ATTLIST expanded-acronym xml:lang CDATA #IMPLIED>
 
   <!ELEMENT glob EMPTY>
   <!ATTLIST glob pattern CDATA #REQUIRED>
@@ -46,7 +55,7 @@ COPYING.
 
 The latest version is available from:
 
-	http://www.freedesktop.org/standards/shared-mime-info.html
+	http://www.freedesktop.org/wiki/Software_2fshared_2dmime_2dinfo
 
 To extend this database, users and applications should create additional
 XML files in the 'packages' directory and run the update-mime-database
@@ -55,7 +64,9 @@ command to generate the output files.
 
 <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
   <mime-type type="application/andrew-inset">
-    <_comment>Andrew Toolkit inset</_comment>
+    <_comment>ATK inset</_comment>
+    <_acronym>ATK</_acronym>
+    <_expanded-acronym>Andrew Toolkit</_expanded-acronym>
     <glob pattern="*.ez"/>
   </mime-type>
   <mime-type type="application/illustrator">
@@ -93,10 +104,14 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/oda">
     <_comment>ODA document</_comment>
+    <_acronym>ODA</_acronym>
+    <_expanded-acronym>Office Document Architecture</_expanded-acronym>
     <glob pattern="*.oda"/>
   </mime-type>
   <mime-type type="application/pdf">
     <_comment>PDF document</_comment>
+    <_acronym>PDF</_acronym>
+    <_expanded-acronym>Portable Document Format</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="%PDF-" offset="0"/>
     </magic>
@@ -105,6 +120,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/pgp">
     <_comment>PGP message</_comment>
+    <_acronym>PGP</_acronym>
+    <_expanded-acronym>Pretty Good Privacy</_expanded-acronym>
     <glob pattern="*.pgp"/>
   </mime-type>
   <mime-type type="application/pgp-encrypted">
@@ -112,6 +129,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/pgp-keys">
     <_comment>PGP keys</_comment>
+    <_acronym>PGP</_acronym>
+    <_expanded-acronym>Pretty Good Privacy</_expanded-acronym>
   </mime-type>
   <mime-type type="application/pgp-signature">
     <_comment>detached OpenPGP signature</_comment>
@@ -124,7 +143,9 @@ command to generate the output files.
     <glob pattern="*.p7s"/>
   </mime-type>
   <mime-type type="application/postscript">
-    <_comment>PostScript document</_comment>
+    <_comment>PS document</_comment>
+    <_acronym>PostScript</_acronym>
+    <_expanded-acronym>PostScript</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="\004%!" offset="0"/>
       <match type="string" value="%!" offset="0"/>
@@ -133,7 +154,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/rtf">
     <sub-class-of type="text/plain"/>
-    <_comment>Rich Text Format</_comment>
+    <_comment>RTF document</_comment>
+    <_acronym>RTF</_acronym>
+    <_expanded-acronym>Rich Text Format</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="{\\rtf" offset="0"/>
     </magic>
@@ -141,7 +164,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/smil">
     <sub-class-of type="text/plain"/>
-    <_comment>Synchronized Multimedia Integration Language</_comment>
+    <_comment>SMIL document</_comment>
+    <_acronym>SMIL</_acronym>
+    <_expanded-acronym>Synchronized Multimedia Integration Language</_expanded-acronym>
     <glob pattern="*.smil"/>
     <glob pattern="*.smi"/>
     <glob pattern="*.sml"/>
@@ -172,11 +197,15 @@ command to generate the output files.
     <glob pattern="*.cdr"/>
   </mime-type>
   <mime-type type="application/vnd.hp-hpgl">
-    <_comment>HP Graphics Language (plotter)</_comment>
+    <_comment>HPGL file</_comment>
+    <_acronym>HPGL</_acronym>
+    <_expanded-acronym>HP Graphics Language</_expanded-acronym>
     <glob pattern="*.hpgl"/>
   </mime-type>
   <mime-type type="application/vnd.hp-pcl">
-    <_comment>HP Printer Control Language file</_comment>
+    <_comment>PCL file</_comment>
+    <_acronym>PCL</_acronym>
+    <_expanded-acronym>HP Printer Control Language</_expanded-acronym>
     <glob pattern="*.pcl"/>
   </mime-type>
   <mime-type type="application/vnd.lotus-1-2-3">
@@ -192,7 +221,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.mozilla.xul+xml">
     <sub-class-of type="text/xml"/>
-    <_comment>XML User Interface Language document</_comment>
+    <_comment>XUL document</_comment>
+    <_acronym>XUL</_acronym>
+    <_expanded-acronym>XML User Interface Language</_expanded-acronym>
     <glob pattern="*.xul"/>
   </mime-type>
   <mime-type type="application/vnd.ms-access">
@@ -203,7 +234,7 @@ command to generate the output files.
     <glob pattern="*.mdb" />
  </mime-type>
  <mime-type type="application/vnd.ms-excel">
-    <_comment>Microsoft Excel spreadsheet</_comment>
+    <_comment>Excel spreadsheet</_comment>
     <magic priority="50">
       <match type="string" value="Microsoft Excel 5.0 Worksheet" offset="2080"/>
     </magic>
@@ -218,7 +249,7 @@ command to generate the output files.
     <alias type="application/msexcel"/>
   </mime-type>
   <mime-type type="application/vnd.ms-powerpoint">
-    <_comment>Microsoft PowerPoint presentation</_comment>
+    <_comment>PowerPoint presentation</_comment>
     <glob pattern="*.ppz"/>
     <glob pattern="*.ppt"/>
     <glob pattern="*.pps"/>
@@ -228,7 +259,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/msword">
-      <_comment>Microsoft Word document</_comment>
+      <_comment>Word document</_comment>
     <magic priority="50">
       <match type="string" value="\x31\xbe\x00\x00" offset="0"/>
       <match type="string" value="PO^Q`" offset="0"/>
@@ -279,99 +310,127 @@ command to generate the output files.
     <glob pattern="*.sgl"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc">
-    <_comment>OpenOffice.org Calc spreadsheet</_comment>
+    <_comment>OpenOffice Calc</_comment>
     <glob pattern="*.sxc"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc.template">
-    <_comment>OpenOffice.org Calc spreadsheet template</_comment>
+    <_comment>OpenOffice Calc template</_comment>
     <glob pattern="*.stc"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw">
-    <_comment>OpenOffice.org Draw drawing</_comment>
+    <_comment>OpenOffice Draw</_comment>
     <glob pattern="*.sxd"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw.template">
-    <_comment>OpenOffice.org Draw drawing template</_comment>
+    <_comment>OpenOffice Draw template</_comment>
     <glob pattern="*.std"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.impress">
-    <_comment>OpenOffice.org Impress presentation</_comment>
+    <_comment>OpenOffice Impress</_comment>
     <glob pattern="*.sxi"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.impress.template">
-    <_comment>OpenOffice.org Impress presentation template</_comment>
+    <_comment>OpenOffice Impress template</_comment>
     <glob pattern="*.sti"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.math">
-    <_comment>OpenOffice.org Math formula</_comment>
+    <_comment>OpenOffice Math</_comment>
     <glob pattern="*.sxm"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer">
-    <_comment>OpenOffice.org Writer document</_comment>
+    <_comment>OpenOffice Writer</_comment>
     <glob pattern="*.sxw"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer.global">
-    <_comment>OpenOffice.org Writer global document</_comment>
+    <_comment>OpenOffice Writer global</_comment>
     <glob pattern="*.sxg"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer.template">
-    <_comment>OpenOffice.org Writer document template</_comment>
+    <_comment>OpenOffice Writer template</_comment>
     <glob pattern="*.stw"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text">
-    <_comment>OpenDocument Text</_comment>
+    <_comment>ODT document</_comment>
+    <_acronym>ODT</_acronym>
+    <_expanded-acronym>OpenDocument Text</_expanded-acronym>
     <glob pattern="*.odt"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-template">
-    <_comment>OpenDocument Text Template</_comment>
+    <_comment>ODT template</_comment>
+    <_acronym>OTT</_acronym>
+    <_expanded-acronym>OpenDocument Text Template</_expanded-acronym>
     <glob pattern="*.ott"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-web">
-    <_comment>OpenDocument HTML Document Template</_comment>
+    <_comment>OTH template</_comment>
+    <_acronym>OTH</_acronym>
+    <_expanded-acronym>OpenDocument HTML</_expanded-acronym>
     <glob pattern="*.oth"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-master">
-    <_comment>OpenDocument Master Document</_comment>
+    <_comment>ODM document</_comment>
+    <_acronym>ODM</_acronym>
+    <_expanded-acronym>OpenDocument Master</_expanded-acronym>
     <glob pattern="*.odm"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.graphics">
-    <_comment>OpenDocument Drawing</_comment>
+    <_comment>ODG drawing</_comment>
+    <_acronym>ODG</_acronym>
+    <_expanded-acronym>OpenDocument Drawing</_expanded-acronym>
     <glob pattern="*.odg"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.graphics-template">
-    <_comment>OpenDocument Drawing Template</_comment>
+    <_comment>ODG template</_comment>
+    <_acronym>OTG</_acronym>
+    <_expanded-acronym>OpenDocument Drawing Template</_expanded-acronym>
     <glob pattern="*.otg"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.presentation">
-    <_comment>OpenDocument Presentation</_comment>
+    <_comment>ODP presentation</_comment>
+    <_acronym>ODP</_acronym>
+    <_expanded-acronym>OpenDocument Presentation</_expanded-acronym>
     <glob pattern="*.odp"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.presentation-template">
-    <_comment>OpenDocument Presentation Template</_comment>
+    <_comment>ODP template</_comment>
+    <_acronym>OTP</_acronym>
+    <_expanded-acronym>OpenDocument Presentation Template</_expanded-acronym>
     <glob pattern="*.otp"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.spreadsheet">
-    <_comment>OpenDocument Spreadsheet</_comment>
+    <_comment>ODS spreadsheet</_comment>
+    <_acronym>ODS</_acronym>
+    <_expanded-acronym>OpenDocument Spreadsheet</_expanded-acronym>
     <glob pattern="*.ods"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.spreadsheet-template">
-    <_comment>OpenDocument Spreadsheet Template</_comment>
+    <_comment>ODS template</_comment>
+    <_acronym>OTS</_acronym>
+    <_expanded-acronym>OpenDocument Spreadsheet Template</_expanded-acronym>
     <glob pattern="*.ots"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.chart">
-    <_comment>OpenDocument Chart</_comment>
+    <_comment>ODC chart</_comment>
+    <_acronym>ODC chart</_acronym>
+    <_expanded-acronym>OpenDocument Chart</_expanded-acronym>
     <glob pattern="*.odc"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.formula">
-    <_comment>OpenDocument Formula</_comment>
+    <_comment>ODF formula</_comment>
+    <_acronym>ODF</_acronym>
+    <_expanded-acronym>OpenDocument Formula</_expanded-acronym>
     <glob pattern="*.odf"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.database">
-    <_comment>OpenDocument Database</_comment>
+    <_comment>ODB database</_comment>
+    <_acronym>ODB</_acronym>
+    <_expanded-acronym>OpenDocument Database</_expanded-acronym>
     <glob pattern="*.odb"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.image">
-    <_comment>OpenDocument Image</_comment>
+    <_comment>ODI image</_comment>
+    <_acronym>ODI</_acronym>
+    <_expanded-acronym>OpenDocument Image</_expanded-acronym>
     <glob pattern="*.odi"/>
   </mime-type>
   <mime-type type="application/vnd.wordperfect">
@@ -387,6 +446,8 @@ command to generate the output files.
   <mime-type type="application/x-xbel">
     <sub-class-of type="text/plain"/>
     <_comment>XBEL bookmarks</_comment>
+    <_acronym>XBEL</_acronym>
+    <_expanded-acronym>XML Bookmark Exchange Language</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="&lt;!DOCTYPE\ xbel" offset="0:64"/>
     </magic>
@@ -447,6 +508,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-archive">
     <_comment>AR archive</_comment>
+    <_acronym>AR</_acronym>
     <magic priority="45">
       <match type="string" value="&lt;ar&gt;" offset="0"/>
       <match type="string" value="!&lt;arch&gt;" offset="0"/>
@@ -455,6 +517,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-arj">
     <_comment>ARJ archive</_comment>
+    <_acronym>ARJ</_acronym>
     <magic priority="50">
       <match type="little16" value="0xea60" offset="0"/>
     </magic>
@@ -462,7 +525,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-asp">
     <sub-class-of type="text/plain"/>
-    <_comment>active server page</_comment>
+    <_comment>ASP page</_comment>
+    <_acronym>ASP</_acronym>
+    <_expanded-acronym>Active Server Page</_expanded-acronym>
     <glob pattern="*.asp"/>
   </mime-type>
   <mime-type type="application/x-awk">
@@ -484,6 +549,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-bcpio">
     <_comment>BCPIO document</_comment>
+    <_acronym>BCPIO</_acronym>
     <glob pattern="*.bcpio"/>
   </mime-type>
   <mime-type type="application/x-bittorrent">
@@ -529,7 +595,9 @@ command to generate the output files.
     <glob pattern="*.pgn"/>
   </mime-type>
   <mime-type type="application/x-chm">
-    <comment>Compiled HTML Help Format</comment>
+    <comment>CHM document</comment>
+    <_acronym>CHM</_acronym>
+    <expanded-acronym>Compiled Help Modules</expanded-acronym>
     <glob pattern="*.chm"/>
   </mime-type>
   <mime-type type="application/x-class-file">
@@ -1165,7 +1233,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/x-mswrite">
-    <_comment>Microsoft Write document</_comment>
+    <_comment>WRI document</_comment>
     <glob pattern="*.wri"/>
   </mime-type>
   <mime-type type="application/x-msx-rom">
@@ -1863,7 +1931,9 @@ command to generate the output files.
     <glob pattern="*.xcf.bz2"/>
   </mime-type>
   <mime-type type="application/dicom">
-    <_comment>Digital Imaging and Communications in Medicine image</_comment>
+    <_comment>DICOM image</_comment>
+    <_acronym>DICOM</_acronym>
+    <_expanded-acronym>Digital Imaging and Communications in Medicine</_expanded-acronym>
     <glob pattern="*.dcm"/>
     <magic priority="50">
       <match type="string" value="DICM" offset="128"/>
@@ -1881,7 +1951,9 @@ command to generate the output files.
     <glob pattern="*.docbook"/>
   </mime-type>
   <mime-type type="image/x-dib">
-    <_comment>Device Independant Bitmap</_comment>
+    <_comment>DIB image</_comment>
+    <_acronym>DIB</_acronym>
+    <_expanded-acronym>Device Independant Bitmap</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="\x28\00\00\00" offset="0"/>
     </magic>
@@ -1901,14 +1973,18 @@ command to generate the output files.
    <alias type="image/x-djvu"/>
   </mime-type>
   <mime-type type="image/dpx">
-    <_comment>Digital Moving Picture Exchange image</_comment>
+    <_comment>DPX image</_comment>
+    <_acronym>DPX</_acronym>
+    <_expanded-acronym>Digital Moving Picture Exchange</_expanded-acronym>
     <magic priority="50">
       <match type="big32" value="0x53445058" offset="0"/>
     </magic>
   </mime-type>
   <mime-type type="image/x-eps">
     <sub-class-of type="application/postscript"/>
-    <_comment>Encapsulated PostScript image</_comment>
+    <_comment>EPS image</_comment>
+    <_acronym>EPS</_acronym>
+    <_expanded-acronym>Encapsulated PostScript</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="%!" offset="0">
         <match type="string" value="EPS" offset="15"/>
@@ -1922,14 +1998,18 @@ command to generate the output files.
     <glob pattern="*.epsf"/>
   </mime-type>
   <mime-type type="image/x-fits">
-    <_comment>Flexible Image Transport System</_comment>
+    <_comment>FITS document</_comment>
+    <_acronym>FITS</_acronym>
+    <_expanded-acronym>Flexible Image Transport System</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="SIMPLE  =" offset="0"/>
     </magic>
     <glob pattern="*.fits"/>
   </mime-type>
   <mime-type type="image/x-fpx">
-    <_comment>FlashPix image</_comment>
+    <_comment>FPX image</_comment>
+    <_acronym>FPX</_acronym>
+    <_expanded-acronym>FlashPiX</_expanded-acronym>
     <magic priority="50">
       <match type="big32" value="0x46506978" offset="0"/>
     </magic>
@@ -1942,7 +2022,9 @@ command to generate the output files.
     <glob pattern="*.icb"/>
   </mime-type>
   <mime-type type="image/x-ico">
-    <_comment>Microsoft Windows icon</_comment>
+    <_comment>ICO icon</_comment>
+    <_acronym>ICO</_acronym>
+    <_expanded-acronym>Windows Icon</_expanded-acronym>
     <glob pattern="*.ico"/>
   </mime-type>
   <mime-type type="image/x-iff">
@@ -1951,6 +2033,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/x-ilbm">
     <_comment>ILBM image</_comment>
+    <_acronym>ILBM image</_acronym>
+    <_expanded-acronym>InterLeaved BitMap</_expanded-acronym>
     <glob pattern="*.ilbm"/>
   </mime-type>
   <mime-type type="image/x-jng">
@@ -1967,7 +2051,7 @@ command to generate the output files.
     <glob pattern="*.lws"/>
   </mime-type>
   <mime-type type="image/x-msod">
-    <_comment>Microsoft Office drawing</_comment>
+    <_comment>Office drawing</_comment>
     <glob pattern="*.msod"/>
   </mime-type>
   <mime-type type="image/x-niff">
@@ -1976,6 +2060,9 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="image/x-pcx">
+    <_comment>PCX image</_comment>
+    <_acronym>PCX</_acronym>
+    <_expanded-acronym>PiCture eXchange</_expanded-acronym>
     <magic priority="50">
       <match type="byte" value="10" offset="0">
         <match type="byte" value="0" offset="1"/>
@@ -1986,7 +2073,9 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="image/x-photo-cd">
-    <_comment>PhotoCD image</_comment>
+    <_comment>PCD image</_comment>
+    <_acronym>PCD</_acronym>
+    <_expanded-acronym>PhotoCD</_expanded-acronym>
     <glob pattern="*.pcd"/>
   </mime-type>
   <mime-type type="image/x-portable-anymap">
@@ -1994,7 +2083,9 @@ command to generate the output files.
     <glob pattern="*.pnm"/>
   </mime-type>
   <mime-type type="image/x-portable-bitmap">
-    <_comment>Portable Bitmap File Format</_comment>
+    <_comment>PBM image</_comment>
+    <_acronym>PBM</_acronym>
+    <_expanded-acronym>Portable BitMap</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="P1" offset="0"/>
       <match type="string" value="P4" offset="0"/>
@@ -2002,7 +2093,9 @@ command to generate the output files.
     <glob pattern="*.pbm"/>
   </mime-type>
   <mime-type type="image/x-portable-graymap">
-    <_comment>Portable Graymap File Format</_comment>
+    <_comment>PGM image</_comment>
+    <_acronym>PGM</_acronym>
+    <_expanded-acronym>Portable GrayMap</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="P2" offset="0"/>
       <match type="string" value="P5" offset="0"/>
@@ -2010,7 +2103,9 @@ command to generate the output files.
     <glob pattern="*.pgm"/>
   </mime-type>
   <mime-type type="image/x-portable-pixmap">
-    <_comment>Portable Pixmap File Format</_comment>
+    <_comment>PPM image</_comment>
+    <_acronym>PPM</_acronym>
+    <_expanded-acronym>Portable PixMap</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="P3" offset="0"/>
       <match type="string" value="P6" offset="0"/>
@@ -2018,7 +2113,9 @@ command to generate the output files.
     <glob pattern="*.ppm"/>
   </mime-type>
   <mime-type type="image/x-psd">
-    <_comment>Photoshop image</_comment>
+    <_comment>PSD image</_comment>
+    <_acronym>PSD</_acronym>
+    <_expanded-acronym>PhotoShop Document</_expanded-acronym>
     <magic priority="50">
       <match type="string" mask="0xffffffff0000ffffffff" value="8BPS  \000\000\000\000" offset="0"/>
     </magic>
@@ -2029,7 +2126,7 @@ command to generate the output files.
     <glob pattern="*.rgb"/>
   </mime-type>
   <mime-type type="image/x-sgi">
-    <_comment>Silicon Graphics IRIS image</_comment>
+    <_comment>SGI image</_comment>
     <glob pattern="*.sgi"/>
   </mime-type>
   <mime-type type="image/x-sun-raster">
@@ -2048,11 +2145,15 @@ command to generate the output files.
     <glob pattern="*.cur"/>
   </mime-type>
   <mime-type type="image/x-wmf">
-    <_comment>Microsoft WMF file</_comment>
+    <_comment>WMF document</_comment>
+    <_acronym>WMF</_acronym>
+    <_expanded-acronym>Windows Media Format</_expanded-acronym>
     <glob pattern="*.wmf"/>
   </mime-type>
   <mime-type type="image/x-xbitmap">
-    <_comment>X BitMap image</_comment>
+    <_comment>XBM image</_comment>
+    <_acronym>XBM</_acronym>
+    <_expanded-acronym>X BitMap</_expanded-acronym>
     <glob pattern="*.xbm"/>
   </mime-type>
   <mime-type type="image/x-xcf">
@@ -2067,7 +2168,9 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="image/x-xpixmap">
-    <_comment>X PixMap image</_comment>
+    <_comment>XPM image</_comment>
+    <_acronym>XPM</_acronym>
+    <_expanded-acronym>X PixMap</_expanded-acronym>
     <magic priority="80">
       <match type="string" value="/* XPM" offset="0"/>
     </magic>
@@ -2174,7 +2277,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/calendar">
     <alias type="text/x-vcalendar"/>
-    <_comment>vCalendar interchange file</_comment>
+    <_comment>VCS/ICS calendar</_comment>
+    <_acronym>VCS/ICS</_acronym>
+    <_expanded-acronym>vCalendar/iCalendar</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="BEGIN:VCALENDAR" offset="0"/>
       <match type="string" value="begin:vcalendar" offset="0"/>
@@ -2184,7 +2289,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/css">
     <sub-class-of type="text/plain"/>
-    <_comment>Cascading Style Sheet</_comment>
+    <_comment>CSS stylesheet</_comment>
+    <_acronym>CSS</_acronym>
+    <_expanded-acronym>Cascading Style Sheets</_expanded-acronym>
     <glob pattern="*.css"/>
     <glob pattern="*.CSSL"/>
   </mime-type>
@@ -2221,7 +2328,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/rdf">
     <sub-class-of type="text/plain"/>
-    <_comment>Resource Description Framework (RDF) file</_comment>
+    <_comment>RDF file</_comment>
+    <_acronym>RDF</_acronym>
+    <_expanded-acronym>Resource Description Framework</_expanded-acronym>
     <glob pattern="*.rdf"/>
   </mime-type>
   <mime-type type="text/rfc822-headers">
@@ -2234,11 +2343,15 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/rss">
     <sub-class-of type="text/plain"/>
-    <_comment>RDF Site Summary</_comment>
+    <_comment>RSS summary</_comment>
+    <_acronym>RSS</_acronym>
+    <_expanded-acronym>RDF Site Summary</_expanded-acronym>
     <glob pattern="*.rss"/>
   </mime-type>
   <mime-type type="text/sgml">
     <_comment>SGML document</_comment>
+    <_acronym>SGML</_acronym>
+    <_expanded-acronym>Standard Generalized Markup Language</_expanded-acronym>
     <glob pattern="*.sgml"/>
     <glob pattern="*.sgm"/>
   </mime-type>
@@ -2252,11 +2365,13 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/tab-separated-values">
     <sub-class-of type="text/plain"/>
-    <_comment>text document (with tab-separated values)</_comment>
+    <_comment>TSV document</_comment>
     <glob pattern="*.tsv"/>
   </mime-type>
   <mime-type type="text/vnd.wap.wml">
     <_comment>WML document</_comment>
+    <_acronym>WML</_acronym>
+    <_expanded-acronym>Wireless Markup Language</_expanded-acronym>
     <glob pattern="*.wml"/>
   </mime-type>
   <mime-type type="text/x-adasrc">
@@ -2272,12 +2387,12 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-bibtex">
     <sub-class-of type="text/plain"/>
-    <_comment>Bibtex bibliographic data</_comment>
+    <_comment>BibTeX document</_comment>
     <glob pattern="*.bib"/>
   </mime-type>
   <mime-type type="text/x-c++hdr">
     <sub-class-of type="text/plain"/>
-    <_comment>C++ source code header</_comment>
+    <_comment>C++ header</_comment>
     <glob pattern="*.hh"/>
     <glob pattern="*.hpp"/>
   </mime-type>
@@ -2292,24 +2407,24 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-chdr">
     <sub-class-of type="text/plain"/>
-    <_comment>C source code header</_comment>
+    <_comment>C header</_comment>
     <glob pattern="*.h"/>
     <glob pattern="*.h++"/>
     <glob pattern="*.hp"/>
   </mime-type>
   <mime-type type="text/x-comma-separated-values">
     <sub-class-of type="text/plain"/>
-    <_comment>text document (with comma-separated values)</_comment>
+    <_comment>CSV document</_comment>
     <glob pattern="*.csv"/>
   </mime-type>
   <mime-type type="text/x-copying">
     <sub-class-of type="text/plain"/>
-    <_comment>software license terms</_comment>
+    <_comment>license terms</_comment>
     <glob pattern="COPYING"/>
   </mime-type>
   <mime-type type="text/x-credits">
     <sub-class-of type="text/plain"/>
-    <_comment>software author credits</_comment>
+    <_comment>author credits</_comment>
     <glob pattern="CREDITS"/>
   </mime-type>
   <mime-type type="text/x-csrc">
@@ -2325,10 +2440,14 @@ command to generate the output files.
   <mime-type type="text/x-dcl">
     <sub-class-of type="text/plain"/>
     <_comment>DCL script</_comment>
+    <_acronym>DCL</_acronym>
+    <_expanded-acronym>Data Conversion Laboratory</_expanded-acronym>
     <glob pattern="*.dcl"/>
   </mime-type>
   <mime-type type="text/x-dsl">
     <_comment>DSSSL document</_comment>
+    <_acronym>DSSSL</_acronym>
+    <_expanded-acronym>Document Style Semantics and Specification Language</_expanded-acronym>
     <glob pattern="*.dsl"/>
   </mime-type>
   <mime-type type="text/x-dsrc">
@@ -2338,7 +2457,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-dtd">
     <sub-class-of type="text/plain"/>
-    <_comment>document type definition</_comment>
+    <_comment>DTD file</_comment>
+    <_acronym>DTD</_acronym>
+    <_expanded-acronym>Document Type Definition</_expanded-acronym>
     <glob pattern="*.dtd"/>
   </mime-type>
   <mime-type type="text/x-emacs-lisp">
@@ -2359,16 +2480,18 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-gettext-translation">
     <sub-class-of type="text/plain"/>
-    <_comment>translated messages</_comment>
+    <_comment>translation</_comment>
     <glob pattern="*.po"/>
   </mime-type>
   <mime-type type="text/x-gettext-translation-template">
     <sub-class-of type="text/plain"/>
-    <_comment>message translation template</_comment>
+    <_comment>translation template</_comment>
     <glob pattern="*.pot"/>
   </mime-type>
   <mime-type type="text/html">
-    <_comment>HTML page</_comment>
+    <_comment>HTML document</_comment>
+    <_acronym>HTML</_acronym>
+    <_expanded-acronym>HyperText Markup Language</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="&lt;!DOCTYPE HTML" offset="0:64"/>
       <match type="string" value="&lt;!doctype html" offset="0:64"/>
@@ -2393,7 +2516,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-gtkrc">
     <sub-class-of type="text/plain"/>
-    <_comment>GTK configuration</_comment>
+    <_comment>GTK+ configuration</_comment>
     <glob pattern="gtkrc"/>
     <glob pattern=".gtkrc"/>
   </mime-type>
@@ -2405,11 +2528,13 @@ command to generate the output files.
   <mime-type type="text/x-idl">
     <sub-class-of type="text/plain"/>
     <_comment>IDL document</_comment>
+    <_acronym>IDL</_acronym>
+    <_expanded-acronym>Interface Definition Language</_expanded-acronym>
     <glob pattern="*.idl"/>
   </mime-type>
   <mime-type type="text/x-install">
     <sub-class-of type="text/plain"/>
-    <_comment>software installation instructions</_comment>
+    <_comment>installation instructions</_comment>
     <glob pattern="INSTALL"/>
   </mime-type>
   <mime-type type="text/x-java">
@@ -2425,7 +2550,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-literate-haskell">
     <sub-class-of type="text/plain"/>
-    <_comment>Literate haskell source code</_comment>
+    <_comment>LHS source code</_comment>
+    <_expanded-acronym>Literate Haskell source code</_expanded-acronym>
     <glob pattern="*.lhs"/>
   </mime-type>
   <mime-type type="text/x-log">
@@ -2441,7 +2567,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-moc">
     <sub-class-of type="text/plain"/>
-    <_comment>Qt Meta Object file</_comment>
+    <_comment>Qt MOC file</_comment>
+    <_acronym>Qt MOC</_acronym>
+    <_expanded-acronym>Qt Meta Object Compiler</_expanded-acronym>
     <glob pattern="*.moc"/>
   </mime-type>
   <mime-type type="text/x-objcsrc">
@@ -2555,11 +2683,15 @@ command to generate the output files.
     <glob pattern="*.url"/>
   </mime-type>
   <mime-type type="text/x-xmi">
-    <_comment>XML Metadata Interchange file</_comment>
+    <_comment>XMI file</_comment>
+    <_acronym>XMI</_acronym>
+    <_expanded-acronym>XML Metadata Interchange</_expanded-acronym>
     <glob pattern="*.xmi"/>
   </mime-type>
   <mime-type type="text/x-xslfo">
-    <_comment>XSL Formating Object file</_comment>
+    <_comment>XSL FO file</_comment>
+    <_acronym>XSL FO</_acronym>
+    <_expanded-acronym>XSL Formatting Objects</_expanded-acronym>
     <glob pattern="*.fo"/>
     <glob pattern="*.xslfo"/>
   </mime-type>
@@ -2567,6 +2699,8 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <sub-class-of type="text/xml"/>
     <_comment>XSLT stylesheet</_comment>
+    <_acronym>XSLT</_acronym>
+    <_expanded-acronym>eXtensible Stylesheet Language Transformation</_expanded-acronym>
     <glob pattern="*.xslt"/>
     <glob pattern="*.xsl"/>
   </mime-type>
@@ -2577,7 +2711,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/xml">
     <sub-class-of type="text/plain"/>
-    <_comment>eXtensible Markup Language document</_comment>
+    <_comment>XML document</_comment>
+    <_acronym>XML</_acronym>
+    <_expanded-acronym>eXtensible Markup Language</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="&lt;?xml" offset="0"/>
     </magic>
@@ -2588,6 +2724,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="video/mpeg">
     <_comment>MPEG video</_comment>
+    <_acronym>MPEG</_acronym>
+    <_expanded-acronym>Moving Picture Experts Group</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="\x47\x3f\xff\x10" offset="0"/>
       <match type="big32" value="0x000001b3" offset="0"/>
@@ -2601,7 +2739,9 @@ command to generate the output files.
     <glob pattern="*.dat"/>
   </mime-type>
   <mime-type type="video/quicktime">
-    <_comment>QuickTime video</_comment>
+    <_comment>QT video</_comment>
+    <_acronym>QT</_acronym>
+    <_expanded-acronym>QuickTime</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="mdat" offset="12"/>
       <match type="string" value="mdat" offset="4"/>
@@ -2622,11 +2762,8 @@ command to generate the output files.
     <_comment>ANIM animation</_comment>
     <glob pattern="*.anim[1-9j]"/>
   </mime-type>
-  <mime-type type="video/x-avi">
-    <_comment>AVI video</_comment>
-  </mime-type>
   <mime-type type="video/x-flic">
-    <_comment>AutoDesk FLIC animation</_comment>
+    <_comment>FLIC animation</_comment>
     <magic priority="50">
       <match type="little16" value="0xAF11" offset="0"/>
       <match type="little16" value="0xAF12" offset="0"/>
@@ -2636,10 +2773,14 @@ command to generate the output files.
   </mime-type>
   <mime-type type="video/x-mng">
     <_comment>MNG animation</_comment>
+    <_acronym>MNG</_acronym>
+    <_expanded-acronym>Multiple-Image Network Graphics</_expanded-acronym>
     <glob pattern="*.mng"/>
   </mime-type>
   <mime-type type="video/x-ms-asf">
-    <_comment>Microsoft ASF video</_comment>
+    <_comment>ASF video</_comment>
+    <_acronym>ASF</_acronym>
+    <_expanded-acronym>Advanced Streaming Format</_expanded-acronym>
     <glob pattern="*.asf"/>
     <glob pattern="*.asx"/>
     <magic priority="50">
@@ -2648,11 +2789,16 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="video/x-ms-wmv">
-    <_comment>Microsoft WMV video</_comment>
+    <_comment>WMV video</_comment>
+    <_acronym>WMV</_acronym>
+    <_expanded-acronym>Windows Media Video</_expanded-acronym>
     <glob pattern="*.wmv"/>
   </mime-type>
   <mime-type type="video/x-msvideo">
-    <_comment>Microsoft AVI video</_comment>
+    <alias type="video/x-avi"/>
+    <_comment>AVI video</_comment>
+    <_acronym>AVI</_acronym>
+    <_expanded-acronym>Audio Video Interleave</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="AVI " offset="8"/>
       <match type="string" value="RIFF" offset="0"/>
@@ -2660,7 +2806,9 @@ command to generate the output files.
     <glob pattern="*.avi"/>
   </mime-type>
   <mime-type type="video/x-nsv">
-    <_comment>Nullsoft video</_comment>
+    <_comment>NSV video</_comment>
+    <_acronym>NSV</_acronym>
+    <_expanded-acronym>NullSoft Video</_expanded-acronym>
     <magic priority="50">
       <match type="string" value="NSVf" offset="0"/>
     </magic>

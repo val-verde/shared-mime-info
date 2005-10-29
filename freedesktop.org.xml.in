@@ -183,7 +183,9 @@ command to generate the output files.
     <alias type="application/x-sit"/>
   </mime-type>
   <mime-type type="application/x-gedcom">
-    <_comment>Family history file</_comment>
+    <_comment>GEDCOM family history</_comment>
+    <acronym>GEDCOM</acronym>
+    <expanded-acronym>GEnealogical Data COMmunication</expanded-acronym>
     <magic priority="50">
       <match type="string" value="0 HEAD" offset="0"/>
     </magic>
@@ -965,7 +967,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-java-jnlp-file">
     <sub-class-of type="text/xml"/>
-    <_comment>Java Network Launched Application</_comment>
+    <_comment>JNLP file</_comment>
+    <acronym>JNLP</acronym>
+    <expanded-acronym>Java Network Launching Protocol</expanded-acronym>
     <glob pattern="*.jnlp"/>
     <magic priority="50">
       <match type="string" value="&lt;jnlp" offset="0:64"/>
@@ -1477,6 +1481,7 @@ command to generate the output files.
     <glob pattern="*.swf"/>
   </mime-type>
   <mime-type type="application/x-shorten">
+    <!-- translators: "Shorten" is the name of an audio codec -->
     <_comment>Shorten audio</_comment>
     <magic priority="50">
       <match type="string" value="ajkg" offset="0"/>
@@ -1951,7 +1956,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/docbook+xml">
     <sub-class-of type="text/xml"/>
-    <_comment>DocBook XML document</_comment>
+    <_comment>DocBook document</_comment>
     <magic priority="90">
       <match value="&lt;?xml" type="string" offset="0">
         <match value="-//OASIS//DTD DocBook XML" type="string" offset="0:100"/>

@@ -1,6 +1,11 @@
 2005-10-29  Christian Neumair  <chris@gnome-de.org>
 
-	* freedesktop.org.xml.in: Add <acronym/> and <expanded-acronym/> tags.
+	* freedesktop.org.xml.in: register "application/x-mathematica" as
+	alias for "application/mathematica". Fixes #4403.
+
+2005-10-29  Christian Neumair  <chris@gnome-de.org>
+
+	* freedesktop.org.xml.in: add <acronym/> and <expanded-acronym/> tags.
 	Use shorter text for many <comment/> tags.
 
 2005-10-22  Bastien Nocera  <hadess@hadess.net>

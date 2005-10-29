@@ -1,5 +1,10 @@
 2005-10-29  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: add "GNUmakefile" pattern to
+	"text/x-makefile". Fixes #4334.
+
+2005-10-29  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: add comment to "application/x-sc", by J.H.M.
 	Dassen. Fixes #3146.
 

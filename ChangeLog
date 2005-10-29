@@ -1,5 +1,10 @@
 2005-10-29  Christian Neumair  <chris@gnome-de.org>
 
+	* update-mime-database.c: (process_freedesktop_node):
+	process <acronym/> and <expanded-acronym/>.
+
+2005-10-29  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: add "GNUmakefile" pattern to
 	"text/x-makefile". Fixes #4334.
 

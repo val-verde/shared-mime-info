@@ -304,7 +304,9 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 		else
 			g_return_val_if_fail(magic == NULL, FALSE);
 	}
-	else if (strcmp((char *)field->name, "comment") == 0)
+	else if (strcmp((char *)field->name, "comment") == 0 ||
+		 strcmp((char *)field->name, "acronym") == 0 ||
+		 strcmp((char *)field->name, "expanded-acronym") == 0)
 		return FALSE;
 	else if (strcmp((char *)field->name, "alias") == 0 ||
 		 strcmp((char *)field->name, "sub-class-of") == 0)

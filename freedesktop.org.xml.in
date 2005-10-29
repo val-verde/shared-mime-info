@@ -1409,6 +1409,7 @@ command to generate the output files.
     <glob pattern="*.rb"/>
   </mime-type>
   <mime-type type="application/x-sc">
+    <_comment>SC/Xspread spreadsheet</_comment>
     <magic priority="50">
       <match type="string" value="Spreadsheet" offset="38"/>
     </magic>

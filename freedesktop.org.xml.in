@@ -1278,6 +1278,11 @@ command to generate the output files.
     <_comment>MSX ROM</_comment>
     <glob pattern="*.msx"/>
   </mime-type>
+  <mime-type type="application/x-m4">
+    <sub-class-of type="text/plain"/>
+    <_comment>M4 macro</_comment>
+    <glob pattern="*.m4"/>
+  </mime-type>
   <mime-type type="application/x-n64-rom">
     <_comment>Nintendo64 ROM</_comment>
     <glob pattern="*.n64"/>

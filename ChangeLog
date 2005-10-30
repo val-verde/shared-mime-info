@@ -1,5 +1,10 @@
 2005-10-29  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: add "application/x-m4" MIME type. Thanks to
+	Macro Pesenti Gritti. Fixes #2049.
+
+2005-10-29  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: add a bunch of aliases for
 	"application/vnd.ms-access", change its description. Thanks to
 	Jarosław Staniek. Fixes #3179.

@@ -701,9 +701,12 @@ command to generate the output files.
     </magic>
     <glob pattern="*.csh"/>
   </mime-type>
-  <mime-type type="application/x-dbase">
-    <_comment>dBASE document</_comment>
+  <mime-type type="application/x-dbf">
+    <_comment>Xbase document</_comment>
     <glob pattern="*.dbf"/>
+    <alias type="application/x-dbase"/>
+    <alias type="application/dbf"/>
+    <alias type="application/dbase"/>
   </mime-type>
   <mime-type type="application/x-dbm">
     <magic priority="50">

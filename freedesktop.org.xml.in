@@ -315,9 +315,6 @@ command to generate the output files.
     <_comment>Palmpilot database/document</_comment>
     <glob pattern="*.pdb"/>
   </mime-type>
-  <mime-type type="application/vnd.rn-realmedia">
-    <_comment>RealAudio/Video document</_comment>
-  </mime-type>
   <mime-type type="application/vnd.stardivision.calc">
     <_comment>StarCalc spreadsheet</_comment>
     <glob pattern="*.sdc"/>
@@ -1808,17 +1805,35 @@ command to generate the output files.
       <match type="string" value="&lt;asx" offset="0"/>
     </magic>
   </mime-type>
-  <mime-type type="audio/x-pn-realaudio">
-    <_comment>RealAudio broadcast</_comment>
-    <magic priority="50">
-      <match type="string" value=".ra\375" offset="0"/>
-      <match type="string" value=".RMF" offset="0"/>
-    </magic>
+  <mime-type type="audio/vnd.rn-realaudio">
+    <_comment>RealAudio document</_comment>
     <glob pattern="*.ra"/>
+    <glob pattern="*.rax"/>
     <glob pattern="*.ram"/>
+    <alias type="audio/x-pn-realaudio"/>
+  </mime-type>
+  <mime-type type="audio/vnd.rn-realvideo">
+    <_comment>RealVideo document</_comment>
+    <glob pattern="*.rv"/>
+    <glob pattern="*.rvx"/>
+    <alias type="video/x-real-video"/>
+  </mime-type>
+  <mime-type type="application/vnd.rn-realmedia">
+    <_comment>RealMedia document</_comment>
     <glob pattern="*.rm"/>
+    <glob pattern="*.rmj"/>
+    <glob pattern="*.rmm"/>
+    <glob pattern="*.rms"/>
+    <glob pattern="*.rmx"/>
     <glob pattern="*.rmvb"/>
-    <alias type="audio/vnd.rn-realaudio"/>
+  </mime-type>
+  <mime-type type="image/vnd.rn-realpix">
+    <_comment>RealPix document</_comment>
+    <glob pattern="*.rp"/>
+  </mime-type>
+  <mime-type type="text/vnd.rn-realtext">
+    <_comment>RealText document</_comment>
+    <glob pattern="*.rt"/>
   </mime-type>
   <mime-type type="audio/x-riff">
     <_comment>RIFF audio</_comment>
@@ -2864,9 +2879,6 @@ command to generate the output files.
     </magic>
     <glob pattern="*.nsv"/>
     <glob pattern="*.NSV"/>
-  </mime-type>
-  <mime-type type="video/x-real-video">
-    <_comment>RealVideo video</_comment>
   </mime-type>
   <mime-type type="video/x-sgi-movie">
     <_comment>SGI video</_comment>

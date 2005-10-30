@@ -1,5 +1,10 @@
 2005-10-29  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: add a bunch of Real formats, remove real
+	audio glob since it breaks metafiles. Fixes #2342.
+
+2005-10-29  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: add "*.kino" glob pattern, and magic
 	patterns to "application/smil". Thanks to J.H.M Dassen. Fixes #3141.
 

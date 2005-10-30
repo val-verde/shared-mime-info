@@ -255,11 +255,19 @@ command to generate the output files.
     <glob pattern="*.xul"/>
   </mime-type>
   <mime-type type="application/vnd.ms-access">
-    <comment>Microsoft Access Jet Database</comment>
+    <comment>JET database</comment>
+    <acronym>JET</acronym>
+    <expanded-acronym>Joint Engine Technology</expanded-acronym>
     <magic priority="50">
       <match offset="0" type="string" value="\x00\x01\x00\x00Standard Jet DB" />
     </magic>
     <glob pattern="*.mdb" />
+    <alias type="application/x-msaccess"/>
+    <alias type="application/msaccess"/>
+    <alias type="application/vnd.msaccess"/>
+    <alias type="application/x-msaccess"/>
+    <alias type="application/mdb"/>
+    <alias type="application/x-mdb"/>
  </mime-type>
  <mime-type type="application/vnd.ms-excel">
     <_comment>Excel spreadsheet</_comment>

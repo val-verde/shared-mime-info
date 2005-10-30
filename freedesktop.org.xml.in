@@ -250,6 +250,10 @@ command to generate the output files.
     <glob pattern="*.wk3"/>
     <glob pattern="*.wk4"/>
     <glob pattern="*.wks"/>
+    <alias type="application/x-lotus123"/>
+    <alias type="application/x-123"/>
+    <alias type="application/lotus123"/>
+    <alias type="application/wk1"/>
   </mime-type>
   <mime-type type="application/vnd.mozilla.xul+xml">
     <sub-class-of type="text/xml"/>

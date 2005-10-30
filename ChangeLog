@@ -1,7 +1,13 @@
+2005-10-30  Christian Neumair  <chris@gnome-de.org>
+
+	* freedesktop.org.xml.in: add dia magic pattern. Thanks to J.H.M
+	Dassen. Fixes #3142.
+
 2005-10-29  Christian Neumair  <chris@gnome-de.org>
 
 	* freedesktop.org.xml.in: add a bunch of Real formats, remove real
-	audio glob since it breaks metafiles. Fixes #2342.
+	audio glob since it breaks metafiles. Thanks to Ryan Gammon. Fixes
+	#2342.
 
 2005-10-29  Christian Neumair  <chris@gnome-de.org>
 

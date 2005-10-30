@@ -740,6 +740,9 @@ command to generate the output files.
   <mime-type type="application/x-dia-diagram">
     <_comment>Dia diagram</_comment>
     <glob pattern="*.dia"/>
+    <magic priority="50">
+      <match offset="5:100" type="string" value="&lt;dia:"/>
+    </magic>
   </mime-type>
   <mime-type type="application/x-dvi">
     <_comment>TeX DVI document</_comment>

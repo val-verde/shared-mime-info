@@ -255,7 +255,7 @@ command to generate the output files.
     <glob pattern="*.xul"/>
   </mime-type>
   <mime-type type="application/vnd.ms-access">
-    <comment>JET database</comment>
+    <_comment>JET database</_comment>
     <acronym>JET</acronym>
     <expanded-acronym>Joint Engine Technology</expanded-acronym>
     <magic priority="50">

@@ -1,5 +1,11 @@
 2005-10-29  Christian Neumair  <chris@gnome-de.org>
 
+	* .cvsignore: add freedesktop.org.xml.
+	* freedesktop.org.xml: remove from CVS, since it is auto-generated on
+	make dist.
+
+2005-10-29  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: add "application/x-m4" MIME type. Thanks to
 	Macro Pesenti Gritti. Fixes #2049.
 

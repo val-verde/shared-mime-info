@@ -1,5 +1,10 @@
 2005-10-30  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: make "application/x-font-type1" subclass of
+	"application/postscript". Thanks to Stephane Loeuillet. Fixes #1161.
+
+2005-10-30  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: change dBASE comment, add aliases.
 	Thanks to J.H.M Dassen. Fixes #3147.
 

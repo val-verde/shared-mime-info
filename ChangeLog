@@ -1,5 +1,10 @@
 2005-10-30  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: split SQLite MIME type into two. Thanks to
+	Jarosław Staniek. Fixes #3178.
+
+2005-10-30  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: make "application/x-lyx" subclass of
 	"text/plain" and add "text/x-lyx" as alias. Thanks to Filip Van
 	Raemdonck and Abel Cheung. Fixes #1269.

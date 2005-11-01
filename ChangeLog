@@ -1,5 +1,10 @@
 2005-11-01  Bastien Nocera  <hadess@hadess.net>
 
+	* README: Fix the URLs to point to the right specs, pointed out
+	by Tommi Vainikainen <thv@iki.fi> (Closes: #4041)
+
+2005-11-01  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add *.svgz as a glob for SVG files, from
 	Luca Ferretti <elle.uca@libero.it> (Closes: #4836)
 	* config.h.in: removed, it is a generated file

@@ -1,3 +1,9 @@
+2005-11-01  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Add *.svgz as a glob for SVG files, from
+	Luca Ferretti <elle.uca@libero.it> (Closes: #4836)
+	* config.h.in: removed, it is a generated file
+
 2005-10-30  Christian Neumair  <chris@gnome-de.org>
 
 	* freedesktop.org.xml.in: split SQLite MIME type into two. Thanks to

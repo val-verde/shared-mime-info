@@ -1,7 +1,13 @@
+2005-11-16  Christian Neumair  <chris@gnome-de.org>
+
+	* freedesktop.org.xml.in: Rename "application/x-troff" to
+	"text/troff", make the latter an alias, also add "text/x-troff" alias.
+	Fixes #5072. Thanks to Tristan Miller.
+
 2005-11-14  Christian Neumair  <chris@gnome-de.org>
 
 	* freedesktop.org.xml.in: Add Mup MIME type ("text/x-mup"). Fixes
-	#2531.
+	#2531. Thanks to Abel Cheung.
 
 2005-11-01  Bastien Nocera  <hadess@hadess.net>
 

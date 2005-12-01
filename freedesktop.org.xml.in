@@ -261,7 +261,7 @@ command to generate the output files.
     <alias type="application/wk1"/>
   </mime-type>
   <mime-type type="application/vnd.mozilla.xul+xml">
-    <sub-class-of type="text/xml"/>
+    <sub-class-of type="application/xml"/>
     <_comment>XUL document</_comment>
     <acronym>XUL</acronym>
     <expanded-acronym>XML User Interface Language</expanded-acronym>
@@ -936,7 +936,7 @@ command to generate the output files.
     <glob pattern="*.gmo"/>
   </mime-type>
   <mime-type type="application/x-glade">
-    <sub-class-of type="text/xml"/>
+    <sub-class-of type="application/xml"/>
     <_comment>Glade project</_comment>
     <glob pattern="*.glade"/>
   </mime-type>
@@ -1008,7 +1008,7 @@ command to generate the output files.
     <glob pattern="*.class"/>
   </mime-type>
   <mime-type type="application/x-java-jnlp-file">
-    <sub-class-of type="text/xml"/>
+    <sub-class-of type="application/xml"/>
     <_comment>JNLP file</_comment>
     <acronym>JNLP</acronym>
     <expanded-acronym>Java Network Launching Protocol</expanded-acronym>
@@ -1666,7 +1666,7 @@ command to generate the output files.
     <glob pattern="*.zoo"/>
   </mime-type>
   <mime-type type="application/xhtml+xml">
-    <sub-class-of type="text/xml"/>
+    <sub-class-of type="application/xml"/>
     <_comment>XHTML page</_comment>
     <glob pattern="*.xhtml"/>
     <root-XML namespaceURI='http://www.w3.org/1999/xhtml' localName='html'/>
@@ -1967,8 +1967,10 @@ command to generate the output files.
     <glob pattern="*.rle"/>
   </mime-type>
   <mime-type type="image/svg+xml">
-    <sub-class-of type="text/xml"/>
-    <_comment>scalable SVG image</_comment>
+    <sub-class-of type="application/xml"/>
+    <_comment>SVG image</_comment>
+    <acronym>SVG</acronym>
+    <expanded-acronym>Scalable Vector Graphics</expanded-acronym>
     <magic priority="80">
       <match type="string" value="&lt;!DOCTYPE svg" offset="0:256"/>
       <match type="string" value="&lt;svg" offset="0:64"/>
@@ -1978,6 +1980,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/tiff">
     <_comment>TIFF image</_comment>
+    <acronym>TIFF</acronym>
+    <expanded-acronym>Tagged Image File Format</expanded-acronym>
     <magic priority="50">
       <match type="string" value="MM\x00\x2a" offset="0"/>
       <match type="string" value="II\x2a\x00" offset="0"/>
@@ -2025,7 +2029,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/docbook+xml">
-    <sub-class-of type="text/xml"/>
+    <sub-class-of type="application/xml"/>
     <_comment>DocBook document</_comment>
     <magic priority="90">
       <match value="&lt;?xml" type="string" offset="0">
@@ -2124,6 +2128,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/x-jng">
     <_comment>JNG image</_comment>
+    <acronym>JNG</acronym>
+    <expanded-acronym>JPEG Network Graphics</expanded-acronym>
     <glob pattern="*.jng"/>
   </mime-type>
   <mime-type type="image/x-lwo">
@@ -2792,7 +2798,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/xslt+xml">
     <sub-class-of type="text/plain"/>
-    <sub-class-of type="text/xml"/>
+    <sub-class-of type="application/xml"/>
     <_comment>XSLT stylesheet</_comment>
     <acronym>XSLT</acronym>
     <expanded-acronym>eXtensible Stylesheet Language Transformation</expanded-acronym>
@@ -2804,7 +2810,7 @@ command to generate the output files.
       <match type="string" value="# xmcd" offset="0"/>
     </magic>
   </mime-type>
-  <mime-type type="text/xml">
+  <mime-type type="application/xml">
     <sub-class-of type="text/plain"/>
     <_comment>XML document</_comment>
     <acronym>XML</acronym>
@@ -2813,6 +2819,7 @@ command to generate the output files.
       <match type="string" value="&lt;?xml" offset="0"/>
     </magic>
     <glob pattern="*.xml"/>
+    <alias type="text/xml"/>
   </mime-type>
   <mime-type type="video/isivideo">
     <_comment>ISI video</_comment>

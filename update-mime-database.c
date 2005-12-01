@@ -277,8 +277,10 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 
 		if (pattern && *pattern)
 		{
-			g_hash_table_insert(globs_hash,
-					    g_strdup(pattern), type);
+			GList *list = g_hash_table_lookup (globs_hash, pattern);
+			
+			list = g_list_append (list, type);
+			g_hash_table_insert(globs_hash, g_strdup(pattern), list);
 			xmlFree(pattern);
 		}
 		else
@@ -647,20 +649,24 @@ static int save_xml_file(xmlDocPtr doc, const gchar *filename)
 	return 0;
 }
 
-/* Write out one line of the 'globs' file */
+/* Write out globs for one pattern to the 'globs' file */
 static void write_out_glob(gpointer key, gpointer value, gpointer data)
 {
 	const gchar *pattern = (gchar *) key;
-	Type *type = (Type *) value;
+	GList *list = (GList *) value;
 	FILE *stream = (FILE *) data;
+	Type *type;
 
-	if (strchr(pattern, '\n'))
-		g_print("* Glob patterns can't contain literal newlines "
-			"(%s in type %s/%s)\n", pattern,
-			type->media, type->subtype);
-	else
-		fprintf(stream, "%s/%s:%s\n",
+	for ( ; list; list = list->next) {
+		type = (Type *)list->data;
+		if (strchr(pattern, '\n'))
+			g_print("* Glob patterns can't contain literal newlines "
+				"(%s in type %s/%s)\n", pattern,
+				type->media, type->subtype);
+		else
+			fprintf(stream, "%s/%s:%s\n",
 				type->media, type->subtype, pattern);
+	}
 }
 
 /* Renames pathname by removing the .new extension */
@@ -1709,6 +1715,30 @@ get_type_value (gpointer  data,
   return result;
 }
 
+static gchar **
+get_type_list_value (gpointer  data, 
+		     gchar    *key)
+{
+  GList *list;
+  Type *type;
+  gchar **result;
+  gint i;
+
+  list = (GList *)g_hash_table_lookup ((GHashTable *)data, key);
+  
+  result = g_new0 (gchar *, 1 + 2 * g_list_length (list));
+  
+  i = 0;
+  for (; list; list = list->next)
+    {
+      type = (Type *)list->data;
+
+      result[i++] = g_strdup (key);
+      result[i++] = g_strdup_printf ("%s/%s", type->media, type->subtype);
+    }
+  return result;
+}
+
 static gboolean
 write_alias_cache (FILE       *cache, 
 		   GHashTable *strings,
@@ -1866,7 +1896,7 @@ write_literal_cache (FILE       *cache,
 		     guint      *offset)
 {
   return write_map (cache, strings, globs_hash, is_literal_glob, 
-		    get_type_value, offset); 
+		    get_type_list_value, offset); 
 }
 
 static gboolean
@@ -1875,7 +1905,7 @@ write_glob_cache (FILE       *cache,
 		  guint      *offset)
 {
   return write_map (cache, strings, globs_hash, is_full_glob, 
-		    get_type_value, offset); 
+		    get_type_list_value, offset); 
 }
 
 typedef struct _SuffixEntry SuffixEntry;
@@ -1928,9 +1958,37 @@ insert_suffix (gunichar *suffix,
   if (suffix[1] == 0)
     {
       if (s->mimetype != NULL)
-	g_printerr ("Glob conflict: %s, %s\n", s->mimetype, mimetype);
-      
-      s->mimetype = mimetype;
+	{
+	  if (strcmp (s->mimetype, mimetype) != 0)
+	    {
+	      GList *l2;
+	      SuffixEntry *s2;
+	      gboolean found = FALSE;
+
+	      for (l2 = s->children; l2; l2 = l2->next)
+		{
+		  s2 = (SuffixEntry *)l2->data;
+		  if (s2->character != '\0')
+		    break;
+		  if (strcmp (s2->mimetype, mimetype) == 0)
+		    {
+		      found = TRUE;
+		      break;
+		    }
+		}
+	      if (!found)
+		{
+		  s2 = g_new0 (SuffixEntry, 1);
+		  s2->character = '\0';
+		  s2->mimetype = mimetype;
+		  s2->children = NULL;
+		  
+		  s->children = g_list_prepend (s->children, s2);
+		}
+	    }
+	}
+      else
+	s->mimetype = mimetype;
     }
   else
     s->children = insert_suffix (suffix + 1, mimetype, s->children);
@@ -1944,13 +2002,12 @@ build_suffixes (gpointer key,
 		gpointer data)
 {
   gchar *glob = (gchar *)key;
-  Type *type = (Type *)value;
+  GList *list = (GList *)value;
   GList **suffixes = (GList **)data;
   gunichar *suffix;
   gchar *mimetype;
+  Type *type;
   
-  mimetype = g_strdup_printf ("%s/%s", type->media, type->subtype);
-
   if (is_simple_glob (glob))
     {
       suffix = g_utf8_to_ucs4 (glob + 1, -1, NULL, NULL, NULL);
@@ -1961,7 +2018,13 @@ build_suffixes (gpointer key,
 	  return;
 	}
 
-      *suffixes = insert_suffix (suffix, mimetype, *suffixes);
+      for ( ; list; list = list->next)
+        {
+          type = (Type *)list->data;
+          mimetype = g_strdup_printf ("%s/%s", type->media, type->subtype);
+
+          *suffixes = insert_suffix (suffix, mimetype, *suffixes);
+        }
 
       g_free (suffix);
     }
@@ -2357,24 +2420,28 @@ collect_glob (gpointer key,
 	      gpointer data)
 {
   gchar *glob = (gchar *)key;
-  Type *type = (Type *)value;
-  gchar *mimetype;
-
-  mimetype = g_strdup_printf ("%s/%s", type->media, type->subtype);
-
+  GList *list = (GList *)value;
   GHashTable *strings = (GHashTable *)data;
+  gchar *mimetype;
+  Type *type;
 
   switch (glob_type (glob))
     {
-    case GLOB_LITERAL:
-    case GLOB_FULL:
-      g_hash_table_insert (strings, glob, NULL);
-      break;
-    default:
-      break;
-    }
+      case GLOB_LITERAL:
+      case GLOB_FULL:
+        g_hash_table_insert (strings, glob, NULL);
+        break;
+     default:
+        break;
+   }
 
-  g_hash_table_insert (strings, mimetype, NULL);
+  for (; list; list = list->next) 
+    {	  
+      type = (Type *)list->data;
+      mimetype = g_strdup_printf ("%s/%s", type->media, type->subtype);
+
+     g_hash_table_insert (strings, mimetype, NULL);
+    }
 }
 
 static void

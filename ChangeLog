@@ -1,3 +1,14 @@
+2005-12-01  Matthias Clasen  <mclasen@redhat.com>
+
+	* shared-mime-info-spec.xml: Add acronym and expanded-acronym
+	elements, add recommendations for handling duplicate globs.
+	Specify how duplicate globs are stored in mime.cache.
+
+	* update-mime-database.c (process_freedesktop_node): Allow 
+	identical globs.
+	(insert_suffix): Store duplicate globs in the suffix tree
+	by using '\0' as a key.
+
 2005-12-01  Christian Neumair  <chris@gnome-de.org>
 
 	* freedesktop.org.xml.in: Rename "text/xml" to "application/xml", make

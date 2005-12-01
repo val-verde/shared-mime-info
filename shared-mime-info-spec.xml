@@ -1,8 +1,8 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
 "/usr/share/sgml/docbook/dtd/xml/4.1.2/docbookx.dtd" [
-  <!ENTITY updated "1 April 2005">
-  <!ENTITY version "0.14">
+  <!ENTITY updated "1 December 2005">
+  <!ENTITY version "0.15">
 ]>
 <article id="index">
 
@@ -285,8 +285,24 @@ attribute. See <xref linkend="subclassing"/>.
 				</para></listitem>
 				<listitem><para>
 <userinput>comment</userinput> elements give a human-readable textual description of the MIME
-type. There may be many of these elements with different <userinput>xml:lang</userinput> attributes
+type, usually composed of an acronym of the file name extension and a short description, like
+"ODS spreadsheet".
+There may be many of these elements with different <userinput>xml:lang</userinput> attributes
 to provide the text in multiple languages.
+				</para></listitem>
+				<listitem><para>
+<userinput>acronym</userinput> elements give experienced users a terse idea of the document contents.
+for example "ODS", "GEDCOM", "JPEG" and "XML".
+There may be many of these elements with different <userinput>xml:lang</userinput> attributes
+to provide the text in multiple languages, although these should only be used if absolutely neccessary.
+				</para></listitem>
+				<listitem><para>
+<userinput>expanded-acronym</userinput> elements are the expanded versions of the acronym elements,
+for example "OpenDocument Spreadsheet", "GEnealogical Data COMmunication", and "eXtensible Markup Language".
+The purpose of these elements is to provide users a way to look up information on various MIME types or
+file formats in third-party resources.
+There may be many of these elements with different <userinput>xml:lang</userinput> attributes
+to provide the text in multiple languages, although these should only be used if absolutely neccessary.
 				</para></listitem>
 				<listitem><para>
 <userinput>root-XML</userinput> elements have <userinput>namespaceURI</userinput> 
@@ -384,6 +400,13 @@ be matched before all others. It is suggested that patterns beginning with `*.'
 and containing no other special characters (`*?[') should be placed in a hash
 table for efficient lookup, since this covers the majority of the patterns. Thus,
 patterns of this form should be matched before other wildcarded patterns.
+		</para>
+		<para>
+If a matching pattern is provided by two or more MIME types, applications
+SHOULD not rely on one of them. They are instead supposed to use magic data
+(see below) to detect the actual MIME type. This is for instance required to
+deal with container formats like Ogg or AVI, that map various video and/or
+audio-encoded data to one extension.
 		</para>
 		<para>
 There may be several rules mapping to the same type. They should all be merged.
@@ -591,9 +614,14 @@ NamespaceEntry:
 4			CARD32		MIME_TYPE_OFFSET
 </programlisting>
 <para>
-Lists in the file are sorted, to enable binary searching. The list of aliases is sorted by alias, 
-the list of literal globs is sorted by the literal. The SuffixTreeNode siblings are sorted by character. 
+Lists in the file are sorted, to enable binary searching. The list of 
+aliases is sorted by alias, the list of literal globs is sorted by the 
+literal. The SuffixTreeNode siblings are sorted by character. 
 The list of namespaces is sorted by namespace uri.
+</para>
+<para>
+Identical globs are stored in the suffix tree by appending suffix
+tree nodes with '\0' as character.
 </para>
 <para>
 All offsets are in bytes from the beginning of the file.

@@ -1,5 +1,12 @@
 2005-12-01  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: Add Ogg-related MIME types:
+	"audio/x-vorbis", "audio/x-oggflac", "audio/x-speex", "video/x-theora"
+	and "video/x-ogm". Make them subtypes of "application/ogg".
+	Fixes #1002.
+
+2005-12-01  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: Make "application/x-mozilla-bookmarks"
 	subtype of "text/html". Fixes #3169. Thanks to Reinout van Schouwen.
 

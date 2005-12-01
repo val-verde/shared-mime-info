@@ -1272,6 +1272,7 @@ command to generate the output files.
     <glob pattern="*.mif"/>
   </mime-type>
   <mime-type type="application/x-mozilla-bookmarks">
+    <sub-class-of type="text/html"/>
     <_comment>Mozilla bookmarks</_comment>
     <magic priority="80">
       <match type="string" value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" offset="0:64"/>

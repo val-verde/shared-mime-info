@@ -1,3 +1,8 @@
+2005-12-01  Christian Neumair  <chris@gnome-de.org>
+
+	* freedesktop.org.xml.in: Make "application/x-mozilla-bookmarks"
+	subtype of "text/html". Fixes #3169. Thanks to Reinout van Schouwen.
+
 2005-12-01  Matthias Clasen  <mclasen@redhat.com>
 
 	* shared-mime-info-spec.xml: Add acronym and expanded-acronym

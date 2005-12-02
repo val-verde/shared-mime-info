@@ -1353,7 +1353,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ogg"/>
   </mime-type>
-  <mime-type type="audio/x-vorbis">
+  <mime-type type="audio/x-vorbis+ogg">
     <sub-class-of type="application/ogg"/>
     <comment>Ogg Vorbis audio</comment>
     <magic priority="80">
@@ -1363,7 +1363,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ogg"/>
   </mime-type>
-  <mime-type type="audio/x-oggflac">
+  <mime-type type="audio/x-oggflac+ogg">
     <sub-class-of type="application/ogg"/>
     <comment>Ogg FLAC audio</comment>
     <magic priority="80">
@@ -1373,7 +1373,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ogg"/>
   </mime-type>
-  <mime-type type="audio/x-speex">
+  <mime-type type="audio/x-speex+ogg">
     <sub-class-of type="application/ogg"/>
     <comment>Ogg Speex audio</comment>
     <magic priority="80">
@@ -1383,7 +1383,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ogg"/>
   </mime-type>
-  <mime-type type="video/x-theora">
+  <mime-type type="video/x-theora+ogg">
     <sub-class-of type="application/ogg"/>
     <comment>Ogg Theora video</comment>
     <magic priority="80">
@@ -1393,7 +1393,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ogg"/>
   </mime-type>
-  <mime-type type="video/x-ogm">
+  <mime-type type="video/x-ogm+ogg">
     <sub-class-of type="application/ogg"/>
     <comment>OGM video</comment>
     <magic priority="80">

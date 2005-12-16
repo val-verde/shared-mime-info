@@ -2547,6 +2547,11 @@ command to generate the output files.
     <glob pattern="*.C"/>
     <glob pattern="*.c++"/>
   </mime-type>
+  <mime-type type="text/x-changelog">
+    <sub-class-of type="text/plain"/>
+    <_comment>ChangeLog document</_comment>
+    <glob pattern="ChangeLog"/>
+  </mime-type>
   <mime-type type="text/x-chdr">
     <sub-class-of type="text/plain"/>
     <_comment>C header</_comment>

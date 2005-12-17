@@ -1872,8 +1872,8 @@ command to generate the output files.
     <_comment>Playlist</_comment>
     <magic priority="50">
       <match type="string" value="ASF " offset="0"/>
-      <match type="string" value="&lt;ASX" offset="0"/>
-      <match type="string" value="&lt;asx" offset="0"/>
+      <match type="string" value="&lt;ASX" offset="0:64"/>
+      <match type="string" value="&lt;asx" offset="0:64"/>
     </magic>
   </mime-type>
   <mime-type type="audio/vnd.rn-realaudio">

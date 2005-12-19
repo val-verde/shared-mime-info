@@ -627,6 +627,16 @@ command to generate the output files.
     <glob pattern="*.tar.bz"/>
     <glob pattern="*.tar.bz2"/>
   </mime-type>
+  <mime-type type="application/x-cbr">
+    <sub-class-of type="application/x-rar"/>
+    <comment>comic book archive</comment>
+    <glob pattern="*.cbr"/>
+  </mime-type>
+  <mime-type type="application/x-cbz">
+    <sub-class-of type="application/zip"/>
+    <comment>comic book archive</comment>
+    <glob pattern="*.cbz"/>
+  </mime-type>
   <mime-type type="application/x-cd-image">
     <_comment>raw CD image</_comment>
     <glob pattern="*.iso"/>

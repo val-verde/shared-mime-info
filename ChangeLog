@@ -1,3 +1,9 @@
+2005-12-19  Christian Neumair  <chris@gnome-de.org>
+
+	* freedesktop.org.xml.in: Add CBR/CBZ MIME types "application/x-cbr"
+	and "application/x-cbz". Fixes #3122. Thanks to Paul Coates, Nickolay
+	V. Shmyrev and Olivier Le Thanh Duong.
+
 2005-12-19  Matthias Clasen  <mclasen@redhat.com>
 
 	* update-mime-database.c (write_magic_cache): Reset the match data

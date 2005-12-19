@@ -2336,6 +2336,8 @@ write_magic_cache (FILE        *cache,
       write_matchlet (cache, match, data.matches, *offset, &offset2);
     }
 
+  offset2 = *offset + 32 * g_list_length (data.matches);
+
   for (m = data.matches; m; m = m->next)
     {
       Match *match = (Match *)m->data;

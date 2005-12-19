@@ -1,3 +1,9 @@
+2005-12-19  Matthias Clasen  <mclasen@redhat.com>
+
+	* update-mime-database.c (write_magic_cache): Reset the match data
+	offset when starting to write out match datas, pointed out by
+	Alex Larsson.
+
 2005-12-17  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: search a bit further in ASF playlists

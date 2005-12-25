@@ -1,3 +1,8 @@
+2005-12-25  Christian Neumair  <chris@gnome-de.org>
+
+	* freedesktop.org.xml.in: Make "audio/3gpp" an alias for "video/3gpp".
+	Fixes #5419. Thanks to Thiago Macieira and GML.
+
 2005-12-19  Christian Neumair  <chris@gnome-de.org>
 
 	* freedesktop.org.xml.in: Add CBR/CBZ MIME types "application/x-cbr"

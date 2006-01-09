@@ -1,3 +1,9 @@
+2006-01-09  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: add Flash Video support, with the
+	Macromedia recommended mime-type (flv-application/octet-stream)
+	being an alias
+
 2006-01-04  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Add video/dv detection

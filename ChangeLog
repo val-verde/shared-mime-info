@@ -1,5 +1,12 @@
 2006-02-04  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Remove "sub-class" association with
+	text/plain for mime-types that it doesn't make sense to open in a
+	text editor, see for details:
+	http://lists.freedesktop.org/archives/xdg/2005-June/007032.html
+
+2006-02-04  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: add *.nfo as a pattern for README files
 
 2006-02-01  Bastien Nocera  <hadess@hadess.net>

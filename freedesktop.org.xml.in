@@ -80,7 +80,6 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/mathematica">
-    <sub-class-of type="text/plain"/>
     <_comment>Mathematica Notebook</_comment>
     <glob pattern="*.nb" />
     <magic priority="50">
@@ -155,7 +154,6 @@ command to generate the output files.
     <glob pattern="*.ps"/>
   </mime-type>
   <mime-type type="application/rtf">
-    <sub-class-of type="text/plain"/>
     <_comment>RTF document</_comment>
     <acronym>RTF</acronym>
     <expanded-acronym>Rich Text Format</expanded-acronym>
@@ -165,7 +163,7 @@ command to generate the output files.
     <glob pattern="*.rtf"/>
   </mime-type>
   <mime-type type="application/smil">
-    <sub-class-of type="text/plain"/>
+    <sub-class-of type="application/xml"/>
     <_comment>SMIL document</_comment>
     <acronym>SMIL</acronym>
     <expanded-acronym>Synchronized Multimedia Integration Language</expanded-acronym>
@@ -218,7 +216,6 @@ command to generate the output files.
     <alias type="flv-application/octet-stream"/>
   </mime-type>
   <mime-type type="application/x-go-sgf">
-    <sub-class-of type="text/plain"/>
     <!-- translators: a record is in this context a description of a board game
     		      that has been played, and that can be played back again:
 		      http://www.red-bean.com/sgf/ -->
@@ -498,7 +495,7 @@ command to generate the output files.
     <glob pattern="*.wpd"/>
   </mime-type>
   <mime-type type="application/x-xbel">
-    <sub-class-of type="text/plain"/>
+    <sub-class-of type="application/xml"/>
     <_comment>XBEL bookmarks</_comment>
     <acronym>XBEL</acronym>
     <expanded-acronym>XML Bookmark Exchange Language</expanded-acronym>
@@ -1342,7 +1339,7 @@ command to generate the output files.
     <glob pattern="*.nc"/>
   </mime-type>
   <mime-type type="application/x-netscape-bookmarks">
-    <sub-class-of type="text/plain"/>
+    <sub-class-of type="text/html"/>
     <_comment>Netscape bookmarks</_comment>
     <magic priority="80">
       <match type="string" value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" offset="0:64"/>
@@ -1545,7 +1542,6 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/x-shar">
-    <sub-class-of type="text/plain"/>
     <_comment>shell archive</_comment>
     <glob pattern="*.shar"/>
   </mime-type>
@@ -2499,7 +2495,6 @@ command to generate the output files.
     <_comment>email headers</_comment>
   </mime-type>
   <mime-type type="text/richtext">
-    <sub-class-of type="text/plain"/>
     <_comment>rich text document</_comment>
     <glob pattern="*.rtx"/>
   </mime-type>

@@ -1,3 +1,9 @@
+2006-02-19  Christian Neumair  <chris@gnome-de.org>
+
+	* freedesktop.org.xml.in: also add "%" glob pattern to "text/x-tex".
+	Still requires xdgmime fixes to not conflict with matlab:
+	http://bugzilla.gnome.org/show_bug.cgi?id=331719
+
 2006-02-07  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: fixed the typo that made it uninstallable

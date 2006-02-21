@@ -1,5 +1,10 @@
 2006-02-21  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: fix "application/x-tex-gf" and
+	"application/x-tex-pk" globs. Fixes #5373. Thanks to Jens Herden.
+
+2006-02-21  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: remove "makefile*" glob from
 	"text/x-makefile". Fixes #3256. Thanks to Björn Lindqvist.
 

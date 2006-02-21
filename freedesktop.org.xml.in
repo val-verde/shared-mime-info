@@ -1647,11 +1647,11 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-tex-gf">
     <_comment>generic font file</_comment>
-    <glob pattern="*.*gf"/>
+    <glob pattern="*.gf"/>
   </mime-type>
   <mime-type type="application/x-tex-pk">
     <_comment>packed font file</_comment>
-    <glob pattern="*pk"/>
+    <glob pattern="*.pk"/>
   </mime-type>
   <mime-type type="application/x-tgif">
     <_comment>TGIF document</_comment>

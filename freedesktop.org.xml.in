@@ -2741,7 +2741,6 @@ command to generate the output files.
   <mime-type type="text/x-makefile">
     <sub-class-of type="text/plain"/>
     <_comment>Makefile</_comment>
-    <glob pattern="makefile*"/>
     <glob pattern="[Mm]akefile"/>
     <glob pattern="GNUmakefile"/>
   </mime-type>

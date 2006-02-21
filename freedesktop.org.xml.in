@@ -1479,6 +1479,10 @@ command to generate the output files.
     <glob pattern="*.p12"/>
     <glob pattern="*.pfx"/>
   </mime-type>
+  <mime-type type="application/x-planperfect">
+    <_comment>PlanPerfect spreadsheet</_comment>
+    <glob pattern="*.pln"/>
+  </mime-type>
   <mime-type type="application/x-profile">
     <sub-class-of type="text/plain"/>
     <_comment>profiler results</_comment>

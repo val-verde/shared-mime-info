@@ -974,6 +974,12 @@ command to generate the output files.
     </magic>
     <glob pattern="*.gnumeric"/>
   </mime-type>
+  <mime-type type="application/x-gnuplot">
+    <_comment>Gnuplot document</_comment>
+    <glob pattern="*.gp"/>
+    <glob pattern="*.gplt"/>
+    <glob pattern="*.gnuplot"/>
+  </mime-type>
   <mime-type type="application/x-graphite">
     <_comment>Graphite scientific graph</_comment>
     <glob pattern="*.gra"/>

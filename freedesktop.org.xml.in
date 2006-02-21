@@ -2174,13 +2174,6 @@ command to generate the output files.
       <match type="big32" value="0x46506978" offset="0"/>
     </magic>
   </mime-type>
-  <mime-type type="image/x-icb">
-    <_comment>Truevision Targa image</_comment>
-    <magic priority="50">
-      <match type="big32" value="0x00000200" offset="0"/>
-    </magic>
-    <glob pattern="*.icb"/>
-  </mime-type>
   <mime-type type="image/x-ico">
     <_comment>ICO icon</_comment>
     <acronym>ICO</acronym>
@@ -2299,8 +2292,18 @@ command to generate the output files.
     <glob pattern="*.sun"/>
   </mime-type>
   <mime-type type="image/x-tga">
-    <_comment>TarGA image</_comment>
+    <_comment>TGA image</_comment>
+    <acronym>TGA</acronym>
+    <acronym>Truevision Graphics Adapter</acronym>
+    <glob pattern="*.icb"/>
     <glob pattern="*.tga"/>
+    <glob pattern="*.tpic"/>
+    <glob pattern="*.vda"/>
+    <glob pattern="*.vst"/>
+    <magic priority="50">
+      <match type="big32" value="0x00000200" offset="0"/>
+    </magic>
+    <alias type="image/x-icb"/>
   </mime-type>
   <mime-type type="image/x-win-bitmap">
     <_comment>Windows cursor</_comment>

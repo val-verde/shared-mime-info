@@ -1,5 +1,10 @@
 2006-02-21  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: merge ICB and TGA into TGA MIME type, add
+	some more extensions. Fixes #1276. Thanks to Filip Van Raemdonck.
+
+2006-02-21  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: add "application/x-planperfect" MIME type.
 	Fixes #3148.
 

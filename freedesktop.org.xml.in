@@ -3029,6 +3029,7 @@ command to generate the output files.
       <match type="string" value="RIFF" offset="0"/>
     </magic>
     <glob pattern="*.avi"/>
+    <glob pattern="*.divx"/>
   </mime-type>
   <mime-type type="video/x-nsv">
     <_comment>NSV video</_comment>

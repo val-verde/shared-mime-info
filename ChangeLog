@@ -1,5 +1,11 @@
 2006-03-02  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: make "text/rdf" a subclass of
+	"application/xml" instead of "text/plain". Fixes GNOME #331468.
+	Thanks to Luca Ferretti.
+
+2006-03-02  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: make "application/x-abiword" a subclass of
 	"application/xml". Fixes GNOME #333158/Launchpad #33301.
 	Thanks to Lionel Dricot and Sebastien Bacher.

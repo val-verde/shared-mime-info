@@ -1,3 +1,13 @@
+2006-03-09  Christian Neumair  <chris@gnome-de.org>
+
+	* freedesktop.org.xml.in: make "x-directory/normal" an alias for
+	"inode/directory".
+
+2006-03-09  Christian Neumair  <chris@gnome-de.org>
+
+	* freedesktop.org.xml.in: make "application/x-cue" a subclass of
+	"text/plain". Fixes GNOME #334008. Thanks to Stefan Jol.
+
 2006-03-02  Christian Neumair  <chris@gnome-de.org>
 
 	* freedesktop.org.xml.in: make "text/rdf" a subclass of

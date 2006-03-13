@@ -2978,6 +2978,7 @@ command to generate the output files.
       <match type="string" value="mdat" offset="12"/>
       <match type="string" value="mdat" offset="4"/>
       <match type="string" value="moov" offset="4"/>
+      <match type="string" value="&lt;?quicktime" offset="0:64"/>
     </magic>
     <glob pattern="*.qt"/>
     <glob pattern="*.mov"/>

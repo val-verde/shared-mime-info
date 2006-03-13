@@ -1,3 +1,8 @@
+2006-03-13  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Add "application/x-srt" for .srt subtitle
+	files, and make them a subclass of text/plain
+
 2006-03-09  Christian Neumair  <chris@gnome-de.org>
 
 	* freedesktop.org.xml.in: make "x-directory/normal" an alias for

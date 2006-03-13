@@ -1581,6 +1581,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.so"/>
   </mime-type>
+  <mime-type type="application/x-srt">
+    <sub-class-of type="text/plain"/>
+    <_comment>subtitle file</_comment>
+    <glob pattern="*.srt"/>
+  </mime-type>
   <mime-type type="application/x-shellscript">
     <sub-class-of type="application/x-executable"/>
     <sub-class-of type="text/plain"/>

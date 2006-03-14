@@ -1,3 +1,31 @@
+shared-mime-info 0.17 (2006-03-14)
+
+* Mime-types Changes:
+- Added application/x-cue (CD image cuesheet)
+- Added application/vnd.ms-access (Access database)
+- Added application/x-7z-compressed (7-zip archive)
+- Added application/mathematica (Mathematica)
+- Added application/x-gedcom (GEDCOM genealogy)
+- Added application/x-shorten (Shorten audio)
+- Added video/3gpp (3GPP video)
+- Added application/docbook+xml (Docbook)
+- Added application/x-sqlite (SQLite database)
+- Added application/x-go-sgf (Go saved games)
+- Added application/x-m4 (M4 scripts)
+- Added a few Ogg related mime-types
+- Added application/x-cbr and application/x-cbz (Comic books archives)
+- Added flv-application/octet-stream (Flash video)
+- Added application/x-gnuplot (Gnuplot)
+- Added application/x-srt (Text subtitle files)
+
+* New translations:
+- zh_TW
+
+* Spec changes:
+- Make the mime cache contain an mmappable binary format
+- Add acronym and expanded-acronym
+- Add recommendations for duplicate globs handling
+
 shared-mime-info 0.16  (2004-03-22)
 
 * Mime Types Changes:
@@ -23,7 +51,7 @@ shared-mime-info 0.15  (2004-08-30)
 * Translations:
 - new translations: Danish (Ole Laursen), Greek (Nikos Charonitakis), 
   Korean (Cha Young-Ho)
-- updated translations: Finnish  (Ville Skytt‰), German (Christian Neumair)
+- updated translations: Finnish  (Ville Skytt√§), German (Christian Neumair)
 
 			Version 0.14 (21-Mar-2004)
 

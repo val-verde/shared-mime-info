@@ -1,5 +1,11 @@
 2006-03-15  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add a mime-type for WMA (Closes: #2178),
+	and make it and WMV sub-classes of ASF (Closes: #2051), patches from
+	Stanislav Brabec <sbrabec@suse.cz>
+
+2006-03-15  Bastien Nocera  <hadess@hadess.net>
+
 	* configure.in: also install the Danish translation, patch from 
 	Stanislav Brabec <sbrabec@suse.cz> (Closes: #2051)
 

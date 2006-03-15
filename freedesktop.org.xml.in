@@ -1908,6 +1908,13 @@ command to generate the output files.
       <match type="string" value="&lt;asx" offset="0:64"/>
     </magic>
   </mime-type>
+  <mime-type type="audio/x-ms-wma">
+    <sub-class-of type="video/x-ms-asf"/>
+    <_comment>WMA audio</_comment>
+    <acronym>WMA</acronym>
+    <expanded-acronym>Windows Media Audio</expanded-acronym>
+    <glob pattern="*.wma"/>
+  </mime-type>
   <mime-type type="audio/vnd.rn-realaudio">
     <_comment>RealAudio document</_comment>
     <glob pattern="*.ra"/>
@@ -3023,6 +3030,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="video/x-ms-wmv">
+    <sub-class-of type="video/x-ms-asf"/>
     <_comment>WMV video</_comment>
     <acronym>WMV</acronym>
     <expanded-acronym>Windows Media Video</expanded-acronym>

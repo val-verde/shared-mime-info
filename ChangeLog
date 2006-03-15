@@ -1,5 +1,10 @@
 2006-03-15  Bastien Nocera  <hadess@hadess.net>
 
+	* configure.in: also install the Danish translation, patch from 
+	Stanislav Brabec <sbrabec@suse.cz> (Closes: #2051)
+
+2006-03-15  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add *.qtl glob for Quicktime Links files
 	(from http://developer.apple.com/documentation/QuickTime/QT6WhatsNew/Chap1/chapter_1_section_53.html)
 

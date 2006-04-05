@@ -14,6 +14,11 @@ update_mime_database_SOURCES = update-mime-database.c
 update_mime_database_CFLAGS = $(ALL_CFLAGS)
 update_mime_database_LDADD = $(ALL_LIBS)
 
+noinst_PROGRAMS = test-subclassing
+test_subclassing_SOURCES = test-subclassing.c
+test_subclassing_CFLAGS = $(ALL_CFLAGS)
+test_subclassing_LDADD = $(ALL_LIBS)
+
 man_MANS = update-mime-database.1
 
 EXTRA_DIST = \

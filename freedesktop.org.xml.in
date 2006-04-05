@@ -80,6 +80,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/mathematica">
+    <sub-class-of type="text/plain"/>
     <_comment>Mathematica Notebook</_comment>
     <glob pattern="*.nb" />
     <magic priority="50">
@@ -110,6 +111,7 @@ command to generate the output files.
     <glob pattern="*.oda"/>
   </mime-type>
   <mime-type type="application/pdf">
+    <sub-class-of type="text/plain"/>
     <_comment>PDF document</_comment>
     <acronym>PDF</acronym>
     <expanded-acronym>Portable Document Format</expanded-acronym>
@@ -129,17 +131,20 @@ command to generate the output files.
     <_comment>PGP/MIME-encrypted message header</_comment>
   </mime-type>
   <mime-type type="application/pgp-keys">
+    <sub-class-of type="text/plain"/>
     <_comment>PGP keys</_comment>
     <acronym>PGP</acronym>
     <expanded-acronym>Pretty Good Privacy</expanded-acronym>
   </mime-type>
   <mime-type type="application/pgp-signature">
+    <sub-class-of type="text/plain"/>
     <_comment>detached OpenPGP signature</_comment>
   </mime-type>
   <mime-type type="application/pkcs7-mime">
     <_comment>S/MIME file</_comment>
   </mime-type>
   <mime-type type="application/pkcs7-signature">
+    <sub-class-of type="text/plain"/>
     <_comment>detached S/MIME signature</_comment>
     <glob pattern="*.p7s"/>
   </mime-type>
@@ -155,6 +160,7 @@ command to generate the output files.
     <glob pattern="*.ps"/>
   </mime-type>
   <mime-type type="application/rtf">
+    <sub-class-of type="text/plain"/>
     <_comment>RTF document</_comment>
     <acronym>RTF</acronym>
     <expanded-acronym>Rich Text Format</expanded-acronym>
@@ -362,124 +368,148 @@ command to generate the output files.
     <glob pattern="*.sgl"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc">
+    <sub-class-of type="application/zip"/>
     <_comment>OpenOffice Calc</_comment>
     <glob pattern="*.sxc"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc.template">
+    <sub-class-of type="application/zip"/>
     <_comment>OpenOffice Calc template</_comment>
     <glob pattern="*.stc"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw">
+    <sub-class-of type="application/zip"/>
     <_comment>OpenOffice Draw</_comment>
     <glob pattern="*.sxd"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw.template">
+    <sub-class-of type="application/zip"/>
     <_comment>OpenOffice Draw template</_comment>
     <glob pattern="*.std"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.impress">
+    <sub-class-of type="application/zip"/>
     <_comment>OpenOffice Impress</_comment>
     <glob pattern="*.sxi"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.impress.template">
+    <sub-class-of type="application/zip"/>
     <_comment>OpenOffice Impress template</_comment>
     <glob pattern="*.sti"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.math">
+    <sub-class-of type="application/zip"/>
     <_comment>OpenOffice Math</_comment>
     <glob pattern="*.sxm"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer">
+    <sub-class-of type="application/zip"/>
     <_comment>OpenOffice Writer</_comment>
     <glob pattern="*.sxw"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer.global">
+    <sub-class-of type="application/zip"/>
     <_comment>OpenOffice Writer global</_comment>
     <glob pattern="*.sxg"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer.template">
+    <sub-class-of type="application/zip"/>
     <_comment>OpenOffice Writer template</_comment>
     <glob pattern="*.stw"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text">
+    <sub-class-of type="application/zip"/>
     <_comment>ODT document</_comment>
     <acronym>ODT</acronym>
     <expanded-acronym>OpenDocument Text</expanded-acronym>
     <glob pattern="*.odt"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-template">
+    <sub-class-of type="application/zip"/>
     <_comment>ODT template</_comment>
     <acronym>OTT</acronym>
     <expanded-acronym>OpenDocument Text Template</expanded-acronym>
     <glob pattern="*.ott"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-web">
+    <sub-class-of type="application/zip"/>
     <_comment>OTH template</_comment>
     <acronym>OTH</acronym>
     <expanded-acronym>OpenDocument HTML</expanded-acronym>
     <glob pattern="*.oth"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-master">
+    <sub-class-of type="application/zip"/>
     <_comment>ODM document</_comment>
     <acronym>ODM</acronym>
     <expanded-acronym>OpenDocument Master</expanded-acronym>
     <glob pattern="*.odm"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.graphics">
+    <sub-class-of type="application/zip"/>
     <_comment>ODG drawing</_comment>
     <acronym>ODG</acronym>
     <expanded-acronym>OpenDocument Drawing</expanded-acronym>
     <glob pattern="*.odg"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.graphics-template">
+    <sub-class-of type="application/zip"/>
     <_comment>ODG template</_comment>
     <acronym>OTG</acronym>
     <expanded-acronym>OpenDocument Drawing Template</expanded-acronym>
     <glob pattern="*.otg"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.presentation">
+    <sub-class-of type="application/zip"/>
     <_comment>ODP presentation</_comment>
     <acronym>ODP</acronym>
     <expanded-acronym>OpenDocument Presentation</expanded-acronym>
     <glob pattern="*.odp"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.presentation-template">
+    <sub-class-of type="application/zip"/>
     <_comment>ODP template</_comment>
     <acronym>OTP</acronym>
     <expanded-acronym>OpenDocument Presentation Template</expanded-acronym>
     <glob pattern="*.otp"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.spreadsheet">
+    <sub-class-of type="application/zip"/>
     <_comment>ODS spreadsheet</_comment>
     <acronym>ODS</acronym>
     <expanded-acronym>OpenDocument Spreadsheet</expanded-acronym>
     <glob pattern="*.ods"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.spreadsheet-template">
+    <sub-class-of type="application/zip"/>
     <_comment>ODS template</_comment>
     <acronym>OTS</acronym>
     <expanded-acronym>OpenDocument Spreadsheet Template</expanded-acronym>
     <glob pattern="*.ots"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.chart">
+    <sub-class-of type="application/zip"/>
     <_comment>ODC chart</_comment>
     <acronym>ODC chart</acronym>
     <expanded-acronym>OpenDocument Chart</expanded-acronym>
     <glob pattern="*.odc"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.formula">
+    <sub-class-of type="application/zip"/>
     <_comment>ODF formula</_comment>
     <acronym>ODF</acronym>
     <expanded-acronym>OpenDocument Formula</expanded-acronym>
     <glob pattern="*.odf"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.database">
+    <sub-class-of type="application/zip"/>
     <_comment>ODB database</_comment>
     <acronym>ODB</acronym>
     <expanded-acronym>OpenDocument Database</expanded-acronym>
     <glob pattern="*.odb"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.image">
+    <sub-class-of type="application/zip"/>
     <_comment>ODI image</_comment>
     <acronym>ODI</acronym>
     <expanded-acronym>OpenDocument Image</expanded-acronym>
@@ -634,6 +664,8 @@ command to generate the output files.
     <_comment>tar archive (bzip-compressed)</_comment>
     <glob pattern="*.tar.bz"/>
     <glob pattern="*.tar.bz2"/>
+    <glob pattern="*.tbz"/>
+    <glob pattern="*.tbz2"/>
   </mime-type>
   <mime-type type="application/x-cbr">
     <sub-class-of type="application/x-rar"/>
@@ -1675,7 +1707,7 @@ command to generate the output files.
     <glob pattern="*.obj"/>
   </mime-type>
   <mime-type type="application/x-theme">
-    <sub-class-of type="text/plain"/>
+    <sub-class-of type="application/x-desktop"/>
     <_comment>theme</_comment>
     <glob pattern="*.theme"/>
   </mime-type>
@@ -1895,6 +1927,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-mpegurl">
     <_comment>MP3 audio (streamed)</_comment>
+    <sub-class-of type="text/plain"/>
     <alias type="audio/mpegurl" />
     <glob pattern="*.m3u"/>
     <magic priority="50">
@@ -2394,6 +2427,7 @@ command to generate the output files.
     <_comment>mail delivery report</_comment>
   </mime-type>
   <mime-type type="message/disposition-notification">
+    <sub-class-of type="text/plain"/>
     <_comment>mail disposition report</_comment>
   </mime-type>
   <mime-type type="message/external-body">
@@ -2432,6 +2466,7 @@ command to generate the output files.
     <glob pattern="RMAIL"/>
   </mime-type>
   <mime-type type="model/vrml">
+    <sub-class-of type="text/plain"/>
     <_comment>VRML document</_comment>
     <glob pattern="*.wrl"/>
   </mime-type>
@@ -2463,6 +2498,7 @@ command to generate the output files.
     <_comment>stream of data (server push)</_comment>
   </mime-type>
   <mime-type type="text/calendar">
+    <sub-class-of type="text/plain"/>
     <alias type="text/x-vcalendar"/>
     <_comment>VCS/ICS calendar</_comment>
     <acronym>VCS/ICS</acronym>
@@ -2484,6 +2520,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/directory">
     <alias type="text/x-vcard"/>
+    <sub-class-of type="text/plain"/>
     <_comment>Electronic Business Card</_comment>
     <magic priority="50">
       <match type="string" value="BEGIN:VCARD" offset="0"/>
@@ -2494,13 +2531,15 @@ command to generate the output files.
     <glob pattern="*.gcrd"/>
   </mime-type>
   <mime-type type="text/enriched">
+    <sub-class-of type="text/plain"/>
     <_comment>enriched text document</_comment>
   </mime-type>
   <mime-type type="text/htmlh">
+    <sub-class-of type="text/plain"/>
     <_comment>help page</_comment>
   </mime-type>
   <mime-type type="text/mathml">
-    <sub-class-of type="text/xml"/>
+    <sub-class-of type="application/xml"/>
     <_comment>MathML document</_comment>
     <glob pattern="*.mml"/>
   </mime-type>
@@ -2521,9 +2560,11 @@ command to generate the output files.
     <glob pattern="*.rdf"/>
   </mime-type>
   <mime-type type="text/rfc822-headers">
+    <sub-class-of type="text/plain"/>
     <_comment>email headers</_comment>
   </mime-type>
   <mime-type type="text/richtext">
+    <sub-class-of type="text/plain"/>
     <_comment>rich text document</_comment>
     <glob pattern="*.rtx"/>
   </mime-type>
@@ -2535,6 +2576,7 @@ command to generate the output files.
     <glob pattern="*.rss"/>
   </mime-type>
   <mime-type type="text/sgml">
+    <sub-class-of type="text/plain"/>
     <_comment>SGML document</_comment>
     <acronym>SGML</acronym>
     <expanded-acronym>Standard Generalized Markup Language</expanded-acronym>
@@ -2542,6 +2584,7 @@ command to generate the output files.
     <glob pattern="*.sgm"/>
   </mime-type>
   <mime-type type="text/spreadsheet">
+    <sub-class-of type="text/plain"/>
     <_comment>Spreadsheet interchange document</_comment>
     <magic priority="50">
       <match type="string" value="ID;" offset="0"/>
@@ -2555,6 +2598,7 @@ command to generate the output files.
     <glob pattern="*.tsv"/>
   </mime-type>
   <mime-type type="text/vnd.wap.wml">
+    <sub-class-of type="application/xml"/>
     <_comment>WML document</_comment>
     <acronym>WML</acronym>
     <expanded-acronym>Wireless Markup Language</expanded-acronym>
@@ -2646,6 +2690,7 @@ command to generate the output files.
     <glob pattern="*.dcl"/>
   </mime-type>
   <mime-type type="text/x-dsl">
+    <sub-class-of type="text/plain"/>
     <_comment>DSSSL document</_comment>
     <acronym>DSSSL</acronym>
     <expanded-acronym>Document Style Semantics and Specification Language</expanded-acronym>
@@ -2690,6 +2735,7 @@ command to generate the output files.
     <glob pattern="*.pot"/>
   </mime-type>
   <mime-type type="text/html">
+    <sub-class-of type="text/plain"/>
     <_comment>HTML document</_comment>
     <acronym>HTML</acronym>
     <expanded-acronym>HyperText Markup Language</expanded-acronym>
@@ -2859,6 +2905,7 @@ command to generate the output files.
     <glob pattern="*.etx"/>
   </mime-type>
   <mime-type type="text/x-speech">
+    <sub-class-of type="text/plain"/>
     <_comment>Speech document</_comment>
   </mime-type>
   <mime-type type="text/x-sql">
@@ -2890,34 +2937,41 @@ command to generate the output files.
     <glob pattern="*.texinfo"/>
   </mime-type>
   <mime-type type="text/x-troff-me">
+    <sub-class-of type="text/plain"/>
     <_comment>Troff ME input document</_comment>
     <glob pattern="*.me"/>
   </mime-type>
   <mime-type type="text/x-troff-mm">
+    <sub-class-of type="text/plain"/>
     <_comment>Troff MM input document</_comment>
     <glob pattern="*.mm"/>
   </mime-type>
   <mime-type type="text/x-troff-ms">
+    <sub-class-of type="text/plain"/>
     <_comment>Troff MS input document</_comment>
     <glob pattern="*.ms"/>
   </mime-type>
   <mime-type type="text/x-uil">
+    <sub-class-of type="text/plain"/>
     <_comment>X-Motif UIL table</_comment>
     <glob pattern="*.uil"/>
   </mime-type>
   <mime-type type="text/x-uri">
+    <sub-class-of type="text/plain"/>
     <!-- Note: text/uri-list is reserved by the XDND protocol! -->
     <_comment>resource location</_comment>
     <glob pattern="*.uri"/>
     <glob pattern="*.url"/>
   </mime-type>
   <mime-type type="text/x-xmi">
+    <sub-class-of type="application/xml"/>
     <_comment>XMI file</_comment>
     <acronym>XMI</acronym>
     <expanded-acronym>XML Metadata Interchange</expanded-acronym>
     <glob pattern="*.xmi"/>
   </mime-type>
   <mime-type type="text/x-xslfo">
+    <sub-class-of type="application/xml"/>
     <_comment>XSL FO file</_comment>
     <acronym>XSL FO</acronym>
     <expanded-acronym>XSL Formatting Objects</expanded-acronym>
@@ -2925,7 +2979,6 @@ command to generate the output files.
     <glob pattern="*.xslfo"/>
   </mime-type>
   <mime-type type="application/xslt+xml">
-    <sub-class-of type="text/plain"/>
     <sub-class-of type="application/xml"/>
     <_comment>XSLT stylesheet</_comment>
     <acronym>XSLT</acronym>
@@ -2934,6 +2987,7 @@ command to generate the output files.
     <glob pattern="*.xsl"/>
   </mime-type>
   <mime-type type="text/xmcd">
+    <sub-class-of type="text/plain"/>
     <magic priority="50">
       <match type="string" value="# xmcd" offset="0"/>
     </magic>

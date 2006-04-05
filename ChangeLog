@@ -1,5 +1,11 @@
 2006-04-05  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: Rename "text/rss" to
+	"application/rss+xml", make "text/rss" an alias, make it a subclass of
+	"application/xml".  Thanks to Sebastien Bacher.
+
+2006-04-05  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: Make "application/postscript",
 	a subclass of "text/plain". Thanks to Sebastian Heutling,
 	Tristan Wibberley and Sebastien Bacher.

@@ -1,5 +1,10 @@
 2006-04-05  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: Remove "application/pdf" subclassing
+	information. Thanks to Sebastien Bacher and Bastien Nocera.
+
+2006-04-05  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: Rename "text/rss" to
 	"application/rss+xml", make "text/rss" an alias, make it a subclass of
 	"application/xml".  Thanks to Sebastien Bacher.

@@ -1935,6 +1935,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-ms-asx">
     <_comment>Playlist</_comment>
+    <glob pattern="*.asx"/>
     <magic priority="50">
       <match type="string" value="ASF " offset="0"/>
       <match type="string" value="&lt;ASX" offset="0:64"/>
@@ -3078,7 +3079,6 @@ command to generate the output files.
     <acronym>ASF</acronym>
     <expanded-acronym>Advanced Streaming Format</expanded-acronym>
     <glob pattern="*.asf"/>
-    <glob pattern="*.asx"/>
     <magic priority="50">
       <match type="big32" value="0x3026b275" offset="0"/>
       <match type="string" value="[Reference]" offset="0"/>

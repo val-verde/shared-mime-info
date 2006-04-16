@@ -1,3 +1,9 @@
+2006-04-16  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Make audio/x-ms-asx's magic higher priority
+	than HTML to avoid matching HTML on "<TITLE" present in an ASX file
+	(Closes GNOME #338328 and #338515)
+
 2006-04-14  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: .asx files are of audio/x-ms-asx, not ASF

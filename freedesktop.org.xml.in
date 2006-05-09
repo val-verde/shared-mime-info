@@ -2843,8 +2843,10 @@ command to generate the output files.
   <mime-type type="text/x-matlab">
     <sub-class-of type="text/plain"/>
     <_comment>MATLAB script/function</_comment>
-    <magic priority="50">
+    <magic priority="10">
       <match type="string" value="%" offset="0"/>
+    </magic>
+    <magic priority="50">
       <match type="string" value="function" offset="0"/>
     </magic>
     <glob pattern="*.m"/>
@@ -2928,7 +2930,7 @@ command to generate the output files.
     <glob pattern="*.ltx"/>
     <glob pattern="*.sty"/>
     <glob pattern="*.cls"/>
-    <magic priority="50">
+    <magic priority="10">
       <match type="string" value="%" offset="0"/>
     </magic>
   </mime-type>

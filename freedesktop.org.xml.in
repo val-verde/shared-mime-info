@@ -126,6 +126,15 @@ command to generate the output files.
     <expanded-acronym>Pretty Good Privacy</expanded-acronym>
     <glob pattern="*.pgp"/>
   </mime-type>
+  <mime-type type="application/xspf+xml">
+      <sub-class-of type="application/xml"/>
+      <_comment>XSPF playlist</_comment>
+      <expanded-acronym>XML Shareable Playlist Format</expanded-acronym>
+      <magic priority="50">
+        <match type="string" value="&lt;playlist version=&quot;1" offset="0:64"/>
+      </magic>
+      <glob pattern="*.xspf"/>
+  </mime-type>
   <mime-type type="application/pgp-encrypted">
     <_comment>PGP/MIME-encrypted message header</_comment>
   </mime-type>

@@ -2391,7 +2391,7 @@ command to generate the output files.
     <_comment>XPM image</_comment>
     <acronym>XPM</acronym>
     <expanded-acronym>X PixMap</expanded-acronym>
-    <magic priority="80">
+    <magic priority="50">
       <match type="string" value="/* XPM" offset="0"/>
     </magic>
     <glob pattern="*.xpm"/>
@@ -2623,13 +2623,15 @@ command to generate the output files.
     <glob pattern="*.bib"/>
   </mime-type>
   <mime-type type="text/x-c++hdr">
-    <sub-class-of type="text/plain"/>
+    <sub-class-of type="text/x-chdr"/>
     <_comment>C++ header</_comment>
     <glob pattern="*.hh"/>
+    <glob pattern="*.hp"/>
     <glob pattern="*.hpp"/>
+    <glob pattern="*.h++"/>
   </mime-type>
   <mime-type type="text/x-c++src">
-    <sub-class-of type="text/plain"/>
+    <sub-class-of type="text/x-csrc"/>
     <_comment>C++ source code</_comment>
     <glob pattern="*.cpp"/>
     <glob pattern="*.cxx"/>
@@ -2643,16 +2645,9 @@ command to generate the output files.
     <glob pattern="ChangeLog"/>
   </mime-type>
   <mime-type type="text/x-chdr">
-    <sub-class-of type="text/plain"/>
+    <sub-class-of type="text/x-csrc"/>
     <_comment>C header</_comment>
-    <magic priority="50">
-      <match type="string" value="/*" offset="0"/>
-      <match type="string" value="//" offset="0"/>
-      <match type="string" value="#include" offset="0"/>
-    </magic>
     <glob pattern="*.h"/>
-    <glob pattern="*.h++"/>
-    <glob pattern="*.hp"/>
   </mime-type>
   <mime-type type="text/x-comma-separated-values">
     <sub-class-of type="text/plain"/>
@@ -2673,16 +2668,19 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <_comment>C source code</_comment>
     <glob pattern="*.c"/>
-    <magic priority="50">
+    <magic priority="30">
       <match type="string" value="/*" offset="0"/>
       <match type="string" value="//" offset="0"/>
       <match type="string" value="#include" offset="0"/>
     </magic>
   </mime-type>
   <mime-type type="text/x-csharp">
-    <sub-class-of type="text/plain"/>
+    <sub-class-of type="text/x-csrc"/>
     <_comment>C# source code</_comment>
     <glob pattern="*.cs"/>
+    <magic priority="30">
+      <match value="using" type="string" offset="0"/>
+    </magic>
   </mime-type>
   <mime-type type="text/x-dcl">
     <sub-class-of type="text/plain"/>
@@ -2831,11 +2829,9 @@ command to generate the output files.
     <glob pattern="*.not"/>
   </mime-type>
   <mime-type type="text/x-objcsrc">
-    <sub-class-of type="text/plain"/>
+    <sub-class-of type="text/x-csrc"/>
     <_comment>Objective-C source code</_comment>
-    <magic priority="50">
-      <match type="string" value="/*" offset="0"/>
-      <match type="string" value="//" offset="0"/>
+    <magic priority="30">
       <match type="string" value="#import" offset="0"/>
     </magic>
     <glob pattern="*.m"/>

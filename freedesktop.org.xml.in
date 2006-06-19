@@ -1926,6 +1926,7 @@ command to generate the output files.
       <match type="string" value="ID3" offset="0"/>
     </magic>
     <glob pattern="*.mp3"/>
+    <glob pattern="*.mpga"/>
   </mime-type>
   <mime-type type="audio/x-mp3-playlist">
     <_comment>MP3 playlist</_comment>

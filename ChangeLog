@@ -1,5 +1,10 @@
 2006-07-03  Christian Neumair  <chris@gnome-de.org>
 
+	* po/Makefile.in.in: Remove from CVS. Fixes #7255.
+	Thanks to Christian Persch <chpe@gnome.org>.
+
+2006-07-03  Christian Neumair  <chris@gnome-de.org>
+
 	* fredesktop.org.xml.in: Add VHDL MIME type. Fixes #7329.
 	Thanks to George Jenkins <gvj11@student.canterbury.ac.nz>.
 

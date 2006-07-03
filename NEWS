@@ -1,3 +1,21 @@
+shared-mime-info 0.18 (2006-07-03)
+
+* Mime-type Changes:
+- Add *.qtl to video/quicktime
+- Add *.wax to audio/x-ms-asx
+- Add *.mpga to audio/mpeg
+- Add audio/x-ms-wma (Windows Media Audio)
+- Add application/xspf+xml (XSPF playlist)
+- Add a lot of subclassing information
+- Fix the RSS mime-types
+- Fix *.asx files' mime-type
+- Avoid audio/x-ms-asx files being detected as HTML
+- Avoid application/pdf files being detected as Matlab documents
+- Clarify C, C++, C# and ObjC mime-types
+
+* New translations:
+- Danish
+
 shared-mime-info 0.17 (2006-03-14)
 
 * Mime-types Changes:

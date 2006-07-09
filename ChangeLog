@@ -1,5 +1,11 @@
 2006-07-09  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: patch from Matthias Clasen
+	<mclasen@redhat.com> to match Type1 fonts higher than Postscript files
+	(Closes: #4675)
+
+2006-07-09  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: add magic for audio/ac3 (Closes: #6509)
 
 2006-07-09  Bastien Nocera  <hadess@hadess.net>

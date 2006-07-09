@@ -1,5 +1,11 @@
 2006-07-09  Bastien Nocera  <hadess@hadess.net>
 
+	* shared-mime-info.pc.in: patch from foser@gentoo.org to use
+	the paths specified at build-time in the pkgconfig file
+	(Closes: #6437)
+
+2006-07-09  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: add description and acronym to the
 	GDBM mime-type (Closes: #6353)
 

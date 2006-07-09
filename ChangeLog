@@ -1,5 +1,12 @@
 2006-07-09  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: add text/x-txt2tags to the mime-type
+	so that we can whitelist it (not a Postscript!) (Closes: #2001),
+	lower the priority of the application/mbox magic to avoid false
+	positives
+
+2006-07-09  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: add application/mbox for the MBOX mailboxes
 	(Closes: #2052)
 

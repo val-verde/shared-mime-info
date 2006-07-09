@@ -1,5 +1,11 @@
 2006-07-09  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: patch from Arthur Taylor <art@ified.ca> to
+	add magic to most tracker files, and remove a duplicate *.xm glob
+	(Closes: #6372)
+
+2006-07-09  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: remove the magic for
 	application/octet-stream, it's silly (Closes: #4843)
 

@@ -1924,7 +1924,6 @@ command to generate the output files.
     <glob pattern="*.mod"/>
     <glob pattern="*.ult"/>
     <glob pattern="*.uni"/>
-    <glob pattern="*.XM"/>
     <glob pattern="*.m15"/>
     <glob pattern="*.mtm"/>
     <glob pattern="*.669"/>
@@ -2010,6 +2009,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-s3m">
     <_comment>Scream Tracker 3 audio</_comment>
+    <magic priority="50">
+      <match value="SCRM" type="string" offset="44"/>
+    </magic>
     <glob pattern="*.s3m"/>
   </mime-type>
   <mime-type type="audio/x-scpls">
@@ -2041,10 +2043,16 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-xi">
     <_comment>Scream Tracker instrument</_comment>
+    <magic priority="50">
+      <match value="Extended Intrument:" type="string" offset="0"/>
+    </magic>
     <glob pattern="*.xi"/>
   </mime-type>
   <mime-type type="audio/x-xm">
     <_comment>FastTracker II audio</_comment>
+    <magic priority="50">
+      <match value="Extended Module:" type="string" offset="0"/>
+    </magic>
     <glob pattern="*.xm"/>
   </mime-type>
   <mime-type type="image/bmp">

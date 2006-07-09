@@ -979,6 +979,9 @@ command to generate the output files.
     <glob pattern="*.gb"/>
   </mime-type>
   <mime-type type="application/x-gdbm">
+    <_comment>GDBM database</_comment>
+    <acronym>GDBM</acronym>
+    <expanded-acronym>GNU Database Manager</expanded-acronym>
     <magic priority="50">
       <match type="big32" value="0x13579ace" offset="0"/>
       <match type="little32" value="0x13579ace" offset="0"/>

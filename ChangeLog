@@ -1,5 +1,10 @@
 2006-07-09  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: remove the magic for
+	application/octet-stream, it's silly (Closes: #4843)
+
+2006-07-09  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: patch from Matthias Clasen
 	<mclasen@redhat.com> to match Type1 fonts higher than Postscript files
 	(Closes: #4675)

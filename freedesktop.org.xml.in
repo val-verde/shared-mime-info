@@ -93,6 +93,12 @@ command to generate the output files.
     </magic>
     <alias type="application/x-mathematica"/>
   </mime-type>
+  <mime-type type="application/mbox">
+    <_comment>Mailbox file</_comment>
+    <magic priority="50">
+      <match type="string" value="From " offset="0"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/octet-stream">
     <_comment>unknown</_comment>
     <magic priority="50">

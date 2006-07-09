@@ -1868,6 +1868,13 @@ command to generate the output files.
   <mime-type type="audio/x-aiffc">
     <_comment>AIFF audio</_comment>
   </mime-type>
+  <mime-type type="audio/x-ape">
+    <_comment>Monkey's audio</_comment>
+    <magic priority="50">
+      <match type="string" value="MAC " offset="0"/>
+    </magic>
+    <glob pattern="*.ape"/>
+  </mime-type>
   <mime-type type="audio/x-it">
     <_comment>Impulse Tracker audio</_comment>
     <magic priority="50">

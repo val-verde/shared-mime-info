@@ -1,5 +1,10 @@
 2006-07-09  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add audio/x-ape mime-type for
+	Monkey's audio (Closes: #6747)
+
+2006-07-09  Bastien Nocera  <hadess@hadess.net>
+
 	* Makefile.am: remove po/stamp-it on "make clean" (Closes: #6485)
 
 2006-07-09  Bastien Nocera  <hadess@hadess.net>

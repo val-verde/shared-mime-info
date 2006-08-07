@@ -1564,6 +1564,15 @@ command to generate the output files.
     <glob pattern="*.wb2"/>
     <glob pattern="*.wb3"/>
   </mime-type>
+  <mime-type type="application/x-quicktime-media-link">
+    <_comment>QuickTime metalink playlist</_comment>
+    <sub-class-of type="video/quicktime"/>
+    <magic priority="60">
+      <match value="&lt;?xml" type="string" offset="0">
+        <match type="string" value="&lt;?quicktime" offset="0:64"/>
+      </match>
+    </magic>
+  </mime-type>
   <mime-type type="application/x-qw">
     <_comment>Quicken document</_comment>
     <glob pattern="*.qif"/>
@@ -3100,7 +3109,6 @@ command to generate the output files.
       <match type="string" value="mdat" offset="12"/>
       <match type="string" value="mdat" offset="4"/>
       <match type="string" value="moov" offset="4"/>
-      <match type="string" value="&lt;?quicktime" offset="0:64"/>
     </magic>
     <glob pattern="*.qt"/>
     <glob pattern="*.mov"/>

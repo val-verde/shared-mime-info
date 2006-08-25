@@ -3019,6 +3019,9 @@ command to generate the output files.
     <magic priority="10">
       <match type="string" value="%" offset="0"/>
     </magic>
+    <magic priority="50">
+      <match type="string" value="documentclass" offset="1"/>
+    </magic>
   </mime-type>
   <mime-type type="text/x-texinfo">
     <sub-class-of type="text/plain"/>

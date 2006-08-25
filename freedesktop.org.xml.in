@@ -1102,9 +1102,10 @@ command to generate the output files.
       <match type="string" value="&lt;jnlp" offset="0:64"/>
     </magic>
   </mime-type>
-  <mime-type type="application/x-javascript">
+  <mime-type type="application/javascript">
+    <alias type="application/x-javascript"/>
     <sub-class-of type="text/plain"/>
-    <_comment>Javascript program</_comment>
+    <_comment>JavaScript program</_comment>
     <glob pattern="*.js"/>
   </mime-type>
   <mime-type type="application/x-jbuilder-project">

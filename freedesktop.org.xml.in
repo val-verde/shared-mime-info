@@ -176,6 +176,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.rtf"/>
   </mime-type>
+  <mime-type type="application/sieve">
+    <sub-class-of type="application/xml"/>
+    <_comment>Sieve mail filter script</_comment>
+    <glob pattern="*.siv"/>
+  </mime-type>
   <mime-type type="application/smil">
     <sub-class-of type="application/xml"/>
     <_comment>SMIL document</_comment>

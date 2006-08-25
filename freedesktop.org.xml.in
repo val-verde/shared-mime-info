@@ -2933,6 +2933,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.m"/>
   </mime-type>
+  <mime-type type="text/x-ocaml">
+    <_comment>OCaml source code</_comment>
+    <glob pattern="*.ml"/>
+    <glob pattern="*.mli"/>
+  </mime-type>
   <mime-type type="text/x-matlab">
     <sub-class-of type="text/plain"/>
     <_comment>MATLAB script/function</_comment>

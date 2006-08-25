@@ -2030,6 +2030,15 @@ command to generate the output files.
     <expanded-acronym>Windows Media Audio</expanded-acronym>
     <glob pattern="*.wma"/>
   </mime-type>
+  <mime-type type="audio/x-musepack">
+    <_comment>Musepack audio</_comment>
+    <magic priority="50">
+      <match type="string" value="MP+" offset="0"/>
+    </magic>
+    <glob pattern="*.mpc"/>
+    <glob pattern="*.mpp"/>
+    <glob pattern="*.mp+"/>
+  </mime-type>
   <mime-type type="audio/vnd.rn-realaudio">
     <_comment>RealAudio document</_comment>
     <glob pattern="*.ra"/>

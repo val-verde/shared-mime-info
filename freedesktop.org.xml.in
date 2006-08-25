@@ -3024,6 +3024,8 @@ command to generate the output files.
     <glob pattern="*.ltx"/>
     <glob pattern="*.sty"/>
     <glob pattern="*.cls"/>
+    <glob pattern="*.dtx"/>
+    <glob pattern="*.ins"/>
     <magic priority="10">
       <match type="string" value="%" offset="0"/>
     </magic>

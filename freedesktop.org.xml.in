@@ -2952,6 +2952,8 @@ command to generate the output files.
       <match type="string" value="diff " offset="0"/>
       <match type="string" value="***\t" offset="0"/>
       <match type="string" value="*** " offset="0"/>
+      <match type="string" value="=== " offset="0"/>
+      <match type="string" value="--- " offset="0"/>
       <match type="string" value="Only in\t" offset="0"/>
       <match type="string" value="Only in " offset="0"/>
       <match type="string" value="Common subdirectories: " offset="0"/>

@@ -1,6 +1,12 @@
 2006-08-25  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Patch from Wouter Bolsterlee
+	<uws+freedesktop@xs4all.nl> with better magic for BZR generated
+	patch files, and those starting with "---" (Closes: #7890)
+
+2006-08-25  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Patch from Wouter Bolsterlee
 	<uws+freedesktop@xs4all.nl> to add better magic for TeX files
 	(Closes: #7891)
 

@@ -1,5 +1,10 @@
 2006-08-25  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Fix the magic offset for M4A files, spotted
+	by thrope <freedesktop@robince.ftml.net> (Closes: #7718)
+
+2006-08-25  Bastien Nocera  <hadess@hadess.net>
+
 	* Makefile.am: add "check" to the default target when compiling from
 	CVS
 	* freedesktop.org.xml.in: Change application/x-jar to the SUN-

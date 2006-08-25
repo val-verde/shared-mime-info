@@ -1942,7 +1942,7 @@ command to generate the output files.
     <_comment>MPEG-4 audio</_comment>
     <alias type="audio/x-m4a"/>
     <magic priority="50">
-      <match type="string" value="ftypM4A" offset="0"/>
+      <match type="string" value="ftypM4A" offset="4"/>
     </magic>
     <glob pattern="*.m4a"/>
   </mime-type>

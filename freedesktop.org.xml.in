@@ -2752,7 +2752,8 @@ command to generate the output files.
     <_comment>C header</_comment>
     <glob pattern="*.h"/>
   </mime-type>
-  <mime-type type="text/x-comma-separated-values">
+  <mime-type type="text/csv">
+    <alias type="text/x-comma-separated-values"/>
     <sub-class-of type="text/plain"/>
     <_comment>CSV document</_comment>
     <glob pattern="*.csv"/>

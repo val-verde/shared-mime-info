@@ -1,5 +1,11 @@
 2006-08-25  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: add application/x-debian-package as an alias
+	for application/x-deb, as used by Apache, spotted by Gustavo
+	J. A. M. Carneiro <gjc@inescporto.pt> (Closes: #6303)
+
+2006-08-25  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: add *.dtx and *.ins as possible patterns
 	for TeX files, spotted by Thomas Braun <braun@physik.fu-berlin.de>
 	(Re: #6235)

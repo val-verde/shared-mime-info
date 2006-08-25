@@ -56,6 +56,10 @@ uninstall-hook:
 	rm -f "$(DESTDIR)${mimedir}/subclasses"
 	rm -f "$(DESTDIR)${mimedir}/XMLnamespaces"
 
+all: check
+
 check:
-	xmllint --noout --valid $(srcdir)/freedesktop.org.xml
+	if [ -d CVS/ ]; then						\
+		xmllint --noout --valid $(srcdir)/freedesktop.org.xml;	\
+	fi
 

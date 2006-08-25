@@ -1,5 +1,15 @@
 2006-08-25  Bastien Nocera  <hadess@hadess.net>
 
+	* Makefile.am: add "check" to the default target when compiling from
+	CVS
+	* freedesktop.org.xml.in: Change application/x-jar to the SUN-
+	recommended application/x-java-archive, add an alias for the former,
+	Add better conditional magic to tell zip files and .jars apart,
+	Thanks to Joseph Kowalski <jek3@eng.sun.com> for his detailed report
+	(Closes: #7852)
+
+2006-08-25  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Wouter Bolsterlee
 	<uws+freedesktop@xs4all.nl> with better magic for BZR generated
 	patch files, and those starting with "---" (Closes: #7890)

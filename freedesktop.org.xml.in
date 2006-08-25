@@ -1067,9 +1067,15 @@ command to generate the output files.
       <match type="string" value="S T O P" offset="0"/>
     </magic>
   </mime-type>
-  <mime-type type="application/x-jar">
+  <mime-type type="application/x-java-archive">
     <_comment>Java archive</_comment>
+    <alias type="application/x-jar"/>
     <glob pattern="*.jar"/>
+    <magic priority="85">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="host16" value="0xcafe" offset="40" />
+      </match>
+    </magic>
   </mime-type>
   <mime-type type="application/x-java">
     <_comment>Java class</_comment>

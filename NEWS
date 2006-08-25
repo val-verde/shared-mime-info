@@ -1,3 +1,30 @@
+shared-mime-info 0.19 (2006-08-25)
+* Mime-type Changes:
+- Add application/powerpoint and application/mspowerpoint as aliases for
+  Powerpoint
+- Add VHDL mime-type
+- Add application/mbox for the MBOX mailboxes
+- Add text/x-txt2tags
+- Remove *.dat as a glob for MPEG videos
+- Add Monkey's Audio, AC3, and Musepack mime-types
+- Fix matching Type1 fonts
+- Remove useless application/octet-stream mime-type
+- Add *.mo to application/x-gettext-translation
+- Add loads of tracker audio files, console ROMs, raw images mime-types
+- Fix QuickTime Media Links mime-types and detection
+- Add audio/AMR and audio/AMR-WB mime-types and detection
+- Add better TeX magic, and more globs
+- Add better magic for patch files
+- Fix .jar files' mime-types, and add better magic
+- Fix magic for MPEG4 audio files
+- Add an alias for .deb packages
+- Add application/sieve mime-type
+- Fix application/javascript's mime-type
+- Fix text/csv's mime-type
+
+* Other:
+- Add paths to the .pc file
+
 shared-mime-info 0.18 (2006-07-03)
 
 * Mime-type Changes:

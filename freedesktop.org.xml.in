@@ -3084,6 +3084,7 @@ command to generate the output files.
     <glob pattern="*.cls"/>
     <glob pattern="*.dtx"/>
     <glob pattern="*.ins"/>
+    <glob pattern="*.latex"/>
     <magic priority="10">
       <match type="string" value="%" offset="0"/>
     </magic>

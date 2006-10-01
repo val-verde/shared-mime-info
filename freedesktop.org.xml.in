@@ -2180,6 +2180,10 @@ command to generate the output files.
     <glob pattern="*.pict1"/>
     <glob pattern="*.pict2"/>
   </mime-type>
+  <mime-type type="image/x-macpaint">
+    <_comment>MacPaint Bitmap image</_comment>
+    <glob pattern="*.pntg"/>
+  </mime-type>
   <mime-type type="image/x-minolta-mrw">
     <comment>Minolta raw image</comment>
     <glob pattern="*.mrw" />

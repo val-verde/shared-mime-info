@@ -2926,6 +2926,15 @@ command to generate the output files.
     <glob pattern="gtkrc"/>
     <glob pattern=".gtkrc"/>
   </mime-type>
+  <mime-type type="text/x-google-video-pointer">
+    <_comment>Google Video Pointer</_comment>
+    <magic priority="50">
+       <match type="string" value="#.download.the.free.Google.Video.Player" offset="0"/>
+       <match type="string" value="# download the free Google Video Player" offset="0"/>
+     </magic>
+    <glob pattern="*.gvp"/>
+    <alias type="text/google-video-pointer"/>
+  </mime-type>
   <mime-type type="text/x-haskell">
     <sub-class-of type="text/plain"/>
     <_comment>Haskell source code</_comment>

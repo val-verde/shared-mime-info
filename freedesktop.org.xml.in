@@ -1977,6 +1977,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.mid"/>
     <glob pattern="*.midi"/>
+    <glob pattern="*.kar"/>
   </mime-type>
   <mime-type type="audio/mp4">
     <_comment>MPEG-4 audio</_comment>
@@ -1988,6 +1989,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="video/mp4">
     <_comment>MPEG-4 video</_comment>
+    <alias type="video/mp4v-es"/>
     <magic priority="50">
       <match type="string" value="ftypisom" offset="4"/>
       <match type="string" value="ftypmp42" offset="4"/>
@@ -2042,8 +2044,13 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-ms-asx">
     <_comment>Playlist</_comment>
+    <alias type="video/x-ms-wvx"/>
+    <alias type="video/x-ms-wax"/>
+    <alias type="video/x-ms-wmx"/>
     <glob pattern="*.asx"/>
     <glob pattern="*.wax"/>
+    <glob pattern="*.wvx"/>
+    <glob pattern="*.wmx"/>
     <magic priority="51">
       <match type="string" value="ASF " offset="0"/>
       <match type="string" value="&lt;ASX" offset="0:64"/>
@@ -3260,7 +3267,10 @@ command to generate the output files.
     <glob pattern="*.qtvr"/>
   </mime-type>
   <mime-type type="video/vivo">
+    <alias type="video/vnd.vivo"/>
     <_comment>Vivo video</_comment>
+    <glob pattern="*.viv"/>
+    <glob pattern="*.vivo"/>
   </mime-type>
   <mime-type type="video/wavelet">
     <_comment>Wavelet video</_comment>
@@ -3271,6 +3281,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="video/x-flic">
     <_comment>FLIC animation</_comment>
+    <alias type="video/fli"/>
+    <alias type="video/x-fli"/>
     <magic priority="50">
       <match type="little16" value="0xAF11" offset="0"/>
       <match type="little16" value="0xAF12" offset="0"/>
@@ -3285,6 +3297,7 @@ command to generate the output files.
     <glob pattern="*.mng"/>
   </mime-type>
   <mime-type type="video/x-ms-asf">
+    <alias type="video/x-ms-wm"/>
     <_comment>ASF video</_comment>
     <acronym>ASF</acronym>
     <expanded-acronym>Advanced Streaming Format</expanded-acronym>

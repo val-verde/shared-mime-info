@@ -1,3 +1,11 @@
+2007-01-05  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Add *.kar (Karaoke files) as a pattern for
+	MIDI files, video/mp4v-es is a mime-type for MPEG-4 video,
+	video/x-ms-wvx, video/x-ms-wax and video/x-ms-wmx added as aliases of ASX,
+	Add vivo patterns and mime alias, add FLI mime aliases, add video/x-ms-wm
+	as an alias of video/x-ms-asf
+
 2006-12-15  Christian Neumair  <chris@gnome-de.org>
 
 	* freedesktop.org.xml.in: Add gzip/bz2 types for DVI, PDF and

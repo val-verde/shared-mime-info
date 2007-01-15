@@ -3116,6 +3116,15 @@ command to generate the output files.
     <glob pattern="README*"/>
     <glob pattern="*.nfo"/>
   </mime-type>
+  <mime-type type="text/x-rpm-spec">
+    <sub-class-of type="text/plain"/>
+    <_comment>rpm spec file</comment>
+    <glob pattern="*.spec"/>
+    <magic priority="50">
+      <match type="string" value="Summary: " offset="0"/>
+      <match type="string" value="%define " offset="0"/>
+    </magic>
+  </mime-type>
   <mime-type type="text/x-scheme">
     <sub-class-of type="text/plain"/>
     <_comment>Scheme source code</_comment>

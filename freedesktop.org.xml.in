@@ -3118,7 +3118,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-rpm-spec">
     <sub-class-of type="text/plain"/>
-    <_comment>rpm spec file</comment>
+    <_comment>rpm spec file</_comment>
     <glob pattern="*.spec"/>
     <magic priority="50">
       <match type="string" value="Summary: " offset="0"/>

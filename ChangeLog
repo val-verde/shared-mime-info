@@ -1,5 +1,9 @@
 2007-01-15  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: fix typo that broke the build
+
+2007-01-15  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Paolo Borelli to add the
 	text/x-rpm-spec mime-type for RPM .spec files (Closes: #9331)
 

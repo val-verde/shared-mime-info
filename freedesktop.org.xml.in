@@ -2159,6 +2159,14 @@ command to generate the output files.
     </magic>
     <glob pattern="*.xm"/>
   </mime-type>
+  <mime-type type="audio/x-tta">
+    <alias type="audio/tta"/>
+    <_comment>TrueAudio audio</_comment>
+    <magic priority="50">
+      <match value="TTA1" type="string" offset="0"/>
+    </magic>
+    <glob pattern="*.tta"/>
+  </mime-type>
   <mime-type type="image/bmp">
     <_comment>Windows BMP image</_comment>
     <magic priority="50">

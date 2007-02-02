@@ -1,5 +1,11 @@
 2007-02-02  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Wouter Bolsterlee
+	<uws+freedesktop@xs4all.nl> to add *.rdfs and *.owl as suffixes for
+	RDF files (Closes: #8389)
+
+2007-02-02  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Matt Good <matt+fdo@matt-good.net>
 	to add the eMusic download package mime-type and magic (Closes: #8105)
 

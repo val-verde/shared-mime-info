@@ -2789,6 +2789,8 @@ command to generate the output files.
     <acronym>RDF</acronym>
     <expanded-acronym>Resource Description Framework</expanded-acronym>
     <glob pattern="*.rdf"/>
+    <glob pattern="*.rdfs"/>
+    <glob pattern="*.owl"/>
   </mime-type>
   <mime-type type="text/rfc822-headers">
     <sub-class-of type="text/plain"/>

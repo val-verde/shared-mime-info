@@ -1,5 +1,10 @@
 2007-02-02  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: lower the prio of the audio/x-matroska to 50,
+	so that detection can happen based on suffix as well
+
+2007-02-02  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Ville Skyttä <ville.skytta@iki.fi>
 	to use the preferred Matroska mime-types, add Matroska audio support
 	(Closes: #9788)

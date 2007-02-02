@@ -1,5 +1,11 @@
 2007-02-02  Bastien Nocera  <hadess@hadess.net>
 
+	* Makefile.am:
+	* configure.in: Patch from Christian Persch to clean up the
+	configure.in and Makefile.am files (Closes: #9618)
+
+2007-02-02  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add application/x-bzip2 as an alias
 	for bz2 archives, as used on Sourceforge, patch by Loïc Minier
 	<lool+freedesktop@via.ecp.fr> (Closes: #9737)

@@ -1,12 +1,8 @@
-## Process this file with automake to produce Makefile.in
-
 SUBDIRS=po
 
 INCLUDES = $(ALL_CFLAGS)
 
-AUTOMAKE_OPTIONS = foreign
-
-packagesdir = $(mimedir)/packages
+packagesdir = $(datadir)/mime/packages
 packages_DATA = freedesktop.org.xml
 
 bin_PROGRAMS = update-mime-database
@@ -45,16 +41,16 @@ $(pkgconfig_DATA): config.status
 
 install-data-hook: 
 if ENABLE_UPDATE_MIMEDB
-	$(DESTDIR)"$(bindir)/update-mime-database" "$(DESTDIR)${mimedir}"
+	$(DESTDIR)"$(bindir)/update-mime-database" "$(DESTDIR)$(datadir)/mime"
 endif
 
 uninstall-hook:
-	for media in text application image audio inode video message model multipart; do rm -f "$(DESTDIR)${mimedir}/$${media}/"*.xml; done
-	rm -f "$(DESTDIR)${mimedir}/globs"
-	rm -f "$(DESTDIR)${mimedir}/magic"
-	rm -f "$(DESTDIR)${mimedir}/aliases"
-	rm -f "$(DESTDIR)${mimedir}/subclasses"
-	rm -f "$(DESTDIR)${mimedir}/XMLnamespaces"
+	for media in text application image audio inode video message model multipart; do rm -f "$(DESTDIR)$(datadir)/mime/$${media}/"*.xml; done
+	rm -f "$(DESTDIR)$(datadir)/mime/globs"
+	rm -f "$(DESTDIR)$(datadir)/mime/magic"
+	rm -f "$(DESTDIR)$(datadir)/mime/aliases"
+	rm -f "$(DESTDIR)$(datadir)/mime/subclasses"
+	rm -f "$(DESTDIR)$(datadir)/mime/XMLnamespaces"
 
 all: check
 

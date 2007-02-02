@@ -3050,6 +3050,10 @@ command to generate the output files.
     <_comment>Makefile</_comment>
     <glob pattern="[Mm]akefile"/>
     <glob pattern="GNUmakefile"/>
+    <magic priority="50">
+      <match type="string" value="#!/usr/bin/make" offset="0"/>
+      <match type="string" value="#! /usr/bin/make" offset="0"/>
+    </magic>
   </mime-type>
   <mime-type type="text/x-moc">
     <sub-class-of type="text/plain"/>

@@ -1,5 +1,11 @@
 2007-02-02  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Loïc Minier
+	<lool+freedesktop@via.ecp.fr> to recognise Makefiles
+	with shebang magic as well as name (Closes: #9738)
+
+2007-02-02  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in:
 	* po/az.po:
 	* po/bg.po:

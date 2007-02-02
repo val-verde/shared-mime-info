@@ -1,5 +1,10 @@
 2007-02-02  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Make Dia's format a sub-class of text/xml
+	as reported by Tom Parker <freedesktop@tevp.net> (Closes: #9241)
+
+2007-02-02  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add a mime-type for WBMP images
 	(Closes: #9186)
 

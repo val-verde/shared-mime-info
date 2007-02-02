@@ -1,5 +1,11 @@
 2007-02-02  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Ville Skyttä <ville.skytta@iki.fi>
+	to use the preferred Matroska mime-types, add Matroska audio support
+	(Closes: #9788)
+
+2007-02-02  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Move *.ram to application/ram, patch
 	from Daniel Yek <dyek@real.com> (Closes: #9750)
 

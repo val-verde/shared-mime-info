@@ -1051,6 +1051,7 @@ command to generate the output files.
     <_comment>Gnumeric spreadsheet</_comment>
     <magic priority="50">
       <match type="string" value="gmr:Workbook" offset="0:64"/>
+      <match type="string" value="gnm:Workbook" offset="0:64"/>
     </magic>
     <glob pattern="*.gnumeric"/>
   </mime-type>

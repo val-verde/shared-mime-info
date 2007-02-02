@@ -2194,6 +2194,12 @@ command to generate the output files.
     </magic>
     <glob pattern="*.bmp"/>
   </mime-type>
+  <mime-type type="image/vnd.wap.wbmp">
+    <_comment>WBMP image</_comment>
+    <acronym>WBMP</acronym>
+    <expanded-acronym>WAP bitmap</expanded-acronym>
+    <glob pattern="*.wbmp"/>
+  </mime-type>
   <mime-type type="image/cgm">
     <_comment>Computer Graphics Metafile</_comment>
     <glob pattern="*.cgm"/>

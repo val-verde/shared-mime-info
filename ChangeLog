@@ -1,5 +1,12 @@
 2007-02-02  Bastien Nocera  <hadess@hadess.net>
 
+	* Makefile.am:
+	* shared-mime-info.pc.in: Patch from Ville Skyttä <ville.skytta@iki.fi>
+	to move the shared-mime-info pkgconfig file to $(datadir), as it doesn't
+	contain any arch-specific data (Closes: #9789)
+
+2007-02-02  Bastien Nocera  <hadess@hadess.net>
+
 	* configure.in:
 	* po/LINGUAS: Patch from Christian Persch to use po/LINGUAS
 	to list the translated languages (Closes: #9619)

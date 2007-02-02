@@ -1,5 +1,11 @@
 2007-02-02  Bastien Nocera  <hadess@hadess.net>
 
+	* update-mime-database.c: (open_or_die), (main): Patch from
+	Yevgen Muntyan <muntyan@tamu.edu> to avoid abort()'ing when
+	we can't open a specific file for writing (Closes: #9580)
+
+2007-02-02  Bastien Nocera  <hadess@hadess.net>
+
 	* Makefile.am:
 	* configure.in: Patch from Christian Persch to clean up the
 	configure.in and Makefile.am files (Closes: #9618)

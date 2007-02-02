@@ -2490,6 +2490,7 @@ command to generate the output files.
     <_comment>PBM image</_comment>
     <acronym>PBM</acronym>
     <expanded-acronym>Portable BitMap</expanded-acronym>
+    <sub-class-of type="image/x-portable-anymap"/>
     <magic priority="50">
       <match type="string" value="P1" offset="0"/>
       <match type="string" value="P4" offset="0"/>
@@ -2500,6 +2501,7 @@ command to generate the output files.
     <_comment>PGM image</_comment>
     <acronym>PGM</acronym>
     <expanded-acronym>Portable GrayMap</expanded-acronym>
+    <sub-class-of type="image/x-portable-anymap"/>
     <magic priority="50">
       <match type="string" value="P2" offset="0"/>
       <match type="string" value="P5" offset="0"/>
@@ -2510,6 +2512,7 @@ command to generate the output files.
     <_comment>PPM image</_comment>
     <acronym>PPM</acronym>
     <expanded-acronym>Portable PixMap</expanded-acronym>
+    <sub-class-of type="image/x-portable-anymap"/>
     <magic priority="50">
       <match type="string" value="P3" offset="0"/>
       <match type="string" value="P6" offset="0"/>

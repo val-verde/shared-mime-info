@@ -2078,8 +2078,12 @@ command to generate the output files.
     <_comment>RealAudio document</_comment>
     <glob pattern="*.ra"/>
     <glob pattern="*.rax"/>
-    <glob pattern="*.ram"/>
     <alias type="audio/x-pn-realaudio"/>
+  </mime-type>
+  <mime-type type="application/ram">
+    <comment>RealMedia Metafile</comment>
+    <glob pattern="*.ram" />
+    <sub-class-of type="text/plain"/>
   </mime-type>
   <mime-type type="audio/vnd.rn-realvideo">
     <_comment>RealVideo document</_comment>

@@ -1,5 +1,43 @@
 2007-02-02  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* po/az.po:
+	* po/bg.po:
+	* po/cs.po:
+	* po/cy.po:
+	* po/da.po:
+	* po/de.po:
+	* po/el.po:
+	* po/eo.po:
+	* po/es.po:
+	* po/eu.po:
+	* po/fi.po:
+	* po/fr.po:
+	* po/hu.po:
+	* po/it.po:
+	* po/ja.po:
+	* po/ko.po:
+	* po/lt.po:
+	* po/ms.po:
+	* po/nb.po:
+	* po/nl.po:
+	* po/nn.po:
+	* po/pl.po:
+	* po/pt.po:
+	* po/pt_BR.po:
+	* po/ru.po:
+	* po/rw.po:
+	* po/sq.po:
+	* po/sr.po:
+	* po/sv.po:
+	* po/uk.po:
+	* po/vi.po:
+	* po/zh_CN.po:
+	* po/zh_TW.po: s/CPIP/CPIO/ (Closes: #9814)
+	Spotted by Goran Uddeborg <goeran@uddeborg.se>
+
+2007-02-02  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: lower the prio of the audio/x-matroska to 50,
 	so that detection can happen based on suffix as well
 

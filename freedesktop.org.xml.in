@@ -1409,6 +1409,13 @@ command to generate the output files.
     </magic>
     <glob pattern="*.mka"/>
   </mime-type>
+  <mime-type type="text/x-ocl">
+    <sub-class-of type="text/plain"/>
+    <_comment>OCL file</_comment>
+    <acronym>OCL</acronym>
+    <expanded-acronym>Object Constraint Language</expanded-acronym>
+    <glob pattern="*.ocl"/>
+  </mime-type>
   <mime-type type="application/x-mif">
     <_comment>FrameMaker MIF document</_comment>
     <glob pattern="*.mif"/>

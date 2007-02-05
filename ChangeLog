@@ -1,5 +1,10 @@
 2007-02-05  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Mario Carrión <mario@monouml.org>
+	to add mime-types for OCL scripts (Closes: #7327)
+
+2007-02-05  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Sebastian Dröge <slomo@ubuntu.com>
 	to not mis-detect Java files as C when they start with comments
 	(Closes: #9407), same trick with CSS files (Closes: #9469)

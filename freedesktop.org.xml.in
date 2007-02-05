@@ -266,6 +266,18 @@ command to generate the output files.
       <match type="string" value="(;FF[4]" offset="0"/>
     </magic>
   </mime-type>
+  <mime-type type="application/x-xliff">
+    <sub-class-of type="application/xml"/>
+    <_comment>XLIFF translation file</_comment>
+    <acronym>XLIFF</acronym>
+    <expanded-acronym>XML Localization Interchange File Format</expanded-acronym>
+    <glob pattern="*.xlf"/>
+    <glob pattern="*.xliff"/>
+    <magic priority="80">
+      <match type="string" value="&lt;xliff" offset="0:256"/>
+    </magic>
+    <root-XML namespaceURI='urn:oasis:names:tc:xliff:document:1.1' localName='xliff'/>
+  </mime-type>
   <mime-type type="application/vnd.corel-draw">
     <_comment>Corel Draw drawing</_comment>
     <magic priority="80">

@@ -1,5 +1,11 @@
 2007-02-05  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add magic for the PGN mime-type,
+	make it a text/plain sub-class, change the human-readable name
+	to "PGN chess game notation" (Closes: #8286)
+
+2007-02-05  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Have the Go SGF records be a sub-class
 	of text/plain to allow opening them with a text editor, add
 	magic for version 3 and 4 of those files (Closes: #8058)

@@ -1,5 +1,11 @@
 2007-02-05  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Remove the TGA mime magic as it was bogus, and
+	the real Targa magic is at the end of the file, not at the beginning
+	(Closes: #1268)
+
+2007-02-05  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Sebastian Dröge <slomo@ubuntu.com>
 	to add the Wavpack mime-type (Closes: #6746)
 

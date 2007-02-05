@@ -1,5 +1,12 @@
 2007-02-05  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Really fix my application/x-markaby
+	mime-type addition, more crack (time to go home?), Patch from
+	Young-Ho, Cha <ganadist@chollian.net> to add mime-types for
+	Haansoft's Hangul word processor (Closes: #4230)
+
+2007-02-05  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add mime-type including magic for ACE
 	archives (Patch from Pino Toscano <toscano.pino@tiscali.it>)
 	(Closes: #6473), Fix parsing from previous commit

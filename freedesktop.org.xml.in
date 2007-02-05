@@ -1006,6 +1006,7 @@ command to generate the output files.
       <match type="string" value="\000\001\000\000\000" offset="0"/>
     </magic>
     <glob pattern="*.ttf"/>
+    <glob pattern="*.ttc"/>
   </mime-type>
   <mime-type type="application/x-font-vfont">
     <_comment>V font</_comment>
@@ -1706,7 +1707,7 @@ command to generate the output files.
   <mime-type type="application/x-markaby">
     <sub-class-of type="application/x-ruby"/>
     <_comment>Markaby script</_comment>
-    <glob patterm="*.mab"/>
+    <glob pattern="*.mab"/>
   </mime-type>
   <mime-type type="application/x-sc">
     <_comment>SC/Xspread spreadsheet</_comment>
@@ -3421,6 +3422,19 @@ command to generate the output files.
     </magic>
     <glob pattern="*.fli"/>
     <glob pattern="*.flc"/>
+  </mime-type>
+ <mime-type type="application/x-hwp">
+    <_comment>Haansoft Hangul document</_comment>
+    <magic priority="50">
+      <match type="string" value="HWP Document File" offset="0"/>
+    </magic>
+    <glob pattern="*.hwp"/>
+    <alias type="application/vnd.haansoft-hwp"/>
+  </mime-type>
+ <mime-type type="application/x-hwt">
+    <_comment>Haansoft Hangul document template</_comment>
+    <glob pattern="*.hwt"/>
+    <alias type="application/vnd.haansoft-hwt"/>
   </mime-type>
   <mime-type type="video/x-mng">
     <_comment>MNG animation</_comment>

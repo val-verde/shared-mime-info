@@ -1,5 +1,10 @@
 2007-02-05  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add Lua scripts to the mime-types with help from
+	Reuben Thomas (Closes: #8715)
+
+2007-02-05  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Adam Schreiber <sadam@clemson.edu>
 	and Sebastian Dröge <slomo@ubuntu.com> to clean up PGP/GnuPG file
 	types detection (Closes: #9401)

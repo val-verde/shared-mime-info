@@ -1,5 +1,16 @@
 2007-02-05  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: application/xslt+xml is reserved for
+	XSLT 2.0 style-sheets, which we cannot detect because we don't
+	read attributes, just namespaces. So remove *.xsl and *.xslt as
+	application/xslt+xml globs, and add those to application/xml
+	(the recommended mime-type for XSLT version 1.0)
+	Leave application/xslt+xml present as a sub-class of application/xml
+	to avoid breaking already existing program associations
+	(Closes: #2928)
+
+2007-02-05  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Really fix my application/x-markaby
 	mime-type addition, more crack (time to go home?), Patch from
 	Young-Ho, Cha <ganadist@chollian.net> to add mime-types for

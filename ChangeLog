@@ -1,5 +1,10 @@
 2007-02-05  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add magic to detect AutoCAD DXF files
+	(Closes: #9472)
+
+2007-02-05  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Make mbox a sub-class of text/plain
 	so that a text-editor can be used to open it (Closes: #9859)
 

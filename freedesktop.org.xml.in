@@ -2340,6 +2340,10 @@ command to generate the output files.
   <mime-type type="image/vnd.dxf">
     <_comment>DXF vector image</_comment>
     <glob pattern="*.dxf"/>
+    <magic priority="50">
+      <match type="string" value="\nHEADER\n" offset="0:64"/>
+      <match type="string" value="\x0d\nHEADER\x0d\n" offset="0:64"/>
+    </magic>
   </mime-type>
   <mime-type type="image/x-3ds">
     <_comment>3D Studio image</_comment>

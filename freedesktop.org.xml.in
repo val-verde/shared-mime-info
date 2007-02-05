@@ -260,6 +260,11 @@ command to generate the output files.
     <acronym>SGF</acronym>
     <expanded-acronym>Smart Game Format</expanded-acronym>
     <glob pattern="*.sgf"/>
+    <sub-class-of type="text/plain"/>
+    <magic priority="50">
+      <match type="string" value="(;FF[3]" offset="0"/>
+      <match type="string" value="(;FF[4]" offset="0"/>
+    </magic>
   </mime-type>
   <mime-type type="application/vnd.corel-draw">
     <_comment>Corel Draw drawing</_comment>

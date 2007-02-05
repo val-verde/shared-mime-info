@@ -2019,6 +2019,21 @@ command to generate the output files.
     <_comment>FLAC audio</_comment>
     <glob pattern="*.flac"/>
   </mime-type>
+  <mime-type type="audio/x-wavpack">
+    <_comment>WavPack audio</_comment>
+    <magic priority="50">
+      <match type="string" value="wvpk" offset="0"/>
+    </magic>
+    <glob pattern="*.wv"/>
+    <glob pattern="*.wvp"/>
+  </mime-type>
+  <mime-type type="audio/x-wavpack-correction">
+    <_comment>WavPack audio correction file</_comment>
+    <magic priority="50">
+      <match type="string" value="wvpk" offset="0"/>
+    </magic>
+    <glob pattern="*.wvc"/>
+  </mime-type>
   <mime-type type="audio/midi">
     <alias type="audio/x-midi"/>
     <_comment>MIDI audio</_comment>

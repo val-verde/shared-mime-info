@@ -3112,6 +3112,17 @@ command to generate the output files.
       <match type="string" value="KDE System V Init Editor" offset="0"/>
     </magic>
   </mime-type>
+  <mime-type type="text/x-ldif">
+    <sub-class-of type="text/plain"/>
+    <_comment>LDIF address book</_comment>
+    <acronym>LDIF</acronym>
+    <expanded-acronym>LDAP Data Interchange Format</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="dn: cn=" offset="0"/>
+      <match type="string" value="dn: mail=" offset="0"/>
+    </magic>
+    <glob pattern="*.ldif"/>
+  </mime-type>
   <mime-type type="text/x-literate-haskell">
     <sub-class-of type="text/plain"/>
     <_comment>LHS source code</_comment>

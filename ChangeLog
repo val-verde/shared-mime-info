@@ -1,5 +1,11 @@
 2007-02-05  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Pino Toscano
+	<toscano.pino@tiscali.it> to add a mime-type for LDIF files
+	(Closes: #6482)
+
+2007-02-05  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: application/xslt+xml is reserved for
 	XSLT 2.0 style-sheets, which we cannot detect because we don't
 	read attributes, just namespaces. So remove *.xsl and *.xslt as

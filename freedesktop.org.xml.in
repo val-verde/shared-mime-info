@@ -95,6 +95,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/mbox">
     <_comment>Mailbox file</_comment>
+    <sub-class-of type="text/plain"/>
     <magic priority="20">
       <match type="string" value="From " offset="0"/>
     </magic>

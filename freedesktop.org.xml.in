@@ -120,12 +120,6 @@ command to generate the output files.
     <alias type="application/x-pdf"/>
     <alias type="image/pdf"/>
   </mime-type>
-  <mime-type type="application/pgp">
-    <_comment>PGP message</_comment>
-    <acronym>PGP</acronym>
-    <expanded-acronym>Pretty Good Privacy</expanded-acronym>
-    <glob pattern="*.pgp"/>
-  </mime-type>
   <mime-type type="application/xspf+xml">
       <sub-class-of type="application/xml"/>
       <_comment>XSPF playlist</_comment>
@@ -137,16 +131,37 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/pgp-encrypted">
     <_comment>PGP/MIME-encrypted message header</_comment>
+    <magic priority="50">
+      <match type="string" value="-----BEGIN PGP MESSAGE-----" offset="0"/>
+    </magic>
+    <glob pattern="*.pgp"/>
+    <glob pattern="*.gpg"/>
+    <glob pattern="*.asc"/>
+    <alias type="application/pgp"/>
   </mime-type>
   <mime-type type="application/pgp-keys">
     <sub-class-of type="text/plain"/>
     <_comment>PGP keys</_comment>
     <acronym>PGP</acronym>
     <expanded-acronym>Pretty Good Privacy</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="-----BEGIN PGP PUBLIC KEY BLOCK-----" offset="0"/>
+      <match type="string" value="-----BEGIN PGP PRIVATE KEY BLOCK-----" offset="0"/>
+      <match type="big16" value="0x9501" offset="0"/>
+      <match type="big16" value="0x9500" offset="0"/>
+      <match type="big16" value="0x9900" offset="0"/>
+      <match type="big16" value="0x9901" offset="0"/>
+    </magic>
+    <glob pattern="*.skr"/>
+    <glob pattern="*.pkr"/>
   </mime-type>
   <mime-type type="application/pgp-signature">
     <sub-class-of type="text/plain"/>
     <_comment>detached OpenPGP signature</_comment>
+    <magic priority="50">
+      <match type="string" value="-----BEGIN PGP SIGNED MESSAGE-----" offset="0"/>
+      <match type="string" value="-----BEGIN PGP SIGNATURE-----" offset="0"/>
+    </magic>
   </mime-type>
   <mime-type type="application/pkcs7-mime">
     <_comment>S/MIME file</_comment>

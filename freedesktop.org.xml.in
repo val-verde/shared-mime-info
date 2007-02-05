@@ -364,10 +364,6 @@ command to generate the output files.
     <glob pattern="*.doc"/>
     <alias type="application/vnd.ms-word"/>
   </mime-type>
-  <mime-type type="application/vnd.palm">
-    <_comment>Palmpilot database/document</_comment>
-    <glob pattern="*.pdb"/>
-  </mime-type>
   <mime-type type="application/vnd.stardivision.calc">
     <_comment>StarCalc spreadsheet</_comment>
     <glob pattern="*.sdc"/>
@@ -1569,6 +1565,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-palm-database">
     <_comment>Palm OS database</_comment>
+    <glob pattern="*.pdb"/>
+    <glob pattern="*.prc"/>
+    <alias type="application/vnd.palm"/>
   </mime-type>
   <mime-type type="application/x-par2">
     <comment>PAR2 Parity File</comment>

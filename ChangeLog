@@ -1,5 +1,12 @@
 2007-02-05  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Frédéric Crozat
+	<fcrozat@mandriva.com> to remove the StarOffice-provided
+	application/vnd.palm mime-type, and add the globs and aliases
+	to application/x-palm-database instead (Closes: #7406)
+
+2007-02-05  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Mario Carrión <mario@monouml.org>
 	to add mime-types for OCL scripts (Closes: #7327)
 

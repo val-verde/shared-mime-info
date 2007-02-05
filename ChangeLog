@@ -1,5 +1,10 @@
 2007-02-05  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: belong should be big32, I guess that patch
+	was untested ;)
+
+2007-02-05  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Robert Dale <robdale@gmail.com>
 	to add the application/x-dar mime-type (Closes: #6760)
 

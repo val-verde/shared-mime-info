@@ -2745,7 +2745,7 @@ command to generate the output files.
     <glob pattern="*.ics"/>
   </mime-type>
   <mime-type type="text/css">
-    <sub-class-of type="text/plain"/>
+    <sub-class-of type="text/x-csrc"/>
     <_comment>CSS stylesheet</_comment>
     <acronym>CSS</acronym>
     <expanded-acronym>Cascading Style Sheets</expanded-acronym>
@@ -3050,7 +3050,7 @@ command to generate the output files.
     <glob pattern="INSTALL"/>
   </mime-type>
   <mime-type type="text/x-java">
-    <sub-class-of type="text/plain"/>
+    <sub-class-of type="text/x-csrc"/>
     <_comment>Java source code</_comment>
     <glob pattern="*.java"/>
   </mime-type>

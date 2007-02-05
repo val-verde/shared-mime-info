@@ -1,5 +1,11 @@
 2007-02-05  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Sebastian Dröge <slomo@ubuntu.com>
+	to not mis-detect Java files as C when they start with comments
+	(Closes: #9407), same trick with CSS files (Closes: #9469)
+
+2007-02-05  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add Lua scripts to the mime-types with help from
 	Reuben Thomas (Closes: #8715)
 

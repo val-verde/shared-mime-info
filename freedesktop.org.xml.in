@@ -1674,6 +1674,13 @@ command to generate the output files.
     </magic>
     <glob pattern="*.rar"/>
   </mime-type>
+  <mime-type type="application/x-dar">
+    <_comment>DAR archive</_comment>
+    <magic>
+      <match type="belong" value="123" offset="0"/>
+    </magic>
+    <glob pattern="*.dar"/>
+  </mime-type>
   <mime-type type="application/x-reject">
     <sub-class-of type="text/plain"/>
     <_comment>rejected patch</_comment>

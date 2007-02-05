@@ -1694,7 +1694,7 @@ command to generate the output files.
     <glob pattern="*.rpm"/>
   </mime-type>
   <mime-type type="application/x-ruby">
-    <sub-class-of type='application/x-executable'/>
+    <sub-class-of type="application/x-executable"/>
     <sub-class-of type="text/plain"/>
     <_comment>Ruby script</_comment>
     <magic>
@@ -1702,6 +1702,11 @@ command to generate the output files.
       <match type="string" value="/bin/ruby" offset="1:16"/>
     </magic>
     <glob pattern="*.rb"/>
+  </mime-type>
+  <mime-type type="application/x-markaby">
+    <sub-class-of type="application/x-ruby">
+    <_comment>Markaby script<_comment>
+    <glob patterm="*.mab"/>
   </mime-type>
   <mime-type type="application/x-sc">
     <_comment>SC/Xspread spreadsheet</_comment>

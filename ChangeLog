@@ -1,5 +1,10 @@
 2007-02-06  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Make dia a sub-class of application/xml,
+	not the alias text/xml
+
+2007-02-06  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Move *.pcf.Z to application/x-font-pcf
 	as it's definitely not a Postscript font, add *.pcf.gz as well
 	(Closes: #4398)

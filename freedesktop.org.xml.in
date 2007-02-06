@@ -927,7 +927,6 @@ command to generate the output files.
     <glob pattern="*.pfa"/>
     <glob pattern="*.pfb"/>
     <glob pattern="*.gsf"/>
-    <glob pattern="*.pcf.Z"/>
   </mime-type>
   <mime-type type="application/x-font-afm">
     <_comment>Adobe font metrics</_comment>
@@ -973,6 +972,8 @@ command to generate the output files.
       <match type="string" value="\001fcp" offset="0"/>
     </magic>
     <glob pattern="*.pcf"/>
+    <glob pattern="*.pcf.Z"/>
+    <glob pattern="*.pcf.gz"/>
   </mime-type>
   <mime-type type="application/x-font-otf">
     <_comment>OpenType font</_comment>

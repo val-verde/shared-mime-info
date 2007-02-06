@@ -3528,4 +3528,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.emp"/>
   </mime-type>
+  <mime-type type="application/x-ica">
+    <sub-class-of type="text/plain"/>
+    <_comment>Citrix ICA settings file</_comment>
+    <acronym>ICA</acronym>
+    <expanded-acronym>Independent Computing Architecture</expanded-acronym>
+    <glob pattern="*.ica"/>
+  </mime-type>
 </mime-info>

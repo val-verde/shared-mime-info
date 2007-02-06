@@ -1,3 +1,66 @@
+shared-mime-info 0.20 (2007-02-06)
+* Mime-type Changes:
+- Add text/javascript as an alias for application/javascript
+- Add  *.latex as a pattern for TeX documents
+- Add image/x-macpaint for "MacPaint Bitmap image"
+- Add RTSPtextRTSP-style movie references to application/x-quicktime-media-link
+- Add image/pdf as an alias for application/pdf
+- Add video/flv as an alias for FLV videos
+- Add Google Video Pointer mime-types
+- Add application/pls as an alias for pls files
+- Add gzip/bz2 types for DVI, PDF and PostScript
+- Add *.kar as a pattern for MIDI files
+- Add video/mp4v-es as an alias for MPEG-4 videos
+- Add video/x-ms-wvx, video/x-ms-wax and video/x-ms-wmx as alias for ASX
+- Add patterns and aliases for Vivo video
+- Add alias for FLI files
+- Add video/x-ms-wm as an alias for video/x-ms-asf
+- Add a image/x-icns mime-type for MacOS X icons
+- Add a text/x-rpm-spec mime-type for RPM .spec files
+- Add NSC multicast playlists to video/x-ms-asf, with magic
+- Add the audio/x-tta mime-type
+- Add application/x-msexcel as an alias for Excel files
+- Add PGM, PBM and PPM as sub-classes of PNM
+- Move *.ram files to application/ram
+- Use the preferred Matroska mime-types, includes Matroska audio
+- Detect Makefile with a shebang at the start
+- Add application/x-bzip2 as an alias for bz2 archives
+- Add more magic for QuickTime files
+- Add eMusic download packages
+- Add *.rdfs and *.owl patterns to RDF files
+- Add newer magic for Gnumeric files
+- Add mime-type for WBMP images
+- Make DIA a sub-class of application/xml
+- Clean up PGP/GnuPG file types
+- Add Lua scripts
+- Avoid misdetecting Java files as C files
+- Add OCL scripts
+- Merge the application/vnd.palm and application/x-palm-database mime-types
+- Make mbox as a sub-class of text/plain
+- Add magic to detect AutoCAD DXF files
+- Add magic for Go SGF records
+- Add magic for PGN chess games
+- Add DAR archives
+- Add WavPack audio
+- Remove bogus magic for Targa files
+- Add Markaby scripts
+- Add ACE archives
+- Add Haansoft's Hangul word processor documents
+- Clean up XSLT mime-types depending on version
+- Add LDIF files
+- Add XLIFF translation files
+- Move compressed SVG files to image/svg+xml-compressed
+- Add Citrix ICA files
+- Add XUL and XBL detection
+- Move compressed pcf (font) detection to application/x-font-pcf
+
+* Other:
+- Fix CPIO description
+- Don't abort when update-mime-database can't open a file
+- Move the pkgconfig file to $(datadir)
+- Skip the translation of update-mime-database.c
+- Have a quiet output to update-mime-database by default
+
 shared-mime-info 0.19 (2006-08-25)
 * Mime-type Changes:
 - Add application/powerpoint and application/mspowerpoint as aliases for

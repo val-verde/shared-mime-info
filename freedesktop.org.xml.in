@@ -2369,6 +2369,12 @@ command to generate the output files.
       <match type="string" value="&lt;svg" offset="0:64"/>
     </magic>
     <glob pattern="*.svg"/>
+  </mime-type>
+  <mime-type type="image/svg">
+    <sub-class-of type="application/x-gzip"/>
+    <_comment>Compressed SVG image</_comment>
+    <acronym>SVG</acronym>
+    <expanded-acronym>Scalable Vector Graphics</expanded-acronym>
     <glob pattern="*.svgz"/>
   </mime-type>
   <mime-type type="image/tiff">

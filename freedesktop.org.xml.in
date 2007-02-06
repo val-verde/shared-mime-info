@@ -2370,7 +2370,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.svg"/>
   </mime-type>
-  <mime-type type="image/svg">
+  <mime-type type="image/svg+xml-compressed">
     <sub-class-of type="application/x-gzip"/>
     <_comment>Compressed SVG image</_comment>
     <acronym>SVG</acronym>
@@ -3384,6 +3384,7 @@ command to generate the output files.
     <glob pattern="*.xml"/>
     <glob pattern="*.xsl"/>
     <glob pattern="*.xslt"/>
+    <glob pattern="*.xbl"/>
     <alias type="text/xml"/>
   </mime-type>
   <mime-type type="video/dv">
@@ -3534,5 +3535,13 @@ command to generate the output files.
     <acronym>ICA</acronym>
     <expanded-acronym>Independent Computing Architecture</expanded-acronym>
     <glob pattern="*.ica"/>
+  </mime-type>
+  <mime-type type="application/vnd.mozilla.xul+xml">
+    <sub-class-of type="application/xml"/>
+    <_comment>XUL interface document</_comment>
+    <acronym>XUL</acronym>
+    <expanded-acronym>XML User interface markup Language</expanded-acronym>
+    <root-XML namespaceURI="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" localName="window"/>
+    <glob pattern="*.xul"/>
   </mime-type>
 </mime-info>

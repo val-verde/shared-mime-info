@@ -1,5 +1,11 @@
 2007-02-06  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add a mime-type for XUL, add *.xbl as
+	an XML pattern, as XBL doesn't have its own mime-type (Closes: #3260)
+	Change the compressed SVG mime-type to image/svg+xml-compressed
+
+2007-02-06  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add the application/x-ica mime-type,
 	patch from Jack Johnson <knapjack@gmail.com> (Closes: #3820)
 

@@ -1,5 +1,19 @@
 2007-02-06  Bastien Nocera  <hadess@hadess.net>
 
+	* Makefile.am: verbose mode in install mode by default
+	* configure.in: up the glib requirements to 2.2
+	* update-mime-database.1:
+	* update-mime-database.c: (g_log_handler), (usage), (get_type),
+	(load_source_file), (write_out_glob), (write_magic_children),
+	(write_magic), (delete_old_types), (check_in_path_xdg_data),
+	(write_map_entry), (write_parent_entry), (write_parent_list),
+	(build_suffixes), (write_suffix_entries), (write_match),
+	(write_cache), (main): Patch from Loïc Minier
+	<lool+freedesktop@via.ecp.fr> to make the output of
+	update-mime-database quiet by default (Closes: #7289)
+
+2007-02-06  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add a mime-type for XUL, add *.xbl as
 	an XML pattern, as XBL doesn't have its own mime-type (Closes: #3260)
 	Change the compressed SVG mime-type to image/svg+xml-compressed

@@ -41,7 +41,7 @@ $(pkgconfig_DATA): config.status
 
 install-data-hook: 
 if ENABLE_UPDATE_MIMEDB
-	$(DESTDIR)"$(bindir)/update-mime-database" "$(DESTDIR)$(datadir)/mime"
+	$(DESTDIR)"$(bindir)/update-mime-database" -V "$(DESTDIR)$(datadir)/mime"
 endif
 
 uninstall-hook:

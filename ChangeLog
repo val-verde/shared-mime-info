@@ -1,5 +1,11 @@
 2007-02-06  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Petr Tomasek
+	<tomasek@etf.cuni.cz> to add a mime-type for the T602 word
+	processor documents (Closes: #1001)
+
+2007-02-06  Bastien Nocera  <hadess@hadess.net>
+
 	* Makefile.am: verbose mode in install mode by default
 	* configure.in: up the glib requirements to 2.2
 	* update-mime-database.1:

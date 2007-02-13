@@ -1674,6 +1674,7 @@ command to generate the output files.
       <match value="RTSPtextRTSP://" type="string" offset="0"/>
       <match value="rtsptextrtsp://" type="string" offset="0"/>
       <match value="RTSPtextrtsp://" type="string" offset="0"/>
+      <match value="SMILtext" type="string" offset="0"/>
     </magic>
     <glob pattern="*.qtl"/>
   </mime-type>
@@ -3414,6 +3415,7 @@ command to generate the output files.
     <glob pattern="*.mp2"/>
     <glob pattern="*.mpe"/>
     <glob pattern="*.vob"/>
+    <glob pattern="*.m2t"/>
   </mime-type>
   <mime-type type="video/quicktime">
     <_comment>QT video</_comment>

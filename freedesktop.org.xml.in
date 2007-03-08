@@ -1030,6 +1030,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/x-frame">
+    <_comment>Adobe FrameMaker document</_comment>
     <magic priority="50">
       <match type="string" value="&lt;MakerFile" offset="0"/>
       <match type="string" value="&lt;MIFFile" offset="0"/>
@@ -1439,7 +1440,7 @@ command to generate the output files.
     <glob pattern="*.ocl"/>
   </mime-type>
   <mime-type type="application/x-mif">
-    <_comment>FrameMaker MIF document</_comment>
+    <_comment>Adobe FrameMaker MIF document</_comment>
     <glob pattern="*.mif"/>
   </mime-type>
   <mime-type type="application/x-mozilla-bookmarks">

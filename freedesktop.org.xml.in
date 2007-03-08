@@ -1457,8 +1457,11 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/x-ksysv-package">
+    <_comment>KSysV init package</_comment>
     <magic priority="50">
-      <match type="string" value="KSysV" offset="4"/>
+      <match type="string" value="KSysV" offset="4">
+        <match type="byte" value="1" offset="15"/>
+      </match>
     </magic>
   </mime-type>
   <mime-type type="application/x-kugar">

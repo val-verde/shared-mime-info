@@ -172,6 +172,10 @@ command to generate the output files.
     <_comment>detached S/MIME signature</_comment>
     <glob pattern="*.p7s"/>
   </mime-type>
+  <mime-type type="application/pkcs10">
+    <_comment>PKCS#10 certification request</_comment>
+    <glob pattern="*.p10"/>
+  </mime-type>
   <mime-type type="application/postscript">
     <sub-class-of type="text/plain"/>
     <_comment>PS document</_comment>

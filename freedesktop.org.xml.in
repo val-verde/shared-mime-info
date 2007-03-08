@@ -2107,6 +2107,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/mpeg">
     <alias type="audio/x-mp3" />
+    <alias type="audio/x-mpeg"/>
     <_comment>MP3 audio</_comment>
     <magic priority="50">
       <match type="big32" value="0xfffb" offset="0"/>
@@ -2118,13 +2119,11 @@ command to generate the output files.
   <mime-type type="audio/x-mp3-playlist">
     <_comment>MP3 playlist</_comment>
   </mime-type>
-  <mime-type type="audio/x-mpeg">
-    <_comment>MP3 audio</_comment>
-  </mime-type>
   <mime-type type="audio/x-mpegurl">
     <_comment>MP3 audio (streamed)</_comment>
     <sub-class-of type="text/plain"/>
     <alias type="audio/mpegurl" />
+    <alias type="application/m3u"/>
     <glob pattern="*.m3u"/>
     <magic priority="50">
       <match type="string" value="#EXTM3U" offset="0"/>

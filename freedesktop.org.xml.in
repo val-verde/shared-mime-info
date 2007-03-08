@@ -1744,6 +1744,7 @@ command to generate the output files.
     <glob pattern="*.shar"/>
   </mime-type>
   <mime-type type="application/x-shared-library-la">
+    <sub-class-of type="text/plain"/>
     <_comment>shared library (la)</_comment>
     <glob pattern="*.la"/>
   </mime-type>

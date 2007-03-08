@@ -759,6 +759,7 @@ command to generate the output files.
   <mime-type type="application/x-cd-image">
     <_comment>raw CD image</_comment>
     <glob pattern="*.iso"/>
+    <glob pattern="*.iso9660"/>
   </mime-type>
   <mime-type type="application/x-cgi">
     <sub-class-of type="text/plain"/>

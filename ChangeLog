@@ -1,5 +1,10 @@
 2007-03-08  Christian Neumair  <chris@gnome-de.org>
 
+	* freedesktop.org.xml.in: Add "*.iso9660" glob for ISO 9660 files
+	(#10130).  Thanks to Sebastian Dröge (slomo@circular-chaos.org).
+
+2007-03-08  Christian Neumair  <chris@gnome-de.org>
+
 	* freedesktop.org.xml.in: add PSF, miniPSF, PSFlib types, add
 	gzippd PSF linux font type, properly subclass all gzipped types
 	(#853). Thanks to Jo Valentine-Cooper <jvc@menagerie.tf>.

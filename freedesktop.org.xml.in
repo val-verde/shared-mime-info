@@ -986,6 +986,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.psf"/>
   </mime-type>
+  <mime-type type="application/x-gz-font-linux-psf">
+    <sub-class-of type="application/x-gzip"/>
+    <_comment>Linux PSF console font (gzip-compressed)</_comment>
+    <glob pattern="*.psf.gz"/>
+  </mime-type>
   <mime-type type="application/x-font-pcf">
     <_comment>PCF font</_comment>
     <magic priority="50">
@@ -1133,6 +1138,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/x-gzdvi">
+    <sub-class-of type="application/x-gzip"/>
     <_comment>TeX DVI document (gzip-compressed)</_comment>
     <glob pattern="*.dvi.gz"/>
   </mime-type>
@@ -1144,10 +1150,12 @@ command to generate the output files.
     <glob pattern="*.gz"/>
   </mime-type>
   <mime-type type="application/x-gzpdf">
+    <sub-class-of type="application/x-gzip"/>
     <_comment>PDF document (gzip-compressed)</_comment>
     <glob pattern="*.pdf.gz"/>
   </mime-type>
   <mime-type type="application/x-gzpostscript">
+    <sub-class-of type="application/x-gzip"/>
     <_comment>PostScript document (gzip-compressed)</_comment>
     <glob pattern="*.ps.gz"/>
   </mime-type>
@@ -2169,6 +2177,29 @@ command to generate the output files.
       <match type="string" value="&lt;ASX" offset="0:64"/>
       <match type="string" value="&lt;asx" offset="0:64"/>
     </magic>
+  </mime-type>
+  <mime-type type="audio/x-psf">
+    <_comment>PSF audio</_comment>
+    <acronym>PSF</acronym>
+    <acronym>Portable Sound Format</acronym>
+    <magic priority="50">
+      <match type="string" value="PSF" offset="0"/>
+    </magic>
+    <glob pattern="*.psf"/>
+  </mime-type>
+  <mime-type type="audio/x-minipsf">
+    <sub-class-of type="audio/x-psf"/>
+    <_comment>MiniPSF audio</_comment>
+    <acronym>MiniPSF</acronym>
+    <expanded-acronym>Miniature Portable Sound Format</expanded-acronym>
+    <glob pattern="*.minipsf"/>
+  </mime-type>
+  <mime-type type="audio/x-psflib">
+    <sub-class-of type="audio/x-psf"/>
+    <_comment>PSFlib audio library</_comment>
+    <acronym>PSFlib</acronym>
+    <expanded-acronym>Portable Sound Format Library</expanded-acronym>
+    <glob pattern="*.psflib"/>
   </mime-type>
   <mime-type type="audio/x-ms-wma">
     <sub-class-of type="video/x-ms-asf"/>

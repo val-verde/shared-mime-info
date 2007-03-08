@@ -490,6 +490,13 @@ command to generate the output files.
     <_comment>ODT document</_comment>
     <acronym>ODT</acronym>
     <expanded-acronym>OpenDocument Text</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/vnd.oasis.opendocument.text" offset="38"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.odt"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-template">
@@ -497,6 +504,13 @@ command to generate the output files.
     <_comment>ODT template</_comment>
     <acronym>OTT</acronym>
     <expanded-acronym>OpenDocument Text Template</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/vnd.oasis.opendocument.text-template" offset="38"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.ott"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-web">
@@ -504,6 +518,13 @@ command to generate the output files.
     <_comment>OTH template</_comment>
     <acronym>OTH</acronym>
     <expanded-acronym>OpenDocument HTML</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/vnd.oasis.opendocument.text-web" offset="38"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.oth"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-master">
@@ -511,6 +532,13 @@ command to generate the output files.
     <_comment>ODM document</_comment>
     <acronym>ODM</acronym>
     <expanded-acronym>OpenDocument Master</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/vnd.oasis.opendocument.text-master" offset="38"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.odm"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.graphics">
@@ -518,6 +546,13 @@ command to generate the output files.
     <_comment>ODG drawing</_comment>
     <acronym>ODG</acronym>
     <expanded-acronym>OpenDocument Drawing</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/vnd.oasis.opendocument.graphics" offset="38"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.odg"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.graphics-template">
@@ -525,6 +560,13 @@ command to generate the output files.
     <_comment>ODG template</_comment>
     <acronym>OTG</acronym>
     <expanded-acronym>OpenDocument Drawing Template</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/vnd.oasis.opendocument.graphics-template" offset="38"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.otg"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.presentation">
@@ -532,6 +574,13 @@ command to generate the output files.
     <_comment>ODP presentation</_comment>
     <acronym>ODP</acronym>
     <expanded-acronym>OpenDocument Presentation</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/vnd.oasis.opendocument.presentation" offset="38"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.odp"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.presentation-template">
@@ -539,6 +588,13 @@ command to generate the output files.
     <_comment>ODP template</_comment>
     <acronym>OTP</acronym>
     <expanded-acronym>OpenDocument Presentation Template</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/vnd.oasis.opendocument.presentation-template" offset="38"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.otp"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.spreadsheet">
@@ -546,6 +602,13 @@ command to generate the output files.
     <_comment>ODS spreadsheet</_comment>
     <acronym>ODS</acronym>
     <expanded-acronym>OpenDocument Spreadsheet</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/vnd.oasis.opendocument.spreadsheet" offset="38"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.ods"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.spreadsheet-template">
@@ -553,6 +616,13 @@ command to generate the output files.
     <_comment>ODS template</_comment>
     <acronym>OTS</acronym>
     <expanded-acronym>OpenDocument Spreadsheet Template</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/vnd.oasis.opendocument.spreadsheet-template" offset="38"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.ots"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.chart">
@@ -560,6 +630,13 @@ command to generate the output files.
     <_comment>ODC chart</_comment>
     <acronym>ODC chart</acronym>
     <expanded-acronym>OpenDocument Chart</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/vnd.oasis.opendocument.chart" offset="38"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.odc"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.formula">
@@ -567,6 +644,13 @@ command to generate the output files.
     <_comment>ODF formula</_comment>
     <acronym>ODF</acronym>
     <expanded-acronym>OpenDocument Formula</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/vnd.oasis.opendocument.formula" offset="38"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.odf"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.database">
@@ -581,6 +665,13 @@ command to generate the output files.
     <_comment>ODI image</_comment>
     <acronym>ODI</acronym>
     <expanded-acronym>OpenDocument Image</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/vnd.oasis.opendocument.image" offset="38"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.odi"/>
   </mime-type>
   <mime-type type="application/vnd.wordperfect">

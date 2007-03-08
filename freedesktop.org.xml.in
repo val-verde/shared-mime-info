@@ -2476,6 +2476,12 @@ command to generate the output files.
     </magic>
     <glob pattern="*.dds"/>
   </mime-type>
+  <mime-type type="image/x-xcursor">
+    <_comment>X11 cursor</_comment>
+    <magic priority="50">
+      <match type="string" value="Xcur" offset="0"/>
+    </magic>
+  </mime-type>
   <mime-type type="image/x-pict">
     <_comment>Macintosh Quickdraw/PICT drawing</_comment>
     <glob pattern="*.pict"/>

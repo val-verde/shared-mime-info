@@ -1,3 +1,28 @@
+shared-mime-info 0.21 (2007-04-18)
+* Mime-type Changes:
+- Add *.m2t as a pattern for MPEG-2 files
+- Add comments for the XMCD database and ARC mime-types
+- Fix comments for Adobe FrameMaker documents
+- Make application/m3u an alias for audio/x-mpegurl
+- Make audio/x-mpeg an alias for audio/mpeg
+- Add XPS to the mime-types
+- Fix RealVideo documents mime-types
+- Make application/x-shared-library-la a subclass of text/plain
+- Add TNEF to the mime-types
+- Add PAK archive to the mime-types
+- Add PSF, miniPSF, PSFlib, and gzipped PSF fonts to the mime-types
+- Add *.iso9660 as a pattern for ISO files
+- Add PKCS#10 certification requests to the mime-types
+- Add and correct loads of raw camera image types
+- Add magic for OpenOffice.org file types
+- Add KSysV init files to the mime-types
+- Add DirectDraw surface files to the mime-types
+- Add X11 cursor type to the mime-types
+- Fix magic for RTSPtext metalinks
+
+* Other:
+- Remove mention of ROX in the See Also section of the man page
+
 shared-mime-info 0.20 (2007-02-06)
 * Mime-type Changes:
 - Add text/javascript as an alias for application/javascript

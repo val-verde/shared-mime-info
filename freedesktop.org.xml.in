@@ -1574,6 +1574,9 @@ command to generate the output files.
     <magic priority="80">
       <match type="string" value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" offset="0:64"/>
     </magic>
+    <alias type="application/x-netscape-bookmarks"/>
+    <glob pattern="*.html"/>
+    <glob pattern="*.htm"/>
   </mime-type>
   <mime-type type="application/x-ms-dos-executable">
     <_comment>DOS/Windows executable</_comment>
@@ -1619,13 +1622,6 @@ command to generate the output files.
     <_comment>Unidata NetCDF document</_comment>
     <glob pattern="*.cdf"/>
     <glob pattern="*.nc"/>
-  </mime-type>
-  <mime-type type="application/x-netscape-bookmarks">
-    <sub-class-of type="text/html"/>
-    <_comment>Netscape bookmarks</_comment>
-    <magic priority="80">
-      <match type="string" value="&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;" offset="0:64"/>
-    </magic>
   </mime-type>
   <mime-type type="application/x-object">
     <_comment>object code</_comment>

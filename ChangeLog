@@ -1,3 +1,10 @@
+2007-06-01  Christian Neumair  <cneumair@gnome.org>
+
+	* freedesktop.org.xml.in: Remove "application/x-netscape-bookmarks"
+	definition, make "application/x-netscape-bookmarks" an alias for
+	"application/x-mozilla-bookmarks". Also associate extensions "*.html"
+	and "*.htm" with Mozilla bookmarks. Fixes #266.
+
 === shared-mime-info 0.21 ===
 
 2007-04-18  Bastien Nocera  <hadess@hadess.net>

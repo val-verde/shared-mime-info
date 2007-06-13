@@ -3374,12 +3374,12 @@ command to generate the output files.
       <match type="string" value="&lt;head" offset="0:64"/>
       <match type="string" value="&lt;TITLE" offset="0:64"/>
       <match type="string" value="&lt;title" offset="0:64"/>
-      <match type="string" value="&lt;html" offset="0:64"/>
       <match type="string" value="&lt;HTML" offset="0:64"/>
+      <match type="string" value="&lt;html" offset="0:64"/>
+      <match type="string" value="&lt;SCRIPT" offset="0:64"/>
+      <match type="string" value="&lt;script" offset="0:64"/>
       <match type="string" value="&lt;BODY" offset="0"/>
       <match type="string" value="&lt;body" offset="0"/>
-      <match type="string" value="&lt;TITLE" offset="0"/>
-      <match type="string" value="&lt;title" offset="0"/>
       <match type="string" value="&lt;!--" offset="0"/>
       <match type="string" value="&lt;h1" offset="0"/>
       <match type="string" value="&lt;H1" offset="0"/>

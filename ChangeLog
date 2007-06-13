@@ -1,7 +1,12 @@
-2007-06-14 Christian Neumair  <cneumair@gnome.org>
+2007-06-14  Christian Neumair  <cneumair@gnome.org>
+
+	* freedesktop.org.xml.in: Match "script" tag in HTML. Fixes #11259.
+	Thanks to David Faure <faure@kde.org>.
+
+2007-06-14  Christian Neumair  <cneumair@gnome.org>
 
 	* freedesktop.org.xml.in: Fix word order in powerpoint matchlet. Fixes
-	#435.
+	#435. Thanks to David Faure <faure@kde.org>.
 
 2007-06-01  Christian Neumair  <cneumair@gnome.org>
 

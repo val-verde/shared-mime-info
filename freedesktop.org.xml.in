@@ -437,52 +437,122 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc">
     <sub-class-of type="application/zip"/>
-    <_comment>OpenOffice Calc</_comment>
+    <_comment>OpenOffice Calc spreadsheet</_comment>
+    <magic>
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" offset="38" value="application/vnd.sun.xml.calc"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.sxc"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc.template">
     <sub-class-of type="application/zip"/>
-    <_comment>OpenOffice Calc template</_comment>
+    <_comment>OpenOffice Calc spreadsheet template</_comment>
+    <magic>
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" offset="38" value="application/vnd.sun.xml.calc"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.stc"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw">
     <sub-class-of type="application/zip"/>
-    <_comment>OpenOffice Draw</_comment>
+    <_comment>OpenOffice Draw drawing</_comment>
+    <magic>
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" offset="38" value="application/vnd.sun.xml.draw"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.sxd"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.draw.template">
     <sub-class-of type="application/zip"/>
     <_comment>OpenOffice Draw template</_comment>
+    <magic>
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" offset="38" value="application/vnd.sun.xml.draw"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.std"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.impress">
     <sub-class-of type="application/zip"/>
-    <_comment>OpenOffice Impress</_comment>
+    <_comment>OpenOffice Impress presentation</_comment>
+    <magic>
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" offset="38" value="application/vnd.sun.xml.impress"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.sxi"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.impress.template">
     <sub-class-of type="application/zip"/>
     <_comment>OpenOffice Impress template</_comment>
+    <magic>
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" offset="38" value="application/vnd.sun.xml.impress"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.sti"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.math">
     <sub-class-of type="application/zip"/>
-    <_comment>OpenOffice Math</_comment>
+    <_comment>OpenOffice Math formula</_comment>
+    <magic>
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+         <match type="string" offset="38" value="application/vnd.sun.xml.math"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.sxm"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer">
     <sub-class-of type="application/zip"/>
-    <_comment>OpenOffice Writer</_comment>
+    <_comment>OpenOffice Writer document</_comment>
+    <magic>
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" offset="38" value="application/vnd.sun.xml.writer"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.sxw"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer.global">
     <sub-class-of type="application/zip"/>
-    <_comment>OpenOffice Writer global</_comment>
+    <_comment>OpenOffice Writer global document</_comment>
+    <magic>
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" offset="38" value="application/vnd.sun.xml.writer"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.sxg"/>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer.template">
     <sub-class-of type="application/zip"/>
     <_comment>OpenOffice Writer template</_comment>
+    <magic>
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" offset="38" value="application/vnd.sun.xml.writer"/>
+        </match>
+      </match>
+    </magic>
     <glob pattern="*.stw"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text">

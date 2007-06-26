@@ -1746,6 +1746,13 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ogg"/>
   </mime-type>
+  <mime-type type="audio/x-speex">
+    <_comment>Speex audio</_comment>
+    <magic priority="50">
+      <match type="string" value="Speex" offset="0"/>
+    </magic>
+    <glob pattern="*.spx"/>
+  </mime-type>
   <mime-type type="video/x-theora+ogg">
     <sub-class-of type="application/ogg"/>
     <comment>Ogg Theora video</comment>
@@ -2292,7 +2299,20 @@ command to generate the output files.
     </magic>
     <glob pattern="*.3gp"/>
     <glob pattern="*.3gpp"/>
+    <glob pattern="*.amr"/>
     <alias type="audio/3gpp"/>
+    <alias type="video/3gpp-encrypted"/>
+    <alias type="audio/3gpp-encrypted"/>
+    <alias type="audio/amr"/>
+    <alias type="audio/amr-encrypted"/>
+    <alias type="audio/amr-wb"/>
+    <alias type="audio/amr-wb-encrypted"/>
+    <alias type="audio/x-rn-3gpp-amr"/>
+    <alias type="audio/x-rn-3gpp-amr-encrypted"/>
+    <alias type="audio/x-rn-3gpp-amr-wb"/>
+    <alias type="audio/x-rn-3gpp-amr-wb-encrypted"/>
+    <alias type="video/3gpp2"/>
+    <alias type="audio/3gpp2"/>
   </mime-type>
   <mime-type type="audio/x-mod">
     <_comment>Amiga SoundTracker audio</_comment>
@@ -2302,6 +2322,10 @@ command to generate the output files.
     <glob pattern="*.m15"/>
     <glob pattern="*.mtm"/>
     <glob pattern="*.669"/>
+  </mime-type>
+  <mime-type type="audio/mp2">
+    <_comment>MP2 audio</_comment>
+    <glob pattern="*.mp2"/>
   </mime-type>
   <mime-type type="audio/mpeg">
     <alias type="audio/x-mp3" />

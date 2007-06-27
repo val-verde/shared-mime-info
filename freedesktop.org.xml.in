@@ -3373,6 +3373,15 @@ command to generate the output files.
     <_comment>TSV document</_comment>
     <glob pattern="*.tsv"/>
   </mime-type>
+  <mime-type type="text/vnd.sun.j2me.app-descriptor">
+    <_comment>JAD document</_comment>
+    <acronym>JAD</acronym>
+    <expanded-acronym>Java Application Descriptor</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="MIDlet-" offset="0"/>
+    </magic>
+    <glob pattern="*.jad"/>
+  </mime-type>
   <mime-type type="text/vnd.wap.wml">
     <sub-class-of type="application/xml"/>
     <_comment>WML document</_comment>

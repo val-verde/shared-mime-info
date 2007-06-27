@@ -1,5 +1,10 @@
 2007-06-27  Christian Neumair  <cneumair@gnome.org>
 
+	* freedesktop.org.xml.in: Add ".hxx" glob pattern for C++ header.
+	Fixes #10872. Thanks to Jonathon Jongsma <jonathon.jongsma@gmail.com>.
+
+2007-06-27  Christian Neumair  <cneumair@gnome.org>
+
 	* freedesktop.org.xml.in: Add SIS/SISX packages, #10871.
 	* update-mime-database.c: Add x-epoc media type.
 	Thanks to Ville Skyttä <ville.skytta@iki.fi>.

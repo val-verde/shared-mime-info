@@ -744,6 +744,24 @@ command to generate the output files.
     </magic>
     <glob pattern="*.odi"/>
   </mime-type>
+  <mime-type type="application/vnd.symbian.install">
+    <_comment>SIS package</_comment>
+    <acronym>SIS</acronym>
+    <expanded-acronym>Symbian Installation File</expanded-acronym>
+    <magic priority="50">
+      <match type="little32" value="0x10000419" offset="8"/>
+    </magic>
+    <glob pattern="*.sis"/>
+  </mime-type>
+  <mime-type type="x-epoc/x-sisx-app">
+    <_comment>SISX package</_comment>
+    <acronym>SIS</acronym>
+    <expanded-acronym>Symbian Installation File</expanded-acronym>
+    <magic priority="50">
+      <match type="little32" value="0x10201a7a" offset="0"/>
+    </magic>
+    <glob pattern="*.sisx"/>
+  </mime-type>
   <mime-type type="application/vnd.wordperfect">
     <alias type="application/x-wordperfect"/>
     <alias type="application/wordperfect"/>
@@ -3383,6 +3401,7 @@ command to generate the output files.
     <glob pattern="*.hp"/>
     <glob pattern="*.hpp"/>
     <glob pattern="*.h++"/>
+    <glob pattern="*.hxx"/>
   </mime-type>
   <mime-type type="text/x-c++src">
     <sub-class-of type="text/x-csrc"/>

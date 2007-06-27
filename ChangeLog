@@ -1,5 +1,10 @@
 2007-06-27  Christian Neumair  <cneumair@gnome.org>
 
+	* freedesktop.org.xml.in: Fix PostScript and XHTML acronyms. Fixes
+	#10865. Thanks to Ville Skyttä <ville.skytta@iki.fi>.
+
+2007-06-27  Christian Neumair  <cneumair@gnome.org>
+
 	* configure.in: Require glib 2.3.2. Fixes #10398. Thanks to Martin
 	Koller <m.koller@surfeu.at>, and Harri Porten <porten@kde.org>.
 

@@ -179,7 +179,7 @@ command to generate the output files.
   <mime-type type="application/postscript">
     <sub-class-of type="text/plain"/>
     <_comment>PS document</_comment>
-    <acronym>PostScript</acronym>
+    <acronym>PS</acronym>
     <expanded-acronym>PostScript</expanded-acronym>
     <magic priority="50">
       <match type="string" value="\004%!" offset="0"/>
@@ -2167,6 +2167,8 @@ command to generate the output files.
   <mime-type type="application/xhtml+xml">
     <sub-class-of type="application/xml"/>
     <_comment>XHTML page</_comment>
+    <acronym>XHTML</acronym>
+    <expanded-acronym>Extensible HyperText Markup Language</expanded-acronym>
     <glob pattern="*.xhtml"/>
     <root-XML namespaceURI='http://www.w3.org/1999/xhtml' localName='html'/>
   </mime-type>

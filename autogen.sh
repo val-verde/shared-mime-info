@@ -38,7 +38,8 @@ do_cmd() {
     $@
 }
 
-do_cmd libtoolize --force --copy
+# not required for shared-mime-info, skip.
+# do_cmd libtoolize --force --copy
 
 do_cmd intltoolize --force
 

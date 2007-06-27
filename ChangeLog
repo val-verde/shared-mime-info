@@ -1,5 +1,13 @@
 2007-06-27  Christian Neumair  <cneumair@gnome.org>
 
+	* Makefile.am: Install shared-mime-info.pc to $libdir/pkgconfig
+	instead of $datadir/pkgconfig, #10698. Thanks to Tilman Sauerbeck
+	<tilman@code-monkey.de>.
+	* autogen.sh: Don't run libtoolize, #10870. Thanks to Ville Skyttä
+	<ville.skytta@iki.fi>.
+
+2007-06-27  Christian Neumair  <cneumair@gnome.org>
+
 	* freedesktop.org.xml.in: Add more WordPerfect globs, #10428. Thanks
 	to Petr Mladek <pmladek@suse.cz>.
 	Also replace "document" by "image" in EMF/WMF description.

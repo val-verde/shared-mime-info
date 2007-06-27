@@ -1,5 +1,10 @@
 2007-06-27  Christian Neumair  <cneumair@gnome.org>
 
+	* freedesktop.org.xml.in: Add Erlang source code MIME type, fixes
+	#10878. Thanks to Martin Ankerl <martin.ankerl@gmail.com>.
+
+2007-06-27  Christian Neumair  <cneumair@gnome.org>
+
 	* freedesktop.org.xml.in: Add ".hxx" glob pattern for C++ header.
 	Fixes #10872. Thanks to Jonathon Jongsma <jonathon.jongsma@gmail.com>.
 

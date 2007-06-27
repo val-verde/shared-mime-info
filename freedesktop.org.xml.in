@@ -3491,6 +3491,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.el"/>
   </mime-type>
+  <mime-type type="text/x-erlang">
+    <sub-class-of type="text/plain"/>
+    <_comment>Erlang source code</_comment>
+    <glob pattern="*.erl"/>
+  </mime-type>
   <mime-type type="text/x-fortran">
     <sub-class-of type="text/plain"/>
     <_comment>Fortran source code</_comment>

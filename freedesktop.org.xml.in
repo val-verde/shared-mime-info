@@ -3380,6 +3380,10 @@ command to generate the output files.
     <expanded-acronym>Wireless Markup Language</expanded-acronym>
     <glob pattern="*.wml"/>
   </mime-type>
+  <mime-type type="text/vnd.wap.wmlscript">
+    <_comment>WMLScript program</_comment>
+    <glob pattern="*.wmls"/>
+  </mime-type>
   <mime-type type="application/x-ace">
     <_comment>ACE archive</_comment>
     <magic priority="50">

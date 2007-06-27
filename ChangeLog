@@ -1,5 +1,10 @@
 2007-06-27  Christian Neumair  <cneumair@gnome.org>
 
+	* freedesktop.org.xml.in: Add WMLScript MIME type. Fixes #10868.
+	Thanks to Ville Skyttä <ville.skytta@iki.fi>.
+
+2007-06-27  Christian Neumair  <cneumair@gnome.org>
+
 	* freedesktop.org.xml.in: Add winmail.dat glob to TNEF MIME type. Fixes
 	#10867. Thanks to Ville Skyttä <ville.skytta@iki.fi>.
 

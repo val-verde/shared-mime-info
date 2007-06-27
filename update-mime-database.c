@@ -32,6 +32,14 @@
 
 #define MIME_ERROR g_quark_from_static_string("mime-error-quark")
 
+#ifndef PATH_SEPARATOR
+# ifdef _WIN32
+#  define PATH_SEPARATOR ";"
+# else
+#  define PATH_SEPARATOR ":"
+# endif
+#endif
+
 /* This is the list of directories to scan when finding old type files to
  * delete. It is also used to warn about invalid MIME types.
  */
@@ -696,8 +704,12 @@ static void atomic_update(const gchar *pathname)
 
 	new_name = g_strndup(pathname, len - 4);
 
+#ifdef _WIN32
+	/* we need to remove the old file first! */
+	remove(new_name);
+#endif
 	if (rename(pathname, new_name))
-		g_warning("Failed to rename %s as %s\n", pathname, new_name);
+		g_warning("Failed to rename %s as %s , errno: %d\n", pathname, new_name, errno);
 
 	g_free(new_name);
 }
@@ -710,7 +722,11 @@ static void write_out_type(gpointer key, gpointer value, gpointer data)
 	char *media, *filename;
 
 	media = g_strconcat(mime_dir, "/", type->media, NULL);
+#ifdef _WIN32
+	mkdir(media);
+#else
 	mkdir(media, 0755);
+#endif
 
 	filename = g_strconcat(media, "/", type->subtype, ".xml.new", NULL);
 	g_free(media);
@@ -1494,8 +1510,8 @@ static void check_in_path_xdg_data(const char *mime_path)
 
 	env = getenv("XDG_DATA_DIRS");
 	if (!env)
-		env = "/usr/local/share/:/usr/share/";
-	dirs = g_strsplit(env, ":", 0);
+		env = "/usr/local/share/"PATH_SEPARATOR"/usr/share/";
+	dirs = g_strsplit(env, PATH_SEPARATOR, 0);
 	g_return_if_fail(dirs != NULL);
 	for (n = 0; dirs[n]; n++)
 		;
@@ -2812,6 +2828,7 @@ int main(int argc, char **argv)
 		ns_path = g_strconcat(mime_dir, "/XMLnamespaces.new", NULL);
 		stream = open_or_die(ns_path);
 		write_namespaces(stream);
+		fclose(stream);
 
 		atomic_update(ns_path);
 		g_free(ns_path);
@@ -2824,6 +2841,7 @@ int main(int argc, char **argv)
 		path = g_strconcat(mime_dir, "/subclasses.new", NULL);
 		stream = open_or_die(path);
 		write_subclasses(stream);
+		fclose(stream);
 
 		atomic_update(path);
 		g_free(path);
@@ -2836,6 +2854,7 @@ int main(int argc, char **argv)
 		path = g_strconcat(mime_dir, "/aliases.new", NULL);
 		stream = open_or_die(path);
 		write_aliases(stream);
+		fclose(stream);
 
 		atomic_update(path);
 		g_free(path);
@@ -2848,6 +2867,7 @@ int main(int argc, char **argv)
 		path = g_strconcat(mime_dir, "/mime.cache.new", NULL);
 		stream = open_or_die(path);
 		write_cache(stream);
+		fclose(stream);
 
 		atomic_update(path);
 		g_free(path);

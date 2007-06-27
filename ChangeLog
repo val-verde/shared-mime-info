@@ -1,5 +1,10 @@
 2007-06-27  Christian Neumair  <cneumair@gnome.org>
 
+	* update-mime-database.c: Improve windows compatibility, close streams.
+	Fixes #10689. Thanks to Christian Ehrlicher <ch.ehrlicher@gmx.de>.
+
+2007-06-27  Christian Neumair  <cneumair@gnome.org>
+
 	* freedesktop.org.xml.in: Add Plucker MIME type. Fixes #10379. Thanks
 	to Pino Toscano <toscano.pino@tiscali.it>.
 

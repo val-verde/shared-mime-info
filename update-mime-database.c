@@ -521,16 +521,16 @@ static void load_source_file(const char *filename)
 
 	if (root->ns == NULL || xmlStrcmp(root->ns->href, FREE_NS) != 0)
 	{
-		g_error("* Wrong namespace on document element\n"
-			"*   in '%s'\n"
-			"*   (should be %s)\n", filename, FREE_NS);
+		g_warning("* Wrong namespace on document element\n"
+			  "*   in '%s'\n"
+			  "*   (should be %s)\n", filename, FREE_NS);
 		goto out;
 	}
 	
 	if (strcmp((char *)root->name, "mime-info") != 0)
 	{
-		g_error("* Root element <%s> is not <mime-info>\n"
-			"*   (in '%s')\n", root->name, filename);
+		g_warning("* Root element <%s> is not <mime-info>\n"
+			  "*   (in '%s')\n", root->name, filename);
 		goto out;
 	}
 
@@ -574,12 +574,12 @@ static void load_source_file(const char *filename)
 
 		if (error)
 		{
-			g_error("* Error in type '%s/%s'\n"
-				"*   (in %s):\n"
-				"*   %s.\n",
-				type ? type->media : _("unknown"),
-				type ? type->subtype : _("unknown"),
-				filename, error->message);
+			g_warning("* Error in type '%s/%s'\n"
+				  "*   (in %s):\n"
+				  "*   %s.\n",
+				  type ? type->media : _("unknown"),
+				  type ? type->subtype : _("unknown"),
+				  filename, error->message);
 			g_error_free(error);
 		}
 	}
@@ -683,9 +683,9 @@ static void write_out_glob(gpointer key, gpointer value, gpointer data)
 	for ( ; list; list = list->next) {
 		type = (Type *)list->data;
 		if (strchr(pattern, '\n'))
-			g_error("* Glob patterns can't contain literal newlines "
-				"(%s in type %s/%s)\n", pattern,
-				type->media, type->subtype);
+			g_warning("* Glob patterns can't contain literal newlines "
+				  "(%s in type %s/%s)\n", pattern,
+				  type->media, type->subtype);
 		else
 			g_fprintf(stream, "%s/%s:%s\n",
 				type->media, type->subtype, pattern);
@@ -1503,7 +1503,7 @@ static void check_in_path_xdg_data(const char *mime_path)
 
 	if (stat(path, &path_info))
 	{
-		g_error("Can't stat '%s' directory: %s",
+		g_warning("Can't stat '%s' directory: %s",
 				path, g_strerror(errno));
 		goto out;
 	}
@@ -1666,7 +1666,7 @@ write_map_entry (gpointer key,
       offset = GPOINTER_TO_UINT (g_hash_table_lookup (map_data->pool, values[i]));
       if (offset == 0)
 	{
-	  g_error ("Missing string: '%s'\n", values[i]);
+	  g_warning ("Missing string: '%s'\n", values[i]);
 	  map_data->error = TRUE;  
 	}
       
@@ -1794,7 +1794,7 @@ write_parent_entry (gpointer key,
   offset = GPOINTER_TO_UINT (g_hash_table_lookup (map_data->pool, mimetype));
   if (offset == 0)
     {
-      g_error ("Missing string: '%s'\n", (gchar *)key);
+      g_warning ("Missing string: '%s'\n", (gchar *)key);
       map_data->error = TRUE;  
     }
 
@@ -1827,7 +1827,7 @@ write_parent_list (gpointer key,
       offset = GPOINTER_TO_UINT (g_hash_table_lookup (map_data->pool, parent));
       if (offset == 0)
 	{
-	  g_error ("Missing string: '%s'\n", parent);
+	  g_warning ("Missing string: '%s'\n", parent);
 	  map_data->error = TRUE;  
 	}
       
@@ -2048,7 +2048,7 @@ build_suffixes (gpointer key,
       
       if (suffix == NULL)
 	{
-	  g_error ("Glob '%s' is not valid UTF-8\n", glob);
+	  g_warning ("Glob '%s' is not valid UTF-8\n", glob);
 	  return;
 	}
 
@@ -2112,7 +2112,7 @@ write_suffix_entries (FILE        *cache,
       offset = GPOINTER_TO_UINT(g_hash_table_lookup (strings, entry->mimetype));
       if (offset == 0)
 	{
-	  g_error ("Missing string: '%s'\n", entry->mimetype);
+	  g_warning ("Missing string: '%s'\n", entry->mimetype);
 	  return FALSE;
 	}
     }
@@ -2206,7 +2206,7 @@ write_match (gpointer key,
   offset = GPOINTER_TO_UINT (g_hash_table_lookup (mdata->strings, mimetype));
   if (offset == 0)
     {
-      g_error ("Missing string: '%s'\n", mimetype);
+      g_warning ("Missing string: '%s'\n", mimetype);
       g_free (mimetype);
       mdata->error = TRUE;
       return;
@@ -2590,7 +2590,7 @@ write_cache (FILE *cache)
   offset = 0;
   if (!write_header (cache, 0, 0, 0, 0, 0, 0, 0, &offset))
     {
-      g_error ("Failed to write header\n");
+      g_warning ("Failed to write header\n");
       return FALSE;
     }
 
@@ -2600,7 +2600,7 @@ write_cache (FILE *cache)
 
   if (!write_strings (cache, strings, &offset))
     {
-      g_error ("Failed to write strings\n");
+      g_warning ("Failed to write strings\n");
       return FALSE;
     }
   g_message ("Wrote %d strings at %x - %x\n", 
@@ -2609,7 +2609,7 @@ write_cache (FILE *cache)
   alias_offset = offset;
   if (!write_alias_cache (cache, strings, &offset))
     {
-      g_error ("Failed to write alias list\n");
+      g_warning ("Failed to write alias list\n");
       return FALSE;
     }
   g_message ("Wrote aliases at %x - %x\n", alias_offset, offset);
@@ -2617,7 +2617,7 @@ write_cache (FILE *cache)
   parent_offset = offset;
   if (!write_parent_cache (cache, strings, &offset))
     {
-      g_error ("Failed to write parent list\n");
+      g_warning ("Failed to write parent list\n");
       return FALSE;
     }
   g_message ("Wrote parents at %x - %x\n", parent_offset, offset);
@@ -2625,7 +2625,7 @@ write_cache (FILE *cache)
   literal_offset = offset;
   if (!write_literal_cache (cache, strings, &offset))
     {
-      g_error ("Failed to write literal list\n");
+      g_warning ("Failed to write literal list\n");
       return FALSE;
     }
   g_message ("Wrote literal globs at %x - %x\n", literal_offset, offset);
@@ -2633,7 +2633,7 @@ write_cache (FILE *cache)
   suffix_offset = offset;
   if (!write_suffix_cache (cache, strings, &offset))
     {
-      g_error ("Failed to write suffix list\n");
+      g_warning ("Failed to write suffix list\n");
       return FALSE;
     }
   g_message ("Wrote suffix globs at %x - %x\n", suffix_offset, offset);
@@ -2641,7 +2641,7 @@ write_cache (FILE *cache)
   glob_offset = offset;
   if (!write_glob_cache (cache, strings, &offset))
     {
-      g_error ("Failed to write glob list\n");
+      g_warning ("Failed to write glob list\n");
       return FALSE;
     }
   g_message ("Wrote full globs at %x - %x\n", glob_offset, offset);
@@ -2649,7 +2649,7 @@ write_cache (FILE *cache)
   magic_offset = offset;
   if (!write_magic_cache (cache, strings, &offset))
     {
-      g_error ("Failed to write magic list\n");
+      g_warning ("Failed to write magic list\n");
       return FALSE;
     }
   g_message ("Wrote magic at %x - %x\n", magic_offset, offset);
@@ -2657,7 +2657,7 @@ write_cache (FILE *cache)
   namespace_offset = offset;
   if (!write_namespace_cache (cache, strings, &offset))
     {
-      g_error ("Failed to write namespace list\n");
+      g_warning ("Failed to write namespace list\n");
       return FALSE;
     }
   g_debug ("Wrote namespace list at %x - %x\n", namespace_offset, offset);
@@ -2670,7 +2670,7 @@ write_cache (FILE *cache)
 		     suffix_offset, glob_offset, magic_offset, 
 		     namespace_offset, &offset))
     {
-      g_error ("Failed to rewrite header\n");
+      g_warning ("Failed to rewrite header\n");
       return FALSE;
     }
 
@@ -2751,7 +2751,7 @@ int main(int argc, char **argv)
 
 	if (access(mime_dir, W_OK))
 	{
-		g_error(_("%s: I don't have write permission on %s.\n"
+		g_warning(_("%s: I don't have write permission on %s.\n"
 			     "Try rerunning me as root.\n"), argv[0], mime_dir);
 		return EXIT_FAILURE;
 	}

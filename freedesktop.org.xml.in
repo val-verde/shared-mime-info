@@ -3499,8 +3499,8 @@ command to generate the output files.
   <mime-type type="text/x-fortran">
     <sub-class-of type="text/plain"/>
     <_comment>Fortran source code</_comment>
-    <glob pattern="*.f"/>
-    <glob pattern="*.f9[05]"/>
+    <glob pattern="*.[fF]"/>
+    <glob pattern="*.[fF]9[05]"/>
     <glob pattern="*.for"/>
   </mime-type>
   <mime-type type="text/x-gettext-translation">

@@ -783,7 +783,7 @@ command to generate the output files.
     <acronym>XBEL</acronym>
     <expanded-acronym>XML Bookmark Exchange Language</expanded-acronym>
     <magic priority="50">
-      <match type="string" value="&lt;!DOCTYPE\ xbel" offset="0:64"/>
+      <match type="string" value="&lt;!DOCTYPE\ xbel" offset="0:256"/>
     </magic>
     <glob pattern="*.xbel"/>
   </mime-type>
@@ -796,8 +796,8 @@ command to generate the output files.
     <sub-class-of type="application/xml"/>
     <_comment>AbiWord document</_comment>
     <magic priority="50">
-      <match type="string" value="&lt;abiword" offset="0:64"/>
-      <match type="string" value="&lt;!DOCTYPE abiword" offset="0:64"/>
+      <match type="string" value="&lt;abiword" offset="0:256"/>
+      <match type="string" value="&lt;!DOCTYPE abiword" offset="0:256"/>
     </magic>
     <glob pattern="*.abw"/>
     <glob pattern="*.abw.CRASHED"/>
@@ -1384,7 +1384,7 @@ command to generate the output files.
     <expanded-acronym>Java Network Launching Protocol</expanded-acronym>
     <glob pattern="*.jnlp"/>
     <magic priority="50">
-      <match type="string" value="&lt;jnlp" offset="0:64"/>
+      <match type="string" value="&lt;jnlp" offset="0:256"/>
     </magic>
   </mime-type>
   <mime-type type="application/javascript">
@@ -2781,7 +2781,7 @@ command to generate the output files.
     <expanded-acronym>Scalable Vector Graphics</expanded-acronym>
     <magic priority="80">
       <match type="string" value="&lt;!DOCTYPE svg" offset="0:256"/>
-      <match type="string" value="&lt;svg" offset="0:64"/>
+      <match type="string" value="&lt;svg" offset="0:256"/>
     </magic>
     <glob pattern="*.svg"/>
   </mime-type>
@@ -3519,16 +3519,16 @@ command to generate the output files.
     <acronym>HTML</acronym>
     <expanded-acronym>HyperText Markup Language</expanded-acronym>
     <magic priority="50">
-      <match type="string" value="&lt;!DOCTYPE HTML" offset="0:64"/>
-      <match type="string" value="&lt;!doctype html" offset="0:64"/>
-      <match type="string" value="&lt;HEAD" offset="0:64"/>
-      <match type="string" value="&lt;head" offset="0:64"/>
-      <match type="string" value="&lt;TITLE" offset="0:64"/>
-      <match type="string" value="&lt;title" offset="0:64"/>
-      <match type="string" value="&lt;HTML" offset="0:64"/>
-      <match type="string" value="&lt;html" offset="0:64"/>
-      <match type="string" value="&lt;SCRIPT" offset="0:64"/>
-      <match type="string" value="&lt;script" offset="0:64"/>
+      <match type="string" value="&lt;!DOCTYPE HTML" offset="0:256"/>
+      <match type="string" value="&lt;!doctype html" offset="0:256"/>
+      <match type="string" value="&lt;HEAD" offset="0:256"/>
+      <match type="string" value="&lt;head" offset="0:256"/>
+      <match type="string" value="&lt;TITLE" offset="0:256"/>
+      <match type="string" value="&lt;title" offset="0:256"/>
+      <match type="string" value="&lt;HTML" offset="0:256"/>
+      <match type="string" value="&lt;html" offset="0:256"/>
+      <match type="string" value="&lt;SCRIPT" offset="0:256"/>
+      <match type="string" value="&lt;script" offset="0:256"/>
       <match type="string" value="&lt;BODY" offset="0"/>
       <match type="string" value="&lt;body" offset="0"/>
       <match type="string" value="&lt;!--" offset="0"/>

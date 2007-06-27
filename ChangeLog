@@ -1,5 +1,11 @@
 2007-06-27  Christian Neumair  <cneumair@gnome.org>
 
+	* freedesktop.org.xml.in: Change top-level tag matching offset range
+	of XML subtypes from "0:64" to "0:256". Fixes #10880. Thanks to
+	Sebastian Dröge <slomo@circular-chaos.org>.
+
+2007-06-27  Christian Neumair  <cneumair@gnome.org>
+
 	* freedesktop.org.xml.in: Add Erlang source code MIME type, fixes
 	#10878. Thanks to Martin Ankerl <martin.ankerl@gmail.com>.
 

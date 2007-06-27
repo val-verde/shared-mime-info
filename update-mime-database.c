@@ -45,6 +45,7 @@ const char *media_types[] = {
 	"message",
 	"model",
 	"multipart",
+	"x-epoc",
 };
 
 /* Represents a MIME type */

@@ -1,5 +1,11 @@
 2007-06-27  Christian Neumair  <cneumair@gnome.org>
 
+	* freedesktop.org.xml.in: Add SIS/SISX packages, #10871.
+	* update-mime-database.c: Add x-epoc media type.
+	Thanks to Ville Skyttä <ville.skytta@iki.fi>.
+
+2007-06-27  Christian Neumair  <cneumair@gnome.org>
+
 	* Makefile.am: Install shared-mime-info.pc to $libdir/pkgconfig
 	instead of $datadir/pkgconfig, #10698. Thanks to Tilman Sauerbeck
 	<tilman@code-monkey.de>.

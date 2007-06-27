@@ -1,5 +1,11 @@
 2007-06-27  Christian Neumair  <cneumair@gnome.org>
 
+	* freedesktop.org.xml.in: Add more WordPerfect globs, #10428. Thanks
+	to Petr Mladek <pmladek@suse.cz>.
+	Also replace "document" by "image" in EMF/WMF description.
+
+2007-06-27  Christian Neumair  <cneumair@gnome.org>
+
 	* freedesktop.org.xml.in: Fix WMF description and add matchlet, add
 	EMF MIME type. Fixes #11385 and 11388. Thanks to Shaun Oldale
 	<soldale@gmail.com>.

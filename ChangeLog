@@ -1,3 +1,10 @@
+2007-06-27  Christian Neumair  <cneumair@gnome.org>
+
+	* freedesktop.org.xml.in: Fix WMF description and add matchlet, add
+	EMF MIME type. Fixes #11385 and 11388. Thanks to Shaun Oldale
+	<soldale@gmail.com>.
+	Also fix OpenOffice Calc template description.
+
 2007-06-26  Christian Neumair  <cneumair@gnome.org>
 
 	* freedesktop.org.xml.in: Add MP2 audio, add more aliases for 3GPP, fixes

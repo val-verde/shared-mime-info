@@ -449,7 +449,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc.template">
     <sub-class-of type="application/zip"/>
-    <_comment>OpenOffice Calc spreadsheet template</_comment>
+    <_comment>OpenOffice Calc template</_comment>
     <magic>
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
@@ -3056,10 +3056,38 @@ command to generate the output files.
     <_comment>Windows cursor</_comment>
     <glob pattern="*.cur"/>
   </mime-type>
+  <mime-type type="image/x-emf">
+    <_comment>EMF document</_comment>
+    <acronym>EMF</acronym>
+    <expanded-acronym>Enhanced MetaFile</expanded-acronym>
+    <glob pattern="*.emf"/>
+    <magic priority="50">
+      <match type="little32" offset="0" value="0x00000001">
+        <match type="little32" offset="40" value="0x464D4520">
+          <match type="little32" offset="44" value="0x00010000">
+            <match type="little16" offset="58" value="0x0000"/>
+          </match>
+        </match>
+      </match>
+    </magic>
+  </mime-type>
   <mime-type type="image/x-wmf">
     <_comment>WMF document</_comment>
     <acronym>WMF</acronym>
-    <expanded-acronym>Windows Media Format</expanded-acronym>
+    <expanded-acronym>Windows Metafile</expanded-acronym>
+    <magic priority="50">
+      <!-- Placeable Metafile Header !-->
+      <match type="little32" offset="0" value="0x9AC6CDD7">
+        <!-- Followed by the standard Windows Metafile Header !-->
+        <match type="little16" offset="22" value="0x0001">
+          <match type="little16" offset="24" value="0x0009"/>
+        </match>
+      </match>
+      <!-- or just the standard Windows Metafile Header !-->
+      <match type="little16" offset="0" value="0x0001">
+        <match type="little16" offset="2" value="0x0009"/>
+      </match>
+    </magic>
     <glob pattern="*.wmf"/>
   </mime-type>
   <mime-type type="image/x-xbitmap">

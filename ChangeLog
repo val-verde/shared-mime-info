@@ -1,5 +1,10 @@
 2007-06-27  Christian Neumair  <cneumair@gnome.org>
 
+	* configure.in: Require glib 2.3.2. Fixes #10398. Thanks to Martin
+	Koller <m.koller@surfeu.at>, and Harri Porten <porten@kde.org>.
+
+2007-06-27  Christian Neumair  <cneumair@gnome.org>
+
 	* update-mime-database.c: Improve windows compatibility, close streams.
 	Fixes #10689. Thanks to Christian Ehrlicher <ch.ehrlicher@gmx.de>.
 

@@ -20,7 +20,7 @@ AM_GLIB_GNU_GETTEXT
 dnl Check pkg-config is installed
 PKG_CHECK_MODULES(ALL, \
 		  libxml-2.0 >= 2.4 \
-                  glib-2.0 >= 2.2.0)
+                  glib-2.0 >= 2.3.2)
 AC_SUBST(ALL_CFLAGS)
 AC_SUBST(ALL_LIBS)
 

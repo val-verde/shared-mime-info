@@ -187,6 +187,12 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ps"/>
   </mime-type>
+  <mime-type type="application/prs.plucker">
+    <_comment>Plucker document</_comment>
+    <magic priority="80">
+      <match type="string" value="DataPlkr" offset="60"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/rtf">
     <sub-class-of type="text/plain"/>
     <_comment>RTF document</_comment>

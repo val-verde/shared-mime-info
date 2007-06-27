@@ -1,5 +1,10 @@
 2007-06-27  Christian Neumair  <cneumair@gnome.org>
 
+	* freedesktop.org.xml.in: Add Plucker MIME type. Fixes #10379. Thanks
+	to Pino Toscano <toscano.pino@tiscali.it>.
+
+2007-06-27  Christian Neumair  <cneumair@gnome.org>
+
 	* freedesktop.org.xml.in: Also match uppercase "F" for fortran
 	globs, fixes #10692. Thanks to Quintin Hill <quintinhill@gmx.net>
 

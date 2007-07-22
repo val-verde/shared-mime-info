@@ -1,3 +1,9 @@
+2007-07-22  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Add the iRiver PLA playlist format,
+	patch from Jonathan Matthew <jonathan@kaolin.wh9.net>
+	(Closes: #11604)
+
 2007-06-27  Christian Neumair  <cneumair@gnome.org>
 
 	* update-mime-database.c: Use g_warning instead of g_error. Fixes

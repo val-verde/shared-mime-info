@@ -1064,6 +1064,10 @@ command to generate the output files.
     <_comment>Dreamcast ROM</_comment>
     <glob pattern="*.dc"/>
   </mime-type>
+  <mime-type type="application/x-nintendo-ds-rom">
+    <_comment>Nintendo DS ROM</_comment>
+    <glob pattern="*.nds"/>
+  </mime-type>
   <mime-type type="application/x-deb">
     <_comment>Debian package</_comment>
     <alias type="application/x-debian-package"/>

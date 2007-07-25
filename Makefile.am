@@ -31,7 +31,7 @@ EXTRA_DIST = \
 CLEANFILES = freedesktop.org.xml po/stamp-it
 DISTCLEANFILES = intltool-extract intltool-merge intltool-update
 
-pkgconfigdir = $(libdir)/pkgconfig
+pkgconfigdir = $(datadir)/pkgconfig
 pkgconfig_DATA = shared-mime-info.pc
 
 $(pkgconfig_DATA): config.status

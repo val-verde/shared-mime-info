@@ -1756,9 +1756,28 @@ command to generate the output files.
       <match type="string" value="OggS" offset="0"/>
     </magic>
     <glob pattern="*.ogg"/>
+    <glob pattern="*.ogx"/>
+  </mime-type>
+  <mime-type type="audio/ogg">
+    <_comment>Ogg Audio</_comment>
+    <sub-class-of type="application/ogg"/>
+    <magic priority="50">
+      <match type="string" value="OggS" offset="0"/>
+    </magic>
+    <glob pattern="*.oga"/>
+    <alias type="audio/x-ogg"/>
+  </mime-type>
+  <mime-type type="video/ogg">
+    <_comment>Ogg Video</_comment>
+    <sub-class-of type="application/ogg"/>
+    <magic priority="50">
+      <match type="string" value="OggS" offset="0"/>
+    </magic>
+    <glob pattern="*.ogv"/>
+    <alias type="video/x-ogg"/>
   </mime-type>
   <mime-type type="audio/x-vorbis+ogg">
-    <sub-class-of type="application/ogg"/>
+    <sub-class-of type="audio/ogg"/>
     <comment>Ogg Vorbis audio</comment>
     <magic priority="80">
       <match type="string" value="OggS" offset="0">
@@ -1768,7 +1787,7 @@ command to generate the output files.
     <glob pattern="*.ogg"/>
   </mime-type>
   <mime-type type="audio/x-flac+ogg">
-    <sub-class-of type="application/ogg"/>
+    <sub-class-of type="audio/ogg"/>
     <comment>Ogg FLAC audio</comment>
     <magic priority="80">
       <match type="string" value="OggS" offset="0">
@@ -1778,7 +1797,7 @@ command to generate the output files.
     <glob pattern="*.ogg"/>
   </mime-type>
   <mime-type type="audio/x-speex+ogg">
-    <sub-class-of type="application/ogg"/>
+    <sub-class-of type="audio/ogg"/>
     <comment>Ogg Speex audio</comment>
     <magic priority="80">
       <match type="string" value="OggS" offset="0">
@@ -1795,7 +1814,7 @@ command to generate the output files.
     <glob pattern="*.spx"/>
   </mime-type>
   <mime-type type="video/x-theora+ogg">
-    <sub-class-of type="application/ogg"/>
+    <sub-class-of type="video/ogg"/>
     <comment>Ogg Theora video</comment>
     <magic priority="80">
       <match type="string" value="OggS" offset="0">
@@ -1805,7 +1824,7 @@ command to generate the output files.
     <glob pattern="*.ogg"/>
   </mime-type>
   <mime-type type="video/x-ogm+ogg">
-    <sub-class-of type="application/ogg"/>
+    <sub-class-of type="video/ogg"/>
     <comment>OGM video</comment>
     <magic priority="80">
       <match type="string" value="OggS" offset="0">

@@ -1,3 +1,8 @@
+2007-07-26  Frederic Crozat  <fcrozat@mandriva.com>
+
+	* freedesktop.org.xml.in: Add video/avi as alias for video/x-msvideo,
+	some Windows mail clients still use it, #11729.
+
 2007-07-25  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Add the application/x-nintendo-ds-rom

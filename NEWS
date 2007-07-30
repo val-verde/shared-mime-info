@@ -1,3 +1,30 @@
+shared-mime-info 0.22 (2007-07-30)
+* Mime-type Changes:
+- Clean up the Netscape/Mozilla bookmarks mime-types
+- Fix Powerpoint magic detection
+- Add another magic matchlet to HTML
+- Add magic detection for OpenOffice.org files
+- Add MP2 audio, EMF mime-types
+- Add more aliases for 3GPP videos
+- Add magic detection to WMF
+- Add more suffixes for WordPerfect documents
+- Add mime-types for SIS/SISX archives
+- Add x-epoc media type
+- Add *.hxx as a suffix for C++ headers
+- Add Erlang mime-type
+- Add another Fortran magic detection
+- Add Plucker mime-type
+- Add winmail.dat files as TNEF files
+- Add WMLScript mime-type
+- Add JAD mime-type
+- Add iRiver PLA playlist mime-type
+- Add Nintendo DS ROM mime-type
+- Add video/avi as an alias for AVI files
+- Update Ogg mime-types to match Xiph's latest documents
+* Other:
+- Improve Window compatibility
+- Update the glib requirements
+
 shared-mime-info 0.21 (2007-04-18)
 * Mime-type Changes:
 - Add *.m2t as a pattern for MPEG-2 files

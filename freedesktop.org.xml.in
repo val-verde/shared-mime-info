@@ -3936,6 +3936,16 @@ command to generate the output files.
     <glob pattern="*.moov"/>
     <glob pattern="*.qtvr"/>
   </mime-type>
+  <mime-type type="image/x-quicktime">
+    <_comment>QT image</_comment>
+    <acronym>QT</acronym>
+    <expanded-acronym>QuickTime</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="idat" offset="4"/>
+    </magic>
+    <glob pattern="*.qtif"/>
+    <glob pattern="*.qif"/>
+  </mime-type>
   <mime-type type="video/vivo">
     <alias type="video/vnd.vivo"/>
     <_comment>Vivo video</_comment>

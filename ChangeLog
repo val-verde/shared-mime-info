@@ -1,5 +1,12 @@
 2007-08-28  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add application/sdp, with information from
+	http://www.rfc-editor.org/rfc/rfc2327.txt
+	* tests/*: Add an SDP stream description, the filename clashes with
+	StarOffice presentations
+
+2007-08-28  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Split out *.nsc into its own mime-type, as
 	we'd like GStreamer to handle it directly, rather than us
 	Confusing mime-type name from

@@ -1,5 +1,13 @@
 2007-08-28  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Split out *.nsc into its own mime-type, as
+	we'd like GStreamer to handle it directly, rather than us
+	Confusing mime-type name from
+	http://en.wikipedia.org/wiki/Windows_Media_Station
+	* tests/*: Add an ASX playlist and an NSC stream description
+
+2007-08-28  Bastien Nocera  <hadess@hadess.net>
+
 	* configure.ac: Check for xmllint
 
 	* Makefile.am: run test-mime-data from xdgmime if we're running in CVS

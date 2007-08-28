@@ -400,7 +400,8 @@ command to generate the output files.
       <match type="string" value="PO^Q`" offset="0"/>
       <match type="string" value="\376\067\0\043" offset="0"/>
       <match type="string" value="\333\245-\0\0\0" offset="0"/>
-      <match type="string" value="Microsoft Word 6.0 Document" offset="2080"/>
+      <match type="string" value="MSWordDoc" offset="2112"/>
+      <match type="string" value="MSWordDoc" offset="2108"/>
       <match type="string" value="Microsoft Word document data" offset="2112"/>
     </magic>
     <glob pattern="*.doc"/>
@@ -448,6 +449,9 @@ command to generate the output files.
     <glob pattern="*.sdw"/>
     <glob pattern="*.vor"/>
     <glob pattern="*.sgl"/>
+    <magic priority="90">
+      <match type="string" value="StarWriter" offset="2089" />
+    </magic>
   </mime-type>
   <mime-type type="application/vnd.sun.xml.calc">
     <sub-class-of type="application/zip"/>
@@ -1303,6 +1307,9 @@ command to generate the output files.
     <sub-class-of type="application/xml"/>
     <_comment>Glade project</_comment>
     <glob pattern="*.glade"/>
+    <magic priority="50">
+      <match type="string" value="&lt;glade-interface" offset="0:256"/>
+    </magic>
   </mime-type>
   <mime-type type="application/x-gmc-link">
     <_comment>GMC link</_comment>
@@ -2937,7 +2944,7 @@ command to generate the output files.
     <_comment>EPS image</_comment>
     <acronym>EPS</acronym>
     <expanded-acronym>Encapsulated PostScript</expanded-acronym>
-    <magic priority="50">
+    <magic priority="90">
       <match type="string" value="%!" offset="0">
         <match type="string" value="EPS" offset="15"/>
       </match>

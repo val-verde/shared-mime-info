@@ -57,7 +57,14 @@ uninstall-hook:
 all: check
 
 check:
-	if [ -d CVS/ ]; then						\
+	if test -n $(XMLLINT) ; then \
 		xmllint --noout --valid $(srcdir)/freedesktop.org.xml;	\
+	fi
+	if test -d CVS/ && test -x ../xdgmime/src/test-mime-data ; then \
+		mkdir -p $(builddir)/temp-mime-dir/mime/packages ; \
+		cp -a $(builddir)/freedesktop.org.xml $(builddir)/temp-mime-dir/mime/packages/ ; \
+		XDG_DATA_DIRS="$(builddir)/temp-mime-dir/" $(builddir)/update-mime-database "$(builddir)/temp-mime-dir/mime/" ; \
+		XDG_DATA_DIRS="$(builddir)/temp-mime-dir/" ../xdgmime/src/test-mime-data -v tests/list; \
+		rm -rf "$(builddir)/temp-mime-dir/" ; \
 	fi
 

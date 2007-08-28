@@ -1,3 +1,20 @@
+2007-08-28  Bastien Nocera  <hadess@hadess.net>
+
+	* configure.ac: Check for xmllint
+
+	* Makefile.am: run test-mime-data from xdgmime if we're running in CVS
+	and have xdgmime checked out and built in the parent
+	* tests/*: add loads of test data and a test list from Matthias Clasen
+	<mclasen@redhat.com> (Closes: #5210)
+
+	* freedesktop.org.xml.in:
+	- Remove "Microsoft Word 6.0 Document" matchlet at offset 2080, it's a
+	localised string (ie. says "Dokument" in German, etc.)
+	- Add better matchlets from file(1) for word documents
+	- Add magic for StarWriter (tentative) and for glade files
+	- Up the priority of the EPS matchlet so that EPS files are not
+	recognised as postscript files
+
 2007-08-12  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: add a mime-type for QTIF QuickTime image

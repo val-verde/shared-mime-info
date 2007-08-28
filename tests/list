@@ -1,0 +1,47 @@
+# image formats supported by the Gimp
+test.bmp image/bmp 
+test.cel image/x-cel xxx 
+test.dcm application/dicom
+test.eps image/x-eps
+test.fit image/x-fits x
+test.fli video/x-flic ox
+test.gif image/gif
+test.ico image/x-ico ox
+test.im1 image/x-sun-raster x
+test.jpg image/jpeg
+test.mng video/x-mng ox
+test.pat image/x-pat xxx
+test.pcx image/x-pcx x
+test.pgm image/x-portable-graymap
+test.pix image/x-pix xxx
+test.png image/png
+test.ppm image/x-portable-pixmap
+test.ps  application/postscript
+test.psd image/x-psd
+test.sgi image/x-sgi ox
+test.tga image/x-tga ox
+test.tif image/tiff
+test.xbm image/x-xbitmap ox
+test.xcf image/x-xcf ox
+test.xpm image/x-xpixmap
+test.xwd image/x-xwindowdump ox
+
+# document formats supported by Openoffice.org
+ooo-6.0.doc application/msword
+ooo-95.doc application/msword
+ooo.doc application/msword
+ooo.rtf application/rtf
+ooo.sdw application/vnd.stardivision.writer
+ooo.stw application/vnd.sun.xml.writer.template ox
+ooo.sxw application/vnd.sun.xml.writer
+ooo.vor application/vnd.stardivision.writer
+ooo-xp.doc application/msword
+
+# text
+text-iso8859-15.txt text/plain ox
+text-utf8.txt text/plain ox
+
+# other
+text.pdf application/pdf
+project.glade application/x-glade
+text.ps application/postscript

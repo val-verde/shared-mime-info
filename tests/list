@@ -1,4 +1,4 @@
-# image formats supported by the Gimp
+# image formats supported by the Gimp or gdk-pixbuf
 test.bmp image/bmp 
 test.cel image/x-cel xxx 
 test.dcm application/dicom
@@ -8,7 +8,9 @@ test.fli video/x-flic ox
 test.gif image/gif
 test.ico image/x-ico ox
 test.im1 image/x-sun-raster x
+test.jp2 image/jpeg2000
 test.jpg image/jpeg
+test.jpc image/jpeg2000
 test.mng video/x-mng ox
 test.pat image/x-pat xxx
 test.pcx image/x-pcx x

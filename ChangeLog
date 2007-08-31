@@ -1,5 +1,10 @@
 2007-08-31  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add *.vlc as a pattern for m3u files,
+	as used by VideoLAN (Closes: #12114)
+
+2007-08-31  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Sebastien Bacher
 	<seb128@debian.org> to add more aliases for Powerpoint and Word
 	mime-types (Closes: #12231)

@@ -2360,6 +2360,14 @@ command to generate the output files.
     <glob pattern="*.m4v"/>
     <alias type="video/x-m4v"/>
   </mime-type>
+  <mime-type type="audio/x-m4b">
+    <_comment>MPEG-4 audio book</_comment>
+    <sub-class-of type="audio/mp4"/>
+    <magic priority="50">
+      <match type="string" value="ftypM4B" offset="4"/>
+    </magic>
+    <glob pattern="*.m4b"/>
+  </mime-type>
   <mime-type type="video/3gpp">
     <_comment>3GPP multimedia</_comment>
     <sub-class-of type="video/mp4"/>

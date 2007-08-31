@@ -2634,14 +2634,16 @@ command to generate the output files.
     <glob pattern="*.jpe"/>
     <alias type="image/pjpeg"/>
   </mime-type>
-  <mime-type type="image/jpeg2000">
+  <mime-type type="image/jp2">
     <_comment>JPEG-2000 image</_comment>
     <magic priority="50">
       <match value="jP" type="string" offset="4" />
       <match value="\xFF\x4F\xFF\x51\x00" type="string" offset="0" />
+      <match type="big32" value="0x0c6a5020" offset="3"/>
     </magic>
     <glob pattern="*.jp2"/>
     <glob pattern="*.jpc"/>
+    <alias type="image/jpeg2000"/>
   </mime-type>
   <mime-type type="image/x-dds">
     <_comment>DirectDraw surface</_comment>

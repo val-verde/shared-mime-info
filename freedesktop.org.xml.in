@@ -3529,9 +3529,11 @@ command to generate the output files.
     <sub-class-of type="text/x-csrc"/>
     <_comment>C# source code</_comment>
     <glob pattern="*.cs"/>
-    <magic priority="30">
-      <match value="using" type="string" offset="0"/>
-    </magic>
+  </mime-type>
+  <mime-type type="text/x-vala">
+    <sub-class-of type="text/x-csrc"/>
+    <_comment>Vala source code</_comment>
+    <glob pattern="*.vala"/>
   </mime-type>
   <mime-type type="text/x-dcl">
     <sub-class-of type="text/plain"/>

@@ -1,5 +1,11 @@
 2007-08-31  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Remove dubious C# magic, and add Vala
+	mime-type, patch from Jürg Billeter <j@bitron.ch> (Closes: #12195)
+	* tests/*: add C# and Vala test cases
+
+2007-08-31  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Fix JPEG-2000 mime-types and magic to
 	follow the RFC (Closes: #11942)
 	* tests/list: s,image/jpeg2000,image/jp2

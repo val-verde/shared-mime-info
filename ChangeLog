@@ -1,4 +1,10 @@
-2007-08-31  Bastien Nocera  <hadess@hadess.net>
+2007-09-04  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Add the Atom mime-type, add magic to the RSS
+	mime-type
+	* tests/*: add RSS and Atom test cases
+
+2007-09-04  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Remove dubious C# magic, and add Vala
 	mime-type, patch from Jürg Billeter <j@bitron.ch> (Closes: #12195)

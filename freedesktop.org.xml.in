@@ -395,7 +395,8 @@ command to generate the output files.
     <glob pattern="*.xps"/>
   </mime-type>
   <mime-type type="application/msword">
-      <_comment>Word document</_comment>
+    <sub-class-of type="application/x-ole-storage"/>
+    <_comment>Word document</_comment>
     <magic priority="50">
       <match type="string" value="\x31\xbe\x00\x00" offset="0"/>
       <match type="string" value="PO^Q`" offset="0"/>

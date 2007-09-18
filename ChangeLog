@@ -1,3 +1,9 @@
+2007-09-18  Alexander Larsson  <alexl@redhat.com>
+
+	* freedesktop.org.xml.in:
+	Make application/msword subclass of application/x-ole-storage.
+	Patch from David Faure
+
 2007-09-04  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Fix the subrip mime-type to mention subrip,

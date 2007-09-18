@@ -2,21 +2,22 @@
 # This file is distributed under the same license as the Shared-mime-info package.
 # Copyright (C) 2004 freedesktop.org contributors
 #
-# Quique <quique@sindominio.net>, 2004, 2006, 2007
+# Quique <quique@sindominio.net>, 2004, 2006, 2007.
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
-# Jorge González <jorgegonz@svn.gnome.org>, 2007.
+# Jorge González González <aloriel@gmail.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info-0.21\n"
+"Project-Id-Version: shared-mime-info 0.21\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-06-19 09:45-0400\n"
-"PO-Revision-Date: 2007-06-21 09:03+0200\n"
-"Last-Translator: Quique <quique@sindominio.net>\n"
+"PO-Revision-Date: 2007-09-15 15:25+0200\n"
+"Last-Translator: Jorge González González <aloriel@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../freedesktop.org.xml.in.h:1
 msgid "3D Studio image"
@@ -194,15 +195,6 @@ msgstr "cue sheet de una imagen de CD"
 msgid "CGI script"
 msgstr "script CGI"
 
-#
-# rl0: http://europa.eu.int/eurodicautom/Controller he buscado 'raster'
-# rl0:  BTL - UIT79 - 16250 (este es el  código de la traducción)
-# rl0:         a scanning pattern used in generating,recording or reproducing
-# rl0:       television,facsimile or graphics images on a screen
-# rl0:  ES: ráster, cuadrí­cula, trama
-# rl0:  Hay dos referencias más a tratamiento de imágenes y teleco, ambas
-# rl0:  incluyen "ráster" y "trama". Las dos suenan bien y como indica el tipo
-# rl0:  si usas "trama CMU" no habrá problema.
 #: ../freedesktop.org.xml.in.h:45
 msgid "CMU raster image"
 msgstr "imagen ráster CMU"
@@ -845,7 +837,7 @@ msgstr "enlace de Nautilus"
 
 #: ../freedesktop.org.xml.in.h:205
 msgid "Netscape bookmarks"
-msgstr "marcadores de Netscape"
+msgstr "Marcadores de Netscape"
 
 #: ../freedesktop.org.xml.in.h:206
 msgid "Nikon raw image"
@@ -965,7 +957,7 @@ msgstr "OpenOffice Impress"
 
 #: ../freedesktop.org.xml.in.h:235
 msgid "OpenOffice Impress template"
-msgstr "plantilla de OpenOffice.org Impress"
+msgstr "plantilla de OpenOffice Impress"
 
 #: ../freedesktop.org.xml.in.h:236
 msgid "OpenOffice Math"
@@ -985,7 +977,7 @@ msgstr "plantilla de OpenOffice Writer"
 
 #: ../freedesktop.org.xml.in.h:240
 msgid "OpenType font"
-msgstr "tipo de letra OpenType"
+msgstr "tipografía de OpenType"
 
 #: ../freedesktop.org.xml.in.h:241
 msgid "PBM image"
@@ -1215,7 +1207,6 @@ msgstr "documento RealVideo"
 msgid "Ruby script"
 msgstr "script en Ruby"
 
-# rl0: mi apuesta persoal serí­a Bitmap codificado RLE
 #: ../freedesktop.org.xml.in.h:298
 msgid "Run Length Encoded bitmap"
 msgstr "mapa de bits con codificación del tamaño durante la ejecución"
@@ -1941,4 +1932,3 @@ msgstr "archivo ustar"
 #: ../freedesktop.org.xml.in.h:480
 msgid "zoo archive"
 msgstr "archivo zoo"
-

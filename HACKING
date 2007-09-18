@@ -1,0 +1,23 @@
+A few ground rules for people interested in adding new mime-types.
+
+* Mime-types used should be IANA registered mime-types when possible
+* When old mime-types become registered, the new definition should
+  include an alias for the old mime-type
+* New entries or modifications should include a test case (see below)
+* Mime-types/file formats proprietary to one application should only
+  be added to a private .xml file and be bundled with the application
+  itself
+
+Test suite
+----------
+
+You need to have xdgmime checked out and compile at the same level as
+shared-mime-info. ../xdgmime/src/test-mime-data will be run against
+tests/list.
+
+The format of the file is:
+<testcase filename> <expected mime-type> <expected failures>
+
+The expected failures is whether matching the file with the mime-type would
+fail when matched by file, data or name. "x" indicates expected failure, "o"
+indicates expected success. Trailing "o"s can be omitted.

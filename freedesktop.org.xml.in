@@ -2650,7 +2650,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.jp2"/>
     <glob pattern="*.jpc"/>
+<<<<<<< freedesktop.org.xml.in
+    <glob pattern="*.j2k"/>
+=======
     <alias type="image/jpeg2000"/>
+>>>>>>> 1.278
   </mime-type>
   <mime-type type="image/x-dds">
     <_comment>DirectDraw surface</_comment>

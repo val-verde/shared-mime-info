@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info 0.21\n"
+"Project-Id-Version: shared-mime-info 0.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-17 11:52+0200\n"
-"PO-Revision-Date: 2007-08-17 16:45+0300\n"
+"POT-Creation-Date: 2007-09-24 20:05+0200\n"
+"PO-Revision-Date: 2007-09-26 16:45+0300\n"
 "Last-Translator: Maxim V. Dziumanenko <dziumanenko@gmail.com>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -328,9 +328,8 @@ msgid "ECMAScript program"
 msgstr "Програма на мові ECMAScript"
 
 #: ../freedesktop.org.xml.in.h:79
-#, fuzzy
 msgid "EMF image"
-msgstr "Зображення IEF"
+msgstr "Зображення EMF"
 
 #: ../freedesktop.org.xml.in.h:80
 msgid "EPS image"
@@ -361,9 +360,8 @@ msgid "Enlightenment theme"
 msgstr "Тема Enlightenment"
 
 #: ../freedesktop.org.xml.in.h:87
-#, fuzzy
 msgid "Erlang source code"
-msgstr "Вихідний код на мові Fortran"
+msgstr "Вихідний код на мові Erlang"
 
 #: ../freedesktop.org.xml.in.h:88
 msgid "Excel spreadsheet"
@@ -534,9 +532,8 @@ msgid "Impulse Tracker audio"
 msgstr "Звук Impulse Tracker"
 
 #: ../freedesktop.org.xml.in.h:130
-#, fuzzy
 msgid "JAD document"
-msgstr "Документ HDF"
+msgstr "Документ JAD"
 
 #: ../freedesktop.org.xml.in.h:131
 msgid "JBuilder project"
@@ -719,9 +716,8 @@ msgid "MNG animation"
 msgstr "Анімація MNG"
 
 #: ../freedesktop.org.xml.in.h:176
-#, fuzzy
 msgid "MP2 audio"
-msgstr "Звук MP3"
+msgstr "Звук MP2"
 
 #: ../freedesktop.org.xml.in.h:177
 msgid "MP3 ShoutCast playlist"
@@ -856,9 +852,8 @@ msgid "Nikon raw image"
 msgstr "Необроблене зображення Nikon"
 
 #: ../freedesktop.org.xml.in.h:210
-#, fuzzy
 msgid "Nintendo DS ROM"
-msgstr "ПЗП Nintendo64"
+msgstr "ПЗП Nintendo"
 
 #: ../freedesktop.org.xml.in.h:211
 msgid "Nintendo64 ROM"
@@ -945,33 +940,30 @@ msgid "Office drawing"
 msgstr "Малюнок Office"
 
 #: ../freedesktop.org.xml.in.h:232
-#, fuzzy
 msgid "Ogg Audio"
-msgstr "Звук VOC"
+msgstr "Звук Ogg"
 
 #: ../freedesktop.org.xml.in.h:233
 msgid "Ogg Video"
-msgstr ""
+msgstr "Відео Ogg"
 
 #: ../freedesktop.org.xml.in.h:234
 msgid "Ogg multimedia"
-msgstr "Мультимедія Ogg"
+msgstr "Мультимедіа Ogg"
 
 #: ../freedesktop.org.xml.in.h:235
 msgid "Olympus raw image"
 msgstr "Необроблене зображення Olympus"
 
 #: ../freedesktop.org.xml.in.h:236
-#, fuzzy
 msgid "OpenOffice Calc spreadsheet"
-msgstr "Шаблон ел.таблиці OpenOffice Calc"
+msgstr "Ел.таблиця OpenOffice Calc"
 
 #: ../freedesktop.org.xml.in.h:237
 msgid "OpenOffice Calc template"
 msgstr "Шаблон ел.таблиці OpenOffice Calc"
 
 #: ../freedesktop.org.xml.in.h:238
-#, fuzzy
 msgid "OpenOffice Draw drawing"
 msgstr "Малюнок OpenOffice Draw"
 
@@ -980,26 +972,22 @@ msgid "OpenOffice Draw template"
 msgstr "Шаблон малюнку OpenOffice Draw"
 
 #: ../freedesktop.org.xml.in.h:240
-#, fuzzy
 msgid "OpenOffice Impress presentation"
-msgstr "Шаблон презентації OpenOffice Impress"
+msgstr "Презентація OpenOffice Impress"
 
 #: ../freedesktop.org.xml.in.h:241
 msgid "OpenOffice Impress template"
 msgstr "Шаблон презентації OpenOffice Impress"
 
 #: ../freedesktop.org.xml.in.h:242
-#, fuzzy
 msgid "OpenOffice Math formula"
 msgstr "Формула OpenOffice Math"
 
 #: ../freedesktop.org.xml.in.h:243
-#, fuzzy
 msgid "OpenOffice Writer document"
 msgstr "Документ OpenOffice Writer"
 
 #: ../freedesktop.org.xml.in.h:244
-#, fuzzy
 msgid "OpenOffice Writer global document"
 msgstr "Глобальний документ OpenOffice Writer"
 
@@ -1140,9 +1128,8 @@ msgid "Playlist"
 msgstr "Список програвання"
 
 #: ../freedesktop.org.xml.in.h:279
-#, fuzzy
 msgid "Plucker document"
-msgstr "Документ Quicken"
+msgstr "Документ Plucker"
 
 #: ../freedesktop.org.xml.in.h:280
 msgid "PostScript document (bzip-compressed)"
@@ -1269,14 +1256,12 @@ msgid "SGML document"
 msgstr "Документ SGML"
 
 #: ../freedesktop.org.xml.in.h:311
-#, fuzzy
 msgid "SIS package"
-msgstr "Пакет RPM"
+msgstr "Пакет SIS"
 
 #: ../freedesktop.org.xml.in.h:312
-#, fuzzy
 msgid "SISX package"
-msgstr "Пакет RPM"
+msgstr "Пакет SISX"
 
 #: ../freedesktop.org.xml.in.h:313
 msgid "SMIL document"
@@ -1368,9 +1353,8 @@ msgid "Speedo font"
 msgstr "Шрифт Speedo"
 
 #: ../freedesktop.org.xml.in.h:336
-#, fuzzy
 msgid "Speex audio"
-msgstr "Звук PSF"
+msgstr "Звук Speex"
 
 #: ../freedesktop.org.xml.in.h:337
 msgid "Spreadsheet interchange document"
@@ -1569,18 +1553,16 @@ msgid "WMA audio"
 msgstr "Звук WMA"
 
 #: ../freedesktop.org.xml.in.h:386
-#, fuzzy
 msgid "WMF image"
-msgstr "Зображення WBMP"
+msgstr "Зображення WMF"
 
 #: ../freedesktop.org.xml.in.h:387
 msgid "WML document"
 msgstr "Документ WML"
 
 #: ../freedesktop.org.xml.in.h:388
-#, fuzzy
 msgid "WMLScript program"
-msgstr "Програма на мові ECMAScript"
+msgstr "Програма на мові WMLScript"
 
 #: ../freedesktop.org.xml.in.h:389
 msgid "WMV video"
@@ -1811,9 +1793,8 @@ msgid "iPod firmware"
 msgstr "мікропрограма iPod"
 
 #: ../freedesktop.org.xml.in.h:446
-#, fuzzy
 msgid "iRiver Playlist"
-msgstr "Список програвання"
+msgstr "Список програвання iRiver"
 
 #: ../freedesktop.org.xml.in.h:447
 msgid "installation instructions"

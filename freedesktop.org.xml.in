@@ -3423,8 +3423,17 @@ command to generate the output files.
     <sub-class-of type="application/xml"/>
     <_comment>Atom syndication feed</_comment>
     <glob pattern="*.atom"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="&lt;feed " offset="0:256"/>
+    </magic>
+  </mime-type>
+  <mime-type type="text/x-opml+xml">
+    <sub-class-of type="application/xml"/>
+    <alias type="text/x-opml"/>
+    <_comment>OPML syndication feed</_comment>
+    <glob pattern="*.opml"/>
+    <magic priority="70">
+      <match type="string" value="&lt;opml " offset="0:256"/>
     </magic>
   </mime-type>
   <mime-type type="text/sgml">

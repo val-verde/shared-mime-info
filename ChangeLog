@@ -1,5 +1,10 @@
 2007-10-24  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add *.aac as a possible pattern for audio
+	MPEG-4 files
+
+2007-10-24  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add OPML with the mime-type text/x-opml+xml,
 	and the more official text/x-opml as an alias. Up its magic priority,
 	and that of the Atom mime-type as well, to avoid them being detected

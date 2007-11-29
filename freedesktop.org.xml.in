@@ -2135,6 +2135,18 @@ command to generate the output files.
     </magic>
     <glob pattern="*.sub"/>
   </mime-type>
+  <mime-type type="text/x-ssa">
+    <sub-class-of type="text/plain"/>
+    <_comment>SSA subtitles</_comment>
+    <acronym>SSA</acronym>
+    <expanded-acronym>SubStation Alpha</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="[Script Info]" offset="0:256"/>
+      <match type="string" value="Dialogue: " offset="0:256"/>
+    </magic>
+    <glob pattern="*.ssa"/>
+    <glob pattern="*.ass"/>
+  </mime-type>
   <mime-type type="application/x-sv4cpio">
     <_comment>SV4 CPIO archive</_comment>
     <glob pattern="*.sv4cpio"/>

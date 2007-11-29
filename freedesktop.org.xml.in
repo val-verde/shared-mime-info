@@ -2115,6 +2115,26 @@ command to generate the output files.
     <glob pattern="*.smi"/>
     <glob pattern="*.sami"/>
   </mime-type>
+  <mime-type type="text/x-microdvd">
+    <sub-class-of type="text/plain"/>
+    <_comment>MicroDVD subtitles</_comment>
+    <magic priority="50">
+      <match type="string" value="{1}" offset="0"/>
+      <match type="string" value="{0}" offset="0"/>
+      <match type="string" value="}{" offset="0:6"/>
+    </magic>
+    <glob pattern="*.sub"/>
+  </mime-type>
+  <mime-type type="text/x-mpsub">
+    <sub-class-of type="text/plain"/>
+    <_comment>MPSub subtitles</_comment>
+    <acronym>MPSub</acronym>
+    <expanded-acronym>MPlayer Subtitle</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="FORMAT=" offset="0:256"/>
+    </magic>
+    <glob pattern="*.sub"/>
+  </mime-type>
   <mime-type type="application/x-sv4cpio">
     <_comment>SV4 CPIO archive</_comment>
     <glob pattern="*.sv4cpio"/>

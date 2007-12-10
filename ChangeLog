@@ -1,3 +1,14 @@
+2007-12-10  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in:
+	* tests/list:
+	* tests/office.doc: 
+	Remove the magic from the Powerpoint files,
+	it's actually magic for "Microsoft Office document"
+	and add it to x-ole-storage, add a test file to the
+	testsuite
+	From https://bugzilla.redhat.com/show_bug.cgi?id=398031
+
 2007-11-29  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in:

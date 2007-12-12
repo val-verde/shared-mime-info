@@ -26,7 +26,8 @@ EXTRA_DIST = \
 	intltool-extract.in		\
 	intltool-merge.in		\
 	intltool-update.in		\
-	shared-mime-info.pc.in
+	shared-mime-info.pc.in		\
+	po/shared-mime-info.pot
 
 CLEANFILES = freedesktop.org.xml po/stamp-it
 DISTCLEANFILES = intltool-extract intltool-merge intltool-update

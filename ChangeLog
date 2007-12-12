@@ -1,3 +1,19 @@
+2007-12-10  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Fix capitalisation for
+	a number of mime-types, don't use "QT", "WMV/WMA" and "NSV"
+	in comments
+
+	Remove the useless gtar, make application/x-gtar an
+	alias for tar
+
+	Add translator comment for SNES/NES/Genesis, as those
+	were known under different names depending on the location/region
+
+	Mention the acronyms in the raw digital image types
+
+	Add an acronym for RPM
+
 2007-12-12  Bastien Nocera  <hadess@hadess.net>
 
 	* Makefile.am: add the pot file to the dist,

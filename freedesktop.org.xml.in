@@ -94,7 +94,7 @@ command to generate the output files.
     <alias type="application/x-mathematica"/>
   </mime-type>
   <mime-type type="application/mbox">
-    <_comment>Mailbox file</_comment>
+    <_comment>mailbox file</_comment>
     <sub-class-of type="text/plain"/>
     <magic priority="20">
       <match type="string" value="From " offset="0"/>
@@ -930,7 +930,7 @@ command to generate the output files.
     <glob pattern="*.dvi.bz2"/>
   </mime-type>
   <mime-type type="application/x-bzip">
-    <_comment>bzip archive</_comment>
+    <_comment>Bzip archive</_comment>
     <magic priority="50">
       <match type="string" value="BZh" offset="0"/>
     </magic>
@@ -939,7 +939,7 @@ command to generate the output files.
     <alias type="application/x-bzip2"/>
   </mime-type>
   <mime-type type="application/x-bzip-compressed-tar">
-    <_comment>tar archive (bzip-compressed)</_comment>
+    <_comment>Tar archive (bzip-compressed)</_comment>
     <glob pattern="*.tar.bz"/>
     <glob pattern="*.tar.bz2"/>
     <glob pattern="*.tbz"/>
@@ -998,7 +998,7 @@ command to generate the output files.
     <glob pattern="*.Z"/>
   </mime-type>
   <mime-type type="application/x-compressed-tar">
-    <_comment>tar archive (gzip-compressed)</_comment>
+    <_comment>Tar archive (gzip-compressed)</_comment>
     <glob pattern="*.tar.gz"/>
     <glob pattern="*.tgz"/>
   </mime-type>
@@ -1147,7 +1147,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-font-type1">
     <sub-class-of type="application/postscript"/>
-    <_comment>font</_comment>
+    <_comment>Postscript type-1 font</_comment>
     <magic priority="60">
       <match type="string" value="LWFN" offset="0"/>
       <match type="string" value="LWFN" offset="65"/>
@@ -1295,6 +1295,8 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/x-genesis-rom">
+    <!-- Translate this to Megadrive if the console was known as such in your locale
+    Should be Megadrive in all but en_US: http://en.wikipedia.org/wiki/Megadrive#History -->
     <_comment>Genesis ROM</_comment>
     <glob pattern="*.gen"/>
     <glob pattern="*.md"/>
@@ -1342,10 +1344,6 @@ command to generate the output files.
     <_comment>Graphite scientific graph</_comment>
     <glob pattern="*.gra"/>
   </mime-type>
-  <mime-type type="application/x-gtar">
-    <_comment>gtar archive</_comment>
-    <glob pattern="*.gtar"/>
-  </mime-type>
   <mime-type type="application/x-gtktalog">
     <_comment>GTKtalog catalog</_comment>
     <magic priority="50">
@@ -1358,7 +1356,7 @@ command to generate the output files.
     <glob pattern="*.dvi.gz"/>
   </mime-type>
   <mime-type type="application/x-gzip">
-    <_comment>gzip archive</_comment>
+    <_comment>Gzip archive</_comment>
     <magic priority="50">
       <match type="string" value="\037\213" offset="0"/>
     </magic>
@@ -1732,6 +1730,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/x-nes-rom">
+    <!-- Translate this to Famicom if the console was known as such in your locale -->
     <_comment>NES ROM</_comment>
     <glob pattern="*.nes"/>
   </mime-type>
@@ -2076,12 +2075,13 @@ command to generate the output files.
     <_comment>Stampede package</_comment>
   </mime-type>
   <mime-type type="application/x-sms-rom">
-    <_comment>SMS/Game Gear ROM</_comment>
+    <_comment>Sega Master System/Game Gear ROM</_comment>
     <glob pattern="*.sms"/>
     <glob pattern="*.gg"/>
   </mime-type>
   <mime-type type="application/x-snes-rom">
-    <_comment>Super Nintendo ROM</_comment>
+    <!-- Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in Europe) if the console was known as such in your locale -->
+    <_comment>Super NES ROM</_comment>
     <glob pattern="*.smc"/>
   </mime-type>
   <mime-type type="application/x-stuffit">
@@ -2154,15 +2154,17 @@ command to generate the output files.
     <glob pattern="*.sv4crc"/>
   </mime-type>
   <mime-type type="application/x-tar">
-    <_comment>tar archive</_comment>
+    <_comment>Tar archive</_comment>
+    <alias type="application/x-gtar"/>
     <magic priority="50">
       <match type="string" value="ustar\0" offset="257"/>
       <match type="string" value="ustar\040\040\0" offset="257"/>
     </magic>
     <glob pattern="*.tar"/>
+    <glob pattern="*.gtar"/>
   </mime-type>
   <mime-type type="application/x-tarz">
-    <_comment>tar archive (compressed)</_comment>
+    <_comment>Tar archive (compressed)</_comment>
     <glob pattern="*.tar.Z"/>
   </mime-type>
   <mime-type type="application/x-tex-gf">
@@ -2220,12 +2222,12 @@ command to generate the output files.
     <_comment>manual page (compressed)</_comment>
   </mime-type>
   <mime-type type="application/x-tzo">
-    <_comment>tar archive (LZO-compressed)</_comment>
+    <_comment>Tar archive (LZO-compressed)</_comment>
     <glob pattern="*.tar.lzo"/>
     <glob pattern="*.tzo"/>
   </mime-type>
   <mime-type type="application/x-ustar">
-    <_comment>ustar archive</_comment>
+    <_comment>Ustar archive</_comment>
     <glob pattern="*.ustar"/>
   </mime-type>
   <mime-type type="application/x-wais-source">
@@ -2248,7 +2250,7 @@ command to generate the output files.
     <_comment>empty document</_comment>
   </mime-type>
   <mime-type type="application/x-zoo">
-    <_comment>zoo archive</_comment>
+    <_comment>Zoo archive</_comment>
     <magic priority="50">
       <match type="little32" value="0xfdc4a7dc" offset="20"/>
     </magic>
@@ -2264,7 +2266,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/zip">
     <alias type="application/x-zip-compressed"/>
-    <_comment>ZIP archive</_comment>
+    <_comment>Zip archive</_comment>
     <magic priority="40">
       <match type="string" value="PK\003\004" offset="0"/>
     </magic>
@@ -2483,7 +2485,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="audio/x-ms-asx">
-    <_comment>Playlist</_comment>
+    <_comment>Microsoft ASX playlist</_comment>
     <alias type="video/x-ms-wvx"/>
     <alias type="video/x-ms-wax"/>
     <alias type="video/x-ms-wmx"/>
@@ -2522,9 +2524,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-ms-wma">
     <sub-class-of type="video/x-ms-asf"/>
-    <_comment>WMA audio</_comment>
-    <acronym>WMA</acronym>
-    <expanded-acronym>Windows Media Audio</expanded-acronym>
+    <_comment>Windows Media audio</_comment>
     <glob pattern="*.wma"/>
   </mime-type>
   <mime-type type="audio/x-musepack">
@@ -2727,14 +2727,12 @@ command to generate the output files.
     <glob pattern="*.ufraw"/>
   </mime-type>
   <mime-type type="image/x-dcraw">
-    <_comment>Digital raw image</_comment>
-    <acronym>DCRaw</acronym>
-    <expanded-acronym>Digital camera Raw</expanded-acronym>
+    <_comment>digital raw image</_comment>
   </mime-type>
   <mime-type type="image/x-adobe-dng">
     <sub-class-of type="image/x-dcraw"/>
     <sub-class-of type="image/tiff"/>
-    <_comment>Adobe Digital Negative</_comment>
+    <_comment>Adobe DNG negative</_comment>
     <acronym>DNG</acronym>
     <expanded-acronym>Digital Negative</expanded-acronym>
     <glob pattern="*.dng"/>
@@ -2743,7 +2741,7 @@ command to generate the output files.
   <!-- CRW is easy !-->
   <mime-type type="image/x-canon-crw">
     <sub-class-of type="image/x-dcraw"/>
-    <_comment>Canon raw image</_comment>
+    <_comment>Canon CRW raw image</_comment>
     <acronym>CRW</acronym>
     <expanded-acronym>Canon RaW</expanded-acronym>
     <magic priority="50">
@@ -2755,14 +2753,14 @@ command to generate the output files.
   <mime-type type="image/x-canon-cr2">
     <sub-class-of type="image/x-dcraw"/>
     <sub-class-of type="image/tiff"/>
-    <_comment>Canon raw image</_comment>
+    <_comment>Canon CR2 raw image</_comment>
     <acronym>CR2</acronym>
     <expanded-acronym>Canon Raw 2</expanded-acronym>
     <glob pattern="*.cr2"/>
   </mime-type>
   <mime-type type="image/x-fuji-raf">
     <sub-class-of type="image/x-dcraw"/>
-    <_comment>Fuji raw image</_comment>
+    <_comment>Fuji RAF raw image</_comment>
     <acronym>RAF</acronym>
     <expanded-acronym>RAw Format</expanded-acronym>
     <magic priority="50">
@@ -2773,7 +2771,7 @@ command to generate the output files.
   <mime-type type="image/x-kodak-dcr">
     <sub-class-of type="image/x-dcraw"/>
     <sub-class-of type="image/tiff"/>
-    <_comment>Kodak raw image</_comment>
+    <_comment>Kodak DCR raw image</_comment>
     <acronym>DCR</acronym>
     <expanded-acronym>Digital Camera Raw</expanded-acronym>
     <glob pattern="*.dcr"/>
@@ -2781,7 +2779,7 @@ command to generate the output files.
   <mime-type type="image/x-kodak-k25">
     <sub-class-of type="image/x-dcraw"/>
     <sub-class-of type="image/tiff"/>
-    <_comment>Kodak raw image</_comment>
+    <_comment>Kodak K25 raw image</_comment>
     <acronym>K25</acronym>
     <expanded-acronym>Kodak DC25</expanded-acronym>
     <glob pattern="*.k25"/>
@@ -2789,14 +2787,14 @@ command to generate the output files.
   <mime-type type="image/x-kodak-kdc">
     <sub-class-of type="image/x-dcraw"/>
     <sub-class-of type="image/tiff"/>
-    <_comment>Kodak raw image</_comment>
+    <_comment>Kodak KDC raw image</_comment>
     <acronym>KDC</acronym>
     <expanded-acronym>Kodak Digital Camera</expanded-acronym>
     <glob pattern="*.kdc"/>
   </mime-type>
   <mime-type type="image/x-minolta-mrw">
     <sub-class-of type="image/x-dcraw"/>
-    <_comment>Minolta raw image</_comment>
+    <_comment>Minolta MRW raw image</_comment>
     <acronym>MRW</acronym>
     <expanded-acronym>Minolta RaW</expanded-acronym>
     <magic priority="50">
@@ -2807,14 +2805,14 @@ command to generate the output files.
   <mime-type type="image/x-nikon-nef">
     <sub-class-of type="image/x-dcraw"/>
     <sub-class-of type="image/tiff"/>
-    <_comment>Nikon raw image</_comment>
+    <_comment>Nikon NEF raw image</_comment>
     <acronym>NEF</acronym>
     <expanded-acronym>Nikon Electronic Format</expanded-acronym>
     <glob pattern="*.nef"/>
   </mime-type>
   <mime-type type="image/x-olympus-orf">
     <sub-class-of type="image/x-dcraw"/>
-    <_comment>Olympus raw image</_comment>
+    <_comment>Olympus ORF raw image</_comment>
     <acronym>ORF</acronym>
     <expanded-acronym>Olympus Raw Format</expanded-acronym>
     <magic priority="50">
@@ -2839,14 +2837,14 @@ command to generate the output files.
   <mime-type type="image/x-pentax-pef">
     <sub-class-of type="image/x-dcraw"/>
     <sub-class-of type="image/tiff"/>
-    <_comment>Pentax raw image</_comment>
+    <_comment>Pentax PEF raw image</_comment>
     <acronym>PEF</acronym>
     <expanded-acronym>Pentax Electronic Format</expanded-acronym>
     <glob pattern="*.pef"/>
   </mime-type>
   <mime-type type="image/x-sigma-x3f">
     <sub-class-of type="image/x-dcraw"/>
-    <_comment>Sigma raw image</_comment>
+    <_comment>Sigma X3F raw image</_comment>
     <acronym>X3F</acronym>
     <expanded-acronym>X3 Foveon</expanded-acronym>
       <magic priority="50">
@@ -2863,7 +2861,7 @@ command to generate the output files.
     <sub-class-of type="image/tiff"/>
     <acronym>SRF</acronym>
     <expanded-acronym>Sony Raw Format</expanded-acronym>
-    <_comment>Sony raw image</_comment>
+    <_comment>Sony SRF raw image</_comment>
     <glob pattern="*.srf"/>
   </mime-type>
   <mime-type type="image/x-sony-sr2">
@@ -2871,7 +2869,7 @@ command to generate the output files.
     <sub-class-of type="image/tiff"/>
     <acronym>SR2</acronym>
     <expanded-acronym>Sony Raw format 2</expanded-acronym>
-    <_comment>Sony raw image</_comment>
+    <_comment>Sony SR2 raw image</_comment>
     <glob pattern="*.sr2"/>
   </mime-type>
   <mime-type type="image/x-sony-arw">
@@ -2879,7 +2877,7 @@ command to generate the output files.
     <sub-class-of type="image/tiff"/>
     <acronym>ARW</acronym>
     <expanded-acronym>Alpha Raw format</expanded-acronym>
-    <_comment>Sony raw image</_comment>
+    <_comment>Sony ARW raw image</_comment>
     <glob pattern="*.arw"/>
   </mime-type>
   <mime-type type="image/png">
@@ -2890,7 +2888,7 @@ command to generate the output files.
     <glob pattern="*.png"/>
   </mime-type>
   <mime-type type="image/rle">
-    <_comment>Run Length Encoded bitmap</_comment>
+    <_comment>Run Length Encoded bitmap image</_comment>
     <glob pattern="*.rle"/>
   </mime-type>
   <mime-type type="image/svg+xml">
@@ -2906,7 +2904,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/svg+xml-compressed">
     <sub-class-of type="application/x-gzip"/>
-    <_comment>Compressed SVG image</_comment>
+    <_comment>compressed SVG image</_comment>
     <acronym>SVG</acronym>
     <expanded-acronym>Scalable Vector Graphics</expanded-acronym>
     <glob pattern="*.svgz"/>
@@ -2958,7 +2956,7 @@ command to generate the output files.
     <glob pattern="*.ras"/>
   </mime-type>
   <mime-type type="image/x-compressed-xcf">
-    <_comment>GIMP image (compressed)</_comment>
+    <_comment>compressed GIMP image</_comment>
     <glob pattern="*.xcf.gz"/>
     <glob pattern="*.xcf.bz2"/>
   </mime-type>
@@ -3099,6 +3097,7 @@ command to generate the output files.
     <glob pattern="*.msod"/>
   </mime-type>
   <mime-type type="image/x-niff">
+    <_comment>NIFF image</_comment>
     <magic priority="80">
       <match type="string" value="IIN1" offset="0"/>
     </magic>
@@ -3177,7 +3176,7 @@ command to generate the output files.
     <glob pattern="*.sgi"/>
   </mime-type>
   <mime-type type="image/x-sun-raster">
-    <_comment>SUN Rasterfile image</_comment>
+    <_comment>Sun raster image</_comment>
     <magic priority="50">
       <match type="big32" value="0x59a66a95" offset="0"/>
     </magic>
@@ -3492,7 +3491,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/spreadsheet">
     <sub-class-of type="text/plain"/>
-    <_comment>Spreadsheet interchange document</_comment>
+    <_comment>spreadsheet interchange document</_comment>
     <magic priority="50">
       <match type="string" value="ID;" offset="0"/>
     </magic>
@@ -3660,7 +3659,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-gettext-translation">
     <sub-class-of type="text/plain"/>
-    <_comment>translation</_comment>
+    <_comment>translation file</_comment>
     <glob pattern="*.po"/>
   </mime-type>
   <mime-type type="text/x-gettext-translation-template">
@@ -3871,7 +3870,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-rpm-spec">
     <sub-class-of type="text/plain"/>
-    <_comment>rpm spec file</_comment>
+    <_comment>RPM spec file</_comment>
+    <acronym>RPM</acronym>
+    <expanded-acronym>Red Hat Package Manager</expanded-acronym>
     <glob pattern="*.spec"/>
     <magic priority="50">
       <match type="string" value="Summary: " offset="0"/>
@@ -4025,9 +4026,7 @@ command to generate the output files.
     <glob pattern="*.m2t"/>
   </mime-type>
   <mime-type type="video/quicktime">
-    <_comment>QT video</_comment>
-    <acronym>QT</acronym>
-    <expanded-acronym>QuickTime</expanded-acronym>
+    <_comment>QuickTime video</_comment>
     <magic priority="50">
       <match type="string" value="mdat" offset="12"/>
       <match type="string" value="mdat" offset="4"/>
@@ -4040,9 +4039,7 @@ command to generate the output files.
     <glob pattern="*.qtvr"/>
   </mime-type>
   <mime-type type="image/x-quicktime">
-    <_comment>QT image</_comment>
-    <acronym>QT</acronym>
-    <expanded-acronym>QuickTime</expanded-acronym>
+    <_comment>QuickTime image</_comment>
     <magic priority="50">
       <match type="string" value="idat" offset="4"/>
     </magic>
@@ -4113,9 +4110,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="video/x-ms-wmv">
     <sub-class-of type="video/x-ms-asf"/>
-    <_comment>WMV video</_comment>
-    <acronym>WMV</acronym>
-    <expanded-acronym>Windows Media Video</expanded-acronym>
+    <_comment>Windows Media video</_comment>
     <glob pattern="*.wmv"/>
   </mime-type>
   <mime-type type="video/x-msvideo">
@@ -4133,9 +4128,7 @@ command to generate the output files.
     <glob pattern="*.divx"/>
   </mime-type>
   <mime-type type="video/x-nsv">
-    <_comment>NSV video</_comment>
-    <acronym>NSV</acronym>
-    <expanded-acronym>NullSoft Video</expanded-acronym>
+    <_comment>NullSoft video</_comment>
     <magic priority="50">
       <match type="string" value="NSVf" offset="0"/>
     </magic>

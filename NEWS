@@ -1,3 +1,24 @@
+shared-mime-info 0.23 (2007-12-18)
+* Mime-type Changes:
+- Add QTIF QuickTime image
+- Add SDP stream description
+- Add Vala source file
+- Add Atom feed, OPML
+- Add SAMI, MicroDVD, MPSub, SSA subtitles
+- Add audio/x-m4b as a sub-class of audio/mp4
+- Add *.aac as a suffix for MPEG-4 audio files
+- Add Compressed Flash detection, add FutureSplash support
+- Add *.asc as a suffix for PGP armoured keys
+- Add application/msword as a sub-class of application/x-ole-storage
+- Don't associate *.htm and *.html to Mozilla bookmarks
+- Add more aliases for PowerPoint and Word mime-types
+- Add *.vlc as a suffix for m3u files
+- Better magic for Word and Office documents
+- Split Windows Media Station playlists from ASX ones
+- Fix up JPEG 2000 mime-types
+* Other:
+- Add a testsuite in the CVS tree
+
 shared-mime-info 0.22 (2007-07-30)
 * Mime-type Changes:
 - Clean up the Netscape/Mozilla bookmarks mime-types

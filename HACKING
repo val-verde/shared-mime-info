@@ -14,6 +14,13 @@ Translations
 Translations should go through the Translation Project at:
 http://translationproject.org/latest/shared-mime-info/
 
+CVS
+---
+
+Check it out using:
+cvs -d:pserver:anoncvs@anoncvs.freedesktop.org:/cvs/mime login
+cvs -d:pserver:anoncvs@anoncvs.freedesktop.org:/cvs/mime co shared-mime-info
+
 Test suite
 ----------
 
@@ -27,3 +34,13 @@ The format of the file is:
 The expected failures is whether matching the file with the mime-type would
 fail when matched by file, data or name. "x" indicates expected failure, "o"
 indicates expected success. Trailing "o"s can be omitted.
+
+Releasing
+---------
+
+Before release, an updated shared-mime-info.pot is sent to
+<coordinator@translationproject.org> so the translators have a chance
+of updating the translations before release.
+
+Updated .po files are sent to <shared-mime-info-maint@freedesktop.org>
+

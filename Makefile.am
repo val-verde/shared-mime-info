@@ -22,6 +22,7 @@ EXTRA_DIST = \
 	freedesktop.org.xml.in		\
 	$(packages_DATA) 		\
 	README				\
+	HACKING				\
 	$(man_MANS)			\
 	intltool-extract.in		\
 	intltool-merge.in		\

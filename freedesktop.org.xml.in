@@ -1644,6 +1644,17 @@ command to generate the output files.
     <glob pattern="*.lyx"/>
     <alias type="text/x-lyx"/>
   </mime-type>
+  <mime-type type="application/x-lzma">
+    <_comment>LZMA archive</_comment>
+    <acronym>LZMA</acronym>
+    <expanded-acronym>Lempel-Ziv-Markov chain-Algorithm</expanded-acronym>
+    <glob pattern="*.lzma"/>
+  </mime-type>
+  <mime-type type="application/x-lzma-compressed-tar">
+    <_comment>tar archive (LZMA-compressed)</_comment>
+    <glob pattern="*.tar.lzma"/>
+    <glob pattern="*.tlz"/>
+  </mime-type>
   <mime-type type="application/x-lzop">
     <_comment>LZO archive</_comment>
     <glob pattern="*.lzo"/>

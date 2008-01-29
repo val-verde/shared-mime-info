@@ -3647,6 +3647,12 @@ command to generate the output files.
     <expanded-acronym>Document Type Definition</expanded-acronym>
     <glob pattern="*.dtd"/>
   </mime-type>
+  <mime-type type="text/x-eiffel">
+    <sub-class-of type="text/plain"/>
+    <_comment>Eiffel source code</_comment>
+    <glob pattern="*.e"/>
+    <glob pattern="*.eif"/>
+  </mime-type>
   <mime-type type="text/x-emacs-lisp">
     <sub-class-of type="text/plain"/>
     <_comment>Emacs Lisp source code</_comment>

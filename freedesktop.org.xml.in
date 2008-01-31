@@ -1258,6 +1258,14 @@ command to generate the output files.
     <glob pattern="*.ttf"/>
     <glob pattern="*.ttc"/>
   </mime-type>
+  <mime-type type="application/x-font-ttx">
+    <sub-class-of type="text/xml"/>
+    <_comment>TrueType XML font</_comment>
+    <magic priority="50">
+      <match type="string" value="&lt;ttFont sfntVersion=&quot;\\x00\\x01\\x00\\x00&quot; ttLibVersion=&quot;" offset="0:256"/>
+    </magic>
+    <glob pattern="*.ttx"/>
+  </mime-type>
   <mime-type type="application/x-font-vfont">
     <_comment>V font</_comment>
     <magic priority="50">

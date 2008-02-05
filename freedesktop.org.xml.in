@@ -4012,7 +4012,7 @@ command to generate the output files.
     <_comment>XML document</_comment>
     <acronym>XML</acronym>
     <expanded-acronym>eXtensible Markup Language</expanded-acronym>
-    <magic priority="50">
+    <magic priority="40">
       <match type="string" value="&lt;?xml" offset="0"/>
       <match type="string" value="&lt;!--" offset="0"/>
     </magic>

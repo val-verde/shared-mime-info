@@ -53,6 +53,7 @@ const char *media_types[] = {
 	"message",
 	"model",
 	"multipart",
+	"x-content",
 	"x-epoc",
 };
 

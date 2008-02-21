@@ -1,5 +1,10 @@
 2008-02-21  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Fix a few typos in the DTD,
+	patch from Petteri Räty <petteri.raty@welho.com>
+
+2008-02-21  Bastien Nocera  <hadess@hadess.net>
+
 	* update-mime-database.c: Patch from Ed Catmur <ed@catmur.co.uk>
 	to avoid warnings with the new x-content/ stuff in GNOME 2.22
 	(Closes: #14362)

@@ -1,5 +1,13 @@
 2008-02-21  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Osmo Salomaa <otsaloma@cc.hut.fi>
+	to add the SubViewer subtitle mime-type
+
+	* tests/subtitle-subviewer.sub:
+	* tests/list: Add test case (Closes: #12478)
+
+2008-02-21  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Fix a few typos in the DTD,
 	patch from Petteri Räty <petteri.raty@welho.com>
 

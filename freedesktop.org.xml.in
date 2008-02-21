@@ -2733,6 +2733,13 @@ command to generate the output files.
       <match type="string" value="Xcur" offset="0"/>
     </magic>
   </mime-type>
+  <mime-type type="image/x-exr">
+    <_comment>EXR image</_comment>
+    <magic priority="50">
+      <match type="little32" value="20000630" offset="0"/>
+    </magic>
+    <glob pattern="*.exr"/>
+  </mime-type>
   <mime-type type="image/x-pict">
     <_comment>Macintosh Quickdraw/PICT drawing</_comment>
     <glob pattern="*.pict"/>

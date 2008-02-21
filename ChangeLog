@@ -1,3 +1,11 @@
+2008-02-21  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Patch from Pino Toscano
+	to add a mime-type for EXR images (Closes: #6488)
+
+	* tests/GammaChart.exr:
+	* tests/list: Add a test case
+
 2008-02-07  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Add "<Asx" as a possible

@@ -274,7 +274,7 @@ command to generate the output files.
     <!-- translators: a record is in this context a description of a board game
     		      that has been played, and that can be played back again:
 		      http://www.red-bean.com/sgf/ -->
-    <comment>SGF record</comment>
+    <_comment>SGF record</_comment>
     <acronym>SGF</acronym>
     <expanded-acronym>Smart Game Format</expanded-acronym>
     <glob pattern="*.sgf"/>
@@ -808,7 +808,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-7z-compressed">
      <sub-class-of type="application/octet-stream"/>
-     <comment>7-zip archive</comment>
+     <_comment>7-zip archive</_comment>
      <glob pattern="*.7z"/>
   </mime-type>
   <mime-type type="application/x-abiword">
@@ -955,12 +955,12 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-cbr">
     <sub-class-of type="application/x-rar"/>
-    <comment>comic book archive</comment>
+    <_comment>comic book archive</_comment>
     <glob pattern="*.cbr"/>
   </mime-type>
   <mime-type type="application/x-cbz">
     <sub-class-of type="application/zip"/>
-    <comment>comic book archive</comment>
+    <_comment>comic book archive</_comment>
     <glob pattern="*.cbz"/>
   </mime-type>
   <mime-type type="application/x-cd-image">
@@ -1802,7 +1802,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-vorbis+ogg">
     <sub-class-of type="audio/ogg"/>
-    <comment>Ogg Vorbis audio</comment>
+    <_comment>Ogg Vorbis audio</_comment>
     <magic priority="80">
       <match type="string" value="OggS" offset="0">
         <match type="string" value="\x01vorbis" offset="28"/>
@@ -1812,7 +1812,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-flac+ogg">
     <sub-class-of type="audio/ogg"/>
-    <comment>Ogg FLAC audio</comment>
+    <_comment>Ogg FLAC audio</_comment>
     <magic priority="80">
       <match type="string" value="OggS" offset="0">
         <match type="string" value="fLaC" offset="28"/>
@@ -1822,7 +1822,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-speex+ogg">
     <sub-class-of type="audio/ogg"/>
-    <comment>Ogg Speex audio</comment>
+    <_comment>Ogg Speex audio</_comment>
     <magic priority="80">
       <match type="string" value="OggS" offset="0">
         <match type="string" value="Speex  " offset="28"/>
@@ -1839,7 +1839,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="video/x-theora+ogg">
     <sub-class-of type="video/ogg"/>
-    <comment>Ogg Theora video</comment>
+    <_comment>Ogg Theora video</_comment>
     <magic priority="80">
       <match type="string" value="OggS" offset="0">
         <match type="string" value="\x80theora" offset="28"/>
@@ -1849,7 +1849,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="video/x-ogm+ogg">
     <sub-class-of type="video/ogg"/>
-    <comment>OGM video</comment>
+    <_comment>OGM video</_comment>
     <magic priority="80">
       <match type="string" value="OggS" offset="0">
         <match type="string" value="video" offset="29"/>
@@ -1874,7 +1874,7 @@ command to generate the output files.
     <glob pattern="*.oleo"/>
   </mime-type>
   <mime-type type="application/x-pak">
-    <comment>PAK archive</comment>
+    <_comment>PAK archive</_comment>
     <magic priority="80">
       <match offset="0" type="string" value="PACK" />
     </magic>
@@ -1887,7 +1887,7 @@ command to generate the output files.
     <alias type="application/vnd.palm"/>
   </mime-type>
   <mime-type type="application/x-par2">
-    <comment>PAR2 Parity File</comment>
+    <_comment>PAR2 Parity File</_comment>
     <magic priority="50">
       <match offset="0" type="string" value="PAR2" />
     </magic>
@@ -2563,7 +2563,7 @@ command to generate the output files.
     <alias type="audio/x-pn-realaudio"/>
   </mime-type>
   <mime-type type="application/ram">
-    <comment>RealMedia Metafile</comment>
+    <_comment>RealMedia Metafile</_comment>
     <glob pattern="*.ram" />
     <sub-class-of type="text/plain"/>
   </mime-type>

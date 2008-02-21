@@ -69,4 +69,8 @@ check:
 		XDG_DATA_DIRS="$(builddir)/temp-mime-dir/" ../xdgmime/src/test-mime-data -v tests/list; \
 		rm -rf "$(builddir)/temp-mime-dir/" ; \
 	fi
+	if `grep comment $(srcdir)/freedesktop.org.xml.in | grep -v _comment | grep -q -v '<!'` ; then \
+		echo "Some comments are not marked as translatable, fix before committing" ; \
+		exit 1 ; \
+	fi
 

@@ -1,5 +1,14 @@
 2008-02-21  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Pino Toscano
+	<pino@kde.org> to mark more comments as translatable
+	(Closes: #14605)
+
+	* Makefile.am: Add a check for untranslated comments
+	in the check target
+
+2008-02-21  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Translate the CHM comment,
 	spotted by Pino Toscano <pino@kde.org> (Closes: #14520)
 

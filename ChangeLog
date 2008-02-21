@@ -1,5 +1,10 @@
 2008-02-21  Bastien Nocera  <hadess@hadess.net>
 
+	* configure.in: Update deps to glib 2.6.0, spotted by
+	Guillaume D. <guillaumed@users.sf.net> (Closes: #12249)
+
+2008-02-21  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Robert Millan <rmh@aybabtu.com>
 	to add Microsoft Registry mime-types, for use in Wine
 	(Closes: #10312)

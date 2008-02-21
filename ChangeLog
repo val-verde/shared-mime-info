@@ -1,5 +1,12 @@
 2008-02-21  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/registry.reg: Detect registry files when they're
+	UTF-16 encoded as exported by regedit on Windows XP,
+	magic provided by Robert Millan <rmh@aybabtu.com>
+
+2008-02-21  Bastien Nocera  <hadess@hadess.net>
+
 	* update-mime-database.1: Small fixes to the man page by
 	Pascal Terjan <pterjan@gmail.com> (Closes: #12311)
 

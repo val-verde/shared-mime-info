@@ -3820,6 +3820,15 @@ command to generate the output files.
     <expanded-acronym>Qt Meta Object Compiler</expanded-acronym>
     <glob pattern="*.moc"/>
   </mime-type>
+  <mime-type type="text/x-ms-regedit">
+    <sub-class-of type="text/plain"/>
+    <_comment>Windows Registry extract</_comment>
+    <magic priority="50">
+      <match type="string" value="REGEDIT" offset="0"/>
+      <match type="string" value="Windows Registry Editor Version 5.00" offset="0"/>
+    </magic>
+    <glob pattern="*.reg"/>
+  </mime-type>
   <mime-type type="text/x-mup">
     <sub-class-of type="text/plain"/>
     <_comment>Mup publication</_comment>

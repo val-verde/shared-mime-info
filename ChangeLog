@@ -1,5 +1,16 @@
 2008-02-21  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Robert Millan <rmh@aybabtu.com>
+	to add Microsoft Registry mime-types, for use in Wine
+	(Closes: #10312)
+
+	* tests/list:
+	* tests/registry.reg:
+	* tests/registry-nt.reg: Add test files for the Windows Registry
+	mime-type
+
+2008-02-21  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Update DJVU magic and aliases from
 	the upstream DjVulibre projects, spotted by Leon Bottou
 	<leon@bottou.org> (Closes: #14009)

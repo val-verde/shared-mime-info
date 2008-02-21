@@ -3025,17 +3025,20 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/vnd.djvu">
    <_comment>DjVu image</_comment>
+   <alias type="image/x-djvu"/>
+   <alias type="image/x.djvu"/>
    <magic priority="50">
-     <match type="string" value="FORM" offset="4">
-       <match type="string" value="DJVU" offset="12"/>
-       <match type="string" value="DJVM" offset="12"/>
-       <match type="string" value="BM44" offset="12"/>
-       <match type="string" value="PM44" offset="12"/>
+     <match type="string" offset="0" value="AT&amp;TFORM">
+       <match type="string" offset="12" value="DJVM"/>
+       <match type="string" offset="12" value="DJVU"/>
+     </match>
+     <match type="string" offset="0" value="FORM">
+       <match type="string" offset="8" value="DJVM"/>
+       <match type="string" offset="8" value="DJVU"/>
      </match>
    </magic>
    <glob pattern="*.djvu"/>
    <glob pattern="*.djv"/>
-   <alias type="image/x-djvu"/>
   </mime-type>
   <mime-type type="image/dpx">
     <_comment>DPX image</_comment>

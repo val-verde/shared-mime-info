@@ -1,5 +1,14 @@
 2008-02-21  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Update DJVU magic and aliases from
+	the upstream DjVulibre projects, spotted by Leon Bottou
+	<leon@bottou.org> (Closes: #14009)
+
+	* tests/2001_compression_overview.djvu:
+	* tests/list: Add test case for DjVu files
+
+2008-02-21  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Osmo Salomaa <otsaloma@cc.hut.fi>
 	to add the SubViewer subtitle mime-type
 

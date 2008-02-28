@@ -1,3 +1,11 @@
+2008-02-28  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Remove *.amr from 3gpp files,
+	they're already used by audio/AMR,
+	Add audio/mp3 as an alias for audio/mpeg
+	Add audio/vnd.m-realaudio as an alias for audio/vnd.rn-realaudio
+	Add audio/wma as an alias for video/x-ms-asf
+
 2008-02-21  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in:

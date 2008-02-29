@@ -1,4 +1,4 @@
-# image formats supported by the Gimp or gdk-pixbuf
+# Images
 test.bmp image/bmp 
 test.cel image/x-cel xxx 
 test.dcm application/dicom
@@ -31,7 +31,7 @@ test.xwd image/x-xwindowdump ox
 # Copied from http://djvu.org/resources/
 2001_compression_overview.djvu image/vnd.djvu
 
-# document formats supported by Openoffice.org
+# Documents
 ooo-6.0.doc application/msword
 ooo-95.doc application/msword
 ooo.doc application/msword
@@ -43,7 +43,7 @@ ooo.vor application/vnd.stardivision.writer
 ooo-xp.doc application/msword
 office.doc application/msword ox
 
-# Playlist formats supported by Totem
+# Playlist, subtitle and audio formats
 stream.nsc application/x-netshow-channel
 stream.sdp application/sdp x
 playlist.asx audio/x-ms-asx
@@ -62,6 +62,12 @@ subtitle-mpsub.sub text/x-mpsub x
 subtitle.ssa text/x-ssa
 # Copied from http://wiki.videolan.org/SubViewer
 subtitle-subviewer.sub text/x-subviewer x
+# Copied from http://zano6.home.att.net/Ringer/Ball_Game.ime
+ringtone.ime text/x-iMelody
+# Copied from http://smaf-yamaha.com/develop/smpl/J-Walk.mmf
+ringtone.mmf application/x-smaf
+# Copied from http://smaf-yamaha.com/what/demo/chlist.mrl
+playlist.mrl text/x-mrml
 
 # text
 text-iso8859-15.txt text/plain ox

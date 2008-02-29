@@ -1,3 +1,13 @@
+2008-02-29  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Add mime-type for SMAF,
+	XMF and iMelody ringtones, and MRML "playlist" type
+
+	* tests/list:
+	* tests/playlist.mrl:
+	* tests/ringtone.ime:
+	* tests/ringtone.mmf: Add tests for the above minus XMF
+
 2008-02-28  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Remove *.amr from 3gpp files,

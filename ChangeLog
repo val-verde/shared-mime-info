@@ -1,3 +1,11 @@
+2008-03-04  Alexander Larsson  <alexl@redhat.com>
+
+	* shared-mime-info-spec.xml:
+	Update spec from discussion on list:
+	Add generic-icon and icon support.
+	Add glob weight
+	Change recommended sniffing/glob order
+
 2008-03-04  Bastien Nocera  <hadess@hadess.net>
 
 	* update-mime-database.c (process_freedesktop_node):

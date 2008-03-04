@@ -388,12 +388,6 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 		if (localName)
 			xmlFree(localName);
 	}
-	else
-	{
-		g_set_error(error, MIME_ERROR, 0,
-			_("Unknown freedesktop.org field '%s'"),
-			field->name);
-	}
 	
 	return !*error;
 }

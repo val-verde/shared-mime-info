@@ -76,6 +76,8 @@ text-utf8.txt text/plain ox
 registry.reg text/x-ms-regedit
 # Copied from http://www.ss64.com/nt/regedit.html
 registry-nt.reg text/x-ms-regedit
+# Copied from https://bugzilla.redhat.com/show_bug.cgi?id=430203#c3
+test.ext,v text/plain ox
 
 # xml subtypes
 test.ttx application/x-font-ttx

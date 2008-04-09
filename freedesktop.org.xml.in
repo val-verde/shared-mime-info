@@ -3973,6 +3973,10 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <_comment>README document</_comment>
     <glob pattern="README*"/>
+  </mime-type>
+  <mime-type type="text/x-nfo">
+    <sub-class-of type="text/x-readme"/>
+    <_comment>NFO document</_comment>
     <glob pattern="*.nfo"/>
   </mime-type>
   <mime-type type="text/x-rpm-spec">

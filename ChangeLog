@@ -1,3 +1,9 @@
+2008-04-09  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Make application/x-flash-video an alias,
+	and have the top-level mime-type be video/x-flv, so apps can use
+	video/ to filter it (Closes: #14982)
+
 2008-03-28  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Add application/x-redhat-package-manager

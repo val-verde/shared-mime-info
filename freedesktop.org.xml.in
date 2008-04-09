@@ -2547,14 +2547,12 @@ command to generate the output files.
     <glob pattern="*.mp3"/>
     <glob pattern="*.mpga"/>
   </mime-type>
-  <mime-type type="audio/x-mp3-playlist">
-    <_comment>MP3 playlist</_comment>
-  </mime-type>
   <mime-type type="audio/x-mpegurl">
     <_comment>MP3 audio (streamed)</_comment>
     <sub-class-of type="text/plain"/>
     <alias type="audio/mpegurl" />
     <alias type="application/m3u"/>
+    <alias type="audio/x-mp3-playlist"/>
     <glob pattern="*.m3u"/>
     <glob pattern="*.vlc"/>
     <magic priority="50">

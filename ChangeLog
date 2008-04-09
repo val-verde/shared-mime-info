@@ -1,5 +1,10 @@
 2008-04-09  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Remove audio/x-mp3-playlist (no pattern,
+	no magic) and make it an alias for m3u playlists
+
+2008-04-09  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add a mime-type for NFO files, patch by
 	Osmo Salomaa <otsaloma@cc.hut.fi> (Closes: #12721)
 

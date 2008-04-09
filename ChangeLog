@@ -1,5 +1,10 @@
 2008-04-09  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Remove useless application/x-dbm
+	mime-type, it didn't have a comment, or an users (Closes: #15223)
+
+2008-04-09  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Make application/x-flash-video an alias,
 	and have the top-level mime-type be video/x-flv, so apps can use
 	video/ to filter it (Closes: #14982)

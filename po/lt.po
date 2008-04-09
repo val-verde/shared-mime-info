@@ -1,15 +1,15 @@
 # Lithuanian translation of shared-mime-info.
-# Copyright (C) 2006 Free Software Foundation, Inc.
+# Copyright (C) 2006-2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the shared-mime-info package.
-# Žygimantas Beručka <uid0@akl.lt>, 2006.
+# Žygimantas Beručka <uid0@akl.lt>, 2006-2008.
 # 
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info 0.16\n"
+"Project-Id-Version: shared-mime-info 0.23-pre1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-22 14:40-0500\n"
-"PO-Revision-Date: 2006-03-16 15:10+0200\n"
+"POT-Creation-Date: 2007-12-12 13:13+0000\n"
+"PO-Revision-Date: 2008-03-13 23:14+0200\n"
 "Last-Translator: Žygimantas Beručka <uid0@akl.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
@@ -21,1546 +21,2027 @@ msgid "3D Studio image"
 msgstr "3D Studio paveikslėlis"
 
 #: ../freedesktop.org.xml.in.h:2
+msgid "3GPP multimedia"
+msgstr "3GPP multmedija"
+
+#: ../freedesktop.org.xml.in.h:3
+msgid "ACE archive"
+msgstr "ACE archyvas"
+
+#: ../freedesktop.org.xml.in.h:4
 msgid "AIFC audio"
 msgstr "AIFC audio"
 
-#: ../freedesktop.org.xml.in.h:3
+#: ../freedesktop.org.xml.in.h:5
 msgid "AIFF audio"
 msgstr "AIFF audio"
 
-#: ../freedesktop.org.xml.in.h:4
+#: ../freedesktop.org.xml.in.h:6
 msgid "AIFF/Amiga/Mac audio"
 msgstr "AIFF/Amiga/Mac audio"
 
-#: ../freedesktop.org.xml.in.h:5
+#: ../freedesktop.org.xml.in.h:7
+msgid "AMR audio"
+msgstr "AMR audio"
+
+#: ../freedesktop.org.xml.in.h:8
+msgid "AMR-WB audio"
+msgstr "AMR-WB audio"
+
+#: ../freedesktop.org.xml.in.h:9
 msgid "ANIM animation"
 msgstr "ANIM animacija"
 
-#: ../freedesktop.org.xml.in.h:6
+#: ../freedesktop.org.xml.in.h:10
 msgid "AR archive"
 msgstr "AR archyvas"
 
-#: ../freedesktop.org.xml.in.h:7
+#: ../freedesktop.org.xml.in.h:11
+msgid "ARC archive"
+msgstr "ARC archyvas"
+
+#: ../freedesktop.org.xml.in.h:12
 msgid "ARJ archive"
 msgstr "ARJ archyvas"
 
-#: ../freedesktop.org.xml.in.h:8
+#: ../freedesktop.org.xml.in.h:13
+msgid "ASF video"
+msgstr "ASF video"
+
+#: ../freedesktop.org.xml.in.h:14
+msgid "ASP page"
+msgstr "ASP puslapis"
+
+#: ../freedesktop.org.xml.in.h:15
+msgid "ATK inset"
+msgstr "ATK inset"
+
+#: ../freedesktop.org.xml.in.h:16
 msgid "AVI video"
 msgstr "AVI video"
 
-#: ../freedesktop.org.xml.in.h:9
+#: ../freedesktop.org.xml.in.h:17
 msgid "AWK script"
 msgstr "AWK scenarijus"
 
-#: ../freedesktop.org.xml.in.h:10
+#: ../freedesktop.org.xml.in.h:18
 msgid "AbiWord document"
 msgstr "AbiWord dokumentas"
 
-#: ../freedesktop.org.xml.in.h:11
+#: ../freedesktop.org.xml.in.h:19
 msgid "Ada source code"
 msgstr "Ada pradinis kodas"
 
-#: ../freedesktop.org.xml.in.h:12
+#: ../freedesktop.org.xml.in.h:20
+msgid "Adobe DNG negative"
+msgstr "Adobe DNG negatyvas"
+
+#: ../freedesktop.org.xml.in.h:21
+msgid "Adobe FrameMaker MIF document"
+msgstr "Adobe FrameMaker MIF dokumentas"
+
+#: ../freedesktop.org.xml.in.h:22
+msgid "Adobe FrameMaker document"
+msgstr "Adobe FrameMaker dokumentas"
+
+#: ../freedesktop.org.xml.in.h:23
 msgid "Adobe FrameMaker font"
 msgstr "Adobe FrameMaker šriftas"
 
-#: ../freedesktop.org.xml.in.h:13
+#: ../freedesktop.org.xml.in.h:24
 msgid "Adobe Illustrator document"
 msgstr "Adobe Illustrator dokumentas"
 
-#: ../freedesktop.org.xml.in.h:14
+#: ../freedesktop.org.xml.in.h:25
 msgid "Adobe font metrics"
 msgstr "Adobe šrfitų metrika"
 
-#: ../freedesktop.org.xml.in.h:15
+#: ../freedesktop.org.xml.in.h:26
 msgid "Amiga SoundTracker audio"
 msgstr "Amiga SoundTracker audio"
 
-#: ../freedesktop.org.xml.in.h:16
-msgid "Andrew Toolkit inset"
-msgstr "Andrew Toolkit intarpas"
-
-#: ../freedesktop.org.xml.in.h:17
+#: ../freedesktop.org.xml.in.h:27
 msgid "Applix Graphics image"
 msgstr "Applix Graphics paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:18
+#: ../freedesktop.org.xml.in.h:28
 msgid "Applix Spreadsheets spreadsheet"
 msgstr "Applix Spreadsheets skaičialentė"
 
-#: ../freedesktop.org.xml.in.h:19
+#: ../freedesktop.org.xml.in.h:29
 msgid "Applix Words document"
 msgstr "Applix Words dokumentas"
 
-#: ../freedesktop.org.xml.in.h:20
+#: ../freedesktop.org.xml.in.h:30
+msgid "Atom syndication feed"
+msgstr "Atom sindikacijos kanalas"
+
+#: ../freedesktop.org.xml.in.h:31
 msgid "AutoCAD image"
 msgstr "AutoCAD paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:21
-msgid "AutoDesk FLIC animation"
-msgstr "AutoDesk FLIC animacija"
-
-#: ../freedesktop.org.xml.in.h:22
+#: ../freedesktop.org.xml.in.h:32
 msgid "BCPIO document"
 msgstr "BCPIO dokumentas"
 
-#: ../freedesktop.org.xml.in.h:23
+#: ../freedesktop.org.xml.in.h:33
 msgid "BDF font"
 msgstr "BDF šriftas"
 
-#: ../freedesktop.org.xml.in.h:24
-msgid "Bibtex bibliographic data"
-msgstr "Bibtex bibliografijos duomenys"
+#: ../freedesktop.org.xml.in.h:34
+msgid "BibTeX document"
+msgstr "BibTeX dokumentas"
 
-#: ../freedesktop.org.xml.in.h:25
+#: ../freedesktop.org.xml.in.h:35
 msgid "BitTorrent seed file"
 msgstr "BitTorrent sėklos rinkmena"
 
-#: ../freedesktop.org.xml.in.h:26
+#: ../freedesktop.org.xml.in.h:36
 msgid "Blender scene"
 msgstr "Blender scena"
 
-#: ../freedesktop.org.xml.in.h:27
+#: ../freedesktop.org.xml.in.h:37
+msgid "Bzip archive"
+msgstr "Bzip archyvas"
+
+#: ../freedesktop.org.xml.in.h:38
+msgid "C header"
+msgstr "C antraštė"
+
+#: ../freedesktop.org.xml.in.h:39
 msgid "C shell script"
 msgstr "C shell scenarijus"
 
-#: ../freedesktop.org.xml.in.h:28
+#: ../freedesktop.org.xml.in.h:40
 msgid "C source code"
 msgstr "C pradinis kodas"
 
-#: ../freedesktop.org.xml.in.h:29
-msgid "C source code header"
-msgstr "C pradinio kodo antraštė"
-
-#: ../freedesktop.org.xml.in.h:30
+#: ../freedesktop.org.xml.in.h:41
 msgid "C# source code"
 msgstr "C# pradinis kodas"
 
-#: ../freedesktop.org.xml.in.h:31
+#: ../freedesktop.org.xml.in.h:42
+msgid "C++ header"
+msgstr "C++ antraštė"
+
+#: ../freedesktop.org.xml.in.h:43
 msgid "C++ source code"
 msgstr "C++ pradinis kodas"
 
-#: ../freedesktop.org.xml.in.h:32
-msgid "C++ source code header"
-msgstr "C++ pradinio kodo antraštė"
-
-#: ../freedesktop.org.xml.in.h:33
+#: ../freedesktop.org.xml.in.h:44
 msgid "CCITT G3 fax"
 msgstr "CCITT G3 faksas"
 
-#: ../freedesktop.org.xml.in.h:34
+#: ../freedesktop.org.xml.in.h:45
+msgid "CD image cuesheet"
+msgstr "CD atvaizdžio aprašas"
+
+#: ../freedesktop.org.xml.in.h:46
 msgid "CGI script"
 msgstr "CGI scenarijus"
 
-#: ../freedesktop.org.xml.in.h:35
+#: ../freedesktop.org.xml.in.h:47
 msgid "CMU raster image"
 msgstr "CMU rastrinis paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:36
+#: ../freedesktop.org.xml.in.h:48
 msgid "CPIO archive"
 msgstr "CPIO archyvas"
 
-#: ../freedesktop.org.xml.in.h:37
+#: ../freedesktop.org.xml.in.h:49
 msgid "CPIO archive (gzip-compressed)"
-msgstr "CPIO archyvas (suspaustas su gzip)"
+msgstr "CPIO archyvas (suglaudintas su gzip)"
 
-#: ../freedesktop.org.xml.in.h:38
-msgid "Cascading Style Sheet"
-msgstr "Kaskadinių stilių aprašas"
+#: ../freedesktop.org.xml.in.h:50
+msgid "CSS stylesheet"
+msgstr "CSS stiliaus aprašas"
 
-#: ../freedesktop.org.xml.in.h:39
+#: ../freedesktop.org.xml.in.h:51
+msgid "CSV document"
+msgstr "CSV dokumentas"
+
+#: ../freedesktop.org.xml.in.h:52
+msgid "Canon CR2 raw image"
+msgstr "Canon CR2 neapdorotas paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:53
+msgid "Canon CRW raw image"
+msgstr "Canon CRW neapdorotas paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:54
+msgid "ChangeLog document"
+msgstr "ChangeLog dokumentas"
+
+#: ../freedesktop.org.xml.in.h:55
+msgid "Citrix ICA settings file"
+msgstr "Citrix ICA parametrų rinkmena"
+
+#: ../freedesktop.org.xml.in.h:56
 msgid "Commodore 64 audio"
 msgstr "Commodore 64 audio"
 
-#: ../freedesktop.org.xml.in.h:40
+#: ../freedesktop.org.xml.in.h:57
 msgid "Computer Graphics Metafile"
 msgstr "Computer Graphics metarinkmena"
 
-#: ../freedesktop.org.xml.in.h:41
+#: ../freedesktop.org.xml.in.h:58
 msgid "Corel Draw drawing"
 msgstr "Corel Draw piešinys"
 
-#: ../freedesktop.org.xml.in.h:42
+#: ../freedesktop.org.xml.in.h:59
 msgid "D source code"
 msgstr "D pradinis kodas"
 
-#: ../freedesktop.org.xml.in.h:43
+#: ../freedesktop.org.xml.in.h:60
+msgid "DAR archive"
+msgstr "DAR archyvas"
+
+#: ../freedesktop.org.xml.in.h:61
 msgid "DCL script"
 msgstr "DCL scenarijus"
 
-#: ../freedesktop.org.xml.in.h:44
+#: ../freedesktop.org.xml.in.h:62
 msgid "DER/PEM/Netscape-encoded X.509 certificate"
 msgstr "DER/PEM/Netscape-encoded X.509 sertifikatas"
 
-#: ../freedesktop.org.xml.in.h:45
+#: ../freedesktop.org.xml.in.h:63
+msgid "DIB image"
+msgstr "DIB paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:64
+msgid "DICOM image"
+msgstr "DICOM paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:65
 msgid "DOS font"
 msgstr "DOS šriftas"
 
-#: ../freedesktop.org.xml.in.h:46
+#: ../freedesktop.org.xml.in.h:66
 msgid "DOS/Windows executable"
 msgstr "DOS/Windows vykdomoji rinkmena"
 
-#: ../freedesktop.org.xml.in.h:47
+#: ../freedesktop.org.xml.in.h:67
+msgid "DPX image"
+msgstr "DPX paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:68
 msgid "DSSSL document"
 msgstr "DSSSL dokumentas"
 
-#: ../freedesktop.org.xml.in.h:48
+#: ../freedesktop.org.xml.in.h:69
+msgid "DTD file"
+msgstr "DTD rinkmena"
+
+#: ../freedesktop.org.xml.in.h:70
+msgid "DV video"
+msgstr "DV video"
+
+#: ../freedesktop.org.xml.in.h:71
 msgid "DXF vector image"
 msgstr "DXF vektorinis paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:49
+#: ../freedesktop.org.xml.in.h:72
 msgid "Debian package"
 msgstr "Debian paketas"
 
-#: ../freedesktop.org.xml.in.h:50
-msgid "Device Independant Bitmap"
-msgstr "Device Independant Bitmap"
-
-#: ../freedesktop.org.xml.in.h:51
+#: ../freedesktop.org.xml.in.h:73
 msgid "Dia diagram"
 msgstr "Dia diagrama"
 
-#: ../freedesktop.org.xml.in.h:52
-msgid "Digital Imaging and Communications in Medicine image"
-msgstr "Digital Imaging and Communications in Medicine paveikslėlis"
+#: ../freedesktop.org.xml.in.h:74
+msgid "DirectDraw surface"
+msgstr "DirectDraw paviršius"
 
-#: ../freedesktop.org.xml.in.h:53
-msgid "Digital Moving Picture Exchange image"
-msgstr "Digital Moving Picture Exchange paveikslėlis"
-
-#: ../freedesktop.org.xml.in.h:54
+#: ../freedesktop.org.xml.in.h:75
 msgid "DjVu image"
 msgstr "DjVu paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:55
+#: ../freedesktop.org.xml.in.h:76
+msgid "DocBook document"
+msgstr "DocBook dokumentas"
+
+#: ../freedesktop.org.xml.in.h:77
 msgid "Dolby Digital audio"
 msgstr "Dolby Digital audio"
 
-#: ../freedesktop.org.xml.in.h:56
+#: ../freedesktop.org.xml.in.h:78
 msgid "Dreamcast ROM"
 msgstr "Dreamcast ROM"
 
-#: ../freedesktop.org.xml.in.h:57
+#: ../freedesktop.org.xml.in.h:79
+msgid "ECMAScript program"
+msgstr "ECMAScript programa"
+
+#: ../freedesktop.org.xml.in.h:80
+msgid "EMF image"
+msgstr "EMF paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:81
+msgid "EPS image"
+msgstr "EPS paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:82
+msgid "EPS image (bzip-compressed)"
+msgstr "EPS paveikslėlis (suglaudintas su bzip)"
+
+#: ../freedesktop.org.xml.in.h:83
+msgid "EPS image (gzip-compressed)"
+msgstr "EPS paveikslėlis (suglaudintas su gzip)"
+
+#: ../freedesktop.org.xml.in.h:84
 msgid "Egon Animator animation"
 msgstr "Egon Animator animacija"
 
-#: ../freedesktop.org.xml.in.h:58
+#: ../freedesktop.org.xml.in.h:85
 msgid "Electronic Business Card"
 msgstr "Electronic Business Card"
 
-#: ../freedesktop.org.xml.in.h:59
+#: ../freedesktop.org.xml.in.h:86
 msgid "Emacs Lisp source code"
 msgstr "Emacs Lisp pradinis kodas"
 
-#: ../freedesktop.org.xml.in.h:60
-msgid "Encapsulated PostScript image"
-msgstr "Encapsulated PostScript paveikslėlis"
-
-#: ../freedesktop.org.xml.in.h:61
+#: ../freedesktop.org.xml.in.h:87
 msgid "Enlightenment theme"
 msgstr "Enlightenment tema"
 
-#: ../freedesktop.org.xml.in.h:62
+#: ../freedesktop.org.xml.in.h:88
+msgid "Erlang source code"
+msgstr "Erlang pradinis kodas"
+
+#: ../freedesktop.org.xml.in.h:89
+msgid "Excel spreadsheet"
+msgstr "Excel skaičialentė"
+
+#: ../freedesktop.org.xml.in.h:90
+msgid "FITS document"
+msgstr "FITS dokumentas"
+
+#: ../freedesktop.org.xml.in.h:91
 msgid "FLAC audio"
 msgstr "FLAC audio"
 
-#: ../freedesktop.org.xml.in.h:63
+#: ../freedesktop.org.xml.in.h:92
+msgid "FLIC animation"
+msgstr "FLIC animacija"
+
+#: ../freedesktop.org.xml.in.h:93
+msgid "FPX image"
+msgstr "FPX paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:94
 msgid "FastTracker II audio"
 msgstr "FastTracker II audio"
 
-#: ../freedesktop.org.xml.in.h:64
-msgid "FlashPix image"
-msgstr "FlashPix paveikslėlis"
+#: ../freedesktop.org.xml.in.h:95
+msgid "Flash video"
+msgstr "Flash video"
 
-#: ../freedesktop.org.xml.in.h:65
-msgid "Flexible Image Transport System"
-msgstr "Flexible Image Transport System"
-
-#: ../freedesktop.org.xml.in.h:66
+#: ../freedesktop.org.xml.in.h:96
 msgid "Fortran source code"
 msgstr "Fortran pradinis kodas"
 
-#: ../freedesktop.org.xml.in.h:67
-msgid "FrameMaker MIF document"
-msgstr "FrameMaker MIF dokumentas"
+#: ../freedesktop.org.xml.in.h:97
+msgid "Fuji RAF raw image"
+msgstr "Fuji RAF neapdorotas paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:68
+#: ../freedesktop.org.xml.in.h:98
 msgid "G3 fax image"
 msgstr "G3 fax paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:69
+#: ../freedesktop.org.xml.in.h:99
+msgid "GDBM database"
+msgstr "GDBM duomenų bazė"
+
+#: ../freedesktop.org.xml.in.h:100
+msgid "GEDCOM family history"
+msgstr "GEDCOM šeimos istorija"
+
+#: ../freedesktop.org.xml.in.h:101
 msgid "GIF image"
 msgstr "GIF paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:70
+#: ../freedesktop.org.xml.in.h:102
 msgid "GIMP image"
 msgstr "GIMP paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:71
-msgid "GIMP image (compressed)"
-msgstr "GIMP paveikslėlis (suspaustas)"
-
-#: ../freedesktop.org.xml.in.h:72
+#: ../freedesktop.org.xml.in.h:103
 msgid "GMC link"
 msgstr "GMC nuoroda"
 
-#: ../freedesktop.org.xml.in.h:73
+#: ../freedesktop.org.xml.in.h:104
 msgid "GNU Oleo spreadsheet"
 msgstr "GNU Oleo skaičialentė"
 
-#: ../freedesktop.org.xml.in.h:74
+#: ../freedesktop.org.xml.in.h:105
 msgid "GNU mail message"
-msgstr "GNU mail žinutė"
+msgstr "GNU pašto žinutė"
 
-#: ../freedesktop.org.xml.in.h:75
-msgid "GTK configuration"
-msgstr "GTK konfigūracija"
+#: ../freedesktop.org.xml.in.h:106
+msgid "GTK+ configuration"
+msgstr "GTK+ konfigūracija"
 
-#: ../freedesktop.org.xml.in.h:76
+#: ../freedesktop.org.xml.in.h:107
 msgid "GTKtalog catalog"
 msgstr "GTKtalog katalogas"
 
-#: ../freedesktop.org.xml.in.h:77
+#: ../freedesktop.org.xml.in.h:108
+msgid "Game Boy Advance ROM"
+msgstr "Game Boy Advance ROM"
+
+#: ../freedesktop.org.xml.in.h:109
 msgid "Game Boy ROM"
 msgstr "Game Boy ROM"
 
-#: ../freedesktop.org.xml.in.h:78
+#. Translate this to Megadrive if the console was known as such in your locale
+#. Should be Megadrive in all but en_US: http://en.wikipedia.org/wiki/Megadrive#History
+#: ../freedesktop.org.xml.in.h:112
 msgid "Genesis ROM"
 msgstr "Genesis ROM"
 
-#: ../freedesktop.org.xml.in.h:79
+#: ../freedesktop.org.xml.in.h:113
 msgid "Glade project"
 msgstr "Glade projektas"
 
-#: ../freedesktop.org.xml.in.h:80
+#: ../freedesktop.org.xml.in.h:114
 msgid "GnuCash spreadsheet"
 msgstr "GnuCash skaičialentė"
 
-#: ../freedesktop.org.xml.in.h:81
+#: ../freedesktop.org.xml.in.h:115
 msgid "Gnumeric spreadsheet"
 msgstr "Gnumeric skaičialentė"
 
-#: ../freedesktop.org.xml.in.h:82
+#: ../freedesktop.org.xml.in.h:116
+msgid "Gnuplot document"
+msgstr "Gnuplot dokumentas"
+
+#: ../freedesktop.org.xml.in.h:117
+msgid "Google Video Pointer"
+msgstr "Google Video Pointer"
+
+#: ../freedesktop.org.xml.in.h:118
 msgid "Graphite scientific graph"
 msgstr "Graphite mokslinė diagrama"
 
-#: ../freedesktop.org.xml.in.h:83
+#: ../freedesktop.org.xml.in.h:119
+msgid "Gzip archive"
+msgstr "Gzip archyvas"
+
+#: ../freedesktop.org.xml.in.h:120
 msgid "HDF document"
 msgstr "HDF dokumentas"
 
-#: ../freedesktop.org.xml.in.h:84
-msgid "HP Graphics Language (plotter)"
-msgstr "HP Graphics Language (plotter)"
+#: ../freedesktop.org.xml.in.h:121
+msgid "HPGL file"
+msgstr "HPGL rinkmena"
 
-#: ../freedesktop.org.xml.in.h:85
-msgid "HP Printer Control Language file"
-msgstr "HP Printer Control Language rinkmena"
+#: ../freedesktop.org.xml.in.h:122
+msgid "HTML document"
+msgstr "HTML dokumentas"
 
-#: ../freedesktop.org.xml.in.h:86
-msgid "HTML page"
-msgstr "HTML puslapis"
+#: ../freedesktop.org.xml.in.h:123
+msgid "Haansoft Hangul document"
+msgstr "Haansoft Hangul dokumentas"
 
-#: ../freedesktop.org.xml.in.h:87
+#: ../freedesktop.org.xml.in.h:124
+msgid "Haansoft Hangul document template"
+msgstr "Haansoft Hangul dokumento šablonas"
+
+#: ../freedesktop.org.xml.in.h:125
 msgid "Haskell source code"
 msgstr "Haskell pradinis kodas"
 
-#: ../freedesktop.org.xml.in.h:88
+#: ../freedesktop.org.xml.in.h:126
+msgid "ICO icon"
+msgstr "ICO piktograma"
+
+#: ../freedesktop.org.xml.in.h:127
 msgid "IDL document"
 msgstr "IDL dokumentas"
 
-#: ../freedesktop.org.xml.in.h:89
+#: ../freedesktop.org.xml.in.h:128
 msgid "IEF image"
 msgstr "IEF paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:90
+#: ../freedesktop.org.xml.in.h:129
 msgid "IFF image"
 msgstr "IFF paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:91
+#: ../freedesktop.org.xml.in.h:130
 msgid "ILBM image"
 msgstr "ILBM paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:92
+#: ../freedesktop.org.xml.in.h:131
 msgid "ISI video"
 msgstr "ISI video"
 
-#: ../freedesktop.org.xml.in.h:93
+#: ../freedesktop.org.xml.in.h:132
 msgid "Impulse Tracker audio"
 msgstr "Impulse Tracker audio"
 
-#: ../freedesktop.org.xml.in.h:94
+#: ../freedesktop.org.xml.in.h:133
+msgid "JAD document"
+msgstr "JAD dokumentas"
+
+#: ../freedesktop.org.xml.in.h:134
 msgid "JBuilder project"
 msgstr "JBuilder projektas"
 
-#: ../freedesktop.org.xml.in.h:95
+#: ../freedesktop.org.xml.in.h:135
+msgid "JET database"
+msgstr "JET duomenų bazė"
+
+#: ../freedesktop.org.xml.in.h:136
 msgid "JNG image"
 msgstr "JNG paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:96
+#: ../freedesktop.org.xml.in.h:137
+msgid "JNLP file"
+msgstr "JNLP rinkmena"
+
+#: ../freedesktop.org.xml.in.h:138
 msgid "JPEG image"
 msgstr "JPEG paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:97
+#: ../freedesktop.org.xml.in.h:139
 msgid "JPEG-2000 image"
 msgstr "JPEG-2000 paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:98
-msgid "Java Network Launched Application"
-msgstr "Java Network Launched Application"
-
-#: ../freedesktop.org.xml.in.h:99
+#: ../freedesktop.org.xml.in.h:140
 msgid "Java archive"
 msgstr "Java archyvas"
 
-#: ../freedesktop.org.xml.in.h:100
+#: ../freedesktop.org.xml.in.h:141
 msgid "Java byte code"
 msgstr "Java baitinis kodas"
 
-#: ../freedesktop.org.xml.in.h:101
+#: ../freedesktop.org.xml.in.h:142
 msgid "Java class"
 msgstr "Java klasė"
 
-#: ../freedesktop.org.xml.in.h:102
+#: ../freedesktop.org.xml.in.h:143
 msgid "Java source code"
 msgstr "Java pradinis kodas"
 
-#: ../freedesktop.org.xml.in.h:103
+#: ../freedesktop.org.xml.in.h:144
 msgid "JavaScript program"
 msgstr "JavaScript programa"
 
-#: ../freedesktop.org.xml.in.h:104
+#: ../freedesktop.org.xml.in.h:145
 msgid "KChart chart"
 msgstr "KChart diagrama"
 
-#: ../freedesktop.org.xml.in.h:105
+#: ../freedesktop.org.xml.in.h:146
 msgid "KFormula formula"
 msgstr "KFormula formulė"
 
-#: ../freedesktop.org.xml.in.h:106
+#: ../freedesktop.org.xml.in.h:147
 msgid "KIllustrator drawing"
 msgstr "KIllustrator piešinys"
 
-#: ../freedesktop.org.xml.in.h:107
+#: ../freedesktop.org.xml.in.h:148
 msgid "KPovModeler scene"
 msgstr "KPovModeler scena"
 
-#: ../freedesktop.org.xml.in.h:108
+#: ../freedesktop.org.xml.in.h:149
 msgid "KPresenter presentation"
 msgstr "KPresenter pateiktis"
 
-#: ../freedesktop.org.xml.in.h:109
+#: ../freedesktop.org.xml.in.h:150
 msgid "KSpread spreadsheet"
 msgstr "KSpread skaičialentė"
 
-#: ../freedesktop.org.xml.in.h:110
+#: ../freedesktop.org.xml.in.h:151
 msgid "KSpread spreadsheet (encrypted)"
 msgstr "KSpread skaičialentė (užšifruota)"
 
-#: ../freedesktop.org.xml.in.h:111
+#: ../freedesktop.org.xml.in.h:152
+msgid "KSysV init package"
+msgstr "KSysV init paketas"
+
+#: ../freedesktop.org.xml.in.h:153
 msgid "KWord document"
 msgstr "KWord dokumentas"
 
-#: ../freedesktop.org.xml.in.h:112
+#: ../freedesktop.org.xml.in.h:154
 msgid "KWord document (encrypted)"
 msgstr "KWord dokumentas (užšifruotas)"
 
-#: ../freedesktop.org.xml.in.h:113
+#: ../freedesktop.org.xml.in.h:155
 msgid "Karbon14 drawing"
 msgstr "Karbon14 piešinys"
 
-#: ../freedesktop.org.xml.in.h:114
+#: ../freedesktop.org.xml.in.h:156
 msgid "Kivio flowchart"
 msgstr "Kivio eigos diagrama"
 
-#: ../freedesktop.org.xml.in.h:115
+#: ../freedesktop.org.xml.in.h:157
+msgid "Kodak DCR raw image"
+msgstr "Kodak DCR neapdorotas paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:158
+msgid "Kodak K25 raw image"
+msgstr "Kodak K25 neapdorotas paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:159
+msgid "Kodak KDC raw image"
+msgstr "Kodak KDC neapdorotas paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:160
 msgid "Kontour drawing"
 msgstr "Kontour piešinys"
 
-#: ../freedesktop.org.xml.in.h:116
+#: ../freedesktop.org.xml.in.h:161
 msgid "Krita document"
 msgstr "Krita dokumentas"
 
-#: ../freedesktop.org.xml.in.h:117
+#: ../freedesktop.org.xml.in.h:162
 msgid "Kugar document"
 msgstr "Kugar dokumentas"
 
-#: ../freedesktop.org.xml.in.h:118
+#: ../freedesktop.org.xml.in.h:163
+msgid "LDIF address book"
+msgstr "LDIF adresų knygelė"
+
+#: ../freedesktop.org.xml.in.h:164
 msgid "LHA archive"
 msgstr "LHA archyvas"
 
-#: ../freedesktop.org.xml.in.h:119
+#: ../freedesktop.org.xml.in.h:165
+msgid "LHS source code"
+msgstr "LHS pradinis kodas"
+
+#: ../freedesktop.org.xml.in.h:166
 msgid "LHZ archive"
 msgstr "LHZ archyvas"
 
-#: ../freedesktop.org.xml.in.h:120
+#: ../freedesktop.org.xml.in.h:167
 msgid "LIBGRX font"
 msgstr "LIBGRX šriftas"
 
-#: ../freedesktop.org.xml.in.h:121
+#: ../freedesktop.org.xml.in.h:168
 msgid "LZO archive"
 msgstr "LZO archyvas"
 
-#: ../freedesktop.org.xml.in.h:122
+#: ../freedesktop.org.xml.in.h:169
 msgid "LightWave object"
 msgstr "LightWave objektas"
 
-#: ../freedesktop.org.xml.in.h:123
+#: ../freedesktop.org.xml.in.h:170
 msgid "LightWave scene"
 msgstr "LightWave scena"
 
-#: ../freedesktop.org.xml.in.h:124
+#: ../freedesktop.org.xml.in.h:171
 msgid "Linux PSF console font"
 msgstr "Linux PSF konsolės šriftas"
 
-#: ../freedesktop.org.xml.in.h:125
-msgid "Literate haskell source code"
-msgstr "Literate haskell pradinis kodas"
+#: ../freedesktop.org.xml.in.h:172
+msgid "Linux PSF console font (gzip-compressed)"
+msgstr "Linux PSF konsolės šriftas (suglaudintas su gzip)"
 
-#: ../freedesktop.org.xml.in.h:126
+#: ../freedesktop.org.xml.in.h:173
 msgid "Lotus 1-2-3 spreadsheet"
 msgstr "Lotus 1-2-3 skaičialentė"
 
-#: ../freedesktop.org.xml.in.h:127
+#: ../freedesktop.org.xml.in.h:174
 msgid "Lotus AmiPro document"
 msgstr "Lotus AmiPro dokumentas"
 
-#: ../freedesktop.org.xml.in.h:128
+#: ../freedesktop.org.xml.in.h:175
+msgid "Lua script"
+msgstr "Lua scenarijus"
+
+#: ../freedesktop.org.xml.in.h:176
 msgid "LyX document"
 msgstr "LyX dokumentas"
 
-#: ../freedesktop.org.xml.in.h:129
+#: ../freedesktop.org.xml.in.h:177
+msgid "M4 macro"
+msgstr "M4 macro"
+
+#: ../freedesktop.org.xml.in.h:178
+msgid "MATLAB script/function"
+msgstr "MATLAB scenarijus / funkcija"
+
+#: ../freedesktop.org.xml.in.h:179
 msgid "MIDI audio"
 msgstr "MIDI audio"
 
-#: ../freedesktop.org.xml.in.h:130
+#: ../freedesktop.org.xml.in.h:180
 msgid "MNG animation"
 msgstr "MNG animacija"
 
-#: ../freedesktop.org.xml.in.h:131
+#: ../freedesktop.org.xml.in.h:181
+msgid "MP2 audio"
+msgstr "MP2 audio"
+
+#: ../freedesktop.org.xml.in.h:182
 msgid "MP3 ShoutCast playlist"
 msgstr "MP3 ShoutCast grojaraštis"
 
-#: ../freedesktop.org.xml.in.h:132
+#: ../freedesktop.org.xml.in.h:183
 msgid "MP3 audio"
 msgstr "MP3 audio"
 
-#: ../freedesktop.org.xml.in.h:133
+#: ../freedesktop.org.xml.in.h:184
 msgid "MP3 audio (streamed)"
 msgstr "MP3 audio (transliuojamas)"
 
-#: ../freedesktop.org.xml.in.h:134
+#: ../freedesktop.org.xml.in.h:185
 msgid "MP3 playlist"
 msgstr "MP3 grojaraštis"
 
-#: ../freedesktop.org.xml.in.h:135
-msgid "MP4 audio"
-msgstr "MP4 audio"
-
-#: ../freedesktop.org.xml.in.h:136
+#: ../freedesktop.org.xml.in.h:186
 msgid "MPEG video"
 msgstr "MPEG video"
 
-#: ../freedesktop.org.xml.in.h:137
+#: ../freedesktop.org.xml.in.h:187
+msgid "MPEG-4 audio"
+msgstr "MPEG-4 audio"
+
+#: ../freedesktop.org.xml.in.h:188
+msgid "MPEG-4 audio book"
+msgstr "MPEG-4 audio knyga"
+
+#: ../freedesktop.org.xml.in.h:189
+msgid "MPEG-4 video"
+msgstr "MPEG-4 video"
+
+#: ../freedesktop.org.xml.in.h:190
+msgid "MPSub subtitles"
+msgstr "MPSub subtitrai"
+
+#: ../freedesktop.org.xml.in.h:191
 msgid "MSX ROM"
 msgstr "MSX ROM"
 
-#: ../freedesktop.org.xml.in.h:138
+#: ../freedesktop.org.xml.in.h:192
+msgid "MacOS X icon"
+msgstr "MacOS X piktograma"
+
+#: ../freedesktop.org.xml.in.h:193
+msgid "MacPaint Bitmap image"
+msgstr "MacPaint rastrinis paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:194
 msgid "Macintosh AppleDouble-encoded file"
 msgstr "Macintosh AppleDouble-encoded rinkmena"
 
-#: ../freedesktop.org.xml.in.h:139
+#: ../freedesktop.org.xml.in.h:195
 msgid "Macintosh BinHex-encoded file"
 msgstr "Macintosh BinHex-encoded rinkmena"
 
-#: ../freedesktop.org.xml.in.h:140
+#: ../freedesktop.org.xml.in.h:196
 msgid "Macintosh MacBinary file"
 msgstr "Macintosh MacBinary rinkmena"
 
-#: ../freedesktop.org.xml.in.h:141
+#: ../freedesktop.org.xml.in.h:197
 msgid "Macintosh Quickdraw/PICT drawing"
 msgstr "Macintosh Quickdraw/PICT piešinys"
 
-#: ../freedesktop.org.xml.in.h:142
+#: ../freedesktop.org.xml.in.h:198
 msgid "Macintosh StuffIt archive"
 msgstr "Macintosh StuffIt archyvas"
 
-#: ../freedesktop.org.xml.in.h:143
+#: ../freedesktop.org.xml.in.h:199
 msgid "MagicPoint presentation"
 msgstr "MagicPoint pateiktis"
 
-#: ../freedesktop.org.xml.in.h:144
+#: ../freedesktop.org.xml.in.h:200
 msgid "Makefile"
 msgstr "Makefile"
 
-#: ../freedesktop.org.xml.in.h:145
+#: ../freedesktop.org.xml.in.h:201
+msgid "Markaby script"
+msgstr "Markaby scenarijus"
+
+#: ../freedesktop.org.xml.in.h:202
 msgid "MathML document"
 msgstr "MathML dokumentas"
 
-#: ../freedesktop.org.xml.in.h:146
+#: ../freedesktop.org.xml.in.h:203
+msgid "Mathematica Notebook"
+msgstr "Mathematica užrašinė"
+
+#: ../freedesktop.org.xml.in.h:204
+msgid "Matroska audio"
+msgstr "Matroska audio"
+
+#: ../freedesktop.org.xml.in.h:205
 msgid "Matroska video"
 msgstr "Matroska video"
 
-#: ../freedesktop.org.xml.in.h:147
-msgid "Microsoft ASF video"
-msgstr "Microsoft ASF video"
+#: ../freedesktop.org.xml.in.h:206
+msgid "MicroDVD subtitles"
+msgstr "MicroDVD subtitrai"
 
-#: ../freedesktop.org.xml.in.h:148
-msgid "Microsoft AVI video"
-msgstr "Microsoft AVI video"
+#: ../freedesktop.org.xml.in.h:207
+msgid "Microsoft ASX playlist"
+msgstr "Microsoft ASX grojaraštis"
 
-#: ../freedesktop.org.xml.in.h:149
-msgid "Microsoft Excel spreadsheet"
-msgstr "Microsoft Excel skaičialentė"
+#: ../freedesktop.org.xml.in.h:208
+msgid "MiniPSF audio"
+msgstr "MiniPSF audio"
 
-#: ../freedesktop.org.xml.in.h:150
-msgid "Microsoft Office drawing"
-msgstr "Microsoft Office piešinys"
+#: ../freedesktop.org.xml.in.h:209
+msgid "Minolta MRW raw image"
+msgstr "Minolta MRW neapdorotas paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:151
-msgid "Microsoft PowerPoint presentation"
-msgstr "Microsoft PowerPoint pateiktis"
+#: ../freedesktop.org.xml.in.h:210
+msgid "Monkey's audio"
+msgstr "Monkey audio"
 
-#: ../freedesktop.org.xml.in.h:152
-msgid "Microsoft WMF file"
-msgstr "Microsoft WMF rinkmena"
-
-#: ../freedesktop.org.xml.in.h:153
-msgid "Microsoft WMV video"
-msgstr "Microsoft WMV video"
-
-#: ../freedesktop.org.xml.in.h:154
-msgid "Microsoft Windows icon"
-msgstr "Microsoft Windows piktograma"
-
-#: ../freedesktop.org.xml.in.h:155
-msgid "Microsoft Word document"
-msgstr "Microsoft Word dokumentas"
-
-#: ../freedesktop.org.xml.in.h:156
-msgid "Microsoft Write document"
-msgstr "Microsoft Write dokumentas"
-
-#: ../freedesktop.org.xml.in.h:157
+#: ../freedesktop.org.xml.in.h:211
 msgid "Mozilla bookmarks"
 msgstr "Mozilla žymelės"
 
-#: ../freedesktop.org.xml.in.h:158
+#: ../freedesktop.org.xml.in.h:212
+msgid "Mup publication"
+msgstr "Mup leidinys"
+
+#: ../freedesktop.org.xml.in.h:213
+msgid "Musepack audio"
+msgstr "Musepack audio"
+
+#. Translate this to Famicom if the console was known as such in your locale
+#: ../freedesktop.org.xml.in.h:215
 msgid "NES ROM"
 msgstr "NES ROM"
 
-#: ../freedesktop.org.xml.in.h:159
+#: ../freedesktop.org.xml.in.h:216
+msgid "NIFF image"
+msgstr "NIFF paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:217
 msgid "Nautilus link"
 msgstr "Nautilus nuoroda"
 
-#: ../freedesktop.org.xml.in.h:160
-msgid "Netscape bookmarks"
-msgstr "Netscape žymelės"
+#: ../freedesktop.org.xml.in.h:218
+msgid "Nikon NEF raw image"
+msgstr "Nikon NEF neapdorotas paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:161
+#: ../freedesktop.org.xml.in.h:219
+msgid "Nintendo DS ROM"
+msgstr "Nintendo DS ROM"
+
+#: ../freedesktop.org.xml.in.h:220
 msgid "Nintendo64 ROM"
 msgstr "Nintendo64 ROM"
 
-#: ../freedesktop.org.xml.in.h:162
-msgid "Nullsoft video"
-msgstr "Nullsoft video"
+#: ../freedesktop.org.xml.in.h:221
+msgid "NullSoft video"
+msgstr "NullSoft video"
 
-#: ../freedesktop.org.xml.in.h:163
+#: ../freedesktop.org.xml.in.h:222
+msgid "OCL file"
+msgstr "OCL rinkmena"
+
+#: ../freedesktop.org.xml.in.h:223
+msgid "OCaml source code"
+msgstr "OCaml pradinis kodas"
+
+#: ../freedesktop.org.xml.in.h:224
 msgid "ODA document"
 msgstr "ODA dokumentas"
 
-#: ../freedesktop.org.xml.in.h:164
+#: ../freedesktop.org.xml.in.h:225
+msgid "ODB database"
+msgstr "ODB duomenų bazė"
+
+#: ../freedesktop.org.xml.in.h:226
+msgid "ODC chart"
+msgstr "ODC diagrama"
+
+#: ../freedesktop.org.xml.in.h:227
+msgid "ODF formula"
+msgstr "ODF formulė"
+
+#: ../freedesktop.org.xml.in.h:228
+msgid "ODG drawing"
+msgstr "ODG piešinys"
+
+#: ../freedesktop.org.xml.in.h:229
+msgid "ODG template"
+msgstr "ODG šablonas"
+
+#: ../freedesktop.org.xml.in.h:230
+msgid "ODI image"
+msgstr "ODI paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:231
+msgid "ODM document"
+msgstr "ODM dokumentas"
+
+#: ../freedesktop.org.xml.in.h:232
+msgid "ODP presentation"
+msgstr "ODP pateiktis"
+
+#: ../freedesktop.org.xml.in.h:233
+msgid "ODP template"
+msgstr "ODP šablonas"
+
+#: ../freedesktop.org.xml.in.h:234
+msgid "ODS spreadsheet"
+msgstr "ODS skaičialentė"
+
+#: ../freedesktop.org.xml.in.h:235
+msgid "ODS template"
+msgstr "ODS šablonas"
+
+#: ../freedesktop.org.xml.in.h:236
+msgid "ODT document"
+msgstr "ODA dokumentas"
+
+#: ../freedesktop.org.xml.in.h:237
+msgid "ODT template"
+msgstr "ODT šablonas"
+
+#: ../freedesktop.org.xml.in.h:238
 msgid "OLE2 compound document storage"
 msgstr "OLE2 sudėtinių dokumentų laikmena"
 
-#: ../freedesktop.org.xml.in.h:165
+#: ../freedesktop.org.xml.in.h:239
+msgid "OPML syndication feed"
+msgstr "OPML sindikacijos kanalas"
+
+#: ../freedesktop.org.xml.in.h:240
+msgid "OTH template"
+msgstr "OTH šablonas"
+
+#: ../freedesktop.org.xml.in.h:241
 msgid "Objective-C source code"
 msgstr "Objective-C pradinis kodas"
 
-#: ../freedesktop.org.xml.in.h:166
-msgid "Ogg Vorbis audio"
-msgstr "Ogg Vorbis audio"
+#: ../freedesktop.org.xml.in.h:242
+msgid "Office drawing"
+msgstr "Office piešinys"
 
-#: ../freedesktop.org.xml.in.h:167
-msgid "OpenDocument Chart"
-msgstr "OpenDocument diagrama"
+#: ../freedesktop.org.xml.in.h:243
+msgid "Ogg Audio"
+msgstr "Ogg Audio"
 
-#: ../freedesktop.org.xml.in.h:168
-msgid "OpenDocument Database"
-msgstr "OpenDocument duomenų bazė"
+#: ../freedesktop.org.xml.in.h:244
+msgid "Ogg Video"
+msgstr "Ogg Video"
 
-#: ../freedesktop.org.xml.in.h:169
-msgid "OpenDocument Drawing"
-msgstr "OpenDocument piešinys"
+#: ../freedesktop.org.xml.in.h:245
+msgid "Ogg multimedia"
+msgstr "Ogg multimedija"
 
-#: ../freedesktop.org.xml.in.h:170
-msgid "OpenDocument Drawing Template"
-msgstr "OpenDocument piešinio šablonas"
+#: ../freedesktop.org.xml.in.h:246
+msgid "Olympus ORF raw image"
+msgstr "Olympus ORF neapdorotas paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:171
-msgid "OpenDocument Formula"
-msgstr "OpenDocument formulė"
+#: ../freedesktop.org.xml.in.h:247
+msgid "OpenOffice Calc spreadsheet"
+msgstr "OpenOffice Calc skaičialentė"
 
-#: ../freedesktop.org.xml.in.h:172
-msgid "OpenDocument HTML Document Template"
-msgstr "OpenDocument HTML dokumento šablonas"
+#: ../freedesktop.org.xml.in.h:248
+msgid "OpenOffice Calc template"
+msgstr "OpenOffice Calc šablonas"
 
-#: ../freedesktop.org.xml.in.h:173
-msgid "OpenDocument Image"
-msgstr "OpenDocument paveikslėlis"
+#: ../freedesktop.org.xml.in.h:249
+msgid "OpenOffice Draw drawing"
+msgstr "OpenOffice Draw piešinys"
 
-#: ../freedesktop.org.xml.in.h:174
-msgid "OpenDocument Master Document"
-msgstr "OpenDocument pagrindinis dokumentas"
+#: ../freedesktop.org.xml.in.h:250
+msgid "OpenOffice Draw template"
+msgstr "OpenOffice Draw šablonas"
 
-#: ../freedesktop.org.xml.in.h:175
-msgid "OpenDocument Presentation"
-msgstr "OpenDocument pateiktis"
+#: ../freedesktop.org.xml.in.h:251
+msgid "OpenOffice Impress presentation"
+msgstr "OpenOffice Impress pateiktis"
 
-#: ../freedesktop.org.xml.in.h:176
-msgid "OpenDocument Presentation Template"
-msgstr "OpenDocument pateikties šablonas"
+#: ../freedesktop.org.xml.in.h:252
+msgid "OpenOffice Impress template"
+msgstr "OpenOffice Impress šablonas"
 
-#: ../freedesktop.org.xml.in.h:177
-msgid "OpenDocument Spreadsheet"
-msgstr "OpenDocument skaičialentė"
+#: ../freedesktop.org.xml.in.h:253
+msgid "OpenOffice Math formula"
+msgstr "OpenOffice Math formulė"
 
-#: ../freedesktop.org.xml.in.h:178
-msgid "OpenDocument Spreadsheet Template"
-msgstr "OpenDocument skaičialentės šablonas"
+#: ../freedesktop.org.xml.in.h:254
+msgid "OpenOffice Writer document"
+msgstr "OpenOffice Writer dokumentas"
 
-#: ../freedesktop.org.xml.in.h:179
-msgid "OpenDocument Text"
-msgstr "OpenDocument tekstas"
+#: ../freedesktop.org.xml.in.h:255
+msgid "OpenOffice Writer global document"
+msgstr "OpenOffice Writer bendrinis dokumentas"
 
-#: ../freedesktop.org.xml.in.h:180
-msgid "OpenDocument Text Template"
-msgstr "OpenDocument teksto šablonas"
+#: ../freedesktop.org.xml.in.h:256
+msgid "OpenOffice Writer template"
+msgstr "OpenOffice Writer šablonas"
 
-#: ../freedesktop.org.xml.in.h:181
-msgid "OpenOffice.org Calc spreadsheet"
-msgstr "OpenOffice.org Calc skaičialentė"
-
-#: ../freedesktop.org.xml.in.h:182
-msgid "OpenOffice.org Calc spreadsheet template"
-msgstr "OpenOffice.org Calc skaičialentės šablonas"
-
-#: ../freedesktop.org.xml.in.h:183
-msgid "OpenOffice.org Draw drawing"
-msgstr "OpenOffice.org Draw piešinys"
-
-#: ../freedesktop.org.xml.in.h:184
-msgid "OpenOffice.org Draw drawing template"
-msgstr "OpenOffice.org Draw piešinio šablonas"
-
-#: ../freedesktop.org.xml.in.h:185
-msgid "OpenOffice.org Impress presentation"
-msgstr "OpenOffice.org Impress pateiktis"
-
-#: ../freedesktop.org.xml.in.h:186
-msgid "OpenOffice.org Impress presentation template"
-msgstr "OpenOffice.org Impress pateikties šablonas"
-
-#: ../freedesktop.org.xml.in.h:187
-msgid "OpenOffice.org Math formula"
-msgstr "OpenOffice.org Math formulė"
-
-#: ../freedesktop.org.xml.in.h:188
-msgid "OpenOffice.org Writer document"
-msgstr "OpenOffice.org Writer dokumentas"
-
-#: ../freedesktop.org.xml.in.h:189
-msgid "OpenOffice.org Writer document template"
-msgstr "OpenOffice.org Writer dokumento šablonas"
-
-#: ../freedesktop.org.xml.in.h:190
-msgid "OpenOffice.org Writer global document"
-msgstr "OpenOffice.org Writer bendrinis dokumentas"
-
-#: ../freedesktop.org.xml.in.h:191
+#: ../freedesktop.org.xml.in.h:257
 msgid "OpenType font"
 msgstr "OpenType šriftas"
 
-#: ../freedesktop.org.xml.in.h:192
+#: ../freedesktop.org.xml.in.h:258
+msgid "PBM image"
+msgstr "PBM paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:259
+msgid "PCD image"
+msgstr "PCD paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:260
 msgid "PCF font"
 msgstr "PCF šriftas"
 
-#: ../freedesktop.org.xml.in.h:193
+#: ../freedesktop.org.xml.in.h:261
+msgid "PCL file"
+msgstr "PCL rinkmena"
+
+#: ../freedesktop.org.xml.in.h:262
 msgid "PCM audio"
 msgstr "PCM audio"
 
-#: ../freedesktop.org.xml.in.h:194
+#: ../freedesktop.org.xml.in.h:263
+msgid "PCX image"
+msgstr "PCX paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:264
 msgid "PDF document"
 msgstr "PDF dokumentas"
 
-#: ../freedesktop.org.xml.in.h:195
+#: ../freedesktop.org.xml.in.h:265
+msgid "PDF document (bzip-compressed)"
+msgstr "PDF dokumentas (suglaudintas su bzip)"
+
+#: ../freedesktop.org.xml.in.h:266
+msgid "PDF document (gzip-compressed)"
+msgstr "PDF dokumentas (suglaudintas su gzip)"
+
+#: ../freedesktop.org.xml.in.h:267
 msgid "PEF executable"
 msgstr "PEF vykdomoji rinkmena"
 
-#: ../freedesktop.org.xml.in.h:196
-msgid "PGN chess game"
-msgstr "PGN šachmatų žaidimas"
+#: ../freedesktop.org.xml.in.h:268
+msgid "PGM image"
+msgstr "PGM paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:197
+#: ../freedesktop.org.xml.in.h:269
+msgid "PGN chess game notation"
+msgstr "PGN šachmatų žaidimo žymėjimas"
+
+#: ../freedesktop.org.xml.in.h:270
 msgid "PGP keys"
 msgstr "PGP raktai"
 
-#: ../freedesktop.org.xml.in.h:198
-msgid "PGP message"
-msgstr "PGP žinutė"
-
-#: ../freedesktop.org.xml.in.h:199
+#: ../freedesktop.org.xml.in.h:271
 msgid "PGP/MIME-encrypted message header"
 msgstr "PGP/MIME užšifruota žinutės antraštė"
 
-#: ../freedesktop.org.xml.in.h:200
+#: ../freedesktop.org.xml.in.h:272
 msgid "PHP script"
 msgstr "PHP scenarijus"
 
-#: ../freedesktop.org.xml.in.h:201
+#: ../freedesktop.org.xml.in.h:273
+msgid "PKCS#10 certification request"
+msgstr "PKCS#10 sertifikatų užklausa"
+
+#: ../freedesktop.org.xml.in.h:274
 msgid "PKCS#12 certificate bundle"
 msgstr "PKCS#12 sertifikatų ryšulys"
 
-#: ../freedesktop.org.xml.in.h:202
+#: ../freedesktop.org.xml.in.h:275
 msgid "PNG image"
 msgstr "PNG paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:203
+#: ../freedesktop.org.xml.in.h:276
 msgid "PNM image"
 msgstr "PNM paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:204
+#: ../freedesktop.org.xml.in.h:277
+msgid "PPM image"
+msgstr "PPM paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:278
+msgid "PS document"
+msgstr "PS dokumentas"
+
+#: ../freedesktop.org.xml.in.h:279
+msgid "PSD image"
+msgstr "PSD paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:280
+msgid "PSF audio"
+msgstr "PSF audio"
+
+#: ../freedesktop.org.xml.in.h:281
+msgid "PSFlib audio library"
+msgstr "PSFlib audio biblioteka"
+
+#: ../freedesktop.org.xml.in.h:282
 msgid "Palm OS database"
 msgstr "Palm OS duomenų bazė"
 
-#: ../freedesktop.org.xml.in.h:205
-msgid "Palmpilot database/document"
-msgstr "Palmpilot duomenų bazė/dokumentas"
+#: ../freedesktop.org.xml.in.h:283
+msgid "Panasonic raw image"
+msgstr "Panasonic neapdorotas paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:206
+#: ../freedesktop.org.xml.in.h:284
 msgid "Pascal source code"
 msgstr "Pascal pradinis kodas"
 
-#: ../freedesktop.org.xml.in.h:207
+#: ../freedesktop.org.xml.in.h:285
 msgid "Pathetic Writer document"
 msgstr "Pathetic Writer dokumentas"
 
-#: ../freedesktop.org.xml.in.h:208
+#: ../freedesktop.org.xml.in.h:286
+msgid "Pentax PEF raw image"
+msgstr "Pentax PEF neapdorotas paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:287
 msgid "Perl script"
 msgstr "Perl scenarijus"
 
-#: ../freedesktop.org.xml.in.h:209
-msgid "PhotoCD image"
-msgstr "PhotoCD paveikslėlis"
+#: ../freedesktop.org.xml.in.h:288
+msgid "PlanPerfect spreadsheet"
+msgstr "PlanPerfect skaičialentė"
 
-#: ../freedesktop.org.xml.in.h:210
-msgid "Photoshop image"
-msgstr "Photoshop paveikslėlis"
+#: ../freedesktop.org.xml.in.h:289
+msgid "Plucker document"
+msgstr "Plucker dokumentas"
 
-#: ../freedesktop.org.xml.in.h:211
-msgid "Playlist"
-msgstr "Grojaraštis"
+#: ../freedesktop.org.xml.in.h:290
+msgid "PostScript document (bzip-compressed)"
+msgstr "PostScript dokumentas (suglaudintas su bzip)"
 
-#: ../freedesktop.org.xml.in.h:212
-msgid "Portable Bitmap File Format"
-msgstr "Portable Bitmap rinkmenos formatas"
-
-#: ../freedesktop.org.xml.in.h:213
-msgid "Portable Graymap File Format"
-msgstr "Portable Graymap rinkmenos formatas"
-
-#: ../freedesktop.org.xml.in.h:214
-msgid "Portable Pixmap File Format"
-msgstr "Portable Pixmap rinkmenos formatas"
-
-#: ../freedesktop.org.xml.in.h:215
-msgid "PostScript document"
-msgstr "PostScript dokumentas"
-
-#: ../freedesktop.org.xml.in.h:216
+#: ../freedesktop.org.xml.in.h:291
 msgid "PostScript document (gzip-compressed)"
-msgstr "PostScript dokumentas (suspaustas su gzip)"
+msgstr "PostScript dokumentas (suglaudintas su gzip)"
 
-#: ../freedesktop.org.xml.in.h:217
+#: ../freedesktop.org.xml.in.h:292
+msgid "Postscript type-1 font"
+msgstr "Postscript type-1 šriftas"
+
+#: ../freedesktop.org.xml.in.h:293
+msgid "PowerPoint presentation"
+msgstr "PowerPoint pateiktis"
+
+#: ../freedesktop.org.xml.in.h:294
 msgid "Python bytecode"
 msgstr "Python baitinis kodas"
 
-#: ../freedesktop.org.xml.in.h:218
+#: ../freedesktop.org.xml.in.h:295
 msgid "Python script"
 msgstr "Python scenarijus"
 
-#: ../freedesktop.org.xml.in.h:219
+#: ../freedesktop.org.xml.in.h:296
 msgid "Qt Designer file"
 msgstr "Qt Designer rinkmena"
 
-#: ../freedesktop.org.xml.in.h:220
-msgid "Qt Meta Object file"
-msgstr "Qt Meta Object rinkmena"
+#: ../freedesktop.org.xml.in.h:297
+msgid "Qt MOC file"
+msgstr "Qt MOC rinkmena"
 
-#: ../freedesktop.org.xml.in.h:221
+#: ../freedesktop.org.xml.in.h:298
 msgid "Quattro Pro spreadsheet"
 msgstr "Quattro Pro skaičialentė"
 
-#: ../freedesktop.org.xml.in.h:222
+#: ../freedesktop.org.xml.in.h:299
+msgid "QuickTime image"
+msgstr "QuickTime paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:300
+msgid "QuickTime metalink playlist"
+msgstr "QuickTime metanuorodos grojaraštis"
+
+#: ../freedesktop.org.xml.in.h:301
 msgid "QuickTime video"
 msgstr "QuickTime video"
 
-#: ../freedesktop.org.xml.in.h:223
+#: ../freedesktop.org.xml.in.h:302
 msgid "Quicken document"
 msgstr "Quicken dokumentas"
 
-#: ../freedesktop.org.xml.in.h:224
+#: ../freedesktop.org.xml.in.h:303
 msgid "RAR archive"
 msgstr "RAR archyvas"
 
-#: ../freedesktop.org.xml.in.h:225
-msgid "RDF Site Summary"
-msgstr "RDF svetainės santrauka"
+#: ../freedesktop.org.xml.in.h:304
+msgid "RDF file"
+msgstr "RDF rinkmena"
 
-#: ../freedesktop.org.xml.in.h:226
+#: ../freedesktop.org.xml.in.h:305
 msgid "README document"
 msgstr "README dokumentas"
 
-#: ../freedesktop.org.xml.in.h:227
+#: ../freedesktop.org.xml.in.h:306
 msgid "RGB image"
 msgstr "RGB paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:228
+#: ../freedesktop.org.xml.in.h:307
 msgid "RIFF audio"
 msgstr "RIFF audio"
 
-#: ../freedesktop.org.xml.in.h:229
+#: ../freedesktop.org.xml.in.h:308
 msgid "RPM package"
 msgstr "RPM paketas"
 
-#: ../freedesktop.org.xml.in.h:230
-msgid "RealAudio broadcast"
-msgstr "RealAudio transliacija"
+#: ../freedesktop.org.xml.in.h:309
+msgid "RPM spec file"
+msgstr "RPM spec rinkmena"
 
-#: ../freedesktop.org.xml.in.h:231
-msgid "RealAudio/Video document"
-msgstr "RealAudio/Video dokumentas"
+#: ../freedesktop.org.xml.in.h:310
+msgid "RSS summary"
+msgstr "RSS santrauka"
 
-#: ../freedesktop.org.xml.in.h:232
-msgid "RealVideo video"
-msgstr "RealVideo video"
+#: ../freedesktop.org.xml.in.h:311
+msgid "RTF document"
+msgstr "RTF dokumentas"
 
-#: ../freedesktop.org.xml.in.h:233
-msgid "Resource Description Framework (RDF) file"
-msgstr "Resource Description Framework (RDF) rinkmena"
+#: ../freedesktop.org.xml.in.h:312
+msgid "RealAudio document"
+msgstr "RealAudio dokumentas"
 
-#: ../freedesktop.org.xml.in.h:234
-msgid "Rich Text Format"
-msgstr "Rich Text Format"
+#: ../freedesktop.org.xml.in.h:313
+msgid "RealMedia document"
+msgstr "RealMedia dokumentas"
 
-#: ../freedesktop.org.xml.in.h:235
+#: ../freedesktop.org.xml.in.h:314
+msgid "RealPix document"
+msgstr "RealPix dokumentas"
+
+#: ../freedesktop.org.xml.in.h:315
+msgid "RealText document"
+msgstr "RealText dokumentas"
+
+#: ../freedesktop.org.xml.in.h:316
+msgid "RealVideo document"
+msgstr "RealVideo dokumentas"
+
+#: ../freedesktop.org.xml.in.h:317
 msgid "Ruby script"
 msgstr "Ruby scenarijus"
 
-#: ../freedesktop.org.xml.in.h:236
-msgid "Run Length Encoded bitmap"
+#: ../freedesktop.org.xml.in.h:318
+msgid "Run Length Encoded bitmap image"
 msgstr "Run Length Encoded rastrinis paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:237
+#: ../freedesktop.org.xml.in.h:319
 msgid "S/MIME file"
 msgstr "S/MIME rinkmena"
 
-#: ../freedesktop.org.xml.in.h:238
+#: ../freedesktop.org.xml.in.h:320
+msgid "SAMI subtitles"
+msgstr "SAMI subtitrai"
+
+#: ../freedesktop.org.xml.in.h:321
+msgid "SC/Xspread spreadsheet"
+msgstr "SC/Xspread skaičialentė"
+
+#: ../freedesktop.org.xml.in.h:322
+msgid "SDP multicast stream file"
+msgstr "SDP daugiaadresio srauto rinkmena"
+
+#: ../freedesktop.org.xml.in.h:323
+msgid "SGI image"
+msgstr "SGI paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:324
 msgid "SGI video"
 msgstr "SGI video"
 
-#: ../freedesktop.org.xml.in.h:239
+#: ../freedesktop.org.xml.in.h:325
 msgid "SGML document"
 msgstr "SGML dokumentas"
 
-#: ../freedesktop.org.xml.in.h:240
-msgid "SMS/Game Gear ROM"
-msgstr "SMS/Game Gear ROM"
+#: ../freedesktop.org.xml.in.h:326
+msgid "SIS package"
+msgstr "SIS paketas"
 
-#: ../freedesktop.org.xml.in.h:241
+#: ../freedesktop.org.xml.in.h:327
+msgid "SISX package"
+msgstr "SISX paketas"
+
+#: ../freedesktop.org.xml.in.h:328
+msgid "SMIL document"
+msgstr "SMIL dokumentas"
+
+#: ../freedesktop.org.xml.in.h:329
 msgid "SQL code"
 msgstr "SQL kodas"
 
-#: ../freedesktop.org.xml.in.h:242
-msgid "SUN Rasterfile image"
-msgstr "SUN Rasterfile paveikslėlis"
+#: ../freedesktop.org.xml.in.h:330
+msgid "SQLite2 database"
+msgstr "SQLite2 duomenų bazė"
 
-#: ../freedesktop.org.xml.in.h:243
+#: ../freedesktop.org.xml.in.h:331
+msgid "SQLite3 database"
+msgstr "SQLite3 duomenų bazė"
+
+#: ../freedesktop.org.xml.in.h:332
+msgid "SSA subtitles"
+msgstr "SSA subtitrai"
+
+#: ../freedesktop.org.xml.in.h:333
 msgid "SV4 CPIO archive"
 msgstr "SV4 CPIO archyvas"
 
-#: ../freedesktop.org.xml.in.h:244
+#: ../freedesktop.org.xml.in.h:334
 msgid "SV4 CPIO archive (with CRC)"
-msgstr "SV4 CPIO archyvas (su CRC)"
+msgstr "SV4 CPII archyvas (su CRC)"
 
-#: ../freedesktop.org.xml.in.h:245
+#: ../freedesktop.org.xml.in.h:335
+msgid "SVG image"
+msgstr "SVG paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:336
 msgid "Scheme source code"
 msgstr "Scheme pradinis kodas"
 
-#: ../freedesktop.org.xml.in.h:246
+#: ../freedesktop.org.xml.in.h:337
 msgid "Scream Tracker 3 audio"
 msgstr "Scream Tracker 3 audio"
 
-#: ../freedesktop.org.xml.in.h:247
+#: ../freedesktop.org.xml.in.h:338
 msgid "Scream Tracker audio"
 msgstr "Scream Tracker audio"
 
-#: ../freedesktop.org.xml.in.h:248
+#: ../freedesktop.org.xml.in.h:339
 msgid "Scream Tracker instrument"
 msgstr "Scream Tracker instrumentas"
 
-#: ../freedesktop.org.xml.in.h:249
+#: ../freedesktop.org.xml.in.h:340
+msgid "Sega Master System/Game Gear ROM"
+msgstr "Sega Master System/Game Gear ROM"
+
+#: ../freedesktop.org.xml.in.h:341
 msgid "Setext document"
 msgstr "Setext dokumentas"
 
-#: ../freedesktop.org.xml.in.h:250
+#: ../freedesktop.org.xml.in.h:342
 msgid "Shockwave Flash file"
 msgstr "Shockwave Flash rinkmena"
 
-#: ../freedesktop.org.xml.in.h:251
+#. translators: "Shorten" is the name of an audio codec
+#: ../freedesktop.org.xml.in.h:344
+msgid "Shorten audio"
+msgstr "Shorten audio"
+
+#: ../freedesktop.org.xml.in.h:345
 msgid "Siag spreadsheet"
 msgstr "Siag skaičialentė"
 
-#: ../freedesktop.org.xml.in.h:252
-msgid "Silicon Graphics IRIS image"
-msgstr "Silicon Graphics IRIS paveikslėlis"
+#: ../freedesktop.org.xml.in.h:346
+msgid "Sieve mail filter script"
+msgstr "Sieve pašto filtro scenarijus"
 
-#: ../freedesktop.org.xml.in.h:253
+#: ../freedesktop.org.xml.in.h:347
+msgid "Sigma X3F raw image"
+msgstr "Sigma X3F neapdorotas paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:348
+msgid "Sony ARW raw image"
+msgstr "Sony ARW neapdorotas paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:349
+msgid "Sony SR2 raw image"
+msgstr "Sony SR2 neapdorotas paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:350
+msgid "Sony SRF raw image"
+msgstr "Sony SRF neapdorotas paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:351
 msgid "Speech document"
 msgstr "Speech dokumentas"
 
-#: ../freedesktop.org.xml.in.h:254
+#: ../freedesktop.org.xml.in.h:352
 msgid "Speedo font"
 msgstr "Speedo šriftas"
 
-#: ../freedesktop.org.xml.in.h:255
-msgid "Spreadsheet interchange document"
-msgstr "Skaičialenčių apsikeitimo dokumentas"
+#: ../freedesktop.org.xml.in.h:353
+msgid "Speex audio"
+msgstr "Speex audio"
 
-#: ../freedesktop.org.xml.in.h:256
+#: ../freedesktop.org.xml.in.h:354
 msgid "Stampede package"
 msgstr "Stampede paketas"
 
-#: ../freedesktop.org.xml.in.h:257
+#: ../freedesktop.org.xml.in.h:355
 msgid "StarCalc spreadsheet"
 msgstr "StarCalc skaičialentė"
 
-#: ../freedesktop.org.xml.in.h:258
+#: ../freedesktop.org.xml.in.h:356
 msgid "StarChart chart"
 msgstr "StarChart diagrama"
 
-#: ../freedesktop.org.xml.in.h:259
+#: ../freedesktop.org.xml.in.h:357
 msgid "StarDraw drawing"
 msgstr "StarDraw piešinys"
 
-#: ../freedesktop.org.xml.in.h:260
+#: ../freedesktop.org.xml.in.h:358
 msgid "StarImpress presentation"
 msgstr "StarImpress pateiktis"
 
-#: ../freedesktop.org.xml.in.h:261
+#: ../freedesktop.org.xml.in.h:359
 msgid "StarMail email"
 msgstr "StarMail el. laiškas"
 
-#: ../freedesktop.org.xml.in.h:262
+#: ../freedesktop.org.xml.in.h:360
 msgid "StarMath formula"
 msgstr "StarMath formulė"
 
-#: ../freedesktop.org.xml.in.h:263
+#: ../freedesktop.org.xml.in.h:361
 msgid "StarWriter document"
 msgstr "StarWriter dokumentas"
 
-#: ../freedesktop.org.xml.in.h:264
+#: ../freedesktop.org.xml.in.h:362
 msgid "StuffIt archive"
 msgstr "StuffIt archyvas"
 
-#: ../freedesktop.org.xml.in.h:265
+#: ../freedesktop.org.xml.in.h:363
+msgid "SubRip subtitles"
+msgstr "SubRip subtitrai"
+
+#: ../freedesktop.org.xml.in.h:364
+msgid "Sun raster image"
+msgstr "Sun rastrinis paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:365
 msgid "SunOS News font"
 msgstr "SunOS News šriftas"
 
-#: ../freedesktop.org.xml.in.h:266
-msgid "Synchronized Multimedia Integration Language"
-msgstr "Sinchronizuotos multimedijos integravimo kalba"
+#. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in Europe) if the console was known as such in your locale
+#: ../freedesktop.org.xml.in.h:367
+msgid "Super NES ROM"
+msgstr "Super NES ROM"
 
-#: ../freedesktop.org.xml.in.h:267
+#: ../freedesktop.org.xml.in.h:368
+msgid "T602 document"
+msgstr "T602 dokumentas"
+
+#: ../freedesktop.org.xml.in.h:369
+msgid "TGA image"
+msgstr "TGA paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:370
 msgid "TGIF document"
 msgstr "TGIF dokumentas"
 
-#: ../freedesktop.org.xml.in.h:268
+#: ../freedesktop.org.xml.in.h:371
 msgid "TIFF image"
 msgstr "TIFF paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:269
-msgid "TarGA image"
-msgstr "TarGA paveikslėlis"
+#: ../freedesktop.org.xml.in.h:372
+msgid "TNEF message"
+msgstr "TNEF žinutė"
 
-#: ../freedesktop.org.xml.in.h:270
+#: ../freedesktop.org.xml.in.h:373
+msgid "TSV document"
+msgstr "TSV dokumentas"
+
+#: ../freedesktop.org.xml.in.h:374
+msgid "Tar archive"
+msgstr "Tar archyvas"
+
+#: ../freedesktop.org.xml.in.h:375
+msgid "Tar archive (LZO-compressed)"
+msgstr "Tar archyvas (suglaudintas su LZO)"
+
+#: ../freedesktop.org.xml.in.h:376
+msgid "Tar archive (bzip-compressed)"
+msgstr "Tar archyvas (suglaudintas su bzip)"
+
+#: ../freedesktop.org.xml.in.h:377
+msgid "Tar archive (compressed)"
+msgstr "Tar archyvas (suglaudintas)"
+
+#: ../freedesktop.org.xml.in.h:378
+msgid "Tar archive (gzip-compressed)"
+msgstr "Tar archyvas (suglaudintas su gzip)"
+
+#: ../freedesktop.org.xml.in.h:379
 msgid "Tcl script"
 msgstr "Tcl scenarijus"
 
-#: ../freedesktop.org.xml.in.h:271
+#: ../freedesktop.org.xml.in.h:380
 msgid "TeX DVI document"
 msgstr "TeX DVI dokumentas"
 
-#: ../freedesktop.org.xml.in.h:272
+#: ../freedesktop.org.xml.in.h:381
+msgid "TeX DVI document (bzip-compressed)"
+msgstr "TeX DVI dokumentas (suglaudintas su bzip)"
+
+#: ../freedesktop.org.xml.in.h:382
+msgid "TeX DVI document (gzip-compressed)"
+msgstr "TeX DVI dokumentas (suglaudintas su gzip)"
+
+#: ../freedesktop.org.xml.in.h:383
 msgid "TeX document"
 msgstr "TeX dokumentas"
 
-#: ../freedesktop.org.xml.in.h:273
+#: ../freedesktop.org.xml.in.h:384
 msgid "TeX font"
 msgstr "TeX šriftas"
 
-#: ../freedesktop.org.xml.in.h:274
+#: ../freedesktop.org.xml.in.h:385
 msgid "TeX font metrics"
 msgstr "TeX šrfitų metrika"
 
-#: ../freedesktop.org.xml.in.h:275
+#: ../freedesktop.org.xml.in.h:386
 msgid "TeXInfo document"
 msgstr "TeXInfo dokumentas"
 
-#: ../freedesktop.org.xml.in.h:276
+#: ../freedesktop.org.xml.in.h:387
 msgid "ToutDoux document"
 msgstr "ToutDoux dokumentas"
 
-#: ../freedesktop.org.xml.in.h:277
+#: ../freedesktop.org.xml.in.h:388
 msgid "Troff ME input document"
 msgstr "Troff ME įvesties dokumentas"
 
-#: ../freedesktop.org.xml.in.h:278
+#: ../freedesktop.org.xml.in.h:389
 msgid "Troff MM input document"
 msgstr "Troff MM įvesties dokumentas"
 
-#: ../freedesktop.org.xml.in.h:279
+#: ../freedesktop.org.xml.in.h:390
 msgid "Troff MS input document"
 msgstr "Troff MS įvesties dokumentas"
 
-#: ../freedesktop.org.xml.in.h:280
+#: ../freedesktop.org.xml.in.h:391
 msgid "Troff document"
 msgstr "Troff dokumentas"
 
-#: ../freedesktop.org.xml.in.h:281
+#: ../freedesktop.org.xml.in.h:392
 msgid "Troff document (with manpage macros)"
 msgstr "Troff dokumentas (su žin. puslapių makrokomandomis)"
 
-#: ../freedesktop.org.xml.in.h:282
+#: ../freedesktop.org.xml.in.h:393
+msgid "TrueAudio audio"
+msgstr "TrueAudio audio"
+
+#: ../freedesktop.org.xml.in.h:394
 msgid "TrueType font"
 msgstr "TrueType šriftas"
 
-#: ../freedesktop.org.xml.in.h:283
-msgid "Truevision Targa image"
-msgstr "Truevision Targa paveikslėlis"
+#: ../freedesktop.org.xml.in.h:395
+msgid "UFRaw ID file"
+msgstr "UFRaw ID rinkmena"
 
-#: ../freedesktop.org.xml.in.h:284
+#: ../freedesktop.org.xml.in.h:396
 msgid "ULAW (Sun) audio"
 msgstr "ULAW (Sun) audio"
 
-#: ../freedesktop.org.xml.in.h:285
+#: ../freedesktop.org.xml.in.h:397
 msgid "UNIX-compressed file"
-msgstr "UNIX suspausta rinkmena"
+msgstr "UNIX suglaudinta rinkmena"
 
-#: ../freedesktop.org.xml.in.h:286
+#: ../freedesktop.org.xml.in.h:398
 msgid "Unidata NetCDF document"
 msgstr "Unidata NetCDF dokumentas"
 
-#: ../freedesktop.org.xml.in.h:287
+#: ../freedesktop.org.xml.in.h:399
 msgid "Usenet news message"
 msgstr "Usenet naujienų žinutė"
 
-#: ../freedesktop.org.xml.in.h:288
+#: ../freedesktop.org.xml.in.h:400
+msgid "Ustar archive"
+msgstr "Ustar archyvas"
+
+#: ../freedesktop.org.xml.in.h:401
 msgid "V font"
 msgstr "V šriftas"
 
-#: ../freedesktop.org.xml.in.h:289
+#: ../freedesktop.org.xml.in.h:402
+msgid "VCS/ICS calendar"
+msgstr "VCS/ICS kalendorius"
+
+#: ../freedesktop.org.xml.in.h:403
+msgid "VHDL document"
+msgstr "VHDL dokumentas"
+
+#: ../freedesktop.org.xml.in.h:404
 msgid "VOC audio"
 msgstr "VOC audio"
 
-#: ../freedesktop.org.xml.in.h:290
+#: ../freedesktop.org.xml.in.h:405
 msgid "VRML document"
 msgstr "VRML dokumentas"
 
-#: ../freedesktop.org.xml.in.h:291
+#: ../freedesktop.org.xml.in.h:406
+msgid "Vala source code"
+msgstr "Vala pradinis kodas"
+
+#: ../freedesktop.org.xml.in.h:407
 msgid "Vivo video"
 msgstr "Vivo video"
 
-#: ../freedesktop.org.xml.in.h:292
+#: ../freedesktop.org.xml.in.h:408
 msgid "WAIS source code"
 msgstr "WAIS pradinis kodas"
 
-#: ../freedesktop.org.xml.in.h:293
+#: ../freedesktop.org.xml.in.h:409
 msgid "WAV audio"
 msgstr "WAV audio"
 
-#: ../freedesktop.org.xml.in.h:294
+#: ../freedesktop.org.xml.in.h:410
+msgid "WBMP image"
+msgstr "WBMP paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:411
+msgid "WMF image"
+msgstr "WMF paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:412
 msgid "WML document"
 msgstr "WML dokumentas"
 
-#: ../freedesktop.org.xml.in.h:295
+#: ../freedesktop.org.xml.in.h:413
+msgid "WMLScript program"
+msgstr "WMLScript programa"
+
+#: ../freedesktop.org.xml.in.h:414
+msgid "WRI document"
+msgstr "WRI dokumentas"
+
+#: ../freedesktop.org.xml.in.h:415
+msgid "WavPack audio"
+msgstr "WavPack audio"
+
+#: ../freedesktop.org.xml.in.h:416
+msgid "WavPack audio correction file"
+msgstr "WavPack audio korekcijos rinkmena"
+
+#: ../freedesktop.org.xml.in.h:417
 msgid "Wavelet video"
 msgstr "Wavelet video"
 
-#: ../freedesktop.org.xml.in.h:296
+#: ../freedesktop.org.xml.in.h:418
 msgid "Windows BMP image"
 msgstr "Windows BMP paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:297
-msgid "Windows cursor"
-msgstr "Windows žymeklis"
+#: ../freedesktop.org.xml.in.h:419
+msgid "Windows Media Station file"
+msgstr "Windows Media Station rinkmena"
 
-#: ../freedesktop.org.xml.in.h:298
+#: ../freedesktop.org.xml.in.h:420
+msgid "Windows Media audio"
+msgstr "Windows Media audio"
+
+#: ../freedesktop.org.xml.in.h:421
+msgid "Windows Media video"
+msgstr "Windows Media video"
+
+#: ../freedesktop.org.xml.in.h:422
+msgid "Windows cursor"
+msgstr "Windows žymiklis"
+
+#: ../freedesktop.org.xml.in.h:423
+msgid "Word document"
+msgstr "Word dokumentas"
+
+#: ../freedesktop.org.xml.in.h:424
 msgid "WordPerfect document"
 msgstr "WordPerfect dokumentas"
 
-#: ../freedesktop.org.xml.in.h:299
+#: ../freedesktop.org.xml.in.h:425
 msgid "WordPerfect/Drawperfect image"
 msgstr "WordPerfect/Drawperfect paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:300
-msgid "X BitMap image"
-msgstr "X BitMap paveikslėlis"
-
-#: ../freedesktop.org.xml.in.h:301
-msgid "X PixMap image"
-msgstr "X PixMap paveikslėlis"
-
-#: ../freedesktop.org.xml.in.h:302
+#: ../freedesktop.org.xml.in.h:426
 msgid "X window image"
 msgstr "X window paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:303
+#: ../freedesktop.org.xml.in.h:427
 msgid "X-Motif UIL table"
 msgstr "X-Motif UIL lentelė"
 
-#: ../freedesktop.org.xml.in.h:304
-msgid "XBEL bookmarks"
-msgstr "XBEL žymelė"
+#: ../freedesktop.org.xml.in.h:428
+msgid "X11 cursor"
+msgstr "X11 žymiklis"
 
-#: ../freedesktop.org.xml.in.h:305
+#: ../freedesktop.org.xml.in.h:429
+msgid "XBEL bookmarks"
+msgstr "XBEL žymelės"
+
+#: ../freedesktop.org.xml.in.h:430
+msgid "XBM image"
+msgstr "XBM paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:431
 msgid "XFig image"
 msgstr "XFig paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:306
+#: ../freedesktop.org.xml.in.h:432
 msgid "XHTML page"
 msgstr "XHTML puslapis"
 
-#: ../freedesktop.org.xml.in.h:307
-msgid "XML Metadata Interchange file"
-msgstr "XML metaduomenų apsikeitimo rinkmena"
+#: ../freedesktop.org.xml.in.h:433
+msgid "XLIFF translation file"
+msgstr "XLIFF vertimo rinkmena"
 
-#: ../freedesktop.org.xml.in.h:308
-msgid "XML User Interface Language document"
-msgstr "XML naudotojo sąsajos kalbos dokumentas"
+#: ../freedesktop.org.xml.in.h:434
+msgid "XMCD CD database"
+msgstr "XMCD CD duomenų bazė"
 
-#: ../freedesktop.org.xml.in.h:309
-msgid "XSL Formating Object file"
-msgstr "XSL objekto formatavimo rinkmena"
+#: ../freedesktop.org.xml.in.h:435
+msgid "XMI file"
+msgstr "XMI rinkmena"
 
-#: ../freedesktop.org.xml.in.h:310
+#: ../freedesktop.org.xml.in.h:436
+msgid "XML document"
+msgstr "XML dokumentas"
+
+#: ../freedesktop.org.xml.in.h:437
+msgid "XPM image"
+msgstr "XPM paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:438
+msgid "XPS document"
+msgstr "XPS dokumentas"
+
+#: ../freedesktop.org.xml.in.h:439
+msgid "XSL FO file"
+msgstr "XSL FO rinkmena"
+
+#: ../freedesktop.org.xml.in.h:440
 msgid "XSLT stylesheet"
 msgstr "XSLT stiliaus aprašas"
 
-#: ../freedesktop.org.xml.in.h:311
-msgid "ZIP archive"
-msgstr "ZIP archyvas"
+#: ../freedesktop.org.xml.in.h:441
+msgid "XSPF playlist"
+msgstr "XSPF grojaraštis"
 
-#: ../freedesktop.org.xml.in.h:312
-msgid "active server page"
-msgstr "aktyvus serverio puslapis"
+#: ../freedesktop.org.xml.in.h:442
+msgid "XUL document"
+msgstr "XUL dokumentas"
 
-#: ../freedesktop.org.xml.in.h:313
+#: ../freedesktop.org.xml.in.h:443
+msgid "XUL interface document"
+msgstr "XUL sąsajos dokumentas"
+
+#: ../freedesktop.org.xml.in.h:444
+msgid "Xbase document"
+msgstr "Xbase dokumentas"
+
+#: ../freedesktop.org.xml.in.h:445
+msgid "Zip archive"
+msgstr "Zip archyvas"
+
+#: ../freedesktop.org.xml.in.h:446
+msgid "Zoo archive"
+msgstr "Zoo archyvas"
+
+#: ../freedesktop.org.xml.in.h:447
 msgid "application log"
 msgstr "programos žurnalas"
 
-#: ../freedesktop.org.xml.in.h:314
+#: ../freedesktop.org.xml.in.h:448
+msgid "author credits"
+msgstr "padėkos autoriams"
+
+#: ../freedesktop.org.xml.in.h:449
 msgid "author list"
 msgstr "autorių sąrašas"
 
-#: ../freedesktop.org.xml.in.h:315
+#: ../freedesktop.org.xml.in.h:450
 msgid "backup file"
 msgstr "atsarginė rinkmena"
 
-#: ../freedesktop.org.xml.in.h:316
+#: ../freedesktop.org.xml.in.h:451
 msgid "block device"
 msgstr "blokinis įrenginys"
 
-#: ../freedesktop.org.xml.in.h:317
-msgid "bzip archive"
-msgstr "bzip archyvas"
-
-#: ../freedesktop.org.xml.in.h:318
+#: ../freedesktop.org.xml.in.h:452
 msgid "character device"
 msgstr "simbolinis įrenginys"
 
-#: ../freedesktop.org.xml.in.h:319
+#: ../freedesktop.org.xml.in.h:453
 msgid "compound document"
 msgstr "sudurtinis dokumentas"
 
-#: ../freedesktop.org.xml.in.h:320
+#: ../freedesktop.org.xml.in.h:454
 msgid "compound documents"
 msgstr "sudurtiniai dokumentai"
 
-#: ../freedesktop.org.xml.in.h:321
-msgid "dBASE document"
-msgstr "dBASE dokumentas"
+#: ../freedesktop.org.xml.in.h:455
+msgid "compressed GIMP image"
+msgstr "suglaudintas GIMP paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:322
+#: ../freedesktop.org.xml.in.h:456
+msgid "compressed SVG image"
+msgstr "suglaudintas SVG paveikslėlis"
+
+#: ../freedesktop.org.xml.in.h:457
 msgid "desktop configuration file"
 msgstr "darbastalio konfigūracijos rinkmena"
 
-#: ../freedesktop.org.xml.in.h:323
+#: ../freedesktop.org.xml.in.h:458
 msgid "detached OpenPGP signature"
 msgstr "neprisegtas OpenPGP parašas"
 
-#: ../freedesktop.org.xml.in.h:324
+#: ../freedesktop.org.xml.in.h:459
 msgid "detached S/MIME signature"
 msgstr "neprisegtas S/MIME parašas"
 
-#: ../freedesktop.org.xml.in.h:325
+#: ../freedesktop.org.xml.in.h:460
 msgid "differences between files"
 msgstr "skirtumai tarp rinkmenų"
 
-#: ../freedesktop.org.xml.in.h:326
-msgid "document type definition"
-msgstr "dokumento tipo apibrėžimas"
+#: ../freedesktop.org.xml.in.h:461
+msgid "digital raw image"
+msgstr "skaitmeninis neapdorotas paveikslėlis"
 
-#: ../freedesktop.org.xml.in.h:327
-msgid "eXtensible Markup Language document"
-msgstr "eXtensible Markup Language dokumentas"
+#: ../freedesktop.org.xml.in.h:462
+msgid "eMusic download package"
+msgstr "eMusic atsiuntimo paketas"
 
-#: ../freedesktop.org.xml.in.h:328
+#: ../freedesktop.org.xml.in.h:463
 msgid "email headers"
 msgstr "el. laiško antraštės"
 
-#: ../freedesktop.org.xml.in.h:329
+#: ../freedesktop.org.xml.in.h:464
 msgid "email message"
 msgstr "el. laiškas"
 
-#: ../freedesktop.org.xml.in.h:330
+#: ../freedesktop.org.xml.in.h:465
 msgid "empty document"
 msgstr "tuščias dokumentas"
 
-#: ../freedesktop.org.xml.in.h:331
+#: ../freedesktop.org.xml.in.h:466
 msgid "encrypted message"
 msgstr "užšifruotas laiškas"
 
-#: ../freedesktop.org.xml.in.h:332
+#: ../freedesktop.org.xml.in.h:467
 msgid "enriched text document"
 msgstr "praturtinto teksto dokumentas"
 
-#: ../freedesktop.org.xml.in.h:333
+#: ../freedesktop.org.xml.in.h:468
 msgid "executable"
 msgstr "vykdomoji rinkmena"
 
-#: ../freedesktop.org.xml.in.h:334
+#: ../freedesktop.org.xml.in.h:469
 msgid "folder"
 msgstr "aplankas"
 
-#: ../freedesktop.org.xml.in.h:335
-msgid "font"
-msgstr "šriftas"
-
-#: ../freedesktop.org.xml.in.h:336
+#: ../freedesktop.org.xml.in.h:470
 msgid "generic font file"
 msgstr "bendra šrifto rinkmena"
 
-#: ../freedesktop.org.xml.in.h:337
-msgid "gtar archive"
-msgstr "gtar archyvas"
-
-#: ../freedesktop.org.xml.in.h:338
-msgid "gzip archive"
-msgstr "gzip archyvas"
-
-#: ../freedesktop.org.xml.in.h:339
+#: ../freedesktop.org.xml.in.h:471
 msgid "help page"
 msgstr "žinyno puslapis"
 
-#: ../freedesktop.org.xml.in.h:340
+#: ../freedesktop.org.xml.in.h:472
 msgid "iPod firmware"
 msgstr "iPod programinė įranga"
 
-#: ../freedesktop.org.xml.in.h:341
+#: ../freedesktop.org.xml.in.h:473
+msgid "iRiver Playlist"
+msgstr "iRiver grojaraštis"
+
+#: ../freedesktop.org.xml.in.h:474
+msgid "installation instructions"
+msgstr "diegimo instrukcijos"
+
+#: ../freedesktop.org.xml.in.h:475
+msgid "license terms"
+msgstr "licencijos sąlygos"
+
+#: ../freedesktop.org.xml.in.h:476
 msgid "mail delivery report"
 msgstr "pašto pristatymo ataskaita"
 
-#: ../freedesktop.org.xml.in.h:342
+#: ../freedesktop.org.xml.in.h:477
 msgid "mail disposition report"
 msgstr "pašto charakteristikos ataskaita"
 
-#: ../freedesktop.org.xml.in.h:343
+#: ../freedesktop.org.xml.in.h:478
 msgid "mail system report"
 msgstr "pašto sistemos ataskaita"
 
-#: ../freedesktop.org.xml.in.h:344
-msgid "manual page (compressed)"
-msgstr "žinyno puslapis (suspaustas)"
+#: ../freedesktop.org.xml.in.h:479
+msgid "mailbox file"
+msgstr "pašto dėžutės failas"
 
-#: ../freedesktop.org.xml.in.h:345
+#: ../freedesktop.org.xml.in.h:480
+msgid "manual page (compressed)"
+msgstr "žinyno puslapis (suglaudintas)"
+
+#: ../freedesktop.org.xml.in.h:481
 msgid "message catalog"
 msgstr "laiškų katalogas"
 
-#: ../freedesktop.org.xml.in.h:346
+#: ../freedesktop.org.xml.in.h:482
 msgid "message digest"
 msgstr "laiškų santrauka"
 
-#: ../freedesktop.org.xml.in.h:347
+#: ../freedesktop.org.xml.in.h:483
 msgid "message in several formats"
 msgstr "laiškas keletu formatų"
 
-#: ../freedesktop.org.xml.in.h:348
-msgid "message translation template"
-msgstr "užrašų vertimo šablonas"
-
-#: ../freedesktop.org.xml.in.h:349
+#: ../freedesktop.org.xml.in.h:484
 msgid "mount point"
 msgstr "prijungimo taškas"
 
-#: ../freedesktop.org.xml.in.h:350
+#: ../freedesktop.org.xml.in.h:485
 msgid "object code"
 msgstr "objektinis kodas"
 
-#: ../freedesktop.org.xml.in.h:351
+#: ../freedesktop.org.xml.in.h:486
 msgid "packed font file"
 msgstr "supakuota šrifto rinkmena"
 
-#: ../freedesktop.org.xml.in.h:352
+#: ../freedesktop.org.xml.in.h:487
 msgid "partial email message"
 msgstr "nepilnas el. laiškas"
 
-#: ../freedesktop.org.xml.in.h:353
+#: ../freedesktop.org.xml.in.h:488
 msgid "pipe"
 msgstr "konvejeris"
 
-#: ../freedesktop.org.xml.in.h:354
+#: ../freedesktop.org.xml.in.h:489
 msgid "plain text document"
 msgstr "paprastas tekstinis dokumentas"
 
-#: ../freedesktop.org.xml.in.h:355
+#: ../freedesktop.org.xml.in.h:490
 msgid "profiler results"
 msgstr "profiliklio rezultatai"
 
-#: ../freedesktop.org.xml.in.h:356
+#: ../freedesktop.org.xml.in.h:491
 msgid "program crash data"
 msgstr "programos nulūžimo duomenys"
 
-#: ../freedesktop.org.xml.in.h:357
+#: ../freedesktop.org.xml.in.h:492
 msgid "raw CD image"
 msgstr "raw CD atvaizdis"
 
-#: ../freedesktop.org.xml.in.h:358
+#: ../freedesktop.org.xml.in.h:493
 msgid "reference to remote file"
 msgstr "nuoroda į nutolusią rinkmeną"
 
-#: ../freedesktop.org.xml.in.h:359
+#: ../freedesktop.org.xml.in.h:494
 msgid "rejected patch"
 msgstr "atmestas lopas"
 
 #. Note: text/uri-list is reserved by the XDND protocol!
-#: ../freedesktop.org.xml.in.h:361
+#: ../freedesktop.org.xml.in.h:496
 msgid "resource location"
 msgstr "resurso vieta"
 
-#: ../freedesktop.org.xml.in.h:362
+#: ../freedesktop.org.xml.in.h:497
 msgid "rich text document"
 msgstr "praturtinto teksto dokumentas"
 
-#: ../freedesktop.org.xml.in.h:363
-msgid "scalable SVG image"
-msgstr "ištempiamas SVG paveikslėlis"
-
-#: ../freedesktop.org.xml.in.h:364
+#: ../freedesktop.org.xml.in.h:498
 msgid "shared library"
 msgstr "bendroji biblioteka"
 
-#: ../freedesktop.org.xml.in.h:365
+#: ../freedesktop.org.xml.in.h:499
 msgid "shared library (la)"
 msgstr "bendroji biblioteka (la)"
 
-#: ../freedesktop.org.xml.in.h:366
+#: ../freedesktop.org.xml.in.h:500
 msgid "shell archive"
 msgstr "shell archyvas"
 
-#: ../freedesktop.org.xml.in.h:367
+#: ../freedesktop.org.xml.in.h:501
 msgid "shell script"
 msgstr "shell scenarijus"
 
-#: ../freedesktop.org.xml.in.h:368
+#: ../freedesktop.org.xml.in.h:502
 msgid "signed message"
 msgstr "pasirašytas laiškas"
 
-#: ../freedesktop.org.xml.in.h:369
+#: ../freedesktop.org.xml.in.h:503
 msgid "socket"
 msgstr "lizdas"
 
-#: ../freedesktop.org.xml.in.h:370
-msgid "software author credits"
-msgstr "padėkos programos autoriams"
+#: ../freedesktop.org.xml.in.h:504
+msgid "spreadsheet interchange document"
+msgstr "skaičialenčių apsikeitimo dokumentas"
 
-#: ../freedesktop.org.xml.in.h:371
-msgid "software installation instructions"
-msgstr "programos įdiegimo instrukcijos"
-
-#: ../freedesktop.org.xml.in.h:372
-msgid "software license terms"
-msgstr "programos licencija"
-
-#: ../freedesktop.org.xml.in.h:373
+#: ../freedesktop.org.xml.in.h:505
 msgid "stream of data (server push)"
 msgstr "duomenų srautas (iš serverio)"
 
-#: ../freedesktop.org.xml.in.h:374
+#: ../freedesktop.org.xml.in.h:506
 msgid "symbolic link"
 msgstr "simbolinė nuoroda"
 
-#: ../freedesktop.org.xml.in.h:375
-msgid "tar archive"
-msgstr "tar archyvas"
-
-#: ../freedesktop.org.xml.in.h:376
-msgid "tar archive (LZO-compressed)"
-msgstr "tar archyvas (suspausta su LZO)"
-
-#: ../freedesktop.org.xml.in.h:377
-msgid "tar archive (bzip-compressed)"
-msgstr "tar archyvas (suspausta su bzip)"
-
-#: ../freedesktop.org.xml.in.h:378
-msgid "tar archive (compressed)"
-msgstr "tar archyvas (suspausta)"
-
-#: ../freedesktop.org.xml.in.h:379
-msgid "tar archive (gzip-compressed)"
-msgstr "tar archyvas (suspausta su gzip)"
-
-#: ../freedesktop.org.xml.in.h:380
-msgid "text document (with comma-separated values)"
-msgstr "tekstinis dokumentas (su kableliu atskirtomis reikšmėmis)"
-
-#: ../freedesktop.org.xml.in.h:381
-msgid "text document (with tab-separated values)"
-msgstr "tekstinis dokumentas (su tabuliacija atskirtomis reikšmėmis)"
-
-#: ../freedesktop.org.xml.in.h:382
+#: ../freedesktop.org.xml.in.h:507
 msgid "theme"
 msgstr "tema"
 
-#: ../freedesktop.org.xml.in.h:383
-msgid "translated messages"
-msgstr "išversti užrašai"
-
-#: ../freedesktop.org.xml.in.h:384
+#: ../freedesktop.org.xml.in.h:508
 msgid "translated messages (machine-readable)"
 msgstr "išversti užrašai (kompiuteriniu formatu)"
 
-#: ../freedesktop.org.xml.in.h:385
+#: ../freedesktop.org.xml.in.h:509
+msgid "translation file"
+msgstr "vertimo failas"
+
+#: ../freedesktop.org.xml.in.h:510
+msgid "translation template"
+msgstr "vertimo šablonas"
+
+#: ../freedesktop.org.xml.in.h:511
+msgid "txt2tags document"
+msgstr "txt2tags dokumentas"
+
+#: ../freedesktop.org.xml.in.h:512
 msgid "unknown"
 msgstr "nežinoma"
-
-#: ../freedesktop.org.xml.in.h:386
-msgid "ustar archive"
-msgstr "ustar archyvas"
-
-#: ../freedesktop.org.xml.in.h:387
-msgid "vCalendar interchange file"
-msgstr "vCalendar apsikeitimo rinkmena"
-
-#: ../freedesktop.org.xml.in.h:388
-msgid "zoo archive"
-msgstr "zoo archyvas"

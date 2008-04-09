@@ -78,6 +78,8 @@ registry.reg text/x-ms-regedit
 registry-nt.reg text/x-ms-regedit
 # Copied from https://bugzilla.redhat.com/show_bug.cgi?id=430203#c3
 test.ext,v text/plain ox
+# Copied from http://bugs.freedesktop.org/show_bug.cgi?id=14329
+test.fl application/x-fluid
 
 # xml subtypes
 test.ttx application/x-font-ttx

@@ -1,5 +1,12 @@
 2008-04-09  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/list:
+	* tests/test.fl: Add FLTK Fluid mime-type and test files. Patch from
+	Sanel Zukan <sanelz@gmail.com> (Closes: #14329)
+
+2008-04-09  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Remove useless application/x-dbm
 	mime-type, it didn't have a comment, or an users (Closes: #15223)
 

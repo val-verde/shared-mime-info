@@ -1,5 +1,11 @@
 2008-04-09  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add another magic pattern for FLAC files
+	inside Ogg, patch by Andrés Gómez García <agomez@igalia.com>
+	(Closes: #14501)
+
+2008-04-09  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Remove *.exe as a pattern for Unix/ELF
 	executables (Closes: #12569)
 

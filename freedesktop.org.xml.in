@@ -1825,6 +1825,9 @@ command to generate the output files.
       <match type="string" value="OggS" offset="0">
         <match type="string" value="fLaC" offset="28"/>
       </match>
+      <match value="OggS" type="string" offset="0">
+        <match value="\177FLAC" type="string" offset="28"/>
+      </match>
     </magic>
     <glob pattern="*.ogg"/>
   </mime-type>

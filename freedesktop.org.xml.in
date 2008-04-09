@@ -99,6 +99,7 @@ command to generate the output files.
     <magic priority="20">
       <match type="string" value="From " offset="0"/>
     </magic>
+    <glob pattern="*.mbox"/>
   </mime-type>
   <mime-type type="application/octet-stream">
     <_comment>unknown</_comment>

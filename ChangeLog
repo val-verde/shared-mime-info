@@ -1,5 +1,10 @@
 2008-04-09  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Remove *.exe as a pattern for Unix/ELF
+	executables (Closes: #12569)
+
+2008-04-09  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add a pattern for AWK files
 
 2008-04-09  Bastien Nocera  <hadess@hadess.net>

@@ -1,5 +1,10 @@
 2008-04-10  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add *.med as MOD files, patch from
+	Ville Skyttä <ville.skytta@iki.fi> (Closes: #10863)
+
+2008-04-10  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Require AVI files to have both the RIFF
 	and the "AVI " bits, not just one of them (Closes: #12541)
 

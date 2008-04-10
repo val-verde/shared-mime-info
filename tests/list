@@ -80,6 +80,7 @@ registry-nt.reg text/x-ms-regedit
 test.ext,v text/plain ox
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=14329
 test.fl application/x-fluid
+helloworld.java text/x-java ox
 
 # xml subtypes
 test.ttx application/x-font-ttx
@@ -87,6 +88,8 @@ test.ttx application/x-font-ttx
 # Archives
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=14909
 test.alz application/x-alz
+# Copied from /usr/share/gettext/javaversion.class
+test.class application/x-java
 
 # other
 text.pdf application/pdf

@@ -59,18 +59,20 @@ uninstall-hook:
 all: check
 
 check:
-	if test -n $(XMLLINT) ; then \
+	@if test -n $(XMLLINT) ; then \
 		xmllint --noout --valid $(srcdir)/freedesktop.org.xml;	\
 	fi
-	if test -d CVS/ && test -x ../xdgmime/src/test-mime-data ; then \
+	@if test -d CVS/ && test -x ../xdgmime/src/test-mime-data ; then \
 		mkdir -p $(builddir)/temp-mime-dir/mime/packages ; \
 		cp -a $(builddir)/freedesktop.org.xml $(builddir)/temp-mime-dir/mime/packages/ ; \
 		XDG_DATA_DIRS="$(builddir)/temp-mime-dir/" $(builddir)/update-mime-database "$(builddir)/temp-mime-dir/mime/" ; \
-		XDG_DATA_DIRS="$(builddir)/temp-mime-dir/" ../xdgmime/src/test-mime-data -v tests/list; \
+		XDG_DATA_DIRS="$(builddir)/temp-mime-dir/" ../xdgmime/src/test-mime-data -v tests/list || exit 1; \
 		rm -rf "$(builddir)/temp-mime-dir/" ; \
 	fi
-	if `grep comment $(srcdir)/freedesktop.org.xml.in | grep -v _comment | grep -q -v '<!'` ; then \
-		echo "Some comments are not marked as translatable, fix before committing" ; \
+	@if `grep comment $(srcdir)/freedesktop.org.xml.in | grep -v _comment | grep -q -v '<!'` ; then \
+		echo "***************************************************************************" ; \
+		echo "*** Some comments are not marked as translatable, fix before committing ***" ; \
+		echo "***************************************************************************" ; \
 		exit 1 ; \
 	fi
 

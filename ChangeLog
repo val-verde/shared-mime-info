@@ -1,5 +1,16 @@
 2008-04-10  Bastien Nocera  <hadess@hadess.net>
 
+	* Makefile.am: error out when one of the tests fails
+
+	* freedesktop.org.xml.in: Fix matchlet for application/x-java,
+	patch by David Faure <faure@kde.org> (Closes: #10334)
+
+	* tests/helloworld.java (helloworld), (helloworld.main):
+	* tests/list:
+	* tests/test.class: Add test case for Class and Java source files
+
+2008-04-10  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in:
 	* tests/list:
 	* tests/test.alz: Add application/x-alz for ALZ archives, patch by

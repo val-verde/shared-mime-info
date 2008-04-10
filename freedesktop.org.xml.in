@@ -1406,9 +1406,7 @@ command to generate the output files.
   <mime-type type="application/x-java">
     <_comment>Java class</_comment>
     <magic priority="50">
-      <match type="host16" value="0xcafe" offset="0">
-        <match type="host16" value="0xbabe" offset="2"/>
-      </match>
+      <match type="big32" value="0xcafebabe" offset="0"/>
     </magic>
     <glob pattern="*.class"/>
   </mime-type>

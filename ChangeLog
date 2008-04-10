@@ -1,5 +1,13 @@
 2008-04-10  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/list:
+	* tests/test-cdda.toc:
+	* tests/test-cdrom.toc: Add mime-type for CDRDAO TOC files
+	with (wobbly) magic (Closes: #11530)
+
+2008-04-10  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add *.med as MOD files, patch from
 	Ville Skyttä <ville.skytta@iki.fi> (Closes: #10863)
 

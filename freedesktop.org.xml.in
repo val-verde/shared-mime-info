@@ -983,6 +983,20 @@ command to generate the output files.
     <glob pattern="*.iso"/>
     <glob pattern="*.iso9660"/>
   </mime-type>
+  <mime-type type="application/x-cdrdao-toc">
+    <sub-class-of type="text/plain"/>
+    <_comment>CD Table Of Contents</_comment>
+    <magic priority="50">
+      <match type="string" value="CD_ROM\n" offset="0"/>
+      <match type="string" value="CD_DA\n" offset="0"/>
+      <match type="string" value="CD_ROM_XA\n" offset="0"/>
+      <match type="string" value="CD_TEXT " offset="0"/>
+      <match type="string" value="CATALOG &quot;" offset="0">
+        <match type="string" value="&quot;" offset="22"/>
+      </match>
+    </magic>
+    <glob pattern="*.toc"/>
+  </mime-type>
   <mime-type type="application/x-chess-pgn">
     <_comment>PGN chess game notation</_comment>
     <glob pattern="*.pgn"/>

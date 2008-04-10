@@ -99,6 +99,11 @@ test.alz application/x-alz
 # Copied from /usr/share/gettext/javaversion.class
 test.class application/x-java
 
+# Audio/Video files
+# Copied from /usr/share/sounds/generic.wav
+test.wav audio/x-wav
+test.avi video/x-msvideo
+
 # other
 text.pdf application/pdf
 README.pdf application/pdf

@@ -4255,8 +4255,9 @@ command to generate the output files.
     <acronym>AVI</acronym>
     <expanded-acronym>Audio Video Interleave</expanded-acronym>
     <magic priority="50">
-      <match type="string" value="AVI " offset="8"/>
-      <match type="string" value="RIFF" offset="0"/>
+      <match type="string" value="RIFF" offset="0">
+        <match type="string" value="AVI " offset="8"/>
+      </match>
     </magic>
     <glob pattern="*.avi"/>
     <glob pattern="*.divx"/>

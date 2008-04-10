@@ -1,5 +1,14 @@
 2008-04-10  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Require AVI files to have both the RIFF
+	and the "AVI " bits, not just one of them (Closes: #12541)
+
+	* tests/list:
+	* tests/test.avi:
+	* tests/test.wav: Add WAVE and AVI test files
+
+2008-04-10  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add magic for KDC Kodak raw image files
 	* tests/list:
 	* tests/test.kdc: Add test case for that image file

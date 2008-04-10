@@ -1,5 +1,11 @@
 2008-04-10  Bastien Nocera  <hadess@hadess.net>
 
+	* tests/README.pdf:
+	* tests/list: Add test case for bug #15436 (README* taking precedence
+	over *.pdf)
+
+2008-04-10  Bastien Nocera  <hadess@hadess.net>
+
 	* Makefile.am: error out when one of the tests fails
 
 	* freedesktop.org.xml.in: Fix matchlet for application/x-java,

@@ -84,6 +84,10 @@ test.fl application/x-fluid
 # xml subtypes
 test.ttx application/x-font-ttx
 
+# Archives
+# Copied from http://bugs.freedesktop.org/show_bug.cgi?id=14909
+test.alz application/x-alz
+
 # other
 text.pdf application/pdf
 project.glade application/x-glade

@@ -1,5 +1,12 @@
 2008-04-10  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/list:
+	* tests/test.alz: Add application/x-alz for ALZ archives, patch by
+	Changwoo Ryu <cwryu@debian.org> (Closes: #14909)
+
+2008-04-10  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Remove application/x-cgi mime-type, it's
 	not text/plain (could be a binary), so it should be handled as its
 	real type, as discovered by sniffing (Closes: #13700)

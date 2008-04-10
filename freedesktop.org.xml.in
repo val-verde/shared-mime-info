@@ -3898,6 +3898,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.reg"/>
   </mime-type>
+  <mime-type type="text/x-mof">
+    <sub-class-of type="text/x-csrc"/>
+    <_comment>Managed Object Format</_comment>
+    <glob pattern="*.mof"/>
+  </mime-type>
   <mime-type type="text/x-mup">
     <sub-class-of type="text/plain"/>
     <_comment>Mup publication</_comment>

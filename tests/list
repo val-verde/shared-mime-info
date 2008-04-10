@@ -85,6 +85,7 @@ test.fl application/x-fluid
 helloworld.java text/x-java ox
 test.cs text/x-csharp ox
 test.vala text/x-vala ox
+test.mof text/x-mof ox
 
 # xml subtypes
 test.ttx application/x-font-ttx
@@ -99,6 +100,7 @@ test.class application/x-java
 # other
 text.pdf application/pdf
 README.pdf application/pdf
+# Copied from http://bugs.freedesktop.org/show_bug.cgi?id=15260
 test.gnd application/gnunet-directory
 text.ps application/postscript
 

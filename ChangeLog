@@ -2,6 +2,13 @@
 
 	* freedesktop.org.xml.in:
 	* tests/list:
+	* tests/test.mof: Add mime-type for Managed Object Format files,
+	patch from Stanislav Brabec <sbrabec@suse.cz> (Closes: #14278)
+
+2008-04-10  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in:
+	* tests/list:
 	* tests/test.gnd: Add mime-type for GNUNet saved searches,
 	based on work by Milan Bouchet-Valat <nalimilan@club.fr>
 	(Closes: #15260)

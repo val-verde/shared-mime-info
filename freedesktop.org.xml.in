@@ -410,6 +410,11 @@ command to generate the output files.
     <alias type="application/vnd.ms-word"/>
     <alias type="application/x-msword"/>
   </mime-type>
+  <mime-type type="application/msword-template">
+    <sub-class-of type="application/msword"/>
+    <_comment>Word template</_comment>
+    <glob pattern="*.dot"/>
+  </mime-type>
   <mime-type type="application/vnd.ms-tnef">
     <_comment>TNEF message</_comment>
     <acronym>TNEF</acronym>

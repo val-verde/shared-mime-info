@@ -1,5 +1,12 @@
 2008-04-10  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/list:
+	* tests/test-template.dot: Add a MS Word template file mime-type
+	and the requires test suite entry
+
+2008-04-10  Bastien Nocera  <hadess@hadess.net>
+
 	* tests/README.pdf:
 	* tests/list: Add test case for bug #15436 (README* taking precedence
 	over *.pdf)

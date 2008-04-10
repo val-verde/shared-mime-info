@@ -42,6 +42,8 @@ ooo.sxw application/vnd.sun.xml.writer
 ooo.vor application/vnd.stardivision.writer
 ooo-xp.doc application/msword
 office.doc application/msword ox
+# Copied from http://bugzilla.abisource.com/show_bug.cgi?id=6435
+test-template.dot application/msword-template ox
 
 # Playlist, subtitle and audio formats
 stream.nsc application/x-netshow-channel

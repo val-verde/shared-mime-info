@@ -971,11 +971,6 @@ command to generate the output files.
     <glob pattern="*.iso"/>
     <glob pattern="*.iso9660"/>
   </mime-type>
-  <mime-type type="application/x-cgi">
-    <sub-class-of type="text/plain"/>
-    <_comment>CGI script</_comment>
-    <glob pattern="*.cgi"/>
-  </mime-type>
   <mime-type type="application/x-chess-pgn">
     <_comment>PGN chess game notation</_comment>
     <glob pattern="*.pgn"/>

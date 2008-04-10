@@ -1,3 +1,9 @@
+2008-04-10  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Remove application/x-cgi mime-type, it's
+	not text/plain (could be a binary), so it should be handled as its
+	real type, as discovered by sniffing (Closes: #13700)
+
 2008-04-09  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Add another magic pattern for FLAC files

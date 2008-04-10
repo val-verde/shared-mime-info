@@ -2891,6 +2891,9 @@ command to generate the output files.
     <_comment>Kodak KDC raw image</_comment>
     <acronym>KDC</acronym>
     <expanded-acronym>Kodak Digital Camera</expanded-acronym>
+    <magic priority="80">
+      <match value="EASTMAN KODAK COMPANY" type="string" offset="242"/>
+    </magic>
     <glob pattern="*.kdc"/>
   </mime-type>
   <mime-type type="image/x-minolta-mrw">

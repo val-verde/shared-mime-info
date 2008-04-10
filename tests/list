@@ -83,9 +83,12 @@ test.ext,v text/plain ox
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=14329
 test.fl application/x-fluid
 helloworld.java text/x-java ox
+test.cs text/x-csharp ox
+test.vala text/x-vala ox
 
 # xml subtypes
 test.ttx application/x-font-ttx
+project.glade application/x-glade
 
 # Archives
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=14909
@@ -96,7 +99,6 @@ test.class application/x-java
 # other
 text.pdf application/pdf
 README.pdf application/pdf
-project.glade application/x-glade
+test.gnd application/gnunet-directory
 text.ps application/postscript
-test.cs text/x-csharp ox
-test.vala text/x-vala ox
+

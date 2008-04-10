@@ -2,6 +2,14 @@
 
 	* freedesktop.org.xml.in:
 	* tests/list:
+	* tests/test.gnd: Add mime-type for GNUNet saved searches,
+	based on work by Milan Bouchet-Valat <nalimilan@club.fr>
+	(Closes: #15260)
+
+2008-04-10  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in:
+	* tests/list:
 	* tests/test-template.dot: Add a MS Word template file mime-type
 	and the requires test suite entry
 

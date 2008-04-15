@@ -1,5 +1,12 @@
 2008-04-15  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/list:
+	* tests/test-vpn.pcf: Add Cisco VPN mime-type (from David Zeuthen
+	<david@fubar.dk>), and test case (Closes: #3560)
+
+2008-04-15  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Fix expanded acronym for ODB
 	files, spotted by jstaniek <js@iidea.pl> (Closes: #12686)
 

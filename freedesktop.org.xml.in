@@ -4372,4 +4372,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.602" />
   </mime-type>
+  <mime-type type="application/x-cisco-vpn-settings">
+    <_comment>Cisco VPN Settings</_comment>
+    <magic priority="50">
+      <match type="string" value="[main]" offset="0"/>
+    </magic>
+    <glob pattern="*.pcf"/>
+  </mime-type>
 </mime-info>

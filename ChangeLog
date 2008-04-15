@@ -1,3 +1,11 @@
+2008-04-15  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in:
+	* tests/list:
+	* tests/test.iptables: Add text/x-iptables for iptables
+	scripts, for the benefit of gedit, definition from
+	Ian Laurie <iml@zip.com.au> (Closes: #6652)
+
 2008-04-14  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Add *.3g2 as a possible suffix for

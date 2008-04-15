@@ -91,6 +91,8 @@ test.mof text/x-mof ox
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=11530
 test-cdda.toc application/x-cdrdao-toc
 test-cdrom.toc application/x-cdrdao-toc
+# Copied from /etc/sysconfig/iptables
+test.iptables text/x-iptables
 
 # xml subtypes
 test.ttx application/x-font-ttx

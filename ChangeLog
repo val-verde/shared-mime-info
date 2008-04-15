@@ -2,6 +2,14 @@
 
 	* freedesktop.org.xml.in:
 	* tests/list:
+	* tests/ocf10-20060911.epub: Add application/epub+zip for
+	Electronic Book documents, patch from Pino Toscano
+	<pino@kde.org> (Closes: #12625)
+
+2008-04-15  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in:
+	* tests/list:
 	* tests/test.iptables: Add text/x-iptables for iptables
 	scripts, for the benefit of gedit, definition from
 	Ian Laurie <iml@zip.com.au> (Closes: #6652)

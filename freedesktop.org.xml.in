@@ -69,6 +69,17 @@ command to generate the output files.
     <expanded-acronym>Andrew Toolkit</expanded-acronym>
     <glob pattern="*.ez"/>
   </mime-type>
+  <mime-type type="application/epub+zip">
+    <_comment>Electronic book document</_comment>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/epub+zip" offset="38"/>
+        </match>
+      </match>
+    </magic>
+    <glob pattern="*.epub"/>
+  </mime-type>
   <mime-type type="application/illustrator">
     <_comment>Adobe Illustrator document</_comment>
     <glob pattern="*.ai"/>

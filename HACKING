@@ -21,6 +21,16 @@ Check it out using:
 cvs -d:pserver:anoncvs@anoncvs.freedesktop.org:/cvs/mime login
 cvs -d:pserver:anoncvs@anoncvs.freedesktop.org:/cvs/mime co shared-mime-info
 
+Filing bugs
+-----------
+
+Bugs can be filed at:
+https://bugs.freedesktop.org/enter_bug.cgi?product=shared-mime-info
+
+Bugs for new mime-types should include:
+- a patch generated against the current CVS, with the "-up" arguments for CVS
+- one or more test files to be added to the test suite
+
 Test suite
 ----------
 

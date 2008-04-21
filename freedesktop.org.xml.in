@@ -3719,6 +3719,11 @@ command to generate the output files.
     <_comment>C header</_comment>
     <glob pattern="*.h"/>
   </mime-type>
+  <mime-type type="text/x-cmake">
+    <_comment>CMake source code</_comment>
+    <glob pattern="*.cmake"/>
+    <glob pattern="CMakeLists.txt"/>
+  </mime-type>
   <mime-type type="text/csv">
     <alias type="text/x-comma-separated-values"/>
     <sub-class-of type="text/plain"/>

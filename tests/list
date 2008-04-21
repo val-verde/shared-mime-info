@@ -48,6 +48,8 @@ office.doc application/msword ox
 test-template.dot application/msword-template ox
 # Copied from http://www.ebooktechnologies.com/downloads/ocf10-20060911.epub
 ocf10-20060911.epub application/epub+zip
+# Copied from http://libwps.svn.sourceforge.net/viewvc/libwps/trunk/reference/
+test.wps application/vnd.ms-works ox
 
 # Playlist, subtitle and audio formats
 stream.nsc application/x-netshow-channel
@@ -120,5 +122,5 @@ README.pdf application/pdf
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=15260
 test.gnd application/gnunet-directory
 text.ps application/postscript
-test.cmake text/x-cmake
+test.cmake text/x-cmake ox
 

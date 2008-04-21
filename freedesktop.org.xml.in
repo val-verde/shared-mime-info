@@ -405,6 +405,14 @@ command to generate the output files.
     <expanded-acronym>XML Paper Specification</expanded-acronym>
     <glob pattern="*.xps"/>
   </mime-type>
+  <mime-type type="application/vnd.ms-works">
+    <sub-class-of type="application/x-ole-storage"/>
+    <_comment>Microsoft Works document</_comment>
+    <glob pattern="*.wcm"/>
+    <glob pattern="*.wdb"/>
+    <glob pattern="*.wks"/>
+    <glob pattern="*.wps"/>
+  </mime-type>
   <mime-type type="application/msword">
     <sub-class-of type="application/x-ole-storage"/>
     <_comment>Word document</_comment>

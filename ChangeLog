@@ -1,3 +1,12 @@
+2008-04-21  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Add mime-type for MS Works
+	documents, patch from Pino Toscano <pino@kde.org>
+	(Closes: #12989)
+
+	* tests/list:
+	* tests/test.wps: Add test file for MS Works
+
 2008-04-21  Pino Toscano  <pino@kde.org>
 
 	* freedesktop.org.xml.in:

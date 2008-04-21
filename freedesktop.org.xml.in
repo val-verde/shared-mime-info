@@ -1457,6 +1457,15 @@ command to generate the output files.
       <match type="string" value="&lt;jnlp" offset="0:256"/>
     </magic>
   </mime-type>
+  <mime-type type="application/x-java-pack200">
+    <_comment>Pack200 Java archive</_comment>
+    <magic priority="50">
+      <match type="host16" value="0xcafe" offset="0">
+        <match type="host16" value="0xd00d" offset="2"/>
+      </match>
+    </magic>
+    <glob pattern="*.pack"/>
+  </mime-type>
   <mime-type type="application/javascript">
     <alias type="application/x-javascript"/>
     <alias type="text/javascript"/>

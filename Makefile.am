@@ -63,11 +63,11 @@ check:
 		xmllint --noout --valid $(srcdir)/freedesktop.org.xml;	\
 	fi
 	@if test -d CVS/ && test -x ../xdgmime/src/test-mime-data ; then \
-		mkdir -p $(builddir)/temp-mime-dir/mime/packages ; \
-		cp -a $(builddir)/freedesktop.org.xml $(builddir)/temp-mime-dir/mime/packages/ ; \
-		XDG_DATA_DIRS="$(builddir)/temp-mime-dir/" $(builddir)/update-mime-database "$(builddir)/temp-mime-dir/mime/" ; \
-		XDG_DATA_DIRS="$(builddir)/temp-mime-dir/" ../xdgmime/src/test-mime-data -v tests/list || exit 1; \
-		rm -rf "$(builddir)/temp-mime-dir/" ; \
+		mkdir -p $(top_builddir)/temp-mime-dir/mime/packages ; \
+		cp -a $(top_builddir)/freedesktop.org.xml $(top_builddir)/temp-mime-dir/mime/packages/ ; \
+		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/update-mime-database "$(top_builddir)/temp-mime-dir/mime/" ; \
+		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" ../xdgmime/src/test-mime-data -v tests/list || exit 1; \
+		rm -rf "$(top_builddir)/temp-mime-dir/" ; \
 	fi
 	@if `grep comment $(srcdir)/freedesktop.org.xml.in | grep -v _comment | grep -q -v '<!'` ; then \
 		echo "***************************************************************************" ; \

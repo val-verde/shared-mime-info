@@ -75,4 +75,12 @@ check:
 		echo "***************************************************************************" ; \
 		exit 1 ; \
 	fi
+	@echo Expanded acronyms: `grep expanded-acronym $(srcdir)/freedesktop.org.xml.in | wc -l` ; \
+	echo Acronyms: `grep acronym $(srcdir)/freedesktop.org.xml.in | grep -v expanded | wc -l` ; \
+	if test `grep expanded-acronym $(srcdir)/freedesktop.org.xml.in | wc -l` -ne `grep acronym $(srcdir)/freedesktop.org.xml.in | grep -v expanded | wc -l` ; then \
+		echo "*****************************************************************************************" ; \
+		echo "*** Some acronyms are missing the expanded acronym definitions, fix before committing ***" ; \
+		echo "*****************************************************************************************" ; \
+		exit 1; \
+	fi
 

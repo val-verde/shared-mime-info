@@ -3787,12 +3787,13 @@ command to generate the output files.
     <_comment>D source code</_comment>
     <glob pattern="*.d"/>
   </mime-type>
-  <mime-type type="text/x-dtd">
+  <mime-type type="application/xml-dtd">
     <sub-class-of type="text/plain"/>
     <_comment>DTD file</_comment>
     <acronym>DTD</acronym>
     <expanded-acronym>Document Type Definition</expanded-acronym>
     <glob pattern="*.dtd"/>
+    <alias type="text/x-dtd"/>
   </mime-type>
   <mime-type type="text/x-eiffel">
     <sub-class-of type="text/plain"/>
@@ -4204,6 +4205,14 @@ command to generate the output files.
     <glob pattern="*.xslt"/>
     <glob pattern="*.xbl"/>
     <alias type="text/xml"/>
+  </mime-type>
+  <mime-type type="application/xml-external-parsed-entity">
+    <sub-class-of type="application/xml"/>
+    <_comment>XML entities document</_comment>
+    <acronym>XML</acronym>
+    <expanded-acronym>eXtensible Markup Language</expanded-acronym>
+    <glob pattern="*.ent"/>
+    <alias type="text/xml-external-parsed-entity"/>
   </mime-type>
   <mime-type type="video/dv">
     <_comment>DV video</_comment>

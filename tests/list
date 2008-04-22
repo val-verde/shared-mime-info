@@ -102,6 +102,8 @@ test-vpn.pcf application/x-cisco-vpn-settings x
 # xml subtypes
 test.ttx application/x-font-ttx
 project.glade application/x-glade
+# Copied from http://bugs.freedesktop.org/show_bug.cgi?id=14085
+ISOcyr1.ent application/xml-external-parsed-entity ox
 
 # Archives
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=14909

@@ -1,3 +1,11 @@
+2008-04-22  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in:
+	* tests/ISOcyr1.ent:
+	* tests/list: Patch from Pino Toscano <pino@kde.org> to add
+	XML entities support, and fix the DTD mime-type to be the one
+	in the RFC (Closes: #14085)
+
 2008-04-21  Pino Toscano  <pino@kde.org>
 
 	* Makefile.am: use $(top_builddir) instead of $(builddir) in the

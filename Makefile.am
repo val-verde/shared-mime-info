@@ -83,4 +83,13 @@ check:
 		echo "*****************************************************************************************" ; \
 		exit 1; \
 	fi
+	@echo Number of defined mime-types: `grep "mime-type type=" $(srcdir)/freedesktop.org.xml.in | wc -l` ; \
+	echo Number of comments: `grep _comment $(srcdir)/freedesktop.org.xml.in | wc -l` ; \
+	if test `grep "mime-type type=" $(srcdir)/freedesktop.org.xml.in | wc -l` -ne `grep _comment $(srcdir)/freedesktop.org.xml.in | wc -l` ; then \
+		echo "*******************************************************************" ; \
+		echo "*** Some mime-types are missing comments, fix before committing ***" ; \
+		echo "*******************************************************************" ; \
+		exit 1; \
+	fi
+	
 

@@ -75,21 +75,7 @@ check:
 		echo "***************************************************************************" ; \
 		exit 1 ; \
 	fi
-	@echo Expanded acronyms: `grep expanded-acronym $(srcdir)/freedesktop.org.xml.in | wc -l` ; \
-	echo Acronyms: `grep acronym $(srcdir)/freedesktop.org.xml.in | grep -v expanded | wc -l` ; \
-	if test `grep expanded-acronym $(srcdir)/freedesktop.org.xml.in | wc -l` -ne `grep acronym $(srcdir)/freedesktop.org.xml.in | grep -v expanded | wc -l` ; then \
-		echo "*****************************************************************************************" ; \
-		echo "*** Some acronyms are missing the expanded acronym definitions, fix before committing ***" ; \
-		echo "*****************************************************************************************" ; \
-		exit 1; \
-	fi
-	@echo Number of defined mime-types: `grep "mime-type type=" $(srcdir)/freedesktop.org.xml.in | wc -l` ; \
-	echo Number of comments: `grep _comment $(srcdir)/freedesktop.org.xml.in | wc -l` ; \
-	if test `grep "mime-type type=" $(srcdir)/freedesktop.org.xml.in | wc -l` -ne `grep _comment $(srcdir)/freedesktop.org.xml.in | wc -l` ; then \
-		echo "*******************************************************************" ; \
-		echo "*** Some mime-types are missing comments, fix before committing ***" ; \
-		echo "*******************************************************************" ; \
-		exit 1; \
-	fi
+	@echo Number of application/ mime-types: `grep "mime-type type=" $(srcdir)/freedesktop.org.xml.in | grep "application/" | grep -v "octet-stream" | wc -l` ; \
+	echo Number of mime-types with a generic icon: `grep "generic-icon name=" $(srcdir)/freedesktop.org.xml.in | wc -l` ;
 	
 

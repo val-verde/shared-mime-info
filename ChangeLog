@@ -1,3 +1,12 @@
+2008-04-23  Bastien Nocera  <hadess@hadess.net>
+
+	* Makefile.am: Remove the tests below, and modify the DTD to not allow
+	acronyms without an expanded-acronym, and mime-types without comments
+	* freedesktop.org.xml.in: Add generic-icons to all the application/
+	mime-type, with a few FIXMEs, remove duplicated StuffIt mime-type, but
+	keep the aliases, fix a few mime-types without comments, and missing
+	acronyms or expanded-acronyms
+
 2008-04-22  Bastien Nocera  <hadess@hadess.net>
 
 	* Makefile.am: Add check for mime-types without comments

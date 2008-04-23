@@ -3685,17 +3685,21 @@ command to generate the output files.
   </mime-type>
   <mime-type type="message/delivery-status">
     <_comment>mail delivery report</_comment>
+    <generic-icon name="text-x-generic"/>
     <sub-class-of type="text/plain"/>
   </mime-type>
   <mime-type type="message/disposition-notification">
     <_comment>mail disposition report</_comment>
+    <generic-icon name="text-x-generic"/>
     <sub-class-of type="text/plain"/>
   </mime-type>
   <mime-type type="message/external-body">
     <_comment>reference to remote file</_comment>
+    <generic-icon name="text-x-generic"/>
   </mime-type>
   <mime-type type="message/news">
     <_comment>Usenet news message</_comment>
+    <generic-icon name="text-x-generic"/>
     <sub-class-of type="text/plain"/>
     <magic priority="50">
       <match type="string" value="Article" offset="0"/>
@@ -3705,10 +3709,12 @@ command to generate the output files.
   </mime-type>
   <mime-type type="message/partial">
     <_comment>partial email message</_comment>
+    <generic-icon name="text-x-generic"/>
     <sub-class-of type="text/plain"/>
   </mime-type>
   <mime-type type="message/rfc822">
     <_comment>email message</_comment>
+    <generic-icon name="text-x-generic"/>
     <sub-class-of type="text/plain"/>
     <magic priority="50">
       <match type="string" value="#! rnews" offset="0"/>
@@ -3724,10 +3730,12 @@ command to generate the output files.
   </mime-type>
   <mime-type type="message/x-gnu-rmail">
     <_comment>GNU mail message</_comment>
+    <generic-icon name="text-x-generic"/>
     <glob pattern="RMAIL"/>
   </mime-type>
   <mime-type type="model/vrml">
     <_comment>VRML document</_comment>
+    <generic-icon name="x-office-document"/>
     <sub-class-of type="text/plain"/>
     <glob pattern="*.wrl"/>
   </mime-type>

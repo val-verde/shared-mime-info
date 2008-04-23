@@ -1,5 +1,11 @@
 2008-04-23  Bastien Nocera  <hadess@hadess.net>
 
+	* Makefile.am: More than just application/ mime-type need generic-icon
+	* freedesktop.org.xml.in: add generic-icon to a few message/
+	mime-types, as well as to the VRML mime-type
+
+2008-04-23  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Fix FIXMEs for the generic icons, fix a few
 	archives' acronyms, remove the text/x-ksysv-log mime-type which
 	doesn't have a comment, and doesn't seem to be used anymore

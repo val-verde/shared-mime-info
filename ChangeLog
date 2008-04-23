@@ -1,5 +1,10 @@
 2008-04-23  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Tighten the DTD as to the allowed values for
+	the generic-icon needing to be listed in the Icon Naming spec
+
+2008-04-23  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in:
 	* tests/internet.ez:
 	* tests/list: Add test file for Andrew insets, and fix generic-icon

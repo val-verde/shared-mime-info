@@ -1,5 +1,11 @@
 2008-04-23  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/internet.ez:
+	* tests/list: Add test file for Andrew insets, and fix generic-icon
+
+2008-04-23  Bastien Nocera  <hadess@hadess.net>
+
 	* Makefile.am: Remove the tests below, and modify the DTD to not allow
 	acronyms without an expanded-acronym, and mime-types without comments
 	* freedesktop.org.xml.in: Add generic-icons to all the application/

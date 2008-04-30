@@ -54,3 +54,10 @@ of updating the translations before release.
 
 Updated .po files are sent to <shared-mime-info-maint@freedesktop.org>
 
+Updating the spec on the website
+--------------------------------
+
+- On gabe, go in /srv/specifications.freedesktop.org/www
+- Edit specs.idx
+- Run ../update.py
+

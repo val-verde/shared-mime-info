@@ -1879,7 +1879,7 @@ command to generate the output files.
     <glob pattern="*.lzma"/>
   </mime-type>
   <mime-type type="application/x-lzma-compressed-tar">
-    <_comment>tar archive (LZMA-compressed)</_comment>
+    <_comment>Tar archive (LZMA-compressed)</_comment>
     <generic-icon name="package-x-generic"/>
     <glob pattern="*.tar.lzma"/>
     <glob pattern="*.tlz"/>
@@ -2801,7 +2801,7 @@ command to generate the output files.
     <glob pattern="*.m4b"/>
   </mime-type>
   <mime-type type="video/3gpp">
-    <_comment>3GPP multimedia</_comment>
+    <_comment>3GPP multimedia file</_comment>
     <sub-class-of type="video/mp4"/>
     <magic priority="50">
       <match type="string" value="ftyp3gp" offset="4"/>

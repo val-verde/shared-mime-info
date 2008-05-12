@@ -1,14 +1,14 @@
 # Vietnamese translation for Shared MIME Info.
 # Copyright © 2008 Free Software Foundation, Inc.
-# This file is distributed under the same license as the shared-mime-info-0.24 package.
+# This file is distributed under the same license as the shared-mime-info-0.24-pre2 package.
 # Clytie Siddall <clytie@riverland.net.au>, 2006-2008.
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info 0.24\n"
+"Project-Id-Version: shared-mime-info 0.24-pre2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-23 10:49+0100\n"
-"PO-Revision-Date: 2008-04-24 18:35+0930\n"
+"POT-Creation-Date: 2008-05-02 11:58+0100\n"
+"PO-Revision-Date: 2008-05-06 22:25+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -22,8 +22,8 @@ msgid "3D Studio image"
 msgstr "Ảnh xuởng vẽ 3D"
 
 #: ../freedesktop.org.xml.in.h:2
-msgid "3GPP multimedia"
-msgstr "Đa phương tiện 3GPP"
+msgid "3GPP multimedia file"
+msgstr "Tập tin đa phương tiện 3GPP"
 
 #: ../freedesktop.org.xml.in.h:3
 msgid "7-zip archive"
@@ -1606,564 +1606,564 @@ msgid "Tar archive"
 msgstr "Kho nén tar"
 
 #: ../freedesktop.org.xml.in.h:404
+msgid "Tar archive (LZMA-compressed)"
+msgstr "Kho nén tar (đã nén LZMA)"
+
+#: ../freedesktop.org.xml.in.h:405
 msgid "Tar archive (LZO-compressed)"
 msgstr "Kho nén tar (đã nén LZO)"
 
-#: ../freedesktop.org.xml.in.h:405
+#: ../freedesktop.org.xml.in.h:406
 msgid "Tar archive (bzip-compressed)"
 msgstr "Kho nén tar (đã nén bzip)"
 
-#: ../freedesktop.org.xml.in.h:406
+#: ../freedesktop.org.xml.in.h:407
 msgid "Tar archive (compressed)"
 msgstr "Kho nén tar (đã nén)"
 
-#: ../freedesktop.org.xml.in.h:407
+#: ../freedesktop.org.xml.in.h:408
 msgid "Tar archive (gzip-compressed)"
 msgstr "Kho nén tar (đã nén gzip)"
 
-#: ../freedesktop.org.xml.in.h:408
+#: ../freedesktop.org.xml.in.h:409
 msgid "Tcl script"
 msgstr "Văn lệnh Tcl"
 
-#: ../freedesktop.org.xml.in.h:409
+#: ../freedesktop.org.xml.in.h:410
 msgid "TeX DVI document"
 msgstr "Tài liệu DVI Tex"
 
-#: ../freedesktop.org.xml.in.h:410
+#: ../freedesktop.org.xml.in.h:411
 msgid "TeX DVI document (bzip-compressed)"
 msgstr "Tài liệu DVI TeX (đã nén bzip)"
 
-#: ../freedesktop.org.xml.in.h:411
+#: ../freedesktop.org.xml.in.h:412
 msgid "TeX DVI document (gzip-compressed)"
 msgstr "Tài liệu DVI TeX (đã nén gzip)"
 
-#: ../freedesktop.org.xml.in.h:412
+#: ../freedesktop.org.xml.in.h:413
 msgid "TeX document"
 msgstr "Tài liệu TeX"
 
-#: ../freedesktop.org.xml.in.h:413
+#: ../freedesktop.org.xml.in.h:414
 msgid "TeX font"
 msgstr "Phông chữ TeX"
 
-#: ../freedesktop.org.xml.in.h:414
+#: ../freedesktop.org.xml.in.h:415
 msgid "TeX font metrics"
 msgstr "Cách đo phông chữ TeX"
 
-#: ../freedesktop.org.xml.in.h:415
+#: ../freedesktop.org.xml.in.h:416
 msgid "TeXInfo document"
 msgstr "Tài liệu TeXInfo"
 
-#: ../freedesktop.org.xml.in.h:416
+#: ../freedesktop.org.xml.in.h:417
 msgid "ToutDoux document"
 msgstr "Tài liệu ToutDoux"
 
-#: ../freedesktop.org.xml.in.h:417
+#: ../freedesktop.org.xml.in.h:418
 msgid "Troff ME input document"
 msgstr "Tài liệu nhập ME Troff"
 
-#: ../freedesktop.org.xml.in.h:418
+#: ../freedesktop.org.xml.in.h:419
 msgid "Troff MM input document"
 msgstr "Tài liệu nhập MM Troff"
 
-#: ../freedesktop.org.xml.in.h:419
+#: ../freedesktop.org.xml.in.h:420
 msgid "Troff MS input document"
 msgstr "Tài liệu nhập MS Troff"
 
-#: ../freedesktop.org.xml.in.h:420
+#: ../freedesktop.org.xml.in.h:421
 msgid "Troff document"
 msgstr "Tài liệu Troff"
 
-#: ../freedesktop.org.xml.in.h:421
+#: ../freedesktop.org.xml.in.h:422
 msgid "Troff document (with manpage macros)"
 msgstr "Tài liệu Troff (có vĩ lệnh trang hướng dẫn)"
 
-#: ../freedesktop.org.xml.in.h:422
+#: ../freedesktop.org.xml.in.h:423
 msgid "TrueAudio audio"
 msgstr "Âm thanh TrueAudio"
 
-#: ../freedesktop.org.xml.in.h:423
+#: ../freedesktop.org.xml.in.h:424
 msgid "TrueType XML font"
 msgstr "Phông chữ XML TrueType"
 
-#: ../freedesktop.org.xml.in.h:424
+#: ../freedesktop.org.xml.in.h:425
 msgid "TrueType font"
 msgstr "Phông chữ TrueType"
 
-#: ../freedesktop.org.xml.in.h:425
+#: ../freedesktop.org.xml.in.h:426
 msgid "UFRaw ID image"
 msgstr "Ảnh ID UFRaw"
 
-#: ../freedesktop.org.xml.in.h:426
+#: ../freedesktop.org.xml.in.h:427
 msgid "ULAW (Sun) audio"
 msgstr "Âm thanh ULAW (Sun)"
 
-#: ../freedesktop.org.xml.in.h:427
+#: ../freedesktop.org.xml.in.h:428
 msgid "UNIX-compressed file"
 msgstr "Tập tin đã nén UNIX"
 
-#: ../freedesktop.org.xml.in.h:428
+#: ../freedesktop.org.xml.in.h:429
 msgid "Unidata NetCDF document"
 msgstr "Tài liệu NetCDF Unidata"
 
-#: ../freedesktop.org.xml.in.h:429
+#: ../freedesktop.org.xml.in.h:430
 msgid "Usenet news message"
 msgstr "Thông điệp tin tức USENET"
 
-#: ../freedesktop.org.xml.in.h:430
+#: ../freedesktop.org.xml.in.h:431
 msgid "Ustar archive"
 msgstr "Kho nén ustar"
 
-#: ../freedesktop.org.xml.in.h:431
+#: ../freedesktop.org.xml.in.h:432
 msgid "V font"
 msgstr "Phông chữ V"
 
-#: ../freedesktop.org.xml.in.h:432
+#: ../freedesktop.org.xml.in.h:433
 msgid "VCS/ICS calendar"
 msgstr "Lịch VCS/ICS"
 
-#: ../freedesktop.org.xml.in.h:433
+#: ../freedesktop.org.xml.in.h:434
 msgid "VHDL document"
 msgstr "Tài liệu VHDL"
 
-#: ../freedesktop.org.xml.in.h:434
+#: ../freedesktop.org.xml.in.h:435
 msgid "VOC audio"
 msgstr "Âm thanh VOC"
 
-#: ../freedesktop.org.xml.in.h:435
+#: ../freedesktop.org.xml.in.h:436
 msgid "VRML document"
 msgstr "Tài liệu VRML"
 
-#: ../freedesktop.org.xml.in.h:436
+#: ../freedesktop.org.xml.in.h:437
 msgid "Vala source code"
 msgstr "Mã nguồn Vala"
 
-#: ../freedesktop.org.xml.in.h:437
+#: ../freedesktop.org.xml.in.h:438
 msgid "Vivo video"
 msgstr "Ảnh động Vivo"
 
-#: ../freedesktop.org.xml.in.h:438
+#: ../freedesktop.org.xml.in.h:439
 msgid "WAIS source code"
 msgstr "Mã nguồn WAIS"
 
-#: ../freedesktop.org.xml.in.h:439
+#: ../freedesktop.org.xml.in.h:440
 msgid "WAV audio"
 msgstr "Âm thanh WAV"
 
-#: ../freedesktop.org.xml.in.h:440
+#: ../freedesktop.org.xml.in.h:441
 msgid "WBMP image"
 msgstr "Ảnh WBMP"
 
-#: ../freedesktop.org.xml.in.h:441
+#: ../freedesktop.org.xml.in.h:442
 msgid "WMF image"
 msgstr "Ảnh WMF"
 
-#: ../freedesktop.org.xml.in.h:442
+#: ../freedesktop.org.xml.in.h:443
 msgid "WML document"
 msgstr "Tài liệu WML"
 
-#: ../freedesktop.org.xml.in.h:443
+#: ../freedesktop.org.xml.in.h:444
 msgid "WMLScript program"
 msgstr "Chương trình WMLScript"
 
-#: ../freedesktop.org.xml.in.h:444
+#: ../freedesktop.org.xml.in.h:445
 msgid "WRI document"
 msgstr "Tài liệu WRI"
 
-#: ../freedesktop.org.xml.in.h:445
+#: ../freedesktop.org.xml.in.h:446
 msgid "WavPack audio"
 msgstr "Âm thanh WavPack"
 
-#: ../freedesktop.org.xml.in.h:446
+#: ../freedesktop.org.xml.in.h:447
 msgid "WavPack audio correction file"
 msgstr "Tập tin sửa chữa âm thanh WavPack"
 
-#: ../freedesktop.org.xml.in.h:447
+#: ../freedesktop.org.xml.in.h:448
 msgid "Wavelet video"
 msgstr "Ảnh động Wavelet"
 
-#: ../freedesktop.org.xml.in.h:448
+#: ../freedesktop.org.xml.in.h:449
 msgid "Windows BMP image"
 msgstr "Ảnh BMP Windows"
 
-#: ../freedesktop.org.xml.in.h:449
+#: ../freedesktop.org.xml.in.h:450
 msgid "Windows Media Station file"
 msgstr "Tập tin Windows Media Station"
 
-#: ../freedesktop.org.xml.in.h:450
+#: ../freedesktop.org.xml.in.h:451
 msgid "Windows Media audio"
 msgstr "Âm thanh Windows Media"
 
-#: ../freedesktop.org.xml.in.h:451
+#: ../freedesktop.org.xml.in.h:452
 msgid "Windows Media video"
 msgstr "Ảnh động Windows Media"
 
-#: ../freedesktop.org.xml.in.h:452
+#: ../freedesktop.org.xml.in.h:453
 msgid "Windows Registry extract"
 msgstr "Bản trích Registry Windows"
 
-#: ../freedesktop.org.xml.in.h:453
+#: ../freedesktop.org.xml.in.h:454
 msgid "Windows cursor"
 msgstr "Con chạy Windows"
 
-#: ../freedesktop.org.xml.in.h:454
+#: ../freedesktop.org.xml.in.h:455
 msgid "Word document"
 msgstr "Tài liệu Word"
 
-#: ../freedesktop.org.xml.in.h:455
+#: ../freedesktop.org.xml.in.h:456
 msgid "Word template"
 msgstr "Mẫu Word"
 
-#: ../freedesktop.org.xml.in.h:456
+#: ../freedesktop.org.xml.in.h:457
 msgid "WordPerfect document"
 msgstr "Tài liệu WordPerfect"
 
-#: ../freedesktop.org.xml.in.h:457
+#: ../freedesktop.org.xml.in.h:458
 msgid "WordPerfect/Drawperfect image"
 msgstr "Ảnh WordPerfect/Drawperfect"
 
-#: ../freedesktop.org.xml.in.h:458
+#: ../freedesktop.org.xml.in.h:459
 msgid "X window image"
 msgstr "Ảnh cửa sổ X"
 
-#: ../freedesktop.org.xml.in.h:459
+#: ../freedesktop.org.xml.in.h:460
 msgid "X-Motif UIL table"
 msgstr "Bảng UIL X-Motif"
 
-#: ../freedesktop.org.xml.in.h:460
+#: ../freedesktop.org.xml.in.h:461
 msgid "X11 cursor"
 msgstr "Con chạy X11"
 
-#: ../freedesktop.org.xml.in.h:461
+#: ../freedesktop.org.xml.in.h:462
 msgid "XBEL bookmarks"
 msgstr "Liên kết đã lưu XBEL"
 
-#: ../freedesktop.org.xml.in.h:462
+#: ../freedesktop.org.xml.in.h:463
 msgid "XBM image"
 msgstr "Ảnh XBM"
 
-#: ../freedesktop.org.xml.in.h:463
+#: ../freedesktop.org.xml.in.h:464
 msgid "XFig image"
 msgstr "Ảnh XFig"
 
-#: ../freedesktop.org.xml.in.h:464
+#: ../freedesktop.org.xml.in.h:465
 msgid "XHTML page"
 msgstr "Trang XHTML"
 
-#: ../freedesktop.org.xml.in.h:465
+#: ../freedesktop.org.xml.in.h:466
 msgid "XLIFF translation file"
 msgstr "Tập tin dịch XLIFF"
 
-#: ../freedesktop.org.xml.in.h:466
+#: ../freedesktop.org.xml.in.h:467
 msgid "XMCD CD database"
 msgstr "Cơ sở dữ liệu CD XMCD"
 
-#: ../freedesktop.org.xml.in.h:467
+#: ../freedesktop.org.xml.in.h:468
 msgid "XMF audio"
 msgstr "Âm thanh XMF"
 
-#: ../freedesktop.org.xml.in.h:468
+#: ../freedesktop.org.xml.in.h:469
 msgid "XMI file"
 msgstr "Tập tin XMI"
 
-#: ../freedesktop.org.xml.in.h:469
+#: ../freedesktop.org.xml.in.h:470
 msgid "XML document"
 msgstr "Tài liệu XML"
 
-#: ../freedesktop.org.xml.in.h:470
+#: ../freedesktop.org.xml.in.h:471
 msgid "XML entities document"
 msgstr "Tài liệu thực thể XML"
 
-#: ../freedesktop.org.xml.in.h:471
+#: ../freedesktop.org.xml.in.h:472
 msgid "XPM image"
 msgstr "Ảnh XPM"
 
-#: ../freedesktop.org.xml.in.h:472
+#: ../freedesktop.org.xml.in.h:473
 msgid "XPS document"
 msgstr "Tài liệu XPS"
 
-#: ../freedesktop.org.xml.in.h:473
+#: ../freedesktop.org.xml.in.h:474
 msgid "XSL FO file"
 msgstr "Tập tin FO của XSL (XFO)"
 
-#: ../freedesktop.org.xml.in.h:474
+#: ../freedesktop.org.xml.in.h:475
 msgid "XSLT stylesheet"
 msgstr "Tờ kiểu dáng XSLT"
 
-#: ../freedesktop.org.xml.in.h:475
+#: ../freedesktop.org.xml.in.h:476
 msgid "XSPF playlist"
 msgstr "Danh mục nhạc XSPF"
 
-#: ../freedesktop.org.xml.in.h:476
+#: ../freedesktop.org.xml.in.h:477
 msgid "XUL document"
 msgstr "Tài liệu XUL"
 
-#: ../freedesktop.org.xml.in.h:477
+#: ../freedesktop.org.xml.in.h:478
 msgid "XUL interface document"
 msgstr "Tài liệu giao diện XUL"
 
-#: ../freedesktop.org.xml.in.h:478
+#: ../freedesktop.org.xml.in.h:479
 msgid "Xbase document"
 msgstr "Tài liệu Xbase"
 
-#: ../freedesktop.org.xml.in.h:479
+#: ../freedesktop.org.xml.in.h:480
 msgid "Zip archive"
 msgstr "Kho nén zip"
 
-#: ../freedesktop.org.xml.in.h:480
+#: ../freedesktop.org.xml.in.h:481
 msgid "Zoo archive"
 msgstr "Kho nén zoo"
 
-#: ../freedesktop.org.xml.in.h:481
+#: ../freedesktop.org.xml.in.h:482
 msgid "application log"
 msgstr "bản ghi ứng dụng"
 
-#: ../freedesktop.org.xml.in.h:482
+#: ../freedesktop.org.xml.in.h:483
 msgid "author credits"
 msgstr "công trạng tác giả"
 
-#: ../freedesktop.org.xml.in.h:483
+#: ../freedesktop.org.xml.in.h:484
 msgid "author list"
 msgstr "danh sách tác giả"
 
-#: ../freedesktop.org.xml.in.h:484
+#: ../freedesktop.org.xml.in.h:485
 msgid "backup file"
 msgstr "tập tin sao lưu"
 
-#: ../freedesktop.org.xml.in.h:485
+#: ../freedesktop.org.xml.in.h:486
 msgid "block device"
 msgstr "thiết bị khối"
 
-#: ../freedesktop.org.xml.in.h:486
+#: ../freedesktop.org.xml.in.h:487
 msgid "character device"
 msgstr "thiết bị ký tự"
 
-#: ../freedesktop.org.xml.in.h:487
+#: ../freedesktop.org.xml.in.h:488
 msgid "comic book archive"
 msgstr "Kho nén sách tranh chuyện vui"
 
-#: ../freedesktop.org.xml.in.h:488
+#: ../freedesktop.org.xml.in.h:489
 msgid "compound document"
 msgstr "tài liệu ghép"
 
-#: ../freedesktop.org.xml.in.h:489
+#: ../freedesktop.org.xml.in.h:490
 msgid "compound documents"
 msgstr "tài liệu ghép"
 
-#: ../freedesktop.org.xml.in.h:490
+#: ../freedesktop.org.xml.in.h:491
 msgid "compressed GIMP image"
 msgstr "ảnh GIMP đã nén"
 
-#: ../freedesktop.org.xml.in.h:491
+#: ../freedesktop.org.xml.in.h:492
 msgid "compressed SVG image"
 msgstr "ảnh SVG đã nén"
 
-#: ../freedesktop.org.xml.in.h:492
+#: ../freedesktop.org.xml.in.h:493
 msgid "desktop configuration file"
 msgstr "tập tin cấu hình môi trường"
 
-#: ../freedesktop.org.xml.in.h:493
+#: ../freedesktop.org.xml.in.h:494
 msgid "detached OpenPGP signature"
 msgstr "chữ ký OpenPGP tách rời"
 
-#: ../freedesktop.org.xml.in.h:494
+#: ../freedesktop.org.xml.in.h:495
 msgid "detached S/MIME signature"
 msgstr "chữ ký S/MIME tách rời"
 
-#: ../freedesktop.org.xml.in.h:495
+#: ../freedesktop.org.xml.in.h:496
 msgid "differences between files"
 msgstr "khác biệt giữa các tập tin"
 
-#: ../freedesktop.org.xml.in.h:496
+#: ../freedesktop.org.xml.in.h:497
 msgid "digital raw image"
 msgstr "ảnh thô số"
 
-#: ../freedesktop.org.xml.in.h:497
+#: ../freedesktop.org.xml.in.h:498
 msgid "eMusic download package"
 msgstr "gói nhạc tải xuống eMusic"
 
-#: ../freedesktop.org.xml.in.h:498
+#: ../freedesktop.org.xml.in.h:499
 msgid "email headers"
 msgstr "dòng đầu thư điện tử"
 
-#: ../freedesktop.org.xml.in.h:499
+#: ../freedesktop.org.xml.in.h:500
 msgid "email message"
 msgstr "thư điện tử"
 
-#: ../freedesktop.org.xml.in.h:500
+#: ../freedesktop.org.xml.in.h:501
 msgid "empty document"
 msgstr "tài liệu rỗng"
 
-#: ../freedesktop.org.xml.in.h:501
+#: ../freedesktop.org.xml.in.h:502
 msgid "encrypted message"
 msgstr "thông điệp đã mật mã"
 
-#: ../freedesktop.org.xml.in.h:502
+#: ../freedesktop.org.xml.in.h:503
 msgid "enriched text document"
 msgstr "tài liệu văn bản có kiểu dáng"
 
-#: ../freedesktop.org.xml.in.h:503
+#: ../freedesktop.org.xml.in.h:504
 msgid "executable"
 msgstr "thực hiện được"
 
-#: ../freedesktop.org.xml.in.h:504
+#: ../freedesktop.org.xml.in.h:505
 msgid "folder"
 msgstr "thư mục"
 
-#: ../freedesktop.org.xml.in.h:505
+#: ../freedesktop.org.xml.in.h:506
 msgid "generic font file"
 msgstr "tập tin phông giống loài"
 
-#: ../freedesktop.org.xml.in.h:506
+#: ../freedesktop.org.xml.in.h:507
 msgid "help page"
 msgstr "trang trợ giúp"
 
-#: ../freedesktop.org.xml.in.h:507
+#: ../freedesktop.org.xml.in.h:508
 msgid "iMelody ringtone"
 msgstr "tiếng réo iMelody"
 
-#: ../freedesktop.org.xml.in.h:508
+#: ../freedesktop.org.xml.in.h:509
 msgid "iPod firmware"
 msgstr "phần vững iPod"
 
-#: ../freedesktop.org.xml.in.h:509
+#: ../freedesktop.org.xml.in.h:510
 msgid "iRiver Playlist"
 msgstr "danh mục nhạc iRiver"
 
-#: ../freedesktop.org.xml.in.h:510
+#: ../freedesktop.org.xml.in.h:511
 msgid "installation instructions"
 msgstr "hướng dẫn cài đặt"
 
-#: ../freedesktop.org.xml.in.h:511
+#: ../freedesktop.org.xml.in.h:512
 msgid "iptables configuration file"
 msgstr "tập tin cấu hình iptables"
 
-#: ../freedesktop.org.xml.in.h:512
+#: ../freedesktop.org.xml.in.h:513
 msgid "libtool shared library"
 msgstr "thư viện dùng chung libtool"
 
-#: ../freedesktop.org.xml.in.h:513
+#: ../freedesktop.org.xml.in.h:514
 msgid "license terms"
 msgstr "điều kiện giấy phép"
 
-#: ../freedesktop.org.xml.in.h:514
+#: ../freedesktop.org.xml.in.h:515
 msgid "mail delivery report"
 msgstr "thông báo phát thư"
 
-#: ../freedesktop.org.xml.in.h:515
+#: ../freedesktop.org.xml.in.h:516
 msgid "mail disposition report"
 msgstr "thông báo chuyển nhượng thư"
 
-#: ../freedesktop.org.xml.in.h:516
+#: ../freedesktop.org.xml.in.h:517
 msgid "mail system report"
 msgstr "thông báo hệ thống thư"
 
-#: ../freedesktop.org.xml.in.h:517
+#: ../freedesktop.org.xml.in.h:518
 msgid "mailbox file"
 msgstr "tập tin hộp thư"
 
-#: ../freedesktop.org.xml.in.h:518
+#: ../freedesktop.org.xml.in.h:519
 msgid "manual page (compressed)"
 msgstr "trang hướng dẫn (đã nén)"
 
-#: ../freedesktop.org.xml.in.h:519
+#: ../freedesktop.org.xml.in.h:520
 msgid "message catalog"
 msgstr "phân loại thông điệp"
 
-#: ../freedesktop.org.xml.in.h:520
+#: ../freedesktop.org.xml.in.h:521
 msgid "message digest"
 msgstr "bản tóm tắt thông điệp"
 
-#: ../freedesktop.org.xml.in.h:521
+#: ../freedesktop.org.xml.in.h:522
 msgid "message in several formats"
 msgstr "thông điệp có vài định dạng"
 
-#: ../freedesktop.org.xml.in.h:522
+#: ../freedesktop.org.xml.in.h:523
 msgid "mount point"
 msgstr "điểm lắp"
 
-#: ../freedesktop.org.xml.in.h:523
+#: ../freedesktop.org.xml.in.h:524
 msgid "object code"
 msgstr "mã đối tượng"
 
-#: ../freedesktop.org.xml.in.h:524
+#: ../freedesktop.org.xml.in.h:525
 msgid "packed font file"
 msgstr "tập tin phông chữ đã đóng gói"
 
-#: ../freedesktop.org.xml.in.h:525
+#: ../freedesktop.org.xml.in.h:526
 msgid "partial email message"
 msgstr "thư điện tử riêng phần"
 
-#: ../freedesktop.org.xml.in.h:526
+#: ../freedesktop.org.xml.in.h:527
 msgid "pipe"
 msgstr "ống dẫn"
 
-#: ../freedesktop.org.xml.in.h:527
+#: ../freedesktop.org.xml.in.h:528
 msgid "plain text document"
 msgstr "tài liệu nhập thô"
 
-#: ../freedesktop.org.xml.in.h:528
+#: ../freedesktop.org.xml.in.h:529
 msgid "profiler results"
 msgstr "kết quả nét hiện trạng"
 
-#: ../freedesktop.org.xml.in.h:529
+#: ../freedesktop.org.xml.in.h:530
 msgid "program crash data"
 msgstr "dữ liệu sụp đổ chương trình"
 
-#: ../freedesktop.org.xml.in.h:530
+#: ../freedesktop.org.xml.in.h:531
 msgid "raw CD image"
 msgstr "ảnh đĩa CD thô"
 
-#: ../freedesktop.org.xml.in.h:531
+#: ../freedesktop.org.xml.in.h:532
 msgid "reference to remote file"
 msgstr "tham chiếu đến tập tin ở xa"
 
-#: ../freedesktop.org.xml.in.h:532
+#: ../freedesktop.org.xml.in.h:533
 msgid "rejected patch"
 msgstr "đắp vá bị từ chối"
 
-#: ../freedesktop.org.xml.in.h:533
+#: ../freedesktop.org.xml.in.h:534
 msgid "resource location"
 msgstr "địa điểm tài nguyên"
 
-#: ../freedesktop.org.xml.in.h:534
+#: ../freedesktop.org.xml.in.h:535
 msgid "rich text document"
 msgstr "tài liệu văn bản có kiểu dáng (RTF)"
 
-#: ../freedesktop.org.xml.in.h:535
+#: ../freedesktop.org.xml.in.h:536
 msgid "shared library"
 msgstr "thư viện dùng chung"
 
-#: ../freedesktop.org.xml.in.h:536
+#: ../freedesktop.org.xml.in.h:537
 msgid "shell archive"
 msgstr "kho trình bao"
 
-#: ../freedesktop.org.xml.in.h:537
+#: ../freedesktop.org.xml.in.h:538
 msgid "shell script"
 msgstr "văn lệnh trình bao"
 
-#: ../freedesktop.org.xml.in.h:538
+#: ../freedesktop.org.xml.in.h:539
 msgid "signed message"
 msgstr "thông điệp đã ký"
 
-#: ../freedesktop.org.xml.in.h:539
+#: ../freedesktop.org.xml.in.h:540
 msgid "socket"
 msgstr "ổ cắm"
 
-#: ../freedesktop.org.xml.in.h:540
+#: ../freedesktop.org.xml.in.h:541
 msgid "spreadsheet interchange document"
 msgstr "tài liệu hoán đổi bảng tính"
 
-#: ../freedesktop.org.xml.in.h:541
+#: ../freedesktop.org.xml.in.h:542
 msgid "stream of data (server push)"
 msgstr "luồng dữ liệu (trình phục vụ đẩy)"
 
-#: ../freedesktop.org.xml.in.h:542
+#: ../freedesktop.org.xml.in.h:543
 msgid "symbolic link"
 msgstr "liên kết tượng trưng"
-
-#: ../freedesktop.org.xml.in.h:543
-msgid "tar archive (LZMA-compressed)"
-msgstr "Kho nén tar (đã nén LZMA)"
 
 #: ../freedesktop.org.xml.in.h:544
 msgid "theme"

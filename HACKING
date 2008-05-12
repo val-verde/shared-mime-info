@@ -54,6 +54,9 @@ of updating the translations before release.
 
 Updated .po files are sent to <shared-mime-info-maint@freedesktop.org>
 
+To pull translations from the Translation Project website, use:
+make update-translations
+
 Updating the spec on the website
 --------------------------------
 

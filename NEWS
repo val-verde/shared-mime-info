@@ -1,3 +1,62 @@
+shared-mime-info 0.30 (2008-05-12)
+* Mime-type Changes:
+- Add LZMA archive
+- Add Eiffel source
+- Add TTX font
+- Add EXR image
+- Add SubViewer subtitle
+- Add Windows Registry
+- Add SMAF, XMF and iMelogy ringtones
+- Add MRML playlists
+- Add FLTK Fluid
+- Add NFO info
+- Add ALZ archive
+- Add MS Word template
+- Add GNUNet saved searches
+- Add MOF
+- Add CDRDAO TOC
+- Add magic for KDC Kodak
+- Add pattern for PCX images
+- Add pattern for mbox files
+- Add pattern for AWK scripts
+- Add more magic for FLAC audio
+- Add iptables
+- Add Electronic books
+- Add Cisco VPN
+- Add Pack200 archives
+- Add CMake scripts
+- Add MS Works document
+- Update DjVu types
+- Update Flash video type
+- Mark RCS files as text/plain
+- Add an alias for RPM packages
+- Remove application/x-cgi mime-type
+- Remove *.exe glob for Unix executables
+- Remove audio/x-mp3-playlist and make it an alias for MP3 playlists
+- Remove the useless application/x-dbm type
+- Remove duplicate *.amr glob from 3GPP files
+- Add "<Asx" as a pattern for ASX files
+- Lower XML magic priority so text/html is preferred
+- Fix magic for application/x-java
+- Fix up magic for AVI files
+- Add "*.med" glob to MOD music
+- Add "*.3gp2" glob for 3GPP audio/video
+- Fix multiple XML mime-types
+- Remove duplicate StuffIt archive type
+- Remove unused text/x-ksysv-log
+
+* Other:
+- Update specification
+- Add instructions on how to file bugs, and update translations
+- Update dependencies to GLib 2.6
+- Update DTD, require translated comments, require expanded-acronym if
+acronym is present, require a known value for generic-icon
+- Small fix to the update-mime-database man page
+- Ignore unknown fields in update-mime-database
+- Make sure all the comments are marked for translation
+- Fix typos in the DTD
+- Avoid warnings in update-mime-database for the x-content/ mimetypes
+
 shared-mime-info 0.23 (2007-12-18)
 * Mime-type Changes:
 - Add QTIF QuickTime image

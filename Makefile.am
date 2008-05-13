@@ -80,4 +80,10 @@ check:
 	
 update-translations:
 	@rsync --copy-links --recursive --times --verbose --compress --progress translationproject.org::tp/latest/shared-mime-info/ $(srcdir)/po/
+	@for i in $(top_srcdir)/po/*.po ; do								\
+		if ! grep -q `basename $$i | sed 's,.po,,'` $(top_srcdir)/po/LINGUAS ; then		\
+			echo '***' `basename $$i | sed 's,.po,,'` missing from po/LINGUAS '***' ;	\
+			exit 1;										\
+		fi;											\
+	done;
 	@pushd $(srcdir)/po && LC_ALL=en_US.UTF-8 prepare-ChangeLog.pl && popd

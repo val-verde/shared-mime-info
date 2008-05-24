@@ -1,3 +1,8 @@
+2008-05-24  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Add text/x-diff as an alias for
+	Patches, as used in the wild
+
 2008-05-13  Bastien Nocera  <hadess@hadess.net>
 
 	* Makefile.am: Check that all the translations are actually

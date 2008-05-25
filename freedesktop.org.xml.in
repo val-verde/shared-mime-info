@@ -2329,6 +2329,7 @@ command to generate the output files.
     <_comment>shell script</_comment>
     <sub-class-of type="application/x-executable"/>
     <sub-class-of type="text/plain"/>
+    <alias type="text/x-sh"/>
     <generic-icon name="text-x-script"/>
     <magic priority="50">
       <match type="string" value="# This is a shell archive" offset="10"/>
@@ -4010,6 +4011,7 @@ command to generate the output files.
   <mime-type type="text/x-csrc">
     <_comment>C source code</_comment>
     <sub-class-of type="text/plain"/>
+    <alias type="text/x-c"/>
     <glob pattern="*.c"/>
     <magic priority="30">
       <match type="string" value="/*" offset="0"/>

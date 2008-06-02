@@ -1,5 +1,11 @@
 2008-06-02  Bastien Nocera  <hadess@hadess.net>
 
+	* update-mime-database.c:
+	Patch from Matthias Clasen <mclasen@redhat.com> to update cache
+	version to 1.1 after the recent changes
+
+2008-06-02  Bastien Nocera  <hadess@hadess.net>
+
 	* update-mime-database.c (get_int_attribute), (get_priority),
 	(get_weight), (process_freedesktop_node), (write_out_glob),
 	(write_out_glob2), (collect_glob2), (compare_by_weight),

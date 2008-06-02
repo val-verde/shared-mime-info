@@ -66,6 +66,9 @@ typedef struct _Magic Magic;
 /* A parsed <match> element */
 typedef struct _Match Match;
 
+/* A parsed <glob> element */
+typedef struct _Glob Glob;
+
 struct _Type {
 	char *media;
 	char *subtype;
@@ -75,6 +78,12 @@ struct _Type {
 	 * with an unknown namespace.
 	 */
 	xmlDoc	*output;
+};
+
+struct _Glob {
+	int weight;
+	char *pattern;
+	Type *type;
 };
 
 struct _Magic {
@@ -110,6 +119,12 @@ static GHashTable *subclass_hash = NULL;
 
 /* Maps aliases to Types */
 static GHashTable *alias_hash = NULL;
+
+/* Maps MIME type names to icon names */
+static GHashTable *icon_hash = NULL;
+
+/* Maps MIME type names to icon names */
+static GHashTable *generic_icon_hash = NULL;
 
 /* Lists enabled log levels */
 static GLogLevelFlags enabled_log_levels = G_LOG_LEVEL_ERROR | G_LOG_LEVEL_CRITICAL | G_LOG_LEVEL_WARNING;
@@ -218,16 +233,12 @@ static gboolean match_node(xmlNode *node,
 		return strcmp((char *)node->name, localName) == 0 && !node->ns;
 }
 
-/* Return the priority of a <magic> node.
- * Returns 50 if no priority is given, or -1 if a priority is given but
- * is invalid.
- */
-static int get_priority(xmlNode *node)
+static int get_int_attribute(xmlNode *node, const char *name)
 {
 	char *prio_string;
 	int p;
 
-	prio_string = my_xmlGetNsProp(node, "priority", NULL);
+	prio_string = my_xmlGetNsProp(node, name, NULL);
 	if (prio_string)
 	{
 		char *end;
@@ -242,6 +253,24 @@ static int get_priority(xmlNode *node)
 	}
 	else
 		return 50;
+}
+
+/* Return the priority of a <magic> node.
+ * Returns 50 if no priority is given, or -1 if a priority is given but
+ * is invalid.
+ */
+static int get_priority(xmlNode *node)
+{
+       return get_int_attribute (node, "priority");
+}
+
+/* Return the weight a <glob> node.
+ * Returns 50 if no weight is given, or -1 if a weight is given but
+ * is invalid.
+ */
+static int get_weight(xmlNode *node)
+{
+       return get_int_attribute (node, "weight");
 }
 
 /* Process a <root-XML> element by adding a rule to namespace_hash */
@@ -295,16 +324,29 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 {
 	if (strcmp((char *)field->name, "glob") == 0)
 	{
-		gchar *pattern;
-		
+		gchar *pattern;	
+		gint weight;
+
+		weight = get_weight(field);
+
+		if (weight == -1)
+		{
+			g_set_error(error, MIME_ERROR, 0,
+				    _("Bad weight (%d) in <glob> element"), weight);
+		}
 		pattern = my_xmlGetNsProp(field, "pattern", NULL);
 
 		if (pattern && *pattern)
 		{
+			Glob *glob;
 			GList *list = g_hash_table_lookup (globs_hash, pattern);
 			
-			list = g_list_append (list, type);
-			g_hash_table_insert(globs_hash, g_strdup(pattern), list);
+			glob = g_new0 (Glob, 1);
+			glob->pattern = g_strdup (pattern);
+			glob->type = type;
+			glob->weight = weight;
+			list = g_list_append (list, glob);
+			g_hash_table_insert(globs_hash, g_strdup (glob->pattern), list);
 			xmlFree(pattern);
 		}
 		else
@@ -388,7 +430,33 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 		if (localName)
 			xmlFree(localName);
 	}
-	
+	else if (strcmp((char *)field->name, "generic-icon") == 0 ||
+		 strcmp((char *)field->name, "icon") == 0) 
+	{
+		char *icon;
+		char *typename;
+
+		icon = my_xmlGetNsProp(field, "name", NULL);
+
+		if (icon) 
+		{
+			typename = g_strdup_printf("%s/%s",
+						   type->media,
+						   type->subtype);
+
+			if (strcmp((char *)field->name, "icon") == 0)
+				g_hash_table_insert(icon_hash,
+						    typename, g_strdup (icon));
+			else
+				g_hash_table_insert(generic_icon_hash,
+						    typename, g_strdup (icon));
+
+			xmlFree (icon);
+
+			return FALSE;   /* Copy through */
+		}
+	}
+
 	return !*error;
 }
 
@@ -668,23 +736,58 @@ static int save_xml_file(xmlDocPtr doc, const gchar *filename)
 }
 
 /* Write out globs for one pattern to the 'globs' file */
-static void write_out_glob(gpointer key, gpointer value, gpointer data)
+static void write_out_glob(GList *globs, FILE *stream)
 {
-	const gchar *pattern = (gchar *) key;
-	GList *list = (GList *) value;
-	FILE *stream = (FILE *) data;
+	GList *list;
+	Glob *glob;
 	Type *type;
 
-	for ( ; list; list = list->next) {
-		type = (Type *)list->data;
-		if (strchr(pattern, '\n'))
+	for (list = globs; list; list = list->next) {
+		glob = (Glob *)list->data;
+		type = glob->type;
+		if (strchr(glob->pattern, '\n'))
 			g_warning("* Glob patterns can't contain literal newlines "
-				  "(%s in type %s/%s)\n", pattern,
+				  "(%s in type %s/%s)\n", glob->pattern,
 				  type->media, type->subtype);
 		else
 			g_fprintf(stream, "%s/%s:%s\n",
-				type->media, type->subtype, pattern);
+				type->media, type->subtype, glob->pattern);
 	}
+}
+
+/* Write out globs and weights for one pattern to the 'globs2' file */
+static void write_out_glob2(GList *globs, FILE *stream)
+{
+	GList *list;
+	Glob *glob;
+	Type *type;
+
+	for (list = globs ; list; list = list->next) {
+		glob = (Glob *)list->data;
+		type = glob->type;
+		if (strchr(glob->pattern, '\n'))
+			g_warning("* Glob patterns can't contain literal newlines "
+				  "(%s in type %s/%s)\n", glob->pattern,
+				  type->media, type->subtype);
+		else
+			g_fprintf(stream, "%d:%s/%s:%s\n",
+				  glob->weight, type->media, type->subtype, glob->pattern);
+	}
+}
+
+static void collect_glob2(gpointer key, gpointer value, gpointer data)
+{
+	GList **listp = data;
+
+	*listp = g_list_concat (*listp, g_list_copy ((GList *)value));
+}
+
+static int compare_by_weight (gpointer a, gpointer b)
+{
+	Glob *ag = (Glob *)a;
+	Glob *bg = (Glob *)b;
+
+	return bg->weight - ag->weight;
 }
 
 /* Renames pathname by removing the .new extension */
@@ -1484,6 +1587,22 @@ static void write_aliases(FILE *stream)
 	g_ptr_array_free(lines, TRUE);
 }
 
+static void write_one_icon(gpointer key, gpointer value, gpointer data)
+{
+	char *mimetype = (char *)key;
+	char *iconname = (char *)value;
+	FILE *stream = (FILE *)data;
+	char *line;
+
+	line = g_strconcat (mimetype, ":", iconname, "\n", NULL);
+	fwrite(line, 1, strlen(line), stream);
+	g_free (line);
+}
+
+static void write_icons(GHashTable *icons, FILE *stream)
+{
+	g_hash_table_foreach(icons, write_one_icon, stream);
+}
 
 /* Issue a warning if 'path' won't be found by applications */
 static void check_in_path_xdg_data(const char *mime_path)
@@ -1606,7 +1725,7 @@ write_card32 (FILE *cache, guint32 n)
 }
 
 #define MAJOR_VERSION 1
-#define MINOR_VERSION 0
+#define MINOR_VERSION 1
 
 static gboolean
 write_header (FILE *cache,   
@@ -1617,9 +1736,11 @@ write_header (FILE *cache,
 	      gint  glob_offset,
 	      gint  magic_offset,
 	      gint  namespace_offset,
+	      gint  icons_list_offset,
+	      gint  generic_icons_list_offset,
 	      guint *offset)
 {
-  *offset = 32;
+  *offset = 40;
 
   return (write_card16 (cache, MAJOR_VERSION) &&
 	  write_card16 (cache, MINOR_VERSION) &&
@@ -1629,7 +1750,9 @@ write_header (FILE *cache,
 	  write_card32 (cache, suffix_offset) &&
 	  write_card32 (cache, glob_offset) &&
 	  write_card32 (cache, magic_offset) &&
-	  write_card32 (cache, namespace_offset));
+	  write_card32 (cache, namespace_offset) &&
+	  write_card32 (cache, icons_list_offset) &&
+	  write_card32 (cache, generic_icons_list_offset));
 }
 
 
@@ -1643,6 +1766,7 @@ typedef struct
   guint         offset;
   GetValueFunc *get_value;
   gpointer      data;
+  gboolean      weighted;
   gboolean      error;
 } MapData;
 
@@ -1653,22 +1777,32 @@ write_map_entry (gpointer key,
   MapData *map_data = (MapData *)data;
   gchar **values;
   guint offset, i;
-
+  guint weight;
 
   values = (* map_data->get_value) (map_data->data, key);
   for (i = 0; values[i]; i++)
     {
-      offset = GPOINTER_TO_UINT (g_hash_table_lookup (map_data->pool, values[i]));
-      if (offset == 0)
-	{
-	  g_warning ("Missing string: '%s'\n", values[i]);
-	  map_data->error = TRUE;  
-	}
-      
-      if (!write_card32 (map_data->cache, offset))
-	map_data->error = TRUE;
+      if (map_data->weighted && (i % 3 == 2)) 
+        {
+          weight = atoi (values[i]);
 
-      map_data->offset += 4;
+          if (!write_card32 (map_data->cache, weight))
+            map_data->error = TRUE;
+
+          map_data->offset += 4;
+        }
+      else 
+        {
+          offset = GPOINTER_TO_UINT (g_hash_table_lookup (map_data->pool, values[i]));
+          if (offset == 0)
+            {
+              g_warning ("Missing string: '%s'\n", values[i]);
+              map_data->error = TRUE;  
+            }
+          if (!write_card32 (map_data->cache, offset))
+          map_data->error = TRUE;
+          map_data->offset += 4;
+        }
     }
 
   g_strfreev (values);
@@ -1697,6 +1831,7 @@ write_map (FILE         *cache,
 	   GHashTable   *map,
 	   FilterFunc   *filter,
            GetValueFunc *get_value,
+           gboolean      weighted,
 	   guint        *offset)
 {
   GPtrArray *keys;
@@ -1718,6 +1853,7 @@ write_map (FILE         *cache,
   map_data.pool = strings;
   map_data.get_value = get_value;
   map_data.data = map;
+  map_data.weighted = weighted;
   map_data.offset = *offset + 4;
   map_data.error = FALSE;
 
@@ -1745,25 +1881,28 @@ get_type_value (gpointer  data,
 }
 
 static gchar **
-get_type_list_value (gpointer  data, 
+get_glob_list_value (gpointer  data, 
 		     gchar    *key)
 {
   GList *list;
+  Glob *glob;
   Type *type;
   gchar **result;
   gint i;
 
   list = (GList *)g_hash_table_lookup ((GHashTable *)data, key);
   
-  result = g_new0 (gchar *, 1 + 2 * g_list_length (list));
+  result = g_new0 (gchar *, 1 + 3 * g_list_length (list));
   
   i = 0;
   for (; list; list = list->next)
     {
-      type = (Type *)list->data;
+      glob = (Glob *)list->data;
+      type = glob->type;
 
-      result[i++] = g_strdup (key);
+      result[i++] = g_strdup (glob->pattern);
       result[i++] = g_strdup_printf ("%s/%s", type->media, type->subtype);
+      result[i++] = g_strdup_printf ("%d", glob->weight);
     }
   return result;
 }
@@ -1773,7 +1912,7 @@ write_alias_cache (FILE       *cache,
 		   GHashTable *strings,
 		   guint      *offset)
 {
-  return write_map (cache, strings, alias_hash, NULL, get_type_value, offset);
+  return write_map (cache, strings, alias_hash, NULL, get_type_value, FALSE, offset);
 }
 		   
 static void
@@ -1925,7 +2064,7 @@ write_literal_cache (FILE       *cache,
 		     guint      *offset)
 {
   return write_map (cache, strings, globs_hash, is_literal_glob, 
-		    get_type_list_value, offset); 
+		    get_glob_list_value, TRUE, offset); 
 }
 
 static gboolean
@@ -1934,7 +2073,7 @@ write_glob_cache (FILE       *cache,
 		  guint      *offset)
 {
   return write_map (cache, strings, globs_hash, is_full_glob, 
-		    get_type_list_value, offset); 
+		    get_glob_list_value, TRUE, offset); 
 }
 
 typedef struct _SuffixEntry SuffixEntry;
@@ -1943,6 +2082,7 @@ struct _SuffixEntry
 {
   gunichar character;
   gchar *mimetype;
+  gint weight;
   GList *children;
   guint size;
   guint depth;
@@ -1951,6 +2091,7 @@ struct _SuffixEntry
 static GList *
 insert_suffix (gunichar *suffix, 
 	       gchar    *mimetype,
+	       gint      weight, 
 	       GList    *suffixes)
 {
   GList *l;
@@ -2001,6 +2142,8 @@ insert_suffix (gunichar *suffix,
 		    break;
 		  if (strcmp (s2->mimetype, mimetype) == 0)
 		    {
+		      if (s2->weight < weight)
+			s2->weight = weight;
 		      found = TRUE;
 		      break;
 		    }
@@ -2010,6 +2153,7 @@ insert_suffix (gunichar *suffix,
 		  s2 = g_new0 (SuffixEntry, 1);
 		  s2->character = '\0';
 		  s2->mimetype = mimetype;
+		  s2->weight = weight;
 		  s2->children = NULL;
 		  
 		  s->children = g_list_prepend (s->children, s2);
@@ -2017,12 +2161,29 @@ insert_suffix (gunichar *suffix,
 	    }
 	}
       else
-	s->mimetype = mimetype;
+        {
+	  s->mimetype = mimetype;
+	  s->weight = weight;
+        }
     }
   else
-    s->children = insert_suffix (suffix + 1, mimetype, s->children);
+    s->children = insert_suffix (suffix + 1, mimetype, weight, s->children);
 
   return suffixes;
+}
+
+static void
+ucs4_reverse (gunichar *in, glong len)
+{
+  int i;
+  gunichar c;
+
+  for (i = 0; i < len - i - 1; i++)
+    {
+      c = in[i];
+      in[i] = in[len - i - 1];
+      in[len - i - 1] = c;
+    }
 }
 
 static void
@@ -2030,29 +2191,33 @@ build_suffixes (gpointer key,
 		gpointer value,
 		gpointer data)
 {
-  gchar *glob = (gchar *)key;
+  gchar *pattern = (gchar *)key;
   GList *list = (GList *)value;
   GList **suffixes = (GList **)data;
   gunichar *suffix;
   gchar *mimetype;
+  Glob *glob;
   Type *type;
+  glong len;
   
-  if (is_simple_glob (glob))
+  if (is_simple_glob (pattern))
     {
-      suffix = g_utf8_to_ucs4 (glob + 1, -1, NULL, NULL, NULL);
+      suffix = g_utf8_to_ucs4 (pattern + 1, -1, NULL, &len, NULL);
       
       if (suffix == NULL)
 	{
-	  g_warning ("Glob '%s' is not valid UTF-8\n", glob);
+	  g_warning ("Glob '%s' is not valid UTF-8\n", pattern);
 	  return;
 	}
 
+      ucs4_reverse (suffix, len);
       for ( ; list; list = list->next)
         {
-          type = (Type *)list->data;
+          glob = (Glob *)list->data;
+          type = glob->type;
           mimetype = g_strdup_printf ("%s/%s", type->media, type->subtype);
 
-          *suffixes = insert_suffix (suffix, mimetype, *suffixes);
+          *suffixes = insert_suffix (suffix, mimetype, glob->weight, *suffixes);
         }
 
       g_free (suffix);
@@ -2123,7 +2288,10 @@ write_suffix_entries (FILE        *cache,
   if (!write_card32 (cache, *child_offset))
     return FALSE;
 
-  *child_offset += 16 * g_list_length (entry->children);
+  if (!write_card32 (cache, entry->weight))
+    return FALSE;
+
+  *child_offset += 20 * g_list_length (entry->children);
 
   return TRUE;
 }
@@ -2145,7 +2313,7 @@ write_suffix_cache (FILE        *cache,
   n_entries = g_list_length (suffixes);
 
   *offset += 8;
-  child_offset = *offset + 16 * n_entries;
+  child_offset = *offset + 20 * n_entries;
   depth = 0;
   for (s = suffixes; s; s= s->next)
     {
@@ -2413,7 +2581,34 @@ write_namespace_cache (FILE       *cache,
 		       guint      *offset)
 {
   return write_map (cache, strings, namespace_hash, NULL, 
-		    get_namespace_value, offset); 
+		    get_namespace_value, FALSE, offset); 
+}
+
+static gchar **
+get_icon_value (gpointer  data, 
+                gchar    *key)
+{
+  gchar *iconname;
+  gchar **result;
+
+  iconname = (gchar *)g_hash_table_lookup ((GHashTable *)data, key);
+  
+  result = g_new0 (gchar *, 3);
+  result[0] = g_strdup (key);
+  result[1] = g_strdup (iconname);
+  result[2] = NULL;
+
+  return result;
+}
+
+static gboolean
+write_icons_cache (FILE       *cache,
+                   GHashTable *strings,
+                   GHashTable *icon_hash,
+                   guint      *offset)
+{
+  return write_map (cache, strings, icon_hash, NULL, 
+                    get_icon_value, FALSE, offset); 
 }
 
 static void
@@ -2450,25 +2645,26 @@ collect_glob (gpointer key,
 	      gpointer value,
 	      gpointer data)
 {
-  gchar *glob = (gchar *)key;
   GList *list = (GList *)value;
   GHashTable *strings = (GHashTable *)data;
   gchar *mimetype;
+  Glob *glob;
   Type *type;
 
-  switch (glob_type (glob))
+  switch (glob_type ((char *)key))
     {
       case GLOB_LITERAL:
       case GLOB_FULL:
-        g_hash_table_insert (strings, glob, NULL);
+        g_hash_table_insert (strings, key, NULL);
         break;
      default:
         break;
    }
 
-  for (; list; list = list->next) 
-    {	  
-      type = (Type *)list->data;
+  for (; list; list = list->next)
+    {
+      glob = (Glob *)list->data;
+      type = glob->type;
       mimetype = g_strdup_printf ("%s/%s", type->media, type->subtype);
 
      g_hash_table_insert (strings, mimetype, NULL);
@@ -2514,6 +2710,19 @@ collect_namespace (gpointer key,
     g_hash_table_insert (strings, ns, NULL);
 }
 
+static void 
+collect_icons(gpointer key, 
+              gpointer value, 
+              gpointer data)
+{
+  gchar *mimetype = (gchar *)key;
+  gchar *iconname = (gchar *)value;
+  GHashTable *strings = (GHashTable *)data;
+
+  g_hash_table_insert (strings, mimetype, NULL);
+  g_hash_table_insert (strings, iconname, NULL);
+}
+
 
 static void
 collect_strings (GHashTable *strings)
@@ -2523,6 +2732,8 @@ collect_strings (GHashTable *strings)
   g_hash_table_foreach (globs_hash, collect_glob, strings); 
   g_ptr_array_foreach (magic_array, collect_magic, strings); 
   g_hash_table_foreach (namespace_hash, collect_namespace, strings); 
+  g_hash_table_foreach (generic_icon_hash, collect_icons, strings); 
+  g_hash_table_foreach (icon_hash, collect_icons, strings); 
 }
 
 typedef struct 
@@ -2579,11 +2790,13 @@ write_cache (FILE *cache)
   guint glob_offset;
   guint magic_offset;
   guint namespace_offset;
+  guint icons_list_offset;
+  guint generic_icons_list_offset;
   guint offset;
   GHashTable *strings;
 
   offset = 0;
-  if (!write_header (cache, 0, 0, 0, 0, 0, 0, 0, &offset))
+  if (!write_header (cache, 0, 0, 0, 0, 0, 0, 0, 0, 0, &offset))
     {
       g_warning ("Failed to write header\n");
       return FALSE;
@@ -2655,7 +2868,23 @@ write_cache (FILE *cache)
       g_warning ("Failed to write namespace list\n");
       return FALSE;
     }
-  g_debug ("Wrote namespace list at %x - %x\n", namespace_offset, offset);
+  g_message ("Wrote namespace list at %x - %x\n", namespace_offset, offset);
+
+  icons_list_offset = offset;
+  if (!write_icons_cache (cache, strings, icon_hash, &offset))
+    {
+      g_warning ("Failed to write icons list\n");
+      return FALSE;
+    }
+  g_message ("Wrote icons list at %x - %x\n", icons_list_offset, offset);
+
+  generic_icons_list_offset = offset;
+  if (!write_icons_cache (cache, strings, generic_icon_hash, &offset))
+    {
+      g_warning ("Failed to write generic icons list\n");
+      return FALSE;
+    }
+  g_message ("Wrote generic icons list at %x - %x\n", generic_icons_list_offset, offset);
 
   rewind (cache);
   offset = 0; 
@@ -2663,7 +2892,8 @@ write_cache (FILE *cache)
   if (!write_header (cache, 
 		     alias_offset, parent_offset, literal_offset,
 		     suffix_offset, glob_offset, magic_offset, 
-		     namespace_offset, &offset))
+		     namespace_offset, icons_list_offset,
+		     generic_icons_list_offset, &offset))
     {
       g_warning ("Failed to rewrite header\n");
       return FALSE;
@@ -2771,7 +3001,11 @@ int main(int argc, char **argv)
 					      g_free, free_string_list);
 	alias_hash = g_hash_table_new_full(g_str_hash, g_str_equal,
 					   g_free, NULL);
-	
+	icon_hash = g_hash_table_new_full(g_str_hash, g_str_equal,
+					  g_free, NULL);
+	generic_icon_hash = g_hash_table_new_full(g_str_hash, g_str_equal,
+						  g_free, NULL);
+
 	scan_source_dir(package_dir);
 	g_free(package_dir);
 
@@ -2782,16 +3016,31 @@ int main(int argc, char **argv)
 	{
 		FILE *globs;
 		char *globs_path;
+		GList *glob_list = NULL;
+
+		g_hash_table_foreach(globs_hash, collect_glob2, &glob_list);
+		glob_list = g_list_sort(glob_list, (GCompareFunc)compare_by_weight);
 		globs_path = g_strconcat(mime_dir, "/globs.new", NULL);
 		globs = open_or_die(globs_path);
 		g_fprintf(globs,
 			  "# This file was automatically generated by the\n"
 			  "# update-mime-database command. DO NOT EDIT!\n");
-		g_hash_table_foreach(globs_hash, write_out_glob, globs);
+		write_out_glob(glob_list, globs);
 		fclose(globs);
-
 		atomic_update(globs_path);
 		g_free(globs_path);
+
+		globs_path = g_strconcat(mime_dir, "/globs2.new", NULL);
+		globs = open_or_die(globs_path);
+		g_fprintf(globs,
+			  "# This file was automatically generated by the\n"
+			  "# update-mime-database command. DO NOT EDIT!\n");
+		write_out_glob2 (glob_list, globs);
+		fclose(globs);
+		atomic_update(globs_path);
+		g_free(globs_path);
+
+		g_list_free (glob_list);
 	}
 
 	{
@@ -2857,6 +3106,32 @@ int main(int argc, char **argv)
 
 	{
 		FILE *stream;
+		char *icon_path;
+
+		icon_path = g_strconcat(mime_dir, "/generic-icons.new", NULL);
+		stream = open_or_die(icon_path);
+		write_icons(generic_icon_hash, stream);
+		fclose(stream);
+
+		atomic_update(icon_path);
+		g_free(icon_path);
+	}
+
+	{
+		FILE *stream;
+		char *icon_path;
+
+		icon_path = g_strconcat(mime_dir, "/icons.new", NULL);
+		stream = open_or_die(icon_path);
+		write_icons(icon_hash, stream);
+		fclose(stream);
+
+		atomic_update(icon_path);
+		g_free(icon_path);
+	}
+
+	{
+		FILE *stream;
 		char *path;
 		
 		path = g_strconcat(mime_dir, "/mime.cache.new", NULL);
@@ -2876,6 +3151,8 @@ int main(int argc, char **argv)
 	g_hash_table_destroy(namespace_hash);
 	g_hash_table_destroy(subclass_hash);
 	g_hash_table_destroy(alias_hash);
+	g_hash_table_destroy(icon_hash);
+	g_hash_table_destroy(generic_icon_hash);
 
 	check_in_path_xdg_data(mime_dir);
 

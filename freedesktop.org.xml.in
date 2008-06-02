@@ -1612,9 +1612,7 @@ command to generate the output files.
     <_comment>Pack200 Java archive</_comment>
     <generic-icon name="package-x-generic"/>
     <magic priority="50">
-      <match type="host16" value="0xcafe" offset="0">
-        <match type="host16" value="0xd00d" offset="2"/>
-      </match>
+      <match type="big32" value="0xcafed00d" offset="0"/>
     </magic>
     <glob pattern="*.pack"/>
   </mime-type>
@@ -4121,12 +4119,6 @@ command to generate the output files.
     </magic>
     <glob pattern="*.html"/>
     <glob pattern="*.htm"/>
-  </mime-type>
-  <mime-type type="text/x-gtkrc">
-    <_comment>GTK+ configuration</_comment>
-    <sub-class-of type="text/plain"/>
-    <glob pattern="gtkrc"/>
-    <glob pattern=".gtkrc"/>
   </mime-type>
   <mime-type type="text/x-google-video-pointer">
     <_comment>Google Video Pointer</_comment>

@@ -1,5 +1,16 @@
 2008-06-02  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Fix pack200 magic, remove useless gtkrc
+	mime-type (doesn't match gtk+ 2.0 config files, and no need for
+	mime-types for dot files)
+
+	* Makefile.am: When the test suite fails, relaunch it with more
+	verbose so we can fix the error
+
+	* tests/list: MicroDVD subs can now be matched
+
+2008-06-02  Bastien Nocera  <hadess@hadess.net>
+
 	* shared-mime-info-spec.xml:
 	Patch from Matthias Clasen <mclasen@redhat.com> to update the spec
 	to match the current implementation

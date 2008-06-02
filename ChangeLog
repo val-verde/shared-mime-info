@@ -5,6 +5,19 @@
 	(write_out_glob2), (collect_glob2), (compare_by_weight),
 	(write_map_entry), (write_map), (get_glob_list_value),
 	(write_alias_cache), (write_literal_cache), (write_glob_cache),
+	(insert_suffix), (ucs4_reverse), (build_suffixes),
+	(write_suffix_entries), (write_suffix_cache),
+	(write_namespace_cache), (collect_glob), (write_cache), (main):
+	Patch from Matthias Clasen <mclasen@redhat.com> to implement 
+	reverted suffix trees
+
+2008-06-02  Bastien Nocera  <hadess@hadess.net>
+
+	* update-mime-database.c (get_int_attribute), (get_priority),
+	(get_weight), (process_freedesktop_node), (write_out_glob),
+	(write_out_glob2), (collect_glob2), (compare_by_weight),
+	(write_map_entry), (write_map), (get_glob_list_value),
+	(write_alias_cache), (write_literal_cache), (write_glob_cache),
 	(insert_suffix), (build_suffixes), (write_suffix_entries),
 	(write_suffix_cache), (write_namespace_cache), (collect_glob),
 	(write_cache), (main): Patch from Matthias Clasen <mclasen@redhat.com>

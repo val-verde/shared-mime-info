@@ -55,6 +55,10 @@ Before release, an updated shared-mime-info.pot is sent to
 <coordinator@translationproject.org> so the translators have a chance
 of updating the translations before release.
 
+The mail should be in form:
+Subject: shared-mime-info-version.pot
+Body: URL to shared-mime-info tarball
+
 Updated .po files are sent to <shared-mime-info-maint@freedesktop.org>
 
 To pull translations from the Translation Project website, use:

@@ -4080,8 +4080,9 @@ command to generate the output files.
   <mime-type type="text/x-fortran">
     <_comment>Fortran source code</_comment>
     <sub-class-of type="text/plain"/>
-    <glob pattern="*.[fF]"/>
-    <glob pattern="*.[fF]9[05]"/>
+    <glob pattern="*.f"/>
+    <glob pattern="*.f90"/>
+    <glob pattern="*.f95"/>
     <glob pattern="*.for"/>
   </mime-type>
   <mime-type type="text/x-gettext-translation">
@@ -4184,7 +4185,8 @@ command to generate the output files.
   <mime-type type="text/x-makefile">
     <_comment>Makefile</_comment>
     <sub-class-of type="text/plain"/>
-    <glob pattern="[Mm]akefile"/>
+    <glob pattern="Makefile"/>
+    <glob pattern="makefile"/>
     <glob pattern="GNUmakefile"/>
     <magic priority="50">
       <match type="string" value="#!/usr/bin/make" offset="0"/>

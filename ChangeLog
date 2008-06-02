@@ -1,5 +1,11 @@
 2008-06-02  Bastien Nocera  <hadess@hadess.net>
 
+	* shared-mime-info-spec.xml:
+	Patch from Matthias Clasen <mclasen@redhat.com> to update the spec
+	to match the current implementation
+
+2008-06-02  Bastien Nocera  <hadess@hadess.net>
+
 	* update-mime-database.c:
 	Patch from Matthias Clasen <mclasen@redhat.com> to update cache
 	version to 1.1 after the recent changes

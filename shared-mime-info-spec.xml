@@ -617,7 +617,7 @@ Parents:
 
 LiteralList:
 4			CARD32		N_LITERALS
-8*N_LITERALS		LiteralEntry	
+12*N_LITERALS		LiteralEntry	
 
 LiteralEntry:
 4			CARD32		LITERAL_OFFSET
@@ -626,7 +626,7 @@ LiteralEntry:
 
 GlobList:
 4			CARD32		N_GLOBS
-8*N_GLOBS		GlobEntry	
+12*N_GLOBS		GlobEntry	
 
 GlobEntry:
 4			CARD32		GLOB_OFFSET

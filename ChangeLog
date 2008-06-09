@@ -1,3 +1,11 @@
+2008-06-09  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Add weight to the DTD (patch by Matthias)
+	* shared-mime-info-spec.xml:
+	* update-mime-database.c (insert_suffix), (write_suffix_entries),
+	(write_suffix_cache): 	Patch by Matthias Clasen
+	<mclasen@redhat.com> to implement the compact suffix tree
+
 2008-06-02  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Fix pack200 magic, remove useless gtkrc

@@ -639,9 +639,12 @@ ReverseSuffixTree:
 
 ReverseSuffixTreeNode:
 4			CARD32		CHARACTER
-4			CARD32		MIME_TYPE_OFFSET
 4			CARD32		N_CHILDREN			
 4			CARD32		FIRST_CHILD_OFFSET
+
+ReverseSuffixTreeLeafNode:
+4			CARD32		0 
+4			CARD32		MIME_TYPE_OFFSET
 4			CARD32		WEIGHT
 
 MagicList:
@@ -691,8 +694,9 @@ The list of namespaces is sorted by namespace uri. The list of icons
 is sorted by mimetype.
 </para>
 <para>
-Identical globs are stored in the suffix tree by appending suffix
-tree nodes with '\0' as character.
+Mimetypes are stored in the suffix tree by appending suffix
+tree leaf nodes with '\0' as character. These nodes appear at the
+beginning of the list of children.
 </para>
 <para>
 All offsets are in bytes from the beginning of the file.

@@ -2127,45 +2127,33 @@ insert_suffix (gunichar *suffix,
 
   if (suffix[1] == 0)
     {
-      if (s->mimetype != NULL)
-	{
-	  if (strcmp (s->mimetype, mimetype) != 0)
-	    {
-	      GList *l2;
-	      SuffixEntry *s2;
-	      gboolean found = FALSE;
+      GList *l2;
+      SuffixEntry *s2;
+      gboolean found = FALSE;
 
-	      for (l2 = s->children; l2; l2 = l2->next)
-		{
-		  s2 = (SuffixEntry *)l2->data;
-		  if (s2->character != '\0')
-		    break;
-		  if (strcmp (s2->mimetype, mimetype) == 0)
-		    {
-		      if (s2->weight < weight)
-			s2->weight = weight;
-		      found = TRUE;
-		      break;
-		    }
-		}
-	      if (!found)
-		{
-		  s2 = g_new0 (SuffixEntry, 1);
-		  s2->character = '\0';
-		  s2->mimetype = mimetype;
-		  s2->weight = weight;
-		  s2->children = NULL;
-		  
-		  s->children = g_list_prepend (s->children, s2);
-		}
+      for (l2 = s->children; l2; l2 = l2->next)
+	{
+	  s2 = (SuffixEntry *)l2->data;
+	  if (s2->character != 0)
+	    break;
+	  if (strcmp (s2->mimetype, mimetype) == 0)
+	    {
+	      if (s2->weight < weight)
+		s2->weight = weight;
+	      found = TRUE;
+	      break;
 	    }
 	}
-      else
-        {
-	  s->mimetype = mimetype;
-	  s->weight = weight;
-        }
-    }
+      if (!found)
+	{
+	  s2 = g_new0 (SuffixEntry, 1);
+	  s2->character = 0;
+	  s2->mimetype = mimetype;
+	  s2->weight = weight;
+	  s2->children = NULL;
+	  s->children = g_list_insert_before (s->children, l2, s2);
+	}
+    } 
   else
     s->children = insert_suffix (suffix + 1, mimetype, weight, s->children);
 
@@ -2265,8 +2253,6 @@ write_suffix_entries (FILE        *cache,
       return !error;
     }
     
-  write_card32 (cache, entry->character);
-
   if (entry->mimetype)
     {
       offset = GPOINTER_TO_UINT(g_hash_table_lookup (strings, entry->mimetype));
@@ -2279,19 +2265,30 @@ write_suffix_entries (FILE        *cache,
   else
     offset = 0;
 
-  if (!write_card32 (cache, offset))
-    return FALSE;
-  
-  if (!write_card32 (cache, g_list_length (entry->children)))
-    return FALSE;
-  
-  if (!write_card32 (cache, *child_offset))
-    return FALSE;
+  if (entry->character == 0)
+    {
+      if (!write_card32 (cache, entry->character))
+        return FALSE;
 
-  if (!write_card32 (cache, entry->weight))
-    return FALSE;
+      if (!write_card32 (cache, offset))
+        return FALSE;
 
-  *child_offset += 20 * g_list_length (entry->children);
+      if (!write_card32 (cache, entry->weight))
+        return FALSE;
+    }
+  else
+    {
+      if (!write_card32 (cache, entry->character))
+        return FALSE;
+
+      if (!write_card32 (cache, g_list_length (entry->children)))
+        return FALSE;
+  
+      if (!write_card32 (cache, *child_offset))
+        return FALSE;
+    }
+
+  *child_offset += 12 * g_list_length (entry->children);
 
   return TRUE;
 }
@@ -2313,7 +2310,7 @@ write_suffix_cache (FILE        *cache,
   n_entries = g_list_length (suffixes);
 
   *offset += 8;
-  child_offset = *offset + 20 * n_entries;
+  child_offset = *offset + 12 * n_entries;
   depth = 0;
   for (s = suffixes; s; s= s->next)
     {

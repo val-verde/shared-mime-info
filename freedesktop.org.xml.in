@@ -25,6 +25,7 @@
 
   <!ELEMENT glob EMPTY>
   <!ATTLIST glob pattern CDATA #REQUIRED>
+  <!ATTLIST glob weight CDATA #IMPLIED>
 
   <!ELEMENT magic (match)+>
   <!ATTLIST magic priority CDATA #IMPLIED>

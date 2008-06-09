@@ -1,5 +1,10 @@
 2008-06-09  Bastien Nocera  <hadess@hadess.net>
 
+	* shared-mime-info-spec.xml: Update version to 0.17, as we added the
+	compact tree suffix
+
+2008-06-09  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add weight to the DTD (patch by Matthias)
 	* shared-mime-info-spec.xml:
 	* update-mime-database.c (insert_suffix), (write_suffix_entries),

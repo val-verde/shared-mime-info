@@ -1,5 +1,14 @@
 2008-06-11  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Wilbert Berendsen
+	<wbsoft@xs4all.nl> to add a mime-type for Lilypond music sheets
+	(Closes: #13883)
+	* tests/list:
+	* tests/petite-ouverture-a-danser.ly: Add a test file for the
+	text/x-lilypond mime-type
+
+2008-06-11  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Tighten the magic for PBM,
 	PPM and PGM types, so as to avoid false positives
 	(Closes: #2359)

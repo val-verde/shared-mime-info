@@ -4206,6 +4206,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ldif"/>
   </mime-type>
+  <mime-type type="text/x-lilypond">
+    <_comment>Lilypond music sheet</_comment>
+    <glob pattern="*.ly"/>
+    <sub-class-of type="text/plain"/>
+  </mime-type>
   <mime-type type="text/x-literate-haskell">
     <_comment>LHS source code</_comment>
     <acronym>LHS</acronym>

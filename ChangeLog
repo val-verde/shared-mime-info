@@ -1,5 +1,9 @@
 2008-06-11  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Fix build
+
+2008-06-11  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Josselin Mouette
 	<joss@debian.org> to avoid problems when detecting Matroska
 	files by data, create a new application/x-matroska mime-type,

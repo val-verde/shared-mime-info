@@ -240,7 +240,6 @@ command to generate the output files.
   <mime-type type="application/rtf">
     <_comment>RTF document</_comment>
     <acronym>RTF</acronym>
-    <alias type="text/rtf"/>
     <expanded-acronym>Rich Text Format</expanded-acronym>
     <sub-class-of type="text/plain"/>
     <generic-icon name="x-office-document"/>
@@ -248,6 +247,7 @@ command to generate the output files.
       <match type="string" value="{\\rtf" offset="0"/>
     </magic>
     <glob pattern="*.rtf"/>
+    <alias type="text/rtf"/>
   </mime-type>
   <mime-type type="application/sieve">
     <_comment>Sieve mail filter script</_comment>

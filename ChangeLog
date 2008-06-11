@@ -1,5 +1,9 @@
 2008-06-11  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Fix make check
+
+2008-06-11  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Sebastian Dröge
 	<slomo@circular-chaos.org> to add *.m3u8 as a glob for m3u files
 	(Closes: #16143)

@@ -1,5 +1,17 @@
 2008-06-11  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add "Subject: " as a match
+	for message/rfc822 mime-types
+
+	* tests/evo.msg: Remove, it was unused
+
+	* tests/list:
+	* tests/evolution.eml:
+	* tests/tb-from-sentbox.eml:
+	* tests/tb-saved.eml: Add some message test cases
+
+2008-06-11  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add the OXT mimetype, for
 	OpenOffice extensions
 	* tests/Anaphraseus-1.21-beta.oxt:

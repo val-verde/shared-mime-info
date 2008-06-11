@@ -106,6 +106,10 @@ test.iptables text/x-iptables
 test-vpn.pcf application/x-cisco-vpn-settings x
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=16228
 test.php application/x-php
+# The 3 below copied from https://bugs.freedesktop.org/show_bug.cgi?id=15810
+evolution.eml application/mbox x
+tb-from-sentbox.eml message/rfc822 x
+tb-saved.eml message/rfc822 x
 
 # xml subtypes
 test.ttx application/x-font-ttx

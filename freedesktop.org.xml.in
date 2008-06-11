@@ -3548,8 +3548,16 @@ command to generate the output files.
     <expanded-acronym>Portable BitMap</expanded-acronym>
     <sub-class-of type="image/x-portable-anymap"/>
     <magic priority="50">
-      <match type="string" value="P1" offset="0"/>
-      <match type="string" value="P4" offset="0"/>
+      <match type="string" value="P1" offset="0">
+        <match type="byte" value="0x0a" offset="2">
+	  <match type="string" value="#" offset="3"/>
+        </match>
+      </match>
+      <match type="string" value="P4" offset="0">
+        <match type="byte" value="0x0a" offset="2">
+	  <match type="string" value="#" offset="3"/>
+        </match>
+      </match>
     </magic>
     <glob pattern="*.pbm"/>
   </mime-type>
@@ -3559,8 +3567,16 @@ command to generate the output files.
     <expanded-acronym>Portable GrayMap</expanded-acronym>
     <sub-class-of type="image/x-portable-anymap"/>
     <magic priority="50">
-      <match type="string" value="P2" offset="0"/>
-      <match type="string" value="P5" offset="0"/>
+      <match type="string" value="P2" offset="0">
+        <match type="byte" value="0x0a" offset="2">
+	  <match type="string" value="#" offset="3"/>
+        </match>
+      </match>
+      <match type="string" value="P5" offset="0">
+        <match type="byte" value="0x0a" offset="2">
+	  <match type="string" value="#" offset="3"/>
+        </match>
+      </match>
     </magic>
     <glob pattern="*.pgm"/>
   </mime-type>
@@ -3570,8 +3586,16 @@ command to generate the output files.
     <expanded-acronym>Portable PixMap</expanded-acronym>
     <sub-class-of type="image/x-portable-anymap"/>
     <magic priority="50">
-      <match type="string" value="P3" offset="0"/>
-      <match type="string" value="P6" offset="0"/>
+      <match type="string" value="P3" offset="0">
+        <match type="byte" value="0x0a" offset="2">
+	  <match type="string" value="#" offset="3"/>
+        </match>
+      </match>
+      <match type="string" value="P6" offset="0">
+        <match type="byte" value="0x0a" offset="2">
+	  <match type="string" value="#" offset="3"/>
+	</match>
+      </match>
     </magic>
     <glob pattern="*.ppm"/>
   </mime-type>

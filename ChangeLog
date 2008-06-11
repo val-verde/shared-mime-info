@@ -1,5 +1,13 @@
 2008-06-11  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Josselin Mouette
+	<joss@debian.org> to avoid problems when detecting Matroska
+	files by data, create a new application/x-matroska mime-type,
+	and make video/x-matroska and audio/x-matroska subclasses of it
+	(Closes: #16144)
+
+2008-06-11  Bastien Nocera  <hadess@hadess.net>
+
 	* tests/list:
 	* tests/test.php: Add a test case for PHP files, from
 	https://bugs.freedesktop.org/show_bug.cgi?id=16228

@@ -1902,20 +1902,21 @@ command to generate the output files.
       <match type="string" value="mBIN" offset="102"/>
     </magic>
   </mime-type>
-  <mime-type type="video/x-matroska">
-    <_comment>Matroska video</_comment>
+  <mime-type type="application/x-matroska"/>
+    <_comment>Matroska stream</_comment>
     <magic priority="50">
       <match type="string" value="matroska" offset="8"/>
     </magic>
+  </mime-type>
+  <mime-type type="video/x-matroska">
+    <_comment>Matroska video</_comment>
     <glob pattern="*.mkv"/>
-    <alias type="application/x-matroska"/>
+    <sub-class-of type="application/x-matroska"/>
   </mime-type>
   <mime-type type="audio/x-matroska">
     <_comment>Matroska audio</_comment>
-    <magic priority="50">
-      <match type="string" value="matroska" offset="8"/>
-    </magic>
     <glob pattern="*.mka"/>
+    <sub-class-of type="application/x-matroska"/>
   </mime-type>
   <mime-type type="text/x-ocl">
     <_comment>OCL file</_comment>

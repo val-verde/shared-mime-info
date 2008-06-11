@@ -1,5 +1,12 @@
 2008-06-11  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/hereyes_remake.mo3:
+	* tests/list: Add a mime-type for the MO3 tracker file type,
+	along with a test file (Closes: #16291)
+
+2008-06-11  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Wilbert Berendsen
 	<wbsoft@xs4all.nl> to add a mime-type for Lilypond music sheets
 	(Closes: #13883)

@@ -861,6 +861,12 @@ command to generate the output files.
     </magic>
     <glob pattern="*.odi"/>
   </mime-type>
+  <mime-type type="application/vnd.openofficeorg.extension">
+    <_comment>OpenOffice.org extension</_comment>
+    <sub-class-of type="application/zip"/>
+    <generic-icon name="x-office-document"/>
+    <glob pattern="*.oxt" />
+  </mime-type>
   <mime-type type="application/vnd.symbian.install">
     <_comment>SIS package</_comment>
     <acronym>SIS</acronym>

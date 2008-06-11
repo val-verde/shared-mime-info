@@ -1,5 +1,13 @@
 2008-06-11  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add the OXT mimetype, for
+	OpenOffice extensions
+	* tests/Anaphraseus-1.21-beta.oxt:
+	* tests/list: Add test file
+	(Closes: #15110)
+
+2008-06-11  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Make text/x-readme have a weight
 	of 10 (very low) so README.pdf doesn't get matched with
 	text/x-readme

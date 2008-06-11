@@ -2371,6 +2371,14 @@ command to generate the output files.
     <generic-icon name="x-office-spreadsheet"/>
     <glob pattern="*.siag"/>
   </mime-type>
+  <mime-type type="image/x-skencil">
+    <_comment>Skencil document</_comment>
+    <glob pattern="*.sk"/>
+    <glob pattern="*.sk1"/>
+    <magic priority="50">
+      <match type="string" value="##Sketch" offset="0"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/x-slp">
     <_comment>Stampede package</_comment>
     <generic-icon name="package-x-generic"/>

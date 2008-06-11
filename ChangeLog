@@ -1,5 +1,11 @@
 2008-06-11  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Make text/x-readme have a weight
+	of 10 (very low) so README.pdf doesn't get matched with
+	text/x-readme
+
+2008-06-11  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in:
 	* tests/bathead.sk:
 	* tests/list: Add image/x-skencil mime-type for Skencil

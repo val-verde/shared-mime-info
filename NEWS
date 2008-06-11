@@ -1,3 +1,28 @@
+shared-mime-info 0.40 (2008-06-11)
+* Mime-type Changes:
+- Add Skencil image
+- Add OpenOffice extension
+- Add Lilypond music sheets
+- Add MO3 compressed tracker files
+- Add text/x-diff alias for patches
+- Add text/x-c alias for C source files
+- Add text/rtf for RTF files
+- Add *.m3u8 glob for M3U files
+- Fix problems with Matroska audio/video detection
+- Fix pack200 magic
+- Fix detection of some message/rfc822 files
+- Tighten PBM/PPM/PGM magic to avoid false positives
+- Make "README*" glob very low
+- Make application/x-gnuplot a subclass of text/plain
+- Remove useless fnmatch matches
+- Remove useless gtkrc mime-type
+
+* update-mime-database Changes:
+- Implement glob weights
+- Implement reverse suffix tree
+- Implement icon and generic-icon support
+- Implement compact suffix tree
+
 shared-mime-info 0.30 (2008-05-12)
 * Mime-type Changes:
 - Add LZMA archive

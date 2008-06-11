@@ -53,8 +53,12 @@ uninstall-hook:
 	rm -f "$(DESTDIR)$(datadir)/mime/aliases"
 	rm -f "$(DESTDIR)$(datadir)/mime/subclasses"
 	rm -f "$(DESTDIR)$(datadir)/mime/XMLnamespaces"
-	rm -f "$(DESTDIR)$(datadir)/mime/mime-cache"
+	rm -f "$(DESTDIR)$(datadir)/mime/mime.cache"
 	rm -f "$(DESTDIR)$(datadir)/mime/XMLnamespaces"
+	rm -f "$(DESTDIR)$(datadir)/mime/mime.cache"
+	rm -f "$(DESTDIR)$(datadir)/mime/icons"
+	rm -f "$(DESTDIR)$(datadir)/mime/generic-icons"
+	rm -f "$(DESTDIR)$(datadir)/mime/globs2"
 
 all: check
 

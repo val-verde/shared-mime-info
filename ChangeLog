@@ -1,5 +1,13 @@
 2008-06-19  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add magic from gdk-pixbuf for
+	ICO and CUR files, spotted by Matthias Clasen <mclasen@redhat.com>
+	(Closes: #16413)
+	* tests/aero_alt.cur:
+	* tests/list: Add a test windows cursor file
+
+2008-06-19  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Better magic for GIF files,
 	from gdk-pixbuf, spotted by Matthias Clasen <mclasen@redhat.com>
 	(Closes: #16411)

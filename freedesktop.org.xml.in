@@ -3479,6 +3479,11 @@ command to generate the output files.
     <_comment>ICO icon</_comment>
     <acronym>ICO</acronym>
     <expanded-acronym>Windows Icon</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="\0\0\1\0" offset="0">
+        <match type="string" value="\0" offset="5"/>
+      </match>
+    </magic>
     <glob pattern="*.ico"/>
   </mime-type>
   <mime-type type="image/x-icns">
@@ -3645,6 +3650,11 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/x-win-bitmap">
     <_comment>Windows cursor</_comment>
+    <magic priority="50">
+      <match type="string" value="\0\0\2\0" offset="0">
+        <match type="string" value="\0" offset="5"/>
+      </match>
+    </magic>
     <glob pattern="*.cur"/>
   </mime-type>
   <mime-type type="application/x-navi-animation">

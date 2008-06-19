@@ -1,5 +1,12 @@
 2008-06-19  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add low-priority magic for TGA files,
+	from gdk-pixbuf, spotted by Matthias Clasen <mclasen@redhat.com>
+	(Closes: #16414)
+	* tests/list: Also check TGA files by magic
+
+2008-06-19  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add magic from gdk-pixbuf for
 	ICO and CUR files, spotted by Matthias Clasen <mclasen@redhat.com>
 	(Closes: #16413)

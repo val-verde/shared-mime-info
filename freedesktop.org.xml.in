@@ -3645,6 +3645,15 @@ command to generate the output files.
     <_comment>Windows cursor</_comment>
     <glob pattern="*.cur"/>
   </mime-type>
+  <mime-type type="application/x-navi-animation">
+    <_comment>Windows animated cursor</_comment>
+    <magic priority="50">
+      <match type="string" value="RIFF" offset="0">
+        <match type="string" value="ACON" offset="8"/>
+      </match>
+    </magic>
+    <glob pattern="*.ani"/>
+  </mime-type>
   <mime-type type="image/x-emf">
     <_comment>EMF image</_comment>
     <acronym>EMF</acronym>

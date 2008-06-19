@@ -3052,6 +3052,8 @@ command to generate the output files.
       </match>
     </magic>
     <glob pattern="*.bmp"/>
+    <alias type="image/x-bmp"/>
+    <alias type="image/x-MS-bmp"/>
   </mime-type>
   <mime-type type="image/vnd.wap.wbmp">
     <_comment>WBMP image</_comment>

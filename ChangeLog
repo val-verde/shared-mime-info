@@ -1,5 +1,11 @@
 2008-06-19  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add some aliases for BMP images,
+	spotted by Matthias Clasen <mclasen@redhat.com>
+	(Closes: #16410)
+
+2008-06-19  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add Windows animated cursor
 	from the gdk-pixbuf loader magic (Closes: #16409)
 	* tests/jc-win.ani:

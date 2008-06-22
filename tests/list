@@ -117,6 +117,8 @@ test.php application/x-php
 evolution.eml application/mbox x
 tb-from-sentbox.eml message/rfc822 x
 tb-saved.eml message/rfc822 x
+# Copied from http://www.cyanwerks.com/file-format-url.html
+test.url application/x-mswinurl xox
 
 # xml subtypes
 test.ttx application/x-font-ttx

@@ -66,6 +66,12 @@ typedef struct _Magic Magic;
 /* A parsed <match> element */
 typedef struct _Match Match;
 
+/* A parsed <treemagic> element */
+typedef struct _TreeMagic TreeMagic;
+
+/* A parsed <treematch> element */
+typedef struct _TreeMatch TreeMatch;
+
 /* A parsed <glob> element */
 typedef struct _Glob Glob;
 
@@ -102,6 +108,23 @@ struct _Match {
 	GList *matches;
 };
 
+struct _TreeMagic {
+	int priority;
+	Type *type;
+	GList *matches;
+};
+
+struct _TreeMatch {
+	char *path;
+	gboolean match_case;
+	gboolean executable;
+	gboolean non_empty;
+	gint type;
+	char *mimetype;
+
+	GList *matches;
+};
+
 /* Maps MIME type names to Types */
 static GHashTable *types = NULL;
 
@@ -113,6 +136,9 @@ static GHashTable *globs_hash = NULL;
 
 /* 'magic' nodes */
 static GPtrArray *magic_array = NULL;
+
+/* 'treemagic' nodes */
+static GPtrArray *tree_magic_array = NULL;
 
 /* Maps MIME type names to superclass names */
 static GHashTable *subclass_hash = NULL;
@@ -131,6 +157,8 @@ static GLogLevelFlags enabled_log_levels = G_LOG_LEVEL_ERROR | G_LOG_LEVEL_CRITI
 
 /* Static prototypes */
 static Magic *magic_new(xmlNode *node, Type *type, GError **error);
+
+static TreeMagic *tree_magic_new(xmlNode *node, Type *type, GError **error);
 
 static void g_log_handler (const gchar   *log_domain,
 			   GLogLevelFlags log_level,
@@ -368,6 +396,20 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 		{
 			g_return_val_if_fail(magic != NULL, FALSE);
 			g_ptr_array_add(magic_array, magic);
+		}
+		else
+			g_return_val_if_fail(magic == NULL, FALSE);
+	}
+	else if (strcmp((char *)field->name, "treemagic") == 0)
+	{
+		TreeMagic *magic;
+
+		magic = tree_magic_new(field, type, error);
+
+		if (!*error)
+		{
+			g_return_val_if_fail(magic != NULL, FALSE);
+			g_ptr_array_add(tree_magic_array, magic);
 		}
 		else
 			g_return_val_if_fail(magic == NULL, FALSE);
@@ -843,6 +885,25 @@ static gint cmp_magic(gconstpointer a, gconstpointer b)
 {
 	Magic *aa = *(Magic **) a;
 	Magic *bb = *(Magic **) b;
+	int retval;
+
+	if (aa->priority > bb->priority)
+		return -1;
+	else if (aa->priority < bb->priority)
+		return 1;
+
+	retval = strcmp(aa->type->media, bb->type->media);
+	if (!retval)
+		retval = strcmp(aa->type->subtype, bb->type->subtype);
+
+	return retval;
+}
+
+/* Comparison function to get the tree magic rules in priority order */
+static gint cmp_tree_magic(gconstpointer a, gconstpointer b)
+{
+	TreeMagic *aa = *(TreeMagic **) a;
+	TreeMagic *bb = *(TreeMagic **) b;
 	int retval;
 
 	if (aa->priority > bb->priority)
@@ -1398,6 +1459,222 @@ static Magic *magic_new(xmlNode *node, Type *type, GError **error)
 	return magic;
 }
 
+static TreeMatch *tree_match_new(void)
+{
+	TreeMatch *match;
+
+	match = g_new(TreeMatch, 1);
+	match->path = NULL;
+	match->match_case = 0;
+	match->executable = 0;
+	match->non_empty = 0;
+	match->type = 0;
+	match->mimetype = NULL;
+	match->matches = NULL;
+
+	return match;
+}
+
+static void tree_match_free(TreeMatch *match)
+{
+	GList *next;
+
+	g_return_if_fail(match != NULL);
+
+	for (next = match->matches; next; next = next->next)
+		tree_match_free((TreeMatch *) next->data);
+
+	g_list_free(match->matches);
+
+	g_free(match->path);
+	g_free(match->mimetype);
+
+	g_free(match);
+}
+
+/* Turn the list of child nodes of 'parent' into a list of TreeMatches */
+static GList *build_tree_matches(xmlNode *parent, GError **error)
+{
+	xmlNode *node;
+	GList *out = NULL;
+	char *attr;
+
+	g_return_val_if_fail(error != NULL, NULL);
+
+	for (node = parent->xmlChildrenNode; node; node = node->next)
+	{
+		TreeMatch *match;
+
+		if (node->type != XML_ELEMENT_NODE)
+			continue;
+
+		if (node->ns == NULL || xmlStrcmp(node->ns->href, FREE_NS) != 0)
+		{
+			g_set_error(error, MIME_ERROR, 0,
+				_("Element found with non-freedesktop.org "
+				  "namespace"));
+			break;
+		}
+
+		if (strcmp((char *)node->name, "treematch") != 0)
+		{
+			g_set_error(error, MIME_ERROR, 0,
+				_("Expected <treematch> element, but found "
+				  "<%s> instead"), node->name);
+			break;
+		}
+
+		match = tree_match_new();
+
+		attr = my_xmlGetNsProp(node, "path", NULL);
+		if (attr)
+		{
+			match->path = g_strdup (attr);
+			xmlFree (attr);
+		}
+		else 
+		{
+                	g_set_error(error, MIME_ERROR, 0,
+                        	_("Missing 'path' attribute in <treematch>"));
+        	}
+		if (!*error) 
+		{
+			attr = my_xmlGetNsProp(node, "type", NULL);
+			if (attr) 
+			{
+				if (strcmp (attr, "file") == 0) 
+				{
+					match->type = 1;
+				}
+				else if (strcmp (attr, "directory") == 0)
+				{
+					match->type = 2;
+				}
+				else if (strcmp (attr, "link") == 0)
+				{
+					match->type = 3;
+				}
+				else
+				{
+                			g_set_error(error, MIME_ERROR, 0,
+						_("Invalid 'type' attribute in <treematch>"));
+				}
+				xmlFree(attr);
+			}
+		}
+		if (!*error)
+		{
+			attr = my_xmlGetNsProp(node, "executable", NULL);
+			if (attr)
+			{
+				if (strcmp (attr, "true") == 0) 
+				{
+					match->executable = 1;
+				}
+				xmlFree(attr);
+			}
+		}
+		if (!*error)
+		{
+			attr = my_xmlGetNsProp(node, "match-case", NULL);
+			if (attr)
+			{
+				if (strcmp (attr, "true") == 0) 
+				{
+					match->match_case = 1;
+				}
+				xmlFree(attr);
+			}
+		}
+		if (!*error)
+		{
+			attr = my_xmlGetNsProp(node, "non-empty", NULL);
+			if (attr)
+			{
+				if (strcmp (attr, "true") == 0) 
+				{
+					match->non_empty = 1;
+				}
+				xmlFree(attr);
+			}
+		}
+		if (!*error)
+		{
+			attr = my_xmlGetNsProp(node, "mimetype", NULL);
+			if (attr)
+			{
+				match->mimetype = g_strdup (attr);
+				xmlFree(attr);
+			}
+		}
+
+		if (*error)
+		{
+			tree_match_free(match);
+			break;
+		}
+
+		out = g_list_append(out, match);
+
+		match->matches = build_tree_matches(node, error);
+		if (*error)
+			break;
+	}
+
+	return out;
+}
+
+static void tree_magic_free(TreeMagic *magic)
+{
+	GList *next;
+
+	g_return_if_fail(magic != NULL);
+
+	for (next = magic->matches; next; next = next->next)
+		tree_match_free((TreeMatch *) next->data);
+	g_list_free(magic->matches);
+
+	g_free(magic);
+}
+
+/* Create a new TreeMagic object by parsing 'node' (a <treemagic> element) */
+static TreeMagic *tree_magic_new(xmlNode *node, Type *type, GError **error)
+{
+	TreeMagic *magic = NULL;
+	int prio;
+
+	g_return_val_if_fail(node != NULL, NULL);
+	g_return_val_if_fail(type != NULL, NULL);
+	g_return_val_if_fail(error != NULL, NULL);
+
+	prio = get_priority(node);
+
+	if (prio == -1)
+	{
+		g_set_error(error, MIME_ERROR, 0,
+			_("Bad priority (%d) in <treemagic> element"), prio);
+	}
+	else
+	{
+		magic = g_new(TreeMagic, 1);
+		magic->priority = prio;
+		magic->type = type;
+		magic->matches = build_tree_matches(node, error);
+
+		if (*error)
+		{
+			gchar *old = (*error)->message;
+			tree_magic_free(magic);
+			magic = NULL;
+			(*error)->message = g_strconcat(
+				_("Error in <treematch> element: "), old, NULL);
+			g_free(old);
+		}
+	}
+
+	return magic;
+}
+
 /* Write a list of Match elements (and their children) to the 'magic' file */
 static void write_magic_children(FILE *stream, GList *matches, int indent)
 {
@@ -1440,6 +1717,62 @@ static void write_magic(FILE *stream, Magic *magic)
 		magic->type->media, magic->type->subtype);
 
 	write_magic_children(stream, magic->matches, 0);
+}
+
+/* Write a list of TreeMatch elements (and their children) to the 'treemagic' file */
+static void write_tree_magic_children(FILE *stream, GList *matches, int indent)
+{
+	GList *next;
+
+	for (next = matches; next; next = next->next)
+	{
+		TreeMatch *match = (TreeMatch *) next->data;
+
+		if (indent)
+			g_fprintf(stream,
+				  "%d>\"%s\"=",
+				  indent,
+				  match->path);
+		else
+			g_fprintf(stream, ">\"%s\"=", match->path);
+
+		switch (match->type)
+		{
+		default:
+		case 0: 
+			fputs("any", stream);
+			break;
+		case 1: 
+			fputs("file", stream);
+			break;
+		case 2: 
+			fputs("directory", stream);
+			break;
+		case 3: 
+			fputs("link", stream);
+			break;
+		}
+		if (match->match_case)
+			fputs (",match-case", stream);
+		if (match->executable)
+			fputs (",executable", stream);
+		if (match->non_empty)
+			fputs (",non-empty", stream);
+		if (match->mimetype)
+			g_fprintf (stream, ",%s", match->mimetype);
+
+		fputc('\n', stream);
+
+		write_tree_magic_children(stream, match->matches, indent + 1);
+	}
+}
+/* Write a whole TreeMagic element to the 'treemagic' file */
+static void write_tree_magic(FILE *stream, TreeMagic *magic)
+{
+	g_fprintf(stream, "[%d:%s/%s]\n", magic->priority,
+		magic->type->media, magic->type->subtype);
+
+	write_tree_magic_children(stream, magic->matches, 0);
 }
 
 /* Check each of the directories with generated XML files, looking for types
@@ -1586,6 +1919,38 @@ static void write_aliases(FILE *stream)
 
 	g_ptr_array_free(lines, TRUE);
 }
+
+static void add_type(gpointer key, gpointer value, gpointer data)
+{
+	GPtrArray *lines = (GPtrArray *) data;
+	
+	g_ptr_array_add(lines, g_strconcat((char *)key, "\n", NULL));
+}
+
+/* Write all the collected types */
+static void write_types(FILE *stream)
+{
+	GPtrArray *lines;
+	int i;
+	
+	lines = g_ptr_array_new();
+
+	g_hash_table_foreach(types, add_type, lines);
+
+	g_ptr_array_sort(lines, strcmp2);
+
+	for (i = 0; i < lines->len; i++)
+	{
+		char *line = (char *) lines->pdata[i];
+
+		fwrite(line, 1, strlen(line), stream);
+
+		g_free(line);
+	}
+
+	g_ptr_array_free(lines, TRUE);
+}
+
 
 static void write_one_icon(gpointer key, gpointer value, gpointer data)
 {
@@ -1738,9 +2103,10 @@ write_header (FILE *cache,
 	      gint  namespace_offset,
 	      gint  icons_list_offset,
 	      gint  generic_icons_list_offset,
+	      gint  type_offset,
 	      guint *offset)
 {
-  *offset = 40;
+  *offset = 44;
 
   return (write_card16 (cache, MAJOR_VERSION) &&
 	  write_card16 (cache, MINOR_VERSION) &&
@@ -1752,7 +2118,8 @@ write_header (FILE *cache,
 	  write_card32 (cache, magic_offset) &&
 	  write_card32 (cache, namespace_offset) &&
 	  write_card32 (cache, icons_list_offset) &&
-	  write_card32 (cache, generic_icons_list_offset));
+	  write_card32 (cache, generic_icons_list_offset) &&
+	  write_card32 (cache, type_offset));
 }
 
 
@@ -2608,6 +2975,44 @@ write_icons_cache (FILE       *cache,
                     get_icon_value, FALSE, offset); 
 }
 
+/* Write all the collected types */
+static gboolean
+write_types_cache (FILE       *cache,
+                   GHashTable *strings,
+                   GHashTable *types,
+                   guint      *offset)
+{
+	GPtrArray *lines;
+	int i;
+	char *mimetype;
+	guint mime_offset;
+	
+	lines = g_ptr_array_new();
+
+	g_hash_table_foreach(types, add_type, lines);
+
+	g_ptr_array_sort(lines, strcmp2);
+
+  	if (!write_card32 (cache, lines->len))
+    		return FALSE;
+
+	for (i = 0; i < lines->len; i++)
+	{
+		mimetype = (char *) lines->pdata[i];
+		mime_offset = GPOINTER_TO_UINT (g_hash_table_lookup (strings, mimetype));
+		if (!write_card32 (cache, mime_offset))
+			return FALSE;
+
+		g_free(mimetype);
+	}
+
+  	*offset += 4 + 4 * lines->len;
+
+	g_ptr_array_free(lines, TRUE);
+
+	return TRUE;
+}
+
 static void
 collect_alias (gpointer key,
 	       gpointer value,
@@ -2789,11 +3194,12 @@ write_cache (FILE *cache)
   guint namespace_offset;
   guint icons_list_offset;
   guint generic_icons_list_offset;
+  guint type_offset;
   guint offset;
   GHashTable *strings;
 
   offset = 0;
-  if (!write_header (cache, 0, 0, 0, 0, 0, 0, 0, 0, 0, &offset))
+  if (!write_header (cache, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, &offset))
     {
       g_warning ("Failed to write header\n");
       return FALSE;
@@ -2883,6 +3289,14 @@ write_cache (FILE *cache)
     }
   g_message ("Wrote generic icons list at %x - %x\n", generic_icons_list_offset, offset);
 
+  type_offset = offset;
+  if (!write_types_cache (cache, strings, types, &offset))
+    {
+      g_warning ("Failed to write types list\n");
+      return FALSE;
+    }
+  g_message ("Wrote types list at %x - %x\n", type_offset, offset);
+
   rewind (cache);
   offset = 0; 
 
@@ -2890,7 +3304,8 @@ write_cache (FILE *cache)
 		     alias_offset, parent_offset, literal_offset,
 		     suffix_offset, glob_offset, magic_offset, 
 		     namespace_offset, icons_list_offset,
-		     generic_icons_list_offset, &offset))
+		     generic_icons_list_offset, type_offset, 
+		     &offset))
     {
       g_warning ("Failed to rewrite header\n");
       return FALSE;
@@ -2994,6 +3409,7 @@ int main(int argc, char **argv)
 	namespace_hash = g_hash_table_new_full(g_str_hash, g_str_equal,
 					g_free, NULL);
 	magic_array = g_ptr_array_new();
+	tree_magic_array = g_ptr_array_new();
 	subclass_hash = g_hash_table_new_full(g_str_hash, g_str_equal,
 					      g_free, free_string_list);
 	alias_hash = g_hash_table_new_full(g_str_hash, g_str_equal,
@@ -3103,6 +3519,19 @@ int main(int argc, char **argv)
 
 	{
 		FILE *stream;
+		char *path;
+		
+		path = g_strconcat(mime_dir, "/types.new", NULL);
+		stream = open_or_die(path);
+		write_types(stream);
+		fclose(stream);
+
+		atomic_update(path);
+		g_free(path);
+	}
+
+	{
+		FILE *stream;
 		char *icon_path;
 
 		icon_path = g_strconcat(mime_dir, "/generic-icons.new", NULL);
@@ -3130,6 +3559,28 @@ int main(int argc, char **argv)
 	{
 		FILE *stream;
 		char *path;
+		int i;
+		path = g_strconcat(mime_dir, "/treemagic.new", NULL);
+		stream = open_or_die(path);
+		fwrite("MIME-TreeMagic\0\n", 1, 16, stream);
+
+		if (tree_magic_array->len)
+			g_ptr_array_sort(tree_magic_array, cmp_tree_magic);
+		for (i = 0; i < tree_magic_array->len; i++)
+		{
+			TreeMagic *magic = (TreeMagic *) tree_magic_array->pdata[i];
+
+			write_tree_magic(stream, magic);
+		}
+		fclose(stream);
+
+		atomic_update(path);
+		g_free(path);
+	}
+
+	{
+		FILE *stream;
+		char *path;
 		
 		path = g_strconcat(mime_dir, "/mime.cache.new", NULL);
 		stream = open_or_die(path);
@@ -3142,6 +3593,8 @@ int main(int argc, char **argv)
 
 	g_ptr_array_foreach(magic_array, (GFunc)magic_free, NULL);
 	g_ptr_array_free(magic_array, TRUE);
+	g_ptr_array_foreach(tree_magic_array, (GFunc)tree_magic_free, NULL);
+	g_ptr_array_free(tree_magic_array, TRUE);
 
 	g_hash_table_destroy(types);
 	g_hash_table_destroy(globs_hash);

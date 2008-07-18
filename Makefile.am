@@ -15,11 +15,19 @@ test_subclassing_SOURCES = test-subclassing.c
 test_subclassing_CFLAGS = $(ALL_CFLAGS)
 test_subclassing_LDADD = $(ALL_LIBS)
 
+if HAVE_GIO
+noinst_PROGRAMS += test-tree-magic
+test_tree_magic_SOURCES = test-tree-magic.c
+test_tree_magic_CFLAGS = $(GIO_CFLAGS)
+test_tree_magic_LDADD = $(GIO_LIBS)
+endif
+
 man_MANS = update-mime-database.1
 
 EXTRA_DIST = \
 	shared-mime-info-spec.xml	\
 	freedesktop.org.xml.in		\
+	test-tree-magic.c		\
 	$(packages_DATA) 		\
 	README				\
 	HACKING				\
@@ -66,11 +74,12 @@ check:
 	@if test -n $(XMLLINT) ; then \
 		xmllint --noout --valid $(srcdir)/freedesktop.org.xml;	\
 	fi
-	@if test -d CVS/ && test -x ../xdgmime/src/test-mime-data ; then \
+	if test -d CVS/ && test -x ../xdgmime/src/test-mime-data && test -x $(top_builddir)/test-tree-magic ; then \
 		mkdir -p $(top_builddir)/temp-mime-dir/mime/packages ; \
 		cp -a $(top_builddir)/freedesktop.org.xml $(top_builddir)/temp-mime-dir/mime/packages/ ; \
 		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/update-mime-database "$(top_builddir)/temp-mime-dir/mime/" ; \
 		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" ../xdgmime/src/test-mime-data -v tests/list || (XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" ../xdgmime/src/test-mime-data -v -v tests/list ; exit 1); \
+		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/test-tree-magic tests/tree-list; \
 		rm -rf "$(top_builddir)/temp-mime-dir/" ; \
 	fi
 	@if `grep comment $(srcdir)/freedesktop.org.xml.in | grep -v _comment | grep -q -v '<!'` ; then \

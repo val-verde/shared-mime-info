@@ -1,3 +1,30 @@
+2008-07-18  Bastien Nocera  <hadess@hadess.net>
+
+	* .cvsignore: upd
+
+	* shared-mime-info-spec.xml: Update the spec to contain
+	"content-types" or "tree magic", to detect an "x-content/" mime-type
+	from a directory structure, patch from Matthias Clasen
+	<mclasen@redhat.com>
+
+	* update-mime-database.c (process_freedesktop_node),
+	(cmp_tree_magic), (tree_match_new), (tree_match_free),
+	(build_tree_matches), (tree_magic_free), (tree_magic_new),
+	(write_tree_magic_children), (write_tree_magic), (add_type),
+	(write_types), (write_header), (write_types_cache), (write_cache),
+	(main): Add support for writing the tree-magic file, as per the
+	spec update above, patch from Matthias Clasen <mclasen@redhat.com>
+
+	* freedesktop.org.xml.in: Add one single tree-magic item, for
+	testing
+
+	* configure.in: check for GIO, build the tree magic test if it's
+	available
+	* Makefile.am: use test-tree-magic if it's there
+	* test-tree-magic.c: automated testing for tree magic, based on GIO
+	code by Matthias Clasen <mclasen@redhat.com>
+	* tests/tree-list: A few tests
+
 2008-06-22  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Add support for the extended URL format

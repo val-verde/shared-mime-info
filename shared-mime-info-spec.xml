@@ -1,8 +1,8 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
-  <!ENTITY updated "25 January 2008">
-  <!ENTITY version "0.17">
+  <!ENTITY updated "10 June 2008">
+  <!ENTITY version "0.18">
 ]>
 <article id="index">
 
@@ -343,6 +343,36 @@ of the document element.
 If <userinput>localName</userinput> is present but empty then the document element may have
 any name, but the namespace must still match.
 				</para></listitem>
+				<listitem><para>
+<userinput>treemagic</userinput> elements contain a list of <userinput>treematch</userinput> elements,
+any of which may match, and an optional <userinput>priority</userinput> attribute for all of the 
+contained rules. The default priority value is 50, and the maximum is 100.
+				</para><para>
+Each <userinput>treematch</userinput> element has a number of attributes:
+
+<informaltable>
+	<tgroup cols="3">
+	<thead><row><entry>Attribute</entry><entry>Required?</entry><entry>Value</entry></row></thead>
+	<tbody>
+
+	<row><entry>path</entry><entry>Yes</entry><entry>A path that must be present on the mounted volume/filesystem.</entry></row>
+	
+	<row><entry>type</entry><entry>No</entry><entry>The type of path. Possible values: <userinput>file</userinput>, <userinput>directory</userinput>, <userinput>link</userinput></entry></row>
+
+	<row><entry>match-case</entry><entry>No</entry><entry>Whether path should be matched case-sensitively. Possible values: <userinput>true</userinput>, <userinput>false</userinput></entry></row>
+
+	<row><entry>executable</entry><entry>No</entry><entry>Whether the file must be executable. Possible values: <userinput>true</userinput>, <userinput>false</userinput></entry></row>
+
+	<row><entry>non-empty</entry><entry>No</entry><entry>Whether the directory must be non-empty. Possible values: <userinput>true</userinput>, <userinput>false</userinput></entry></row>
+
+	<row><entry>mimetype</entry><entry>No</entry><entry>The mimetype for the file at path</entry></row>
+
+	</tbody></tgroup>
+</informaltable>
+
+<userinput>treematch</userinput> elements can be nested, meaning that both the outer and the inner <userinput>treematch</userinput>
+must be satisfied for a "match".
+				</para></listitem>
 			</itemizedlist>
 Applications may also define their own elements, provided they are namespaced to prevent collisions.
 Unknown elements are copied directly to the output XML files like <userinput>comment</userinput>
@@ -571,6 +601,39 @@ For example:
 <screen>
 application/msword:x-office-document
 </screen>
+		</para>
+	</sect2>
+	<sect2>
+		<title>The treemagic files</title>
+		<para>
+The tree magic data is stored in a file with a format that is very similar to the magic file format.
+		</para>
+		<para>
+The file starts with the magic string "MIME-TreeMagic\0\n". There is no version number in the file.
+Incompatible changes will be handled by creating both the current `treemagic' and a newer `treemagic2' 
+in the new format. Where possible, changes will be made in a compatible fashion. 
+		</para>
+		<para>
+The rest of the file is made up of a sequence of small sections. Each section is introduced by giving
+the priority and type in brackeds, followed by a newline character. Higher priority entries come
+first. Example:
+<screen>[50:x-content/image-dcf]\n</screen>
+Each line in the section takes the form:
+<screen>[ indent ] ">" "\"" path "\"" "=" type [ "," option ]* "\n"</screen>
+<informaltable>
+	<tgroup cols="2">
+	<thead><row><entry>Part</entry><entry>Meaning</entry></row></thead>
+	<tbody>
+
+	<row><entry>indent</entry><entry>The nesting depth of the rule.</entry></row>
+	<row><entry>path</entry><entry>The path to match.</entry></row>
+	<row><entry>type</entry><entry>The required file type, one of "file", "directory", "link" or "any"</entry></row>
+	<row><entry>option</entry><entry>Optional for the optional attributes of <userinput>treematch</userinput> elements. 
+Possible values are "executable", "match-case", "non-empty", or a MIME type</entry></row>
+	</tbody>
+	</tgroup>
+</informaltable>
+		</para><para>
 		</para>
 	</sect2>
 	<sect2>
@@ -844,6 +907,22 @@ actions for these directories, such as 'mount' or 'eject'. Mounted directories c
 detected by comparing the 'st_dev' of a directory with that of its parent. If
 they differ, they are from different devices and the directory is a mount
 point.
+		</para>
+	</sect2>
+	<sect2>
+		<title>Content types for volumes</title>
+		<para>
+Traditional MIME types apply to individual files or bytestreams. It is often useful 
+to apply the same methodologies when classifying the content of mountable volumes or 
+filesystems. The x-content type has been introduced for this purpose. Typical examples 
+are x-content/audio-dvd, x-content/blank-cd or x-content/image-dcf. 
+		</para>
+		<para>
+Matching of content types works with <userinput>treemagic</userinput> elements, which 
+are analogous to the <userinput>magic</userinput> elements used for MIME type matching.
+Instead of looking for byte sequences in files, <userinput>treemagic</userinput> element
+allow to look for files with certain names, permissions or mime types in a directory
+hierarchy.
 		</para>
 	</sect2>
 	<sect2>

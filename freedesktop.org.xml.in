@@ -3,7 +3,7 @@
   <!ELEMENT mime-info (mime-type)+>
   <!ATTLIST mime-info xmlns CDATA #FIXED "http://www.freedesktop.org/standards/shared-mime-info">
 
-  <!ELEMENT mime-type (comment+, (acronym,expanded-acronym)? , (generic-icon? | glob | magic | root-XML | alias | sub-class-of)*)>
+  <!ELEMENT mime-type (comment+, (acronym,expanded-acronym)? , (generic-icon? | glob | magic | treemagic | root-XML | alias | sub-class-of)*)>
   <!ATTLIST mime-type type CDATA #REQUIRED>
 
   <!-- a comment describing a document with the respective MIME type. Example: "WMV video" -->
@@ -35,6 +35,17 @@
   <!ATTLIST match type (string|big16|big32|little16|little32|host16|host32|byte) #REQUIRED>
   <!ATTLIST match value CDATA #REQUIRED>
   <!ATTLIST match mask CDATA #IMPLIED>
+
+  <!ELEMENT treemagic (treematch)+>
+  <!ATTLIST treemagic priority CDATA #IMPLIED>
+
+  <!ELEMENT treematch (treematch)*>
+  <!ATTLIST treematch path CDATA #REQUIRED>
+  <!ATTLIST treematch type (file|directory|link) #IMPLIED>
+  <!ATTLIST treematch match-case (true|false) #IMPLIED>
+  <!ATTLIST treematch executable (true|false) #IMPLIED>
+  <!ATTLIST treematch non-empty (true|false) #IMPLIED>
+  <!ATTLIST treematch mimetype CDATA #IMPLIED>
 
   <!ELEMENT root-XML EMPTY>
   <!ATTLIST root-XML
@@ -4762,4 +4773,13 @@ command to generate the output files.
     </magic>
     <glob pattern="*.pcf"/>
   </mime-type>
+
+  <!-- Tree content-types -->
+  <mime-type type="x-content/image-dcf">
+    <_comment>Digital Photos</_comment>
+    <treemagic priority="75">
+      <treematch path="dcim" type="directory" non-empty="true"/>
+    </treemagic>
+  </mime-type>
 </mime-info>
+

@@ -1,5 +1,6 @@
 # Supposed to work
 tests/image-dcf x-content/image-dcf
+tests/video-vcd x-content/video-vcd
 
 # Supposed to fail
-x tests/ x-content/image-dcf
+x tests x-content/image-dcf

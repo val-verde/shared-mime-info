@@ -556,6 +556,7 @@ handle_one_line (const char *line)
 		if (supposed_to_fail == FALSE) {
 			g_warning ("Tree %s didn't match %s (found nothing)",
 				   filename, items[1]);
+			retval = FALSE;
 		} else {
 			g_message ("Tree %s failed to match %s (expected)",
 				   filename, items[1]);
@@ -599,6 +600,34 @@ bail:
 	return retval;
 }
 
+static const char *
+type_to_path (GFileType type)
+{
+	switch (type) {
+	case G_FILE_TYPE_REGULAR:
+		return "Regular";
+	case G_FILE_TYPE_DIRECTORY:
+		return "Directory";
+	case G_FILE_TYPE_SYMBOLIC_LINK:
+		return "Symbolic link";
+	default:
+		return "Unknown";
+	}
+}
+
+static void
+print_matchlet (TreeMatchlet *matchlet, guint depth)
+{
+	GList *l;
+	guint i;
+
+	for (i = depth + 1; i != 0; i--)
+		g_print ("\t");
+	g_print ("%s (type=%s)\n", matchlet->path, type_to_path (matchlet->type));
+	for (l = matchlet->matches ; l != NULL; l = l->next)
+		print_matchlet (l->data, depth + 1);
+}
+
 int main (int argc, char **argv)
 {
 	GError *error = NULL;
@@ -618,6 +647,22 @@ int main (int argc, char **argv)
 		g_print ("\t# Supposed to fail\n");
 		g_print ("\tx tests/ x-content/image-dcf\n");
 		return 1;
+	}
+
+	if (strcmp (argv[1], "-d") == 0) {
+		GList *l;
+
+		tree_magic_init ();
+		for (l = tree_matches ; l != NULL; l = l->next) {
+			GList *k;
+			TreeMatch *match = (TreeMatch *) l->data;
+			g_print ("Type: %s\n", match->contenttype);
+			for (k = match->matches ; k != NULL; k = k->next) {
+				TreeMatchlet *matchlet = (TreeMatchlet *) k->data;
+				print_matchlet (matchlet, 0);
+			}
+		}
+		return 0;
 	}
 
 	if (g_file_get_contents (argv[1], &content, NULL, &error) == FALSE) {

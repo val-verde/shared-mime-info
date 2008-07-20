@@ -4778,7 +4778,7 @@ command to generate the output files.
   <mime-type type="x-content/image-dcf">
     <!-- http://en.wikipedia.org/wiki/Design_rule_for_Camera_File_system -->
     <_comment>Digital Photos</_comment>
-    <treemagic priority="75">
+    <treemagic>
       <treematch path="dcim" type="directory" non-empty="true"/>
     </treemagic>
   </mime-type>
@@ -4787,18 +4787,27 @@ command to generate the output files.
     <!-- http://en.wikipedia.org/wiki/Video_CD
          http://www.herongyang.com/CD-DVD/VCD-Movie-File-Directory-Structure.html -->
     <_comment>Video CD</_comment>
-    <treemagic priority="75">
+    <treemagic>
       <treematch path="mpegav/AVSEQ01.DAT" type="file" />
     </treemagic>
   </mime-type>
 
   <mime-type type="x-content/video-svcd">
-    <!-- http://en.wikipedia.org/wiki/Super_Video_CD -->
+    <!-- http://en.wikipedia.org/wiki/Super_Video_CD
+         http://everything2.com/index.pl?node_id=1009222 -->
     <_comment>Super Video CD</_comment>
+    <treemagic>
+      <treematch path="MPEG2/AVSEQ01.MPG" type="file" />
+    </treemagic>
   </mime-type>
+
   <mime-type type="x-content/video-dvd">
     <!-- http://en.wikipedia.org/wiki/DVD-Video -->
     <_comment>DVD Video</_comment>
+    <treemagic>
+      <treematch path="VIDEO_TS/VIDEO_TS.IFO" type="file" />
+      <treematch path="VIDEO_TS/VIDEO_TS.IFO;1" type="file" />
+    </treemagic>
   </mime-type>
 
   <mime-type type="x-content/audio-cdda">
@@ -4829,21 +4838,37 @@ command to generate the output files.
   <mime-type type="x-content/audio-dvd">
     <!-- http://en.wikipedia.org/wiki/DVD-Audio -->
     <_comment>DVD Audio</_comment>
+    <treemagic>
+      <treematch path="AUDIO_TS/AUDIO_TS.IFO" type="file" />
+      <treematch path="AUDIO_TS/AUDIO_TS.IFO;1" type="file" />
+    </treemagic>
   </mime-type>
 
   <mime-type type="x-content/video-bluray">
-    <!-- http://en.wikipedia.org/wiki/Blu-ray_Disc -->
+    <!-- http://en.wikipedia.org/wiki/Blu-ray_Disc
+         http://www.blu-raydisc.com/Section-13470/Section-13890/Index.html -->
     <_comment>Blu-Ray Video</_comment>
+    <treemagic>
+      <treematch path="BDAV" type="directory" non-empty="true"/>
+      <treematch path="BDMV" type="directory" non-empty="true"/>
+    </treemagic>
   </mime-type>
 
   <mime-type type="x-content/video-hddvd">
     <!-- http://en.wikipedia.org/wiki/HD_DVD -->
     <_comment>HD DVD Video</_comment>
+    <treemagic>
+      <treematch path="HVDVD_TS" type="directory" non-empty="true"/>
+    </treemagic>
   </mime-type>
 
   <mime-type type="x-content/image-picturecd">
-    <!-- http://en.wikipedia.org/wiki/Picture_CD -->
+    <!-- http://en.wikipedia.org/wiki/Picture_CD
+         http://www.re.org/kristin/picturecd.html  -->
     <_comment>Picture CD</_comment>
+    <treemagic>
+      <treematch path="PICTURES" type="directory" non-empty="true"/>
+    </treemagic>
   </mime-type>
 
   <mime-type type="x-content/audio-player">
@@ -4852,8 +4877,17 @@ command to generate the output files.
   </mime-type>
 
   <mime-type type="x-content/software">
-    <!-- http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html -->
+    <!-- http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
+         http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3 -->
     <_comment>Software</_comment>
+    <treemagic>
+      <treematch path=".autorun" type="file" match-case="true" />
+      <treematch path="autorun" type="file" match-case="true" />
+      <treematch path="autorun.sh" type="file" match-case="true" />
+      <treematch path="autorun.exe" type="file" executable="true" />
+      <treematch path="autorun.inf" type="file" />
+    </treemagic>
   </mime-type>
+
 </mime-info>
 

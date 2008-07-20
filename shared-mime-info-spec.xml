@@ -355,7 +355,7 @@ Each <userinput>treematch</userinput> element has a number of attributes:
 	<thead><row><entry>Attribute</entry><entry>Required?</entry><entry>Value</entry></row></thead>
 	<tbody>
 
-	<row><entry>path</entry><entry>Yes</entry><entry>A path that must be present on the mounted volume/filesystem.</entry></row>
+	<row><entry>path</entry><entry>Yes</entry><entry>A path that must be present on the mounted volume/filesystem. The path is interpreted as a relative path starting at the root of the tested volume/filesystem</entry></row>
 	
 	<row><entry>type</entry><entry>No</entry><entry>The type of path. Possible values: <userinput>file</userinput>, <userinput>directory</userinput>, <userinput>link</userinput></entry></row>
 

@@ -4855,10 +4855,13 @@ command to generate the output files.
   </mime-type>
 
   <mime-type type="x-content/video-hddvd">
-    <!-- http://en.wikipedia.org/wiki/HD_DVD -->
+    <!-- http://en.wikipedia.org/wiki/HD_DVD
+         http://www.dvdafteredit.com/wiki/The_HVDVD_TS_Folder -->
     <_comment>HD DVD Video</_comment>
     <treemagic>
-      <treematch path="HVDVD_TS" type="directory" non-empty="true"/>
+      <treematch path="HVDVD_TS/HV000I01.IFO" type="file" />
+      <treematch path="HVDVD_TS/HV001I01.IFO" type="file" />
+      <treematch path="HVDVD_TS/HVA00001.VTI" type="file" />
     </treemagic>
   </mime-type>
 

@@ -2130,6 +2130,14 @@ command to generate the output files.
       <match type="little32" value="0xe011cfd0" offset="0"/>
     </magic>
   </mime-type>
+  <mime-type type="application/x-msi">
+    <_comment>Windows Installer package</_comment>
+    <sub-class-of type="application/x-ole-storage"/>
+    <magic priority="50">
+      <match type="string" value="\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x3E\x00\x03\x00\xFE\xFF\x09\x00\x06" offset="0" />
+    </magic>
+    <glob pattern="*.msi"/>
+  </mime-type>
   <mime-type type="application/x-oleo">
     <_comment>GNU Oleo spreadsheet</_comment>
     <generic-icon name="x-office-spreadsheet"/>

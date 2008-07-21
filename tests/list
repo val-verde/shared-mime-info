@@ -133,6 +133,8 @@ test.alz application/x-alz
 test.class application/x-java
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=12620
 hello.pack application/x-java-pack200
+# Copied from http://www.apache.org/dist/httpd/binaries/win32/apache_2.2.9-win32-x86-no_ssl-r2.msi
+test.msi application/x-msi
 
 # Audio/Video files
 # Copied from /usr/share/sounds/generic.wav

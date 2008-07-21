@@ -1,3 +1,11 @@
+2008-07-21  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Add MSI (Windows Installer) mime-type,
+	including magic, based on work from Scott Ritchie
+	<scott@open-vote.org> (Closes: #16495)
+	* tests/list:
+	* tests/test.msi: add test case for the above
+
 2008-07-20  Bastien Nocera  <hadess@hadess.net>
 
 	* shared-mime-info-spec.xml: Better wording on the intentions

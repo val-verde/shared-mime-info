@@ -1,3 +1,11 @@
+=== shared-mime-info 0.50 ===
+
+2008-07-22  Bastien Nocera  <hadess@hadess.net>
+
+	* Makefile.am: fix distcheck
+	* NEWS: upd
+	* configure.in: 0.50
+
 2008-07-21  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Add MSI (Windows Installer) mime-type,

@@ -1,3 +1,13 @@
+shared-mime-info 0.50 (2008-07-22)
+* Mime-type Changes:
+- Better magic for a number of image types, from gdk-pixbuf
+- Add "extended URL format" files
+- Add MSI (Windows Installer) type
+- Add tree content types
+
+* update-mime-database Changes:
+- Implement tree content types, in the treemagic file
+
 shared-mime-info 0.40 (2008-06-11)
 * Mime-type Changes:
 - Add Skencil image

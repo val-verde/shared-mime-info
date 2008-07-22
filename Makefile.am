@@ -32,9 +32,6 @@ EXTRA_DIST = \
 	README				\
 	HACKING				\
 	$(man_MANS)			\
-	intltool-extract.in		\
-	intltool-merge.in		\
-	intltool-update.in		\
 	shared-mime-info.pc.in		\
 	po/shared-mime-info.pot
 
@@ -55,7 +52,7 @@ if ENABLE_UPDATE_MIMEDB
 endif
 
 uninstall-hook:
-	for media in text application image audio inode video message model multipart x-epoc; do rm -f "$(DESTDIR)$(datadir)/mime/$${media}/"*.xml; done
+	for media in text application image audio inode video message model multipart x-epoc x-content; do rm -f "$(DESTDIR)$(datadir)/mime/$${media}/"*.xml; done
 	rm -f "$(DESTDIR)$(datadir)/mime/globs"
 	rm -f "$(DESTDIR)$(datadir)/mime/magic"
 	rm -f "$(DESTDIR)$(datadir)/mime/aliases"
@@ -67,6 +64,8 @@ uninstall-hook:
 	rm -f "$(DESTDIR)$(datadir)/mime/icons"
 	rm -f "$(DESTDIR)$(datadir)/mime/generic-icons"
 	rm -f "$(DESTDIR)$(datadir)/mime/globs2"
+	rm -f "$(DESTDIR)$(datadir)/mime/treemagic"
+	rm -f "$(DESTDIR)$(datadir)/mime/types"
 
 all: check
 

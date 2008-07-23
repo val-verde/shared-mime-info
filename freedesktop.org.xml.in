@@ -88,7 +88,7 @@ command to generate the output files.
     <glob pattern="*.ez"/>
   </mime-type>
   <mime-type type="application/epub+zip">
-    <_comment>Electronic book document</_comment>
+    <_comment>electronic book document</_comment>
     <generic-icon name="x-office-document"/>
     <magic priority="50">
       <match type="string" value="PK\003\004" offset="0">
@@ -2812,7 +2812,7 @@ command to generate the output files.
     <glob pattern="*.kar"/>
   </mime-type>
   <mime-type type="audio/x-mo3">
-    <_comment>Compressed Tracker audio</_comment>
+    <_comment>compressed Tracker audio</_comment>
     <magic priority="50">
       <match type="string" value="MO3" offset="0"/>
     </magic>
@@ -3889,7 +3889,7 @@ command to generate the output files.
     <glob pattern="*.CSSL"/>
   </mime-type>
   <mime-type type="text/directory">
-    <_comment>Electronic Business Card</_comment>
+    <_comment>electronic business card</_comment>
     <alias type="text/x-vcard"/>
     <sub-class-of type="text/plain"/>
     <magic priority="50">
@@ -4432,10 +4432,6 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <glob pattern="*.etx"/>
   </mime-type>
-  <mime-type type="text/x-speech">
-    <_comment>Speech document</_comment>
-    <sub-class-of type="text/plain"/>
-  </mime-type>
   <mime-type type="text/x-sql">
     <_comment>SQL code</_comment>
     <sub-class-of type="text/plain"/>
@@ -4785,7 +4781,7 @@ command to generate the output files.
   <!-- Tree content-types -->
   <mime-type type="x-content/image-dcf">
     <!-- http://en.wikipedia.org/wiki/Design_rule_for_Camera_File_system -->
-    <_comment>Digital Photos</_comment>
+    <_comment>digital photos</_comment>
     <treemagic>
       <treematch path="dcim" type="directory" non-empty="true"/>
     </treemagic>
@@ -4811,7 +4807,7 @@ command to generate the output files.
 
   <mime-type type="x-content/video-dvd">
     <!-- http://en.wikipedia.org/wiki/DVD-Video -->
-    <_comment>DVD Video</_comment>
+    <_comment>video DVD</_comment>
     <treemagic>
       <treematch path="VIDEO_TS/VIDEO_TS.IFO" type="file" />
       <treematch path="VIDEO_TS/VIDEO_TS.IFO;1" type="file" />
@@ -4820,32 +4816,32 @@ command to generate the output files.
 
   <mime-type type="x-content/audio-cdda">
     <!-- http://en.wikipedia.org/wiki/Red_Book_(audio_CD_standard) -->
-    <_comment>Compact Disc Audio</_comment>
+    <_comment>audio CD</_comment>
   </mime-type>
 
   <mime-type type="x-content/blank-cd">
     <!-- http://en.wikipedia.org/wiki/Compact_Disc -->
-    <_comment>Blank CD Disc</_comment>
+    <_comment>blank CD disc</_comment>
   </mime-type>
 
   <mime-type type="x-content/blank-dvd">
     <!-- http://en.wikipedia.org/wiki/DVD -->
-    <_comment>Blank DVD Disc</_comment>
+    <_comment>blank DVD disc</_comment>
   </mime-type>
 
   <mime-type type="x-content/blank-bd">
     <!-- http://en.wikipedia.org/wiki/Blu-ray_Disc -->
-    <_comment>Blank Blu-Ray Disc</_comment>
+    <_comment>blank Blu-ray disc</_comment>
   </mime-type>
 
   <mime-type type="x-content/blank-hddvd">
     <!-- http://en.wikipedia.org/wiki/HD_DVD -->
-    <_comment>Blank HD DVD Disc</_comment>
+    <_comment>blank HD DVD disc</_comment>
   </mime-type>
 
   <mime-type type="x-content/audio-dvd">
     <!-- http://en.wikipedia.org/wiki/DVD-Audio -->
-    <_comment>DVD Audio</_comment>
+    <_comment>audio DVD</_comment>
     <treemagic>
       <treematch path="AUDIO_TS/AUDIO_TS.IFO" type="file" />
       <treematch path="AUDIO_TS/AUDIO_TS.IFO;1" type="file" />
@@ -4855,7 +4851,7 @@ command to generate the output files.
   <mime-type type="x-content/video-bluray">
     <!-- http://en.wikipedia.org/wiki/Blu-ray_Disc
          http://www.blu-raydisc.com/Section-13470/Section-13890/Index.html -->
-    <_comment>Blu-Ray Video</_comment>
+    <_comment>Blu-ray video disc</_comment>
     <treemagic>
       <treematch path="BDAV" type="directory" non-empty="true"/>
       <treematch path="BDMV" type="directory" non-empty="true"/>
@@ -4865,7 +4861,7 @@ command to generate the output files.
   <mime-type type="x-content/video-hddvd">
     <!-- http://en.wikipedia.org/wiki/HD_DVD
          http://www.dvdafteredit.com/wiki/The_HVDVD_TS_Folder -->
-    <_comment>HD DVD Video</_comment>
+    <_comment>HD DVD video disc</_comment>
     <treemagic>
       <treematch path="HVDVD_TS/HV000I01.IFO" type="file" />
       <treematch path="HVDVD_TS/HV001I01.IFO" type="file" />
@@ -4884,13 +4880,13 @@ command to generate the output files.
 
   <mime-type type="x-content/audio-player">
     <!-- see fd.o hal spec -->
-    <_comment>Portable Audio Player</_comment>
+    <_comment>portable audio player</_comment>
   </mime-type>
 
   <mime-type type="x-content/software">
     <!-- http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
          http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3 -->
-    <_comment>Software</_comment>
+    <_comment>software</_comment>
     <treemagic>
       <treematch path=".autorun" type="file" match-case="true" />
       <treematch path="autorun" type="file" match-case="true" />

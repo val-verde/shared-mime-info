@@ -68,6 +68,7 @@ uninstall-hook:
 	rm -f "$(DESTDIR)$(datadir)/mime/types"
 
 all: check
+	make -C po shared-mime-info.pot
 
 check:
 	@if test -n $(XMLLINT) ; then \
@@ -99,3 +100,4 @@ update-translations:
 		fi;											\
 	done;
 	@pushd $(srcdir)/po && LC_ALL=en_US.UTF-8 prepare-ChangeLog.pl && popd
+

@@ -1,3 +1,11 @@
+2008-08-19  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Fix priority of the SMIL detection
+	so it's lower than that of SMILtext media links (See
+	http://bugzilla.gnome.org/show_bug.cgi?id=518688#c4)
+	* tests/hbo-playlist.qtl: Add a test file for the above
+	* tests/list:
+
 2008-08-08  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Add application/smil+xml as

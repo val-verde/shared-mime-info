@@ -2034,6 +2034,45 @@ command to generate the output files.
     </magic>
     <glob pattern="*.o"/>
   </mime-type>
+  <mime-type type="application/annodex">
+    <_comment>Annodex exchange format</_comment>
+    <generic-icon name="video-x-generic"/>
+    <magic priority="50">
+      <match type="string" value="OggS" offset="0">
+        <match type="string" value="fishead\0" offset="28">
+          <match type="string" value="CMML\0\0\0\0" offset="56:512"/>
+        </match>
+      </match>
+    </magic>
+    <glob pattern="*.anx"/>
+    <alias type="application/x-annodex"/>
+  </mime-type>
+  <mime-type type="video/annodex">
+    <_comment>Annodex Video</_comment>
+    <sub-class-of type="application/annodex"/>
+    <magic priority="50">
+      <match type="string" value="OggS" offset="0">
+        <match type="string" value="fishead\0" offset="28">
+          <match type="string" value="CMML\0\0\0\0" offset="56:512"/>
+        </match>
+      </match>
+    </magic>
+    <glob pattern="*.axv"/>
+    <alias type="video/x-annodex"/>
+  </mime-type>
+  <mime-type type="audio/annodex">
+    <_comment>Annodex Audio</_comment>
+    <sub-class-of type="application/annodex"/>
+    <magic priority="50">
+      <match type="string" value="OggS" offset="0">
+        <match type="string" value="fishead\0" offset="28">
+          <match type="string" value="CMML\0\0\0\0" offset="56:512"/>
+        </match>
+      </match>
+    </magic>
+    <glob pattern="*.axa"/>
+    <alias type="audio/x-annodex"/>
+  </mime-type>
   <mime-type type="application/ogg">
     <_comment>Ogg multimedia file</_comment>
     <generic-icon name="video-x-generic"/>

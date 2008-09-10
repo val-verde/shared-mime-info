@@ -467,8 +467,8 @@ This is so that <filename>main.C</filename> will be seen as a C++ file,
 but <filename>IMAGE.GIF</filename> will still use the *.gif pattern.
 		</para>
 		<para>
-If several patterns match then the longest pattern SHOULD be used. In
-particular, files with multiple extensions (such as
+If several patterns of the same weight match then the longest pattern SHOULD be used.
+In particular, files with multiple extensions (such as
 <filename>Data.tar.gz</filename>) MUST match the longest sequence of extensions
 (eg '*.tar.gz' in preference to '*.gz'). Literal patterns (eg, 'Makefile') must
 be matched before all others. It is suggested that patterns beginning with `*.'
@@ -838,15 +838,17 @@ be used instead of guessing.
 				</para></listitem>
 
 				<listitem><para>
-Otherwise, start by doing a glob match of the filename. If one or more glob matches, and all the
-matching globs result in the same mimetype, use that mimetype as the result.
+Otherwise, start by doing a glob match of the filename. Keep only globs with the biggest weight.
+If the patterns are different, keep only globs with the longest pattern, as previously discussed.
+If after this, there is one or more matching glob, and all the matching globs
+result in the same mimetype, use that mimetype as the result.
 				</para></listitem>
 				
 				<listitem><para>
 If the glob matching fails or results in multiple conflicting mimetypes, read the
 contents of the file and do magic sniffing on it. If no magic rule matches the data (or if
 the content is not available), use the default type of application/octet-stream for
-binary data, or text/plain for textual data. If there was no glob match the magic match
+binary data, or text/plain for textual data. If there was no glob match, use the magic match
 as the result. 
 				</para><para>
 Note: Checking the first 32 bytes of the file for ASCII control characters is

@@ -1,3 +1,9 @@
+2008-10-12  Bastien Nocera  <hadess@hadess.net>
+
+	* Makefile.am: Fix building when srcdir != builddir,
+	patch by Yevgeniy <YLitvinenko@astana.oilfield.slb.com>
+	(Closes: #18026)
+
 2008-09-10  Bastien Nocera  <hadess@hadess.net>
 
 	* tests/tree-list: Add another test for video DVDs

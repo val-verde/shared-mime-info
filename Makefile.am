@@ -72,7 +72,7 @@ all: check
 
 check:
 	@if test -n $(XMLLINT) ; then \
-		xmllint --noout --valid $(srcdir)/freedesktop.org.xml;	\
+		xmllint --noout --valid $(top_builddir)/freedesktop.org.xml;	\
 	fi
 	if test -d CVS/ && test -x ../xdgmime/src/test-mime-data && test -x $(top_builddir)/test-tree-magic ; then \
 		mkdir -p $(top_builddir)/temp-mime-dir/mime/packages ; \

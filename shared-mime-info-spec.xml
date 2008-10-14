@@ -159,7 +159,7 @@ changes take effect.
 The files created by <command>update-mime-database</command> are:
 			<itemizedlist>
 				<listitem><para>
-<filename>&lt;MIME&gt;/globs</filename> (contains a mapping from names to MIME types) [deprecated for glob2]
+<filename>&lt;MIME&gt;/globs</filename> (contains a mapping from names to MIME types) [deprecated for globs2]
 				</para></listitem>
 				<listitem><para>
 <filename>&lt;MIME&gt;/globs2</filename> (contains a mapping from names to MIME types and glob weight)
@@ -434,7 +434,7 @@ The example source file given above would (on its own) create an output file cal
 	<sect2>
 		<title>The glob files</title>
 		<para>
-The glob2 file is a simple list of lines containing weight, MIME type and pattern, separated by a colon.
+The globs2 file is a simple list of lines containing weight, MIME type and pattern, separated by a colon.
 The lines are ordered by glob weight.
 For example:
 			<programlisting><![CDATA[
@@ -448,7 +448,7 @@ For example:
 		</para>
 		<para>
 The glob file is a simple list of lines containing a MIME type and pattern, separated by a colon. It is
-deprecated in favour of the glob2 file which also lists the weight of the glob rule.		
+deprecated in favour of the globs2 file which also lists the weight of the glob rule.		
 The lines are ordered by glob weight.
 For example:
 			<programlisting><![CDATA[

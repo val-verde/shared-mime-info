@@ -3984,10 +3984,11 @@ command to generate the output files.
     <glob pattern="*.asc"/>
     <glob pattern="*,v"/>
   </mime-type>
-  <mime-type type="text/rdf">
+  <mime-type type="application/rdf+xml">
     <_comment>RDF file</_comment>
     <acronym>RDF</acronym>
     <expanded-acronym>Resource Description Framework</expanded-acronym>
+    <alias type="text/rdf"/>
     <sub-class-of type="application/xml"/>
     <glob pattern="*.rdf"/>
     <glob pattern="*.rdfs"/>

@@ -8,6 +8,9 @@
 	* freedesktop.org.xml.in: Add missing IANA-registered mimetype
 	application/vnd.oasis.opendocument.formula-template
 
+	* freedesktop.org.xml.in: Add missing IANA-registered mimetype
+	text/vnd.graphviz, with globs, magic and test (Closes: #15363)
+
 2008-10-16  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Fix RDF mime-type, spotted by

@@ -4087,6 +4087,18 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <glob pattern="*.tsv"/>
   </mime-type>
+  <mime-type type="text/vnd.graphviz">
+    <_comment>Graphviz DOT graph</_comment>
+    <generic-icon name="x-office-document"/>
+    <magic priority="50">
+      <match type="string" value="digraph " offset="0:256"/>
+      <match type="string" value="strict digraph " offset="0:256"/>
+      <match type="string" value="graph " offset="0:256"/>
+      <match type="string" value="strict graph " offset="0:256"/>
+    </magic>
+    <glob pattern="*.gv"/>
+    <glob pattern="*.dot"/>
+  </mime-type>
   <mime-type type="text/vnd.sun.j2me.app-descriptor">
     <_comment>JAD document</_comment>
     <acronym>JAD</acronym>

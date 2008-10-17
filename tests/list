@@ -1,3 +1,13 @@
+# Regression tests for shared-mime-info and xdgmime.
+#
+# Syntax: <filename> <expected mimetype> [NDF]
+#  where N can be 'x' if the lookup by filename is expected to fail
+#        D can be 'x' if the lookup by file data is expected to fail
+#        F can be 'x' if the lookup by actual file (using both name and contents) is expected to fail
+#  Use 'o' to express the opposite, i.e. no expected failure for this kind of lookup.
+#  Example: 'ox' means N=o D=x (and F is 'o', implicitly), lookup by data should fail.
+
+
 # Images
 test.bmp image/bmp 
 test.cel image/x-cel xxx 

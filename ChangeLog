@@ -5,6 +5,9 @@
 	and correct the use of <acronym> in all oasis mimetypes, which
 	is meant to explain an acronym used in <comment>, not the extension.
 
+	* freedesktop.org.xml.in: Add missing IANA-registered mimetype
+	application/vnd.oasis.opendocument.formula-template
+
 2008-10-16  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Fix RDF mime-type, spotted by

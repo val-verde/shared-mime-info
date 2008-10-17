@@ -687,8 +687,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-template">
     <_comment>ODT template</_comment>
-    <acronym>OTT</acronym>
-    <expanded-acronym>OpenDocument Text Template</expanded-acronym>
+    <acronym>ODT</acronym>
+    <expanded-acronym>OpenDocument Text</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
     <magic priority="50">
@@ -747,8 +747,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.graphics-template">
     <_comment>ODG template</_comment>
-    <acronym>OTG</acronym>
-    <expanded-acronym>OpenDocument Drawing Template</expanded-acronym>
+    <acronym>ODG</acronym>
+    <expanded-acronym>OpenDocument Drawing</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="image-x-generic"/>
     <magic priority="50">
@@ -777,8 +777,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.presentation-template">
     <_comment>ODP template</_comment>
-    <acronym>OTP</acronym>
-    <expanded-acronym>OpenDocument Presentation Template</expanded-acronym>
+    <acronym>ODP</acronym>
+    <expanded-acronym>OpenDocument Presentation</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-presentation"/>
     <magic priority="50">
@@ -807,8 +807,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.spreadsheet-template">
     <_comment>ODS template</_comment>
-    <acronym>OTS</acronym>
-    <expanded-acronym>OpenDocument Spreadsheet Template</expanded-acronym>
+    <acronym>ODS</acronym>
+    <expanded-acronym>OpenDocument Spreadsheet</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-spreadsheet"/>
     <magic priority="50">
@@ -822,7 +822,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.chart">
     <_comment>ODC chart</_comment>
-    <acronym>ODC chart</acronym>
+    <acronym>ODC</acronym>
     <expanded-acronym>OpenDocument Chart</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-spreadsheet"/>
@@ -834,6 +834,21 @@ command to generate the output files.
       </match>
     </magic>
     <glob pattern="*.odc"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.chart-template">
+    <_comment>ODC template</_comment>
+    <acronym>ODC</acronym>
+    <expanded-acronym>OpenDocument Chart</expanded-acronym>
+    <sub-class-of type="application/zip"/>
+    <generic-icon name="x-office-spreadsheet"/>
+    <magic priority="50">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" value="application/vnd.oasis.opendocument.chart-template" offset="38"/>
+        </match>
+      </match>
+    </magic>
+    <glob pattern="*.otc"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.formula">
     <_comment>ODF formula</_comment>
@@ -853,7 +868,7 @@ command to generate the output files.
   <mime-type type="application/vnd.oasis.opendocument.database">
     <_comment>ODB database</_comment>
     <acronym>ODB</acronym>
-    <expanded-acronym>OpenOffice.org Database</expanded-acronym>
+    <expanded-acronym>OpenDocument Database</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.odb"/>

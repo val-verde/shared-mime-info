@@ -2752,6 +2752,7 @@ command to generate the output files.
   <mime-type type="application/zip">
     <_comment>Zip archive</_comment>
     <alias type="application/x-zip-compressed"/>
+    <alias type="application/x-zip"/>
     <generic-icon name="package-x-generic"/>
     <magic priority="40">
       <match type="string" value="PK\003\004" offset="0"/>

@@ -959,6 +959,9 @@ command to generate the output files.
   <mime-type type="application/x-7z-compressed">
     <_comment>7-zip archive</_comment>
     <generic-icon name="package-x-generic"/>
+    <magic priority="50">
+      <match type="string" value="7z\274\257\047\034" offset="0"/>
+    </magic>
     <glob pattern="*.7z"/>
   </mime-type>
   <mime-type type="application/x-abiword">

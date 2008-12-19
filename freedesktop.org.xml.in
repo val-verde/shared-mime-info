@@ -1130,6 +1130,12 @@ command to generate the output files.
     <generic-icon name="x-office-document"/>
     <glob pattern="*.cbr"/>
   </mime-type>
+  <mime-type type="application/x-cb7">
+    <_comment>comic book archive</_comment>
+    <sub-class-of type="application/x-7z-compressed"/>
+    <generic-icon name="x-office-document"/>
+    <glob pattern="*.cb7"/>
+  </mime-type>
   <mime-type type="application/x-cbz">
     <_comment>comic book archive</_comment>
     <sub-class-of type="application/zip"/>

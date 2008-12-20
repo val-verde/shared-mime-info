@@ -3829,6 +3829,9 @@ command to generate the output files.
   <mime-type type="image/x-xcf">
     <_comment>GIMP image</_comment>
     <glob pattern="*.xcf"/>
+    <magic priority="50">
+      <match type="string" value="gimp xcf file" offset="0"/>
+    </magic>
   </mime-type>
   <mime-type type="image/x-xfig">
     <_comment>XFig image</_comment>

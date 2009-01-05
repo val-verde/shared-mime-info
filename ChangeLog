@@ -1,3 +1,12 @@
+2009-01-05  David Faure  <faure@kde.org>
+
+	* freedesktop.org.xml.in: Remove application/x-msi magic,
+	it was just generic ole-storage magic so even .doc files would match it.
+	 (Closes: #18072)
+	* tests/list: Add expected failure for the lookup by file data for test.msi,
+	since we have no msi-specific magic. Would be better to be able to specify
+	"the expected mimetype for this data-only lookup is ole-storage" in tests/list :-)
+
 2008-12-20  David Faure  <faure@kde.org>
 
 	* freedesktop.org.xml.in: Add magic for GIMP xcf files

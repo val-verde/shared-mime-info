@@ -169,6 +169,12 @@ command to generate the output files.
     </magic>
     <glob pattern="*.xspf"/>
   </mime-type>
+  <mime-type type="audio/x-gsm">
+    <_comment>GSM 06.10 audio</_comment>
+    <acronym>GSM</acronym>
+    <expanded-acronym>Global System for Mobile communications</expanded-acronym>
+    <glob pattern="*.gsm"/>
+  </mime-type>
   <mime-type type="audio/x-iriver-pla">
     <_comment>iRiver Playlist</_comment>
     <magic priority="50">

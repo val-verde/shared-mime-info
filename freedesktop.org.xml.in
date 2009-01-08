@@ -2306,7 +2306,6 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-pkcs12">
     <_comment>PKCS#12 certificate bundle</_comment>
-    <generic-icon name="text-x-generic"/>
     <glob pattern="*.p12"/>
     <glob pattern="*.pfx"/>
   </mime-type>

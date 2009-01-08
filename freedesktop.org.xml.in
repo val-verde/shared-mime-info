@@ -235,6 +235,10 @@ command to generate the output files.
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.p10"/>
   </mime-type>
+  <mime-type type="application/pkix-pkipath">
+    <_comment>PkiPath certification path</_comment>
+    <glob pattern="*.pkipath"/>
+  </mime-type>
   <mime-type type="application/postscript">
     <_comment>PS document</_comment>
     <acronym>PS</acronym>
@@ -2303,6 +2307,11 @@ command to generate the output files.
     <glob pattern="*.php"/>
     <glob pattern="*.php3"/>
     <glob pattern="*.php4"/>
+  </mime-type>
+  <mime-type type="application/x-pkcs7-certificates">
+    <_comment>PKCS#7 certificate bundle</_comment>
+    <glob pattern="*.p7b"/>
+    <glob pattern="*.spc"/>
   </mime-type>
   <mime-type type="application/x-pkcs12">
     <_comment>PKCS#12 certificate bundle</_comment>

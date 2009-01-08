@@ -1,5 +1,14 @@
 2009-01-08  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/list:
+	* tests/test.p7b:
+	* tests/test.pkipath: Patch from Ville Skyttä
+	<ville.skytta@iki.fi> to add PKCS#7 and PkiPath file types
+	(Closes: #10864)
+
+2009-01-08  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: PKCS#12 bundles are not text files,
 	patch from Ville Skyttä <ville.skytta@iki.fi> (Closes: #19056)
 

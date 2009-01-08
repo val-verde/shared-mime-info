@@ -1,3 +1,10 @@
+2009-01-08  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in: Patch from Ville Skyttä
+	<ville.skytta@iki.fi> to add support for MS cab files
+	* tests/copying.cab:
+	* tests/list: Add test file for the above
+
 2009-01-07  Pino Toscano  <pino@kde.org>
 
 	* update-mime-database.1: Update the URL to the specifications.

@@ -1313,6 +1313,15 @@ command to generate the output files.
     <glob pattern="*.kdelnk"/>
     <alias type="application/x-gnome-app-info"/>
   </mime-type>
+  <mime-type type="application/x-fictionbook+xml">
+    <_comment>FictionBook document</_comment>
+    <sub-class-of type="application/xml"/>
+    <glob pattern="*.fb2"/>
+    <magic priority="80">
+      <match type="string" value="&lt;FictionBook" offset="0:256"/>
+    </magic>
+    <root-XML namespaceURI="http://www.gribuser.ru/xml/fictionbook/2.0" localName="FictionBook"/>
+  </mime-type>
   <mime-type type="application/x-dia-diagram">
     <_comment>Dia diagram</_comment>
     <generic-icon name="image-x-generic"/>

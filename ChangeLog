@@ -1,5 +1,12 @@
 2009-01-08  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/Stallman_Richard_-_The_GNU_Manifesto.fb2:
+	* tests/list: Patch from Pino Toscano <pino@kde.org>
+	to add the FictionBook (fb2) file type (Closes: #17553)
+
+2009-01-08  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Ville Skyttä
 	<ville.skytta@iki.fi> to add support for MS cab files
 	* tests/copying.cab:

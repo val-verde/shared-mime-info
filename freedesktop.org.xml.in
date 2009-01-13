@@ -291,6 +291,16 @@ command to generate the output files.
       <match type="string" value="&lt;smil" offset="0:256"/>
     </magic>
   </mime-type>
+  <mime-type type="application/vnd.ms-wpl">
+    <_comment>WPL playlist</_comment>
+    <acronym>WPL</acronym>
+    <expanded-acronym>Windows Media Player Playlist</expanded-acronym>
+    <generic-icon name="video-x-generic"/>
+    <glob pattern="*.wpl"/>
+    <magic priority="60">
+      <match type="string" value="&lt;?wpl" offset="0:256"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/x-sqlite2">
     <_comment>SQLite2 database</_comment>
     <magic>

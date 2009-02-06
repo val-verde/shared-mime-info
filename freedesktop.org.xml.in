@@ -2152,6 +2152,7 @@ command to generate the output files.
   <mime-type type="application/ogg">
     <_comment>Ogg multimedia file</_comment>
     <generic-icon name="video-x-generic"/>
+    <alias type="application/x-ogg"/>
     <magic priority="50">
       <match type="string" value="OggS" offset="0"/>
     </magic>
@@ -2180,6 +2181,8 @@ command to generate the output files.
   <mime-type type="audio/x-vorbis+ogg">
     <_comment>Ogg Vorbis audio</_comment>
     <sub-class-of type="audio/ogg"/>
+    <alias type="audio/vorbis"/>
+    <alias type="audio/x-vorbis"/>
     <magic priority="80">
       <match type="string" value="OggS" offset="0">
         <match type="string" value="\x01vorbis" offset="28"/>
@@ -2190,6 +2193,7 @@ command to generate the output files.
   <mime-type type="audio/x-flac+ogg">
     <_comment>Ogg FLAC audio</_comment>
     <sub-class-of type="audio/ogg"/>
+    <alias type="audio/x-oggflac"/>
     <magic priority="80">
       <match type="string" value="OggS" offset="0">
         <match type="string" value="fLaC" offset="28"/>
@@ -2220,6 +2224,7 @@ command to generate the output files.
   <mime-type type="video/x-theora+ogg">
     <_comment>Ogg Theora video</_comment>
     <sub-class-of type="video/ogg"/>
+    <alias type="video/x-theora"/>
     <magic priority="80">
       <match type="string" value="OggS" offset="0">
         <match type="string" value="\x80theora" offset="28"/>
@@ -2230,6 +2235,7 @@ command to generate the output files.
   <mime-type type="video/x-ogm+ogg">
     <_comment>OGM video</_comment>
     <sub-class-of type="video/ogg"/>
+    <alias type="video/x-ogm"/>
     <magic priority="80">
       <match type="string" value="OggS" offset="0">
         <match type="string" value="video" offset="29"/>
@@ -3001,6 +3007,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/mp2">
     <_comment>MP2 audio</_comment>
+    <alias type="audio/x-mp2"/>
     <glob pattern="*.mp2"/>
   </mime-type>
   <mime-type type="audio/mpeg">
@@ -3021,6 +3028,8 @@ command to generate the output files.
     <alias type="audio/mpegurl" />
     <alias type="application/m3u"/>
     <alias type="audio/x-mp3-playlist"/>
+    <alias type="audio/m3u"/>
+    <alias type="audio/x-m3u"/>
     <glob pattern="*.m3u"/>
     <glob pattern="*.m3u8"/>
     <glob pattern="*.vlc"/>
@@ -4815,6 +4824,7 @@ command to generate the output files.
     <acronym>ASF</acronym>
     <expanded-acronym>Advanced Streaming Format</expanded-acronym>
     <alias type="video/x-ms-wm"/>
+    <alias type="application/vnd.ms-asf"/>
     <glob pattern="*.asf"/>
     <magic priority="50">
       <match type="big32" value="0x3026b275" offset="0"/>

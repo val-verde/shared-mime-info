@@ -1,5 +1,13 @@
 2009-02-09  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Robert DaSilva
+	<spunit262@Yahoo.com> to make Javascript a sub-class of C sources
+	so as to avoid misdetection
+	* tests/list:
+	* tests/survey.js: Add test-case from the bug above
+
+2009-02-09  Bastien Nocera  <hadess@hadess.net>
+
 	* tests/list: MS Office apps suck, we're not expected to recognise
 	a template file by magic (Closes: #18863)
 

@@ -1,5 +1,11 @@
 2009-02-09  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Gnucash documents aren't spreadsheets,
+	so call it "financial data", leave the icon as-is though
+	(Closes: #19355)
+
+2009-02-09  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add alias for text/x-csv (Closes: #19664)
 
 2009-02-09  Bastien Nocera  <hadess@hadess.net>

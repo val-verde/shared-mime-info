@@ -1,5 +1,10 @@
 2009-02-09  Bastien Nocera  <hadess@hadess.net>
 
+	* tests/list: MS Office apps suck, we're not expected to recognise
+	a template file by magic (Closes: #18863)
+
+2009-02-09  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Gnucash documents aren't spreadsheets,
 	so call it "financial data", leave the icon as-is though
 	(Closes: #19355)

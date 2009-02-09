@@ -4282,6 +4282,7 @@ command to generate the output files.
     <_comment>Vala source code</_comment>
     <sub-class-of type="text/x-csrc"/>
     <glob pattern="*.vala"/>
+    <glob pattern="*.vapi"/>
   </mime-type>
   <mime-type type="text/x-dcl">
     <_comment>DCL script</_comment>

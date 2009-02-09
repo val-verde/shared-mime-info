@@ -1,5 +1,10 @@
 2009-02-09  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Add *.vapi as a possible pattern
+	for Vala files (Closes: #19507)
+
+2009-02-09  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Robert DaSilva
 	<spunit262@Yahoo.com> to make Javascript a sub-class of C sources
 	so as to avoid misdetection

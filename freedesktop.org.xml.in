@@ -1016,6 +1016,17 @@ command to generate the output files.
     <generic-icon name="x-office-document"/>
     <glob pattern="*.sam"/>
   </mime-type>
+  <mime-type type="application/x-aportisdoc">
+    <_comment>AportisDoc document</_comment>
+    <sub-class-of type="application/x-palm-database"/>
+    <generic-icon name="x-office-document"/>
+    <magic priority="50">
+      <match type="string" value="TEXtREAd" offset="60"/>
+      <match type="string" value="TEXtTlDc" offset="60"/>
+    </magic>
+    <glob pattern="*.pdb"/>
+    <glob pattern="*.pdc"/>
+  </mime-type>
   <mime-type type="application/x-applix-spreadsheet">
     <_comment>Applix Spreadsheets spreadsheet</_comment>
     <generic-icon name="x-office-spreadsheet"/>
@@ -2338,6 +2349,14 @@ command to generate the output files.
     <_comment>PlanPerfect spreadsheet</_comment>
     <generic-icon name="x-office-spreadsheet"/>
     <glob pattern="*.pln"/>
+  </mime-type>
+  <mime-type type="application/x-pocket-word">
+    <_comment>Pocket Word document</_comment>
+    <generic-icon name="x-office-document"/>
+    <magic priority="50">
+      <match type="string" value="{\\pwi" offset="0"/>
+    </magic>
+    <glob pattern="*.psw"/>
   </mime-type>
   <mime-type type="application/x-profile">
     <_comment>profiler results</_comment>

@@ -73,6 +73,9 @@ test.wps application/vnd.ms-works ox
 sample.docx application/vnd.openxmlformats-officedocument.wordprocessingml.document oxo
 sample.xlsx application/vnd.openxmlformats-officedocument.spreadsheetml.sheet oxo
 sample.pptx application/vnd.openxmlformats-officedocument.presentationml.presentation oxo
+# Copied from http://bugs.freedesktop.org/show_bug.cgi?id=20185
+pocket-word.psw application/x-pocket-word
+aportis.pdb application/x-aportisdoc
 # Copied from https://artcontext.net/art/01/mime/docs/show.php?type=application%2Fandrew-inset&js=
 internet.ez application/andrew-inset ox
 # Copied from http://extensions.services.openoffice.org/project/anaphraseus

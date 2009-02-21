@@ -1,5 +1,14 @@
 2009-02-21  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/aportis.pdb:
+	* tests/list:
+	* tests/pocket-word.psw: Patch from Caolan McNamara to
+	to add the Pocket Word and AportisDoc document types
+	(Closes: #20185)
+
+2009-02-21  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Patch from Götz Waschk and
 	Milan Bouchet-Valat to add Office 2007/OpenXML documents
 	mime-types (Closes: #13904)

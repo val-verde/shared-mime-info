@@ -1,3 +1,11 @@
+=== shared-mime-info 0.60 ===
+
+2009-02-21  Bastien Nocera  <hadess@hadess.net>
+
+	* NEWS: upd
+	* configure.in: 0.60
+	* Makefile.am: Fix running make distcheck
+
 2009-02-21  Bastien Nocera  <hadess@hadess.net>
 
 	* HACKING: Add some more details about the test suite

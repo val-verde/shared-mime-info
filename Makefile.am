@@ -1,4 +1,4 @@
-SUBDIRS=po
+SUBDIRS=. po
 
 INCLUDES = $(ALL_CFLAGS)
 
@@ -70,9 +70,9 @@ uninstall-hook:
 all: check
 	make -C po shared-mime-info.pot
 
-check:
-	@if test -n $(XMLLINT) ; then \
-		xmllint --noout --valid $(top_builddir)/freedesktop.org.xml;	\
+check: freedesktop.org.xml
+	if test -n $(XMLLINT) ; then \
+		xmllint --noout --valid $(top_srcdir)/freedesktop.org.xml;	\
 	fi
 	if test -d CVS/ && test -x ../xdgmime/src/test-mime-data && test -x $(top_builddir)/test-tree-magic ; then \
 		mkdir -p $(top_builddir)/temp-mime-dir/mime/packages ; \

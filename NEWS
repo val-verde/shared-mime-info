@@ -1,3 +1,39 @@
+shared-mime-info 0.60 (2009-02-21)
+* Mime-type Changes:
+- Add alias for SMIL
+- Fix SMIL detection
+- Add Annodex mime-type
+- Only use .ogg for audio Ogg files
+- Fix RDF mime-type
+- Oasis mime-type fixes
+- Make PICTURES match a picture CD but not "pictures"
+- Add alias for application/zip
+- Add Microsoft Document Imaging format
+- Add magic for 7z archives
+- Add cb7 comic book archives
+- Add magic for XCF files
+- Remove application/x-msi magic
+- Add audio/x-gsm mime-type
+- Add MS cab mime-type
+- Add FictionBook mime-type
+- Fix PKCS#12 bundles definition (not text files)
+- Add PKCS#7 and PkiPath mime-types
+- Add application/vnd.ms-wpl mime-type
+- Add more aliases for media types
+- Add alias for text/x-csv
+- Fix comment for Gnucash files
+- Make Javascript a sub-class of C
+- Add *.vapi as a glob for Vala files
+- Fix image/fits to match IANA
+- Add Office 2007/OpenXML documents mime-types
+- Add Pocket Word and AportisDoc document types
+- Fix MS ICO, and Photoshop image to match IANA
+
+* Other changes:
+- Regenerate the pot file when needed
+- Some clarifications in the spec
+- Build fix when srcdir != builddir
+
 shared-mime-info 0.51 (2008-07-23)
 * Mime-type Changes:
 - Strings review

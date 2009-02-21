@@ -3654,16 +3654,20 @@ command to generate the output files.
     <glob pattern="*.epsi.gz"/>
     <glob pattern="*.epsf.gz"/>
   </mime-type>
-  <mime-type type="image/x-ico">
-    <_comment>ICO icon</_comment>
-    <acronym>ICO</acronym>
-    <expanded-acronym>Windows Icon</expanded-acronym>
+  <mime-type type="image/vnd.microsoft.icon">
+    <_comment>Microsoft icon</_comment>
     <magic priority="50">
       <match type="string" value="\0\0\1\0" offset="0">
         <match type="string" value="\0" offset="5"/>
       </match>
     </magic>
     <glob pattern="*.ico"/>
+    <alias type="application/ico"/>
+    <alias type="image/ico"/>
+    <alias type="image/icon"/>
+    <alias type="image/x-ico"/>
+    <alias type="image/x-icon"/>
+    <alias type="text/ico"/>
   </mime-type>
   <mime-type type="image/x-icns">
     <_comment>MacOS X icon</_comment>

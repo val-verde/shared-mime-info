@@ -1,5 +1,11 @@
 2009-02-21  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in: Patch from Magnus Bergman to make the
+	Windows icon match its IANA definition (Closes: #20069)
+	* tests/list: Fix mime-type for the above
+
+2009-02-21  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in:
 	* tests/aportis.pdb:
 	* tests/list:

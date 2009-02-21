@@ -4916,6 +4916,30 @@ command to generate the output files.
     <root-XML namespaceURI="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" localName="window"/>
     <glob pattern="*.xul"/>
   </mime-type>
+  <mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+     <_comment>Word 2007 document</_comment>
+     <glob pattern="*.docx"/>
+     <glob pattern="*.docm"/>
+     <alias type="application/vnd.ms-word.document.macroEnabled.12"/>
+     <sub-class-of type="application/zip"/>
+     <generic-icon name="x-office-document"/>
+   </mime-type>
+   <mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
+     <_comment>PowerPoint 2007 presentation</_comment>
+     <glob pattern="*.pptx"/>
+     <glob pattern="*.pptm"/>
+     <alias type="application/vnd.ms-powerpoint.presentation.macroEnabled.12"/>
+     <sub-class-of type="application/zip"/>
+     <generic-icon name="x-office-document"/>
+   </mime-type>
+   <mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+     <_comment>Excel 2007 spreadsheet</_comment>
+     <glob pattern="*.xlsx"/>
+     <glob pattern="*.xlsm"/>
+     <alias type="application/vnd.ms-excel.sheet.macroEnabled.12"/>
+     <sub-class-of type="application/zip"/>
+     <generic-icon name="x-office-document"/>
+   </mime-type>
   <mime-type type="application/x-t602">
     <_comment>T602 document</_comment>
     <generic-icon name="x-office-document"/>

@@ -69,6 +69,10 @@ test-template.dot application/msword-template oxx
 ocf10-20060911.epub application/epub+zip
 # Copied from http://libwps.svn.sourceforge.net/viewvc/libwps/trunk/reference/
 test.wps application/vnd.ms-works ox
+# Copied from http://openxmldeveloper.org/articles/OpenXMLsamples.aspx
+sample.docx application/vnd.openxmlformats-officedocument.wordprocessingml.document oxo
+sample.xlsx application/vnd.openxmlformats-officedocument.spreadsheetml.sheet oxo
+sample.pptx application/vnd.openxmlformats-officedocument.presentationml.presentation oxo
 # Copied from https://artcontext.net/art/01/mime/docs/show.php?type=application%2Fandrew-inset&js=
 internet.ez application/andrew-inset ox
 # Copied from http://extensions.services.openoffice.org/project/anaphraseus

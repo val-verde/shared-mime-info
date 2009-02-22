@@ -2036,6 +2036,14 @@ command to generate the output files.
     <glob pattern="*.hdf5"/>
     <glob pattern="*.h5"/>
   </mime-type>
+  <mime-type type="application/x-iff">
+    <_comment>IFF file</_comment>
+    <acronym>IFF</acronym>
+    <expanded-acronym>Interchange File Format</expanded-acronym>
+    <magic priority="40">
+      <match type="string" value="FORM" offset="0"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/x-ipod-firmware">
     <_comment>iPod firmware</_comment>
     <magic priority="50">
@@ -3483,23 +3491,27 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-aifc">
     <_comment>AIFC audio</_comment>
+    <acronym>AIFC</acronym>
+    <expanded-acronym>Audio Interchange File format Compressed</expanded-acronym>
+    <sub-class-of type="application/x-iff">
     <magic priority="50">
       <match type="string" value="AIFC" offset="8"/>
     </magic>
+    <glob pattern="*.aifc"/>
+    <glob pattern="*.aiffc"/>
+    <alias type="audio/x-aiffc"/>
   </mime-type>
   <mime-type type="audio/x-aiff">
     <_comment>AIFF/Amiga/Mac audio</_comment>
+    <acronym>AIFF</acronym>
+    <expanded-acronym>Audio Interchange File Format</expanded-acronym>
+    <sub-class-of type="application/x-iff">
     <magic priority="50">
       <match type="string" value="AIFF" offset="8"/>
-      <match type="string" value="AIFC" offset="8"/>
       <match type="string" value="8SVX" offset="8"/>
     </magic>
     <glob pattern="*.aiff"/>
     <glob pattern="*.aif"/>
-    <glob pattern="*.aifc"/>
-  </mime-type>
-  <mime-type type="audio/x-aiffc">
-    <_comment>AIFF audio</_comment>
   </mime-type>
   <mime-type type="audio/x-ape">
     <_comment>Monkey's audio</_comment>
@@ -4365,15 +4377,19 @@ command to generate the output files.
       <match type="string" value="icns" offset="0"/>
     </magic>
   </mime-type>
-  <mime-type type="image/x-iff">
-    <_comment>IFF image</_comment>
-    <glob pattern="*.iff"/>
-  </mime-type>
   <mime-type type="image/x-ilbm">
     <_comment>ILBM image</_comment>
-    <acronym>ILBM image</acronym>
+    <acronym>ILBM</acronym>
     <expanded-acronym>InterLeaved BitMap</expanded-acronym>
+    <sub-class-of type="application/x-iff"/>
+    <magic priority="50">
+      <match value="ILBM" type="string" offset="8"/>
+      <match value="PBM " type="string" offset="8"/>
+    </magic>
+    <glob pattern="*.iff"/>
     <glob pattern="*.ilbm"/>
+    <glob pattern="*.lbm"/>
+    <alias type="image/x-iff"/>
   </mime-type>
   <mime-type type="image/x-jng">
     <_comment>JNG image</_comment>

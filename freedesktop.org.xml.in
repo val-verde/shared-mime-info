@@ -2024,6 +2024,16 @@ command to generate the output files.
     <glob pattern="*.mka"/>
     <sub-class-of type="application/x-matroska"/>
   </mime-type>
+  <mime-type type="application/mxf">
+    <_comment>MXF video</_comment>
+    <acronym>MXF</acronym>
+    <expanded-acronym>Material Exchange Format</expanded-acronym>
+    <generic-icon name="video-x-generic"/>
+    <magic priority="50">
+      <match type="string" value="\x06\x0e\x2b\x34\x02\x05\x01\x01\x0d\x01\x02\x01\x01\x02" offset="0:256"/>
+    </magic>
+    <glob pattern="*.mxf"/>
+  </mime-type>
   <mime-type type="text/x-ocl">
     <_comment>OCL file</_comment>
     <acronym>OCL</acronym>

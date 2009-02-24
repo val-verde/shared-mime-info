@@ -1,3 +1,11 @@
+2009-02-24  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in:
+	* tests/list:
+	* tests/small_wav.mxf: Patch from Sebastian Dröge
+	<slomo@circular-chaos.org> to add the MXF video mime-type
+	(Closes: #20292)
+
 === shared-mime-info 0.60 ===
 
 2009-02-21  Bastien Nocera  <hadess@hadess.net>

@@ -68,7 +68,7 @@ uninstall-hook:
 	rm -f "$(DESTDIR)$(datadir)/mime/types"
 
 all: check
-	make -C po shared-mime-info.pot
+	$(MAKE) -C po shared-mime-info.pot
 
 check: freedesktop.org.xml
 	if test -n $(XMLLINT) ; then \

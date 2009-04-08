@@ -1,3 +1,9 @@
+2009-04-08  David Faure  <faure@kde.org>
+
+	* shared-mime-info-spec.xml: Add definition of glob-deleteall
+	and magic-deleteall, and their effect on globs2 and magic files,
+	as discussed on the xdg list.
+
 2009-03-16  Bastien Nocera  <hadess@hadess.net>
 
 	* Makefile.am: Don't use "make" but "$(MAKE)" to call

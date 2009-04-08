@@ -131,7 +131,10 @@ For example, when using the default paths, <quote>Load all the
 <filename>&lt;MIME&gt;/text/html.xml</filename> files</quote> means to
 load <filename>/usr/share/mime/text/html.xml</filename>,
 <filename>/usr/local/share/mime/text/html.xml</filename>, and
-<filename>~/.local/share/mime/text/html.xml</filename> (if they exist).
+<filename>~/.local/share/mime/text/html.xml</filename> (if they exist, and in this order).
+Information found in a directory is added to the information found in previous
+directories, except when <userinput>glob-deleteall</userinput> or <userinput>magic-deleteall</userinput>
+is used to overwrite parts of a mimetype definition.
 		</para>
 		<para>
 Each application that wishes to contribute to the MIME database will install a
@@ -235,6 +238,11 @@ not being used by either desktop, and glob patterns are more suitable for
 filename matching anyway.
 				</para></listitem>
 				<listitem><para>
+A <userinput>glob-deleteall</userinput> element, which indicates that patterns from
+previously parsed directories must be discarded. The patterns defined in this file
+(if any) are used instead.
+				</para></listitem>
+				<listitem><para>
 <userinput>magic</userinput> elements contain a list of
 <userinput>match</userinput> elements, any of which may match, and an optional
 <userinput>priority</userinput> attribute for all of the contained rules. Low
@@ -281,6 +289,11 @@ Each element corresponds to one line of
 <manvolnum>1</manvolnum></citerefentry>'s <filename>magic.mime</filename> file.
 They can be nested in the same way to provide the equivalent of continuation
 lines. That is, <![CDATA[<a><b/><c/></a>]]> means 'a and (b or c)'.
+				</para></listitem>
+				<listitem><para>
+A <userinput>magic-deleteall</userinput> element, which indicates that magic matches from
+previously parsed directories must be discarded. The magic defined in this file
+(if any) is used instead.
 				</para></listitem>
 				<listitem><para>
 <userinput>alias</userinput> elements indicate that the type is also sometimes
@@ -489,6 +502,23 @@ If the same pattern is defined twice, then they MUST be ordered by the
 directory the rule came from, as described above.
 		</para>
 		<para>
+The <userinput>glob-deleteall</userinput> element, which means that implementations
+SHOULD discard information from previous directories, is written out into the globs2 file using
+__NOGLOBS__ as the pattern. For instance:
+			<programlisting><![CDATA[
+0:text/x-diff:__NOGLOBS__
+50:text/x-diff:*.diff
+...
+]]></programlisting>
+		</para>
+		<para>
+In the above example, the mimetype text/x-diff is redefined (for instance in a user's
+~/.local/share/mime) to only be associated with the pattern *.diff, so the other patterns
+like *.patch were removed. The weight in front of the __NOGLOBS__ line is ignored.
+In a given globs2 file, the __NOGLOBS__ line for a given mimetype is always written
+out before any other globs for this mimetype.
+		</para>
+		<para>
 Lines beginning with `#' are comments and should be ignored. Everything from
 the `:' character to the newline is part of the pattern; spaces should not be
 stripped. The file is in the UTF-8 encoding. The format of the glob pattern
@@ -576,6 +606,13 @@ The text/x-diff above example would (on its own) create this magic file:
 00000030  09 0a 3e 30 3d 00 17 43  6f 6d 6d 6f 6e 20 73 75  |..>0=..Common su|
 00000040  62 64 69 72 65 63 74 6f  72 69 65 73 3a 20 0a     |bdirectories: .|
 ]]></programlisting>
+		</para>
+		<para>
+The <userinput>magic-deleteall</userinput> attribute, which means that implementations
+SHOULD discard information from previous directories, is written out into the magic file using
+__NOMAGIC__ as the value:
+<screen>>0=__NOMAGIC__\n</screen>
+This can be followed by other magic rules for the mimetype.
 		</para>
 	</sect2>
 	<sect2>

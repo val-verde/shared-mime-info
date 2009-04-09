@@ -1,3 +1,10 @@
+2009-04-09  Alexander Larsson  <alexl@redhat.com>
+
+	* update-mime-database.c: (process_freedesktop_node),
+	(compare_glob_by_weight), (cmp_magic), (magic_new), (main):
+	Support glob-deleteall and magic-deleteall nodes.
+	Copy glob and glob-deleteall nodes to the per-mimetype xml file.
+
 2009-04-08  David Faure  <faure@kde.org>
 
 	* shared-mime-info-spec.xml: Add definition of glob-deleteall

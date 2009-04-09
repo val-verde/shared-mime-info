@@ -32,6 +32,9 @@
 
 #define MIME_ERROR g_quark_from_static_string("mime-error-quark")
 
+#define NOGLOBS "__NOGLOBS__"
+#define NOMAGIC "__NOMAGIC__"
+
 #ifndef PATH_SEPARATOR
 # ifdef _WIN32
 #  define PATH_SEPARATOR ";"
@@ -90,12 +93,14 @@ struct _Glob {
 	int weight;
 	char *pattern;
 	Type *type;
+	gboolean noglob;
 };
 
 struct _Magic {
 	int priority;
 	Type *type;
 	GList *matches;
+	gboolean nomagic;
 };
 
 struct _Match {
@@ -157,6 +162,7 @@ static GLogLevelFlags enabled_log_levels = G_LOG_LEVEL_ERROR | G_LOG_LEVEL_CRITI
 
 /* Static prototypes */
 static Magic *magic_new(xmlNode *node, Type *type, GError **error);
+static Match *match_new(void);
 
 static TreeMagic *tree_magic_new(xmlNode *node, Type *type, GError **error);
 
@@ -350,6 +356,9 @@ static void add_namespace(Type *type, const char *namespaceURI,
 static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 					 GError **error)
 {
+	gboolean copy_to_xml;
+
+	copy_to_xml = FALSE;
 	if (strcmp((char *)field->name, "glob") == 0)
 	{
 		gchar *pattern;	
@@ -376,6 +385,7 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 			list = g_list_append (list, glob);
 			g_hash_table_insert(globs_hash, g_strdup (glob->pattern), list);
 			xmlFree(pattern);
+			copy_to_xml = TRUE;
 		}
 		else
 		{
@@ -385,6 +395,20 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 				_("Missing 'pattern' attribute in <glob> "
 				  "element"));
 		}
+	}
+	else if (strcmp((char *)field->name, "glob-deleteall") == 0)
+	{
+		Glob *glob;
+		GList *list = g_hash_table_lookup (globs_hash, NOGLOBS);
+
+		glob = g_new0 (Glob, 1);
+		glob->pattern = g_strdup (NOGLOBS);
+		glob->type = type;
+		glob->weight = 0;
+		glob->noglob = TRUE;
+		list = g_list_append (list, glob);
+		g_hash_table_insert(globs_hash, g_strdup (glob->pattern), list);
+		copy_to_xml = TRUE;
 	}
 	else if (strcmp((char *)field->name, "magic") == 0)
 	{
@@ -399,6 +423,22 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 		}
 		else
 			g_return_val_if_fail(magic == NULL, FALSE);
+	}
+	else if (strcmp((char *)field->name, "magic-deleteall") == 0)
+	{
+		Magic *magic;
+		Match *match;
+
+		magic = g_new0(Magic, 1);
+		magic->priority = 0;
+		magic->type = type;
+		magic->nomagic = TRUE;
+		match = match_new ();
+		match->data = g_strdup (NOMAGIC);
+		match->data_length = strlen (NOMAGIC);
+		magic->matches = g_list_prepend (NULL, match);
+
+		g_ptr_array_add(magic_array, magic);
 	}
 	else if (strcmp((char *)field->name, "treemagic") == 0)
 	{
@@ -417,7 +457,7 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 	else if (strcmp((char *)field->name, "comment") == 0 ||
 		 strcmp((char *)field->name, "acronym") == 0 ||
 		 strcmp((char *)field->name, "expanded-acronym") == 0)
-		return FALSE;
+		copy_to_xml = TRUE;
 	else if (strcmp((char *)field->name, "alias") == 0 ||
 		 strcmp((char *)field->name, "sub-class-of") == 0)
 	{
@@ -445,18 +485,20 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 				nlist = g_slist_append (list, g_strdup(other_type));
 				if (list == NULL)
 					g_hash_table_insert(subclass_hash, 
-							    g_strdup(typename), nlist);    
+							    g_strdup(typename), nlist);
 			}
 			g_free(typename);
 			xmlFree(other_type);
-			
-			return FALSE;	/* Copy through */
+
+			copy_to_xml = TRUE; /* Copy through */
 		}
-		
-		xmlFree(other_type);
-		g_set_error(error, MIME_ERROR, 0,
-			_("Incorrect or missing 'type' attribute "
-			  "in <%s>"), field->name);
+		else
+		{
+			xmlFree(other_type);
+			g_set_error(error, MIME_ERROR, 0,
+				    _("Incorrect or missing 'type' attribute "
+				      "in <%s>"), field->name);
+		}
 	}
 	else if (strcmp((char *)field->name, "root-XML") == 0)
 	{
@@ -495,11 +537,13 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 
 			xmlFree (icon);
 
-			return FALSE;   /* Copy through */
+			copy_to_xml = TRUE; /* Copy through */
 		}
 	}
 
-	return !*error;
+	if (*error)
+		return FALSE;
+	return !copy_to_xml;
 }
 
 /* Checks to see if 'node' has the given value for xml:lang.
@@ -824,10 +868,13 @@ static void collect_glob2(gpointer key, gpointer value, gpointer data)
 	*listp = g_list_concat (*listp, g_list_copy ((GList *)value));
 }
 
-static int compare_by_weight (gpointer a, gpointer b)
+static int compare_glob_by_weight (gpointer a, gpointer b)
 {
 	Glob *ag = (Glob *)a;
 	Glob *bg = (Glob *)b;
+
+	if (ag->noglob || bg->noglob)
+		return bg->noglob - ag->noglob;
 
 	return bg->weight - ag->weight;
 }
@@ -886,6 +933,10 @@ static gint cmp_magic(gconstpointer a, gconstpointer b)
 	Magic *aa = *(Magic **) a;
 	Magic *bb = *(Magic **) b;
 	int retval;
+
+	/* Sort nomagic items at start */
+	if (aa->nomagic || bb->nomagic)
+		return bb->nomagic - aa->nomagic;
 
 	if (aa->priority > bb->priority)
 		return -1;
@@ -1440,7 +1491,7 @@ static Magic *magic_new(xmlNode *node, Type *type, GError **error)
 	}
 	else
 	{
-		magic = g_new(Magic, 1);
+		magic = g_new0(Magic, 1);
 		magic->priority = prio;
 		magic->type = type;
 		magic->matches = build_matches(node, error);
@@ -3432,7 +3483,7 @@ int main(int argc, char **argv)
 		GList *glob_list = NULL;
 
 		g_hash_table_foreach(globs_hash, collect_glob2, &glob_list);
-		glob_list = g_list_sort(glob_list, (GCompareFunc)compare_by_weight);
+		glob_list = g_list_sort(glob_list, (GCompareFunc)compare_glob_by_weight);
 		globs_path = g_strconcat(mime_dir, "/globs.new", NULL);
 		globs = open_or_die(globs_path);
 		g_fprintf(globs,

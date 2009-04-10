@@ -1,5 +1,10 @@
 2009-04-10  David Faure  <faure@kde.org>
 
+	* freedesktop.org.xml.in: Add application/vnd.google-earth.kml+xml
+	and application/vnd.google-earth.kmz mimetypes. (Closes: KDE bug #136983)
+
+2009-04-10  David Faure  <faure@kde.org>
+
 	* freedesktop.org.xml.in: Add Makefile.* pattern for text/x-makefile,
 	to catch Makefile.gnu and other similar names, with low weight to let
 	Makefile.html files be text/html.

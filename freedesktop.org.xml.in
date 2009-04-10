@@ -4932,6 +4932,20 @@ command to generate the output files.
     </magic>
     <glob pattern="*.emp"/>
   </mime-type>
+  <mime-type type="application/vnd.google-earth.kml+xml">
+    <_comment>KML geographic data</_comment>
+    <acronym>KML</acronym>
+    <expanded-acronym>Keyhole Markup Language</expanded-acronym>
+    <sub-class-of type="application/xml"/>
+    <glob pattern="*.kml"/>
+  </mime-type>
+  <mime-type type="application/vnd.google-earth.kmz">
+    <_comment>KML geographic compressed data</_comment>
+    <acronym>KML</acronym>
+    <expanded-acronym>Keyhole Markup Language</expanded-acronym>
+    <sub-class-of type="application/zip"/>
+    <glob pattern="*.kmz"/>
+  </mime-type>
   <mime-type type="application/x-ica">
     <_comment>Citrix ICA settings file</_comment>
     <acronym>ICA</acronym>

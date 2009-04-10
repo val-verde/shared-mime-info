@@ -2,6 +2,8 @@
 
 	* freedesktop.org.xml.in: Add application/vnd.google-earth.kml+xml
 	and application/vnd.google-earth.kmz mimetypes. (Closes: KDE bug #136983)
+	* tests/list:
+	* tests/googleearth.kml: Test data (from marble, actually).
 
 2009-04-10  David Faure  <faure@kde.org>
 

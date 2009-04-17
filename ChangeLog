@@ -1,3 +1,15 @@
+2009-04-17  Pino Toscano  <pino@kde.org>
+
+	* freedesktop.org.xml.in: Add application/x-xz and
+	application/x-xz-compressed-tar mimetypes. References for them is at:
+	http://tukaani.org/xz/ (http://tukaani.org/xz/xz-file-format.txt).
+	Based on a Mandriva patch.
+	* tests/good-1-delta-lzma2.tiff.xz: Test data for application/x-xz;
+	taken from the XZ test cases in the sources.
+	* tests/spinboxes-0.1.1-Linux.tar.xz: Test data for
+	application/x-xz-compressed-tar, provided by Helio Chissini de Castro.
+	* tests/list: Add test cases to the list.
+
 2009-04-10  David Faure  <faure@kde.org>
 
 	* freedesktop.org.xml.in: Add application/vnd.google-earth.kml+xml

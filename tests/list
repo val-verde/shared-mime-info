@@ -166,6 +166,9 @@ archive.7z application/x-7z-compressed
 comics.cb7 application/x-cb7 ox
 # Created using lcab
 copying.cab application/vnd.ms-cab-compressed
+# XZ test case found in the test cases in the sources
+good-1-delta-lzma2.tiff.xz application/x-xz
+spinboxes-0.1.1-Linux.tar.xz application/x-xz-compressed-tar ox
 
 # Audio/Video files
 # Copied from /usr/share/sounds/generic.wav

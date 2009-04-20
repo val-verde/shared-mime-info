@@ -1,5 +1,11 @@
 2009-04-20  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/list: Add another magic for Word documents, along with a test
+	case update (Closes: #20275)
+
+2009-04-20  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Avoid some .ini files getting detected
 	as Cisco VPN configuration files, when they start with "[main]"
 	(Closes: #20302)

@@ -499,6 +499,7 @@ command to generate the output files.
       <match type="string" value="MSWordDoc" offset="2108"/>
       <match type="string" value="Microsoft Word document data" offset="2112"/>
       <match type="string" value="bjbj" offset="546"/>
+      <match type="string" value="jbjb" offset="546"/>
     </magic>
     <glob pattern="*.doc"/>
     <alias type="application/vnd.ms-word"/>

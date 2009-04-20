@@ -1,6 +1,13 @@
 2009-04-20  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in:
+	* tests/foo.doc:
+	* tests/list: And another magic for Word documents, and a test case
+	(Closes: #20604)
+
+2009-04-20  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in:
 	* tests/list: Add another magic for Word documents, along with a test
 	case update (Closes: #20275)
 

@@ -5015,7 +5015,9 @@ command to generate the output files.
     <_comment>Cisco VPN Settings</_comment>
     <generic-icon name="text-x-generic"/>
     <magic priority="50">
-      <match type="string" value="[main]" offset="0"/>
+      <match type="string" value="[main]" offset="0">
+        <match type="string" value="AuthType=" offset="0:256"/>
+      </match>
     </magic>
     <glob pattern="*.pcf"/>
   </mime-type>

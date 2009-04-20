@@ -5129,10 +5129,26 @@ command to generate the output files.
     <!-- http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
          http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3 -->
     <_comment>software</_comment>
+  </mime-type>
+ 
+  <mime-type type="x-content/unix-software">
+    <!-- http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
+         http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3 -->
+    <_comment>UNIX software</_comment>
+    <sub-class-of type="x-content/software"/>
     <treemagic>
       <treematch path=".autorun" type="file" match-case="true" />
       <treematch path="autorun" type="file" match-case="true" />
       <treematch path="autorun.sh" type="file" match-case="true" />
+    </treemagic>
+  </mime-type>
+ 
+  <mime-type type="x-content/win32-software">
+    <!-- http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
+         http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3 -->
+    <_comment>Windows software</_comment>
+    <sub-class-of type="x-content/software"/>
+    <treemagic>
       <treematch path="autorun.exe" type="file" executable="true" />
       <treematch path="autorun.inf" type="file" />
     </treemagic>

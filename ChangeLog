@@ -1,3 +1,9 @@
+2009-04-20  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in:
+	* tests/tree-list: Patch from Cosimo Cecchi <cosimoc@gnome.org> to
+	separate Win32 from Unix autostart detection (Closes: #20562)
+
 2009-04-17  Pino Toscano  <pino@kde.org>
 
 	* freedesktop.org.xml.in: Add application/x-xz and

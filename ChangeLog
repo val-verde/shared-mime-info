@@ -1,5 +1,11 @@
 2009-04-20  Bastien Nocera  <hadess@hadess.net>
 
+	* update-mime-database.c (main): Patch from Martin von Gagern
+	<Martin.vGagern@gmx.net> to give a better error message when
+	a directory doesn't exist (Closes: #20552)
+
+2009-04-20  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in:
 	* tests/foo.doc:
 	* tests/list: And another magic for Word documents, and a test case

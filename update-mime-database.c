@@ -3437,6 +3437,12 @@ int main(int argc, char **argv)
 
 	package_dir = g_strconcat(mime_dir, "/packages", NULL);
 
+	if (access(mime_dir, F_OK))
+	{
+		g_warning(_("Directory '%s' does not exist!\n"), package_dir);
+		return EXIT_FAILURE;
+	}
+
 	if (access(mime_dir, W_OK))
 	{
 		g_warning(_("%s: I don't have write permission on %s.\n"

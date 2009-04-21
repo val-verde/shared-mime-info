@@ -1,5 +1,13 @@
 2009-04-21  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/list:
+	* tests/test.por:
+	* tests/test.sav: Patch from Ben Pfaff <blp@cs.stanford.edu>
+	to add SPSS portable and save formats mime-types (Closes: #20834)
+
+2009-04-21  Bastien Nocera  <hadess@hadess.net>
+
 	* tests/list:
 	* tests/test.bflng:
 	* tests/test.xhtml: Add a few disable tests for bug #19201

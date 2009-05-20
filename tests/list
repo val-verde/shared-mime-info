@@ -203,6 +203,8 @@ googleearth.kml application/vnd.google-earth.kml+xml ox
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=15260
 test.gnd application/gnunet-directory
 text.ps application/postscript
+text.ps.gz application/x-gzpostscript oxx
+text.PS.gz application/x-gzpostscript oxx
 test.cmake text/x-cmake ox
 bluerect.mdi image/vnd.ms-modi
 Stallman_Richard_-_The_GNU_Manifesto.fb2 application/x-fictionbook+xml

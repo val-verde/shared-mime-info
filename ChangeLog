@@ -1,5 +1,9 @@
 2009-07-31  Bastien Nocera  <hadess@hadess.net>
 
+	* tests/list: Fix test suite for those pesky PS files
+
+2009-07-31  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add *.otf as a glob for
 	OpenType fonts so file managers use magic to check
 	for fonts vs. OO.o documents (Closes: #20854)

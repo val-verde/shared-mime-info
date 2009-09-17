@@ -1,3 +1,11 @@
+2009-09-17  David Faure  <faure@kde.org>
+
+	* freedesktop.org.xml.in: Add application/java-archive alias
+	for application/x-java-archive so that distributions can get rid
+	of /usr/share/mime/packages/sun-java6-jre.xml, which was defining 
+	another mimetype for the *.jar glob, causing
+	https://bugs.launchpad.net/ubuntu/+source/krusader/+bug/309778
+
 2009-09-16  Pino Toscano  <pino@kde.org>
 
 	* freedesktop.org.xml.in: Add image/openraster mimetype. References:

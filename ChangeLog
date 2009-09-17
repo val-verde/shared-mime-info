@@ -1,3 +1,10 @@
+2009-09-18  David Faure  <faure@kde.org>
+
+	* freedesktop.org.xml.in: Remove wrong magic for application/x-java-archive.
+	The 0xcafe magic is really for java class files and since they get compressed
+	we won't find it anywhere in the jar file. I even found it in normal zip files
+	for completely unrelated reasons, so it doesn't make sense to have it.
+
 2009-09-17  David Faure  <faure@kde.org>
 
 	* freedesktop.org.xml.in: Add application/java-archive alias

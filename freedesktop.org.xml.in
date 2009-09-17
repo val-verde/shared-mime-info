@@ -1711,11 +1711,6 @@ command to generate the output files.
     <alias type="application/x-jar"/>
     <alias type="application/java-archive"/>
     <glob pattern="*.jar"/>
-    <magic priority="85">
-      <match type="string" value="PK\003\004" offset="0">
-        <match type="host16" value="0xcafe" offset="40" /> <!-- wrong -->
-      </match>
-    </magic>
   </mime-type>
   <mime-type type="application/x-java">
     <_comment>Java class</_comment>

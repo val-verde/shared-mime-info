@@ -3016,6 +3016,7 @@ command to generate the output files.
       <match type="string" value="ftypisom" offset="4"/>
       <match type="string" value="ftypmp42" offset="4"/>
       <match type="string" value="ftypMSNV" offset="4"/>
+      <match type="string" value="ftypM4V " offset="4"/>
     </magic>
     <glob pattern="*.mp4"/>
     <glob pattern="*.m4v"/>

@@ -1,3 +1,22 @@
+2009-10-02  Alexander Larsson  <alexl@redhat.com>
+
+	Based on patch from David Faure <faure@kde.org>
+
+	* shared-mime-info-spec.xml: Define new case-sensitive attribute, and
+	change the text from the two-step glob match to a single glob match,
+	that is either case sensitive or case insensitive. Add flags field to
+	globs2 file, define the "cs" flag.
+
+	* freedesktop.org.xml.in:
+	Make core, *.c and *.C case sensitive  (Closes: #22634)
+
+	* update-mime-database.c:
+	Process case-sensitive flag, write it out in globs2 and mime.cache
+
+	* tests/list:
+	Mark as expected success the previously problematic
+	case sensitive issues.
+
 2009-09-30  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in: Fix "make check" problem for MRML.

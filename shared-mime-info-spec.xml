@@ -456,6 +456,7 @@ For example:
 ...
 55:text/x-diff:*.patch
 50:text/x-diff:*.diff
+50:text/x-c++src:*.C:cs
 ...
 ]]></programlisting>
 		</para>
@@ -474,9 +475,9 @@ text/x-diff:*.diff
 ]]></programlisting>
 		</para>
 		<para>
-Applications MUST first try a case-sensitive match, then try again with the
-filename converted to lower-case if that fails.
-This is so that <filename>main.C</filename> will be seen as a C++ file,
+Applications MUST match globs case-insensitively, except when the case-sensitive attribute
+is set to true.
+This is so that e.g. <filename>main.C</filename> will be seen as a C++ file,
 but <filename>IMAGE.GIF</filename> will still use the *.gif pattern.
 		</para>
 		<para>
@@ -530,6 +531,16 @@ Common types (such as MS Word Documents) will be provided in the X Desktop
 Group's package, which MUST be required by all applications using this
 specification. Since each application will then only be providing information
 about its own types, conflicts should be rare.
+		</para>
+		<para>
+The fourth field ("cs" in the first globs2 example) contains a list of comma-separated flags.
+The flags currently defined are: cs (for case-sensitive). Implementations should ignore
+unknown flags.
+		</para>
+		<para>
+Implementations should also ignore further fields, so that the syntax of the globs2 file
+can be extended in the future. Example: "50:text/x-c++src:*.C:cs,newflag:newfeature:somethingelse"
+should currently be parsed as "50:text/x-c++src:*.C:cs".
 		</para>
 	</sect2>
 	<sect2>
@@ -683,8 +694,8 @@ mmappable format:
 </para>
 <programlisting>
 Header:
-2			CARD16		MAJOR_VERSION	1	
-2			CARD16		MINOR_VERSION	1	
+2			CARD16		MAJOR_VERSION	1
+2			CARD16		MINOR_VERSION	2
 4			CARD32		ALIAS_LIST_OFFSET
 4			CARD32		PARENT_LIST_OFFSET
 4			CARD32		LITERAL_LIST_OFFSET
@@ -722,7 +733,10 @@ LiteralList:
 LiteralEntry:
 4			CARD32		LITERAL_OFFSET
 4			CARD32		MIME_TYPE_OFFSET
-4			CARD32		WEIGHT
+4			CARD32		WEIGHT in lower 8 bits
+                                        FLAGS in rest:
+                                        0x100 = case-sensitive
+
 
 GlobList:
 4			CARD32		N_GLOBS
@@ -731,7 +745,9 @@ GlobList:
 GlobEntry:
 4			CARD32		GLOB_OFFSET
 4			CARD32		MIME_TYPE_OFFSET
-4			CARD32		WEIGHT
+4			CARD32		WEIGHT in lower 8 bits
+                                        FLAGS in rest:
+                                        0x100 = case-sensitive
 
 ReverseSuffixTree:
 4			CARD32		N_ROOTS
@@ -745,7 +761,9 @@ ReverseSuffixTreeNode:
 ReverseSuffixTreeLeafNode:
 4			CARD32		0 
 4			CARD32		MIME_TYPE_OFFSET
-4			CARD32		WEIGHT
+4			CARD32		WEIGHT in lower 8 bits
+                                        FLAGS in rest:
+                                        0x100 = case-sensitive
 
 MagicList:
 4			CARD32		N_MATCHES

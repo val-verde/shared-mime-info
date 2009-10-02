@@ -94,6 +94,7 @@ struct _Glob {
 	char *pattern;
 	Type *type;
 	gboolean noglob;
+	gboolean case_sensitive;
 };
 
 struct _Magic {
@@ -307,6 +308,24 @@ static int get_weight(xmlNode *node)
        return get_int_attribute (node, "weight");
 }
 
+/* Return the value of a false/true attribute, which defaults to false.
+ * Returns 0 or 1.
+ */
+static gboolean get_boolean_attribute(xmlNode *node, const char* name)
+{
+	char *attr;
+	attr = my_xmlGetNsProp(node, name, NULL);
+	if (attr)
+	{
+	    if (strcmp (attr, "true") == 0) 
+	    {
+		return TRUE;
+	    }
+	    xmlFree(attr);
+	}
+	return FALSE;
+}
+
 /* Process a <root-XML> element by adding a rule to namespace_hash */
 static void add_namespace(Type *type, const char *namespaceURI,
 			  const char *localName, GError **error)
@@ -363,8 +382,10 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 	{
 		gchar *pattern;	
 		gint weight;
+		gboolean case_sensitive;
 
 		weight = get_weight(field);
+		case_sensitive = get_boolean_attribute(field, "case-sensitive");
 
 		if (weight == -1)
 		{
@@ -382,6 +403,7 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 			glob->pattern = g_strdup (pattern);
 			glob->type = type;
 			glob->weight = weight;
+			glob->case_sensitive = case_sensitive;
 			list = g_list_append (list, glob);
 			g_hash_table_insert(globs_hash, g_strdup (glob->pattern), list);
 			xmlFree(pattern);
@@ -406,6 +428,7 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 		glob->type = type;
 		glob->weight = 0;
 		glob->noglob = TRUE;
+		glob->case_sensitive = FALSE;
 		list = g_list_append (list, glob);
 		g_hash_table_insert(globs_hash, g_strdup (glob->pattern), list);
 		copy_to_xml = TRUE;
@@ -847,6 +870,7 @@ static void write_out_glob2(GList *globs, FILE *stream)
 	GList *list;
 	Glob *glob;
 	Type *type;
+	gboolean need_flags;
 
 	for (list = globs ; list; list = list->next) {
 		glob = (Glob *)list->data;
@@ -855,9 +879,22 @@ static void write_out_glob2(GList *globs, FILE *stream)
 			g_warning("* Glob patterns can't contain literal newlines "
 				  "(%s in type %s/%s)\n", glob->pattern,
 				  type->media, type->subtype);
-		else
+		else 
+		{
+			need_flags = FALSE;
+			if (glob->case_sensitive)
+				need_flags = TRUE;
+
+			if (need_flags) {
+				g_fprintf(stream, "%d:%s/%s:%s%s\n",
+						  glob->weight, type->media, type->subtype, glob->pattern,
+						  glob->case_sensitive ? ":cs" : "");
+			}
+
+			/* Always write the line without the flags, for older parsers */
 			g_fprintf(stream, "%d:%s/%s:%s\n",
-				  glob->weight, type->media, type->subtype, glob->pattern);
+					  glob->weight, type->media, type->subtype, glob->pattern);
+		}
 	}
 }
 
@@ -2141,7 +2178,7 @@ write_card32 (FILE *cache, guint32 n)
 }
 
 #define MAJOR_VERSION 1
-#define MINOR_VERSION 1
+#define MINOR_VERSION 2
 
 static gboolean
 write_header (FILE *cache,   
@@ -2298,6 +2335,17 @@ get_type_value (gpointer  data,
   return result;
 }
 
+static guint32
+get_glob_weight_and_flags (Glob *glob)
+{
+  guint32 res;
+
+  res = glob->weight & 0xff;
+  if (glob->case_sensitive)
+    res |= 0x100;
+  return res;
+}
+
 static gchar **
 get_glob_list_value (gpointer  data, 
 		     gchar    *key)
@@ -2320,7 +2368,7 @@ get_glob_list_value (gpointer  data,
 
       result[i++] = g_strdup (glob->pattern);
       result[i++] = g_strdup_printf ("%s/%s", type->media, type->subtype);
-      result[i++] = g_strdup_printf ("%d", glob->weight);
+      result[i++] = g_strdup_printf ("%ud", get_glob_weight_and_flags (glob));
     }
   return result;
 }
@@ -2501,6 +2549,7 @@ struct _SuffixEntry
   gunichar character;
   gchar *mimetype;
   gint weight;
+  guint32 flags;
   GList *children;
   guint size;
   guint depth;
@@ -2509,7 +2558,8 @@ struct _SuffixEntry
 static GList *
 insert_suffix (gunichar *suffix, 
 	       gchar    *mimetype,
-	       gint      weight, 
+	       gint      weight,
+	       guint32   flags,
 	       GList    *suffixes)
 {
   GList *l;
@@ -2568,12 +2618,13 @@ insert_suffix (gunichar *suffix,
 	  s2->character = 0;
 	  s2->mimetype = mimetype;
 	  s2->weight = weight;
+	  s2->flags = flags;
 	  s2->children = NULL;
 	  s->children = g_list_insert_before (s->children, l2, s2);
 	}
-    } 
+    }
   else
-    s->children = insert_suffix (suffix + 1, mimetype, weight, s->children);
+    s->children = insert_suffix (suffix + 1, mimetype, weight, flags, s->children);
 
   return suffixes;
 }
@@ -2605,6 +2656,7 @@ build_suffixes (gpointer key,
   Glob *glob;
   Type *type;
   glong len;
+  guint32 flags;
   
   if (is_simple_glob (pattern))
     {
@@ -2623,7 +2675,10 @@ build_suffixes (gpointer key,
           type = glob->type;
           mimetype = g_strdup_printf ("%s/%s", type->media, type->subtype);
 
-          *suffixes = insert_suffix (suffix, mimetype, glob->weight, *suffixes);
+	  flags = 0;
+	  if (glob->case_sensitive)
+	    flags |= 0x100;
+          *suffixes = insert_suffix (suffix, mimetype, glob->weight, flags, *suffixes);
         }
 
       g_free (suffix);
@@ -2691,7 +2746,7 @@ write_suffix_entries (FILE        *cache,
       if (!write_card32 (cache, offset))
         return FALSE;
 
-      if (!write_card32 (cache, entry->weight))
+      if (!write_card32 (cache, (entry->weight & 0xff) | entry->flags))
         return FALSE;
     }
   else

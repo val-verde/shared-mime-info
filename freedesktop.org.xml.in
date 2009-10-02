@@ -26,6 +26,7 @@
   <!ELEMENT glob EMPTY>
   <!ATTLIST glob pattern CDATA #REQUIRED>
   <!ATTLIST glob weight CDATA #IMPLIED>
+  <!ATTLIST glob case-sensitive CDATA #IMPLIED>
 
   <!ELEMENT magic (match)+>
   <!ATTLIST magic priority CDATA #IMPLIED>
@@ -1268,7 +1269,7 @@ command to generate the output files.
       <match type="string" value="Core\001" offset="0"/>
       <match type="string" value="Core\002" offset="0"/>
     </magic>
-    <glob pattern="core"/>
+    <glob pattern="core" case-sensitive="true"/>
   </mime-type>
   <mime-type type="application/x-cpio">
     <_comment>CPIO archive</_comment>
@@ -4306,7 +4307,7 @@ command to generate the output files.
     <glob pattern="*.cpp"/>
     <glob pattern="*.cxx"/>
     <glob pattern="*.cc"/>
-    <glob pattern="*.C"/>
+    <glob pattern="*.C" case-sensitive="true"/>
     <glob pattern="*.c++"/>
   </mime-type>
   <mime-type type="text/x-changelog">
@@ -4345,7 +4346,7 @@ command to generate the output files.
     <_comment>C source code</_comment>
     <sub-class-of type="text/plain"/>
     <alias type="text/x-c"/>
-    <glob pattern="*.c"/>
+    <glob pattern="*.c" case-sensitive="true"/>
     <magic priority="30">
       <match type="string" value="/*" offset="0"/>
       <match type="string" value="//" offset="0"/>

@@ -1,5 +1,11 @@
 2009-10-02  Alexander Larsson  <alexl@redhat.com>
 
+	* freedesktop.org.xml.in:
+	Correct magic for application/x-mswinurl, offset is 11 not 10,
+	because the newline is cr + lf. See tests/test.url
+
+2009-10-02  Alexander Larsson  <alexl@redhat.com>
+
 	Based on patch from David Faure <faure@kde.org>
 
 	* shared-mime-info-spec.xml: Define new case-sensitive attribute, and

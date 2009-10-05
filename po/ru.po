@@ -4,14 +4,15 @@
 # Peter Astakhov <astakhovp@mail.ru>, 2005.
 # Peter Astakhov <astakhovp@mail.ru>, 2008.
 # Anton Shestakov <engored@ya.ru>, 2008.
-# Pavel Maryanov <acid_jack@ukr.net>, 2008.
+# Pavel Maryanov <acid_jack@ukr.net>, 2008, 2009.
+# Alexander Potashev <aspotashev@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-info 0.51\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-23 12:49+0100\n"
-"PO-Revision-Date: 2008-07-27 13:13+0200\n"
+"PO-Revision-Date: 2009-05-18 19:49+0200\n"
 "Last-Translator: Pavel Maryanov <acid_jack@ukr.net>\n"
 "Language-Team: Russian <gnu@mx.ru>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +22,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:1
 msgid "3D Studio image"
-msgstr "изображение 3D Studio"
+msgstr "сцена 3D Studio"
 
 #: ../freedesktop.org.xml.in.h:2
 msgid "3GPP multimedia file"
@@ -121,7 +122,7 @@ msgstr "документ Adobe Illustrator"
 
 #: ../freedesktop.org.xml.in.h:26
 msgid "Adobe font metrics"
-msgstr "метрики шрифта Adobe"
+msgstr "метрика шрифта Adobe"
 
 #: ../freedesktop.org.xml.in.h:27
 msgid "Alzip archive"
@@ -259,7 +260,7 @@ msgstr "протокол изменений"
 
 #: ../freedesktop.org.xml.in.h:62
 msgid "Cisco VPN Settings"
-msgstr "настройки Cisco VPN"
+msgstr "файл настроек Cisco VPN"
 
 #: ../freedesktop.org.xml.in.h:63
 msgid "Citrix ICA settings file"
@@ -631,7 +632,7 @@ msgstr "исходный код Java"
 
 #: ../freedesktop.org.xml.in.h:158
 msgid "JavaScript program"
-msgstr "программа JavaScript"
+msgstr "сценарий JavaScript"
 
 #: ../freedesktop.org.xml.in.h:159
 msgid "KChart chart"
@@ -811,7 +812,7 @@ msgstr "аудио MPEG-4"
 
 #: ../freedesktop.org.xml.in.h:203
 msgid "MPEG-4 audio book"
-msgstr "аудио-книга MPEG-4"
+msgstr "аудиокнига MPEG-4"
 
 #: ../freedesktop.org.xml.in.h:204
 msgid "MPEG-4 video"
@@ -839,11 +840,11 @@ msgstr "растровое изображение MacPaint"
 
 #: ../freedesktop.org.xml.in.h:210
 msgid "Macintosh AppleDouble-encoded file"
-msgstr "файл (Macintosh AppleDouble-закодированный)"
+msgstr "файл (закодированный Macintosh AppleDouble)"
 
 #: ../freedesktop.org.xml.in.h:211
 msgid "Macintosh BinHex-encoded file"
-msgstr "файл (Macintosh BinHex-закодированный)"
+msgstr "файл (закодированный Macintosh BinHex)"
 
 #: ../freedesktop.org.xml.in.h:212
 msgid "Macintosh MacBinary file"
@@ -851,7 +852,7 @@ msgstr "файл Macintosh MacBinary"
 
 #: ../freedesktop.org.xml.in.h:213
 msgid "Macintosh Quickdraw/PICT drawing"
-msgstr "изображение Macintosh Quickdraw/PICT"
+msgstr "рисунок Macintosh Quickdraw/PICT"
 
 #: ../freedesktop.org.xml.in.h:214
 msgid "MagicPoint presentation"
@@ -895,7 +896,7 @@ msgstr "субтитры MicroDVD"
 
 #: ../freedesktop.org.xml.in.h:224
 msgid "Microsoft ASX playlist"
-msgstr "список мультимедиа Microsoft ASX"
+msgstr "список воспроизведения Microsoft ASX"
 
 #: ../freedesktop.org.xml.in.h:225
 msgid "Microsoft Works document"
@@ -1184,7 +1185,7 @@ msgstr "ключи PGP"
 
 #: ../freedesktop.org.xml.in.h:297
 msgid "PGP/MIME-encrypted message header"
-msgstr "PGP/MIME-зашифрованный заголовок сообщения"
+msgstr "заголовок сообщения, зашифрованный PGP/MIME"
 
 #: ../freedesktop.org.xml.in.h:298
 msgid "PHP script"
@@ -1677,7 +1678,7 @@ msgstr "шрифт TeX"
 
 #: ../freedesktop.org.xml.in.h:427
 msgid "TeX font metrics"
-msgstr "метрики шрифта TeX"
+msgstr "метрика шрифта TeX"
 
 #: ../freedesktop.org.xml.in.h:428
 msgid "TeXInfo document"
@@ -1799,7 +1800,7 @@ msgstr "документ WML"
 
 #: ../freedesktop.org.xml.in.h:459
 msgid "WMLScript program"
-msgstr "программа WMLScript"
+msgstr "сценарий WMLScript"
 
 #: ../freedesktop.org.xml.in.h:460
 msgid "WRI document"
@@ -2178,11 +2179,11 @@ msgstr "объектный код"
 
 #: ../freedesktop.org.xml.in.h:559
 msgid "packed font file"
-msgstr "файл шрифта (запакованный)"
+msgstr "сжатый файл шрифта"
 
 #: ../freedesktop.org.xml.in.h:560
 msgid "partial email message"
-msgstr "частичное сообщение электронной почты"
+msgstr "фрагмент сообщения электронной почты"
 
 #: ../freedesktop.org.xml.in.h:561
 msgid "pipe"
@@ -2207,7 +2208,7 @@ msgstr "данные аварийного завершения"
 
 #: ../freedesktop.org.xml.in.h:567
 msgid "raw CD image"
-msgstr "необработанное изображение CD"
+msgstr "образ компакт-диска"
 
 #: ../freedesktop.org.xml.in.h:568
 msgid "reference to remote file"
@@ -2231,11 +2232,11 @@ msgstr "разделяемая библиотека"
 
 #: ../freedesktop.org.xml.in.h:573
 msgid "shell archive"
-msgstr "архив оболочки"
+msgstr "архив оболочки UNIX"
 
 #: ../freedesktop.org.xml.in.h:574
 msgid "shell script"
-msgstr "сценарий оболочки"
+msgstr "сценарий оболочки UNIX"
 
 #: ../freedesktop.org.xml.in.h:575
 msgid "signed message"

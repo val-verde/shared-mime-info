@@ -70,7 +70,7 @@ uninstall-hook:
 all: check
 	$(MAKE) -C po shared-mime-info.pot
 
-check: freedesktop.org.xml
+check: freedesktop.org.xml check-translations
 	if test -n $(XMLLINT) ; then \
 		xmllint --noout --valid $(top_srcdir)/freedesktop.org.xml;	\
 	fi
@@ -91,13 +91,11 @@ check: freedesktop.org.xml
 	@echo Number of mime-types that might need generic-icon: `grep "mime-type type=" $(srcdir)/freedesktop.org.xml.in | grep -v video/ | grep -v image/ | grep -v text/ | grep -v audio/ | grep -v "octet-stream" | wc -l` ; \
 	echo Number of mime-types with a generic icon: `grep "generic-icon name=" $(srcdir)/freedesktop.org.xml.in | wc -l` ;
 	
-update-translations:
-	@rsync --copy-links --recursive --times --verbose --compress --progress translationproject.org::tp/latest/shared-mime-info/ $(srcdir)/po/
+check-translations:
 	@for i in $(top_srcdir)/po/*.po ; do								\
 		if ! grep -q `basename $$i | sed 's,.po,,'` $(top_srcdir)/po/LINGUAS ; then		\
 			echo '***' `basename $$i | sed 's,.po,,'` missing from po/LINGUAS '***' ;	\
 			exit 1;										\
 		fi;											\
 	done;
-	@pushd $(srcdir)/po && LC_ALL=en_US.UTF-8 prepare-ChangeLog.pl && popd
 

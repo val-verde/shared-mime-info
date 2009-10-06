@@ -90,6 +90,11 @@ internet.ez application/andrew-inset ox
 Anaphraseus-1.21-beta.oxt application/vnd.openofficeorg.extension ox
 # Copied from http://lilypond.org/doc/v2.10/examples
 petite-ouverture-a-danser.ly text/x-lilypond ox
+# xdgmime bug: *.kexi maps to two mimetypes, so it uses sniffing, but doesn't select
+# the candidate mimetype that derives from the sniffing result.
+# Both gio and kio do it right though.
+sqlite2.kexi application/x-kexiproject-sqlite2 oxx
+sqlite3.kexi application/x-kexiproject-sqlite3 xxx
 
 # Playlist, subtitle and audio formats
 stream.nsc application/x-netshow-channel

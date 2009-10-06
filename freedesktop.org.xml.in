@@ -1788,6 +1788,26 @@ command to generate the output files.
     </magic>
     <glob pattern="*.chrt"/>
   </mime-type>
+  <mime-type type="application/x-kexi-connectiondata">
+    <_comment>Kexi settings for database server connection</_comment>
+    <glob pattern="*.kexic"/>
+  </mime-type>
+  <mime-type type="application/x-kexiproject-shortcut">
+    <_comment>shortcut to Kexi project on database server</_comment>
+    <glob pattern="*.kexis"/>
+  </mime-type>
+  <mime-type type="application/x-kexiproject-sqlite2">
+    <_comment>Kexi database file-based project</_comment>
+    <sub-class-of type="application/x-sqlite2"/>
+    <glob pattern="*.kexi"/>
+  </mime-type>
+  <mime-type type="application/x-kexiproject-sqlite3">
+    <_comment>Kexi database file-based project</_comment>
+    <sub-class-of type="application/x-sqlite3"/>
+    <glob pattern="*.kexi"/>
+    <alias type="application/x-vnd.kde.kexi"/>
+    <alias type="application/x-kexiproject-sqlite"/>
+  </mime-type>
   <mime-type type="application/x-kformula">
     <_comment>KFormula formula</_comment>
     <generic-icon name="x-office-document"/>

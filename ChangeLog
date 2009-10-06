@@ -1,5 +1,13 @@
 2009-10-06  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/list:
+	* tests/test.lzo: Add acronym, magic and test case for LZO
+	archives, patch from Ville Skyttä <ville.skytta@iki.fi>
+	(Closes: #22861)
+
+2009-10-06  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add acronyms for CSV and TSV,
 	patch from Ville Skyttä <ville.skytta@iki.fi> (Closes: #22860)
 

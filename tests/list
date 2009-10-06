@@ -180,6 +180,9 @@ test.msi application/x-msi ox
 # Created using 7z
 archive.7z application/x-7z-compressed
 comics.cb7 application/x-cb7 ox
+# Created using tar
+archive.tar application/x-tar
+comics.cbt application/x-cbt ox
 # Created using lcab
 copying.cab application/vnd.ms-cab-compressed
 # XZ test case found in the test cases in the sources

@@ -1,3 +1,38 @@
+shared-mime-info 0.70 (2009-09-06)
+* Mime-type Changes:
+- Add MXF video
+- Add Google Earth XML files
+- Add XZ arcgives
+- Add SPSS formats
+- Add OpenRaster images
+- Add glob for OpenType fonts
+- Add more MPEG-4 video container magic
+- Add RealMediaFormat videos
+- Add LZIP archives
+- Add Kexi mime-types
+- Add CBT comics
+- Add Windows theme packs
+- Add metalink
+- Better glob for core files
+- Better magic for graphviz files
+- Add MRML, CVS, TSV acronyms
+- Better definition for LZO archives
+- Fix mime-type/magic for Java archives
+- Fix MSWinURL magic
+- Add tar.bz2 as a sub-class of application/x-bzip-compressed-tar
+- Split Win32 from Unix autostart detection
+- Better magic for Cisco VPN files
+- New magic for Word documents
+- Better glob matching for Makefiles
+
+* Specification:
+- Add glob-deleteall and magic-deleteall support
+- Add case-sensitive attribute support
+
+* Other changes:
+- fix make call on *BSDs
+- Better error in update-mime-database when a directory doesn't exist
+
 shared-mime-info 0.60 (2009-02-21)
 * Mime-type Changes:
 - Add alias for SMIL

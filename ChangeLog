@@ -1,6 +1,13 @@
 2009-10-06  Bastien Nocera  <hadess@hadess.net>
 
 	* freedesktop.org.xml.in:
+	* tests/list:
+	* tests/test.metalink: Add metalink, patch from Ville
+	Skyttä <ville.skytta@iki.fi> (Closes: #23738)
+
+2009-10-06  Bastien Nocera  <hadess@hadess.net>
+
+	* freedesktop.org.xml.in:
 	* tests/fuji.themepack:
 	* tests/list: Add Windows theme packs (Closes: #23314)
 

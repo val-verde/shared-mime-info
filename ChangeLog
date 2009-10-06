@@ -1,5 +1,12 @@
 2009-10-06  Bastien Nocera  <hadess@hadess.net>
 
+	* freedesktop.org.xml.in:
+	* tests/list:
+	* tests/test.lz: Add application/x-lzip mime-type, patch from
+	Ville Skyttä <ville.skytta@iki.fi> (Closes: #23258)
+
+2009-10-06  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in: Add tar.bz2 files as subclasses of
 	application/x-bzip-compressed-tar, patch by traydent@gmail.com
 	(Closes: #23391)

@@ -4242,6 +4242,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/tab-separated-values">
     <_comment>TSV document</_comment>
+    <acronym>TSV</acronym>
+    <expanded-acronym>Tab Separated Values</expanded-acronym>
     <sub-class-of type="text/plain"/>
     <glob pattern="*.tsv"/>
   </mime-type>
@@ -4336,6 +4338,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/csv">
     <_comment>CSV document</_comment>
+    <acronym>CSV</acronym>
+    <expanded-acronym>Comma Separated Values</expanded-acronym>
     <alias type="text/x-comma-separated-values"/>
     <alias type="text/x-csv"/>
     <sub-class-of type="text/plain"/>

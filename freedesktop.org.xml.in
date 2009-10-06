@@ -4282,10 +4282,10 @@ command to generate the output files.
     <_comment>Graphviz DOT graph</_comment>
     <generic-icon name="x-office-document"/>
     <magic priority="50">
-      <match type="string" value="digraph " offset="0:256"/>
-      <match type="string" value="strict digraph " offset="0:256"/>
-      <match type="string" value="graph " offset="0:256"/>
-      <match type="string" value="strict graph " offset="0:256"/>
+      <match type="string" value="digraph " offset="0"/>
+      <match type="string" value="strict digraph " offset="0"/>
+      <match type="string" value="graph " offset="0"/>
+      <match type="string" value="strict graph " offset="0"/>
     </magic>
     <glob pattern="*.gv"/>
     <glob pattern="*.dot"/>

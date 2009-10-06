@@ -1,5 +1,10 @@
 2009-10-06  Bastien Nocera  <hadess@hadess.net>
 
+	* tests/list: Add test case for core vs. Core files
+	(Closes: #22634)
+
+2009-10-06  Bastien Nocera  <hadess@hadess.net>
+
 	* freedesktop.org.xml.in:
 	* tests/list:
 	* tests/test.lz: Add application/x-lzip mime-type, patch from

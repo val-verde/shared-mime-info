@@ -74,7 +74,7 @@ check: freedesktop.org.xml check-translations
 	if test -n $(XMLLINT) ; then \
 		xmllint --noout --valid $(top_srcdir)/freedesktop.org.xml;	\
 	fi
-	if test -d CVS/ && test -x ../xdgmime/src/test-mime-data && test -x $(top_builddir)/test-tree-magic ; then \
+	if test -d .git/ && test -x ../xdgmime/src/test-mime-data && test -x $(top_builddir)/test-tree-magic ; then \
 		mkdir -p $(top_builddir)/temp-mime-dir/mime/packages ; \
 		cp -a $(top_builddir)/freedesktop.org.xml $(top_builddir)/temp-mime-dir/mime/packages/ ; \
 		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/update-mime-database "$(top_builddir)/temp-mime-dir/mime/" ; \

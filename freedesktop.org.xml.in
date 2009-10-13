@@ -3023,6 +3023,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-flac">
     <_comment>FLAC audio</_comment>
+    <magic priority="50">
+      <match value="fLaC" type="string" offset="0"/>
+    </magic>
     <glob pattern="*.flac"/>
   </mime-type>
   <mime-type type="audio/x-wavpack">

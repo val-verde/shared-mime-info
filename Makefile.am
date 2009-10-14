@@ -99,3 +99,13 @@ check-translations:
 		fi;											\
 	done;
 
+# Build ChangeLog from GIT history
+ChangeLog:
+	@if test -f $(top_srcdir)/.git/HEAD; then \
+		git log --stat --after="Tue Oct 6 14:46:33 2009 +0000" > $@; \
+	fi
+
+dist: ChangeLog
+
+.PHONY: ChangeLog
+

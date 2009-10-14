@@ -9,7 +9,7 @@ A few ground rules for people interested in adding new mime-types.
   itself
 * No commits should be done that break the test suite, or the test suite
   test in question should be amended, and reason for the changes clearly
-  documented in the ChangeLog
+  documented in the commit message
 
 Translations
 ------------
@@ -17,12 +17,16 @@ Translations
 Translations should go through Transifex.net:
 http://www.transifex.net/projects/p/shared-mime-info/c/default/
 
-CVS
+git
 ---
 
 Check it out using:
-cvs -d:pserver:anoncvs@anoncvs.freedesktop.org:/cvs/mime login
-cvs -d:pserver:anoncvs@anoncvs.freedesktop.org:/cvs/mime co shared-mime-info
+git clone git://anongit.freedesktop.org/xdg/shared-mime-info
+or if you have a freedesktop account:
+git clone ssh://git.freedesktop.org/git/xdg/shared-mime-info
+
+Web interface is at:
+http://cgit.freedesktop.org/xdg/shared-mime-info/
 
 Filing bugs
 -----------
@@ -31,7 +35,7 @@ Bugs can be filed at:
 https://bugs.freedesktop.org/enter_bug.cgi?product=shared-mime-info
 
 Bugs for new mime-types should include:
-- a patch generated against the current CVS, with the "-up" arguments for CVS
+- a patch generated against the current git master, with authorship information
 - one or more test files to be added to the test suite
 
 Test suite
@@ -51,18 +55,8 @@ indicates expected success. Trailing "o"s can be omitted.
 Releasing
 ---------
 
-Before release, an updated shared-mime-info.pot is sent to
-<coordinator@translationproject.org> so the translators have a chance
-of updating the translations before release.
-
-The mail should be in form:
-Subject: shared-mime-info-version.pot
-Body: URL to shared-mime-info tarball
-
-Updated .po files are sent to <shared-mime-info-maint@freedesktop.org>
-
-To pull translations from the Translation Project website, use:
-make update-translations
+- Copy the file to ~hadess/public_html on gabe.freedesktop.org
+- Update http://www.freedesktop.org/wiki/Software/shared-mime-info
 
 Updating the spec on the website
 --------------------------------

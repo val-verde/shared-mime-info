@@ -5115,6 +5115,14 @@ command to generate the output files.
     </magic>
     <glob pattern="*.pcf"/>
   </mime-type>
+  <mime-type type="application/vnd.iccprofile">
+    <_comment>ICC profile</_comment>
+    <magic priority="50">
+      <match type="string" value="acsp" offset="36"/>
+    </magic>
+    <glob pattern="*.icc"/>
+    <glob pattern="*.icm"/>
+  </mime-type>
 
   <!-- Tree content-types -->
   <mime-type type="x-content/image-dcf">

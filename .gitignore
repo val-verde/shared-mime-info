@@ -1,3 +1,4 @@
+*.o
 Makefile
 Makefile.in
 aclocal.m4
@@ -7,15 +8,12 @@ config.h.in
 config.log
 config.status
 configure
-mkinstalldirs
 .deps
-ABOUT-NLS
+depcomp
 freedesktop.org.xml
-freedesktop.org.xml.in.h
-config.guess
-config.sub
+install-sh
 intltool-*
-ltmain.sh
+missing
 stamp-h*
 update-mime-database
 shared-mime-info.pc

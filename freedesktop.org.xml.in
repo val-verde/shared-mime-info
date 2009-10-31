@@ -424,14 +424,6 @@ command to generate the output files.
     <alias type="application/lotus123"/>
     <alias type="application/wk1"/>
   </mime-type>
-  <mime-type type="application/vnd.mozilla.xul+xml">
-    <_comment>XUL document</_comment>
-    <acronym>XUL</acronym>
-    <expanded-acronym>XML User Interface Language</expanded-acronym>
-    <sub-class-of type="application/xml"/>
-    <generic-icon name="text-x-generic"/>
-    <glob pattern="*.xul"/>
-  </mime-type>
   <mime-type type="application/vnd.ms-access">
     <_comment>JET database</_comment>
     <acronym>JET</acronym>

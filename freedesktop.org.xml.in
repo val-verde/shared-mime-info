@@ -127,6 +127,15 @@ command to generate the output files.
     </magic>
     <alias type="application/x-mathematica"/>
   </mime-type>
+  <mime-type type="application/mathml+xml">
+    <_comment>MathML document</_comment>
+    <acronym>MathML</acronym>
+    <expanded-acronym>Mathematical Markup Language</expanded-acronym>
+    <alias type="text/mathml"/>
+    <sub-class-of type="application/xml"/>
+    <glob pattern="*.mml"/>
+    <root-XML namespaceURI="http://www.w3.org/1998/Math/MathML" localName="math"/>
+  </mime-type>
   <mime-type type="application/mbox">
     <_comment>mailbox file</_comment>
     <generic-icon name="text-x-generic"/>
@@ -4212,11 +4221,6 @@ command to generate the output files.
   <mime-type type="text/htmlh">
     <_comment>help page</_comment>
     <sub-class-of type="text/plain"/>
-  </mime-type>
-  <mime-type type="text/mathml">
-    <_comment>MathML document</_comment>
-    <sub-class-of type="application/xml"/>
-    <glob pattern="*.mml"/>
   </mime-type>
   <mime-type type="text/plain">
     <_comment>plain text document</_comment>

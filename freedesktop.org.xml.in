@@ -250,6 +250,10 @@ command to generate the output files.
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.p10"/>
   </mime-type>
+  <mime-type type="application/pkix-crl">
+    <_comment>Certificate revocation list</_comment>
+    <glob pattern="*.crl"/>
+  </mime-type>
   <mime-type type="application/pkix-pkipath">
     <_comment>PkiPath certification path</_comment>
     <glob pattern="*.pkipath"/>

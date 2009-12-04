@@ -105,7 +105,8 @@ stream.sdp application/sdp x
 playlist.asx audio/x-ms-asx
 feed.rss application/rss+xml
 feed2 application/rss+xml x
-560051.xml application/rss+xml xox
+# RSS tag is too far in the file
+560051.xml application/rss+xml xxx
 feed.atom application/atom+xml
 feeds.opml text/x-opml+xml
 subtitle.srt application/x-subrip

@@ -3148,6 +3148,14 @@ command to generate the output files.
       <match type="string" value="#EXTM3U" offset="0"/>
     </magic>
   </mime-type>
+  <mime-type type="application/vnd.apple.mpegurl">
+    <_comment>HTTP Live Streaming playlist</_comment>
+    <glob pattern="*.m3u"/>
+    <glob pattern="*.m3u8"/>
+    <magic priority="70">
+      <match type="string" value="#EXT-X-TARGETDURATION" offset="0:128"/>
+    </magic>
+  </mime-type>
   <mime-type type="audio/x-ms-asx">
     <_comment>Microsoft ASX playlist</_comment>
     <alias type="video/x-ms-wvx"/>

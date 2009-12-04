@@ -132,6 +132,8 @@ hbo-playlist.qtl application/x-quicktime-media-link
 playlist.wpl application/vnd.ms-wpl
 # Copied from Nine Inch Nails' The Slip
 test.flac audio/x-flac
+# Copied from http://tools.ietf.org/html/draft-pantos-http-live-streaming-02#section-7.1
+live-streaming.m3u application/vnd.apple.mpegurl x
 
 # text
 text-iso8859-15.txt text/plain ox

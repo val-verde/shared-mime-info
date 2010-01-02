@@ -250,6 +250,10 @@ command to generate the output files.
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.p10"/>
   </mime-type>
+  <mime-type type="application/pkix-cert">
+    <_comment>X.509 certificate</_comment>
+    <glob pattern="*.cer"/>
+  </mime-type>
   <mime-type type="application/pkix-crl">
     <_comment>Certificate revocation list</_comment>
     <glob pattern="*.crl"/>
@@ -2887,7 +2891,6 @@ command to generate the output files.
     <_comment>DER/PEM/Netscape-encoded X.509 certificate</_comment>
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.der"/>
-    <glob pattern="*.cer"/>
     <glob pattern="*.crt"/>
     <glob pattern="*.cert"/>
     <glob pattern="*.pem"/>

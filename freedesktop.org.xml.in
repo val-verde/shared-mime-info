@@ -5095,6 +5095,12 @@ command to generate the output files.
      <sub-class-of type="application/zip"/>
      <generic-icon name="x-office-document"/>
    </mime-type>
+   <mime-type type="application/vnd.openxmlformats-officedocument.presentationml.slideshow">
+     <_comment>PowerPoint 2007 show</_comment>
+     <glob pattern="*.ppsx"/>
+     <sub-class-of type="application/zip"/>
+     <generic-icon name="x-office-document"/>
+   </mime-type>
    <mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
      <_comment>Excel 2007 spreadsheet</_comment>
      <glob pattern="*.xlsx"/>

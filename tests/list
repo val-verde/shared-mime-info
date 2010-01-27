@@ -84,6 +84,8 @@ test.wps application/vnd.ms-works ox
 sample.docx application/vnd.openxmlformats-officedocument.wordprocessingml.document oxo
 sample.xlsx application/vnd.openxmlformats-officedocument.spreadsheetml.sheet oxo
 sample.pptx application/vnd.openxmlformats-officedocument.presentationml.presentation oxo
+# Copied and renamed sample.pptx
+sample.ppsx application/vnd.openxmlformats-officedocument.presentationml.slideshow oxo
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=20185
 pocket-word.psw application/x-pocket-word
 aportis.pdb application/x-aportisdoc

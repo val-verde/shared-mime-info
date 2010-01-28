@@ -167,9 +167,9 @@ menu.ini application/octet-stream
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=16228
 test.php application/x-php
 # The 3 below copied from https://bugs.freedesktop.org/show_bug.cgi?id=15810
-evolution.eml application/mbox x
-tb-from-sentbox.eml message/rfc822 x
-tb-saved.eml message/rfc822 x
+evolution.eml application/mbox xox
+tb-from-sentbox.eml message/rfc822
+tb-saved.eml message/rfc822
 # Copied from http://www.cyanwerks.com/file-format-url.html
 test.url application/x-mswinurl xox
 

@@ -76,6 +76,11 @@ ooo-test.odg application/vnd.oasis.opendocument.graphics
 ooo-test.odp application/vnd.oasis.opendocument.presentation
 ooo-test.ods application/vnd.oasis.opendocument.spreadsheet
 ooo-test.odt application/vnd.oasis.opendocument.text
+# OpenDocument/OpenOffice.org flat XML 
+ooo-test.fodg application/vnd.oasis.opendocument.graphics-flat-xml
+ooo-test.fodp application/vnd.oasis.opendocument.presentation-flat-xml
+ooo-test.fods application/vnd.oasis.opendocument.spreadsheet-flat-xml
+ooo-test.fodt application/vnd.oasis.opendocument.text-flat-xml
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=20604
 foo.doc application/msword
 # Copied from http://bugzilla.abisource.com/show_bug.cgi?id=6435

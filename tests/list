@@ -71,6 +71,11 @@ ooo.sxw application/vnd.sun.xml.writer
 ooo.vor application/vnd.stardivision.writer
 ooo-xp.doc application/msword
 office.doc application/msword
+# ISO/IEC 26300:2006 Open Document Format for Office Applications (OpenDocument)
+ooo-test.odg application/vnd.oasis.opendocument.graphics
+ooo-test.odp application/vnd.oasis.opendocument.presentation
+ooo-test.ods application/vnd.oasis.opendocument.spreadsheet
+ooo-test.odt application/vnd.oasis.opendocument.text
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=20604
 foo.doc application/msword
 # Copied from http://bugzilla.abisource.com/show_bug.cgi?id=6435

@@ -739,6 +739,14 @@ command to generate the output files.
     </magic>
     <glob pattern="*.odt"/>
   </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.text-flat-xml">
+    <_comment>ODT document (Flat XML)</_comment>
+    <acronym>FODT</acronym>
+    <expanded-acronym>OpenDocument Text (Flat XML)</expanded-acronym>
+    <sub-class-of type="application/xml"/>
+    <generic-icon name="x-office-document"/>
+    <glob pattern="*.fodt"/>
+  </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.text-template">
     <_comment>ODT template</_comment>
     <acronym>ODT</acronym>
@@ -799,6 +807,14 @@ command to generate the output files.
     </magic>
     <glob pattern="*.odg"/>
   </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.graphics-flat-xml">
+    <_comment>ODG drawing (Flat XML)</_comment>
+    <acronym>FODG</acronym>
+    <expanded-acronym>OpenDocument Drawing (Flat XML)</expanded-acronym>
+    <sub-class-of type="application/xml"/>
+    <generic-icon name="image-x-generic"/>
+    <glob pattern="*.fodg"/>
+  </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.graphics-template">
     <_comment>ODG template</_comment>
     <acronym>ODG</acronym>
@@ -829,6 +845,14 @@ command to generate the output files.
     </magic>
     <glob pattern="*.odp"/>
   </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.presentation-flat-xml">
+    <_comment>ODP presentation (Flat XML)</_comment>
+    <acronym>FODP</acronym>
+    <expanded-acronym>OpenDocument Presentation (Flat XML)</expanded-acronym>
+    <sub-class-of type="application/xml"/>
+    <generic-icon name="x-office-presentation"/>
+    <glob pattern="*.fodp"/>
+  </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.presentation-template">
     <_comment>ODP template</_comment>
     <acronym>ODP</acronym>
@@ -858,6 +882,14 @@ command to generate the output files.
       </match>
     </magic>
     <glob pattern="*.ods"/>
+  </mime-type>
+  <mime-type type="application/vnd.oasis.opendocument.spreadsheet-flat-xml">
+    <_comment>ODS spreadsheet (Flat XML)</_comment>
+    <acronym>FODS</acronym>
+    <expanded-acronym>OpenDocument Spreadsheet (Flat XML)</expanded-acronym>
+    <sub-class-of type="application/xml"/>
+    <generic-icon name="x-office-spreadsheet"/>
+    <glob pattern="*.fods"/>
   </mime-type>
   <mime-type type="application/vnd.oasis.opendocument.spreadsheet-template">
     <_comment>ODS template</_comment>

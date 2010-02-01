@@ -4503,7 +4503,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-dsrc">
     <_comment>D source code</_comment>
-    <sub-class-of type="text/plain"/>
+    <sub-class-of type="text/x-csrc"/>
     <glob pattern="*.d"/>
   </mime-type>
   <mime-type type="application/xml-dtd">

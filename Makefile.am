@@ -72,7 +72,11 @@ all: check
 
 check: freedesktop.org.xml check-translations
 	if test -n $(XMLLINT) ; then \
+		if test -e $(top_builddir)/freedesktop.org.xml; then \
 		xmllint --noout --valid $(top_builddir)/freedesktop.org.xml;	\
+		else \
+		xmllint --noout --valid $(top_srcdir)/freedesktop.org.xml;	\
+		fi \
 	fi
 	if test -d .git/ && test -x ../xdgmime/src/test-mime-data && test -x $(top_builddir)/test-tree-magic ; then \
 		mkdir -p $(top_builddir)/temp-mime-dir/mime/packages ; \

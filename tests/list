@@ -77,10 +77,10 @@ ooo-test.odp application/vnd.oasis.opendocument.presentation
 ooo-test.ods application/vnd.oasis.opendocument.spreadsheet
 ooo-test.odt application/vnd.oasis.opendocument.text
 # OpenDocument/OpenOffice.org flat XML 
-ooo-test.fodg application/vnd.oasis.opendocument.graphics-flat-xml
-ooo-test.fodp application/vnd.oasis.opendocument.presentation-flat-xml
-ooo-test.fods application/vnd.oasis.opendocument.spreadsheet-flat-xml
-ooo-test.fodt application/vnd.oasis.opendocument.text-flat-xml
+ooo-test.fodg application/vnd.oasis.opendocument.graphics-flat-xml ox
+ooo-test.fodp application/vnd.oasis.opendocument.presentation-flat-xml ox
+ooo-test.fods application/vnd.oasis.opendocument.spreadsheet-flat-xml ox
+ooo-test.fodt application/vnd.oasis.opendocument.text-flat-xml ox
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=20604
 foo.doc application/msword
 # Copied from http://bugzilla.abisource.com/show_bug.cgi?id=6435
@@ -190,7 +190,7 @@ project.glade application/x-glade
 ISOcyr1.ent application/xml-external-parsed-entity ox
 # Copied from http://www.metalinker.org/samples/abiword-setup-2.4.6.exe.metalink
 test.metalink application/metalink+xml
-test.mml application/mathml+xml
+test.mml application/mathml+xml ox
 
 # Archives
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=14909

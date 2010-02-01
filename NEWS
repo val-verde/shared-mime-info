@@ -1,3 +1,26 @@
+shared-mime-info 0.71 (2010-02-01)
+* Mime-type Changes:
+- Add magic for FLAC files
+- Add ICC profiles
+- Remove duplicate XUL definition
+- Add IT8.7/2 profiles
+- Add Apple's HTTP Live Streaming playlists
+- Add application/pkix-crl
+- Match *xsl and *xslt to application/xslt+xml
+- Add *.eml glob for message/rfc822 messages
+- Add application/vnd.openxmlformats-officedocument.presentationml.slideshow
+- Update MathML definition
+- Add application/x-java-keystore and application/x-java-jce-keystore
+- Add OpenDocument test cases, flat XML file definitions
+- Make D sources a sub-class of C sources
+
+* Specification:
+- Update version to 0.19
+
+* Other:
+- Move to git for VCS
+- Use transifex for translations
+
 shared-mime-info 0.70 (2009-09-06)
 * Mime-type Changes:
 - Add MXF video

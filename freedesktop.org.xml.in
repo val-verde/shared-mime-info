@@ -3126,6 +3126,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.m4a"/>
     <glob pattern="*.aac"/>
+    <glob pattern="*.f4a"/>
   </mime-type>
   <mime-type type="video/mp4">
     <_comment>MPEG-4 video</_comment>
@@ -3135,9 +3136,11 @@ command to generate the output files.
       <match type="string" value="ftypmp42" offset="4"/>
       <match type="string" value="ftypMSNV" offset="4"/>
       <match type="string" value="ftypM4V " offset="4"/>
+      <match type="string" value="ftypf4v " offset="4"/>
     </magic>
     <glob pattern="*.mp4"/>
     <glob pattern="*.m4v"/>
+    <glob pattern="*.f4v"/>
     <alias type="video/x-m4v"/>
   </mime-type>
   <mime-type type="audio/x-m4b">
@@ -3147,6 +3150,7 @@ command to generate the output files.
       <match type="string" value="ftypM4B" offset="4"/>
     </magic>
     <glob pattern="*.m4b"/>
+    <glob pattern="*.f4b"/>
   </mime-type>
   <mime-type type="video/3gpp">
     <_comment>3GPP multimedia file</_comment>

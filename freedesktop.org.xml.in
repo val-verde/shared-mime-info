@@ -1845,7 +1845,7 @@ command to generate the output files.
   <mime-type type="application/x-karbon">
     <_comment>Karbon14 drawing</_comment>
     <generic-icon name="image-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
           <match type="string" value="application/x-karbon\004\006" offset="18"/>
@@ -1862,7 +1862,7 @@ command to generate the output files.
   <mime-type type="application/x-kchart">
     <_comment>KChart chart</_comment>
     <generic-icon name="x-office-spreadsheet"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
           <match type="string" value="application/x-kchart\004\006" offset="18"/>
@@ -1899,7 +1899,7 @@ command to generate the output files.
   <mime-type type="application/x-kformula">
     <_comment>KFormula formula</_comment>
     <generic-icon name="x-office-document"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
           <match type="string" value="application/x-kformula\004\006" offset="18"/>
@@ -1916,7 +1916,7 @@ command to generate the output files.
   <mime-type type="application/x-killustrator">
     <_comment>KIllustrator drawing</_comment>
     <generic-icon name="image-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
           <match type="string" value="application/x-killustrator\004\006" offset="18"/>
@@ -1928,7 +1928,7 @@ command to generate the output files.
   <mime-type type="application/x-kivio">
     <_comment>Kivio flowchart</_comment>
     <generic-icon name="x-office-document"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
           <match type="string" value="application/x-kivio\004\006" offset="18"/>
@@ -1945,7 +1945,7 @@ command to generate the output files.
   <mime-type type="application/x-kontour">
     <_comment>Kontour drawing</_comment>
     <generic-icon name="image-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
           <match type="string" value="application/x-kontour\004\006" offset="18"/>
@@ -1967,7 +1967,7 @@ command to generate the output files.
   <mime-type type="application/x-kpresenter">
     <_comment>KPresenter presentation</_comment>
     <generic-icon name="x-office-presentation"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
           <match type="string" value="application/x-kpresenter\004\006" offset="18"/>
@@ -1985,7 +1985,7 @@ command to generate the output files.
   <mime-type type="application/x-krita">
     <_comment>Krita document</_comment>
     <generic-icon name="x-office-document"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
           <match type="string" value="application/x-krita\004\006" offset="18"/>
@@ -2002,7 +2002,7 @@ command to generate the output files.
   <mime-type type="application/x-kspread">
     <_comment>KSpread spreadsheet</_comment>
     <generic-icon name="x-office-spreadsheet"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
           <match type="string" value="application/x-kspread\004\006" offset="18"/>
@@ -2040,7 +2040,7 @@ command to generate the output files.
   <mime-type type="application/x-kword">
     <_comment>KWord document</_comment>
     <generic-icon name="x-office-document"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="\037\213" offset="0">
         <match type="string" value="KOffice" offset="10">
           <match type="string" value="application/x-kword\004\006" offset="18"/>

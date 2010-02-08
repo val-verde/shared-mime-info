@@ -59,6 +59,8 @@ mypaint.ora image/openraster
 # test.xhtml application/xhtml+xml
 # Copied from http://cvs.fedoraproject.org/viewvc/comps/comps-f11.xml.in?revision=1.306
 test.xml.in application/xml x
+# Copied from http://bugs.freedesktop.org/show_bug.cgi?id=25581
+dia.shape application/x-dia-shape
 
 # Documents
 ooo-6.0.doc application/msword

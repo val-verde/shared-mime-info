@@ -1436,6 +1436,15 @@ command to generate the output files.
       <match offset="5:100" type="string" value="&lt;dia:"/>
     </magic>
   </mime-type>
+  <mime-type type="application/x-dia-shape">
+    <_comment>Dia shape</_comment>
+    <generic-icon name="image-x-generic"/>
+    <sub-class-of type="application/xml"/>
+    <glob pattern="*.shape"/>
+    <magic priority="50">
+      <match offset="5:100" type="string" value="&lt;shape"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/x-dvi">
     <_comment>TeX DVI document</_comment>
     <generic-icon name="x-office-document"/>

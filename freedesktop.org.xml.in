@@ -4266,6 +4266,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.t2t"/>
   </mime-type>
+  <mime-type type="text/x-verilog">
+    <_comment>Verilog document</_comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.v"/>
+  </mime-type>
   <mime-type type="text/x-vhdl">
     <_comment>VHDL document</_comment>
     <acronym>VHDL</acronym>

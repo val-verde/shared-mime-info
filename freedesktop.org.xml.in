@@ -3091,12 +3091,13 @@ command to generate the output files.
     </magic>
     <glob pattern="*.it"/>
   </mime-type>
-  <mime-type type="audio/x-flac">
+  <mime-type type="audio/flac">
     <_comment>FLAC audio</_comment>
     <magic priority="50">
       <match value="fLaC" type="string" offset="0"/>
     </magic>
     <glob pattern="*.flac"/>
+    <alias type="audio/x-flac"/>
   </mime-type>
   <mime-type type="audio/x-wavpack">
     <_comment>WavPack audio</_comment>

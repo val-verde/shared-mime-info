@@ -1771,7 +1771,15 @@ command to generate the output files.
     <acronym>HDF</acronym>
     <expanded-acronym>Hierarchical Data Format</expanded-acronym>
     <generic-icon name="x-office-document"/>
+    <magic priority="50">
+        <match type="string" offset="0" value="\211HDF\r\n\032\n"/>
+        <match type="string" offset="0" value="\016\003\023\001"/>
+    </magic>
     <glob pattern="*.hdf"/>
+    <glob pattern="*.hdf4"/>
+    <glob pattern="*.h4"/>
+    <glob pattern="*.hdf5"/>
+    <glob pattern="*.h5"/>
   </mime-type>
   <mime-type type="application/x-ipod-firmware">
     <_comment>iPod firmware</_comment>

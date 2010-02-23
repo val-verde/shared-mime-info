@@ -2,18 +2,21 @@
 # Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
 # This file is distributed under the same license as the shared-mime-info package.
 # Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2010.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-info\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-19 04:21+0000\n"
-"PO-Revision-Date: 2010-02-20 03:41+0200\n"
+"Report-Msgid-Bugs-To: https://bugs.freedesktop.org/enter_bug.cgi?product"
+"=shared-mime-info&component=general\n"
+"POT-Creation-Date: 2010-02-22 15:25+0000\n"
+"PO-Revision-Date: 2010-02-23 02:47+0300\n"
 "Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
-"Language-Team: Romanian <ro@li.org>\n"
+"Language-Team: Romanian GNOME Team <gnomero-list@lists.sourceforge.net>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
 
 #: ../freedesktop.org.xml.in.h:1
 msgid "3D Studio image"
@@ -77,7 +80,7 @@ msgstr "Pagină ASP"
 
 #: ../freedesktop.org.xml.in.h:16
 msgid "ATK inset"
-msgstr "Insert ATK"
+msgstr "Inset ATK"
 
 #: ../freedesktop.org.xml.in.h:17
 msgid "AVI video"
@@ -129,11 +132,11 @@ msgstr "Audio Amiga SoundTracker"
 
 #: ../freedesktop.org.xml.in.h:29
 msgid "Annodex Audio"
-msgstr "Annodex Audio"
+msgstr "Audio Annodex"
 
 #: ../freedesktop.org.xml.in.h:30
 msgid "Annodex Video"
-msgstr "Annodex Video"
+msgstr "Video Annodex"
 
 #: ../freedesktop.org.xml.in.h:31
 msgid "Annodex exchange format"
@@ -177,7 +180,7 @@ msgstr "Document BibTeX"
 
 #: ../freedesktop.org.xml.in.h:41
 msgid "BitTorrent seed file"
-msgstr "Fișier sămânță BitTorrent"
+msgstr "Fișier sursă-completă BitTorrent"
 
 #: ../freedesktop.org.xml.in.h:42
 msgid "Blender scene"
@@ -431,7 +434,7 @@ msgstr "Foaie de calcul Excel"
 
 #: ../freedesktop.org.xml.in.h:106
 msgid "FITS document"
-msgstr "Documet FITS"
+msgstr "Document FITS"
 
 #: ../freedesktop.org.xml.in.h:107
 msgid "FLAC audio"
@@ -549,7 +552,7 @@ msgstr "Indicator Google Video"
 
 #: ../freedesktop.org.xml.in.h:137
 msgid "Graphite scientific graph"
-msgstr "Grafic știintific Graphite"
+msgstr "Grafic științific Graphite"
 
 #: ../freedesktop.org.xml.in.h:138
 msgid "Graphviz DOT graph"
@@ -667,7 +670,7 @@ msgstr "Arhivă Java"
 
 #: ../freedesktop.org.xml.in.h:168
 msgid "Java byte code"
-msgstr "Byte cod Java"
+msgstr "Bytecode Java"
 
 #: ../freedesktop.org.xml.in.h:169
 msgid "Java class"
@@ -1899,11 +1902,11 @@ msgstr "Document Unidata NetCDF"
 
 #: ../freedesktop.org.xml.in.h:485
 msgid "Usenet news message"
-msgstr "Mesaj cu știri Usenet"
+msgstr "Mesaj Usenet de știri "
 
 #: ../freedesktop.org.xml.in.h:486
 msgid "Ustar archive"
-msgstr "Arhivă ustar"
+msgstr "Arhivă Ustar"
 
 #: ../freedesktop.org.xml.in.h:487
 msgid "V font"
@@ -2009,7 +2012,7 @@ msgstr "Video Windows Media"
 
 #: ../freedesktop.org.xml.in.h:514
 msgid "Windows Registry extract"
-msgstr "Extras Windows Registry"
+msgstr "Extras al registrului Windows"
 
 #: ../freedesktop.org.xml.in.h:515
 msgid "Windows animated cursor"
@@ -2115,7 +2118,7 @@ msgstr "Fișier XSL FO"
 
 #: ../freedesktop.org.xml.in.h:542
 msgid "XSLT stylesheet"
-msgstr "Fișa de stil XSLT"
+msgstr "Fișă de stil XSLT"
 
 #: ../freedesktop.org.xml.in.h:543
 msgid "XSPF playlist"
@@ -2143,7 +2146,7 @@ msgstr "Arhivă Zoo"
 
 #: ../freedesktop.org.xml.in.h:549
 msgid "application log"
-msgstr "înregistrare aplicației"
+msgstr "înregistrare aplicație"
 
 #. http://en.wikipedia.org/wiki/Red_Book_(audio_CD_standard)
 #: ../freedesktop.org.xml.in.h:551
@@ -2399,7 +2402,7 @@ msgstr "referință fișier la distanță"
 
 #: ../freedesktop.org.xml.in.h:619
 msgid "rejected patch"
-msgstr "petec repsins"
+msgstr "petec respsins"
 
 #: ../freedesktop.org.xml.in.h:620
 msgid "resource location"
@@ -2482,4 +2485,3 @@ msgstr "DVD video"
 
 #~ msgid "Linear and integer program expression format"
 #~ msgstr "Program pentru expresii lineare și intregi"
-

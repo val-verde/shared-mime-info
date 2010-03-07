@@ -4610,6 +4610,19 @@ command to generate the output files.
     <glob pattern="*.html"/>
     <glob pattern="*.htm"/>
   </mime-type>
+  <mime-type type="text/cache-manifest">
+    <_comment>Web application cache manifest</_comment>
+    <sub-class-of type="text/plain"/>
+    <magic>
+      <match type="string" value="CACHE MANIFEST" offset="0">
+        <match type="string" value="\x20" offset="14"/>
+        <match type="string" value="\x09" offset="14"/>
+        <match type="string" value="\x0a" offset="14"/>
+        <match type="string" value="\x0d" offset="14"/>
+      </match>
+    </magic>
+    <glob pattern="*.manifest"/>
+  </mime-type>
   <mime-type type="text/x-google-video-pointer">
     <_comment>Google Video Pointer</_comment>
     <magic priority="50">

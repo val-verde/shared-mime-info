@@ -46,7 +46,7 @@ $(pkgconfig_DATA): config.status
 @INTLTOOL_XML_RULE@
 @INTLTOOL_DESKTOP_RULE@
 
-install-data-hook: 
+install-data-hook: install-binPROGRAMS
 if ENABLE_UPDATE_MIMEDB
 	$(DESTDIR)"$(bindir)/update-mime-database" -V "$(DESTDIR)$(datadir)/mime"
 endif

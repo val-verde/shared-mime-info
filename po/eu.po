@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: shared-mime-info.master\n"
 "Report-Msgid-Bugs-To: https://bugs.freedesktop.org/enter_bug.cgi?product=shared-mime-info&component=general\n"
 "POT-Creation-Date: 2010-03-07 15:25+0000\n"
-"PO-Revision-Date: 2010-03-15 23:00+0100\n"
+"PO-Revision-Date: 2010-03-25 13:21+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -231,7 +231,7 @@ msgstr "CDaren edukien aurkibidea"
 
 #: ../freedesktop.org.xml.in.h:55
 msgid "CD image cuesheet"
-msgstr "CD baten irudiaren CUE sheet-a"
+msgstr "CD irudiaren CUE orria"
 
 #: ../freedesktop.org.xml.in.h:56
 msgid "CHM document"
@@ -533,7 +533,7 @@ msgstr "Genesis-eko ROMa"
 
 #: ../freedesktop.org.xml.in.h:132
 msgid "Glade project"
-msgstr "Glade projektua"
+msgstr "Glade proiektua"
 
 #: ../freedesktop.org.xml.in.h:133
 msgid "GnuCash financial data"
@@ -645,7 +645,7 @@ msgstr "JBuilder proiektua"
 
 #: ../freedesktop.org.xml.in.h:161
 msgid "JET database"
-msgstr "JET datubasea"
+msgstr "JET datu-basea"
 
 #: ../freedesktop.org.xml.in.h:162
 msgid "JNG image"
@@ -1078,7 +1078,7 @@ msgstr "ODA dokumentua"
 
 #: ../freedesktop.org.xml.in.h:269
 msgid "ODB database"
-msgstr "ODB datubasea"
+msgstr "ODB datu-basea"
 
 #: ../freedesktop.org.xml.in.h:270
 msgid "ODC chart"
@@ -1370,7 +1370,7 @@ msgstr "Pack2000 Java artxiboa"
 
 #: ../freedesktop.org.xml.in.h:341
 msgid "Palm OS database"
-msgstr "Palm OS datubasea"
+msgstr "Palm OS datu-basea"
 
 #: ../freedesktop.org.xml.in.h:342
 msgid "Panasonic raw image"
@@ -1616,11 +1616,11 @@ msgstr "SQL kodea"
 
 #: ../freedesktop.org.xml.in.h:406
 msgid "SQLite2 database"
-msgstr "SQLite2 datubasea"
+msgstr "SQLite2 datu-basea"
 
 #: ../freedesktop.org.xml.in.h:407
 msgid "SQLite3 database"
-msgstr "SQLite3 datubasea"
+msgstr "SQLite3 datu-basea"
 
 #: ../freedesktop.org.xml.in.h:408
 msgid "SSA subtitles"
@@ -1926,7 +1926,7 @@ msgstr "V letra-tipoa"
 
 #: ../freedesktop.org.xml.in.h:488
 msgid "VCS/ICS calendar"
-msgstr "VCS/ICS kalendarioa"
+msgstr "VCS/ICS egutegia"
 
 #: ../freedesktop.org.xml.in.h:489
 msgid "VHDL document"
@@ -2147,7 +2147,7 @@ msgstr "XSPF erreprodukzio-zerrenda"
 
 #: ../freedesktop.org.xml.in.h:546
 msgid "XUL interface document"
-msgstr "XUL interfazedaren dokumentua"
+msgstr "XUL interfazearen dokumentua"
 
 #: ../freedesktop.org.xml.in.h:547
 msgid "XZ archive"
@@ -2181,7 +2181,9 @@ msgstr "audio DVDa"
 
 #: ../freedesktop.org.xml.in.h:556
 msgid "author credits"
-msgstr "Mikel Olasagasti Uranga <hey_neken@mundurat.net>"
+msgstr ""
+"Mikel Olasagasti Uranga <hey_neken@mundurat.net>\n"
+"Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>"
 
 #: ../freedesktop.org.xml.in.h:557
 msgid "author list"
@@ -2330,7 +2332,7 @@ msgstr "iRiver erreprodukzio-zerrenda"
 
 #: ../freedesktop.org.xml.in.h:597
 msgid "installation instructions"
-msgstr "instalatzio instrukzioak"
+msgstr "instalazioaren instrukzioak"
 
 #: ../freedesktop.org.xml.in.h:598
 msgid "iptables configuration file"
@@ -2465,7 +2467,7 @@ msgstr "softwarea"
 
 #: ../freedesktop.org.xml.in.h:633
 msgid "spreadsheet interchange document"
-msgstr "kalkulu-orriak trukaketzeko dokumentua"
+msgstr "kalkulu-orriak trukatzeko dokumentua"
 
 #: ../freedesktop.org.xml.in.h:634
 msgid "stream of data (server push)"

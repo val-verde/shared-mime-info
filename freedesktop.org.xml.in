@@ -1403,6 +1403,11 @@ command to generate the output files.
   <mime-type type="application/x-designer">
     <_comment>Qt Designer file</_comment>
     <generic-icon name="x-office-document"/>
+    <sub-class-of type="application/xml"/>
+    <magic>
+      <match type="string" value="&lt;ui" offset="0:256"/>
+      <match type="string" value="&lt;UI" offset="0:256"/>
+    </magic>
     <glob pattern="*.ui"/>
   </mime-type>
   <mime-type type="application/x-desktop">

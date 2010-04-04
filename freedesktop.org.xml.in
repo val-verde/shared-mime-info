@@ -4973,6 +4973,8 @@ command to generate the output files.
     </magic>
     <glob pattern="*.xml"/>
     <glob pattern="*.xbl"/>
+    <glob pattern="*.xsd"/>
+    <glob pattern="*.rng"/>
     <alias type="text/xml"/>
   </mime-type>
   <mime-type type="application/xml-external-parsed-entity">

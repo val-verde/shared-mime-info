@@ -405,6 +405,20 @@ command to generate the output files.
     </magic>
     <root-XML namespaceURI='urn:oasis:names:tc:xliff:document:1.1' localName='xliff'/>
   </mime-type>
+  <mime-type type="application/x-yaml">
+    <_comment>YAML document</_comment>
+    <acronym>YAML</acronym>
+    <expanded-acronym>YAML Ain't Markup Language</expanded-acronym>
+    <sub-class-of type="text/plain"/>
+    <generic-icon name="text-x-generic"/>
+    <magic>
+      <match type="string" value="%YAML" offset="0"/>
+    </magic>
+    <glob pattern="*.yaml"/>
+    <glob pattern="*.yml"/>
+    <alias type="text/yaml"/>
+    <alias type="text/x-yaml"/>
+  </mime-type>
   <mime-type type="application/vnd.corel-draw">
     <_comment>Corel Draw drawing</_comment>
     <generic-icon name="image-x-generic"/>

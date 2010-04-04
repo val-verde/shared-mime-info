@@ -197,6 +197,7 @@ test.d text/x-dsrc ox
 test.v text/x-verilog ox
 # Copied from http://www.w3.org/TR/html5/offline.html#manifests
 test.manifest text/cache-manifest
+test.yaml application/x-yaml
 
 # xml subtypes
 test.ttx application/x-font-ttx

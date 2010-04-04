@@ -292,6 +292,13 @@ command to generate the output files.
       <match type="string" value="DataPlkr" offset="60"/>
     </magic>
   </mime-type>
+  <mime-type type="application/relax-ng-compact-syntax">
+    <_comment>RELAX NG XML schema</_comment>
+    <sub-class-of type="text/plain"/>
+    <generic-icon name="text-x-generic"/>
+    <glob pattern="*.rnc"/>
+    <alias type="application/x-rnc"/>
+  </mime-type>
   <mime-type type="application/rtf">
     <_comment>RTF document</_comment>
     <acronym>RTF</acronym>

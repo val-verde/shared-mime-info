@@ -4594,11 +4594,13 @@ command to generate the output files.
     <_comment>translation file</_comment>
     <sub-class-of type="text/plain"/>
     <glob pattern="*.po"/>
+    <alias type="text/x-po"/>
   </mime-type>
   <mime-type type="text/x-gettext-translation-template">
     <_comment>translation template</_comment>
     <sub-class-of type="text/plain"/>
     <glob pattern="*.pot"/>
+    <alias type="text/x-pot"/>
   </mime-type>
   <mime-type type="text/html">
     <_comment>HTML document</_comment>

@@ -198,6 +198,12 @@ test.v text/x-verilog ox
 # Copied from http://www.w3.org/TR/html5/offline.html#manifests
 test.manifest text/cache-manifest
 test.yaml application/x-yaml
+# hand-made
+mysum.m text/x-matlab x
+# taken from Octave 3.2 sources
+isdir.m text/x-matlab x
+# hand-made
+simple-obj-c.m text/x-objcsrc
 
 # xml subtypes
 test.ttx application/x-font-ttx

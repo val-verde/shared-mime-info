@@ -2,14 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-info\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-24 04:35+0000\n"
-"PO-Revision-Date: 2010-04-23 18:55+0200\n"
-"Last-Translator: elad <el.il@doom.co.il>\n"
+"POT-Creation-Date: 2010-04-30 04:35+0000\n"
+"PO-Revision-Date: 2010-04-30 18:08+0200\n"
+"Last-Translator: Assaf Sapir <meijin007@gmail.com>\n"
 "Language-Team: Hebrew <gnome-il-translators@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -120,7 +120,7 @@ msgstr "מסמך Adobe Ill"
 
 #: ../freedesktop.org.xml.in.h:26
 msgid "Adobe font metrics"
-msgstr ""
+msgstr "מדדי גופן של Adobe"
 
 #: ../freedesktop.org.xml.in.h:27
 msgid "Alzip archive"
@@ -128,7 +128,7 @@ msgstr "ארכיון Alzip"
 
 #: ../freedesktop.org.xml.in.h:28
 msgid "Amiga SoundTracker audio"
-msgstr ""
+msgstr "קובץ שמע של Amiga SoundTracker"
 
 #: ../freedesktop.org.xml.in.h:29
 msgid "Annodex Audio"
@@ -140,7 +140,7 @@ msgstr "וידאו Annodex"
 
 #: ../freedesktop.org.xml.in.h:31
 msgid "Annodex exchange format"
-msgstr ""
+msgstr "פורמט החלפת Annodex"
 
 #: ../freedesktop.org.xml.in.h:32
 msgid "AportisDoc document"
@@ -164,11 +164,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:37
 msgid "AutoCAD image"
-msgstr ""
+msgstr "תמונה של AutoCAD"
 
 #: ../freedesktop.org.xml.in.h:38
 msgid "BCPIO document"
-msgstr ""
+msgstr "מסמך של BCPO"
 
 #: ../freedesktop.org.xml.in.h:39
 msgid "BDF font"
@@ -198,11 +198,11 @@ msgstr "ארכיון Bzip"
 
 #: ../freedesktop.org.xml.in.h:47
 msgid "C header"
-msgstr ""
+msgstr "כותר C"
 
 #: ../freedesktop.org.xml.in.h:48
 msgid "C shell script"
-msgstr ""
+msgstr "תסריט מעטפת C"
 
 #: ../freedesktop.org.xml.in.h:49
 msgid "C source code"
@@ -214,7 +214,7 @@ msgstr "קוד מקור של C#"
 
 #: ../freedesktop.org.xml.in.h:51
 msgid "C++ header"
-msgstr ""
+msgstr "כותר ++C"
 
 #: ../freedesktop.org.xml.in.h:52
 msgid "C++ source code"
@@ -250,7 +250,7 @@ msgstr "ארכיון CPIO"
 
 #: ../freedesktop.org.xml.in.h:60
 msgid "CPIO archive (gzip-compressed)"
-msgstr ""
+msgstr "ארכיון CPIO (מכווץ ע\"י gzip)"
 
 #: ../freedesktop.org.xml.in.h:61
 msgid "CSS stylesheet"
@@ -394,11 +394,11 @@ msgstr "תמונת EPS"
 
 #: ../freedesktop.org.xml.in.h:96
 msgid "EPS image (bzip-compressed)"
-msgstr ""
+msgstr "תמונת EPS (מכווץ בbzip)"
 
 #: ../freedesktop.org.xml.in.h:97
 msgid "EPS image (gzip-compressed)"
-msgstr ""
+msgstr "תמונת EPS (מכווץ בgzip)"
 
 #: ../freedesktop.org.xml.in.h:98
 msgid "EXR image"
@@ -418,7 +418,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:102
 msgid "Enlightenment theme"
-msgstr ""
+msgstr "ערכת נושא של Enlightenment"
 
 #: ../freedesktop.org.xml.in.h:103
 msgid "Erlang source code"
@@ -462,7 +462,7 @@ msgstr "מסמך FictionBook"
 
 #: ../freedesktop.org.xml.in.h:113
 msgid "Flash video"
-msgstr ""
+msgstr "וידאו של פלאש"
 
 #: ../freedesktop.org.xml.in.h:114
 msgid "Fortran source code"
@@ -474,7 +474,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:116
 msgid "G3 fax image"
-msgstr ""
+msgstr "תמונת פקס של G3"
 
 #: ../freedesktop.org.xml.in.h:117
 msgid "GDBM database"
@@ -502,11 +502,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:123
 msgid "GNU mail message"
-msgstr ""
+msgstr "הודעת דואר של GNU"
 
 #: ../freedesktop.org.xml.in.h:124
 msgid "GNUnet search file"
-msgstr ""
+msgstr "קובץ חיפוש של GNUnet"
 
 #: ../freedesktop.org.xml.in.h:125
 msgid "GSM 06.10 audio"
@@ -525,8 +525,7 @@ msgid "Game Boy ROM"
 msgstr ""
 
 #. Translate this to Megadrive if the console was known as such in your locale
-#. Should be Megadrive in all but en_US:
-#. http://en.wikipedia.org/wiki/Megadrive#History
+#. Should be Megadrive in all but en_US: http://en.wikipedia.org/wiki/Megadrive#History
 #: ../freedesktop.org.xml.in.h:131
 msgid "Genesis ROM"
 msgstr ""
@@ -1752,8 +1751,7 @@ msgstr ""
 msgid "SunOS News font"
 msgstr ""
 
-#. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in
-#. Europe) if the console was known as such in your locale
+#. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in Europe) if the console was known as such in your locale
 #: ../freedesktop.org.xml.in.h:445
 msgid "Super NES ROM"
 msgstr ""
@@ -2072,7 +2070,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:530
 msgid "X11 cursor"
-msgstr ""
+msgstr "סמן של X11"
 
 #: ../freedesktop.org.xml.in.h:531
 msgid "XBEL bookmarks"
@@ -2080,15 +2078,15 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:532
 msgid "XBM image"
-msgstr ""
+msgstr "תמונת XBM"
 
 #: ../freedesktop.org.xml.in.h:533
 msgid "XFig image"
-msgstr ""
+msgstr "תמונת XFig"
 
 #: ../freedesktop.org.xml.in.h:534
 msgid "XHTML page"
-msgstr ""
+msgstr "דף XHTML"
 
 #: ../freedesktop.org.xml.in.h:535
 msgid "XLIFF translation file"
@@ -2104,11 +2102,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:538
 msgid "XMI file"
-msgstr ""
+msgstr "קובץ XMI"
 
 #: ../freedesktop.org.xml.in.h:539
 msgid "XML document"
-msgstr ""
+msgstr "מסמך XML"
 
 #: ../freedesktop.org.xml.in.h:540
 msgid "XML entities document"
@@ -2120,7 +2118,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:542
 msgid "XPM image"
-msgstr ""
+msgstr "תמונת XPM"
 
 #: ../freedesktop.org.xml.in.h:543
 msgid "XPS document"
@@ -2271,7 +2269,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:585
 msgid "electronic book document"
-msgstr ""
+msgstr "מסמך מסוג ספר אלקטרוני"
 
 #: ../freedesktop.org.xml.in.h:586
 msgid "electronic business card"
@@ -2279,7 +2277,7 @@ msgstr "כרטיס ביקור אלקטרוני"
 
 #: ../freedesktop.org.xml.in.h:587
 msgid "email headers"
-msgstr ""
+msgstr "כותרת דוא\"ל"
 
 #: ../freedesktop.org.xml.in.h:588
 msgid "email message"
@@ -2307,23 +2305,23 @@ msgstr "תקייה"
 
 #: ../freedesktop.org.xml.in.h:594
 msgid "generic font file"
-msgstr ""
+msgstr "קובץ גופן גנרי"
 
 #: ../freedesktop.org.xml.in.h:595
 msgid "help page"
-msgstr ""
+msgstr "דף עזרה"
 
 #: ../freedesktop.org.xml.in.h:596
 msgid "iMelody ringtone"
-msgstr ""
+msgstr "רינגטון של iMelody"
 
 #: ../freedesktop.org.xml.in.h:597
 msgid "iPod firmware"
-msgstr ""
+msgstr "קושחת ipod"
 
 #: ../freedesktop.org.xml.in.h:598
 msgid "iRiver Playlist"
-msgstr ""
+msgstr "רשימת ניגון של iRiver"
 
 #: ../freedesktop.org.xml.in.h:599
 msgid "installation instructions"
@@ -2331,11 +2329,11 @@ msgstr "הוראות התקנה"
 
 #: ../freedesktop.org.xml.in.h:600
 msgid "iptables configuration file"
-msgstr ""
+msgstr "קובץ הגדרה של iptables"
 
 #: ../freedesktop.org.xml.in.h:601
 msgid "libtool shared library"
-msgstr ""
+msgstr "ספריה משותפת של libtool"
 
 #: ../freedesktop.org.xml.in.h:602
 msgid "license terms"
@@ -2343,23 +2341,23 @@ msgstr "תנאי רישיון"
 
 #: ../freedesktop.org.xml.in.h:603
 msgid "mail delivery report"
-msgstr ""
+msgstr "דוח העברת דואר"
 
 #: ../freedesktop.org.xml.in.h:604
 msgid "mail disposition report"
-msgstr ""
+msgstr "דוח אספקת דואר"
 
 #: ../freedesktop.org.xml.in.h:605
 msgid "mail system report"
-msgstr ""
+msgstr "דו\"ח של מערכת הדואר"
 
 #: ../freedesktop.org.xml.in.h:606
 msgid "mailbox file"
-msgstr ""
+msgstr "קובץ תיבת-דואר"
 
 #: ../freedesktop.org.xml.in.h:607
 msgid "manual page (compressed)"
-msgstr ""
+msgstr "דף עזר (מכווץ)"
 
 #: ../freedesktop.org.xml.in.h:608
 msgid "message catalog"
@@ -2367,11 +2365,11 @@ msgstr "קטלוג הודעות"
 
 #: ../freedesktop.org.xml.in.h:609
 msgid "message digest"
-msgstr ""
+msgstr "תקציר ההודעה"
 
 #: ../freedesktop.org.xml.in.h:610
 msgid "message in several formats"
-msgstr ""
+msgstr "הודעה במספר פורמטים"
 
 #: ../freedesktop.org.xml.in.h:611
 msgid "mount point"
@@ -2391,7 +2389,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:615
 msgid "pipe"
-msgstr ""
+msgstr "צינור"
 
 #: ../freedesktop.org.xml.in.h:616
 msgid "plain text document"
@@ -2408,27 +2406,27 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:620
 msgid "program crash data"
-msgstr ""
+msgstr "מידע מקריסת תוכנה"
 
 #: ../freedesktop.org.xml.in.h:621
 msgid "raw CD image"
-msgstr ""
+msgstr "תמונת דיסק גולמית"
 
 #: ../freedesktop.org.xml.in.h:622
 msgid "reference to remote file"
-msgstr ""
+msgstr "התיחסות לקובץ מרוחק"
 
 #: ../freedesktop.org.xml.in.h:623
 msgid "rejected patch"
-msgstr ""
+msgstr "תלאי שנדחה"
 
 #: ../freedesktop.org.xml.in.h:624
 msgid "resource location"
-msgstr ""
+msgstr "מיקומו של המקור"
 
 #: ../freedesktop.org.xml.in.h:625
 msgid "rich text document"
-msgstr ""
+msgstr "מסמך טקסט עשיר"
 
 #: ../freedesktop.org.xml.in.h:626
 msgid "shared library"
@@ -2436,7 +2434,7 @@ msgstr "ספרייה משותפת"
 
 #: ../freedesktop.org.xml.in.h:627
 msgid "shell archive"
-msgstr ""
+msgstr "ארכיון מעטפת"
 
 #: ../freedesktop.org.xml.in.h:628
 msgid "shell script"
@@ -2452,7 +2450,7 @@ msgstr "הודעה חתומה"
 
 #: ../freedesktop.org.xml.in.h:631
 msgid "socket"
-msgstr ""
+msgstr "נקודת חיבור"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
@@ -2466,19 +2464,19 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:636
 msgid "stream of data (server push)"
-msgstr ""
+msgstr "מידע בזרימה (דחיפה ע\"י השרת)"
 
 #: ../freedesktop.org.xml.in.h:637
 msgid "symbolic link"
-msgstr ""
+msgstr "קישור סימבולי"
 
 #: ../freedesktop.org.xml.in.h:638
 msgid "theme"
-msgstr ""
+msgstr "ערכת נושא"
 
 #: ../freedesktop.org.xml.in.h:639
 msgid "translated messages (machine-readable)"
-msgstr ""
+msgstr "מסר מתורגם (מובן ע\"י מכונה)"
 
 #: ../freedesktop.org.xml.in.h:640
 msgid "translation file"
@@ -2490,7 +2488,7 @@ msgstr "תבנית תרגום"
 
 #: ../freedesktop.org.xml.in.h:642
 msgid "txt2tags document"
-msgstr ""
+msgstr "מסמך txt2tags"
 
 #: ../freedesktop.org.xml.in.h:643
 msgid "unknown"
@@ -2499,4 +2497,5 @@ msgstr "לא ידוע"
 #. http://en.wikipedia.org/wiki/DVD-Video
 #: ../freedesktop.org.xml.in.h:645
 msgid "video DVD"
-msgstr ""
+msgstr "DVD וידאו"
+

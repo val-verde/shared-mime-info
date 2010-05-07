@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-info\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-06 04:38+0000\n"
-"PO-Revision-Date: 2010-05-06 13:13+0200\n"
-"Last-Translator: Assaf Sapir <meijin007@gmail.com>\n"
+"POT-Creation-Date: 2010-05-07 04:37+0000\n"
+"PO-Revision-Date: 2010-05-07 15:14+0200\n"
+"Last-Translator: elad <el.il@doom.co.il>\n"
 "Language-Team: Hebrew <gnome-il-translators@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -582,7 +582,7 @@ msgstr "מסמך HTML"
 
 #: ../freedesktop.org.xml.in.h:146
 msgid "HTTP Live Streaming playlist"
-msgstr "רשימת ניגון הזרימה של HTTP"
+msgstr "רשימת השמעה הזרימה של HTTP"
 
 #: ../freedesktop.org.xml.in.h:147
 msgid "Haansoft Hangul document"
@@ -866,7 +866,7 @@ msgstr "שמע MP2"
 
 #: ../freedesktop.org.xml.in.h:217
 msgid "MP3 ShoutCast playlist"
-msgstr "רשימת ניגון MP3 של ShoutCast"
+msgstr "רשימת השמעה MP3 של ShoutCast"
 
 #: ../freedesktop.org.xml.in.h:218
 msgid "MP3 audio"
@@ -952,9 +952,12 @@ msgstr "תסריט Markby"
 msgid "MathML document"
 msgstr "מסמך MathML"
 
+# הכוונה היא לקובץ של התוכנה
+# Wolfram Mathematica
+# של הפיזיקאי סטיבן וולפרם. התוכנה מאפשרת לערוך לפתור (באופן אוטומטי) ולשמור חישובים שונים במתמטיקה, כולל משוואות, פונקציות וכו'.
 #: ../freedesktop.org.xml.in.h:239
 msgid "Mathematica Notebook"
-msgstr ""
+msgstr "מחברת מתמטיקה"
 
 #: ../freedesktop.org.xml.in.h:240
 msgid "Matroska audio"
@@ -1115,7 +1118,7 @@ msgstr "מצגת ODP"
 
 #: ../freedesktop.org.xml.in.h:280
 msgid "ODP presentation (Flat XML)"
-msgstr "מצגת ODP (Flat XML("
+msgstr "מצגת ODP‏ (Flat XML)"
 
 #: ../freedesktop.org.xml.in.h:281
 msgid "ODP template"
@@ -1127,7 +1130,7 @@ msgstr "גליון נתונים ODS"
 
 #: ../freedesktop.org.xml.in.h:283
 msgid "ODS spreadsheet (Flat XML)"
-msgstr "גליון נתונים ODS (Flat XML("
+msgstr "גליון נתונים ODS‏ (XML פשוט)"
 
 #: ../freedesktop.org.xml.in.h:284
 msgid "ODS template"
@@ -1139,7 +1142,7 @@ msgstr "מסמך ODT"
 
 #: ../freedesktop.org.xml.in.h:286
 msgid "ODT document (Flat XML)"
-msgstr "מסמך ODT (Flat XML("
+msgstr "מסמך ODT‏ (Flat XML)"
 
 #: ../freedesktop.org.xml.in.h:287
 msgid "ODT template"
@@ -1645,7 +1648,7 @@ msgstr "שמע של Scream Tracker"
 
 #: ../freedesktop.org.xml.in.h:417
 msgid "Scream Tracker instrument"
-msgstr "כלי של Cream Tracker"
+msgstr "כלי של Scream Tracker"
 
 #: ../freedesktop.org.xml.in.h:418
 msgid "Sega Master System/Game Gear ROM"
@@ -1866,7 +1869,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:476
 msgid "Troff document"
-msgstr ""
+msgstr "מסמך Troff"
 
 #: ../freedesktop.org.xml.in.h:477
 msgid "Troff document (with manpage macros)"
@@ -1874,7 +1877,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:478
 msgid "TrueAudio audio"
-msgstr ""
+msgstr "שמע TrueAudio"
 
 #: ../freedesktop.org.xml.in.h:479
 msgid "TrueType XML font"
@@ -1979,15 +1982,15 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:508
 msgid "WPL playlist"
-msgstr "רשימת ניגון WPL"
+msgstr "רשימת השמעה WPL"
 
 #: ../freedesktop.org.xml.in.h:509
 msgid "WRI document"
-msgstr ""
+msgstr "מסמך WRI"
 
 #: ../freedesktop.org.xml.in.h:510
 msgid "WavPack audio"
-msgstr ""
+msgstr "שמע WavPack"
 
 #: ../freedesktop.org.xml.in.h:511
 msgid "WavPack audio correction file"
@@ -2003,7 +2006,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:514
 msgid "Windows BMP image"
-msgstr "תמונת BMP של Wןמגם'ד"
+msgstr "תמונת BMP של Windows"
 
 #: ../freedesktop.org.xml.in.h:515
 msgid "Windows Installer package"
@@ -2021,9 +2024,10 @@ msgstr "שמע של Windows Media"
 msgid "Windows Media video"
 msgstr "וידאו של Windows Media"
 
+# כשמייצאים קובץ מתוך עורך הרישום של חלונות, נוצר קובץ עם הסיומת .reg וזה הקובץ שמתואר כאן
 #: ../freedesktop.org.xml.in.h:519
 msgid "Windows Registry extract"
-msgstr ""
+msgstr "קובץ Registry של Windows"
 
 #: ../freedesktop.org.xml.in.h:520
 msgid "Windows animated cursor"
@@ -2324,7 +2328,7 @@ msgstr "קושחת ipod"
 
 #: ../freedesktop.org.xml.in.h:601
 msgid "iRiver Playlist"
-msgstr "רשימת ניגון של iRiver"
+msgstr "רשימת השמעה של iRiver"
 
 #: ../freedesktop.org.xml.in.h:602
 msgid "installation instructions"

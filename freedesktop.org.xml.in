@@ -256,6 +256,10 @@ command to generate the output files.
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.p7s"/>
   </mime-type>
+  <mime-type type="application/pkcs8">
+    <_comment>PKCS#8 private key</_comment>
+    <glob pattern="*.p8"/>
+  </mime-type>
   <mime-type type="application/pkcs10">
     <_comment>PKCS#10 certification request</_comment>
     <generic-icon name="text-x-generic"/>

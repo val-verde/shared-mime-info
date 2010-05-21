@@ -5035,6 +5035,24 @@ command to generate the output files.
   <mime-type type="video/isivideo">
     <_comment>ISI video</_comment>
   </mime-type>
+  <mime-type type="video/mp2t">
+    <_comment>MPEG-2 transport stream</_comment>
+    <acronym>MPEG-2 TS</acronym>
+    <expanded-acronym>Moving Picture Experts Group 2 Transport Stream</expanded-acronym>
+    <magic priority="50">
+      <match type="big32" value="0x47400010" mask="0xff4000df" offset="0"/>
+    </magic>
+    <glob pattern="*.m2t"/>
+    <glob pattern="*.m2ts"/>
+    <glob pattern="*.ts"/>
+    <glob pattern="*.mts"/>
+    <glob pattern="*.cpi"/>
+    <glob pattern="*.clpi"/>
+    <glob pattern="*.mpl"/>
+    <glob pattern="*.mpls"/>
+    <glob pattern="*.bdm"/>
+    <glob pattern="*.bdmv"/>
+  </mime-type>
   <mime-type type="video/mpeg">
     <_comment>MPEG video</_comment>
     <acronym>MPEG</acronym>
@@ -5049,7 +5067,6 @@ command to generate the output files.
     <glob pattern="*.mp2"/>
     <glob pattern="*.mpe"/>
     <glob pattern="*.vob"/>
-    <glob pattern="*.m2t"/>
   </mime-type>
   <mime-type type="video/quicktime">
     <_comment>QuickTime video</_comment>

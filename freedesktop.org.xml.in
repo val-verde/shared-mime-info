@@ -2195,7 +2195,14 @@ command to generate the output files.
     <_comment>Matroska stream</_comment>
     <generic-icon name="video-x-generic"/>
     <magic priority="50">
-      <match type="string" value="matroska" offset="8"/>
+      <!-- EBML ID -->
+      <match type="big32" value="0x1a45dfa3" offset="0">
+        <!-- DocumentType ID -->
+        <match type="big16" value="0x4282" offset="5:65">
+          <!-- DocumentType -->
+          <match type="string" value="matroska" offset="8:75"/>
+        </match>
+      </match>
     </magic>
   </mime-type>
   <mime-type type="video/x-matroska">
@@ -2212,7 +2219,14 @@ command to generate the output files.
     <_comment>WebM video</_comment>
     <glob pattern="*.webm"/>
     <magic priority="50">
-      <match type="string" value="webm" offset="8"/>
+      <!-- EBML ID -->
+      <match type="big32" value="0x1a45dfa3" offset="0">
+        <!-- DocumentType ID -->
+        <match type="big16" value="0x4282" offset="5:65">
+          <!-- DocumentType -->
+          <match type="string" value="webm" offset="8:75"/>
+        </match>
+      </match>
     </magic>
   </mime-type>
   <mime-type type="audio/webm">

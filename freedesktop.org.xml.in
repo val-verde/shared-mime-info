@@ -2215,6 +2215,10 @@ command to generate the output files.
       <match type="string" value="webm" offset="8"/>
     </magic>
   </mime-type>
+  <mime-type type="audio/webm">
+    <_comment>WebM audio</_comment>
+    <sub-class-of type="video/webm"/>
+  </mime-type>
   <mime-type type="application/mxf">
     <_comment>MXF video</_comment>
     <acronym>MXF</acronym>

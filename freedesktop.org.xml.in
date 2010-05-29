@@ -2193,6 +2193,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-matroska">
     <_comment>Matroska stream</_comment>
+    <generic-icon name="video-x-generic"/>
     <magic priority="50">
       <match type="string" value="matroska" offset="8"/>
     </magic>

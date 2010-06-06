@@ -3427,6 +3427,11 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-stm">
     <_comment>Scream Tracker audio</_comment>
+    <magic>
+      <match type="string" value="!Scream!\x1A" offset="20"/>
+      <match type="string" value="!SCREAM!\x1A" offset="20"/>
+      <match type="string" value="BMOD2STM\x1A" offset="20"/>
+    </magic>
     <glob pattern="*.stm"/>
   </mime-type>
   <mime-type type="audio/x-voc">

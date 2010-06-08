@@ -156,6 +156,8 @@ playlist.wpl application/vnd.ms-wpl
 test.flac audio/flac
 # Copied from http://tools.ietf.org/html/draft-pantos-http-live-streaming-02#section-7.1
 live-streaming.m3u application/vnd.apple.mpegurl x
+# Copied from http://qthttp.apple.com.edgesuite.net/1006ad9g4hjk/all_w.m3u8
+all_w.m3u8 application/vnd.apple.mpegurl x
 
 # text
 text-iso8859-15.txt text/plain ox

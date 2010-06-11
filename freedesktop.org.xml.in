@@ -3305,8 +3305,10 @@ command to generate the output files.
     <glob pattern="*.m3u"/>
     <glob pattern="*.m3u8"/>
     <magic priority="70">
-      <match type="string" value="#EXT-X-TARGETDURATION" offset="0:128"/>
-      <match type="string" value="#EXT-X-STREAM-INF" offset="0:128"/>
+      <match type="string" value="#EXTM3U" offset="0">
+        <match type="string" value="#EXT-X-TARGETDURATION" offset="0:128"/>
+        <match type="string" value="#EXT-X-STREAM-INF" offset="0:128"/>
+      </match>
     </magic>
   </mime-type>
   <mime-type type="audio/x-ms-asx">

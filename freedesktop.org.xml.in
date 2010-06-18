@@ -1288,6 +1288,21 @@ command to generate the output files.
     <generic-icon name="x-office-document"/>
     <glob pattern="*.cbz"/>
   </mime-type>
+  <mime-type type="application/x-lrzip">
+    <_comment>Lrzip archive</_comment>
+    <generic-icon name="package-x-generic"/>
+    <magic priority="50">
+      <match type="string" value="LRZI" offset="0"/>
+    </magic>
+    <glob pattern="*.lrz"/>
+  </mime-type>
+  <mime-type type="application/x-lrzip-compressed-tar">
+    <_comment>Tar archive (lrzip-compressed)</_comment>
+    <generic-icon name="package-x-generic"/>
+    <sub-class-of type="application/x-lrzip"/>
+    <glob pattern="*.tar.lrz"/>
+    <glob pattern="*.tlrz"/>
+  </mime-type>
   <mime-type type="application/x-cd-image">
     <_comment>raw CD image</_comment>
     <glob pattern="*.iso"/>
@@ -5480,4 +5495,3 @@ command to generate the output files.
   </mime-type>
 
 </mime-info>
-

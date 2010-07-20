@@ -276,6 +276,8 @@ settopbox.ts video/mp2t xo
 # other
 text.pdf application/pdf
 README.pdf application/pdf
+# From https://bugs.freedesktop.org/show_bug.cgi?id=29083#c2
+testcase.is-really-a-pdf application/pdf xo
 Makefile text/x-makefile ox
 Makefile.gnu text/x-makefile ox
 googleearth.kml application/vnd.google-earth.kml+xml ox

@@ -170,7 +170,7 @@ command to generate the output files.
     <expanded-acronym>Portable Document Format</expanded-acronym>
     <generic-icon name="x-office-document"/>
     <magic priority="50">
-      <match type="string" value="%PDF-" offset="0"/>
+      <match type="string" value="%PDF-" offset="0:1024"/>
     </magic>
     <glob pattern="*.pdf"/>
     <alias type="application/x-pdf"/>

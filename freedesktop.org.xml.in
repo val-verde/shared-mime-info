@@ -3255,7 +3255,10 @@ command to generate the output files.
     <expanded-acronym>3rd Generation Partnership Project</expanded-acronym>
     <sub-class-of type="video/mp4"/>
     <magic priority="50">
+      <match type="string" value="ftyp3ge" offset="4"/>
+      <match type="string" value="ftyp3gg" offset="4"/>
       <match type="string" value="ftyp3gp" offset="4"/>
+      <match type="string" value="ftyp3gs" offset="4"/>
     </magic>
     <glob pattern="*.3gp"/>
     <glob pattern="*.3g2"/>

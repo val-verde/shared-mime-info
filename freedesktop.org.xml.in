@@ -381,6 +381,15 @@ command to generate the output files.
     <alias type="flv-application/octet-stream"/>
     <alias type="video/flv"/>
   </mime-type>
+  <mime-type type="video/x-javafx">
+    <_comment>JavaFX video</_comment>
+    <generic-icon name="video-x-generic"/>
+    <magic priority="40">
+      <match type="string" value="FLV" offset="0"/>
+    </magic>
+    <glob pattern="*.fxm"/>
+    <sub-class-of type="video/x-flv"/>
+  </mime-type>
   <mime-type type="application/x-go-sgf">
     <!-- translators: a record is in this context a description of a board game
     		      that has been played, and that can be played back again:

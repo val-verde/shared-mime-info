@@ -1312,6 +1312,10 @@ command to generate the output files.
     <glob pattern="*.tar.lrz"/>
     <glob pattern="*.tlrz"/>
   </mime-type>
+  <mime-type type="application/x-apple-diskimage">
+    <_comment>Apple disk image</_comment>
+    <glob pattern="*.dmg"/>
+  </mime-type>
   <mime-type type="application/x-cd-image">
     <_comment>raw CD image</_comment>
     <glob pattern="*.iso"/>

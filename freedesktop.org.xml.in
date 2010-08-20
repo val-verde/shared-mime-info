@@ -5483,6 +5483,11 @@ command to generate the output files.
     </treemagic>
   </mime-type>
 
+  <mime-type type="x-content/ebook-reader">
+    <!-- see fd.o hal spec -->
+    <_comment>e-book reader</_comment>
+  </mime-type>
+
   <mime-type type="x-content/image-picturecd">
     <!-- TRANSLATORS: This is a brand-name, not a generic term. Please see
          http://en.wikipedia.org/wiki/Picture_CD

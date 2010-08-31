@@ -4695,6 +4695,7 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <glob pattern="*.po"/>
     <alias type="text/x-po"/>
+    <alias type="application/x-gettext"/>
   </mime-type>
   <mime-type type="text/x-gettext-translation-template">
     <_comment>translation template</_comment>

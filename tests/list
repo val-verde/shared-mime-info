@@ -199,6 +199,8 @@ test.url application/x-mswinurl xox
 # Copied from http://www.digitalmars.com/d/
 test.d text/x-dsrc ox
 test.v text/x-verilog ox
+test.sv text/x-svsrc ox
+test.svh text/x-svhdr ox
 # Copied from http://www.w3.org/TR/html5/offline.html#manifests
 test.manifest text/cache-manifest
 test.yaml application/x-yaml

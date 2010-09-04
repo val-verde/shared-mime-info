@@ -4399,12 +4399,22 @@ command to generate the output files.
     <glob pattern="*.t2t"/>
   </mime-type>
   <mime-type type="text/x-verilog">
-    <_comment>Verilog document</_comment>
+    <_comment>Verilog source code</_comment>
     <sub-class-of type="text/plain"/>
     <glob pattern="*.v"/>
   </mime-type>
+  <mime-type type="text/x-svhdr">
+    <_comment>SystemVerilog header</_comment>
+    <sub-class-of type="text/x-verilog"/>
+    <glob pattern="*.svh"/>
+  </mime-type>
+  <mime-type type="text/x-svsrc">
+    <_comment>SystemVerilog source code</_comment>
+    <sub-class-of type="text/x-verilog"/>
+    <glob pattern="*.sv"/>
+  </mime-type>
   <mime-type type="text/x-vhdl">
-    <_comment>VHDL document</_comment>
+    <_comment>VHDL source code</_comment>
     <acronym>VHDL</acronym>
     <expanded-acronym>Very-High-Speed Integrated Circuit Hardware Description Language</expanded-acronym>
     <sub-class-of type="text/plain"/>

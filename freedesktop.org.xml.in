@@ -529,13 +529,15 @@ command to generate the output files.
     <alias type="application/mspowerpoint"/>
     <alias type="application/x-mspowerpoint"/>
   </mime-type>
-  <mime-type type="application/vnd.ms-xpsdocument">
+  <mime-type type="application/oxps">
     <_comment>XPS document</_comment>
     <acronym>XPS</acronym>
-    <expanded-acronym>XML Paper Specification</expanded-acronym>
+    <expanded-acronym>Open XML Paper Specification</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
+    <glob pattern="*.oxps"/>
     <glob pattern="*.xps"/>
+    <alias type="application/vnd.ms-xpsdocument"/>
   </mime-type>
   <mime-type type="application/vnd.ms-works">
     <_comment>Microsoft Works document</_comment>

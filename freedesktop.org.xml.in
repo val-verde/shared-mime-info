@@ -4971,6 +4971,7 @@ command to generate the output files.
   <mime-type type="text/x-tex">
     <_comment>TeX document</_comment>
     <sub-class-of type="text/plain"/>
+    <alias type="application/x-tex"/>
     <glob pattern="*.tex"/>
     <glob pattern="*.ltx"/>
     <glob pattern="*.sty"/>

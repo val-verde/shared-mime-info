@@ -6,20 +6,19 @@
 # Panagiotis Papadopoulos <pano_90@gmx.net>, 2009.
 # Ingo Brueckl <ib@wupperonline.de>, 2009.
 # Mario Blättermann <mariobl@gnome.org>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-info 0.60\n"
-"Report-Msgid-Bugs-To: https://bugs.freedesktop.org/enter_bug.cgi?"
-"product=shared-mime-info&component=general\n"
+"Report-Msgid-Bugs-To: https://bugs.freedesktop.org/enter_bug.cgi?product=shared-mime-info&component=general\n"
 "POT-Creation-Date: 2010-08-21 03:25+0000\n"
 "PO-Revision-Date: 2010-08-20 21:10+0100\n"
 "Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../freedesktop.org.xml.in.h:1
@@ -170,7 +169,8 @@ msgstr "Applix-Spreadsheets-Tabelle"
 msgid "Applix Words document"
 msgstr "Applix-Words-Dokument"
 
-# Unter „Atom-Syndikation-Einspeisung“ versteht wahrscheinlich kein Mensch, was eigentlich damit gemeint ist. Meine Vorschläge:
+# Unter „Atom-Syndikation-Einspeisung“ versteht wahrscheinlich kein Mensch,
+# was eigentlich damit gemeint ist. Meine Vorschläge:
 # - Atom-Nachrichtenquelle
 # - Atom-Feed
 #: ../freedesktop.org.xml.in.h:38
@@ -201,11 +201,12 @@ msgstr "BitTorrent-Seed-Datei"
 msgid "Blender scene"
 msgstr "Blender-Szene"
 
-# Videoscheibe klingt noch etwas seltsam, mir fällt aber auch nichts Besseres ein.
-# --
-# Ich würde hier einfach Blu-ray-Video-Disc verwenden
 #. http://en.wikipedia.org/wiki/Blu-ray_Disc
 #. http://www.blu-raydisc.com/Section-13470/Section-13890/Index.html
+# Videoscheibe klingt noch etwas seltsam, mir fällt aber auch nichts Besseres
+# ein.
+# --
+# Ich würde hier einfach Blu-ray-Video-Disc verwenden
 #: ../freedesktop.org.xml.in.h:47
 msgid "Blu-ray video disc"
 msgstr "Blu-ray-Videoscheibe"
@@ -246,7 +247,8 @@ msgstr "CCITT-G3-Fax"
 msgid "CD Table Of Contents"
 msgstr "CD-Inhaltsverzeichnis"
 
-# Image durch Abbild ersetzt, da es u.a. in Brennprogrammen unter KDE als auch GNOME so verwendet wird
+# Image durch Abbild ersetzt, da es u.a. in Brennprogrammen unter KDE als auch
+# GNOME so verwendet wird
 #: ../freedesktop.org.xml.in.h:57
 msgid "CD image cuesheet"
 msgstr "CD-Abbild-Cuesheet"
@@ -544,7 +546,8 @@ msgid "Game Boy ROM"
 msgstr "Game-Boy-ROM"
 
 #. Translate this to Megadrive if the console was known as such in your locale
-#. Should be Megadrive in all but en_US: http://en.wikipedia.org/wiki/Megadrive#History
+#. Should be Megadrive in all but en_US:
+#. http://en.wikipedia.org/wiki/Megadrive#History
 #: ../freedesktop.org.xml.in.h:133
 msgid "Genesis ROM"
 msgstr "Genesis-ROM"
@@ -1186,7 +1189,8 @@ msgstr "OGM-Video"
 msgid "OLE2 compound document storage"
 msgstr "OLE2-Verbunddokumentenspeicher"
 
-# Unter „OPML-Syndikation-Einspeisung“ versteht wahrscheinlich kein Mensch, was eigentlich damit gemeint ist. Meine Vorschläge:
+# Unter „OPML-Syndikation-Einspeisung“ versteht wahrscheinlich kein Mensch,
+# was eigentlich damit gemeint ist. Meine Vorschläge:
 # - OPML-Nachrichtenquelle
 # - OPML-Feed
 #: ../freedesktop.org.xml.in.h:295
@@ -1792,9 +1796,10 @@ msgstr "Sun-Rasterbild"
 msgid "SunOS News font"
 msgstr "SunOS-News-Schrift"
 
+#. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in
+#. Europe) if the console was known as such in your locale
 # alternativ:
 # SNES-ROM
-#. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in Europe) if the console was known as such in your locale
 #: ../freedesktop.org.xml.in.h:452
 msgid "Super NES ROM"
 msgstr "Super-NES-ROM"
@@ -2247,10 +2252,10 @@ msgstr "Autorenliste"
 msgid "backup file"
 msgstr "Sicherungsdatei"
 
-# Das selbe wie beim anderen Blu-ray-String:
-#
-# Ich würde hier Blue-ray-Disc verwenden
 #. http://en.wikipedia.org/wiki/Blu-ray_Disc
+# Das selbe wie beim anderen Blu-ray-String:
+# 
+# Ich würde hier Blue-ray-Disc verwenden
 #: ../freedesktop.org.xml.in.h:575
 msgid "blank Blu-ray disc"
 msgstr "Leeres Blu-Ray-Medium"
@@ -2330,7 +2335,7 @@ msgstr "Digitales Rohbild"
 #. see fd.o hal spec
 #: ../freedesktop.org.xml.in.h:598
 msgid "e-book reader"
-msgstr ""
+msgstr "E-Book-Leser"
 
 #: ../freedesktop.org.xml.in.h:599
 msgid "eMusic download package"

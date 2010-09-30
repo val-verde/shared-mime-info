@@ -1,3 +1,42 @@
+shared-mime-info 0.80 (2010-09-30)
+* Mime-type Changes:
+- Add magic for F4V (Flash) video files
+- Add mime-type for Dia shapes
+- Bump priority for KOffice magics to give them precedence over gzip and zip
+- Add mime-type for Verilog and SystemVerilog source files and headers
+- Add Qt Linguist translation file
+- Add application/x-xspf+xml alias for XSPF playlists
+- Use audio/flac for FLAC files, make audio/x-flac an alias of it
+- Add mime-type for HDF files
+- Add mime-type for Mozilla Extension packages
+- Add mime-type for text/cache-manifest
+- Add YAML mime-type
+- Add application/relax-ng-compact-syntax mime-type
+- Add more tests for Matlab and Octave files
+- Improve translator comments for VCD, SVCD and PictureCD
+- Add application/pkcs8 mime-type
+- Add audio and video WebM mime-types
+- Add video/mp2t mime-type
+- Use generic video icon for application/x-matroska
+- Improve magic for Matroska files
+- Add magic for audio/x-stm
+- Update magic for Apple HTTP Streaming playlists
+- Add Lrzip archive mime-type
+- Fix PDF detection for some pesky files
+- Add details about 3GPP and 3GPP2 files
+- Add JavaFX video format
+- Add Windows Imaging Format Disk Image mime-type
+- Add application/x-apple-diskimage mime-type
+- Add e-book reader content-type
+- Add application/x-tex as an alias for text/x-tex
+- Use application/oxps mime-type for XPS files
+- Add magic to BibTeX files
+
+* Other:
+- Fix malformed D source test
+- Avoid using ~/.local data when running the test suite
+- Make sure that update-mime-info doesn't get called before installed
+
 shared-mime-info 0.71 (2010-02-01)
 * Mime-type Changes:
 - Add magic for FLAC files

@@ -4571,6 +4571,9 @@ command to generate the output files.
   <mime-type type="text/x-bibtex">
     <_comment>BibTeX document</_comment>
     <sub-class-of type="text/plain"/>
+    <magic>
+      <match type="string" value="% This file was created with JabRef" offset="0"/>
+    </magic>
     <glob pattern="*.bib"/>
   </mime-type>
   <mime-type type="text/x-c++hdr">

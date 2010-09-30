@@ -208,6 +208,8 @@ test.yaml application/x-yaml
 mysum.m text/x-matlab x
 # taken from Octave 3.2 sources
 isdir.m text/x-matlab x
+# From https://bugs.freedesktop.org/show_bug.cgi?id=29733
+bibtex.bib text/x-bibtex
 # hand-made
 simple-obj-c.m text/x-objcsrc
 # http://www.apps.ietf.org/rfc/rfc4716.html#sec-3.6

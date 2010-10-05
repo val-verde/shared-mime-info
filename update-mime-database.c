@@ -58,6 +58,7 @@ const char *media_types[] = {
 	"multipart",
 	"x-content",
 	"x-epoc",
+	"x-scheme-handler",
 };
 
 /* Represents a MIME type */

@@ -2,7 +2,7 @@
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
   <!ENTITY updated "2 October 2009">
-  <!ENTITY version "0.19">
+  <!ENTITY version "0.20">
 ]>
 <article id="index">
 
@@ -983,6 +983,25 @@ hierarchy.
 		</para>
 	</sect2>
 	<sect2>
+		<title>URI scheme handlers</title>
+		<para>
+URI scheme handling (such as a movie player handling mms:// URIs, or a Podcast program 
+handling feed:// URIs) are handled through applications handling the x-scheme-handler/foo
+mime-type, where foo is the URI scheme in question.
+		</para>
+		<para>
+This scheme allows URI scheme handling to enjoy the same benefits as mime-type handlers,
+such as the ability to change the default handler, the cross-desktop support, and
+easier application launching.
+		</para>
+		<para>
+Note that this virtual mime-type is not for listing URI schemes that an application 
+can load files from. For example, a movie player would not list x-scheme-handler/http 
+in its supported mime-types, but it would list x-scheme-handler/rtsp if it supported 
+playing back from RTSP locations.
+		</para>
+	</sect2>
+	<sect2>
 		<title>Security implications</title>
 		<para>
 The system described in this document is intended to allow different programs
@@ -1036,6 +1055,9 @@ Override.xml mentioned in <xref linkend="s2_layout"/>. Information such as
 		</member>
 		<member>
 			Matthias Clasen <email>mclasen at redhat.com</email>
+		</member>
+		<member>
+			Bastien Nocera <email>hadess at hadess.net</email>
 		</member>
 	</simplelist>
 </sect1>

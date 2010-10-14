@@ -1529,6 +1529,7 @@ static Magic *magic_new(xmlNode *node, Type *type, GError **error)
 		magic->type = type;
 		magic->matches = build_matches(node, error);
 
+
 		if (*error)
 		{
 			gchar *old = (*error)->message;
@@ -1537,6 +1538,11 @@ static Magic *magic_new(xmlNode *node, Type *type, GError **error)
 			(*error)->message = g_strconcat(
 				_("Error in <match> element: "), old, NULL);
 			g_free(old);
+		} else if (magic->matches == NULL) {
+			magic_free(magic);
+			magic = NULL;
+			g_set_error(error, MIME_ERROR, 0,
+				    _("Incomplete <magic> element"));
 		}
 	}
 

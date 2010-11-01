@@ -4608,6 +4608,7 @@ command to generate the output files.
     <_comment>CMake source code</_comment>
     <glob pattern="*.cmake"/>
     <glob pattern="CMakeLists.txt"/>
+    <sub-class-of type="text/plain"/>
   </mime-type>
   <mime-type type="text/csv">
     <_comment>CSV document</_comment>

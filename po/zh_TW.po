@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: shared-mime-info 0.16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-10-23 19:31+0000\n"
-"PO-Revision-Date: 2010-10-31 22:22+0800\n"
+"PO-Revision-Date: 2010-11-01 19:01+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
 "MIME-Version: 1.0\n"
@@ -139,20 +139,19 @@ msgstr "Amiga SoundTracker 音訊"
 
 #: ../freedesktop.org.xml.in.h:30
 msgid "Annodex Audio"
-msgstr ""
+msgstr "Annodex 音訊"
 
 #: ../freedesktop.org.xml.in.h:31
 msgid "Annodex Video"
-msgstr ""
+msgstr "Annodex 視訊"
 
 #: ../freedesktop.org.xml.in.h:32
 msgid "Annodex exchange format"
-msgstr ""
+msgstr "Annodex 交換格式"
 
 #: ../freedesktop.org.xml.in.h:33
-#, fuzzy
 msgid "AportisDoc document"
-msgstr "ToutDoux 文件"
+msgstr "AportisDoc 文件"
 
 #: ../freedesktop.org.xml.in.h:34
 msgid "Apple disk image"
@@ -241,9 +240,8 @@ msgid "CD Table Of Contents"
 msgstr "CD 內容目錄"
 
 #: ../freedesktop.org.xml.in.h:57
-#, fuzzy
 msgid "CD image cuesheet"
-msgstr "Siag 試算表"
+msgstr "CD 映像指示表"
 
 #: ../freedesktop.org.xml.in.h:58
 msgid "CHM document"
@@ -275,20 +273,19 @@ msgstr "CSV 文件"
 
 #: ../freedesktop.org.xml.in.h:65
 msgid "Canon CR2 raw image"
-msgstr "Canon CR2 raw 影像"
+msgstr "Canon CR2 原生影像"
 
 #: ../freedesktop.org.xml.in.h:66
 msgid "Canon CRW raw image"
-msgstr "Canon CRW raw 影像"
+msgstr "Canon CRW 原生影像"
 
 #: ../freedesktop.org.xml.in.h:67
 msgid "Certificate revocation list"
 msgstr ""
 
 #: ../freedesktop.org.xml.in.h:68
-#, fuzzy
 msgid "ChangeLog document"
-msgstr "IDL 文件"
+msgstr "ChangeLog 文件"
 
 #: ../freedesktop.org.xml.in.h:69
 msgid "Cisco VPN Settings"
@@ -296,7 +293,7 @@ msgstr "Cisco VPN 設定值"
 
 #: ../freedesktop.org.xml.in.h:70
 msgid "Citrix ICA settings file"
-msgstr ""
+msgstr "Citrix ICA 設定值檔案"
 
 #: ../freedesktop.org.xml.in.h:71
 msgid "Commodore 64 audio"
@@ -327,14 +324,12 @@ msgid "DER/PEM/Netscape-encoded X.509 certificate"
 msgstr ""
 
 #: ../freedesktop.org.xml.in.h:78
-#, fuzzy
 msgid "DIB image"
-msgstr "ILBM 影像"
+msgstr "DIB 影像"
 
 #: ../freedesktop.org.xml.in.h:79
-#, fuzzy
 msgid "DICOM image"
-msgstr "GIMP 影像"
+msgstr "DICOM 影像"
 
 #: ../freedesktop.org.xml.in.h:80
 msgid "DOS font"
@@ -345,9 +340,8 @@ msgid "DOS/Windows executable"
 msgstr "DOS/Windows 可執行檔"
 
 #: ../freedesktop.org.xml.in.h:82
-#, fuzzy
 msgid "DPX image"
-msgstr "PNG 影像"
+msgstr "DPX 影像"
 
 #: ../freedesktop.org.xml.in.h:83
 msgid "DSSSL document"
@@ -355,7 +349,7 @@ msgstr "DSSSL 文件"
 
 #: ../freedesktop.org.xml.in.h:84
 msgid "DTD file"
-msgstr "DTD 檔案"
+msgstr "DTD 檔"
 
 #: ../freedesktop.org.xml.in.h:85
 msgid "DV video"
@@ -375,7 +369,7 @@ msgstr "Dia 圖表"
 
 #: ../freedesktop.org.xml.in.h:89
 msgid "Dia shape"
-msgstr ""
+msgstr "Dia 形狀"
 
 #: ../freedesktop.org.xml.in.h:90
 msgid "DirectDraw surface"
@@ -386,9 +380,8 @@ msgid "DjVu image"
 msgstr "DjVu 影像"
 
 #: ../freedesktop.org.xml.in.h:92
-#, fuzzy
 msgid "DocBook document"
-msgstr "複合文件"
+msgstr "DocBook 文件"
 
 #: ../freedesktop.org.xml.in.h:93
 msgid "Dolby Digital audio"
@@ -399,43 +392,36 @@ msgid "Dreamcast ROM"
 msgstr "Dreamcast ROM"
 
 #: ../freedesktop.org.xml.in.h:95
-#, fuzzy
 msgid "ECMAScript program"
-msgstr "Javascript 程式"
+msgstr "ECMAScript 程式"
 
 #: ../freedesktop.org.xml.in.h:96
-#, fuzzy
 msgid "EMF image"
-msgstr "IEF 影像"
+msgstr "EMF 影像"
 
 #: ../freedesktop.org.xml.in.h:97
-#, fuzzy
 msgid "EPS image"
-msgstr "IEF 影像"
+msgstr "EPS 影像"
 
 #: ../freedesktop.org.xml.in.h:98
-#, fuzzy
 msgid "EPS image (bzip-compressed)"
-msgstr "GIMP 影像 (經壓縮)"
+msgstr "EPS 影像 (bzip 格式壓縮)"
 
 #: ../freedesktop.org.xml.in.h:99
-#, fuzzy
 msgid "EPS image (gzip-compressed)"
-msgstr "GIMP 影像 (經壓縮)"
+msgstr "EPS 影像 (gzip 格式壓縮)"
 
 #: ../freedesktop.org.xml.in.h:100
-#, fuzzy
 msgid "EXR image"
-msgstr "IEF 影像"
+msgstr "EXR 影像"
 
 #: ../freedesktop.org.xml.in.h:101
 msgid "Egon Animator animation"
 msgstr "Egon Animator 動畫"
 
 #: ../freedesktop.org.xml.in.h:102
-#, fuzzy
 msgid "Eiffel source code"
-msgstr "C 源代碼"
+msgstr "Eiffel 源代碼"
 
 #: ../freedesktop.org.xml.in.h:103
 msgid "Emacs Lisp source code"
@@ -443,12 +429,11 @@ msgstr "Emacs Lisp 源代碼"
 
 #: ../freedesktop.org.xml.in.h:104
 msgid "Enlightenment theme"
-msgstr "Enlightenment 佈景檔"
+msgstr "Enlightenment 佈景主題"
 
 #: ../freedesktop.org.xml.in.h:105
-#, fuzzy
 msgid "Erlang source code"
-msgstr "Fortran 源代碼"
+msgstr "Erlang 源代碼"
 
 #: ../freedesktop.org.xml.in.h:106
 msgid "Excel 2007 spreadsheet"
@@ -459,36 +444,32 @@ msgid "Excel spreadsheet"
 msgstr "Excel 試算表"
 
 #: ../freedesktop.org.xml.in.h:108
-#, fuzzy
 msgid "FITS document"
-msgstr "HDF 文件"
+msgstr "FITS 文件"
 
 #: ../freedesktop.org.xml.in.h:109
 msgid "FLAC audio"
 msgstr "FLAC 音訊"
 
 #: ../freedesktop.org.xml.in.h:110
-#, fuzzy
 msgid "FLIC animation"
-msgstr "ANIM 動畫"
+msgstr "FLIC 動畫"
 
 #: ../freedesktop.org.xml.in.h:111
 msgid "FLTK Fluid file"
 msgstr "FLTK Fluid 檔"
 
 #: ../freedesktop.org.xml.in.h:112
-#, fuzzy
 msgid "FPX image"
-msgstr "GIF 影像"
+msgstr "FPX 影像"
 
 #: ../freedesktop.org.xml.in.h:113
 msgid "FastTracker II audio"
 msgstr "FastTracker II 音訊"
 
 #: ../freedesktop.org.xml.in.h:114
-#, fuzzy
 msgid "FictionBook document"
-msgstr "Quicken 文件"
+msgstr "FictionBook 文件"
 
 #: ../freedesktop.org.xml.in.h:115
 msgid "Flash video"
@@ -500,7 +481,7 @@ msgstr "Fortran 源代碼"
 
 #: ../freedesktop.org.xml.in.h:117
 msgid "Fuji RAF raw image"
-msgstr "Fuji RAF raw 影像"
+msgstr "Fuji RAF 原生影像"
 
 #: ../freedesktop.org.xml.in.h:118
 msgid "G3 fax image"
@@ -547,9 +528,8 @@ msgid "GTKtalog catalog"
 msgstr "GTKtalog 光碟目錄"
 
 #: ../freedesktop.org.xml.in.h:129
-#, fuzzy
 msgid "Game Boy Advance ROM"
-msgstr "Game Boy ROM"
+msgstr "Game Boy Advance ROM"
 
 #: ../freedesktop.org.xml.in.h:130
 msgid "Game Boy ROM"
@@ -586,9 +566,8 @@ msgid "Graphite scientific graph"
 msgstr "Graphite 科學圖表"
 
 #: ../freedesktop.org.xml.in.h:140
-#, fuzzy
 msgid "Graphviz DOT graph"
-msgstr "Graphite 科學圖表"
+msgstr "Graphviz DOT 圖"
 
 #: ../freedesktop.org.xml.in.h:141
 msgid "Gzip archive"
@@ -614,16 +593,15 @@ msgstr "HTML 文件"
 
 #: ../freedesktop.org.xml.in.h:148
 msgid "HTTP Live Streaming playlist"
-msgstr ""
+msgstr "HTTP 即時串流播放清單"
 
 #: ../freedesktop.org.xml.in.h:149
 msgid "Haansoft Hangul document"
-msgstr ""
+msgstr "Haansoft 韓文文件"
 
 #: ../freedesktop.org.xml.in.h:150
-#, fuzzy
 msgid "Haansoft Hangul document template"
-msgstr "OpenDocument HTML 文件範本"
+msgstr "Haansoft 韓文文件範本"
 
 #: ../freedesktop.org.xml.in.h:151
 msgid "Haskell source code"
@@ -655,7 +633,7 @@ msgstr "ISI 視訊"
 
 #: ../freedesktop.org.xml.in.h:158
 msgid "IT 8.7 color calibration file"
-msgstr ""
+msgstr "IT 8.7 色彩校正檔"
 
 #: ../freedesktop.org.xml.in.h:159
 msgid "Impulse Tracker audio"
@@ -663,21 +641,19 @@ msgstr "Impulse Tracker 音訊"
 
 #: ../freedesktop.org.xml.in.h:160
 msgid "Internet shortcut"
-msgstr ""
+msgstr "網際網路捷徑"
 
 #: ../freedesktop.org.xml.in.h:161
-#, fuzzy
 msgid "JAD document"
-msgstr "HDF 文件"
+msgstr "JAD 文件"
 
 #: ../freedesktop.org.xml.in.h:162
 msgid "JBuilder project"
 msgstr "JBuilder 專案"
 
 #: ../freedesktop.org.xml.in.h:163
-#, fuzzy
 msgid "JET database"
-msgstr "Palm OS 資料庫"
+msgstr "JET 資料庫"
 
 #: ../freedesktop.org.xml.in.h:164
 msgid "JNG image"
@@ -721,14 +697,12 @@ msgid "Java source code"
 msgstr "Java 源代碼"
 
 #: ../freedesktop.org.xml.in.h:174
-#, fuzzy
 msgid "JavaFX video"
-msgstr "Wavelet 視訊"
+msgstr "JavaFX 視訊"
 
 #: ../freedesktop.org.xml.in.h:175
-#, fuzzy
 msgid "JavaScript program"
-msgstr "Javascript 程式"
+msgstr "JavaScript 程式"
 
 #: ../freedesktop.org.xml.in.h:176
 msgid "KChart chart"
@@ -736,7 +710,7 @@ msgstr "KChart 圖表"
 
 #: ../freedesktop.org.xml.in.h:177
 msgid "KFormula formula"
-msgstr "KFormula 算式"
+msgstr "KFormula 公式"
 
 #: ../freedesktop.org.xml.in.h:178
 msgid "KIllustrator drawing"
@@ -744,7 +718,7 @@ msgstr "KIllustrator 繪圖"
 
 #: ../freedesktop.org.xml.in.h:179
 msgid "KML geographic compressed data"
-msgstr ""
+msgstr "KML 地理壓縮資料"
 
 #: ../freedesktop.org.xml.in.h:180
 msgid "KML geographic data"
@@ -752,7 +726,7 @@ msgstr "KML 地理資料"
 
 #: ../freedesktop.org.xml.in.h:181
 msgid "KPovModeler scene"
-msgstr ""
+msgstr "KPovModeler 場景"
 
 #: ../freedesktop.org.xml.in.h:182
 msgid "KPresenter presentation"
@@ -767,9 +741,8 @@ msgid "KSpread spreadsheet (encrypted)"
 msgstr "KSpread 試算表 (已加密)"
 
 #: ../freedesktop.org.xml.in.h:185
-#, fuzzy
 msgid "KSysV init package"
-msgstr "Debian 套件"
+msgstr "KSysV init 套件"
 
 #: ../freedesktop.org.xml.in.h:186
 msgid "KWord document"
@@ -785,11 +758,11 @@ msgstr "Karbon14 繪圖"
 
 #: ../freedesktop.org.xml.in.h:189
 msgid "Kexi database file-based project"
-msgstr ""
+msgstr "Kexi 資料庫檔案基礎專案"
 
 #: ../freedesktop.org.xml.in.h:190
 msgid "Kexi settings for database server connection"
-msgstr ""
+msgstr "Kexi 設定值 (資料庫伺服器連線用)"
 
 #: ../freedesktop.org.xml.in.h:191
 msgid "Kivio flowchart"
@@ -797,15 +770,15 @@ msgstr "Kivio 圖表"
 
 #: ../freedesktop.org.xml.in.h:192
 msgid "Kodak DCR raw image"
-msgstr ""
+msgstr "Kodak DCR 原生影像"
 
 #: ../freedesktop.org.xml.in.h:193
 msgid "Kodak K25 raw image"
-msgstr ""
+msgstr "Kodak K25 原生影像"
 
 #: ../freedesktop.org.xml.in.h:194
 msgid "Kodak KDC raw image"
-msgstr ""
+msgstr "Kodak KDC 原生影像"
 
 #: ../freedesktop.org.xml.in.h:195
 msgid "Kontour drawing"
@@ -821,7 +794,7 @@ msgstr "Kugar 文件"
 
 #: ../freedesktop.org.xml.in.h:198
 msgid "LDIF address book"
-msgstr ""
+msgstr "LDIF 通訊錄"
 
 #: ../freedesktop.org.xml.in.h:199
 msgid "LHA archive"
@@ -857,16 +830,15 @@ msgstr "LightWave 場景"
 
 #: ../freedesktop.org.xml.in.h:207
 msgid "Lilypond music sheet"
-msgstr ""
+msgstr "Lilypond 樂譜"
 
 #: ../freedesktop.org.xml.in.h:208
 msgid "Linux PSF console font"
 msgstr "Linux PSF console 字型"
 
 #: ../freedesktop.org.xml.in.h:209
-#, fuzzy
 msgid "Linux PSF console font (gzip-compressed)"
-msgstr "Linux PSF console 字型"
+msgstr "Linux PSF console 字型 (gzip 格式壓縮)"
 
 #: ../freedesktop.org.xml.in.h:210
 msgid "Lotus 1-2-3 spreadsheet"
@@ -894,7 +866,7 @@ msgstr "Lzip 封存檔"
 
 #: ../freedesktop.org.xml.in.h:216
 msgid "M4 macro"
-msgstr ""
+msgstr "M4 巨集"
 
 #: ../freedesktop.org.xml.in.h:217
 msgid "MATLAB script/function"
@@ -930,7 +902,7 @@ msgstr "MPEG 視訊"
 
 #: ../freedesktop.org.xml.in.h:225
 msgid "MPEG-2 transport stream"
-msgstr ""
+msgstr "MPEG-2 傳輸串流"
 
 #: ../freedesktop.org.xml.in.h:226
 msgid "MPEG-4 audio"
@@ -965,9 +937,8 @@ msgid "MacOS X icon"
 msgstr "MacOS X 圖示"
 
 #: ../freedesktop.org.xml.in.h:234
-#, fuzzy
 msgid "MacPaint Bitmap image"
-msgstr "X BitMap 影像"
+msgstr "MacPaint 點陣影像"
 
 #: ../freedesktop.org.xml.in.h:235
 msgid "Macintosh AppleDouble-encoded file"
@@ -1027,7 +998,7 @@ msgstr "Metalink 檔案"
 
 #: ../freedesktop.org.xml.in.h:249
 msgid "MicroDVD subtitles"
-msgstr ""
+msgstr "MicroDVD 字幕"
 
 #: ../freedesktop.org.xml.in.h:250
 msgid "Microsoft ASX playlist"
@@ -1043,7 +1014,7 @@ msgstr "微軟文件影像格式"
 
 #: ../freedesktop.org.xml.in.h:253
 msgid "Microsoft Windows theme pack"
-msgstr "微軟視窗主題包"
+msgstr "微軟視窗佈景主題包"
 
 #: ../freedesktop.org.xml.in.h:254
 msgid "Microsoft Works document"
@@ -1054,13 +1025,12 @@ msgid "Microsoft icon"
 msgstr "微軟圖示"
 
 #: ../freedesktop.org.xml.in.h:256
-#, fuzzy
 msgid "MiniPSF audio"
-msgstr "MP3 音訊"
+msgstr "MiniPSF 音訊"
 
 #: ../freedesktop.org.xml.in.h:257
 msgid "Minolta MRW raw image"
-msgstr ""
+msgstr "Minolta MRW 原生影像"
 
 #: ../freedesktop.org.xml.in.h:258
 msgid "Monkey's audio"
@@ -1076,24 +1046,21 @@ msgid "Mup publication"
 msgstr "程式紀錄檔"
 
 #: ../freedesktop.org.xml.in.h:261
-#, fuzzy
 msgid "Musepack audio"
-msgstr "Impulse Tracker 音訊"
+msgstr "Musepack 音訊"
 
 #. Translate this to Famicom if the console was known as such in your locale
 #: ../freedesktop.org.xml.in.h:263
 msgid "NES ROM"
-msgstr "NES ROM"
+msgstr "任天堂 ROM"
 
 #: ../freedesktop.org.xml.in.h:264
-#, fuzzy
 msgid "NFO document"
-msgstr "HDF 文件"
+msgstr "NFO 文件"
 
 #: ../freedesktop.org.xml.in.h:265
-#, fuzzy
 msgid "NIFF image"
-msgstr "IFF 影像"
+msgstr "NIFF 影像"
 
 #: ../freedesktop.org.xml.in.h:266
 msgid "Nautilus link"
@@ -1101,7 +1068,7 @@ msgstr "Nautilus 鏈結"
 
 #: ../freedesktop.org.xml.in.h:267
 msgid "Nikon NEF raw image"
-msgstr ""
+msgstr "Nikon NEF 原生影像"
 
 #: ../freedesktop.org.xml.in.h:268
 msgid "Nintendo DS ROM"
@@ -1141,7 +1108,7 @@ msgstr "ODC 範本"
 
 #: ../freedesktop.org.xml.in.h:277
 msgid "ODF formula"
-msgstr "ODF 算式"
+msgstr "ODF 公式"
 
 #: ../freedesktop.org.xml.in.h:278
 msgid "ODF template"
@@ -1257,7 +1224,7 @@ msgstr "Ogg 多媒體檔案"
 
 #: ../freedesktop.org.xml.in.h:306
 msgid "Olympus ORF raw image"
-msgstr ""
+msgstr "Olympus ORF 原生影像"
 
 #: ../freedesktop.org.xml.in.h:307
 msgid "OpenOffice Calc spreadsheet"
@@ -1285,7 +1252,7 @@ msgstr "OpenOffice Impress 範本"
 
 #: ../freedesktop.org.xml.in.h:313
 msgid "OpenOffice Math formula"
-msgstr "OpenOffice Math 算式"
+msgstr "OpenOffice Math 公式"
 
 #: ../freedesktop.org.xml.in.h:314
 msgid "OpenOffice Writer document"
@@ -1360,9 +1327,8 @@ msgid "PGM image"
 msgstr "PGM 影像"
 
 #: ../freedesktop.org.xml.in.h:332
-#, fuzzy
 msgid "PGN chess game notation"
-msgstr "PGN 國際象棋紀錄檔"
+msgstr "PGN 國際象棋棋譜"
 
 #: ../freedesktop.org.xml.in.h:333
 msgid "PGP keys"
@@ -1428,7 +1394,7 @@ msgstr "Palm OS 資料庫"
 
 #: ../freedesktop.org.xml.in.h:348
 msgid "Panasonic raw image"
-msgstr ""
+msgstr "Panasonic 原生影像"
 
 #: ../freedesktop.org.xml.in.h:349
 msgid "Parchive archive"
@@ -1444,7 +1410,7 @@ msgstr "Pathetic Writer 文件"
 
 #: ../freedesktop.org.xml.in.h:352
 msgid "Pentax PEF raw image"
-msgstr ""
+msgstr "Pentax PEF 原生影像"
 
 #: ../freedesktop.org.xml.in.h:353
 msgid "Perl script"
@@ -1471,14 +1437,12 @@ msgid "PlanPerfect spreadsheet"
 msgstr "Gnumeric 試算表"
 
 #: ../freedesktop.org.xml.in.h:361
-#, fuzzy
 msgid "Plucker document"
-msgstr "Quicken 文件"
+msgstr "Plucker 文件"
 
 #: ../freedesktop.org.xml.in.h:362
-#, fuzzy
 msgid "Pocket Word document"
-msgstr "KWord 文件"
+msgstr "Pocket Word 文件"
 
 #: ../freedesktop.org.xml.in.h:363
 msgid "PostScript document (bzip-compressed)"
@@ -1489,9 +1453,8 @@ msgid "PostScript document (gzip-compressed)"
 msgstr "PostScript 文件 (gzip 格式壓縮)"
 
 #: ../freedesktop.org.xml.in.h:365
-#, fuzzy
 msgid "Postscript type-1 font"
-msgstr "PostScript 文件"
+msgstr "Postscript type-1 字型"
 
 #: ../freedesktop.org.xml.in.h:366
 msgid "PowerPoint 2007 presentation"
@@ -1517,11 +1480,9 @@ msgstr "Python 指令稿"
 msgid "Qt Designer file"
 msgstr "Qt Designer 檔案"
 
-# (Abel) 採用 KDE 繁體翻譯
 #: ../freedesktop.org.xml.in.h:372
-#, fuzzy
 msgid "Qt MOC file"
-msgstr "Qt Meta 目標文件"
+msgstr "Qt MOC 檔"
 
 #: ../freedesktop.org.xml.in.h:373
 msgid "Quattro Pro spreadsheet"
@@ -1533,7 +1494,7 @@ msgstr "QuickTime 影像"
 
 #: ../freedesktop.org.xml.in.h:375
 msgid "QuickTime metalink playlist"
-msgstr ""
+msgstr "QuickTime metalink 播放清單"
 
 #: ../freedesktop.org.xml.in.h:376
 msgid "QuickTime video"
@@ -1549,7 +1510,7 @@ msgstr "RAR 封存檔"
 
 #: ../freedesktop.org.xml.in.h:379
 msgid "RDF file"
-msgstr ""
+msgstr "RDF 檔"
 
 #: ../freedesktop.org.xml.in.h:380
 msgid "README document"
@@ -1577,7 +1538,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:386
 msgid "RSS summary"
-msgstr ""
+msgstr "RSS 摘要"
 
 #: ../freedesktop.org.xml.in.h:387
 msgid "RTF document"
@@ -1621,7 +1582,7 @@ msgstr "S/MIME 檔"
 
 #: ../freedesktop.org.xml.in.h:397
 msgid "SAMI subtitles"
-msgstr ""
+msgstr "SAMI 字幕"
 
 #: ../freedesktop.org.xml.in.h:398
 msgid "SC/Xspread spreadsheet"
@@ -1636,7 +1597,7 @@ msgstr ""
 #. http://www.red-bean.com/sgf/
 #: ../freedesktop.org.xml.in.h:403
 msgid "SGF record"
-msgstr ""
+msgstr "SGF 紀錄"
 
 #: ../freedesktop.org.xml.in.h:404
 msgid "SGI image"
@@ -1668,16 +1629,15 @@ msgstr "SMIL 文件"
 
 #: ../freedesktop.org.xml.in.h:411
 msgid "SPSS Data File"
-msgstr ""
+msgstr "SPSS 資料檔"
 
 #: ../freedesktop.org.xml.in.h:412
-#, fuzzy
 msgid "SPSS Portable Data File"
-msgstr "Portable Bitmap 影像"
+msgstr "SPSS 可攜式資料檔"
 
 #: ../freedesktop.org.xml.in.h:413
 msgid "SQL code"
-msgstr "SQL 碼"
+msgstr "SQL 代碼"
 
 #: ../freedesktop.org.xml.in.h:414
 msgid "SQLite2 database"
@@ -1689,7 +1649,7 @@ msgstr "SQLite3 資料庫"
 
 #: ../freedesktop.org.xml.in.h:416
 msgid "SSA subtitles"
-msgstr ""
+msgstr "SSA 字幕"
 
 #: ../freedesktop.org.xml.in.h:417
 msgid "SV4 CPIO archive"
@@ -1720,9 +1680,8 @@ msgid "Scream Tracker instrument"
 msgstr "Scream Tracker 樂器檔"
 
 #: ../freedesktop.org.xml.in.h:424
-#, fuzzy
 msgid "Sega Master System/Game Gear ROM"
-msgstr "SMS/Game Gear ROM"
+msgstr "Sega Master System/Game Gear ROM"
 
 #: ../freedesktop.org.xml.in.h:425
 msgid "Setext document"
@@ -1735,7 +1694,7 @@ msgstr "Shockwave Flash 檔"
 #. translators: "Shorten" is the name of an audio codec
 #: ../freedesktop.org.xml.in.h:428
 msgid "Shorten audio"
-msgstr ""
+msgstr "Shorten 音訊"
 
 #: ../freedesktop.org.xml.in.h:429
 msgid "Siag spreadsheet"
@@ -1743,28 +1702,27 @@ msgstr "Siag 試算表"
 
 #: ../freedesktop.org.xml.in.h:430
 msgid "Sieve mail filter script"
-msgstr ""
+msgstr "Sieve 郵件過濾指令稿"
 
 #: ../freedesktop.org.xml.in.h:431
 msgid "Sigma X3F raw image"
-msgstr ""
+msgstr "Sigma X3F 原生影像"
 
 #: ../freedesktop.org.xml.in.h:432
-#, fuzzy
 msgid "Skencil document"
-msgstr "Speech 語音合成檔"
+msgstr "Skencil 文件"
 
 #: ../freedesktop.org.xml.in.h:433
 msgid "Sony ARW raw image"
-msgstr ""
+msgstr "Sony ARW 原生影像"
 
 #: ../freedesktop.org.xml.in.h:434
 msgid "Sony SR2 raw image"
-msgstr ""
+msgstr "Sony SR2 原生影像"
 
 #: ../freedesktop.org.xml.in.h:435
 msgid "Sony SRF raw image"
-msgstr ""
+msgstr "Sony SRF 原生影像"
 
 #: ../freedesktop.org.xml.in.h:436
 msgid "Speedo font"
@@ -1800,7 +1758,7 @@ msgstr "StarMail 郵件"
 
 #: ../freedesktop.org.xml.in.h:444
 msgid "StarMath formula"
-msgstr "StarMath 算式"
+msgstr "StarMath 公式"
 
 #: ../freedesktop.org.xml.in.h:445
 msgid "StarWriter document"
@@ -1828,9 +1786,8 @@ msgstr "SunOS News 字型"
 
 #. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in Europe) if the console was known as such in your locale
 #: ../freedesktop.org.xml.in.h:452
-#, fuzzy
 msgid "Super NES ROM"
-msgstr "NES ROM"
+msgstr "超級任天堂 ROM"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Super_Video_CD
@@ -1840,41 +1797,36 @@ msgid "Super Video CD"
 msgstr "Super Video CD"
 
 #: ../freedesktop.org.xml.in.h:457
-#, fuzzy
 msgid "SystemVerilog header"
-msgstr "電子郵件標頭"
+msgstr "SystemVerilog 標頭"
 
 #: ../freedesktop.org.xml.in.h:458
-#, fuzzy
 msgid "SystemVerilog source code"
-msgstr "Scheme 源代碼"
+msgstr "SystemVerilog 源代碼"
 
 #: ../freedesktop.org.xml.in.h:459
 msgid "T602 document"
 msgstr "T602 文件"
 
 #: ../freedesktop.org.xml.in.h:460
-#, fuzzy
 msgid "TGA image"
-msgstr "TarGA 影像"
+msgstr "TGA 影像"
 
 #: ../freedesktop.org.xml.in.h:461
 msgid "TGIF document"
-msgstr ""
+msgstr "TGIF 文件"
 
 #: ../freedesktop.org.xml.in.h:462
 msgid "TIFF image"
 msgstr "TIFF 影像"
 
 #: ../freedesktop.org.xml.in.h:463
-#, fuzzy
 msgid "TNEF message"
-msgstr "PGP 訊息"
+msgstr "TNEF 訊息"
 
 #: ../freedesktop.org.xml.in.h:464
-#, fuzzy
 msgid "TSV document"
-msgstr "TeX 文件"
+msgstr "TSV 文件"
 
 #: ../freedesktop.org.xml.in.h:465
 msgid "Tar archive"
@@ -1946,15 +1898,15 @@ msgstr "ToutDoux 文件"
 
 #: ../freedesktop.org.xml.in.h:482
 msgid "Troff ME input document"
-msgstr ""
+msgstr "Troff ME 輸入文件"
 
 #: ../freedesktop.org.xml.in.h:483
 msgid "Troff MM input document"
-msgstr ""
+msgstr "Troff MM 輸入文件"
 
 #: ../freedesktop.org.xml.in.h:484
 msgid "Troff MS input document"
-msgstr ""
+msgstr "Troff MS 輸入文件"
 
 #: ../freedesktop.org.xml.in.h:485
 msgid "Troff document"
@@ -1962,11 +1914,11 @@ msgstr "Troff 文件"
 
 #: ../freedesktop.org.xml.in.h:486
 msgid "Troff document (with manpage macros)"
-msgstr ""
+msgstr "Troff 文件 (含有手冊頁面巨集)"
 
 #: ../freedesktop.org.xml.in.h:487
 msgid "TrueAudio audio"
-msgstr ""
+msgstr "TrueAudio 音訊"
 
 #: ../freedesktop.org.xml.in.h:488
 msgid "TrueType XML font"
@@ -1977,9 +1929,8 @@ msgid "TrueType font"
 msgstr "TrueType 字型"
 
 #: ../freedesktop.org.xml.in.h:490
-#, fuzzy
 msgid "UFRaw ID image"
-msgstr "GIF 影像"
+msgstr "UFRaw ID 影像"
 
 #: ../freedesktop.org.xml.in.h:491
 msgid "ULAW (Sun) audio"
@@ -2013,12 +1964,11 @@ msgstr "V 字型"
 
 #: ../freedesktop.org.xml.in.h:500
 msgid "VCS/ICS calendar"
-msgstr ""
+msgstr "VCS/ICS 行事曆"
 
 #: ../freedesktop.org.xml.in.h:501
-#, fuzzy
 msgid "VHDL source code"
-msgstr "D 源代碼"
+msgstr "VHDL 源代碼"
 
 #: ../freedesktop.org.xml.in.h:502
 msgid "VOC audio"
@@ -2029,14 +1979,12 @@ msgid "VRML document"
 msgstr "VRML 文件"
 
 #: ../freedesktop.org.xml.in.h:504
-#, fuzzy
 msgid "Vala source code"
-msgstr "Java 源代碼"
+msgstr "Vala 源代碼"
 
 #: ../freedesktop.org.xml.in.h:505
-#, fuzzy
 msgid "Verilog source code"
-msgstr "C 源代碼"
+msgstr "Verilog 源代碼"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Video_CD
@@ -2070,18 +2018,16 @@ msgid "WML document"
 msgstr "WML 文件"
 
 #: ../freedesktop.org.xml.in.h:516
-#, fuzzy
 msgid "WMLScript program"
-msgstr "Javascript 程式"
+msgstr "WMLScript 程式"
 
 #: ../freedesktop.org.xml.in.h:517
 msgid "WPL playlist"
 msgstr "WPL 播放清單"
 
 #: ../freedesktop.org.xml.in.h:518
-#, fuzzy
 msgid "WRI document"
-msgstr "IDL 文件"
+msgstr "WRI 文件"
 
 #: ../freedesktop.org.xml.in.h:519
 msgid "WavPack audio"
@@ -2113,15 +2059,15 @@ msgstr "Windows BMP 影像"
 
 #: ../freedesktop.org.xml.in.h:526
 msgid "Windows Imaging Format Disk Image"
-msgstr ""
+msgstr "Windows Imaging Format Disk 映像"
 
 #: ../freedesktop.org.xml.in.h:527
 msgid "Windows Installer package"
-msgstr ""
+msgstr "Windows Installer 套件"
 
 #: ../freedesktop.org.xml.in.h:528
 msgid "Windows Media Station file"
-msgstr ""
+msgstr "Windows Media Station 檔"
 
 #: ../freedesktop.org.xml.in.h:529
 msgid "Windows Media audio"
@@ -2159,7 +2105,7 @@ msgstr "Word 文件"
 
 #: ../freedesktop.org.xml.in.h:539
 msgid "Word template"
-msgstr ""
+msgstr "Word 範本"
 
 #: ../freedesktop.org.xml.in.h:540
 msgid "WordPerfect document"
@@ -2175,15 +2121,15 @@ msgstr "X window 影像"
 
 #: ../freedesktop.org.xml.in.h:543
 msgid "X-Motif UIL table"
-msgstr ""
+msgstr "X-Motif UIL 表格"
 
 #: ../freedesktop.org.xml.in.h:544
 msgid "X.509 certificate"
-msgstr ""
+msgstr "X.509 憑證"
 
 #: ../freedesktop.org.xml.in.h:545
 msgid "X11 cursor"
-msgstr ""
+msgstr "X11 滑鼠游標"
 
 #: ../freedesktop.org.xml.in.h:546
 msgid "XBEL bookmarks"
@@ -2203,7 +2149,7 @@ msgstr "XHTML 網頁"
 
 #: ../freedesktop.org.xml.in.h:550
 msgid "XLIFF translation file"
-msgstr ""
+msgstr "XLIFF 翻譯檔"
 
 #: ../freedesktop.org.xml.in.h:551
 msgid "XMCD CD database"
@@ -2227,7 +2173,7 @@ msgstr "XML 實體文件"
 
 #: ../freedesktop.org.xml.in.h:556
 msgid "XPInstall installer module"
-msgstr ""
+msgstr "XPInstall 安裝程式模組"
 
 #: ../freedesktop.org.xml.in.h:557
 msgid "XPM image"
@@ -2239,11 +2185,11 @@ msgstr "XPS 文件"
 
 #: ../freedesktop.org.xml.in.h:559
 msgid "XSL FO file"
-msgstr ""
+msgstr "XSL FO 檔"
 
 #: ../freedesktop.org.xml.in.h:560
 msgid "XSLT stylesheet"
-msgstr ""
+msgstr "XSLT 樣式表"
 
 #: ../freedesktop.org.xml.in.h:561
 msgid "XSPF playlist"
@@ -2288,9 +2234,8 @@ msgid "audio DVD"
 msgstr "音訊 DVD"
 
 #: ../freedesktop.org.xml.in.h:573
-#, fuzzy
 msgid "author credits"
-msgstr "作者清單"
+msgstr "作者致謝名單"
 
 #: ../freedesktop.org.xml.in.h:574
 msgid "author list"
@@ -2354,7 +2299,7 @@ msgstr "壓縮版 Tracker 音訊"
 
 #: ../freedesktop.org.xml.in.h:592
 msgid "desktop configuration file"
-msgstr ""
+msgstr "桌面組態檔"
 
 #: ../freedesktop.org.xml.in.h:593
 msgid "detached OpenPGP signature"
@@ -2371,20 +2316,20 @@ msgstr "檔案內容差異"
 #. http://en.wikipedia.org/wiki/Design_rule_for_Camera_File_system
 #: ../freedesktop.org.xml.in.h:597
 msgid "digital photos"
-msgstr ""
+msgstr "數位相片"
 
 #: ../freedesktop.org.xml.in.h:598
 msgid "digital raw image"
-msgstr ""
+msgstr "數位原生影像"
 
 #. see fd.o hal spec
 #: ../freedesktop.org.xml.in.h:600
 msgid "e-book reader"
-msgstr ""
+msgstr "e-book 愈毒氣"
 
 #: ../freedesktop.org.xml.in.h:601
 msgid "eMusic download package"
-msgstr ""
+msgstr "eMusic 下載套件"
 
 #: ../freedesktop.org.xml.in.h:602
 msgid "electronic book document"
@@ -2408,11 +2353,11 @@ msgstr "空白文件"
 
 #: ../freedesktop.org.xml.in.h:607
 msgid "encrypted message"
-msgstr ""
+msgstr "加密訊息"
 
 #: ../freedesktop.org.xml.in.h:608
 msgid "enriched text document"
-msgstr ""
+msgstr "豐富化文字文件"
 
 #: ../freedesktop.org.xml.in.h:609
 msgid "executable"
@@ -2424,11 +2369,11 @@ msgstr "資料夾"
 
 #: ../freedesktop.org.xml.in.h:611
 msgid "generic font file"
-msgstr ""
+msgstr "通用字型檔"
 
 #: ../freedesktop.org.xml.in.h:612
 msgid "help page"
-msgstr ""
+msgstr "幫助頁面"
 
 #: ../freedesktop.org.xml.in.h:613
 msgid "iMelody ringtone"
@@ -2456,7 +2401,7 @@ msgstr "libtool 共享函式庫"
 
 #: ../freedesktop.org.xml.in.h:619
 msgid "license terms"
-msgstr ""
+msgstr "授權條款"
 
 #: ../freedesktop.org.xml.in.h:620
 msgid "mail delivery report"
@@ -2476,7 +2421,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:624
 msgid "manual page (compressed)"
-msgstr "手冊頁面 (壓縮)"
+msgstr "手冊頁面 (壓縮版)"
 
 #: ../freedesktop.org.xml.in.h:625
 msgid "message catalog"
@@ -2496,15 +2441,15 @@ msgstr "掛載點"
 
 #: ../freedesktop.org.xml.in.h:629
 msgid "object code"
-msgstr ""
+msgstr "目的碼"
 
 #: ../freedesktop.org.xml.in.h:630
 msgid "packed font file"
-msgstr ""
+msgstr "包裝字型檔"
 
 #: ../freedesktop.org.xml.in.h:631
 msgid "partial email message"
-msgstr ""
+msgstr "部份電子郵件訊息"
 
 #: ../freedesktop.org.xml.in.h:632
 msgid "pipe"
@@ -2517,7 +2462,7 @@ msgstr "純文字文件"
 #. see fd.o hal spec
 #: ../freedesktop.org.xml.in.h:635
 msgid "portable audio player"
-msgstr ""
+msgstr "可攜式音訊播放程式"
 
 #: ../freedesktop.org.xml.in.h:636
 msgid "profiler results"
@@ -2529,7 +2474,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:638
 msgid "raw CD image"
-msgstr ""
+msgstr "原生 CD 映像"
 
 #: ../freedesktop.org.xml.in.h:639
 msgid "reference to remote file"
@@ -2545,7 +2490,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:642
 msgid "rich text document"
-msgstr ""
+msgstr "豐富文字文件"
 
 #: ../freedesktop.org.xml.in.h:643
 msgid "shared library"
@@ -2553,11 +2498,11 @@ msgstr "共享函式庫"
 
 #: ../freedesktop.org.xml.in.h:644
 msgid "shell archive"
-msgstr ""
+msgstr "shell 封存檔"
 
 #: ../freedesktop.org.xml.in.h:645
 msgid "shell script"
-msgstr ""
+msgstr "shell 指令稿"
 
 #: ../freedesktop.org.xml.in.h:646
 msgid "shortcut to Kexi project on database server"

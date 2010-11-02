@@ -3751,6 +3751,15 @@ command to generate the output files.
     </magic>
     <glob pattern="*.raw"/>
   </mime-type>
+  <mime-type type="image/x-panasonic-raw2">
+    <_comment>Panasonic raw2 image</_comment>
+    <sub-class-of type="image/x-dcraw"/>
+    <magic priority="50">
+      <!-- Some kind of TIFF file with a non-standard version in prefix !-->
+      <match value="IIU\x00\x18\x00\x00\x00" type="string" offset="0"/>
+    </magic>
+    <glob pattern="*.rw2"/>
+  </mime-type>
   <mime-type type="image/x-pentax-pef">
     <_comment>Pentax PEF raw image</_comment>
     <acronym>PEF</acronym>

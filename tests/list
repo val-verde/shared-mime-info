@@ -63,6 +63,8 @@ test.xml.in application/xml x
 dia.shape application/x-dia-shape
 # Copied from https://bugzilla.gnome.org/show_bug.cgi?id=623861#c1
 attachment.tif image/jpeg xox
+# First 512k of http://img.photographyblog.com/reviews/panasonic_lumix_dmc_fz38/sample_images/panasonic_lumix_dmc_fz38_05.rw2
+panasonic_lumix_dmc_fz38_05.rw2 image/x-panasonic-raw2
 
 # Documents
 ooo-6.0.doc application/msword

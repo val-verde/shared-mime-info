@@ -49,20 +49,17 @@
   <!ATTLIST treematch mimetype CDATA #IMPLIED>
 
   <!ELEMENT root-XML EMPTY>
-  <!ATTLIST root-XML
-  	namespaceURI CDATA #REQUIRED
-	localName CDATA #REQUIRED>
+  <!ATTLIST root-XML namespaceURI CDATA #REQUIRED>
+  <!ATTLIST root-XML localName CDATA #REQUIRED>
 
   <!ELEMENT alias EMPTY>
-  <!ATTLIST alias
-  	type CDATA #REQUIRED>
+  <!ATTLIST alias type CDATA #REQUIRED>
 
   <!ELEMENT sub-class-of EMPTY>
-  <!ATTLIST sub-class-of
-  	type CDATA #REQUIRED>
+  <!ATTLIST sub-class-of type CDATA #REQUIRED>
 ]>
 
-<!-- 
+<!--
 The freedesktop.org shared MIME database (this file) was created by merging
 several existing MIME databases (all released under the GPL).
 
@@ -393,8 +390,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-go-sgf">
     <!-- translators: a record is in this context a description of a board game
-    		      that has been played, and that can be played back again:
-		      http://www.red-bean.com/sgf/ -->
+         that has been played, and that can be played back again:
+         http://www.red-bean.com/sgf/ -->
     <_comment>SGF record</_comment>
     <acronym>SGF</acronym>
     <expanded-acronym>Smart Game Format</expanded-acronym>
@@ -713,12 +710,12 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.sun.xml.math">
     <_comment>OpenOffice Math formula</_comment>
-   <sub-class-of type="application/zip"/>
+    <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
     <magic>
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
-         <match type="string" offset="38" value="application/vnd.sun.xml.math"/>
+          <match type="string" offset="38" value="application/vnd.sun.xml.math"/>
         </match>
       </match>
     </magic>
@@ -726,7 +723,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.sun.xml.writer">
     <_comment>OpenOffice Writer document</_comment>
-   <sub-class-of type="application/zip"/>
+    <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
     <magic>
       <match type="string" value="PK\003\004" offset="0">
@@ -1739,7 +1736,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-genesis-rom">
     <!-- Translate this to Megadrive if the console was known as such in your locale
-    Should be Megadrive in all but en_US: http://en.wikipedia.org/wiki/Megadrive#History -->
+         Should be Megadrive in all but en_US: http://en.wikipedia.org/wiki/Megadrive#History -->
     <_comment>Genesis ROM</_comment>
     <generic-icon name="application-x-executable"/>
     <glob pattern="*.gen"/>
@@ -1834,8 +1831,8 @@ command to generate the output files.
     <expanded-acronym>Hierarchical Data Format</expanded-acronym>
     <generic-icon name="x-office-document"/>
     <magic priority="50">
-        <match type="string" offset="0" value="\211HDF\r\n\032\n"/>
-        <match type="string" offset="0" value="\016\003\023\001"/>
+      <match type="string" offset="0" value="\211HDF\r\n\032\n"/>
+      <match type="string" offset="0" value="\016\003\023\001"/>
     </magic>
     <glob pattern="*.hdf"/>
     <glob pattern="*.hdf4"/>
@@ -3773,13 +3770,13 @@ command to generate the output files.
     <acronym>X3F</acronym>
     <expanded-acronym>X3 Foveon</expanded-acronym>
     <sub-class-of type="image/x-dcraw"/>
-      <magic priority="50">
-        <!-- The header is "FOVb" (Foveon) !-->
-        <match value="FOVb" type="string" offset="0">
-          <!-- Followed by a 32bit LSB specifying the version number (major.minor) !-->
-          <match value="0x00FF00FF" type="little32" offset="4" mask="0xFF00FF00" />
-        </match>
-      </magic>
+    <magic priority="50">
+      <!-- The header is "FOVb" (Foveon) !-->
+      <match value="FOVb" type="string" offset="0">
+        <!-- Followed by a 32bit LSB specifying the version number (major.minor) !-->
+        <match value="0x00FF00FF" type="little32" offset="4" mask="0xFF00FF00" />
+      </match>
+    </magic>
     <glob pattern="*.x3f"/>
   </mime-type>
   <mime-type type="image/x-sony-srf">
@@ -4772,9 +4769,9 @@ command to generate the output files.
   <mime-type type="text/x-google-video-pointer">
     <_comment>Google Video Pointer</_comment>
     <magic priority="50">
-       <match type="string" value="#.download.the.free.Google.Video.Player" offset="0"/>
-       <match type="string" value="# download the free Google Video Player" offset="0"/>
-     </magic>
+      <match type="string" value="#.download.the.free.Google.Video.Player" offset="0"/>
+      <match type="string" value="# download the free Google Video Player" offset="0"/>
+    </magic>
     <glob pattern="*.gvp"/>
     <alias type="text/google-video-pointer"/>
   </mime-type>
@@ -5083,7 +5080,7 @@ command to generate the output files.
         </match>
       </match>
     </magic>
-  <glob pattern="*.iptables"/>
+    <glob pattern="*.iptables"/>
   </mime-type>
   <mime-type type="application/xslt+xml">
     <_comment>XSLT stylesheet</_comment>
@@ -5355,35 +5352,35 @@ command to generate the output files.
     <glob pattern="*.xpi"/>
   </mime-type>
   <mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-     <_comment>Word 2007 document</_comment>
-     <glob pattern="*.docx"/>
-     <glob pattern="*.docm"/>
-     <alias type="application/vnd.ms-word.document.macroEnabled.12"/>
-     <sub-class-of type="application/zip"/>
-     <generic-icon name="x-office-document"/>
-   </mime-type>
-   <mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
-     <_comment>PowerPoint 2007 presentation</_comment>
-     <glob pattern="*.pptx"/>
-     <glob pattern="*.pptm"/>
-     <alias type="application/vnd.ms-powerpoint.presentation.macroEnabled.12"/>
-     <sub-class-of type="application/zip"/>
-     <generic-icon name="x-office-document"/>
-   </mime-type>
-   <mime-type type="application/vnd.openxmlformats-officedocument.presentationml.slideshow">
-     <_comment>PowerPoint 2007 show</_comment>
-     <glob pattern="*.ppsx"/>
-     <sub-class-of type="application/zip"/>
-     <generic-icon name="x-office-document"/>
-   </mime-type>
-   <mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-     <_comment>Excel 2007 spreadsheet</_comment>
-     <glob pattern="*.xlsx"/>
-     <glob pattern="*.xlsm"/>
-     <alias type="application/vnd.ms-excel.sheet.macroEnabled.12"/>
-     <sub-class-of type="application/zip"/>
-     <generic-icon name="x-office-document"/>
-   </mime-type>
+    <_comment>Word 2007 document</_comment>
+    <glob pattern="*.docx"/>
+    <glob pattern="*.docm"/>
+    <alias type="application/vnd.ms-word.document.macroEnabled.12"/>
+    <sub-class-of type="application/zip"/>
+    <generic-icon name="x-office-document"/>
+  </mime-type>
+  <mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
+    <_comment>PowerPoint 2007 presentation</_comment>
+    <glob pattern="*.pptx"/>
+    <glob pattern="*.pptm"/>
+    <alias type="application/vnd.ms-powerpoint.presentation.macroEnabled.12"/>
+    <sub-class-of type="application/zip"/>
+    <generic-icon name="x-office-document"/>
+  </mime-type>
+  <mime-type type="application/vnd.openxmlformats-officedocument.presentationml.slideshow">
+    <_comment>PowerPoint 2007 show</_comment>
+    <glob pattern="*.ppsx"/>
+    <sub-class-of type="application/zip"/>
+    <generic-icon name="x-office-document"/>
+  </mime-type>
+  <mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+    <_comment>Excel 2007 spreadsheet</_comment>
+    <glob pattern="*.xlsx"/>
+    <glob pattern="*.xlsm"/>
+    <alias type="application/vnd.ms-excel.sheet.macroEnabled.12"/>
+    <sub-class-of type="application/zip"/>
+    <generic-icon name="x-office-document"/>
+  </mime-type>
   <mime-type type="application/x-t602">
     <_comment>T602 document</_comment>
     <generic-icon name="x-office-document"/>
@@ -5540,7 +5537,7 @@ command to generate the output files.
          http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3 -->
     <_comment>software</_comment>
   </mime-type>
- 
+
   <mime-type type="x-content/unix-software">
     <!-- http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
          http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3 -->
@@ -5552,7 +5549,7 @@ command to generate the output files.
       <treematch path="autorun.sh" type="file" match-case="true" />
     </treemagic>
   </mime-type>
- 
+
   <mime-type type="x-content/win32-software">
     <!-- http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
          http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3 -->

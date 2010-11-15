@@ -67,7 +67,9 @@ uninstall-hook:
 	rm -f "$(DESTDIR)$(datadir)/mime/treemagic"
 	rm -f "$(DESTDIR)$(datadir)/mime/types"
 
-all: check
+all: check create-pot
+
+create-pot:
 	$(MAKE) -C po shared-mime-info.pot
 
 check: freedesktop.org.xml update-mime-database check-translations

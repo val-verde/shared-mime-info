@@ -4922,6 +4922,11 @@ command to generate the output files.
     <glob pattern="*.diff"/>
     <glob pattern="*.patch"/>
   </mime-type>
+  <mime-type type="text/x-go">
+    <_comment>Go source code</_comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.go"/>
+  </mime-type>
   <mime-type type="text/x-python">
     <_comment>Python script</_comment>
     <sub-class-of type='application/x-executable'/>

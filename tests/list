@@ -218,6 +218,8 @@ simple-obj-c.m text/x-objcsrc
 ssh-public-key.txt text/plain ox
 # http://tools.ietf.org/html/draft-ietf-vcarddav-vcardrev-12
 test.vcf text/directory
+# Test Go source code
+test.go text/x-go oxo
 
 # xml subtypes
 test.ttx application/x-font-ttx

@@ -3042,6 +3042,12 @@ command to generate the output files.
     <glob pattern="*.tar.xz"/>
     <glob pattern="*.txz"/>
   </mime-type>
+  <mime-type type="application/x-xzpdf">
+    <_comment>PDF document (XZ-compressed)</_comment>
+    <sub-class-of type="application/x-xz"/>
+    <generic-icon name="x-office-document"/>
+    <glob pattern="*.pdf.xz"/>
+  </mime-type>
   <mime-type type="application/x-ustar">
     <_comment>Ustar archive</_comment>
     <generic-icon name="package-x-generic"/>

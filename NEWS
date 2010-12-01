@@ -1,3 +1,22 @@
+shared-mime-info 0.90 (2010-12-1)
+* Mime-type Changes:
+- Make application/epub+zip sub-class-of application/zip
+- Make sure RAM files are not all treated as text
+- Make CMakefiles a sub-class of text/plain
+- Add new mime-type for Panasonic RW2 images
+- Add XSL magic
+- Add root-XML for XSL
+- Add *.gem as a glob for tar archives
+- Add test case for text/directory files
+- Add go source code
+- Add pdf.xz mime-type
+- Add text/x-ooc source code
+- Add Cobol source code
+
+* Other:
+- Don't error out on the x-scheme-handler/* mime-types
+- Fix crasher when mime-magic is empty
+
 shared-mime-info 0.80 (2010-09-30)
 * Mime-type Changes:
 - Add magic for F4V (Flash) video files

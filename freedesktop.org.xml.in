@@ -2278,6 +2278,14 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <glob pattern="*.ocl"/>
   </mime-type>
+  <mime-type type="text/x-cobol">
+    <_comment>COBOL source file</_comment>
+    <acronym>COBOL</acronym>
+    <expanded-acronym>COmmon Business Oriented Language</expanded-acronym>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.cbl"/>
+    <glob pattern="*.cob"/>
+  </mime-type>
   <mime-type type="application/x-mif">
     <_comment>Adobe FrameMaker MIF document</_comment>
     <glob pattern="*.mif"/>

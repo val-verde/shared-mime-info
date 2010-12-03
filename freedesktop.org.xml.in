@@ -162,6 +162,13 @@ command to generate the output files.
     <generic-icon name="x-office-document"/>
     <glob pattern="*.oda"/>
   </mime-type>
+  <mime-type type="application/x-wwf">
+    <_comment>WWF document</_comment>
+    <generic-icon name="x-office-document"/>
+    <glob pattern="*.wwf"/>
+    <sub-class-of type="application/pdf"/>
+    <alias type="application/wwf"/>
+  </mime-type>
   <mime-type type="application/pdf">
     <_comment>PDF document</_comment>
     <acronym>PDF</acronym>

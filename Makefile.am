@@ -72,7 +72,7 @@ all: check create-pot
 create-pot:
 	$(MAKE) -C po shared-mime-info.pot
 
-check: freedesktop.org.xml update-mime-database check-translations
+check: create-pot freedesktop.org.xml update-mime-database check-translations
 	if test -n $(XMLLINT) ; then \
 		if test -e $(top_builddir)/freedesktop.org.xml; then \
 		xmllint --noout --valid $(top_builddir)/freedesktop.org.xml;	\

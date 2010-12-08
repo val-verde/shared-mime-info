@@ -176,6 +176,8 @@ registry-nt.reg text/x-ms-regedit
 test.ext,v text/plain ox
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=14329
 test.fl application/x-fluid
+# From https://bugs.freedesktop.org/show_bug.cgi?id=30656
+bug-30656-xchat.conf application/octet-stream
 helloworld.java text/x-java ox
 # Copied from http://asurvey.net/ccsfagent/media/survey.js
 survey.js application/javascript ox

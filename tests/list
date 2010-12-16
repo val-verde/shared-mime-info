@@ -240,6 +240,8 @@ test.cbl text/x-cobol ox
 test.alz application/x-alz
 # Copied from /usr/share/gettext/javaversion.class
 test.class application/x-java
+# Created with jar from OpenJDK 1.6.0_18-b18
+test.jar application/x-java-archive ox
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=12620
 hello.pack application/x-java-pack200
 # Copied from http://www.apache.org/dist/httpd/binaries/win32/apache_2.2.9-win32-x86-no_ssl-r2.msi
@@ -267,6 +269,8 @@ fuji.themepack application/x-windows-themepack ox
 helloworld.xpi application/x-xpinstall ox
 # Created using imagex 6.0
 test.wim application/x-ms-wim
+# Created using Info-ZIP Zip 3.0
+test.zip application/zip
 
 # Audio/Video files
 # Copied from /usr/share/sounds/generic.wav

@@ -1855,6 +1855,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-java-archive">
     <_comment>Java archive</_comment>
+    <sub-class-of type="application/zip"/>
     <generic-icon name="package-x-generic"/>
     <alias type="application/x-jar"/>
     <alias type="application/java-archive"/>

@@ -1038,6 +1038,11 @@ command to generate the output files.
     <generic-icon name="x-office-document"/>
     <glob pattern="*.oxt" />
   </mime-type>
+  <mime-type type="application/vnd.android.package-archive">
+    <_comment>Android package</_comment>
+    <sub-class-of type="application/x-java-archive"/>
+    <glob pattern="*.apk"/>
+  </mime-type>
   <mime-type type="application/vnd.symbian.install">
     <_comment>SIS package</_comment>
     <acronym>SIS</acronym>

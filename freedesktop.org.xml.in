@@ -1476,6 +1476,13 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ui"/>
   </mime-type>
+  <mime-type type="text/x-qml">
+    <_comment>Qt Markup Language file</_comment>
+    <magic priority="80">
+      <match type="string" value="import Qt " offset="0:256"/>
+    </magic>
+    <glob pattern="*.qml"/>
+  </mime-type>
   <mime-type type="application/x-desktop">
     <_comment>desktop configuration file</_comment>
     <sub-class-of type="text/plain"/>

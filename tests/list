@@ -221,6 +221,8 @@ ssh-public-key.txt text/plain ox
 test.vcf text/directory
 # Test Go source code
 test.go text/x-go oxo
+# Qt Quick (QML) file
+rectangle.qml text/x-qml
 
 # xml subtypes
 test.ttx application/x-font-ttx

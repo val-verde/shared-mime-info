@@ -236,6 +236,8 @@ test.vcf text/vcard
 test.go text/x-go oxo
 # Qt Quick (QML) file
 rectangle.qml text/x-qml
+# QtiPlot (qti) file
+test.qti application/x-qtiplot
 # Scheme source code
 # https://bugs.freedesktop.org/show_bug.cgi?id=31534
 test.scm text/x-scheme ox

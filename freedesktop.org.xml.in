@@ -2814,6 +2814,16 @@ command to generate the output files.
     <glob pattern="*.pyc"/>
     <glob pattern="*.pyo"/>
   </mime-type>
+  <mime-type type="application/x-qtiplot">
+    <_comment>QtiPlot document</_comment>
+    <sub-class-of type="text/plain"/>
+    <generic-icon name="x-office-document"/>
+    <magic priority="50">
+      <match value="QtiPlot" type="string" offset="0"/>
+    </magic>
+    <glob pattern="*.qti"/>
+    <glob pattern="*.qti.gz"/>
+  </mime-type>
   <mime-type type="application/x-quattropro">
     <_comment>Quattro Pro spreadsheet</_comment>
     <generic-icon name="x-office-spreadsheet"/>

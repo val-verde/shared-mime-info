@@ -3335,6 +3335,7 @@ command to generate the output files.
     <glob pattern="*.3gp"/>
     <glob pattern="*.3gpp"/>
     <glob pattern="*.3ga"/>
+    <alias type="video/3gp"/>
     <alias type="audio/3gpp"/>
     <alias type="video/3gpp-encrypted"/>
     <alias type="audio/3gpp-encrypted"/>
@@ -5225,6 +5226,8 @@ command to generate the output files.
     <_comment>MPEG video</_comment>
     <acronym>MPEG</acronym>
     <expanded-acronym>Moving Picture Experts Group</expanded-acronym>
+    <alias type="video/x-mpeg"/>
+    <alias type="video/x-mpeg2"/>
     <magic priority="50">
       <match type="string" value="\x47\x3f\xff\x10" offset="0"/>
       <match type="big32" value="0x000001b3" offset="0"/>
@@ -5334,6 +5337,8 @@ command to generate the output files.
     <expanded-acronym>Audio Video Interleave</expanded-acronym>
     <alias type="video/x-avi"/>
     <alias type="video/avi"/>
+    <alias type="video/divx"/>
+    <alias type="video/msvideo"/>
     <alias type="video/vnd.divx"/>
     <magic priority="50">
       <match type="string" value="RIFF" offset="0">

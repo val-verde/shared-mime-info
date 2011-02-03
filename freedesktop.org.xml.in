@@ -523,6 +523,24 @@ command to generate the output files.
     <alias type="application/msexcel"/>
     <alias type="application/x-msexcel"/>
   </mime-type>
+  <mime-type type="application/vnd.ms-excel.addin.macroEnabled.12">
+    <_comment>Excel add-in</_comment>
+    <generic-icon name="x-office-spreadsheet"/>
+    <glob pattern="*.xlam"/>
+    <sub-class-of type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+  </mime-type>
+  <mime-type type="application/vnd.ms-excel.sheet.binary.macroEnabled.12">
+    <_comment>Excel 2007 binary spreadsheet</_comment>
+    <generic-icon name="x-office-spreadsheet"/>
+    <glob pattern="*.xlsb"/>
+    <sub-class-of type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+  </mime-type>
+  <mime-type type="application/vnd.ms-excel.sheet.macroEnabled.12">
+    <_comment>Excel macro-enabled spreadsheet</_comment>
+    <generic-icon name="x-office-spreadsheet"/>
+    <glob pattern="*.xlsm"/>
+    <sub-class-of type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+  </mime-type>
   <mime-type type="application/vnd.ms-powerpoint">
     <_comment>PowerPoint presentation</_comment>
     <generic-icon name="x-office-presentation"/>
@@ -533,6 +551,18 @@ command to generate the output files.
     <alias type="application/powerpoint"/>
     <alias type="application/mspowerpoint"/>
     <alias type="application/x-mspowerpoint"/>
+  </mime-type>
+  <mime-type type="application/vnd.ms-powerpoint.slideshow.macroEnabled.12">
+    <_comment>PowerPoint macro-enabled presentation</_comment>
+    <generic-icon name="x-office-presentation"/>
+    <glob pattern="*.ppsm"/>
+    <sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+  </mime-type>
+  <mime-type type="application/vnd.ms-powerpoint.template.macroEnabled.12">
+    <_comment>PowerPoint macro-enabled presentation template</_comment>
+    <generic-icon name="x-office-presentation"/>
+    <glob pattern="*.potm"/>
+    <sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
   </mime-type>
   <mime-type type="application/oxps">
     <_comment>XPS document</_comment>
@@ -5445,8 +5475,6 @@ command to generate the output files.
   <mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
     <_comment>Excel 2007 spreadsheet</_comment>
     <glob pattern="*.xlsx"/>
-    <glob pattern="*.xlsm"/>
-    <alias type="application/vnd.ms-excel.sheet.macroEnabled.12"/>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-spreadsheet"/>
   </mime-type>

@@ -3705,6 +3705,20 @@ int main(int argc, char **argv)
 		g_free(path);
 	}
 
+	{
+		FILE *stream;
+		char *path;
+
+		path = g_strconcat(mime_dir, "/version.new", NULL);
+		stream = open_or_die(path);
+		g_fprintf(stream,
+			  VERSION "\n");
+		fclose(stream);
+
+		atomic_update(path);
+		g_free(path);
+	}
+
 	g_ptr_array_foreach(magic_array, (GFunc)magic_free, NULL);
 	g_ptr_array_free(magic_array, TRUE);
 	g_ptr_array_foreach(tree_magic_array, (GFunc)tree_magic_free, NULL);

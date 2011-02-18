@@ -1932,6 +1932,11 @@ command to generate the output files.
     <magic priority="50">
       <match type="big32" value="0xcafebabe" offset="0"/>
     </magic>
+    <alias type="application/java"/>
+    <alias type="application/java-byte-code"/>
+    <alias type="application/java-vm"/>
+    <alias type="application/x-java-class"/>
+    <alias type="application/x-java-vm"/>
     <glob pattern="*.class"/>
   </mime-type>
   <mime-type type="application/x-java-jnlp-file">

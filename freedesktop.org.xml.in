@@ -558,6 +558,17 @@ command to generate the output files.
     <alias type="application/mspowerpoint"/>
     <alias type="application/x-mspowerpoint"/>
   </mime-type>
+  <mime-type type="application/vnd.ms-powerpoint.addin.macroEnabled.12">
+    <_comment>PowerPoint add-in</_comment>
+    <generic-icon name="x-office-presentation"/>
+    <glob pattern="*.ppam"/>
+  </mime-type>
+  <mime-type type="application/vnd.ms-powerpoint.presentation.macroEnabled.12">
+    <_comment>PowerPoint macro-enabled presentation</_comment>
+    <generic-icon name="x-office-presentation"/>
+    <glob pattern="*.pptm"/>
+    <sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+  </mime-type>
   <mime-type type="application/vnd.ms-powerpoint.slide.macroEnabled.12">
     <_comment>PowerPoint macro-enabled slide</_comment>
     <generic-icon name="x-office-presentation"/>
@@ -573,7 +584,7 @@ command to generate the output files.
     <_comment>PowerPoint macro-enabled presentation template</_comment>
     <generic-icon name="x-office-presentation"/>
     <glob pattern="*.potm"/>
-    <sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+    <sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.template"/>
   </mime-type>
   <mime-type type="application/vnd.ms-word.document.macroEnabled.12">
     <_comment>Word macro-enabled document</_comment>
@@ -5498,14 +5509,18 @@ command to generate the output files.
   <mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
     <_comment>PowerPoint 2007 presentation</_comment>
     <glob pattern="*.pptx"/>
-    <glob pattern="*.pptm"/>
-    <alias type="application/vnd.ms-powerpoint.presentation.macroEnabled.12"/>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-presentation"/>
   </mime-type>
   <mime-type type="application/vnd.openxmlformats-officedocument.presentationml.slideshow">
     <_comment>PowerPoint 2007 show</_comment>
     <glob pattern="*.ppsx"/>
+    <sub-class-of type="application/zip"/>
+    <generic-icon name="x-office-presentation"/>
+  </mime-type>
+  <mime-type type="application/vnd.openxmlformats-officedocument.presentationml.template">
+    <_comment>PowerPoint 2007 presentation template</_comment>
+    <glob pattern="*.potx"/>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-presentation"/>
   </mime-type>

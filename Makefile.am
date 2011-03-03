@@ -66,6 +66,7 @@ uninstall-hook:
 	rm -f "$(DESTDIR)$(datadir)/mime/globs2"
 	rm -f "$(DESTDIR)$(datadir)/mime/treemagic"
 	rm -f "$(DESTDIR)$(datadir)/mime/types"
+	rm -f "$(DESTDIR)$(datadir)/mime/version"
 
 all: check create-pot
 

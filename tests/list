@@ -224,6 +224,10 @@ test.vcf text/directory
 test.go text/x-go oxo
 # Qt Quick (QML) file
 rectangle.qml text/x-qml
+# Scheme source code
+# https://bugs.freedesktop.org/show_bug.cgi?id=31534
+test.scm text/x-scheme ox
+test.ss  text/x-scheme ox
 
 # xml subtypes
 test.ttx application/x-font-ttx

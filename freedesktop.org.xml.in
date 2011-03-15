@@ -573,6 +573,7 @@ command to generate the output files.
     <_comment>PowerPoint macro-enabled slide</_comment>
     <generic-icon name="x-office-presentation"/>
     <glob pattern="*.sldm"/>
+    <sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.slide"/>
   </mime-type>
   <mime-type type="application/vnd.ms-powerpoint.slideshow.macroEnabled.12">
     <_comment>PowerPoint macro-enabled presentation</_comment>
@@ -5515,6 +5516,12 @@ command to generate the output files.
   <mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
     <_comment>PowerPoint 2007 presentation</_comment>
     <glob pattern="*.pptx"/>
+    <sub-class-of type="application/zip"/>
+    <generic-icon name="x-office-presentation"/>
+  </mime-type>
+  <mime-type type="application/vnd.openxmlformats-officedocument.presentationml.slide">
+    <_comment>PowerPoint 2007 slide</_comment>
+    <glob pattern="*.sldx"/>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-presentation"/>
   </mime-type>

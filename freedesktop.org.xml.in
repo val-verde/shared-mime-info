@@ -545,7 +545,7 @@ command to generate the output files.
     <_comment>Excel macro-enabled spreadsheet template</_comment>
     <generic-icon name="x-office-spreadsheet"/>
     <glob pattern="*.xltm"/>
-    <sub-class-of type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+    <sub-class-of type="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
   </mime-type>
   <mime-type type="application/vnd.ms-powerpoint">
     <_comment>PowerPoint presentation</_comment>
@@ -5545,6 +5545,12 @@ command to generate the output files.
   <mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
     <_comment>Excel 2007 spreadsheet</_comment>
     <glob pattern="*.xlsx"/>
+    <sub-class-of type="application/zip"/>
+    <generic-icon name="x-office-spreadsheet"/>
+  </mime-type>
+  <mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.template">
+    <_comment>Excel 2007 spreadsheet template</_comment>
+    <glob pattern="*.xltx"/>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-spreadsheet"/>
   </mime-type>

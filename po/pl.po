@@ -1,22 +1,21 @@
-# Polish translation for shared-mime-info
-# Copyright (C) 2007 - 2010 Free Software Foundation, Inc.
-# This file is distributed under the same license as the shared-mime-info package.
-# Artur Flinta <aflinta@gmail.com>, 2004.
-# Tomasz Dominikowski <dominikowski@gmail.com>, 2009.
-# Piotr Drąg <piotrdrag@gmail.com>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-info\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-05 15:36+0100\n"
-"PO-Revision-Date: 2010-11-05 15:37+0100\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
-"Language: pl\n"
+"Report-Msgid-Bugs-To: http://bugzilla.freedesktop.org/\n"
+"POT-Creation-Date: 2010-11-26 19:35+0000\n"
+"PO-Revision-Date: 2011-03-22 15:08+0000\n"
+"Last-Translator: raven <piotrdrag@gmail.com>\n"
+"Language-Team: Polish <None>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: ../freedesktop.org.xml.in.h:1
 msgid "3D Studio image"
@@ -533,7 +532,8 @@ msgid "Game Boy ROM"
 msgstr "Plik ROM konsoli Game Boy"
 
 #. Translate this to Megadrive if the console was known as such in your locale
-#. Should be Megadrive in all but en_US: http://en.wikipedia.org/wiki/Megadrive#History
+#. Should be Megadrive in all but en_US:
+#. http://en.wikipedia.org/wiki/Megadrive#History
 #: ../freedesktop.org.xml.in.h:133
 msgid "Genesis ROM"
 msgstr "Plik ROM konsoli Mega Drive"
@@ -1780,7 +1780,8 @@ msgstr "Obraz rastrowy Sun"
 msgid "SunOS News font"
 msgstr "Czcionka SunOS News"
 
-#. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in Europe) if the console was known as such in your locale
+#. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in
+#. Europe) if the console was known as such in your locale
 #: ../freedesktop.org.xml.in.h:453
 msgid "Super NES ROM"
 msgstr "Plik ROM konsoli SNES"
@@ -2536,7 +2537,7 @@ msgstr "Motyw"
 
 #: ../freedesktop.org.xml.in.h:657
 msgid "translated messages (machine-readable)"
-msgstr "Przetłumaczone komunikaty (czytelne dla maszyny)"
+msgstr "Przetłumaczone komunikaty (czytelne dla komputera)"
 
 #: ../freedesktop.org.xml.in.h:658
 msgid "translation file"

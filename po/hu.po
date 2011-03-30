@@ -1,25 +1,21 @@
-# Hungarian translation of shared-mime-info
-# This file is distributed under the same license as the shared-mime-info package.
-# Copyright (C) 2003, 2004, 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Andras Timar <timar@gnome.hu>, 2003.
-# Laszlo Dvornik <dvornik@gnome.hu>, 2004.
-# Gabor Kelemen <kelemeng@gnome.hu>, 2006, 2007, 2008, 2009.
-# Gabor Kelemen <kelemeng at gnome dot hu>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info 0.60\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-02 18:48+0000\n"
-"PO-Revision-Date: 2010-03-01 23:46+0100\n"
-"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
-"Language-Team: Hungarian <gnome at fsf dot hu>\n"
+"Project-Id-Version: shared-mime-info\n"
+"Report-Msgid-Bugs-To: http://bugzilla.freedesktop.org/\n"
+"POT-Creation-Date: 2010-11-26 19:35+0000\n"
+"PO-Revision-Date: 2011-03-22 15:08+0000\n"
+"Last-Translator: kelemeng <kelemeng@gnome.hu>\n"
+"Language-Team: Hungarian <openscope@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: hu\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../freedesktop.org.xml.in.h:1
 msgid "3D Studio image"
@@ -1394,1174 +1390,1172 @@ msgid "Panasonic raw image"
 msgstr "Panasonic nyers kép"
 
 #: ../freedesktop.org.xml.in.h:349
+msgid "Panasonic raw2 image"
+msgstr "Panasonic raw2 kép"
+
+#: ../freedesktop.org.xml.in.h:350
 msgid "Parchive archive"
 msgstr "Parchive archívum"
 
-#: ../freedesktop.org.xml.in.h:350
+#: ../freedesktop.org.xml.in.h:351
 msgid "Pascal source code"
 msgstr "Pascal-forráskód"
 
-#: ../freedesktop.org.xml.in.h:351
+#: ../freedesktop.org.xml.in.h:352
 msgid "Pathetic Writer document"
 msgstr "Pathetic Writer-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:352
+#: ../freedesktop.org.xml.in.h:353
 msgid "Pentax PEF raw image"
 msgstr "Pentax PEF nyers kép"
 
-#: ../freedesktop.org.xml.in.h:353
+#: ../freedesktop.org.xml.in.h:354
 msgid "Perl script"
 msgstr "Perl-parancsfájl"
 
-#: ../freedesktop.org.xml.in.h:354
+#: ../freedesktop.org.xml.in.h:355
 msgid "Photoshop image"
 msgstr "Photoshop-kép"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Picture_CD
 #. http://www.re.org/kristin/picturecd.html
-#: ../freedesktop.org.xml.in.h:358
+#: ../freedesktop.org.xml.in.h:359
 msgid "Picture CD"
 msgstr "Picture CD"
 
-#: ../freedesktop.org.xml.in.h:359
+#: ../freedesktop.org.xml.in.h:360
 msgid "PkiPath certification path"
 msgstr "PkiPath tanúsítványútvonal"
 
-#: ../freedesktop.org.xml.in.h:360
+#: ../freedesktop.org.xml.in.h:361
 msgid "PlanPerfect spreadsheet"
 msgstr "PlanPerfect táblázat"
 
-#: ../freedesktop.org.xml.in.h:361
+#: ../freedesktop.org.xml.in.h:362
 msgid "Plucker document"
 msgstr "Plucker dokumentum"
 
-#: ../freedesktop.org.xml.in.h:362
+#: ../freedesktop.org.xml.in.h:363
 msgid "Pocket Word document"
 msgstr "Pocket Word dokumentum"
 
-#: ../freedesktop.org.xml.in.h:363
+#: ../freedesktop.org.xml.in.h:364
 msgid "PostScript document (bzip-compressed)"
 msgstr "PostScript dokumentum (bzip-tömörítésű)"
 
-#: ../freedesktop.org.xml.in.h:364
+#: ../freedesktop.org.xml.in.h:365
 msgid "PostScript document (gzip-compressed)"
 msgstr "PostScript-dokumentum (gzip-pel tömörítve)"
 
-#: ../freedesktop.org.xml.in.h:365
+#: ../freedesktop.org.xml.in.h:366
 msgid "Postscript type-1 font"
 msgstr "Postscript type-1 betűkészlet"
 
-#: ../freedesktop.org.xml.in.h:366
+#: ../freedesktop.org.xml.in.h:367
 msgid "PowerPoint 2007 presentation"
 msgstr "PowerPoint 2007 prezentáció"
 
-#: ../freedesktop.org.xml.in.h:367
+#: ../freedesktop.org.xml.in.h:368
 msgid "PowerPoint 2007 show"
 msgstr "PowerPoint 2007 bemutató"
 
-#: ../freedesktop.org.xml.in.h:368
+#: ../freedesktop.org.xml.in.h:369
 msgid "PowerPoint presentation"
 msgstr "PowerPoint prezentáció"
 
-#: ../freedesktop.org.xml.in.h:369
+#: ../freedesktop.org.xml.in.h:370
 msgid "Python bytecode"
 msgstr "Python-bájtkód"
 
-#: ../freedesktop.org.xml.in.h:370
+#: ../freedesktop.org.xml.in.h:371
 msgid "Python script"
 msgstr "Python-parancsfájl"
 
-#: ../freedesktop.org.xml.in.h:371
+#: ../freedesktop.org.xml.in.h:372
 msgid "Qt Designer file"
 msgstr "Qt Designer-fájl"
 
-#: ../freedesktop.org.xml.in.h:372
+#: ../freedesktop.org.xml.in.h:373
 msgid "Qt MOC file"
 msgstr "Qt MOC fájl"
 
-#: ../freedesktop.org.xml.in.h:373
+#: ../freedesktop.org.xml.in.h:374
 msgid "Quattro Pro spreadsheet"
 msgstr "Quattro Pro-munkafüzet"
 
-#: ../freedesktop.org.xml.in.h:374
+#: ../freedesktop.org.xml.in.h:375
 msgid "QuickTime image"
 msgstr "QuickTime kép"
 
-#: ../freedesktop.org.xml.in.h:375
+#: ../freedesktop.org.xml.in.h:376
 msgid "QuickTime metalink playlist"
 msgstr "QuickTime metalink lejátszólista"
 
-#: ../freedesktop.org.xml.in.h:376
+#: ../freedesktop.org.xml.in.h:377
 msgid "QuickTime video"
 msgstr "QuickTime videó"
 
-#: ../freedesktop.org.xml.in.h:377
+#: ../freedesktop.org.xml.in.h:378
 msgid "Quicken document"
 msgstr "Quicken-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:378
+#: ../freedesktop.org.xml.in.h:379
 msgid "RAR archive"
 msgstr "RAR-archívum"
 
-#: ../freedesktop.org.xml.in.h:379
+#: ../freedesktop.org.xml.in.h:380
 msgid "RDF file"
 msgstr "RDF fájl"
 
-#: ../freedesktop.org.xml.in.h:380
+#: ../freedesktop.org.xml.in.h:381
 msgid "README document"
 msgstr "README-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:381
+#: ../freedesktop.org.xml.in.h:382
 msgid "RELAX NG XML schema"
 msgstr "RELAX NG XML-séma"
 
-#: ../freedesktop.org.xml.in.h:382
+#: ../freedesktop.org.xml.in.h:383
 msgid "RGB image"
 msgstr "RGB-kép"
 
-#: ../freedesktop.org.xml.in.h:383
+#: ../freedesktop.org.xml.in.h:384
 msgid "RIFF audio"
 msgstr "RIFF-kép"
 
-#: ../freedesktop.org.xml.in.h:384
+#: ../freedesktop.org.xml.in.h:385
 msgid "RPM package"
 msgstr "RPM-csomag"
 
-#: ../freedesktop.org.xml.in.h:385
+#: ../freedesktop.org.xml.in.h:386
 msgid "RPM spec file"
 msgstr "RPM spec fájl"
 
-#: ../freedesktop.org.xml.in.h:386
+#: ../freedesktop.org.xml.in.h:387
 msgid "RSS summary"
 msgstr "RSS összefoglaló"
 
-#: ../freedesktop.org.xml.in.h:387
+#: ../freedesktop.org.xml.in.h:388
 msgid "RTF document"
 msgstr "RTF dokumentum"
 
-#: ../freedesktop.org.xml.in.h:388
+#: ../freedesktop.org.xml.in.h:389
 msgid "RealAudio document"
 msgstr "RealAudio dokumentum"
 
-#: ../freedesktop.org.xml.in.h:389
+#: ../freedesktop.org.xml.in.h:390
 msgid "RealMedia Metafile"
 msgstr "RealMedia metafájl"
 
-#: ../freedesktop.org.xml.in.h:390
+#: ../freedesktop.org.xml.in.h:391
 msgid "RealMedia document"
 msgstr "RealMedia dokumentum"
 
-#: ../freedesktop.org.xml.in.h:391
+#: ../freedesktop.org.xml.in.h:392
 msgid "RealPix document"
 msgstr "RealPix dokumentum"
 
-#: ../freedesktop.org.xml.in.h:392
+#: ../freedesktop.org.xml.in.h:393
 msgid "RealText document"
 msgstr "RealText dokumentum"
 
-#: ../freedesktop.org.xml.in.h:393
+#: ../freedesktop.org.xml.in.h:394
 msgid "RealVideo document"
 msgstr "RealVideo dokumentum"
 
-#: ../freedesktop.org.xml.in.h:394
+#: ../freedesktop.org.xml.in.h:395
 msgid "Ruby script"
 msgstr "Ruby-parancsfájl"
 
-#: ../freedesktop.org.xml.in.h:395
+#: ../freedesktop.org.xml.in.h:396
 msgid "Run Length Encoded bitmap image"
 msgstr "Run Length Encoded bitkép"
 
-#: ../freedesktop.org.xml.in.h:396
+#: ../freedesktop.org.xml.in.h:397
 msgid "S/MIME file"
 msgstr "S/MIME-fájl"
 
-#: ../freedesktop.org.xml.in.h:397
+#: ../freedesktop.org.xml.in.h:398
 msgid "SAMI subtitles"
 msgstr "SAMI feliratok"
 
-#: ../freedesktop.org.xml.in.h:398
+#: ../freedesktop.org.xml.in.h:399
 msgid "SC/Xspread spreadsheet"
 msgstr "SC/Xspread táblázat"
 
-#: ../freedesktop.org.xml.in.h:399
+#: ../freedesktop.org.xml.in.h:400
 msgid "SDP multicast stream file"
 msgstr "SDP multicast műsorfájl"
 
 #. translators: a record is in this context a description of a board game
 #. that has been played, and that can be played back again:
 #. http://www.red-bean.com/sgf/
-#: ../freedesktop.org.xml.in.h:403
+#: ../freedesktop.org.xml.in.h:404
 msgid "SGF record"
 msgstr "SGF pontszám"
 
-#: ../freedesktop.org.xml.in.h:404
+#: ../freedesktop.org.xml.in.h:405
 msgid "SGI image"
 msgstr "SGI kép"
 
-#: ../freedesktop.org.xml.in.h:405
+#: ../freedesktop.org.xml.in.h:406
 msgid "SGI video"
 msgstr "SGI-videó"
 
-#: ../freedesktop.org.xml.in.h:406
+#: ../freedesktop.org.xml.in.h:407
 msgid "SGML document"
 msgstr "SGML-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:407
+#: ../freedesktop.org.xml.in.h:408
 msgid "SIS package"
 msgstr "SIS csomag"
 
-#: ../freedesktop.org.xml.in.h:408
+#: ../freedesktop.org.xml.in.h:409
 msgid "SISX package"
 msgstr "SISX csomag"
 
-#: ../freedesktop.org.xml.in.h:409
+#: ../freedesktop.org.xml.in.h:410
 msgid "SMAF audio"
 msgstr "SMAF hang"
 
-#: ../freedesktop.org.xml.in.h:410
+#: ../freedesktop.org.xml.in.h:411
 msgid "SMIL document"
 msgstr "SMIL dokumentum"
 
-#: ../freedesktop.org.xml.in.h:411
+#: ../freedesktop.org.xml.in.h:412
 msgid "SPSS Data File"
 msgstr "SPSS adatfájl"
 
-#: ../freedesktop.org.xml.in.h:412
+#: ../freedesktop.org.xml.in.h:413
 msgid "SPSS Portable Data File"
 msgstr "SPSS hordozható adatfájl"
 
-#: ../freedesktop.org.xml.in.h:413
+#: ../freedesktop.org.xml.in.h:414
 msgid "SQL code"
 msgstr "SQL-kód"
 
-#: ../freedesktop.org.xml.in.h:414
+#: ../freedesktop.org.xml.in.h:415
 msgid "SQLite2 database"
 msgstr "SQLite2 adatbázis"
 
-#: ../freedesktop.org.xml.in.h:415
+#: ../freedesktop.org.xml.in.h:416
 msgid "SQLite3 database"
 msgstr "SQLite3 adatbázis"
 
-#: ../freedesktop.org.xml.in.h:416
+#: ../freedesktop.org.xml.in.h:417
 msgid "SSA subtitles"
 msgstr "SSA feliratok"
 
-#: ../freedesktop.org.xml.in.h:417
+#: ../freedesktop.org.xml.in.h:418
 msgid "SV4 CPIO archive"
 msgstr "SV4 CPIO-archívum"
 
-#: ../freedesktop.org.xml.in.h:418
+#: ../freedesktop.org.xml.in.h:419
 msgid "SV4 CPIO archive (with CRC)"
 msgstr "SV4 CPIO-archívum (CRC-vel)"
 
-#: ../freedesktop.org.xml.in.h:419
+#: ../freedesktop.org.xml.in.h:420
 msgid "SVG image"
 msgstr "SVG kép"
 
-#: ../freedesktop.org.xml.in.h:420
+#: ../freedesktop.org.xml.in.h:421
 msgid "Scheme source code"
 msgstr "Scheme-forráskód"
 
-#: ../freedesktop.org.xml.in.h:421
+#: ../freedesktop.org.xml.in.h:422
 msgid "Scream Tracker 3 audio"
 msgstr "Scream Tracker 3 hang"
 
-#: ../freedesktop.org.xml.in.h:422
+#: ../freedesktop.org.xml.in.h:423
 msgid "Scream Tracker audio"
 msgstr "Scream Tracker hang"
 
-#: ../freedesktop.org.xml.in.h:423
+#: ../freedesktop.org.xml.in.h:424
 msgid "Scream Tracker instrument"
 msgstr "Scream Tracker hangszer"
 
-#: ../freedesktop.org.xml.in.h:424
+#: ../freedesktop.org.xml.in.h:425
 msgid "Sega Master System/Game Gear ROM"
 msgstr "Sega Master System/Game Gear ROM"
 
-#: ../freedesktop.org.xml.in.h:425
+#: ../freedesktop.org.xml.in.h:426
 msgid "Setext document"
 msgstr "Setext-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:426
+#: ../freedesktop.org.xml.in.h:427
 msgid "Shockwave Flash file"
 msgstr "Shockwave Flash-fájl"
 
 #. translators: "Shorten" is the name of an audio codec
-#: ../freedesktop.org.xml.in.h:428
+#: ../freedesktop.org.xml.in.h:429
 msgid "Shorten audio"
 msgstr "Shorten hang"
 
-#: ../freedesktop.org.xml.in.h:429
+#: ../freedesktop.org.xml.in.h:430
 msgid "Siag spreadsheet"
 msgstr "Siag-munkafüzet"
 
-#: ../freedesktop.org.xml.in.h:430
+#: ../freedesktop.org.xml.in.h:431
 msgid "Sieve mail filter script"
 msgstr "Sieve levélszűrő parancsfájl"
 
-#: ../freedesktop.org.xml.in.h:431
+#: ../freedesktop.org.xml.in.h:432
 msgid "Sigma X3F raw image"
 msgstr "Sigma XF3 nyers kép"
 
-#: ../freedesktop.org.xml.in.h:432
+#: ../freedesktop.org.xml.in.h:433
 msgid "Skencil document"
 msgstr "Skencil-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:433
+#: ../freedesktop.org.xml.in.h:434
 msgid "Sony ARW raw image"
 msgstr "Sony ARW nyers kép"
 
-#: ../freedesktop.org.xml.in.h:434
+#: ../freedesktop.org.xml.in.h:435
 msgid "Sony SR2 raw image"
 msgstr "Sony SR2 nyers kép"
 
-#: ../freedesktop.org.xml.in.h:435
+#: ../freedesktop.org.xml.in.h:436
 msgid "Sony SRF raw image"
 msgstr "Sony SRF nyers kép"
 
-#: ../freedesktop.org.xml.in.h:436
+#: ../freedesktop.org.xml.in.h:437
 msgid "Speedo font"
 msgstr "Speedo-betűkészlet"
 
-#: ../freedesktop.org.xml.in.h:437
+#: ../freedesktop.org.xml.in.h:438
 msgid "Speex audio"
 msgstr "Speex hang"
 
-#: ../freedesktop.org.xml.in.h:438
+#: ../freedesktop.org.xml.in.h:439
 msgid "Stampede package"
 msgstr "Stampede-csomag"
 
-#: ../freedesktop.org.xml.in.h:439
+#: ../freedesktop.org.xml.in.h:440
 msgid "StarCalc spreadsheet"
 msgstr "StarCalc-munkafüzet"
 
-#: ../freedesktop.org.xml.in.h:440
+#: ../freedesktop.org.xml.in.h:441
 msgid "StarChart chart"
 msgstr "StarChart-grafikon"
 
-#: ../freedesktop.org.xml.in.h:441
+#: ../freedesktop.org.xml.in.h:442
 msgid "StarDraw drawing"
 msgstr "StarDraw-rajz"
 
-#: ../freedesktop.org.xml.in.h:442
+#: ../freedesktop.org.xml.in.h:443
 msgid "StarImpress presentation"
 msgstr "StarImpress-bemutató"
 
-#: ../freedesktop.org.xml.in.h:443
+#: ../freedesktop.org.xml.in.h:444
 msgid "StarMail email"
 msgstr "StarMail e-mail"
 
-#: ../freedesktop.org.xml.in.h:444
+#: ../freedesktop.org.xml.in.h:445
 msgid "StarMath formula"
 msgstr "StarMath-képlet"
 
-#: ../freedesktop.org.xml.in.h:445
+#: ../freedesktop.org.xml.in.h:446
 msgid "StarWriter document"
 msgstr "StarWriter-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:446
+#: ../freedesktop.org.xml.in.h:447
 msgid "StuffIt archive"
 msgstr "StuffIt-archívum"
 
-#: ../freedesktop.org.xml.in.h:447
+#: ../freedesktop.org.xml.in.h:448
 msgid "SubRip subtitles"
 msgstr "SubRip feliratok"
 
-#: ../freedesktop.org.xml.in.h:448
+#: ../freedesktop.org.xml.in.h:449
 msgid "SubViewer subtitles"
 msgstr "SubViewer feliratok"
 
-#: ../freedesktop.org.xml.in.h:449
+#: ../freedesktop.org.xml.in.h:450
 msgid "Sun raster image"
 msgstr "SUN raszterkép"
 
-#: ../freedesktop.org.xml.in.h:450
+#: ../freedesktop.org.xml.in.h:451
 msgid "SunOS News font"
 msgstr "SunOS News-betűkészlet"
 
 #. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in
 #. Europe) if the console was known as such in your locale
-#: ../freedesktop.org.xml.in.h:452
+#: ../freedesktop.org.xml.in.h:453
 msgid "Super NES ROM"
 msgstr "Super NES ROM"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Super_Video_CD
 #. http://everything2.com/index.pl?node_id=1009222
-#: ../freedesktop.org.xml.in.h:456
+#: ../freedesktop.org.xml.in.h:457
 msgid "Super Video CD"
 msgstr "Super Video CD"
 
-#: ../freedesktop.org.xml.in.h:457
+#: ../freedesktop.org.xml.in.h:458
 msgid "SystemVerilog header"
 msgstr "SystemVerilog fejléc"
 
-#: ../freedesktop.org.xml.in.h:458
+#: ../freedesktop.org.xml.in.h:459
 msgid "SystemVerilog source code"
 msgstr "SystemVerilog-forráskód"
 
-#: ../freedesktop.org.xml.in.h:459
+#: ../freedesktop.org.xml.in.h:460
 msgid "T602 document"
 msgstr "T602 dokumentum"
 
-#: ../freedesktop.org.xml.in.h:460
+#: ../freedesktop.org.xml.in.h:461
 msgid "TGA image"
 msgstr "TGA kép"
 
-#: ../freedesktop.org.xml.in.h:461
+#: ../freedesktop.org.xml.in.h:462
 msgid "TGIF document"
 msgstr "TGIF-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:462
+#: ../freedesktop.org.xml.in.h:463
 msgid "TIFF image"
 msgstr "TIFF-kép"
 
-#: ../freedesktop.org.xml.in.h:463
+#: ../freedesktop.org.xml.in.h:464
 msgid "TNEF message"
 msgstr "TNEF üzenet"
 
-#: ../freedesktop.org.xml.in.h:464
+#: ../freedesktop.org.xml.in.h:465
 msgid "TSV document"
 msgstr "TSV dokumentum"
 
-#: ../freedesktop.org.xml.in.h:465
+#: ../freedesktop.org.xml.in.h:466
 msgid "Tar archive"
 msgstr "Tar archívum"
 
-#: ../freedesktop.org.xml.in.h:466
+#: ../freedesktop.org.xml.in.h:467
 msgid "Tar archive (LZMA-compressed)"
 msgstr "Tar archívum (LZMA-val tömörítve)"
 
-#: ../freedesktop.org.xml.in.h:467
+#: ../freedesktop.org.xml.in.h:468
 msgid "Tar archive (LZO-compressed)"
 msgstr "Tar archívum (LZO-val tömörítve)"
 
-#: ../freedesktop.org.xml.in.h:468
+#: ../freedesktop.org.xml.in.h:469
 msgid "Tar archive (XZ-compressed)"
 msgstr "Tar archívum (XZ-vel tömörítve)"
 
-#: ../freedesktop.org.xml.in.h:469
+#: ../freedesktop.org.xml.in.h:470
 msgid "Tar archive (bzip-compressed)"
 msgstr "Tar archívum (bzip-pel tömörítve)"
 
-#: ../freedesktop.org.xml.in.h:470
+#: ../freedesktop.org.xml.in.h:471
 msgid "Tar archive (compressed)"
 msgstr "Tar archívum (tömörített)"
 
-#: ../freedesktop.org.xml.in.h:471
+#: ../freedesktop.org.xml.in.h:472
 msgid "Tar archive (gzip-compressed)"
 msgstr "Tar archívum (gzip-pel tömörítve)"
 
-#: ../freedesktop.org.xml.in.h:472
+#: ../freedesktop.org.xml.in.h:473
 msgid "Tar archive (lrzip-compressed)"
 msgstr "Tar archívum (lrzip-pel tömörítve)"
 
-#: ../freedesktop.org.xml.in.h:473
+#: ../freedesktop.org.xml.in.h:474
 msgid "Tcl script"
 msgstr "Tcl-parancsfájl"
 
-#: ../freedesktop.org.xml.in.h:474
+#: ../freedesktop.org.xml.in.h:475
 msgid "TeX DVI document"
 msgstr "TeX DVI-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:475
+#: ../freedesktop.org.xml.in.h:476
 msgid "TeX DVI document (bzip-compressed)"
 msgstr "TeX DVI dokumentum (bzip-pel tömörítve)"
 
-#: ../freedesktop.org.xml.in.h:476
+#: ../freedesktop.org.xml.in.h:477
 msgid "TeX DVI document (gzip-compressed)"
 msgstr "TeX DVI dokumentum (gzip-pel tömörítve)"
 
-#: ../freedesktop.org.xml.in.h:477
+#: ../freedesktop.org.xml.in.h:478
 msgid "TeX document"
 msgstr "TeX-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:478
+#: ../freedesktop.org.xml.in.h:479
 msgid "TeX font"
 msgstr "TeX-betűkészlet"
 
-#: ../freedesktop.org.xml.in.h:479
+#: ../freedesktop.org.xml.in.h:480
 msgid "TeX font metrics"
 msgstr "TeX-betűmetrika"
 
-#: ../freedesktop.org.xml.in.h:480
+#: ../freedesktop.org.xml.in.h:481
 msgid "TeXInfo document"
 msgstr "TeXInfo-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:481
+#: ../freedesktop.org.xml.in.h:482
 msgid "ToutDoux document"
 msgstr "ToutDoux-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:482
+#: ../freedesktop.org.xml.in.h:483
 msgid "Troff ME input document"
 msgstr "Troff ME bemeneti dokumentum"
 
-#: ../freedesktop.org.xml.in.h:483
+#: ../freedesktop.org.xml.in.h:484
 msgid "Troff MM input document"
 msgstr "Troff MM bemeneti dokumentum"
 
-#: ../freedesktop.org.xml.in.h:484
+#: ../freedesktop.org.xml.in.h:485
 msgid "Troff MS input document"
 msgstr "Troff MS bemeneti dokumentum"
 
-#: ../freedesktop.org.xml.in.h:485
+#: ../freedesktop.org.xml.in.h:486
 msgid "Troff document"
 msgstr "Troff-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:486
+#: ../freedesktop.org.xml.in.h:487
 msgid "Troff document (with manpage macros)"
 msgstr "Troff-dokumentum (manpage-makrókkal)"
 
-#: ../freedesktop.org.xml.in.h:487
+#: ../freedesktop.org.xml.in.h:488
 msgid "TrueAudio audio"
 msgstr "TrueAudio hang"
 
-#: ../freedesktop.org.xml.in.h:488
+#: ../freedesktop.org.xml.in.h:489
 msgid "TrueType XML font"
 msgstr "TrueType XML betűkészlet"
 
-#: ../freedesktop.org.xml.in.h:489
+#: ../freedesktop.org.xml.in.h:490
 msgid "TrueType font"
 msgstr "TrueType-betűkészlet"
 
-#: ../freedesktop.org.xml.in.h:490
+#: ../freedesktop.org.xml.in.h:491
 msgid "UFRaw ID image"
 msgstr "UFRaw azonosítófájl"
 
-#: ../freedesktop.org.xml.in.h:491
+#: ../freedesktop.org.xml.in.h:492
 msgid "ULAW (Sun) audio"
 msgstr "ULAW (Sun) hang"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: ../freedesktop.org.xml.in.h:494
+#: ../freedesktop.org.xml.in.h:495
 msgid "UNIX software"
 msgstr "UNIX-szoftver"
 
-#: ../freedesktop.org.xml.in.h:495
+#: ../freedesktop.org.xml.in.h:496
 msgid "UNIX-compressed file"
 msgstr "Tömörített UNIX-fájl"
 
-#: ../freedesktop.org.xml.in.h:496
+#: ../freedesktop.org.xml.in.h:497
 msgid "Unidata NetCDF document"
 msgstr "Unidata NetCDF-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:497
+#: ../freedesktop.org.xml.in.h:498
 msgid "Usenet news message"
 msgstr "USENET-hírcsoportüzenet"
 
-#: ../freedesktop.org.xml.in.h:498
+#: ../freedesktop.org.xml.in.h:499
 msgid "Ustar archive"
 msgstr "Ustar archívum"
 
-#: ../freedesktop.org.xml.in.h:499
+#: ../freedesktop.org.xml.in.h:500
 msgid "V font"
 msgstr "V-betűkészlet"
 
-#: ../freedesktop.org.xml.in.h:500
+#: ../freedesktop.org.xml.in.h:501
 msgid "VCS/ICS calendar"
 msgstr "VCS/ICS naptár"
 
-#: ../freedesktop.org.xml.in.h:501
+#: ../freedesktop.org.xml.in.h:502
 msgid "VHDL source code"
 msgstr "VHDL-forráskód"
 
-#: ../freedesktop.org.xml.in.h:502
+#: ../freedesktop.org.xml.in.h:503
 msgid "VOC audio"
 msgstr "VOC hang"
 
-#: ../freedesktop.org.xml.in.h:503
+#: ../freedesktop.org.xml.in.h:504
 msgid "VRML document"
 msgstr "VRML-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:504
+#: ../freedesktop.org.xml.in.h:505
 msgid "Vala source code"
 msgstr "Vala forráskód"
 
-#: ../freedesktop.org.xml.in.h:505
+#: ../freedesktop.org.xml.in.h:506
 msgid "Verilog source code"
 msgstr "Verilog-forráskód"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Video_CD
 #. http://www.herongyang.com/CD-DVD/VCD-Movie-File-Directory-Structure.html
-#: ../freedesktop.org.xml.in.h:509
+#: ../freedesktop.org.xml.in.h:510
 msgid "Video CD"
 msgstr "Video CD"
 
-#: ../freedesktop.org.xml.in.h:510
+#: ../freedesktop.org.xml.in.h:511
 msgid "Vivo video"
 msgstr "Vivo-videó"
 
-#: ../freedesktop.org.xml.in.h:511
+#: ../freedesktop.org.xml.in.h:512
 msgid "WAIS source code"
 msgstr "WAIS-forráskód"
 
-#: ../freedesktop.org.xml.in.h:512
+#: ../freedesktop.org.xml.in.h:513
 msgid "WAV audio"
 msgstr "WAV hang"
 
-#: ../freedesktop.org.xml.in.h:513
+#: ../freedesktop.org.xml.in.h:514
 msgid "WBMP image"
 msgstr "WBMP kép"
 
-#: ../freedesktop.org.xml.in.h:514
+#: ../freedesktop.org.xml.in.h:515
 msgid "WMF image"
 msgstr "WMF kép"
 
-#: ../freedesktop.org.xml.in.h:515
+#: ../freedesktop.org.xml.in.h:516
 msgid "WML document"
 msgstr "WML-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:516
+#: ../freedesktop.org.xml.in.h:517
 msgid "WMLScript program"
 msgstr "WMLScript program"
 
-#: ../freedesktop.org.xml.in.h:517
+#: ../freedesktop.org.xml.in.h:518
 msgid "WPL playlist"
 msgstr "WPL-lejátszólista"
 
-#: ../freedesktop.org.xml.in.h:518
+#: ../freedesktop.org.xml.in.h:519
 msgid "WRI document"
 msgstr "WRI dokumentum"
 
-#: ../freedesktop.org.xml.in.h:519
+#: ../freedesktop.org.xml.in.h:520
 msgid "WavPack audio"
 msgstr "WavPack hang"
 
-#: ../freedesktop.org.xml.in.h:520
+#: ../freedesktop.org.xml.in.h:521
 msgid "WavPack audio correction file"
 msgstr "WavPack hangjavítási fájl"
 
-#: ../freedesktop.org.xml.in.h:521
+#: ../freedesktop.org.xml.in.h:522
 msgid "Wavelet video"
 msgstr "Wavelet-videó"
 
-#: ../freedesktop.org.xml.in.h:522
+#: ../freedesktop.org.xml.in.h:523
 msgid "Web application cache manifest"
 msgstr "Webalkalmazás gyorsítótár-összefoglalója"
 
-#: ../freedesktop.org.xml.in.h:523
+#: ../freedesktop.org.xml.in.h:524
 msgid "WebM audio"
 msgstr "WebM hang"
 
-#: ../freedesktop.org.xml.in.h:524
+#: ../freedesktop.org.xml.in.h:525
 msgid "WebM video"
 msgstr "WebM videó"
 
-#: ../freedesktop.org.xml.in.h:525
+#: ../freedesktop.org.xml.in.h:526
 msgid "Windows BMP image"
 msgstr "Windows BMP-kép"
 
-#: ../freedesktop.org.xml.in.h:526
+#: ../freedesktop.org.xml.in.h:527
 msgid "Windows Imaging Format Disk Image"
 msgstr "Windows Imaging Format lemezkép"
 
-#: ../freedesktop.org.xml.in.h:527
+#: ../freedesktop.org.xml.in.h:528
 msgid "Windows Installer package"
 msgstr "Windows Installer csomag"
 
-#: ../freedesktop.org.xml.in.h:528
+#: ../freedesktop.org.xml.in.h:529
 msgid "Windows Media Station file"
 msgstr "Windows Media Station fájl"
 
-#: ../freedesktop.org.xml.in.h:529
+#: ../freedesktop.org.xml.in.h:530
 msgid "Windows Media audio"
 msgstr "Windows Media hang"
 
-#: ../freedesktop.org.xml.in.h:530
+#: ../freedesktop.org.xml.in.h:531
 msgid "Windows Media video"
 msgstr "Windows Media videó"
 
-#: ../freedesktop.org.xml.in.h:531
+#: ../freedesktop.org.xml.in.h:532
 msgid "Windows Registry extract"
 msgstr "Windows Registry kivonat"
 
-#: ../freedesktop.org.xml.in.h:532
+#: ../freedesktop.org.xml.in.h:533
 msgid "Windows animated cursor"
 msgstr "Windows animált kurzor"
 
-#: ../freedesktop.org.xml.in.h:533
+#: ../freedesktop.org.xml.in.h:534
 msgid "Windows cursor"
 msgstr "Windows-kurzor"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: ../freedesktop.org.xml.in.h:536
+#: ../freedesktop.org.xml.in.h:537
 msgid "Windows software"
 msgstr "Windows-szoftver"
 
-#: ../freedesktop.org.xml.in.h:537
+#: ../freedesktop.org.xml.in.h:538
 msgid "Word 2007 document"
 msgstr "Word 2007 dokumentum"
 
-#: ../freedesktop.org.xml.in.h:538
+#: ../freedesktop.org.xml.in.h:539
 msgid "Word document"
 msgstr "Word dokumentum"
 
-#: ../freedesktop.org.xml.in.h:539
+#: ../freedesktop.org.xml.in.h:540
 msgid "Word template"
 msgstr "Word sablon"
 
-#: ../freedesktop.org.xml.in.h:540
+#: ../freedesktop.org.xml.in.h:541
 msgid "WordPerfect document"
 msgstr "WordPerfect-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:541
+#: ../freedesktop.org.xml.in.h:542
 msgid "WordPerfect/Drawperfect image"
 msgstr "WordPerfect/Drawperfect-kép"
 
-#: ../freedesktop.org.xml.in.h:542
+#: ../freedesktop.org.xml.in.h:543
 msgid "X window image"
 msgstr "X window-kép"
 
-#: ../freedesktop.org.xml.in.h:543
+#: ../freedesktop.org.xml.in.h:544
 msgid "X-Motif UIL table"
 msgstr "X-Motif UIL-táblázat"
 
-#: ../freedesktop.org.xml.in.h:544
+#: ../freedesktop.org.xml.in.h:545
 msgid "X.509 certificate"
 msgstr "X.509 tanúsítvány"
 
-#: ../freedesktop.org.xml.in.h:545
+#: ../freedesktop.org.xml.in.h:546
 msgid "X11 cursor"
 msgstr "X11 kurzor"
 
-#: ../freedesktop.org.xml.in.h:546
+#: ../freedesktop.org.xml.in.h:547
 msgid "XBEL bookmarks"
 msgstr "XBEL-könyvjelzők"
 
-#: ../freedesktop.org.xml.in.h:547
+#: ../freedesktop.org.xml.in.h:548
 msgid "XBM image"
 msgstr "XBM-kép"
 
-#: ../freedesktop.org.xml.in.h:548
+#: ../freedesktop.org.xml.in.h:549
 msgid "XFig image"
 msgstr "XFig-kép"
 
-#: ../freedesktop.org.xml.in.h:549
+#: ../freedesktop.org.xml.in.h:550
 msgid "XHTML page"
 msgstr "XHTML-oldal"
 
-#: ../freedesktop.org.xml.in.h:550
+#: ../freedesktop.org.xml.in.h:551
 msgid "XLIFF translation file"
 msgstr "XLIFF fordítási fájl"
 
-#: ../freedesktop.org.xml.in.h:551
+#: ../freedesktop.org.xml.in.h:552
 msgid "XMCD CD database"
 msgstr "XMCD CD-adatbázis"
 
-#: ../freedesktop.org.xml.in.h:552
+#: ../freedesktop.org.xml.in.h:553
 msgid "XMF audio"
 msgstr "XMF hang"
 
-#: ../freedesktop.org.xml.in.h:553
+#: ../freedesktop.org.xml.in.h:554
 msgid "XMI file"
 msgstr "XMI fájl"
 
-#: ../freedesktop.org.xml.in.h:554
+#: ../freedesktop.org.xml.in.h:555
 msgid "XML document"
 msgstr "XML dokumentum"
 
-#: ../freedesktop.org.xml.in.h:555
+#: ../freedesktop.org.xml.in.h:556
 msgid "XML entities document"
 msgstr "XML egyeddokumentum"
 
-#: ../freedesktop.org.xml.in.h:556
+#: ../freedesktop.org.xml.in.h:557
 msgid "XPInstall installer module"
 msgstr "XPInstall telepítőmodul"
 
-#: ../freedesktop.org.xml.in.h:557
+#: ../freedesktop.org.xml.in.h:558
 msgid "XPM image"
 msgstr "XPM kép"
 
-#: ../freedesktop.org.xml.in.h:558
+#: ../freedesktop.org.xml.in.h:559
 msgid "XPS document"
 msgstr "XPS dokumentum"
 
-#: ../freedesktop.org.xml.in.h:559
+#: ../freedesktop.org.xml.in.h:560
 msgid "XSL FO file"
 msgstr "XSL FO fájl"
 
-#: ../freedesktop.org.xml.in.h:560
+#: ../freedesktop.org.xml.in.h:561
 msgid "XSLT stylesheet"
 msgstr "XSLT-stíluslap"
 
-#: ../freedesktop.org.xml.in.h:561
+#: ../freedesktop.org.xml.in.h:562
 msgid "XSPF playlist"
 msgstr "XSPF-lejátszólista"
 
-#: ../freedesktop.org.xml.in.h:562
+#: ../freedesktop.org.xml.in.h:563
 msgid "XUL interface document"
 msgstr "XUL-felületdokumentum"
 
-#: ../freedesktop.org.xml.in.h:563
+#: ../freedesktop.org.xml.in.h:564
 msgid "XZ archive"
 msgstr "XZ-archívum"
 
-#: ../freedesktop.org.xml.in.h:564
+#: ../freedesktop.org.xml.in.h:565
 msgid "Xbase document"
 msgstr "Xbase dokumentum"
 
-#: ../freedesktop.org.xml.in.h:565
+#: ../freedesktop.org.xml.in.h:566
 msgid "YAML document"
 msgstr "YAML-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:566
+#: ../freedesktop.org.xml.in.h:567
 msgid "Zip archive"
 msgstr "Zip archívum"
 
-#: ../freedesktop.org.xml.in.h:567
+#: ../freedesktop.org.xml.in.h:568
 msgid "Zoo archive"
 msgstr "Zoo archívum"
 
-#: ../freedesktop.org.xml.in.h:568
+#: ../freedesktop.org.xml.in.h:569
 msgid "application log"
 msgstr "alkalmazás naplója"
 
 #. http://en.wikipedia.org/wiki/Red_Book_(audio_CD_standard)
-#: ../freedesktop.org.xml.in.h:570
+#: ../freedesktop.org.xml.in.h:571
 msgid "audio CD"
 msgstr "hang CD"
 
 #. http://en.wikipedia.org/wiki/DVD-Audio
-#: ../freedesktop.org.xml.in.h:572
+#: ../freedesktop.org.xml.in.h:573
 msgid "audio DVD"
 msgstr "hang DVD"
 
-#: ../freedesktop.org.xml.in.h:573
+#: ../freedesktop.org.xml.in.h:574
 msgid "author credits"
 msgstr "szerzők listája"
 
-#: ../freedesktop.org.xml.in.h:574
+#: ../freedesktop.org.xml.in.h:575
 msgid "author list"
 msgstr "szerzőlista"
 
-#: ../freedesktop.org.xml.in.h:575
+#: ../freedesktop.org.xml.in.h:576
 msgid "backup file"
 msgstr "biztonsági mentés"
 
 #. http://en.wikipedia.org/wiki/Blu-ray_Disc
-#: ../freedesktop.org.xml.in.h:577
+#: ../freedesktop.org.xml.in.h:578
 msgid "blank Blu-ray disc"
 msgstr "üres Blu-Ray lemez"
 
 #. http://en.wikipedia.org/wiki/Compact_Disc
-#: ../freedesktop.org.xml.in.h:579
+#: ../freedesktop.org.xml.in.h:580
 msgid "blank CD disc"
 msgstr "üres CD-lemez"
 
 #. http://en.wikipedia.org/wiki/DVD
-#: ../freedesktop.org.xml.in.h:581
+#: ../freedesktop.org.xml.in.h:582
 msgid "blank DVD disc"
 msgstr "üres DVD-lemez"
 
 #. http://en.wikipedia.org/wiki/HD_DVD
-#: ../freedesktop.org.xml.in.h:583
+#: ../freedesktop.org.xml.in.h:584
 msgid "blank HD DVD disc"
 msgstr "üres HD DVD-lemez"
 
-#: ../freedesktop.org.xml.in.h:584
+#: ../freedesktop.org.xml.in.h:585
 msgid "block device"
 msgstr "blokkos eszköz"
 
-#: ../freedesktop.org.xml.in.h:585
+#: ../freedesktop.org.xml.in.h:586
 msgid "character device"
 msgstr "karakteres eszköz"
 
-#: ../freedesktop.org.xml.in.h:586
+#: ../freedesktop.org.xml.in.h:587
 msgid "comic book archive"
 msgstr "képregényarchívum"
 
-#: ../freedesktop.org.xml.in.h:587
+#: ../freedesktop.org.xml.in.h:588
 msgid "compound document"
 msgstr "összetett dokumentum"
 
-#: ../freedesktop.org.xml.in.h:588
+#: ../freedesktop.org.xml.in.h:589
 msgid "compound documents"
 msgstr "összetett dokumentumok"
 
-#: ../freedesktop.org.xml.in.h:589
+#: ../freedesktop.org.xml.in.h:590
 msgid "compressed GIMP image"
 msgstr "tömörített GIMP kép"
 
-#: ../freedesktop.org.xml.in.h:590
+#: ../freedesktop.org.xml.in.h:591
 msgid "compressed SVG image"
 msgstr "tömörített SVG kép"
 
-#: ../freedesktop.org.xml.in.h:591
+#: ../freedesktop.org.xml.in.h:592
 msgid "compressed Tracker audio"
 msgstr "tömörített Tracker hang"
 
-#: ../freedesktop.org.xml.in.h:592
+#: ../freedesktop.org.xml.in.h:593
 msgid "desktop configuration file"
 msgstr "asztalbeállító fájl"
 
-#: ../freedesktop.org.xml.in.h:593
+#: ../freedesktop.org.xml.in.h:594
 msgid "detached OpenPGP signature"
 msgstr "leválasztott OpenPGP-aláírás"
 
-#: ../freedesktop.org.xml.in.h:594
+#: ../freedesktop.org.xml.in.h:595
 msgid "detached S/MIME signature"
 msgstr "leválasztott S/MIME-aláírás"
 
-#: ../freedesktop.org.xml.in.h:595
+#: ../freedesktop.org.xml.in.h:596
 msgid "differences between files"
 msgstr "diff-különbségfájl"
 
 #. http://en.wikipedia.org/wiki/Design_rule_for_Camera_File_system
-#: ../freedesktop.org.xml.in.h:597
+#: ../freedesktop.org.xml.in.h:598
 msgid "digital photos"
 msgstr "digitális fényképek"
 
-#: ../freedesktop.org.xml.in.h:598
+#: ../freedesktop.org.xml.in.h:599
 msgid "digital raw image"
 msgstr "digitális nyers kép"
 
 #. see fd.o hal spec
-#: ../freedesktop.org.xml.in.h:600
+#: ../freedesktop.org.xml.in.h:601
 msgid "e-book reader"
 msgstr "e-könyvolvasó"
 
-#: ../freedesktop.org.xml.in.h:601
+#: ../freedesktop.org.xml.in.h:602
 msgid "eMusic download package"
 msgstr "eMusic letöltési csomag"
 
-#: ../freedesktop.org.xml.in.h:602
+#: ../freedesktop.org.xml.in.h:603
 msgid "electronic book document"
 msgstr "elektronikus könyvdokumentum"
 
-#: ../freedesktop.org.xml.in.h:603
+#: ../freedesktop.org.xml.in.h:604
 msgid "electronic business card"
 msgstr "elektronikus névjegykártya"
 
-#: ../freedesktop.org.xml.in.h:604
+#: ../freedesktop.org.xml.in.h:605
 msgid "email headers"
 msgstr "levélfejléc"
 
-#: ../freedesktop.org.xml.in.h:605
+#: ../freedesktop.org.xml.in.h:606
 msgid "email message"
 msgstr "elektronikus levél"
 
-#: ../freedesktop.org.xml.in.h:606
+#: ../freedesktop.org.xml.in.h:607
 msgid "empty document"
 msgstr "üres dokumentum"
 
-#: ../freedesktop.org.xml.in.h:607
+#: ../freedesktop.org.xml.in.h:608
 msgid "encrypted message"
 msgstr "titkosított üzenet"
 
-#: ../freedesktop.org.xml.in.h:608
+#: ../freedesktop.org.xml.in.h:609
 msgid "enriched text document"
 msgstr "enriched text dokumentum"
 
-#: ../freedesktop.org.xml.in.h:609
+#: ../freedesktop.org.xml.in.h:610
 msgid "executable"
 msgstr "futtatható"
 
-#: ../freedesktop.org.xml.in.h:610
+#: ../freedesktop.org.xml.in.h:611
 msgid "folder"
 msgstr "mappa"
 
-#: ../freedesktop.org.xml.in.h:611
+#: ../freedesktop.org.xml.in.h:612
 msgid "generic font file"
 msgstr "általános betűkészletfájl"
 
-#: ../freedesktop.org.xml.in.h:612
+#: ../freedesktop.org.xml.in.h:613
 msgid "help page"
 msgstr "súgóoldal"
 
-#: ../freedesktop.org.xml.in.h:613
+#: ../freedesktop.org.xml.in.h:614
 msgid "iMelody ringtone"
 msgstr "iMelody csengőhang"
 
-#: ../freedesktop.org.xml.in.h:614
+#: ../freedesktop.org.xml.in.h:615
 msgid "iPod firmware"
 msgstr "iPod-firmware"
 
-#: ../freedesktop.org.xml.in.h:615
+#: ../freedesktop.org.xml.in.h:616
 msgid "iRiver Playlist"
 msgstr "iRiver lejátszólista"
 
-#: ../freedesktop.org.xml.in.h:616
+#: ../freedesktop.org.xml.in.h:617
 msgid "installation instructions"
 msgstr "telepítési utasítások"
 
-#: ../freedesktop.org.xml.in.h:617
+#: ../freedesktop.org.xml.in.h:618
 msgid "iptables configuration file"
 msgstr "iptables beállítófájl"
 
-#: ../freedesktop.org.xml.in.h:618
+#: ../freedesktop.org.xml.in.h:619
 msgid "libtool shared library"
 msgstr "libtool osztott programkönyvtár"
 
-#: ../freedesktop.org.xml.in.h:619
+#: ../freedesktop.org.xml.in.h:620
 msgid "license terms"
 msgstr "licencfeltételek"
 
-#: ../freedesktop.org.xml.in.h:620
+#: ../freedesktop.org.xml.in.h:621
 msgid "mail delivery report"
 msgstr "jelentés levélkézbesítésről"
 
-#: ../freedesktop.org.xml.in.h:621
+#: ../freedesktop.org.xml.in.h:622
 msgid "mail disposition report"
 msgstr "jelentés levélkidobásról"
 
-#: ../freedesktop.org.xml.in.h:622
+#: ../freedesktop.org.xml.in.h:623
 msgid "mail system report"
 msgstr "levelezőrendszer jelentése"
 
-#: ../freedesktop.org.xml.in.h:623
+#: ../freedesktop.org.xml.in.h:624
 msgid "mailbox file"
 msgstr "mailbox fájl"
 
-#: ../freedesktop.org.xml.in.h:624
+#: ../freedesktop.org.xml.in.h:625
 msgid "manual page (compressed)"
 msgstr "kézikönyvoldal (tömörített)"
 
-#: ../freedesktop.org.xml.in.h:625
+#: ../freedesktop.org.xml.in.h:626
 msgid "message catalog"
 msgstr "üzenetkatalógus"
 
-#: ../freedesktop.org.xml.in.h:626
+#: ../freedesktop.org.xml.in.h:627
 msgid "message digest"
 msgstr "ömlesztett üzenet"
 
-#: ../freedesktop.org.xml.in.h:627
+#: ../freedesktop.org.xml.in.h:628
 msgid "message in several formats"
 msgstr "többféle formátumú üzenet"
 
-#: ../freedesktop.org.xml.in.h:628
+#: ../freedesktop.org.xml.in.h:629
 msgid "mount point"
 msgstr "csatolási pont"
 
-#: ../freedesktop.org.xml.in.h:629
+#: ../freedesktop.org.xml.in.h:630
 msgid "object code"
 msgstr "tárgykód"
 
-#: ../freedesktop.org.xml.in.h:630
+#: ../freedesktop.org.xml.in.h:631
 msgid "packed font file"
 msgstr "packed font-fájl"
 
-#: ../freedesktop.org.xml.in.h:631
+#: ../freedesktop.org.xml.in.h:632
 msgid "partial email message"
 msgstr "részleges elektronikus levél"
 
-#: ../freedesktop.org.xml.in.h:632
+#: ../freedesktop.org.xml.in.h:633
 msgid "pipe"
 msgstr "adatcsatorna"
 
-#: ../freedesktop.org.xml.in.h:633
+#: ../freedesktop.org.xml.in.h:634
 msgid "plain text document"
 msgstr "egyszerű szöveg"
 
 #. see fd.o hal spec
-#: ../freedesktop.org.xml.in.h:635
+#: ../freedesktop.org.xml.in.h:636
 msgid "portable audio player"
 msgstr "hordozható zenelejátszó"
 
-#: ../freedesktop.org.xml.in.h:636
+#: ../freedesktop.org.xml.in.h:637
 msgid "profiler results"
 msgstr "profilírozó-eredmények"
 
-#: ../freedesktop.org.xml.in.h:637
+#: ../freedesktop.org.xml.in.h:638
 msgid "program crash data"
 msgstr "összeomlott program adatai"
 
-#: ../freedesktop.org.xml.in.h:638
+#: ../freedesktop.org.xml.in.h:639
 msgid "raw CD image"
 msgstr "nyers CD-lemezkép"
 
-#: ../freedesktop.org.xml.in.h:639
+#: ../freedesktop.org.xml.in.h:640
 msgid "reference to remote file"
 msgstr "hivatkozás távoli fájlra"
 
-#: ../freedesktop.org.xml.in.h:640
+#: ../freedesktop.org.xml.in.h:641
 msgid "rejected patch"
 msgstr "visszautasított folt"
 
-#: ../freedesktop.org.xml.in.h:641
+#: ../freedesktop.org.xml.in.h:642
 msgid "resource location"
 msgstr "erőforrás-hely"
 
-#: ../freedesktop.org.xml.in.h:642
+#: ../freedesktop.org.xml.in.h:643
 msgid "rich text document"
 msgstr "rich text-dokumentum"
 
-#: ../freedesktop.org.xml.in.h:643
+#: ../freedesktop.org.xml.in.h:644
 msgid "shared library"
 msgstr "osztott programkönyvtár"
 
-#: ../freedesktop.org.xml.in.h:644
+#: ../freedesktop.org.xml.in.h:645
 msgid "shell archive"
 msgstr "héjarchívum"
 
-#: ../freedesktop.org.xml.in.h:645
+#: ../freedesktop.org.xml.in.h:646
 msgid "shell script"
 msgstr "héj-parancsfájl"
 
-#: ../freedesktop.org.xml.in.h:646
+#: ../freedesktop.org.xml.in.h:647
 msgid "shortcut to Kexi project on database server"
 msgstr "indítóikon adatbázis-kiszolgálón lévő Kexi projektre"
 
-#: ../freedesktop.org.xml.in.h:647
+#: ../freedesktop.org.xml.in.h:648
 msgid "signed message"
 msgstr "aláírt üzenet"
 
-#: ../freedesktop.org.xml.in.h:648
+#: ../freedesktop.org.xml.in.h:649
 msgid "socket"
 msgstr "illesztőpont"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: ../freedesktop.org.xml.in.h:651
+#: ../freedesktop.org.xml.in.h:652
 msgid "software"
 msgstr "szoftver"
 
-#: ../freedesktop.org.xml.in.h:652
+#: ../freedesktop.org.xml.in.h:653
 msgid "spreadsheet interchange document"
 msgstr "spreadsheet-cserélhetődokumentum"
 
-#: ../freedesktop.org.xml.in.h:653
+#: ../freedesktop.org.xml.in.h:654
 msgid "stream of data (server push)"
 msgstr "sugárzott adatfolyam (kiszolgálóról)"
 
-#: ../freedesktop.org.xml.in.h:654
+#: ../freedesktop.org.xml.in.h:655
 msgid "symbolic link"
 msgstr "szimbolikus link"
 
-#: ../freedesktop.org.xml.in.h:655
+#: ../freedesktop.org.xml.in.h:656
 msgid "theme"
 msgstr "téma"
 
-#: ../freedesktop.org.xml.in.h:656
+#: ../freedesktop.org.xml.in.h:657
 msgid "translated messages (machine-readable)"
 msgstr "lefordított üzenetek (gépi kód)"
 
-#: ../freedesktop.org.xml.in.h:657
+#: ../freedesktop.org.xml.in.h:658
 msgid "translation file"
 msgstr "fordítási fájl"
 
-#: ../freedesktop.org.xml.in.h:658
+#: ../freedesktop.org.xml.in.h:659
 msgid "translation template"
 msgstr "fordítási sablon"
 
-#: ../freedesktop.org.xml.in.h:659
+#: ../freedesktop.org.xml.in.h:660
 msgid "txt2tags document"
 msgstr "txt2tags dokumentum"
 
-#: ../freedesktop.org.xml.in.h:660
+#: ../freedesktop.org.xml.in.h:661
 msgid "unknown"
 msgstr "ismeretlen"
 
 #. http://en.wikipedia.org/wiki/DVD-Video
-#: ../freedesktop.org.xml.in.h:662
+#: ../freedesktop.org.xml.in.h:663
 msgid "video DVD"
 msgstr "video DVD"
-
-#~ msgid "VHDL document"
-#~ msgstr "VHDL dokumentum"
-
-#~ msgid "Verilog document"
-#~ msgstr "Verilog-dokumentum"

@@ -1,26 +1,21 @@
-# Translation of shared-mime-info messages to Russian
-# This file is distributed under the same license as the shared-mime-info package.
-# Copyright (C) 2008 Free Software Foundation, Inc.
-#
-# Peter Astakhov <astakhovp@mail.ru>, 2005, 2008.
-# Anton Shestakov <engored@ya.ru>, 2008.
-# Pavel Maryanov <acid_jack@ukr.net>, 2008, 2009.
-# Alexander Potashev <aspotashev@gmail.com>, 2009, 2010.
-# Pavel Maryanov <acid@jack.kiev.ua>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info 0.51\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-19 18:49+0000\n"
-"PO-Revision-Date: 2010-11-20 09:18+0300\n"
-"Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
-"Language-Team: Russian <gnu@mx.ru>\n"
+"Project-Id-Version: shared-mime-info\n"
+"Report-Msgid-Bugs-To: http://bugzilla.freedesktop.org/\n"
+"POT-Creation-Date: 2010-11-26 19:35+0000\n"
+"PO-Revision-Date: 2011-03-30 15:15+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Russian <None>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 1.1\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: ../freedesktop.org.xml.in.h:1
 msgid "3D Studio image"
@@ -537,7 +532,8 @@ msgid "Game Boy ROM"
 msgstr "Game Boy ROM"
 
 #. Translate this to Megadrive if the console was known as such in your locale
-#. Should be Megadrive in all but en_US: http://en.wikipedia.org/wiki/Megadrive#History
+#. Should be Megadrive in all but en_US:
+#. http://en.wikipedia.org/wiki/Megadrive#History
 #: ../freedesktop.org.xml.in.h:133
 msgid "Genesis ROM"
 msgstr "Genesis ROM"
@@ -1784,7 +1780,8 @@ msgstr "растровое изображение Sun"
 msgid "SunOS News font"
 msgstr "шрифт SunOS News"
 
-#. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in Europe) if the console was known as such in your locale
+#. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in
+#. Europe) if the console was known as such in your locale
 #: ../freedesktop.org.xml.in.h:453
 msgid "Super NES ROM"
 msgstr "Super NES ROM"
@@ -2562,129 +2559,3 @@ msgstr "неизвестно"
 #: ../freedesktop.org.xml.in.h:663
 msgid "video DVD"
 msgstr "видео-DVD"
-
-#~ msgid "VHDL document"
-#~ msgstr "документ VHDL"
-
-#~ msgid "Verilog document"
-#~ msgstr "документ Verilog"
-
-#~ msgid "XUL document"
-#~ msgstr "документ XUL"
-
-#~ msgid "GnuCash spreadsheet"
-#~ msgstr "электронная таблица GnuCash"
-
-#~ msgid "ICO icon"
-#~ msgstr "значок ICO"
-
-#~ msgid "PSD image"
-#~ msgstr "изображение PSD"
-
-#~ msgid "GTK+ configuration"
-#~ msgstr "конфигурация GTK+"
-
-#~ msgid "AutoDesk FLIC animation"
-#~ msgstr "анимация AutoDesc FLIC"
-
-#~ msgid "C source code header"
-#~ msgstr "заголовочный файл языка C"
-
-#~ msgid "CGI script"
-#~ msgstr "CGI сценарий"
-
-#~ msgid "Device Independant Bitmap"
-#~ msgstr "устройствонезависимое битовое изображение"
-
-#~ msgid "Encapsulated PostScript image"
-#~ msgstr "изображение Encapsulated PostScript"
-
-#~ msgid "HP Graphics Language (plotter)"
-#~ msgstr "HP Graphics Language (плоттер)"
-
-#~ msgid "HP Printer Control Language file"
-#~ msgstr "файл HP PCL (язык управления принтером Hewlett-Packard)"
-
-#~ msgid "HTML page"
-#~ msgstr "страница HTML"
-
-#~ msgid "Macintosh StuffIt archive"
-#~ msgstr "архив Macintosh StuffIt"
-
-#~ msgid "Microsoft AVI video"
-#~ msgstr "Microsoft AVI видео"
-
-#~ msgid "Microsoft WMF file"
-#~ msgstr "Microsoft WMF файл"
-
-#~ msgid "Microsoft WMV video"
-#~ msgstr "Microsoft WMV видео"
-
-#~ msgid "Netscape bookmarks"
-#~ msgstr "закладки Netskape"
-
-#~ msgid "OpenDocument Chart"
-#~ msgstr "Диаграмма OpenDocument"
-
-#~ msgid "OpenDocument Database"
-#~ msgstr "база данных OpenDocument"
-
-#~ msgid "OpenDocument Drawing"
-#~ msgstr "Изображение OpenDocument"
-
-#~ msgid "OpenDocument Drawing Template"
-#~ msgstr "Шаблон изображения OpenDocument"
-
-#~ msgid "OpenDocument Formula"
-#~ msgstr "OpenDocument Формула"
-
-#~ msgid "OpenDocument Image"
-#~ msgstr "OpenDocument Изображение"
-
-#~ msgid "OpenDocument Master Document"
-#~ msgstr "Основной документ OpenDocument"
-
-#~ msgid "OpenDocument Presentation"
-#~ msgstr "презентация OpenDocument"
-
-#~ msgid "OpenDocument Presentation Template"
-#~ msgstr "шаблон презентации OpenDocument"
-
-#~ msgid "OpenDocument Spreadsheet"
-#~ msgstr "книга электронной таблицы OpenDocument"
-
-#~ msgid "OpenDocument Spreadsheet Template"
-#~ msgstr "OpenDocument Шаблон Электронной Таблицы"
-
-#~ msgid "OpenDocument Text"
-#~ msgstr "OpenDocument Текст"
-
-#~ msgid "OpenDocument Text Template"
-#~ msgstr "шаблон документа OpenDocument"
-
-#~ msgid "Palmpilot database/document"
-#~ msgstr "документ/база данных Palmpilot"
-
-#~ msgid "ZIP archive"
-#~ msgstr "архив ZIP"
-
-#~ msgid "font"
-#~ msgstr "шрифт"
-
-#~ msgid "gtar archive"
-#~ msgstr "архив gtar"
-
-#~ msgid "gzip archive"
-#~ msgstr "архив gzip"
-
-#~ msgid "shared library (la)"
-#~ msgstr "разделяемая библиотека (la)"
-
-#~ msgid "text document (with comma-separated values)"
-#~ msgstr "текстовый документ (ЗАПЯТАЯ в качестве разделителя)"
-
-#~ msgid "text document (with tab-separated values)"
-#~ msgstr "текстовый документ (TAB в качестве разделителя)"
-
-#~ msgid "translated messages"
-#~ msgstr "переводы сообщений"

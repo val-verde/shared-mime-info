@@ -1,25 +1,21 @@
-# Slovenian translations for shared-mime-info.
-# Copyright (C) 2005 Free Software Foundation, Inc.
-# This file is distributed under the same license as the shared-mime-info package.
-#
-# Matej Urbančič <mateju@svn.gnome.org, 2010.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info master\n"
-"Report-Msgid-Bugs-To: https://bugs.freedesktop.org/enter_bug.cgi?product=shared-mime-info&component=general\n"
-"POT-Creation-Date: 2010-11-05 15:25+0000\n"
-"PO-Revision-Date: 2010-11-05 21:05+0100\n"
-"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
-"Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
-"Language: \n"
+"Project-Id-Version: shared-mime-info\n"
+"Report-Msgid-Bugs-To: http://bugzilla.freedesktop.org/\n"
+"POT-Creation-Date: 2010-11-26 19:35+0000\n"
+"PO-Revision-Date: 2011-03-30 15:17+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
-"X-Poedit-Country: SLOVENIA\n"
-"X-Poedit-Language: Slovenian\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"Language: sl\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3)\n"
 
 #: ../freedesktop.org.xml.in.h:1
 msgid "3D Studio image"
@@ -536,7 +532,8 @@ msgid "Game Boy ROM"
 msgstr "Bralni pomnilnik Game Boy"
 
 #. Translate this to Megadrive if the console was known as such in your locale
-#. Should be Megadrive in all but en_US: http://en.wikipedia.org/wiki/Megadrive#History
+#. Should be Megadrive in all but en_US:
+#. http://en.wikipedia.org/wiki/Megadrive#History
 #: ../freedesktop.org.xml.in.h:133
 msgid "Genesis ROM"
 msgstr "Bralni pomnilnik Genesis"
@@ -1783,7 +1780,8 @@ msgstr "Slikovna rastrska datoteka Sun"
 msgid "SunOS News font"
 msgstr "Datoteka pisave SunOS News"
 
-#. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in Europe) if the console was known as such in your locale
+#. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in
+#. Europe) if the console was known as such in your locale
 #: ../freedesktop.org.xml.in.h:453
 msgid "Super NES ROM"
 msgstr "Bralni pomnilnik Super NES"
@@ -2561,9 +2559,3 @@ msgstr "neznano"
 #: ../freedesktop.org.xml.in.h:663
 msgid "video DVD"
 msgstr "video DVD"
-
-#~ msgid "VHDL document"
-#~ msgstr "Dokument VHDL"
-#~ msgid "Verilog document"
-#~ msgstr "Datoteka dokumenta Verilog"
-

@@ -1,22 +1,21 @@
-# Translation of shared-mime-info-0.60.po to Catalan
-# Copyright (C) 2007
-# This file is distributed under the same license as the shared-mime-info package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Albert Astals Cid <aacid@kde.org>, 2007.
-# Josep Ma. Ferrer <txemaq@gmail.com>, 2007, 2008, 2009, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info-0.60\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-05 18:59+0000\n"
-"PO-Revision-Date: 2010-04-21 20:52+0200\n"
-"Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
-"Language-Team: Catalan <ca@dodds.net>\n"
+"Project-Id-Version: shared-mime-info\n"
+"Report-Msgid-Bugs-To: http://bugzilla.freedesktop.org/\n"
+"POT-Creation-Date: 2010-11-26 19:35+0000\n"
+"PO-Revision-Date: 2011-03-30 15:14+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Catalan <None>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.0\n"
+"Language: ca\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../freedesktop.org.xml.in.h:1
 msgid "3D Studio image"
@@ -2560,12 +2559,3 @@ msgstr "desconegut"
 #: ../freedesktop.org.xml.in.h:663
 msgid "video DVD"
 msgstr "vídeo DVD"
-
-#~ msgid "VHDL document"
-#~ msgstr "document VHDL"
-
-#~ msgid "Verilog document"
-#~ msgstr "document Verilog"
-
-#~ msgid "XUL document"
-#~ msgstr "document XUL"

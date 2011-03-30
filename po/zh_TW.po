@@ -1,25 +1,21 @@
-# traditional Chinese translation of shared-mime-info.
-# Based on traditional Chinese translation of gnome-mime-data:
-#   Joe Man <trmetal@yahoo.com.hk>, 2001.
-#   Abel Cheung <maddog@linux.org.hk>, 2002-2003.
-#   Tim Leung <tonytim_leung@yahoo.com.hk>, 2004
-#
-# Copyright (C) 2005, 2010 Free Software Foundation, Inc.
-# Abel Cheung <abelcheung@gmail.com>, 2005.
-# Cheng-Chia Tseng <pswo10680@gmail.com>, 2010.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: shared-mime-info 0.16\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-23 19:31+0000\n"
-"PO-Revision-Date: 2010-11-01 19:05+0800\n"
-"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
+"Project-Id-Version: shared-mime-info\n"
+"Report-Msgid-Bugs-To: http://bugzilla.freedesktop.org/\n"
+"POT-Creation-Date: 2010-11-26 19:35+0000\n"
+"PO-Revision-Date: 2011-03-30 15:15+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Chinese (Taiwan) <None>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #: ../freedesktop.org.xml.in.h:1
 msgid "3D Studio image"
@@ -536,7 +532,8 @@ msgid "Game Boy ROM"
 msgstr "Game Boy ROM"
 
 #. Translate this to Megadrive if the console was known as such in your locale
-#. Should be Megadrive in all but en_US: http://en.wikipedia.org/wiki/Megadrive#History
+#. Should be Megadrive in all but en_US:
+#. http://en.wikipedia.org/wiki/Megadrive#History
 #: ../freedesktop.org.xml.in.h:133
 msgid "Genesis ROM"
 msgstr "Genesis ROM"
@@ -688,9 +685,8 @@ msgid "Java class"
 msgstr "Java class"
 
 #: ../freedesktop.org.xml.in.h:172
-#, fuzzy
 msgid "Java keystore"
-msgstr "Java 位元碼"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:173
 msgid "Java source code"
@@ -1041,9 +1037,8 @@ msgid "Mozilla bookmarks"
 msgstr "Mozilla 書籤"
 
 #: ../freedesktop.org.xml.in.h:260
-#, fuzzy
 msgid "Mup publication"
-msgstr "程式紀錄檔"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:261
 msgid "Musepack audio"
@@ -1343,18 +1338,16 @@ msgid "PHP script"
 msgstr "PHP 指令稿"
 
 #: ../freedesktop.org.xml.in.h:336
-#, fuzzy
 msgid "PKCS#10 certification request"
-msgstr "PKCS#12 憑證檔"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:337
 msgid "PKCS#12 certificate bundle"
 msgstr "PKCS#12 憑證檔"
 
 #: ../freedesktop.org.xml.in.h:338
-#, fuzzy
 msgid "PKCS#7 certificate bundle"
-msgstr "PKCS#12 憑證檔"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:339
 msgid "PKCS#8 private key"
@@ -1397,1289 +1390,1172 @@ msgid "Panasonic raw image"
 msgstr "Panasonic 原生影像"
 
 #: ../freedesktop.org.xml.in.h:349
+msgid "Panasonic raw2 image"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:350
 msgid "Parchive archive"
 msgstr "Parchive 封存檔"
 
-#: ../freedesktop.org.xml.in.h:350
+#: ../freedesktop.org.xml.in.h:351
 msgid "Pascal source code"
 msgstr "Pascal 源代碼"
 
-#: ../freedesktop.org.xml.in.h:351
+#: ../freedesktop.org.xml.in.h:352
 msgid "Pathetic Writer document"
 msgstr "Pathetic Writer 文件"
 
-#: ../freedesktop.org.xml.in.h:352
+#: ../freedesktop.org.xml.in.h:353
 msgid "Pentax PEF raw image"
 msgstr "Pentax PEF 原生影像"
 
-#: ../freedesktop.org.xml.in.h:353
+#: ../freedesktop.org.xml.in.h:354
 msgid "Perl script"
 msgstr "Perl 指令稿"
 
-#: ../freedesktop.org.xml.in.h:354
+#: ../freedesktop.org.xml.in.h:355
 msgid "Photoshop image"
 msgstr "Photoshop 影像"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Picture_CD
 #. http://www.re.org/kristin/picturecd.html
-#: ../freedesktop.org.xml.in.h:358
+#: ../freedesktop.org.xml.in.h:359
 msgid "Picture CD"
 msgstr "圖片 CD"
 
-#: ../freedesktop.org.xml.in.h:359
+#: ../freedesktop.org.xml.in.h:360
 msgid "PkiPath certification path"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:360
+#: ../freedesktop.org.xml.in.h:361
 msgid "PlanPerfect spreadsheet"
 msgstr "PlanPerfect 試算表"
 
-#: ../freedesktop.org.xml.in.h:361
+#: ../freedesktop.org.xml.in.h:362
 msgid "Plucker document"
 msgstr "Plucker 文件"
 
-#: ../freedesktop.org.xml.in.h:362
+#: ../freedesktop.org.xml.in.h:363
 msgid "Pocket Word document"
 msgstr "Pocket Word 文件"
 
-#: ../freedesktop.org.xml.in.h:363
+#: ../freedesktop.org.xml.in.h:364
 msgid "PostScript document (bzip-compressed)"
 msgstr "PostScript 文件 (bzip 格式壓縮)"
 
-#: ../freedesktop.org.xml.in.h:364
+#: ../freedesktop.org.xml.in.h:365
 msgid "PostScript document (gzip-compressed)"
 msgstr "PostScript 文件 (gzip 格式壓縮)"
 
-#: ../freedesktop.org.xml.in.h:365
+#: ../freedesktop.org.xml.in.h:366
 msgid "Postscript type-1 font"
 msgstr "Postscript type-1 字型"
 
-#: ../freedesktop.org.xml.in.h:366
+#: ../freedesktop.org.xml.in.h:367
 msgid "PowerPoint 2007 presentation"
 msgstr "PowerPoint 2007 簡報"
 
-#: ../freedesktop.org.xml.in.h:367
+#: ../freedesktop.org.xml.in.h:368
 msgid "PowerPoint 2007 show"
 msgstr "PowerPoint 2007 展示"
 
-#: ../freedesktop.org.xml.in.h:368
+#: ../freedesktop.org.xml.in.h:369
 msgid "PowerPoint presentation"
 msgstr "PowerPoint 簡報"
 
-#: ../freedesktop.org.xml.in.h:369
+#: ../freedesktop.org.xml.in.h:370
 msgid "Python bytecode"
 msgstr "Python 位元碼"
 
-#: ../freedesktop.org.xml.in.h:370
+#: ../freedesktop.org.xml.in.h:371
 msgid "Python script"
 msgstr "Python 指令稿"
 
-#: ../freedesktop.org.xml.in.h:371
+#: ../freedesktop.org.xml.in.h:372
 msgid "Qt Designer file"
 msgstr "Qt Designer 檔案"
 
-#: ../freedesktop.org.xml.in.h:372
+#: ../freedesktop.org.xml.in.h:373
 msgid "Qt MOC file"
 msgstr "Qt MOC 檔"
 
-#: ../freedesktop.org.xml.in.h:373
+#: ../freedesktop.org.xml.in.h:374
 msgid "Quattro Pro spreadsheet"
 msgstr "Quattro Pro 試算表"
 
-#: ../freedesktop.org.xml.in.h:374
+#: ../freedesktop.org.xml.in.h:375
 msgid "QuickTime image"
 msgstr "QuickTime 影像"
 
-#: ../freedesktop.org.xml.in.h:375
+#: ../freedesktop.org.xml.in.h:376
 msgid "QuickTime metalink playlist"
 msgstr "QuickTime metalink 播放清單"
 
-#: ../freedesktop.org.xml.in.h:376
+#: ../freedesktop.org.xml.in.h:377
 msgid "QuickTime video"
 msgstr "QuickTime 視訊"
 
-#: ../freedesktop.org.xml.in.h:377
+#: ../freedesktop.org.xml.in.h:378
 msgid "Quicken document"
 msgstr "Quicken 文件"
 
-#: ../freedesktop.org.xml.in.h:378
+#: ../freedesktop.org.xml.in.h:379
 msgid "RAR archive"
 msgstr "RAR 封存檔"
 
-#: ../freedesktop.org.xml.in.h:379
+#: ../freedesktop.org.xml.in.h:380
 msgid "RDF file"
 msgstr "RDF 檔"
 
-#: ../freedesktop.org.xml.in.h:380
+#: ../freedesktop.org.xml.in.h:381
 msgid "README document"
 msgstr "README 說明文件"
 
-#: ../freedesktop.org.xml.in.h:381
+#: ../freedesktop.org.xml.in.h:382
 msgid "RELAX NG XML schema"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:382
+#: ../freedesktop.org.xml.in.h:383
 msgid "RGB image"
 msgstr "RGB 影像"
 
-#: ../freedesktop.org.xml.in.h:383
+#: ../freedesktop.org.xml.in.h:384
 msgid "RIFF audio"
 msgstr "RIFF 音訊"
 
-#: ../freedesktop.org.xml.in.h:384
+#: ../freedesktop.org.xml.in.h:385
 msgid "RPM package"
 msgstr "RPM 套件"
 
-#: ../freedesktop.org.xml.in.h:385
+#: ../freedesktop.org.xml.in.h:386
 msgid "RPM spec file"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:386
+#: ../freedesktop.org.xml.in.h:387
 msgid "RSS summary"
 msgstr "RSS 摘要"
 
-#: ../freedesktop.org.xml.in.h:387
+#: ../freedesktop.org.xml.in.h:388
 msgid "RTF document"
 msgstr "RTF 文件"
 
-#: ../freedesktop.org.xml.in.h:388
+#: ../freedesktop.org.xml.in.h:389
 msgid "RealAudio document"
 msgstr "RealAudio 文件"
 
-#: ../freedesktop.org.xml.in.h:389
+#: ../freedesktop.org.xml.in.h:390
 msgid "RealMedia Metafile"
 msgstr "RealMedia 中介檔"
 
-#: ../freedesktop.org.xml.in.h:390
+#: ../freedesktop.org.xml.in.h:391
 msgid "RealMedia document"
 msgstr "RealMedia 文件"
 
-#: ../freedesktop.org.xml.in.h:391
+#: ../freedesktop.org.xml.in.h:392
 msgid "RealPix document"
 msgstr "RealPix 文件"
 
-#: ../freedesktop.org.xml.in.h:392
+#: ../freedesktop.org.xml.in.h:393
 msgid "RealText document"
 msgstr "RealText 文件"
 
-#: ../freedesktop.org.xml.in.h:393
+#: ../freedesktop.org.xml.in.h:394
 msgid "RealVideo document"
 msgstr "RealVideo 文件"
 
-#: ../freedesktop.org.xml.in.h:394
+#: ../freedesktop.org.xml.in.h:395
 msgid "Ruby script"
 msgstr "Ruby 指令稿"
 
-#: ../freedesktop.org.xml.in.h:395
+#: ../freedesktop.org.xml.in.h:396
 msgid "Run Length Encoded bitmap image"
 msgstr "Run Length Encoded 點陣影像"
 
-#: ../freedesktop.org.xml.in.h:396
+#: ../freedesktop.org.xml.in.h:397
 msgid "S/MIME file"
 msgstr "S/MIME 檔"
 
-#: ../freedesktop.org.xml.in.h:397
+#: ../freedesktop.org.xml.in.h:398
 msgid "SAMI subtitles"
 msgstr "SAMI 字幕"
 
-#: ../freedesktop.org.xml.in.h:398
+#: ../freedesktop.org.xml.in.h:399
 msgid "SC/Xspread spreadsheet"
 msgstr "SC/Xspread 試算表"
 
-#: ../freedesktop.org.xml.in.h:399
+#: ../freedesktop.org.xml.in.h:400
 msgid "SDP multicast stream file"
 msgstr ""
 
 #. translators: a record is in this context a description of a board game
 #. that has been played, and that can be played back again:
 #. http://www.red-bean.com/sgf/
-#: ../freedesktop.org.xml.in.h:403
+#: ../freedesktop.org.xml.in.h:404
 msgid "SGF record"
 msgstr "SGF 紀錄"
 
-#: ../freedesktop.org.xml.in.h:404
+#: ../freedesktop.org.xml.in.h:405
 msgid "SGI image"
 msgstr "SGI 影像"
 
-#: ../freedesktop.org.xml.in.h:405
+#: ../freedesktop.org.xml.in.h:406
 msgid "SGI video"
 msgstr "SGI 視訊"
 
-#: ../freedesktop.org.xml.in.h:406
+#: ../freedesktop.org.xml.in.h:407
 msgid "SGML document"
 msgstr "SGML 文件"
 
-#: ../freedesktop.org.xml.in.h:407
+#: ../freedesktop.org.xml.in.h:408
 msgid "SIS package"
 msgstr "SIS 套件"
 
-#: ../freedesktop.org.xml.in.h:408
+#: ../freedesktop.org.xml.in.h:409
 msgid "SISX package"
 msgstr "SISX 套件"
 
-#: ../freedesktop.org.xml.in.h:409
+#: ../freedesktop.org.xml.in.h:410
 msgid "SMAF audio"
 msgstr "SMAF 音訊"
 
-#: ../freedesktop.org.xml.in.h:410
+#: ../freedesktop.org.xml.in.h:411
 msgid "SMIL document"
 msgstr "SMIL 文件"
 
-#: ../freedesktop.org.xml.in.h:411
+#: ../freedesktop.org.xml.in.h:412
 msgid "SPSS Data File"
 msgstr "SPSS 資料檔"
 
-#: ../freedesktop.org.xml.in.h:412
+#: ../freedesktop.org.xml.in.h:413
 msgid "SPSS Portable Data File"
 msgstr "SPSS 可攜式資料檔"
 
-#: ../freedesktop.org.xml.in.h:413
+#: ../freedesktop.org.xml.in.h:414
 msgid "SQL code"
 msgstr "SQL 代碼"
 
-#: ../freedesktop.org.xml.in.h:414
+#: ../freedesktop.org.xml.in.h:415
 msgid "SQLite2 database"
 msgstr "SQLite2 資料庫"
 
-#: ../freedesktop.org.xml.in.h:415
+#: ../freedesktop.org.xml.in.h:416
 msgid "SQLite3 database"
 msgstr "SQLite3 資料庫"
 
-#: ../freedesktop.org.xml.in.h:416
+#: ../freedesktop.org.xml.in.h:417
 msgid "SSA subtitles"
 msgstr "SSA 字幕"
 
-#: ../freedesktop.org.xml.in.h:417
+#: ../freedesktop.org.xml.in.h:418
 msgid "SV4 CPIO archive"
 msgstr "SV4 CPIO 封存檔"
 
-#: ../freedesktop.org.xml.in.h:418
+#: ../freedesktop.org.xml.in.h:419
 msgid "SV4 CPIO archive (with CRC)"
 msgstr "SV4 CPIO 封存檔 (具有 CRC)"
 
-#: ../freedesktop.org.xml.in.h:419
+#: ../freedesktop.org.xml.in.h:420
 msgid "SVG image"
 msgstr "SVG 影像"
 
-#: ../freedesktop.org.xml.in.h:420
+#: ../freedesktop.org.xml.in.h:421
 msgid "Scheme source code"
 msgstr "Scheme 源代碼"
 
-#: ../freedesktop.org.xml.in.h:421
+#: ../freedesktop.org.xml.in.h:422
 msgid "Scream Tracker 3 audio"
 msgstr "Scream Tracker 3 音訊"
 
-#: ../freedesktop.org.xml.in.h:422
+#: ../freedesktop.org.xml.in.h:423
 msgid "Scream Tracker audio"
 msgstr "Scream Tracker 音訊"
 
-#: ../freedesktop.org.xml.in.h:423
+#: ../freedesktop.org.xml.in.h:424
 msgid "Scream Tracker instrument"
 msgstr "Scream Tracker 樂器檔"
 
-#: ../freedesktop.org.xml.in.h:424
+#: ../freedesktop.org.xml.in.h:425
 msgid "Sega Master System/Game Gear ROM"
 msgstr "Sega Master System/Game Gear ROM"
 
-#: ../freedesktop.org.xml.in.h:425
+#: ../freedesktop.org.xml.in.h:426
 msgid "Setext document"
 msgstr "Setext 文件"
 
-#: ../freedesktop.org.xml.in.h:426
+#: ../freedesktop.org.xml.in.h:427
 msgid "Shockwave Flash file"
 msgstr "Shockwave Flash 檔"
 
 #. translators: "Shorten" is the name of an audio codec
-#: ../freedesktop.org.xml.in.h:428
+#: ../freedesktop.org.xml.in.h:429
 msgid "Shorten audio"
 msgstr "Shorten 音訊"
 
-#: ../freedesktop.org.xml.in.h:429
+#: ../freedesktop.org.xml.in.h:430
 msgid "Siag spreadsheet"
 msgstr "Siag 試算表"
 
-#: ../freedesktop.org.xml.in.h:430
+#: ../freedesktop.org.xml.in.h:431
 msgid "Sieve mail filter script"
 msgstr "Sieve 郵件過濾指令稿"
 
-#: ../freedesktop.org.xml.in.h:431
+#: ../freedesktop.org.xml.in.h:432
 msgid "Sigma X3F raw image"
 msgstr "Sigma X3F 原生影像"
 
-#: ../freedesktop.org.xml.in.h:432
+#: ../freedesktop.org.xml.in.h:433
 msgid "Skencil document"
 msgstr "Skencil 文件"
 
-#: ../freedesktop.org.xml.in.h:433
+#: ../freedesktop.org.xml.in.h:434
 msgid "Sony ARW raw image"
 msgstr "Sony ARW 原生影像"
 
-#: ../freedesktop.org.xml.in.h:434
+#: ../freedesktop.org.xml.in.h:435
 msgid "Sony SR2 raw image"
 msgstr "Sony SR2 原生影像"
 
-#: ../freedesktop.org.xml.in.h:435
+#: ../freedesktop.org.xml.in.h:436
 msgid "Sony SRF raw image"
 msgstr "Sony SRF 原生影像"
 
-#: ../freedesktop.org.xml.in.h:436
+#: ../freedesktop.org.xml.in.h:437
 msgid "Speedo font"
 msgstr "Speedo 字型"
 
-#: ../freedesktop.org.xml.in.h:437
+#: ../freedesktop.org.xml.in.h:438
 msgid "Speex audio"
 msgstr "Speex 音訊"
 
-#: ../freedesktop.org.xml.in.h:438
+#: ../freedesktop.org.xml.in.h:439
 msgid "Stampede package"
 msgstr "Stampede 套件"
 
-#: ../freedesktop.org.xml.in.h:439
+#: ../freedesktop.org.xml.in.h:440
 msgid "StarCalc spreadsheet"
 msgstr "StarCalc 試算表"
 
-#: ../freedesktop.org.xml.in.h:440
+#: ../freedesktop.org.xml.in.h:441
 msgid "StarChart chart"
 msgstr "StarChart 圖表"
 
-#: ../freedesktop.org.xml.in.h:441
+#: ../freedesktop.org.xml.in.h:442
 msgid "StarDraw drawing"
 msgstr "StarDraw 繪圖"
 
-#: ../freedesktop.org.xml.in.h:442
+#: ../freedesktop.org.xml.in.h:443
 msgid "StarImpress presentation"
 msgstr "StarImpress 簡報檔"
 
-#: ../freedesktop.org.xml.in.h:443
+#: ../freedesktop.org.xml.in.h:444
 msgid "StarMail email"
 msgstr "StarMail 郵件"
 
-#: ../freedesktop.org.xml.in.h:444
+#: ../freedesktop.org.xml.in.h:445
 msgid "StarMath formula"
 msgstr "StarMath 公式"
 
-#: ../freedesktop.org.xml.in.h:445
+#: ../freedesktop.org.xml.in.h:446
 msgid "StarWriter document"
 msgstr "StarWriter 文件"
 
-#: ../freedesktop.org.xml.in.h:446
+#: ../freedesktop.org.xml.in.h:447
 msgid "StuffIt archive"
 msgstr "StuffIt 封存檔"
 
-#: ../freedesktop.org.xml.in.h:447
+#: ../freedesktop.org.xml.in.h:448
 msgid "SubRip subtitles"
 msgstr "SubRip 字幕"
 
-#: ../freedesktop.org.xml.in.h:448
+#: ../freedesktop.org.xml.in.h:449
 msgid "SubViewer subtitles"
 msgstr "SubViewer 字幕"
 
-#: ../freedesktop.org.xml.in.h:449
+#: ../freedesktop.org.xml.in.h:450
 msgid "Sun raster image"
 msgstr "Sun raster 影像"
 
-#: ../freedesktop.org.xml.in.h:450
+#: ../freedesktop.org.xml.in.h:451
 msgid "SunOS News font"
 msgstr "SunOS News 字型"
 
-#. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in Europe) if the console was known as such in your locale
-#: ../freedesktop.org.xml.in.h:452
+#. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in
+#. Europe) if the console was known as such in your locale
+#: ../freedesktop.org.xml.in.h:453
 msgid "Super NES ROM"
 msgstr "超級任天堂 ROM"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Super_Video_CD
 #. http://everything2.com/index.pl?node_id=1009222
-#: ../freedesktop.org.xml.in.h:456
+#: ../freedesktop.org.xml.in.h:457
 msgid "Super Video CD"
 msgstr "Super Video CD"
 
-#: ../freedesktop.org.xml.in.h:457
+#: ../freedesktop.org.xml.in.h:458
 msgid "SystemVerilog header"
 msgstr "SystemVerilog 標頭"
 
-#: ../freedesktop.org.xml.in.h:458
+#: ../freedesktop.org.xml.in.h:459
 msgid "SystemVerilog source code"
 msgstr "SystemVerilog 源代碼"
 
-#: ../freedesktop.org.xml.in.h:459
+#: ../freedesktop.org.xml.in.h:460
 msgid "T602 document"
 msgstr "T602 文件"
 
-#: ../freedesktop.org.xml.in.h:460
+#: ../freedesktop.org.xml.in.h:461
 msgid "TGA image"
 msgstr "TGA 影像"
 
-#: ../freedesktop.org.xml.in.h:461
+#: ../freedesktop.org.xml.in.h:462
 msgid "TGIF document"
 msgstr "TGIF 文件"
 
-#: ../freedesktop.org.xml.in.h:462
+#: ../freedesktop.org.xml.in.h:463
 msgid "TIFF image"
 msgstr "TIFF 影像"
 
-#: ../freedesktop.org.xml.in.h:463
+#: ../freedesktop.org.xml.in.h:464
 msgid "TNEF message"
 msgstr "TNEF 訊息"
 
-#: ../freedesktop.org.xml.in.h:464
+#: ../freedesktop.org.xml.in.h:465
 msgid "TSV document"
 msgstr "TSV 文件"
 
-#: ../freedesktop.org.xml.in.h:465
+#: ../freedesktop.org.xml.in.h:466
 msgid "Tar archive"
 msgstr "Tar 封存檔"
 
-#: ../freedesktop.org.xml.in.h:466
+#: ../freedesktop.org.xml.in.h:467
 msgid "Tar archive (LZMA-compressed)"
 msgstr "Tar 封存檔 (LZMA 格式壓縮)"
 
-#: ../freedesktop.org.xml.in.h:467
+#: ../freedesktop.org.xml.in.h:468
 msgid "Tar archive (LZO-compressed)"
 msgstr "Tar 封存檔 (LZO 格式壓縮)"
 
-#: ../freedesktop.org.xml.in.h:468
+#: ../freedesktop.org.xml.in.h:469
 msgid "Tar archive (XZ-compressed)"
 msgstr "Tar 封存檔 (XZ 格式壓縮)"
 
-#: ../freedesktop.org.xml.in.h:469
+#: ../freedesktop.org.xml.in.h:470
 msgid "Tar archive (bzip-compressed)"
 msgstr "Tar 封存檔 (bzip 格式壓縮)"
 
-#: ../freedesktop.org.xml.in.h:470
+#: ../freedesktop.org.xml.in.h:471
 msgid "Tar archive (compressed)"
 msgstr "Tar 封存檔 (UNIX 格式壓縮)"
 
-#: ../freedesktop.org.xml.in.h:471
+#: ../freedesktop.org.xml.in.h:472
 msgid "Tar archive (gzip-compressed)"
 msgstr "Tar 封存檔 (gzip 格式壓縮)"
 
-#: ../freedesktop.org.xml.in.h:472
+#: ../freedesktop.org.xml.in.h:473
 msgid "Tar archive (lrzip-compressed)"
 msgstr "Tar 封存檔 (lrzip 格式壓縮)"
 
-#: ../freedesktop.org.xml.in.h:473
+#: ../freedesktop.org.xml.in.h:474
 msgid "Tcl script"
 msgstr "Tcl 描述語言檔"
 
-#: ../freedesktop.org.xml.in.h:474
+#: ../freedesktop.org.xml.in.h:475
 msgid "TeX DVI document"
 msgstr "TeX DVI 文件"
 
-#: ../freedesktop.org.xml.in.h:475
+#: ../freedesktop.org.xml.in.h:476
 msgid "TeX DVI document (bzip-compressed)"
 msgstr "TeX DVI 文件 (bzip 格式壓縮)"
 
-#: ../freedesktop.org.xml.in.h:476
+#: ../freedesktop.org.xml.in.h:477
 msgid "TeX DVI document (gzip-compressed)"
 msgstr "TeX DVI 文件 (gzip 格式壓縮)"
 
-#: ../freedesktop.org.xml.in.h:477
+#: ../freedesktop.org.xml.in.h:478
 msgid "TeX document"
 msgstr "TeX 文件"
 
-#: ../freedesktop.org.xml.in.h:478
+#: ../freedesktop.org.xml.in.h:479
 msgid "TeX font"
 msgstr "TeX 字型"
 
-#: ../freedesktop.org.xml.in.h:479
+#: ../freedesktop.org.xml.in.h:480
 msgid "TeX font metrics"
 msgstr "TeX 字型描述檔"
 
-#: ../freedesktop.org.xml.in.h:480
+#: ../freedesktop.org.xml.in.h:481
 msgid "TeXInfo document"
 msgstr "TeXInfo 文件"
 
-#: ../freedesktop.org.xml.in.h:481
+#: ../freedesktop.org.xml.in.h:482
 msgid "ToutDoux document"
 msgstr "ToutDoux 文件"
 
-#: ../freedesktop.org.xml.in.h:482
+#: ../freedesktop.org.xml.in.h:483
 msgid "Troff ME input document"
 msgstr "Troff ME 輸入文件"
 
-#: ../freedesktop.org.xml.in.h:483
+#: ../freedesktop.org.xml.in.h:484
 msgid "Troff MM input document"
 msgstr "Troff MM 輸入文件"
 
-#: ../freedesktop.org.xml.in.h:484
+#: ../freedesktop.org.xml.in.h:485
 msgid "Troff MS input document"
 msgstr "Troff MS 輸入文件"
 
-#: ../freedesktop.org.xml.in.h:485
+#: ../freedesktop.org.xml.in.h:486
 msgid "Troff document"
 msgstr "Troff 文件"
 
-#: ../freedesktop.org.xml.in.h:486
+#: ../freedesktop.org.xml.in.h:487
 msgid "Troff document (with manpage macros)"
 msgstr "Troff 文件 (含有手冊頁面巨集)"
 
-#: ../freedesktop.org.xml.in.h:487
+#: ../freedesktop.org.xml.in.h:488
 msgid "TrueAudio audio"
 msgstr "TrueAudio 音訊"
 
-#: ../freedesktop.org.xml.in.h:488
+#: ../freedesktop.org.xml.in.h:489
 msgid "TrueType XML font"
 msgstr "TrueType XML 字型"
 
-#: ../freedesktop.org.xml.in.h:489
+#: ../freedesktop.org.xml.in.h:490
 msgid "TrueType font"
 msgstr "TrueType 字型"
 
-#: ../freedesktop.org.xml.in.h:490
+#: ../freedesktop.org.xml.in.h:491
 msgid "UFRaw ID image"
 msgstr "UFRaw ID 影像"
 
-#: ../freedesktop.org.xml.in.h:491
+#: ../freedesktop.org.xml.in.h:492
 msgid "ULAW (Sun) audio"
 msgstr "ULAW (Sun) 音訊"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: ../freedesktop.org.xml.in.h:494
+#: ../freedesktop.org.xml.in.h:495
 msgid "UNIX software"
 msgstr "UNIX 軟體"
 
-#: ../freedesktop.org.xml.in.h:495
+#: ../freedesktop.org.xml.in.h:496
 msgid "UNIX-compressed file"
 msgstr "UNIX 格式壓縮檔"
 
-#: ../freedesktop.org.xml.in.h:496
+#: ../freedesktop.org.xml.in.h:497
 msgid "Unidata NetCDF document"
 msgstr "Unidata NetCDF 文件"
 
-#: ../freedesktop.org.xml.in.h:497
+#: ../freedesktop.org.xml.in.h:498
 msgid "Usenet news message"
 msgstr "Usenet 新聞訊息"
 
-#: ../freedesktop.org.xml.in.h:498
+#: ../freedesktop.org.xml.in.h:499
 msgid "Ustar archive"
 msgstr "Ustar 封存檔"
 
-#: ../freedesktop.org.xml.in.h:499
+#: ../freedesktop.org.xml.in.h:500
 msgid "V font"
 msgstr "V 字型"
 
-#: ../freedesktop.org.xml.in.h:500
+#: ../freedesktop.org.xml.in.h:501
 msgid "VCS/ICS calendar"
 msgstr "VCS/ICS 行事曆"
 
-#: ../freedesktop.org.xml.in.h:501
+#: ../freedesktop.org.xml.in.h:502
 msgid "VHDL source code"
 msgstr "VHDL 源代碼"
 
-#: ../freedesktop.org.xml.in.h:502
+#: ../freedesktop.org.xml.in.h:503
 msgid "VOC audio"
 msgstr "VOC 音訊"
 
-#: ../freedesktop.org.xml.in.h:503
+#: ../freedesktop.org.xml.in.h:504
 msgid "VRML document"
 msgstr "VRML 文件"
 
-#: ../freedesktop.org.xml.in.h:504
+#: ../freedesktop.org.xml.in.h:505
 msgid "Vala source code"
 msgstr "Vala 源代碼"
 
-#: ../freedesktop.org.xml.in.h:505
+#: ../freedesktop.org.xml.in.h:506
 msgid "Verilog source code"
 msgstr "Verilog 源代碼"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Video_CD
 #. http://www.herongyang.com/CD-DVD/VCD-Movie-File-Directory-Structure.html
-#: ../freedesktop.org.xml.in.h:509
+#: ../freedesktop.org.xml.in.h:510
 msgid "Video CD"
 msgstr "Video CD"
 
-#: ../freedesktop.org.xml.in.h:510
+#: ../freedesktop.org.xml.in.h:511
 msgid "Vivo video"
 msgstr "Vivo 視訊"
 
-#: ../freedesktop.org.xml.in.h:511
+#: ../freedesktop.org.xml.in.h:512
 msgid "WAIS source code"
 msgstr "WAIS 源代碼"
 
-#: ../freedesktop.org.xml.in.h:512
+#: ../freedesktop.org.xml.in.h:513
 msgid "WAV audio"
 msgstr "WAV 音訊"
 
-#: ../freedesktop.org.xml.in.h:513
+#: ../freedesktop.org.xml.in.h:514
 msgid "WBMP image"
 msgstr "WBMP 影像"
 
-#: ../freedesktop.org.xml.in.h:514
+#: ../freedesktop.org.xml.in.h:515
 msgid "WMF image"
 msgstr "WMF 影像"
 
-#: ../freedesktop.org.xml.in.h:515
+#: ../freedesktop.org.xml.in.h:516
 msgid "WML document"
 msgstr "WML 文件"
 
-#: ../freedesktop.org.xml.in.h:516
+#: ../freedesktop.org.xml.in.h:517
 msgid "WMLScript program"
 msgstr "WMLScript 程式"
 
-#: ../freedesktop.org.xml.in.h:517
+#: ../freedesktop.org.xml.in.h:518
 msgid "WPL playlist"
 msgstr "WPL 播放清單"
 
-#: ../freedesktop.org.xml.in.h:518
+#: ../freedesktop.org.xml.in.h:519
 msgid "WRI document"
 msgstr "WRI 文件"
 
-#: ../freedesktop.org.xml.in.h:519
+#: ../freedesktop.org.xml.in.h:520
 msgid "WavPack audio"
 msgstr "WavPack 音訊"
 
-#: ../freedesktop.org.xml.in.h:520
+#: ../freedesktop.org.xml.in.h:521
 msgid "WavPack audio correction file"
 msgstr "WavPack 音訊校正檔"
 
-#: ../freedesktop.org.xml.in.h:521
+#: ../freedesktop.org.xml.in.h:522
 msgid "Wavelet video"
 msgstr "Wavelet 視訊"
 
-#: ../freedesktop.org.xml.in.h:522
+#: ../freedesktop.org.xml.in.h:523
 msgid "Web application cache manifest"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:523
+#: ../freedesktop.org.xml.in.h:524
 msgid "WebM audio"
 msgstr "WebM 音訊"
 
-#: ../freedesktop.org.xml.in.h:524
+#: ../freedesktop.org.xml.in.h:525
 msgid "WebM video"
 msgstr "WebM 視訊"
 
-#: ../freedesktop.org.xml.in.h:525
+#: ../freedesktop.org.xml.in.h:526
 msgid "Windows BMP image"
 msgstr "Windows BMP 影像"
 
-#: ../freedesktop.org.xml.in.h:526
+#: ../freedesktop.org.xml.in.h:527
 msgid "Windows Imaging Format Disk Image"
 msgstr "Windows Imaging Format Disk 映像"
 
-#: ../freedesktop.org.xml.in.h:527
+#: ../freedesktop.org.xml.in.h:528
 msgid "Windows Installer package"
 msgstr "Windows Installer 套件"
 
-#: ../freedesktop.org.xml.in.h:528
+#: ../freedesktop.org.xml.in.h:529
 msgid "Windows Media Station file"
 msgstr "Windows Media Station 檔"
 
-#: ../freedesktop.org.xml.in.h:529
+#: ../freedesktop.org.xml.in.h:530
 msgid "Windows Media audio"
 msgstr "Windows Media 音訊"
 
-#: ../freedesktop.org.xml.in.h:530
+#: ../freedesktop.org.xml.in.h:531
 msgid "Windows Media video"
 msgstr "Windows Media 視訊"
 
-#: ../freedesktop.org.xml.in.h:531
+#: ../freedesktop.org.xml.in.h:532
 msgid "Windows Registry extract"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:532
+#: ../freedesktop.org.xml.in.h:533
 msgid "Windows animated cursor"
 msgstr "Windows 滑鼠動畫游標"
 
-#: ../freedesktop.org.xml.in.h:533
+#: ../freedesktop.org.xml.in.h:534
 msgid "Windows cursor"
 msgstr "Windows 滑鼠指標"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: ../freedesktop.org.xml.in.h:536
+#: ../freedesktop.org.xml.in.h:537
 msgid "Windows software"
 msgstr "Windows 軟體"
 
-#: ../freedesktop.org.xml.in.h:537
+#: ../freedesktop.org.xml.in.h:538
 msgid "Word 2007 document"
 msgstr "Word 2007 文件"
 
-#: ../freedesktop.org.xml.in.h:538
+#: ../freedesktop.org.xml.in.h:539
 msgid "Word document"
 msgstr "Word 文件"
 
-#: ../freedesktop.org.xml.in.h:539
+#: ../freedesktop.org.xml.in.h:540
 msgid "Word template"
 msgstr "Word 範本"
 
-#: ../freedesktop.org.xml.in.h:540
+#: ../freedesktop.org.xml.in.h:541
 msgid "WordPerfect document"
 msgstr "WordPerfect 文件"
 
-#: ../freedesktop.org.xml.in.h:541
+#: ../freedesktop.org.xml.in.h:542
 msgid "WordPerfect/Drawperfect image"
 msgstr "WordPerfect/Drawperfect 影像"
 
-#: ../freedesktop.org.xml.in.h:542
+#: ../freedesktop.org.xml.in.h:543
 msgid "X window image"
 msgstr "X window 影像"
 
-#: ../freedesktop.org.xml.in.h:543
+#: ../freedesktop.org.xml.in.h:544
 msgid "X-Motif UIL table"
 msgstr "X-Motif UIL 表格"
 
-#: ../freedesktop.org.xml.in.h:544
+#: ../freedesktop.org.xml.in.h:545
 msgid "X.509 certificate"
 msgstr "X.509 憑證"
 
-#: ../freedesktop.org.xml.in.h:545
+#: ../freedesktop.org.xml.in.h:546
 msgid "X11 cursor"
 msgstr "X11 滑鼠游標"
 
-#: ../freedesktop.org.xml.in.h:546
+#: ../freedesktop.org.xml.in.h:547
 msgid "XBEL bookmarks"
 msgstr "XBEL 格式書籤"
 
-#: ../freedesktop.org.xml.in.h:547
+#: ../freedesktop.org.xml.in.h:548
 msgid "XBM image"
 msgstr "XBM 影像"
 
-#: ../freedesktop.org.xml.in.h:548
+#: ../freedesktop.org.xml.in.h:549
 msgid "XFig image"
 msgstr "XFig 影像"
 
-#: ../freedesktop.org.xml.in.h:549
+#: ../freedesktop.org.xml.in.h:550
 msgid "XHTML page"
 msgstr "XHTML 網頁"
 
-#: ../freedesktop.org.xml.in.h:550
+#: ../freedesktop.org.xml.in.h:551
 msgid "XLIFF translation file"
 msgstr "XLIFF 翻譯檔"
 
-#: ../freedesktop.org.xml.in.h:551
+#: ../freedesktop.org.xml.in.h:552
 msgid "XMCD CD database"
 msgstr "XMCD CD 資料庫"
 
-#: ../freedesktop.org.xml.in.h:552
+#: ../freedesktop.org.xml.in.h:553
 msgid "XMF audio"
 msgstr "XMF 音訊"
 
-#: ../freedesktop.org.xml.in.h:553
+#: ../freedesktop.org.xml.in.h:554
 msgid "XMI file"
 msgstr "XMI 檔"
 
-#: ../freedesktop.org.xml.in.h:554
+#: ../freedesktop.org.xml.in.h:555
 msgid "XML document"
 msgstr "XML 文件"
 
-#: ../freedesktop.org.xml.in.h:555
+#: ../freedesktop.org.xml.in.h:556
 msgid "XML entities document"
 msgstr "XML 實體文件"
 
-#: ../freedesktop.org.xml.in.h:556
+#: ../freedesktop.org.xml.in.h:557
 msgid "XPInstall installer module"
 msgstr "XPInstall 安裝程式模組"
 
-#: ../freedesktop.org.xml.in.h:557
+#: ../freedesktop.org.xml.in.h:558
 msgid "XPM image"
 msgstr "XPM 影像"
 
-#: ../freedesktop.org.xml.in.h:558
+#: ../freedesktop.org.xml.in.h:559
 msgid "XPS document"
 msgstr "XPS 文件"
 
-#: ../freedesktop.org.xml.in.h:559
+#: ../freedesktop.org.xml.in.h:560
 msgid "XSL FO file"
 msgstr "XSL FO 檔"
 
-#: ../freedesktop.org.xml.in.h:560
+#: ../freedesktop.org.xml.in.h:561
 msgid "XSLT stylesheet"
 msgstr "XSLT 樣式表"
 
-#: ../freedesktop.org.xml.in.h:561
+#: ../freedesktop.org.xml.in.h:562
 msgid "XSPF playlist"
 msgstr "XSPF 播放清單"
 
-#: ../freedesktop.org.xml.in.h:562
+#: ../freedesktop.org.xml.in.h:563
 msgid "XUL interface document"
 msgstr "XUL 介面文件"
 
-#: ../freedesktop.org.xml.in.h:563
+#: ../freedesktop.org.xml.in.h:564
 msgid "XZ archive"
 msgstr "XZ 封存檔"
 
-#: ../freedesktop.org.xml.in.h:564
+#: ../freedesktop.org.xml.in.h:565
 msgid "Xbase document"
 msgstr "Xbase 文件"
 
-#: ../freedesktop.org.xml.in.h:565
+#: ../freedesktop.org.xml.in.h:566
 msgid "YAML document"
 msgstr "YAML 文件"
 
-#: ../freedesktop.org.xml.in.h:566
+#: ../freedesktop.org.xml.in.h:567
 msgid "Zip archive"
 msgstr "Zip 封存檔"
 
-#: ../freedesktop.org.xml.in.h:567
+#: ../freedesktop.org.xml.in.h:568
 msgid "Zoo archive"
 msgstr "Zoo 封存檔"
 
-#: ../freedesktop.org.xml.in.h:568
+#: ../freedesktop.org.xml.in.h:569
 msgid "application log"
 msgstr "程式紀錄檔"
 
 #. http://en.wikipedia.org/wiki/Red_Book_(audio_CD_standard)
-#: ../freedesktop.org.xml.in.h:570
+#: ../freedesktop.org.xml.in.h:571
 msgid "audio CD"
 msgstr "音訊 CD"
 
 #. http://en.wikipedia.org/wiki/DVD-Audio
-#: ../freedesktop.org.xml.in.h:572
+#: ../freedesktop.org.xml.in.h:573
 msgid "audio DVD"
 msgstr "音訊 DVD"
 
-#: ../freedesktop.org.xml.in.h:573
+#: ../freedesktop.org.xml.in.h:574
 msgid "author credits"
 msgstr "作者致謝名單"
 
-#: ../freedesktop.org.xml.in.h:574
+#: ../freedesktop.org.xml.in.h:575
 msgid "author list"
 msgstr "作者清單"
 
-#: ../freedesktop.org.xml.in.h:575
+#: ../freedesktop.org.xml.in.h:576
 msgid "backup file"
 msgstr "備份檔"
 
 #. http://en.wikipedia.org/wiki/Blu-ray_Disc
-#: ../freedesktop.org.xml.in.h:577
+#: ../freedesktop.org.xml.in.h:578
 msgid "blank Blu-ray disc"
 msgstr "空白 Blu-ray 光碟"
 
 #. http://en.wikipedia.org/wiki/Compact_Disc
-#: ../freedesktop.org.xml.in.h:579
+#: ../freedesktop.org.xml.in.h:580
 msgid "blank CD disc"
 msgstr "空白 CD 光碟"
 
 #. http://en.wikipedia.org/wiki/DVD
-#: ../freedesktop.org.xml.in.h:581
+#: ../freedesktop.org.xml.in.h:582
 msgid "blank DVD disc"
 msgstr "空白 DVD 光碟"
 
 #. http://en.wikipedia.org/wiki/HD_DVD
-#: ../freedesktop.org.xml.in.h:583
+#: ../freedesktop.org.xml.in.h:584
 msgid "blank HD DVD disc"
 msgstr "空白 HD DVD 光碟"
 
-#: ../freedesktop.org.xml.in.h:584
+#: ../freedesktop.org.xml.in.h:585
 msgid "block device"
 msgstr "區塊裝置"
 
-#: ../freedesktop.org.xml.in.h:585
+#: ../freedesktop.org.xml.in.h:586
 msgid "character device"
 msgstr "字元裝置"
 
-#: ../freedesktop.org.xml.in.h:586
+#: ../freedesktop.org.xml.in.h:587
 msgid "comic book archive"
 msgstr "漫畫書封存檔"
 
-#: ../freedesktop.org.xml.in.h:587
+#: ../freedesktop.org.xml.in.h:588
 msgid "compound document"
 msgstr "複合文件"
 
-#: ../freedesktop.org.xml.in.h:588
+#: ../freedesktop.org.xml.in.h:589
 msgid "compound documents"
 msgstr "複合文件"
 
-#: ../freedesktop.org.xml.in.h:589
+#: ../freedesktop.org.xml.in.h:590
 msgid "compressed GIMP image"
 msgstr "壓縮版 GIMP 影像"
 
-#: ../freedesktop.org.xml.in.h:590
+#: ../freedesktop.org.xml.in.h:591
 msgid "compressed SVG image"
 msgstr "壓縮版 SVG 影像"
 
-#: ../freedesktop.org.xml.in.h:591
+#: ../freedesktop.org.xml.in.h:592
 msgid "compressed Tracker audio"
 msgstr "壓縮版 Tracker 音訊"
 
-#: ../freedesktop.org.xml.in.h:592
+#: ../freedesktop.org.xml.in.h:593
 msgid "desktop configuration file"
 msgstr "桌面組態檔"
 
-#: ../freedesktop.org.xml.in.h:593
+#: ../freedesktop.org.xml.in.h:594
 msgid "detached OpenPGP signature"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:594
+#: ../freedesktop.org.xml.in.h:595
 msgid "detached S/MIME signature"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:595
+#: ../freedesktop.org.xml.in.h:596
 msgid "differences between files"
 msgstr "檔案內容差異"
 
 #. http://en.wikipedia.org/wiki/Design_rule_for_Camera_File_system
-#: ../freedesktop.org.xml.in.h:597
+#: ../freedesktop.org.xml.in.h:598
 msgid "digital photos"
 msgstr "數位相片"
 
-#: ../freedesktop.org.xml.in.h:598
+#: ../freedesktop.org.xml.in.h:599
 msgid "digital raw image"
 msgstr "數位原生影像"
 
 #. see fd.o hal spec
-#: ../freedesktop.org.xml.in.h:600
+#: ../freedesktop.org.xml.in.h:601
 msgid "e-book reader"
 msgstr "e-book 愈毒氣"
 
-#: ../freedesktop.org.xml.in.h:601
+#: ../freedesktop.org.xml.in.h:602
 msgid "eMusic download package"
 msgstr "eMusic 下載套件"
 
-#: ../freedesktop.org.xml.in.h:602
+#: ../freedesktop.org.xml.in.h:603
 msgid "electronic book document"
 msgstr "電子書文件"
 
-#: ../freedesktop.org.xml.in.h:603
+#: ../freedesktop.org.xml.in.h:604
 msgid "electronic business card"
 msgstr "電子商務名片"
 
-#: ../freedesktop.org.xml.in.h:604
+#: ../freedesktop.org.xml.in.h:605
 msgid "email headers"
 msgstr "電子郵件標頭"
 
-#: ../freedesktop.org.xml.in.h:605
+#: ../freedesktop.org.xml.in.h:606
 msgid "email message"
 msgstr "電子郵件內容"
 
-#: ../freedesktop.org.xml.in.h:606
+#: ../freedesktop.org.xml.in.h:607
 msgid "empty document"
 msgstr "空白文件"
 
-#: ../freedesktop.org.xml.in.h:607
+#: ../freedesktop.org.xml.in.h:608
 msgid "encrypted message"
 msgstr "加密訊息"
 
-#: ../freedesktop.org.xml.in.h:608
+#: ../freedesktop.org.xml.in.h:609
 msgid "enriched text document"
 msgstr "豐富化文字文件"
 
-#: ../freedesktop.org.xml.in.h:609
+#: ../freedesktop.org.xml.in.h:610
 msgid "executable"
 msgstr "可執行檔"
 
-#: ../freedesktop.org.xml.in.h:610
+#: ../freedesktop.org.xml.in.h:611
 msgid "folder"
 msgstr "資料夾"
 
-#: ../freedesktop.org.xml.in.h:611
+#: ../freedesktop.org.xml.in.h:612
 msgid "generic font file"
 msgstr "通用字型檔"
 
-#: ../freedesktop.org.xml.in.h:612
+#: ../freedesktop.org.xml.in.h:613
 msgid "help page"
 msgstr "幫助頁面"
 
-#: ../freedesktop.org.xml.in.h:613
+#: ../freedesktop.org.xml.in.h:614
 msgid "iMelody ringtone"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:614
+#: ../freedesktop.org.xml.in.h:615
 msgid "iPod firmware"
 msgstr "iPod 韌體"
 
-#: ../freedesktop.org.xml.in.h:615
+#: ../freedesktop.org.xml.in.h:616
 msgid "iRiver Playlist"
 msgstr "iRiver 播放清單"
 
-#: ../freedesktop.org.xml.in.h:616
+#: ../freedesktop.org.xml.in.h:617
 msgid "installation instructions"
 msgstr "安裝指引"
 
-#: ../freedesktop.org.xml.in.h:617
+#: ../freedesktop.org.xml.in.h:618
 msgid "iptables configuration file"
 msgstr "iptables 組態檔"
 
-#: ../freedesktop.org.xml.in.h:618
+#: ../freedesktop.org.xml.in.h:619
 msgid "libtool shared library"
 msgstr "libtool 共享函式庫"
 
-#: ../freedesktop.org.xml.in.h:619
+#: ../freedesktop.org.xml.in.h:620
 msgid "license terms"
 msgstr "授權條款"
 
-#: ../freedesktop.org.xml.in.h:620
+#: ../freedesktop.org.xml.in.h:621
 msgid "mail delivery report"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:621
+#: ../freedesktop.org.xml.in.h:622
 msgid "mail disposition report"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:622
+#: ../freedesktop.org.xml.in.h:623
 msgid "mail system report"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:623
+#: ../freedesktop.org.xml.in.h:624
 msgid "mailbox file"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:624
+#: ../freedesktop.org.xml.in.h:625
 msgid "manual page (compressed)"
 msgstr "手冊頁面 (壓縮版)"
 
-#: ../freedesktop.org.xml.in.h:625
+#: ../freedesktop.org.xml.in.h:626
 msgid "message catalog"
 msgstr "訊息目錄"
 
-#: ../freedesktop.org.xml.in.h:626
+#: ../freedesktop.org.xml.in.h:627
 msgid "message digest"
 msgstr "訊息摘要"
 
-#: ../freedesktop.org.xml.in.h:627
+#: ../freedesktop.org.xml.in.h:628
 msgid "message in several formats"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:628
+#: ../freedesktop.org.xml.in.h:629
 msgid "mount point"
 msgstr "掛載點"
 
-#: ../freedesktop.org.xml.in.h:629
+#: ../freedesktop.org.xml.in.h:630
 msgid "object code"
 msgstr "目的碼"
 
-#: ../freedesktop.org.xml.in.h:630
+#: ../freedesktop.org.xml.in.h:631
 msgid "packed font file"
 msgstr "包裝字型檔"
 
-#: ../freedesktop.org.xml.in.h:631
+#: ../freedesktop.org.xml.in.h:632
 msgid "partial email message"
 msgstr "部份電子郵件訊息"
 
-#: ../freedesktop.org.xml.in.h:632
+#: ../freedesktop.org.xml.in.h:633
 msgid "pipe"
 msgstr "管線"
 
-#: ../freedesktop.org.xml.in.h:633
+#: ../freedesktop.org.xml.in.h:634
 msgid "plain text document"
 msgstr "純文字文件"
 
 #. see fd.o hal spec
-#: ../freedesktop.org.xml.in.h:635
+#: ../freedesktop.org.xml.in.h:636
 msgid "portable audio player"
 msgstr "可攜式音訊播放程式"
 
-#: ../freedesktop.org.xml.in.h:636
+#: ../freedesktop.org.xml.in.h:637
 msgid "profiler results"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:637
+#: ../freedesktop.org.xml.in.h:638
 msgid "program crash data"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:638
+#: ../freedesktop.org.xml.in.h:639
 msgid "raw CD image"
 msgstr "原生 CD 映像"
 
-#: ../freedesktop.org.xml.in.h:639
+#: ../freedesktop.org.xml.in.h:640
 msgid "reference to remote file"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:640
+#: ../freedesktop.org.xml.in.h:641
 msgid "rejected patch"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:641
+#: ../freedesktop.org.xml.in.h:642
 msgid "resource location"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:642
+#: ../freedesktop.org.xml.in.h:643
 msgid "rich text document"
 msgstr "豐富文字文件"
 
-#: ../freedesktop.org.xml.in.h:643
+#: ../freedesktop.org.xml.in.h:644
 msgid "shared library"
 msgstr "共享函式庫"
 
-#: ../freedesktop.org.xml.in.h:644
+#: ../freedesktop.org.xml.in.h:645
 msgid "shell archive"
 msgstr "shell 封存檔"
 
-#: ../freedesktop.org.xml.in.h:645
+#: ../freedesktop.org.xml.in.h:646
 msgid "shell script"
 msgstr "shell 指令稿"
 
-#: ../freedesktop.org.xml.in.h:646
+#: ../freedesktop.org.xml.in.h:647
 msgid "shortcut to Kexi project on database server"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:647
+#: ../freedesktop.org.xml.in.h:648
 msgid "signed message"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:648
+#: ../freedesktop.org.xml.in.h:649
 msgid "socket"
 msgstr "socket"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: ../freedesktop.org.xml.in.h:651
+#: ../freedesktop.org.xml.in.h:652
 msgid "software"
 msgstr "軟體"
 
-#: ../freedesktop.org.xml.in.h:652
+#: ../freedesktop.org.xml.in.h:653
 msgid "spreadsheet interchange document"
 msgstr "試算表交換文件"
 
-#: ../freedesktop.org.xml.in.h:653
+#: ../freedesktop.org.xml.in.h:654
 msgid "stream of data (server push)"
 msgstr "資料串流 (server push)"
 
-#: ../freedesktop.org.xml.in.h:654
+#: ../freedesktop.org.xml.in.h:655
 msgid "symbolic link"
 msgstr "符號鏈結"
 
-#: ../freedesktop.org.xml.in.h:655
+#: ../freedesktop.org.xml.in.h:656
 msgid "theme"
 msgstr "佈景主題"
 
-#: ../freedesktop.org.xml.in.h:656
+#: ../freedesktop.org.xml.in.h:657
 msgid "translated messages (machine-readable)"
 msgstr "翻譯訊息 (程式讀取格式)"
 
-#: ../freedesktop.org.xml.in.h:657
+#: ../freedesktop.org.xml.in.h:658
 msgid "translation file"
 msgstr "翻譯檔"
 
-#: ../freedesktop.org.xml.in.h:658
+#: ../freedesktop.org.xml.in.h:659
 msgid "translation template"
 msgstr "翻譯模版"
 
-#: ../freedesktop.org.xml.in.h:659
+#: ../freedesktop.org.xml.in.h:660
 msgid "txt2tags document"
 msgstr "txt2tags 文件"
 
-#: ../freedesktop.org.xml.in.h:660
+#: ../freedesktop.org.xml.in.h:661
 msgid "unknown"
 msgstr "不明"
 
 #. http://en.wikipedia.org/wiki/DVD-Video
-#: ../freedesktop.org.xml.in.h:662
+#: ../freedesktop.org.xml.in.h:663
 msgid "video DVD"
 msgstr "視訊 DVD"
-
-#~ msgid "Andrew Toolkit inset"
-#~ msgstr "Andrew Toolkit 元件檔"
-#~ msgid "AutoDesk FLIC animation"
-#~ msgstr "AutoDesk FLIC 動畫"
-#~ msgid "C source code header"
-#~ msgstr "C 源代碼標頭檔"
-#~ msgid "CGI script"
-#~ msgstr "CGI 描述語言檔"
-#~ msgid "Device Independant Bitmap"
-#~ msgstr "DIB 點陣圖"
-#~ msgid "Digital Imaging and Communications in Medicine image"
-#~ msgstr "DICOM 醫學影像"
-#~ msgid "Digital Moving Picture Exchange image"
-#~ msgstr "DPX 影像"
-#~ msgid "Encapsulated PostScript image"
-#~ msgstr "Encapsulated PostScript 文件"
-#~ msgid "Flexible Image Transport System"
-#~ msgstr "FITS 影像"
-#~ msgid "GnuCash spreadsheet"
-#~ msgstr "GnuCash 試算表"
-#~ msgid "HP Graphics Language (plotter)"
-#~ msgstr "HP 繪圖語言 (plotter)"
-#~ msgid "HP Printer Control Language file"
-#~ msgstr "HP PCL 檔"
-#~ msgid "HTML page"
-#~ msgstr "HTML 檔"
-#~ msgid "Literate haskell source code"
-#~ msgstr "Literate haskell 源代碼"
-#~ msgid "Macintosh StuffIt archive"
-#~ msgstr "Macintosh StuffIt 封存檔"
-#~ msgid "Microsoft AVI video"
-#~ msgstr "微軟 AVI 視訊"
-#~ msgid "Microsoft WMF file"
-#~ msgstr "微軟 WMF 影像"
-#~ msgid "Microsoft WMV video"
-#~ msgstr "微軟 WMV 視訊"
-#~ msgid "Microsoft Write document"
-#~ msgstr "微軟 Write 文件"
-#~ msgid "Netscape bookmarks"
-#~ msgstr "Netscape 書籤"
-#~ msgid "OpenDocument Chart"
-#~ msgstr "OpenDocument 圖表"
-#~ msgid "OpenDocument Database"
-#~ msgstr "OpenDocument 數據庫"
-#~ msgid "OpenDocument Drawing"
-#~ msgstr "OpenDocument 繪圖"
-#~ msgid "OpenDocument Drawing Template"
-#~ msgstr "OpenDocument 繪圖範本"
-#~ msgid "OpenDocument Formula"
-#~ msgstr "OpenDocument 算式"
-#~ msgid "OpenDocument Image"
-#~ msgstr "OpenDocument 影像"
-#~ msgid "OpenDocument Master Document"
-#~ msgstr "OpenDocument 主文件"
-#~ msgid "OpenDocument Presentation"
-#~ msgstr "OpenDocument 簡報"
-#~ msgid "OpenDocument Presentation Template"
-#~ msgstr "OpenDocument 簡報範本"
-#~ msgid "OpenDocument Spreadsheet"
-#~ msgstr "OpenDocument 試算表"
-#~ msgid "OpenDocument Spreadsheet Template"
-#~ msgstr "OpenDocument 試算表範本"
-#~ msgid "OpenDocument Text"
-#~ msgstr "OpenDocument 文書"
-#~ msgid "OpenDocument Text Template"
-#~ msgstr "OpenDocument 文書範本"
-#~ msgid "Palmpilot database/document"
-#~ msgstr "Palmpilot 數據庫/文件"
-#~ msgid "Portable Graymap File Format"
-#~ msgstr "Portable Graymap 影像"
-#~ msgid "Portable Pixmap File Format"
-#~ msgstr "Portable Pixmap 影像"
-#~ msgid "RealAudio broadcast"
-#~ msgstr "RealAudio 廣播"
-#~ msgid "RealVideo video"
-#~ msgstr "RealVideo 視訊"
-#~ msgid "Rich Text Format"
-#~ msgstr "RTF 文件"
-#~ msgid "SUN Rasterfile image"
-#~ msgstr "SUN Rasterfile 影像"
-#~ msgid "Silicon Graphics IRIS image"
-#~ msgstr "Silicon Graphics IRIS 影像"
-#~ msgid "Truevision Targa image"
-#~ msgstr "Truevision Targa 影像"
-#~ msgid "X PixMap image"
-#~ msgstr "X PixMap 影像"
-#~ msgid "ZIP archive"
-#~ msgstr "ZIP 封存檔"
-#~ msgid "eXtensible Markup Language document"
-#~ msgstr "XML 文件"
-#~ msgid "font"
-#~ msgstr "字型"
-#~ msgid "gtar archive"
-#~ msgstr "gtar 封存檔"
-#~ msgid "gzip archive"
-#~ msgstr "gzip 封存檔"
-#~ msgid "shared library (la)"
-#~ msgstr "共享函式庫 (la)"
-#~ msgid "Korn shell script"
-#~ msgstr "Korn shell 描述語言檔"
-#~ msgid "Invalid MIME-type '%s'"
-#~ msgstr "MIME 類型 ‘%s’ 無效"
-#~ msgid "Missing 'localName' attribute'"
-#~ msgstr "缺少了 ‘localName’ 屬性"
-#~ msgid "namespaceURI and localName attributes can't both be empty"
-#~ msgstr "namespaceURI 和 localName 屬性不可以同時是空白"
-#~ msgid "Failed to parse '%s'\n"
-#~ msgstr "無法解析‘%s’\n"
-#~ msgid "Missing 'type' attribute in <match>"
-#~ msgstr "<match> 中缺少了 ‘type’ 屬性"
-#~ msgid "Error in <match> element: "
-#~ msgstr "<match> 元素中發生錯誤: "
-#~ msgid ""
-#~ "%s: I don't have write permission on %s.\n"
-#~ "Try rerunning me as root.\n"
-#~ msgstr ""
-#~ "%s: 您沒有權限寫入 %s。\n"
-#~ "請嘗試以 root 的身分再執行一次。\n"
-#~ msgid "Directory '%s' does not exist!\n"
-#~ msgstr "‘%s’ 目錄不存在！\n"
-

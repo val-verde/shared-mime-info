@@ -100,7 +100,7 @@ check: create-pot freedesktop.org.xml update-mime-database check-translations
 	fi
 	@echo Number of mime-types that might need generic-icon: `grep "mime-type type=" $(srcdir)/freedesktop.org.xml.in | grep -v video/ | grep -v image/ | grep -v text/ | grep -v audio/ | grep -v "octet-stream" | wc -l` ; \
 	echo Number of mime-types with a generic icon: `grep "generic-icon name=" $(srcdir)/freedesktop.org.xml.in | wc -l` ;
-	
+
 check-translations:
 	@for i in $(top_srcdir)/po/*.po ; do								\
 		if ! grep -q `basename $$i | sed 's,.po,,'` $(top_srcdir)/po/LINGUAS ; then		\
@@ -108,6 +108,10 @@ check-translations:
 			exit 1;										\
 		fi;											\
 	done;
+
+update-translations: create-pot
+	@tx pull --all --force --skip
+	@tx push --source
 
 # Build ChangeLog from GIT history
 ChangeLog:

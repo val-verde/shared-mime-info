@@ -60,6 +60,7 @@ http://cgit.freedesktop.org/xdg/xdgmime/
 Releasing
 ---------
 
+- Run "make update-translations" and "make check-translations" before release
 - Copy the file to ~hadess/public_html on gabe.freedesktop.org
 - Update http://www.freedesktop.org/wiki/Software/shared-mime-info
 

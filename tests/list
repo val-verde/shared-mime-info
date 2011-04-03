@@ -334,3 +334,6 @@ bluish.icc application/vnd.iccprofile
 test.it87 application/x-it87
 test.hdf4 application/x-hdf
 test.h5 application/x-hdf
+# From http://wiki.wireshark.org/SampleCaptures (ancp.pcap.gz, dns.cap)
+ancp.pcap application/vnd.tcpdump.pcap
+dns.cap application/vnd.tcpdump.pcap

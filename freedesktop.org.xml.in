@@ -2803,10 +2803,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.alz"/>
   </mime-type>
-  <mime-type type="application/x-reject">
+  <mime-type type="text/x-reject">
     <_comment>rejected patch</_comment>
     <sub-class-of type="text/plain"/>
     <generic-icon name="text-x-generic"/>
+    <alias type="application/x-reject"/>
     <glob pattern="*.rej"/>
   </mime-type>
   <mime-type type="application/x-rpm">

@@ -2434,6 +2434,7 @@ command to generate the output files.
         <match type="string" value="BASEURL=" offset="11"/>
       </match>
     </magic>
+    <glob pattern="*.url"/>
   </mime-type>
   <mime-type type="application/x-mswrite">
     <_comment>WRI document</_comment>
@@ -5202,8 +5203,6 @@ command to generate the output files.
     <_comment>resource location</_comment>
     <sub-class-of type="text/plain"/>
     <!-- Note: text/uri-list is reserved by the XDND protocol! -->
-    <glob pattern="*.uri"/>
-    <glob pattern="*.url"/>
   </mime-type>
   <mime-type type="text/x-xmi">
     <_comment>XMI file</_comment>

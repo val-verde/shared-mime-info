@@ -253,20 +253,28 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/pkcs7-mime">
     <_comment>S/MIME file</_comment>
+    <acronym>S/MIME</acronym>
+    <expanded-acronym>Secure/Multipurpose Internet Mail Extensions</expanded-acronym>
     <generic-icon name="text-x-generic"/>
   </mime-type>
   <mime-type type="application/pkcs7-signature">
     <_comment>detached S/MIME signature</_comment>
+    <acronym>S/MIME</acronym>
+    <expanded-acronym>Secure/Multipurpose Internet Mail Extensions</expanded-acronym>
     <sub-class-of type="text/plain"/>
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.p7s"/>
   </mime-type>
   <mime-type type="application/pkcs8">
     <_comment>PKCS#8 private key</_comment>
+    <acronym>PKCS</acronym>
+    <expanded-acronym>Public-Key Cryptography Standards</expanded-acronym>
     <glob pattern="*.p8"/>
   </mime-type>
   <mime-type type="application/pkcs10">
     <_comment>PKCS#10 certification request</_comment>
+    <acronym>PKCS</acronym>
+    <expanded-acronym>Public-Key Cryptography Standards</expanded-acronym>
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.p10"/>
   </mime-type>
@@ -303,6 +311,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/relax-ng-compact-syntax">
     <_comment>RELAX NG XML schema</_comment>
+    <acronym>RELAX NG</acronym>
+    <expanded-acronym>REgular LAnguage for XML Next Generation</expanded-acronym>
     <sub-class-of type="text/plain"/>
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.rnc"/>
@@ -1605,6 +1615,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-dvi">
     <_comment>TeX DVI document</_comment>
+    <acronym>DVI</acronym>
+    <expanded-acronym>Device independent file format</expanded-acronym>
     <generic-icon name="x-office-document"/>
     <magic priority="50">
       <match type="little16" value="0x02f7" offset="0"/>
@@ -2720,11 +2732,15 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-pkcs7-certificates">
     <_comment>PKCS#7 certificate bundle</_comment>
+    <acronym>PKCS</acronym>
+    <expanded-acronym>Public-Key Cryptography Standards</expanded-acronym>
     <glob pattern="*.p7b"/>
     <glob pattern="*.spc"/>
   </mime-type>
   <mime-type type="application/x-pkcs12">
     <_comment>PKCS#12 certificate bundle</_comment>
+    <acronym>PKCS</acronym>
+    <expanded-acronym>Public-Key Cryptography Standards</expanded-acronym>
     <glob pattern="*.p12"/>
     <glob pattern="*.pfx"/>
   </mime-type>

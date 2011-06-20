@@ -75,9 +75,9 @@ create-pot:
 
 check: create-pot freedesktop.org.xml update-mime-database check-translations
 	if test -e $(top_builddir)/freedesktop.org.xml; then \
-		xmllint --noout --valid $(top_builddir)/freedesktop.org.xml;	\
+		xmllint --noout --valid $(top_builddir)/freedesktop.org.xml || exit 1;	\
 	else \
-		xmllint --noout --valid $(top_srcdir)/freedesktop.org.xml;	\
+		xmllint --noout --valid $(top_srcdir)/freedesktop.org.xml || exit 1;	\
 	fi; \
 	if test -d .git/ && test -x $(top_builddir)/update-mime-database && test -d $(top_srcdir)/mime-db-tests ; then \
 		$(top_builddir)/update-mime-database mime-db-tests/ ; \

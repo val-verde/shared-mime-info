@@ -1851,7 +1851,6 @@ command to generate the output files.
       <match type="string" value="EAMG" offset="640"/>
     </magic>
     <glob pattern="*.gen"/>
-    <glob pattern="*.md"/>
   </mime-type>
   <mime-type type="application/x-gettext-translation">
     <_comment>translated messages (machine-readable)</_comment>
@@ -5012,6 +5011,13 @@ command to generate the output files.
       <match type="string" value="#!/usr/bin/make" offset="0"/>
       <match type="string" value="#! /usr/bin/make" offset="0"/>
     </magic>
+  </mime-type>
+  <mime-type type="text/x-markdown">
+    <_comment>Markdown document</_comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.md"/>
+    <glob pattern="*.mkd"/>
+    <glob pattern="*.markdown"/>
   </mime-type>
   <mime-type type="text/x-moc">
     <_comment>Qt MOC file</_comment>

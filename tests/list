@@ -322,6 +322,8 @@ Makefile.gnu text/x-makefile ox
 googleearth.kml application/vnd.google-earth.kml+xml ox
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=15260
 test.gnd application/gnunet-directory
+# Copied from https://bugs.freedesktop.org/show_bug.cgi?id=27441
+markdown.md text/x-markdown oxo
 text.ps application/postscript
 text.ps.gz application/x-gzpostscript ox
 text.PS.gz application/x-gzpostscript oxo

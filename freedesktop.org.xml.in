@@ -2990,6 +2990,17 @@ command to generate the output files.
     </magic>
     <glob pattern="*.srt"/>
   </mime-type>
+  <mime-type type="text/vtt">
+    <_comment>WebVTT subtitles</_comment>
+    <acronym>VTT</acronym>
+    <expanded-acronym>Video Text Tracks</expanded-acronym>
+    <sub-class-of type="text/plain"/>
+    <generic-icon name="text-x-generic"/>
+    <magic priority="50">
+      <match type="string" value="WEBVTT" offset="0"/>
+    </magic>
+    <glob pattern="*.vtt"/>
+  </mime-type>
   <mime-type type="application/x-sami">
     <_comment>SAMI subtitles</_comment>
     <acronym>SAMI</acronym>

@@ -41,6 +41,8 @@ test.ps  application/postscript
 test.psd image/vnd.adobe.photoshop
 test.sgi image/x-sgi ox
 test.tga image/x-tga
+# Uncompressed TGA
+test2.tga image/x-tga
 test.tif image/tiff
 test.xbm image/x-xbitmap ox
 test.xcf image/x-xcf

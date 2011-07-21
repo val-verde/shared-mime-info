@@ -4513,7 +4513,14 @@ command to generate the output files.
       <match type="string" value="\0\3" offset="1"/>
       <match type="string" value="\0\xa" offset="1"/>
       <match type="string" value="\0\xb" offset="1"/>
-      <match type="string" value="\0\2" offset="1"/> <!-- Same magic as CUR files -->
+    </magic>
+    <magic priority="50">
+      <match type="string" value="\0\2" offset="1">
+        <match type="byte" value="0x08" offset="16"/>
+        <match type="byte" value="0x10" offset="16"/>
+        <match type="byte" value="0x18" offset="16"/>
+        <match type="byte" value="0x20" offset="16"/>
+      </match>
     </magic>
     <glob pattern="*.icb"/>
     <glob pattern="*.tga"/>

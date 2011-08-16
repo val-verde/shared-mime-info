@@ -2728,6 +2728,8 @@ command to generate the output files.
     <glob pattern="*.php"/>
     <glob pattern="*.php3"/>
     <glob pattern="*.php4"/>
+    <glob pattern="*.php5"/>
+    <glob pattern="*.phps"/>
   </mime-type>
   <mime-type type="application/x-pkcs7-certificates">
     <_comment>PKCS#7 certificate bundle</_comment>

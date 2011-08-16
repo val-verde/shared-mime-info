@@ -2913,6 +2913,7 @@ command to generate the output files.
       <match type="string" value="/bin/zsh" offset="1:16"/>
       <match type="string" value="/bin/sh" offset="1:16"/>
       <match type="string" value="/bin/ksh" offset="1:16"/>
+      <match type="string" value="/bin/dash" offset="1:16"/>
       <match type="string" value="#!/usr/bin/env sh" offset="0"/>
       <match type="string" value="#!/usr/bin/env bash" offset="0"/>
       <match type="string" value="#!/usr/bin/env zsh" offset="0"/>

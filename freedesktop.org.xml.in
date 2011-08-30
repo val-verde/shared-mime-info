@@ -5173,6 +5173,11 @@ command to generate the output files.
       <match type="string" value="%define " offset="0"/>
     </magic>
   </mime-type>
+  <mime-type type="text/x-scala">
+    <_comment>Scala source code</_comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.scala"/>
+  </mime-type>
   <mime-type type="text/x-scheme">
     <_comment>Scheme source code</_comment>
     <sub-class-of type="text/plain"/>

@@ -189,6 +189,7 @@ command to generate the output files.
     <generic-icon name="audio-x-generic"/>
     <magic priority="50">
       <match type="string" value="&lt;playlist version=&quot;1" offset="0:64"/>
+      <match type="string" value="&lt;playlist version='1" offset="0:64"/>
     </magic>
     <glob pattern="*.xspf"/>
     <root-XML namespaceURI="http://xspf.org/ns/0/" localName="playlist"/>

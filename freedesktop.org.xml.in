@@ -1446,8 +1446,9 @@ command to generate the output files.
       <match type="string" value="[Event " offset="0"/>
     </magic>
   </mime-type>
-  <mime-type type="application/x-chm">
+  <mime-type type="application/vnd.ms-htmlhelp">
     <_comment>CHM document</_comment>
+    <alias type="application/x-chm"/>
     <acronym>CHM</acronym>
     <expanded-acronym>Compiled Help Modules</expanded-acronym>
     <generic-icon name="x-office-document"/>

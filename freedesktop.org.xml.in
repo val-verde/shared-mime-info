@@ -1448,11 +1448,11 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.ms-htmlhelp">
     <_comment>CHM document</_comment>
-    <alias type="application/x-chm"/>
     <acronym>CHM</acronym>
     <expanded-acronym>Compiled Help Modules</expanded-acronym>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.chm"/>
+    <alias type="application/x-chm"/>
   </mime-type>
   <mime-type type="application/x-class-file">
     <_comment>Java byte code</_comment>

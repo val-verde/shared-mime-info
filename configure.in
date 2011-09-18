@@ -1,6 +1,6 @@
 AC_INIT([shared-mime-info],[0.90],[https://bugs.freedesktop.org/enter_bug.cgi?product=shared-mime-info])
 
-AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-bzip2 check-news])
+AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz check-news])
 
 AC_CONFIG_HEADERS([config.h])
 

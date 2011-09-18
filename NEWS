@@ -1,3 +1,43 @@
+shared-mime-info 0.91 (2011-09-18)
+* Mime-type Changes:
+- Add WWF
+- Add application/vnd.android.package-archive.
+- Add root-XML for SVG
+- Add Qt QML
+- Add application/x-fictionbook
+- Add application/x-mobipocket-ebook
+- Add another alias for ASX playlists
+- Add video/3gp, video/x-mpeg, video/x-mpeg2,
+  video/divx, and video/msvideo aliases
+- Add MSOffice 12 and OOXML mime-types
+- Add video/vnd.mpegurl
+- Java class tweaks
+- Add magic for Megadrive ROMs
+- Add application/vnd.tcpdump.pcap
+- Fix root-XML for XSL
+- Add extension for Scheme text files
+- Add extensions for VRML documents
+- Loosen magic for FLTK fluid files
+- Move application/x-reject to text/x-reject
+- Add application/x-nzb
+- Remove glob from text/x-uri
+- Added a *.wsgi pattern for python scripts
+- Add DVI, PKCS, RELAX NG, and S/MIME acronyms.
+- Use text/vcard instead of deprecated text/directory for vCards.
+- Add text/x-markdown
+- Add WebVTT
+- Add *.php5 and *.phps as patterns for PHP
+- Make dash scripts shell scripts
+- Add application/x-iso9660-image alias for application/x-cd-image
+- Add text/x-scala mime type
+- Add another magic for XSPF files
+- Update CHM mime-type to application/vnd.ms-htmlhelp
+
+* Other:
+- Fix parallel build
+- Update GPLv2 COPYING file
+- Use XZ tarballs by default
+
 shared-mime-info 0.90 (2010-12-1)
 * Mime-type Changes:
 - Make application/epub+zip sub-class-of application/zip

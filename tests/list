@@ -167,19 +167,20 @@ live-streaming.m3u application/vnd.apple.mpegurl x
 all_w.m3u8 application/vnd.apple.mpegurl x
 
 # text
-text-iso8859-15.txt text/plain ox
-text-utf8.txt text/plain ox
+text-iso8859-15.txt text/plain
+text-utf8.txt text/plain
 test.tex text/x-tex
 # Copied from http://www.computerperformance.co.uk/vista/vista_reg_examples.htm
 registry.reg text/x-ms-regedit
 # Copied from http://www.ss64.com/nt/regedit.html
 registry-nt.reg text/x-ms-regedit
 # Copied from https://bugzilla.redhat.com/show_bug.cgi?id=430203#c3
-test.ext,v text/plain ox
+test.ext,v text/plain
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=14329
 test.fl application/x-fluid
 # From https://bugs.freedesktop.org/show_bug.cgi?id=30656
-bug-30656-xchat.conf application/octet-stream
+bug-30656-xchat.conf application/octet-stream oxx
+bug-30656-xchat.conf text/plain x
 helloworld.java text/x-java ox
 # Copied from http://asurvey.net/ccsfagent/media/survey.js
 survey.js application/javascript ox
@@ -195,7 +196,8 @@ test-cdrom.toc application/x-cdrdao-toc
 test.iptables text/x-iptables
 test-vpn.pcf application/x-cisco-vpn-settings x
 # From https://bugs.freedesktop.org/show_bug.cgi?id=20302
-menu.ini application/octet-stream
+menu.ini application/octet-stream oxx
+menu.ini text/plain x
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=16228
 test.php application/x-php
 # The 3 below copied from https://bugs.freedesktop.org/show_bug.cgi?id=15810
@@ -221,7 +223,7 @@ bibtex.bib text/x-bibtex
 # hand-made
 simple-obj-c.m text/x-objcsrc
 # http://www.apps.ietf.org/rfc/rfc4716.html#sec-3.6
-ssh-public-key.txt text/plain ox
+ssh-public-key.txt text/plain
 # http://tools.ietf.org/html/draft-ietf-vcarddav-vcardrev-22
 test.vcf text/vcard
 # Test Go source code

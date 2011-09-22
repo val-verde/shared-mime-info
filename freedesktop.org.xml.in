@@ -1213,6 +1213,7 @@ command to generate the output files.
     <glob pattern="*.abw.CRASHED"/>
     <glob pattern="*.abw.gz"/>
     <glob pattern="*.zabw"/>
+    <root-XML namespaceURI="http://www.abisource.com/awml.dtd" localName="abiword"/>
   </mime-type>
   <mime-type type="application/x-cue">
     <_comment>CD image cuesheet</_comment>
@@ -1606,6 +1607,7 @@ command to generate the output files.
     <magic priority="50">
       <match offset="5:100" type="string" value="&lt;dia:"/>
     </magic>
+    <root-XML namespaceURI="http://www.lysator.liu.se/~alla/dia/" localName="diagram"/>
   </mime-type>
   <mime-type type="application/x-dia-shape">
     <_comment>Dia shape</_comment>
@@ -1615,6 +1617,7 @@ command to generate the output files.
     <magic priority="50">
       <match offset="5:100" type="string" value="&lt;shape"/>
     </magic>
+    <root-XML namespaceURI="http://www.daa.com.au/~james/dia-shape-ns" localName="shape"/>
   </mime-type>
   <mime-type type="application/x-dvi">
     <_comment>TeX DVI document</_comment>
@@ -4642,6 +4645,7 @@ command to generate the output files.
     <glob pattern="*.rdf"/>
     <glob pattern="*.rdfs"/>
     <glob pattern="*.owl"/>
+    <root-XML namespaceURI="http://www.w3.org/1999/02/22-rdf-syntax-ns#" localName="RDF"/>
   </mime-type>
   <mime-type type="text/rfc822-headers">
     <_comment>email headers</_comment>
@@ -4673,6 +4677,7 @@ command to generate the output files.
     <magic priority="70">
       <match type="string" value="&lt;feed " offset="0:256"/>
     </magic>
+    <root-XML namespaceURI="http://www.w3.org/2005/Atom" localName="feed"/>
   </mime-type>
   <mime-type type="text/x-opml+xml">
     <_comment>OPML syndication feed</_comment>
@@ -5265,6 +5270,7 @@ command to generate the output files.
     <sub-class-of type="application/xml"/>
     <glob pattern="*.fo"/>
     <glob pattern="*.xslfo"/>
+    <root-XML namespaceURI="http://www.w3.org/1999/XSL/Format" localName="root"/>
   </mime-type>
   <mime-type type="text/x-iptables">
     <_comment>iptables configuration file</_comment>
@@ -5545,6 +5551,7 @@ command to generate the output files.
     <expanded-acronym>Keyhole Markup Language</expanded-acronym>
     <sub-class-of type="application/xml"/>
     <glob pattern="*.kml"/>
+    <root-XML namespaceURI="http://www.opengis.net/kml/2.2" localName="kml"/>
   </mime-type>
   <mime-type type="application/vnd.google-earth.kmz">
     <_comment>KML geographic compressed data</_comment>

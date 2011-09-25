@@ -5038,7 +5038,6 @@ command to generate the output files.
   <mime-type type="text/x-makefile">
     <_comment>Makefile</_comment>
     <sub-class-of type="text/plain"/>
-    <glob pattern="Makefile"/>
     <glob pattern="makefile"/>
     <glob pattern="GNUmakefile"/>
     <glob weight="10" pattern="Makefile.*"/>

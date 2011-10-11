@@ -5448,6 +5448,15 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <!-- Note: text/uri-list is reserved by the XDND protocol! -->
   </mime-type>
+  <mime-type type="text/x-uuencode">
+    <_comment>uuencoded file</_comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.uue"/>
+    <magic priority="50">
+      <match type="string" value="begin " offset="0"/>
+    </magic>
+    <alias type="zz-application/zz-winassoc-uu"/>
+  </mime-type>
   <mime-type type="text/x-xmi">
     <_comment>XMI file</_comment>
     <acronym>XMI</acronym>

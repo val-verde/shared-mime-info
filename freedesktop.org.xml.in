@@ -506,6 +506,7 @@ command to generate the output files.
     <alias type="application/x-123"/>
     <alias type="application/lotus123"/>
     <alias type="application/wk1"/>
+    <alias type="zz-application/zz-winassoc-123"/>
   </mime-type>
   <mime-type type="application/vnd.ms-access">
     <_comment>JET database</_comment>
@@ -522,6 +523,7 @@ command to generate the output files.
     <alias type="application/x-msaccess"/>
     <alias type="application/mdb"/>
     <alias type="application/x-mdb"/>
+    <alias type="zz-application/zz-winassoc-mdb"/>
   </mime-type>
   <mime-type type="application/vnd.ms-cab-compressed">
     <_comment>Microsoft Cabinet archive</_comment>
@@ -530,6 +532,7 @@ command to generate the output files.
       <match offset="0" type="string" value="MSCF\0\0\0\0" />
     </magic>
     <glob pattern="*.cab"/>
+    <alias type="zz-application/zz-winassoc-cab"/>
   </mime-type>
   <mime-type type="application/vnd.ms-excel">
     <_comment>Excel spreadsheet</_comment>
@@ -547,6 +550,7 @@ command to generate the output files.
     <glob pattern="*.xld"/>
     <alias type="application/msexcel"/>
     <alias type="application/x-msexcel"/>
+    <alias type="zz-application/zz-winassoc-xls"/>
   </mime-type>
   <mime-type type="application/vnd.ms-excel.addin.macroEnabled.12">
     <_comment>Excel add-in</_comment>
@@ -670,6 +674,7 @@ command to generate the output files.
     <glob pattern="*.doc"/>
     <alias type="application/vnd.ms-word"/>
     <alias type="application/x-msword"/>
+    <alias type="zz-application/zz-winassoc-doc"/>
   </mime-type>
   <mime-type type="application/msword-template">
     <_comment>Word template</_comment>

@@ -5272,6 +5272,8 @@ command to generate the output files.
     <expanded-acronym>XML Metadata Interchange</expanded-acronym>
     <sub-class-of type="application/xml"/>
     <glob pattern="*.xmi"/>
+    <root-XML namespaceURI="http://schema.omg.org/spec/XMI/2.0" localName="XMI"/>
+    <root-XML namespaceURI="http://schema.omg.org/spec/XMI/2.1" localName="XMI"/>
   </mime-type>
   <mime-type type="text/x-xslfo">
     <_comment>XSL FO file</_comment>

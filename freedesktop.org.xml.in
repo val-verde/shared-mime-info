@@ -5398,6 +5398,7 @@ command to generate the output files.
     <glob pattern="*.mp2"/>
     <glob pattern="*.mpe"/>
     <glob pattern="*.vob"/>
+    <glob pattern="[0-9][0-9][0-9].vdr"/>
   </mime-type>
   <mime-type type="video/vnd.mpegurl">
     <_comment>MPEG video (streamed)</_comment>

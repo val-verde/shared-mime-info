@@ -398,10 +398,11 @@ static gboolean process_freedesktop_node(Type *type, xmlNode *field,
 		if (pattern && *pattern)
 		{
 			Glob *glob;
-			GList *list = g_hash_table_lookup (globs_hash, pattern);
+			char *pat = case_sensitive ? g_strdup (pattern) : g_ascii_strdown (pattern, -1);
+			GList *list = g_hash_table_lookup (globs_hash, pat);
 			
 			glob = g_new0 (Glob, 1);
-			glob->pattern = g_strdup (pattern);
+			glob->pattern = pat;
 			glob->type = type;
 			glob->weight = weight;
 			glob->case_sensitive = case_sensitive;

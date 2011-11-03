@@ -79,6 +79,9 @@ create-pot:
 	$(AM_V_GEN) $(MAKE) -C po shared-mime-info.pot
 
 check: create-pot freedesktop.org.xml update-mime-database$(EXEEXT) check-translations
+if CROSS_COMPILING
+	@echo "Cross compiling: Skipping checks"
+else
 	if test -e $(top_builddir)/freedesktop.org.xml; then \
 		xmllint --noout --valid $(top_builddir)/freedesktop.org.xml || exit 1;	\
 	else \
@@ -103,6 +106,7 @@ check: create-pot freedesktop.org.xml update-mime-database$(EXEEXT) check-transl
 	fi
 	@echo Number of mime-types that might need generic-icon: `grep "mime-type type=" $(srcdir)/freedesktop.org.xml.in | grep -v video/ | grep -v image/ | grep -v text/ | grep -v audio/ | grep -v "octet-stream" | wc -l` ; \
 	echo Number of mime-types with a generic icon: `grep "generic-icon name=" $(srcdir)/freedesktop.org.xml.in | wc -l` ;
+endif
 
 check-translations:
 	@for i in $(top_srcdir)/po/*.po ; do								\

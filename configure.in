@@ -20,6 +20,9 @@ GETTEXT_PACKAGE=shared-mime-info
 AC_SUBST(GETTEXT_PACKAGE)
 AM_GLIB_GNU_GETTEXT
 
+dnl Check for cross compiling
+AM_CONDITIONAL(CROSS_COMPILING, test $cross_compiling = yes)
+
 dnl Check whether libxml and glib are present is installed
 PKG_CHECK_MODULES(ALL, \
 		  libxml-2.0 >= 2.4 \

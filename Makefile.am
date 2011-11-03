@@ -46,9 +46,15 @@ $(pkgconfig_DATA): config.status
 @INTLTOOL_XML_RULE@
 @INTLTOOL_DESKTOP_RULE@
 
+if CROSS_COMPILING
+  update_mime_database=$(UPDATE_MIME_DATABASE)
+else
+  update_mime_database="$(top_builddir)/update-mime-database$(EXEEXT)"
+endif
+
 install-data-hook: install-binPROGRAMS
 if ENABLE_UPDATE_MIMEDB
-	$(top_builddir)/update-mime-database$(EXEEXT) -V "$(DESTDIR)$(datadir)/mime"
+	$(update_mime_database) -V "$(DESTDIR)$(datadir)/mime"
 endif
 
 uninstall-hook:

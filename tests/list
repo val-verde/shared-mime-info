@@ -163,6 +163,8 @@ test.flac audio/flac
 live-streaming.m3u application/vnd.apple.mpegurl x
 # Copied from http://qthttp.apple.com.edgesuite.net/1006ad9g4hjk/all_w.m3u8
 all_w.m3u8 application/vnd.apple.mpegurl x
+# Copied from http://bugs.freedesktop.org/show_bug.cgi?id=42922
+test.vsd application/vnd.visio ox
 
 # text
 text-iso8859-15.txt text/plain

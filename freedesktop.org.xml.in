@@ -5734,6 +5734,8 @@ command to generate the output files.
     <treemagic>
       <treematch path="VIDEO_TS/VIDEO_TS.IFO" type="file" />
       <treematch path="VIDEO_TS/VIDEO_TS.IFO;1" type="file" />
+      <treematch path="VIDEO_TS.IFO" type="file" />
+      <treematch path="VIDEO_TS.IFO;1" type="file" />
     </treemagic>
   </mime-type>
 

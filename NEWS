@@ -1,3 +1,18 @@
+shared-mime-info 1.0 (2012-01-17)
+* Mime-type changes:
+- Add root-XML for AbiWord, Atom, Dia, Dia shape,
+  KML, RDF, XSL FO, metalink, XMI, SMIL
+- Add glob for VDR recordings
+- Make PBM/PPM detection more permissive
+- Fix magic for MP3 files without ID3
+- Add application/vnd.visio mimetype
+- Fix Amazon MP3 being detected as Qt Designer
+- Add application/acrobat alias for PDF files
+- Add support for detecting DVDs without VIDEO_TS dirs
+
+* Test suite adjustments for xdgmime bug fixes
+
+
 shared-mime-info 0.91 (2011-09-18)
 * Mime-type Changes:
 - Add WWF

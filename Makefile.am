@@ -71,7 +71,7 @@ uninstall-hook:
 all: check create-pot
 
 create-pot:
-	$(MAKE) -C po shared-mime-info.pot
+	$(AM_V_GEN) $(MAKE) -C po shared-mime-info.pot
 
 check: create-pot freedesktop.org.xml update-mime-database check-translations
 	if test -e $(top_builddir)/freedesktop.org.xml; then \

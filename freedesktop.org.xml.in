@@ -5698,6 +5698,15 @@ command to generate the output files.
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.it87"/>
   </mime-type>
+  <mime-type type="application/x-ccmx">
+    <_comment>CCMX color correction file</_comment>
+    <magic priority="50">
+      <match type="string" value="CCMX" offset="0"/>
+    </magic>
+    <sub-class-of type="text/plain"/>
+    <generic-icon name="text-x-generic"/>
+    <glob pattern="*.ccmx"/>
+  </mime-type>
 
   <!-- Tree content-types -->
   <mime-type type="x-content/image-dcf">

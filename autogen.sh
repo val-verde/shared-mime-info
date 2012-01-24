@@ -53,4 +53,6 @@ do_cmd autoconf
 
 cd $ORIGDIR || exit $?
 
-do_cmd $srcdir/configure --enable-maintainer-mode ${1+"$@"} && echo "Now type \`make' to compile" || exit 1
+if test -z "$NOCONFIGURE"; then
+    do_cmd $srcdir/configure --enable-maintainer-mode ${1+"$@"} && echo "Now type \`make' to compile" || exit 1
+fi

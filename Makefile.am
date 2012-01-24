@@ -68,7 +68,12 @@ uninstall-hook:
 	rm -f "$(DESTDIR)$(datadir)/mime/types"
 	rm -f "$(DESTDIR)$(datadir)/mime/version"
 
-all: check create-pot
+defaultmakedeps=create-pot
+if ENABLE_DEFAULT_MAKE_CHECK
+defaultmakedeps += check
+endif
+
+all: $(defaultmakedeps)
 
 create-pot:
 	$(AM_V_GEN) $(MAKE) -C po shared-mime-info.pot

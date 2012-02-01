@@ -165,6 +165,9 @@ live-streaming.m3u application/vnd.apple.mpegurl x
 all_w.m3u8 application/vnd.apple.mpegurl x
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=42922
 test.vsd application/vnd.visio ox
+# Copied from https://bugs.freedesktop.org/show_bug.cgi?id=40800
+test.dts audio/vnd.dts
+test.dtshd audio/vnd.dts.hd
 
 # text
 text-iso8859-15.txt text/plain

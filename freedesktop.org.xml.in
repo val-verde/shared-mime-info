@@ -3317,6 +3317,26 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ac3"/>
   </mime-type>
+  <mime-type type="audio/vnd.dts">
+    <_comment>DTS audio</_comment>
+    <magic priority="50">
+      <match type="big32" value="0x7FFE8001" offset="0"/> <!-- 16bits core be -->
+      <match type="little32" value="0xFE7F0180" offset="0"/> <!-- 16bits core le -->
+      <match type="big32" value="0x1FFFE800" offset="0"/> <!-- 14bits core be -->
+      <match type="little32" value="0xFF1F00E8" offset="0"/> <!-- 14bits core le -->
+    </magic>
+    <alias type="audio/x-dts"/>
+    <glob pattern="*.dts"/>
+  </mime-type>
+  <mime-type type="audio/vnd.dts.hd">
+    <_comment>DTSHD audio</_comment>
+    <sub-class-of type="audio/vnd.dts"/>
+    <magic priority="60">
+      <match type="big32" value="0x64582025" offset="0:18725"/> <!-- 16bits HD be -->
+    </magic>
+    <alias type="audio/x-dtshd"/>
+    <glob pattern="*.dtshd"/>
+  </mime-type>
   <mime-type type="audio/AMR">
     <_comment>AMR audio</_comment>
     <acronym>AMR</acronym>

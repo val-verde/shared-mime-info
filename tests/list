@@ -66,6 +66,9 @@ dia.shape application/x-dia-shape
 attachment.tif image/jpeg xox
 # First 512k of http://img.photographyblog.com/reviews/panasonic_lumix_dmc_fz38/sample_images/panasonic_lumix_dmc_fz38_05.rw2
 panasonic_lumix_dmc_fz38_05.rw2 image/x-panasonic-raw2
+# Copied from https://bugs.freedesktop.org/show_bug.cgi?id=39126
+bug39126-working.ppm image/x-portable-pixmap
+bug39126-broken.ppm image/x-portable-pixmap
 
 # Documents
 ooo-6.0.doc application/msword

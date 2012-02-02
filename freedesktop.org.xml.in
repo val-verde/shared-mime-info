@@ -263,11 +263,14 @@ command to generate the output files.
       <match type="string" value="-----BEGIN PGP SIGNATURE-----" offset="0"/>
     </magic>
   </mime-type>
+  <!-- defined in RFC 2311 -->
   <mime-type type="application/pkcs7-mime">
-    <_comment>S/MIME file</_comment>
-    <acronym>S/MIME</acronym>
-    <expanded-acronym>Secure/Multipurpose Internet Mail Extensions</expanded-acronym>
+    <_comment>PKCS#7 Message or Certificate</_comment>
+    <acronym>PKCS</acronym>
+    <expanded-acronym>Public-Key Cryptography Standards</expanded-acronym>
     <generic-icon name="text-x-generic"/>
+    <glob pattern="*.p7c"/>
+    <glob pattern="*.p7m"/>
   </mime-type>
   <mime-type type="application/pkcs7-signature">
     <_comment>detached S/MIME signature</_comment>

@@ -212,6 +212,10 @@ command to generate the output files.
     <generic-icon name="package-x-generic"/>
     <glob pattern="*.themepack"/>
   </mime-type>
+  <mime-type type="audio/x-amzxml">
+    <_comment>AmazonMP3 download file</_comment>
+    <glob pattern="*.amz"/>
+  </mime-type>
   <mime-type type="audio/x-gsm">
     <_comment>GSM 06.10 audio</_comment>
     <acronym>GSM</acronym>

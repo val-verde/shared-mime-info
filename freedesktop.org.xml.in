@@ -5108,6 +5108,8 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <glob pattern="makefile"/>
     <glob pattern="GNUmakefile"/>
+    <glob pattern="*.mk"/>
+    <glob pattern="*.mak"/>
     <glob weight="10" pattern="Makefile.*"/>
     <magic priority="50">
       <match type="string" value="#!/usr/bin/make" offset="0"/>

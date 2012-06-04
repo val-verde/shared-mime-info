@@ -319,7 +319,7 @@ to provide the text in multiple languages.
 <userinput>acronym</userinput> elements give experienced users a terse idea of the document contents.
 for example "ODS", "GEDCOM", "JPEG" and "XML".
 There may be many of these elements with different <userinput>xml:lang</userinput> attributes
-to provide the text in multiple languages, although these should only be used if absolutely neccessary.
+to provide the text in multiple languages, although these should only be used if absolutely necessary.
 				</para></listitem>
 				<listitem><para>
 <userinput>expanded-acronym</userinput> elements are the expanded versions of the acronym elements,
@@ -327,7 +327,7 @@ for example "OpenDocument Spreadsheet", "GEnealogical Data COMmunication", and "
 The purpose of these elements is to provide users a way to look up information on various MIME types or
 file formats in third-party resources.
 There may be many of these elements with different <userinput>xml:lang</userinput> attributes
-to provide the text in multiple languages, although these should only be used if absolutely neccessary.
+to provide the text in multiple languages, although these should only be used if absolutely necessary.
 				</para></listitem>
 				<listitem><para>
 <userinput>icon</userinput> elements specify the icon to be used for this particular mime-type, given

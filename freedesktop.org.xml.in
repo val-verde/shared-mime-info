@@ -2720,11 +2720,13 @@ command to generate the output files.
     </magic>
     <glob pattern="*.pak" />
   </mime-type>
-  <mime-type type="application/x-palm-database">
+  <mime-type type="application/vnd.palm">
     <_comment>Palm OS database</_comment>
-    <glob pattern="*.pdb"/>
     <glob pattern="*.prc"/>
-    <alias type="application/vnd.palm"/>
+    <glob pattern="*.pdb"/>
+    <glob pattern="*.pqa"/>
+    <glob pattern="*.oprc"/>
+    <alias type="application/x-palm-database"/>
   </mime-type>
   <mime-type type="application/x-par2">
     <_comment>Parchive archive</_comment>

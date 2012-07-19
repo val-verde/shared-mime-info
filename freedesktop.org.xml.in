@@ -4545,6 +4545,9 @@ command to generate the output files.
     <acronym>EMF</acronym>
     <expanded-acronym>Enhanced MetaFile</expanded-acronym>
     <glob pattern="*.emf"/>
+    <alias type="image/emf"/>
+    <alias type="application/x-emf"/>
+    <alias type="application/emf"/>
     <magic priority="50">
       <match type="little32" offset="0" value="0x00000001">
         <match type="little32" offset="40" value="0x464D4520">
@@ -4573,6 +4576,11 @@ command to generate the output files.
       </match>
     </magic>
     <glob pattern="*.wmf"/>
+    <alias type="image/wmf"/>
+    <alias type="image/x-win-metafile"/>
+    <alias type="application/x-wmf"/>
+    <alias type="application/wmf"/>
+    <alias type="application/x-msmetafile"/>
   </mime-type>
   <mime-type type="image/x-xbitmap">
     <_comment>XBM image</_comment>

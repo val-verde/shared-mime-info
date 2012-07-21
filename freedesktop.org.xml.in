@@ -689,6 +689,14 @@ command to generate the output files.
     <generic-icon name="x-office-document"/>
     <glob pattern="*.dot"/>
   </mime-type>
+  <mime-type type="application/gml+xml">
+    <_comment>GML document</_comment>
+    <acronym>GML</acronym>
+    <expanded-acronym>Geography Markup Language</expanded-acronym>
+    <glob pattern="*.gml"/>
+    <root-XML namespaceURI="http://www.opengis.net/gml/3.2" localName="gml"/>
+    <sub-class-of type="application/xml"/>
+  </mime-type>
   <mime-type type="application/gnunet-directory">
     <_comment>GNUnet search file</_comment>
     <magic priority="50">

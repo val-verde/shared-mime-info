@@ -873,7 +873,7 @@ former).
 		<para>
 Some types may or may not be instances of other types. For example, a
 spreadsheet file may be compressed or not. It is a valid spreadsheet file
-either way, but only inherits from application/x-gzip in one case. This
+either way, but only inherits from application/gzip in one case. This
 information cannot be represented statically; instead an application
 interested in this information should run all of the magic rules, and
 use the list of types returned as the subclasses.

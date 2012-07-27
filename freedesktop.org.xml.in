@@ -3936,6 +3936,25 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/x-pict">
     <_comment>Macintosh Quickdraw/PICT drawing</_comment>
+    <magic priority="50">
+      <match type="big16" value="0x0011" offset="10">
+        <match type="big16" value="0x02FF" offset="12">
+          <match type="big16" value="0x0C00" offset="14">
+            <match type="big16" value="0xFFFE" offset="16"/>
+          </match>
+        </match>
+      </match>
+    </magic>
+    <magic priority="50">
+      <match type="big16" value="0x0011" offset="522">
+        <match type="big16" value="0x02FF" offset="524">
+          <match type="big16" value="0x0C00" offset="526">
+            <match type="big16" value="0xFFFE" offset="528"/>
+          </match>
+        </match>
+      </match>
+    </magic>
+    <glob pattern="*.pct"/>
     <glob pattern="*.pict"/>
     <glob pattern="*.pict1"/>
     <glob pattern="*.pict2"/>

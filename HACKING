@@ -67,7 +67,7 @@ Releasing
 Updating the spec on the website
 --------------------------------
 
-- On gabe, go in /srv/specifications.freedesktop.org/www
-- Edit specs.idx
-- Run ../update.py
+- update http://cgit.freedesktop.org/xdg/xdg-specs/tree/web-export/specs.idx
+- go to /srv/specifications.freedesktop.org/www on gabe
+- run ../update.py
 

@@ -1385,6 +1385,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-bzdvi">
     <_comment>TeX DVI document (bzip-compressed)</_comment>
+    <sub-class-of type="application/x-bzip"/>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.dvi.bz2"/>
   </mime-type>
@@ -1409,11 +1410,13 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-bzpdf">
     <_comment>PDF document (bzip-compressed)</_comment>
+    <sub-class-of type="application/x-bzip"/>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.pdf.bz2"/>
   </mime-type>
   <mime-type type="application/x-bzpostscript">
     <_comment>PostScript document (bzip-compressed)</_comment>
+    <sub-class-of type="application/x-bzip"/>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.ps.bz2"/>
   </mime-type>
@@ -1511,6 +1514,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-compressed-tar">
     <_comment>Tar archive (gzip-compressed)</_comment>
+    <sub-class-of type="application/gzip"/>
     <generic-icon name="package-x-generic"/>
     <glob pattern="*.tar.gz"/>
     <glob pattern="*.tgz"/>
@@ -1547,6 +1551,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-cpio-compressed">
     <_comment>CPIO archive (gzip-compressed)</_comment>
+    <sub-class-of type="application/gzip"/>
     <generic-icon name="package-x-generic"/>
     <glob pattern="*.cpio.gz"/>
   </mime-type>
@@ -2366,6 +2371,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-lzma-compressed-tar">
     <_comment>Tar archive (LZMA-compressed)</_comment>
+    <sub-class-of type="application/x-lzma"/>
     <generic-icon name="package-x-generic"/>
     <glob pattern="*.tar.lzma"/>
     <glob pattern="*.tlz"/>
@@ -3198,6 +3204,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-tarz">
     <_comment>Tar archive (compressed)</_comment>
+    <sub-class-of type="application/x-compress"/>
     <generic-icon name="package-x-generic"/>
     <glob pattern="*.tar.Z"/>
     <glob pattern="*.taz"/>
@@ -3265,6 +3272,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-tzo">
     <_comment>Tar archive (LZO-compressed)</_comment>
+    <sub-class-of type="application/x-lzop"/>
     <generic-icon name="package-x-generic"/>
     <glob pattern="*.tar.lzo"/>
     <glob pattern="*.tzo"/>
@@ -4160,6 +4168,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/x-bzeps">
     <_comment>EPS image (bzip-compressed)</_comment>
+    <sub-class-of type="application/x-bzip"/>
     <glob pattern="*.eps.bz2"/>
     <glob pattern="*.epsi.bz2"/>
     <glob pattern="*.epsf.bz2"/>
@@ -4265,6 +4274,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/x-gzeps">
     <_comment>EPS image (gzip-compressed)</_comment>
+    <sub-class-of type="application/gzip"/>
     <glob pattern="*.eps.gz"/>
     <glob pattern="*.epsi.gz"/>
     <glob pattern="*.epsf.gz"/>

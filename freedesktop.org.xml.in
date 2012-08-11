@@ -2630,7 +2630,6 @@ command to generate the output files.
     </magic>
     <glob pattern="*.oga"/>
     <glob pattern="*.ogg"/>
-    <glob pattern="*.spx"/>
     <alias type="audio/x-ogg"/>
   </mime-type>
   <mime-type type="video/ogg">
@@ -2640,6 +2639,7 @@ command to generate the output files.
       <match type="string" value="OggS" offset="0"/>
     </magic>
     <glob pattern="*.ogv"/>
+    <glob pattern="*.ogg"/>
     <alias type="video/x-ogg"/>
   </mime-type>
   <mime-type type="audio/x-vorbis+ogg">
@@ -2652,6 +2652,7 @@ command to generate the output files.
         <match type="string" value="\x01vorbis" offset="28"/>
       </match>
     </magic>
+    <glob pattern="*.oga"/>
     <glob pattern="*.ogg"/>
   </mime-type>
   <mime-type type="audio/x-flac+ogg">
@@ -2666,6 +2667,7 @@ command to generate the output files.
         <match value="\177FLAC" type="string" offset="28"/>
       </match>
     </magic>
+    <glob pattern="*.oga"/>
     <glob pattern="*.ogg"/>
   </mime-type>
   <mime-type type="audio/x-speex+ogg">
@@ -2676,6 +2678,7 @@ command to generate the output files.
         <match type="string" value="Speex  " offset="28"/>
       </match>
     </magic>
+    <glob pattern="*.oga"/>
     <glob pattern="*.ogg"/>
   </mime-type>
   <mime-type type="audio/x-speex">
@@ -2694,6 +2697,7 @@ command to generate the output files.
         <match type="string" value="\x80theora" offset="28"/>
       </match>
     </magic>
+    <glob pattern="*.ogv"/>
     <glob pattern="*.ogg"/>
   </mime-type>
   <mime-type type="video/x-ogm+ogg">

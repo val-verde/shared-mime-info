@@ -1906,6 +1906,15 @@ command to generate the output files.
     <glob pattern="*.gmo"/>
     <glob pattern="*.mo"/>
   </mime-type>
+  <mime-type type="application/x-gtk-builder">
+    <_comment>GTK+ Builder</_comment>
+    <sub-class-of type="application/xml"/>
+    <generic-icon name="x-office-document"/>
+    <glob pattern="*.ui"/>
+    <magic priority="50">
+      <match type="string" value="&lt;interface" offset="0:256"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/x-glade">
     <_comment>Glade project</_comment>
     <sub-class-of type="application/xml"/>

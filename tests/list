@@ -41,6 +41,9 @@ test.tga image/x-tga
 test.tif image/tiff
 test.xbm image/x-xbitmap ox
 test.xcf image/x-xcf
+# https://bugs.freedesktop.org/show_bug.cgi?id=55263
+lucid-tab-bg.xcf image/x-xcf
+weather_sun.xcf image/x-xcf
 test.xpm image/x-xpixmap
 test.xwd image/x-xwindowdump ox
 # Copied from http://djvu.org/resources/

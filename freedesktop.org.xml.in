@@ -4250,6 +4250,7 @@ command to generate the output files.
       <match type="string" value="\004%!" offset="0">
         <match type="string" value="EPS" offset="16"/>
       </match>
+      <match type="big32" value="0xC5D0D3C6" offset="0"/>
     </magic>
     <glob pattern="*.eps"/>
     <glob pattern="*.epsi"/>

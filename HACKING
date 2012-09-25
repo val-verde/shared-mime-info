@@ -57,6 +57,9 @@ indicates expected success. Trailing "o"s can be omitted.
 
 See the top of the tests/list file for syntax details.
 
+You can also temporarily print the results of test-mime-data by putting your
+test files in the staging-tests/ sub-directory.
+
 [1]: Repository details at:
 http://cgit.freedesktop.org/xdg/xdgmime/
 

@@ -84,6 +84,25 @@ all: $(defaultmakedeps)
 create-pot:
 	$(AM_V_GEN) $(MAKE) -C po shared-mime-info.pot
 
+local-test: create-pot freedesktop.org.xml update-mime-database$(EXEEXT)
+if CROSS_COMPILING
+	@echo "Cross compiling: Skipping checks"
+else
+	@if ! test -d staging-tests/ ; then \
+		echo "***********************************************************************" ; \
+		echo "*** Add your file to process to staging-tests/ and run local-test again ***" ; \
+		echo "***********************************************************************" ; \
+		exit 1 ; \
+	fi
+	if test -d .git/ && test -x ../xdgmime/src/print-mime-data$(EXEEXT) ; then \
+		mkdir -p $(top_builddir)/temp-mime-dir/mime/packages ; \
+		cp -a $(top_builddir)/freedesktop.org.xml $(top_builddir)/temp-mime-dir/mime/packages/ ; \
+		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/update-mime-database$(EXEEXT) "$(top_builddir)/temp-mime-dir/mime/" ; \
+		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" ../xdgmime/src/print-mime-data$(EXEEXT) staging-tests/; \
+		rm -rf "$(top_builddir)/temp-mime-dir/" ; \
+	fi
+endif
+
 check: create-pot freedesktop.org.xml update-mime-database$(EXEEXT) check-translations
 if CROSS_COMPILING
 	@echo "Cross compiling: Skipping checks"

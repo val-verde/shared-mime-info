@@ -983,7 +983,7 @@ are x-content/audio-dvd, x-content/blank-cd or x-content/image-dcf.
 		<para>
 Matching of content types works with <userinput>treemagic</userinput> elements, which 
 are analogous to the <userinput>magic</userinput> elements used for MIME type matching.
-Instead of looking for byte sequences in files, <userinput>treemagic</userinput> element
+Instead of looking for byte sequences in files, <userinput>treemagic</userinput> elements
 allow to look for files with certain names, permissions or mime types in a directory
 hierarchy.
 		</para>

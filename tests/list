@@ -106,6 +106,8 @@ test-template.dot application/msword xox
 ocf10-20060911.epub application/epub+zip
 # Copied from http://libwps.svn.sourceforge.net/viewvc/libwps/trunk/reference/
 test.wps application/vnd.ms-works ox
+# Copied from https://bugs.freedesktop.org/show_bug.cgi?id=45922
+test.xlr application/vnd.ms-works ox
 # Copied from http://openxmldeveloper.org/articles/OpenXMLsamples.aspx
 sample.docx application/vnd.openxmlformats-officedocument.wordprocessingml.document oxo
 sample.xlsx application/vnd.openxmlformats-officedocument.spreadsheetml.sheet oxo

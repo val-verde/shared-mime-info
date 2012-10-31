@@ -236,6 +236,12 @@ is trivial to detect a pattern in the form '*.ext' and store it in an
 extension hash table internally. The full power of regular expressions was
 not being used by either desktop, and glob patterns are more suitable for
 filename matching anyway.
+		</para>
+		<para>
+The first glob element represents the "main" extension for the file type.
+While this doesn't affect the mimetype matching algorithm, this information can be useful
+when a single main extension is needed for a mimetype, for instance so that applications
+can choose an appropriate extension when saving a file.
 				</para></listitem>
 				<listitem><para>
 A <userinput>glob-deleteall</userinput> element, which indicates that patterns from

@@ -388,3 +388,5 @@ one-file.tnef application/vnd.ms-tnef
 test.ccmx application/x-ccmx
 # Generated from test-gettext.c with `xgettext -k_ -o test.pot test-gettext.c`
 test.pot text/x-gettext-translation-template x
+# Generated from test-en.po with `msgfmt -o test-en.mo test-en.po`
+test-en.mo application/x-gettext-translation ox

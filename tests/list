@@ -311,6 +311,8 @@ test.wim application/x-ms-wim
 test.zip application/zip
 # From /usr/lib/gcc/x86_64-redhat-linux/4.7.2/libgcc.a
 libgcc.a application/x-archive
+# Created by hand
+foo-0.1-1.fc18.src.rpm application/x-source-rpm ox
 
 # Audio/Video files
 # Copied from /usr/share/sounds/generic.wav

@@ -180,6 +180,11 @@ test.vsd application/vnd.visio ox
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=40800
 test.dts audio/vnd.dts
 test.dtshd audio/vnd.dts.hd
+# Copied from http://samples.mplayerhq.hu/A-codecs/amr/sample2.amr
+sample2.amr audio/AMR
+# Testing case-insensitive mime-type matching
+# https://bugs.freedesktop.org/show_bug.cgi?id=38415
+sample2.amr audio/amr
 
 # text
 text-iso8859-15.txt text/plain

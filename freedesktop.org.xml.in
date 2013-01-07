@@ -2464,6 +2464,14 @@ command to generate the output files.
     <_comment>WebM audio</_comment>
     <sub-class-of type="video/webm"/>
   </mime-type>
+  <mime-type type="application/x-mimearchive">
+    <_comment>MHTML web archive</_comment>
+    <acronym>MHTML</acronym>
+    <expanded-acronym>MIME HTML</expanded-acronym>
+    <glob pattern="*.mhtml"/>
+    <glob pattern="*.mht"/>
+    <sub-class-of type="multipart/related"/>
+  </mime-type>
   <mime-type type="application/mxf">
     <_comment>MXF video</_comment>
     <acronym>MXF</acronym>

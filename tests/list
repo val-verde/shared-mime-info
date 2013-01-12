@@ -397,3 +397,5 @@ test.ccmx application/x-ccmx
 test.pot text/x-gettext-translation-template x
 # Generated from test-en.po with `msgfmt -o test-en.mo test-en.po`
 test-en.mo application/x-gettext-translation ox
+# Copied from https://fedorahosted.org/releases/l/i/liberation-fonts/liberation-fonts-ttf-2.00.1.tar.gz
+LiberationSans-Regular.ttf application/x-font-ttf

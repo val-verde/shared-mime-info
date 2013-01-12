@@ -1719,6 +1719,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-fluid">
     <_comment>FLTK Fluid file</_comment>
+    <acronym>FLTK</acronym>
+    <expanded-acronym>Fast Light Toolkit</expanded-acronym>
     <sub-class-of type="text/plain"/>
     <generic-icon name="x-office-document"/>
     <magic priority="50">

@@ -2940,7 +2940,6 @@ command to generate the output files.
     <_comment>Source RPM package</_comment>
     <generic-icon name="package-x-generic"/>
     <sub-class-of type="application/x-redhat-package-manager"/>
-    <generic-icon name="package-x-generic"/>
     <glob pattern="*.src.rpm"/>
   </mime-type>
   <mime-type type="application/x-ruby">

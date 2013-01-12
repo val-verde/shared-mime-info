@@ -1726,6 +1726,16 @@ command to generate the output files.
     </magic>
     <glob pattern="*.fl"/>
   </mime-type>
+  <mime-type type="application/font-woff">
+    <_comment>WOFF font</_comment>
+    <acronym>WOFF</acronym>
+    <expanded-acronym>Web Open Font Format</expanded-acronym>
+    <generic-icon name="font-x-generic"/>
+    <magic priority="50">
+      <match type="big32" value="0x774f4646" offset="0"/>
+    </magic>
+    <glob pattern="*.woff"/>
+  </mime-type>
   <mime-type type="application/x-font-type1">
     <_comment>Postscript type-1 font</_comment>
     <sub-class-of type="application/postscript"/>

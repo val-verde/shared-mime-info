@@ -2909,6 +2909,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-rar">
     <_comment>RAR archive</_comment>
+    <acronym>RAR</acronym>
+    <expanded-acronym>Roshal ARchive</expanded-acronym>
     <alias type="application/x-rar-compressed"/>
     <generic-icon name="package-x-generic"/>
     <magic priority="50">

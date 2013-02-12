@@ -5688,8 +5688,12 @@ command to generate the output files.
       <match type="string" value="RIFF" offset="0">
         <match type="string" value="AVI " offset="8"/>
       </match>
+      <match type="string" value="AVF0" offset="0">
+        <match type="string" value="AVI " offset="8"/>
+      </match>
     </magic>
     <glob pattern="*.avi"/>
+    <glob pattern="*.avf"/>
     <glob pattern="*.divx"/>
   </mime-type>
   <mime-type type="video/x-nsv">

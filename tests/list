@@ -329,6 +329,8 @@ foo-0.1-1.fc18.src.rpm application/x-source-rpm ox
 # Copied from /usr/share/sounds/generic.wav
 test.wav audio/x-wav
 test.avi video/x-msvideo
+# https://bugs.freedesktop.org/show_bug.cgi?id=55336
+test.avf video/x-msvideo
 # Copied from http://modarchive.org/index.php?request=view_by_moduleid&query=155849
 hereyes_remake.mo3 audio/x-mo3
 # Copied from http://media.annodex.net/cmmlwiki/CCFilm

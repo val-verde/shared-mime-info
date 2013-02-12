@@ -24,7 +24,8 @@ test.im1 image/x-sun-raster x
 test.jp2 image/jp2
 test.jpg image/jpeg
 test.jpc image/jp2
-test.mng video/x-mng ox
+# From https://bugzilla.freedesktop.org/show_bug.cgi?id=55339
+test.mng video/x-mng
 test.pat image/x-pat xxx
 test.pbm image/x-portable-bitmap
 test.pcx image/x-pcx

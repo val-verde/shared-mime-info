@@ -4252,7 +4252,7 @@ command to generate the output files.
       <match type="string" value="DICM" offset="128"/>
     </magic>
   </mime-type>
-  <mime-type type="application/docbook+xml">
+  <mime-type type="application/x-docbook+xml">
     <_comment>DocBook document</_comment>
     <sub-class-of type="application/xml"/>
     <generic-icon name="x-office-document"/>
@@ -4263,6 +4263,8 @@ command to generate the output files.
       </match>
     </magic>
     <glob pattern="*.docbook"/>
+    <alias type="application/docbook+xml"/>
+    <alias type="application/vnd.oasis.docbook+xml"/>
   </mime-type>
   <mime-type type="image/x-dib">
     <_comment>DIB image</_comment>

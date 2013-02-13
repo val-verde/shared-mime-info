@@ -3567,6 +3567,16 @@ command to generate the output files.
     </magic>
     <glob pattern="*.mo3"/>
   </mime-type>
+  <mime-type type="audio/aac">
+    <_comment>AAC audio</_comment>
+    <acronym>AAC</acronym>
+    <expanded-acronym>Advanced Audio Coding</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="ADIF" offset="0"/>
+      <match type="big16" value="0xFFF0" mask="0xFFF6" offset="0"/>
+    </magic>
+    <glob pattern="*.aac"/>
+  </mime-type>
   <mime-type type="audio/mp4">
     <_comment>MPEG-4 audio</_comment>
     <alias type="audio/x-m4a"/>
@@ -3574,7 +3584,6 @@ command to generate the output files.
       <match type="string" value="ftypM4A" offset="4"/>
     </magic>
     <glob pattern="*.m4a"/>
-    <glob pattern="*.aac"/>
     <glob pattern="*.f4a"/>
   </mime-type>
   <mime-type type="video/mp4">

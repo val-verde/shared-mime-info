@@ -1,3 +1,71 @@
+shared-mime-info 1.1 (2012-02-13)
+* Mime-type changes:
+- Add application/x-ccmx
+- Add zz-application/zz-winassoc-* aliases
+- Make application/x-xz-compressed-tar a subclass of application/x-xz
+- Add DTS and DTS-HD mime-types
+- Add test for PPM bug
+- Fix comment and add glob for application/pkcs7-mime
+- Add application/x-qtiplot mime-type
+- Add AMZ (AmazonMP3 Download File) mime-type
+- Add separate mime-type for Apple broken PNGs
+- Add *.mk and *.mak text/x-makefile globs
+- Match application/vnd.palm to IANA standard
+- Use IANA registered application/gzip instead of x-gzip
+- Add application/gml+xml
+- Fix Scream Tracker instrument magic
+- Add application/x-gtk-builder type
+- Add magic for v1 and v2 XCF files
+- Add LZMA test file
+- Fix some globs for OGG files
+- Move *.taz from application/x-compressed-tar to application/x-tarz
+- Add some sub-class-of tags for compressed files
+- Add *.tb2 as a glob for application/x-bzip-compressed-tar
+- Add support for DOS EPS files
+- Add *.ar archives to the test suite
+- Add xlr mime-type
+- Add application/vnd.lotus-wordpro
+- Put bz2 patterns before bz ones for bzip-related mimetypes
+- Add simple magic for text/x-gettext-translation-template
+- Add test case for application/x-gettext-translation
+- Add mime-type for source RPMs
+- Add AMR audio test
+- Add test case for TTF fonts
+- Add Woff font mime-type
+- Add FLTK acronym
+- Add application/ics as an alias for text/calendar
+- Add RAR acronym
+- Add dicomdir glob
+- Add *.di as a glob for D source files
+- Add magic for MNG animations
+- Add magic for PICT v2 images
+- Add JNLP file to the test suite
+- Add support for the AVF AVI container variant
+- Add EMF and WMF aliases
+- Improve magic of uncompressed TGA files
+- Add application/winhlp
+- Add text/x-uuencode
+- Add MHTML mime-type
+- Make the main docbook mime-type be application/x-docbook+xml
+- Add application/x-lzh-compressed as alias to application/x-lha
+- Add IFF super-type
+- Split off the AAC mime-type from the M4A one
+- Add text/x-modelica mime-type
+- Add magic for GNU gettext message catalogs (.mo)
+
+* Specification changes:
+- Fix mimetype names used as examples
+- Document that the first extension is the main one
+- Fix missing plural
+
+* Honor NOCONFIGURE=1
+* Allow builders to not run make check by default
+* Fix build for platforms with executable extensions
+* Disable checks when cross compiling
+* Use non-installed update-mime-database in install-data-hook
+* Use native update-mime-database for install when cross compiling
+* Add a local-test target to print mime info
+
 shared-mime-info 1.0 (2012-01-17)
 * Mime-type changes:
 - Add root-XML for AbiWord, Atom, Dia, Dia shape,

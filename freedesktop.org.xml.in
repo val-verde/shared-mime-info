@@ -3493,7 +3493,7 @@ command to generate the output files.
     <_comment>AIFC audio</_comment>
     <acronym>AIFC</acronym>
     <expanded-acronym>Audio Interchange File format Compressed</expanded-acronym>
-    <sub-class-of type="application/x-iff">
+    <sub-class-of type="application/x-iff"/>
     <magic priority="50">
       <match type="string" value="AIFC" offset="8"/>
     </magic>
@@ -3505,7 +3505,7 @@ command to generate the output files.
     <_comment>AIFF/Amiga/Mac audio</_comment>
     <acronym>AIFF</acronym>
     <expanded-acronym>Audio Interchange File Format</expanded-acronym>
-    <sub-class-of type="application/x-iff">
+    <sub-class-of type="application/x-iff"/>
     <magic priority="50">
       <match type="string" value="AIFF" offset="8"/>
       <match type="string" value="8SVX" offset="8"/>

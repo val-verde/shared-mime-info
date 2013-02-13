@@ -20,6 +20,8 @@ test.fit image/fits x
 test.fli video/x-flic ox
 test.gif image/gif
 test.ico image/vnd.microsoft.icon
+# From https://bugs.freedesktop.org/show_bug.cgi?id=20070#c3
+test.ilbm image/x-ilbm
 test.im1 image/x-sun-raster x
 test.jp2 image/jp2
 test.jpg image/jpeg
@@ -330,6 +332,8 @@ foo-0.1-1.fc18.src.rpm application/x-source-rpm ox
 test.uue text/x-uuencode
 
 # Audio/Video files
+# https://bugs.freedesktop.org/show_bug.cgi?id=20070#c4
+test.aiff audio/x-aiff
 # Copied from /usr/share/sounds/generic.wav
 test.wav audio/x-wav
 test.avi video/x-msvideo

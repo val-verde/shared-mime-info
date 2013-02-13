@@ -246,6 +246,8 @@ test.yaml application/x-yaml
 mysum.m text/x-matlab x
 # taken from Octave 3.2 sources
 isdir.m text/x-matlab x
+# hand-made
+test.mo text/x-modelica xoo
 # From https://bugs.freedesktop.org/show_bug.cgi?id=29733
 bibtex.bib text/x-bibtex
 # hand-made

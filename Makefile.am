@@ -1,6 +1,6 @@
 SUBDIRS=. po
 
-INCLUDES = $(ALL_CFLAGS)
+AM_CPPFLAGS = $(ALL_CFLAGS)
 
 packagesdir = $(datadir)/mime/packages
 packages_DATA = freedesktop.org.xml

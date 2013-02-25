@@ -16,6 +16,7 @@
 #include <libxml/tree.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+#include <fcntl.h>
 
 #define XML_NS XML_XML_NAMESPACE
 #define XMLNS_NS "http://www.w3.org/2000/xmlns/"
@@ -941,12 +942,32 @@ static gboolean atomic_update(const gchar *pathname, GError **error)
 	gboolean ret = FALSE;
 	gchar *new_name = NULL;
 	int len;
+	int fd;
 
 	len = strlen(pathname);
 
 	g_return_val_if_fail(strcmp(pathname + len - 4, ".new") == 0, FALSE);
 
 	new_name = g_strndup(pathname, len - 4);
+
+#ifdef HAVE_FDATASYNC
+	fd = open(pathname, O_RDONLY);
+	if (fd == -1)
+	{
+		set_error_from_errno(error);
+		goto out;
+	}
+	if (fdatasync(fd) == -1)
+	{
+		set_error_from_errno(error);
+		goto out;
+	}
+	if (close(fd) == -1)
+	{
+		set_error_from_errno(error);
+		goto out;
+	}
+#endif
 
 #ifdef _WIN32
 	/* we need to remove the old file first! */

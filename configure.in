@@ -20,6 +20,8 @@ GETTEXT_PACKAGE=shared-mime-info
 AC_SUBST(GETTEXT_PACKAGE)
 AM_GLIB_GNU_GETTEXT
 
+AC_CHECK_FUNCS(fdatasync)
+
 dnl Check for cross compiling
 AM_CONDITIONAL(CROSS_COMPILING, test $cross_compiling = yes)
 

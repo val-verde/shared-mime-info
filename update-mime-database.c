@@ -3572,13 +3572,6 @@ int main(int argc, char **argv)
 		return EXIT_FAILURE;
 	}
 
-	if (access(mime_dir, W_OK))
-	{
-		g_warning(_("%s: I don't have write permission on %s. "
-			     "Try rerunning me as root."), argv[0], mime_dir);
-		return EXIT_FAILURE;
-	}
-
 	g_message("Updating MIME database in %s...\n", mime_dir);
 
 	if (access(package_dir, F_OK))

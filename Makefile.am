@@ -89,9 +89,9 @@ if CROSS_COMPILING
 	@echo "Cross compiling: Skipping checks"
 else
 	@if ! test -d staging-tests/ ; then \
-		echo "***********************************************************************" ; \
+		echo "***************************************************************************" ; \
 		echo "*** Add your file to process to staging-tests/ and run local-test again ***" ; \
-		echo "***********************************************************************" ; \
+		echo "***************************************************************************" ; \
 		exit 1 ; \
 	fi
 	if test -d .git/ && test -x ../xdgmime/src/print-mime-data$(EXEEXT) ; then \

@@ -5448,10 +5448,11 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <glob pattern="*.etx"/>
   </mime-type>
-  <mime-type type="text/x-sql">
+  <mime-type type="application/sql">
     <_comment>SQL code</_comment>
     <sub-class-of type="text/plain"/>
     <glob pattern="*.sql"/>
+    <alias type="text/x-sql"/>
   </mime-type>
   <mime-type type="text/x-tcl">
     <_comment>Tcl script</_comment>

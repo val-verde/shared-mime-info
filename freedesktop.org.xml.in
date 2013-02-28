@@ -5399,6 +5399,7 @@ command to generate the output files.
       <match type="string" value='/bin/env python' offset="1:16"/>
     </magic>
     <glob pattern="*.py"/>
+    <glob pattern="*.pyx"/>
     <glob pattern="*.wsgi"/>
   </mime-type>
   <mime-type type="text/x-lua">

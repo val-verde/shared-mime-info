@@ -269,6 +269,8 @@ test.ss  text/x-scheme ox
 test.scala text/x-scala ox
 # https://bugs.freedesktop.org/show_bug.cgi?id=56964
 test.jnlp application/x-java-jnlp-file
+# Python script
+test.py text/x-python
 
 # xml subtypes
 test.ttx application/x-font-ttx

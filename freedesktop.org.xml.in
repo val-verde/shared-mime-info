@@ -2751,6 +2751,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.oga"/>
     <glob pattern="*.ogg"/>
+    <glob pattern="*.opus"/>
     <alias type="audio/x-ogg"/>
   </mime-type>
   <mime-type type="video/ogg">
@@ -2790,6 +2791,16 @@ command to generate the output files.
     </magic>
     <glob pattern="*.oga"/>
     <glob pattern="*.ogg"/>
+  </mime-type>
+  <mime-type type="audio/x-opus+ogg">
+    <_comment>Opus audio</_comment>
+    <sub-class-of type="audio/ogg"/>
+    <magic priority="80">
+      <match type="string" value="OggS" offset="0">
+        <match type="string" value="OpusHead" offset="28"/>
+      </match>
+    </magic>
+    <glob pattern="*.opus"/>
   </mime-type>
   <mime-type type="audio/x-speex+ogg">
     <_comment>Ogg Speex audio</_comment>

@@ -2849,11 +2849,24 @@ command to generate the output files.
       <match type="string" value='eval \"exec /usr/local/bin/perl' offset="0"/>
       <match type="string" value="/bin/perl" offset="2:16"/>
       <match type="string" value="/bin/env perl" offset="2:16"/>
+      <match type="string" value="use strict" offset="0:256"/>
+      <match type="string" value="use warnings" offset="0:256"/>
+      <match type="string" value="use diagnostics" offset="0:256"/>
+      <match type="string" value="use Test::" offset="0:256"/>
+      <match type="string" value="BEGIN {" offset="0:256"/>
+    </magic>
+    <magic priority="40">
+      <match type="string" value="\n=pod" offset="0:256"/>
+      <match type="string" value="\n=head1 NAME" offset="0:256"/>
+      <match type="string" value="\n=head1 DESCRIPTION" offset="0:256"/>
     </magic>
     <glob pattern="*.pl"/>
+    <glob pattern="*.PL"/><!-- CPAN-style Perl build script -->
     <glob pattern="*.pm"/><!-- module -->
     <glob pattern="*.al"/><!-- autoloader -->
     <glob pattern="*.perl"/>
+    <glob pattern="*.pod"/><!-- documentation -->
+    <glob pattern="*.t" weight="10"/><!-- CPAN-style Perl test script -->
   </mime-type>
   <mime-type type="application/x-php">
     <_comment>PHP script</_comment>
@@ -3337,7 +3350,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.tr"/>
     <glob pattern="*.roff"/>
-    <glob pattern="*.t"/>
+    <glob weight="10" pattern="*.t"/>
   </mime-type>
   <mime-type type="application/x-troff-man">
     <_comment>Troff document (with manpage macros)</_comment>

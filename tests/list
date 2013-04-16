@@ -272,6 +272,10 @@ test.jnlp application/x-java-jnlp-file
 # Python script
 test.py text/x-python
 test.pyx text/x-python ox
+# Perl
+test.pl application/x-perl
+test.pm application/x-perl
+test.t application/x-perl
 
 # xml subtypes
 test.ttx application/x-font-ttx

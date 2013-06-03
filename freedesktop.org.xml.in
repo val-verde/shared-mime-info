@@ -1593,8 +1593,8 @@ command to generate the output files.
     <magic>
       <match type="string" value="/bin/tcsh" offset="1:16"/>
       <match type="string" value="/bin/csh" offset="1:16"/>
-      <match type="string" value="#!/usr/bin/env csh" offset="0"/>
-      <match type="string" value="#!/usr/bin/env tcsh" offset="0"/>
+      <match type="string" value="/bin/env csh" offset="1:16"/>
+      <match type="string" value="/bin/env tcsh" offset="1:16"/>
     </magic>
     <glob pattern="*.csh"/>
   </mime-type>
@@ -3071,10 +3071,10 @@ command to generate the output files.
       <match type="string" value="/bin/sh" offset="1:16"/>
       <match type="string" value="/bin/ksh" offset="1:16"/>
       <match type="string" value="/bin/dash" offset="1:16"/>
-      <match type="string" value="#!/usr/bin/env sh" offset="0"/>
-      <match type="string" value="#!/usr/bin/env bash" offset="0"/>
-      <match type="string" value="#!/usr/bin/env zsh" offset="0"/>
-      <match type="string" value="#!/usr/bin/env ksh" offset="0"/>
+      <match type="string" value="/bin/env sh" offset="1:16"/>
+      <match type="string" value="/bin/env bash" offset="1:16"/>
+      <match type="string" value="/bin/env zsh" offset="1:16"/>
+      <match type="string" value="/bin/env ksh" offset="1:16"/>
     </magic>
     <glob pattern="*.sh"/>
   </mime-type>

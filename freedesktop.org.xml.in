@@ -258,6 +258,8 @@ command to generate the output files.
     <glob pattern="*.skr"/>
     <glob pattern="*.pkr"/>
     <glob pattern="*.asc"/>
+    <glob pattern="*.pgp"/>
+    <glob pattern="*.gpg"/>
   </mime-type>
   <mime-type type="application/pgp-signature">
     <_comment>detached OpenPGP signature</_comment>
@@ -267,6 +269,10 @@ command to generate the output files.
       <match type="string" value="-----BEGIN PGP SIGNED MESSAGE-----" offset="0"/>
       <match type="string" value="-----BEGIN PGP SIGNATURE-----" offset="0"/>
     </magic>
+    <glob pattern="*.asc"/>
+    <glob pattern="*.sig"/>
+    <glob pattern="*.pgp"/>
+    <glob pattern="*.gpg"/>
   </mime-type>
   <!-- defined in RFC 2311 -->
   <mime-type type="application/pkcs7-mime">

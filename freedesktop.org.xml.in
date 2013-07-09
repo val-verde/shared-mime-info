@@ -6056,6 +6056,9 @@ command to generate the output files.
   <mime-type type="x-content/ebook-reader">
     <!-- see fd.o hal spec -->
     <_comment>e-book reader</_comment>
+    <treemagic>
+      <treematch path=".kobo" type="directory" non-empty="true"/>
+    </treemagic>
   </mime-type>
 
   <mime-type type="x-content/image-picturecd">

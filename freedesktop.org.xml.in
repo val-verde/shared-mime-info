@@ -1481,8 +1481,20 @@ command to generate the output files.
     <_comment>Apple disk image</_comment>
     <glob pattern="*.dmg"/>
   </mime-type>
+  <mime-type type="application/x-raw-disk-image">
+     <_comment>Raw disk image</_comment>
+     <glob pattern="*.raw-disk-image"/>
+     <glob pattern="*.img"/>
+   </mime-type>
+   <mime-type type="application/x-raw-disk-image-xz-compressed">
+     <_comment>Raw disk image (XZ-compressed)</_comment>
+     <sub-class-of type="application/x-xz"/>
+     <glob pattern="*.raw-disk-image.xz"/>
+     <glob pattern="*.img.xz"/>
+   </mime-type>
   <mime-type type="application/x-cd-image">
     <_comment>raw CD image</_comment>
+    <sub-class-of type="application/x-raw-disk-image"/>
     <alias type="application/x-iso9660-image"/>
     <glob pattern="*.iso"/>
     <glob pattern="*.iso9660"/>

@@ -2473,6 +2473,11 @@ command to generate the output files.
     <glob pattern="*.mkv"/>
     <sub-class-of type="application/x-matroska"/>
   </mime-type>
+  <mime-type type="video/x-matroska-3d">
+    <_comment>Matroska 3D video</_comment>
+    <glob pattern="*.mk3d"/>
+    <sub-class-of type="application/x-matroska"/>
+  </mime-type>
   <mime-type type="audio/x-matroska">
     <_comment>Matroska audio</_comment>
     <glob pattern="*.mka"/>

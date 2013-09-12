@@ -3122,10 +3122,12 @@ command to generate the output files.
     <glob pattern="*.sms"/>
     <glob pattern="*.gg"/>
   </mime-type>
-  <mime-type type="application/x-snes-rom">
+  <mime-type type="application/vnd.nintendo.snes.rom">
     <!-- Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in Europe) if the console was known as such in your locale -->
     <_comment>Super NES ROM</_comment>
     <generic-icon name="application-x-executable"/>
+    <alias type="application/x-snes-rom"/>
+    <glob pattern="*.sfc"/>
     <glob pattern="*.smc"/>
   </mime-type>
   <mime-type type="application/x-stuffit">

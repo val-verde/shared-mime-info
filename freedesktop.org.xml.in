@@ -3078,8 +3078,9 @@ command to generate the output files.
     </magic>
     <glob pattern="*.sh"/>
   </mime-type>
-  <mime-type type="application/x-shockwave-flash">
+  <mime-type type="application/vnd.adobe.flash.movie">
     <_comment>Shockwave Flash file</_comment>
+    <alias type="application/x-shockwave-flash"/>
     <alias type="application/futuresplash"/>
     <generic-icon name="video-x-generic"/>
     <magic priority="50">

@@ -442,7 +442,8 @@ nrl.trig application/x-trig oxo
 subshapes.swf application/vnd.adobe.flash.movie
 
 COPYING-encrypted.asc application/pgp-encrypted ooo
-COPYING-clearsign.asc application/pgp-signature xoo
+# clear text signatures should not have the same mime type as detached signatures
+COPYING-clearsign.asc application/pgp-signature xxx
 COPYING.asc application/pgp-signature xoo
 test-public-key.asc application/pgp-keys xoo
 test-secret-key.skr application/pgp-keys ooo

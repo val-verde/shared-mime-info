@@ -1591,10 +1591,10 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <generic-icon name="text-x-script"/>
     <magic>
-      <match type="string" value="/bin/tcsh" offset="1:16"/>
-      <match type="string" value="/bin/csh" offset="1:16"/>
-      <match type="string" value="/bin/env csh" offset="1:16"/>
-      <match type="string" value="/bin/env tcsh" offset="1:16"/>
+      <match type="string" value="/bin/tcsh" offset="2:16"/>
+      <match type="string" value="/bin/csh" offset="2:16"/>
+      <match type="string" value="/bin/env csh" offset="2:16"/>
+      <match type="string" value="/bin/env tcsh" offset="2:16"/>
     </magic>
     <glob pattern="*.csh"/>
   </mime-type>
@@ -2848,8 +2848,8 @@ command to generate the output files.
     <generic-icon name="text-x-script"/>
     <magic priority="50">
       <match type="string" value='eval \"exec /usr/local/bin/perl' offset="0"/>
-      <match type="string" value="/bin/perl" offset="1:16"/>
-      <match type="string" value="/bin/env perl" offset="1:16"/>
+      <match type="string" value="/bin/perl" offset="2:16"/>
+      <match type="string" value="/bin/env perl" offset="2:16"/>
     </magic>
     <glob pattern="*.pl"/>
     <glob pattern="*.pm"/><!-- module -->
@@ -3008,8 +3008,8 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <generic-icon name="text-x-script"/>
     <magic>
-      <match type="string" value="/bin/env ruby" offset="1:16"/>
-      <match type="string" value="/bin/ruby" offset="1:16"/>
+      <match type="string" value="/bin/env ruby" offset="2:16"/>
+      <match type="string" value="/bin/ruby" offset="2:16"/>
     </magic>
     <glob pattern="*.rb"/>
   </mime-type>
@@ -3065,16 +3065,16 @@ command to generate the output files.
     <generic-icon name="text-x-script"/>
     <magic priority="50">
       <match type="string" value="# This is a shell archive" offset="10"/>
-      <match type="string" value="/bin/bash" offset="1:16"/>
-      <match type="string" value="/bin/nawk" offset="1:16"/>
-      <match type="string" value="/bin/zsh" offset="1:16"/>
-      <match type="string" value="/bin/sh" offset="1:16"/>
-      <match type="string" value="/bin/ksh" offset="1:16"/>
-      <match type="string" value="/bin/dash" offset="1:16"/>
-      <match type="string" value="/bin/env sh" offset="1:16"/>
-      <match type="string" value="/bin/env bash" offset="1:16"/>
-      <match type="string" value="/bin/env zsh" offset="1:16"/>
-      <match type="string" value="/bin/env ksh" offset="1:16"/>
+      <match type="string" value="/bin/bash" offset="2:16"/>
+      <match type="string" value="/bin/nawk" offset="2:16"/>
+      <match type="string" value="/bin/zsh" offset="2:16"/>
+      <match type="string" value="/bin/sh" offset="2:16"/>
+      <match type="string" value="/bin/ksh" offset="2:16"/>
+      <match type="string" value="/bin/dash" offset="2:16"/>
+      <match type="string" value="/bin/env sh" offset="2:16"/>
+      <match type="string" value="/bin/env bash" offset="2:16"/>
+      <match type="string" value="/bin/env zsh" offset="2:16"/>
+      <match type="string" value="/bin/env ksh" offset="2:16"/>
     </magic>
     <glob pattern="*.sh"/>
   </mime-type>
@@ -5423,7 +5423,7 @@ command to generate the output files.
       <match type="string" value="#!/usr/local/bin/python" offset="0"/>
       <match type="string" value="#! /usr/local/bin/python" offset="0"/>
       <match type="string" value='eval \"exec /usr/local/bin/python' offset="0"/>
-      <match type="string" value='/bin/env python' offset="1:16"/>
+      <match type="string" value='/bin/env python' offset="2:16"/>
     </magic>
     <glob pattern="*.py"/>
     <glob pattern="*.pyx"/>
@@ -5434,10 +5434,10 @@ command to generate the output files.
     <sub-class-of type='application/x-executable'/>
     <sub-class-of type="text/plain"/>
     <magic priority="50">
-      <match type="string" value="/bin/lua" offset="1:16"/>
-      <match type="string" value="/bin/luajit" offset="1:16"/>
-      <match type="string" value="/bin/env lua" offset="1:16"/>
-      <match type="string" value="/bin/env luajit" offset="1:16"/>
+      <match type="string" value="/bin/lua" offset="2:16"/>
+      <match type="string" value="/bin/luajit" offset="2:16"/>
+      <match type="string" value="/bin/env lua" offset="2:16"/>
+      <match type="string" value="/bin/env luajit" offset="2:16"/>
     </magic>
     <glob pattern="*.lua"/>
   </mime-type>

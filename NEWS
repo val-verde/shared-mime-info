@@ -1,3 +1,28 @@
+shared-mime-info 1.2 (2013-09-30)
+* Mime-type changes:
+- Use IANA registered application/sql type for SQL
+- Add test for text/x-python
+- Added *.pyx as Pyrex/Cython variant of text/x-python
+- Lower the priority of the *png glob on Apple PNGs
+- Add magic for Kobo e-book reader
+- Add another magic for EPub books
+- Add missing globs and tests for OpenPGP files
+- Add MIME types for raw disk images
+- Add video/x-matroska-3d mime-type
+- Use application/vnd.adobe.flash.movie for SWF
+- Use application/vnd.nintendo.snes.rom for SNES ROMs, associate *.sfc with them
+- Fix shebang matches for shell scripts
+- Remove *.ogv as a glob for Theora videos as they might not be Theora
+- Improve detection of Perl scripts
+- Add more aliases for Photoshop images
+- Add Microsoft Publisher mime-type
+- Correct JPEG2000 definition
+
+* Check for errors when saving files, and ensure that files
+  are saved to disk before carrying on.
+* Don't use access() to check for writability
+* Rename configure.in to configure.ac
+
 shared-mime-info 1.1 (2012-02-13)
 * Mime-type changes:
 - Add application/x-ccmx

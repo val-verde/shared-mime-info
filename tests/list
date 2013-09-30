@@ -143,6 +143,8 @@ test-kounavail2.kwd application/x-kword
 white_640x480.kra application/x-krita
 test.mobi application/x-mobipocket-ebook
 test.lwp application/vnd.lotus-wordpro
+# Copied from https://bugs.freedesktop.org/show_bug.cgi?id=64946
+TS010082249.pub application/vnd.ms-publisher ox
 
 # Playlist, subtitle and audio formats
 stream.nsc application/x-netshow-channel

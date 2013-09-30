@@ -25,7 +25,8 @@ test.ilbm image/x-ilbm
 test.im1 image/x-sun-raster x
 test.jp2 image/jp2
 test.jpg image/jpeg
-test.jpc image/jp2
+# Possible false positive for a JPEG 2000 image
+img_5304.jpg image/jpeg
 # From https://bugzilla.freedesktop.org/show_bug.cgi?id=55339
 test.mng video/x-mng
 test.pat image/x-pat xxx

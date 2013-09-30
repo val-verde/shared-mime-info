@@ -2770,7 +2770,6 @@ command to generate the output files.
         <match type="string" value="\x80theora" offset="28"/>
       </match>
     </magic>
-    <glob pattern="*.ogv"/>
     <glob pattern="*.ogg"/>
   </mime-type>
   <mime-type type="video/x-ogm+ogg">

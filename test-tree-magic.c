@@ -637,7 +637,10 @@ int main (int argc, char **argv)
 	char *content, **lines;
 	guint i;
 
+#if GLIB_CHECK_VERSION(2,36,0)
+#else
 	g_type_init ();
+#endif
 
 	if (argc != 2) {
 		g_print ("Usage: %s [file]\n", argv[0]);

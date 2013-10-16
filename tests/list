@@ -446,9 +446,10 @@ nrl.trig application/x-trig oxo
 # Copied from http://git.savannah.gnu.org/cgit/gnash.git/plain/testsuite/samples/subshapes.swf
 subshapes.swf application/vnd.adobe.flash.movie
 
-COPYING-encrypted.asc application/pgp-encrypted ooo
+COPYING-encrypted.asc application/pgp-encrypted xoo
 # clear text signatures should not have the same mime type as detached signatures
 COPYING-clearsign.asc application/pgp-signature xxx
+COPYING-clearsign.asc application/pgp-keys xxx
 COPYING.asc application/pgp-signature xoo
 test-public-key.asc application/pgp-keys xoo
 test-secret-key.skr application/pgp-keys ooo

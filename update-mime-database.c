@@ -951,7 +951,7 @@ static gboolean atomic_update(const gchar *pathname, GError **error)
 	new_name = g_strndup(pathname, len - 4);
 
 #ifdef HAVE_FDATASYNC
-	fd = open(pathname, O_RDONLY);
+	fd = open(pathname, O_RDWR);
 	if (fd == -1)
 	{
 		set_error_from_errno(error);

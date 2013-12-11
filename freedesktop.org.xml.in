@@ -1677,6 +1677,17 @@ command to generate the output files.
     <alias type="application/x-fictionbook"/>
     <root-XML namespaceURI="http://www.gribuser.ru/xml/fictionbook/2.0" localName="FictionBook"/>
   </mime-type>
+  <mime-type type="application/x-zip-compressed-fb2">
+    <_comment>Compressed FictionBook document</_comment>
+    <sub-class-of type="application/zip"/>
+    <glob pattern="*.fb2.zip"/>
+    <magic priority="80">
+      <match type="string" value="PK\003\004" offset="0">
+        <!-- Okay, this is not ideal, but it should be good enough for normal cases -->
+        <match type="string" value=".fb2" offset="30:256"/>
+      </match>
+    </magic>
+  </mime-type>
   <mime-type type="application/x-dia-diagram">
     <_comment>Dia diagram</_comment>
     <generic-icon name="image-x-generic"/>

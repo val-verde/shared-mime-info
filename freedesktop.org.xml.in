@@ -6122,6 +6122,7 @@ command to generate the output files.
     <_comment>e-book reader</_comment>
     <treemagic>
       <treematch path=".kobo" type="directory" non-empty="true"/>
+      <treematch path="system/com.amazon.ebook.booklet.reader" non-empty="false"/>
     </treemagic>
   </mime-type>
 

@@ -2421,6 +2421,15 @@ command to generate the output files.
     <glob pattern="*.lyx"/>
     <alias type="text/x-lyx"/>
   </mime-type>
+  <mime-type type="application/x-lz4">
+    <_comment>LZ4 archive</_comment>
+    <generic-icon name="package-x-generic"/>
+    <magic priority="50">
+      <match type="little32" value="0x184d2204" offset="0"/>
+      <match type="little32" value="0x184c2102" offset="0"/>
+    </magic>
+    <glob pattern="*.lz4"/>
+  </mime-type>
   <mime-type type="application/x-lzip">
     <_comment>Lzip archive</_comment>
     <generic-icon name="package-x-generic"/>

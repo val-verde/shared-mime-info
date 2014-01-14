@@ -3852,7 +3852,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-ms-wma">
     <_comment>Windows Media audio</_comment>
-    <sub-class-of type="video/x-ms-asf"/>
+    <sub-class-of type="application/vnd.ms-asf"/>
     <glob pattern="*.wma"/>
     <alias type="audio/wma"/>
   </mime-type>
@@ -5856,12 +5856,12 @@ command to generate the output files.
     </magic>
     <glob pattern="*.mng"/>
   </mime-type>
-  <mime-type type="video/x-ms-asf">
+  <mime-type type="application/vnd.ms-asf">
     <_comment>ASF video</_comment>
     <acronym>ASF</acronym>
     <expanded-acronym>Advanced Streaming Format</expanded-acronym>
     <alias type="video/x-ms-wm"/>
-    <alias type="application/vnd.ms-asf"/>
+    <alias type="video/x-ms-asf"/>
     <glob pattern="*.asf"/>
     <magic priority="50">
       <match type="big32" value="0x3026b275" offset="0"/>
@@ -5870,7 +5870,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-netshow-channel">
     <_comment>Windows Media Station file</_comment>
-    <sub-class-of type="video/x-ms-asf"/>
+    <sub-class-of type="application/vnd.ms-asf"/>
     <generic-icon name="video-x-generic"/>
     <glob pattern="*.nsc"/>
     <magic priority="50">
@@ -5879,7 +5879,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="video/x-ms-wmv">
     <_comment>Windows Media video</_comment>
-    <sub-class-of type="video/x-ms-asf"/>
+    <sub-class-of type="application/vnd.ms-asf"/>
     <glob pattern="*.wmv"/>
   </mime-type>
   <mime-type type="video/x-msvideo">

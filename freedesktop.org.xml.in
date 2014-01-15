@@ -2177,6 +2177,14 @@ command to generate the output files.
     <generic-icon name="text-x-script"/>
     <glob pattern="*.js"/>
   </mime-type>
+  <mime-type type="application/json">
+    <_comment>JSON document</_comment>
+    <acronym>JSON</acronym>
+    <expanded-acronym>JavaScript Object Notation</expanded-acronym>
+    <sub-class-of type="application/javascript"/>
+    <generic-icon name="text-x-script"/>
+    <glob pattern="*.json"/>
+  </mime-type>
   <mime-type type="application/x-jbuilder-project">
     <_comment>JBuilder project</_comment>
     <generic-icon name="x-office-document"/>

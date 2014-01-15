@@ -217,6 +217,9 @@ bug-30656-xchat.conf text/plain x
 helloworld.java text/x-java ox
 # Copied from http://asurvey.net/ccsfagent/media/survey.js
 survey.js application/javascript ox
+# The following two copied from RFC 4627.
+json_object.json application/json ox
+json_array.json application/json ox
 test.cs text/x-csharp ox
 test.dot text/vnd.graphviz x
 test.vala text/x-vala ox

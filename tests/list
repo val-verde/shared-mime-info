@@ -249,6 +249,10 @@ test.d text/x-dsrc ox
 test.v text/x-verilog ox
 test.sv text/x-svsrc ox
 test.svh text/x-svhdr ox
+# Copied from http://www.w3.org/TR/CSS21/sample.html
+html4.css text/css ox
+# Copied from http://www.iecss.com/whatwg.css
+html5.css text/css ox
 # Copied from http://www.w3.org/TR/html5/offline.html#manifests
 test.manifest text/cache-manifest
 test.yaml application/x-yaml

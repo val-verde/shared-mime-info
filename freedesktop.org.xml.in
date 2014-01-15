@@ -2175,7 +2175,7 @@ command to generate the output files.
     <_comment>JavaScript program</_comment>
     <alias type="application/x-javascript"/>
     <alias type="text/javascript"/>
-    <sub-class-of type="text/x-csrc"/>
+    <sub-class-of type="application/ecmascript"/>
     <generic-icon name="text-x-script"/>
     <glob pattern="*.js"/>
     <glob pattern="*.jsm"/>
@@ -4927,7 +4927,7 @@ command to generate the output files.
     <_comment>CSS stylesheet</_comment>
     <acronym>CSS</acronym>
     <expanded-acronym>Cascading Style Sheets</expanded-acronym>
-    <sub-class-of type="text/x-csrc"/>
+    <sub-class-of type="text/plain"/>
     <glob pattern="*.css"/>
     <glob pattern="*.CSSL"/>
   </mime-type>

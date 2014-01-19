@@ -1624,6 +1624,33 @@ command to generate the output files.
     <generic-icon name="application-x-executable"/>
     <glob pattern="*.nds"/>
   </mime-type>
+  <mime-type type="application/x-pc-engine-rom">
+    <_comment>PC Engine ROM</_comment>
+    <generic-icon name="application-x-executable"/>
+    <glob pattern="*.pce"/>
+  </mime-type>
+  <mime-type type="application/x-wii-rom">
+    <_comment>Wii disc image</_comment>
+    <alias type="application/x-wii-iso-image"/>
+    <alias type="application/x-wbfs"/>
+    <alias type="application/x-wia"/>
+    <generic-icon name="application-x-executable"/>
+    <glob pattern="*.iso"/>
+    <magic priority="50">
+      <match offset="24" type="big32" value="0x5d1c9ea3"/>
+      <match offset="0" type="string" value="WBFS"/>
+      <match offset="0" type="string" value="WII\001DISC"/>
+    </magic>
+  </mime-type>
+  <mime-type type="application/x-gamecube-rom">
+    <_comment>GameCube disc image</_comment>
+    <generic-icon name="application-x-executable"/>
+    <alias type="application/x-gamecube-iso-image"/>
+    <glob pattern="*.iso"/>
+    <magic priority="50">
+      <match offset="28" type="big32" value="0xc2339f3d"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/x-deb">
     <_comment>Debian package</_comment>
     <alias type="application/x-debian-package"/>

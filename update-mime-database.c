@@ -995,15 +995,20 @@ static void write_out_type(gpointer key, gpointer value, gpointer data)
 	const char *mime_dir = (char *) data;
 	char *media, *filename;
 	GError *local_error = NULL;
+	char *lower;
 
-	media = g_strconcat(mime_dir, "/", type->media, NULL);
+	lower = g_ascii_strdown(type->media, -1);
+	media = g_strconcat(mime_dir, "/", lower, NULL);
+	g_free(lower);
 #ifdef _WIN32
 	mkdir(media);
 #else
 	mkdir(media, 0755);
 #endif
 
-	filename = g_strconcat(media, "/", type->subtype, ".xml.new", NULL);
+	lower = g_ascii_strdown(type->subtype, -1);
+	filename = g_strconcat(media, "/", lower, ".xml.new", NULL);
+	g_free(lower);
 	g_free(media);
 	media = NULL;
 

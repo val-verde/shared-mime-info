@@ -3905,6 +3905,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-riff">
     <_comment>RIFF audio</_comment>
+  </mime-type>
+  <mime-type type="application/x-riff">
+    <_comment>RIFF container</_comment>
     <!-- need to be lower prio than avi -->
     <magic priority="45">
       <match type="string" value="RIFF" offset="0"/>

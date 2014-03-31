@@ -4349,7 +4349,6 @@ command to generate the output files.
         <match type="string" value="WEBP" offset="8"/>
       </match>
     </magic>
-    <alias type="image/x-webp"/>
     <glob pattern="*.webp"/>
   </mime-type>
   <mime-type type="image/x-3ds">

@@ -1,3 +1,26 @@
+shared-mime-info 1.3 (2014-04-08)
+* Mime-type changes:
+- Add Aliases for OpenOffice Base and StarWriter
+- Add Apple Keynote 5 mime-type
+- Add mimetype for compressed FictionBook2
+- Don't recognize all .asc files as application/pgp-encrypted
+- Add tree magic for the Kindle e-book reader
+- Add LZ4 archive type
+- Add PC Engine, GameCube and Wii "ROM" types
+- Add audio/x-opus+ogg mime-type
+- Add image/webp mime-type
+- Prefer application/vnd.ms-asf to video/x-ms-asf
+- Add application/x-riff mime-type
+- Add JSON mime-type
+- Add *.jsm glob for Javascript
+- Add magic and glob patterns for compressed x-spss-sav files
+- JavaScript and CSS are not subclasses of text/x-csrc
+- Remove *.CSSL glob for CSS files
+
+* Call g_type_init() only with older glib
+* Fix failures on NetBSD
+* Store MEDIA/SUBTYPE.xml files in lowercase
+
 shared-mime-info 1.2 (2013-09-30)
 * Mime-type changes:
 - Use IANA registered application/sql type for SQL

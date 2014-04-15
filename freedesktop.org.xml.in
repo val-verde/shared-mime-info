@@ -166,6 +166,13 @@ command to generate the output files.
     <_comment>unknown</_comment>
     <glob pattern="*.bin"/>
   </mime-type>
+  <mime-type type="application/x-partial-download">
+    <_comment>Partially downloaded file</_comment>
+    <generic-icon type="package-x-generic"/>
+    <glob pattern="*.wkdownload"/>
+    <glob pattern="*.crdownload"/>
+    <glob pattern="*.part"/>
+  </mime-type>
   <mime-type type="application/oda">
     <_comment>ODA document</_comment>
     <acronym>ODA</acronym>

@@ -5305,6 +5305,12 @@ command to generate the output files.
     <glob pattern="*.f95"/>
     <glob pattern="*.for"/>
   </mime-type>
+  <mime-type type="text/x-genie">
+    <_comment>Genie source code</_comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.gs" case-sensitive="true"/>
+    <generic-icon name="text-x-generic"/>
+  </mime-type>
   <mime-type type="text/x-gettext-translation">
     <_comment>translation file</_comment>
     <sub-class-of type="text/plain"/>

@@ -1660,8 +1660,9 @@ command to generate the output files.
       <match offset="28" type="big32" value="0xc2339f3d"/>
     </magic>
   </mime-type>
-  <mime-type type="application/x-deb">
+  <mime-type type="application/vnd.debian.binary-package">
     <_comment>Debian package</_comment>
+    <alias type="application/x-deb"/>
     <alias type="application/x-debian-package"/>
     <generic-icon name="package-x-generic"/>
     <magic priority="50">
@@ -1670,6 +1671,7 @@ command to generate the output files.
       </match>
     </magic>
     <glob pattern="*.deb"/>
+    <glob pattern="*.udeb"/>
   </mime-type>
   <mime-type type="application/x-designer">
     <_comment>Qt Designer file</_comment>

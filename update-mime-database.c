@@ -936,10 +936,24 @@ set_error_from_errno (GError **error)
 			    g_strerror(errsv));
 }
 
+static gboolean
+sync_enabled(void)
+{
+	const char *env;
+
+	env = g_getenv("PKGSYSTEM_ENABLE_FSYNC");
+	if (!env)
+		return TRUE;
+	return atoi(env);
+}
+
 static int
 sync_file(const gchar *pathname, GError **error)
 {
 	int fd;
+
+	if (!sync_enabled())
+		return 0;
 
 #ifdef HAVE_FDATASYNC
 	fd = open(pathname, O_RDWR);

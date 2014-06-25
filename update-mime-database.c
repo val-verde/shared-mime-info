@@ -936,13 +936,39 @@ set_error_from_errno (GError **error)
 			    g_strerror(errsv));
 }
 
+static int
+sync_file(const gchar *pathname, GError **error)
+{
+	int fd;
+
+#ifdef HAVE_FDATASYNC
+	fd = open(pathname, O_RDWR);
+	if (fd == -1)
+	{
+		set_error_from_errno(error);
+		return -1;
+	}
+	if (fdatasync(fd) == -1)
+	{
+		set_error_from_errno(error);
+		return -1;
+	}
+	if (close(fd) == -1)
+	{
+		set_error_from_errno(error);
+		return -1;
+	}
+#endif
+
+	return 0;
+}
+
 /* Renames pathname by removing the .new extension */
 static gboolean atomic_update(const gchar *pathname, GError **error)
 {
 	gboolean ret = FALSE;
 	gchar *new_name = NULL;
 	int len;
-	int fd;
 
 	len = strlen(pathname);
 
@@ -950,24 +976,8 @@ static gboolean atomic_update(const gchar *pathname, GError **error)
 
 	new_name = g_strndup(pathname, len - 4);
 
-#ifdef HAVE_FDATASYNC
-	fd = open(pathname, O_RDWR);
-	if (fd == -1)
-	{
-		set_error_from_errno(error);
+	if (sync_file(pathname, error) == -1)
 		goto out;
-	}
-	if (fdatasync(fd) == -1)
-	{
-		set_error_from_errno(error);
-		goto out;
-	}
-	if (close(fd) == -1)
-	{
-		set_error_from_errno(error);
-		goto out;
-	}
-#endif
 
 #ifdef _WIN32
 	/* we need to remove the old file first! */

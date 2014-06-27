@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <glib.h>
 #include <glib/gprintf.h>
+#include <glib/gstdio.h>
 #include <errno.h>
 #include <dirent.h>
 #include <libxml/parser.h>
@@ -3538,6 +3539,61 @@ fclose_gerror(FILE *f, GError **error)
 	return TRUE;
 }
 
+static gint64
+newest_mtime(const char *packagedir)
+{
+	GDir *dir;
+	GStatBuf statbuf;
+	gint64 mtime = G_MININT64;
+	const char *name;
+	int retval;
+
+	retval = g_stat(packagedir, &statbuf);
+	if (retval < 0)
+		return mtime;
+	mtime = statbuf.st_mtime;
+
+	dir = g_dir_open(packagedir, 0, NULL);
+	if (!dir)
+		return mtime;
+
+	while ((name = g_dir_read_name(dir))) {
+		char *path;
+
+		path = g_build_filename(packagedir, name, NULL);
+		retval = g_stat(path, &statbuf);
+		g_free(path);
+		if (retval < 0)
+			continue;
+		if (statbuf.st_mtime > mtime)
+			mtime = statbuf.st_mtime;
+	}
+
+	g_dir_close(dir);
+	return mtime;
+}
+
+static gboolean
+is_cache_up_to_date (const char *mimedir, const char *packagedir)
+{
+	GStatBuf version_stat;
+	gint64 package_mtime;
+	char *mimeversion;
+	int retval;
+
+	mimeversion = g_build_filename(mimedir, "/version", NULL);
+	retval = g_stat(mimeversion, &version_stat);
+	g_free(mimeversion);
+	if (retval < 0)
+		return FALSE;
+
+	package_mtime = newest_mtime(packagedir);
+	if (package_mtime < 0)
+		return FALSE;
+
+	return version_stat.st_mtime >= package_mtime;
+}
+
 int main(int argc, char **argv)
 {
 	char *mime_dir = NULL;
@@ -3608,6 +3664,11 @@ int main(int argc, char **argv)
 		g_fprintf(stderr,
 			_("Directory '%s' does not exist!\n"), package_dir);
 		return EXIT_FAILURE;
+	}
+
+	if (is_cache_up_to_date(mime_dir, package_dir)) {
+		g_message ("Skipping mime update as the cache is up-to-date");
+		return EXIT_SUCCESS;
 	}
 
 	types = g_hash_table_new_full(g_str_hash, g_str_equal,

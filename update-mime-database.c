@@ -194,7 +194,7 @@ fatal_gerror (GError *error)
 
 static void usage(const char *name)
 {
-	g_fprintf(stderr, _("Usage: %s [-hvV] MIME-DIR\n"), name);
+	g_fprintf(stderr, _("Usage: %s [-hvVn] MIME-DIR\n"), name);
 }
 
 static void free_type(gpointer data)
@@ -3601,11 +3601,12 @@ int main(int argc, char **argv)
 	int opt;
 	GError *local_error = NULL;
 	GError **error = &local_error;
+	gboolean if_newer = FALSE;
 
 	/* Install the filtering log handler */
 	g_log_set_default_handler(g_log_handler, NULL);
 
-	while ((opt = getopt(argc, argv, "hvV")) != -1)
+	while ((opt = getopt(argc, argv, "hvVn")) != -1)
 	{
 		switch (opt)
 		{
@@ -3623,6 +3624,9 @@ int main(int argc, char **argv)
 			case 'V':
 				enabled_log_levels |= G_LOG_LEVEL_MESSAGE
 						      | G_LOG_LEVEL_INFO;
+				break;
+			case 'n':
+				if_newer = TRUE;
 				break;
 			default:
 				return EXIT_FAILURE;
@@ -3666,7 +3670,7 @@ int main(int argc, char **argv)
 		return EXIT_FAILURE;
 	}
 
-	if (is_cache_up_to_date(mime_dir, package_dir)) {
+	if (if_newer && is_cache_up_to_date(mime_dir, package_dir)) {
 		g_message ("Skipping mime update as the cache is up-to-date");
 		return EXIT_SUCCESS;
 	}

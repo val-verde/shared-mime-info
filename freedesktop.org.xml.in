@@ -6272,4 +6272,14 @@ command to generate the output files.
     <alias type="application/vnd.apple.keynote"/>
   </mime-type>
 
+  <mime-type type="application/x-pagemaker">
+    <_comment>Adobe PageMaker</_comment>
+    <sub-class-of type="application/x-ole-storage"/>
+    <generic-icon name="x-office-document"/>
+    <glob pattern="*.p65"/>
+    <glob pattern="*.pm"/>
+    <glob pattern="*.pm6"/>
+    <glob pattern="*.pmd"/>
+  </mime-type>
+
 </mime-info>

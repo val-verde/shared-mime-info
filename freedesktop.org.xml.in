@@ -4417,6 +4417,7 @@ command to generate the output files.
         <match value="-//KDE//DTD DocBook XML" type="string" offset="0:100"/>
       </match>
     </magic>
+    <glob pattern="*.dbk"/>
     <glob pattern="*.docbook"/>
     <alias type="application/docbook+xml"/>
     <alias type="application/vnd.oasis.docbook+xml"/>

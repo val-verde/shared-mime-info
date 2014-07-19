@@ -5823,9 +5823,9 @@ command to generate the output files.
     <glob pattern="*.qtif"/>
     <glob pattern="*.qif"/>
   </mime-type>
-  <mime-type type="video/vivo">
+  <mime-type type="video/vnd.vivo">
     <_comment>Vivo video</_comment>
-    <alias type="video/vnd.vivo"/>
+    <alias type="video/vivo"/>
     <glob pattern="*.viv"/>
     <glob pattern="*.vivo"/>
   </mime-type>

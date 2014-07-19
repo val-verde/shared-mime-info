@@ -669,7 +669,7 @@ in the new format. Where possible, changes will be made in a compatible fashion.
 		</para>
 		<para>
 The rest of the file is made up of a sequence of small sections. Each section is introduced by giving
-the priority and type in brackeds, followed by a newline character. Higher priority entries come
+the priority and type in brackets, followed by a newline character. Higher priority entries come
 first. Example:
 <screen>[50:x-content/image-dcf]\n</screen>
 Each line in the section takes the form:

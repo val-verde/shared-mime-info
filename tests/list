@@ -292,6 +292,7 @@ test.pm application/x-perl
 test.t application/x-perl
 
 # xml subtypes
+../shared-mime-info-spec.xml application/x-docbook+xml xox
 test.ttx application/x-font-ttx
 gtk-builder.ui application/x-gtk-builder x
 project.glade application/x-glade

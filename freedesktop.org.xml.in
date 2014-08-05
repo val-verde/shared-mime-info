@@ -2025,13 +2025,6 @@ command to generate the output files.
       <match type="string" value="&lt;glade-interface" offset="0:256"/>
     </magic>
   </mime-type>
-  <mime-type type="application/x-gmc-link">
-    <_comment>GMC link</_comment>
-    <generic-icon name="text-x-generic"/>
-    <magic priority="50">
-      <match type="string" value="URL:" offset="0:32"/>
-    </magic>
-  </mime-type>
   <mime-type type="application/x-gnucash">
     <_comment>GnuCash financial data</_comment>
     <generic-icon name="x-office-spreadsheet"/>

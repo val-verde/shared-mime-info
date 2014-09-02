@@ -368,12 +368,12 @@ command to generate the output files.
     <generic-icon name="text-x-script"/>
     <glob pattern="*.siv"/>
   </mime-type>
-  <mime-type type="application/smil">
+  <mime-type type="application/smil+xml">
     <_comment>SMIL document</_comment>
     <acronym>SMIL</acronym>
     <expanded-acronym>Synchronized Multimedia Integration Language</expanded-acronym>
     <sub-class-of type="application/xml"/>
-    <alias type="application/smil+xml"/>
+    <alias type="application/smil"/>
     <generic-icon name="video-x-generic"/>
     <glob pattern="*.smil"/>
     <glob pattern="*.smi"/>

@@ -2661,6 +2661,16 @@ command to generate the output files.
     <_comment>Nintendo64 ROM</_comment>
     <generic-icon name="application-x-executable"/>
     <glob pattern="*.n64"/>
+    <glob pattern="*.z64"/>
+    <glob pattern="*.v64"/>
+    <magic>
+      <!-- native *.z64 -->
+      <match type="big32" offset="0" value="0x80371240"/>
+      <!-- byteswapped [BADC] *.v64 -->
+      <match type="big32" offset="0" value="0x37804012"/>
+      <!-- wordswapped [DCBA] *.n64 -->
+      <match type="big32" offset="0" value="0x40123780"/>
+    </magic>
   </mime-type>
   <mime-type type="application/x-nautilus-link">
     <_comment>Nautilus link</_comment>

@@ -403,6 +403,9 @@ disk.raw-disk-image.xz application/x-raw-disk-image-xz-compressed oxo
 # Video game ROMs
 genesis1.bin application/x-genesis-rom xox
 genesis2.bin application/x-genesis-rom xox
+m64p_test_rom.n64 application/x-n64-rom
+m64p_test_rom.v64 application/x-n64-rom
+m64p_test_rom.z64 application/x-n64-rom
 
 # other
 text.pdf application/pdf

@@ -360,6 +360,8 @@ test.uue text/x-uuencode
 debian-goodies_0.63_all.deb application/vnd.debian.binary-package
 # Created using qpress 1.1
 test.qp application/x-qpress
+# Created using pigz 2.3.1
+test.zz application/zlib ox
 
 # Audio/Video files
 # https://bugs.freedesktop.org/show_bug.cgi?id=20070#c4

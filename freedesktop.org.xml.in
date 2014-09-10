@@ -2503,6 +2503,14 @@ command to generate the output files.
     </magic>
     <glob pattern="*.lzo"/>
   </mime-type>
+  <mime-type type="application/x-qpress">
+    <_comment>Qpress archive</_comment>
+    <generic-icon name="package-x-generic"/>
+    <magic priority="50">
+      <match type="string" value="qpress10" offset="0"/>
+    </magic>
+    <glob pattern="*.qp"/>
+  </mime-type>
   <mime-type type="application/x-magicpoint">
     <_comment>MagicPoint presentation</_comment>
     <sub-class-of type="text/plain"/>

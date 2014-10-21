@@ -4,15 +4,16 @@
 # 
 # Translators:
 # Aron Xu <happyaron.xu@gmail.com>, 2011
+# Michael Jay Tong <michaeljayt@gmail.com>, 2014
 # Tommy He <lovenemesis@gmail.com>, 2012
 # Wylmer Wang <wantinghard@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-info\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-27 15:43+0200\n"
-"PO-Revision-Date: 2014-07-22 00:11+0000\n"
-"Last-Translator: hadess <hadess@hadess.net>\n"
+"POT-Creation-Date: 2014-07-22 02:11+0200\n"
+"PO-Revision-Date: 2014-08-19 03:02+0000\n"
+"Last-Translator: Michael Jay Tong <michaeljayt@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/shared-mime-info/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,7 +59,7 @@ msgstr "未知"
 
 #: ../freedesktop.org.xml.in.h:10
 msgid "Partially downloaded file"
-msgstr ""
+msgstr "下载的部分文件"
 
 #: ../freedesktop.org.xml.in.h:11
 msgid "ODA document"
@@ -585,11 +586,11 @@ msgstr "Apple 磁盘镜像"
 
 #: ../freedesktop.org.xml.in.h:144
 msgid "Raw disk image"
-msgstr ""
+msgstr "原始磁盘镜像"
 
 #: ../freedesktop.org.xml.in.h:145
 msgid "Raw disk image (XZ-compressed)"
-msgstr ""
+msgstr "原始磁盘镜像(XZ 压缩)"
 
 #: ../freedesktop.org.xml.in.h:146
 msgid "raw CD image"
@@ -653,15 +654,15 @@ msgstr "Nintendo DS ROM"
 
 #: ../freedesktop.org.xml.in.h:161
 msgid "PC Engine ROM"
-msgstr ""
+msgstr "PC Engine ROM"
 
 #: ../freedesktop.org.xml.in.h:162
 msgid "Wii disc image"
-msgstr ""
+msgstr "Wii光盘镜像"
 
 #: ../freedesktop.org.xml.in.h:163
 msgid "GameCube disc image"
-msgstr ""
+msgstr "GameCube光盘镜像"
 
 #: ../freedesktop.org.xml.in.h:164
 msgid "Debian package"
@@ -685,7 +686,7 @@ msgstr "FictionBook 文档"
 
 #: ../freedesktop.org.xml.in.h:169
 msgid "Compressed FictionBook document"
-msgstr ""
+msgstr "压缩的 FictionBook 文档"
 
 #: ../freedesktop.org.xml.in.h:170
 msgid "Dia diagram"
@@ -904,7 +905,7 @@ msgstr "Javascript 程序"
 
 #: ../freedesktop.org.xml.in.h:225
 msgid "JSON document"
-msgstr ""
+msgstr "JSON 文档"
 
 #: ../freedesktop.org.xml.in.h:226
 msgid "JBuilder project"
@@ -1000,7 +1001,7 @@ msgstr "LyX 文档"
 
 #: ../freedesktop.org.xml.in.h:249
 msgid "LZ4 archive"
-msgstr ""
+msgstr "LZ4 归档文件"
 
 #: ../freedesktop.org.xml.in.h:250
 msgid "Lzip archive"
@@ -1036,7 +1037,7 @@ msgstr "Matroska 视频"
 
 #: ../freedesktop.org.xml.in.h:258
 msgid "Matroska 3D video"
-msgstr ""
+msgstr "Matroska 3D 视频"
 
 #: ../freedesktop.org.xml.in.h:259
 msgid "Matroska audio"
@@ -1157,7 +1158,7 @@ msgstr "Ogg FLAC 音频"
 
 #: ../freedesktop.org.xml.in.h:289
 msgid "Opus audio"
-msgstr ""
+msgstr "Opus 音频"
 
 #: ../freedesktop.org.xml.in.h:290
 msgid "Ogg Speex audio"
@@ -1181,7 +1182,7 @@ msgstr "OLE2 组合文档存储"
 
 #: ../freedesktop.org.xml.in.h:295
 msgid "Microsoft Publisher document"
-msgstr ""
+msgstr "Microsoft Publisher 文档"
 
 #: ../freedesktop.org.xml.in.h:296
 msgid "Windows Installer package"
@@ -1660,7 +1661,7 @@ msgstr "RIFF 音频"
 
 #: ../freedesktop.org.xml.in.h:416
 msgid "RIFF container"
-msgstr ""
+msgstr "RIFF 容器"
 
 #: ../freedesktop.org.xml.in.h:417
 msgid "Scream Tracker 3 audio"
@@ -1860,7 +1861,7 @@ msgstr "Microsoft Document Imaging 扫描图像"
 
 #: ../freedesktop.org.xml.in.h:466
 msgid "WebP image"
-msgstr ""
+msgstr "WebP 图像"
 
 #: ../freedesktop.org.xml.in.h:467
 msgid "3D Studio image"
@@ -2794,12 +2795,12 @@ msgstr "Windows 软件"
 #. http://www4.wiwiss.fu-berlin.de/bizer/TriG/
 #: ../freedesktop.org.xml.in.h:722
 msgid "TriG RDF document"
-msgstr ""
+msgstr "TriG RDF 文档"
 
 #: ../freedesktop.org.xml.in.h:723
 msgid "Apple Keynote 5 presentation"
-msgstr ""
+msgstr "Apple Keynote 5 演示文稿"
 
 #: ../freedesktop.org.xml.in.h:724
 msgid "Adobe PageMaker"
-msgstr ""
+msgstr "Adobe PageMaker"

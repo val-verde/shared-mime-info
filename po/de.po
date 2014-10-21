@@ -3,17 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Benjamin Steinwender <b@stbe.at>, 2014
+# c72578 <c72578@yahoo.de>, 2014
+# Christian <Christian.Kirbach@googlemail.com>, 2011
 # Christian <Christian.Kirbach@googlemail.com>, 2011
 # Daniel Winzen <d@winzen4.de>, 2013
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2012,2014
+# Ettore Atalan <atalanttore@googlemail.com>, 2014
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2011-2012,2014
 # Mario Blättermann <mario.blaettermann@gmail.com>, 2011
+# c72578 <c72578@yahoo.de>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-info\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-27 15:43+0200\n"
-"PO-Revision-Date: 2014-07-22 00:11+0000\n"
-"Last-Translator: hadess <hadess@hadess.net>\n"
+"POT-Creation-Date: 2014-07-22 02:11+0200\n"
+"PO-Revision-Date: 2014-10-13 21:27+0000\n"
+"Last-Translator: Christian <Christian.Kirbach@googlemail.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/shared-mime-info/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,7 +64,7 @@ msgstr "Unbekannt"
 
 #: ../freedesktop.org.xml.in.h:10
 msgid "Partially downloaded file"
-msgstr ""
+msgstr "Teilweise heruntergeladene Datei"
 
 #: ../freedesktop.org.xml.in.h:11
 msgid "ODA document"
@@ -586,11 +591,11 @@ msgstr "Apple-Datenträgerabbild"
 
 #: ../freedesktop.org.xml.in.h:144
 msgid "Raw disk image"
-msgstr ""
+msgstr "Rohes Datenträgerabbild"
 
 #: ../freedesktop.org.xml.in.h:145
 msgid "Raw disk image (XZ-compressed)"
-msgstr ""
+msgstr "Rohes Datenträgerabbild (XZ-komprimiert)"
 
 #: ../freedesktop.org.xml.in.h:146
 msgid "raw CD image"
@@ -654,15 +659,15 @@ msgstr "Nintendo-DS-ROM"
 
 #: ../freedesktop.org.xml.in.h:161
 msgid "PC Engine ROM"
-msgstr ""
+msgstr "PC-Engine-ROM"
 
 #: ../freedesktop.org.xml.in.h:162
 msgid "Wii disc image"
-msgstr ""
+msgstr "Wii-Datenträgerabbild"
 
 #: ../freedesktop.org.xml.in.h:163
 msgid "GameCube disc image"
-msgstr ""
+msgstr "GameCube-Datenträgerabbild"
 
 #: ../freedesktop.org.xml.in.h:164
 msgid "Debian package"
@@ -686,7 +691,7 @@ msgstr "FictionBook-Dokument"
 
 #: ../freedesktop.org.xml.in.h:169
 msgid "Compressed FictionBook document"
-msgstr ""
+msgstr "Komprimiertes FictionBook-Dokument"
 
 #: ../freedesktop.org.xml.in.h:170
 msgid "Dia diagram"
@@ -905,7 +910,7 @@ msgstr "JavaScript-Programm"
 
 #: ../freedesktop.org.xml.in.h:225
 msgid "JSON document"
-msgstr ""
+msgstr "JSON-Dokument"
 
 #: ../freedesktop.org.xml.in.h:226
 msgid "JBuilder project"
@@ -1001,7 +1006,7 @@ msgstr "LyX-Dokument"
 
 #: ../freedesktop.org.xml.in.h:249
 msgid "LZ4 archive"
-msgstr ""
+msgstr "LZ4-Archiv"
 
 #: ../freedesktop.org.xml.in.h:250
 msgid "Lzip archive"
@@ -1037,7 +1042,7 @@ msgstr "Matroska-Video"
 
 #: ../freedesktop.org.xml.in.h:258
 msgid "Matroska 3D video"
-msgstr ""
+msgstr "Matroska 3D-Video"
 
 #: ../freedesktop.org.xml.in.h:259
 msgid "Matroska audio"
@@ -1158,7 +1163,7 @@ msgstr "Ogg-FLAC-Audio"
 
 #: ../freedesktop.org.xml.in.h:289
 msgid "Opus audio"
-msgstr ""
+msgstr "Opus-Audio"
 
 #: ../freedesktop.org.xml.in.h:290
 msgid "Ogg Speex audio"
@@ -1182,7 +1187,7 @@ msgstr "OLE2-Verbunddokumentenspeicher"
 
 #: ../freedesktop.org.xml.in.h:295
 msgid "Microsoft Publisher document"
-msgstr ""
+msgstr "Microsoft Publisher-Dokument"
 
 #: ../freedesktop.org.xml.in.h:296
 msgid "Windows Installer package"
@@ -1565,7 +1570,7 @@ msgstr "Komprimiertes Tracker-Audio"
 
 #: ../freedesktop.org.xml.in.h:392
 msgid "AAC audio"
-msgstr "AAc-Audio"
+msgstr "AAC-Audio"
 
 #: ../freedesktop.org.xml.in.h:393
 msgid "MPEG-4 audio"
@@ -1661,7 +1666,7 @@ msgstr "RIFF-Audio"
 
 #: ../freedesktop.org.xml.in.h:416
 msgid "RIFF container"
-msgstr ""
+msgstr "RIFF-Container"
 
 #: ../freedesktop.org.xml.in.h:417
 msgid "Scream Tracker 3 audio"
@@ -1861,7 +1866,7 @@ msgstr "Microsoft-Document-Imaging-Bildformat"
 
 #: ../freedesktop.org.xml.in.h:466
 msgid "WebP image"
-msgstr ""
+msgstr "WebP-Bild"
 
 #: ../freedesktop.org.xml.in.h:467
 msgid "3D Studio image"
@@ -2497,7 +2502,7 @@ msgstr "Ressourcenort"
 
 #: ../freedesktop.org.xml.in.h:625
 msgid "uuencoded file"
-msgstr ""
+msgstr "Datei im uuencode-Format"
 
 #: ../freedesktop.org.xml.in.h:626
 msgid "XMI file"
@@ -2795,12 +2800,12 @@ msgstr "Windows-Software"
 #. http://www4.wiwiss.fu-berlin.de/bizer/TriG/
 #: ../freedesktop.org.xml.in.h:722
 msgid "TriG RDF document"
-msgstr ""
+msgstr "TriG RDF-Dokument"
 
 #: ../freedesktop.org.xml.in.h:723
 msgid "Apple Keynote 5 presentation"
-msgstr ""
+msgstr "Apple Keynote 5-Präsentation"
 
 #: ../freedesktop.org.xml.in.h:724
 msgid "Adobe PageMaker"
-msgstr ""
+msgstr "Adobe PageMaker"

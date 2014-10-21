@@ -6,15 +6,15 @@
 # Changwoo Ryu <cwryu@debian.org>, 2011
 # Seong-ho Cho <darkcircle.0426@gmail.com>, 2013
 # Seong-ho Cho <darkcircle.0426@gmail.com>, 2011
-# Seong-ho Cho <darkcircle.0426@gmail.com>, 2013
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2013-2014
 # Shinjo Park <kde@peremen.name>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-info\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-27 15:43+0200\n"
-"PO-Revision-Date: 2014-07-22 00:11+0000\n"
-"Last-Translator: hadess <hadess@hadess.net>\n"
+"POT-Creation-Date: 2014-07-22 02:11+0200\n"
+"PO-Revision-Date: 2014-08-02 17:27+0000\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/shared-mime-info/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -60,7 +60,7 @@ msgstr "알 수 없음"
 
 #: ../freedesktop.org.xml.in.h:10
 msgid "Partially downloaded file"
-msgstr ""
+msgstr "일부 다운로드한 파일"
 
 #: ../freedesktop.org.xml.in.h:11
 msgid "ODA document"
@@ -587,11 +587,11 @@ msgstr "애플 디스크 이미지"
 
 #: ../freedesktop.org.xml.in.h:144
 msgid "Raw disk image"
-msgstr ""
+msgstr "RAW 디스크 이미지"
 
 #: ../freedesktop.org.xml.in.h:145
 msgid "Raw disk image (XZ-compressed)"
-msgstr ""
+msgstr "RAW 디스크 이미지(XZ 압축)"
 
 #: ../freedesktop.org.xml.in.h:146
 msgid "raw CD image"
@@ -655,15 +655,15 @@ msgstr "닌텐도 DS 롬"
 
 #: ../freedesktop.org.xml.in.h:161
 msgid "PC Engine ROM"
-msgstr ""
+msgstr "PC 엔진 롬"
 
 #: ../freedesktop.org.xml.in.h:162
 msgid "Wii disc image"
-msgstr ""
+msgstr "Wii 디스크 이미지"
 
 #: ../freedesktop.org.xml.in.h:163
 msgid "GameCube disc image"
-msgstr ""
+msgstr "게임큐브 디스크 이미지"
 
 #: ../freedesktop.org.xml.in.h:164
 msgid "Debian package"
@@ -687,7 +687,7 @@ msgstr "FictionBook 문서"
 
 #: ../freedesktop.org.xml.in.h:169
 msgid "Compressed FictionBook document"
-msgstr ""
+msgstr "압축한 픽션북 문서 "
 
 #: ../freedesktop.org.xml.in.h:170
 msgid "Dia diagram"
@@ -906,7 +906,7 @@ msgstr "자바스크립트 프로그램"
 
 #: ../freedesktop.org.xml.in.h:225
 msgid "JSON document"
-msgstr ""
+msgstr "JSON 문서"
 
 #: ../freedesktop.org.xml.in.h:226
 msgid "JBuilder project"
@@ -1002,7 +1002,7 @@ msgstr "LyX 문서"
 
 #: ../freedesktop.org.xml.in.h:249
 msgid "LZ4 archive"
-msgstr ""
+msgstr "LZ4 아카이브"
 
 #: ../freedesktop.org.xml.in.h:250
 msgid "Lzip archive"
@@ -1038,7 +1038,7 @@ msgstr "Matroska 동영상"
 
 #: ../freedesktop.org.xml.in.h:258
 msgid "Matroska 3D video"
-msgstr ""
+msgstr "마트로스카 3D 동영상"
 
 #: ../freedesktop.org.xml.in.h:259
 msgid "Matroska audio"
@@ -1159,7 +1159,7 @@ msgstr "Ogg FLAC 오디오"
 
 #: ../freedesktop.org.xml.in.h:289
 msgid "Opus audio"
-msgstr ""
+msgstr "오퍼스 오디오"
 
 #: ../freedesktop.org.xml.in.h:290
 msgid "Ogg Speex audio"
@@ -1183,7 +1183,7 @@ msgstr "OLE2 복합 문서"
 
 #: ../freedesktop.org.xml.in.h:295
 msgid "Microsoft Publisher document"
-msgstr ""
+msgstr "마이크로소프트 퍼블리셔 문서"
 
 #: ../freedesktop.org.xml.in.h:296
 msgid "Windows Installer package"
@@ -1662,7 +1662,7 @@ msgstr "RIFF 오디오"
 
 #: ../freedesktop.org.xml.in.h:416
 msgid "RIFF container"
-msgstr ""
+msgstr "RIFF 컨테이너"
 
 #: ../freedesktop.org.xml.in.h:417
 msgid "Scream Tracker 3 audio"
@@ -1862,7 +1862,7 @@ msgstr "마이크로소프트 문서 이미지 형식"
 
 #: ../freedesktop.org.xml.in.h:466
 msgid "WebP image"
-msgstr ""
+msgstr "WebP 그림"
 
 #: ../freedesktop.org.xml.in.h:467
 msgid "3D Studio image"
@@ -2796,12 +2796,12 @@ msgstr "Windows 소프트웨어"
 #. http://www4.wiwiss.fu-berlin.de/bizer/TriG/
 #: ../freedesktop.org.xml.in.h:722
 msgid "TriG RDF document"
-msgstr ""
+msgstr "TriG RDF 문서"
 
 #: ../freedesktop.org.xml.in.h:723
 msgid "Apple Keynote 5 presentation"
-msgstr ""
+msgstr "애플 키노트 5 프리젠테이션"
 
 #: ../freedesktop.org.xml.in.h:724
 msgid "Adobe PageMaker"
-msgstr ""
+msgstr "어도비 페이지메이커"

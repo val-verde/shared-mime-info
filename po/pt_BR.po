@@ -3,16 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# André Marcelo Alvarenga <alvarenga@kde.org>, 2013
-# André Marcelo Alvarenga <alvarenga@kde.org>, 2012-2013
-# Rafael Ferreira <rafael.f.f1@gmail.com>, 2012
+# André Marcelo Alvarenga <alvarenga@kde.org>, 2013-2014
+# André Marcelo Alvarenga <amalvarenga@gmail.com>, 2012-2013
+# Rafael Ferreira <rafael.f.f1@gmail.com>, 2012,2014
 msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-info\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-27 15:43+0200\n"
-"PO-Revision-Date: 2014-07-22 00:11+0000\n"
-"Last-Translator: hadess <hadess@hadess.net>\n"
+"POT-Creation-Date: 2014-07-22 02:11+0200\n"
+"PO-Revision-Date: 2014-07-22 11:36+0000\n"
+"Last-Translator: André Marcelo Alvarenga <alvarenga@kde.org>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/shared-mime-info/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,7 +58,7 @@ msgstr "Desconhecido"
 
 #: ../freedesktop.org.xml.in.h:10
 msgid "Partially downloaded file"
-msgstr ""
+msgstr "Arquivo baixado parcialmente"
 
 #: ../freedesktop.org.xml.in.h:11
 msgid "ODA document"
@@ -82,7 +82,7 @@ msgstr "Pacote de temas do Microsoft Windows"
 
 #: ../freedesktop.org.xml.in.h:16
 msgid "AmazonMP3 download file"
-msgstr "Arquivo baixado da Amazon MP3"
+msgstr "Arquivo de download AmazonMP3"
 
 #: ../freedesktop.org.xml.in.h:17
 msgid "GSM 06.10 audio"
@@ -106,7 +106,7 @@ msgstr "Assinatura OpenPGP destacada"
 
 #: ../freedesktop.org.xml.in.h:22
 msgid "PKCS#7 Message or Certificate"
-msgstr "Certificado ou mensagem PKCS#7"
+msgstr "Certificado ou Mensagem PKCS#7"
 
 #: ../freedesktop.org.xml.in.h:23
 msgid "detached S/MIME signature"
@@ -585,11 +585,11 @@ msgstr "Imagem de disco Apple"
 
 #: ../freedesktop.org.xml.in.h:144
 msgid "Raw disk image"
-msgstr ""
+msgstr "Imagem bruta de disco"
 
 #: ../freedesktop.org.xml.in.h:145
 msgid "Raw disk image (XZ-compressed)"
-msgstr ""
+msgstr "Imagem bruta de disco (compactada com XZ)"
 
 #: ../freedesktop.org.xml.in.h:146
 msgid "raw CD image"
@@ -653,15 +653,15 @@ msgstr "ROM do Nintendo DS"
 
 #: ../freedesktop.org.xml.in.h:161
 msgid "PC Engine ROM"
-msgstr ""
+msgstr "ROM de PC Engine"
 
 #: ../freedesktop.org.xml.in.h:162
 msgid "Wii disc image"
-msgstr ""
+msgstr "Imagem de disco Wii"
 
 #: ../freedesktop.org.xml.in.h:163
 msgid "GameCube disc image"
-msgstr ""
+msgstr "Imagem de disco GameCube"
 
 #: ../freedesktop.org.xml.in.h:164
 msgid "Debian package"
@@ -677,7 +677,7 @@ msgstr "Arquivo de Qt Markup Language"
 
 #: ../freedesktop.org.xml.in.h:167
 msgid "desktop configuration file"
-msgstr "Arquivo de configuração desktop"
+msgstr "Arquivo de configuração de área de trabalho"
 
 #: ../freedesktop.org.xml.in.h:168
 msgid "FictionBook document"
@@ -685,7 +685,7 @@ msgstr "Documento FictionBook"
 
 #: ../freedesktop.org.xml.in.h:169
 msgid "Compressed FictionBook document"
-msgstr ""
+msgstr "Documento FictionBook comprimido"
 
 #: ../freedesktop.org.xml.in.h:170
 msgid "Dia diagram"
@@ -904,7 +904,7 @@ msgstr "Programa JavaScript"
 
 #: ../freedesktop.org.xml.in.h:225
 msgid "JSON document"
-msgstr ""
+msgstr "Documento JSON"
 
 #: ../freedesktop.org.xml.in.h:226
 msgid "JBuilder project"
@@ -1000,7 +1000,7 @@ msgstr "Documento LyX"
 
 #: ../freedesktop.org.xml.in.h:249
 msgid "LZ4 archive"
-msgstr ""
+msgstr "Pacote LZ4"
 
 #: ../freedesktop.org.xml.in.h:250
 msgid "Lzip archive"
@@ -1036,7 +1036,7 @@ msgstr "Vídeo Matroska"
 
 #: ../freedesktop.org.xml.in.h:258
 msgid "Matroska 3D video"
-msgstr ""
+msgstr "Vídeo 3D Matroska"
 
 #: ../freedesktop.org.xml.in.h:259
 msgid "Matroska audio"
@@ -1052,7 +1052,7 @@ msgstr "Áudio WebM"
 
 #: ../freedesktop.org.xml.in.h:262
 msgid "MHTML web archive"
-msgstr "Arquivamento Web MHTML"
+msgstr "Pacote web MHTML"
 
 #: ../freedesktop.org.xml.in.h:263
 msgid "MXF video"
@@ -1149,7 +1149,7 @@ msgstr "Vídeo Ogg"
 
 #: ../freedesktop.org.xml.in.h:287
 msgid "Ogg Vorbis audio"
-msgstr "Áudio Ogg Vorbis"
+msgstr "Áudio do Ogg Vorbis"
 
 #: ../freedesktop.org.xml.in.h:288
 msgid "Ogg FLAC audio"
@@ -1157,7 +1157,7 @@ msgstr "Áudio FLAC Ogg"
 
 #: ../freedesktop.org.xml.in.h:289
 msgid "Opus audio"
-msgstr ""
+msgstr "Áudio Opus"
 
 #: ../freedesktop.org.xml.in.h:290
 msgid "Ogg Speex audio"
@@ -1181,7 +1181,7 @@ msgstr "Armazenamento de documento composto OLE2"
 
 #: ../freedesktop.org.xml.in.h:295
 msgid "Microsoft Publisher document"
-msgstr ""
+msgstr "Documento do Microsoft Publisher"
 
 #: ../freedesktop.org.xml.in.h:296
 msgid "Windows Installer package"
@@ -1245,7 +1245,7 @@ msgstr "Código compilado Python"
 
 #: ../freedesktop.org.xml.in.h:311
 msgid "QtiPlot document"
-msgstr "Documento QtiPlot"
+msgstr "Documento do QtiPlot"
 
 #: ../freedesktop.org.xml.in.h:312
 msgid "Quattro Pro spreadsheet"
@@ -1281,7 +1281,7 @@ msgstr "Pacote RPM"
 
 #: ../freedesktop.org.xml.in.h:320
 msgid "Source RPM package"
-msgstr "Pacote RPM de código-fonte"
+msgstr "Pacote fonte RPM"
 
 #: ../freedesktop.org.xml.in.h:321
 msgid "Ruby script"
@@ -1660,7 +1660,7 @@ msgstr "Áudio RIFF"
 
 #: ../freedesktop.org.xml.in.h:416
 msgid "RIFF container"
-msgstr ""
+msgstr "Contêiner RIFF"
 
 #: ../freedesktop.org.xml.in.h:417
 msgid "Scream Tracker 3 audio"
@@ -1860,7 +1860,7 @@ msgstr "Formato do Microsoft Document Imaging"
 
 #: ../freedesktop.org.xml.in.h:466
 msgid "WebP image"
-msgstr ""
+msgstr "Imagem WebP"
 
 #: ../freedesktop.org.xml.in.h:467
 msgid "3D Studio image"
@@ -2412,7 +2412,7 @@ msgstr "Script/função do MATLAB"
 
 #: ../freedesktop.org.xml.in.h:604
 msgid "Modelica model"
-msgstr "Modelo Modelica"
+msgstr "Modelo de Modelica"
 
 #: ../freedesktop.org.xml.in.h:605
 msgid "Pascal source code"
@@ -2496,7 +2496,7 @@ msgstr "Localização de recurso"
 
 #: ../freedesktop.org.xml.in.h:625
 msgid "uuencoded file"
-msgstr "Arquivo Uuencode"
+msgstr "Arquivo uuencodificado"
 
 #: ../freedesktop.org.xml.in.h:626
 msgid "XMI file"
@@ -2684,7 +2684,7 @@ msgstr "Arquivo de calibração de cor IT 8.7"
 
 #: ../freedesktop.org.xml.in.h:672
 msgid "CCMX color correction file"
-msgstr "Arquivo de correção de cores CCMX"
+msgstr "Arquivo de correção de cor CCMX"
 
 #: ../freedesktop.org.xml.in.h:673
 msgid "WinHelp help file"
@@ -2737,7 +2737,7 @@ msgstr "Disco Blu-ray vazio"
 #. http://en.wikipedia.org/wiki/HD_DVD
 #: ../freedesktop.org.xml.in.h:695
 msgid "blank HD DVD disc"
-msgstr "Disco HD DVD vazio"
+msgstr "Disco DVD HD vazio"
 
 #. http://en.wikipedia.org/wiki/DVD-Audio
 #: ../freedesktop.org.xml.in.h:697
@@ -2794,12 +2794,12 @@ msgstr "Programa do Windows"
 #. http://www4.wiwiss.fu-berlin.de/bizer/TriG/
 #: ../freedesktop.org.xml.in.h:722
 msgid "TriG RDF document"
-msgstr ""
+msgstr "Documento RDF do TriG"
 
 #: ../freedesktop.org.xml.in.h:723
 msgid "Apple Keynote 5 presentation"
-msgstr ""
+msgstr "Apresentação do Apple Keynote 5"
 
 #: ../freedesktop.org.xml.in.h:724
 msgid "Adobe PageMaker"
-msgstr ""
+msgstr "Adobe PageMaker"

@@ -4354,6 +4354,12 @@ command to generate the output files.
     <glob pattern="*.tif"/>
     <glob pattern="*.tiff"/>
   </mime-type>
+  <mime-type type="image/x-tiff-multipage">
+    <_comment>Multi-page TIFF image</_comment>
+    <acronym>TIFF</acronym>
+    <expanded-acronym>Tagged Image File Format</expanded-acronym>
+    <sub-class-of type="image/tiff"/>
+  </mime-type>
   <mime-type type="image/vnd.dwg">
     <_comment>AutoCAD image</_comment>
     <glob pattern="*.dwg"/>

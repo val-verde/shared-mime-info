@@ -4522,7 +4522,7 @@ command to generate the output files.
     <glob pattern="*.epsf.gz"/>
   </mime-type>
   <mime-type type="image/vnd.microsoft.icon">
-    <_comment>Microsoft icon</_comment>
+    <_comment>Windows icon</_comment>
     <magic priority="50">
       <match type="string" value="\0\0\1\0" offset="0">
         <match type="string" value="\0" offset="5"/>

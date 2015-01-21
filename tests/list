@@ -477,3 +477,11 @@ COPYING.asc application/pgp-signature xoo
 test-public-key.asc application/pgp-keys xoo
 test-secret-key.skr application/pgp-keys ooo
 test-secret-key.asc application/pgp-keys xoo
+
+# copied from https://bitbucket.org/scons/scons/raw/f0d4664d36f8a4d4da53178cf947c86c86db3cb7/SConstruct
+SConstruct text/x-scons oxo
+#copied from https://sourceforge.net/p/wesnoth/code/ci/master/tree/src/SConscript?format=raw
+SConscript text/x-scons oxo
+# copied from https://raw.githubusercontent.com/mongodb/mongo/master/SConscript.buildinfo
+SConscript.buildinfo text/x-scons oxo
+

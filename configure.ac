@@ -1,4 +1,4 @@
-AC_INIT([shared-mime-info],[1.3],[https://bugs.freedesktop.org/enter_bug.cgi?product=shared-mime-info])
+AC_INIT([shared-mime-info],[1.4],[https://bugs.freedesktop.org/enter_bug.cgi?product=shared-mime-info])
 
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz check-news])
 

@@ -1,3 +1,30 @@
+shared-mime-info 1.4 (2015-02-05)
+* Add glob for low-resolution videos from GoPro
+* Add mime-type for partially downloaded files
+* Use IANA registered mime-type for Debian packages
+* Add another magic for OTF fonts
+* Add support for Adobe PageMaker
+* Remove the Apple iOS PNG variant
+* Add *.dbk glob for DocBook
+* Use IANA registered mime-type for Vivo
+* Remove obsolete application/x-gmc-link mime-type
+* Make application/x-wais-source a subclass of text/plain
+* Flip application/smil+xml and application/smil type/alias
+* Add Nintendo 64 ROM magic
+* Add qpress archive support
+* Add image/x-tiff-multipage mime-type
+* Rename "Microsoft icon" to "Windows icon"
+* Add magic for ODB files
+* Use IANA registered text/markdown for Markdown
+* New mimetype for SCons scripts as subclass of x-python
+* Make application/pgp-encrypted a subclass of text/plain
+* Associate *.qmltypes and *.qmlproject files with the text/x-qml mime type
+* Add text/x-genie mime type for Genie source code
+
+* Disable fdatasync() usage if PKGSYSTEM_ENABLE_FSYNC is set
+* Skip mime database update if packages are older than cache
+* Add "-n" option to update-mime-database to only update if "newer"
+
 shared-mime-info 1.3 (2014-04-08)
 * Mime-type changes:
 - Add Aliases for OpenOffice Base and StarWriter

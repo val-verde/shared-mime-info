@@ -937,6 +937,7 @@ set_error_from_errno (GError **error)
 			    g_strerror(errsv));
 }
 
+#ifdef HAVE_FDATASYNC
 static gboolean
 sync_enabled(void)
 {
@@ -947,16 +948,17 @@ sync_enabled(void)
 		return TRUE;
 	return atoi(env);
 }
+#endif
 
 static int
 sync_file(const gchar *pathname, GError **error)
 {
+#ifdef HAVE_FDATASYNC
 	int fd;
 
 	if (!sync_enabled())
 		return 0;
 
-#ifdef HAVE_FDATASYNC
 	fd = open(pathname, O_RDWR);
 	if (fd == -1)
 	{

@@ -1514,6 +1514,7 @@ command to generate the output files.
     <_comment>raw CD image</_comment>
     <sub-class-of type="application/x-raw-disk-image"/>
     <alias type="application/x-iso9660-image"/>
+    <!-- No magic, see https://bugs.freedesktop.org/show_bug.cgi?id=10049 -->
     <glob pattern="*.iso"/>
     <glob pattern="*.iso9660"/>
   </mime-type>

@@ -10,6 +10,9 @@ A few ground rules for people interested in adding new mime-types.
 * Mime-types/file formats proprietary to one application should only
   be added to a private .xml file and be bundled with the application
   itself
+* Magic offset must be as small as possible. For example, the worst case
+  scenario for ISO images is 32k inside the file. This is too big for a sniff
+  buffer, especially on remote locations. Avoid those.
 * No commits should be done that break the test suite, or the test suite
   test in question should be amended, and reason for the changes clearly
   documented in the commit message

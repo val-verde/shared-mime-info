@@ -1981,11 +1981,15 @@ command to generate the output files.
     <_comment>Game Boy ROM</_comment>
     <generic-icon name="application-x-executable"/>
     <glob pattern="*.gb"/>
+    <glob pattern="*.gbc"/>
+    <glob pattern="*.cgb"/>
+    <glob pattern="*.sgb"/>
   </mime-type>
   <mime-type type="application/x-gba-rom">
     <_comment>Game Boy Advance ROM</_comment>
     <generic-icon name="application-x-executable"/>
     <glob pattern="*.gba"/>
+    <glob pattern="*.agb"/>
   </mime-type>
   <mime-type type="application/x-gdbm">
     <_comment>GDBM database</_comment>
@@ -2008,6 +2012,9 @@ command to generate the output files.
       <match type="string" value="EAMG" offset="640"/>
     </magic>
     <glob pattern="*.gen"/>
+    <glob pattern="*.smd"/>
+    <glob pattern="*.32x"/>
+    <glob pattern="*.mdx"/>
   </mime-type>
   <mime-type type="application/x-gettext-translation">
     <_comment>translated messages (machine-readable)</_comment>
@@ -2709,6 +2716,9 @@ command to generate the output files.
     <_comment>NES ROM</_comment>
     <generic-icon name="application-x-executable"/>
     <glob pattern="*.nes"/>
+    <glob pattern="*.nez"/>
+    <glob pattern="*.unf"/>
+    <glob pattern="*.unif"/>
   </mime-type>
   <mime-type type="application/x-netcdf">
     <_comment>Unidata NetCDF document</_comment>
@@ -3243,8 +3253,13 @@ command to generate the output files.
   <mime-type type="application/x-sms-rom">
     <_comment>Sega Master System/Game Gear ROM</_comment>
     <generic-icon name="application-x-executable"/>
+    <!-- Disabled, the magic would be too far into the file
+    <magic>
+      <match type="string" value="TMR SEGA" offset="32752"/>
+    </magic> -->
     <glob pattern="*.sms"/>
     <glob pattern="*.gg"/>
+    <glob pattern="*.sg"/>
   </mime-type>
   <mime-type type="application/vnd.nintendo.snes.rom">
     <!-- Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in Europe) if the console was known as such in your locale -->

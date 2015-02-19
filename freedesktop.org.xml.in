@@ -5058,6 +5058,17 @@ command to generate the output files.
     <glob pattern="*.owl"/>
     <root-XML namespaceURI="http://www.w3.org/1999/02/22-rdf-syntax-ns#" localName="RDF"/>
   </mime-type>
+  <mime-type type="application/owl+xml">
+    <_comment>OWL XML file</_comment>
+    <acronym>OWL</acronym>
+    <expanded-acronym>Web Ontology Language</expanded-acronym>
+    <sub-class-of type="application/xml"/>
+    <glob pattern="*.owx"/>
+    <magic>
+      <match type="string" value="&lt;Ontology" offset="0:256"/>
+    </magic>
+    <root-XML namespaceURI="http://www.w3.org/2002/07/owl#" localName="Ontology"/>
+  </mime-type>
   <mime-type type="text/rfc822-headers">
     <_comment>email headers</_comment>
     <sub-class-of type="text/plain"/>

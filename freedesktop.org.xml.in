@@ -4997,6 +4997,11 @@ command to generate the output files.
     <glob pattern="*.vct"/>
     <glob pattern="*.gcrd"/>
   </mime-type>
+  <mime-type type="text/turtle">
+    <_comment>Turtle document</_comment>
+    <glob pattern="*.ttl"/>
+    <sub-class-of type="text/plain"/>
+  </mime-type>
   <mime-type type="text/x-txt2tags">
     <_comment>txt2tags document</_comment>
     <sub-class-of type="text/plain"/>

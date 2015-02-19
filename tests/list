@@ -292,6 +292,8 @@ test.pyx text/x-python ox
 test.pl application/x-perl
 test.pm application/x-perl
 test.t application/x-perl
+# Copied from http://en.wikipedia.org/wiki/Turtle_%28syntax%29#Example
+test.ttl text/turtle ox
 
 # xml subtypes
 ../shared-mime-info-spec.xml application/x-docbook+xml xox

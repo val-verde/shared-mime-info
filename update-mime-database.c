@@ -3545,7 +3545,11 @@ static gint64
 newest_mtime(const char *packagedir)
 {
 	GDir *dir;
+#if !GLIB_CHECK_VERSION(2,26,0)
+	struct stat GStatBuf;
+#else
 	GStatBuf statbuf;
+#endif
 	gint64 mtime = G_MININT64;
 	const char *name;
 	int retval;

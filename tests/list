@@ -294,6 +294,7 @@ test.pm application/x-perl
 test.t application/x-perl
 # Copied from http://en.wikipedia.org/wiki/Turtle_%28syntax%29#Example
 test.ttl text/turtle ox
+test.rs text/rust ox
 
 # xml subtypes
 ../shared-mime-info-spec.xml application/x-docbook+xml xox

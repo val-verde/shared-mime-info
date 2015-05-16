@@ -3153,6 +3153,11 @@ command to generate the output files.
     <generic-icon name="text-x-script"/>
     <glob pattern="*.mab"/>
   </mime-type>
+  <mime-type type="text/rust">
+    <_comment>Rust source code</_comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.rs"/>
+  </mime-type>
   <mime-type type="application/x-sc">
     <_comment>SC/Xspread spreadsheet</_comment>
     <generic-icon name="x-office-spreadsheet"/>

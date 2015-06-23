@@ -2220,6 +2220,14 @@ command to generate the output files.
     <generic-icon name="text-x-script"/>
     <glob pattern="*.jrd"/>
   </mime-type>
+  <mime-type type="application/json-patch+json">
+    <_comment>JSON patch</_comment>
+    <acronym>JSON</acronym>
+    <expanded-acronym>JavaScript Object Notation</expanded-acronym>
+    <sub-class-of type="application/json"/>
+    <generic-icon name="text-x-script"/>
+    <glob pattern="*.json-patch"/>
+  </mime-type>
   <mime-type type="application/ld+json">
     <_comment>JSON-LD document</_comment>
     <acronym>JSON-LD</acronym>

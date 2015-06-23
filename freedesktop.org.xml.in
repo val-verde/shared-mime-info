@@ -2212,6 +2212,14 @@ command to generate the output files.
     <generic-icon name="text-x-script"/>
     <glob pattern="*.json"/>
   </mime-type>
+  <mime-type type="application/jrd+json">
+    <_comment>JRD document</_comment>
+    <acronym>JRD</acronym>
+    <expanded-acronym>JSON Resource Descriptor</expanded-acronym>
+    <sub-class-of type="application/json"/>
+    <generic-icon name="text-x-script"/>
+    <glob pattern="*.jrd"/>
+  </mime-type>
   <mime-type type="application/ld+json">
     <_comment>JSON-LD document</_comment>
     <acronym>JSON-LD</acronym>

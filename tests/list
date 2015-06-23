@@ -222,6 +222,8 @@ Utils.jsm application/javascript ox
 # The following two copied from RFC 4627.
 json_object.json application/json ox
 json_array.json application/json ox
+# Copied from RFC 7033
+webfinger.jrd application/jrd+json ox
 # Copied from http://www.w3.org/TR/json-ld/
 json-ld-full-iri.jsonld application/ld+json ox
 test.cs text/x-csharp ox

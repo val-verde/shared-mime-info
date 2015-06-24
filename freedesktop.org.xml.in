@@ -2217,6 +2217,11 @@ command to generate the output files.
     <generic-icon name="text-x-script"/>
     <glob pattern="*.jsonld"/>
   </mime-type>
+  <mime-type type="application/vnd.coffeescript">
+    <_comment>CoffeeScript document</_comment>
+    <generic-icon name="text-x-script"/>
+    <glob pattern="*.coffee"/>
+  </mime-type>
   <mime-type type="application/x-jbuilder-project">
     <_comment>JBuilder project</_comment>
     <generic-icon name="x-office-document"/>

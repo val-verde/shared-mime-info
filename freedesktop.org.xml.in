@@ -5256,6 +5256,13 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <glob pattern="*.csv"/>
   </mime-type>
+  <mime-type type="text/csv-schema">
+    <_comment>CSV Schema document</_comment>
+    <acronym>CSV</acronym>
+    <expanded-acronym>Comma Separated Values</expanded-acronym>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.csvs"/>
+  </mime-type>
   <mime-type type="text/x-copying">
     <_comment>license terms</_comment>
     <sub-class-of type="text/plain"/>

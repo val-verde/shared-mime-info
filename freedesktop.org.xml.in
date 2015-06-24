@@ -28,11 +28,11 @@
 
   <!ELEMENT glob EMPTY>
   <!ATTLIST glob pattern CDATA #REQUIRED>
-  <!ATTLIST glob weight CDATA #IMPLIED>
+  <!ATTLIST glob weight CDATA "50">
   <!ATTLIST glob case-sensitive CDATA #IMPLIED>
 
   <!ELEMENT magic (match)+>
-  <!ATTLIST magic priority CDATA #IMPLIED>
+  <!ATTLIST magic priority CDATA "50">
 
   <!ELEMENT match (match)*>
   <!ATTLIST match offset CDATA #REQUIRED>
@@ -41,7 +41,7 @@
   <!ATTLIST match mask CDATA #IMPLIED>
 
   <!ELEMENT treemagic (treematch)+>
-  <!ATTLIST treemagic priority CDATA #IMPLIED>
+  <!ATTLIST treemagic priority CDATA "50">
 
   <!ELEMENT treematch (treematch)*>
   <!ATTLIST treematch path CDATA #REQUIRED>

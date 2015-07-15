@@ -3864,6 +3864,8 @@ command to generate the output files.
     <_comment>Amiga SoundTracker audio</_comment>
     <magic>
       <match type="string" value="MTM" offset="0"/>
+      <match type="string" value="MMD0" offset="0"/>
+      <match type="string" value="MMD1" offset="0"/>
     </magic>
     <glob pattern="*.mod"/>
     <glob pattern="*.ult"/>

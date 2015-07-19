@@ -5594,6 +5594,12 @@ command to generate the output files.
     <glob pattern="*.m"/>
     <alias type="text/x-octave"/>
   </mime-type>
+  <mime-type type="text/x-meson">
+    <_comment>Meson source code</_comment>
+    <glob pattern="meson.build"/>
+    <glob pattern="meson_options.txt"/>
+    <sub-class-of type="text/plain"/>
+  </mime-type>
   <mime-type type="text/x-modelica">
     <_comment>Modelica model</_comment>
     <sub-class-of type="text/plain"/>

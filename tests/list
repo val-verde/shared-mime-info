@@ -455,6 +455,8 @@ text.ps application/postscript
 text.ps.gz application/x-gzpostscript ox
 text.PS.gz application/x-gzpostscript oxo
 test.cmake text/x-cmake ox
+meson.build text/x-meson ox
+meson_options.txt text/x-meson ox
 bluerect.mdi image/vnd.ms-modi
 Stallman_Richard_-_The_GNU_Manifesto.fb2 application/x-fictionbook+xml
 Stallman_Richard_-_The_GNU_Manifesto.fb2.zip application/x-zip-compressed-fb2

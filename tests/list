@@ -434,6 +434,10 @@ adf-test.adf application/x-amiga-disk-format
 # Video game ROMs
 genesis1.bin application/x-genesis-rom xox
 genesis2.bin application/x-genesis-rom xox
+# Kirby's Dream Land truncated to 1Ko
+game-boy-test.gb application/x-gameboy-rom
+# The Legend of Zelda: Link's Awakening truncated to 1Ko
+game-boy-color-test.gbc application/x-gameboy-rom
 m64p_test_rom.n64 application/x-n64-rom
 m64p_test_rom.v64 application/x-n64-rom
 m64p_test_rom.z64 application/x-n64-rom

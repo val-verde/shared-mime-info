@@ -3477,6 +3477,11 @@ command to generate the output files.
     <_comment>Stampede package</_comment>
     <generic-icon name="package-x-generic"/>
   </mime-type>
+  <mime-type type="application/x-sg1000-rom">
+    <_comment>SG-1000 ROM</_comment>
+    <generic-icon name="application-x-executable"/>
+    <glob pattern="*.sg"/>
+  </mime-type>
   <mime-type type="application/x-sms-rom">
     <!-- Translate this to "Master System/Mark III" if the console was known as such in your locale (probably only in Japan) -->
     <_comment>Master System ROM</_comment>

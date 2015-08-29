@@ -437,12 +437,14 @@ genesis2.bin application/x-genesis-rom xox
 m64p_test_rom.n64 application/x-n64-rom
 m64p_test_rom.v64 application/x-n64-rom
 m64p_test_rom.z64 application/x-n64-rom
+# Castlevania: The Adventure Rebirth truncated to 1Ko
+wii.wad application/x-wii-wad
 
 # Video game packages
 # DOOM1.WAD trucated to 1Ko
-IWAD.WAD application/x-doom-wad
+IWAD.WAD application/x-doom-wad x
 # ICARUS.WAD trucated to 1Ko
-PWAD.WAD application/x-doom-wad
+PWAD.WAD application/x-doom-wad x
 
 # other
 text.pdf application/pdf

@@ -1663,6 +1663,16 @@ command to generate the output files.
       <match offset="0" type="string" value="WII\001DISC"/>
     </magic>
   </mime-type>
+  <mime-type type="application/x-wii-wad">
+    <_comment>WiiWare bundle</_comment>
+    <generic-icon name="application-x-executable"/>
+    <magic priority="50">
+      <match type="string" value="Is\0\0" offset="4"/>
+      <match type="string" value="ib\0\0" offset="4"/>
+      <match type="string" value="Bk\0\0" offset="4"/>
+    </magic>
+    <glob pattern="*.wad"/>
+  </mime-type>
   <mime-type type="application/x-gamecube-rom">
     <_comment>GameCube disc image</_comment>
     <generic-icon name="application-x-executable"/>

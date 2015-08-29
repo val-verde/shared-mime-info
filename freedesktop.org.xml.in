@@ -3495,6 +3495,19 @@ command to generate the output files.
     </magic> -->
     <glob pattern="*.sms"/>
   </mime-type>
+  <mime-type type="application/x-gamegear-rom">
+    <_comment>Game Gear ROM</_comment>
+    <generic-icon name="application-x-executable"/>
+    <!-- Disabled, the magic would be too far into the file
+    <magic>
+      <match type="string" value="TMR SEGA" offset="32752">
+        <match type="byte" value="0x50" offset="32767" mask="0xf0"/>
+        <match type="byte" value="0x60" offset="32767" mask="0xf0"/>
+        <match type="byte" value="0x70" offset="32767" mask="0xf0"/>
+      </match>
+    </magic> -->
+    <glob pattern="*.gg"/>
+  </mime-type>
   <mime-type type="application/vnd.nintendo.snes.rom">
     <!-- Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in Europe) if the console was known as such in your locale -->
     <_comment>Super NES ROM</_comment>

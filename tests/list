@@ -436,6 +436,12 @@ m64p_test_rom.n64 application/x-n64-rom
 m64p_test_rom.v64 application/x-n64-rom
 m64p_test_rom.z64 application/x-n64-rom
 
+# Video game packages
+# DOOM1.WAD trucated to 1Ko
+IWAD.WAD application/x-doom-wad
+# ICARUS.WAD trucated to 1Ko
+PWAD.WAD application/x-doom-wad
+
 # other
 text.pdf application/pdf
 text.wwf application/x-wwf oxo

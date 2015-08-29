@@ -428,6 +428,8 @@ disk.img application/x-raw-disk-image oxo
 disk.img.xz application/x-raw-disk-image-xz-compressed oxo
 disk.raw-disk-image application/x-raw-disk-image oxo
 disk.raw-disk-image.xz application/x-raw-disk-image-xz-compressed oxo
+# Disk 1 of the Agony Amiga game truncated to 1Ko
+adf-test.adf application/x-adf
 
 # Video game ROMs
 genesis1.bin application/x-genesis-rom xox

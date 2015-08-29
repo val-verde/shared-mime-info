@@ -6428,4 +6428,12 @@ command to generate the output files.
     <glob pattern="*.wad"/>
   </mime-type>
 
+  <mime-type type="application/x-amiga-disk-format">
+    <_comment>Amiga disk image</_comment>
+    <magic priority="50">
+      <match type="string" value="DOS\x00" offset="0"/>
+    </magic>
+    <glob pattern="*.adf"/>
+  </mime-type>
+
 </mime-info>

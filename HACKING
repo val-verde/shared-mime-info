@@ -47,7 +47,7 @@ Bugs for new mime-types should include:
 Test suite
 ----------
 
-You need to have xdgmime checked out [1] and compile at the same level as
+You need to have xdgmime checked out [1] and compiled at the same level as
 shared-mime-info. ../xdgmime/src/test-mime-data will be run against
 tests/list.
 

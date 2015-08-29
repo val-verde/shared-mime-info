@@ -2028,8 +2028,8 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/x-genesis-rom">
-    <!-- Translate this to Megadrive if the console was known as such in your locale
-         Should be Megadrive in all but en_US: http://en.wikipedia.org/wiki/Megadrive#History -->
+    <!-- Translate this to Mega Drive if the console was known as such in your locale
+         Should be Mega Drive in all but en_US, Mexico and Canada: https://en.wikipedia.org/wiki/Sega_Genesis#History -->
     <_comment>Genesis ROM</_comment>
     <generic-icon name="application-x-executable"/>
     <magic priority="50">

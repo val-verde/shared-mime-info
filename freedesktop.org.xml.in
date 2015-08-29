@@ -3478,14 +3478,17 @@ command to generate the output files.
     <generic-icon name="package-x-generic"/>
   </mime-type>
   <mime-type type="application/x-sms-rom">
-    <_comment>Sega Master System/Game Gear ROM</_comment>
+    <!-- Translate this to "Master System/Mark III" if the console was known as such in your locale (probably only in Japan) -->
+    <_comment>Master System ROM</_comment>
     <generic-icon name="application-x-executable"/>
     <!-- Disabled, the magic would be too far into the file
     <magic>
-      <match type="string" value="TMR SEGA" offset="32752"/>
+      <match type="string" value="TMR SEGA" offset="32752">
+        <match type="byte" value="0x30" offset="32767" mask="0xf0"/>
+        <match type="byte" value="0x40" offset="32767" mask="0xf0"/>
+      </match>
     </magic> -->
     <glob pattern="*.sms"/>
-    <glob pattern="*.gg"/>
   </mime-type>
   <mime-type type="application/vnd.nintendo.snes.rom">
     <!-- Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in Europe) if the console was known as such in your locale -->

@@ -3611,7 +3611,9 @@ command to generate the output files.
     <glob pattern="*.zip"/>
   </mime-type>
   <mime-type type="application/x-ms-wim">
-    <_comment>Windows Imaging Format Disk Image</_comment>
+    <_comment>WIM disk Image</_comment>
+    <acronym>WIM</acronym>
+    <expanded-acronym>Windows Imaging Format</expanded-acronym>
     <magic>
       <match type="string" value="MSWIM\000\000\000" offset="0"/>
     </magic>

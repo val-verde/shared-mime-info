@@ -4558,16 +4558,27 @@ command to generate the output files.
     <alias type="image/x.djvu"/>
     <magic priority="50">
       <match type="string" offset="0" value="AT&amp;TFORM">
-        <match type="string" offset="12" value="DJVM"/>
         <match type="string" offset="12" value="DJVU"/>
       </match>
       <match type="string" offset="0" value="FORM">
-        <match type="string" offset="8" value="DJVM"/>
         <match type="string" offset="8" value="DJVU"/>
       </match>
     </magic>
     <glob pattern="*.djvu"/>
     <glob pattern="*.djv"/>
+  </mime-type>
+  <mime-type type="image/vnd.djvu+multipage">
+    <_comment>DjVu document</_comment>
+    <generic-icon name="x-office-document"/>
+    <magic priority="50">
+      <match type="string" offset="0" value="AT&amp;TFORM">
+        <match type="string" offset="12" value="DJVM"/>
+      </match>
+      <match type="string" offset="0" value="FORM">
+        <match type="string" offset="8" value="DJVM"/>
+      </match>
+    </magic>
+    <sub-class-of type="image/vnd.djvu"/>
   </mime-type>
   <mime-type type="image/dpx">
     <_comment>DPX image</_comment>

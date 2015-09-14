@@ -597,13 +597,13 @@ command to generate the output files.
     <sub-class-of type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
   </mime-type>
   <mime-type type="application/vnd.ms-excel.sheet.macroEnabled.12">
-    <_comment>Excel macro-enabled spreadsheet</_comment>
+    <_comment>Excel spreadsheet</_comment>
     <generic-icon name="x-office-spreadsheet"/>
     <glob pattern="*.xlsm"/>
     <sub-class-of type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
   </mime-type>
   <mime-type type="application/vnd.ms-excel.template.macroEnabled.12">
-    <_comment>Excel macro-enabled spreadsheet template</_comment>
+    <_comment>Excel spreadsheet template</_comment>
     <generic-icon name="x-office-spreadsheet"/>
     <glob pattern="*.xltm"/>
     <sub-class-of type="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
@@ -625,73 +625,73 @@ command to generate the output files.
     <glob pattern="*.ppam"/>
   </mime-type>
   <mime-type type="application/vnd.ms-powerpoint.presentation.macroEnabled.12">
-    <_comment>PowerPoint macro-enabled presentation</_comment>
+    <_comment>PowerPoint presentation</_comment>
     <generic-icon name="x-office-presentation"/>
     <glob pattern="*.pptm"/>
     <sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
   </mime-type>
   <mime-type type="application/vnd.ms-powerpoint.slide.macroEnabled.12">
-    <_comment>PowerPoint macro-enabled slide</_comment>
+    <_comment>PowerPoint slide</_comment>
     <generic-icon name="x-office-presentation"/>
     <glob pattern="*.sldm"/>
     <sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.slide"/>
   </mime-type>
   <mime-type type="application/vnd.ms-powerpoint.slideshow.macroEnabled.12">
-    <_comment>PowerPoint macro-enabled presentation</_comment>
+    <_comment>PowerPoint presentation</_comment>
     <generic-icon name="x-office-presentation"/>
     <glob pattern="*.ppsm"/>
     <sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
   </mime-type>
   <mime-type type="application/vnd.ms-powerpoint.template.macroEnabled.12">
-    <_comment>PowerPoint macro-enabled presentation template</_comment>
+    <_comment>PowerPoint presentation template</_comment>
     <generic-icon name="x-office-presentation"/>
     <glob pattern="*.potm"/>
     <sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.template"/>
   </mime-type>
     <mime-type type="application/vnd.ms-visio.drawing.main+xml">
-    <_comment>Office Open XML Visio Drawing (macro-free)</_comment>
+    <_comment>Office Open XML Visio Drawing</_comment>
 	<generic-icon name="image-x-generic"/>
     <glob pattern="*.vsdx"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.template.main+xml">
-    <_comment>Office Open XML Visio Template (macro-free)</_comment>
+    <_comment>Office Open XML Visio Template</_comment>
 	<generic-icon name="image-x-generic"/>
     <glob pattern="*.vstx"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.stencil.main+xml">
-    <_comment>Office Open XML Visio Stencil (macro-free)</_comment>
+    <_comment>Office Open XML Visio Stencil</_comment>
 	<generic-icon name="image-x-generic"/>
     <glob pattern="*.vssx"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.drawing.macroEnabled.main+xml">
-    <_comment>Office Open XML Visio Drawing (macro-enabled)</_comment>
+    <_comment>Office Open XML Visio Drawing</_comment>
 	<generic-icon name="image-x-generic"/>
     <glob pattern="*.vsdm"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.template.macroEnabled.main+xml">
-    <_comment>Office Open XML Visio Template (macro-enabled)</_comment>
+    <_comment>Office Open XML Visio Template</_comment>
 	<generic-icon name="image-x-generic"/>
     <glob pattern="*.vstm"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.stencil.macroEnabled.main+xml">
-    <_comment>Office Open XML Visio Stencil (macro-enabled)</_comment>
+    <_comment>Office Open XML Visio Stencil</_comment>
 	<generic-icon name="image-x-generic"/>
     <glob pattern="*.vssm"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-word.document.macroEnabled.12">
-    <_comment>Word macro-enabled document</_comment>
+    <_comment>Word document</_comment>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.docm"/>
     <sub-class-of type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
   </mime-type>
   <mime-type type="application/vnd.ms-word.template.macroEnabled.12">
-    <_comment>Word macro-enabled document template</_comment>
+    <_comment>Word document template</_comment>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.dotm"/>
     <sub-class-of type="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
@@ -3578,7 +3578,7 @@ command to generate the output files.
     <glob weight="10" pattern="*.t"/>
   </mime-type>
   <mime-type type="application/x-troff-man">
-    <_comment>Troff document (with manpage macros)</_comment>
+    <_comment>Manpage manual document</_comment>
     <sub-class-of type="text/plain"/>
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.man"/>

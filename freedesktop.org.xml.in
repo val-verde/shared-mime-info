@@ -650,37 +650,37 @@ command to generate the output files.
   </mime-type>
     <mime-type type="application/vnd.ms-visio.drawing.main+xml">
     <_comment>Office Open XML Visio Drawing</_comment>
-	<generic-icon name="image-x-generic"/>
+    <generic-icon name="image-x-generic"/>
     <glob pattern="*.vsdx"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.template.main+xml">
     <_comment>Office Open XML Visio Template</_comment>
-	<generic-icon name="image-x-generic"/>
+    <generic-icon name="image-x-generic"/>
     <glob pattern="*.vstx"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.stencil.main+xml">
     <_comment>Office Open XML Visio Stencil</_comment>
-	<generic-icon name="image-x-generic"/>
+    <generic-icon name="image-x-generic"/>
     <glob pattern="*.vssx"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.drawing.macroEnabled.main+xml">
     <_comment>Office Open XML Visio Drawing</_comment>
-	<generic-icon name="image-x-generic"/>
+    <generic-icon name="image-x-generic"/>
     <glob pattern="*.vsdm"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.template.macroEnabled.main+xml">
     <_comment>Office Open XML Visio Template</_comment>
-	<generic-icon name="image-x-generic"/>
+    <generic-icon name="image-x-generic"/>
     <glob pattern="*.vstm"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.stencil.macroEnabled.main+xml">
     <_comment>Office Open XML Visio Stencil</_comment>
-	<generic-icon name="image-x-generic"/>
+    <generic-icon name="image-x-generic"/>
     <glob pattern="*.vssm"/>
     <sub-class-of type="application/zip"/>
   </mime-type>

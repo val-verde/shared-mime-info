@@ -1,3 +1,35 @@
+shared-mime-info 1.5 (2015-09-15)
+* Fix compilation with glib < 2.26
+* Update DTD
+
+Mime-type changes:
+* Add more globs to console ROM files
+* Use "folder" generic-icon for inode/directory
+* Bump priority for ISO images glob matching to work
+  around confusion around Wii image files
+* Add application/owl+xml
+* Add text/turtle
+* Use IANA registered image/vnd.zbrush.pcx for PCX
+* Add text/rust for Rust source code
+* Add application/ld+json as subclass of application/json
+* Add text/csv-schema
+* Add application/vnd.coffeescript
+* Make application/vnd.apple.mpegurl a subclass of text/plain
+* Make application/sdp a subclass of text/plain
+* Add application/jrd+json as subclass of application/json
+* Add MTM, MED, 699 and Ultratracker magic for application/x-mod
+* Add Meson build definitions
+* Match newer versions of XCF files
+* Use IANA registered type for PKCS#12
+* Add application/x-doom-wad
+* Add Amiga disk image
+* Rename "Dreamcast ROM" to "Dreamcast GD-ROM"
+* Add application/x-wii-wad
+* Add magic and tests to application/x-gameboy-rom
+* Add application/x-saturn-rom
+* Fix application/x-genesis-rom translation rules
+* Split up multi-page DjVu into its own mime-type
+
 shared-mime-info 1.4 (2015-02-05)
 * Add glob for low-resolution videos from GoPro
 * Add mime-type for partially downloaded files

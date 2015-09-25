@@ -2621,6 +2621,18 @@ command to generate the output files.
     </magic>
     <glob pattern="*.qp"/>
   </mime-type>
+  <mime-type type="application/x-xar">
+    <_comment>XAR archive</_comment>
+    <acronym>XAR</acronym>
+    <expanded-acronym>eXtensible ARchive</expanded-acronym>
+    <generic-icon name="package-x-generic"/>
+    <magic>
+      <match type="big32" value="0x78617221" offset="0"/>
+    </magic>
+    <glob pattern="*.xar"/>
+    <!-- OS X 10.5+ installer package -->
+    <glob pattern="*.pkg"/>
+  </mime-type>
   <mime-type type="application/zlib">
     <_comment>Zlib archive</_comment>
     <generic-icon name="package-x-generic"/>

@@ -4911,7 +4911,7 @@ command to generate the output files.
     <expanded-acronym>Truevision Graphics Adapter</expanded-acronym>
     <magic priority="10">
       <match type="string" value="\1\1" offset="1"/>
-      <match type="string" value="\1\9" offset="1"/>
+      <match type="string" value="\1\11" offset="1"/>
       <match type="string" value="\0\3" offset="1"/>
       <match type="string" value="\0\xa" offset="1"/>
       <match type="string" value="\0\xb" offset="1"/>

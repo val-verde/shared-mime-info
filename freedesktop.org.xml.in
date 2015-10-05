@@ -593,20 +593,23 @@ command to generate the output files.
   <mime-type type="application/vnd.ms-excel">
     <_comment>Excel spreadsheet</_comment>
     <generic-icon name="x-office-spreadsheet"/>
-    <magic priority="50">
-      <match type="string" value="Microsoft Excel 5.0 Worksheet" offset="2080"/>
-    </magic>
     <glob pattern="*.xls"/>
     <glob pattern="*.xlc"/>
     <glob pattern="*.xll"/>
     <glob pattern="*.xlm"/>
     <glob pattern="*.xlw"/>
     <glob pattern="*.xla"/>
-    <glob pattern="*.xlt"/>
     <glob pattern="*.xld"/>
     <alias type="application/msexcel"/>
     <alias type="application/x-msexcel"/>
     <alias type="zz-application/zz-winassoc-xls"/>
+  </mime-type>
+  <mime-type type="application/vnd.ms-excel-template">
+    <_comment>Excel template</_comment>
+    <sub-class-of type="application/vnd.ms-excel"/>
+    <generic-icon name="x-office-spreadsheet"/>
+    <glob pattern="*.xlt"/>
+    <alias type="application/msexcel-template"/>
   </mime-type>
   <mime-type type="application/vnd.ms-excel.addin.macroEnabled.12">
     <_comment>Excel add-in</_comment>
@@ -638,10 +641,19 @@ command to generate the output files.
     <glob pattern="*.ppz"/>
     <glob pattern="*.ppt"/>
     <glob pattern="*.pps"/>
-    <glob pattern="*.pot"/>
     <alias type="application/powerpoint"/>
     <alias type="application/mspowerpoint"/>
     <alias type="application/x-mspowerpoint"/>
+  </mime-type>
+  <mime-type type="application/vnd.ms-powerpoint-template">
+    <_comment>PowerPoint template</_comment>
+    <sub-class-of type="application/vnd.ms-powerpoint"/>
+    <generic-icon name="x-office-presentation"/>
+    <magic priority="50">
+      <match type="string" value="\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1" offset="0"/>
+    </magic>
+    <glob pattern="*.pot"/>
+    <alias type="application/mspowerpoint-template"/>
   </mime-type>
   <mime-type type="application/vnd.ms-powerpoint.addin.macroEnabled.12">
     <_comment>PowerPoint add-in</_comment>
@@ -774,6 +786,7 @@ command to generate the output files.
     <sub-class-of type="application/msword"/>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.dot"/>
+    <alias type="application/vnd.ms-word-template"/>
   </mime-type>
   <mime-type type="application/gml+xml">
     <_comment>GML document</_comment>

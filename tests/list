@@ -114,6 +114,10 @@ ooo-test.fodt application/vnd.oasis.opendocument.text-flat-xml ox
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=20604
 foo.doc application/msword
 # Copied from http://bugzilla.abisource.com/show_bug.cgi?id=6435
+sample.xls application/vnd.ms-excel ox
+sample.xlt application/vnd.ms-excel-template ox
+sample.pot application/vnd.ms-powerpoint-template
+sample.ppt application/vnd.ms-powerpoint ox
 test-template.dot application/msword-template ox
 test-template.dot application/msword xox
 # Copied from http://www.ebooktechnologies.com/downloads/ocf10-20060911.epub

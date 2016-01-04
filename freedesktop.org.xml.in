@@ -560,7 +560,7 @@ command to generate the output files.
   <mime-type type="application/vnd.ms-cab-compressed">
     <_comment>Microsoft Cabinet archive</_comment>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match offset="0" type="string" value="MSCF\0\0\0\0" />
     </magic>
     <glob pattern="*.cab"/>
@@ -1312,7 +1312,7 @@ command to generate the output files.
   <mime-type type="application/x-7z-compressed">
     <_comment>7-zip archive</_comment>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="7z\274\257\047\034" offset="0"/>
     </magic>
     <glob pattern="*.7z"/>
@@ -1377,7 +1377,7 @@ command to generate the output files.
   <mime-type type="application/x-arc">
     <_comment>ARC archive</_comment>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="little32" mask="0x8080ffff" value="0x0000081a" offset="0"/>
       <match type="little32" mask="0x8080ffff" value="0x0000091a" offset="0"/>
       <match type="little32" mask="0x8080ffff" value="0x0000021a" offset="0"/>
@@ -1522,7 +1522,7 @@ command to generate the output files.
   <mime-type type="application/x-lrzip">
     <_comment>Lrzip archive</_comment>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="LRZI" offset="0"/>
     </magic>
     <glob pattern="*.lrz"/>
@@ -1629,7 +1629,7 @@ command to generate the output files.
   <mime-type type="application/x-cpio">
     <_comment>CPIO archive</_comment>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="host16" value="070707" offset="0"/>
       <match type="string" value="070701" offset="0"/>
       <match type="string" value="070702" offset="0"/>
@@ -2249,7 +2249,7 @@ command to generate the output files.
   <mime-type type="application/x-java-pack200">
     <_comment>Pack200 Java archive</_comment>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="big32" value="0xcafed00d" offset="0"/>
     </magic>
     <glob pattern="*.pack"/>
@@ -2530,7 +2530,7 @@ command to generate the output files.
   <mime-type type="application/x-lha">
     <_comment>LHA archive</_comment>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="-lh -" offset="2"/>
       <match type="string" value="-lh0-" offset="2"/>
       <match type="string" value="-lh1-" offset="2"/>
@@ -2575,7 +2575,7 @@ command to generate the output files.
   <mime-type type="application/x-lz4">
     <_comment>LZ4 archive</_comment>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="little32" value="0x184d2204" offset="0"/>
       <match type="little32" value="0x184c2102" offset="0"/>
     </magic>
@@ -2584,7 +2584,7 @@ command to generate the output files.
   <mime-type type="application/x-lzip">
     <_comment>Lzip archive</_comment>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="LZIP" offset="0"/>
     </magic>
     <glob pattern="*.lz"/>
@@ -2608,7 +2608,7 @@ command to generate the output files.
     <acronym>LZO</acronym>
     <expanded-acronym>Lempel-Ziv-Oberhumer</expanded-acronym>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="\x89\x4c\x5a\x4f\x00\x0d\x0a\x1a\x0a" offset="0"/>
     </magic>
     <glob pattern="*.lzo"/>
@@ -2616,7 +2616,7 @@ command to generate the output files.
   <mime-type type="application/x-qpress">
     <_comment>Qpress archive</_comment>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="qpress10" offset="0"/>
     </magic>
     <glob pattern="*.qp"/>
@@ -2626,7 +2626,7 @@ command to generate the output files.
     <acronym>XAR</acronym>
     <expanded-acronym>eXtensible ARchive</expanded-acronym>
     <generic-icon name="package-x-generic"/>
-    <magic>
+    <magic priority="60">
       <match type="big32" value="0x78617221" offset="0"/>
     </magic>
     <glob pattern="*.xar"/>
@@ -3053,7 +3053,7 @@ command to generate the output files.
     <acronym>Parchive</acronym>
     <expanded-acronym>Parity Volume Set Archive</expanded-acronym>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match offset="0" type="string" value="PAR2" />
     </magic>
     <glob pattern="*.PAR2" />
@@ -3197,7 +3197,7 @@ command to generate the output files.
     <expanded-acronym>Roshal ARchive</expanded-acronym>
     <alias type="application/x-rar-compressed"/>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="Rar!" offset="0"/>
     </magic>
     <glob pattern="*.rar"/>
@@ -3384,7 +3384,7 @@ command to generate the output files.
     <generic-icon name="package-x-generic"/>
     <alias type="application/stuffit"/>
     <alias type="application/x-sit"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="StuffIt " offset="0"/>
       <match type="string" value="SIT!" offset="0"/>
     </magic>
@@ -3523,7 +3523,7 @@ command to generate the output files.
     <_comment>Tar archive</_comment>
     <generic-icon name="package-x-generic"/>
     <alias type="application/x-gtar"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="ustar\0" offset="257"/>
       <match type="string" value="ustar\040\040\0" offset="257"/>
     </magic>
@@ -3609,7 +3609,7 @@ command to generate the output files.
   <mime-type type="application/x-xz">
     <_comment>XZ archive</_comment>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="\xfd\x37\x7a\x58\x5a\x00" offset="0"/>
     </magic>
     <glob pattern="*.xz"/>
@@ -3657,7 +3657,7 @@ command to generate the output files.
   <mime-type type="application/x-zoo">
     <_comment>Zoo archive</_comment>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="little32" value="0xfdc4a7dc" offset="20"/>
     </magic>
     <glob pattern="*.zoo"/>
@@ -5307,7 +5307,7 @@ command to generate the output files.
   <mime-type type="application/x-ace">
     <_comment>ACE archive</_comment>
     <generic-icon name="package-x-generic"/>
-    <magic priority="50">
+    <magic priority="60">
       <match type="string" value="**ACE**" offset="7"/>
     </magic>
     <glob pattern="*.ace"/>

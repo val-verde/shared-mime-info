@@ -385,6 +385,8 @@ test.qp application/x-qpress
 test.zz application/zlib ox
 # Created using xar 1.5.2
 test.xar application/x-xar
+# From https://bugs.freedesktop.org/show_bug.cgi?id=93549
+serafettin.rar application/x-rar
 
 # Audio/Video files
 # https://bugs.freedesktop.org/show_bug.cgi?id=20070#c4

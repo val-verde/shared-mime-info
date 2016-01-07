@@ -3669,6 +3669,7 @@ command to generate the output files.
     <sub-class-of type="application/xml"/>
     <generic-icon name="text-html"/>
     <glob pattern="*.xhtml"/>
+    <glob pattern="*.xht"/>
     <root-XML namespaceURI='http://www.w3.org/1999/xhtml' localName='html'/>
   </mime-type>
   <mime-type type="application/zip">

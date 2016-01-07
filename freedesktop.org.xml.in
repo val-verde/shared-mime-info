@@ -3670,6 +3670,12 @@ command to generate the output files.
     <generic-icon name="text-html"/>
     <glob pattern="*.xhtml"/>
     <glob pattern="*.xht"/>
+    <magic priority="60">
+      <match type="string" value="//W3C//DTD XHTML " offset="0:256"/>
+      <match type="string" value="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" offset="0:256"/>
+      <match type="string" value="&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml" offset="0:256"/>
+      <match type="string" value="&lt;HTML xmlns=&quot;http://www.w3.org/1999/xhtml" offset="0:256"/>
+    </magic>
     <root-XML namespaceURI='http://www.w3.org/1999/xhtml' localName='html'/>
   </mime-type>
   <mime-type type="application/zip">

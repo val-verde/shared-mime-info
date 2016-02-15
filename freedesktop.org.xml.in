@@ -6208,6 +6208,13 @@ command to generate the output files.
     <glob pattern="*.geojson"/>
     <glob pattern="*.geo.json"/>
   </mime-type>
+  <mime-type type="application/gpx+xml">
+    <_comment>GPX geographic data</_comment>
+    <acronym>GPX</acronym>
+    <expanded-acronym>GPS Exchange Format</expanded-acronym>
+    <sub-class-of type="application/xml"/>
+    <glob pattern="*.gpx"/>
+  </mime-type>
   <mime-type type="application/x-ica">
     <_comment>Citrix ICA settings file</_comment>
     <acronym>ICA</acronym>

@@ -476,7 +476,7 @@ googleearth.kml application/vnd.google-earth.kml+xml ox
 test.geojson application/vnd.geo+json ox
 test.geo.json application/vnd.geo+json ox
 # Copid from https://en.wikipedia.org/wiki/GPS_Exchange_Format
-test.gpx ox
+test.gpx application/gpx+xml ox
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=15260
 test.gnd application/gnunet-directory
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=27441

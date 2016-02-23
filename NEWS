@@ -1,3 +1,13 @@
+shared-mime-info 1.6 (2016-02-23)
+* Add XAR archive mime-type
+* Add GeoJSON mime-type
+* Add GPX mime-type
+* Add xdg-app mime-type
+* Add *.xht glob and magic for XHTML files
+* Bump priority of archive mime-types with long magics,
+  to avoid false positives when detecting files inside
+  the archive itself
+
 shared-mime-info 1.5 (2015-09-15)
 * Fix compilation with glib < 2.26
 * Update DTD

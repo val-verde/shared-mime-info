@@ -81,6 +81,11 @@ command to generate the output files.
 -->
 
 <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="application/x-atari-2600-rom">
+    <_comment>Atari 2600</_comment>
+    <generic-icon name="application-x-executable"/>
+    <glob pattern="*.a26"/>
+  </mime-type>
   <mime-type type="application/x-atari-7800-rom">
     <_comment>Atari 7800</_comment>
     <generic-icon name="application-x-executable"/>

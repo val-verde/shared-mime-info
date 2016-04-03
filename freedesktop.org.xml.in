@@ -3755,6 +3755,7 @@ command to generate the output files.
       <match type="string" value="#!AMR_MC1.0\n" offset="0"/>
     </magic>
     <glob pattern="*.amr"/>
+    <alias type="audio/amr-encrypted"/>
   </mime-type>
   <mime-type type="audio/AMR-WB">
     <_comment>AMR-WB audio</_comment>
@@ -3765,6 +3766,7 @@ command to generate the output files.
       <match type="string" value="#!AMR-WB_MC1.0\n" offset="0"/>
     </magic>
     <glob pattern="*.awb"/>
+    <alias type="audio/amr-wb-encrypted"/>
   </mime-type>
   <mime-type type="audio/basic">
     <_comment>ULAW (Sun) audio</_comment>
@@ -3940,9 +3942,6 @@ command to generate the output files.
     <alias type="audio/3gpp"/>
     <alias type="video/3gpp-encrypted"/>
     <alias type="audio/3gpp-encrypted"/>
-    <alias type="audio/amr"/>
-    <alias type="audio/amr-encrypted"/>
-    <alias type="audio/amr-wb-encrypted"/>
     <alias type="audio/x-rn-3gpp-amr"/>
     <alias type="audio/x-rn-3gpp-amr-encrypted"/>
     <alias type="audio/x-rn-3gpp-amr-wb"/>

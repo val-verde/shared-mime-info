@@ -2308,6 +2308,17 @@ command to generate the output files.
     <generic-icon name="text-x-script"/>
     <glob pattern="*.jsonld"/>
   </mime-type>
+  <mime-type type="application/x-ipynb+json">
+    <_comment>Jupyter Notebook</_comment>
+    <sub-class-of type="application/json"/>
+    <generic-icon name="x-office-document"/>
+    <magic priority="50">
+      <match type="string" value="{" offset="0">
+        <match type="string" value='"cells":' offset="1:256"/>
+      </match>
+    </magic>
+    <glob pattern="*.ipynb"/>
+  </mime-type>
   <mime-type type="application/vnd.coffeescript">
     <_comment>CoffeeScript document</_comment>
     <sub-class-of type="text/plain"/>

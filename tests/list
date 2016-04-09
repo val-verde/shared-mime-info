@@ -233,6 +233,8 @@ webfinger.jrd application/jrd+json ox
 my-data.json-patch application/json-patch+json ox
 # Copied from http://www.w3.org/TR/json-ld/
 json-ld-full-iri.jsonld application/ld+json ox
+test.ipynb application/x-ipynb+json
+test-reordered.ipynb application/x-ipynb+json ox
 test.cs text/x-csharp ox
 test.dot text/vnd.graphviz x
 test.vala text/x-vala ox

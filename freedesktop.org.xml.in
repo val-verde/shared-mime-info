@@ -4947,12 +4947,12 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ani"/>
   </mime-type>
-  <mime-type type="image/x-emf">
+  <mime-type type="image/emf">
     <_comment>EMF image</_comment>
     <acronym>EMF</acronym>
     <expanded-acronym>Enhanced MetaFile</expanded-acronym>
     <glob pattern="*.emf"/>
-    <alias type="image/emf"/>
+    <alias type="image/x-emf"/>
     <alias type="application/x-emf"/>
     <alias type="application/emf"/>
     <magic priority="50">

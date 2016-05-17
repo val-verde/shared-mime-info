@@ -4965,7 +4965,7 @@ command to generate the output files.
       </match>
     </magic>
   </mime-type>
-  <mime-type type="image/x-wmf">
+  <mime-type type="image/wmf">
     <_comment>WMF image</_comment>
     <acronym>WMF</acronym>
     <expanded-acronym>Windows Metafile</expanded-acronym>
@@ -4983,7 +4983,7 @@ command to generate the output files.
       </match>
     </magic>
     <glob pattern="*.wmf"/>
-    <alias type="image/wmf"/>
+    <alias type="image/x-wmf"/>
     <alias type="image/x-win-metafile"/>
     <alias type="application/x-wmf"/>
     <alias type="application/wmf"/>

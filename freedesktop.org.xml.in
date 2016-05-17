@@ -5645,6 +5645,11 @@ command to generate the output files.
       <match type="string" value='#, fuzzy\nmsgid \"\"\nmsgstr \"\"\n\"Project-Id-Version:' offset="0:256"/>
     </magic>
   </mime-type>
+  <mime-type type="text/x-gherkin">
+    <_comment>feature specification in Gherkin format</_comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.feature"/>
+  </mime-type>
   <mime-type type="text/html">
     <_comment>HTML document</_comment>
     <acronym>HTML</acronym>

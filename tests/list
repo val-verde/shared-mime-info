@@ -312,6 +312,8 @@ test.pm application/x-perl
 test.t application/x-perl
 # Copied from http://en.wikipedia.org/wiki/Turtle_%28syntax%29#Example
 test.ttl text/turtle ox
+# Twig template
+test.twig text/x-twig ox
 test.rs text/rust ox
 # Copied from http://digital-preservation.github.io/csv-schema/csv-schema-1.0.html#basics
 test.csvs text/csv-schema ox

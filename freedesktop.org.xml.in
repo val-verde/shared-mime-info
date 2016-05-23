@@ -5944,6 +5944,12 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <glob pattern="*.ms"/>
   </mime-type>
+  <mime-type type="text/x-twig">
+    <_comment>Twig template</_comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.twig"/>
+    <generic-icon name="text-x-generic-template"/>
+  </mime-type>
   <mime-type type="text/x-uil">
     <_comment>X-Motif UIL table</_comment>
     <sub-class-of type="text/plain"/>

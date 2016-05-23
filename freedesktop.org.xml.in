@@ -5865,6 +5865,12 @@ command to generate the output files.
       <match type="string" value="%define " offset="0"/>
     </magic>
   </mime-type>
+  <mime-type type="text/x-sass">
+    <_comment>Sass CSS pre-processor file</_comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.sass"/>
+    <generic-icon name="text-x-generic"/>
+  </mime-type>
   <mime-type type="text/x-scala">
     <_comment>Scala source code</_comment>
     <sub-class-of type="text/plain"/>
@@ -5875,6 +5881,12 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <glob pattern="*.scm"/>
     <glob pattern="*.ss"/>
+  </mime-type>
+  <mime-type type="text/x-scss">
+    <_comment>Sass CSS pre-processor file</_comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.scss"/>
+    <generic-icon name="text-x-generic"/>
   </mime-type>
   <mime-type type="text/x-setext">
     <_comment>Setext document</_comment>

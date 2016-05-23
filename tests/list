@@ -292,11 +292,15 @@ test.go text/x-go oxo
 rectangle.qml text/x-qml
 # QtiPlot (qti) file
 test.qti application/x-qtiplot
+# Sass CSS pre-processor file
+test.sass text/x-sass ox
 # Scheme source code
 # https://bugs.freedesktop.org/show_bug.cgi?id=31534
 test.scm text/x-scheme ox
 test.ss  text/x-scheme ox
 test.scala text/x-scala ox
+# Sass CSS pre-processor file
+test.scss text/x-scss ox
 # https://bugs.freedesktop.org/show_bug.cgi?id=56964
 test.jnlp application/x-java-jnlp-file
 # Python script

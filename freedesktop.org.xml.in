@@ -6604,4 +6604,13 @@ command to generate the output files.
     <alias type="application/vnd.xdgapp"/>
   </mime-type>
 
+  <mime-type type="application/vnd.squashfs">
+    <_comment>Squashfs filesystem</_comment>
+    <magic priority="50">
+      <match type="string" value="sqsh" offset="0"/>
+      <match type="string" value="hsqs" offset="0"/>
+    </magic>
+    <glob pattern="*.sqsh"/>
+  </mime-type>
+
 </mime-info>

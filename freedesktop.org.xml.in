@@ -358,16 +358,6 @@ command to generate the output files.
       <match type="string" value="DataPlkr" offset="60"/>
     </magic>
   </mime-type>
-  <mime-type type="application/raml+yaml">
-    <_comment>RAML document</_comment>
-    <acronym>RAML</acronym>
-    <expanded-acronym>RESTful API Modeling Language</expanded-acronym>
-    <sub-class-of type="application/x-yaml"/>
-    <magic>
-      <match type="string" value="#%RAML " offset="0"/>
-    </magic>
-    <glob pattern="*.raml"/>
-  </mime-type>
   <mime-type type="application/relax-ng-compact-syntax">
     <_comment>RELAX NG XML schema</_comment>
     <acronym>RELAX NG</acronym>

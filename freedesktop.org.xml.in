@@ -4670,6 +4670,8 @@ command to generate the output files.
       </match>
     </magic>
     <sub-class-of type="image/vnd.djvu"/>
+    <glob pattern="*.djvu"/>
+    <glob pattern="*.djv"/>
   </mime-type>
   <mime-type type="image/dpx">
     <_comment>DPX image</_comment>

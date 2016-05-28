@@ -313,6 +313,8 @@ test.rs text/rust ox
 test.csvs text/csv-schema ox
 # Copied from http://coffeescript.org/#overview
 test.coffee application/vnd.coffeescript ox
+# Copied from https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md#applying-security-schemes
+test.raml application/raml+yaml
 
 # xml subtypes
 ../shared-mime-info-spec.xml application/x-docbook+xml xox

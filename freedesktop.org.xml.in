@@ -6616,4 +6616,10 @@ command to generate the output files.
     <glob pattern="*.sqsh"/>
   </mime-type>
 
+  <mime-type type="application/vnd.snap">
+    <_comment>Snap package</_comment>
+    <glob pattern="*.snap"/>
+    <sub-class-of type="application/vnd.squashfs"/>
+  </mime-type>
+
 </mime-info>

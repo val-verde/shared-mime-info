@@ -3992,7 +3992,30 @@ command to generate the output files.
       <match type="string" value="MTM" offset="0"/>
       <match type="string" value="MMD0" offset="0"/>
       <match type="string" value="MMD1" offset="0"/>
-      <match type="little16" value="0x6669" offset="0"/>
+      <match type="little16" value="0x6669" offset="0">
+        <!-- number samples: value between 0-63 -->
+        <match type="byte" value="0x0" mask="0xc0" offset="110">
+          <!-- Number of patterns 0-128 -->
+          <match type="byte" value="0x1" mask="0x1" offset="111"/>
+          <match type="byte" value="0x2" mask="0x2" offset="111"/>
+          <match type="byte" value="0x4" mask="0x4" offset="111"/>
+          <match type="byte" value="0x8" mask="0x8" offset="111"/>
+          <match type="byte" value="0x10" mask="0x10" offset="111"/>
+          <match type="byte" value="0x20" mask="0x20" offset="111"/>
+          <match type="byte" value="0x40" mask="0x40" offset="111"/>
+        </match>
+        <!-- number samples: value is 64 -->
+        <match type="byte" value="0x40" offset="110">
+          <!-- Number of patterns 0-128 -->
+          <match type="byte" value="0x1" mask="0x1" offset="111"/>
+          <match type="byte" value="0x2" mask="0x2" offset="111"/>
+          <match type="byte" value="0x4" mask="0x4" offset="111"/>
+          <match type="byte" value="0x8" mask="0x8" offset="111"/>
+          <match type="byte" value="0x10" mask="0x10" offset="111"/>
+          <match type="byte" value="0x20" mask="0x20" offset="111"/>
+          <match type="byte" value="0x40" mask="0x40" offset="111"/>
+        </match>
+      </match>
       <match type="little16" value="0x4e4a" offset="0"/>
       <match type="string" value="MAS_UTrack_V00" offset="0"/>
     </magic>

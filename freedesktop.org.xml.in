@@ -6664,6 +6664,15 @@ command to generate the output files.
     <alias type="application/vnd.xdgapp"/>
   </mime-type>
 
+  <mime-type type="application/vnd.flatpak.repo">
+    <_comment>Flatpak repository description</_comment>
+    <sub-class-of type="text/plain"/>
+    <magic priority="50">
+      <match type="string" value="[Flatpak Repo]" offset="0:256"/>
+    </magic>
+    <glob pattern="*.flatpakrepo"/>
+  </mime-type>
+
   <mime-type type="application/vnd.squashfs">
     <_comment>Squashfs filesystem</_comment>
     <magic priority="50">

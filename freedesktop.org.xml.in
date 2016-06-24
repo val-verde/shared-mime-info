@@ -105,7 +105,7 @@ command to generate the output files.
     <_comment>electronic book document</_comment>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/epub+zip" offset="38"/>
@@ -847,7 +847,7 @@ command to generate the output files.
     <_comment>OpenOffice Calc spreadsheet</_comment>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-spreadsheet"/>
-    <magic>
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" offset="38" value="application/vnd.sun.xml.calc"/>
@@ -860,7 +860,7 @@ command to generate the output files.
     <_comment>OpenOffice Calc template</_comment>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-spreadsheet"/>
-    <magic>
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" offset="38" value="application/vnd.sun.xml.calc"/>
@@ -873,7 +873,7 @@ command to generate the output files.
     <_comment>OpenOffice Draw drawing</_comment>
     <sub-class-of type="application/zip"/>
     <generic-icon name="image-x-generic"/>
-    <magic>
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" offset="38" value="application/vnd.sun.xml.draw"/>
@@ -886,7 +886,7 @@ command to generate the output files.
     <_comment>OpenOffice Draw template</_comment>
     <sub-class-of type="application/zip"/>
     <generic-icon name="image-x-generic"/>
-    <magic>
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" offset="38" value="application/vnd.sun.xml.draw"/>
@@ -899,7 +899,7 @@ command to generate the output files.
     <_comment>OpenOffice Impress presentation</_comment>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-presentation"/>
-    <magic>
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" offset="38" value="application/vnd.sun.xml.impress"/>
@@ -912,7 +912,7 @@ command to generate the output files.
     <_comment>OpenOffice Impress template</_comment>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-presentation"/>
-    <magic>
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" offset="38" value="application/vnd.sun.xml.impress"/>
@@ -925,7 +925,7 @@ command to generate the output files.
     <_comment>OpenOffice Math formula</_comment>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
-    <magic>
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" offset="38" value="application/vnd.sun.xml.math"/>
@@ -938,7 +938,7 @@ command to generate the output files.
     <_comment>OpenOffice Writer document</_comment>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
-    <magic>
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" offset="38" value="application/vnd.sun.xml.writer"/>
@@ -951,7 +951,7 @@ command to generate the output files.
     <_comment>OpenOffice Writer global document</_comment>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
-    <magic>
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" offset="38" value="application/vnd.sun.xml.writer"/>
@@ -964,7 +964,7 @@ command to generate the output files.
     <_comment>OpenOffice Writer template</_comment>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
-    <magic>
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" offset="38" value="application/vnd.sun.xml.writer"/>
@@ -979,7 +979,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Text</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.text" offset="38"/>
@@ -1002,7 +1002,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Text</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.text-template" offset="38"/>
@@ -1017,7 +1017,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument HTML</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="text-html"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.text-web" offset="38"/>
@@ -1032,7 +1032,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Master</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.text-master" offset="38"/>
@@ -1047,7 +1047,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Drawing</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="image-x-generic"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.graphics" offset="38"/>
@@ -1070,7 +1070,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Drawing</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="image-x-generic"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.graphics-template" offset="38"/>
@@ -1085,7 +1085,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Presentation</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-presentation"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.presentation" offset="38"/>
@@ -1108,7 +1108,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Presentation</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-presentation"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.presentation-template" offset="38"/>
@@ -1123,7 +1123,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Spreadsheet</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-spreadsheet"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.spreadsheet" offset="38"/>
@@ -1146,7 +1146,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Spreadsheet</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-spreadsheet"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.spreadsheet-template" offset="38"/>
@@ -1161,7 +1161,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Chart</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-spreadsheet"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.chart" offset="38"/>
@@ -1176,7 +1176,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Chart</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-spreadsheet"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.chart-template" offset="38"/>
@@ -1191,7 +1191,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Formula</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.formula" offset="38"/>
@@ -1206,7 +1206,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Formula</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.formula-template" offset="38"/>
@@ -1221,7 +1221,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Database</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.base" offset="38"/>
@@ -1237,7 +1237,7 @@ command to generate the output files.
     <expanded-acronym>OpenDocument Image</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="image-x-generic"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="application/vnd.oasis.opendocument.image" offset="38"/>
@@ -1813,7 +1813,7 @@ command to generate the output files.
     <_comment>Compressed FictionBook document</_comment>
     <sub-class-of type="application/zip"/>
     <glob pattern="*.fb2.zip"/>
-    <magic priority="80">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <!-- Okay, this is not ideal, but it should be good enough for normal cases -->
         <match type="string" value=".fb2" offset="30:256"/>
@@ -3737,7 +3737,7 @@ command to generate the output files.
     <alias type="application/x-zip-compressed"/>
     <alias type="application/x-zip"/>
     <generic-icon name="package-x-generic"/>
-    <magic priority="40">
+    <magic priority="60">
       <match type="string" value="PK\003\004" offset="0"/>
     </magic>
     <glob pattern="*.zip"/>
@@ -4319,7 +4319,7 @@ command to generate the output files.
   <mime-type type="image/openraster">
     <_comment>OpenRaster archiving image</_comment>
     <sub-class-of type="application/zip"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="mimetype" offset="30">
           <match type="string" value="image/openraster" offset="38"/>
@@ -6622,7 +6622,7 @@ command to generate the output files.
     <_comment>Apple Keynote 5 presentation</_comment>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-presentation"/>
-    <magic priority="50">
+    <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
         <match type="string" value="index.apxl" offset="30"/>
       </match>

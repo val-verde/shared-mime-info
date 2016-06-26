@@ -1581,6 +1581,23 @@ command to generate the output files.
     <glob pattern="*.iso" weight="80"/>
     <glob pattern="*.iso9660"/>
   </mime-type>
+  <mime-type type="application/x-iso9660-appimage">
+    <_comment>AppImage application bundle</_comment>
+    <sub-class-of type="application/x-executable"/>
+    <sub-class-of type="application/x-iso9660-image"/>
+    <generic-icon name="application-x-executable"/>
+    <magic priority="50">
+      <match value="ELF" type="string" offset="1" >
+        <match value="0x41" type="byte" offset="8">
+          <match value="0x49" type="byte" offset="9">
+            <match value="0x01" type="byte" offset="10"/>
+          </match>
+        </match>
+      </match>
+    </magic>
+    <glob pattern="*.appimage"/>
+    <glob pattern="*.AppImage"/>
+  </mime-type>
   <mime-type type="application/x-cdrdao-toc">
     <_comment>CD Table Of Contents</_comment>
     <sub-class-of type="text/plain"/>

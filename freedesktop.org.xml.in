@@ -1613,7 +1613,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.toc"/>
   </mime-type>
-  <mime-type type="application/x-chess-pgn">
+  <mime-type type="application/vnd.chess-pgn">
     <_comment>PGN chess game notation</_comment>
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.pgn"/>
@@ -1621,6 +1621,7 @@ command to generate the output files.
     <magic priority="50">
       <match type="string" value="[Event " offset="0"/>
     </magic>
+    <alias type="application/x-chess-pgn"/>
   </mime-type>
   <mime-type type="application/vnd.ms-htmlhelp">
     <_comment>CHM document</_comment>

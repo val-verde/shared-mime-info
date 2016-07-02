@@ -1615,6 +1615,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.chess-pgn">
     <_comment>PGN chess game notation</_comment>
+    <acronym>PGN</acronym>
+    <expanded-acronym>Portable Game Notation</expanded-acronym>
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.pgn"/>
     <sub-class-of type="text/plain"/>

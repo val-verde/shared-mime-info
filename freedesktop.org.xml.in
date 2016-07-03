@@ -4025,6 +4025,18 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ape"/>
   </mime-type>
+  <mime-type type="audio/x-pn-audibleaudio">
+    <_comment>Audible.Com audio</_comment>
+    <magic priority="50">
+      <!-- https://github.com/FFmpeg/FFmpeg/blob/master/libavformat/aadec.c#L33 -->
+      <match type="big32" value="1469084982" offset="4"/>
+      <match type="string" value="aax " offset="8"/>
+    </magic>
+    <glob pattern="*.aa"/>
+    <glob pattern="*.aax"/>
+    <alias type="audio/vnd.audible"/>
+    <alias type="audio/vnd.audible.aax"/>
+  </mime-type>
   <mime-type type="audio/x-it">
     <_comment>Impulse Tracker audio</_comment>
     <magic priority="50">

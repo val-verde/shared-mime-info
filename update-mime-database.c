@@ -2370,6 +2370,26 @@ add_key (gpointer key,
     g_ptr_array_add (filter_data->keys, key);
 }
 
+typedef struct
+{
+  GetValueFunc *get_value;
+  gpointer      data;
+  guint count;
+  gboolean weighted;
+} CountData;
+
+static void
+count_map_entry (gpointer key,
+		 gpointer data)
+{
+  CountData *count_data = (CountData *)data;
+  gchar **values;
+
+  values = (* count_data->get_value) (count_data->data, key);
+  count_data->count += g_strv_length (values) / (count_data->weighted ? 3 : 2);
+  g_strfreev (values);
+}
+
 static gboolean
 write_map (FILE         *cache,
 	   GHashTable   *strings,
@@ -2382,6 +2402,7 @@ write_map (FILE         *cache,
   GPtrArray *keys;
   MapData map_data;
   FilterData filter_data;
+  CountData count_data;
 
   keys = g_ptr_array_new ();
   
@@ -2391,7 +2412,14 @@ write_map (FILE         *cache,
 
   g_ptr_array_sort (keys, strcmp2);
 
-  if (!write_card32 (cache, keys->len))
+  count_data.data = map;
+  count_data.count = 0;
+  count_data.get_value = get_value;
+  count_data.weighted = weighted;
+
+  g_ptr_array_foreach (keys, count_map_entry, &count_data);
+
+  if (!write_card32 (cache, count_data.count))
     return FALSE;
 
   map_data.cache = cache;

@@ -502,8 +502,8 @@ Makefile text/x-makefile ox
 Makefile.gnu text/x-makefile ox
 googleearth.kml application/vnd.google-earth.kml+xml ox
 # Created using geojson.io
-test.geojson application/vnd.geo+json ox
-test.geo.json application/vnd.geo+json ox
+test.geojson application/geo+json ox
+test.geo.json application/geo+json ox
 # Copid from https://en.wikipedia.org/wiki/GPS_Exchange_Format
 test.gpx application/gpx+xml ox
 # Copied from http://wiki.openstreetmap.org/wiki/GPX

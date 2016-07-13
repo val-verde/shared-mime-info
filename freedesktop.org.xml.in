@@ -6338,11 +6338,12 @@ command to generate the output files.
     <sub-class-of type="application/zip"/>
     <glob pattern="*.kmz"/>
   </mime-type>
-  <mime-type type="application/vnd.geo+json">
+  <mime-type type="application/geo+json">
     <_comment>GeoJSON geospatial data</_comment>
     <sub-class-of type="application/json"/>
     <glob pattern="*.geojson"/>
     <glob pattern="*.geo.json"/>
+    <alias type="application/vnd.geo+json"/>
   </mime-type>
   <mime-type type="application/gpx+xml">
     <_comment>GPX geographic data</_comment>

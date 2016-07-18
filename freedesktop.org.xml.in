@@ -1521,7 +1521,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-cbr">
     <_comment>comic book archive</_comment>
-    <sub-class-of type="application/x-rar"/>
+    <sub-class-of type="application/vnd.rar"/>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.cbr"/>
   </mime-type>
@@ -3267,10 +3267,11 @@ command to generate the output files.
     <generic-icon name="x-office-spreadsheet"/>
     <glob pattern="*.qif"/>
   </mime-type>
-  <mime-type type="application/x-rar">
+  <mime-type type="application/vnd.rar">
     <_comment>RAR archive</_comment>
     <acronym>RAR</acronym>
     <expanded-acronym>Roshal ARchive</expanded-acronym>
+    <alias type="application/x-rar"/>
     <alias type="application/x-rar-compressed"/>
     <generic-icon name="package-x-generic"/>
     <magic priority="60">

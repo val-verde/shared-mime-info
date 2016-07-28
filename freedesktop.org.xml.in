@@ -1716,6 +1716,23 @@ command to generate the output files.
     <generic-icon name="text-x-script"/>
     <glob pattern="*.es"/>
   </mime-type>
+  <mime-type type="application/x-sega-cd-rom">
+    <!-- Translate this to Mega-CD if the console was known as such in your locale
+         Should be Mega-CD in all but en_US, Mexico, Canada and Brazil: https://en.wikipedia.org/wiki/Sega_CD -->
+    <_comment>Sega CD disc image</_comment>
+    <generic-icon name="application-x-executable"/>
+    <!-- Also matches the application/x-genesis-rom magic values, hence the higher priority -->
+    <magic priority="60">
+      <match type="string" value="SEGADISCSYSTEM" offset="0">
+        <match type="string" value="SEGA" offset="256"/>
+      </match>
+      <match type="string" value="SEGADISCSYSTEM" offset="16">
+        <match type="string" value="SEGA" offset="272"/>
+      </match>
+    </magic>
+    <glob pattern="*.bin"/>
+    <glob pattern="*.iso"/>
+  </mime-type>
   <mime-type type="application/x-saturn-rom">
     <_comment>Sega Saturn disc image</_comment>
     <generic-icon name="application-x-executable"/>

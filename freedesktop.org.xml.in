@@ -2085,7 +2085,7 @@ command to generate the output files.
       <match type="string" value="FONT" offset="0"/>
     </magic>
   </mime-type>
-  <mime-type type="application/x-frame">
+  <mime-type type="application/vnd.framemaker">
     <_comment>Adobe FrameMaker document</_comment>
     <generic-icon name="x-office-document"/>
     <magic priority="50">
@@ -2097,6 +2097,8 @@ command to generate the output files.
       <match type="string" value="&lt;Book" offset="0"/>
       <match type="string" value="&lt;Maker" offset="0"/>
     </magic>
+    <glob pattern="*.fm"/>
+    <alias type="application/x-frame"/>
   </mime-type>
   <mime-type type="application/x-gameboy-rom">
     <_comment>Game Boy ROM</_comment>

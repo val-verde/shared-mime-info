@@ -2144,12 +2144,22 @@ command to generate the output files.
     <_comment>Genesis ROM</_comment>
     <generic-icon name="application-x-executable"/>
     <magic priority="50">
-      <match type="string" value="SEGA" offset="256"/>
+      <match type="string" value="SEGA GENESIS" offset="256"/>
+      <match type="string" value="SEGA MEGA DRIVE" offset="256"/>
       <match type="string" value="EAGN" offset="640"/>
       <match type="string" value="EAMG" offset="640"/>
     </magic>
     <glob pattern="*.gen"/>
     <glob pattern="*.smd"/>
+  </mime-type>
+  <mime-type type="application/x-genesis-32x-rom">
+    <!-- Translate this to Super 32X, Mega Drive 32X or Mega 32X if the system was known as such in your locale
+         Should be Super 32X in Japan, Mega Drive 32X in PAL region and Mega 32X in Brazil: https://en.wikipedia.org/wiki/32X -->
+    <_comment>Genesis 32X ROM</_comment>
+    <generic-icon name="application-x-executable"/>
+    <magic priority="50">
+      <match type="string" value="SEGA 32X" offset="256"/>
+    </magic>
     <glob pattern="*.32x"/>
     <glob pattern="*.mdx"/>
   </mime-type>

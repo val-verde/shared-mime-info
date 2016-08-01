@@ -2117,12 +2117,23 @@ command to generate the output files.
     <_comment>Game Boy ROM</_comment>
     <generic-icon name="application-x-executable"/>
     <magic priority="50">
-      <match type="string" value="\xce\xed\x66\x66\xcc\x0d\x00\x0b\x03\x73\x00\x83\x00\x0c\x00\x0d\x00\x08\x11\x1f\x88\x89\x00\x0e" offset="260"/>
+      <match type="string" value="\xce\xed\x66\x66\xcc\x0d\x00\x0b\x03\x73\x00\x83\x00\x0c\x00\x0d\x00\x08\x11\x1f\x88\x89\x00\x0e" offset="260">
+        <match type="byte" value="0x0" mask="0x80" offset="323"/>
+      </match>
     </magic>
     <glob pattern="*.gb"/>
+    <glob pattern="*.sgb"/>
+  </mime-type>
+  <mime-type type="application/x-gameboy-color-rom">
+    <_comment>Game Boy Color ROM</_comment>
+    <generic-icon name="application-x-executable"/>
+    <magic priority="50">
+      <match type="string" value="\xce\xed\x66\x66\xcc\x0d\x00\x0b\x03\x73\x00\x83\x00\x0c\x00\x0d\x00\x08" offset="260">
+        <match type="byte" value="0x80" mask="0x80" offset="323"/>
+      </match>
+    </magic>
     <glob pattern="*.gbc"/>
     <glob pattern="*.cgb"/>
-    <glob pattern="*.sgb"/>
   </mime-type>
   <mime-type type="application/x-gba-rom">
     <_comment>Game Boy Advance ROM</_comment>

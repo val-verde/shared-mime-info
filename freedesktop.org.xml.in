@@ -6196,7 +6196,24 @@ command to generate the output files.
     <acronym>MPEG-2 TS</acronym>
     <expanded-acronym>Moving Picture Experts Group 2 Transport Stream</expanded-acronym>
     <magic priority="50">
-      <match type="big32" value="0x47400010" mask="0xff4000df" offset="0"/>
+      <match type="byte" value="0x47" offset="0">
+        <match type="byte" value="0x47" offset="188">
+          <match type="byte" value="0x47" offset="376">
+            <match type="byte" value="0x47" offset="564">
+              <match type="byte" value="0x47" offset="752"/>
+            </match>
+          </match>
+        </match>
+      </match>
+      <match type="byte" value="0x47" offset="4">
+        <match type="byte" value="0x47" offset="196">
+          <match type="byte" value="0x47" offset="388">
+            <match type="byte" value="0x47" offset="580">
+              <match type="byte" value="0x47" offset="772"/>
+            </match>
+          </match>
+        </match>
+      </match>
     </magic>
     <glob pattern="*.m2t"/>
     <glob pattern="*.m2ts"/>

@@ -1733,6 +1733,15 @@ command to generate the output files.
     <glob pattern="*.bin"/>
     <glob pattern="*.iso"/>
   </mime-type>
+  <mime-type type="application/x-sega-pico-rom">
+    <!-- Translate this to Kids Computer Pico if the console was known as such in your locale
+         Should be Sega Pico in all but Japan: https://en.wikipedia.org/wiki/Sega_Pico -->
+    <_comment>Sega Pico ROM</_comment>
+    <generic-icon name="application-x-executable"/>
+    <magic priority="50">
+      <match type="string" value="SEGA PICO" offset="256"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/x-saturn-rom">
     <_comment>Sega Saturn disc image</_comment>
     <generic-icon name="application-x-executable"/>

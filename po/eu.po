@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-info\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-23 14:42+0100\n"
-"PO-Revision-Date: 2016-03-08 22:04+0000\n"
-"Last-Translator: Mikel Olasagasti Uranga <mikel@olasagasti.info>\n"
+"POT-Creation-Date: 2016-08-02 17:11+0200\n"
+"PO-Revision-Date: 2016-08-02 15:11+0000\n"
+"Last-Translator: hadess <hadess@hadess.net>\n"
 "Language-Team: Basque (http://www.transifex.com/freedesktop/shared-mime-info/language/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,793 +19,820 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../freedesktop.org.xml.in.h:1
+msgid "Atari 2600"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:2
+msgid "Atari 7800"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:3
 msgid "ATK inset"
 msgstr "ATK sartzapena"
 
-#: ../freedesktop.org.xml.in.h:2
+#: ../freedesktop.org.xml.in.h:4
 msgid "electronic book document"
 msgstr "liburu elektronikoaren dokumentua"
 
-#: ../freedesktop.org.xml.in.h:3
+#: ../freedesktop.org.xml.in.h:5
 msgid "Adobe Illustrator document"
 msgstr "Adobe Illustrator dokumentua"
 
-#: ../freedesktop.org.xml.in.h:4
+#: ../freedesktop.org.xml.in.h:6
 msgid "Macintosh BinHex-encoded file"
 msgstr "Macintosh BinHex-ekin kodetutako fitxategia"
 
-#: ../freedesktop.org.xml.in.h:5
+#: ../freedesktop.org.xml.in.h:7
 msgid "Mathematica Notebook"
 msgstr "Mathematica Notebook"
 
-#: ../freedesktop.org.xml.in.h:6
+#: ../freedesktop.org.xml.in.h:8
 msgid "MathML document"
 msgstr "MathML dokumentua"
 
-#: ../freedesktop.org.xml.in.h:7
+#: ../freedesktop.org.xml.in.h:9
 msgid "mailbox file"
 msgstr "mailbox fitxategia"
 
-#: ../freedesktop.org.xml.in.h:8
+#: ../freedesktop.org.xml.in.h:10
 msgid "Metalink file"
 msgstr "Metaestekaren fitxategia"
 
-#: ../freedesktop.org.xml.in.h:9
+#: ../freedesktop.org.xml.in.h:11
 msgid "unknown"
 msgstr "ezezaguna"
 
-#: ../freedesktop.org.xml.in.h:10
+#: ../freedesktop.org.xml.in.h:12
 msgid "Partially downloaded file"
 msgstr "Partzialki deskargatutako fitxategia"
 
-#: ../freedesktop.org.xml.in.h:11
+#: ../freedesktop.org.xml.in.h:13
 msgid "ODA document"
 msgstr "ODA dokumentua"
 
-#: ../freedesktop.org.xml.in.h:12
+#: ../freedesktop.org.xml.in.h:14
 msgid "WWF document"
 msgstr "WWF dokumentua"
 
-#: ../freedesktop.org.xml.in.h:13
+#: ../freedesktop.org.xml.in.h:15
 msgid "PDF document"
 msgstr "PDF dokumentua"
 
-#: ../freedesktop.org.xml.in.h:14
+#: ../freedesktop.org.xml.in.h:16
 msgid "XSPF playlist"
 msgstr "XSPF erreprodukzio-zerrenda"
 
-#: ../freedesktop.org.xml.in.h:15
+#: ../freedesktop.org.xml.in.h:17
 msgid "Microsoft Windows theme pack"
 msgstr "Microsoft Windows-en gaiaren paketea"
 
-#: ../freedesktop.org.xml.in.h:16
+#: ../freedesktop.org.xml.in.h:18
 msgid "AmazonMP3 download file"
 msgstr "AmazonMP3 deskarga fitxategia"
 
-#: ../freedesktop.org.xml.in.h:17
+#: ../freedesktop.org.xml.in.h:19
 msgid "GSM 06.10 audio"
 msgstr "GSM 06.10 audioa"
 
-#: ../freedesktop.org.xml.in.h:18
+#: ../freedesktop.org.xml.in.h:20
 msgid "iRiver Playlist"
 msgstr "iRiver erreprodukzio-zerrenda"
 
-#: ../freedesktop.org.xml.in.h:19
+#: ../freedesktop.org.xml.in.h:21
 msgid "PGP/MIME-encrypted message header"
 msgstr "PGP/MIME enkriptatutako mezu-goiburua"
 
-#: ../freedesktop.org.xml.in.h:20
+#: ../freedesktop.org.xml.in.h:22
 msgid "PGP keys"
 msgstr "PGP giltzak"
 
-#: ../freedesktop.org.xml.in.h:21
+#: ../freedesktop.org.xml.in.h:23
 msgid "detached OpenPGP signature"
 msgstr "desuzturtako OpenPGP sinadura"
 
-#: ../freedesktop.org.xml.in.h:22
+#: ../freedesktop.org.xml.in.h:24
 msgid "PKCS#7 Message or Certificate"
 msgstr "PKCS#7 mezu edo zertifikazioa"
 
-#: ../freedesktop.org.xml.in.h:23
+#: ../freedesktop.org.xml.in.h:25
 msgid "detached S/MIME signature"
 msgstr "desuzturtako S/MIME sinadura"
 
-#: ../freedesktop.org.xml.in.h:24
+#: ../freedesktop.org.xml.in.h:26
 msgid "PKCS#8 private key"
 msgstr "PKCS#8 gako pribatua"
 
-#: ../freedesktop.org.xml.in.h:25
+#: ../freedesktop.org.xml.in.h:27
 msgid "PKCS#10 certification request"
 msgstr "PKCS#10 ziurtagirien eskaera"
 
-#: ../freedesktop.org.xml.in.h:26
+#: ../freedesktop.org.xml.in.h:28
 msgid "X.509 certificate"
 msgstr "X.509 ziurtagiria"
 
-#: ../freedesktop.org.xml.in.h:27
+#: ../freedesktop.org.xml.in.h:29
 msgid "Certificate revocation list"
 msgstr "Ziurtagiri-errebokatzeen zerrenda"
 
-#: ../freedesktop.org.xml.in.h:28
+#: ../freedesktop.org.xml.in.h:30
 msgid "PkiPath certification path"
 msgstr "PkiPath ziurtagirien bide-izena"
 
-#: ../freedesktop.org.xml.in.h:29
+#: ../freedesktop.org.xml.in.h:31
 msgid "PS document"
 msgstr "PS dokumentua"
 
-#: ../freedesktop.org.xml.in.h:30
+#: ../freedesktop.org.xml.in.h:32
 msgid "Plucker document"
 msgstr "Plucker dokumentua"
 
-#: ../freedesktop.org.xml.in.h:31
+#: ../freedesktop.org.xml.in.h:33
+msgid "RAML document"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:34
 msgid "RELAX NG XML schema"
 msgstr "RELAX NG XML eskema"
 
-#: ../freedesktop.org.xml.in.h:32
+#: ../freedesktop.org.xml.in.h:35
 msgid "RTF document"
 msgstr "RTF dokumentua"
 
-#: ../freedesktop.org.xml.in.h:33
+#: ../freedesktop.org.xml.in.h:36
 msgid "Sieve mail filter script"
 msgstr "Sieve posta-iragazki script-a"
 
-#: ../freedesktop.org.xml.in.h:34
+#: ../freedesktop.org.xml.in.h:37
 msgid "SMIL document"
 msgstr "SMIL dokumentua"
 
-#: ../freedesktop.org.xml.in.h:35
+#: ../freedesktop.org.xml.in.h:38
 msgid "WPL playlist"
 msgstr "WPL erreprodukzio-zerrenda"
 
-#: ../freedesktop.org.xml.in.h:36
+#: ../freedesktop.org.xml.in.h:39
 msgid "SQLite2 database"
 msgstr "SQLite2 datu-basea"
 
-#: ../freedesktop.org.xml.in.h:37
+#: ../freedesktop.org.xml.in.h:40
 msgid "SQLite3 database"
 msgstr "SQLite3 datu-basea"
 
-#: ../freedesktop.org.xml.in.h:38
+#: ../freedesktop.org.xml.in.h:41
 msgid "GEDCOM family history"
 msgstr "GEDCOM famili historia"
 
-#: ../freedesktop.org.xml.in.h:39
+#: ../freedesktop.org.xml.in.h:42
 msgid "Flash video"
 msgstr "Flash bideoa"
 
-#: ../freedesktop.org.xml.in.h:40
+#: ../freedesktop.org.xml.in.h:43
 msgid "JavaFX video"
 msgstr "JavaFX bideoa"
 
 #. translators: a record is in this context a description of a board game
 #. that has been played, and that can be played back again:
 #. http://www.red-bean.com/sgf/
-#: ../freedesktop.org.xml.in.h:44
+#: ../freedesktop.org.xml.in.h:47
 msgid "SGF record"
 msgstr "SGF erregistroa"
 
-#: ../freedesktop.org.xml.in.h:45
+#: ../freedesktop.org.xml.in.h:48
 msgid "XLIFF translation file"
 msgstr "XLIFF itzulpen-fitxategia"
 
-#: ../freedesktop.org.xml.in.h:46
+#: ../freedesktop.org.xml.in.h:49
 msgid "YAML document"
 msgstr "YAML dokumentua"
 
-#: ../freedesktop.org.xml.in.h:47
+#: ../freedesktop.org.xml.in.h:50
 msgid "Corel Draw drawing"
 msgstr "Corel Draw-eko marrazkia"
 
-#: ../freedesktop.org.xml.in.h:48
+#: ../freedesktop.org.xml.in.h:51
 msgid "HPGL file"
 msgstr "HPGL fitxategia"
 
-#: ../freedesktop.org.xml.in.h:49
+#: ../freedesktop.org.xml.in.h:52
 msgid "PCL file"
 msgstr "PCL fitxategia"
 
-#: ../freedesktop.org.xml.in.h:50
+#: ../freedesktop.org.xml.in.h:53
 msgid "Lotus 1-2-3 spreadsheet"
 msgstr "Lotus 1-2-3 kalkulu-orria"
 
-#: ../freedesktop.org.xml.in.h:51
+#: ../freedesktop.org.xml.in.h:54
 msgid "Lotus Word Pro"
 msgstr "Lotus Word Pro"
 
-#: ../freedesktop.org.xml.in.h:52
+#: ../freedesktop.org.xml.in.h:55
 msgid "JET database"
 msgstr "JET datu-basea"
 
-#: ../freedesktop.org.xml.in.h:53
+#: ../freedesktop.org.xml.in.h:56
 msgid "Microsoft Cabinet archive"
 msgstr "Microsoft Cabinet artxiboa"
 
-#: ../freedesktop.org.xml.in.h:54
+#: ../freedesktop.org.xml.in.h:57
 msgid "Excel spreadsheet"
 msgstr "Excel kalkulu-orria"
 
-#: ../freedesktop.org.xml.in.h:55
+#: ../freedesktop.org.xml.in.h:58
 msgid "Excel add-in"
 msgstr "Excel gehigarria"
 
-#: ../freedesktop.org.xml.in.h:56
+#: ../freedesktop.org.xml.in.h:59
 msgid "Excel 2007 binary spreadsheet"
 msgstr "Excel 2007 kalkulu-orri binarioa"
 
-#: ../freedesktop.org.xml.in.h:57
+#: ../freedesktop.org.xml.in.h:60
 msgid "Excel spreadsheet template"
 msgstr "Excel kalkulu-orri txantiloia"
 
-#: ../freedesktop.org.xml.in.h:58
+#: ../freedesktop.org.xml.in.h:61
 msgid "PowerPoint presentation"
 msgstr "PowerPoint aurkezpena"
 
-#: ../freedesktop.org.xml.in.h:59
+#: ../freedesktop.org.xml.in.h:62
 msgid "PowerPoint add-in"
 msgstr "PowerPoint gehigarria"
 
-#: ../freedesktop.org.xml.in.h:60
+#: ../freedesktop.org.xml.in.h:63
 msgid "PowerPoint slide"
 msgstr "PowerPoint diapositiba"
 
-#: ../freedesktop.org.xml.in.h:61
+#: ../freedesktop.org.xml.in.h:64
 msgid "PowerPoint presentation template"
 msgstr "PowerPoint aurkezpen txantiloia"
 
-#: ../freedesktop.org.xml.in.h:62
+#: ../freedesktop.org.xml.in.h:65
 msgid "Office Open XML Visio Drawing"
 msgstr "Office Open XML Visio marrazkia"
 
-#: ../freedesktop.org.xml.in.h:63
+#: ../freedesktop.org.xml.in.h:66
 msgid "Office Open XML Visio Template"
 msgstr "Office Open XML Visio txantiloia"
 
-#: ../freedesktop.org.xml.in.h:64
+#: ../freedesktop.org.xml.in.h:67
 msgid "Office Open XML Visio Stencil"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:65
+#: ../freedesktop.org.xml.in.h:68
 msgid "Word document"
 msgstr "Word dokumentua"
 
-#: ../freedesktop.org.xml.in.h:66
+#: ../freedesktop.org.xml.in.h:69
 msgid "Word document template"
 msgstr "Word dokumentuaren txantiloia"
 
-#: ../freedesktop.org.xml.in.h:67
+#: ../freedesktop.org.xml.in.h:70
 msgid "XPS document"
 msgstr "XPS dokumentua"
 
-#: ../freedesktop.org.xml.in.h:68
+#: ../freedesktop.org.xml.in.h:71
 msgid "Microsoft Works document"
 msgstr "Microsoft Works dokumentua"
 
-#: ../freedesktop.org.xml.in.h:69
+#: ../freedesktop.org.xml.in.h:72
 msgid "Microsoft Visio document"
 msgstr "Microsoft Visio dokumentua"
 
-#: ../freedesktop.org.xml.in.h:70
+#: ../freedesktop.org.xml.in.h:73
 msgid "Word template"
 msgstr "Word txantiloia"
 
-#: ../freedesktop.org.xml.in.h:71
+#: ../freedesktop.org.xml.in.h:74
 msgid "GML document"
 msgstr "GML dokumentua"
 
-#: ../freedesktop.org.xml.in.h:72
+#: ../freedesktop.org.xml.in.h:75
 msgid "GNUnet search file"
 msgstr "GNUnet bilaketako fitxategia"
 
-#: ../freedesktop.org.xml.in.h:73
+#: ../freedesktop.org.xml.in.h:76
 msgid "TNEF message"
 msgstr "TNEF mezua"
 
-#: ../freedesktop.org.xml.in.h:74
+#: ../freedesktop.org.xml.in.h:77
 msgid "StarCalc spreadsheet"
 msgstr "StarCalc kalkulu-orria"
 
-#: ../freedesktop.org.xml.in.h:75
+#: ../freedesktop.org.xml.in.h:78
 msgid "StarChart chart"
 msgstr "StarChart diagrama"
 
-#: ../freedesktop.org.xml.in.h:76
+#: ../freedesktop.org.xml.in.h:79
 msgid "StarDraw drawing"
 msgstr "StarDraw marrazkia"
 
-#: ../freedesktop.org.xml.in.h:77
+#: ../freedesktop.org.xml.in.h:80
 msgid "StarImpress presentation"
 msgstr "StarImpress aurkezpena"
 
-#: ../freedesktop.org.xml.in.h:78
+#: ../freedesktop.org.xml.in.h:81
 msgid "StarMail email"
 msgstr "StarMail helb.el."
 
-#: ../freedesktop.org.xml.in.h:79
+#: ../freedesktop.org.xml.in.h:82
 msgid "StarMath formula"
 msgstr "StarMath formula"
 
-#: ../freedesktop.org.xml.in.h:80
+#: ../freedesktop.org.xml.in.h:83
 msgid "StarWriter document"
 msgstr "StarWriter dokumentua"
 
-#: ../freedesktop.org.xml.in.h:81
+#: ../freedesktop.org.xml.in.h:84
 msgid "OpenOffice Calc spreadsheet"
 msgstr "OpenOffice.org Calc kalkulu-orria"
 
-#: ../freedesktop.org.xml.in.h:82
+#: ../freedesktop.org.xml.in.h:85
 msgid "OpenOffice Calc template"
 msgstr "OpenOffice Calc txantiloia"
 
-#: ../freedesktop.org.xml.in.h:83
+#: ../freedesktop.org.xml.in.h:86
 msgid "OpenOffice Draw drawing"
 msgstr "OpenOffice.org Draw marrazkia"
 
-#: ../freedesktop.org.xml.in.h:84
+#: ../freedesktop.org.xml.in.h:87
 msgid "OpenOffice Draw template"
 msgstr "OpenOffice Draw txantiloia"
 
-#: ../freedesktop.org.xml.in.h:85
+#: ../freedesktop.org.xml.in.h:88
 msgid "OpenOffice Impress presentation"
 msgstr "OpenOffice.org Impress aurkezpena"
 
-#: ../freedesktop.org.xml.in.h:86
+#: ../freedesktop.org.xml.in.h:89
 msgid "OpenOffice Impress template"
 msgstr "OpenOffice Impress txantiloia"
 
-#: ../freedesktop.org.xml.in.h:87
+#: ../freedesktop.org.xml.in.h:90
 msgid "OpenOffice Math formula"
 msgstr "OpenOffice.org Math formula"
 
-#: ../freedesktop.org.xml.in.h:88
+#: ../freedesktop.org.xml.in.h:91
 msgid "OpenOffice Writer document"
 msgstr "OpenOffice.org Writer dokumentua"
 
-#: ../freedesktop.org.xml.in.h:89
+#: ../freedesktop.org.xml.in.h:92
 msgid "OpenOffice Writer global document"
 msgstr "OpenOffice.org Writer dokumentu globala"
 
-#: ../freedesktop.org.xml.in.h:90
+#: ../freedesktop.org.xml.in.h:93
 msgid "OpenOffice Writer template"
 msgstr "OpenOffice Writer txantiloia"
 
-#: ../freedesktop.org.xml.in.h:91
+#: ../freedesktop.org.xml.in.h:94
 msgid "ODT document"
 msgstr "ODT dokumentua"
 
-#: ../freedesktop.org.xml.in.h:92
+#: ../freedesktop.org.xml.in.h:95
 msgid "ODT document (Flat XML)"
 msgstr "ODT dokumentua (XML soila)"
 
-#: ../freedesktop.org.xml.in.h:93
+#: ../freedesktop.org.xml.in.h:96
 msgid "ODT template"
 msgstr "ODT txantiloia"
 
-#: ../freedesktop.org.xml.in.h:94
+#: ../freedesktop.org.xml.in.h:97
 msgid "OTH template"
 msgstr "OTH txantiloia"
 
-#: ../freedesktop.org.xml.in.h:95
+#: ../freedesktop.org.xml.in.h:98
 msgid "ODM document"
 msgstr "ODM dokumentua"
 
-#: ../freedesktop.org.xml.in.h:96
+#: ../freedesktop.org.xml.in.h:99
 msgid "ODG drawing"
 msgstr "ODG marrazkia"
 
-#: ../freedesktop.org.xml.in.h:97
+#: ../freedesktop.org.xml.in.h:100
 msgid "ODG drawing (Flat XML)"
 msgstr "ODG marrazkia (XML soila)"
 
-#: ../freedesktop.org.xml.in.h:98
+#: ../freedesktop.org.xml.in.h:101
 msgid "ODG template"
 msgstr "ODG txantiloia"
 
-#: ../freedesktop.org.xml.in.h:99
+#: ../freedesktop.org.xml.in.h:102
 msgid "ODP presentation"
 msgstr "ODP aurkezpena"
 
-#: ../freedesktop.org.xml.in.h:100
+#: ../freedesktop.org.xml.in.h:103
 msgid "ODP presentation (Flat XML)"
 msgstr "ODP aurkezpena (XML soila)"
 
-#: ../freedesktop.org.xml.in.h:101
+#: ../freedesktop.org.xml.in.h:104
 msgid "ODP template"
 msgstr "ODP txantiloia"
 
-#: ../freedesktop.org.xml.in.h:102
+#: ../freedesktop.org.xml.in.h:105
 msgid "ODS spreadsheet"
 msgstr "ODS kalkulu-orria"
 
-#: ../freedesktop.org.xml.in.h:103
+#: ../freedesktop.org.xml.in.h:106
 msgid "ODS spreadsheet (Flat XML)"
 msgstr "ODS kalkulu-orria (XML soila)"
 
-#: ../freedesktop.org.xml.in.h:104
+#: ../freedesktop.org.xml.in.h:107
 msgid "ODS template"
 msgstr "ODS txantiloia"
 
-#: ../freedesktop.org.xml.in.h:105
+#: ../freedesktop.org.xml.in.h:108
 msgid "ODC chart"
 msgstr "ODC diagrama"
 
-#: ../freedesktop.org.xml.in.h:106
+#: ../freedesktop.org.xml.in.h:109
 msgid "ODC template"
 msgstr "ODC txantiloia"
 
-#: ../freedesktop.org.xml.in.h:107
+#: ../freedesktop.org.xml.in.h:110
 msgid "ODF formula"
 msgstr "ODF formula"
 
-#: ../freedesktop.org.xml.in.h:108
+#: ../freedesktop.org.xml.in.h:111
 msgid "ODF template"
 msgstr "ODF txantiloia"
 
-#: ../freedesktop.org.xml.in.h:109
+#: ../freedesktop.org.xml.in.h:112
 msgid "ODB database"
 msgstr "ODB datu-basea"
 
-#: ../freedesktop.org.xml.in.h:110
+#: ../freedesktop.org.xml.in.h:113
 msgid "ODI image"
 msgstr "ODI irudia"
 
-#: ../freedesktop.org.xml.in.h:111
+#: ../freedesktop.org.xml.in.h:114
 msgid "OpenOffice.org extension"
 msgstr "OpenOffice.org luzapena"
 
-#: ../freedesktop.org.xml.in.h:112
+#: ../freedesktop.org.xml.in.h:115
 msgid "Android package"
 msgstr "Android paketea"
 
-#: ../freedesktop.org.xml.in.h:113
+#: ../freedesktop.org.xml.in.h:116
 msgid "SIS package"
 msgstr "SIS paketea"
 
-#: ../freedesktop.org.xml.in.h:114
+#: ../freedesktop.org.xml.in.h:117
 msgid "SISX package"
 msgstr "SISX paketea"
 
-#: ../freedesktop.org.xml.in.h:115
+#: ../freedesktop.org.xml.in.h:118
 msgid "Network Packet Capture"
 msgstr "Sareko pakete kaptura"
 
-#: ../freedesktop.org.xml.in.h:116
+#: ../freedesktop.org.xml.in.h:119
 msgid "WordPerfect document"
 msgstr "WordPerfect dokumentua"
 
-#: ../freedesktop.org.xml.in.h:117
+#: ../freedesktop.org.xml.in.h:120
 msgid "SPSS Portable Data File"
 msgstr "SPSS datuen fitxategi eramangarria"
 
-#: ../freedesktop.org.xml.in.h:118
+#: ../freedesktop.org.xml.in.h:121
 msgid "SPSS Data File"
 msgstr "SPSS datuen fitxategia"
 
-#: ../freedesktop.org.xml.in.h:119
+#: ../freedesktop.org.xml.in.h:122
 msgid "XBEL bookmarks"
 msgstr "XBEL laster-markak"
 
-#: ../freedesktop.org.xml.in.h:120
+#: ../freedesktop.org.xml.in.h:123
 msgid "7-zip archive"
 msgstr "7-zip artxiboa"
 
-#: ../freedesktop.org.xml.in.h:121
+#: ../freedesktop.org.xml.in.h:124
 msgid "AbiWord document"
 msgstr "AbiWord dokumentua"
 
-#: ../freedesktop.org.xml.in.h:122
+#: ../freedesktop.org.xml.in.h:125
 msgid "CD image cuesheet"
 msgstr "CD irudiaren CUE orria"
 
-#: ../freedesktop.org.xml.in.h:123
+#: ../freedesktop.org.xml.in.h:126
 msgid "Lotus AmiPro document"
 msgstr "Lotus AmiPro dokumentua"
 
-#: ../freedesktop.org.xml.in.h:124
+#: ../freedesktop.org.xml.in.h:127
 msgid "AportisDoc document"
 msgstr "AportisDoc dokumentua"
 
-#: ../freedesktop.org.xml.in.h:125
+#: ../freedesktop.org.xml.in.h:128
 msgid "Applix Spreadsheets spreadsheet"
 msgstr "Applix Spreadsheets kalkulu-orria"
 
-#: ../freedesktop.org.xml.in.h:126
+#: ../freedesktop.org.xml.in.h:129
 msgid "Applix Words document"
 msgstr "Applix Words dokumentua"
 
-#: ../freedesktop.org.xml.in.h:127
+#: ../freedesktop.org.xml.in.h:130
 msgid "ARC archive"
 msgstr "ARC artxiboa"
 
-#: ../freedesktop.org.xml.in.h:128
+#: ../freedesktop.org.xml.in.h:131
 msgid "AR archive"
 msgstr "AR artxiboa"
 
-#: ../freedesktop.org.xml.in.h:129
+#: ../freedesktop.org.xml.in.h:132
 msgid "ARJ archive"
 msgstr "ARJ artxiboa"
 
-#: ../freedesktop.org.xml.in.h:130
+#: ../freedesktop.org.xml.in.h:133
 msgid "ASP page"
 msgstr "ASP orria"
 
-#: ../freedesktop.org.xml.in.h:131
+#: ../freedesktop.org.xml.in.h:134
 msgid "AWK script"
 msgstr "AWK script-a"
 
-#: ../freedesktop.org.xml.in.h:132
+#: ../freedesktop.org.xml.in.h:135
 msgid "BCPIO document"
 msgstr "BCPIO dokumentua"
 
-#: ../freedesktop.org.xml.in.h:133
+#: ../freedesktop.org.xml.in.h:136
 msgid "BitTorrent seed file"
 msgstr "BitTorrent hazi-fitxategia"
 
-#: ../freedesktop.org.xml.in.h:134
+#: ../freedesktop.org.xml.in.h:137
 msgid "Blender scene"
 msgstr "Blender-eko fitxategia"
 
-#: ../freedesktop.org.xml.in.h:135
+#: ../freedesktop.org.xml.in.h:138
 msgid "TeX DVI document (bzip-compressed)"
 msgstr "TeX DVI dokumentua (bzip-ekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:136
+#: ../freedesktop.org.xml.in.h:139
 msgid "Bzip archive"
 msgstr "Bzip artxiboa"
 
-#: ../freedesktop.org.xml.in.h:137
+#: ../freedesktop.org.xml.in.h:140
 msgid "Tar archive (bzip-compressed)"
 msgstr "Tar artxiboa (bzip-ekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:138
+#: ../freedesktop.org.xml.in.h:141
 msgid "PDF document (bzip-compressed)"
 msgstr "PostScript dokumentua (bzip-ekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:139
+#: ../freedesktop.org.xml.in.h:142
 msgid "PostScript document (bzip-compressed)"
 msgstr "PostScript dokumentua (bzip-ekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:140
+#: ../freedesktop.org.xml.in.h:143
 msgid "comic book archive"
 msgstr "komiki artxiboa"
 
-#: ../freedesktop.org.xml.in.h:141
+#: ../freedesktop.org.xml.in.h:144
 msgid "Lrzip archive"
 msgstr "Lrzip artxiboa"
 
-#: ../freedesktop.org.xml.in.h:142
+#: ../freedesktop.org.xml.in.h:145
 msgid "Tar archive (lrzip-compressed)"
 msgstr "Tar artxiboa (lrzip-ekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:143
+#: ../freedesktop.org.xml.in.h:146
 msgid "Apple disk image"
 msgstr "Apple disko irudia"
 
-#: ../freedesktop.org.xml.in.h:144
+#: ../freedesktop.org.xml.in.h:147
 msgid "Raw disk image"
 msgstr "Disko gordinaren irudia"
 
-#: ../freedesktop.org.xml.in.h:145
+#: ../freedesktop.org.xml.in.h:148
 msgid "Raw disk image (XZ-compressed)"
 msgstr "Disko gordinaren irudia (XZ-rekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:146
+#: ../freedesktop.org.xml.in.h:149
 msgid "raw CD image"
 msgstr "CD gordinaren irudia "
 
-#: ../freedesktop.org.xml.in.h:147
+#: ../freedesktop.org.xml.in.h:150
+msgid "AppImage application bundle"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:151
 msgid "CD Table Of Contents"
 msgstr "CDaren edukien aurkibidea"
 
-#: ../freedesktop.org.xml.in.h:148
+#: ../freedesktop.org.xml.in.h:152
 msgid "PGN chess game notation"
 msgstr "PGN xake jokoaren notazioa"
 
-#: ../freedesktop.org.xml.in.h:149
+#: ../freedesktop.org.xml.in.h:153
 msgid "CHM document"
 msgstr "CHM dokumentua"
 
-#: ../freedesktop.org.xml.in.h:150
+#: ../freedesktop.org.xml.in.h:154
 msgid "Java byte code"
 msgstr "Java byte-kodea"
 
-#: ../freedesktop.org.xml.in.h:151
+#: ../freedesktop.org.xml.in.h:155
 msgid "UNIX-compressed file"
 msgstr "UNIX-en konprimitutako fitxategia"
 
-#: ../freedesktop.org.xml.in.h:152
+#: ../freedesktop.org.xml.in.h:156
 msgid "Tar archive (gzip-compressed)"
 msgstr "Tar artxiboa (gzip-ekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:153
+#: ../freedesktop.org.xml.in.h:157
 msgid "program crash data"
 msgstr "programaren kraskaduraren datuak"
 
-#: ../freedesktop.org.xml.in.h:154
+#: ../freedesktop.org.xml.in.h:158
 msgid "CPIO archive"
 msgstr "CPIO artxiboa"
 
-#: ../freedesktop.org.xml.in.h:155
+#: ../freedesktop.org.xml.in.h:159
 msgid "CPIO archive (gzip-compressed)"
 msgstr "CPIO artxiboa (gzip-ekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:156
+#: ../freedesktop.org.xml.in.h:160
 msgid "C shell script"
 msgstr "C shell script-a"
 
-#: ../freedesktop.org.xml.in.h:157
+#: ../freedesktop.org.xml.in.h:161
 msgid "Xbase document"
 msgstr "Xbase dokumentua"
 
-#: ../freedesktop.org.xml.in.h:158
+#: ../freedesktop.org.xml.in.h:162
 msgid "ECMAScript program"
 msgstr "ECMAScript programa"
 
-#: ../freedesktop.org.xml.in.h:159
+#. Translate this to Mega-CD if the console was known as such in your locale
+#. Should be Mega-CD in all but en_US, Mexico, Canada and Brazil:
+#. https://en.wikipedia.org/wiki/Sega_CD
+#: ../freedesktop.org.xml.in.h:165
+msgid "Sega CD disc image"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:166
 msgid "Sega Saturn disc image"
 msgstr "Sega Saturn disko irudia"
 
-#: ../freedesktop.org.xml.in.h:160
+#: ../freedesktop.org.xml.in.h:167
 msgid "Dreamcast GD-ROM"
 msgstr "Dreamcast GD-ROM"
 
-#: ../freedesktop.org.xml.in.h:161
+#: ../freedesktop.org.xml.in.h:168
 msgid "Nintendo DS ROM"
 msgstr "Nintendo DS-ko ROMa"
 
-#: ../freedesktop.org.xml.in.h:162
+#: ../freedesktop.org.xml.in.h:169
 msgid "PC Engine ROM"
 msgstr "PC Engine ROM"
 
-#: ../freedesktop.org.xml.in.h:163
+#: ../freedesktop.org.xml.in.h:170
 msgid "Wii disc image"
 msgstr "Wii disko irudia"
 
-#: ../freedesktop.org.xml.in.h:164
+#: ../freedesktop.org.xml.in.h:171
 msgid "WiiWare bundle"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:165
+#: ../freedesktop.org.xml.in.h:172
 msgid "GameCube disc image"
 msgstr "GameCube disko irudia"
 
-#: ../freedesktop.org.xml.in.h:166
+#: ../freedesktop.org.xml.in.h:173
 msgid "Debian package"
 msgstr "Debian paketea"
 
-#: ../freedesktop.org.xml.in.h:167
+#: ../freedesktop.org.xml.in.h:174
 msgid "Qt Designer file"
 msgstr "Qt Designer Fitxategia"
 
-#: ../freedesktop.org.xml.in.h:168
+#: ../freedesktop.org.xml.in.h:175
 msgid "Qt Markup Language file"
 msgstr "Qt Markup lengoai fitxategia"
 
-#: ../freedesktop.org.xml.in.h:169
+#: ../freedesktop.org.xml.in.h:176
 msgid "desktop configuration file"
 msgstr "Mahaigainaren konfigurazio-fitxategia"
 
-#: ../freedesktop.org.xml.in.h:170
+#: ../freedesktop.org.xml.in.h:177
 msgid "FictionBook document"
 msgstr "FictionBook dokumentua"
 
-#: ../freedesktop.org.xml.in.h:171
+#: ../freedesktop.org.xml.in.h:178
 msgid "Compressed FictionBook document"
 msgstr "Konprimitutako FictionBook dokumentua"
 
-#: ../freedesktop.org.xml.in.h:172
+#: ../freedesktop.org.xml.in.h:179
 msgid "Dia diagram"
 msgstr "Dia diagrama"
 
-#: ../freedesktop.org.xml.in.h:173
+#: ../freedesktop.org.xml.in.h:180
 msgid "Dia shape"
 msgstr "Dia-ren forma"
 
-#: ../freedesktop.org.xml.in.h:174
+#: ../freedesktop.org.xml.in.h:181
 msgid "TeX DVI document"
 msgstr "TeX DVI dokumentua"
 
-#: ../freedesktop.org.xml.in.h:175
+#: ../freedesktop.org.xml.in.h:182
 msgid "Enlightenment theme"
 msgstr "Enlightenment gaia"
 
-#: ../freedesktop.org.xml.in.h:176
+#: ../freedesktop.org.xml.in.h:183
 msgid "Egon Animator animation"
 msgstr "Egon Animator-eko animazioa"
 
-#: ../freedesktop.org.xml.in.h:177
+#: ../freedesktop.org.xml.in.h:184
 msgid "executable"
 msgstr "exekutagarria"
 
-#: ../freedesktop.org.xml.in.h:178
+#: ../freedesktop.org.xml.in.h:185
 msgid "FLTK Fluid file"
 msgstr "FLTK Fluid fitxategia"
 
-#: ../freedesktop.org.xml.in.h:179
+#: ../freedesktop.org.xml.in.h:186
 msgid "WOFF font"
 msgstr "WOFF letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:180
+#: ../freedesktop.org.xml.in.h:187
 msgid "Postscript type-1 font"
 msgstr "PostScript type-1 letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:181
+#: ../freedesktop.org.xml.in.h:188
 msgid "Adobe font metrics"
 msgstr "Adobe letra-tipoen neurriak"
 
-#: ../freedesktop.org.xml.in.h:182
+#: ../freedesktop.org.xml.in.h:189
 msgid "BDF font"
 msgstr "BDF letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:183
+#: ../freedesktop.org.xml.in.h:190
 msgid "DOS font"
 msgstr "DOS letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:184
+#: ../freedesktop.org.xml.in.h:191
 msgid "Adobe FrameMaker font"
 msgstr "Adobe FrameMaker-en letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:185
+#: ../freedesktop.org.xml.in.h:192
 msgid "LIBGRX font"
 msgstr "LIBGRX letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:186
+#: ../freedesktop.org.xml.in.h:193
 msgid "Linux PSF console font"
 msgstr "Linux PSF kontsolako letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:187
+#: ../freedesktop.org.xml.in.h:194
 msgid "Linux PSF console font (gzip-compressed)"
 msgstr "Linux PSF kontsolako letra-tipoa (gzip-ekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:188
+#: ../freedesktop.org.xml.in.h:195
 msgid "PCF font"
 msgstr "PCF letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:189
+#: ../freedesktop.org.xml.in.h:196
 msgid "OpenType font"
 msgstr "OpenType letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:190
+#: ../freedesktop.org.xml.in.h:197
 msgid "Speedo font"
 msgstr "Speedo letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:191
+#: ../freedesktop.org.xml.in.h:198
 msgid "SunOS News font"
 msgstr "SunOs News letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:192
+#: ../freedesktop.org.xml.in.h:199
 msgid "TeX font"
 msgstr "TeX letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:193
+#: ../freedesktop.org.xml.in.h:200
 msgid "TeX font metrics"
 msgstr "TeX letra-tipoen neurriak"
 
-#: ../freedesktop.org.xml.in.h:194
+#: ../freedesktop.org.xml.in.h:201
 msgid "TrueType font"
 msgstr "TrueType letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:195
+#: ../freedesktop.org.xml.in.h:202
 msgid "TrueType XML font"
 msgstr "TrueType XML letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:196
+#: ../freedesktop.org.xml.in.h:203
 msgid "V font"
 msgstr "V letra-tipoa"
 
-#: ../freedesktop.org.xml.in.h:197
+#: ../freedesktop.org.xml.in.h:204
 msgid "Adobe FrameMaker document"
 msgstr "Adobe FrameMaker-en dokumentua"
 
-#: ../freedesktop.org.xml.in.h:198
+#: ../freedesktop.org.xml.in.h:205
 msgid "Game Boy ROM"
 msgstr "Game Boy-eko ROMa"
 
-#: ../freedesktop.org.xml.in.h:199
+#: ../freedesktop.org.xml.in.h:206
+msgid "Game Boy Color ROM"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:207
 msgid "Game Boy Advance ROM"
 msgstr "Game Boy Advance-ko ROMa"
 
-#: ../freedesktop.org.xml.in.h:200
+#: ../freedesktop.org.xml.in.h:208
 msgid "GDBM database"
 msgstr "GDBM datu-basea"
 
@@ -813,2080 +840,2146 @@ msgstr "GDBM datu-basea"
 #. locale
 #. Should be Mega Drive in all but en_US, Mexico and Canada:
 #. https://en.wikipedia.org/wiki/Sega_Genesis#History
-#: ../freedesktop.org.xml.in.h:203
+#: ../freedesktop.org.xml.in.h:211
 msgid "Genesis ROM"
 msgstr "Genesis-eko ROMa"
 
-#: ../freedesktop.org.xml.in.h:204
+#. Translate this to Super 32X, Mega Drive 32X or Mega 32X if the system was
+#. known as such in your locale
+#. Should be Super 32X in Japan, Mega Drive 32X in PAL region and Mega 32X in
+#. Brazil: https://en.wikipedia.org/wiki/32X
+#: ../freedesktop.org.xml.in.h:214
+msgid "Genesis 32X ROM"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:215
 msgid "translated messages (machine-readable)"
 msgstr "itzulitako mezuak (ordenagailuek irakurtzeko)"
 
-#: ../freedesktop.org.xml.in.h:205
+#: ../freedesktop.org.xml.in.h:216
 msgid "GTK+ Builder"
 msgstr "GTK+ Builder"
 
-#: ../freedesktop.org.xml.in.h:206
+#: ../freedesktop.org.xml.in.h:217
 msgid "Glade project"
 msgstr "Glade proiektua"
 
-#: ../freedesktop.org.xml.in.h:207
+#: ../freedesktop.org.xml.in.h:218
 msgid "GnuCash financial data"
 msgstr "GnuCash finantzako datuak"
 
-#: ../freedesktop.org.xml.in.h:208
+#: ../freedesktop.org.xml.in.h:219
 msgid "Gnumeric spreadsheet"
 msgstr "Gnumeric kalkulu-orria"
 
-#: ../freedesktop.org.xml.in.h:209
+#: ../freedesktop.org.xml.in.h:220
 msgid "Gnuplot document"
 msgstr "Gnuplot dokumentua"
 
-#: ../freedesktop.org.xml.in.h:210
+#: ../freedesktop.org.xml.in.h:221
 msgid "Graphite scientific graph"
 msgstr "Graphite - grafiko zientifikoak"
 
-#: ../freedesktop.org.xml.in.h:211
+#: ../freedesktop.org.xml.in.h:222
 msgid "GTKtalog catalog"
 msgstr "Gtktalog katalogoa"
 
-#: ../freedesktop.org.xml.in.h:212
+#: ../freedesktop.org.xml.in.h:223
 msgid "TeX DVI document (gzip-compressed)"
 msgstr "TeX DVI dokumentua (gzip-ekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:213
+#: ../freedesktop.org.xml.in.h:224
 msgid "Gzip archive"
 msgstr "Gzip artxiboa"
 
-#: ../freedesktop.org.xml.in.h:214
+#: ../freedesktop.org.xml.in.h:225
 msgid "PDF document (gzip-compressed)"
 msgstr "PDF dokumentua (gzip-ekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:215
+#: ../freedesktop.org.xml.in.h:226
 msgid "PostScript document (gzip-compressed)"
 msgstr "PostScript dokumentua (gzip-konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:216
+#: ../freedesktop.org.xml.in.h:227
 msgid "HDF document"
 msgstr "HDF dokumentua"
 
-#: ../freedesktop.org.xml.in.h:217
+#: ../freedesktop.org.xml.in.h:228
 msgid "IFF file"
 msgstr "IFF fitxtegia"
 
-#: ../freedesktop.org.xml.in.h:218
+#: ../freedesktop.org.xml.in.h:229
 msgid "iPod firmware"
 msgstr "iPod firmwarea"
 
-#: ../freedesktop.org.xml.in.h:219
+#: ../freedesktop.org.xml.in.h:230
 msgid "Java archive"
 msgstr "Java artxiboa"
 
-#: ../freedesktop.org.xml.in.h:220
+#: ../freedesktop.org.xml.in.h:231
 msgid "Java class"
 msgstr "Java-ko klasea"
 
-#: ../freedesktop.org.xml.in.h:221
+#: ../freedesktop.org.xml.in.h:232
 msgid "JNLP file"
 msgstr "JNLP fitxategia"
 
-#: ../freedesktop.org.xml.in.h:222
+#: ../freedesktop.org.xml.in.h:233
 msgid "Java keystore"
 msgstr "Java-ren gako-biltegia"
 
-#: ../freedesktop.org.xml.in.h:223
+#: ../freedesktop.org.xml.in.h:234
 msgid "Java JCE keystore"
 msgstr "Java JCE-ren gako-biltegia"
 
-#: ../freedesktop.org.xml.in.h:224
+#: ../freedesktop.org.xml.in.h:235
 msgid "Pack200 Java archive"
 msgstr "Pack2000 Java artxiboa"
 
-#: ../freedesktop.org.xml.in.h:225
+#: ../freedesktop.org.xml.in.h:236
 msgid "JavaScript program"
 msgstr "JavaScript programa"
 
-#: ../freedesktop.org.xml.in.h:226
+#: ../freedesktop.org.xml.in.h:237
 msgid "JSON document"
 msgstr "JSON dokumentua"
 
-#: ../freedesktop.org.xml.in.h:227
+#: ../freedesktop.org.xml.in.h:238
 msgid "JRD document"
 msgstr "JRD dokumentua"
 
-#: ../freedesktop.org.xml.in.h:228
+#: ../freedesktop.org.xml.in.h:239
 msgid "JSON patch"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:229
+#: ../freedesktop.org.xml.in.h:240
 msgid "JSON-LD document"
 msgstr "JSON-LD dokumentua"
 
-#: ../freedesktop.org.xml.in.h:230
+#: ../freedesktop.org.xml.in.h:241
+msgid "Jupyter Notebook"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:242
 msgid "CoffeeScript document"
 msgstr "CoffeeScript dokumentua"
 
-#: ../freedesktop.org.xml.in.h:231
+#: ../freedesktop.org.xml.in.h:243
 msgid "JBuilder project"
 msgstr "JBuilder proiektua"
 
-#: ../freedesktop.org.xml.in.h:232
+#: ../freedesktop.org.xml.in.h:244
 msgid "Karbon14 drawing"
 msgstr "Karbon14 marrazkia"
 
-#: ../freedesktop.org.xml.in.h:233
+#: ../freedesktop.org.xml.in.h:245
 msgid "KChart chart"
 msgstr "KChart diagrama"
 
-#: ../freedesktop.org.xml.in.h:234
+#: ../freedesktop.org.xml.in.h:246
 msgid "Kexi settings for database server connection"
 msgstr "Kexi-ren ezarpenak datu-basearen zerbitzariarekin konektatzeko"
 
-#: ../freedesktop.org.xml.in.h:235
+#: ../freedesktop.org.xml.in.h:247
 msgid "shortcut to Kexi project on database server"
 msgstr "lasterbidea datu-basearen zerbitzariko Kexi proiekturako"
 
-#: ../freedesktop.org.xml.in.h:236
+#: ../freedesktop.org.xml.in.h:248
 msgid "Kexi database file-based project"
 msgstr "Kexi datu-baseko fitxategian oinarritutako proiektua"
 
-#: ../freedesktop.org.xml.in.h:237
+#: ../freedesktop.org.xml.in.h:249
 msgid "KFormula formula"
 msgstr "KFormula formula"
 
-#: ../freedesktop.org.xml.in.h:238
+#: ../freedesktop.org.xml.in.h:250
 msgid "KIllustrator drawing"
 msgstr "KIllustrator marrazkia"
 
-#: ../freedesktop.org.xml.in.h:239
+#: ../freedesktop.org.xml.in.h:251
 msgid "Kivio flowchart"
 msgstr "Kivio diagrama"
 
-#: ../freedesktop.org.xml.in.h:240
+#: ../freedesktop.org.xml.in.h:252
 msgid "Kontour drawing"
 msgstr "Kontour marrazkia"
 
-#: ../freedesktop.org.xml.in.h:241
+#: ../freedesktop.org.xml.in.h:253
 msgid "KPovModeler scene"
 msgstr "KPovModeler eszena"
 
-#: ../freedesktop.org.xml.in.h:242
+#: ../freedesktop.org.xml.in.h:254
 msgid "KPresenter presentation"
 msgstr "Kpresenter aurkezpena"
 
-#: ../freedesktop.org.xml.in.h:243
+#: ../freedesktop.org.xml.in.h:255
 msgid "Krita document"
 msgstr "Krita dokumentua"
 
-#: ../freedesktop.org.xml.in.h:244
+#: ../freedesktop.org.xml.in.h:256
 msgid "KSpread spreadsheet"
 msgstr "KSpread kalkulu-orria"
 
-#: ../freedesktop.org.xml.in.h:245
+#: ../freedesktop.org.xml.in.h:257
 msgid "KSpread spreadsheet (encrypted)"
 msgstr "KSpread kalkulu-orria (enkriptatua)"
 
-#: ../freedesktop.org.xml.in.h:246
+#: ../freedesktop.org.xml.in.h:258
 msgid "KSysV init package"
 msgstr "KSysV hasieratzeko paketea"
 
-#: ../freedesktop.org.xml.in.h:247
+#: ../freedesktop.org.xml.in.h:259
 msgid "Kugar document"
 msgstr "Kugar dokumentua"
 
-#: ../freedesktop.org.xml.in.h:248
+#: ../freedesktop.org.xml.in.h:260
 msgid "KWord document"
 msgstr "KWord dokumentua"
 
-#: ../freedesktop.org.xml.in.h:249
+#: ../freedesktop.org.xml.in.h:261
 msgid "KWord document (encrypted)"
 msgstr "KWord dokumentua (enkriptatua)"
 
-#: ../freedesktop.org.xml.in.h:250
+#: ../freedesktop.org.xml.in.h:262
 msgid "LHA archive"
 msgstr "LHA artxiboa"
 
-#: ../freedesktop.org.xml.in.h:251
+#: ../freedesktop.org.xml.in.h:263
 msgid "LHZ archive"
 msgstr "LHZ artxiboa"
 
-#: ../freedesktop.org.xml.in.h:252
+#: ../freedesktop.org.xml.in.h:264
 msgid "message catalog"
 msgstr "mezuen katalogoa"
 
-#: ../freedesktop.org.xml.in.h:253
+#: ../freedesktop.org.xml.in.h:265
 msgid "LyX document"
 msgstr "LyX dokumentua"
 
-#: ../freedesktop.org.xml.in.h:254
+#: ../freedesktop.org.xml.in.h:266
 msgid "LZ4 archive"
 msgstr "LZ4 artxiboa"
 
-#: ../freedesktop.org.xml.in.h:255
+#: ../freedesktop.org.xml.in.h:267
+msgid "Tar archive (LZ4-compressed)"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:268
 msgid "Lzip archive"
 msgstr "Lzip artxiboa"
 
-#: ../freedesktop.org.xml.in.h:256
+#: ../freedesktop.org.xml.in.h:269
+msgid "Tar archive (lzip-compressed)"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:270
 msgid "LZMA archive"
 msgstr "LZMA artxiboa"
 
-#: ../freedesktop.org.xml.in.h:257
+#: ../freedesktop.org.xml.in.h:271
 msgid "Tar archive (LZMA-compressed)"
 msgstr "Tar artxiboa (LZMA-rekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:258
+#: ../freedesktop.org.xml.in.h:272
 msgid "LZO archive"
 msgstr "LZO artxiboa"
 
-#: ../freedesktop.org.xml.in.h:259
+#: ../freedesktop.org.xml.in.h:273
 msgid "Qpress archive"
 msgstr "Qpress artxiboa"
 
-#: ../freedesktop.org.xml.in.h:260
+#: ../freedesktop.org.xml.in.h:274
 msgid "XAR archive"
 msgstr "XAR artxiboa"
 
-#: ../freedesktop.org.xml.in.h:261
+#: ../freedesktop.org.xml.in.h:275
 msgid "Zlib archive"
 msgstr "Zlib artxiboa"
 
-#: ../freedesktop.org.xml.in.h:262
+#: ../freedesktop.org.xml.in.h:276
 msgid "MagicPoint presentation"
 msgstr "MagicPoint aurkezpena"
 
-#: ../freedesktop.org.xml.in.h:263
+#: ../freedesktop.org.xml.in.h:277
 msgid "Macintosh MacBinary file"
 msgstr "Macintosh MacBinary fitxategia"
 
-#: ../freedesktop.org.xml.in.h:264
+#: ../freedesktop.org.xml.in.h:278
 msgid "Matroska stream"
 msgstr "Matroska korrontea"
 
-#: ../freedesktop.org.xml.in.h:265
+#: ../freedesktop.org.xml.in.h:279
 msgid "Matroska video"
 msgstr "Matroska bideoa"
 
-#: ../freedesktop.org.xml.in.h:266
+#: ../freedesktop.org.xml.in.h:280
 msgid "Matroska 3D video"
 msgstr "Matroska 3D bideoa"
 
-#: ../freedesktop.org.xml.in.h:267
+#: ../freedesktop.org.xml.in.h:281
 msgid "Matroska audio"
 msgstr "Matroska audioa"
 
-#: ../freedesktop.org.xml.in.h:268
+#: ../freedesktop.org.xml.in.h:282
 msgid "WebM video"
 msgstr "WebM bideoa"
 
-#: ../freedesktop.org.xml.in.h:269
+#: ../freedesktop.org.xml.in.h:283
 msgid "WebM audio"
 msgstr "WebM audioa"
 
-#: ../freedesktop.org.xml.in.h:270
+#: ../freedesktop.org.xml.in.h:284
 msgid "MHTML web archive"
 msgstr "MHTML web artxiboa"
 
-#: ../freedesktop.org.xml.in.h:271
+#: ../freedesktop.org.xml.in.h:285
 msgid "MXF video"
 msgstr "MXF bideoa"
 
-#: ../freedesktop.org.xml.in.h:272
+#: ../freedesktop.org.xml.in.h:286
 msgid "OCL file"
 msgstr "OCL fitxategia"
 
-#: ../freedesktop.org.xml.in.h:273
+#: ../freedesktop.org.xml.in.h:287
 msgid "COBOL source file"
 msgstr "COBOL iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:274
+#: ../freedesktop.org.xml.in.h:288
 msgid "Mobipocket e-book"
 msgstr "Mobipocket liburua"
 
-#: ../freedesktop.org.xml.in.h:275
+#: ../freedesktop.org.xml.in.h:289
 msgid "Adobe FrameMaker MIF document"
 msgstr "Adobe FrameMaker-en MIF dokumentua"
 
-#: ../freedesktop.org.xml.in.h:276
+#: ../freedesktop.org.xml.in.h:290
 msgid "Mozilla bookmarks"
 msgstr "Mozillako laster-markak"
 
-#: ../freedesktop.org.xml.in.h:277
+#: ../freedesktop.org.xml.in.h:291
 msgid "DOS/Windows executable"
 msgstr "DOS/Windows-eko exekutagarria"
 
-#: ../freedesktop.org.xml.in.h:278
+#: ../freedesktop.org.xml.in.h:292
 msgid "Internet shortcut"
 msgstr "Interneteko lasterbidea"
 
-#: ../freedesktop.org.xml.in.h:279
+#: ../freedesktop.org.xml.in.h:293
 msgid "WRI document"
 msgstr "WRI dokumentua"
 
-#: ../freedesktop.org.xml.in.h:280
+#: ../freedesktop.org.xml.in.h:294
 msgid "MSX ROM"
 msgstr "MSX-ko ROMa"
 
-#: ../freedesktop.org.xml.in.h:281
+#: ../freedesktop.org.xml.in.h:295
 msgid "M4 macro"
 msgstr "M4 makroa"
 
-#: ../freedesktop.org.xml.in.h:282
+#: ../freedesktop.org.xml.in.h:296
 msgid "Nintendo64 ROM"
 msgstr "Nintendo64-ko ROMa"
 
-#: ../freedesktop.org.xml.in.h:283
+#: ../freedesktop.org.xml.in.h:297
 msgid "Nautilus link"
 msgstr "Nautilus esteka"
 
+#: ../freedesktop.org.xml.in.h:298
+msgid "Neo-Geo Pocket ROM"
+msgstr ""
+
 #. Translate this to Famicom if the console was known as such in your locale
-#: ../freedesktop.org.xml.in.h:285
+#: ../freedesktop.org.xml.in.h:300
 msgid "NES ROM"
 msgstr "NES-eko ROMa"
 
-#: ../freedesktop.org.xml.in.h:286
+#: ../freedesktop.org.xml.in.h:301
 msgid "Unidata NetCDF document"
 msgstr "Unidata NetCDF dokumentua"
 
-#: ../freedesktop.org.xml.in.h:287
+#: ../freedesktop.org.xml.in.h:302
 msgid "NewzBin usenet index"
 msgstr "NewzBin usenet indizea"
 
-#: ../freedesktop.org.xml.in.h:288
+#: ../freedesktop.org.xml.in.h:303
 msgid "object code"
 msgstr "objektu kodea"
 
-#: ../freedesktop.org.xml.in.h:289
+#: ../freedesktop.org.xml.in.h:304
 msgid "Annodex exchange format"
 msgstr "Annodex trukatze-formatua"
 
-#: ../freedesktop.org.xml.in.h:290
+#: ../freedesktop.org.xml.in.h:305
 msgid "Annodex Video"
 msgstr "Annodex bideoa"
 
-#: ../freedesktop.org.xml.in.h:291
+#: ../freedesktop.org.xml.in.h:306
 msgid "Annodex Audio"
 msgstr "Annodex audioa"
 
-#: ../freedesktop.org.xml.in.h:292
+#: ../freedesktop.org.xml.in.h:307
 msgid "Ogg multimedia file"
 msgstr "Ogg multimediako fitxategia"
 
-#: ../freedesktop.org.xml.in.h:293
+#: ../freedesktop.org.xml.in.h:308
 msgid "Ogg Audio"
 msgstr "Ogg audioa"
 
-#: ../freedesktop.org.xml.in.h:294
+#: ../freedesktop.org.xml.in.h:309
 msgid "Ogg Video"
 msgstr "Ogg bideoa"
 
-#: ../freedesktop.org.xml.in.h:295
+#: ../freedesktop.org.xml.in.h:310
 msgid "Ogg Vorbis audio"
 msgstr "Ogg Vorbis audioa"
 
-#: ../freedesktop.org.xml.in.h:296
+#: ../freedesktop.org.xml.in.h:311
 msgid "Ogg FLAC audio"
 msgstr "Ogg FLAC audioa"
 
-#: ../freedesktop.org.xml.in.h:297
+#: ../freedesktop.org.xml.in.h:312
 msgid "Opus audio"
 msgstr "Opus audioa"
 
-#: ../freedesktop.org.xml.in.h:298
+#: ../freedesktop.org.xml.in.h:313
 msgid "Ogg Speex audio"
 msgstr "Ogg Speex audioa"
 
-#: ../freedesktop.org.xml.in.h:299
+#: ../freedesktop.org.xml.in.h:314
 msgid "Speex audio"
 msgstr "Speex audioa"
 
-#: ../freedesktop.org.xml.in.h:300
+#: ../freedesktop.org.xml.in.h:315
 msgid "Ogg Theora video"
 msgstr "Ogg Theora bideoa"
 
-#: ../freedesktop.org.xml.in.h:301
+#: ../freedesktop.org.xml.in.h:316
 msgid "OGM video"
 msgstr "OGM bideoa"
 
-#: ../freedesktop.org.xml.in.h:302
+#: ../freedesktop.org.xml.in.h:317
 msgid "OLE2 compound document storage"
 msgstr "OLE2 konposatutako dokumentu-bilduma"
 
-#: ../freedesktop.org.xml.in.h:303
+#: ../freedesktop.org.xml.in.h:318
 msgid "Microsoft Publisher document"
 msgstr "Microsoft Publisher dokumentua"
 
-#: ../freedesktop.org.xml.in.h:304
+#: ../freedesktop.org.xml.in.h:319
 msgid "Windows Installer package"
 msgstr "Windows-eko pakete instalatzailea"
 
-#: ../freedesktop.org.xml.in.h:305
+#: ../freedesktop.org.xml.in.h:320
 msgid "GNU Oleo spreadsheet"
 msgstr "GNU Oleo kalkulu-orria"
 
-#: ../freedesktop.org.xml.in.h:306
+#: ../freedesktop.org.xml.in.h:321
 msgid "PAK archive"
 msgstr "PAK artxiboa"
 
-#: ../freedesktop.org.xml.in.h:307
+#: ../freedesktop.org.xml.in.h:322
 msgid "Palm OS database"
 msgstr "Palm OS datu-basea"
 
-#: ../freedesktop.org.xml.in.h:308
+#: ../freedesktop.org.xml.in.h:323
 msgid "Parchive archive"
 msgstr "Parchive artxiboa"
 
-#: ../freedesktop.org.xml.in.h:309
+#: ../freedesktop.org.xml.in.h:324
 msgid "PEF executable"
 msgstr "PEF exekutagarria"
 
-#: ../freedesktop.org.xml.in.h:310
+#: ../freedesktop.org.xml.in.h:325
 msgid "Perl script"
 msgstr "Perl script-a"
 
-#: ../freedesktop.org.xml.in.h:311
+#: ../freedesktop.org.xml.in.h:326
 msgid "PHP script"
 msgstr "PHP script-a"
 
-#: ../freedesktop.org.xml.in.h:312
+#: ../freedesktop.org.xml.in.h:327
 msgid "PKCS#7 certificate bundle"
 msgstr "PKCS#7 zertifikazio sorta"
 
-#: ../freedesktop.org.xml.in.h:313
+#: ../freedesktop.org.xml.in.h:328
 msgid "PKCS#12 certificate bundle"
 msgstr "PKCS#12 zertifikazio sorta"
 
-#: ../freedesktop.org.xml.in.h:314
+#: ../freedesktop.org.xml.in.h:329
 msgid "PlanPerfect spreadsheet"
 msgstr "PlanPerfect kalkulu-orria"
 
-#: ../freedesktop.org.xml.in.h:315
+#: ../freedesktop.org.xml.in.h:330
 msgid "Pocket Word document"
 msgstr "Pocket Word dokumentua"
 
-#: ../freedesktop.org.xml.in.h:316
+#: ../freedesktop.org.xml.in.h:331
 msgid "profiler results"
 msgstr "profiler-aren emaitzak"
 
-#: ../freedesktop.org.xml.in.h:317
+#: ../freedesktop.org.xml.in.h:332
 msgid "Pathetic Writer document"
 msgstr "Pathetic Writer dokumentua"
 
-#: ../freedesktop.org.xml.in.h:318
+#: ../freedesktop.org.xml.in.h:333
 msgid "Python bytecode"
 msgstr "Python byte-kodea"
 
-#: ../freedesktop.org.xml.in.h:319
+#: ../freedesktop.org.xml.in.h:334
 msgid "QtiPlot document"
 msgstr "QtiPlot dokumentua"
 
-#: ../freedesktop.org.xml.in.h:320
+#: ../freedesktop.org.xml.in.h:335
 msgid "Quattro Pro spreadsheet"
 msgstr "Quattro Pro kalkulu-orria"
 
-#: ../freedesktop.org.xml.in.h:321
+#: ../freedesktop.org.xml.in.h:336
 msgid "QuickTime metalink playlist"
 msgstr "QuickTime meta-esteken erreprodukzio-zerrenda"
 
-#: ../freedesktop.org.xml.in.h:322
+#: ../freedesktop.org.xml.in.h:337
 msgid "Quicken document"
 msgstr "Quicken dokumentua"
 
-#: ../freedesktop.org.xml.in.h:323
+#: ../freedesktop.org.xml.in.h:338
 msgid "RAR archive"
 msgstr "RAR artxiboa"
 
-#: ../freedesktop.org.xml.in.h:324
+#: ../freedesktop.org.xml.in.h:339
 msgid "DAR archive"
 msgstr "DAR artxiboa"
 
-#: ../freedesktop.org.xml.in.h:325
+#: ../freedesktop.org.xml.in.h:340
 msgid "Alzip archive"
 msgstr "Alzip artxiboa"
 
-#: ../freedesktop.org.xml.in.h:326
+#: ../freedesktop.org.xml.in.h:341
 msgid "rejected patch"
 msgstr "baztertutako bide-izena"
 
-#: ../freedesktop.org.xml.in.h:327
+#: ../freedesktop.org.xml.in.h:342
 msgid "RPM package"
 msgstr "RPM paketea"
 
-#: ../freedesktop.org.xml.in.h:328
+#: ../freedesktop.org.xml.in.h:343
 msgid "Source RPM package"
 msgstr "Iturburu RPM paketea"
 
-#: ../freedesktop.org.xml.in.h:329
+#: ../freedesktop.org.xml.in.h:344
 msgid "Ruby script"
 msgstr "Ruby script-a"
 
-#: ../freedesktop.org.xml.in.h:330
+#: ../freedesktop.org.xml.in.h:345
 msgid "Markaby script"
 msgstr "Markaby script-a"
 
-#: ../freedesktop.org.xml.in.h:331
+#: ../freedesktop.org.xml.in.h:346
 msgid "Rust source code"
 msgstr "Rust iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:332
+#: ../freedesktop.org.xml.in.h:347
 msgid "SC/Xspread spreadsheet"
 msgstr "SC/Xspread kalkulu-orria"
 
-#: ../freedesktop.org.xml.in.h:333
+#: ../freedesktop.org.xml.in.h:348
 msgid "shell archive"
 msgstr "shell artxiboa"
 
-#: ../freedesktop.org.xml.in.h:334
+#: ../freedesktop.org.xml.in.h:349
 msgid "libtool shared library"
 msgstr "libtool partekatutako liburutegia"
 
-#: ../freedesktop.org.xml.in.h:335
+#: ../freedesktop.org.xml.in.h:350
 msgid "shared library"
 msgstr "partekatutako liburutegia"
 
-#: ../freedesktop.org.xml.in.h:336
+#: ../freedesktop.org.xml.in.h:351
 msgid "shell script"
 msgstr "shell script-a"
 
-#: ../freedesktop.org.xml.in.h:337
+#: ../freedesktop.org.xml.in.h:352
 msgid "Shockwave Flash file"
 msgstr "Shockwave Flash fitxategia"
 
 #. translators: "Shorten" is the name of an audio codec
-#: ../freedesktop.org.xml.in.h:339
+#: ../freedesktop.org.xml.in.h:354
 msgid "Shorten audio"
 msgstr "Shorten audioa"
 
-#: ../freedesktop.org.xml.in.h:340
+#: ../freedesktop.org.xml.in.h:355
 msgid "Siag spreadsheet"
 msgstr "Siag kalkulu-orria"
 
-#: ../freedesktop.org.xml.in.h:341
+#: ../freedesktop.org.xml.in.h:356
 msgid "Skencil document"
 msgstr "Skencil dokumentua"
 
-#: ../freedesktop.org.xml.in.h:342
+#: ../freedesktop.org.xml.in.h:357
 msgid "Stampede package"
 msgstr "Stampede paketea"
 
-#: ../freedesktop.org.xml.in.h:343
-msgid "Sega Master System/Game Gear ROM"
-msgstr "Sega Master System/Game Gear-eko ROMa"
+#: ../freedesktop.org.xml.in.h:358
+msgid "SG-1000 ROM"
+msgstr ""
+
+#. Translate this to "Master System/Mark III" if the console was known as such
+#. in your locale (probably only in Japan)
+#: ../freedesktop.org.xml.in.h:360
+msgid "Master System ROM"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:361
+msgid "Game Gear ROM"
+msgstr ""
 
 #. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in
 #. Europe) if the console was known as such in your locale
-#: ../freedesktop.org.xml.in.h:345
+#: ../freedesktop.org.xml.in.h:363
 msgid "Super NES ROM"
 msgstr "Super Nintendo-ko ROMa"
 
-#: ../freedesktop.org.xml.in.h:346
+#: ../freedesktop.org.xml.in.h:364
 msgid "StuffIt archive"
 msgstr "StuffIt artxiboa"
 
-#: ../freedesktop.org.xml.in.h:347
+#: ../freedesktop.org.xml.in.h:365
 msgid "SubRip subtitles"
 msgstr "SubRip azpitituluak"
 
-#: ../freedesktop.org.xml.in.h:348
+#: ../freedesktop.org.xml.in.h:366
 msgid "WebVTT subtitles"
 msgstr "WebVTT azpitituluak"
 
-#: ../freedesktop.org.xml.in.h:349
+#: ../freedesktop.org.xml.in.h:367
 msgid "SAMI subtitles"
 msgstr "SAMI azpitituluak"
 
-#: ../freedesktop.org.xml.in.h:350
+#: ../freedesktop.org.xml.in.h:368
 msgid "MicroDVD subtitles"
 msgstr "MicroDVD azpitituluak"
 
-#: ../freedesktop.org.xml.in.h:351
+#: ../freedesktop.org.xml.in.h:369
 msgid "MPSub subtitles"
 msgstr "MPSub azpitituluak"
 
-#: ../freedesktop.org.xml.in.h:352
+#: ../freedesktop.org.xml.in.h:370
 msgid "SSA subtitles"
 msgstr "SSA azpitituluak"
 
-#: ../freedesktop.org.xml.in.h:353
+#: ../freedesktop.org.xml.in.h:371
 msgid "SubViewer subtitles"
 msgstr "SubViewer azpitituluak"
 
-#: ../freedesktop.org.xml.in.h:354
+#: ../freedesktop.org.xml.in.h:372
 msgid "iMelody ringtone"
 msgstr "iMelody doinua"
 
-#: ../freedesktop.org.xml.in.h:355
+#: ../freedesktop.org.xml.in.h:373
 msgid "SMAF audio"
 msgstr "SMAF audioa"
 
-#: ../freedesktop.org.xml.in.h:356
+#: ../freedesktop.org.xml.in.h:374
 msgid "MRML playlist"
 msgstr "MRML erreprodukzio-zerrenda"
 
-#: ../freedesktop.org.xml.in.h:357
+#: ../freedesktop.org.xml.in.h:375
 msgid "XMF audio"
 msgstr "XMF audioa"
 
-#: ../freedesktop.org.xml.in.h:358
+#: ../freedesktop.org.xml.in.h:376
 msgid "SV4 CPIO archive"
 msgstr "SV4 CPIO artxiboa"
 
-#: ../freedesktop.org.xml.in.h:359
+#: ../freedesktop.org.xml.in.h:377
 msgid "SV4 CPIO archive (with CRC)"
 msgstr "SV4 CPIO artxiboa (CRC-rekin)"
 
-#: ../freedesktop.org.xml.in.h:360
+#: ../freedesktop.org.xml.in.h:378
 msgid "Tar archive"
 msgstr "Tar artxiboa"
 
-#: ../freedesktop.org.xml.in.h:361
+#: ../freedesktop.org.xml.in.h:379
 msgid "Tar archive (compressed)"
 msgstr "Tar artxiboa (konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:362
+#: ../freedesktop.org.xml.in.h:380
 msgid "generic font file"
 msgstr "letra-tipo orokorra"
 
-#: ../freedesktop.org.xml.in.h:363
+#: ../freedesktop.org.xml.in.h:381
 msgid "packed font file"
 msgstr "Letra-tipo fitxategi paketatua"
 
-#: ../freedesktop.org.xml.in.h:364
+#: ../freedesktop.org.xml.in.h:382
 msgid "TGIF document"
 msgstr "TGIF dokumentua"
 
-#: ../freedesktop.org.xml.in.h:365
+#: ../freedesktop.org.xml.in.h:383
 msgid "theme"
 msgstr "gaia"
 
-#: ../freedesktop.org.xml.in.h:366
+#: ../freedesktop.org.xml.in.h:384
 msgid "ToutDoux document"
 msgstr "ToutDoux dokumentua"
 
-#: ../freedesktop.org.xml.in.h:367
+#: ../freedesktop.org.xml.in.h:385
 msgid "backup file"
 msgstr "babes-kopiako fitxategia"
 
-#: ../freedesktop.org.xml.in.h:368
+#: ../freedesktop.org.xml.in.h:386
 msgid "Troff document"
 msgstr "Troff dokumentua"
 
-#: ../freedesktop.org.xml.in.h:369
+#: ../freedesktop.org.xml.in.h:387
 msgid "Manpage manual document"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:370
+#: ../freedesktop.org.xml.in.h:388
 msgid "manual page (compressed)"
 msgstr "eskuliburu orria (konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:371
+#: ../freedesktop.org.xml.in.h:389
 msgid "Tar archive (LZO-compressed)"
 msgstr "Tar artxiboa (LZO-rekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:372
+#: ../freedesktop.org.xml.in.h:390
 msgid "XZ archive"
 msgstr "XZ artxiboa"
 
-#: ../freedesktop.org.xml.in.h:373
+#: ../freedesktop.org.xml.in.h:391
 msgid "Tar archive (XZ-compressed)"
 msgstr "Tar artxiboa (XZ-rekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:374
+#: ../freedesktop.org.xml.in.h:392
 msgid "PDF document (XZ-compressed)"
 msgstr "PDF dokumentua (XZ-rekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:375
+#: ../freedesktop.org.xml.in.h:393
 msgid "Ustar archive"
 msgstr "Ustar artxiboa"
 
-#: ../freedesktop.org.xml.in.h:376
+#: ../freedesktop.org.xml.in.h:394
 msgid "WAIS source code"
 msgstr "WAIS iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:377
+#: ../freedesktop.org.xml.in.h:395
 msgid "WordPerfect/Drawperfect image"
 msgstr "WordPerfect/Drawperfect irudia"
 
-#: ../freedesktop.org.xml.in.h:378
+#: ../freedesktop.org.xml.in.h:396
 msgid "DER/PEM/Netscape-encoded X.509 certificate"
 msgstr "X.509rekin kodetutako DER, PEM edo Netscape zertifikatua"
 
-#: ../freedesktop.org.xml.in.h:379
+#: ../freedesktop.org.xml.in.h:397
 msgid "empty document"
 msgstr "dokumentu hutsa"
 
-#: ../freedesktop.org.xml.in.h:380
+#: ../freedesktop.org.xml.in.h:398
 msgid "Zoo archive"
 msgstr "Zoo artxiboa"
 
-#: ../freedesktop.org.xml.in.h:381
+#: ../freedesktop.org.xml.in.h:399
 msgid "XHTML page"
 msgstr "XHTML orria"
 
-#: ../freedesktop.org.xml.in.h:382
+#: ../freedesktop.org.xml.in.h:400
 msgid "Zip archive"
 msgstr "Zip artxiboa"
 
-#: ../freedesktop.org.xml.in.h:383
+#: ../freedesktop.org.xml.in.h:401
 msgid "WIM disk Image"
 msgstr "WIM disko irudia"
 
-#: ../freedesktop.org.xml.in.h:384
+#: ../freedesktop.org.xml.in.h:402
 msgid "Dolby Digital audio"
 msgstr "Dolby audio digitala"
 
-#: ../freedesktop.org.xml.in.h:385
+#: ../freedesktop.org.xml.in.h:403
 msgid "DTS audio"
 msgstr "DTS audioa"
 
-#: ../freedesktop.org.xml.in.h:386
+#: ../freedesktop.org.xml.in.h:404
 msgid "DTSHD audio"
 msgstr "DTSHD audioa"
 
-#: ../freedesktop.org.xml.in.h:387
+#: ../freedesktop.org.xml.in.h:405
 msgid "AMR audio"
 msgstr "AMR audioa"
 
-#: ../freedesktop.org.xml.in.h:388
+#: ../freedesktop.org.xml.in.h:406
 msgid "AMR-WB audio"
 msgstr "AMR-WB audioa"
 
-#: ../freedesktop.org.xml.in.h:389
+#: ../freedesktop.org.xml.in.h:407
 msgid "ULAW (Sun) audio"
 msgstr "ULAW (sun) audioa"
 
-#: ../freedesktop.org.xml.in.h:390
+#: ../freedesktop.org.xml.in.h:408
 msgid "Commodore 64 audio"
 msgstr "Commodore 64 Audioa"
 
-#: ../freedesktop.org.xml.in.h:391
+#: ../freedesktop.org.xml.in.h:409
 msgid "PCM audio"
 msgstr "PCM audioa"
 
-#: ../freedesktop.org.xml.in.h:392
+#: ../freedesktop.org.xml.in.h:410
 msgid "AIFC audio"
 msgstr "AIFC audioa"
 
-#: ../freedesktop.org.xml.in.h:393
+#: ../freedesktop.org.xml.in.h:411
 msgid "AIFF/Amiga/Mac audio"
 msgstr "AIFF/Amiga/Mac audioa"
 
-#: ../freedesktop.org.xml.in.h:394
+#: ../freedesktop.org.xml.in.h:412
 msgid "Monkey's audio"
 msgstr "Monkey audioa"
 
-#: ../freedesktop.org.xml.in.h:395
+#: ../freedesktop.org.xml.in.h:413
 msgid "Impulse Tracker audio"
 msgstr "Impulse Tracker audioa"
 
-#: ../freedesktop.org.xml.in.h:396
+#: ../freedesktop.org.xml.in.h:414
 msgid "FLAC audio"
 msgstr "FLAC audioa"
 
-#: ../freedesktop.org.xml.in.h:397
+#: ../freedesktop.org.xml.in.h:415
 msgid "WavPack audio"
 msgstr "WavPack audioa"
 
-#: ../freedesktop.org.xml.in.h:398
+#: ../freedesktop.org.xml.in.h:416
 msgid "WavPack audio correction file"
 msgstr "WavPack audio-zuzenketaren fitxategia"
 
-#: ../freedesktop.org.xml.in.h:399
+#: ../freedesktop.org.xml.in.h:417
 msgid "MIDI audio"
 msgstr "MIDI audioa"
 
-#: ../freedesktop.org.xml.in.h:400
+#: ../freedesktop.org.xml.in.h:418
 msgid "compressed Tracker audio"
 msgstr "konprimitutako Tracker audioa"
 
-#: ../freedesktop.org.xml.in.h:401
+#: ../freedesktop.org.xml.in.h:419
 msgid "AAC audio"
 msgstr "AAC audioa"
 
-#: ../freedesktop.org.xml.in.h:402
+#: ../freedesktop.org.xml.in.h:420
 msgid "MPEG-4 audio"
 msgstr "MPEG-4 audioa"
 
-#: ../freedesktop.org.xml.in.h:403
+#: ../freedesktop.org.xml.in.h:421
 msgid "MPEG-4 video"
 msgstr "MPEG-4 bideoa"
 
-#: ../freedesktop.org.xml.in.h:404
+#: ../freedesktop.org.xml.in.h:422
 msgid "MPEG-4 audio book"
 msgstr "MPEG-4 audio-liburua"
 
-#: ../freedesktop.org.xml.in.h:405
+#: ../freedesktop.org.xml.in.h:423
 msgid "3GPP multimedia file"
 msgstr "3GPP multimediako fitxategia"
 
-#: ../freedesktop.org.xml.in.h:406
+#: ../freedesktop.org.xml.in.h:424
 msgid "3GPP2 multimedia file"
 msgstr "3GPP2 multimediako fitxategia"
 
-#: ../freedesktop.org.xml.in.h:407
+#: ../freedesktop.org.xml.in.h:425
 msgid "Amiga SoundTracker audio"
 msgstr "Amiga soundtracker audioa"
 
-#: ../freedesktop.org.xml.in.h:408
+#: ../freedesktop.org.xml.in.h:426
 msgid "MP2 audio"
 msgstr "MP2 audioa"
 
-#: ../freedesktop.org.xml.in.h:409
+#: ../freedesktop.org.xml.in.h:427
 msgid "MP3 audio"
 msgstr "MP3 audioa"
 
-#: ../freedesktop.org.xml.in.h:410
+#: ../freedesktop.org.xml.in.h:428
 msgid "MP3 audio (streamed)"
 msgstr "MP3 audioa (korrontea)"
 
-#: ../freedesktop.org.xml.in.h:411
+#: ../freedesktop.org.xml.in.h:429
 msgid "HTTP Live Streaming playlist"
 msgstr "HTTP zuzeneko korrontearen erreprodukzio-zerrenda"
 
-#: ../freedesktop.org.xml.in.h:412
+#: ../freedesktop.org.xml.in.h:430
 msgid "Microsoft ASX playlist"
 msgstr "Microsoft ASX erreprodukzio-zerrenda"
 
-#: ../freedesktop.org.xml.in.h:413
+#: ../freedesktop.org.xml.in.h:431
 msgid "PSF audio"
 msgstr "PSF audioa"
 
-#: ../freedesktop.org.xml.in.h:414
+#: ../freedesktop.org.xml.in.h:432
 msgid "MiniPSF audio"
 msgstr "MiniPSF audioa"
 
-#: ../freedesktop.org.xml.in.h:415
+#: ../freedesktop.org.xml.in.h:433
 msgid "PSFlib audio library"
 msgstr "PSFlib audioaren liburutegia"
 
-#: ../freedesktop.org.xml.in.h:416
+#: ../freedesktop.org.xml.in.h:434
 msgid "Windows Media audio"
 msgstr "Windows Media audioa"
 
-#: ../freedesktop.org.xml.in.h:417
+#: ../freedesktop.org.xml.in.h:435
 msgid "Musepack audio"
 msgstr "Musepack audioa"
 
-#: ../freedesktop.org.xml.in.h:418
+#: ../freedesktop.org.xml.in.h:436
 msgid "RealAudio document"
 msgstr "RealAudio dokumentua"
 
-#: ../freedesktop.org.xml.in.h:419
+#: ../freedesktop.org.xml.in.h:437
 msgid "RealMedia Metafile"
 msgstr "RealMedia metafitxategia"
 
-#: ../freedesktop.org.xml.in.h:420
+#: ../freedesktop.org.xml.in.h:438
 msgid "RealVideo document"
 msgstr "RealVideo dokumentua"
 
-#: ../freedesktop.org.xml.in.h:421
+#: ../freedesktop.org.xml.in.h:439
 msgid "RealMedia document"
 msgstr "RealMedia dokumentua"
 
-#: ../freedesktop.org.xml.in.h:422
+#: ../freedesktop.org.xml.in.h:440
 msgid "RealPix document"
 msgstr "RealPix dokumentua"
 
-#: ../freedesktop.org.xml.in.h:423
+#: ../freedesktop.org.xml.in.h:441
 msgid "RealText document"
 msgstr "RealText dokumentua"
 
-#: ../freedesktop.org.xml.in.h:424
+#: ../freedesktop.org.xml.in.h:442
 msgid "RIFF audio"
 msgstr "RIFF audioa"
 
-#: ../freedesktop.org.xml.in.h:425
+#: ../freedesktop.org.xml.in.h:443
 msgid "RIFF container"
 msgstr "RIFF edukitzailea"
 
-#: ../freedesktop.org.xml.in.h:426
+#: ../freedesktop.org.xml.in.h:444
 msgid "Scream Tracker 3 audio"
 msgstr "Scream Tracker 3 audioa"
 
-#: ../freedesktop.org.xml.in.h:427
+#: ../freedesktop.org.xml.in.h:445
 msgid "MP3 ShoutCast playlist"
 msgstr "MP3 ShoutCast erreprodukzio-zerrenda"
 
-#: ../freedesktop.org.xml.in.h:428
+#: ../freedesktop.org.xml.in.h:446
 msgid "Scream Tracker audio"
 msgstr "Scream Tracker audioa"
 
-#: ../freedesktop.org.xml.in.h:429
+#: ../freedesktop.org.xml.in.h:447
 msgid "VOC audio"
 msgstr "VOC audioa"
 
-#: ../freedesktop.org.xml.in.h:430
+#: ../freedesktop.org.xml.in.h:448
 msgid "WAV audio"
 msgstr "WAV audioa"
 
-#: ../freedesktop.org.xml.in.h:431
+#: ../freedesktop.org.xml.in.h:449
 msgid "Scream Tracker instrument"
 msgstr "Scream Tracker instrumentua"
 
-#: ../freedesktop.org.xml.in.h:432
+#: ../freedesktop.org.xml.in.h:450
 msgid "FastTracker II audio"
 msgstr "FastTracker II.ren audioa"
 
-#: ../freedesktop.org.xml.in.h:433
+#: ../freedesktop.org.xml.in.h:451
 msgid "TrueAudio audio"
 msgstr "TrueAudio audioa"
 
-#: ../freedesktop.org.xml.in.h:434
+#: ../freedesktop.org.xml.in.h:452
 msgid "Windows BMP image"
 msgstr "Windows BMP irudia"
 
-#: ../freedesktop.org.xml.in.h:435
+#: ../freedesktop.org.xml.in.h:453
 msgid "WBMP image"
 msgstr "WBMP irudia"
 
-#: ../freedesktop.org.xml.in.h:436
+#: ../freedesktop.org.xml.in.h:454
 msgid "Computer Graphics Metafile"
 msgstr "Ordenagailuko grafikoen meta-fitxategia"
 
-#: ../freedesktop.org.xml.in.h:437
+#: ../freedesktop.org.xml.in.h:455
 msgid "CCITT G3 fax"
 msgstr "CCITT G3 faxa"
 
-#: ../freedesktop.org.xml.in.h:438
+#: ../freedesktop.org.xml.in.h:456
 msgid "G3 fax image"
 msgstr "G3 fax-irudia"
 
-#: ../freedesktop.org.xml.in.h:439
+#: ../freedesktop.org.xml.in.h:457
 msgid "GIF image"
 msgstr "GIF irudia"
 
-#: ../freedesktop.org.xml.in.h:440
+#: ../freedesktop.org.xml.in.h:458
 msgid "IEF image"
 msgstr "IEF irudia"
 
-#: ../freedesktop.org.xml.in.h:441
+#: ../freedesktop.org.xml.in.h:459
 msgid "JPEG image"
 msgstr "JPEG irudia"
 
-#: ../freedesktop.org.xml.in.h:442
+#: ../freedesktop.org.xml.in.h:460
 msgid "JPEG-2000 image"
 msgstr "JPEG-2000 irudia"
 
-#: ../freedesktop.org.xml.in.h:443
+#: ../freedesktop.org.xml.in.h:461
 msgid "OpenRaster archiving image"
 msgstr "OpenRaster artxiboaren irudia"
 
-#: ../freedesktop.org.xml.in.h:444
+#: ../freedesktop.org.xml.in.h:462
 msgid "DirectDraw surface"
 msgstr "DirectDraw gainazala"
 
-#: ../freedesktop.org.xml.in.h:445
+#: ../freedesktop.org.xml.in.h:463
 msgid "X11 cursor"
 msgstr "X11 kurtsorea"
 
-#: ../freedesktop.org.xml.in.h:446
+#: ../freedesktop.org.xml.in.h:464
 msgid "EXR image"
 msgstr "EXR irudia"
 
-#: ../freedesktop.org.xml.in.h:447
+#: ../freedesktop.org.xml.in.h:465
 msgid "Macintosh Quickdraw/PICT drawing"
 msgstr "Macintosh Quickdraw/PICT marrazkia"
 
-#: ../freedesktop.org.xml.in.h:448
+#: ../freedesktop.org.xml.in.h:466
 msgid "UFRaw ID image"
 msgstr "UFRaw ID irudia"
 
-#: ../freedesktop.org.xml.in.h:449
+#: ../freedesktop.org.xml.in.h:467
 msgid "digital raw image"
 msgstr "irudi gordin digitala"
 
-#: ../freedesktop.org.xml.in.h:450
+#: ../freedesktop.org.xml.in.h:468
 msgid "Adobe DNG negative"
 msgstr "Adobe DNG negatiboa"
 
-#: ../freedesktop.org.xml.in.h:451
+#: ../freedesktop.org.xml.in.h:469
 msgid "Canon CRW raw image"
 msgstr "Canon CRW irudi gordina"
 
-#: ../freedesktop.org.xml.in.h:452
+#: ../freedesktop.org.xml.in.h:470
 msgid "Canon CR2 raw image"
 msgstr "Canon CR2 irudi gordina"
 
-#: ../freedesktop.org.xml.in.h:453
+#: ../freedesktop.org.xml.in.h:471
 msgid "Fuji RAF raw image"
 msgstr "Fuji RAF irudi gordina"
 
-#: ../freedesktop.org.xml.in.h:454
+#: ../freedesktop.org.xml.in.h:472
 msgid "Kodak DCR raw image"
 msgstr "Kodak DCR irudi gordina"
 
-#: ../freedesktop.org.xml.in.h:455
+#: ../freedesktop.org.xml.in.h:473
 msgid "Kodak K25 raw image"
 msgstr "Kodak K25 raw image"
 
-#: ../freedesktop.org.xml.in.h:456
+#: ../freedesktop.org.xml.in.h:474
 msgid "Kodak KDC raw image"
 msgstr "Kodak KDC irudi gordina"
 
-#: ../freedesktop.org.xml.in.h:457
+#: ../freedesktop.org.xml.in.h:475
 msgid "Minolta MRW raw image"
 msgstr "Minolta MRW irudi gordina"
 
-#: ../freedesktop.org.xml.in.h:458
+#: ../freedesktop.org.xml.in.h:476
 msgid "Nikon NEF raw image"
 msgstr "Nikon NEF irudi gordina"
 
-#: ../freedesktop.org.xml.in.h:459
+#: ../freedesktop.org.xml.in.h:477
 msgid "Olympus ORF raw image"
 msgstr "Olympus ORF irudi gordina"
 
-#: ../freedesktop.org.xml.in.h:460
+#: ../freedesktop.org.xml.in.h:478
 msgid "Panasonic raw image"
 msgstr "Panasonic irudi gordina"
 
-#: ../freedesktop.org.xml.in.h:461
+#: ../freedesktop.org.xml.in.h:479
 msgid "Panasonic raw2 image"
 msgstr "Panasonic raw2 irudia"
 
-#: ../freedesktop.org.xml.in.h:462
+#: ../freedesktop.org.xml.in.h:480
 msgid "Pentax PEF raw image"
 msgstr "Pentax PEF irudi gordina"
 
-#: ../freedesktop.org.xml.in.h:463
+#: ../freedesktop.org.xml.in.h:481
 msgid "Sigma X3F raw image"
 msgstr "Sigma X3F irudi gordina"
 
-#: ../freedesktop.org.xml.in.h:464
+#: ../freedesktop.org.xml.in.h:482
 msgid "Sony SRF raw image"
 msgstr "Sony SRF irudi gordina"
 
-#: ../freedesktop.org.xml.in.h:465
+#: ../freedesktop.org.xml.in.h:483
 msgid "Sony SR2 raw image"
 msgstr "Sony SR2 irudi gordina"
 
-#: ../freedesktop.org.xml.in.h:466
+#: ../freedesktop.org.xml.in.h:484
 msgid "Sony ARW raw image"
 msgstr "Sony ARW irudi gordina"
 
-#: ../freedesktop.org.xml.in.h:467
+#: ../freedesktop.org.xml.in.h:485
 msgid "PNG image"
 msgstr "PNG irudia"
 
-#: ../freedesktop.org.xml.in.h:468
+#: ../freedesktop.org.xml.in.h:486
 msgid "Run Length Encoded bitmap image"
 msgstr "'Run Lenght Encoded' bitmap irudia"
 
-#: ../freedesktop.org.xml.in.h:469
+#: ../freedesktop.org.xml.in.h:487
 msgid "SVG image"
 msgstr "SVG irudia"
 
-#: ../freedesktop.org.xml.in.h:470
+#: ../freedesktop.org.xml.in.h:488
 msgid "compressed SVG image"
 msgstr "konprimitutako SVG irudia"
 
-#: ../freedesktop.org.xml.in.h:471
+#: ../freedesktop.org.xml.in.h:489
 msgid "TIFF image"
 msgstr "TIFF irudia"
 
-#: ../freedesktop.org.xml.in.h:472
+#: ../freedesktop.org.xml.in.h:490
 msgid "Multi-page TIFF image"
 msgstr "Orri anitzeko TIFF irudia"
 
-#: ../freedesktop.org.xml.in.h:473
+#: ../freedesktop.org.xml.in.h:491
 msgid "AutoCAD image"
 msgstr "AutoCAD-eko irudia"
 
-#: ../freedesktop.org.xml.in.h:474
+#: ../freedesktop.org.xml.in.h:492
 msgid "DXF vector image"
 msgstr "DXF bektore-grafikoa"
 
-#: ../freedesktop.org.xml.in.h:475
+#: ../freedesktop.org.xml.in.h:493
 msgid "Microsoft Document Imaging format"
 msgstr "Microsoft Document Imaging formatua"
 
-#: ../freedesktop.org.xml.in.h:476
+#: ../freedesktop.org.xml.in.h:494
 msgid "WebP image"
 msgstr "WebP irudia"
 
-#: ../freedesktop.org.xml.in.h:477
+#: ../freedesktop.org.xml.in.h:495
 msgid "3D Studio image"
 msgstr "3D Studio-ko irudia"
 
-#: ../freedesktop.org.xml.in.h:478
+#: ../freedesktop.org.xml.in.h:496
 msgid "Applix Graphics image"
 msgstr "Applix Graphics irudia"
 
-#: ../freedesktop.org.xml.in.h:479
+#: ../freedesktop.org.xml.in.h:497
 msgid "EPS image (bzip-compressed)"
 msgstr "EPS irudia (bzip-ekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:480
+#: ../freedesktop.org.xml.in.h:498
 msgid "CMU raster image"
 msgstr "CMU bilbe-irudia"
 
-#: ../freedesktop.org.xml.in.h:481
+#: ../freedesktop.org.xml.in.h:499
 msgid "compressed GIMP image"
 msgstr "konprimitutako GIMP irudia"
 
-#: ../freedesktop.org.xml.in.h:482
+#: ../freedesktop.org.xml.in.h:500
 msgid "DICOM image"
 msgstr "DICOM irudia"
 
-#: ../freedesktop.org.xml.in.h:483
+#: ../freedesktop.org.xml.in.h:501
 msgid "DocBook document"
 msgstr "DocBook dokumentua"
 
-#: ../freedesktop.org.xml.in.h:484
+#: ../freedesktop.org.xml.in.h:502
 msgid "DIB image"
 msgstr "DIB irudia"
 
-#: ../freedesktop.org.xml.in.h:485
+#: ../freedesktop.org.xml.in.h:503
 msgid "DjVu image"
 msgstr "DjVU-ko irudia"
 
-#: ../freedesktop.org.xml.in.h:486
+#: ../freedesktop.org.xml.in.h:504
 msgid "DjVu document"
 msgstr "DjVu dokumentua"
 
-#: ../freedesktop.org.xml.in.h:487
+#: ../freedesktop.org.xml.in.h:505
 msgid "DPX image"
 msgstr "DPX irudia"
 
-#: ../freedesktop.org.xml.in.h:488
+#: ../freedesktop.org.xml.in.h:506
 msgid "EPS image"
 msgstr "EPS irudia"
 
-#: ../freedesktop.org.xml.in.h:489
+#: ../freedesktop.org.xml.in.h:507
 msgid "FITS document"
 msgstr "FITS dokumentua"
 
-#: ../freedesktop.org.xml.in.h:490
+#: ../freedesktop.org.xml.in.h:508
 msgid "FPX image"
 msgstr "FPX irudia"
 
-#: ../freedesktop.org.xml.in.h:491
+#: ../freedesktop.org.xml.in.h:509
 msgid "EPS image (gzip-compressed)"
 msgstr "EPS irudia (gzip-ekin konprimitua)"
 
-#: ../freedesktop.org.xml.in.h:492
+#: ../freedesktop.org.xml.in.h:510
 msgid "Windows icon"
 msgstr "Windows ikonoa"
 
-#: ../freedesktop.org.xml.in.h:493
+#: ../freedesktop.org.xml.in.h:511
 msgid "MacOS X icon"
 msgstr "MacOS X ikonoa"
 
-#: ../freedesktop.org.xml.in.h:494
+#: ../freedesktop.org.xml.in.h:512
 msgid "ILBM image"
 msgstr "ILBM irudia"
 
-#: ../freedesktop.org.xml.in.h:495
+#: ../freedesktop.org.xml.in.h:513
 msgid "JNG image"
 msgstr "JNG irudia"
 
-#: ../freedesktop.org.xml.in.h:496
+#: ../freedesktop.org.xml.in.h:514
 msgid "LightWave object"
 msgstr "LightWave objektua"
 
-#: ../freedesktop.org.xml.in.h:497
+#: ../freedesktop.org.xml.in.h:515
 msgid "LightWave scene"
 msgstr "LightWave eszena"
 
-#: ../freedesktop.org.xml.in.h:498
+#: ../freedesktop.org.xml.in.h:516
 msgid "MacPaint Bitmap image"
 msgstr "MacPaint Bitmap irudia"
 
-#: ../freedesktop.org.xml.in.h:499
+#: ../freedesktop.org.xml.in.h:517
 msgid "Office drawing"
 msgstr "Office marrazkia"
 
-#: ../freedesktop.org.xml.in.h:500
+#: ../freedesktop.org.xml.in.h:518
 msgid "NIFF image"
 msgstr "NIFF irudia"
 
-#: ../freedesktop.org.xml.in.h:501
+#: ../freedesktop.org.xml.in.h:519
 msgid "PCX image"
 msgstr "PCX irudia"
 
-#: ../freedesktop.org.xml.in.h:502
+#: ../freedesktop.org.xml.in.h:520
 msgid "PCD image"
 msgstr "PCD irudia"
 
-#: ../freedesktop.org.xml.in.h:503
+#: ../freedesktop.org.xml.in.h:521
 msgid "PNM image"
 msgstr "PNM irudia"
 
-#: ../freedesktop.org.xml.in.h:504
+#: ../freedesktop.org.xml.in.h:522
 msgid "PBM image"
 msgstr "PBM irudia"
 
-#: ../freedesktop.org.xml.in.h:505
+#: ../freedesktop.org.xml.in.h:523
 msgid "PGM image"
 msgstr "PGM irudia"
 
-#: ../freedesktop.org.xml.in.h:506
+#: ../freedesktop.org.xml.in.h:524
 msgid "PPM image"
 msgstr "PPM irudia"
 
-#: ../freedesktop.org.xml.in.h:507
+#: ../freedesktop.org.xml.in.h:525
 msgid "Photoshop image"
 msgstr "Photoshop irudia"
 
-#: ../freedesktop.org.xml.in.h:508
+#: ../freedesktop.org.xml.in.h:526
 msgid "RGB image"
 msgstr "RGB irudia"
 
-#: ../freedesktop.org.xml.in.h:509
+#: ../freedesktop.org.xml.in.h:527
 msgid "SGI image"
 msgstr "SGI irudia"
 
-#: ../freedesktop.org.xml.in.h:510
+#: ../freedesktop.org.xml.in.h:528
 msgid "Sun raster image"
 msgstr "Sun raster irudia"
 
-#: ../freedesktop.org.xml.in.h:511
+#: ../freedesktop.org.xml.in.h:529
 msgid "TGA image"
 msgstr "TGA irudia"
 
-#: ../freedesktop.org.xml.in.h:512
+#: ../freedesktop.org.xml.in.h:530
 msgid "Windows cursor"
 msgstr "Windows kurtsorea"
 
-#: ../freedesktop.org.xml.in.h:513
+#: ../freedesktop.org.xml.in.h:531
 msgid "Windows animated cursor"
 msgstr "Windows-eko kurtsore animatua"
 
-#: ../freedesktop.org.xml.in.h:514
+#: ../freedesktop.org.xml.in.h:532
 msgid "EMF image"
 msgstr "EMF irudia"
 
-#: ../freedesktop.org.xml.in.h:515
+#: ../freedesktop.org.xml.in.h:533
 msgid "WMF image"
 msgstr "WMF irudia"
 
-#: ../freedesktop.org.xml.in.h:516
+#: ../freedesktop.org.xml.in.h:534
 msgid "XBM image"
 msgstr "XBM irudia"
 
-#: ../freedesktop.org.xml.in.h:517
+#: ../freedesktop.org.xml.in.h:535
 msgid "GIMP image"
 msgstr "GIMP irudia"
 
-#: ../freedesktop.org.xml.in.h:518
+#: ../freedesktop.org.xml.in.h:536
 msgid "XFig image"
 msgstr "XFig irudia"
 
-#: ../freedesktop.org.xml.in.h:519
+#: ../freedesktop.org.xml.in.h:537
 msgid "XPM image"
 msgstr "XPM irudia"
 
-#: ../freedesktop.org.xml.in.h:520
+#: ../freedesktop.org.xml.in.h:538
 msgid "X window image"
 msgstr "X window irudia"
 
-#: ../freedesktop.org.xml.in.h:521
+#: ../freedesktop.org.xml.in.h:539
 msgid "block device"
 msgstr "bloke-gailua"
 
-#: ../freedesktop.org.xml.in.h:522
+#: ../freedesktop.org.xml.in.h:540
 msgid "character device"
 msgstr "karaktereen gailua"
 
-#: ../freedesktop.org.xml.in.h:523
+#: ../freedesktop.org.xml.in.h:541
 msgid "folder"
 msgstr "karpeta"
 
-#: ../freedesktop.org.xml.in.h:524
+#: ../freedesktop.org.xml.in.h:542
 msgid "pipe"
 msgstr "kanalizazioa"
 
-#: ../freedesktop.org.xml.in.h:525
+#: ../freedesktop.org.xml.in.h:543
 msgid "mount point"
 msgstr "muntatze-puntua"
 
-#: ../freedesktop.org.xml.in.h:526
+#: ../freedesktop.org.xml.in.h:544
 msgid "socket"
 msgstr "socketa"
 
-#: ../freedesktop.org.xml.in.h:527
+#: ../freedesktop.org.xml.in.h:545
 msgid "symbolic link"
 msgstr "esteka sinbolikoa"
 
-#: ../freedesktop.org.xml.in.h:528
+#: ../freedesktop.org.xml.in.h:546
 msgid "mail delivery report"
 msgstr "posta banaketako txostena"
 
-#: ../freedesktop.org.xml.in.h:529
+#: ../freedesktop.org.xml.in.h:547
 msgid "mail disposition report"
 msgstr "posta joerako txostena"
 
-#: ../freedesktop.org.xml.in.h:530
+#: ../freedesktop.org.xml.in.h:548
 msgid "reference to remote file"
 msgstr "erreferentzia urruneko fitxategiari"
 
-#: ../freedesktop.org.xml.in.h:531
+#: ../freedesktop.org.xml.in.h:549
 msgid "Usenet news message"
 msgstr "Usenet berrien mezua"
 
-#: ../freedesktop.org.xml.in.h:532
+#: ../freedesktop.org.xml.in.h:550
 msgid "partial email message"
 msgstr "posta mezu partziala"
 
-#: ../freedesktop.org.xml.in.h:533
+#: ../freedesktop.org.xml.in.h:551
 msgid "email message"
 msgstr "helbide elektronikoen mezua"
 
-#: ../freedesktop.org.xml.in.h:534
+#: ../freedesktop.org.xml.in.h:552
 msgid "GNU mail message"
 msgstr "GNU posta mezua"
 
-#: ../freedesktop.org.xml.in.h:535
+#: ../freedesktop.org.xml.in.h:553
+msgid "IGES document"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:554
 msgid "VRML document"
 msgstr "VRML dokumentua"
 
-#: ../freedesktop.org.xml.in.h:536
+#: ../freedesktop.org.xml.in.h:555
 msgid "message in several formats"
 msgstr "hainbat formatuko mezua"
 
-#: ../freedesktop.org.xml.in.h:537
+#: ../freedesktop.org.xml.in.h:556
 msgid "Macintosh AppleDouble-encoded file"
 msgstr "Macintosh AppleDouble-rekin kodetutako fitxategia"
 
-#: ../freedesktop.org.xml.in.h:538
+#: ../freedesktop.org.xml.in.h:557
 msgid "message digest"
 msgstr "mezu laburra"
 
-#: ../freedesktop.org.xml.in.h:539
+#: ../freedesktop.org.xml.in.h:558
 msgid "encrypted message"
 msgstr "mezu enkriptatua"
 
-#: ../freedesktop.org.xml.in.h:540
+#: ../freedesktop.org.xml.in.h:559
 msgid "compound documents"
 msgstr "konposatutako dokumentuak"
 
-#: ../freedesktop.org.xml.in.h:541
+#: ../freedesktop.org.xml.in.h:560
 msgid "compound document"
 msgstr "konposatutako dokumentua"
 
-#: ../freedesktop.org.xml.in.h:542
+#: ../freedesktop.org.xml.in.h:561
 msgid "mail system report"
 msgstr "posta sistemako txostena"
 
-#: ../freedesktop.org.xml.in.h:543
+#: ../freedesktop.org.xml.in.h:562
 msgid "signed message"
 msgstr "sinatutako mezua"
 
-#: ../freedesktop.org.xml.in.h:544
+#: ../freedesktop.org.xml.in.h:563
 msgid "stream of data (server push)"
 msgstr "datu-korrontea (zerbitzari igortzailea)"
 
-#: ../freedesktop.org.xml.in.h:545
+#: ../freedesktop.org.xml.in.h:564
 msgid "VCS/ICS calendar"
 msgstr "VCS/ICS egutegia"
 
-#: ../freedesktop.org.xml.in.h:546
+#: ../freedesktop.org.xml.in.h:565
 msgid "CSS stylesheet"
 msgstr "CSS estilo-orria"
 
-#: ../freedesktop.org.xml.in.h:547
+#: ../freedesktop.org.xml.in.h:566
 msgid "electronic business card"
 msgstr "enpresako txartel elektronikoa"
 
-#: ../freedesktop.org.xml.in.h:548
+#: ../freedesktop.org.xml.in.h:567
 msgid "Turtle document"
 msgstr "Turtle dokumentua"
 
-#: ../freedesktop.org.xml.in.h:549
+#: ../freedesktop.org.xml.in.h:568
 msgid "txt2tags document"
 msgstr "txt2tags dokumentua"
 
-#: ../freedesktop.org.xml.in.h:550
+#: ../freedesktop.org.xml.in.h:569
 msgid "Verilog source code"
 msgstr "Verilog iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:551
+#: ../freedesktop.org.xml.in.h:570
 msgid "SystemVerilog header"
 msgstr "SystemVerilog goiburua"
 
-#: ../freedesktop.org.xml.in.h:552
+#: ../freedesktop.org.xml.in.h:571
 msgid "SystemVerilog source code"
 msgstr "SystemVerilog iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:553
+#: ../freedesktop.org.xml.in.h:572
 msgid "VHDL source code"
 msgstr "VHDL iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:554
+#: ../freedesktop.org.xml.in.h:573
 msgid "enriched text document"
 msgstr "aberastutako testu dokumentua"
 
-#: ../freedesktop.org.xml.in.h:555
+#: ../freedesktop.org.xml.in.h:574
 msgid "help page"
 msgstr "laguntzako orria"
 
-#: ../freedesktop.org.xml.in.h:556
+#: ../freedesktop.org.xml.in.h:575
 msgid "plain text document"
 msgstr "testu soileko dokumentua"
 
-#: ../freedesktop.org.xml.in.h:557
+#: ../freedesktop.org.xml.in.h:576
 msgid "RDF file"
 msgstr "RDF fitxategia"
 
-#: ../freedesktop.org.xml.in.h:558
+#: ../freedesktop.org.xml.in.h:577
 msgid "OWL XML file"
 msgstr "OWL XML fitxategia"
 
-#: ../freedesktop.org.xml.in.h:559
+#: ../freedesktop.org.xml.in.h:578
 msgid "email headers"
 msgstr "helbide elektronikoen goiburuak"
 
-#: ../freedesktop.org.xml.in.h:560
+#: ../freedesktop.org.xml.in.h:579
 msgid "rich text document"
 msgstr "aberastutako testu formatua"
 
-#: ../freedesktop.org.xml.in.h:561
+#: ../freedesktop.org.xml.in.h:580
 msgid "RSS summary"
 msgstr "RSS laburpena"
 
-#: ../freedesktop.org.xml.in.h:562
+#: ../freedesktop.org.xml.in.h:581
 msgid "Atom syndication feed"
 msgstr "Atom harpidetze-iturria"
 
-#: ../freedesktop.org.xml.in.h:563
+#: ../freedesktop.org.xml.in.h:582
 msgid "OPML syndication feed"
 msgstr "OPML harpidetze-iturria"
 
-#: ../freedesktop.org.xml.in.h:564
+#: ../freedesktop.org.xml.in.h:583
 msgid "SGML document"
 msgstr "SGML dokumentua"
 
-#: ../freedesktop.org.xml.in.h:565
+#: ../freedesktop.org.xml.in.h:584
 msgid "spreadsheet interchange document"
 msgstr "kalkulu-orriak trukatzeko dokumentua"
 
-#: ../freedesktop.org.xml.in.h:566
+#: ../freedesktop.org.xml.in.h:585
 msgid "TSV document"
 msgstr "TSV dokumentua"
 
-#: ../freedesktop.org.xml.in.h:567
+#: ../freedesktop.org.xml.in.h:586
 msgid "Graphviz DOT graph"
 msgstr "Graphviz DOT grafikoa"
 
-#: ../freedesktop.org.xml.in.h:568
+#: ../freedesktop.org.xml.in.h:587
 msgid "JAD document"
 msgstr "JAD dokumentua"
 
-#: ../freedesktop.org.xml.in.h:569
+#: ../freedesktop.org.xml.in.h:588
 msgid "WML document"
 msgstr "WML dokumentua"
 
-#: ../freedesktop.org.xml.in.h:570
+#: ../freedesktop.org.xml.in.h:589
 msgid "WMLScript program"
 msgstr "WMLScript programa"
 
-#: ../freedesktop.org.xml.in.h:571
+#: ../freedesktop.org.xml.in.h:590
 msgid "ACE archive"
 msgstr "ACE artxiboa"
 
-#: ../freedesktop.org.xml.in.h:572
+#: ../freedesktop.org.xml.in.h:591
 msgid "Ada source code"
 msgstr "Ada iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:573
+#: ../freedesktop.org.xml.in.h:592
 msgid "author list"
 msgstr "egile-zerrenda"
 
-#: ../freedesktop.org.xml.in.h:574
+#: ../freedesktop.org.xml.in.h:593
 msgid "BibTeX document"
 msgstr "BibTeX dokumentua"
 
-#: ../freedesktop.org.xml.in.h:575
+#: ../freedesktop.org.xml.in.h:594
 msgid "C++ header"
 msgstr "C++ goiburua"
 
-#: ../freedesktop.org.xml.in.h:576
+#: ../freedesktop.org.xml.in.h:595
 msgid "C++ source code"
 msgstr "C++ iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:577
+#: ../freedesktop.org.xml.in.h:596
 msgid "ChangeLog document"
 msgstr "ChangeLog dokumentua"
 
-#: ../freedesktop.org.xml.in.h:578
+#: ../freedesktop.org.xml.in.h:597
 msgid "C header"
 msgstr "C goiburua"
 
-#: ../freedesktop.org.xml.in.h:579
+#: ../freedesktop.org.xml.in.h:598
 msgid "CMake source code"
 msgstr "CMake iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:580
+#: ../freedesktop.org.xml.in.h:599
 msgid "CSV document"
 msgstr "CSV dokumentua"
 
-#: ../freedesktop.org.xml.in.h:581
+#: ../freedesktop.org.xml.in.h:600
 msgid "CSV Schema document"
 msgstr "CSV Schema dokumentua"
 
-#: ../freedesktop.org.xml.in.h:582
+#: ../freedesktop.org.xml.in.h:601
 msgid "license terms"
 msgstr "lizentzia baldintzak"
 
-#: ../freedesktop.org.xml.in.h:583
+#: ../freedesktop.org.xml.in.h:602
 msgid "author credits"
 msgstr "Mikel Olasagasti Uranga <hey_neken@mundurat.net>\nIñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>"
 
-#: ../freedesktop.org.xml.in.h:584
+#: ../freedesktop.org.xml.in.h:603
 msgid "C source code"
 msgstr "C iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:585
+#: ../freedesktop.org.xml.in.h:604
 msgid "C# source code"
 msgstr "C# iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:586
+#: ../freedesktop.org.xml.in.h:605
 msgid "Vala source code"
 msgstr "Vala iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:587
+#: ../freedesktop.org.xml.in.h:606
 msgid "OOC source code"
 msgstr "OOC iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:588
+#: ../freedesktop.org.xml.in.h:607
 msgid "DCL script"
 msgstr "DCL script-a"
 
-#: ../freedesktop.org.xml.in.h:589
+#: ../freedesktop.org.xml.in.h:608
 msgid "DSSSL document"
 msgstr "DSSSL dokumentua"
 
-#: ../freedesktop.org.xml.in.h:590
+#: ../freedesktop.org.xml.in.h:609
 msgid "D source code"
 msgstr "D iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:591
+#: ../freedesktop.org.xml.in.h:610
 msgid "DTD file"
 msgstr "DTD fitxategia"
 
-#: ../freedesktop.org.xml.in.h:592
+#: ../freedesktop.org.xml.in.h:611
 msgid "Eiffel source code"
 msgstr "Eiffel iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:593
+#: ../freedesktop.org.xml.in.h:612
 msgid "Emacs Lisp source code"
 msgstr "Emacs Lisp iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:594
+#: ../freedesktop.org.xml.in.h:613
 msgid "Erlang source code"
 msgstr "Erlang iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:595
+#: ../freedesktop.org.xml.in.h:614
 msgid "Fortran source code"
 msgstr "Fortran-en iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:596
+#: ../freedesktop.org.xml.in.h:615
 msgid "Genie source code"
 msgstr "Genie iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:597
+#: ../freedesktop.org.xml.in.h:616
 msgid "translation file"
 msgstr "itzulpen-fitxategia"
 
-#: ../freedesktop.org.xml.in.h:598
+#: ../freedesktop.org.xml.in.h:617
 msgid "translation template"
 msgstr "itzulpenen txantiloia"
 
-#: ../freedesktop.org.xml.in.h:599
+#: ../freedesktop.org.xml.in.h:618
+msgid "feature specification in Gherkin format"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:619
 msgid "HTML document"
 msgstr "HTML dokumentua"
 
-#: ../freedesktop.org.xml.in.h:600
+#: ../freedesktop.org.xml.in.h:620
 msgid "Web application cache manifest"
 msgstr "Web aplikazioaren cache-aren agiria"
 
-#: ../freedesktop.org.xml.in.h:601
+#: ../freedesktop.org.xml.in.h:621
 msgid "Google Video Pointer"
 msgstr "Google Video-ren erreprodukzio-zerrenda"
 
-#: ../freedesktop.org.xml.in.h:602
+#: ../freedesktop.org.xml.in.h:622
 msgid "Haskell source code"
 msgstr "Haskell iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:603
+#: ../freedesktop.org.xml.in.h:623
 msgid "IDL document"
 msgstr "IDL dokumentua"
 
-#: ../freedesktop.org.xml.in.h:604
+#: ../freedesktop.org.xml.in.h:624
 msgid "installation instructions"
 msgstr "instalazioaren instrukzioak"
 
-#: ../freedesktop.org.xml.in.h:605
+#: ../freedesktop.org.xml.in.h:625
 msgid "Java source code"
 msgstr "Java iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:606
+#: ../freedesktop.org.xml.in.h:626
 msgid "LDIF address book"
 msgstr "LDIF helbide-liburua"
 
-#: ../freedesktop.org.xml.in.h:607
+#: ../freedesktop.org.xml.in.h:627
 msgid "Lilypond music sheet"
 msgstr "Lilypond musika-orria"
 
-#: ../freedesktop.org.xml.in.h:608
+#: ../freedesktop.org.xml.in.h:628
 msgid "LHS source code"
 msgstr "LHS iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:609
+#: ../freedesktop.org.xml.in.h:629
 msgid "application log"
 msgstr "aplikazio egunkaria"
 
-#: ../freedesktop.org.xml.in.h:610
+#: ../freedesktop.org.xml.in.h:630
 msgid "Makefile"
 msgstr "Makefile"
 
-#: ../freedesktop.org.xml.in.h:611
+#: ../freedesktop.org.xml.in.h:631
 msgid "Markdown document"
 msgstr "Markdown dokumentua"
 
-#: ../freedesktop.org.xml.in.h:612
+#: ../freedesktop.org.xml.in.h:632
 msgid "Qt MOC file"
 msgstr "Qt MOC fitxategia"
 
-#: ../freedesktop.org.xml.in.h:613
+#: ../freedesktop.org.xml.in.h:633
 msgid "Windows Registry extract"
 msgstr "Windows-eko erregistro erauzlea"
 
-#: ../freedesktop.org.xml.in.h:614
+#: ../freedesktop.org.xml.in.h:634
 msgid "Managed Object Format"
 msgstr "Kudeatutako objektu formatua"
 
-#: ../freedesktop.org.xml.in.h:615
+#: ../freedesktop.org.xml.in.h:635
 msgid "Mup publication"
 msgstr "Mup publikazioa"
 
-#: ../freedesktop.org.xml.in.h:616
+#: ../freedesktop.org.xml.in.h:636
 msgid "Objective-C source code"
 msgstr "Objective-C iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:617
+#: ../freedesktop.org.xml.in.h:637
 msgid "OCaml source code"
 msgstr "OCaml iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:618
+#: ../freedesktop.org.xml.in.h:638
 msgid "MATLAB script/function"
 msgstr "MATLAB script/funtzioa"
 
-#: ../freedesktop.org.xml.in.h:619
+#: ../freedesktop.org.xml.in.h:639
 msgid "Meson source code"
 msgstr "Meson iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:620
+#: ../freedesktop.org.xml.in.h:640
 msgid "Modelica model"
 msgstr "Modelica modeloa"
 
-#: ../freedesktop.org.xml.in.h:621
+#: ../freedesktop.org.xml.in.h:641
 msgid "Pascal source code"
 msgstr "Pascal iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:622
+#: ../freedesktop.org.xml.in.h:642
 msgid "differences between files"
 msgstr "fitxategien arteko ezberdintasunak"
 
-#: ../freedesktop.org.xml.in.h:623
+#: ../freedesktop.org.xml.in.h:643
 msgid "Go source code"
 msgstr "Go iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:624
+#: ../freedesktop.org.xml.in.h:644
 msgid "SCons configuration file"
 msgstr "SCons konfigurazio-fitxategia"
 
-#: ../freedesktop.org.xml.in.h:625
+#: ../freedesktop.org.xml.in.h:645
 msgid "Python script"
 msgstr "Python script-a"
 
-#: ../freedesktop.org.xml.in.h:626
+#: ../freedesktop.org.xml.in.h:646
 msgid "Lua script"
 msgstr "Lua script-a"
 
-#: ../freedesktop.org.xml.in.h:627
+#: ../freedesktop.org.xml.in.h:647
 msgid "README document"
 msgstr "README dokumentua"
 
-#: ../freedesktop.org.xml.in.h:628
+#: ../freedesktop.org.xml.in.h:648
 msgid "NFO document"
 msgstr "NFO dokumentua"
 
-#: ../freedesktop.org.xml.in.h:629
+#: ../freedesktop.org.xml.in.h:649
 msgid "RPM spec file"
 msgstr "RPM espezifikazio fitxategia"
 
-#: ../freedesktop.org.xml.in.h:630
+#: ../freedesktop.org.xml.in.h:650
+msgid "Sass CSS pre-processor file"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:651
 msgid "Scala source code"
 msgstr "Scala iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:631
+#: ../freedesktop.org.xml.in.h:652
 msgid "Scheme source code"
 msgstr "Scheme iturburu-kodea"
 
-#: ../freedesktop.org.xml.in.h:632
+#: ../freedesktop.org.xml.in.h:653
 msgid "Setext document"
 msgstr "Setext dokumentua"
 
-#: ../freedesktop.org.xml.in.h:633
+#: ../freedesktop.org.xml.in.h:654
 msgid "SQL code"
 msgstr "SQL kodea"
 
-#: ../freedesktop.org.xml.in.h:634
+#: ../freedesktop.org.xml.in.h:655
 msgid "Tcl script"
 msgstr "Tcl script-a"
 
-#: ../freedesktop.org.xml.in.h:635
+#: ../freedesktop.org.xml.in.h:656
 msgid "TeX document"
 msgstr "TeX dokumentua"
 
-#: ../freedesktop.org.xml.in.h:636
+#: ../freedesktop.org.xml.in.h:657
 msgid "TeXInfo document"
 msgstr "TeXInfo dokumentua"
 
-#: ../freedesktop.org.xml.in.h:637
+#: ../freedesktop.org.xml.in.h:658
 msgid "Troff ME input document"
 msgstr "Troff ME sarrerako dokumentua"
 
-#: ../freedesktop.org.xml.in.h:638
+#: ../freedesktop.org.xml.in.h:659
 msgid "Troff MM input document"
 msgstr "Troff MM sarrerako dokumentua"
 
-#: ../freedesktop.org.xml.in.h:639
+#: ../freedesktop.org.xml.in.h:660
 msgid "Troff MS input document"
 msgstr "Troff MS sarrerako dokumentua"
 
-#: ../freedesktop.org.xml.in.h:640
+#: ../freedesktop.org.xml.in.h:661
+msgid "Twig template"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:662
 msgid "X-Motif UIL table"
 msgstr "X-Motif UIL taula"
 
-#: ../freedesktop.org.xml.in.h:641
+#: ../freedesktop.org.xml.in.h:663
 msgid "resource location"
 msgstr "baliabidearen kokalekua"
 
-#: ../freedesktop.org.xml.in.h:642
+#: ../freedesktop.org.xml.in.h:664
 msgid "uuencoded file"
 msgstr "uuencode-aturiko fitxategia"
 
-#: ../freedesktop.org.xml.in.h:643
+#: ../freedesktop.org.xml.in.h:665
 msgid "XMI file"
 msgstr "XMI fitxategia"
 
-#: ../freedesktop.org.xml.in.h:644
+#: ../freedesktop.org.xml.in.h:666
 msgid "XSL FO file"
 msgstr "XSL FO fitxategia"
 
-#: ../freedesktop.org.xml.in.h:645
+#: ../freedesktop.org.xml.in.h:667
 msgid "iptables configuration file"
 msgstr "iptables konfigurazio-fitxategia"
 
-#: ../freedesktop.org.xml.in.h:646
+#: ../freedesktop.org.xml.in.h:668
 msgid "XSLT stylesheet"
 msgstr "XSLT estilo-orria"
 
-#: ../freedesktop.org.xml.in.h:647
+#: ../freedesktop.org.xml.in.h:669
 msgid "XMCD CD database"
 msgstr "XMCD CD datu-basea"
 
-#: ../freedesktop.org.xml.in.h:648
+#: ../freedesktop.org.xml.in.h:670
 msgid "XML document"
 msgstr "XML dokumentua"
 
-#: ../freedesktop.org.xml.in.h:649
+#: ../freedesktop.org.xml.in.h:671
 msgid "XML entities document"
 msgstr "XML entitateen dokumentua"
 
-#: ../freedesktop.org.xml.in.h:650
+#: ../freedesktop.org.xml.in.h:672
 msgid "DV video"
 msgstr "DV bideoa"
 
-#: ../freedesktop.org.xml.in.h:651
+#: ../freedesktop.org.xml.in.h:673
 msgid "ISI video"
 msgstr "ISI bideoa"
 
-#: ../freedesktop.org.xml.in.h:652
+#: ../freedesktop.org.xml.in.h:674
 msgid "MPEG-2 transport stream"
 msgstr "MPEG-2 korronte garraioa"
 
-#: ../freedesktop.org.xml.in.h:653
+#: ../freedesktop.org.xml.in.h:675
 msgid "MPEG video"
 msgstr "MPEG bideoa"
 
-#: ../freedesktop.org.xml.in.h:654
+#: ../freedesktop.org.xml.in.h:676
 msgid "MPEG video (streamed)"
 msgstr "MPEG bideoa (korronte bidez)"
 
-#: ../freedesktop.org.xml.in.h:655
+#: ../freedesktop.org.xml.in.h:677
 msgid "QuickTime video"
 msgstr "QuickTime bideoa"
 
-#: ../freedesktop.org.xml.in.h:656
+#: ../freedesktop.org.xml.in.h:678
 msgid "QuickTime image"
 msgstr "QuickTime irudia"
 
-#: ../freedesktop.org.xml.in.h:657
+#: ../freedesktop.org.xml.in.h:679
 msgid "Vivo video"
 msgstr "Vivo bideoa"
 
-#: ../freedesktop.org.xml.in.h:658
+#: ../freedesktop.org.xml.in.h:680
 msgid "Wavelet video"
 msgstr "Wavelet bideoa"
 
-#: ../freedesktop.org.xml.in.h:659
+#: ../freedesktop.org.xml.in.h:681
 msgid "ANIM animation"
 msgstr "ANIM animazioa"
 
-#: ../freedesktop.org.xml.in.h:660
+#: ../freedesktop.org.xml.in.h:682
 msgid "FLIC animation"
 msgstr "FLIC animazioa"
 
-#: ../freedesktop.org.xml.in.h:661
+#: ../freedesktop.org.xml.in.h:683
 msgid "Haansoft Hangul document"
 msgstr "Haansoft Hangul dokumentua"
 
-#: ../freedesktop.org.xml.in.h:662
+#: ../freedesktop.org.xml.in.h:684
 msgid "Haansoft Hangul document template"
 msgstr "Haansoft Hangul dokumentuaren txantiloia"
 
-#: ../freedesktop.org.xml.in.h:663
+#: ../freedesktop.org.xml.in.h:685
 msgid "MNG animation"
 msgstr "MNG animazioa"
 
-#: ../freedesktop.org.xml.in.h:664
+#: ../freedesktop.org.xml.in.h:686
 msgid "ASF video"
 msgstr "ASF bideoa"
 
-#: ../freedesktop.org.xml.in.h:665
+#: ../freedesktop.org.xml.in.h:687
 msgid "Windows Media Station file"
 msgstr "Windows Media Station fitxategia"
 
-#: ../freedesktop.org.xml.in.h:666
+#: ../freedesktop.org.xml.in.h:688
 msgid "Windows Media video"
 msgstr "Windows Media bideoa"
 
-#: ../freedesktop.org.xml.in.h:667
+#: ../freedesktop.org.xml.in.h:689
 msgid "AVI video"
 msgstr "AVI bideoa"
 
-#: ../freedesktop.org.xml.in.h:668
+#: ../freedesktop.org.xml.in.h:690
 msgid "NullSoft video"
 msgstr "NullSoft bideoa"
 
-#: ../freedesktop.org.xml.in.h:669
+#: ../freedesktop.org.xml.in.h:691
 msgid "SDP multicast stream file"
 msgstr "SDP multicast korrontearen fitxategia"
 
-#: ../freedesktop.org.xml.in.h:670
+#: ../freedesktop.org.xml.in.h:692
 msgid "SGI video"
 msgstr "SGI bideoa"
 
-#: ../freedesktop.org.xml.in.h:671
+#: ../freedesktop.org.xml.in.h:693
 msgid "eMusic download package"
 msgstr "eMusic deskargaren paketea"
 
-#: ../freedesktop.org.xml.in.h:672
+#: ../freedesktop.org.xml.in.h:694
 msgid "KML geographic data"
 msgstr "KML datu geografikoak"
 
-#: ../freedesktop.org.xml.in.h:673
+#: ../freedesktop.org.xml.in.h:695
 msgid "KML geographic compressed data"
 msgstr "KML datu geografiko konprimituak"
 
-#: ../freedesktop.org.xml.in.h:674
+#: ../freedesktop.org.xml.in.h:696
 msgid "GeoJSON geospatial data"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:675
+#: ../freedesktop.org.xml.in.h:697
 msgid "GPX geographic data"
 msgstr "GPX datu geografikoak"
 
-#: ../freedesktop.org.xml.in.h:676
+#: ../freedesktop.org.xml.in.h:698
 msgid "Citrix ICA settings file"
 msgstr "Citrix ICA ezarpenen fitxategia"
 
-#: ../freedesktop.org.xml.in.h:677
+#: ../freedesktop.org.xml.in.h:699
 msgid "XUL interface document"
 msgstr "XUL interfazearen dokumentua"
 
-#: ../freedesktop.org.xml.in.h:678
+#: ../freedesktop.org.xml.in.h:700
 msgid "XPInstall installer module"
 msgstr "XPInstall instalatzailearen modulua"
 
-#: ../freedesktop.org.xml.in.h:679
+#: ../freedesktop.org.xml.in.h:701
 msgid "Word 2007 document"
 msgstr "Word 2007 dokumentua"
 
-#: ../freedesktop.org.xml.in.h:680
+#: ../freedesktop.org.xml.in.h:702
 msgid "Word 2007 document template"
 msgstr "Word 2007 dokumentuaren txantiloia"
 
-#: ../freedesktop.org.xml.in.h:681
+#: ../freedesktop.org.xml.in.h:703
 msgid "PowerPoint 2007 presentation"
 msgstr "PowerPoint 2007 aurkezpena"
 
-#: ../freedesktop.org.xml.in.h:682
+#: ../freedesktop.org.xml.in.h:704
 msgid "PowerPoint 2007 slide"
 msgstr "PowerPoint 2007 diapositiba"
 
-#: ../freedesktop.org.xml.in.h:683
+#: ../freedesktop.org.xml.in.h:705
 msgid "PowerPoint 2007 show"
 msgstr "PowerPoint 2007 ikuskizuna"
 
-#: ../freedesktop.org.xml.in.h:684
+#: ../freedesktop.org.xml.in.h:706
 msgid "PowerPoint 2007 presentation template"
 msgstr "PowerPoint 2007 aurkezpen txantiloia"
 
-#: ../freedesktop.org.xml.in.h:685
+#: ../freedesktop.org.xml.in.h:707
 msgid "Excel 2007 spreadsheet"
 msgstr "Excel 2007 kalkulu-orria"
 
-#: ../freedesktop.org.xml.in.h:686
+#: ../freedesktop.org.xml.in.h:708
 msgid "Excel 2007 spreadsheet template"
 msgstr "Excel 2007 kalkulu-orri txantiloia"
 
-#: ../freedesktop.org.xml.in.h:687
+#: ../freedesktop.org.xml.in.h:709
 msgid "T602 document"
 msgstr "T602 dokumentua"
 
-#: ../freedesktop.org.xml.in.h:688
+#: ../freedesktop.org.xml.in.h:710
 msgid "Cisco VPN Settings"
 msgstr "Cisco VPN ezarpenak"
 
-#: ../freedesktop.org.xml.in.h:689
+#: ../freedesktop.org.xml.in.h:711
 msgid "ICC profile"
 msgstr "ICC profila"
 
-#: ../freedesktop.org.xml.in.h:690
+#: ../freedesktop.org.xml.in.h:712
 msgid "IT 8.7 color calibration file"
 msgstr "IT 8.7 kolore-kalibrazioaren fitxategia"
 
-#: ../freedesktop.org.xml.in.h:691
+#: ../freedesktop.org.xml.in.h:713
 msgid "CCMX color correction file"
 msgstr "CCMX kolore-kalibrazioaren fitxategia"
 
-#: ../freedesktop.org.xml.in.h:692
+#: ../freedesktop.org.xml.in.h:714
 msgid "WinHelp help file"
 msgstr "WinHelp laguntza fitxategia"
 
+#: ../freedesktop.org.xml.in.h:715
+msgid "binary differences between files"
+msgstr ""
+
 #. http://en.wikipedia.org/wiki/Design_rule_for_Camera_File_system
-#: ../freedesktop.org.xml.in.h:694
+#: ../freedesktop.org.xml.in.h:717
 msgid "digital photos"
 msgstr "argazki digitalak"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Video_CD
 #. http://www.herongyang.com/CD-DVD/VCD-Movie-File-Directory-Structure.html
-#: ../freedesktop.org.xml.in.h:698
+#: ../freedesktop.org.xml.in.h:721
 msgid "Video CD"
 msgstr "Bideo CDa"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Super_Video_CD
 #. http://everything2.com/index.pl?node_id=1009222
-#: ../freedesktop.org.xml.in.h:702
+#: ../freedesktop.org.xml.in.h:725
 msgid "Super Video CD"
 msgstr "Super Bideo CDa"
 
 #. http://en.wikipedia.org/wiki/DVD-Video
-#: ../freedesktop.org.xml.in.h:704
+#: ../freedesktop.org.xml.in.h:727
 msgid "video DVD"
 msgstr "bideo DVDa"
 
 #. http://en.wikipedia.org/wiki/Red_Book_(audio_CD_standard)
-#: ../freedesktop.org.xml.in.h:706
+#: ../freedesktop.org.xml.in.h:729
 msgid "audio CD"
 msgstr "Audio CDa"
 
 #. http://en.wikipedia.org/wiki/Compact_Disc
-#: ../freedesktop.org.xml.in.h:708
+#: ../freedesktop.org.xml.in.h:731
 msgid "blank CD disc"
 msgstr "CD disko hutsa"
 
 #. http://en.wikipedia.org/wiki/DVD
-#: ../freedesktop.org.xml.in.h:710
+#: ../freedesktop.org.xml.in.h:733
 msgid "blank DVD disc"
 msgstr "DVD disko hutsa"
 
 #. http://en.wikipedia.org/wiki/Blu-ray_Disc
-#: ../freedesktop.org.xml.in.h:712
+#: ../freedesktop.org.xml.in.h:735
 msgid "blank Blu-ray disc"
 msgstr "Blu-ray disko hutsa"
 
 #. http://en.wikipedia.org/wiki/HD_DVD
-#: ../freedesktop.org.xml.in.h:714
+#: ../freedesktop.org.xml.in.h:737
 msgid "blank HD DVD disc"
 msgstr "HD DVD disko hutsa"
 
 #. http://en.wikipedia.org/wiki/DVD-Audio
-#: ../freedesktop.org.xml.in.h:716
+#: ../freedesktop.org.xml.in.h:739
 msgid "audio DVD"
 msgstr "audio DVDa"
 
 #. http://en.wikipedia.org/wiki/Blu-ray_Disc
 #. http://www.blu-raydisc.com/Section-13470/Section-13890/Index.html
-#: ../freedesktop.org.xml.in.h:719
+#: ../freedesktop.org.xml.in.h:742
 msgid "Blu-ray video disc"
 msgstr "Blu-ray bideo-diskoa"
 
 #. http://en.wikipedia.org/wiki/HD_DVD
 #. http://www.dvdafteredit.com/wiki/The_HVDVD_TS_Folder
-#: ../freedesktop.org.xml.in.h:722
+#: ../freedesktop.org.xml.in.h:745
 msgid "HD DVD video disc"
 msgstr "HD DVD bideo-diskoa"
 
 #. see fd.o hal spec
-#: ../freedesktop.org.xml.in.h:724
+#: ../freedesktop.org.xml.in.h:747
 msgid "e-book reader"
 msgstr "e-book irakurlea"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Picture_CD
 #. http://www.re.org/kristin/picturecd.html
-#: ../freedesktop.org.xml.in.h:728
+#: ../freedesktop.org.xml.in.h:751
 msgid "Picture CD"
 msgstr "Picture CD"
 
 #. see fd.o hal spec
-#: ../freedesktop.org.xml.in.h:730
+#: ../freedesktop.org.xml.in.h:753
 msgid "portable audio player"
 msgstr "audio erreproduzigailu eramangarria"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: ../freedesktop.org.xml.in.h:733
+#: ../freedesktop.org.xml.in.h:756
 msgid "software"
 msgstr "softwarea"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: ../freedesktop.org.xml.in.h:736
+#: ../freedesktop.org.xml.in.h:759
 msgid "UNIX software"
 msgstr "UNIXeko softwarea"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: ../freedesktop.org.xml.in.h:739
+#: ../freedesktop.org.xml.in.h:762
 msgid "Windows software"
 msgstr "Windows-eko softwarea"
 
 #. http://www4.wiwiss.fu-berlin.de/bizer/TriG/
-#: ../freedesktop.org.xml.in.h:741
+#: ../freedesktop.org.xml.in.h:764
 msgid "TriG RDF document"
 msgstr "TriG RDF dokumentua"
 
-#: ../freedesktop.org.xml.in.h:742
+#: ../freedesktop.org.xml.in.h:765
 msgid "Apple Keynote 5 presentation"
 msgstr "Apple Keynote 5 aurkezpena"
 
-#: ../freedesktop.org.xml.in.h:743
+#: ../freedesktop.org.xml.in.h:766
 msgid "Adobe PageMaker"
 msgstr "Adobe PageMaker"
 
-#: ../freedesktop.org.xml.in.h:744
+#: ../freedesktop.org.xml.in.h:767
 msgid "Doom WAD"
 msgstr "Doom WAD"
 
-#: ../freedesktop.org.xml.in.h:745
+#: ../freedesktop.org.xml.in.h:768
 msgid "Amiga disk image"
 msgstr "Amiga disko irudia"
 
-#: ../freedesktop.org.xml.in.h:746
-msgid "XDG application bundle"
+#: ../freedesktop.org.xml.in.h:769
+msgid "Flatpak application bundle"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:770
+msgid "Flatpak repository description"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:771
+msgid "Squashfs filesystem"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:772
+msgid "Snap package"
 msgstr ""

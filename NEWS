@@ -1,3 +1,36 @@
+shared-mime-info 1.7 (2016-09-05)
+* Add mime-types for a number of video games systems ROMS
+  (Atari 7800, Atari 2600, Neo Geo Pocket, Sega CD/Mega-CD, Game Boy Color,
+   Genesis 32X, Sega SG-1000, Sega Game Gear, Sega Pico)
+* Add mime-type for .tar.lz and tar.lz4 archives
+* Add mime-type for Jupyter Notebook files
+* Add Flatpak mime-types and add compatibility for xdg-app ones
+* Add *.dib glob to BMP images
+* Use official IANA mime-types for WMF and EMF images
+* Add application/raml+yaml mime-type
+* Add GPX mimetypes as found in the wild
+* Add application/vnd.squashfs and application/vnd.snap mime-types
+* Add mime-type for IGES documents
+* Add mime-types for Sass CSS pre-processor files
+* Add mime-type for Twig templates
+* Add alias application/nappdf for application/pdf
+* Add mimetype for AppImage
+* Add application/x-bsdiff mime-type
+* Add Gherkin feature specifications mime-type
+* Use official IANA registered type for application/vnd.chess-pgn
+* Use new IANA registered type for application/geo+json
+* Use official IANA registered type for application/vnd.comicbook+zip
+* Use official IANA registered type for application/vnd.rar
+* Use official IANA registered type for application/vnd.framemaker
+* Improve VRML mime-type
+* Better MPEG-2 TS magic
+* Better magic for 669 tracker MOD files
+* Fix misdetection of zip files as their content
+* Fix multi-page DjVu detection by file
+* Fix TGA magic detection
+* Fixes related to AMR audio files
+* Remove "*.sg" glob for Sega Master System ROM types
+
 shared-mime-info 1.6 (2016-02-23)
 * Add XAR archive mime-type
 * Add GeoJSON mime-type

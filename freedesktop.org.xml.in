@@ -6804,6 +6804,15 @@ command to generate the output files.
     <glob pattern="*.flatpakrepo"/>
   </mime-type>
 
+  <mime-type type="application/vnd.flatpak.ref">
+    <_comment>Flatpak repository reference</_comment>
+    <sub-class-of type="text/plain"/>
+    <magic priority="50">
+      <match type="string" value="[Flatpak Ref]" offset="0:256"/>
+    </magic>
+    <glob pattern="*.flatpakref"/>
+  </mime-type>
+
   <mime-type type="application/vnd.squashfs">
     <_comment>Squashfs filesystem</_comment>
     <magic priority="50">

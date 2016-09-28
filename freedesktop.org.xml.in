@@ -6786,6 +6786,7 @@ command to generate the output files.
 
   <mime-type type="application/vnd.flatpak">
     <_comment>Flatpak application bundle</_comment>
+    <generic-icon name="package-x-generic"/>
     <magic priority="50">
       <match type="string" value="xdg-app\x00\x01\x00\x89\xe5" offset="0"/>
       <match type="string" value="flatpak\x00\x01\x00\x89\xe5" offset="0"/>
@@ -6797,6 +6798,7 @@ command to generate the output files.
 
   <mime-type type="application/vnd.flatpak.repo">
     <_comment>Flatpak repository description</_comment>
+    <generic-icon name="package-x-generic"/>
     <sub-class-of type="text/plain"/>
     <magic priority="50">
       <match type="string" value="[Flatpak Repo]" offset="0:256"/>
@@ -6806,6 +6808,7 @@ command to generate the output files.
 
   <mime-type type="application/vnd.flatpak.ref">
     <_comment>Flatpak repository reference</_comment>
+    <generic-icon name="package-x-generic"/>
     <sub-class-of type="text/plain"/>
     <magic priority="50">
       <match type="string" value="[Flatpak Ref]" offset="0:256"/>

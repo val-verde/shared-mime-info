@@ -512,6 +512,8 @@ README.pdf application/pdf
 # From https://bugs.freedesktop.org/show_bug.cgi?id=29083#c2
 testcase.is-really-a-pdf application/pdf xo
 pdf-not-matlab application/pdf x
+# Created using lzip 1.18
+test.pdf.lz application/x-lzpdf ox
 test.pdf.xz application/x-xzpdf ox
 Makefile text/x-makefile ox
 Makefile.gnu text/x-makefile ox

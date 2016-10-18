@@ -2706,6 +2706,12 @@ command to generate the output files.
     <sub-class-of type="application/x-lzip"/>
     <glob pattern="*.tar.lz"/>
   </mime-type>
+  <mime-type type="application/x-lzpdf">
+    <_comment>PDF document (lzip-compressed)</_comment>
+    <sub-class-of type="application/x-lzip"/>
+    <generic-icon name="x-office-document"/>
+    <glob pattern="*.pdf.lz"/>
+  </mime-type>
   <mime-type type="application/x-lzma">
     <_comment>LZMA archive</_comment>
     <acronym>LZMA</acronym>

@@ -1809,6 +1809,16 @@ command to generate the output files.
     <generic-icon name="application-x-executable"/>
     <glob pattern="*.k7"/>
   </mime-type>
+  <mime-type type="application/x-hfe-floppy-image">
+    <_comment>HFE floppy disk image</_comment>
+    <acronym>HFE</acronym>
+    <expanded-acronym>HxC Floppy Emulator</expanded-acronym>
+    <generic-icon name="application-x-executable"/>
+    <glob pattern="*.hfe"/>
+    <magic>
+      <match offset="0" type="string" value="HXCPICFE"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/x-thomson-sap-image">
     <_comment>SAP Thomson floppy disk image</_comment>
     <acronym>SAP</acronym>

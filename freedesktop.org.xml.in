@@ -1799,6 +1799,16 @@ command to generate the output files.
       <match offset="28" type="big32" value="0xc2339f3d"/>
     </magic>
   </mime-type>
+  <mime-type type="application/x-thomson-sap-image">
+    <_comment>SAP Thomson floppy disk image</_comment>
+    <acronym>SAP</acronym>
+    <expanded-acronym>Système d'Archivage Pukall</expanded-acronym>
+    <generic-icon name="application-x-executable"/>
+    <glob pattern="*.sap"/>
+    <magic>
+      <match offset="1" type="string" value="SYSTEME D'ARCHIVAGE PUKALL S.A.P. (c) Alexandre PUKALL Avril 1998"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/vnd.debian.binary-package">
     <_comment>Debian package</_comment>
     <alias type="application/x-deb"/>

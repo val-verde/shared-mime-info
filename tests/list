@@ -464,6 +464,9 @@ adf-test.adf application/x-amiga-disk-format
 Leafpad-0.8.17-x86_64.AppImage application/x-iso9660-appimage
 # SAP Thomson disk images
 ripoux.sap application/x-thomson-sap-image
+# Thomson cartridge and cassette formats
+blitz.m7 application/x-thomson-cartridge-memo7 oxo
+androide.k7 application/x-thomson-cassette oxo
 
 # Video game ROMs
 # Super Tank truncated to 1Ko

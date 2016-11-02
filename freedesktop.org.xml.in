@@ -3504,6 +3504,7 @@ command to generate the output files.
       <match type="string" value="ajkg" offset="0"/>
     </magic>
     <glob pattern="*.shn"/>
+    <alias type="audio/x-shorten"/>
   </mime-type>
   <mime-type type="application/x-siag">
     <_comment>Siag spreadsheet</_comment>
@@ -4050,10 +4051,12 @@ command to generate the output files.
       <match type="big16" value="0xFFF0" mask="0xFFF6" offset="0"/>
     </magic>
     <glob pattern="*.aac"/>
+    <alias type="audio/x-aac"/>
   </mime-type>
   <mime-type type="audio/mp4">
     <_comment>MPEG-4 audio</_comment>
     <alias type="audio/x-m4a"/>
+    <alias type="audio/m4a"/>
     <magic priority="50">
       <match type="string" value="ftypM4A" offset="4"/>
     </magic>
@@ -4173,6 +4176,7 @@ command to generate the output files.
   <mime-type type="audio/mpeg">
     <_comment>MP3 audio</_comment>
     <alias type="audio/x-mp3" />
+    <alias type="audio/x-mpg"/>
     <alias type="audio/x-mpeg"/>
     <alias type="audio/mp3"/>
     <magic priority="50">
@@ -4293,6 +4297,7 @@ command to generate the output files.
     <glob pattern="*.rms"/>
     <glob pattern="*.rmx"/>
     <glob pattern="*.rmvb"/>
+    <alias type="application/vnd.rn-realmedia-vbr"/>
   </mime-type>
   <mime-type type="image/vnd.rn-realpix">
     <_comment>RealPix document</_comment>
@@ -4322,6 +4327,7 @@ command to generate the output files.
   <mime-type type="audio/x-scpls">
     <_comment>MP3 ShoutCast playlist</_comment>
     <alias type="application/pls"/>
+    <alias type="audio/scpls"/>
     <magic priority="50">
       <match type="string" value="[playlist]" offset="0"/>
       <match type="string" value="[Playlist]" offset="0"/>
@@ -6276,6 +6282,8 @@ command to generate the output files.
     <acronym>MPEG</acronym>
     <expanded-acronym>Moving Picture Experts Group</expanded-acronym>
     <alias type="video/x-mpeg"/>
+    <alias type="video/mpeg-system"/>
+    <alias type="video/x-mpeg-system"/>
     <alias type="video/x-mpeg2"/>
     <magic priority="50">
       <match type="string" value="\x47\x3f\xff\x10" offset="0"/>
@@ -6375,6 +6383,7 @@ command to generate the output files.
     <expanded-acronym>Advanced Streaming Format</expanded-acronym>
     <alias type="video/x-ms-wm"/>
     <alias type="video/x-ms-asf"/>
+    <alias type="video/x-ms-asf-plugin"/>
     <glob pattern="*.asf"/>
     <magic priority="50">
       <match type="big32" value="0x3026b275" offset="0"/>

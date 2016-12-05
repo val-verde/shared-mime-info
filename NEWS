@@ -1,3 +1,11 @@
+shared-mime-info 1.8 (2016-12-05)
+* Add Flatpak-related mime-types
+* Add mime-type for a number of Thomson-related disk (and cassette) images
+* Add many audio and video mime-type aliases as used in VLC
+* Add mime-type for pdf.lz files
+* Write the correct length for literal and glob lists to the cache
+* Build fixes
+
 shared-mime-info 1.7 (2016-09-05)
 * Add mime-types for a number of video games systems ROMS
   (Atari 7800, Atari 2600, Neo Geo Pocket, Sega CD/Mega-CD, Game Boy Color,

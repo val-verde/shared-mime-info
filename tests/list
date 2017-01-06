@@ -607,3 +607,21 @@ SConscript text/x-scons oxo
 # copied from https://raw.githubusercontent.com/mongodb/mongo/master/SConscript.buildinfo
 SConscript.buildinfo text/x-scons oxo
 
+# systemd units
+systemd.automount text/x-systemd-unit
+systemd.device text/x-systemd-unit
+systemd.mount text/x-systemd-unit
+systemd.path text/x-systemd-unit
+systemd.scope text/x-systemd-unit
+systemd.service text/x-systemd-unit xoo
+systemd.slice text/x-systemd-unit
+systemd.socket text/x-systemd-unit
+systemd.swap text/x-systemd-unit
+systemd.target text/x-systemd-unit
+systemd.timer text/x-systemd-unit
+dbus.service text/x-systemd-unit xxx
+dbus-comment.service text/x-systemd-unit xxx
+
+# D-Bus services
+dbus.service text/x-dbus-service
+dbus-comment.service text/x-dbus-service

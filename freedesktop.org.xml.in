@@ -6185,6 +6185,59 @@ command to generate the output files.
     </magic>
     <glob pattern="*.iptables"/>
   </mime-type>
+  <mime-type type="text/x-dbus-service">
+    <_comment>D-Bus service file</_comment>
+    <sub-class-of type="text/plain"/>
+    <magic priority="50">
+      <match type="string" value="\n[D-BUS Service]\n" offset="0:256"/>
+      <match type="string" value="[D-BUS Service]\n" offset="0"/>
+    </magic>
+    <glob pattern="*.service"/>
+  </mime-type>
+  <mime-type type="text/x-systemd-unit">
+    <_comment>systemd unit file</_comment>
+    <sub-class-of type="text/plain"/>
+    <magic priority="50">
+      <!-- Matches part-way through the file. -->
+      <match type="string" value="\n[Unit]\n" offset="0:256"/>
+      <match type="string" value="\n[Install]\n" offset="0:256"/>
+      <match type="string" value="\n[Automount]\n" offset="0:256"/>
+      <!-- Note no [Device] section exists (https://www.freedesktop.org/software/systemd/man/systemd.device.html) -->
+      <match type="string" value="\n[Mount]\n" offset="0:256"/>
+      <match type="string" value="\n[Path]\n" offset="0:256"/>
+      <match type="string" value="\n[Scope]\n" offset="0:256"/>
+      <match type="string" value="\n[Service]\n" offset="0:256"/>
+      <match type="string" value="\n[Slice]\n" offset="0:256"/>
+      <match type="string" value="\n[Socket]\n" offset="0:256"/>
+      <match type="string" value="\n[Swap]\n" offset="0:256"/>
+      <!-- Note no [Target] section exists (https://www.freedesktop.org/software/systemd/man/systemd.target.html) -->
+      <match type="string" value="\n[Timer]\n" offset="0:256"/>
+
+      <!-- Matches at the start of the file. -->
+      <match type="string" value="[Unit]\n" offset="0"/>
+      <match type="string" value="[Install]\n" offset="0"/>
+      <match type="string" value="[Automount]\n" offset="0"/>
+      <match type="string" value="[Mount]\n" offset="0"/>
+      <match type="string" value="[Path]\n" offset="0"/>
+      <match type="string" value="[Scope]\n" offset="0"/>
+      <match type="string" value="[Service]\n" offset="0"/>
+      <match type="string" value="[Slice]\n" offset="0"/>
+      <match type="string" value="[Socket]\n" offset="0"/>
+      <match type="string" value="[Swap]\n" offset="0"/>
+      <match type="string" value="[Timer]\n" offset="0"/>
+    </magic>
+    <glob pattern="*.automount"/>
+    <glob pattern="*.device"/>
+    <glob pattern="*.mount"/>
+    <glob pattern="*.path"/>
+    <glob pattern="*.scope"/>
+    <glob pattern="*.service"/>
+    <glob pattern="*.slice"/>
+    <glob pattern="*.socket"/>
+    <glob pattern="*.swap"/>
+    <glob pattern="*.target"/>
+    <glob pattern="*.timer"/>
+  </mime-type>
   <mime-type type="application/xslt+xml">
     <_comment>XSLT stylesheet</_comment>
     <acronym>XSLT</acronym>

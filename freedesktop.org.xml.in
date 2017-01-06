@@ -2355,7 +2355,7 @@ command to generate the output files.
   <mime-type type="application/x-java-keystore">
     <_comment>Java keystore</_comment>
     <magic priority="50">
-      <match type="host32" value="0xfeedfeed" offset="0"/>
+      <match type="big32" value="0xfeedfeed" offset="0"/>
     </magic>
     <glob pattern="*.jks"/>
     <glob pattern="*.ks"/>
@@ -5102,8 +5102,8 @@ command to generate the output files.
         <match type="byte" value="0x20" offset="16"/>
       </match>
     </magic>
-    <glob pattern="*.icb"/>
     <glob pattern="*.tga"/>
+    <glob pattern="*.icb"/>
     <glob pattern="*.tpic"/>
     <glob pattern="*.vda"/>
     <glob pattern="*.vst"/>

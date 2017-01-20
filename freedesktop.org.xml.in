@@ -2385,6 +2385,18 @@ command to generate the output files.
     <alias type="text/javascript"/>
     <sub-class-of type="application/ecmascript"/>
     <generic-icon name="text-x-script"/>
+    <magic priority="50">
+      <match type="string" value="#!/bin/gjs" offset="0"/>
+      <match type="string" value="#! /bin/gjs" offset="0"/>
+      <match type="string" value='eval \"exec /bin/gjs' offset="0"/>
+      <match type="string" value="#!/usr/bin/gjs" offset="0"/>
+      <match type="string" value="#! /usr/bin/gjs" offset="0"/>
+      <match type="string" value='eval \"exec /usr/bin/gjs' offset="0"/>
+      <match type="string" value="#!/usr/local/bin/gjs" offset="0"/>
+      <match type="string" value="#! /usr/local/bin/gjs" offset="0"/>
+      <match type="string" value='eval \"exec /usr/local/bin/gjs' offset="0"/>
+      <match type="string" value='/bin/env gjs' offset="2:16"/>
+    </magic>
     <glob pattern="*.js"/>
     <glob pattern="*.jsm"/>
   </mime-type>

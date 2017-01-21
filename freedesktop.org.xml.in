@@ -6395,6 +6395,17 @@ command to generate the output files.
     <glob pattern="*.qtif"/>
     <glob pattern="*.qif"/>
   </mime-type>
+  <mime-type type="image/ktx">
+    <_comment>Khronos texture image</_comment>
+    <magic priority="80">
+      <match type="big32" value="0xAB4B5458" offset="0">
+        <match type="big32" value="0x203131BB" offset="4">
+          <match type="big32" value="0x0D0A1A0A" offset="8"/>
+        </match>
+      </match>
+    </magic>
+    <glob pattern="*.ktx"/>
+  </mime-type>
   <mime-type type="video/vnd.vivo">
     <_comment>Vivo video</_comment>
     <alias type="video/vivo"/>

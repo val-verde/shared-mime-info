@@ -6984,4 +6984,14 @@ command to generate the output files.
     <glob pattern="*.gcode"/>
   </mime-type>
 
+  <mime-type type="application/x-fds-disk">
+    <_comment>Nintendo FDS disk image</_comment>
+    <acronym>FDS</acronym>
+    <expanded-acronym>Famicom Disk System</expanded-acronym>
+    <glob pattern="*.fds"/>
+    <magic>
+      <match type="string" value="*NINTENDO-HVC*" offset="1"/>
+    </magic>
+  </mime-type>
+
 </mime-info>

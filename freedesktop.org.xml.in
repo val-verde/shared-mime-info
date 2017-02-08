@@ -1969,7 +1969,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.fl"/>
   </mime-type>
-  <mime-type type="application/font-woff">
+  <mime-type type="font/woff">
     <_comment>WOFF font</_comment>
     <acronym>WOFF</acronym>
     <expanded-acronym>Web Open Font Format</expanded-acronym>
@@ -1978,6 +1978,7 @@ command to generate the output files.
       <match type="big32" value="0x774f4646" offset="0"/>
     </magic>
     <glob pattern="*.woff"/>
+    <alias type="application/font-woff"/>
   </mime-type>
   <mime-type type="application/x-font-type1">
     <_comment>PostScript type-1 font</_comment>

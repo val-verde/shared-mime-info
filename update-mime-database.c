@@ -61,6 +61,7 @@ const char *media_types[] = {
 	"x-content",
 	"x-epoc",
 	"x-scheme-handler",
+	"font",
 };
 
 /* Represents a MIME type */

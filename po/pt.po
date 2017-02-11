@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-info\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 17:11+0200\n"
-"PO-Revision-Date: 2016-08-02 15:11+0000\n"
+"POT-Creation-Date: 2016-08-03 23:51+0200\n"
+"PO-Revision-Date: 2016-09-05 14:53+0000\n"
 "Last-Translator: hadess <hadess@hadess.net>\n"
 "Language-Team: Portuguese (http://www.transifex.com/freedesktop/shared-mime-info/language/pt/)\n"
 "MIME-Version: 1.0\n"
@@ -664,175 +664,183 @@ msgstr "programa ECMAScript"
 msgid "Sega CD disc image"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:166
+#. Translate this to Kids Computer Pico if the console was known as such in
+#. your locale
+#. Should be Sega Pico in all but Japan:
+#. https://en.wikipedia.org/wiki/Sega_Pico
+#: ../freedesktop.org.xml.in.h:168
+msgid "Sega Pico ROM"
+msgstr ""
+
+#: ../freedesktop.org.xml.in.h:169
 msgid "Sega Saturn disc image"
 msgstr "imagem de disco Sega Saturn"
 
-#: ../freedesktop.org.xml.in.h:167
+#: ../freedesktop.org.xml.in.h:170
 msgid "Dreamcast GD-ROM"
 msgstr "GD-ROM Dreamcast"
 
-#: ../freedesktop.org.xml.in.h:168
+#: ../freedesktop.org.xml.in.h:171
 msgid "Nintendo DS ROM"
 msgstr "ROM Nintendo DS"
 
-#: ../freedesktop.org.xml.in.h:169
+#: ../freedesktop.org.xml.in.h:172
 msgid "PC Engine ROM"
 msgstr "ROM PC Engine"
 
-#: ../freedesktop.org.xml.in.h:170
+#: ../freedesktop.org.xml.in.h:173
 msgid "Wii disc image"
 msgstr "imagem de disco Wii"
 
-#: ../freedesktop.org.xml.in.h:171
+#: ../freedesktop.org.xml.in.h:174
 msgid "WiiWare bundle"
 msgstr "pacote WiiWare"
 
-#: ../freedesktop.org.xml.in.h:172
+#: ../freedesktop.org.xml.in.h:175
 msgid "GameCube disc image"
 msgstr "imagem de disco GameCube"
 
-#: ../freedesktop.org.xml.in.h:173
+#: ../freedesktop.org.xml.in.h:176
 msgid "Debian package"
 msgstr "pacote Debian"
 
-#: ../freedesktop.org.xml.in.h:174
+#: ../freedesktop.org.xml.in.h:177
 msgid "Qt Designer file"
 msgstr "ficheiro do Qt Designer"
 
-#: ../freedesktop.org.xml.in.h:175
+#: ../freedesktop.org.xml.in.h:178
 msgid "Qt Markup Language file"
 msgstr "ficheiro de linguagem Qt Markup"
 
-#: ../freedesktop.org.xml.in.h:176
+#: ../freedesktop.org.xml.in.h:179
 msgid "desktop configuration file"
 msgstr "ficheiro de configuração de área de trabalho"
 
-#: ../freedesktop.org.xml.in.h:177
+#: ../freedesktop.org.xml.in.h:180
 msgid "FictionBook document"
 msgstr "documento FictionBook"
 
-#: ../freedesktop.org.xml.in.h:178
+#: ../freedesktop.org.xml.in.h:181
 msgid "Compressed FictionBook document"
 msgstr "documento comprimido FictionBook"
 
-#: ../freedesktop.org.xml.in.h:179
+#: ../freedesktop.org.xml.in.h:182
 msgid "Dia diagram"
 msgstr "diagrama Dia"
 
-#: ../freedesktop.org.xml.in.h:180
+#: ../freedesktop.org.xml.in.h:183
 msgid "Dia shape"
 msgstr "forma Dia"
 
-#: ../freedesktop.org.xml.in.h:181
+#: ../freedesktop.org.xml.in.h:184
 msgid "TeX DVI document"
 msgstr "documento TeX DVI"
 
-#: ../freedesktop.org.xml.in.h:182
+#: ../freedesktop.org.xml.in.h:185
 msgid "Enlightenment theme"
 msgstr "tema Enlightenment"
 
-#: ../freedesktop.org.xml.in.h:183
+#: ../freedesktop.org.xml.in.h:186
 msgid "Egon Animator animation"
 msgstr "animação Egon Animator"
 
-#: ../freedesktop.org.xml.in.h:184
+#: ../freedesktop.org.xml.in.h:187
 msgid "executable"
 msgstr "executável"
 
-#: ../freedesktop.org.xml.in.h:185
+#: ../freedesktop.org.xml.in.h:188
 msgid "FLTK Fluid file"
 msgstr "ficheiro FLTK Fluid"
 
-#: ../freedesktop.org.xml.in.h:186
+#: ../freedesktop.org.xml.in.h:189
 msgid "WOFF font"
 msgstr "letra WOFF"
 
-#: ../freedesktop.org.xml.in.h:187
+#: ../freedesktop.org.xml.in.h:190
 msgid "Postscript type-1 font"
 msgstr "letra PostScript tipo 1"
 
-#: ../freedesktop.org.xml.in.h:188
+#: ../freedesktop.org.xml.in.h:191
 msgid "Adobe font metrics"
 msgstr "métrica de letras Adobe"
 
-#: ../freedesktop.org.xml.in.h:189
+#: ../freedesktop.org.xml.in.h:192
 msgid "BDF font"
 msgstr "letra BDF"
 
-#: ../freedesktop.org.xml.in.h:190
+#: ../freedesktop.org.xml.in.h:193
 msgid "DOS font"
 msgstr "letra DOS"
 
-#: ../freedesktop.org.xml.in.h:191
+#: ../freedesktop.org.xml.in.h:194
 msgid "Adobe FrameMaker font"
 msgstr "letra Adobe FrameMaker"
 
-#: ../freedesktop.org.xml.in.h:192
+#: ../freedesktop.org.xml.in.h:195
 msgid "LIBGRX font"
 msgstr "letra LIBGRX"
 
-#: ../freedesktop.org.xml.in.h:193
+#: ../freedesktop.org.xml.in.h:196
 msgid "Linux PSF console font"
 msgstr "letra de consola Linux PSF"
 
-#: ../freedesktop.org.xml.in.h:194
+#: ../freedesktop.org.xml.in.h:197
 msgid "Linux PSF console font (gzip-compressed)"
 msgstr "letra de consola Linux PSF (compressão gzip)"
 
-#: ../freedesktop.org.xml.in.h:195
+#: ../freedesktop.org.xml.in.h:198
 msgid "PCF font"
 msgstr "letra PCF"
 
-#: ../freedesktop.org.xml.in.h:196
+#: ../freedesktop.org.xml.in.h:199
 msgid "OpenType font"
 msgstr "letra OpenType"
 
-#: ../freedesktop.org.xml.in.h:197
+#: ../freedesktop.org.xml.in.h:200
 msgid "Speedo font"
 msgstr "letra Speedo"
 
-#: ../freedesktop.org.xml.in.h:198
+#: ../freedesktop.org.xml.in.h:201
 msgid "SunOS News font"
 msgstr "letra SunOS News"
 
-#: ../freedesktop.org.xml.in.h:199
+#: ../freedesktop.org.xml.in.h:202
 msgid "TeX font"
 msgstr "letra TeX"
 
-#: ../freedesktop.org.xml.in.h:200
+#: ../freedesktop.org.xml.in.h:203
 msgid "TeX font metrics"
 msgstr "métricas de letra TeX"
 
-#: ../freedesktop.org.xml.in.h:201
+#: ../freedesktop.org.xml.in.h:204
 msgid "TrueType font"
 msgstr "letra TrueType"
 
-#: ../freedesktop.org.xml.in.h:202
+#: ../freedesktop.org.xml.in.h:205
 msgid "TrueType XML font"
 msgstr "letra TrueType XML"
 
-#: ../freedesktop.org.xml.in.h:203
+#: ../freedesktop.org.xml.in.h:206
 msgid "V font"
 msgstr "letra V"
 
-#: ../freedesktop.org.xml.in.h:204
+#: ../freedesktop.org.xml.in.h:207
 msgid "Adobe FrameMaker document"
 msgstr "documento Adobe FrameMaker"
 
-#: ../freedesktop.org.xml.in.h:205
+#: ../freedesktop.org.xml.in.h:208
 msgid "Game Boy ROM"
 msgstr "ROM Game Boy"
 
-#: ../freedesktop.org.xml.in.h:206
+#: ../freedesktop.org.xml.in.h:209
 msgid "Game Boy Color ROM"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:207
+#: ../freedesktop.org.xml.in.h:210
 msgid "Game Boy Advance ROM"
 msgstr "ROM Game Boy Advance"
 
-#: ../freedesktop.org.xml.in.h:208
+#: ../freedesktop.org.xml.in.h:211
 msgid "GDBM database"
 msgstr "base de dados GDMB"
 
@@ -840,7 +848,7 @@ msgstr "base de dados GDMB"
 #. locale
 #. Should be Mega Drive in all but en_US, Mexico and Canada:
 #. https://en.wikipedia.org/wiki/Sega_Genesis#History
-#: ../freedesktop.org.xml.in.h:211
+#: ../freedesktop.org.xml.in.h:214
 msgid "Genesis ROM"
 msgstr "ROM Mega Drive"
 
@@ -848,2138 +856,2138 @@ msgstr "ROM Mega Drive"
 #. known as such in your locale
 #. Should be Super 32X in Japan, Mega Drive 32X in PAL region and Mega 32X in
 #. Brazil: https://en.wikipedia.org/wiki/32X
-#: ../freedesktop.org.xml.in.h:214
+#: ../freedesktop.org.xml.in.h:217
 msgid "Genesis 32X ROM"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:215
+#: ../freedesktop.org.xml.in.h:218
 msgid "translated messages (machine-readable)"
 msgstr "mensagens traduzidas (leitura pelo computador)"
 
-#: ../freedesktop.org.xml.in.h:216
+#: ../freedesktop.org.xml.in.h:219
 msgid "GTK+ Builder"
 msgstr "Construtor GTK+"
 
-#: ../freedesktop.org.xml.in.h:217
+#: ../freedesktop.org.xml.in.h:220
 msgid "Glade project"
 msgstr "projecto Glade"
 
-#: ../freedesktop.org.xml.in.h:218
+#: ../freedesktop.org.xml.in.h:221
 msgid "GnuCash financial data"
 msgstr "dados financeiros GnuCash"
 
-#: ../freedesktop.org.xml.in.h:219
+#: ../freedesktop.org.xml.in.h:222
 msgid "Gnumeric spreadsheet"
 msgstr "folha de cálculo Gnumeric"
 
-#: ../freedesktop.org.xml.in.h:220
+#: ../freedesktop.org.xml.in.h:223
 msgid "Gnuplot document"
 msgstr "documento Gnuplot"
 
-#: ../freedesktop.org.xml.in.h:221
+#: ../freedesktop.org.xml.in.h:224
 msgid "Graphite scientific graph"
 msgstr "gráfico científico Graphite"
 
-#: ../freedesktop.org.xml.in.h:222
+#: ../freedesktop.org.xml.in.h:225
 msgid "GTKtalog catalog"
 msgstr "catálogo GTKtalog"
 
-#: ../freedesktop.org.xml.in.h:223
+#: ../freedesktop.org.xml.in.h:226
 msgid "TeX DVI document (gzip-compressed)"
 msgstr "documento TeX DVI (compressão gzip)"
 
-#: ../freedesktop.org.xml.in.h:224
+#: ../freedesktop.org.xml.in.h:227
 msgid "Gzip archive"
 msgstr "arquivo Gzip"
 
-#: ../freedesktop.org.xml.in.h:225
+#: ../freedesktop.org.xml.in.h:228
 msgid "PDF document (gzip-compressed)"
 msgstr "documento PDF (compressão gzip)"
 
-#: ../freedesktop.org.xml.in.h:226
+#: ../freedesktop.org.xml.in.h:229
 msgid "PostScript document (gzip-compressed)"
 msgstr "documento PostScript (compressão gzip)"
 
-#: ../freedesktop.org.xml.in.h:227
+#: ../freedesktop.org.xml.in.h:230
 msgid "HDF document"
 msgstr "documento HDF"
 
-#: ../freedesktop.org.xml.in.h:228
+#: ../freedesktop.org.xml.in.h:231
 msgid "IFF file"
 msgstr "ficheiro IFF"
 
-#: ../freedesktop.org.xml.in.h:229
+#: ../freedesktop.org.xml.in.h:232
 msgid "iPod firmware"
 msgstr "firmware iPod"
 
-#: ../freedesktop.org.xml.in.h:230
+#: ../freedesktop.org.xml.in.h:233
 msgid "Java archive"
 msgstr "arquivo Java"
 
-#: ../freedesktop.org.xml.in.h:231
+#: ../freedesktop.org.xml.in.h:234
 msgid "Java class"
 msgstr "classe Java"
 
-#: ../freedesktop.org.xml.in.h:232
+#: ../freedesktop.org.xml.in.h:235
 msgid "JNLP file"
 msgstr "ficheiro JNLP"
 
-#: ../freedesktop.org.xml.in.h:233
+#: ../freedesktop.org.xml.in.h:236
 msgid "Java keystore"
 msgstr "armazém de chaves Java"
 
-#: ../freedesktop.org.xml.in.h:234
+#: ../freedesktop.org.xml.in.h:237
 msgid "Java JCE keystore"
 msgstr "armazém de chaves JavaJCE"
 
-#: ../freedesktop.org.xml.in.h:235
+#: ../freedesktop.org.xml.in.h:238
 msgid "Pack200 Java archive"
 msgstr "arquivo Java Pack200"
 
-#: ../freedesktop.org.xml.in.h:236
+#: ../freedesktop.org.xml.in.h:239
 msgid "JavaScript program"
 msgstr "programa JavaScript"
 
-#: ../freedesktop.org.xml.in.h:237
+#: ../freedesktop.org.xml.in.h:240
 msgid "JSON document"
 msgstr "documento JSON"
 
-#: ../freedesktop.org.xml.in.h:238
+#: ../freedesktop.org.xml.in.h:241
 msgid "JRD document"
 msgstr "doxumento JRD"
 
-#: ../freedesktop.org.xml.in.h:239
+#: ../freedesktop.org.xml.in.h:242
 msgid "JSON patch"
 msgstr "patch JSON"
 
-#: ../freedesktop.org.xml.in.h:240
+#: ../freedesktop.org.xml.in.h:243
 msgid "JSON-LD document"
 msgstr "documento JSON-LD"
 
-#: ../freedesktop.org.xml.in.h:241
+#: ../freedesktop.org.xml.in.h:244
 msgid "Jupyter Notebook"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:242
+#: ../freedesktop.org.xml.in.h:245
 msgid "CoffeeScript document"
 msgstr "documento CoffeeScript"
 
-#: ../freedesktop.org.xml.in.h:243
+#: ../freedesktop.org.xml.in.h:246
 msgid "JBuilder project"
 msgstr "projecto JBuilder"
 
-#: ../freedesktop.org.xml.in.h:244
+#: ../freedesktop.org.xml.in.h:247
 msgid "Karbon14 drawing"
 msgstr "desenho Karbon14"
 
-#: ../freedesktop.org.xml.in.h:245
+#: ../freedesktop.org.xml.in.h:248
 msgid "KChart chart"
 msgstr "gráfico KChart"
 
-#: ../freedesktop.org.xml.in.h:246
+#: ../freedesktop.org.xml.in.h:249
 msgid "Kexi settings for database server connection"
 msgstr "definições Kexi para ligação de servidor de base de dados"
 
-#: ../freedesktop.org.xml.in.h:247
+#: ../freedesktop.org.xml.in.h:250
 msgid "shortcut to Kexi project on database server"
 msgstr "atalho para projeto Kexi em servidor de base de dados"
 
-#: ../freedesktop.org.xml.in.h:248
+#: ../freedesktop.org.xml.in.h:251
 msgid "Kexi database file-based project"
 msgstr "projeto Kexi em base de dados baseada em ficheiros"
 
-#: ../freedesktop.org.xml.in.h:249
+#: ../freedesktop.org.xml.in.h:252
 msgid "KFormula formula"
 msgstr "fórmula KFormula"
 
-#: ../freedesktop.org.xml.in.h:250
+#: ../freedesktop.org.xml.in.h:253
 msgid "KIllustrator drawing"
 msgstr "desenho KIllustrator"
 
-#: ../freedesktop.org.xml.in.h:251
+#: ../freedesktop.org.xml.in.h:254
 msgid "Kivio flowchart"
 msgstr "gráfico de fluxo Kivio"
 
-#: ../freedesktop.org.xml.in.h:252
+#: ../freedesktop.org.xml.in.h:255
 msgid "Kontour drawing"
 msgstr "desenho Kontour"
 
-#: ../freedesktop.org.xml.in.h:253
+#: ../freedesktop.org.xml.in.h:256
 msgid "KPovModeler scene"
 msgstr "cenário KPovModeler"
 
-#: ../freedesktop.org.xml.in.h:254
+#: ../freedesktop.org.xml.in.h:257
 msgid "KPresenter presentation"
 msgstr "apresentação KPresenter"
 
-#: ../freedesktop.org.xml.in.h:255
+#: ../freedesktop.org.xml.in.h:258
 msgid "Krita document"
 msgstr "documento Krita"
 
-#: ../freedesktop.org.xml.in.h:256
+#: ../freedesktop.org.xml.in.h:259
 msgid "KSpread spreadsheet"
 msgstr "folha de cálculo KSpread"
 
-#: ../freedesktop.org.xml.in.h:257
+#: ../freedesktop.org.xml.in.h:260
 msgid "KSpread spreadsheet (encrypted)"
 msgstr "folha de cálculo KSpread (encriptada)"
 
-#: ../freedesktop.org.xml.in.h:258
+#: ../freedesktop.org.xml.in.h:261
 msgid "KSysV init package"
 msgstr "pacote inicial KSysV"
 
-#: ../freedesktop.org.xml.in.h:259
+#: ../freedesktop.org.xml.in.h:262
 msgid "Kugar document"
 msgstr "documento Kugar"
 
-#: ../freedesktop.org.xml.in.h:260
+#: ../freedesktop.org.xml.in.h:263
 msgid "KWord document"
 msgstr "documento KWord"
 
-#: ../freedesktop.org.xml.in.h:261
+#: ../freedesktop.org.xml.in.h:264
 msgid "KWord document (encrypted)"
 msgstr "documento KWord (encriptado)"
 
-#: ../freedesktop.org.xml.in.h:262
+#: ../freedesktop.org.xml.in.h:265
 msgid "LHA archive"
 msgstr "arquivo LHA"
 
-#: ../freedesktop.org.xml.in.h:263
+#: ../freedesktop.org.xml.in.h:266
 msgid "LHZ archive"
 msgstr "arquivo LHZ"
 
-#: ../freedesktop.org.xml.in.h:264
+#: ../freedesktop.org.xml.in.h:267
 msgid "message catalog"
 msgstr "catálogo de mensagens"
 
-#: ../freedesktop.org.xml.in.h:265
+#: ../freedesktop.org.xml.in.h:268
 msgid "LyX document"
 msgstr "documento LyX"
 
-#: ../freedesktop.org.xml.in.h:266
+#: ../freedesktop.org.xml.in.h:269
 msgid "LZ4 archive"
 msgstr "arquivo LZ4"
 
-#: ../freedesktop.org.xml.in.h:267
+#: ../freedesktop.org.xml.in.h:270
 msgid "Tar archive (LZ4-compressed)"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:268
+#: ../freedesktop.org.xml.in.h:271
 msgid "Lzip archive"
 msgstr "arquivo LZip"
 
-#: ../freedesktop.org.xml.in.h:269
+#: ../freedesktop.org.xml.in.h:272
 msgid "Tar archive (lzip-compressed)"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:270
+#: ../freedesktop.org.xml.in.h:273
 msgid "LZMA archive"
 msgstr "arquivo LZMA"
 
-#: ../freedesktop.org.xml.in.h:271
+#: ../freedesktop.org.xml.in.h:274
 msgid "Tar archive (LZMA-compressed)"
 msgstr "arquivo Tar (compressão LZMA)"
 
-#: ../freedesktop.org.xml.in.h:272
+#: ../freedesktop.org.xml.in.h:275
 msgid "LZO archive"
 msgstr "arquivo LZO"
 
-#: ../freedesktop.org.xml.in.h:273
+#: ../freedesktop.org.xml.in.h:276
 msgid "Qpress archive"
 msgstr "arquivo Qpress"
 
-#: ../freedesktop.org.xml.in.h:274
+#: ../freedesktop.org.xml.in.h:277
 msgid "XAR archive"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:275
+#: ../freedesktop.org.xml.in.h:278
 msgid "Zlib archive"
 msgstr "arquivo Zlib"
 
-#: ../freedesktop.org.xml.in.h:276
+#: ../freedesktop.org.xml.in.h:279
 msgid "MagicPoint presentation"
 msgstr "apresentação MagicPoint"
 
-#: ../freedesktop.org.xml.in.h:277
+#: ../freedesktop.org.xml.in.h:280
 msgid "Macintosh MacBinary file"
 msgstr "ficheiro MacBinary de Macintosh"
 
-#: ../freedesktop.org.xml.in.h:278
+#: ../freedesktop.org.xml.in.h:281
 msgid "Matroska stream"
 msgstr "fluxo Matroska"
 
-#: ../freedesktop.org.xml.in.h:279
+#: ../freedesktop.org.xml.in.h:282
 msgid "Matroska video"
 msgstr "vídeo Matroska"
 
-#: ../freedesktop.org.xml.in.h:280
+#: ../freedesktop.org.xml.in.h:283
 msgid "Matroska 3D video"
 msgstr "vídeo 3D Matroska"
 
-#: ../freedesktop.org.xml.in.h:281
+#: ../freedesktop.org.xml.in.h:284
 msgid "Matroska audio"
 msgstr "áudio Matroska"
 
-#: ../freedesktop.org.xml.in.h:282
+#: ../freedesktop.org.xml.in.h:285
 msgid "WebM video"
 msgstr "vídeo WebM"
 
-#: ../freedesktop.org.xml.in.h:283
+#: ../freedesktop.org.xml.in.h:286
 msgid "WebM audio"
 msgstr "áudio WebM"
 
-#: ../freedesktop.org.xml.in.h:284
+#: ../freedesktop.org.xml.in.h:287
 msgid "MHTML web archive"
 msgstr "arquivo web MHTML"
 
-#: ../freedesktop.org.xml.in.h:285
+#: ../freedesktop.org.xml.in.h:288
 msgid "MXF video"
 msgstr "vídeo MXF"
 
-#: ../freedesktop.org.xml.in.h:286
+#: ../freedesktop.org.xml.in.h:289
 msgid "OCL file"
 msgstr "ficheiro OCL"
 
-#: ../freedesktop.org.xml.in.h:287
+#: ../freedesktop.org.xml.in.h:290
 msgid "COBOL source file"
 msgstr "ficheiro origem COBOL"
 
-#: ../freedesktop.org.xml.in.h:288
+#: ../freedesktop.org.xml.in.h:291
 msgid "Mobipocket e-book"
 msgstr "ebook Mobipocket"
 
-#: ../freedesktop.org.xml.in.h:289
+#: ../freedesktop.org.xml.in.h:292
 msgid "Adobe FrameMaker MIF document"
 msgstr "documento Adobe FrameMaker MIF"
 
-#: ../freedesktop.org.xml.in.h:290
+#: ../freedesktop.org.xml.in.h:293
 msgid "Mozilla bookmarks"
 msgstr "marcadores do Mozilla"
 
-#: ../freedesktop.org.xml.in.h:291
+#: ../freedesktop.org.xml.in.h:294
 msgid "DOS/Windows executable"
 msgstr "executável DOS/Windows"
 
-#: ../freedesktop.org.xml.in.h:292
+#: ../freedesktop.org.xml.in.h:295
 msgid "Internet shortcut"
 msgstr "atalho da Internet"
 
-#: ../freedesktop.org.xml.in.h:293
+#: ../freedesktop.org.xml.in.h:296
 msgid "WRI document"
 msgstr "documento WRI"
 
-#: ../freedesktop.org.xml.in.h:294
+#: ../freedesktop.org.xml.in.h:297
 msgid "MSX ROM"
 msgstr "ROM MSX"
 
-#: ../freedesktop.org.xml.in.h:295
+#: ../freedesktop.org.xml.in.h:298
 msgid "M4 macro"
 msgstr "macro M4"
 
-#: ../freedesktop.org.xml.in.h:296
+#: ../freedesktop.org.xml.in.h:299
 msgid "Nintendo64 ROM"
 msgstr "ROM Nintendo64"
 
-#: ../freedesktop.org.xml.in.h:297
+#: ../freedesktop.org.xml.in.h:300
 msgid "Nautilus link"
 msgstr "atalho Nautilus"
 
-#: ../freedesktop.org.xml.in.h:298
+#: ../freedesktop.org.xml.in.h:301
 msgid "Neo-Geo Pocket ROM"
 msgstr ""
 
 #. Translate this to Famicom if the console was known as such in your locale
-#: ../freedesktop.org.xml.in.h:300
+#: ../freedesktop.org.xml.in.h:303
 msgid "NES ROM"
 msgstr "ROM NES"
 
-#: ../freedesktop.org.xml.in.h:301
+#: ../freedesktop.org.xml.in.h:304
 msgid "Unidata NetCDF document"
 msgstr "documento Unidata NetCDF"
 
-#: ../freedesktop.org.xml.in.h:302
+#: ../freedesktop.org.xml.in.h:305
 msgid "NewzBin usenet index"
 msgstr "índice usenet NewzBin"
 
-#: ../freedesktop.org.xml.in.h:303
+#: ../freedesktop.org.xml.in.h:306
 msgid "object code"
 msgstr "código de objeto"
 
-#: ../freedesktop.org.xml.in.h:304
+#: ../freedesktop.org.xml.in.h:307
 msgid "Annodex exchange format"
 msgstr "formato de troca Annodex"
 
-#: ../freedesktop.org.xml.in.h:305
+#: ../freedesktop.org.xml.in.h:308
 msgid "Annodex Video"
 msgstr "vídeo Annodex"
 
-#: ../freedesktop.org.xml.in.h:306
+#: ../freedesktop.org.xml.in.h:309
 msgid "Annodex Audio"
 msgstr "áudio Annodex"
 
-#: ../freedesktop.org.xml.in.h:307
+#: ../freedesktop.org.xml.in.h:310
 msgid "Ogg multimedia file"
 msgstr "ficheiro multimédia Ogg"
 
-#: ../freedesktop.org.xml.in.h:308
+#: ../freedesktop.org.xml.in.h:311
 msgid "Ogg Audio"
 msgstr "áudio Ogg"
 
-#: ../freedesktop.org.xml.in.h:309
+#: ../freedesktop.org.xml.in.h:312
 msgid "Ogg Video"
 msgstr "vídeo Ogg"
 
-#: ../freedesktop.org.xml.in.h:310
+#: ../freedesktop.org.xml.in.h:313
 msgid "Ogg Vorbis audio"
 msgstr "áudio Ogg Vorbis"
 
-#: ../freedesktop.org.xml.in.h:311
+#: ../freedesktop.org.xml.in.h:314
 msgid "Ogg FLAC audio"
 msgstr "áudio Ogg FLAC"
 
-#: ../freedesktop.org.xml.in.h:312
+#: ../freedesktop.org.xml.in.h:315
 msgid "Opus audio"
 msgstr "áudio Opus"
 
-#: ../freedesktop.org.xml.in.h:313
+#: ../freedesktop.org.xml.in.h:316
 msgid "Ogg Speex audio"
 msgstr "áudio Ogg Speex"
 
-#: ../freedesktop.org.xml.in.h:314
+#: ../freedesktop.org.xml.in.h:317
 msgid "Speex audio"
 msgstr "áudio Speex"
 
-#: ../freedesktop.org.xml.in.h:315
+#: ../freedesktop.org.xml.in.h:318
 msgid "Ogg Theora video"
 msgstr "vídeo Ogg Theora"
 
-#: ../freedesktop.org.xml.in.h:316
+#: ../freedesktop.org.xml.in.h:319
 msgid "OGM video"
 msgstr "vídeo OGM"
 
-#: ../freedesktop.org.xml.in.h:317
+#: ../freedesktop.org.xml.in.h:320
 msgid "OLE2 compound document storage"
 msgstr "armazenamento de documento composto OLE2"
 
-#: ../freedesktop.org.xml.in.h:318
+#: ../freedesktop.org.xml.in.h:321
 msgid "Microsoft Publisher document"
 msgstr "documento Microsoft Publisher"
 
-#: ../freedesktop.org.xml.in.h:319
+#: ../freedesktop.org.xml.in.h:322
 msgid "Windows Installer package"
 msgstr "pacote de instalação Windows"
 
-#: ../freedesktop.org.xml.in.h:320
+#: ../freedesktop.org.xml.in.h:323
 msgid "GNU Oleo spreadsheet"
 msgstr "folha de cálculo GNU Oleo"
 
-#: ../freedesktop.org.xml.in.h:321
+#: ../freedesktop.org.xml.in.h:324
 msgid "PAK archive"
 msgstr "arquivo PAK"
 
-#: ../freedesktop.org.xml.in.h:322
+#: ../freedesktop.org.xml.in.h:325
 msgid "Palm OS database"
 msgstr "base de dados Palm OS"
 
-#: ../freedesktop.org.xml.in.h:323
+#: ../freedesktop.org.xml.in.h:326
 msgid "Parchive archive"
 msgstr "arquivo Parchive"
 
-#: ../freedesktop.org.xml.in.h:324
+#: ../freedesktop.org.xml.in.h:327
 msgid "PEF executable"
 msgstr "executável PEF"
 
-#: ../freedesktop.org.xml.in.h:325
+#: ../freedesktop.org.xml.in.h:328
 msgid "Perl script"
 msgstr "script Perl"
 
-#: ../freedesktop.org.xml.in.h:326
+#: ../freedesktop.org.xml.in.h:329
 msgid "PHP script"
 msgstr "script PHP"
 
-#: ../freedesktop.org.xml.in.h:327
+#: ../freedesktop.org.xml.in.h:330
 msgid "PKCS#7 certificate bundle"
 msgstr "pacote de certificação PKCS#7"
 
-#: ../freedesktop.org.xml.in.h:328
+#: ../freedesktop.org.xml.in.h:331
 msgid "PKCS#12 certificate bundle"
 msgstr "pacote de certificação PKCS#12"
 
-#: ../freedesktop.org.xml.in.h:329
+#: ../freedesktop.org.xml.in.h:332
 msgid "PlanPerfect spreadsheet"
 msgstr "folha de cálculo PlanPerfect"
 
-#: ../freedesktop.org.xml.in.h:330
+#: ../freedesktop.org.xml.in.h:333
 msgid "Pocket Word document"
 msgstr "documento Pocket Word"
 
-#: ../freedesktop.org.xml.in.h:331
+#: ../freedesktop.org.xml.in.h:334
 msgid "profiler results"
 msgstr "resultados de análise de perfil"
 
-#: ../freedesktop.org.xml.in.h:332
+#: ../freedesktop.org.xml.in.h:335
 msgid "Pathetic Writer document"
 msgstr "documento do Pathetic Writer"
 
-#: ../freedesktop.org.xml.in.h:333
+#: ../freedesktop.org.xml.in.h:336
 msgid "Python bytecode"
 msgstr "código binário Python"
 
-#: ../freedesktop.org.xml.in.h:334
+#: ../freedesktop.org.xml.in.h:337
 msgid "QtiPlot document"
 msgstr "documento QtiPlot"
 
-#: ../freedesktop.org.xml.in.h:335
+#: ../freedesktop.org.xml.in.h:338
 msgid "Quattro Pro spreadsheet"
 msgstr "folha de cálculo Quattro Pro"
 
-#: ../freedesktop.org.xml.in.h:336
+#: ../freedesktop.org.xml.in.h:339
 msgid "QuickTime metalink playlist"
 msgstr "lista de reprodução QuickTime metalink"
 
-#: ../freedesktop.org.xml.in.h:337
+#: ../freedesktop.org.xml.in.h:340
 msgid "Quicken document"
 msgstr "documento Quicken"
 
-#: ../freedesktop.org.xml.in.h:338
+#: ../freedesktop.org.xml.in.h:341
 msgid "RAR archive"
 msgstr "arquivo RAR"
 
-#: ../freedesktop.org.xml.in.h:339
+#: ../freedesktop.org.xml.in.h:342
 msgid "DAR archive"
 msgstr "arquivo DAR"
 
-#: ../freedesktop.org.xml.in.h:340
+#: ../freedesktop.org.xml.in.h:343
 msgid "Alzip archive"
 msgstr "arquivo Alzip"
 
-#: ../freedesktop.org.xml.in.h:341
+#: ../freedesktop.org.xml.in.h:344
 msgid "rejected patch"
 msgstr "patch rejeitado"
 
-#: ../freedesktop.org.xml.in.h:342
+#: ../freedesktop.org.xml.in.h:345
 msgid "RPM package"
 msgstr "pacote RPM"
 
-#: ../freedesktop.org.xml.in.h:343
+#: ../freedesktop.org.xml.in.h:346
 msgid "Source RPM package"
 msgstr "pacote origem RPM"
 
-#: ../freedesktop.org.xml.in.h:344
+#: ../freedesktop.org.xml.in.h:347
 msgid "Ruby script"
 msgstr "script Ruby"
 
-#: ../freedesktop.org.xml.in.h:345
+#: ../freedesktop.org.xml.in.h:348
 msgid "Markaby script"
 msgstr "script Markaby"
 
-#: ../freedesktop.org.xml.in.h:346
+#: ../freedesktop.org.xml.in.h:349
 msgid "Rust source code"
 msgstr "código origem Rust"
 
-#: ../freedesktop.org.xml.in.h:347
+#: ../freedesktop.org.xml.in.h:350
 msgid "SC/Xspread spreadsheet"
 msgstr "folha de cálculo SC/Xspread"
 
-#: ../freedesktop.org.xml.in.h:348
+#: ../freedesktop.org.xml.in.h:351
 msgid "shell archive"
 msgstr "arquivo de terminal"
 
-#: ../freedesktop.org.xml.in.h:349
+#: ../freedesktop.org.xml.in.h:352
 msgid "libtool shared library"
 msgstr "biblioteca partilhada libtool"
 
-#: ../freedesktop.org.xml.in.h:350
+#: ../freedesktop.org.xml.in.h:353
 msgid "shared library"
 msgstr "biblioteca partilhada"
 
-#: ../freedesktop.org.xml.in.h:351
+#: ../freedesktop.org.xml.in.h:354
 msgid "shell script"
 msgstr "script de terminal"
 
-#: ../freedesktop.org.xml.in.h:352
+#: ../freedesktop.org.xml.in.h:355
 msgid "Shockwave Flash file"
 msgstr "ficheiro Shockwave Flash"
 
 #. translators: "Shorten" is the name of an audio codec
-#: ../freedesktop.org.xml.in.h:354
+#: ../freedesktop.org.xml.in.h:357
 msgid "Shorten audio"
 msgstr "áudio Shorten"
 
-#: ../freedesktop.org.xml.in.h:355
+#: ../freedesktop.org.xml.in.h:358
 msgid "Siag spreadsheet"
 msgstr "folha de cálculo Siag"
 
-#: ../freedesktop.org.xml.in.h:356
+#: ../freedesktop.org.xml.in.h:359
 msgid "Skencil document"
 msgstr "documento Skencil"
 
-#: ../freedesktop.org.xml.in.h:357
+#: ../freedesktop.org.xml.in.h:360
 msgid "Stampede package"
 msgstr "pacote Stampede"
 
-#: ../freedesktop.org.xml.in.h:358
+#: ../freedesktop.org.xml.in.h:361
 msgid "SG-1000 ROM"
 msgstr ""
 
 #. Translate this to "Master System/Mark III" if the console was known as such
 #. in your locale (probably only in Japan)
-#: ../freedesktop.org.xml.in.h:360
+#: ../freedesktop.org.xml.in.h:363
 msgid "Master System ROM"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:361
+#: ../freedesktop.org.xml.in.h:364
 msgid "Game Gear ROM"
 msgstr ""
 
 #. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in
 #. Europe) if the console was known as such in your locale
-#: ../freedesktop.org.xml.in.h:363
+#: ../freedesktop.org.xml.in.h:366
 msgid "Super NES ROM"
 msgstr "ROM Super Nintendo"
 
-#: ../freedesktop.org.xml.in.h:364
+#: ../freedesktop.org.xml.in.h:367
 msgid "StuffIt archive"
 msgstr "arquivo StuffIt"
 
-#: ../freedesktop.org.xml.in.h:365
+#: ../freedesktop.org.xml.in.h:368
 msgid "SubRip subtitles"
 msgstr "legendas SubRip"
 
-#: ../freedesktop.org.xml.in.h:366
+#: ../freedesktop.org.xml.in.h:369
 msgid "WebVTT subtitles"
 msgstr "legendas WebVTT"
 
-#: ../freedesktop.org.xml.in.h:367
+#: ../freedesktop.org.xml.in.h:370
 msgid "SAMI subtitles"
 msgstr "legendas SAMI"
 
-#: ../freedesktop.org.xml.in.h:368
+#: ../freedesktop.org.xml.in.h:371
 msgid "MicroDVD subtitles"
 msgstr "legendas MicroDVD"
 
-#: ../freedesktop.org.xml.in.h:369
+#: ../freedesktop.org.xml.in.h:372
 msgid "MPSub subtitles"
 msgstr "legendas MPSub"
 
-#: ../freedesktop.org.xml.in.h:370
+#: ../freedesktop.org.xml.in.h:373
 msgid "SSA subtitles"
 msgstr "legendas SSA"
 
-#: ../freedesktop.org.xml.in.h:371
+#: ../freedesktop.org.xml.in.h:374
 msgid "SubViewer subtitles"
 msgstr "legendas SubViewer"
 
-#: ../freedesktop.org.xml.in.h:372
+#: ../freedesktop.org.xml.in.h:375
 msgid "iMelody ringtone"
 msgstr "toque iMelody"
 
-#: ../freedesktop.org.xml.in.h:373
+#: ../freedesktop.org.xml.in.h:376
 msgid "SMAF audio"
 msgstr "áudio SMAF"
 
-#: ../freedesktop.org.xml.in.h:374
+#: ../freedesktop.org.xml.in.h:377
 msgid "MRML playlist"
 msgstr "lista de reprodução MRML"
 
-#: ../freedesktop.org.xml.in.h:375
+#: ../freedesktop.org.xml.in.h:378
 msgid "XMF audio"
 msgstr "aúdio XMF"
 
-#: ../freedesktop.org.xml.in.h:376
+#: ../freedesktop.org.xml.in.h:379
 msgid "SV4 CPIO archive"
 msgstr "arquivo SV4 CPIO"
 
-#: ../freedesktop.org.xml.in.h:377
+#: ../freedesktop.org.xml.in.h:380
 msgid "SV4 CPIO archive (with CRC)"
 msgstr "arquivo SV4 CPIO (com CRC)"
 
-#: ../freedesktop.org.xml.in.h:378
+#: ../freedesktop.org.xml.in.h:381
 msgid "Tar archive"
 msgstr "arquivo Tar"
 
-#: ../freedesktop.org.xml.in.h:379
+#: ../freedesktop.org.xml.in.h:382
 msgid "Tar archive (compressed)"
 msgstr "arquivo Tar (comprimido)"
 
-#: ../freedesktop.org.xml.in.h:380
+#: ../freedesktop.org.xml.in.h:383
 msgid "generic font file"
 msgstr "ficheiro genérico de letra"
 
-#: ../freedesktop.org.xml.in.h:381
+#: ../freedesktop.org.xml.in.h:384
 msgid "packed font file"
 msgstr "ficheiro de letras empacotadas"
 
-#: ../freedesktop.org.xml.in.h:382
+#: ../freedesktop.org.xml.in.h:385
 msgid "TGIF document"
 msgstr "documento TGIF"
 
-#: ../freedesktop.org.xml.in.h:383
+#: ../freedesktop.org.xml.in.h:386
 msgid "theme"
 msgstr "tema"
 
-#: ../freedesktop.org.xml.in.h:384
+#: ../freedesktop.org.xml.in.h:387
 msgid "ToutDoux document"
 msgstr "documento ToutDoux"
 
-#: ../freedesktop.org.xml.in.h:385
+#: ../freedesktop.org.xml.in.h:388
 msgid "backup file"
 msgstr "cópia de segurança"
 
-#: ../freedesktop.org.xml.in.h:386
+#: ../freedesktop.org.xml.in.h:389
 msgid "Troff document"
 msgstr "documento Troff"
 
-#: ../freedesktop.org.xml.in.h:387
+#: ../freedesktop.org.xml.in.h:390
 msgid "Manpage manual document"
 msgstr "documento de ajuda Manpage"
 
-#: ../freedesktop.org.xml.in.h:388
+#: ../freedesktop.org.xml.in.h:391
 msgid "manual page (compressed)"
 msgstr "página de manual (comprimida)"
 
-#: ../freedesktop.org.xml.in.h:389
+#: ../freedesktop.org.xml.in.h:392
 msgid "Tar archive (LZO-compressed)"
 msgstr "arquivo Tar (compressão LZO)"
 
-#: ../freedesktop.org.xml.in.h:390
+#: ../freedesktop.org.xml.in.h:393
 msgid "XZ archive"
 msgstr "arquivo XZ"
 
-#: ../freedesktop.org.xml.in.h:391
+#: ../freedesktop.org.xml.in.h:394
 msgid "Tar archive (XZ-compressed)"
 msgstr "arquivo Tar (compressão XZ)"
 
-#: ../freedesktop.org.xml.in.h:392
+#: ../freedesktop.org.xml.in.h:395
 msgid "PDF document (XZ-compressed)"
 msgstr "documento PDF (compressão XZ)"
 
-#: ../freedesktop.org.xml.in.h:393
+#: ../freedesktop.org.xml.in.h:396
 msgid "Ustar archive"
 msgstr "arquivo Ustar"
 
-#: ../freedesktop.org.xml.in.h:394
+#: ../freedesktop.org.xml.in.h:397
 msgid "WAIS source code"
 msgstr "código origem WAIS"
 
-#: ../freedesktop.org.xml.in.h:395
+#: ../freedesktop.org.xml.in.h:398
 msgid "WordPerfect/Drawperfect image"
 msgstr "imagem do WordPerfect/Drawperfect"
 
-#: ../freedesktop.org.xml.in.h:396
+#: ../freedesktop.org.xml.in.h:399
 msgid "DER/PEM/Netscape-encoded X.509 certificate"
 msgstr "certificado X.509 codificado com DER/PEM/Netscape"
 
-#: ../freedesktop.org.xml.in.h:397
+#: ../freedesktop.org.xml.in.h:400
 msgid "empty document"
 msgstr "documento vazio"
 
-#: ../freedesktop.org.xml.in.h:398
+#: ../freedesktop.org.xml.in.h:401
 msgid "Zoo archive"
 msgstr "arquivo Zoo"
 
-#: ../freedesktop.org.xml.in.h:399
+#: ../freedesktop.org.xml.in.h:402
 msgid "XHTML page"
 msgstr "página XHTML"
 
-#: ../freedesktop.org.xml.in.h:400
+#: ../freedesktop.org.xml.in.h:403
 msgid "Zip archive"
 msgstr "arquivo Zip"
 
-#: ../freedesktop.org.xml.in.h:401
+#: ../freedesktop.org.xml.in.h:404
 msgid "WIM disk Image"
 msgstr "imagem de disco WIM"
 
-#: ../freedesktop.org.xml.in.h:402
+#: ../freedesktop.org.xml.in.h:405
 msgid "Dolby Digital audio"
 msgstr "áudio Dolby Digital"
 
-#: ../freedesktop.org.xml.in.h:403
+#: ../freedesktop.org.xml.in.h:406
 msgid "DTS audio"
 msgstr "aúdio DTS"
 
-#: ../freedesktop.org.xml.in.h:404
+#: ../freedesktop.org.xml.in.h:407
 msgid "DTSHD audio"
 msgstr "áudio DTSHD"
 
-#: ../freedesktop.org.xml.in.h:405
+#: ../freedesktop.org.xml.in.h:408
 msgid "AMR audio"
 msgstr "áudio AMR"
 
-#: ../freedesktop.org.xml.in.h:406
+#: ../freedesktop.org.xml.in.h:409
 msgid "AMR-WB audio"
 msgstr "áudio AMR-WB"
 
-#: ../freedesktop.org.xml.in.h:407
+#: ../freedesktop.org.xml.in.h:410
 msgid "ULAW (Sun) audio"
 msgstr "áudio ULAW (Sun)"
 
-#: ../freedesktop.org.xml.in.h:408
+#: ../freedesktop.org.xml.in.h:411
 msgid "Commodore 64 audio"
 msgstr "áudio Commodore 64"
 
-#: ../freedesktop.org.xml.in.h:409
+#: ../freedesktop.org.xml.in.h:412
 msgid "PCM audio"
 msgstr "áudio PCM"
 
-#: ../freedesktop.org.xml.in.h:410
+#: ../freedesktop.org.xml.in.h:413
 msgid "AIFC audio"
 msgstr "áudio AIFC"
 
-#: ../freedesktop.org.xml.in.h:411
+#: ../freedesktop.org.xml.in.h:414
 msgid "AIFF/Amiga/Mac audio"
 msgstr "áudio AIFF/Amiga/Mac"
 
-#: ../freedesktop.org.xml.in.h:412
+#: ../freedesktop.org.xml.in.h:415
 msgid "Monkey's audio"
 msgstr "áudio Monkey"
 
-#: ../freedesktop.org.xml.in.h:413
+#: ../freedesktop.org.xml.in.h:416
 msgid "Impulse Tracker audio"
 msgstr "áudio Impulse Tracker"
 
-#: ../freedesktop.org.xml.in.h:414
+#: ../freedesktop.org.xml.in.h:417
 msgid "FLAC audio"
 msgstr "áudio FLAC"
 
-#: ../freedesktop.org.xml.in.h:415
+#: ../freedesktop.org.xml.in.h:418
 msgid "WavPack audio"
 msgstr "áudio WavPack"
 
-#: ../freedesktop.org.xml.in.h:416
+#: ../freedesktop.org.xml.in.h:419
 msgid "WavPack audio correction file"
 msgstr "ficheiro de correção áudio WavPack"
 
-#: ../freedesktop.org.xml.in.h:417
+#: ../freedesktop.org.xml.in.h:420
 msgid "MIDI audio"
 msgstr "áudio MIDI"
 
-#: ../freedesktop.org.xml.in.h:418
+#: ../freedesktop.org.xml.in.h:421
 msgid "compressed Tracker audio"
 msgstr "áudio comprimido Tracker"
 
-#: ../freedesktop.org.xml.in.h:419
+#: ../freedesktop.org.xml.in.h:422
 msgid "AAC audio"
 msgstr "áudio AAC"
 
-#: ../freedesktop.org.xml.in.h:420
+#: ../freedesktop.org.xml.in.h:423
 msgid "MPEG-4 audio"
 msgstr "áudio MPEG-4"
 
-#: ../freedesktop.org.xml.in.h:421
+#: ../freedesktop.org.xml.in.h:424
 msgid "MPEG-4 video"
 msgstr "vídeo MPEG-4"
 
-#: ../freedesktop.org.xml.in.h:422
+#: ../freedesktop.org.xml.in.h:425
 msgid "MPEG-4 audio book"
 msgstr "livro áudio MPEG-4"
 
-#: ../freedesktop.org.xml.in.h:423
+#: ../freedesktop.org.xml.in.h:426
 msgid "3GPP multimedia file"
 msgstr "ficheiro multimédia 3GPP"
 
-#: ../freedesktop.org.xml.in.h:424
+#: ../freedesktop.org.xml.in.h:427
 msgid "3GPP2 multimedia file"
 msgstr "ficheiro multimédia 3GPP2"
 
-#: ../freedesktop.org.xml.in.h:425
+#: ../freedesktop.org.xml.in.h:428
 msgid "Amiga SoundTracker audio"
 msgstr "áudio SoundTracker do Amiga"
 
-#: ../freedesktop.org.xml.in.h:426
+#: ../freedesktop.org.xml.in.h:429
 msgid "MP2 audio"
 msgstr "áudio MP2"
 
-#: ../freedesktop.org.xml.in.h:427
+#: ../freedesktop.org.xml.in.h:430
 msgid "MP3 audio"
 msgstr "áudio MP3"
 
-#: ../freedesktop.org.xml.in.h:428
+#: ../freedesktop.org.xml.in.h:431
 msgid "MP3 audio (streamed)"
 msgstr "áudio MP3 (em fluxo)"
 
-#: ../freedesktop.org.xml.in.h:429
+#: ../freedesktop.org.xml.in.h:432
 msgid "HTTP Live Streaming playlist"
 msgstr "lista de reprodução HTTP Live Streaming"
 
-#: ../freedesktop.org.xml.in.h:430
+#: ../freedesktop.org.xml.in.h:433
 msgid "Microsoft ASX playlist"
 msgstr "lista de reprodução Microsoft ASX"
 
-#: ../freedesktop.org.xml.in.h:431
+#: ../freedesktop.org.xml.in.h:434
 msgid "PSF audio"
 msgstr "áudio PSF"
 
-#: ../freedesktop.org.xml.in.h:432
+#: ../freedesktop.org.xml.in.h:435
 msgid "MiniPSF audio"
 msgstr "áudio MiniPSF"
 
-#: ../freedesktop.org.xml.in.h:433
+#: ../freedesktop.org.xml.in.h:436
 msgid "PSFlib audio library"
 msgstr "biblioteca áudio PSFlib"
 
-#: ../freedesktop.org.xml.in.h:434
+#: ../freedesktop.org.xml.in.h:437
 msgid "Windows Media audio"
 msgstr "áudio Windows Media"
 
-#: ../freedesktop.org.xml.in.h:435
+#: ../freedesktop.org.xml.in.h:438
 msgid "Musepack audio"
 msgstr "áudio Musepack"
 
-#: ../freedesktop.org.xml.in.h:436
+#: ../freedesktop.org.xml.in.h:439
 msgid "RealAudio document"
 msgstr "documento RealAudio"
 
-#: ../freedesktop.org.xml.in.h:437
+#: ../freedesktop.org.xml.in.h:440
 msgid "RealMedia Metafile"
 msgstr "metaficheiro RealMedia"
 
-#: ../freedesktop.org.xml.in.h:438
+#: ../freedesktop.org.xml.in.h:441
 msgid "RealVideo document"
 msgstr "documento RealVideo"
 
-#: ../freedesktop.org.xml.in.h:439
+#: ../freedesktop.org.xml.in.h:442
 msgid "RealMedia document"
 msgstr "documento RealMedia"
 
-#: ../freedesktop.org.xml.in.h:440
+#: ../freedesktop.org.xml.in.h:443
 msgid "RealPix document"
 msgstr "documento RealPix"
 
-#: ../freedesktop.org.xml.in.h:441
+#: ../freedesktop.org.xml.in.h:444
 msgid "RealText document"
 msgstr "documento RealText"
 
-#: ../freedesktop.org.xml.in.h:442
+#: ../freedesktop.org.xml.in.h:445
 msgid "RIFF audio"
 msgstr "áudio RIFF"
 
-#: ../freedesktop.org.xml.in.h:443
+#: ../freedesktop.org.xml.in.h:446
 msgid "RIFF container"
 msgstr "contentor RIFF"
 
-#: ../freedesktop.org.xml.in.h:444
+#: ../freedesktop.org.xml.in.h:447
 msgid "Scream Tracker 3 audio"
 msgstr "áudio Scream Tracker 3"
 
-#: ../freedesktop.org.xml.in.h:445
+#: ../freedesktop.org.xml.in.h:448
 msgid "MP3 ShoutCast playlist"
 msgstr "lista de reprodução MP3 ShoutCast"
 
-#: ../freedesktop.org.xml.in.h:446
+#: ../freedesktop.org.xml.in.h:449
 msgid "Scream Tracker audio"
 msgstr "áudio Scream Tracker"
 
-#: ../freedesktop.org.xml.in.h:447
+#: ../freedesktop.org.xml.in.h:450
 msgid "VOC audio"
 msgstr "áudio VOC"
 
-#: ../freedesktop.org.xml.in.h:448
+#: ../freedesktop.org.xml.in.h:451
 msgid "WAV audio"
 msgstr "áudio WAV"
 
-#: ../freedesktop.org.xml.in.h:449
+#: ../freedesktop.org.xml.in.h:452
 msgid "Scream Tracker instrument"
 msgstr "instrumento Scream Tracker"
 
-#: ../freedesktop.org.xml.in.h:450
+#: ../freedesktop.org.xml.in.h:453
 msgid "FastTracker II audio"
 msgstr "áudio FastTracker II"
 
-#: ../freedesktop.org.xml.in.h:451
+#: ../freedesktop.org.xml.in.h:454
 msgid "TrueAudio audio"
 msgstr "áudio TrueAudio"
 
-#: ../freedesktop.org.xml.in.h:452
+#: ../freedesktop.org.xml.in.h:455
 msgid "Windows BMP image"
 msgstr "imagem BMP Windows"
 
-#: ../freedesktop.org.xml.in.h:453
+#: ../freedesktop.org.xml.in.h:456
 msgid "WBMP image"
 msgstr "imagem WBMP"
 
-#: ../freedesktop.org.xml.in.h:454
+#: ../freedesktop.org.xml.in.h:457
 msgid "Computer Graphics Metafile"
 msgstr "metaficheiro Computer Graphics"
 
-#: ../freedesktop.org.xml.in.h:455
+#: ../freedesktop.org.xml.in.h:458
 msgid "CCITT G3 fax"
 msgstr "fax CCITT G3"
 
-#: ../freedesktop.org.xml.in.h:456
+#: ../freedesktop.org.xml.in.h:459
 msgid "G3 fax image"
 msgstr "imagem de fax G3"
 
-#: ../freedesktop.org.xml.in.h:457
+#: ../freedesktop.org.xml.in.h:460
 msgid "GIF image"
 msgstr "imagem GIF"
 
-#: ../freedesktop.org.xml.in.h:458
+#: ../freedesktop.org.xml.in.h:461
 msgid "IEF image"
 msgstr "imagem IEF"
 
-#: ../freedesktop.org.xml.in.h:459
+#: ../freedesktop.org.xml.in.h:462
 msgid "JPEG image"
 msgstr "imagem JPEG"
 
-#: ../freedesktop.org.xml.in.h:460
+#: ../freedesktop.org.xml.in.h:463
 msgid "JPEG-2000 image"
 msgstr "imagem JPEG-2000"
 
-#: ../freedesktop.org.xml.in.h:461
+#: ../freedesktop.org.xml.in.h:464
 msgid "OpenRaster archiving image"
 msgstr "imagem arquivo OpenRaster"
 
-#: ../freedesktop.org.xml.in.h:462
+#: ../freedesktop.org.xml.in.h:465
 msgid "DirectDraw surface"
 msgstr "superfície DirectDraw"
 
-#: ../freedesktop.org.xml.in.h:463
+#: ../freedesktop.org.xml.in.h:466
 msgid "X11 cursor"
 msgstr "cursor X11"
 
-#: ../freedesktop.org.xml.in.h:464
+#: ../freedesktop.org.xml.in.h:467
 msgid "EXR image"
 msgstr "imagem EXR"
 
-#: ../freedesktop.org.xml.in.h:465
+#: ../freedesktop.org.xml.in.h:468
 msgid "Macintosh Quickdraw/PICT drawing"
 msgstr "desenho Quickdraw/PICT de Macintosh"
 
-#: ../freedesktop.org.xml.in.h:466
+#: ../freedesktop.org.xml.in.h:469
 msgid "UFRaw ID image"
 msgstr "imagem UFRaw ID"
 
-#: ../freedesktop.org.xml.in.h:467
+#: ../freedesktop.org.xml.in.h:470
 msgid "digital raw image"
 msgstr "imagem digital em bruto"
 
-#: ../freedesktop.org.xml.in.h:468
+#: ../freedesktop.org.xml.in.h:471
 msgid "Adobe DNG negative"
 msgstr "negativo Adobe DNG"
 
-#: ../freedesktop.org.xml.in.h:469
+#: ../freedesktop.org.xml.in.h:472
 msgid "Canon CRW raw image"
 msgstr "imagem em bruto Canon CRW"
 
-#: ../freedesktop.org.xml.in.h:470
+#: ../freedesktop.org.xml.in.h:473
 msgid "Canon CR2 raw image"
 msgstr "imagem em bruto Canon CR2"
 
-#: ../freedesktop.org.xml.in.h:471
+#: ../freedesktop.org.xml.in.h:474
 msgid "Fuji RAF raw image"
 msgstr "imagem em bruto Fuji RAF"
 
-#: ../freedesktop.org.xml.in.h:472
+#: ../freedesktop.org.xml.in.h:475
 msgid "Kodak DCR raw image"
 msgstr "imagem em bruto Kodak DCR"
 
-#: ../freedesktop.org.xml.in.h:473
+#: ../freedesktop.org.xml.in.h:476
 msgid "Kodak K25 raw image"
 msgstr "imagem em bruto Kodak K25"
 
-#: ../freedesktop.org.xml.in.h:474
+#: ../freedesktop.org.xml.in.h:477
 msgid "Kodak KDC raw image"
 msgstr "imagem em bruto Kodak KDC"
 
-#: ../freedesktop.org.xml.in.h:475
+#: ../freedesktop.org.xml.in.h:478
 msgid "Minolta MRW raw image"
 msgstr "imagem em bruto Minolta MRW"
 
-#: ../freedesktop.org.xml.in.h:476
+#: ../freedesktop.org.xml.in.h:479
 msgid "Nikon NEF raw image"
 msgstr "imagem em bruto Nikon NEF"
 
-#: ../freedesktop.org.xml.in.h:477
+#: ../freedesktop.org.xml.in.h:480
 msgid "Olympus ORF raw image"
 msgstr "imagem em bruto Olympus ORF"
 
-#: ../freedesktop.org.xml.in.h:478
+#: ../freedesktop.org.xml.in.h:481
 msgid "Panasonic raw image"
 msgstr "imagem em bruto Panasonic"
 
-#: ../freedesktop.org.xml.in.h:479
+#: ../freedesktop.org.xml.in.h:482
 msgid "Panasonic raw2 image"
 msgstr "imagem em bruto Panasonic"
 
-#: ../freedesktop.org.xml.in.h:480
+#: ../freedesktop.org.xml.in.h:483
 msgid "Pentax PEF raw image"
 msgstr "imagem em bruto Pentax PEF"
 
-#: ../freedesktop.org.xml.in.h:481
+#: ../freedesktop.org.xml.in.h:484
 msgid "Sigma X3F raw image"
 msgstr "imagem em bruto Sigma X3F"
 
-#: ../freedesktop.org.xml.in.h:482
+#: ../freedesktop.org.xml.in.h:485
 msgid "Sony SRF raw image"
 msgstr "imagem em bruto Sony SRF"
 
-#: ../freedesktop.org.xml.in.h:483
+#: ../freedesktop.org.xml.in.h:486
 msgid "Sony SR2 raw image"
 msgstr "imagem em bruto Sony SR2"
 
-#: ../freedesktop.org.xml.in.h:484
+#: ../freedesktop.org.xml.in.h:487
 msgid "Sony ARW raw image"
 msgstr "imagem em bruto Sony ARW"
 
-#: ../freedesktop.org.xml.in.h:485
+#: ../freedesktop.org.xml.in.h:488
 msgid "PNG image"
 msgstr "imagem PNG"
 
-#: ../freedesktop.org.xml.in.h:486
+#: ../freedesktop.org.xml.in.h:489
 msgid "Run Length Encoded bitmap image"
 msgstr "mapa de bitas Run Length Encoded"
 
-#: ../freedesktop.org.xml.in.h:487
+#: ../freedesktop.org.xml.in.h:490
 msgid "SVG image"
 msgstr "imagem SVG"
 
-#: ../freedesktop.org.xml.in.h:488
+#: ../freedesktop.org.xml.in.h:491
 msgid "compressed SVG image"
 msgstr "imagem SVG comprimida"
 
-#: ../freedesktop.org.xml.in.h:489
+#: ../freedesktop.org.xml.in.h:492
 msgid "TIFF image"
 msgstr "imagem TIFF"
 
-#: ../freedesktop.org.xml.in.h:490
+#: ../freedesktop.org.xml.in.h:493
 msgid "Multi-page TIFF image"
 msgstr "imagem TIFF multipágina"
 
-#: ../freedesktop.org.xml.in.h:491
+#: ../freedesktop.org.xml.in.h:494
 msgid "AutoCAD image"
 msgstr "imagem AutoCAD"
 
-#: ../freedesktop.org.xml.in.h:492
+#: ../freedesktop.org.xml.in.h:495
 msgid "DXF vector image"
 msgstr "imagem de vectores DXF"
 
-#: ../freedesktop.org.xml.in.h:493
+#: ../freedesktop.org.xml.in.h:496
 msgid "Microsoft Document Imaging format"
 msgstr "formato Microsoft Document Imaging"
 
-#: ../freedesktop.org.xml.in.h:494
+#: ../freedesktop.org.xml.in.h:497
 msgid "WebP image"
 msgstr "imagem WebP"
 
-#: ../freedesktop.org.xml.in.h:495
+#: ../freedesktop.org.xml.in.h:498
 msgid "3D Studio image"
 msgstr "imagem 3D Studio"
 
-#: ../freedesktop.org.xml.in.h:496
+#: ../freedesktop.org.xml.in.h:499
 msgid "Applix Graphics image"
 msgstr "imagem Applix Graphics"
 
-#: ../freedesktop.org.xml.in.h:497
+#: ../freedesktop.org.xml.in.h:500
 msgid "EPS image (bzip-compressed)"
 msgstr "imagem EPS (compressão bzip)"
 
-#: ../freedesktop.org.xml.in.h:498
+#: ../freedesktop.org.xml.in.h:501
 msgid "CMU raster image"
 msgstr "imagem raster CMU"
 
-#: ../freedesktop.org.xml.in.h:499
+#: ../freedesktop.org.xml.in.h:502
 msgid "compressed GIMP image"
 msgstr "imagem GIMP comprimida"
 
-#: ../freedesktop.org.xml.in.h:500
+#: ../freedesktop.org.xml.in.h:503
 msgid "DICOM image"
 msgstr "imagem DICOM"
 
-#: ../freedesktop.org.xml.in.h:501
+#: ../freedesktop.org.xml.in.h:504
 msgid "DocBook document"
 msgstr "documento DocBook"
 
-#: ../freedesktop.org.xml.in.h:502
+#: ../freedesktop.org.xml.in.h:505
 msgid "DIB image"
 msgstr "imagem DIB"
 
-#: ../freedesktop.org.xml.in.h:503
+#: ../freedesktop.org.xml.in.h:506
 msgid "DjVu image"
 msgstr "imagem DjVu"
 
-#: ../freedesktop.org.xml.in.h:504
+#: ../freedesktop.org.xml.in.h:507
 msgid "DjVu document"
 msgstr "documento DjVu"
 
-#: ../freedesktop.org.xml.in.h:505
+#: ../freedesktop.org.xml.in.h:508
 msgid "DPX image"
 msgstr "imagem DPX"
 
-#: ../freedesktop.org.xml.in.h:506
+#: ../freedesktop.org.xml.in.h:509
 msgid "EPS image"
 msgstr "imagem EPS"
 
-#: ../freedesktop.org.xml.in.h:507
+#: ../freedesktop.org.xml.in.h:510
 msgid "FITS document"
 msgstr "documento FITS"
 
-#: ../freedesktop.org.xml.in.h:508
+#: ../freedesktop.org.xml.in.h:511
 msgid "FPX image"
 msgstr "imagem FPX"
 
-#: ../freedesktop.org.xml.in.h:509
+#: ../freedesktop.org.xml.in.h:512
 msgid "EPS image (gzip-compressed)"
 msgstr "imagem EPS (compressão gzip)"
 
-#: ../freedesktop.org.xml.in.h:510
+#: ../freedesktop.org.xml.in.h:513
 msgid "Windows icon"
 msgstr "ícone Windows"
 
-#: ../freedesktop.org.xml.in.h:511
+#: ../freedesktop.org.xml.in.h:514
 msgid "MacOS X icon"
 msgstr "ćone MacOS X"
 
-#: ../freedesktop.org.xml.in.h:512
+#: ../freedesktop.org.xml.in.h:515
 msgid "ILBM image"
 msgstr "imagem ILBM"
 
-#: ../freedesktop.org.xml.in.h:513
+#: ../freedesktop.org.xml.in.h:516
 msgid "JNG image"
 msgstr "imagem JNG"
 
-#: ../freedesktop.org.xml.in.h:514
+#: ../freedesktop.org.xml.in.h:517
 msgid "LightWave object"
 msgstr "Objecto LightWave"
 
-#: ../freedesktop.org.xml.in.h:515
+#: ../freedesktop.org.xml.in.h:518
 msgid "LightWave scene"
 msgstr "cenário LightWave"
 
-#: ../freedesktop.org.xml.in.h:516
+#: ../freedesktop.org.xml.in.h:519
 msgid "MacPaint Bitmap image"
 msgstr "imagem MacPaint Bitmap"
 
-#: ../freedesktop.org.xml.in.h:517
+#: ../freedesktop.org.xml.in.h:520
 msgid "Office drawing"
 msgstr "desenho Office"
 
-#: ../freedesktop.org.xml.in.h:518
+#: ../freedesktop.org.xml.in.h:521
 msgid "NIFF image"
 msgstr "imagem NIFF"
 
-#: ../freedesktop.org.xml.in.h:519
+#: ../freedesktop.org.xml.in.h:522
 msgid "PCX image"
 msgstr "imagem PCX"
 
-#: ../freedesktop.org.xml.in.h:520
+#: ../freedesktop.org.xml.in.h:523
 msgid "PCD image"
 msgstr "imagem PCD"
 
-#: ../freedesktop.org.xml.in.h:521
+#: ../freedesktop.org.xml.in.h:524
 msgid "PNM image"
 msgstr "imagem PNM"
 
-#: ../freedesktop.org.xml.in.h:522
+#: ../freedesktop.org.xml.in.h:525
 msgid "PBM image"
 msgstr "imagem PBM"
 
-#: ../freedesktop.org.xml.in.h:523
+#: ../freedesktop.org.xml.in.h:526
 msgid "PGM image"
 msgstr "imagem PGM"
 
-#: ../freedesktop.org.xml.in.h:524
+#: ../freedesktop.org.xml.in.h:527
 msgid "PPM image"
 msgstr "imagem PPM"
 
-#: ../freedesktop.org.xml.in.h:525
+#: ../freedesktop.org.xml.in.h:528
 msgid "Photoshop image"
 msgstr "imagem Photoshop"
 
-#: ../freedesktop.org.xml.in.h:526
+#: ../freedesktop.org.xml.in.h:529
 msgid "RGB image"
 msgstr "imagem RGB"
 
-#: ../freedesktop.org.xml.in.h:527
+#: ../freedesktop.org.xml.in.h:530
 msgid "SGI image"
 msgstr "imagem SGI"
 
-#: ../freedesktop.org.xml.in.h:528
+#: ../freedesktop.org.xml.in.h:531
 msgid "Sun raster image"
 msgstr "imagem raster Sun"
 
-#: ../freedesktop.org.xml.in.h:529
+#: ../freedesktop.org.xml.in.h:532
 msgid "TGA image"
 msgstr "imagem TGA"
 
-#: ../freedesktop.org.xml.in.h:530
+#: ../freedesktop.org.xml.in.h:533
 msgid "Windows cursor"
 msgstr "cursor Windows"
 
-#: ../freedesktop.org.xml.in.h:531
+#: ../freedesktop.org.xml.in.h:534
 msgid "Windows animated cursor"
 msgstr "cursor animado Windows"
 
-#: ../freedesktop.org.xml.in.h:532
+#: ../freedesktop.org.xml.in.h:535
 msgid "EMF image"
 msgstr "imagem EMF"
 
-#: ../freedesktop.org.xml.in.h:533
+#: ../freedesktop.org.xml.in.h:536
 msgid "WMF image"
 msgstr "imagem WMF"
 
-#: ../freedesktop.org.xml.in.h:534
+#: ../freedesktop.org.xml.in.h:537
 msgid "XBM image"
 msgstr "imagem XBM"
 
-#: ../freedesktop.org.xml.in.h:535
+#: ../freedesktop.org.xml.in.h:538
 msgid "GIMP image"
 msgstr "imagem GIMP"
 
-#: ../freedesktop.org.xml.in.h:536
+#: ../freedesktop.org.xml.in.h:539
 msgid "XFig image"
 msgstr "imagem XFig"
 
-#: ../freedesktop.org.xml.in.h:537
+#: ../freedesktop.org.xml.in.h:540
 msgid "XPM image"
 msgstr "imagem XPM"
 
-#: ../freedesktop.org.xml.in.h:538
+#: ../freedesktop.org.xml.in.h:541
 msgid "X window image"
 msgstr "imagem de janela X"
 
-#: ../freedesktop.org.xml.in.h:539
+#: ../freedesktop.org.xml.in.h:542
 msgid "block device"
 msgstr "dispositivo de bloco"
 
-#: ../freedesktop.org.xml.in.h:540
+#: ../freedesktop.org.xml.in.h:543
 msgid "character device"
 msgstr "dispositivo de caracteres"
 
-#: ../freedesktop.org.xml.in.h:541
+#: ../freedesktop.org.xml.in.h:544
 msgid "folder"
 msgstr "pasta"
 
-#: ../freedesktop.org.xml.in.h:542
+#: ../freedesktop.org.xml.in.h:545
 msgid "pipe"
 msgstr "canal"
 
-#: ../freedesktop.org.xml.in.h:543
+#: ../freedesktop.org.xml.in.h:546
 msgid "mount point"
 msgstr "ponto de montagem"
 
-#: ../freedesktop.org.xml.in.h:544
+#: ../freedesktop.org.xml.in.h:547
 msgid "socket"
 msgstr "tomada"
 
-#: ../freedesktop.org.xml.in.h:545
+#: ../freedesktop.org.xml.in.h:548
 msgid "symbolic link"
 msgstr "ligação simbólica"
 
-#: ../freedesktop.org.xml.in.h:546
+#: ../freedesktop.org.xml.in.h:549
 msgid "mail delivery report"
 msgstr "relatório de entrega de email"
 
-#: ../freedesktop.org.xml.in.h:547
+#: ../freedesktop.org.xml.in.h:550
 msgid "mail disposition report"
 msgstr "relatório de disposição de email"
 
-#: ../freedesktop.org.xml.in.h:548
+#: ../freedesktop.org.xml.in.h:551
 msgid "reference to remote file"
 msgstr "referência a um ficheiro remoto"
 
-#: ../freedesktop.org.xml.in.h:549
+#: ../freedesktop.org.xml.in.h:552
 msgid "Usenet news message"
 msgstr "mensagem de notícias Usenet"
 
-#: ../freedesktop.org.xml.in.h:550
+#: ../freedesktop.org.xml.in.h:553
 msgid "partial email message"
 msgstr "mensagem parcial de email"
 
-#: ../freedesktop.org.xml.in.h:551
+#: ../freedesktop.org.xml.in.h:554
 msgid "email message"
 msgstr "mensagem de email"
 
-#: ../freedesktop.org.xml.in.h:552
+#: ../freedesktop.org.xml.in.h:555
 msgid "GNU mail message"
 msgstr "mensagem de email GNU"
 
-#: ../freedesktop.org.xml.in.h:553
+#: ../freedesktop.org.xml.in.h:556
 msgid "IGES document"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:554
+#: ../freedesktop.org.xml.in.h:557
 msgid "VRML document"
 msgstr "documento VRML"
 
-#: ../freedesktop.org.xml.in.h:555
+#: ../freedesktop.org.xml.in.h:558
 msgid "message in several formats"
 msgstr "mensagem em vários formatos"
 
-#: ../freedesktop.org.xml.in.h:556
+#: ../freedesktop.org.xml.in.h:559
 msgid "Macintosh AppleDouble-encoded file"
 msgstr "ficheiro codificado em AppleDouble de Macintosh"
 
-#: ../freedesktop.org.xml.in.h:557
+#: ../freedesktop.org.xml.in.h:560
 msgid "message digest"
 msgstr "grupo de mensagens"
 
-#: ../freedesktop.org.xml.in.h:558
+#: ../freedesktop.org.xml.in.h:561
 msgid "encrypted message"
 msgstr "mensagem encriptada"
 
-#: ../freedesktop.org.xml.in.h:559
+#: ../freedesktop.org.xml.in.h:562
 msgid "compound documents"
 msgstr "documentos compostos"
 
-#: ../freedesktop.org.xml.in.h:560
+#: ../freedesktop.org.xml.in.h:563
 msgid "compound document"
 msgstr "documento composto"
 
-#: ../freedesktop.org.xml.in.h:561
+#: ../freedesktop.org.xml.in.h:564
 msgid "mail system report"
 msgstr "relatório de sistema de email"
 
-#: ../freedesktop.org.xml.in.h:562
+#: ../freedesktop.org.xml.in.h:565
 msgid "signed message"
 msgstr "mensagem assinada"
 
-#: ../freedesktop.org.xml.in.h:563
+#: ../freedesktop.org.xml.in.h:566
 msgid "stream of data (server push)"
 msgstr "fluxo de dados (empurrados pelo servidor)"
 
-#: ../freedesktop.org.xml.in.h:564
+#: ../freedesktop.org.xml.in.h:567
 msgid "VCS/ICS calendar"
 msgstr "calendário VCS/ICS"
 
-#: ../freedesktop.org.xml.in.h:565
+#: ../freedesktop.org.xml.in.h:568
 msgid "CSS stylesheet"
 msgstr "folha de estilos CSS"
 
-#: ../freedesktop.org.xml.in.h:566
+#: ../freedesktop.org.xml.in.h:569
 msgid "electronic business card"
 msgstr "cartão de visita eletrónico"
 
-#: ../freedesktop.org.xml.in.h:567
+#: ../freedesktop.org.xml.in.h:570
 msgid "Turtle document"
 msgstr "documento Turtle"
 
-#: ../freedesktop.org.xml.in.h:568
+#: ../freedesktop.org.xml.in.h:571
 msgid "txt2tags document"
 msgstr "documento txt2tags"
 
-#: ../freedesktop.org.xml.in.h:569
+#: ../freedesktop.org.xml.in.h:572
 msgid "Verilog source code"
 msgstr "código origem Verilog"
 
-#: ../freedesktop.org.xml.in.h:570
+#: ../freedesktop.org.xml.in.h:573
 msgid "SystemVerilog header"
 msgstr "cabeçalho SystemVerilog"
 
-#: ../freedesktop.org.xml.in.h:571
+#: ../freedesktop.org.xml.in.h:574
 msgid "SystemVerilog source code"
 msgstr "código origem SystemVerilog"
 
-#: ../freedesktop.org.xml.in.h:572
+#: ../freedesktop.org.xml.in.h:575
 msgid "VHDL source code"
 msgstr "código origem VHDL"
 
-#: ../freedesktop.org.xml.in.h:573
+#: ../freedesktop.org.xml.in.h:576
 msgid "enriched text document"
 msgstr "documento de texto rico"
 
-#: ../freedesktop.org.xml.in.h:574
+#: ../freedesktop.org.xml.in.h:577
 msgid "help page"
 msgstr "página de ajuda"
 
-#: ../freedesktop.org.xml.in.h:575
+#: ../freedesktop.org.xml.in.h:578
 msgid "plain text document"
 msgstr "documento em texto simples"
 
-#: ../freedesktop.org.xml.in.h:576
+#: ../freedesktop.org.xml.in.h:579
 msgid "RDF file"
 msgstr "ficheiro RDF"
 
-#: ../freedesktop.org.xml.in.h:577
+#: ../freedesktop.org.xml.in.h:580
 msgid "OWL XML file"
 msgstr "ficheiro OWL XML"
 
-#: ../freedesktop.org.xml.in.h:578
+#: ../freedesktop.org.xml.in.h:581
 msgid "email headers"
 msgstr "cabeçalhos de email"
 
-#: ../freedesktop.org.xml.in.h:579
+#: ../freedesktop.org.xml.in.h:582
 msgid "rich text document"
 msgstr "documento em texto rico"
 
-#: ../freedesktop.org.xml.in.h:580
+#: ../freedesktop.org.xml.in.h:583
 msgid "RSS summary"
 msgstr "resumo RSS"
 
-#: ../freedesktop.org.xml.in.h:581
+#: ../freedesktop.org.xml.in.h:584
 msgid "Atom syndication feed"
 msgstr "feed Atom"
 
-#: ../freedesktop.org.xml.in.h:582
+#: ../freedesktop.org.xml.in.h:585
 msgid "OPML syndication feed"
 msgstr "feed OPML"
 
-#: ../freedesktop.org.xml.in.h:583
+#: ../freedesktop.org.xml.in.h:586
 msgid "SGML document"
 msgstr "documento SGML"
 
-#: ../freedesktop.org.xml.in.h:584
+#: ../freedesktop.org.xml.in.h:587
 msgid "spreadsheet interchange document"
 msgstr "documento de troca interna de folhas de cálculo"
 
-#: ../freedesktop.org.xml.in.h:585
+#: ../freedesktop.org.xml.in.h:588
 msgid "TSV document"
 msgstr "documento TSV"
 
-#: ../freedesktop.org.xml.in.h:586
+#: ../freedesktop.org.xml.in.h:589
 msgid "Graphviz DOT graph"
 msgstr "gráfico Graphviz DOT"
 
-#: ../freedesktop.org.xml.in.h:587
+#: ../freedesktop.org.xml.in.h:590
 msgid "JAD document"
 msgstr "documento JAD"
 
-#: ../freedesktop.org.xml.in.h:588
+#: ../freedesktop.org.xml.in.h:591
 msgid "WML document"
 msgstr "documento WML"
 
-#: ../freedesktop.org.xml.in.h:589
+#: ../freedesktop.org.xml.in.h:592
 msgid "WMLScript program"
 msgstr "programa WMLScript"
 
-#: ../freedesktop.org.xml.in.h:590
+#: ../freedesktop.org.xml.in.h:593
 msgid "ACE archive"
 msgstr "arquivo ACE"
 
-#: ../freedesktop.org.xml.in.h:591
+#: ../freedesktop.org.xml.in.h:594
 msgid "Ada source code"
 msgstr "código origem Ada"
 
-#: ../freedesktop.org.xml.in.h:592
+#: ../freedesktop.org.xml.in.h:595
 msgid "author list"
 msgstr "lista de autores"
 
-#: ../freedesktop.org.xml.in.h:593
+#: ../freedesktop.org.xml.in.h:596
 msgid "BibTeX document"
 msgstr "documento BibTeX"
 
-#: ../freedesktop.org.xml.in.h:594
+#: ../freedesktop.org.xml.in.h:597
 msgid "C++ header"
 msgstr "cabeçalho C++"
 
-#: ../freedesktop.org.xml.in.h:595
+#: ../freedesktop.org.xml.in.h:598
 msgid "C++ source code"
 msgstr "código origem C++"
 
-#: ../freedesktop.org.xml.in.h:596
+#: ../freedesktop.org.xml.in.h:599
 msgid "ChangeLog document"
 msgstr "documento ChangeLog"
 
-#: ../freedesktop.org.xml.in.h:597
+#: ../freedesktop.org.xml.in.h:600
 msgid "C header"
 msgstr "cabeçalho C"
 
-#: ../freedesktop.org.xml.in.h:598
+#: ../freedesktop.org.xml.in.h:601
 msgid "CMake source code"
 msgstr "código origem CMake"
 
-#: ../freedesktop.org.xml.in.h:599
+#: ../freedesktop.org.xml.in.h:602
 msgid "CSV document"
 msgstr "documento CSV"
 
-#: ../freedesktop.org.xml.in.h:600
+#: ../freedesktop.org.xml.in.h:603
 msgid "CSV Schema document"
 msgstr "documento CSV Schema"
 
-#: ../freedesktop.org.xml.in.h:601
+#: ../freedesktop.org.xml.in.h:604
 msgid "license terms"
 msgstr "termos de licença"
 
-#: ../freedesktop.org.xml.in.h:602
+#: ../freedesktop.org.xml.in.h:605
 msgid "author credits"
 msgstr "créditos de autor"
 
-#: ../freedesktop.org.xml.in.h:603
+#: ../freedesktop.org.xml.in.h:606
 msgid "C source code"
 msgstr "código origem C"
 
-#: ../freedesktop.org.xml.in.h:604
+#: ../freedesktop.org.xml.in.h:607
 msgid "C# source code"
 msgstr "código origem C#"
 
-#: ../freedesktop.org.xml.in.h:605
+#: ../freedesktop.org.xml.in.h:608
 msgid "Vala source code"
 msgstr "código origem Vala"
 
-#: ../freedesktop.org.xml.in.h:606
+#: ../freedesktop.org.xml.in.h:609
 msgid "OOC source code"
 msgstr "código origem OOC"
 
-#: ../freedesktop.org.xml.in.h:607
+#: ../freedesktop.org.xml.in.h:610
 msgid "DCL script"
 msgstr "script DCL"
 
-#: ../freedesktop.org.xml.in.h:608
+#: ../freedesktop.org.xml.in.h:611
 msgid "DSSSL document"
 msgstr "documento DSSSL"
 
-#: ../freedesktop.org.xml.in.h:609
+#: ../freedesktop.org.xml.in.h:612
 msgid "D source code"
 msgstr "código origem D"
 
-#: ../freedesktop.org.xml.in.h:610
+#: ../freedesktop.org.xml.in.h:613
 msgid "DTD file"
 msgstr "ficheiro DTD"
 
-#: ../freedesktop.org.xml.in.h:611
+#: ../freedesktop.org.xml.in.h:614
 msgid "Eiffel source code"
 msgstr "código origem Eiffel"
 
-#: ../freedesktop.org.xml.in.h:612
+#: ../freedesktop.org.xml.in.h:615
 msgid "Emacs Lisp source code"
 msgstr "código origem Emacs Lisp"
 
-#: ../freedesktop.org.xml.in.h:613
+#: ../freedesktop.org.xml.in.h:616
 msgid "Erlang source code"
 msgstr "código origem Erlang"
 
-#: ../freedesktop.org.xml.in.h:614
+#: ../freedesktop.org.xml.in.h:617
 msgid "Fortran source code"
 msgstr "código origem Fortran"
 
-#: ../freedesktop.org.xml.in.h:615
+#: ../freedesktop.org.xml.in.h:618
 msgid "Genie source code"
 msgstr "código origem Genie"
 
-#: ../freedesktop.org.xml.in.h:616
+#: ../freedesktop.org.xml.in.h:619
 msgid "translation file"
 msgstr "ficheiro de tradução"
 
-#: ../freedesktop.org.xml.in.h:617
+#: ../freedesktop.org.xml.in.h:620
 msgid "translation template"
 msgstr "modelo de tradução"
 
-#: ../freedesktop.org.xml.in.h:618
+#: ../freedesktop.org.xml.in.h:621
 msgid "feature specification in Gherkin format"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:619
+#: ../freedesktop.org.xml.in.h:622
 msgid "HTML document"
 msgstr "documento HTML"
 
-#: ../freedesktop.org.xml.in.h:620
+#: ../freedesktop.org.xml.in.h:623
 msgid "Web application cache manifest"
 msgstr "manifesto de cache de aplicação web"
 
-#: ../freedesktop.org.xml.in.h:621
+#: ../freedesktop.org.xml.in.h:624
 msgid "Google Video Pointer"
 msgstr "Ponteiro Google Video"
 
-#: ../freedesktop.org.xml.in.h:622
+#: ../freedesktop.org.xml.in.h:625
 msgid "Haskell source code"
 msgstr "código origem Haskell"
 
-#: ../freedesktop.org.xml.in.h:623
+#: ../freedesktop.org.xml.in.h:626
 msgid "IDL document"
 msgstr "documento IDL"
 
-#: ../freedesktop.org.xml.in.h:624
+#: ../freedesktop.org.xml.in.h:627
 msgid "installation instructions"
 msgstr "instruções de instalação"
 
-#: ../freedesktop.org.xml.in.h:625
+#: ../freedesktop.org.xml.in.h:628
 msgid "Java source code"
 msgstr "código origem Java"
 
-#: ../freedesktop.org.xml.in.h:626
+#: ../freedesktop.org.xml.in.h:629
 msgid "LDIF address book"
 msgstr "livro de endereços LDIF"
 
-#: ../freedesktop.org.xml.in.h:627
+#: ../freedesktop.org.xml.in.h:630
 msgid "Lilypond music sheet"
 msgstr "folha de música Lilypond"
 
-#: ../freedesktop.org.xml.in.h:628
+#: ../freedesktop.org.xml.in.h:631
 msgid "LHS source code"
 msgstr "código origem LHS"
 
-#: ../freedesktop.org.xml.in.h:629
+#: ../freedesktop.org.xml.in.h:632
 msgid "application log"
 msgstr "diário de aplicação"
 
-#: ../freedesktop.org.xml.in.h:630
+#: ../freedesktop.org.xml.in.h:633
 msgid "Makefile"
 msgstr "Makefile"
 
-#: ../freedesktop.org.xml.in.h:631
+#: ../freedesktop.org.xml.in.h:634
 msgid "Markdown document"
 msgstr "documento Markdown"
 
-#: ../freedesktop.org.xml.in.h:632
+#: ../freedesktop.org.xml.in.h:635
 msgid "Qt MOC file"
 msgstr "ficheiro Qt MOC"
 
-#: ../freedesktop.org.xml.in.h:633
+#: ../freedesktop.org.xml.in.h:636
 msgid "Windows Registry extract"
 msgstr "extrato do registo do Windows"
 
-#: ../freedesktop.org.xml.in.h:634
+#: ../freedesktop.org.xml.in.h:637
 msgid "Managed Object Format"
 msgstr "formato Managed Object"
 
-#: ../freedesktop.org.xml.in.h:635
+#: ../freedesktop.org.xml.in.h:638
 msgid "Mup publication"
 msgstr "publicação Mup"
 
-#: ../freedesktop.org.xml.in.h:636
+#: ../freedesktop.org.xml.in.h:639
 msgid "Objective-C source code"
 msgstr "código origem Objective-C"
 
-#: ../freedesktop.org.xml.in.h:637
+#: ../freedesktop.org.xml.in.h:640
 msgid "OCaml source code"
 msgstr "código origem OCaml"
 
-#: ../freedesktop.org.xml.in.h:638
+#: ../freedesktop.org.xml.in.h:641
 msgid "MATLAB script/function"
 msgstr "script/função MATLAB"
 
-#: ../freedesktop.org.xml.in.h:639
+#: ../freedesktop.org.xml.in.h:642
 msgid "Meson source code"
 msgstr "código origem Meson"
 
-#: ../freedesktop.org.xml.in.h:640
+#: ../freedesktop.org.xml.in.h:643
 msgid "Modelica model"
 msgstr "modelo Modelica"
 
-#: ../freedesktop.org.xml.in.h:641
+#: ../freedesktop.org.xml.in.h:644
 msgid "Pascal source code"
 msgstr "código origem Pascal"
 
-#: ../freedesktop.org.xml.in.h:642
+#: ../freedesktop.org.xml.in.h:645
 msgid "differences between files"
 msgstr "diferenças entre ficheiros"
 
-#: ../freedesktop.org.xml.in.h:643
+#: ../freedesktop.org.xml.in.h:646
 msgid "Go source code"
 msgstr "cigo origem Go"
 
-#: ../freedesktop.org.xml.in.h:644
+#: ../freedesktop.org.xml.in.h:647
 msgid "SCons configuration file"
 msgstr "ficheiro de configuração SCons"
 
-#: ../freedesktop.org.xml.in.h:645
+#: ../freedesktop.org.xml.in.h:648
 msgid "Python script"
 msgstr "script Python"
 
-#: ../freedesktop.org.xml.in.h:646
+#: ../freedesktop.org.xml.in.h:649
 msgid "Lua script"
 msgstr "script Lua"
 
-#: ../freedesktop.org.xml.in.h:647
+#: ../freedesktop.org.xml.in.h:650
 msgid "README document"
 msgstr "documento LEIA-ME"
 
-#: ../freedesktop.org.xml.in.h:648
+#: ../freedesktop.org.xml.in.h:651
 msgid "NFO document"
 msgstr "documento NFO"
 
-#: ../freedesktop.org.xml.in.h:649
+#: ../freedesktop.org.xml.in.h:652
 msgid "RPM spec file"
 msgstr "ficheiro de especificações RPM"
 
-#: ../freedesktop.org.xml.in.h:650
+#: ../freedesktop.org.xml.in.h:653
 msgid "Sass CSS pre-processor file"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:651
+#: ../freedesktop.org.xml.in.h:654
 msgid "Scala source code"
 msgstr "código origem Scala"
 
-#: ../freedesktop.org.xml.in.h:652
+#: ../freedesktop.org.xml.in.h:655
 msgid "Scheme source code"
 msgstr "código origem Scheme"
 
-#: ../freedesktop.org.xml.in.h:653
+#: ../freedesktop.org.xml.in.h:656
 msgid "Setext document"
 msgstr "documento Setext"
 
-#: ../freedesktop.org.xml.in.h:654
+#: ../freedesktop.org.xml.in.h:657
 msgid "SQL code"
 msgstr "código SQL"
 
-#: ../freedesktop.org.xml.in.h:655
+#: ../freedesktop.org.xml.in.h:658
 msgid "Tcl script"
 msgstr "script Tcl"
 
-#: ../freedesktop.org.xml.in.h:656
+#: ../freedesktop.org.xml.in.h:659
 msgid "TeX document"
 msgstr "documento TeX"
 
-#: ../freedesktop.org.xml.in.h:657
+#: ../freedesktop.org.xml.in.h:660
 msgid "TeXInfo document"
 msgstr "documento TeXInfo"
 
-#: ../freedesktop.org.xml.in.h:658
+#: ../freedesktop.org.xml.in.h:661
 msgid "Troff ME input document"
 msgstr "documento origem Troff ME"
 
-#: ../freedesktop.org.xml.in.h:659
+#: ../freedesktop.org.xml.in.h:662
 msgid "Troff MM input document"
 msgstr "documento origem Troff MM"
 
-#: ../freedesktop.org.xml.in.h:660
+#: ../freedesktop.org.xml.in.h:663
 msgid "Troff MS input document"
 msgstr "documento origem Troff MS"
 
-#: ../freedesktop.org.xml.in.h:661
+#: ../freedesktop.org.xml.in.h:664
 msgid "Twig template"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:662
+#: ../freedesktop.org.xml.in.h:665
 msgid "X-Motif UIL table"
 msgstr "tabela UIL do X-Motif"
 
-#: ../freedesktop.org.xml.in.h:663
+#: ../freedesktop.org.xml.in.h:666
 msgid "resource location"
 msgstr "localização de recurso"
 
-#: ../freedesktop.org.xml.in.h:664
+#: ../freedesktop.org.xml.in.h:667
 msgid "uuencoded file"
 msgstr "ficheiro uuencoded"
 
-#: ../freedesktop.org.xml.in.h:665
+#: ../freedesktop.org.xml.in.h:668
 msgid "XMI file"
 msgstr "ficheiro XMI"
 
-#: ../freedesktop.org.xml.in.h:666
+#: ../freedesktop.org.xml.in.h:669
 msgid "XSL FO file"
 msgstr "ficheiro XSL FO"
 
-#: ../freedesktop.org.xml.in.h:667
+#: ../freedesktop.org.xml.in.h:670
 msgid "iptables configuration file"
 msgstr "ficheiro de configuração iptables"
 
-#: ../freedesktop.org.xml.in.h:668
+#: ../freedesktop.org.xml.in.h:671
 msgid "XSLT stylesheet"
 msgstr "folha de estilos XSLT"
 
-#: ../freedesktop.org.xml.in.h:669
+#: ../freedesktop.org.xml.in.h:672
 msgid "XMCD CD database"
 msgstr "base de dados XMCD CD"
 
-#: ../freedesktop.org.xml.in.h:670
+#: ../freedesktop.org.xml.in.h:673
 msgid "XML document"
 msgstr "documento XML"
 
-#: ../freedesktop.org.xml.in.h:671
+#: ../freedesktop.org.xml.in.h:674
 msgid "XML entities document"
 msgstr "documento de entidades XML"
 
-#: ../freedesktop.org.xml.in.h:672
+#: ../freedesktop.org.xml.in.h:675
 msgid "DV video"
 msgstr "vídeo DV"
 
-#: ../freedesktop.org.xml.in.h:673
+#: ../freedesktop.org.xml.in.h:676
 msgid "ISI video"
 msgstr "vídeo ISI"
 
-#: ../freedesktop.org.xml.in.h:674
+#: ../freedesktop.org.xml.in.h:677
 msgid "MPEG-2 transport stream"
 msgstr "fluxo de transporte MPEG-2"
 
-#: ../freedesktop.org.xml.in.h:675
+#: ../freedesktop.org.xml.in.h:678
 msgid "MPEG video"
 msgstr "vídeo MPEG"
 
-#: ../freedesktop.org.xml.in.h:676
+#: ../freedesktop.org.xml.in.h:679
 msgid "MPEG video (streamed)"
 msgstr "vídeo MPEG (em fluxo)"
 
-#: ../freedesktop.org.xml.in.h:677
+#: ../freedesktop.org.xml.in.h:680
 msgid "QuickTime video"
 msgstr "vídeo QuickTime"
 
-#: ../freedesktop.org.xml.in.h:678
+#: ../freedesktop.org.xml.in.h:681
 msgid "QuickTime image"
 msgstr "imagem QuickTime"
 
-#: ../freedesktop.org.xml.in.h:679
+#: ../freedesktop.org.xml.in.h:682
 msgid "Vivo video"
 msgstr "vídeo Vivo"
 
-#: ../freedesktop.org.xml.in.h:680
+#: ../freedesktop.org.xml.in.h:683
 msgid "Wavelet video"
 msgstr "vídeo Wavelet"
 
-#: ../freedesktop.org.xml.in.h:681
+#: ../freedesktop.org.xml.in.h:684
 msgid "ANIM animation"
 msgstr "animação ANIM"
 
-#: ../freedesktop.org.xml.in.h:682
+#: ../freedesktop.org.xml.in.h:685
 msgid "FLIC animation"
 msgstr "animação FLIC"
 
-#: ../freedesktop.org.xml.in.h:683
+#: ../freedesktop.org.xml.in.h:686
 msgid "Haansoft Hangul document"
 msgstr "documento Haansoft Hangul"
 
-#: ../freedesktop.org.xml.in.h:684
+#: ../freedesktop.org.xml.in.h:687
 msgid "Haansoft Hangul document template"
 msgstr "modelo de documento Haansoft Hangul"
 
-#: ../freedesktop.org.xml.in.h:685
+#: ../freedesktop.org.xml.in.h:688
 msgid "MNG animation"
 msgstr "animação MNG"
 
-#: ../freedesktop.org.xml.in.h:686
+#: ../freedesktop.org.xml.in.h:689
 msgid "ASF video"
 msgstr "vídeo ASF"
 
-#: ../freedesktop.org.xml.in.h:687
+#: ../freedesktop.org.xml.in.h:690
 msgid "Windows Media Station file"
 msgstr "ficheiro Windows Media Station"
 
-#: ../freedesktop.org.xml.in.h:688
+#: ../freedesktop.org.xml.in.h:691
 msgid "Windows Media video"
 msgstr "vídeo Windows Media"
 
-#: ../freedesktop.org.xml.in.h:689
+#: ../freedesktop.org.xml.in.h:692
 msgid "AVI video"
 msgstr "vídeo AVI"
 
-#: ../freedesktop.org.xml.in.h:690
+#: ../freedesktop.org.xml.in.h:693
 msgid "NullSoft video"
 msgstr "vídeo NullSoft"
 
-#: ../freedesktop.org.xml.in.h:691
+#: ../freedesktop.org.xml.in.h:694
 msgid "SDP multicast stream file"
 msgstr "ficheiro de fluxo SDP multicast"
 
-#: ../freedesktop.org.xml.in.h:692
+#: ../freedesktop.org.xml.in.h:695
 msgid "SGI video"
 msgstr "vídeo SGI"
 
-#: ../freedesktop.org.xml.in.h:693
+#: ../freedesktop.org.xml.in.h:696
 msgid "eMusic download package"
 msgstr "pacote transferido eMusic"
 
-#: ../freedesktop.org.xml.in.h:694
+#: ../freedesktop.org.xml.in.h:697
 msgid "KML geographic data"
 msgstr "dados geográficos KML"
 
-#: ../freedesktop.org.xml.in.h:695
+#: ../freedesktop.org.xml.in.h:698
 msgid "KML geographic compressed data"
 msgstr "dados geográficos comprimidos KML"
 
-#: ../freedesktop.org.xml.in.h:696
+#: ../freedesktop.org.xml.in.h:699
 msgid "GeoJSON geospatial data"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:697
+#: ../freedesktop.org.xml.in.h:700
 msgid "GPX geographic data"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:698
+#: ../freedesktop.org.xml.in.h:701
 msgid "Citrix ICA settings file"
 msgstr "ficheiro de definições Citrix ICA"
 
-#: ../freedesktop.org.xml.in.h:699
+#: ../freedesktop.org.xml.in.h:702
 msgid "XUL interface document"
 msgstr "documento de ambiente XUL"
 
-#: ../freedesktop.org.xml.in.h:700
+#: ../freedesktop.org.xml.in.h:703
 msgid "XPInstall installer module"
 msgstr "módulo de instalador XPInstall"
 
-#: ../freedesktop.org.xml.in.h:701
+#: ../freedesktop.org.xml.in.h:704
 msgid "Word 2007 document"
 msgstr "documento Word 2007"
 
-#: ../freedesktop.org.xml.in.h:702
+#: ../freedesktop.org.xml.in.h:705
 msgid "Word 2007 document template"
 msgstr "modelo de documento Word 2007"
 
-#: ../freedesktop.org.xml.in.h:703
+#: ../freedesktop.org.xml.in.h:706
 msgid "PowerPoint 2007 presentation"
 msgstr "apresentação PowerPoint 2007"
 
-#: ../freedesktop.org.xml.in.h:704
+#: ../freedesktop.org.xml.in.h:707
 msgid "PowerPoint 2007 slide"
 msgstr "diapositivo PowerPoint 2007"
 
-#: ../freedesktop.org.xml.in.h:705
+#: ../freedesktop.org.xml.in.h:708
 msgid "PowerPoint 2007 show"
 msgstr "espetáculo PowerPoint 2007"
 
-#: ../freedesktop.org.xml.in.h:706
+#: ../freedesktop.org.xml.in.h:709
 msgid "PowerPoint 2007 presentation template"
 msgstr "modelo de apresentação PowerPoint 2007"
 
-#: ../freedesktop.org.xml.in.h:707
+#: ../freedesktop.org.xml.in.h:710
 msgid "Excel 2007 spreadsheet"
 msgstr "folha de cálculo Excel 2007"
 
-#: ../freedesktop.org.xml.in.h:708
+#: ../freedesktop.org.xml.in.h:711
 msgid "Excel 2007 spreadsheet template"
 msgstr "modelo de folha de cálculo Excel 2007"
 
-#: ../freedesktop.org.xml.in.h:709
+#: ../freedesktop.org.xml.in.h:712
 msgid "T602 document"
 msgstr "documento T602"
 
-#: ../freedesktop.org.xml.in.h:710
+#: ../freedesktop.org.xml.in.h:713
 msgid "Cisco VPN Settings"
 msgstr "definições de Cisco VPN"
 
-#: ../freedesktop.org.xml.in.h:711
+#: ../freedesktop.org.xml.in.h:714
 msgid "ICC profile"
 msgstr "perfil ICC"
 
-#: ../freedesktop.org.xml.in.h:712
+#: ../freedesktop.org.xml.in.h:715
 msgid "IT 8.7 color calibration file"
 msgstr "ficheiro de calibração de cor IT 8.7"
 
-#: ../freedesktop.org.xml.in.h:713
+#: ../freedesktop.org.xml.in.h:716
 msgid "CCMX color correction file"
 msgstr "ficheiro de correção de cor CCMX"
 
-#: ../freedesktop.org.xml.in.h:714
+#: ../freedesktop.org.xml.in.h:717
 msgid "WinHelp help file"
 msgstr "ficheiro de ajuda WinHelp"
 
-#: ../freedesktop.org.xml.in.h:715
+#: ../freedesktop.org.xml.in.h:718
 msgid "binary differences between files"
 msgstr ""
 
 #. http://en.wikipedia.org/wiki/Design_rule_for_Camera_File_system
-#: ../freedesktop.org.xml.in.h:717
+#: ../freedesktop.org.xml.in.h:720
 msgid "digital photos"
 msgstr "fotografias digitais"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Video_CD
 #. http://www.herongyang.com/CD-DVD/VCD-Movie-File-Directory-Structure.html
-#: ../freedesktop.org.xml.in.h:721
+#: ../freedesktop.org.xml.in.h:724
 msgid "Video CD"
 msgstr "Video CD"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Super_Video_CD
 #. http://everything2.com/index.pl?node_id=1009222
-#: ../freedesktop.org.xml.in.h:725
+#: ../freedesktop.org.xml.in.h:728
 msgid "Super Video CD"
 msgstr "Super Video CD"
 
 #. http://en.wikipedia.org/wiki/DVD-Video
-#: ../freedesktop.org.xml.in.h:727
+#: ../freedesktop.org.xml.in.h:730
 msgid "video DVD"
 msgstr "DVD vídeo"
 
 #. http://en.wikipedia.org/wiki/Red_Book_(audio_CD_standard)
-#: ../freedesktop.org.xml.in.h:729
+#: ../freedesktop.org.xml.in.h:732
 msgid "audio CD"
 msgstr "CD áudio"
 
 #. http://en.wikipedia.org/wiki/Compact_Disc
-#: ../freedesktop.org.xml.in.h:731
+#: ../freedesktop.org.xml.in.h:734
 msgid "blank CD disc"
 msgstr "CD vazio"
 
 #. http://en.wikipedia.org/wiki/DVD
-#: ../freedesktop.org.xml.in.h:733
+#: ../freedesktop.org.xml.in.h:736
 msgid "blank DVD disc"
 msgstr "DVD vazio"
 
 #. http://en.wikipedia.org/wiki/Blu-ray_Disc
-#: ../freedesktop.org.xml.in.h:735
+#: ../freedesktop.org.xml.in.h:738
 msgid "blank Blu-ray disc"
 msgstr "Blu-Ray vazio"
 
 #. http://en.wikipedia.org/wiki/HD_DVD
-#: ../freedesktop.org.xml.in.h:737
+#: ../freedesktop.org.xml.in.h:740
 msgid "blank HD DVD disc"
 msgstr "HD DVD vazio"
 
 #. http://en.wikipedia.org/wiki/DVD-Audio
-#: ../freedesktop.org.xml.in.h:739
+#: ../freedesktop.org.xml.in.h:742
 msgid "audio DVD"
 msgstr "DVD áudio"
 
 #. http://en.wikipedia.org/wiki/Blu-ray_Disc
 #. http://www.blu-raydisc.com/Section-13470/Section-13890/Index.html
-#: ../freedesktop.org.xml.in.h:742
+#: ../freedesktop.org.xml.in.h:745
 msgid "Blu-ray video disc"
 msgstr "Blu-ray de vídeo"
 
 #. http://en.wikipedia.org/wiki/HD_DVD
 #. http://www.dvdafteredit.com/wiki/The_HVDVD_TS_Folder
-#: ../freedesktop.org.xml.in.h:745
+#: ../freedesktop.org.xml.in.h:748
 msgid "HD DVD video disc"
 msgstr "HD DVD de vídeo"
 
 #. see fd.o hal spec
-#: ../freedesktop.org.xml.in.h:747
+#: ../freedesktop.org.xml.in.h:750
 msgid "e-book reader"
 msgstr "leitor de ebooks"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Picture_CD
 #. http://www.re.org/kristin/picturecd.html
-#: ../freedesktop.org.xml.in.h:751
+#: ../freedesktop.org.xml.in.h:754
 msgid "Picture CD"
 msgstr "Picture CD"
 
 #. see fd.o hal spec
-#: ../freedesktop.org.xml.in.h:753
+#: ../freedesktop.org.xml.in.h:756
 msgid "portable audio player"
 msgstr "reprodutor áudio portátil"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: ../freedesktop.org.xml.in.h:756
+#: ../freedesktop.org.xml.in.h:759
 msgid "software"
 msgstr "programa"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: ../freedesktop.org.xml.in.h:759
+#: ../freedesktop.org.xml.in.h:762
 msgid "UNIX software"
 msgstr "programa UNIX"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: ../freedesktop.org.xml.in.h:762
+#: ../freedesktop.org.xml.in.h:765
 msgid "Windows software"
 msgstr "programa Windows"
 
 #. http://www4.wiwiss.fu-berlin.de/bizer/TriG/
-#: ../freedesktop.org.xml.in.h:764
+#: ../freedesktop.org.xml.in.h:767
 msgid "TriG RDF document"
 msgstr "documento TriG RDF"
 
-#: ../freedesktop.org.xml.in.h:765
+#: ../freedesktop.org.xml.in.h:768
 msgid "Apple Keynote 5 presentation"
 msgstr "apresentação Apple Keynote 5"
 
-#: ../freedesktop.org.xml.in.h:766
+#: ../freedesktop.org.xml.in.h:769
 msgid "Adobe PageMaker"
 msgstr "Adobe PageMaker"
 
-#: ../freedesktop.org.xml.in.h:767
+#: ../freedesktop.org.xml.in.h:770
 msgid "Doom WAD"
 msgstr "Doom WAD"
 
-#: ../freedesktop.org.xml.in.h:768
+#: ../freedesktop.org.xml.in.h:771
 msgid "Amiga disk image"
 msgstr "imagem de disco Amiga"
 
-#: ../freedesktop.org.xml.in.h:769
+#: ../freedesktop.org.xml.in.h:772
 msgid "Flatpak application bundle"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:770
+#: ../freedesktop.org.xml.in.h:773
 msgid "Flatpak repository description"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:771
+#: ../freedesktop.org.xml.in.h:774
 msgid "Squashfs filesystem"
 msgstr ""
 
-#: ../freedesktop.org.xml.in.h:772
+#: ../freedesktop.org.xml.in.h:775
 msgid "Snap package"
 msgstr ""

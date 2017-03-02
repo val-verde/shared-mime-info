@@ -6024,6 +6024,25 @@ command to generate the output files.
     <glob pattern="SConscript"/>
     <glob pattern="SConscript.*"/>
   </mime-type>
+  <mime-type type="text/x-python3">
+    <_comment>Python 3 script</_comment>
+    <sub-class-of type='text/x-python'/>
+    <magic priority="60"><!-- higher priority than text/x-python -->
+      <match type="string" value="#!/bin/python3" offset="0"/>
+      <match type="string" value="#! /bin/python3" offset="0"/>
+      <match type="string" value='eval \"exec /bin/python3' offset="0"/>
+      <match type="string" value="#!/usr/bin/python3" offset="0"/>
+      <match type="string" value="#! /usr/bin/python3" offset="0"/>
+      <match type="string" value='eval \"exec /usr/bin/python3' offset="0"/>
+      <match type="string" value="#!/usr/local/bin/python3" offset="0"/>
+      <match type="string" value="#! /usr/local/bin/python3" offset="0"/>
+      <match type="string" value='eval \"exec /usr/local/bin/python3' offset="0"/>
+      <match type="string" value='/bin/env python3' offset="2:16"/>
+    </magic>
+    <glob pattern="*.py" weight="50"/><!-- lower priority than in text/x-python -->
+    <glob pattern="*.py3" weight="60"/>
+    <glob pattern="*.py3x" weight="60"/>
+  </mime-type>
   <mime-type type="text/x-python">
     <_comment>Python script</_comment>
     <sub-class-of type='application/x-executable'/>
@@ -6040,9 +6059,9 @@ command to generate the output files.
       <match type="string" value='eval \"exec /usr/local/bin/python' offset="0"/>
       <match type="string" value='/bin/env python' offset="2:16"/>
     </magic>
-    <glob pattern="*.py"/>
-    <glob pattern="*.pyx"/>
-    <glob pattern="*.wsgi"/>
+    <glob pattern="*.py" weight="60"/>
+    <glob pattern="*.pyx" weight="60"/>
+    <glob pattern="*.wsgi" weight="60"/>
   </mime-type>
   <mime-type type="text/x-lua">
     <_comment>Lua script</_comment>

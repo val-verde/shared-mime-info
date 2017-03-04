@@ -5939,6 +5939,13 @@ command to generate the output files.
     <glob pattern="*.ml"/>
     <glob pattern="*.mli"/>
   </mime-type>
+  <mime-type type="text/x-opencl-src">
+    <_comment>OpenCL source code</_comment>
+    <acronym>OpenCL</acronym>
+    <expanded-acronym>Open Computing Language</expanded-acronym>
+    <sub-class-of type="text/x-csrc"/>
+    <glob pattern="*.cl"/>
+  </mime-type>
   <mime-type type="text/x-matlab">
     <_comment>MATLAB script/function</_comment>
     <sub-class-of type="text/plain"/>

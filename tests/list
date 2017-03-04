@@ -285,6 +285,9 @@ test.mo text/x-modelica xoo
 bibtex.bib text/x-bibtex
 # hand-made
 simple-obj-c.m text/x-objcsrc
+# Copied from LLVM project test suite
+test.cl text/x-opencl-src ox
+
 # http://www.apps.ietf.org/rfc/rfc4716.html#sec-3.6
 ssh-public-key.txt text/plain
 # http://tools.ietf.org/html/draft-ietf-vcarddav-vcardrev-22

@@ -4647,7 +4647,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.orf"/>
   </mime-type>
-  <mime-type type="image/x-panasonic-raw">
+  <mime-type type="image/x-panasonic-rw">
     <_comment>Panasonic raw image</_comment>
     <sub-class-of type="image/x-dcraw"/>
     <magic priority="50">
@@ -4655,8 +4655,9 @@ command to generate the output files.
       <match value="IIU\x00\x08\x00\x00\x00" type="string" offset="0"/>
     </magic>
     <glob pattern="*.raw"/>
+    <alias type="image/x-panasonic-raw"/>
   </mime-type>
-  <mime-type type="image/x-panasonic-raw2">
+  <mime-type type="image/x-panasonic-rw2">
     <_comment>Panasonic raw2 image</_comment>
     <sub-class-of type="image/x-dcraw"/>
     <magic priority="50">
@@ -4664,6 +4665,7 @@ command to generate the output files.
       <match value="IIU\x00\x18\x00\x00\x00" type="string" offset="0"/>
     </magic>
     <glob pattern="*.rw2"/>
+    <alias type="image/x-panasonic-raw2"/>
   </mime-type>
   <mime-type type="image/x-pentax-pef">
     <_comment>Pentax PEF raw image</_comment>

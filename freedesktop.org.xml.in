@@ -3869,6 +3869,11 @@ command to generate the output files.
     <generic-icon name="application-x-executable"/>
     <glob pattern="*.ws"/>
   </mime-type>
+  <mime-type type="application/x-wonderswan-color-rom">
+    <_comment>Bandai WonderSwan Color ROM</_comment>
+    <generic-icon name="application-x-executable"/>
+    <glob pattern="*.wsc"/>
+  </mime-type>
   <mime-type type="application/x-x509-ca-cert">
     <_comment>DER/PEM/Netscape-encoded X.509 certificate</_comment>
     <generic-icon name="text-x-generic"/>

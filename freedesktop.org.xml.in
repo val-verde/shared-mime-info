@@ -94,6 +94,14 @@ command to generate the output files.
       <match type="string" value="ATARI7800" offset="1"/>
     </magic>
   </mime-type>
+  <mime-type type="application/x-atari-lynx-rom">
+    <_comment>Atari Lynx</_comment>
+    <generic-icon name="application-x-executable"/>
+    <glob pattern="*.lnx"/>
+    <magic>
+      <match type="string" value="LYNX" offset="0"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/andrew-inset">
     <_comment>ATK inset</_comment>
     <acronym>ATK</acronym>

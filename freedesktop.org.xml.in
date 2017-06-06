@@ -1605,7 +1605,6 @@ command to generate the output files.
       </match>
     </magic>
     <glob pattern="*.appimage"/>
-    <glob pattern="*.AppImage"/>
   </mime-type>
   <mime-type type="application/x-cdrdao-toc">
     <_comment>CD Table Of Contents</_comment>

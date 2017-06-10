@@ -23,10 +23,15 @@ test.ico image/vnd.microsoft.icon
 # From https://bugs.freedesktop.org/show_bug.cgi?id=20070#c3
 test.ilbm image/x-ilbm
 test.im1 image/x-sun-raster x
-test.jp2 image/jp2
 test.jpg image/jpeg
 # Possible false positive for a JPEG 2000 image
 img_5304.jpg image/jpeg
+# From https://github.com/bitsgalore/jp2kMagic
+balloon.j2c image/x-jp2-codestream
+balloon.jp2 image/jp2
+balloon.jpf image/jpx
+balloon.jpm image/jpm
+balloon.mj2 video/mj2
 # From https://bugzilla.freedesktop.org/show_bug.cgi?id=55339
 test.mng video/x-mng
 test.pat image/x-pat xxx

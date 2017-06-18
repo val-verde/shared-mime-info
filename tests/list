@@ -34,7 +34,6 @@ balloon.jpm image/jpm
 balloon.mj2 video/mj2
 # From https://bugzilla.freedesktop.org/show_bug.cgi?id=55339
 test.mng video/x-mng
-test.pat image/x-pat xxx
 test.pbm image/x-portable-bitmap
 test.pcx image/vnd.zbrush.pcx
 test.pgm image/x-portable-graymap
@@ -55,6 +54,9 @@ test.tif image/tiff
 test.webp image/webp
 test.xbm image/x-xbitmap ox
 test.xcf image/x-xcf
+test.gbr image/x-gimp-gbr
+test.gih image/x-gimp-gih ox
+test.pat image/x-gimp-pat
 # https://bugs.freedesktop.org/show_bug.cgi?id=55263
 lucid-tab-bg.xcf image/x-xcf
 weather_sun.xcf image/x-xcf

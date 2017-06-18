@@ -5280,6 +5280,24 @@ command to generate the output files.
       <match type="string" value="gimp xcf v" offset="0"/>
     </magic>
   </mime-type>
+  <mime-type type="image/x-gimp-gbr">
+    <_comment>GIMP brush</_comment>
+    <glob pattern="*.gbr"/>
+    <magic priority="50">
+      <match type="string" value="GIMP" offset="20"/>
+    </magic>
+  </mime-type>
+  <mime-type type="image/x-gimp-gih">
+    <_comment>GIMP brush pipe</_comment>
+    <glob pattern="*.gih"/>
+  </mime-type>
+  <mime-type type="image/x-gimp-pat">
+    <_comment>GIMP pattern</_comment>
+    <glob pattern="*.pat"/>
+    <magic priority="50">
+      <match type="string" value="GPAT" offset="20"/>
+    </magic>
+  </mime-type>
   <mime-type type="image/x-xfig">
     <_comment>XFig image</_comment>
     <glob pattern="*.fig"/>

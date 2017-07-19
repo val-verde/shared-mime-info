@@ -127,6 +127,7 @@ command to generate the output files.
     <_comment>Adobe Illustrator document</_comment>
     <generic-icon name="image-x-generic"/>
     <glob pattern="*.ai"/>
+    <alias type="application/vnd.adobe.illustrator"/>
   </mime-type>
   <mime-type type="application/mac-binhex40">
     <_comment>Macintosh BinHex-encoded file</_comment>

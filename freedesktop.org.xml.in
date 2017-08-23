@@ -6984,13 +6984,13 @@ command to generate the output files.
     </treemagic>
   </mime-type>
 
-  <mime-type type="application/x-trig">
-    <!-- http://www4.wiwiss.fu-berlin.de/bizer/TriG/ -->
+  <mime-type type="application/trig">
     <_comment>TriG RDF document</_comment>
     <acronym>TriG</acronym>
     <expanded-acronym>TriG RDF Graph Triple Language</expanded-acronym>
     <sub-class-of type="text/plain"/>
     <glob pattern="*.trig" />
+    <alias type="application/x-trig"/>
   </mime-type>
 
   <mime-type type="application/x-iwork-keynote-sffkey">

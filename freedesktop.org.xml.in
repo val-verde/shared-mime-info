@@ -7082,6 +7082,23 @@ command to generate the output files.
     <glob pattern="*.sqsh"/>
   </mime-type>
 
+  <mime-type type="application/vnd.appimage">
+    <_comment>AppImage application bundle (Type 2)</_comment>
+    <sub-class-of type="application/x-executable"/>
+    <sub-class-of type="application/vnd.squashfs"/>
+    <generic-icon name="application-x-executable"/>
+    <magic priority="50">
+      <match value="ELF" type="string" offset="1" >
+        <match value="0x41" type="byte" offset="8">
+          <match value="0x49" type="byte" offset="9">
+            <match value="0x02" type="byte" offset="10"/>
+          </match>
+        </match>
+      </match>
+    </magic>
+    <glob pattern="*.appimage"/>
+  </mime-type>
+
   <mime-type type="application/vnd.snap">
     <_comment>Snap package</_comment>
     <glob pattern="*.snap"/>

@@ -58,7 +58,7 @@ if ENABLE_UPDATE_MIMEDB
 endif
 
 uninstall-hook:
-	for media in text application image audio inode video message model multipart x-epoc x-content; do rm -f "$(DESTDIR)$(datadir)/mime/$${media}/"*.xml; done
+	for media in text application image audio inode video message model multipart x-epoc x-content font; do rm -f "$(DESTDIR)$(datadir)/mime/$${media}/"*.xml; done
 	rm -f "$(DESTDIR)$(datadir)/mime/globs"
 	rm -f "$(DESTDIR)$(datadir)/mime/magic"
 	rm -f "$(DESTDIR)$(datadir)/mime/aliases"

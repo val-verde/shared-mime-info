@@ -1,3 +1,30 @@
+shared-mime-info 1.9 (2017-18-09)
+* Add x-systemd-unit and x-dbus-service MIME types
+* Fix magic for application/x-java-keystore on little endian
+* Add mime-type for STL 3D models and GCODE
+* Add application/x-executable as a supertype of application/ecmascript
+* Add shebang magic for gjs JavaScript files
+* Add a mimetype for Khronos texture files
+* Add a mime-type for Famicom Disk System images
+* Add "font" top level type, and use IANA registered type for TTF,
+  OTF, WOFF, TTC and WOFF2
+* Add OpenCL mime-type
+* Add text/x-python3 content type
+* Add Audible.com mime type
+* Add application/x-atari-lynx-rom
+* Add application/x-wonderswan-rom
+* Add application/x-virtual-boy-rom
+* Better JPEG 2000 MIME type support
+* Add support for GIMP data files (.gbr, .gih, .pat)
+* Add an alias for Adobe Illustrator formats
+* Add *.mjs glob for Javascript
+* Rename application/x-trig to application/trig
+* Rename Panasonic RAW image mime-types to image/x-panasonic-rw*
+* Change the preferred suffix for image/x-tga from icb to tga
+* Correct "PostScript" capitalisation
+* Add mimetype for AppImage Type 2
+* Remove AppImage glob with different casing
+
 shared-mime-info 1.8 (2016-12-05)
 * Add Flatpak-related mime-types
 * Add mime-type for a number of Thomson-related disk (and cassette) images

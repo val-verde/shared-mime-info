@@ -7082,8 +7082,9 @@ command to generate the output files.
     <glob pattern="*.sqsh"/>
   </mime-type>
 
+  <!-- AppImage application bundle (Type 2) -->
   <mime-type type="application/vnd.appimage">
-    <_comment>AppImage application bundle (Type 2)</_comment>
+    <_comment>AppImage application bundle</_comment>
     <sub-class-of type="application/x-executable"/>
     <sub-class-of type="application/vnd.squashfs"/>
     <generic-icon name="application-x-executable"/>

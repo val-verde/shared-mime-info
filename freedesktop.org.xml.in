@@ -1865,7 +1865,13 @@ command to generate the output files.
   <mime-type type="text/x-qml">
     <_comment>Qt Markup Language file</_comment>
     <magic priority="80">
-      <match type="string" value="import Qt " offset="0:256"/>
+      <match type="string" value="/bin/env qml" offset="2:16"/>
+      <match type="string" value="import Qt" offset="0:3000">
+        <match type="string" value="{" offset="9:3009"/>
+      </match>
+      <match type="string" value="import Qml" offset="0:3000">
+        <match type="string" value="{" offset="9:3009"/>
+      </match>
     </magic>
     <glob pattern="*.qml"/>
     <glob pattern="*.qmltypes"/>

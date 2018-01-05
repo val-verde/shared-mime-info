@@ -306,6 +306,9 @@ test.gs text/x-genie ox
 test.go text/x-go oxo
 # Qt Quick (QML) file
 rectangle.qml text/x-qml
+shebang.qml text/x-qml
+plugins.qmltypes text/x-qml
+text.qmlproject text/x-qml
 # QtiPlot (qti) file
 test.qti application/x-qtiplot
 # Sass CSS pre-processor file
@@ -325,6 +328,8 @@ test.pyx text/x-python ox
 # Python 3 script
 test3.py text/x-python3 x
 test.py3 text/x-python3
+# PySide
+pyside.py text/x-python
 # Perl
 test.pl application/x-perl
 test.pm application/x-perl

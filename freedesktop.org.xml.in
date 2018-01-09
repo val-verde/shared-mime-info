@@ -4507,6 +4507,14 @@ command to generate the output files.
     <glob pattern="*.jpe"/>
     <alias type="image/pjpeg"/>
   </mime-type>
+  <mime-type type="video/x-mjpeg">
+    <_comment>MJPEG video stream</_comment>
+    <acronym>MJPEG</acronym>
+    <expanded-acronym>Motion JPEG</expanded-acronym>
+    <sub-class-of type="image/jpeg"/>
+    <glob pattern="*.mjpeg"/>
+    <glob pattern="*.mjpg"/>
+  </mime-type>
   <mime-type type="image/x-jp2-codestream">
     <_comment>JPEG-2000 codestream</_comment>
     <magic priority="50">

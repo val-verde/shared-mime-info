@@ -213,6 +213,8 @@ sample2.amr audio/AMR
 # Testing case-insensitive mime-type matching
 # https://bugs.freedesktop.org/show_bug.cgi?id=38415
 sample2.amr audio/amr
+# Truncated file from https://bugzilla.gnome.org/show_bug.cgi?id=792325
+raw-mjpeg.mjpeg video/x-mjpeg oxo
 
 # text
 text-iso8859-15.txt text/plain

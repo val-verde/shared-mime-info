@@ -4136,6 +4136,11 @@ command to generate the output files.
     <glob pattern="*.m4a"/>
     <glob pattern="*.f4a"/>
   </mime-type>
+  <mime-type type="audio/x-m4r">
+    <_comment>MPEG-4 Ringtone</_comment>
+    <glob pattern="*.m4r"/>
+    <sub-class-of type="video/mp4"/>
+  </mime-type>
   <mime-type type="video/mp4">
     <_comment>MPEG-4 video</_comment>
     <alias type="video/mp4v-es"/>

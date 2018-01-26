@@ -2739,7 +2739,7 @@ command to generate the output files.
     <generic-icon name="package-x-generic"/>
     <glob pattern="*.lhz"/>
   </mime-type>
-  <mime-type type="text/vnd.trolltech.linguist">
+  <mime-type type="text/vnd.qt.linguist">
     <_comment>message catalog</_comment>
     <sub-class-of type="application/xml"/>
     <magic>
@@ -2747,6 +2747,7 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ts"/>
     <alias type="application/x-linguist"/>
+    <alias type="text/vnd.trolltech.linguist"/>
   </mime-type>
   <mime-type type="application/x-lyx">
     <_comment>LyX document</_comment>

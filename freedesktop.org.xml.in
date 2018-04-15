@@ -3024,7 +3024,21 @@ command to generate the output files.
     <generic-icon name="application-x-executable"/>
     <glob pattern="*.ngp"/>
     <magic>
-      <match offset="0" type="string" value="COPYRIGHT BY SNK CORPORATION"/>
+      <match offset="35" type="byte" value="0x0">
+        <match offset="0" type="string" value="COPYRIGHT BY SNK CORPORATION"/>
+        <match offset="0" type="string" value=" LICENSED BY SNK CORPORATION"/>
+      </match>
+    </magic>
+  </mime-type>
+  <mime-type type="application/x-neo-geo-pocket-color-rom">
+    <_comment>Neo-Geo Pocket Color ROM</_comment>
+    <generic-icon name="application-x-executable"/>
+    <glob pattern="*.ngc"/>
+    <magic>
+      <match offset="35" type="byte" value="0x10">
+        <match offset="0" type="string" value="COPYRIGHT BY SNK CORPORATION"/>
+        <match offset="0" type="string" value=" LICENSED BY SNK CORPORATION"/>
+      </match>
     </magic>
   </mime-type>
   <mime-type type="application/x-nes-rom">

@@ -265,7 +265,7 @@ static Type *get_type(const char *name, GError **error)
 			return type;
 	}
 
-	g_warning("Unknown media type in type '%s'", name);
+	g_message("Unknown media type in type '%s'", name);
 
 	return type;
 }

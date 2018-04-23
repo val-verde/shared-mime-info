@@ -49,6 +49,9 @@
  * delete. It is also used to warn about invalid MIME types.
  */
 const char *media_types[] = {
+	"all",
+	"uri",
+	"print",
 	"text",
 	"application",
 	"image",

@@ -708,6 +708,8 @@ static void load_source_file(const char *filename)
 		return;
 	}
 
+	g_message("Parsing source file %s...", filename);
+
 	root = xmlDocGetRootElement(doc);
 
 	if (root->ns == NULL || xmlStrcmp(root->ns->href, FREE_NS) != 0)

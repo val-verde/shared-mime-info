@@ -912,7 +912,7 @@ the content is not available), use the default type of application/octet-stream 
 binary data, or text/plain for textual data. If there was no glob match, use the magic match
 as the result. 
 				</para><para>
-Note: Checking the first 32 bytes of the file for ASCII control characters is
+Note: Checking the first 128 bytes of the file for ASCII control characters is
 a good way to guess whether a file is binary or text, but note that files with high-bit-set
 characters should still be treated as text since these can appear in UTF-8 text,
 unlike control characters.

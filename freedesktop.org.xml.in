@@ -4511,6 +4511,16 @@ command to generate the output files.
     </magic>
     <glob pattern="*.gif"/>
   </mime-type>
+  <mime-type type="image/heif">
+    <_comment>HEIF image</_comment>
+    <acronym>HEIF</acronym>
+    <expanded-acronym>High Efficiency Image File</expanded-acronym>
+    <glob pattern="*.heic"/>
+    <glob pattern="*.heif"/>
+    <alias type="image/heic"/>
+    <alias type="image/heic-sequence"/>
+    <alias type="image/heif-sequence"/>
+  </mime-type>
   <mime-type type="image/ief">
     <_comment>IEF image</_comment>
     <glob pattern="*.ief"/>

@@ -7153,13 +7153,6 @@ command to generate the output files.
   <!-- 3D models and GCODEs -->
   <mime-type type="model/x.stl-binary">
     <_comment>STL 3D model (binary)</_comment>
-    <magic priority="10">
-      <match type="byte" value="0x0" mask="0xFFFF" offset="134">
-        <match type="byte" value="0x0" mask="0xFFFF" offset="184">
-          <match type="byte" value="0x0" mask="0xFFFF" offset="234"/>
-        </match>
-      </match>
-    </magic>
     <glob pattern="*.stl"/>
   </mime-type>
 

@@ -329,6 +329,12 @@ command to generate the output files.
     <expanded-acronym>Public-Key Cryptography Standards</expanded-acronym>
     <glob pattern="*.p8"/>
   </mime-type>
+  <mime-type type="application/pkcs8-encrypted">
+    <_comment>PKCS#8 private key (encrypted)</_comment>
+    <acronym>PKCS</acronym>
+    <expanded-acronym>Public-Key Cryptography Standards</expanded-acronym>
+    <glob pattern="*.p8e"/>
+  </mime-type>
   <mime-type type="application/pkcs10">
     <_comment>PKCS#10 certification request</_comment>
     <acronym>PKCS</acronym>

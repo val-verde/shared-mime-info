@@ -641,6 +641,8 @@ example_42_all.snap application/vnd.snap ox
 test.bsdiff application/x-bsdiff
 # Generated with sqlite3 3.19.3
 test.sqlite3 application/vnd.sqlite3
+# Generated with sqlite 2.8.17
+test.sqlite2 application/x-sqlite2
 COPYING-encrypted.asc application/pgp-encrypted xoo
 # clear text signatures should not have the same mime type as detached signatures
 COPYING-clearsign.asc application/pgp-signature xxx

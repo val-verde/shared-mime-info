@@ -500,7 +500,7 @@ command to generate the output files.
       <match type="string" value="(;FF[4]" offset="0"/>
     </magic>
   </mime-type>
-  <mime-type type="application/x-xliff">
+  <mime-type type="application/xliff+xml">
     <_comment>XLIFF translation file</_comment>
     <acronym>XLIFF</acronym>
     <expanded-acronym>XML Localization Interchange File Format</expanded-acronym>
@@ -512,6 +512,7 @@ command to generate the output files.
       <match type="string" value="&lt;xliff" offset="0:256"/>
     </magic>
     <root-XML namespaceURI='urn:oasis:names:tc:xliff:document:1.1' localName='xliff'/>
+    <alias type="application/x-xliff"/>
   </mime-type>
   <mime-type type="application/x-yaml">
     <_comment>YAML document</_comment>

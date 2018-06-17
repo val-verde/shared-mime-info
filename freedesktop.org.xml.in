@@ -7165,20 +7165,17 @@ command to generate the output files.
   </mime-type>
 
   <!-- 3D models and GCODEs -->
-  <mime-type type="model/x.stl-binary">
-    <_comment>STL 3D model (binary)</_comment>
-    <glob pattern="*.stl"/>
-  </mime-type>
-
-  <mime-type type="model/x.stl-ascii">
-    <_comment>STL 3D model (ASCII)</_comment>
-    <sub-class-of type="text/plain"/>
-    <generic-icon name="text-x-generic"/>
+  <mime-type type="model/stl">
+    <_comment>STL 3D model</_comment>
+    <acronym>STL</acronym>
+    <expanded-acronym>StereoLithography</expanded-acronym>
     <magic priority="50">
       <match type="string" value="solid" offset="0"/>
       <match type="string" value="SOLID" offset="0"/>
     </magic>
     <glob pattern="*.stl"/>
+    <alias type="model/x.stl-ascii"/>
+    <alias type="model/x.stl-binary"/>
   </mime-type>
 
   <mime-type type="text/x.gcode">

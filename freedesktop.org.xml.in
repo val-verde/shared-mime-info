@@ -1324,6 +1324,12 @@ command to generate the output files.
     <glob pattern="*.wpd"/>
     <glob pattern="*.wpp"/>
   </mime-type>
+  <mime-type type="application/vnd.youtube.yt">
+    <_comment>YouTube Media Archive</_comment>
+    <generic-icon name="video-x-generic"/>
+    <glob pattern="*.yt"/>
+    <sub-class-of type="application/zip"/>
+  </mime-type>
   <mime-type type="application/x-spss-por">
     <_comment>SPSS Portable Data File</_comment>
     <magic priority="50">

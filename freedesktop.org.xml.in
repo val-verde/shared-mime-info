@@ -438,11 +438,13 @@ command to generate the output files.
       <match type="string" value="** This file contains an SQLite" offset="0"/>
     </magic>
   </mime-type>
-  <mime-type type="application/x-sqlite3">
+  <mime-type type="application/vnd.sqlite3">
     <_comment>SQLite3 database</_comment>
+    <glob pattern="*.sqlite3"/>
     <magic>
       <match type="string" value="SQLite format 3" offset="0"/>
     </magic>
+    <alias type="application/x-sqlite3"/>
   </mime-type>
   <mime-type type="application/x-gedcom">
     <_comment>GEDCOM family history</_comment>

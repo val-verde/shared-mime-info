@@ -1594,6 +1594,12 @@ command to generate the output files.
     <glob pattern="*.raw-disk-image"/>
     <glob pattern="*.img"/>
   </mime-type>
+  <mime-type type="application/x-raw-floppy-disk-image">
+    <_comment>Floppy disk image</_comment>
+    <sub-class-of type="application/x-raw-disk-image"/>
+    <alias type="application/x-fd-file"/>
+    <glob pattern="*.fd"/>
+  </mime-type>
   <mime-type type="application/x-raw-disk-image-xz-compressed">
     <_comment>Raw disk image (XZ-compressed)</_comment>
     <sub-class-of type="application/x-xz"/>

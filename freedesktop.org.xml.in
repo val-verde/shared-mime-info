@@ -1850,6 +1850,7 @@ command to generate the output files.
     <magic>
       <match offset="0" type="string" value="HXCPICFE"/>
     </magic>
+    <alias type="application/x-hfe-file"/>
   </mime-type>
   <mime-type type="application/x-thomson-sap-image">
     <_comment>SAP Thomson floppy disk image</_comment>
@@ -1860,6 +1861,7 @@ command to generate the output files.
     <magic>
       <match offset="1" type="string" value="SYSTEME D'ARCHIVAGE PUKALL S.A.P. (c) Alexandre PUKALL Avril 1998"/>
     </magic>
+    <alias type="application/x-sap-file"/>
   </mime-type>
   <mime-type type="application/vnd.debian.binary-package">
     <_comment>Debian package</_comment>

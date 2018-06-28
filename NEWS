@@ -1,3 +1,34 @@
+shared-mime-info 1.10 (2018-28-06)
+* Add mime-type for MJPEG raw streams
+* Add MPEG-4 Ringtone mime-type
+* Add mime-type for HEIF images
+* Add application/vnd.sqlite3, application/x-sqlite2 IANA types
+* Add application/pkcs8-encrypted
+* Add audio/usac
+* Add application/vnd.youtube.yt
+* Add mime-types for raw floppy disk images
+* Add aliases for SAP and HFE floppy images mime-types
+* Use new application/vnd.comicbook-rar IANA type
+* Remove magic from STL binary
+* Add *.adts and *.ass globs from IANA to audio/aac
+* Use new IANA type for application/xliff+xml
+* Use new IANA type for model/stl
+* Add text/x-perl alias to application/x-perl
+* Bump priority for our DjVu mime-types
+* Differentiate Neo Geo Pocket Color ROMs from non-Color ones
+* Remove *.bin from application/octet-stream
+* Add an application/xps alias for application/oxps
+* Change Qt Linguist file type to text/vnd.qt.linguist
+* Fix the QML magic
+
+Tools:
+- Don't warn with unknown top level type names
+- Look in obsolete KDE sub-dirs for clean up opportunities
+- Add some debug when parsing XML package files
+
+Spec:
+- ASCII check should be done with 128 leading bytes, not 32 bytes
+
 shared-mime-info 1.9 (2017-18-09)
 * Add x-systemd-unit and x-dbus-service MIME types
 * Fix magic for application/x-java-keystore on little endian

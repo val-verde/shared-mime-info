@@ -5636,6 +5636,11 @@ command to generate the output files.
     <glob pattern="*.owl"/>
     <root-XML namespaceURI="http://www.w3.org/1999/02/22-rdf-syntax-ns#" localName="RDF"/>
   </mime-type>
+  <mime-type type="text/x-rst">
+    <_comment>reStructuredText document</_comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.rst"/>
+  </mime-type>
   <mime-type type="application/owl+xml">
     <_comment>OWL XML file</_comment>
     <acronym>OWL</acronym>

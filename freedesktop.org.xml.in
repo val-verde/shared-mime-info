@@ -6495,6 +6495,13 @@ command to generate the output files.
     <root-XML namespaceURI="http://www.w3.org/1999/XSL/Transform" localName="stylesheet"/>
     <sub-class-of type="application/xml"/>
   </mime-type>
+  <mime-type type="text/x-maven+xml">
+    <_comment>Maven description file</_comment>
+    <generic-icon name="text-x-generic"/>
+    <glob pattern="pom.xml"/>
+    <glob pattern="settings.xml"/>
+    <sub-class-of type="application/xml"/>
+  </mime-type>
   <mime-type type="text/xmcd">
     <_comment>XMCD CD database</_comment>
     <sub-class-of type="text/plain"/>

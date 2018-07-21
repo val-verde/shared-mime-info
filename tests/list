@@ -368,6 +368,8 @@ test.mml application/mathml+xml ox
 # Qt Linguist: https://bugreports.qt.io/browse/QTBUG-64435
 linguist.ts text/vnd.qt.linguist
 test.xsl application/xslt+xml
+pom.xml text/x-maven+xml ox
+settings.xml text/x-maven+xml ox
 test.cbl text/x-cobol ox
 # Copied from http://docs.newzbin.com/index.php/Newzbin:NZB_Specs
 sample1.nzb application/x-nzb

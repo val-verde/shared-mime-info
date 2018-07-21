@@ -2404,6 +2404,12 @@ command to generate the output files.
     <alias type="application/x-java-vm"/>
     <glob pattern="*.class"/>
   </mime-type>
+  <mime-type type="text/x-groovy">
+    <_comment>Groovy script</_comment>
+    <sub-class-of type="text/plain"/>
+    <generic-icon name="text-x-generic"/>
+    <glob pattern="*.groovy"/>
+  </mime-type>
   <mime-type type="application/x-java-jnlp-file">
     <_comment>JNLP file</_comment>
     <acronym>JNLP</acronym>

@@ -2240,6 +2240,8 @@ write_data (FILE *cache, const gchar *n, gint len)
 
   i = fwrite (s, l, 1, cache);
 
+  g_free(s);
+
   return i == 1;
   
 }

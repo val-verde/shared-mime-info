@@ -974,6 +974,7 @@ sync_file(const gchar *pathname, GError **error)
 	if (fdatasync(fd) == -1)
 	{
 		set_error_from_errno(error);
+		close(fd);
 		return -1;
 	}
 	if (close(fd) == -1)

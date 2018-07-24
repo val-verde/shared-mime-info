@@ -1339,8 +1339,8 @@ static char *parse_string_mask(const char *mask, int len, GError **error)
 
 	return parsed_mask;
 err:
-	g_return_val_if_fail(error == NULL || *error != NULL, NULL);
 	g_free(parsed_mask);
+	g_return_val_if_fail(error == NULL || *error != NULL, NULL);
 	return NULL;
 }
 

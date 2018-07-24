@@ -2411,9 +2411,9 @@ command to generate the output files.
     <glob pattern="*.groovy"/>
   </mime-type>
   <mime-type type="text/x-gradle">
-    <_comment>Gradle configuration</_comment>
+    <_comment>Gradle scripts</_comment>
     <sub-class-of type="text/x-groovy"/>
-    <glob pattern="build.gradle"/>
+    <glob pattern="*.gradle"/>
   </mime-type>
   <mime-type type="application/x-java-jnlp-file">
     <_comment>JNLP file</_comment>

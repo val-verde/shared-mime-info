@@ -414,6 +414,8 @@ archive.lrz application/x-lrzip
 test.lz4 application/x-lz4
 # Created using Ark 16.07.70 + libarchive 3.2.0
 test.tar.lz4 application/x-lz4-compressed-tar ox
+# Created by zstd v1.3.5
+test.zst application/zstd
 # Copied from http://download.microsoft.com/download/7/e/5/7e58b1ce-d9e6-40e1-9d75-140fe5dd3de6/fuji.themepack
 fuji.themepack application/x-windows-themepack ox
 # Extracted from http://mozilla.doslash.org/stuff/helloworld.zip

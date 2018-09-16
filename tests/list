@@ -416,6 +416,8 @@ test.lz4 application/x-lz4
 test.tar.lz4 application/x-lz4-compressed-tar ox
 # Created by zstd v1.3.5
 test.zst application/zstd
+# Created using Ark 18.11.70 + libarchive 3.3.3
+test.tar.zst application/x-zstd-compressed-tar ox
 # Copied from http://download.microsoft.com/download/7/e/5/7e58b1ce-d9e6-40e1-9d75-140fe5dd3de6/fuji.themepack
 fuji.themepack application/x-windows-themepack ox
 # Extracted from http://mozilla.doslash.org/stuff/helloworld.zip

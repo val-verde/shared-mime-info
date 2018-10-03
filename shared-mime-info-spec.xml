@@ -278,7 +278,7 @@ Each <userinput>match</userinput> element has a number of attributes:
 
 	<row><entry>value</entry><entry>Yes</entry><entry>
 	The value to compare the file contents with, in the format indicated by the type
-	attribute.
+	attribute. The string type supports the C character escapes (\0, \t, \n, \r, \xAB for hex, \777 for octal).
 	</entry></row>
 
 	<row><entry>mask</entry><entry>No</entry><entry>

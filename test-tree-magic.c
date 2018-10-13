@@ -532,7 +532,8 @@ sniff_content_type (GFile *root)
 }
 
 static gboolean
-handle_one_line (const char *line)
+handle_one_line (const char *line,
+		 const char *cwd)
 {
 	GFile *file;
 	GPtrArray *array;
@@ -552,7 +553,7 @@ handle_one_line (const char *line)
 	filename = items[0];
 	mimetypes = g_strsplit (items[1], " ", -1);
 
-	file = g_file_new_for_commandline_arg (filename);
+	file = g_file_new_for_commandline_arg_and_cwd (filename, cwd);
 
 	array = sniff_content_type (file);
 	if (array->len == 0) {
@@ -634,7 +635,7 @@ print_matchlet (TreeMatchlet *matchlet, guint depth)
 int main (int argc, char **argv)
 {
 	GError *error = NULL;
-	char *content, **lines;
+	char *content, **lines, *cwd;
 	guint i;
 
 #if GLIB_CHECK_VERSION(2,36,0)
@@ -678,12 +679,14 @@ int main (int argc, char **argv)
 	lines = g_strsplit (content, "\n", -1);
 	g_free (content);
 
+	cwd = g_path_get_dirname (argv[1]);
 	for (i = 0; lines[i] != NULL; i++) {
 		if (*lines[i] == '\0' || *lines[i] == '#')
 			continue;
-		if (handle_one_line (lines[i]) == FALSE)
+		if (handle_one_line (lines[i], cwd) == FALSE)
 			return 1;
 	}
+	g_free (cwd);
 
 	tree_magic_shutdown ();
 

@@ -47,12 +47,6 @@ if test "x$GCC" = "xyes"; then
 fi
 ]
 
-AC_ARG_ENABLE(default-make-check,
-   AC_HELP_STRING([--disable-default-make-check],
-                   [run make check by default [default=yes]]),,
-    enable_default_make_check=yes)
-AM_CONDITIONAL(ENABLE_DEFAULT_MAKE_CHECK, test x$enable_default_make_check = xyes)
-
 AC_ARG_ENABLE(update-mimedb,
    AC_HELP_STRING([--disable-update-mimedb],
                    [disable the update-mime-database after install [default=no]]),,

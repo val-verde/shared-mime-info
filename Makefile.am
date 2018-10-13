@@ -75,9 +75,6 @@ uninstall-hook:
 	rm -f "$(DESTDIR)$(datadir)/mime/version"
 
 defaultmakedeps=create-pot
-if ENABLE_DEFAULT_MAKE_CHECK
-defaultmakedeps += check
-endif
 
 all: $(defaultmakedeps)
 

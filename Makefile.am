@@ -104,11 +104,7 @@ check: create-pot freedesktop.org.xml update-mime-database$(EXEEXT) check-transl
 if CROSS_COMPILING
 	@echo "Cross compiling: Skipping checks"
 else
-	if test -e $(top_builddir)/freedesktop.org.xml; then \
-		xmllint --noout --valid $(top_builddir)/freedesktop.org.xml || exit 1;	\
-	else \
-		xmllint --noout --valid $(top_srcdir)/freedesktop.org.xml || exit 1;	\
-	fi; \
+	xmllint --noout --valid $(top_builddir)/freedesktop.org.xml || exit 1;	\
 	if test -d .git/ && test -x $(top_builddir)/update-mime-database$(EXEEXT) && test -d $(top_srcdir)/mime-db-tests ; then \
 		$(top_builddir)/update-mime-database$(EXEEXT) mime-db-tests/ ; \
 	fi

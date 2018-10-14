@@ -47,9 +47,11 @@ Bugs for new mime-types should include:
 Test suite
 ----------
 
-You need to have xdgmime checked out [1] and compiled at the same level as
+You need to have xdgmime checked out [1] and compiled. By default, the build
+system will expect the source directory to be at the same level as
 shared-mime-info. ../xdgmime/src/test-mime-data will be run against
-tests/list.
+tests/list. An alternate path to xdgmime can be passed by setting the
+XDGMIME_PATH environment variable to the appropriate path.
 
 The format of the file is:
 <testcase filename> <expected mime-type> <expected failures>

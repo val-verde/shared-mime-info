@@ -47,6 +47,11 @@ if test "x$GCC" = "xyes"; then
 fi
 ]
 
+if test "x$XDGMIME_PATH" = "x" ; then
+	XDGMIME_PATH=$srcdir/../xdgmime
+fi
+AC_SUBST([XDGMIME_PATH], $XDGMIME_PATH)
+
 AC_ARG_ENABLE(update-mimedb,
    AC_HELP_STRING([--disable-update-mimedb],
                    [disable the update-mime-database after install [default=no]]),,

@@ -81,6 +81,8 @@ all: $(defaultmakedeps)
 create-pot:
 	$(AM_V_GEN) $(MAKE) -C po shared-mime-info.pot
 
+XDGMIME_PATH=@XDGMIME_PATH@
+
 local-test: create-pot freedesktop.org.xml update-mime-database$(EXEEXT)
 if CROSS_COMPILING
 	@echo "Cross compiling: Skipping checks"
@@ -91,11 +93,11 @@ else
 		echo "***************************************************************************" ; \
 		exit 1 ; \
 	fi
-	if test -d .git/ && test -x ../xdgmime/src/print-mime-data$(EXEEXT) ; then \
+	if test -d $(top_srcdir)/.git/ ; then \
 		mkdir -p $(top_builddir)/temp-mime-dir/mime/packages ; \
 		cp -a $(top_builddir)/freedesktop.org.xml $(top_builddir)/temp-mime-dir/mime/packages/ ; \
 		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/update-mime-database$(EXEEXT) "$(top_builddir)/temp-mime-dir/mime/" ; \
-		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" ../xdgmime/src/print-mime-data$(EXEEXT) staging-tests/; \
+		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/print-mime-data$(EXEEXT) staging-tests/; \
 		rm -rf "$(top_builddir)/temp-mime-dir/" ; \
 	fi
 endif
@@ -105,11 +107,11 @@ if CROSS_COMPILING
 	@echo "Cross compiling: Skipping checks"
 else
 	xmllint --noout --valid $(top_builddir)/freedesktop.org.xml || exit 1;	\
-	if test -d .git/ && test -x $(top_builddir)/update-mime-database$(EXEEXT) && test -d $(top_srcdir)/mime-db-tests ; then \
-		$(top_builddir)/update-mime-database$(EXEEXT) mime-db-tests/ ; \
+	if test -d $(top_srcdir)/.git/ ; then \
+		$(top_builddir)/update-mime-database$(EXEEXT) $(top_srcdir)/mime-db-tests/ ; \
 	fi
-	@if test -d .git/ ; then \
-		if test ! -x ../xdgmime/src/test-mime-data$(EXEEXT) || test ! -x $(top_builddir)/test-tree-magic$(EXEEXT) ; then \
+	@if test -d $(top_srcdir)/.git/ ; then \
+		if test ! -x $(XDGMIME_PATH)/src/test-mime-data$(EXEEXT) || test ! -x $(top_builddir)/test-tree-magic$(EXEEXT) ; then \
 			echo "***************************************************************************" ; \
 			echo "*** xdgmime not compiled, test suite cannot run. Check HACKING for info ***" ; \
 			echo "***************************************************************************" ; \
@@ -118,8 +120,8 @@ else
 			mkdir -p $(top_builddir)/temp-mime-dir/mime/packages ; \
 			cp -a $(top_builddir)/freedesktop.org.xml $(top_builddir)/temp-mime-dir/mime/packages/ ; \
 			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/update-mime-database$(EXEEXT) "$(top_builddir)/temp-mime-dir/mime/" ; \
-			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" ../xdgmime/src/test-mime-data$(EXEEXT) -v tests/list || XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" ../xdgmime/src/test-mime$(EXEEXT) || (XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" ../xdgmime/src/test-mime-data$(EXEEXT) -v -v tests/list ; exit 1); \
-			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/test-tree-magic$(EXEEXT) tests/tree-list || exit 1; \
+			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/test-mime-data$(EXEEXT) -v $(top_srcdir)/tests/list || XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/test-mime$(EXEEXT) || (XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/test-mime-data$(EXEEXT) -v -v $(top_srcdir)/tests/list ; exit 1); \
+			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/test-tree-magic$(EXEEXT) $(top_srcdir)/tests/tree-list || exit 1; \
 			rm -rf "$(top_builddir)/temp-mime-dir/" ; \
 		fi; \
 	fi

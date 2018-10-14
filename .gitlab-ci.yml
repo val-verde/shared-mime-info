@@ -13,7 +13,9 @@ build:
     - cd xdgmime
     - make
     - cd ..
-    - XDGMIME_PATH=`pwd`/xdgmime/ ./autogen.sh --disable-dependency-tracking
+    - mkdir build
+    - cd build
+    - XDGMIME_PATH=`pwd`/../xdgmime/ ../autogen.sh --disable-dependency-tracking
     - make
     - make check
     - make install

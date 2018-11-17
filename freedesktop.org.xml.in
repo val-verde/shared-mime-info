@@ -3921,6 +3921,7 @@ command to generate the output files.
     <generic-icon name="package-x-generic"/>
     <sub-class-of type="application/zstd"/>
     <glob pattern="*.tar.zst"/>
+    <glob pattern="*.tzst"/>
   </mime-type>
   <mime-type type="application/x-xzpdf">
     <_comment>PDF document (XZ-compressed)</_comment>

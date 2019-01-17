@@ -14,17 +14,19 @@ build:
     - make
     - cd ..
     # Compile and test shared-mime-info with builddir != srcdir
-    - mkdir build
-    - cd build
-    - XDGMIME_PATH=`pwd`/../xdgmime/ ../autogen.sh --disable-dependency-tracking
+    - rm -rf ../_build/
+    - mkdir ../_build/
+    - cd ../_build/
+    - XDGMIME_PATH=`pwd`/../shared-mime-info/xdgmime/ ../shared-mime-info/autogen.sh --disable-dependency-tracking
     - make
     - make check
-    - make distcheck
+    - V=1 make distcheck
     - make install
     # Compile and test with builddir == srcdir
     - make uninstall
-    - cd ..
-    - rm -rf build/
+    - cd ../shared-mime-info/
+    - rm -rf ../_build/
+    - git clean -dxf
     - XDGMIME_PATH=`pwd`/xdgmime/ ./autogen.sh
     - make check
-    - make distcheck
+    - V=1 make distcheck

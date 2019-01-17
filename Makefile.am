@@ -3,7 +3,7 @@ SUBDIRS=. po
 AM_CPPFLAGS = $(ALL_CFLAGS)
 
 packagesdir = $(datadir)/mime/packages
-packages_DATA = freedesktop.org.xml
+nodist_packages_DATA = freedesktop.org.xml
 
 bin_PROGRAMS = update-mime-database
 update_mime_database_SOURCES = update-mime-database.c

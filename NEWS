@@ -1,3 +1,22 @@
+shared-mime-info 1.11 (2019-17-01)
+* Add mime-type for reStructuredText
+* Add mime-type for Groovy scripting language
+* Add mime-type for Gradle build tool
+* Add mime-type for Maven
+* Add mime-type for WarpScript source code
+* Add mime-type for zstd and tar.zst archives
+* Change the preferred suffix for image/jpeg from .jpeg to .jpg
+* Assign *.html to XHTML pages
+* Better detection for *.key files (Apple Keynote vs. GPG keys)
+* Give weight to one of the appimage patterns
+
+Tools:
+- Link to GitLab for contributions and bug reports
+- Loads of memory and file descriptor leak fixes
+
+Spec:
+- Clarify the availability of C character escape support
+
 shared-mime-info 1.10 (2018-28-06)
 * Add mime-type for MJPEG raw streams
 * Add MPEG-4 Ringtone mime-type

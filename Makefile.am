@@ -80,7 +80,6 @@ all: $(defaultmakedeps)
 
 create-pot:
 	$(AM_V_GEN) $(MAKE) -C po shared-mime-info.pot
-	cp -a po/shared-mime-info.pot $(top_srcdir)/po/
 
 XDGMIME_PATH=@XDGMIME_PATH@
 
@@ -146,8 +145,8 @@ check-translations:
 	if [ $$RET == 1 ] ; then exit 1; fi
 
 update-translations: create-pot
-	@tx pull --all --force --skip --root $(top_srcdir)
-	@tx push --source --root $(top_srcdir)
+	@tx pull --all --force --skip
+	@tx push --source
 
 # Build ChangeLog from GIT history
 ChangeLog:

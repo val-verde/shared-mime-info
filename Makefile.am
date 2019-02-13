@@ -120,7 +120,8 @@ else
 			mkdir -p $(top_builddir)/temp-mime-dir/mime/packages ; \
 			cp -a $(top_builddir)/freedesktop.org.xml $(top_builddir)/temp-mime-dir/mime/packages/ ; \
 			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/update-mime-database$(EXEEXT) "$(top_builddir)/temp-mime-dir/mime/" ; \
-			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/test-mime-data$(EXEEXT) -v $(top_srcdir)/tests/list || XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/test-mime$(EXEEXT) || (XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/test-mime-data$(EXEEXT) -v -v $(top_srcdir)/tests/list ; exit 1); \
+			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/test-mime-data$(EXEEXT) -v $(top_srcdir)/tests/list || exit 1; \
+			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/test-mime$(EXEEXT) || exit 1; \
 			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/test-tree-magic$(EXEEXT) $(top_srcdir)/tests/tree-list || exit 1; \
 			rm -rf "$(top_builddir)/temp-mime-dir/" ; \
 		fi; \

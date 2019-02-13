@@ -9,7 +9,7 @@
 
 
 # Images
-test.bmp image/bmp
+test.bmp image/bmp 
 test.cel image/x-cel xxx 
 test.dcm application/dicom
 test.eps image/x-eps
@@ -493,8 +493,8 @@ simon.669 audio/x-mod
 test.aa audio/x-pn-audibleaudio
 test.aax audio/x-pn-audibleaudio
 # MPEG-4 files
-mp4v1-video-header video/mp4
-mp4v2-video-header video/mp4
+mp4v1-video-header.mp4 video/mp4
+mp4v2-video-header.mp4 video/mp4
 
 # Disk and CD/DVD images
 iso-file.iso application/x-cd-image oxo

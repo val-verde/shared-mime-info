@@ -52,7 +52,7 @@ else
   update_mime_database="$(top_builddir)/update-mime-database$(EXEEXT)"
 endif
 
-install-data-hook: install-binPROGRAMS
+install-data-hook:
 if ENABLE_UPDATE_MIMEDB
 	$(update_mime_database) -V "$(DESTDIR)$(datadir)/mime"
 endif

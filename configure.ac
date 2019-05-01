@@ -12,7 +12,7 @@ AC_PROG_CC
 
 dnl Checks for typedefs, structures, and compiler characteristics.
 AC_C_CONST
-
+AC_SYS_LARGEFILE
 
 IT_PROG_INTLTOOL([0.35.0])
 

@@ -7087,6 +7087,16 @@ command to generate the output files.
     <_comment>portable audio player</_comment>
   </mime-type>
 
+  <mime-type type="x-content/ostree-repository">
+    <!-- https://github.com/ostreedev/ostree/blob/master/man/ostree-create-usb.xml -->
+    <_comment>OSTree software updates</_comment>
+    <treemagic>
+      <treematch path=".ostree" type="directory" non-empty="true" match-case="true" />
+      <treematch path="ostree/repo" type="directory" non-empty="true" match-case="true" />
+      <treematch path="var/lib/flatpak/repo" type="directory" non-empty="true" match-case="true" />
+    </treemagic>
+  </mime-type>
+
   <mime-type type="x-content/software">
     <!-- http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
          http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3 -->

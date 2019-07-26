@@ -1,4 +1,4 @@
-SUBDIRS=. po
+SUBDIRS=po .
 
 AM_CPPFLAGS = $(ALL_CFLAGS)
 
@@ -33,18 +33,29 @@ EXTRA_DIST = \
 	HACKING				\
 	$(man_MANS)			\
 	shared-mime-info.pc.in		\
-	po/shared-mime-info.pot
+	shared-mime-info.pot		\
+	mime-info.its
 
 CLEANFILES = freedesktop.org.xml po/stamp-it
-DISTCLEANFILES = intltool-extract intltool-merge intltool-update
+MAINTAINERCLEANFILES = shared-mime-info.pot
 
 pkgconfigdir = $(datadir)/pkgconfig
 pkgconfig_DATA = shared-mime-info.pc
 
 $(pkgconfig_DATA): config.status
 
-@INTLTOOL_XML_RULE@
-@INTLTOOL_DESKTOP_RULE@
+all-recursive: shared-mime-info.pot
+
+shared-mime-info.pot: freedesktop.org.xml.in mime-info.its
+	$(AM_V_GEN)$(ITSTOOL) -i $(srcdir)/mime-info.its -o $@ $<
+	test "$(srcdir)" = . || cp shared-mime-info.pot $(srcdir)/shared-mime-info.pot
+
+po/shared-mime-info.pot: shared-mime-info.pot
+	$(MAKE) -C po shared-mime-info.pot
+
+freedesktop.org.xml: freedesktop.org.xml.in shared-mime-info.pot
+	$(MAKE) -C po update-gmo
+	$(AM_V_GEN)$(ITSTOOL) -j $< -o $@ $(top_srcdir)/po/*.gmo
 
 if CROSS_COMPILING
   update_mime_database=$(UPDATE_MIME_DATABASE)
@@ -74,16 +85,11 @@ uninstall-hook:
 	rm -f "$(DESTDIR)$(datadir)/mime/types"
 	rm -f "$(DESTDIR)$(datadir)/mime/version"
 
-defaultmakedeps=create-pot
-
 all: $(defaultmakedeps)
-
-create-pot:
-	$(AM_V_GEN) $(MAKE) -C po shared-mime-info.pot
 
 XDGMIME_PATH=@XDGMIME_PATH@
 
-local-test: create-pot freedesktop.org.xml update-mime-database$(EXEEXT)
+local-test: po/shared-mime-info.pot freedesktop.org.xml update-mime-database$(EXEEXT)
 if CROSS_COMPILING
 	@echo "Cross compiling: Skipping checks"
 else
@@ -102,7 +108,7 @@ else
 	fi
 endif
 
-check: create-pot freedesktop.org.xml update-mime-database$(EXEEXT) check-translations
+check: po/shared-mime-info.pot freedesktop.org.xml update-mime-database$(EXEEXT) check-translations
 if CROSS_COMPILING
 	@echo "Cross compiling: Skipping checks"
 else
@@ -126,12 +132,6 @@ else
 			rm -rf "$(top_builddir)/temp-mime-dir/" ; \
 		fi; \
 	fi
-	@if `grep comment $(srcdir)/freedesktop.org.xml.in | grep -v _comment | grep -q -v '<!'` ; then \
-		echo "***************************************************************************" ; \
-		echo "*** Some comments are not marked as translatable, fix before committing ***" ; \
-		echo "***************************************************************************" ; \
-		exit 1 ; \
-	fi
 	@if test x`grep '<mime-type' $(srcdir)/freedesktop.org.xml.in | tr -d '[:blank:]' | sort | uniq -d` != "x"; then \
 		echo "*************************************************************" ; \
 		echo "*** Some mime-types are duplicated, fix before committing ***" ; \
@@ -151,7 +151,7 @@ check-translations:
 	done;												\
 	if [ $$RET == 1 ] ; then exit 1; fi
 
-update-translations: create-pot
+update-translations: po/shared-mime-info.pot
 	@tx pull --all --force --skip
 	@tx push --source
 
@@ -165,3 +165,5 @@ dist: ChangeLog
 
 .PHONY: ChangeLog
 
+
+ACLOCAL_AMFLAGS = -I m4

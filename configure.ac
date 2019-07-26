@@ -14,11 +14,12 @@ dnl Checks for typedefs, structures, and compiler characteristics.
 AC_C_CONST
 AC_SYS_LARGEFILE
 
-IT_PROG_INTLTOOL([0.35.0])
-
-GETTEXT_PACKAGE=shared-mime-info
-AC_SUBST(GETTEXT_PACKAGE)
-AM_GLIB_GNU_GETTEXT
+AM_GNU_GETTEXT_VERSION([0.19.8])
+AM_GNU_GETTEXT([external])
+AC_CHECK_PROGS([ITSTOOL], [itstool])
+if test x"${ITSTOOL}" = x; then
+  AC_MSG_ERROR([itstool is missing])
+fi
 
 AC_CHECK_FUNCS(fdatasync)
 

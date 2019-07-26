@@ -5,8 +5,6 @@ srcdir=`dirname $0`
 test -z "$srcdir" && srcdir=.
 
 pushd $srcdir
-echo "autogen.sh: running: intltoolize --force"
-intltoolize --force || exit 1
 autoreconf -vif || exit 1
 
 popd

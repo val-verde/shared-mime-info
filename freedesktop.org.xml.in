@@ -5997,6 +5997,7 @@ command to generate the output files.
     <magic priority="50">
       <match type="string" value="&lt;!DOCTYPE HTML" offset="0:256"/>
       <match type="string" value="&lt;!doctype html" offset="0:256"/>
+      <match type="string" value="&lt;!DOCTYPE html" offset="0:256"/>
       <match type="string" value="&lt;HEAD" offset="0:256"/>
       <match type="string" value="&lt;head" offset="0:256"/>
       <match type="string" value="&lt;TITLE" offset="0:256"/>
@@ -6011,7 +6012,6 @@ command to generate the output files.
       <match type="string" value="&lt;h1" offset="0"/>
       <match type="string" value="&lt;H1" offset="0"/>
       <match type="string" value="&lt;!doctype HTML" offset="0"/>
-      <match type="string" value="&lt;!DOCTYPE html" offset="0"/>
     </magic>
     <glob pattern="*.html"/>
     <glob pattern="*.htm"/>

@@ -1764,7 +1764,6 @@ command to generate the output files.
         <match type="string" value="SEGA" offset="272"/>
       </match>
     </magic>
-    <glob pattern="*.bin"/>
     <glob pattern="*.iso"/>
   </mime-type>
   <mime-type type="application/x-sega-pico-rom">
@@ -1783,7 +1782,6 @@ command to generate the output files.
       <match type="string" value="SEGA SEGASATURN" offset="0"/>
       <match type="string" value="SEGA SEGASATURN" offset="16"/>
     </magic>
-    <glob pattern="*.bin"/>
     <glob pattern="*.iso"/>
   </mime-type>
   <mime-type type="application/x-dc-rom">

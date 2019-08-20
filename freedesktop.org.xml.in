@@ -2409,10 +2409,13 @@ command to generate the output files.
     <glob pattern="*.class"/>
   </mime-type>
   <mime-type type="text/x-groovy">
-    <_comment>Groovy script</_comment>
-    <sub-class-of type="text/plain"/>
-    <generic-icon name="text-x-generic"/>
+    <_comment>Groovy source</_comment>
+    <sub-class-of type="text/x-csrc"/>
+    <generic-icon name="text-x-script"/>
     <glob pattern="*.groovy"/>
+    <glob pattern="*.gvy"/>
+    <glob pattern="*.gy"/>
+    <glob pattern="*.gsh"/>
   </mime-type>
   <mime-type type="text/x-gradle">
     <_comment>Gradle scripts</_comment>

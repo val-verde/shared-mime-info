@@ -1330,14 +1330,18 @@ command to generate the output files.
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/x-spss-por">
-    <_comment>SPSS Portable Data File</_comment>
+    <_comment>SPSS portable data file</_comment>
+    <acronym>SPSS</acronym>
+    <expanded-acronym>Statistical Package for the Social Sciences</expanded-acronym>
     <magic priority="50">
       <match type="string" offset="40" value="ASCII SPSS PORT FILE"/>
     </magic>
     <glob pattern="*.por"/>
   </mime-type>
   <mime-type type="application/x-spss-sav">
-    <_comment>SPSS Data File</_comment>
+    <_comment>SPSS data file</_comment>
+    <acronym>SPSS</acronym>
+    <expanded-acronym>Statistical Package for the Social Sciences</expanded-acronym>
     <alias type="application/x-spss-savefile"/>
     <magic priority="50">
       <match type="string" offset="0" value="$FL2"/>

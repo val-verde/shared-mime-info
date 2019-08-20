@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-info\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-20 16:37+0200\n"
-"PO-Revision-Date: 2019-08-20 14:39+0000\n"
+"POT-Creation-Date: 2019-08-20 16:39+0200\n"
+"PO-Revision-Date: 2019-08-20 15:07+0000\n"
 "Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
 "Language-Team: Italian (http://www.transifex.com/freedesktop/shared-mime-info/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -26,11 +26,11 @@ msgstr "ROM Atari 2600"
 
 #: ../freedesktop.org.xml.in.h:2
 msgid "Atari 7800 ROM"
-msgstr ""
+msgstr "ROM Atari 7800"
 
 #: ../freedesktop.org.xml.in.h:3
 msgid "Atari Lynx ROM"
-msgstr ""
+msgstr "ROM Atari Lynx"
 
 #: ../freedesktop.org.xml.in.h:4
 msgid "ATK inset"
@@ -50,7 +50,7 @@ msgstr "File Macintosh codificato BinHex"
 
 #: ../freedesktop.org.xml.in.h:8
 msgid "Mathematica Notebook file"
-msgstr ""
+msgstr "File Mathematica Notebook"
 
 #: ../freedesktop.org.xml.in.h:9
 msgid "MathML document"
@@ -102,7 +102,7 @@ msgstr "Audio GSM 06.10"
 
 #: ../freedesktop.org.xml.in.h:21
 msgid "iRiver playlist"
-msgstr ""
+msgstr "Playlist iRiver"
 
 #: ../freedesktop.org.xml.in.h:22
 msgid "PGP/MIME-encrypted message header"
@@ -118,7 +118,7 @@ msgstr "Firma staccata OpenPGP"
 
 #: ../freedesktop.org.xml.in.h:25
 msgid "PKCS#7 file"
-msgstr ""
+msgstr "File PKCS#7"
 
 #: ../freedesktop.org.xml.in.h:26
 msgid "detached S/MIME signature"
@@ -142,7 +142,7 @@ msgstr "Certificato X.509"
 
 #: ../freedesktop.org.xml.in.h:31
 msgid "certificate revocation list"
-msgstr ""
+msgstr "Elenco certificati di revoca"
 
 #: ../freedesktop.org.xml.in.h:32
 msgid "PkiPath certification path"
@@ -150,7 +150,7 @@ msgstr "Percorso certificazione PkiPath"
 
 #: ../freedesktop.org.xml.in.h:33
 msgid "PostScript document"
-msgstr ""
+msgstr "Documento PostScript"
 
 #: ../freedesktop.org.xml.in.h:34
 msgid "Plucker document"
@@ -233,7 +233,7 @@ msgstr "Foglio di calcolo Lotus 1-2-3"
 
 #: ../freedesktop.org.xml.in.h:56
 msgid "Lotus Word Pro document"
-msgstr ""
+msgstr "Documento Lotus Word Pro"
 
 #: ../freedesktop.org.xml.in.h:57
 msgid "JET database"
@@ -489,7 +489,7 @@ msgstr "Pacchetto SISX"
 
 #: ../freedesktop.org.xml.in.h:120
 msgid "network packet capture"
-msgstr ""
+msgstr "Cattura pacchetti rete"
 
 #: ../freedesktop.org.xml.in.h:121
 msgid "WordPerfect document"
@@ -497,15 +497,15 @@ msgstr "Documento WordPerfect"
 
 #: ../freedesktop.org.xml.in.h:122
 msgid "YouTube media archive"
-msgstr ""
+msgstr "Archivio multimediale YouTube"
 
 #: ../freedesktop.org.xml.in.h:123
 msgid "SPSS portable data file"
-msgstr ""
+msgstr "File dati SPSS Portable"
 
 #: ../freedesktop.org.xml.in.h:124
 msgid "SPSS data file"
-msgstr ""
+msgstr "File dati SPSS"
 
 #: ../freedesktop.org.xml.in.h:125
 msgid "XBEL bookmarks"
@@ -696,7 +696,7 @@ msgstr "Immagine disco Sega Saturn"
 
 #: ../freedesktop.org.xml.in.h:174
 msgid "Dreamcast disc image"
-msgstr ""
+msgstr "Immagine disco Dreamcast"
 
 #: ../freedesktop.org.xml.in.h:175
 msgid "Nintendo DS ROM"
@@ -976,7 +976,7 @@ msgstr "Classe Java"
 
 #: ../freedesktop.org.xml.in.h:246
 msgid "Groovy source"
-msgstr ""
+msgstr "Sorgente Groovy"
 
 #: ../freedesktop.org.xml.in.h:247
 msgid "Gradle scripts"
@@ -1040,7 +1040,7 @@ msgstr "Grafico KChart"
 
 #: ../freedesktop.org.xml.in.h:262
 msgid "Kexi settings"
-msgstr ""
+msgstr "Impostazioni Kexi"
 
 #: ../freedesktop.org.xml.in.h:263
 msgid "Kexi shortcut"
@@ -1281,11 +1281,11 @@ msgstr "Formato di scambio Annodex"
 
 #: ../freedesktop.org.xml.in.h:323
 msgid "Annodex video"
-msgstr ""
+msgstr "Video Annodex"
 
 #: ../freedesktop.org.xml.in.h:324
 msgid "Annodex audio"
-msgstr ""
+msgstr "Audio Annodex"
 
 #: ../freedesktop.org.xml.in.h:325
 msgid "Ogg multimedia file"
@@ -1293,11 +1293,11 @@ msgstr "File multimediale Ogg"
 
 #: ../freedesktop.org.xml.in.h:326
 msgid "Ogg audio"
-msgstr ""
+msgstr "Audio Ogg"
 
 #: ../freedesktop.org.xml.in.h:327
 msgid "Ogg video"
-msgstr ""
+msgstr "Video Ogg"
 
 #: ../freedesktop.org.xml.in.h:328
 msgid "Ogg Vorbis audio"
@@ -1405,7 +1405,7 @@ msgstr "Foglio di calcolo Quattro Pro"
 
 #: ../freedesktop.org.xml.in.h:354
 msgid "QuickTime playlist"
-msgstr ""
+msgstr "Playlist QuickTime"
 
 #: ../freedesktop.org.xml.in.h:355
 msgid "Quicken document"
@@ -1674,7 +1674,7 @@ msgstr "Archivio zip"
 
 #: ../freedesktop.org.xml.in.h:423
 msgid "WIM disk image"
-msgstr ""
+msgstr "Immagine disco WIM"
 
 #: ../freedesktop.org.xml.in.h:424
 msgid "Dolby Digital audio"
@@ -1762,7 +1762,7 @@ msgstr "Audio MPEG-4"
 
 #: ../freedesktop.org.xml.in.h:445
 msgid "MPEG-4 ringtone"
-msgstr ""
+msgstr "Suoneria MPEG-4"
 
 #: ../freedesktop.org.xml.in.h:446
 msgid "MPEG-4 video"
@@ -1830,7 +1830,7 @@ msgstr "Documento RealAudio"
 
 #: ../freedesktop.org.xml.in.h:462
 msgid "RealMedia playlist"
-msgstr ""
+msgstr "Playlist RealMedia"
 
 #: ../freedesktop.org.xml.in.h:463
 msgid "RealVideo document"
@@ -1898,7 +1898,7 @@ msgstr "Immagine WBMP"
 
 #: ../freedesktop.org.xml.in.h:479
 msgid "CGM image"
-msgstr ""
+msgstr "Immagine CGM"
 
 #: ../freedesktop.org.xml.in.h:480
 msgid "CCITT G3 fax image"

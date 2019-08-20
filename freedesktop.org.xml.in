@@ -6315,6 +6315,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-sass">
     <_comment>Sass CSS pre-processor file</_comment>
+    <acronym>Sass</acronym>
+    <expanded-acronym>Syntactically Awesome Style Sheets</expanded-acronym>
     <sub-class-of type="text/plain"/>
     <glob pattern="*.sass"/>
     <generic-icon name="text-x-generic"/>

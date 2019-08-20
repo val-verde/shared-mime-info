@@ -12,11 +12,9 @@
 
   <!-- a comment describing the respective unexpanded MIME type acronym. Example: "WMV" -->
   <!ELEMENT acronym (#PCDATA)>
-  <!ATTLIST acronym xml:lang CDATA #IMPLIED>
 
   <!-- a comment describing the respective expanded MIME type acronym. Example: "Windows Media Video" -->
   <!ELEMENT expanded-acronym (#PCDATA)>
-  <!ATTLIST expanded-acronym xml:lang CDATA #IMPLIED>
 
   <!ELEMENT icon EMPTY>
   <!ATTLIST icon name CDATA #REQUIRED>

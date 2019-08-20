@@ -256,7 +256,7 @@ command to generate the output files.
     <glob pattern="*.gsm"/>
   </mime-type>
   <mime-type type="audio/x-iriver-pla">
-    <_comment>iRiver Playlist</_comment>
+    <_comment>iRiver playlist</_comment>
     <magic priority="50">
       <match type="string" value="iriver UMS PLA" offset="4"/>
     </magic>
@@ -348,7 +348,7 @@ command to generate the output files.
     <glob pattern="*.cer"/>
   </mime-type>
   <mime-type type="application/pkix-crl">
-    <_comment>Certificate revocation list</_comment>
+    <_comment>certificate revocation list</_comment>
     <glob pattern="*.crl"/>
   </mime-type>
   <mime-type type="application/pkix-pkipath">
@@ -692,37 +692,37 @@ command to generate the output files.
     <sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.template"/>
   </mime-type>
     <mime-type type="application/vnd.ms-visio.drawing.main+xml">
-    <_comment>Office Open XML Visio Drawing</_comment>
+    <_comment>Office Open XML Visio drawing</_comment>
     <generic-icon name="image-x-generic"/>
     <glob pattern="*.vsdx"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.template.main+xml">
-    <_comment>Office Open XML Visio Template</_comment>
+    <_comment>Office Open XML Visio template</_comment>
     <generic-icon name="image-x-generic"/>
     <glob pattern="*.vstx"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.stencil.main+xml">
-    <_comment>Office Open XML Visio Stencil</_comment>
+    <_comment>Office Open XML Visio stencil</_comment>
     <generic-icon name="image-x-generic"/>
     <glob pattern="*.vssx"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.drawing.macroEnabled.main+xml">
-    <_comment>Office Open XML Visio Drawing</_comment>
+    <_comment>Office Open XML Visio drawing</_comment>
     <generic-icon name="image-x-generic"/>
     <glob pattern="*.vsdm"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.template.macroEnabled.main+xml">
-    <_comment>Office Open XML Visio Template</_comment>
+    <_comment>Office Open XML Visio template</_comment>
     <generic-icon name="image-x-generic"/>
     <glob pattern="*.vstm"/>
     <sub-class-of type="application/zip"/>
   </mime-type>
   <mime-type type="application/vnd.ms-visio.stencil.macroEnabled.main+xml">
-    <_comment>Office Open XML Visio Stencil</_comment>
+    <_comment>Office Open XML Visio stencil</_comment>
     <generic-icon name="image-x-generic"/>
     <glob pattern="*.vssm"/>
     <sub-class-of type="application/zip"/>
@@ -1298,7 +1298,7 @@ command to generate the output files.
     <glob pattern="*.sisx"/>
   </mime-type>
   <mime-type type="application/vnd.tcpdump.pcap">
-    <_comment>Network Packet Capture</_comment>
+    <_comment>network packet capture</_comment>
     <magic priority="50">
       <match type="host32" value="0xa1b2c3d4" offset="0"/>
       <match type="host32" value="0xd4c3b2a1" offset="0"/>
@@ -1326,7 +1326,7 @@ command to generate the output files.
     <glob pattern="*.wpp"/>
   </mime-type>
   <mime-type type="application/vnd.youtube.yt">
-    <_comment>YouTube Media Archive</_comment>
+    <_comment>YouTube media archive</_comment>
     <generic-icon name="video-x-generic"/>
     <glob pattern="*.yt"/>
     <sub-class-of type="application/zip"/>
@@ -3136,7 +3136,7 @@ command to generate the output files.
     <alias type="application/x-annodex"/>
   </mime-type>
   <mime-type type="video/annodex">
-    <_comment>Annodex Video</_comment>
+    <_comment>Annodex video</_comment>
     <sub-class-of type="application/annodex"/>
     <magic priority="50">
       <match type="string" value="OggS" offset="0">
@@ -3149,7 +3149,7 @@ command to generate the output files.
     <alias type="video/x-annodex"/>
   </mime-type>
   <mime-type type="audio/annodex">
-    <_comment>Annodex Audio</_comment>
+    <_comment>Annodex audio</_comment>
     <sub-class-of type="application/annodex"/>
     <magic priority="50">
       <match type="string" value="OggS" offset="0">
@@ -3171,7 +3171,7 @@ command to generate the output files.
     <glob pattern="*.ogx"/>
   </mime-type>
   <mime-type type="audio/ogg">
-    <_comment>Ogg Audio</_comment>
+    <_comment>Ogg audio</_comment>
     <sub-class-of type="application/ogg"/>
     <magic priority="50">
       <match type="string" value="OggS" offset="0"/>
@@ -3182,7 +3182,7 @@ command to generate the output files.
     <alias type="audio/x-ogg"/>
   </mime-type>
   <mime-type type="video/ogg">
-    <_comment>Ogg Video</_comment>
+    <_comment>Ogg video</_comment>
     <sub-class-of type="application/ogg"/>
     <magic priority="50">
       <match type="string" value="OggS" offset="0"/>
@@ -4004,7 +4004,7 @@ command to generate the output files.
     <glob pattern="*.zip"/>
   </mime-type>
   <mime-type type="application/x-ms-wim">
-    <_comment>WIM disk Image</_comment>
+    <_comment>WIM disk image</_comment>
     <acronym>WIM</acronym>
     <expanded-acronym>Windows Imaging Format</expanded-acronym>
     <magic>
@@ -4217,7 +4217,7 @@ command to generate the output files.
     <glob pattern="*.f4a"/>
   </mime-type>
   <mime-type type="audio/x-m4r">
-    <_comment>MPEG-4 Ringtone</_comment>
+    <_comment>MPEG-4 ringtone</_comment>
     <glob pattern="*.m4r"/>
     <sub-class-of type="video/mp4"/>
   </mime-type>
@@ -6917,7 +6917,7 @@ command to generate the output files.
     <glob pattern="*.602" />
   </mime-type>
   <mime-type type="application/x-cisco-vpn-settings">
-    <_comment>Cisco VPN Settings</_comment>
+    <_comment>Cisco VPN settings</_comment>
     <generic-icon name="text-x-generic"/>
     <magic priority="50">
       <match type="string" value="[main]" offset="0">

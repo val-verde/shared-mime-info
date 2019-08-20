@@ -4563,7 +4563,9 @@ command to generate the output files.
     <glob pattern="*.wbmp"/>
   </mime-type>
   <mime-type type="image/cgm">
-    <_comment>Computer Graphics Metafile</_comment>
+    <_comment>CGM image</_comment>
+    <acronym>CGM</acronym>
+    <expanded-acronym>Computer Graphics Metafile</expanded-acronym>
     <glob pattern="*.cgm"/>
   </mime-type>
   <mime-type type="image/fax-g3">
@@ -4906,7 +4908,9 @@ command to generate the output files.
     <glob pattern="*.png"/>
   </mime-type>
   <mime-type type="image/rle">
-    <_comment>Run Length Encoded bitmap image</_comment>
+    <_comment>RLE bitmap image</_comment>
+    <acronym>RLE</acronym>
+    <expanded-acronym>Run Length Encoded</expanded-acronym>
     <glob pattern="*.rle"/>
   </mime-type>
   <mime-type type="image/svg+xml">

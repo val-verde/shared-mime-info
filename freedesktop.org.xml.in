@@ -82,12 +82,12 @@ command to generate the output files.
 
 <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
   <mime-type type="application/x-atari-2600-rom">
-    <_comment>Atari 2600</_comment>
+    <_comment>Atari 2600 ROM</_comment>
     <generic-icon name="application-x-executable"/>
     <glob pattern="*.a26"/>
   </mime-type>
   <mime-type type="application/x-atari-7800-rom">
-    <_comment>Atari 7800</_comment>
+    <_comment>Atari 7800 ROM</_comment>
     <generic-icon name="application-x-executable"/>
     <glob pattern="*.a78"/>
     <magic>
@@ -95,7 +95,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/x-atari-lynx-rom">
-    <_comment>Atari Lynx</_comment>
+    <_comment>Atari Lynx ROM</_comment>
     <generic-icon name="application-x-executable"/>
     <glob pattern="*.lnx"/>
     <magic>
@@ -137,7 +137,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/mathematica">
-    <_comment>Mathematica Notebook</_comment>
+    <_comment>Mathematica Notebook file</_comment>
     <sub-class-of type="text/plain"/>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.nb" />
@@ -576,7 +576,7 @@ command to generate the output files.
     <alias type="zz-application/zz-winassoc-123"/>
   </mime-type>
   <mime-type type="application/vnd.lotus-wordpro">
-    <_comment>Lotus Word Pro</_comment>
+    <_comment>Lotus Word Pro document</_comment>
     <generic-icon name="x-office-document"/>
     <magic priority="50">
       <match type="string" value="WordPro" offset="0"/>
@@ -1787,7 +1787,7 @@ command to generate the output files.
     <glob pattern="*.iso"/>
   </mime-type>
   <mime-type type="application/x-dc-rom">
-    <_comment>Dreamcast GD-ROM</_comment>
+    <_comment>Dreamcast disc image</_comment>
     <generic-icon name="application-x-executable"/>
     <glob pattern="*.dc"/>
   </mime-type>
@@ -4435,7 +4435,7 @@ command to generate the output files.
     <alias type="audio/vnd.m-realaudio"/>
   </mime-type>
   <mime-type type="application/ram">
-    <_comment>RealMedia Metafile</_comment>
+    <_comment>RealMedia playlist</_comment>
     <glob pattern="*.ram" />
   </mime-type>
   <mime-type type="video/vnd.rn-realvideo">
@@ -6027,7 +6027,7 @@ command to generate the output files.
     <glob pattern="*.manifest"/>
   </mime-type>
   <mime-type type="text/x-google-video-pointer">
-    <_comment>Google Video Pointer</_comment>
+    <_comment>Google Video Pointer shortcut</_comment>
     <magic priority="50">
       <match type="string" value="#.download.the.free.Google.Video.Player" offset="0"/>
       <match type="string" value="# download the free Google Video Player" offset="0"/>
@@ -6086,7 +6086,7 @@ command to generate the output files.
     <glob pattern="*.log"/>
   </mime-type>
   <mime-type type="text/x-makefile">
-    <_comment>Makefile</_comment>
+    <_comment>Makefile build file</_comment>
     <sub-class-of type="text/plain"/>
     <glob pattern="makefile"/>
     <glob pattern="GNUmakefile"/>
@@ -6129,7 +6129,7 @@ command to generate the output files.
     <glob pattern="*.mof"/>
   </mime-type>
   <mime-type type="text/x-mup">
-    <_comment>Mup publication</_comment>
+    <_comment>Mup musical composition document</_comment>
     <sub-class-of type="text/plain"/>
     <magic priority="50">
       <match type="string" value="//!Mup" offset="0"/>
@@ -7150,7 +7150,7 @@ command to generate the output files.
   </mime-type>
 
   <mime-type type="application/x-pagemaker">
-    <_comment>Adobe PageMaker</_comment>
+    <_comment>Adobe PageMaker document</_comment>
     <sub-class-of type="application/x-ole-storage"/>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.p65"/>
@@ -7160,7 +7160,7 @@ command to generate the output files.
   </mime-type>
 
   <mime-type type="application/x-doom-wad">
-    <_comment>Doom WAD</_comment>
+    <_comment>Doom WAD file</_comment>
     <acronym>WAD</acronym>
     <expanded-acronym>Where's All the Data</expanded-acronym>
     <generic-icon name="package-x-generic"/>
@@ -7212,7 +7212,7 @@ command to generate the output files.
   </mime-type>
 
   <mime-type type="application/vnd.squashfs">
-    <_comment>Squashfs filesystem</_comment>
+    <_comment>Squashfs filesystem image</_comment>
     <magic priority="50">
       <match type="string" value="sqsh" offset="0"/>
       <match type="string" value="hsqs" offset="0"/>

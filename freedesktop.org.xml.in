@@ -309,7 +309,7 @@ command to generate the output files.
   </mime-type>
   <!-- defined in RFC 2311 -->
   <mime-type type="application/pkcs7-mime">
-    <_comment>PKCS#7 Message or Certificate</_comment>
+    <_comment>PKCS#7 file</_comment>
     <acronym>PKCS</acronym>
     <expanded-acronym>Public-Key Cryptography Standards</expanded-acronym>
     <generic-icon name="text-x-generic"/>
@@ -2509,7 +2509,7 @@ command to generate the output files.
     <glob pattern="*.jsonld"/>
   </mime-type>
   <mime-type type="application/x-ipynb+json">
-    <_comment>Jupyter Notebook</_comment>
+    <_comment>Jupyter notebook document</_comment>
     <sub-class-of type="application/json"/>
     <generic-icon name="x-office-document"/>
     <magic priority="50">
@@ -3438,7 +3438,7 @@ command to generate the output files.
     <glob pattern="*.wb3"/>
   </mime-type>
   <mime-type type="application/x-quicktime-media-link">
-    <_comment>QuickTime metalink playlist</_comment>
+    <_comment>QuickTime playlist</_comment>
     <generic-icon name="video-x-generic"/>
     <sub-class-of type="video/quicktime"/>
     <alias type="application/x-quicktimeplayer"/>
@@ -4664,7 +4664,7 @@ command to generate the output files.
     <glob pattern="*.mjp2"/>
   </mime-type>
   <mime-type type="image/openraster">
-    <_comment>OpenRaster archiving image</_comment>
+    <_comment>OpenRaster image</_comment>
     <sub-class-of type="application/zip"/>
     <magic priority="70">
       <match type="string" value="PK\003\004" offset="0">
@@ -4841,7 +4841,7 @@ command to generate the output files.
     <alias type="image/x-panasonic-raw"/>
   </mime-type>
   <mime-type type="image/x-panasonic-rw2">
-    <_comment>Panasonic raw2 image</_comment>
+    <_comment>Panasonic raw image</_comment>
     <sub-class-of type="image/x-dcraw"/>
     <magic priority="50">
       <!-- Some kind of TIFF file with a non-standard version in prefix !-->
@@ -4956,7 +4956,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="image/vnd.ms-modi">
-    <_comment>Microsoft Document Imaging format</_comment>
+    <_comment>MDI image</_comment>
     <acronym>MDI</acronym>
     <expanded-acronym>Microsoft Document Imaging</expanded-acronym>
     <glob pattern="*.mdi"/>
@@ -5982,7 +5982,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="text/x-gherkin">
-    <_comment>feature specification in Gherkin format</_comment>
+    <_comment>Gherkin document</_comment>
     <sub-class-of type="text/plain"/>
     <glob pattern="*.feature"/>
   </mime-type>
@@ -6014,7 +6014,7 @@ command to generate the output files.
     <glob pattern="*.htm"/>
   </mime-type>
   <mime-type type="text/cache-manifest">
-    <_comment>Web application cache manifest</_comment>
+    <_comment>Web application cache file</_comment>
     <sub-class-of type="text/plain"/>
     <magic>
       <match type="string" value="CACHE MANIFEST" offset="0">
@@ -6158,7 +6158,7 @@ command to generate the output files.
     <glob pattern="*.cl"/>
   </mime-type>
   <mime-type type="text/x-matlab">
-    <_comment>MATLAB script/function</_comment>
+    <_comment>MATLAB file</_comment>
     <sub-class-of type="text/plain"/>
     <magic priority="10">
       <match type="string" value="%" offset="0"/>

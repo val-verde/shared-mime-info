@@ -2405,7 +2405,7 @@ command to generate the output files.
     <glob pattern="*.class"/>
   </mime-type>
   <mime-type type="text/x-groovy">
-    <_comment>Groovy source</_comment>
+    <_comment>Groovy source code</_comment>
     <sub-class-of type="text/x-csrc"/>
     <generic-icon name="text-x-script"/>
     <glob pattern="*.groovy"/>
@@ -2968,7 +2968,7 @@ command to generate the output files.
     <glob pattern="*.ocl"/>
   </mime-type>
   <mime-type type="text/x-cobol">
-    <_comment>COBOL source file</_comment>
+    <_comment>COBOL source code</_comment>
     <acronym>COBOL</acronym>
     <expanded-acronym>COmmon Business Oriented Language</expanded-acronym>
     <sub-class-of type="text/plain"/>

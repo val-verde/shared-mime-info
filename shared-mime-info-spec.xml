@@ -880,6 +880,11 @@ information cannot be represented statically; instead an application
 interested in this information should run all of the magic rules, and
 use the list of types returned as the subclasses.
 		</para>
+		<para>
+Note that it is possible for a mime-type to be a <userinput>sub-class-of</userinput>
+an alias, for example if a temporary vendor mime-type is replaced by an official IANA
+mime-type.
+		</para>
 	</sect2>
 	<sect2>
 		<title>Recommended checking order</title>

@@ -2,12 +2,14 @@ image: fedora:rawhide
 
 variables:
   DEPENDENCIES: gcc gcc-c++ glibc-devel make libxml2-devel glib2-devel
-                automake autoconf gettext intltool git findutils
+                automake autoconf gettext intltool git xmlto findutils
 
 build:
   before_script:
     - dnf update -y --nogpgcheck && dnf install -y --nogpgcheck $DEPENDENCIES
   script:
+    # Generate spec
+    - xmlto -o shared-mime-info-spec-html/ html-nochunks shared-mime-info-spec.xml
     # Compile xdgmime
     - git clone https://gitlab.freedesktop.org/xdg/xdgmime.git
     - cd xdgmime

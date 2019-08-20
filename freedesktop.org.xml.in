@@ -1881,7 +1881,7 @@ command to generate the output files.
     <glob pattern="*.udeb"/>
   </mime-type>
   <mime-type type="application/x-designer">
-    <_comment>Qt Designer file</_comment>
+    <_comment>Qt Designer interface document</_comment>
     <generic-icon name="x-office-document"/>
     <sub-class-of type="application/xml"/>
     <magic>
@@ -2279,7 +2279,7 @@ command to generate the output files.
     <glob pattern="*.mo"/>
   </mime-type>
   <mime-type type="application/x-gtk-builder">
-    <_comment>GTK+ Builder</_comment>
+    <_comment>GTK+ Builder interface document</_comment>
     <sub-class-of type="application/xml"/>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.ui"/>

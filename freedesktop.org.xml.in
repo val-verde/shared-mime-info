@@ -4569,11 +4569,9 @@ command to generate the output files.
     <glob pattern="*.cgm"/>
   </mime-type>
   <mime-type type="image/fax-g3">
-    <_comment>CCITT G3 fax</_comment>
+    <_comment>CCITT G3 fax image</_comment>
     <glob pattern="*.g3"/>
-  </mime-type>
-  <mime-type type="image/g3fax">
-    <_comment>G3 fax image</_comment>
+    <alias type="image/g3fax"/>
   </mime-type>
   <mime-type type="image/gif">
     <_comment>GIF image</_comment>

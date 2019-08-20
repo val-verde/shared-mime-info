@@ -6333,7 +6333,9 @@ command to generate the output files.
     <glob pattern="*.ss"/>
   </mime-type>
   <mime-type type="text/x-scss">
-    <_comment>Sass CSS pre-processor file</_comment>
+    <_comment>SCSS pre-processor file</_comment>
+    <acronym>SCSS</acronym>
+    <expanded-acronym>Sassy CSS</expanded-acronym>
     <sub-class-of type="text/plain"/>
     <glob pattern="*.scss"/>
     <generic-icon name="text-x-generic"/>

@@ -18,6 +18,8 @@ To install do the usual:
 	$ make
 	$ make install
 
+If you are building from git then you will have to run `./autogen.sh` first.
+
 If you want to install to your home directory, you should instead do:
 
 	$ ./configure --prefix=$HOME/.local

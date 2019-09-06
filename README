@@ -1,10 +1,12 @@
 # Shared MIME Info
 
-This package contains:
+The shared-mime-info package contains:
 
+- The core database of common MIME types, their file extensions and icon names.
+- The update-mime-database command, used to extend the DB and install a new MIME data.
 - The freedesktop.org shared MIME database spec.
-- The merged GNOME and KDE databases, in the new format.
-- The update-mime-database command, used to install new MIME data.
+
+It is used by GLib, GNOME, KDE, XFCE and many others.
 
 For more information about the database see the [Shared MIME Info Specification here](https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/).
 
@@ -23,6 +25,11 @@ If you want to install to your home directory, you should instead do:
 	$ make install
 
 You'll need to make sure that $HOME/.local/bin is in your PATH, of course.
+
+
+It requires glib to be installed for building the update command.
+Additionally, it uses intltool for translations, though this is only a dependency for the maintainers.
+This database is translated at Transifex.
 
 
 Please report bugs here:

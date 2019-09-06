@@ -1,3 +1,5 @@
+# Shared MIME Info
+
 This package contains:
 
 - The freedesktop.org shared MIME database spec.
@@ -5,9 +7,9 @@ This package contains:
 - The update-mime-database command, used to install new MIME data.
 
 
-To install:
+## Installation
 
-Do the usual:
+To install do the usual:
 
 	$ ./configure
 	$ make
@@ -25,12 +27,17 @@ See https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/ for m
 information.
 
 
-Please report bugs here: https://gitlab.freedesktop.org/xdg/shared-mime-info/issues
+Please report bugs here:
+  https://gitlab.freedesktop.org/xdg/shared-mime-info/issues
 
-	https://www.freedesktop.org/wiki/GettingInvolved/
+Getting involved in freedesktop.org projects guide:
+  https://www.freedesktop.org/wiki/GettingInvolved/
 
-Useful reference links:
+
+## Useful reference links
+
 IANA:
-https://www.iana.org/assignments/media-types/
+  https://www.iana.org/assignments/media-types/
+
 KDE's old mime-types:
-http://websvn.kde.org/branches/KDE/3.5/kdelibs/mimetypes/
+  http://websvn.kde.org/branches/KDE/3.5/kdelibs/mimetypes/

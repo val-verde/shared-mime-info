@@ -6,6 +6,7 @@ This package contains:
 - The merged GNOME and KDE databases, in the new format.
 - The update-mime-database command, used to install new MIME data.
 
+For more information about the database see the [Shared MIME Info Specification here](https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/).
 
 ## Installation
 
@@ -22,9 +23,6 @@ If you want to install to your home directory, you should instead do:
 	$ make install
 
 You'll need to make sure that $HOME/.local/bin is in your PATH, of course.
-
-See https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/ for more
-information.
 
 
 Please report bugs here:

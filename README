@@ -12,11 +12,11 @@ For more information about the database see the [Shared MIME Info Specification 
 
 ## Installation
 
-To install do the usual:
+To install do:
 
-	$ ./configure
+	$ ./configure --prefix=/usr --sysconfdir=/etc
 	$ make
-	$ make install
+	$ sudo make install
 
 If you are building from git then you will have to run `./autogen.sh` first.
 

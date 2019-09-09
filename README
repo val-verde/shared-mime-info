@@ -20,15 +20,6 @@ To install do the usual:
 
 If you are building from git then you will have to run `./autogen.sh` first.
 
-If you want to install to your home directory, you should instead do:
-
-	$ ./configure --prefix=$HOME/.local
-	$ make
-	$ make install
-
-You'll need to make sure that $HOME/.local/bin is in your PATH, of course.
-
-
 It requires glib to be installed for building the update command.
 Additionally, it uses intltool for translations, though this is only a dependency for the maintainers.
 This database is translated at Transifex.

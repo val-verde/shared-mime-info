@@ -21,7 +21,7 @@ To install do:
 If you are building from git then you will have to run `./autogen.sh` first.
 
 It requires glib to be installed for building the update command.
-Additionally, it uses intltool for translations, though this is only a dependency for the maintainers.
+Additionally, it uses gettext and itstool for translations.
 This database is translated at Transifex.
 
 

@@ -10,5 +10,5 @@ autoreconf -vif || exit 1
 popd
 
 if test -z "$NOCONFIGURE"; then
-    $srcdir/configure --enable-maintainer-mode "$@" && echo "Now type \`make' to compile" || exit 1
+    $srcdir/configure "$@" && echo "Now type \`make' to compile" || exit 1
 fi

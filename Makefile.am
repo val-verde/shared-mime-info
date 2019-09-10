@@ -24,6 +24,8 @@ endif
 
 man_MANS = update-mime-database.1
 
+ITS_FILES = its/shared-mime-info.loc its/shared-mime-info.its
+
 EXTRA_DIST = \
 	shared-mime-info-spec.xml	\
 	freedesktop.org.xml.in		\
@@ -32,28 +34,17 @@ EXTRA_DIST = \
 	README				\
 	HACKING				\
 	$(man_MANS)			\
-	shared-mime-info.pc.in		\
-	shared-mime-info.pot		\
-	mime-info.its
+	$(ITS_FILES)			\
+	shared-mime-info.pc.in
 
 CLEANFILES = freedesktop.org.xml po/stamp-it
-MAINTAINERCLEANFILES = shared-mime-info.pot
 
 pkgconfigdir = $(datadir)/pkgconfig
 pkgconfig_DATA = shared-mime-info.pc
 
 $(pkgconfig_DATA): config.status
 
-all-recursive: shared-mime-info.pot
-
-shared-mime-info.pot: freedesktop.org.xml.in mime-info.its
-	$(AM_V_GEN)$(ITSTOOL) -i $(srcdir)/mime-info.its -o $@ $<
-	test "$(srcdir)" = . || cp shared-mime-info.pot $(srcdir)/shared-mime-info.pot
-
-po/shared-mime-info.pot: shared-mime-info.pot
-	$(MAKE) -C po shared-mime-info.pot
-
-freedesktop.org.xml: freedesktop.org.xml.in shared-mime-info.pot
+freedesktop.org.xml: freedesktop.org.xml.in
 	$(MAKE) -C po update-gmo
 	$(AM_V_GEN)$(ITSTOOL) -j $< -o $@ $(top_srcdir)/po/*.gmo
 
@@ -88,6 +79,9 @@ uninstall-hook:
 all: $(defaultmakedeps)
 
 XDGMIME_PATH=@XDGMIME_PATH@
+
+po/shared-mime-info.pot:
+	make -C po shared-mime-info.pot
 
 local-test: po/shared-mime-info.pot freedesktop.org.xml update-mime-database$(EXEEXT)
 if CROSS_COMPILING

@@ -7,6 +7,9 @@ DOMAIN = $(PACKAGE)
 subdir = po
 top_builddir = ..
 
+# This allows us using local its files
+XGETTEXT := env GETTEXTDATADIRS="$(top_srcdir)/" $(XGETTEXT)
+
 # These options get passed to xgettext.
 XGETTEXT_OPTIONS = --keyword=_ --keyword=N_
 

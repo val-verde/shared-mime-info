@@ -1,3 +1,28 @@
+shared-mime-info 1.13 (2019-11-09)
+* Add code of conduct document
+* Use itstool and gettext to generate translations
+* Add content-tree type for OSTree USB repositories
+* Add match for MPEG-4 v1 videos
+* Adjust a lot of user readable mime-type descriptions
+* Fix WOFF/WOFF2 mime-types
+* Prefer text/html to XHTML for *.html files
+* Better magic for text/html files
+* Fix SVG magic for files embedded in HTML
+* Add *.sgd as a glob for Mega Drive ROMs
+
+Specification:
+- Mention that sub-class-of can be aliases
+
+Tools:
+- Enable Large File Support in update-mime-database
+
+Test suite:
+- Make test suite failures fatal
+- Add test for duplicate mime-types
+- Fix WarpScript test
+- Generate the specification in the CI, to avoid it becoming
+  syntactically invalid
+
 shared-mime-info 1.12 (2019-17-01)
 * Fix build from tarball
 

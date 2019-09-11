@@ -44,7 +44,7 @@ pkgconfig_DATA = shared-mime-info.pc
 
 $(pkgconfig_DATA): config.status
 
-freedesktop.org.xml: freedesktop.org.xml.in
+freedesktop.org.xml: freedesktop.org.xml.in $(top_srcdir)/po/*.po its/shared-mime-info.its
 	$(MAKE) -C po update-gmo
 	$(AM_V_GEN)$(ITSTOOL) -j $< -o $@ $(top_srcdir)/po/*.gmo
 
@@ -80,7 +80,7 @@ all: $(defaultmakedeps)
 
 XDGMIME_PATH=@XDGMIME_PATH@
 
-po/shared-mime-info.pot:
+po/shared-mime-info.pot: freedesktop.org.xml.in $(top_srcdir)/po/*.po
 	make -C po shared-mime-info.pot
 
 local-test: po/shared-mime-info.pot freedesktop.org.xml update-mime-database$(EXEEXT)

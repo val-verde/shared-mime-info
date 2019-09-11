@@ -84,6 +84,8 @@ mypaint.ora image/openraster
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=19201#c3
 test.xhtml application/xhtml+xml
 test.xht application/xhtml+xml
+# Copied from https://gitlab.freedesktop.org/xdg/shared-mime-info/issues/98
+test-really-html-not-xhtml.html text/html oxx
 # Copied from http://cvs.fedoraproject.org/viewvc/comps/comps-f11.xml.in?revision=1.306
 test.xml.in application/xml x
 # Copied from http://bugs.freedesktop.org/show_bug.cgi?id=25581

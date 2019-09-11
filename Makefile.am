@@ -46,7 +46,7 @@ $(pkgconfig_DATA): config.status
 
 freedesktop.org.xml: freedesktop.org.xml.in $(top_srcdir)/po/*.po its/shared-mime-info.its
 	$(MAKE) -C po update-gmo
-	$(AM_V_GEN)$(ITSTOOL) -j $< -o $@ $(top_srcdir)/po/*.gmo
+	$(AM_V_GEN)$(ITSTOOL) --its $(top_srcdir)/its/shared-mime-info.its -j $< -o $@ $(top_srcdir)/po/*.gmo
 
 if CROSS_COMPILING
   update_mime_database=$(UPDATE_MIME_DATABASE)

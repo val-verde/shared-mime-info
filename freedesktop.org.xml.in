@@ -6010,10 +6010,12 @@ command to generate the output files.
       <match type="string" value="&lt;script" offset="0:256"/>
       <match type="string" value="&lt;BODY" offset="0"/>
       <match type="string" value="&lt;body" offset="0"/>
-      <match type="string" value="&lt;!--" offset="0"/>
       <match type="string" value="&lt;h1" offset="0"/>
       <match type="string" value="&lt;H1" offset="0"/>
       <match type="string" value="&lt;!doctype HTML" offset="0"/>
+    </magic>
+    <magic priority="40">
+      <match type="string" value="&lt;!--" offset="0"/>
     </magic>
     <glob pattern="*.html" weight="80"/>
     <glob pattern="*.htm" weight="80"/>

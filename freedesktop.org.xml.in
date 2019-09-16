@@ -7292,4 +7292,17 @@ command to generate the output files.
     </magic>
   </mime-type>
 
+  <mime-type type="application/x-qemu-disk">
+    <comment>QEMU QCOW disk image</comment>
+    <acronym>QCOW</acronym>
+    <expanded-acronym>QEMU Copy On Write</expanded-acronym>
+    <glob pattern="*.qcow2"/>
+    <glob pattern="*.qcow"/>
+    <magic>
+      <match type="string" value="QFI" offset="0">
+        <match value="0xfb" type="byte" offset="3"/>
+      </match>
+    </magic>
+  </mime-type>
+
 </mime-info>

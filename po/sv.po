@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: shared-mime-info\n"
 "Report-Msgid-Bugs-To: https://gitlab.freedesktop.org/xdg/shared-mime-info/issues\n"
 "POT-Creation-Date: 2019-09-11 12:53+0200\n"
-"PO-Revision-Date: 2019-08-20 21:02+0000\n"
-"Last-Translator: hadess <hadess@hadess.net>\n"
+"PO-Revision-Date: 2019-09-14 15:29+0000\n"
+"Last-Translator: Anders Jonsson <transifex@norsjovallen.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/freedesktop/shared-mime-info/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,15 +24,15 @@ msgstr ""
 
 #: freedesktop.org.xml.in:83
 msgid "Atari 2600 ROM"
-msgstr ""
+msgstr "Atari 2600-rom"
 
 #: freedesktop.org.xml.in:88
 msgid "Atari 7800 ROM"
-msgstr ""
+msgstr "Atari 7800-rom"
 
 #: freedesktop.org.xml.in:96
 msgid "Atari Lynx ROM"
-msgstr ""
+msgstr "Atari Lynx-rom"
 
 #: freedesktop.org.xml.in:104
 msgid "ATK inset"
@@ -104,7 +104,7 @@ msgstr "GSM 06.10-ljud"
 
 #: freedesktop.org.xml.in:257
 msgid "iRiver playlist"
-msgstr ""
+msgstr "iRiver-spellista"
 
 #: freedesktop.org.xml.in:264
 msgid "PGP/MIME-encrypted message header"
@@ -120,7 +120,7 @@ msgstr "frikopplad OpenPGP-signatur"
 
 #: freedesktop.org.xml.in:310
 msgid "PKCS#7 file"
-msgstr ""
+msgstr "PKCS#7-fil"
 
 #: freedesktop.org.xml.in:318
 msgid "detached S/MIME signature"
@@ -152,7 +152,7 @@ msgstr "PkiPath-certifikatsekvens"
 
 #: freedesktop.org.xml.in:357
 msgid "PostScript document"
-msgstr ""
+msgstr "Postscript-dokument"
 
 #: freedesktop.org.xml.in:367
 msgid "Plucker document"
@@ -235,7 +235,7 @@ msgstr "Lotus 1-2-3-kalkylblad"
 
 #: freedesktop.org.xml.in:575
 msgid "Lotus Word Pro document"
-msgstr ""
+msgstr "Lotus Word Pro-dokument"
 
 #: freedesktop.org.xml.in:583
 msgid "JET database"
@@ -284,7 +284,7 @@ msgstr ""
 
 #: freedesktop.org.xml.in:697 freedesktop.org.xml.in:715
 msgid "Office Open XML Visio template"
-msgstr ""
+msgstr "Office Open XML Visio-mall"
 
 #: freedesktop.org.xml.in:703 freedesktop.org.xml.in:721
 msgid "Office Open XML Visio stencil"
@@ -500,7 +500,7 @@ msgstr "WordPerfect-dokument"
 
 #: freedesktop.org.xml.in:1325
 msgid "YouTube media archive"
-msgstr ""
+msgstr "YouTube-mediaarkiv"
 
 #: freedesktop.org.xml.in:1331
 msgid "SPSS portable data file"
@@ -508,7 +508,7 @@ msgstr ""
 
 #: freedesktop.org.xml.in:1340
 msgid "SPSS data file"
-msgstr ""
+msgstr "SPSS-datafil"
 
 #: freedesktop.org.xml.in:1352
 msgid "XBEL bookmarks"
@@ -700,7 +700,7 @@ msgstr "Sega Saturn-skivavbild"
 
 #: freedesktop.org.xml.in:1788
 msgid "Dreamcast disc image"
-msgstr ""
+msgstr "Dreamcast-skivavbild"
 
 #: freedesktop.org.xml.in:1793
 msgid "Nintendo DS ROM"
@@ -980,7 +980,7 @@ msgstr "Java-klass"
 
 #: freedesktop.org.xml.in:2408
 msgid "Groovy source code"
-msgstr ""
+msgstr "Groovy-källkod"
 
 #: freedesktop.org.xml.in:2417
 msgid "Gradle scripts"
@@ -1044,15 +1044,15 @@ msgstr "KChart-diagram"
 
 #: freedesktop.org.xml.in:2570
 msgid "Kexi settings"
-msgstr ""
+msgstr "Kexi-inställningar"
 
 #: freedesktop.org.xml.in:2574
 msgid "Kexi shortcut"
-msgstr ""
+msgstr "Kexi-genväg"
 
 #: freedesktop.org.xml.in:2578 freedesktop.org.xml.in:2583
 msgid "Kexi database file"
-msgstr ""
+msgstr "Kexi-databasfil"
 
 #: freedesktop.org.xml.in:2590
 msgid "KFormula formula"
@@ -1212,7 +1212,7 @@ msgstr "OCL-fil"
 
 #: freedesktop.org.xml.in:2971
 msgid "COBOL source code"
-msgstr ""
+msgstr "COBOL-källkod"
 
 #: freedesktop.org.xml.in:2979
 msgid "Mobipocket e-book"
@@ -1285,11 +1285,11 @@ msgstr "Annodex-utväxlingsformat"
 
 #: freedesktop.org.xml.in:3140
 msgid "Annodex video"
-msgstr ""
+msgstr "Annodex-video"
 
 #: freedesktop.org.xml.in:3153
 msgid "Annodex audio"
-msgstr ""
+msgstr "Annodex-ljud"
 
 #: freedesktop.org.xml.in:3166
 msgid "Ogg multimedia file"
@@ -1297,11 +1297,11 @@ msgstr "Ogg-multimediafil"
 
 #: freedesktop.org.xml.in:3175
 msgid "Ogg audio"
-msgstr ""
+msgstr "Ogg-ljud"
 
 #: freedesktop.org.xml.in:3186
 msgid "Ogg video"
-msgstr ""
+msgstr "Ogg-video"
 
 #: freedesktop.org.xml.in:3196
 msgid "Ogg Vorbis audio"
@@ -1409,7 +1409,7 @@ msgstr "Quattro Pro-kalkylblad"
 
 #: freedesktop.org.xml.in:3442
 msgid "QuickTime playlist"
-msgstr ""
+msgstr "QuickTime-spellista"
 
 #: freedesktop.org.xml.in:3457
 msgid "Quicken document"
@@ -1766,7 +1766,7 @@ msgstr "MPEG-4-ljud"
 
 #: freedesktop.org.xml.in:4221
 msgid "MPEG-4 ringtone"
-msgstr ""
+msgstr "MPEG-4-ringsignal"
 
 #: freedesktop.org.xml.in:4226
 msgid "MPEG-4 video"
@@ -1834,7 +1834,7 @@ msgstr "RealAudio-dokument"
 
 #: freedesktop.org.xml.in:4439
 msgid "RealMedia playlist"
-msgstr ""
+msgstr "RealMedia-spellista"
 
 #: freedesktop.org.xml.in:4443
 msgid "RealVideo document"
@@ -1950,7 +1950,7 @@ msgstr "JPEG-2000 MJ2-bild"
 
 #: freedesktop.org.xml.in:4668
 msgid "OpenRaster image"
-msgstr ""
+msgstr "OpenRaster-bild"
 
 #: freedesktop.org.xml.in:4680
 msgid "DirectDraw surface"
@@ -2594,7 +2594,7 @@ msgstr "översättningsmall"
 
 #: freedesktop.org.xml.in:5988
 msgid "Gherkin document"
-msgstr ""
+msgstr "Gherkin-dokument"
 
 #: freedesktop.org.xml.in:5993
 msgid "HTML document"
@@ -2678,7 +2678,7 @@ msgstr "OpenCL-källkod"
 
 #: freedesktop.org.xml.in:6166
 msgid "MATLAB file"
-msgstr ""
+msgstr "MATLAB-fil"
 
 #: freedesktop.org.xml.in:6181
 msgid "Meson source code"
@@ -2990,7 +2990,7 @@ msgstr "T602-dokument"
 
 #: freedesktop.org.xml.in:6929
 msgid "Cisco VPN settings"
-msgstr ""
+msgstr "Cisco VPN-inställningar"
 
 #: freedesktop.org.xml.in:6939
 msgid "ICC profile"

@@ -1522,6 +1522,7 @@ command to generate the output files.
     <glob pattern="*.bz2"/>
     <glob pattern="*.bz"/>
     <alias type="application/x-bzip2"/>
+    <alias type="application/bzip2"/>
   </mime-type>
   <mime-type type="application/x-bzip-compressed-tar">
     <comment>Tar archive (bzip-compressed)</comment>

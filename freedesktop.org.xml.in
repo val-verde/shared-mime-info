@@ -6560,7 +6560,6 @@ command to generate the output files.
     <generic-icon name="text-html"/>
     <magic priority="40">
       <match type="string" value="&lt;?xml" offset="0"/>
-      <match type="string" value="&lt;!--" offset="0"/>
     </magic>
     <glob pattern="*.xml"/>
     <glob pattern="*.xbl"/>

@@ -121,6 +121,13 @@ command to generate the output files.
     </magic>
     <glob pattern="*.epub"/>
   </mime-type>
+  <mime-type type="application/vnd.amazon.mobi8-ebook">
+    <comment>Kindle book document</comment>
+    <sub-class-of type="application/x-mobipocket-ebook"/>
+    <glob pattern="*.azw3"/>
+    <glob pattern="*.kfx"/>
+    <alias type="application/x-mobi8-ebook"/>
+  </mime-type>
   <mime-type type="application/illustrator">
     <comment>Adobe Illustrator document</comment>
     <generic-icon name="image-x-generic"/>

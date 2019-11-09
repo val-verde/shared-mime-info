@@ -7355,4 +7355,18 @@ command to generate the output files.
     </magic>
   </mime-type>
 
+  <mime-type type="application/x-pyspread-spreadsheet">
+    <comment>Pyspread spreadsheet</comment>
+    <glob pattern="*.pysu"/>
+    <magic>
+      <match type="string" value="[Pyspread save file version]" offset="0"/>
+    </magic>
+    <generic-icon name="x-office-spreadsheet"/>
+  </mime-type>
+  <mime-type type="application/x-pyspread-bz-spreadsheet">
+    <comment>Pyspread spreadsheet (bzip-compressed)</comment>
+    <sub-class-of type="application/x-bzip"/>
+    <glob pattern="*.pys"/>
+    <generic-icon name="x-office-spreadsheet"/>
+  </mime-type>
 </mime-info>

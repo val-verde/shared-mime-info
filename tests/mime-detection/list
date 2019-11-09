@@ -736,3 +736,7 @@ disk.qcow2 application/x-qemu-disk
 # ROM hack scene patching formats
 SLA.bps application/x-bps-patch
 FF6FR.IPS application/x-ips-patch
+
+# PySpread spreadsheet
+test.pys application/x-pyspread-bz-spreadsheet oxo
+test.pysu application/x-pyspread-spreadsheet

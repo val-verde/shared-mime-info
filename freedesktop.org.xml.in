@@ -7328,4 +7328,14 @@ command to generate the output files.
     </magic>
   </mime-type>
 
+  <mime-type type="application/x-ips-patch">
+    <comment>IPS patch</comment>
+    <acronym>IPS</acronym>
+    <expanded-acronym>International Patching System</expanded-acronym>
+    <glob pattern="*.ips"/>
+    <magic>
+      <match type="string" value="PATCH" offset="0"/>
+    </magic>
+  </mime-type>
+
 </mime-info>

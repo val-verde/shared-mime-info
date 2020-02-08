@@ -22,13 +22,13 @@ test_tree_magic_CFLAGS = $(GIO_CFLAGS)
 test_tree_magic_LDADD = $(GIO_LIBS)
 endif
 
-man_MANS = update-mime-database.1
+man_MANS = data/update-mime-database.1
 
-ITS_FILES = its/shared-mime-info.loc its/shared-mime-info.its
+ITS_FILES = data/its/shared-mime-info.loc data/its/shared-mime-info.its
 
 EXTRA_DIST = \
-	shared-mime-info-spec.xml	\
-	freedesktop.org.xml.in		\
+	data/shared-mime-info-spec.xml	\
+	data/freedesktop.org.xml.in	\
 	src/test-tree-magic.c		\
 	$(packages_DATA) 		\
 	README				\
@@ -44,9 +44,9 @@ pkgconfig_DATA = shared-mime-info.pc
 
 $(pkgconfig_DATA): config.status
 
-freedesktop.org.xml: freedesktop.org.xml.in $(top_srcdir)/po/*.po its/shared-mime-info.its
+freedesktop.org.xml: data/freedesktop.org.xml.in $(top_srcdir)/po/*.po data/its/shared-mime-info.its
 	$(MAKE) -C po update-gmo
-	$(AM_V_GEN)$(ITSTOOL) --its $(top_srcdir)/its/shared-mime-info.its -j $< -o $@ $(top_srcdir)/po/*.gmo
+	$(AM_V_GEN)$(ITSTOOL) --its $(top_srcdir)/data/its/shared-mime-info.its -j $< -o $@ $(top_srcdir)/po/*.gmo
 
 if CROSS_COMPILING
   update_mime_database=$(UPDATE_MIME_DATABASE)
@@ -80,7 +80,7 @@ all: $(defaultmakedeps)
 
 XDGMIME_PATH=@XDGMIME_PATH@
 
-po/shared-mime-info.pot: freedesktop.org.xml.in $(top_srcdir)/po/*.po
+po/shared-mime-info.pot: data/freedesktop.org.xml.in $(top_srcdir)/po/*.po
 	make -C po shared-mime-info.pot
 
 local-test: po/shared-mime-info.pot freedesktop.org.xml update-mime-database$(EXEEXT)
@@ -126,14 +126,14 @@ else
 			rm -rf "$(top_builddir)/temp-mime-dir/" ; \
 		fi; \
 	fi
-	@if test x`grep '<mime-type' $(srcdir)/freedesktop.org.xml.in | tr -d '[:blank:]' | sort | uniq -d` != "x"; then \
+	@if test x`grep '<mime-type' $(srcdir)/data/freedesktop.org.xml.in | tr -d '[:blank:]' | sort | uniq -d` != "x"; then \
 		echo "*************************************************************" ; \
 		echo "*** Some mime-types are duplicated, fix before committing ***" ; \
 		echo "*************************************************************" ; \
 		exit 1 ; \
 	fi
-	@echo Number of mime-types that might need generic-icon: `grep "mime-type type=" $(srcdir)/freedesktop.org.xml.in | grep -v video/ | grep -v image/ | grep -v text/ | grep -v audio/ | grep -v "octet-stream" | wc -l` ; \
-	echo Number of mime-types with a generic icon: `grep "generic-icon name=" $(srcdir)/freedesktop.org.xml.in | wc -l` ;
+	@echo Number of mime-types that might need generic-icon: `grep "mime-type type=" $(srcdir)/data/freedesktop.org.xml.in | grep -v video/ | grep -v image/ | grep -v text/ | grep -v audio/ | grep -v "octet-stream" | wc -l` ; \
+	echo Number of mime-types with a generic icon: `grep "generic-icon name=" $(srcdir)/data/freedesktop.org.xml.in | wc -l` ;
 endif
 
 check-translations:

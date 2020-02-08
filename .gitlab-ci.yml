@@ -9,7 +9,7 @@ build:
     - dnf update -y --nogpgcheck && dnf install -y --nogpgcheck $DEPENDENCIES
   script:
     # Generate spec
-    - xmlto -o shared-mime-info-spec-html/ html-nochunks shared-mime-info-spec.xml
+    - xmlto -o shared-mime-info-spec-html/ html-nochunks data/shared-mime-info-spec.xml
     # Compile xdgmime
     - git clone https://gitlab.freedesktop.org/xdg/xdgmime.git
     - cd xdgmime

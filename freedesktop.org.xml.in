@@ -7318,4 +7318,14 @@ command to generate the output files.
     <glob pattern="*.cwk"/>
   </mime-type>
 
+  <mime-type type="application/x-bps-patch">
+    <comment>BPS patch</comment>
+    <acronym>BPS</acronym>
+    <expanded-acronym>Binary Patching System</expanded-acronym>
+    <glob pattern="*.bps"/>
+    <magic>
+      <match type="string" value="BPS1" offset="0"/>
+    </magic>
+  </mime-type>
+
 </mime-info>

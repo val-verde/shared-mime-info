@@ -108,7 +108,7 @@ if CROSS_COMPILING
 else
 	xmllint --noout --valid $(top_builddir)/freedesktop.org.xml || exit 1;	\
 	if test -d $(top_srcdir)/.git/ ; then \
-		$(top_builddir)/update-mime-database$(EXEEXT) $(top_srcdir)/mime-db-tests/ ; \
+		$(top_builddir)/update-mime-database$(EXEEXT) $(top_srcdir)/tests/mime-db-tests/ ; \
 	fi
 	@if test -d $(top_srcdir)/.git/ ; then \
 		if test ! -x $(XDGMIME_PATH)/src/test-mime-data$(EXEEXT) || test ! -x $(top_builddir)/test-tree-magic$(EXEEXT) ; then \
@@ -120,9 +120,9 @@ else
 			mkdir -p $(top_builddir)/temp-mime-dir/mime/packages ; \
 			cp -a $(top_builddir)/freedesktop.org.xml $(top_builddir)/temp-mime-dir/mime/packages/ ; \
 			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/update-mime-database$(EXEEXT) "$(top_builddir)/temp-mime-dir/mime/" ; \
-			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/test-mime-data$(EXEEXT) -v $(top_srcdir)/tests/list || exit 1; \
+			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/test-mime-data$(EXEEXT) -v $(top_srcdir)/tests/mime-detection/list || exit 1; \
 			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/test-mime$(EXEEXT) || exit 1; \
-			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/test-tree-magic$(EXEEXT) $(top_srcdir)/tests/tree-list || exit 1; \
+			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/test-tree-magic$(EXEEXT) $(top_srcdir)/tests/mime-detection/tree-list || exit 1; \
 			rm -rf "$(top_builddir)/temp-mime-dir/" ; \
 		fi; \
 	fi

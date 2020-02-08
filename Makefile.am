@@ -6,18 +6,18 @@ packagesdir = $(datadir)/mime/packages
 nodist_packages_DATA = freedesktop.org.xml
 
 bin_PROGRAMS = update-mime-database
-update_mime_database_SOURCES = update-mime-database.c
+update_mime_database_SOURCES = src/update-mime-database.c
 update_mime_database_CFLAGS = $(ALL_CFLAGS)
 update_mime_database_LDADD = $(ALL_LIBS)
 
 noinst_PROGRAMS = test-subclassing
-test_subclassing_SOURCES = test-subclassing.c
+test_subclassing_SOURCES = src/test-subclassing.c
 test_subclassing_CFLAGS = $(ALL_CFLAGS)
 test_subclassing_LDADD = $(ALL_LIBS)
 
 if HAVE_GIO
 noinst_PROGRAMS += test-tree-magic
-test_tree_magic_SOURCES = test-tree-magic.c
+test_tree_magic_SOURCES = src/test-tree-magic.c
 test_tree_magic_CFLAGS = $(GIO_CFLAGS)
 test_tree_magic_LDADD = $(GIO_LIBS)
 endif
@@ -29,7 +29,7 @@ ITS_FILES = its/shared-mime-info.loc its/shared-mime-info.its
 EXTRA_DIST = \
 	shared-mime-info-spec.xml	\
 	freedesktop.org.xml.in		\
-	test-tree-magic.c		\
+	src/test-tree-magic.c		\
 	$(packages_DATA) 		\
 	README				\
 	HACKING				\

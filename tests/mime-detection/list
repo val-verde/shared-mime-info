@@ -693,6 +693,10 @@ SConscript text/x-scons oxo
 # copied from https://raw.githubusercontent.com/mongodb/mongo/master/SConscript.buildinfo
 SConscript.buildinfo text/x-scons oxo
 
+# Source code
+cplusplusfile.C text/x-c++src oxo
+cfile.c text/x-csrc oxo
+
 # systemd units
 systemd.automount text/x-systemd-unit
 systemd.device text/x-systemd-unit

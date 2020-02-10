@@ -372,7 +372,7 @@ test.coffee application/vnd.coffeescript ox
 test.raml application/raml+yaml
 
 # xml subtypes
-../shared-mime-info-spec.xml application/x-docbook+xml xox
+../../data/shared-mime-info-spec.xml application/x-docbook+xml xox
 test.ttx application/x-font-ttx
 gtk-builder.ui application/x-gtk-builder x
 project.glade application/x-glade

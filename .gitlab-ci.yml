@@ -13,39 +13,7 @@ variables:
                 xmlto
                 findutils
                 gettext-devel
-                automake
-                autoconf
                 meson
-
-build:autotools:
-  before_script:
-    - dnf update -y --nogpgcheck && dnf install -y --nogpgcheck $DEPENDENCIES
-  script:
-    # Generate spec
-    - xmlto -o shared-mime-info-spec-html/ html-nochunks data/shared-mime-info-spec.xml
-    # Compile xdgmime
-    - git clone https://gitlab.freedesktop.org/xdg/xdgmime.git
-    - cd xdgmime
-    - make
-    - cd ..
-    # Compile and test shared-mime-info with builddir != srcdir
-    - rm -rf ../_build/
-    - mkdir ../_build/
-    - cd ../_build/
-    - XDGMIME_PATH=`pwd`/../shared-mime-info/xdgmime/ ../shared-mime-info/autogen.sh --disable-dependency-tracking
-    - make
-    - make check
-    - V=1 make distcheck
-    - make install
-    # Compile and test with builddir == srcdir
-    - make uninstall
-    - cd ../shared-mime-info/
-    - rm -rf ../_build/
-    - git clean -dxf
-    - XDGMIME_PATH=`pwd`/xdgmime/ ./autogen.sh
-    - make check
-    - V=1 make distcheck
-
 
 build:meson:
   before_script:

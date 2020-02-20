@@ -37,7 +37,8 @@ EXTRA_DIST = \
 	$(ITS_FILES)			\
 	shared-mime-info.pc.in		\
 	data/freedesktop_generate.sh	\
-	po/check_translations.sh
+	po/check_translations.sh	\
+	tests/test_generic_icons.sh
 
 CLEANFILES = freedesktop.org.xml po/stamp-it
 
@@ -133,8 +134,7 @@ else
 		echo "*************************************************************" ; \
 		exit 1 ; \
 	fi
-	@echo Number of mime-types that might need generic-icon: `grep "mime-type type=" $(srcdir)/data/freedesktop.org.xml.in | grep -v video/ | grep -v image/ | grep -v text/ | grep -v audio/ | grep -v "octet-stream" | wc -l` ; \
-	echo Number of mime-types with a generic icon: `grep "generic-icon name=" $(srcdir)/data/freedesktop.org.xml.in | wc -l` ;
+	@$(srcdir)/tests/test_generic_icons.sh $(srcdir)/data/freedesktop.org.xml.in
 endif
 
 check-translations:

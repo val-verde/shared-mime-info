@@ -10,7 +10,6 @@ freedesktop_org_xml = custom_target('freedesktop.org.xml',
     output: 'freedesktop.org.xml',
     command: [
         find_program('freedesktop_generate.sh'),
-        '--meson',
         meson.source_root(),
         meson.build_root()
     ],

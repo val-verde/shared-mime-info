@@ -36,7 +36,8 @@ EXTRA_DIST = \
 	$(man_MANS)			\
 	$(ITS_FILES)			\
 	shared-mime-info.pc.in		\
-	data/freedesktop_generate.sh
+	data/freedesktop_generate.sh	\
+	po/check_translations.sh
 
 CLEANFILES = freedesktop.org.xml po/stamp-it
 
@@ -137,13 +138,7 @@ else
 endif
 
 check-translations:
-	@export RET=0 ; for i in $(top_srcdir)/po/*.po ; do						\
-		if ! grep -q ^`basename $$i | sed 's,.po,,'`$$ $(top_srcdir)/po/LINGUAS ; then		\
-			echo '***' `basename $$i | sed 's,.po,,'` missing from po/LINGUAS '***' ;	\
-			RET=1;										\
-		fi;											\
-	done;												\
-	if [ $$RET == 1 ] ; then exit 1; fi
+	$(top_srcdir)/po/check_translations.sh
 
 update-translations: po/shared-mime-info.pot
 	@tx pull --all --force --skip

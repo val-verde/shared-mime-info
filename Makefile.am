@@ -35,7 +35,8 @@ EXTRA_DIST = \
 	HACKING				\
 	$(man_MANS)			\
 	$(ITS_FILES)			\
-	shared-mime-info.pc.in
+	shared-mime-info.pc.in		\
+	data/freedesktop_generate.sh
 
 CLEANFILES = freedesktop.org.xml po/stamp-it
 
@@ -44,9 +45,8 @@ pkgconfig_DATA = shared-mime-info.pc
 
 $(pkgconfig_DATA): config.status
 
-freedesktop.org.xml: data/freedesktop.org.xml.in $(top_srcdir)/po/*.po data/its/shared-mime-info.its
-	$(MAKE) -C po update-gmo
-	$(AM_V_GEN)$(ITSTOOL) --its $(top_srcdir)/data/its/shared-mime-info.its -j $< -o $@ $(top_srcdir)/po/*.gmo
+freedesktop.org.xml: data/freedesktop.org.xml.in $(top_srcdir)/po/*.po data/its/shared-mime-info.its data/freedesktop_generate.sh
+	$(top_srcdir)/data/freedesktop_generate.sh "$(top_srcdir)" "$(top_builddir)"
 
 if CROSS_COMPILING
   update_mime_database=$(UPDATE_MIME_DATABASE)

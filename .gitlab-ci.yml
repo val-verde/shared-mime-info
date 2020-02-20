@@ -1,8 +1,20 @@
 image: fedora:rawhide
 
 variables:
-  DEPENDENCIES: gcc gcc-c++ glibc-devel make libxml2-devel glib2-devel
-                automake autoconf gettext git itstool xmlto findutils gettext-devel
+  DEPENDENCIES: gcc
+                gcc-c++
+                glibc-devel
+                make
+                libxml2-devel
+                glib2-devel
+                gettext
+                git
+                itstool
+                xmlto
+                findutils
+                gettext-devel
+                automake
+                autoconf
 
 build:
   before_script:

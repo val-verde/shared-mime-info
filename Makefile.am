@@ -38,7 +38,8 @@ EXTRA_DIST = \
 	shared-mime-info.pc.in		\
 	data/freedesktop_generate.sh	\
 	po/check_translations.sh	\
-	tests/test_generic_icons.sh
+	tests/test_generic_icons.sh	\
+	tests/test_duplicate_mime_types.sh
 
 CLEANFILES = freedesktop.org.xml po/stamp-it
 
@@ -128,12 +129,7 @@ else
 			rm -rf "$(top_builddir)/temp-mime-dir/" ; \
 		fi; \
 	fi
-	@if test x`grep '<mime-type' $(srcdir)/data/freedesktop.org.xml.in | tr -d '[:blank:]' | sort | uniq -d` != "x"; then \
-		echo "*************************************************************" ; \
-		echo "*** Some mime-types are duplicated, fix before committing ***" ; \
-		echo "*************************************************************" ; \
-		exit 1 ; \
-	fi
+	@$(srcdir)/tests/test_duplicate_mime_types.sh $(srcdir)/data/freedesktop.org.xml.in
 	@$(srcdir)/tests/test_generic_icons.sh $(srcdir)/data/freedesktop.org.xml.in
 endif
 

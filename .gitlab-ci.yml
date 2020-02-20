@@ -15,8 +15,9 @@ variables:
                 gettext-devel
                 automake
                 autoconf
+                meson
 
-build:
+build:autotools:
   before_script:
     - dnf update -y --nogpgcheck && dnf install -y --nogpgcheck $DEPENDENCIES
   script:
@@ -44,3 +45,19 @@ build:
     - XDGMIME_PATH=`pwd`/xdgmime/ ./autogen.sh
     - make check
     - V=1 make distcheck
+
+
+build:meson:
+  before_script:
+    - dnf update -y --nogpgcheck
+    - dnf install -y --nogpgcheck $DEPENDENCIES
+  script:
+    # Compile xdgmime
+    - git clone https://gitlab.freedesktop.org/xdg/xdgmime.git
+    - make -C xdgmime
+
+    # Compile and test shared-mime-info
+    - meson _build
+    - ninja -C _build
+    - ninja -C _build test
+    - ninja -C _build dist

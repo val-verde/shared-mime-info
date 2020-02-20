@@ -40,7 +40,8 @@ EXTRA_DIST = \
 	po/check_translations.sh	\
 	tests/test_generic_icons.sh	\
 	tests/test_duplicate_mime_types.sh	\
-	tests/test_mime.sh
+	tests/test_mime.sh		\
+	tests/test_staging.sh
 
 CLEANFILES = freedesktop.org.xml po/stamp-it
 
@@ -91,18 +92,8 @@ local-test: po/shared-mime-info.pot freedesktop.org.xml update-mime-database$(EX
 if CROSS_COMPILING
 	@echo "Cross compiling: Skipping checks"
 else
-	@if ! test -d staging-tests/ ; then \
-		echo "***************************************************************************" ; \
-		echo "*** Add your file to process to staging-tests/ and run local-test again ***" ; \
-		echo "***************************************************************************" ; \
-		exit 1 ; \
-	fi
-	if test -d $(top_srcdir)/.git/ ; then \
-		mkdir -p $(top_builddir)/temp-mime-dir/mime/packages ; \
-		cp -a $(top_builddir)/freedesktop.org.xml $(top_builddir)/temp-mime-dir/mime/packages/ ; \
-		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/update-mime-database$(EXEEXT) "$(top_builddir)/temp-mime-dir/mime/" ; \
-		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/print-mime-data$(EXEEXT) staging-tests/; \
-		rm -rf "$(top_builddir)/temp-mime-dir/" ; \
+	@if test -d $(top_srcdir)/.git/ ; then \
+		$(srcdir)/tests/test_staging.sh "$(top_srcdir)" "$(top_builddir)" "$(top_builddir)/freedesktop.org.xml" "$(top_builddir)/update-mime-database$(EXEEXT)" "$(XDGMIME_PATH)/src/print-mime-data$(EXEEXT)"; \
 	fi
 endif
 

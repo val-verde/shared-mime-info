@@ -39,7 +39,8 @@ EXTRA_DIST = \
 	data/freedesktop_generate.sh	\
 	po/check_translations.sh	\
 	tests/test_generic_icons.sh	\
-	tests/test_duplicate_mime_types.sh
+	tests/test_duplicate_mime_types.sh	\
+	tests/test_mime.sh
 
 CLEANFILES = freedesktop.org.xml po/stamp-it
 
@@ -120,13 +121,7 @@ else
 			echo "***************************************************************************" ; \
 			exit 1 ; \
 		else \
-			mkdir -p $(top_builddir)/temp-mime-dir/mime/packages ; \
-			cp -a $(top_builddir)/freedesktop.org.xml $(top_builddir)/temp-mime-dir/mime/packages/ ; \
-			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/update-mime-database$(EXEEXT) "$(top_builddir)/temp-mime-dir/mime/" ; \
-			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/test-mime-data$(EXEEXT) -v $(top_srcdir)/tests/mime-detection/list || exit 1; \
-			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" $(XDGMIME_PATH)/src/test-mime$(EXEEXT) || exit 1; \
-			XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/test-tree-magic$(EXEEXT) $(top_srcdir)/tests/mime-detection/tree-list || exit 1; \
-			rm -rf "$(top_builddir)/temp-mime-dir/" ; \
+			$(srcdir)/tests/test_mime.sh "$(top_srcdir)" "$(top_builddir)" "$(top_builddir)/freedesktop.org.xml" "$(top_builddir)/update-mime-database$(EXEEXT)" "$(XDGMIME_PATH)/src/test-mime-data$(EXEEXT)" "$(XDGMIME_PATH)/src/test-mime$(EXEEXT)" "$(top_builddir)/test-tree-magic$(EXEEXT)" || exit 1; \
 		fi; \
 	fi
 	@$(srcdir)/tests/test_duplicate_mime_types.sh $(srcdir)/data/freedesktop.org.xml.in

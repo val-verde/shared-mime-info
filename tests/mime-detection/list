@@ -88,6 +88,8 @@ test.xht application/xhtml+xml
 test-html-with-svg.html text/html
 # Copied from https://gitlab.freedesktop.org/xdg/shared-mime-info/issues/98
 test-really-html-not-xhtml.html text/html oxx
+# Copied from https://bugs.kde.org/show_bug.cgi?id=417248
+test-really-html-not-perl.html text/html
 # Copied from https://gitlab.freedesktop.org/xdg/shared-mime-info/issues/120
 test.html text/html
 # Copied from http://cvs.fedoraproject.org/viewvc/comps/comps-f11.xml.in?revision=1.306

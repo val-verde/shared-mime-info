@@ -16,8 +16,8 @@ msgstr ""
 "Project-Id-Version: shared-mime-info\n"
 "Report-Msgid-Bugs-To: https://gitlab.freedesktop.org/xdg/shared-mime-info/issues\n"
 "POT-Creation-Date: 2019-09-11 12:53+0200\n"
-"PO-Revision-Date: 2019-08-20 21:02+0000\n"
-"Last-Translator: hadess <hadess@hadess.net>\n"
+"PO-Revision-Date: 2019-10-24 06:24+0000\n"
+"Last-Translator: Adolfo Jayme-Barrientos\n"
 "Language-Team: Spanish (http://www.transifex.com/freedesktop/shared-mime-info/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,15 +27,15 @@ msgstr ""
 
 #: freedesktop.org.xml.in:83
 msgid "Atari 2600 ROM"
-msgstr ""
+msgstr "ROM de Atari 2600"
 
 #: freedesktop.org.xml.in:88
 msgid "Atari 7800 ROM"
-msgstr ""
+msgstr "ROM de Atari 7800"
 
 #: freedesktop.org.xml.in:96
 msgid "Atari Lynx ROM"
-msgstr ""
+msgstr "ROM de Atari Lynx"
 
 #: freedesktop.org.xml.in:104
 msgid "ATK inset"
@@ -55,7 +55,7 @@ msgstr "archivo Macintosh codificado con BinHex"
 
 #: freedesktop.org.xml.in:138
 msgid "Mathematica Notebook file"
-msgstr ""
+msgstr "archivo de Mathematica Notebook"
 
 #: freedesktop.org.xml.in:153
 msgid "MathML document"
@@ -103,11 +103,11 @@ msgstr "archivo de descarga de AmazonMP3"
 
 #: freedesktop.org.xml.in:251
 msgid "GSM 06.10 audio"
-msgstr "sonido GSM 06.10"
+msgstr "audio GSM 06.10"
 
 #: freedesktop.org.xml.in:257
 msgid "iRiver playlist"
-msgstr ""
+msgstr "lista de reproducción de iRiver"
 
 #: freedesktop.org.xml.in:264
 msgid "PGP/MIME-encrypted message header"
@@ -123,7 +123,7 @@ msgstr "firma OpenPGP separada"
 
 #: freedesktop.org.xml.in:310
 msgid "PKCS#7 file"
-msgstr ""
+msgstr "archivo PKCS#7"
 
 #: freedesktop.org.xml.in:318
 msgid "detached S/MIME signature"
@@ -147,7 +147,7 @@ msgstr "certificado X.509"
 
 #: freedesktop.org.xml.in:349
 msgid "certificate revocation list"
-msgstr ""
+msgstr "lista de revocación de certificados"
 
 #: freedesktop.org.xml.in:353
 msgid "PkiPath certification path"
@@ -155,7 +155,7 @@ msgstr "ruta de certificación PkiPath"
 
 #: freedesktop.org.xml.in:357
 msgid "PostScript document"
-msgstr ""
+msgstr "documento PostScript"
 
 #: freedesktop.org.xml.in:367
 msgid "Plucker document"
@@ -238,7 +238,7 @@ msgstr "hoja de cálculo de Lotus 1-2-3"
 
 #: freedesktop.org.xml.in:575
 msgid "Lotus Word Pro document"
-msgstr ""
+msgstr "documento de Lotus Word Pro"
 
 #: freedesktop.org.xml.in:583
 msgid "JET database"
@@ -283,15 +283,15 @@ msgstr "plantilla de presentación de PowerPoint"
 
 #: freedesktop.org.xml.in:691 freedesktop.org.xml.in:709
 msgid "Office Open XML Visio drawing"
-msgstr ""
+msgstr "dibujo Office Open XML de Visio"
 
 #: freedesktop.org.xml.in:697 freedesktop.org.xml.in:715
 msgid "Office Open XML Visio template"
-msgstr ""
+msgstr "plantilla Office Open XML de Visio"
 
 #: freedesktop.org.xml.in:703 freedesktop.org.xml.in:721
 msgid "Office Open XML Visio stencil"
-msgstr ""
+msgstr "galería de símbolos Office Open XML de Visio"
 
 #: freedesktop.org.xml.in:727 freedesktop.org.xml.in:769
 msgid "Word document"
@@ -495,7 +495,7 @@ msgstr "paquete SISX"
 
 #: freedesktop.org.xml.in:1297
 msgid "network packet capture"
-msgstr ""
+msgstr "captura de paquetes de red"
 
 #: freedesktop.org.xml.in:1309
 msgid "WordPerfect document"
@@ -503,15 +503,15 @@ msgstr "documento de WordPerfect"
 
 #: freedesktop.org.xml.in:1325
 msgid "YouTube media archive"
-msgstr ""
+msgstr "archivador multimedia de YouTube"
 
 #: freedesktop.org.xml.in:1331
 msgid "SPSS portable data file"
-msgstr ""
+msgstr "archivo de datos portátiles de SPSS"
 
 #: freedesktop.org.xml.in:1340
 msgid "SPSS data file"
-msgstr ""
+msgstr "archivo de datos de SPSS"
 
 #: freedesktop.org.xml.in:1352
 msgid "XBEL bookmarks"
@@ -703,7 +703,7 @@ msgstr "imagen de disco de Sega Saturn"
 
 #: freedesktop.org.xml.in:1788
 msgid "Dreamcast disc image"
-msgstr ""
+msgstr "imagen de disco de Dreamcast"
 
 #: freedesktop.org.xml.in:1793
 msgid "Nintendo DS ROM"
@@ -747,7 +747,7 @@ msgstr "paquete de Debian"
 
 #: freedesktop.org.xml.in:1880
 msgid "Qt Designer interface document"
-msgstr ""
+msgstr "documento de interfaz de Qt Designer"
 
 #: freedesktop.org.xml.in:1890
 msgid "Qt Markup Language file"
@@ -919,7 +919,7 @@ msgstr "mensajes traducidos (legibles por máquinas)"
 
 #: freedesktop.org.xml.in:2278
 msgid "GTK+ Builder interface document"
-msgstr ""
+msgstr "documento de interfaz de GTK Builder"
 
 #: freedesktop.org.xml.in:2287
 msgid "Glade project"
@@ -983,7 +983,7 @@ msgstr "clase de Java"
 
 #: freedesktop.org.xml.in:2408
 msgid "Groovy source code"
-msgstr ""
+msgstr "código fuente en Groovy"
 
 #: freedesktop.org.xml.in:2417
 msgid "Gradle scripts"
@@ -1027,7 +1027,7 @@ msgstr "documento JSON-LD"
 
 #: freedesktop.org.xml.in:2513
 msgid "Jupyter notebook document"
-msgstr ""
+msgstr "documento de cuaderno de Jupyter"
 
 #: freedesktop.org.xml.in:2524
 msgid "CoffeeScript document"
@@ -1047,15 +1047,15 @@ msgstr "gráfico de KChart"
 
 #: freedesktop.org.xml.in:2570
 msgid "Kexi settings"
-msgstr ""
+msgstr "configuración de Kexi"
 
 #: freedesktop.org.xml.in:2574
 msgid "Kexi shortcut"
-msgstr ""
+msgstr "atajo de Kexi"
 
 #: freedesktop.org.xml.in:2578 freedesktop.org.xml.in:2583
 msgid "Kexi database file"
-msgstr ""
+msgstr "archivo de base de datos de Kexi"
 
 #: freedesktop.org.xml.in:2590
 msgid "KFormula formula"
@@ -1191,7 +1191,7 @@ msgstr "vídeo Matroska en 3D"
 
 #: freedesktop.org.xml.in:2923
 msgid "Matroska audio"
-msgstr "sonido Matroska"
+msgstr "audio Matroska"
 
 #: freedesktop.org.xml.in:2928
 msgid "WebM video"
@@ -1199,7 +1199,7 @@ msgstr "vídeo WebM"
 
 #: freedesktop.org.xml.in:2942
 msgid "WebM audio"
-msgstr "sonido WebM"
+msgstr "audio WebM"
 
 #: freedesktop.org.xml.in:2946
 msgid "MHTML web archive"
@@ -1215,7 +1215,7 @@ msgstr "archivo OCL"
 
 #: freedesktop.org.xml.in:2971
 msgid "COBOL source code"
-msgstr ""
+msgstr "código fuente en COBOL"
 
 #: freedesktop.org.xml.in:2979
 msgid "Mobipocket e-book"
@@ -1288,11 +1288,11 @@ msgstr "formato de intercambio de Annodex"
 
 #: freedesktop.org.xml.in:3140
 msgid "Annodex video"
-msgstr ""
+msgstr "vídeo Annodex"
 
 #: freedesktop.org.xml.in:3153
 msgid "Annodex audio"
-msgstr ""
+msgstr "audio Annodex"
 
 #: freedesktop.org.xml.in:3166
 msgid "Ogg multimedia file"
@@ -1300,31 +1300,31 @@ msgstr "archivo multimedia Ogg"
 
 #: freedesktop.org.xml.in:3175
 msgid "Ogg audio"
-msgstr ""
+msgstr "audio Ogg"
 
 #: freedesktop.org.xml.in:3186
 msgid "Ogg video"
-msgstr ""
+msgstr "vídeo Ogg"
 
 #: freedesktop.org.xml.in:3196
 msgid "Ogg Vorbis audio"
-msgstr "sonido Ogg Vorbis"
+msgstr "audio Ogg Vorbis"
 
 #: freedesktop.org.xml.in:3209
 msgid "Ogg FLAC audio"
-msgstr "sonido Ogg FLAC"
+msgstr "audio Ogg FLAC"
 
 #: freedesktop.org.xml.in:3224
 msgid "Opus audio"
-msgstr "sonido Opus"
+msgstr "audio Opus"
 
 #: freedesktop.org.xml.in:3234
 msgid "Ogg Speex audio"
-msgstr "sonido Ogg Speex"
+msgstr "audio Ogg Speex"
 
 #: freedesktop.org.xml.in:3245
 msgid "Speex audio"
-msgstr "sonido Speex"
+msgstr "audio Speex"
 
 #: freedesktop.org.xml.in:3252
 msgid "Ogg Theora video"
@@ -1412,7 +1412,7 @@ msgstr "hoja de cálculo de Quattro Pro"
 
 #: freedesktop.org.xml.in:3442
 msgid "QuickTime playlist"
-msgstr ""
+msgstr "lista de reproducción de QuickTime"
 
 #: freedesktop.org.xml.in:3457
 msgid "Quicken document"
@@ -1481,7 +1481,7 @@ msgstr "archivo Shockwave Flash"
 #. translators: "Shorten" is the name of an audio codec
 #: freedesktop.org.xml.in:3607
 msgid "Shorten audio"
-msgstr "sonido Shorten"
+msgstr "audio Shorten"
 
 #: freedesktop.org.xml.in:3616
 msgid "Siag spreadsheet"
@@ -1553,7 +1553,7 @@ msgstr "tono de llamada iMelody"
 
 #: freedesktop.org.xml.in:3768
 msgid "SMAF audio"
-msgstr "sonido SMAF"
+msgstr "audio SMAF"
 
 #: freedesktop.org.xml.in:3780
 msgid "MRML playlist"
@@ -1561,7 +1561,7 @@ msgstr "lista de reproducción MRML"
 
 #: freedesktop.org.xml.in:3790
 msgid "XMF audio"
-msgstr "sonido XMF"
+msgstr "audio XMF"
 
 #: freedesktop.org.xml.in:3802
 msgid "SV4 CPIO archive"
@@ -1681,83 +1681,83 @@ msgstr "archivador Zip"
 
 #: freedesktop.org.xml.in:4008
 msgid "WIM disk image"
-msgstr ""
+msgstr "imagen de disco WIM"
 
 #: freedesktop.org.xml.in:4018
 msgid "Dolby Digital audio"
-msgstr "sonido Dolby Digital"
+msgstr "audio Dolby Digital"
 
 #: freedesktop.org.xml.in:4025
 msgid "DTS audio"
-msgstr "sonido DTS"
+msgstr "audio DTS"
 
 #: freedesktop.org.xml.in:4036
 msgid "DTSHD audio"
-msgstr "sonido DTSHD"
+msgstr "audio DTSHD"
 
 #: freedesktop.org.xml.in:4045
 msgid "AMR audio"
-msgstr "sonido AMR"
+msgstr "audio AMR"
 
 #: freedesktop.org.xml.in:4056
 msgid "AMR-WB audio"
-msgstr "sonido AMR-WB"
+msgstr "audio AMR-WB"
 
 #: freedesktop.org.xml.in:4067
 msgid "ULAW (Sun) audio"
-msgstr "sonido ULAW (Sun)"
+msgstr "audio ULAW (Sun)"
 
 #: freedesktop.org.xml.in:4075
 msgid "Commodore 64 audio"
-msgstr "sonido de Commodore 64"
+msgstr "audio de Commodore 64"
 
 #: freedesktop.org.xml.in:4083
 msgid "PCM audio"
-msgstr "sonido PCM"
+msgstr "audio PCM"
 
 #: freedesktop.org.xml.in:4101
 msgid "AIFC audio"
-msgstr "sonido AIFC"
+msgstr "audio AIFC"
 
 #: freedesktop.org.xml.in:4113
 msgid "AIFF/Amiga/Mac audio"
-msgstr "sonido AIFF/Amiga/Mac"
+msgstr "audio AIFF/Amiga/Mac"
 
 #: freedesktop.org.xml.in:4125
 msgid "Monkey's audio"
-msgstr "sonido de Monkey"
+msgstr "audio de Monkey"
 
 #: freedesktop.org.xml.in:4132
 msgid "Audible.Com audio"
-msgstr "sonido de Audible.com"
+msgstr "audio de Audible.com"
 
 #: freedesktop.org.xml.in:4144
 msgid "Impulse Tracker audio"
-msgstr "sonido de Impulse Tracker"
+msgstr "audio de Impulse Tracker"
 
 #: freedesktop.org.xml.in:4151
 msgid "FLAC audio"
-msgstr "sonido FLAC"
+msgstr "audio FLAC"
 
 #: freedesktop.org.xml.in:4159
 msgid "WavPack audio"
-msgstr "sonido WavPack"
+msgstr "audio WavPack"
 
 #: freedesktop.org.xml.in:4167
 msgid "WavPack audio correction file"
-msgstr "archivo de corrección de sonido WavPack"
+msgstr "archivo de corrección de audio WavPack"
 
 #: freedesktop.org.xml.in:4174
 msgid "MIDI audio"
-msgstr "sonido MIDI"
+msgstr "audio MIDI"
 
 #: freedesktop.org.xml.in:4184
 msgid "compressed Tracker audio"
-msgstr "sonido de Tracker comprimido"
+msgstr "audio de Tracker comprimido"
 
 #: freedesktop.org.xml.in:4191
 msgid "AAC audio"
-msgstr "sonido AAC"
+msgstr "audio AAC"
 
 #: freedesktop.org.xml.in:4204
 msgid "USAC audio"
@@ -1765,11 +1765,11 @@ msgstr "audio USAC"
 
 #: freedesktop.org.xml.in:4211
 msgid "MPEG-4 audio"
-msgstr "sonido MPEG-4"
+msgstr "audio MPEG-4"
 
 #: freedesktop.org.xml.in:4221
 msgid "MPEG-4 ringtone"
-msgstr ""
+msgstr "tono de llamada MPEG-4"
 
 #: freedesktop.org.xml.in:4226
 msgid "MPEG-4 video"
@@ -1789,19 +1789,19 @@ msgstr "archivo multimedia 3GPP2"
 
 #: freedesktop.org.xml.in:4288
 msgid "Amiga SoundTracker audio"
-msgstr "sonido de Amiga SoundTracker"
+msgstr "audio de Amiga SoundTracker"
 
 #: freedesktop.org.xml.in:4332
 msgid "MP2 audio"
-msgstr "sonido MP2"
+msgstr "audio MP2"
 
 #: freedesktop.org.xml.in:4337
 msgid "MP3 audio"
-msgstr "sonido MP3"
+msgstr "audio MP3"
 
 #: freedesktop.org.xml.in:4350
 msgid "MP3 audio (streamed)"
-msgstr "sonido MP3 (en transmisión)"
+msgstr "audio MP3 (en continuo)"
 
 #: freedesktop.org.xml.in:4365
 msgid "HTTP Live Streaming playlist"
@@ -1813,23 +1813,23 @@ msgstr "lista de reproducción ASX de Microsoft"
 
 #: freedesktop.org.xml.in:4394
 msgid "PSF audio"
-msgstr "sonido PSF"
+msgstr "audio PSF"
 
 #: freedesktop.org.xml.in:4403
 msgid "MiniPSF audio"
-msgstr "sonido MiniPSF"
+msgstr "audio MiniPSF"
 
 #: freedesktop.org.xml.in:4410
 msgid "PSFlib audio library"
-msgstr "biblioteca de sonido PSFlib"
+msgstr "biblioteca de audio PSFlib"
 
 #: freedesktop.org.xml.in:4417
 msgid "Windows Media audio"
-msgstr "sonido de Windows Media"
+msgstr "audio de Windows Media"
 
 #: freedesktop.org.xml.in:4423
 msgid "Musepack audio"
-msgstr "sonido Musepack"
+msgstr "audio Musepack"
 
 #: freedesktop.org.xml.in:4432
 msgid "RealAudio document"
@@ -1837,7 +1837,7 @@ msgstr "documento RealAudio"
 
 #: freedesktop.org.xml.in:4439
 msgid "RealMedia playlist"
-msgstr ""
+msgstr "lista de reproducción de RealMedia"
 
 #: freedesktop.org.xml.in:4443
 msgid "RealVideo document"
@@ -1857,7 +1857,7 @@ msgstr "documento RealText"
 
 #: freedesktop.org.xml.in:4471
 msgid "RIFF audio"
-msgstr "sonido RIFF"
+msgstr "audio RIFF"
 
 #: freedesktop.org.xml.in:4474
 msgid "RIFF container"
@@ -1865,7 +1865,7 @@ msgstr "contenedor RIFF"
 
 #: freedesktop.org.xml.in:4481
 msgid "Scream Tracker 3 audio"
-msgstr "sonido Scream Tracker 3"
+msgstr "audio Scream Tracker 3"
 
 #: freedesktop.org.xml.in:4488
 msgid "MP3 ShoutCast playlist"
@@ -1873,15 +1873,15 @@ msgstr "lista de reproducción MP3 ShoutCast"
 
 #: freedesktop.org.xml.in:4499
 msgid "Scream Tracker audio"
-msgstr "sonido Scream Tracker"
+msgstr "audio Scream Tracker"
 
 #: freedesktop.org.xml.in:4508
 msgid "VOC audio"
-msgstr "sonido VOC"
+msgstr "audio VOC"
 
 #: freedesktop.org.xml.in:4512
 msgid "WAV audio"
-msgstr "sonido WAV"
+msgstr "audio WAV"
 
 #: freedesktop.org.xml.in:4522
 msgid "Scream Tracker instrument"
@@ -1889,11 +1889,11 @@ msgstr "instrumento Scream Tracker"
 
 #: freedesktop.org.xml.in:4529
 msgid "FastTracker II audio"
-msgstr "sonido FastTracker II"
+msgstr "audio FastTracker II"
 
 #: freedesktop.org.xml.in:4536
 msgid "TrueAudio audio"
-msgstr "sonido TrueAudio"
+msgstr "audio TrueAudio"
 
 #: freedesktop.org.xml.in:4544
 msgid "Windows BMP image"
@@ -1905,11 +1905,11 @@ msgstr "imagen WBMP"
 
 #: freedesktop.org.xml.in:4565
 msgid "CGM image"
-msgstr ""
+msgstr "imagen CGM"
 
 #: freedesktop.org.xml.in:4571
 msgid "CCITT G3 fax image"
-msgstr ""
+msgstr "imagen de fax CCITT G3"
 
 #: freedesktop.org.xml.in:4576
 msgid "GIF image"
@@ -1953,7 +1953,7 @@ msgstr "vídeo JPEG-2000 MJ2"
 
 #: freedesktop.org.xml.in:4668
 msgid "OpenRaster image"
-msgstr ""
+msgstr "imagen OpenRaster"
 
 #: freedesktop.org.xml.in:4680
 msgid "DirectDraw surface"
@@ -2049,7 +2049,7 @@ msgstr "imagen PNG"
 
 #: freedesktop.org.xml.in:4908
 msgid "RLE bitmap image"
-msgstr ""
+msgstr "imagen de mapa de bits RLE"
 
 #: freedesktop.org.xml.in:4914
 msgid "SVG image"
@@ -2077,7 +2077,7 @@ msgstr "imagen vectorial DXF"
 
 #: freedesktop.org.xml.in:4962
 msgid "MDI image"
-msgstr ""
+msgstr "imagen MDI"
 
 #: freedesktop.org.xml.in:4971
 msgid "WebP image"
@@ -2597,7 +2597,7 @@ msgstr "plantilla de traducción"
 
 #: freedesktop.org.xml.in:5988
 msgid "Gherkin document"
-msgstr ""
+msgstr "documento de Gherkin"
 
 #: freedesktop.org.xml.in:5993
 msgid "HTML document"
@@ -2605,11 +2605,11 @@ msgstr "documento HTML"
 
 #: freedesktop.org.xml.in:6020
 msgid "Web application cache file"
-msgstr ""
+msgstr "archivo de antememoria de aplicación web"
 
 #: freedesktop.org.xml.in:6033
 msgid "Google Video Pointer shortcut"
-msgstr ""
+msgstr "atajo de Google Video Pointer"
 
 #: freedesktop.org.xml.in:6042
 msgid "Haskell source code"
@@ -2645,7 +2645,7 @@ msgstr "registro de aplicación"
 
 #: freedesktop.org.xml.in:6092
 msgid "Makefile build file"
-msgstr ""
+msgstr "archivo de generación Makefile"
 
 #: freedesktop.org.xml.in:6105
 msgid "Markdown document"
@@ -2661,11 +2661,11 @@ msgstr "extracto del registro de Windows"
 
 #: freedesktop.org.xml.in:6130
 msgid "MOF file"
-msgstr ""
+msgstr "archivo MOF"
 
 #: freedesktop.org.xml.in:6137
 msgid "Mup musical composition document"
-msgstr ""
+msgstr "documento de composición musical de Mup"
 
 #: freedesktop.org.xml.in:6146
 msgid "Objective-C source code"
@@ -2681,7 +2681,7 @@ msgstr "código fuente en OpenCL"
 
 #: freedesktop.org.xml.in:6166
 msgid "MATLAB file"
-msgstr ""
+msgstr "archivo de MATLAB"
 
 #: freedesktop.org.xml.in:6181
 msgid "Meson source code"
@@ -2745,7 +2745,7 @@ msgstr "código fuente en Scheme"
 
 #: freedesktop.org.xml.in:6335
 msgid "SCSS pre-processor file"
-msgstr ""
+msgstr "archivo de preprocesador SCSS"
 
 #: freedesktop.org.xml.in:6343
 msgid "Setext document"
@@ -2993,7 +2993,7 @@ msgstr "documento T602"
 
 #: freedesktop.org.xml.in:6929
 msgid "Cisco VPN settings"
-msgstr ""
+msgstr "configuración de Cisco VPN"
 
 #: freedesktop.org.xml.in:6939
 msgid "ICC profile"
@@ -3042,7 +3042,7 @@ msgstr "DVD de vídeo"
 #. http://en.wikipedia.org/wiki/Red_Book_(audio_CD_standard)
 #: freedesktop.org.xml.in:7023
 msgid "audio CD"
-msgstr "CD de sonido"
+msgstr "CD de audio"
 
 #. http://en.wikipedia.org/wiki/Compact_Disc
 #: freedesktop.org.xml.in:7028
@@ -3067,7 +3067,7 @@ msgstr "disco HD DVD en blanco"
 #. http://en.wikipedia.org/wiki/DVD-Audio
 #: freedesktop.org.xml.in:7048
 msgid "audio DVD"
-msgstr "DVD de sonido"
+msgstr "DVD de audio"
 
 #. http://en.wikipedia.org/wiki/Blu-ray_Disc
 #. http://www.blu-raydisc.com/Section-13470/Section-13890/Index.html
@@ -3096,12 +3096,12 @@ msgstr "Picture CD"
 #. see fd.o hal spec
 #: freedesktop.org.xml.in:7097
 msgid "portable audio player"
-msgstr "dispositivo de sonido portátil"
+msgstr "reproductor de audio portátil"
 
 #. https://github.com/ostreedev/ostree/blob/master/man/ostree-create-usb.xml
 #: freedesktop.org.xml.in:7102
 msgid "OSTree software updates"
-msgstr ""
+msgstr "actualizaciones de programas de OSTree"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
@@ -3131,11 +3131,11 @@ msgstr "presentación de Apple Keynote 5"
 
 #: freedesktop.org.xml.in:7162
 msgid "Adobe PageMaker document"
-msgstr ""
+msgstr "documento de Adobe PageMaker"
 
 #: freedesktop.org.xml.in:7172
 msgid "Doom WAD file"
-msgstr ""
+msgstr "archivo WAD de Doom"
 
 #: freedesktop.org.xml.in:7184
 msgid "Amiga disk image"
@@ -3155,7 +3155,7 @@ msgstr "referencia a repositorio de Flatpak"
 
 #: freedesktop.org.xml.in:7224
 msgid "Squashfs filesystem image"
-msgstr ""
+msgstr "imagen de sistema de archivos de Squashfs"
 
 #: freedesktop.org.xml.in:7251
 msgid "Snap package"

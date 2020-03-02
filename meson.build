@@ -77,11 +77,3 @@ if get_option('update-mimedb')
         upd_tool, '-V', '${MESON_INSTALL_DESTDIR_PREFIX}' / get_option('datadir') / 'mime',
     ]))
 endif
-
-run_target('Changelog',
-    command: [ 'env',
-        'git', 'log', '--stat',
-        '--after="Tue Oct 6 14:46:33 2009 +0000"',
-        '>', meson.source_root() / 'Changelog',
-    ],
-)

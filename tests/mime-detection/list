@@ -699,6 +699,12 @@ SConscript.buildinfo text/x-scons oxo
 cplusplusfile.C text/x-c++src oxo
 cfile.c text/x-csrc oxo
 
+# Common Lisp source code
+common-lisp.asd text/x-common-lisp oxo
+common-lisp.fasl text/x-common-lisp oxo
+common-lisp.lisp text/x-common-lisp oxo
+common-lisp.ros text/x-common-lisp oxo
+
 # systemd units
 systemd.automount text/x-systemd-unit
 systemd.device text/x-systemd-unit

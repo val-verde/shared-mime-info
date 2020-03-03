@@ -5865,6 +5865,14 @@ command to generate the output files.
     <glob pattern="CMakeLists.txt"/>
     <sub-class-of type="text/plain"/>
   </mime-type>
+  <mime-type type="text/x-common-lisp">
+    <comment>Common Lisp source code</comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.asd"/>
+    <glob pattern="*.fasl"/>
+    <glob pattern="*.lisp"/>
+    <glob pattern="*.ros"/>
+  </mime-type>
   <mime-type type="text/csv">
     <comment>CSV document</comment>
     <acronym>CSV</acronym>

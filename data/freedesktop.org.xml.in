@@ -6446,6 +6446,13 @@ command to generate the output files.
     </magic>
     <alias type="zz-application/zz-winassoc-uu"/>
   </mime-type>
+  <mime-type type="text/vbscript">
+    <comment>VBScript program</comment>
+    <alias type="text/vbs"/>
+    <sub-class-of type="text/plain"/>
+    <generic-icon name="text-x-script"/>
+    <glob pattern="*.vbs"/>
+  </mime-type>
   <mime-type type="text/x-xmi">
     <comment>XMI file</comment>
     <acronym>XMI</acronym>

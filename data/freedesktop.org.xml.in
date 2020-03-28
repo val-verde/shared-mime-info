@@ -6375,8 +6375,9 @@ command to generate the output files.
     <glob pattern="*.sql"/>
     <alias type="text/x-sql"/>
   </mime-type>
-  <mime-type type="text/x-tcl">
+  <mime-type type="text/tcl">
     <comment>Tcl script</comment>
+    <alias type="text/x-tcl"/>
     <sub-class-of type="text/plain"/>
     <glob pattern="*.tcl"/>
     <glob pattern="*.tk"/>

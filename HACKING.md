@@ -1,5 +1,5 @@
 Note: latest version of this file is at:
-http://cgit.freedesktop.org/xdg/shared-mime-info/tree/HACKING
+https://gitlab.freedesktop.org/xdg/shared-mime-info/-/blob/master/HACKING.md
 
 A few ground rules for people interested in adding new mime-types.
 
@@ -37,21 +37,21 @@ Test suite
 
 You need to have xdgmime checked out [1] and compiled. By default, the build
 system will expect the source directory to be at the same level as
-shared-mime-info. ../xdgmime/src/test-mime-data will be run against
-tests/list. An alternate path to xdgmime can be passed by setting the
-XDGMIME_PATH environment variable to the appropriate path.
+shared-mime-info. `../xdgmime/src/test-mime-data` will be run against
+`tests/mime-detection/list`. An alternate path to xdgmime can be passed by
+using the `xdgmime-path` meson option such as `-Dxdgmime-path=/path/to/xdgmime`.
 
 The format of the file is:
-<testcase filename> <expected mime-type> <expected failures>
+`<testcase filename> <expected mime-type> <expected failures>`
 
 The expected failures is whether matching the file with the mime-type would
 fail when matched by file, data or name. "x" indicates expected failure, "o"
 indicates expected success. Trailing "o"s can be omitted.
 
-See the top of the tests/list file for syntax details.
+See the top of the `tests/mime-detection/list` file for syntax details.
 
-You can also temporarily print the results of test-mime-data by putting your
-test files in the staging-tests/ sub-directory.
+You can also temporarily print the results of `test-mime-data` by putting your
+test files in the `staging-tests/` sub-directory.
 
 [1]: Repository details at:
 https://gitlab.freedesktop.org/xdg/xdgmime
@@ -59,14 +59,11 @@ https://gitlab.freedesktop.org/xdg/xdgmime
 Releasing
 ---------
 
-- Run "make update-translations" and "make check-translations" before release
-- Copy the file to ~hadess/public_html on gabe.freedesktop.org
-- Update http://www.freedesktop.org/wiki/Software/shared-mime-info
+- Run `ninja shared-mime-info-pot`, `./po/check_translations.sh` and
+  `./po/update_translations.sh` before release
+- Upload to shared-mime-info gitlab
 
 Updating the spec on the website
 --------------------------------
 
-- update http://cgit.freedesktop.org/xdg/xdg-specs/tree/web-export/specs.idx
-- go to /srv/specifications.freedesktop.org/www on gabe
-- run ../update.py
-
+- update https://gitlab.freedesktop.org/xdg/xdg-specs/blob/master/web-export/specs.idx

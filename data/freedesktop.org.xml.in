@@ -7369,4 +7369,10 @@ command to generate the output files.
     <glob pattern="*.pys"/>
     <generic-icon name="x-office-spreadsheet"/>
   </mime-type>
+
+  <mime-type type="text/x-kotlin">
+    <comment>Kotlin source code</comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.kt"/>
+  </mime-type>
 </mime-info>

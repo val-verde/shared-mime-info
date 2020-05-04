@@ -236,6 +236,8 @@ sample2.amr audio/AMR
 sample2.amr audio/amr
 # Truncated file from https://bugzilla.gnome.org/show_bug.cgi?id=792325
 raw-mjpeg.mjpeg video/x-mjpeg oxo
+# From https://cgit.kde.org/kfilemetadata.git/tree/autotests/samplefiles
+x_speex_ogg.spx audio/x-speex+ogg
 
 # text
 text-iso8859-15.txt text/plain

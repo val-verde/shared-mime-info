@@ -4284,7 +4284,6 @@ command to generate the output files.
     <comment>3GPP2 multimedia file</comment>
     <acronym>3GPP2</acronym>
     <expanded-acronym>3rd Generation Partnership Project 2</expanded-acronym>
-    <sub-class-of type="video/mp4"/>
     <magic priority="50">
       <match type="string" value="ftyp3g2" offset="4"/>
     </magic>

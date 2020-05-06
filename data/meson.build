@@ -38,4 +38,5 @@ pkgconfig.generate(
     name: 'shared-mime-info',
     description: 'Freedesktop common MIME database',
     version: meson.project_version(),
+    install_dir: get_option('datadir') / 'pkgconfig'
 )

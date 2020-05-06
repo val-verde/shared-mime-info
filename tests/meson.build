@@ -50,3 +50,11 @@ test('update-mime-database',
     update_mime_database,
     args: meson.current_source_dir() / 'mime-db-tests',
 )
+
+its20_elements_rng = meson.source_root() / 'data/its/its20-elements.rng'
+shared_mime_info_its = meson.source_root() / 'data/its/shared-mime-info.its'
+
+test('ITS validation',
+     xmllint,
+     args: [ '--noout', '--relaxng', its20_elements_rng, shared_mime_info_its, ],
+)

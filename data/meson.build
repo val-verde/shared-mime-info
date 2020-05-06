@@ -17,6 +17,11 @@ freedesktop_org_xml = custom_target('freedesktop.org.xml',
     install_dir: get_option('datadir') / 'mime' / 'packages',
 )
 
+install_data(
+  [ 'its/shared-mime-info.loc', 'its/shared-mime-info.its', ],
+  install_dir : get_option('datadir') / 'gettext/its'
+)
+
 custom_target('shared-mime-info-spec-html',
     input : 'shared-mime-info-spec.xml',
     output: 'shared-mime-info-spec-html',

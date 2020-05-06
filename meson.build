@@ -1,7 +1,7 @@
 
 project('shared-mime-info',
     'c',
-    version: '1.15',
+    version: '2.0',
     meson_version: '>=0.49.0'
 )
 

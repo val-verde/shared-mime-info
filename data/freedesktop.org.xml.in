@@ -1998,14 +1998,10 @@ command to generate the output files.
     <generic-icon name="application-x-executable"/>
     <magic priority="40">
       <match type="string" value="\177ELF" offset="0">
-        <match type="byte" value="1" offset="5">
-          <match type="little16" value="2" offset="16"/>
-        </match>
+        <match type="byte" value="1" offset="5"/>
       </match>
       <match type="string" value="\177ELF" offset="0">
-        <match type="byte" value="2" offset="5">
-          <match type="big16" value="2" offset="16"/>
-        </match>
+        <match type="byte" value="2" offset="5"/>
       </match>
       <match type="string" value="MZ" offset="0"/>
       <match type="little16" value="0x521c" offset="0"/>
@@ -3571,20 +3567,9 @@ command to generate the output files.
   <mime-type type="application/x-sharedlib">
     <comment>shared library</comment>
     <magic priority="50">
-      <match type="string" value="\177ELF" offset="0">
-        <match type="byte" value="1" offset="5">
-          <match type="little16" value="3" offset="16"/>
-        </match>
-      </match>
-      <match type="string" value="\177ELF" offset="0">
-        <match type="byte" value="2" offset="5">
-          <match type="big16" value="3" offset="16"/>
-        </match>
-      </match>
       <match type="little16" value="0603" offset="0">
         <match type="little16" mask="030000" value="020000" offset="22"/>
       </match>
-      <match type="string" mask="0xffffffff000000000000000000000000ff" value="\177ELF            \003" offset="0"/>
     </magic>
     <glob pattern="*.so"/>
   </mime-type>

@@ -13,15 +13,13 @@ For more information about the database see the [Shared MIME Info Specification 
 ## Installation
 
 To install do:
+```sh
+$ meson _build -Dprefix=/usr
+$ ninja -v -C _build install
+```
 
-	$ ./configure --prefix=/usr --sysconfdir=/etc
-	$ make
-	$ sudo make install
-
-If you are building from git then you will have to run `./autogen.sh` first.
-
-It requires glib to be installed for building the update command.
-Additionally, it uses gettext and itstool for translations.
+It requires the glib development package to be installed as well as
+gettext and itstool.
 This database is translated at Transifex.
 
 

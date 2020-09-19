@@ -1834,6 +1834,15 @@ command to generate the output files.
     <generic-icon name="application-x-executable"/>
     <glob pattern="*.nds"/>
   </mime-type>
+  <mime-type type="application/x-nintendo-3ds-rom">
+    <comment>Nintendo 3DS ROM</comment>
+    <generic-icon name="application-x-executable"/>
+    <glob pattern="*.3ds"/>
+    <glob pattern="*.cci"/>
+    <magic>
+      <match offset="256" type="string" value="NCSD"/>
+    </magic>
+  </mime-type>
   <mime-type type="application/x-pc-engine-rom">
     <comment>PC Engine ROM</comment>
     <generic-icon name="application-x-executable"/>

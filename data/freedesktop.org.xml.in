@@ -1674,6 +1674,10 @@ command to generate the output files.
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.gdi"/>
   </mime-type>
+  <mime-type type="application/x-discjuggler-cd-image">
+    <comment>Padus DiscJuggler CD image</comment>
+    <glob pattern="*.cdi"/>
+  </mime-type>
   <mime-type type="application/vnd.chess-pgn">
     <comment>PGN chess game notation</comment>
     <acronym>PGN</acronym>

@@ -1664,6 +1664,16 @@ command to generate the output files.
     </magic>
     <glob pattern="*.toc"/>
   </mime-type>
+  <mime-type type="application/x-gd-rom-cue">
+    <comment>GD-ROM image cuesheet</comment>
+    <!-- It is a non-standard cuesheet used only for Dreamcast GD-ROM images, it
+         is typically surrounded by the .bin and .raw files it lists, each one
+         matching a disc track.
+         The first file should have the application/x-dreamcast-rom type. -->
+    <sub-class-of type="text/plain"/>
+    <generic-icon name="text-x-generic"/>
+    <glob pattern="*.gdi"/>
+  </mime-type>
   <mime-type type="application/vnd.chess-pgn">
     <comment>PGN chess game notation</comment>
     <acronym>PGN</acronym>

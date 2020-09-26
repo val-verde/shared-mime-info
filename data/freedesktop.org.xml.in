@@ -1829,11 +1829,6 @@ command to generate the output files.
       <match type="string" value="SEGA SEGAKATANA" offset="16"/>
     </magic>
   </mime-type>
-  <mime-type type="application/x-dc-rom">
-    <comment>Dreamcast disc image</comment>
-    <generic-icon name="application-x-executable"/>
-    <glob pattern="*.dc"/>
-  </mime-type>
   <mime-type type="application/x-nintendo-ds-rom">
     <comment>Nintendo DS ROM</comment>
     <generic-icon name="application-x-executable"/>

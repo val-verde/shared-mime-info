@@ -8,7 +8,6 @@ project('shared-mime-info',
 config = configuration_data()
 
 i18n = import('i18n')
-pkgconfig = import('pkgconfig')
 
 cc = meson.get_compiler('c')
 
@@ -67,6 +66,16 @@ subdir('po')
 subdir('data')
 subdir('src')
 subdir('tests')
+
+configure_file(
+    input: 'shared-mime-info.pc.in',
+    output: '@BASENAME@',
+    configuration: {
+        'prefix': get_option('prefix'),
+        'VERSION': meson.project_version()
+    },
+    install_dir: get_option('datadir') / 'pkgconfig'
+)
 
 if get_option('update-mimedb')
     upd_tool = (meson.is_cross_build()

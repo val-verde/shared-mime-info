@@ -33,10 +33,3 @@ custom_target('shared-mime-info-spec-html',
     ],
     build_by_default: true,
 )
-
-pkgconfig.generate(
-    name: 'shared-mime-info',
-    description: 'Freedesktop common MIME database',
-    version: meson.project_version(),
-    install_dir: get_option('datadir') / 'pkgconfig'
-)

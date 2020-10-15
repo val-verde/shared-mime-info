@@ -1931,6 +1931,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ui"/>
   </mime-type>
+  <mime-type type="text/x-kaitai-struct">
+    <comment>Kaitai Struct definition file</comment>
+    <sub-class-of type="application/x-yaml"/>
+    <glob pattern="*.ksy"/>
+  </mime-type>
   <mime-type type="text/x-qml">
     <comment>Qt Markup Language file</comment>
     <magic priority="80">

@@ -5021,6 +5021,9 @@ command to generate the output files.
   <mime-type type="image/x-3ds">
     <comment>3D Studio image</comment>
     <glob pattern="*.3ds"/>
+    <magic priority="30">
+      <match offset="0" type="big16" value="0x4d4d"/>
+    </magic>
   </mime-type>
   <mime-type type="image/x-applix-graphics">
     <comment>Applix Graphics image</comment>

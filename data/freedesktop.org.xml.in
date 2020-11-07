@@ -6331,6 +6331,11 @@ command to generate the output files.
     <glob pattern="*.pyx" weight="60"/>
     <glob pattern="*.wsgi" weight="60"/>
   </mime-type>
+  <mime-type type="text/x-sagemath">
+    <comment>SageMath script</comment>
+    <sub-class-of type="text/x-python"/>
+    <glob pattern="*.sage" weight="60"/>
+  </mime-type>
   <mime-type type="text/x-lua">
     <comment>Lua script</comment>
     <sub-class-of type='application/x-executable'/>

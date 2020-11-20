@@ -6770,6 +6770,15 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ktx"/>
   </mime-type>
+  <mime-type type="image/astc">
+    <comment>ASTC texture</comment>
+    <acronym>ASTC</acronym>
+    <expanded-acronym>Advanced Scalable Texture Compression</expanded-acronym>
+    <glob pattern="*.astc"/>
+    <magic priority="80">
+      <match type="little32" value="0x5CA1AB13" offset="0"/>
+    </magic>
+  </mime-type>
   <mime-type type="video/vnd.vivo">
     <comment>Vivo video</comment>
     <alias type="video/vivo"/>

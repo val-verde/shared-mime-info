@@ -117,6 +117,8 @@ terminal-app.svg image/svg+xml
 network-symbolic.svg image/svg+xml
 # Zeb model from http://www.geo-metricks.com/geo-shop/shop-htm/free-object-info.htm truncated to 1Ko
 zeb.3ds image/x-3ds x
+# Generated using astcenc-sse2 -cl test.png test.astc 4x4 -thorough
+test.astc image/astc
 
 # Documents
 ooo-6.0.doc application/msword

@@ -517,7 +517,20 @@ test.ts video/mp2t x
 bbc.ram application/ram oxo
 bbc.ram application/vnd.rn-realmedia xox
 # Converted from test.wav
-test-noid3.mp3 audio/mpeg
+# http://www.datavoyage.com/mpgscript/mpeghdr.htm
+# lame --add-id3v2 test.wav test-id3.mp3
+test-id3.mp3 audio/mpeg
+test-noid3-v1.mp3 audio/mpeg
+# lame -p --resample 44.1 test.wav test-noid3-v1-protected.mp3
+test-noid3-v1-protected.mp3 audio/mpeg
+# lame --resample 24 test.wav test-noid3-v2.mp3
+test-noid3-v2.mp3 audio/mpeg
+# lame -p --resample 24 test.wav test-noid3-v2-protected.mp3
+test-noid3-v2-protected.mp3 audio/mpeg
+# lame --resample 12 test.wav test-noid3-v2_5.mp3
+test-noid3-v2_5.mp3 audio/mpeg
+# lame -p --resample 12 test.wav test-noid3-v2_5-protected.mp3
+test-noid3-v2_5-protected.mp3 audio/mpeg
 # "Back to the 80s" by Aqua, as purchased on Amazon US
 xml-in-mp3.mp3 audio/mpeg
 # http://samples.mplayerhq.hu/A-codecs/AAC/ct_faac-adts.aac

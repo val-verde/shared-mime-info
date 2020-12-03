@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/sh -e
 
 src_root="$1"
 build_root="$2"

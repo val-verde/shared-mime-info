@@ -3,6 +3,7 @@ Makefile
 Makefile.in
 aclocal.m4
 autom4te.cache
+_build
 compile
 config.h
 config.h.in
@@ -20,3 +21,4 @@ update-mime-database
 shared-mime-info.pc
 test-subclassing
 test-tree-magic
+xdgmime

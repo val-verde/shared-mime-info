@@ -36,8 +36,8 @@ Test suite
 ----------
 
 You need to have xdgmime checked out [1] and compiled. By default, the build
-system will expect the source directory to be at the same level as
-shared-mime-info. `../xdgmime/src/test-mime-data` will be run against
+system will expect the source directory to be in the shared-mime-info
+directory. `./xdgmime/src/test-mime-data` will be run against
 `tests/mime-detection/list`. An alternate path to xdgmime can be passed by
 using the `xdgmime-path` meson option such as `-Dxdgmime-path=/path/to/xdgmime`.
 

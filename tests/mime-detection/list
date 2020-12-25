@@ -79,6 +79,8 @@ jc-win.ani application/x-navi-animation
 aero_alt.cur image/x-win-bitmap
 # copied from the mypaint examples
 mypaint.ora image/openraster
+# generated with `convert test.tif -compress Fax G3:test.g3`
+test.g3 image/g3fax ox
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=19201#c4
 # test.bflng application/xml x
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=19201#c3

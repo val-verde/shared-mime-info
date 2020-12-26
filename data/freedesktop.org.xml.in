@@ -752,14 +752,20 @@ command to generate the output files.
     <sub-class-of type="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
   </mime-type>
   <mime-type type="application/oxps">
-    <comment>XPS document</comment>
-    <acronym>XPS</acronym>
+    <comment>OpenXPS document</comment>
+    <acronym>OpenXPS</acronym>
     <expanded-acronym>Open XML Paper Specification</expanded-acronym>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.oxps"/>
+  </mime-type>
+  <mime-type type="application/vnd.ms-xpsdocument">
+    <comment>XPS document</comment>
+    <acronym>XPS</acronym>
+    <expanded-acronym>XML Paper Specification</expanded-acronym>
+    <sub-class-of type="application/zip"/>
+    <generic-icon name="x-office-document"/>
     <glob pattern="*.xps"/>
-    <alias type="application/vnd.ms-xpsdocument"/>
     <alias type="application/xps"/>
   </mime-type>
   <mime-type type="application/vnd.ms-works">

@@ -1648,7 +1648,7 @@ command to generate the output files.
   <mime-type type="application/x-iso9660-appimage">
     <comment>AppImage application bundle</comment>
     <sub-class-of type="application/x-executable"/>
-    <sub-class-of type="application/x-iso9660-image"/>
+    <sub-class-of type="application/x-cd-image"/>
     <generic-icon name="application-x-executable"/>
     <magic priority="50">
       <match value="ELF" type="string" offset="1" >
@@ -2653,7 +2653,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-kexiproject-sqlite3">
     <comment>Kexi database file</comment>
-    <sub-class-of type="application/x-sqlite3"/>
+    <sub-class-of type="application/vnd.sqlite3"/>
     <glob pattern="*.kexi"/>
     <alias type="application/x-vnd.kde.kexi"/>
     <alias type="application/x-kexiproject-sqlite"/>

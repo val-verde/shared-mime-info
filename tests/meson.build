@@ -37,6 +37,11 @@ test('No duplicate mime-types',
     args: freedesktop_org_xml,
 )
 
+test('Sanity check sub-class-of',
+    find_program('test_sub_class_ofs.py'),
+    args: freedesktop_org_xml,
+)
+
 test('xmllint freedesktop.org.xml',
     xmllint,
     args: [ '--noout', '--valid', freedesktop_org_xml, ],

@@ -14,18 +14,18 @@ shared-mime-info 2.0 (2020-06-05)
 * Add *.spx glob for audio/x-speex+ogg
 * Add Apple System Profiler XML mime-type
 
-shared-mime-info 1.15 (2019-30-10)
+shared-mime-info 1.15 (2019-10-30)
 * Add Kindle 8 eBook format
 * Fix some HTML files being detected as XML
 
-shared-mime-info 1.14 (2019-20-09)
+shared-mime-info 1.14 (2019-09-20)
 * Add mime-type for QCOW images
 * Fix matching SVG files in some circumstances (again)
 
-shared-mime-info 1.13.1 (2019-11-09)
+shared-mime-info 1.13.1 (2019-09-11)
 * Fix matching SVG files in some circumstances
 
-shared-mime-info 1.13 (2019-11-09)
+shared-mime-info 1.13 (2019-09-11)
 * Add code of conduct document
 * Use itstool and gettext to generate translations
 * Add content-tree type for OSTree USB repositories
@@ -50,10 +50,10 @@ Test suite:
 - Generate the specification in the CI, to avoid it becoming
   syntactically invalid
 
-shared-mime-info 1.12 (2019-17-01)
+shared-mime-info 1.12 (2019-01-17)
 * Fix build from tarball
 
-shared-mime-info 1.11 (2019-17-01)
+shared-mime-info 1.11 (2019-01-17)
 * Add mime-type for reStructuredText
 * Add mime-type for Groovy scripting language
 * Add mime-type for Gradle build tool
@@ -72,7 +72,7 @@ Tools:
 Spec:
 - Clarify the availability of C character escape support
 
-shared-mime-info 1.10 (2018-28-06)
+shared-mime-info 1.10 (2018-06-28)
 * Add mime-type for MJPEG raw streams
 * Add MPEG-4 Ringtone mime-type
 * Add mime-type for HEIF images
@@ -103,7 +103,7 @@ Tools:
 Spec:
 - ASCII check should be done with 128 leading bytes, not 32 bytes
 
-shared-mime-info 1.9 (2017-18-09)
+shared-mime-info 1.9 (2017-09-18)
 * Add x-systemd-unit and x-dbus-service MIME types
 * Fix magic for application/x-java-keystore on little endian
 * Add mime-type for STL 3D models and GCODE

@@ -604,7 +604,6 @@ command to generate the output files.
       <match offset="0" type="string" value="\x00\x01\x00\x00Standard Jet DB" />
     </magic>
     <glob pattern="*.mdb" />
-    <alias type="application/x-msaccess"/>
     <alias type="application/msaccess"/>
     <alias type="application/vnd.msaccess"/>
     <alias type="application/x-msaccess"/>

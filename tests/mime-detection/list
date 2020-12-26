@@ -651,6 +651,8 @@ test10.gpx application/gpx+xml ox
 test.gnd application/gnunet-directory
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=27441
 markdown.md text/markdown oxo
+# Copied from https://gitlab.freedesktop.org/xdg/shared-mime-info/-/issues/138
+README-pandoc-flavored-markdown.md text/markdown ox
 # Manually assembled from formatting examples at https://en.wikipedia.org/wiki/ReStructuredText
 reStructuredText.rst text/x-rst ox
 text.ps application/postscript

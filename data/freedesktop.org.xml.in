@@ -6346,6 +6346,11 @@ command to generate the output files.
     <glob pattern="*.diff"/>
     <glob pattern="*.patch"/>
   </mime-type>
+  <mime-type type="text/x-dart">
+    <comment>Dart source code</comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.dart"/>
+  </mime-type>
   <mime-type type="text/x-go">
     <comment>Go source code</comment>
     <sub-class-of type="text/plain"/>

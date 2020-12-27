@@ -89,7 +89,7 @@ test.xht application/xhtml+xml
 # Copied from https://bugs.webkit.org/show_bug.cgi?id=201295#c0
 test-html-with-svg.html text/html
 # Copied from https://gitlab.freedesktop.org/xdg/shared-mime-info/issues/98
-test-really-html-not-xhtml.html text/html oxx
+test-really-html-not-xhtml.html text/html ox
 # Copied from https://bugs.kde.org/show_bug.cgi?id=417248
 test-really-html-not-perl.html text/html
 # Copied from https://gitlab.freedesktop.org/xdg/shared-mime-info/issues/120
@@ -727,7 +727,7 @@ test-secret-key.skr application/pgp-keys ooo
 test-secret-key.asc application/pgp-keys xoo
 # not all *.key should be detected as Apple Keynote
 test-secret.key application/pgp-keys x
-test-garbage.key application/octet-stream x
+test-garbage.key application/octet-stream xox
 
 # copied from https://bitbucket.org/scons/scons/raw/f0d4664d36f8a4d4da53178cf947c86c86db3cb7/SConstruct
 SConstruct text/x-scons oxo

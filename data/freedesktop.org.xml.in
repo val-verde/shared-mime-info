@@ -1825,6 +1825,7 @@ command to generate the output files.
     <magic priority="50">
       <match type="string" value="SEGA PICO" offset="256"/>
     </magic>
+    <glob pattern="*.iso"/>
   </mime-type>
   <mime-type type="application/x-saturn-rom">
     <comment>Sega Saturn disc image</comment>
@@ -1841,6 +1842,7 @@ command to generate the output files.
     <magic priority="50">
       <match type="string" value="SEGA SEGAKATANA" offset="16"/>
     </magic>
+    <glob pattern="*.iso"/>
   </mime-type>
   <mime-type type="application/x-nintendo-ds-rom">
     <comment>Nintendo DS ROM</comment>

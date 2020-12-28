@@ -4358,26 +4358,47 @@ command to generate the output files.
       <!-- 669 composer files: "if" and "JN" -->
       <match type="byte" value="0x0" mask="0x80" offset="112">
         <match type="string" value="if" offset="0">
-          <!-- number of samples: 0-63 -->
-          <match type="byte" value="0x0" mask="0xc0" offset="110">
-            <!-- number of patterns: 0-128 -->
-            <match type="byte" value="0x0" mask="0x80" offset="111"/>
-            <match type="byte" value="0x80" offset="111"/>
+          <!-- tempo list last byte: 0-31 (0 = known false positive) -->
+          <match type="byte" value="0x0" mask="0xe0" offset="368">
+            <!-- number of samples: 0-63 -->
+            <match type="byte" value="0x0" mask="0xc0" offset="110">
+              <!-- number of patterns: 0-128 -->
+              <match type="byte" value="0x0" mask="0x80" offset="111"/>
+              <match type="byte" value="0x80" offset="111"/>
+            </match>
+            <!-- number of samples: 64 -->
+            <match type="byte" value="0x40" offset="110">
+              <match type="byte" value="0x0" mask="0x80" offset="111"/>
+              <match type="byte" value="0x80" offset="111"/>
+            </match>
           </match>
-          <!-- number of samples: 64 -->
-          <match type="byte" value="0x40" offset="110">
-            <match type="byte" value="0x0" mask="0x80" offset="111"/>
-            <match type="byte" value="0x80" offset="111"/>
+          <!-- tempo list last byte: 32 -->
+          <match type="byte" value="0x20" offset="368">
+            <!-- number of samples: 0-63 -->
+            <match type="byte" value="0x0" mask="0xc0" offset="110">
+              <!-- number of patterns: 0-128 -->
+              <match type="byte" value="0x0" mask="0x80" offset="111"/>
+              <match type="byte" value="0x80" offset="111"/>
+            </match>
+            <!-- number of samples: 64 -->
+            <match type="byte" value="0x40" offset="110">
+              <match type="byte" value="0x0" mask="0x80" offset="111"/>
+              <match type="byte" value="0x80" offset="111"/>
+            </match>
           </match>
         </match>
         <match type="string" value="JN" offset="0">
-          <match type="byte" value="0x0" mask="0xc0" offset="110">
-            <match type="byte" value="0x0" mask="0x80" offset="111"/>
-            <match type="byte" value="0x80" offset="111"/>
+          <match type="byte" value="0x0" mask="0xe0" offset="368">
+            <match type="byte" value="0x0" mask="0xc0" offset="110">
+              <match type="byte" value="0x0" mask="0x80" offset="111"/>
+              <match type="byte" value="0x80" offset="111"/>
+            </match>
           </match>
-          <match type="byte" value="0x40" offset="110">
-            <match type="byte" value="0x0" mask="0x80" offset="111"/>
-            <match type="byte" value="0x80" offset="111"/>
+          <match type="byte" value="0x20" offset="368">
+            <match type="byte" value="0x40" offset="110">
+              <match type="byte" value="0x0" mask="0x80" offset="111"/>
+              <match type="byte" value="0x80" offset="111"/>
+            </match>
           </match>
         </match>
       </match>

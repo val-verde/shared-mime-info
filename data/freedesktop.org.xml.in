@@ -4433,7 +4433,7 @@ command to generate the output files.
     <glob pattern="*.mpga"/>
   </mime-type>
   <mime-type type="audio/x-mpegurl">
-    <comment>MP3 audio (streamed)</comment>
+    <comment>Media playlist</comment>
     <sub-class-of type="text/plain"/>
     <alias type="audio/mpegurl" />
     <alias type="application/m3u"/>
@@ -4448,7 +4448,7 @@ command to generate the output files.
     </magic>
   </mime-type>
   <mime-type type="application/vnd.apple.mpegurl">
-    <comment>HTTP Live Streaming playlist</comment>
+    <comment>Media playlist</comment>
     <sub-class-of type="text/plain"/>
     <glob pattern="*.m3u"/>
     <glob pattern="*.m3u8"/>
@@ -6760,7 +6760,7 @@ command to generate the output files.
     <glob pattern="[0-9][0-9][0-9].vdr"/>
   </mime-type>
   <mime-type type="video/vnd.mpegurl">
-    <comment>MPEG video (streamed)</comment>
+    <comment>Video playlist</comment>
     <sub-class-of type="text/plain"/>
     <alias type="video/x-mpegurl"/>
     <magic priority="50">

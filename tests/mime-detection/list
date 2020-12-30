@@ -371,6 +371,8 @@ test.jnlp application/x-java-jnlp-file
 # Python script
 test.py text/x-python
 test.pyx text/x-python ox
+# https://gitlab.freedesktop.org/xdg/shared-mime-info/-/issues/127
+test_issue127.py text/x-python ox
 # Python 3 script
 test3.py text/x-python3 x
 test.py3 text/x-python3

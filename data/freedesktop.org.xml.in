@@ -2856,7 +2856,8 @@ command to generate the output files.
     <comment>message catalog</comment>
     <sub-class-of type="application/xml"/>
     <magic>
-      <match type="string" value="&lt;TS" offset="0:256"/>
+      <match type="string" value="&lt;TS " offset="0:256"/>
+      <match type="string" value="&lt;TS&gt;" offset="0:256"/>
     </magic>
     <glob pattern="*.ts"/>
     <alias type="application/x-linguist"/>

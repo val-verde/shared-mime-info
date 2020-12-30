@@ -5421,7 +5421,13 @@ command to generate the output files.
     <glob pattern="*.tpic"/>
     <glob pattern="*.vda"/>
     <glob pattern="*.vst"/>
+    <alias type="application/tga"/>
+    <alias type="application/x-targa"/>
+    <alias type="application/x-tga"/>
+    <alias type="image/targa"/>
+    <alias type="image/tga"/>
     <alias type="image/x-icb"/>
+    <alias type="image/x-targa"/>
   </mime-type>
   <mime-type type="image/x-win-bitmap">
     <comment>Windows cursor</comment>

@@ -20,8 +20,8 @@ A few ground rules for people interested in adding new mime-types.
 Translations
 ------------
 
-Translations should go through Transifex.net, and the freedesktop.org team:
-http://www.transifex.net/projects/p/shared-mime-info/
+Translations should go through Transifex.com, and the freedesktop.org team:
+http://www.transifex.com/projects/p/shared-mime-info/
 
 Filing bugs
 -----------

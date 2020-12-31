@@ -61,7 +61,10 @@ Releasing
 
 - Run `ninja shared-mime-info-pot`, `./po/check_translations.sh` and
   `./po/update_translations.sh` before release
-- Upload to shared-mime-info gitlab
+- Commit and push to shared-mime-info gitlab
+- Update version number in `meson.build`
+- Add changelog to `NEWS`
+- Commit, tag and push
 
 Updating the spec on the website
 --------------------------------

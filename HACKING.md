@@ -65,6 +65,9 @@ Releasing
 - Update version number in `meson.build`
 - Add changelog to `NEWS`
 - Commit, tag and push
+- Go to https://gitlab.freedesktop.org/xdg/shared-mime-info/-/releases and click "New release"
+- Fill in version number (3 times), paste NEWS, confirm
+- Download `.tar.bz2`, `bunzip2` it, `xz -z .tar`, attach to release.
 
 Updating the spec on the website
 --------------------------------

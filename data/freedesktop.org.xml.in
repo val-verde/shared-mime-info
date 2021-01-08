@@ -7307,6 +7307,30 @@ command to generate the output files.
     <glob pattern="*.key" weight="80"/>
     <alias type="application/x-iwork-keynote-sffkey"/>
   </mime-type>
+  <mime-type type="application/vnd.apple.numbers">
+    <comment>Apple Numbers spreadsheet</comment>
+    <sub-class-of type="application/zip"/>
+    <generic-icon name="x-office-spreadsheet"/>
+    <magic priority="65">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="index.xml" offset="30"/>
+      </match>
+    </magic>
+    <glob pattern="*.numbers"/>
+    <alias type="application/x-iwork-numbers-sffnumbers"/>
+  </mime-type>
+  <mime-type type="application/vnd.apple.pages">
+    <comment>Apple Pages document</comment>
+    <sub-class-of type="application/zip"/>
+    <generic-icon name="x-office-document"/>
+    <magic priority="70">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="index.xml" offset="30"/>
+      </match>
+    </magic>
+    <glob pattern="*.pages"/>
+    <alias type="application/x-iwork-pages-sffpages"/>
+  </mime-type>
 
   <mime-type type="application/x-pagemaker">
     <comment>Adobe PageMaker document</comment>

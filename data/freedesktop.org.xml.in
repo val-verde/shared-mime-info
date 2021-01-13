@@ -7477,6 +7477,27 @@ command to generate the output files.
       </match>
     </magic>
   </mime-type>
+  <mime-type type="application/x-vhd-disk">
+    <comment>VHD disk image</comment>
+    <acronym>VHD</acronym>
+    <expanded-acronym>Virtual Hard Disk</expanded-acronym>
+    <glob pattern="*.vhd"/>
+    <glob pattern="*.vpc"/>
+    <magic>
+      <match type="string" value="conectix" offset="0"/>
+    </magic>
+    <alias type="application/x-virtualbox-vhd"/>
+  </mime-type>
+  <mime-type type="application/x-vhdx-disk">
+    <comment>VHDX disk image</comment>
+    <acronym>VHD</acronym>
+    <expanded-acronym>Virtual Hard Disk</expanded-acronym>
+    <glob pattern="*.vhdx"/>
+    <magic>
+      <match type="string" value="vhdxfile" offset="0"/>
+    </magic>
+    <alias type="application/x-virtualbox-vhdx"/>
+  </mime-type>
 
   <mime-type type="application/x-appleworks-document">
     <comment>AppleWorks document</comment>

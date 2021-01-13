@@ -789,8 +789,12 @@ binary.stl model/stl oxo
 ascii.stl model/stl
 test.gcode text/x.gcode ox
 
-# QEMU disk image
+# Virtualization disk images
 disk.qcow2 application/x-qemu-disk
+# qemu-img convert -O vpc disk.qcow2 disk.vhd
+disk.vhd application/x-vhd-disk x
+# qemu-img convert -O vhdx disk.qcow2 disk.vhdx # (first 1024 bytes of 128MB)
+disk.vhdx application/x-vhdx-disk
 
 # ROM hack scene patching formats
 SLA.bps application/x-bps-patch

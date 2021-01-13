@@ -7509,6 +7509,21 @@ command to generate the output files.
     </magic>
     <alias type="application/x-virtualbox-vmdk"/>
   </mime-type>
+  <mime-type type="application/x-vdi-disk">
+    <comment>VDI disk image</comment>
+    <acronym>VDI</acronym>
+    <expanded-acronym>Virtual Disk Image</expanded-acronym>
+    <glob pattern="*.vdi"/>
+    <magic>
+      <match type="string" value="&lt;&lt;&lt; QEMU VM Virtual Disk Image >>>\n" offset="0"/>
+      <match type="string" value="&lt;&lt;&lt; Oracle VM VirtualBox Disk Image >>>\n" offset="0"/>
+      <match type="string" value="&lt;&lt;&lt; Sun VirtualBox Disk Image >>>\n" offset="0"/>
+      <match type="string" value="&lt;&lt;&lt; Sun xVM VirtualBox Disk Image >>>\n" offset="0"/>
+      <match type="string" value="&lt;&lt;&lt; innotek VirtualBox Disk Image >>>" offset="0"/>
+      <match type="string" value="&lt;&lt;&lt; CloneVDI VirtualBox Disk Image >>>\n" offset="0"/>
+    </magic>
+    <alias type="application/x-virtualbox-vdi"/>
+  </mime-type>
 
   <mime-type type="application/x-appleworks-document">
     <comment>AppleWorks document</comment>

@@ -797,6 +797,8 @@ disk.vhd application/x-vhd-disk x
 disk.vhdx application/x-vhdx-disk
 # qemu-img convert -O vmdk disk.qcow2 disk.vmdk
 disk.vmdk application/x-vmdk-disk
+# qemu-img convert -O vdi disk.qcow2 disk.vdi
+disk.vdi application/x-vdi-disk
 
 # ROM hack scene patching formats
 SLA.bps application/x-bps-patch

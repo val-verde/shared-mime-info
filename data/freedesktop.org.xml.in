@@ -7465,6 +7465,20 @@ command to generate the output files.
     </magic>
   </mime-type>
 
+  <mime-type type="application/ovf">
+    <comment>OVF disk image</comment>
+    <acronym>OVF</acronym>
+    <expanded-acronym>Open Virtualization Format</expanded-acronym>
+    <glob pattern="*.ova"/>
+    <magic priority="60">
+      <match type="string" value=".ovf" offset="1:256">
+        <match type="string" value="ustar\0" offset="257"/>
+        <match type="string" value="ustar\040\040\0" offset="257"/>
+      </match>
+    </magic>
+    <alias type="application/x-virtualbox-ova"/>
+    <sub-class-of type="application/x-tar"/>
+  </mime-type>
   <mime-type type="application/x-qed-disk">
     <comment>QEMU QED disk image</comment>
     <acronym>QED</acronym>

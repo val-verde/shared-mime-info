@@ -801,6 +801,9 @@ disk.vhdx application/x-vhdx-disk
 disk.vmdk application/x-vmdk-disk
 # qemu-img convert -O vdi disk.qcow2 disk.vdi
 disk.vdi application/x-vdi-disk
+# http://download.cirros-cloud.net/0.5.1/cirros-0.5.1-x86_64-disk.img converted
+# to .vdi with qemu-img, imported to VirtualBox, exported as OVF 2.0, first kB
+disk.ova application/ovf
 
 # ROM hack scene patching formats
 SLA.bps application/x-bps-patch

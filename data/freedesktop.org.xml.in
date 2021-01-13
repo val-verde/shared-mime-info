@@ -7498,6 +7498,17 @@ command to generate the output files.
     </magic>
     <alias type="application/x-virtualbox-vhdx"/>
   </mime-type>
+  <mime-type type="application/x-vmdk-disk">
+    <comment>VMDK disk image</comment>
+    <acronym>VMDK</acronym>
+    <expanded-acronym>Virtual Machine Disk</expanded-acronym>
+    <glob pattern="*.vmdk"/>
+    <magic>
+      <match type="string" value="KDMV\x01\x00\x00\x00" offset="0"/>
+      <match type="string" value="KDMV\x02\x00\x00\x00" offset="0"/>
+    </magic>
+    <alias type="application/x-virtualbox-vmdk"/>
+  </mime-type>
 
   <mime-type type="application/x-appleworks-document">
     <comment>AppleWorks document</comment>

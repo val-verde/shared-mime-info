@@ -795,6 +795,8 @@ disk.qcow2 application/x-qemu-disk
 disk.vhd application/x-vhd-disk x
 # qemu-img convert -O vhdx disk.qcow2 disk.vhdx # (first 1024 bytes of 128MB)
 disk.vhdx application/x-vhdx-disk
+# qemu-img convert -O vmdk disk.qcow2 disk.vmdk
+disk.vmdk application/x-vmdk-disk
 
 # ROM hack scene patching formats
 SLA.bps application/x-bps-patch

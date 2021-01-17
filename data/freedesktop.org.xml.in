@@ -7616,4 +7616,29 @@ command to generate the output files.
     <glob pattern="*.avifs"/>
     <alias type="image/avif-sequence"/>
   </mime-type>
+
+  <mime-type type="video/vnd.radgamettools.bink">
+    <comment>Bink Video</comment>
+    <magic priority="50">
+      <match type="string" value="BIK" offset="0">
+        <match type="string" value="b" offset="3"/>
+        <match type="string" value="f" offset="3"/>
+        <match type="string" value="g" offset="3"/>
+        <match type="string" value="h" offset="3"/>
+        <match type="string" value="i" offset="3"/>
+      </match>
+      <match type="string" value="KB2" offset="0">
+        <match type="string" value="a" offset="3"/>
+        <match type="string" value="d" offset="3"/>
+        <match type="string" value="f" offset="3"/>
+        <match type="string" value="g" offset="3"/>
+        <match type="string" value="h" offset="3"/>
+        <match type="string" value="i" offset="3"/>
+        <match type="string" value="j" offset="3"/>
+        <match type="string" value="k" offset="3"/>
+      </match>
+    </magic>
+    <glob pattern="*.bik"/>
+    <glob pattern="*.bk2"/>
+  </mime-type>
 </mime-info>

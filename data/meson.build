@@ -22,14 +22,16 @@ install_data(
   install_dir : get_option('datadir') / 'gettext/its'
 )
 
-custom_target('shared-mime-info-spec-html',
-    input : 'shared-mime-info-spec.xml',
-    output: 'shared-mime-info-spec-html',
-    command: [
-        xmlto,
-        '-o', '@OUTPUT@',
-        'html-nochunks',
-        '@INPUT@',
-    ],
-    build_by_default: true,
+if xmlto.found()
+    custom_target('shared-mime-info-spec-html',
+        input : 'shared-mime-info-spec.xml',
+        output: 'shared-mime-info-spec-html',
+        command: [
+            xmlto,
+            '-o', '@OUTPUT@',
+            'html-nochunks',
+            '@INPUT@',
+        ],
+        build_by_default: true,
 )
+endif

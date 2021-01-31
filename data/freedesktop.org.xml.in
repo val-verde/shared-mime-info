@@ -4909,6 +4909,12 @@ command to generate the output files.
     <sub-class-of type="image/tiff"/>
     <glob pattern="*.nef"/>
   </mime-type>
+  <mime-type type="image/x-nikon-nrw">
+    <comment>Nikon NRW raw image</comment>
+    <sub-class-of type="image/x-dcraw"/>
+    <sub-class-of type="image/tiff"/>
+    <glob pattern="*.nrw"/>
+  </mime-type>
   <mime-type type="image/x-olympus-orf">
     <comment>Olympus ORF raw image</comment>
     <acronym>ORF</acronym>

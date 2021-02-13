@@ -7642,4 +7642,14 @@ command to generate the output files.
     <glob pattern="*.bik"/>
     <glob pattern="*.bk2"/>
   </mime-type>
+  <mime-type type="video/vnd.radgamettools.smacker">
+    <comment>Smacker Video</comment>
+    <magic priority="50">
+      <match type="string" value="SMK" offset="0">
+        <match type="string" value="2" offset="3"/>
+        <match type="string" value="4" offset="3"/>
+      </match>
+    </magic>
+    <glob pattern="*.smk"/>
+  </mime-type>
 </mime-info>

@@ -6405,6 +6405,7 @@ command to generate the output files.
     <glob pattern="*.py" weight="50"/><!-- lower priority than in text/x-python -->
     <glob pattern="*.py3" weight="60"/>
     <glob pattern="*.py3x" weight="60"/>
+    <glob pattern="*.pyi" weight="60"/>
   </mime-type>
   <mime-type type="text/x-python">
     <comment>Python script</comment>

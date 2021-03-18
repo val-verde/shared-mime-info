@@ -1485,7 +1485,7 @@ static void match_value_and_mask(Match *match, xmlNode *node, GError **error)
 	if (*error)
 	{
 		g_string_free(parsed_value, TRUE);
-		g_return_if_fail(parsed_mask == NULL);
+		g_assert(parsed_mask == NULL);
 	}
 	else
 	{

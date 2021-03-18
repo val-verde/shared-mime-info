@@ -3,15 +3,15 @@ if meson.is_cross_build()
 endif
 
 if xdgmime_found
-    run_target('test-staging',
-        command: [
-            find_program('test_staging.sh'),
-            meson.source_root(),
-            meson.build_root(),
-            freedesktop_org_xml,
-            update_mime_database,
-            xdgmime_print_mime_data.path(),
-        ]
+    test('test-staging',
+         find_program('test_staging.sh'),
+         args: [
+             meson.source_root(),
+             meson.build_root(),
+             freedesktop_org_xml,
+             update_mime_database,
+             xdgmime_print_mime_data.path(),
+         ]
     )
 
     test('test-mime',

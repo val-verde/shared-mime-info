@@ -13,7 +13,7 @@ if [ ! -d "${source_root}/staging-tests" ]; then
     echo "***************************************************************************"
     echo "*** Add your file to process to staging-tests/ and run local-test again ***"
     echo "***************************************************************************"
-    exit 1
+    exit 0
 fi
 
 rm -rf "${tmp_dir}"

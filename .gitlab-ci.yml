@@ -29,3 +29,9 @@ build:meson:
     - ninja -C _build
     - ninja -C _build test
     - ninja -C _build dist
+  artifacts:
+    when: always
+    paths:
+      - _build/meson-logs/*.txt
+      - _build/meson-dist/*.*
+

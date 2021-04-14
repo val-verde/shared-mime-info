@@ -69,10 +69,12 @@ Releasing
 - Commit and push to shared-mime-info gitlab
 - Update version number in `meson.build`
 - Add changelog to `NEWS`
-- Commit, tag and push
+- Commit, make a merge request, wait for CI to ensure `meson dist` works, then merge it.
+- Tag and push the tag
 - Go to https://gitlab.freedesktop.org/xdg/shared-mime-info/-/releases and click "New release"
 - Fill in version number (3 times), paste NEWS, confirm
-- Download `.tar.bz2`, `bunzip2` it, `xz -z .tar`, attach to release.
+- Attach the tarball from the CI build artifact
+- tag and push the tag
 
 Updating the spec on the website
 --------------------------------

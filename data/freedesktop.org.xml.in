@@ -3957,6 +3957,7 @@ command to generate the output files.
     <sub-class-of type="text/plain"/>
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.man"/>
+    <glob pattern="*.[1-9]"/>
   </mime-type>
   <mime-type type="application/x-troff-man-compressed">
     <comment>manual page (compressed)</comment>

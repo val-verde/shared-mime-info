@@ -200,6 +200,7 @@ appleworks.cwk application/x-appleworks-document oxo
 # test.oxps and test.xps "printed" with Windows 10 Microsoft XPS Document Writer
 test.oxps application/oxps ox
 test.xps application/vnd.ms-xpsdocument ox
+../../data/update-mime-database.1 application/x-troff-man ox
 
 # Playlist, subtitle and audio formats
 stream.nsc application/x-netshow-channel

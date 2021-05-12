@@ -333,6 +333,8 @@ html5.css text/css ox
 # Copied from http://www.w3.org/TR/html5/offline.html#manifests
 test.manifest text/cache-manifest
 test.yaml application/x-yaml
+# Copied from https://toml.io/en/
+test.toml application/toml ox
 # hand-made
 mysum.m text/x-matlab x
 # taken from Octave 3.2 sources

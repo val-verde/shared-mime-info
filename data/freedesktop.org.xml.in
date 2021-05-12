@@ -527,6 +527,14 @@ command to generate the output files.
     <root-XML namespaceURI='urn:oasis:names:tc:xliff:document:1.1' localName='xliff'/>
     <alias type="application/x-xliff"/>
   </mime-type>
+  <mime-type type="application/toml">
+    <comment>TOML document</comment>
+    <acronym>TOML</acronym>
+    <expanded-acronym>Tom's Obvious Minimal Language</expanded-acronym>
+    <sub-class-of type="text/plain"/>
+    <generic-icon name="text-x-generic"/>
+    <glob pattern="*.toml"/>
+  </mime-type>
   <mime-type type="application/x-yaml">
     <comment>YAML document</comment>
     <acronym>YAML</acronym>

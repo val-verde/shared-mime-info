@@ -357,6 +357,9 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/pkix-crl">
     <comment>certificate revocation list</comment>
+    <magic>
+      <match type="string" value="-----BEGIN X509 CRL-----" offset="0"/>
+    </magic>
     <glob pattern="*.crl"/>
   </mime-type>
   <mime-type type="application/pkix-pkipath">

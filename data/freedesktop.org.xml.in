@@ -6093,6 +6093,12 @@ command to generate the output files.
     </magic>
     <glob pattern="*.el"/>
   </mime-type>
+    <mime-type type="text/x-elixir">
+    <comment>Elixir source code</comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.ex"/>
+    <glob pattern="*.exs"/>
+  </mime-type>
   <mime-type type="text/x-erlang">
     <comment>Erlang source code</comment>
     <sub-class-of type="text/plain"/>

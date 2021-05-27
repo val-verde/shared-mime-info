@@ -7680,4 +7680,9 @@ command to generate the output files.
     </magic>
     <glob pattern="*.smk"/>
   </mime-type>
+  <mime-type type="text/org">
+    <comment>Org-mode file</comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.org"/>
+  </mime-type>
 </mime-info>

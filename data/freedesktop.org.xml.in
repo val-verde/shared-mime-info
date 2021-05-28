@@ -3615,6 +3615,12 @@ command to generate the output files.
     <generic-icon name="text-x-script"/>
     <glob pattern="*.mab"/>
   </mime-type>
+  <mime-type type="text/x-crystal">
+    <comment>Crystal source code</comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.cr"/>
+    <alias type="text/crystal"/>
+  </mime-type>
   <mime-type type="text/rust">
     <comment>Rust source code</comment>
     <sub-class-of type="text/plain"/>

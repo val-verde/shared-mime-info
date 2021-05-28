@@ -2592,6 +2592,17 @@ command to generate the output files.
     <generic-icon name="text-x-script"/>
     <glob pattern="*.jsonld"/>
   </mime-type>
+  <mime-type type="application/schema+json">
+    <comment>JSON schema</comment>
+    <sub-class-of type="application/json"/>
+    <generic-icon name="text-x-script"/>
+    <magic priority="80">
+      <match type="string" value="{" offset="0">
+        <match type="string" value="&quot;$schema&quot;:" offset="1:256"/>
+      </match>
+    </magic>
+    <glob pattern="*.json"/>
+  </mime-type>
   <mime-type type="application/x-ipynb+json">
     <comment>Jupyter notebook document</comment>
     <sub-class-of type="application/json"/>

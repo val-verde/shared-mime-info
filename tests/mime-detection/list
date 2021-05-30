@@ -706,6 +706,8 @@ test.jceks application/x-java-jce-keystore
 test.p12 application/pkcs12 ox
 # Copied from https://letsencrypt.org/certs/lets-encrypt-r3.pem
 test.cer application/pkix-cert
+# https://letsencrypt.org/certs/lets-encrypt-r3.pem with header and footer modified to contain X509
+test-x509.cer application/pkix-cert
 # curl https://crl.root-x1.letsencrypt.org | openssl crl -inform DER -out test.crl
 test.crl application/pkix-crl
 test.sav application/x-spss-sav

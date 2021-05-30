@@ -4063,6 +4063,10 @@ command to generate the output files.
   <mime-type type="application/x-x509-ca-cert">
     <comment>DER/PEM/Netscape-encoded X.509 certificate</comment>
     <generic-icon name="text-x-generic"/>
+    <magic>
+      <match type="string" value="-----BEGIN CA CERTIFICATE-----" offset="0"/>
+      <match type="string" value="-----BEGIN TRUSTED CERTIFICATE-----" offset="0"/>
+    </magic>
     <glob pattern="*.der"/>
     <glob pattern="*.crt"/>
     <glob pattern="*.cert"/>

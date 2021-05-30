@@ -708,6 +708,10 @@ test.p12 application/pkcs12 ox
 test.cer application/pkix-cert
 # https://letsencrypt.org/certs/lets-encrypt-r3.pem with header and footer modified to contain X509
 test-x509.cer application/pkix-cert
+# https://letsencrypt.org/certs/lets-encrypt-r3.pem with header and footer modified to contain CA
+test.crt application/x-x509-ca-cert
+# https://letsencrypt.org/certs/lets-encrypt-r3.pem with header and footer modified to contain TRUSTED
+test-trusted.crt application/x-x509-ca-cert
 # curl https://crl.root-x1.letsencrypt.org | openssl crl -inform DER -out test.crl
 test.crl application/pkix-crl
 test.sav application/x-spss-sav

@@ -4788,6 +4788,14 @@ command to generate the output files.
     <glob pattern="*.mj2"/>
     <glob pattern="*.mjp2"/>
   </mime-type>
+  <mime-type type="image/jxl">
+    <comment>JPEG XL image</comment>
+    <magic>
+      <match type="string" offset="0" value="\xFF\x0A"/>
+      <match type="string" offset="0" value="\0\0\0\x0CJXL \x0D\x0A\x87\x0A"/>
+    </magic>
+    <glob pattern="*.jxl"/>
+  </mime-type>
   <mime-type type="image/openraster">
     <comment>OpenRaster image</comment>
     <sub-class-of type="application/zip"/>

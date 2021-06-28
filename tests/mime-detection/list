@@ -127,6 +127,8 @@ zeb.3ds image/x-3ds x
 test.astc image/astc
 # First 10kB of sample at https://gitlab.freedesktop.org/xdg/shared-mime-info/-/issues/124
 test.nrw image/x-nikon-nrw ox
+test-with-container.jxl image/jxl
+test-without-container.jxl image/jxl
 
 # Documents
 ooo-6.0.doc application/msword

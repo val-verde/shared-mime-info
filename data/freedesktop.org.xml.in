@@ -3896,6 +3896,7 @@ command to generate the output files.
     <comment>MRML playlist</comment>
     <acronym>MRML</acronym>
     <expanded-acronym>Multimedia Retrieval Markup Language</expanded-acronym>
+    <sub-class-of type="application/xml"/>
     <magic priority="50">
       <match type="string" value="&lt;mrml " offset="0"/>
     </magic>

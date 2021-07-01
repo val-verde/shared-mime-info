@@ -56,14 +56,15 @@ foreach function : check_functions
 endforeach
 
 
-libxml = dependency('libxml-2.0',   version: '>=2.4')
-glib2  = dependency('glib-2.0',     version: '>=2.6.0')
-
-gio = dependency('gio-2.0', required: false)
-
 subdir('po')
 subdir('data')
-subdir('src')
+if get_option('build-tools')
+    libxml = dependency('libxml-2.0',   version: '>=2.4')
+    glib2  = dependency('glib-2.0',     version: '>=2.6.0')
+
+    gio = dependency('gio-2.0', required: false)
+    subdir('src')
+endif
 subdir('tests')
 
 configure_file(

@@ -346,11 +346,11 @@ is no specific icon (see <userinput>icon</userinput> for how these are found). T
 used for categories of similar types (like spreadsheets or archives) that can use a common icon.
 The Icon Naming Specification lists a set of such icon names. If this element is not specified
 then the mimetype is used to generate the generic icon by using the top-level media type (e.g.
-"video" in "video/ogg") and appending "-x-generic" (i.e. "video-x-generic" in the previous example). 
+"video" in "video/ogg") and appending "-x-generic" (i.e. "video-x-generic" in the previous example).
 Only one <userinput>generic-icon</userinput> element is allowed.
 				</para></listitem>
 				<listitem><para>
-<userinput>root-XML</userinput> elements have <userinput>namespaceURI</userinput> 
+<userinput>root-XML</userinput> elements have <userinput>namespaceURI</userinput>
 and <userinput>localName</userinput> attributes. If a file is identified as being an XML file,
 these rules allow a more specific MIME type to be chosen based on the namespace and localname
 of the document element.
@@ -360,7 +360,7 @@ any name, but the namespace must still match.
 				</para></listitem>
 				<listitem><para>
 <userinput>treemagic</userinput> elements contain a list of <userinput>treematch</userinput> elements,
-any of which may match, and an optional <userinput>priority</userinput> attribute for all of the 
+any of which may match, and an optional <userinput>priority</userinput> attribute for all of the
 contained rules. The default priority value is 50, and the maximum is 100.
 				</para><para>
 Each <userinput>treematch</userinput> element has a number of attributes:
@@ -371,7 +371,7 @@ Each <userinput>treematch</userinput> element has a number of attributes:
 	<tbody>
 
 	<row><entry>path</entry><entry>Yes</entry><entry>A path that must be present on the mounted volume/filesystem. The path is interpreted as a relative path starting at the root of the tested volume/filesystem</entry></row>
-	
+
 	<row><entry>type</entry><entry>No</entry><entry>The type of path. Possible values: <userinput>file</userinput>, <userinput>directory</userinput>, <userinput>link</userinput></entry></row>
 
 	<row><entry>match-case</entry><entry>No</entry><entry>Whether path should be matched case-sensitively. Possible values: <userinput>true</userinput>, <userinput>false</userinput></entry></row>
@@ -464,7 +464,7 @@ For example:
 		</para>
 		<para>
 The glob file is a simple list of lines containing a MIME type and pattern, separated by a colon. It is
-deprecated in favour of the globs2 file which also lists the weight of the glob rule.		
+deprecated in favour of the globs2 file which also lists the weight of the glob rule.
 The lines are ordered by glob weight.
 For example:
 			<programlisting><![CDATA[
@@ -660,8 +660,8 @@ The tree magic data is stored in a file with a format that is very similar to th
 		</para>
 		<para>
 The file starts with the magic string "MIME-TreeMagic\0\n". There is no version number in the file.
-Incompatible changes will be handled by creating both the current `treemagic' and a newer `treemagic2' 
-in the new format. Where possible, changes will be made in a compatible fashion. 
+Incompatible changes will be handled by creating both the current `treemagic' and a newer `treemagic2'
+in the new format. Where possible, changes will be made in a compatible fashion.
 		</para>
 		<para>
 The rest of the file is made up of a sequence of small sections. Each section is introduced by giving
@@ -678,7 +678,7 @@ Each line in the section takes the form:
 	<row><entry>indent</entry><entry>The nesting depth of the rule.</entry></row>
 	<row><entry>path</entry><entry>The path to match.</entry></row>
 	<row><entry>type</entry><entry>The required file type, one of "file", "directory", "link" or "any"</entry></row>
-	<row><entry>option</entry><entry>Optional for the optional attributes of <userinput>treematch</userinput> elements. 
+	<row><entry>option</entry><entry>Optional for the optional attributes of <userinput>treematch</userinput> elements.
 Possible values are "executable", "match-case", "non-empty", or a MIME type</entry></row>
 	</tbody>
 	</tgroup>
@@ -689,9 +689,9 @@ Possible values are "executable", "match-case", "non-empty", or a MIME type</ent
 	<sect2>
 		<title>The mime.cache files</title>
 		<para>
-The <filename>mime.cache</filename> files contain the same information as the 
-<filename>globs2</filename>, <filename>magic</filename>, <filename>subclasses</filename>, 
-<filename>aliases</filename> and <filename>XMLnamespaces</filename> files, in a binary, 
+The <filename>mime.cache</filename> files contain the same information as the
+<filename>globs2</filename>, <filename>magic</filename>, <filename>subclasses</filename>,
+<filename>aliases</filename> and <filename>XMLnamespaces</filename> files, in a binary,
 mmappable format:
 </para>
 <programlisting>
@@ -717,7 +717,7 @@ AliasListEntry:
 4			CARD32		MIME_TYPE_OFFSET
 
 ParentList:
-4			CARD32		N_ENTRIES 
+4			CARD32		N_ENTRIES
 8*N_ENTRIES		ParentListEntry
 
 ParentListEntry:
@@ -730,7 +730,7 @@ Parents:
 
 LiteralList:
 4			CARD32		N_LITERALS
-12*N_LITERALS		LiteralEntry	
+12*N_LITERALS		LiteralEntry
 
 LiteralEntry:
 4			CARD32		LITERAL_OFFSET
@@ -742,7 +742,7 @@ LiteralEntry:
 
 GlobList:
 4			CARD32		N_GLOBS
-12*N_GLOBS		GlobEntry	
+12*N_GLOBS		GlobEntry
 
 GlobEntry:
 4			CARD32		GLOB_OFFSET
@@ -757,11 +757,11 @@ ReverseSuffixTree:
 
 ReverseSuffixTreeNode:
 4			CARD32		CHARACTER
-4			CARD32		N_CHILDREN			
+4			CARD32		N_CHILDREN
 4			CARD32		FIRST_CHILD_OFFSET
 
 ReverseSuffixTreeLeafNode:
-4			CARD32		0 
+4			CARD32		0
 4			CARD32		MIME_TYPE_OFFSET
 4			CARD32		WEIGHT in lower 8 bits
                                         FLAGS in rest:
@@ -790,7 +790,7 @@ Matchlet:
 
 NamespaceList:
 4			CARD32		N_NAMESPACES
-12*N_NAMESPACES		NamespaceEntry	
+12*N_NAMESPACES		NamespaceEntry
 
 NamespaceEntry:
 4			CARD32		NAMESPACE_URI_OFFSET
@@ -807,9 +807,9 @@ IconListEntry:
 4			CARD32		ICON_NAME_OFFSET
 </programlisting>
 <para>
-Lists in the file are sorted, to enable binary searching. The list of 
-aliases is sorted by alias, the list of literal globs is sorted by the 
-literal. The SuffixTreeNode siblings are sorted by character. 
+Lists in the file are sorted, to enable binary searching. The list of
+aliases is sorted by alias, the list of literal globs is sorted by the
+literal. The SuffixTreeNode siblings are sorted by character.
 The list of namespaces is sorted by namespace uri. The list of icons
 is sorted by mimetype.
 </para>
@@ -825,11 +825,11 @@ All offsets are in bytes from the beginning of the file.
 Strings are zero-terminated.
 </para>
 <para>
-All numbers are in network (big-endian) order. This is necessary because the data will be stored in 
+All numbers are in network (big-endian) order. This is necessary because the data will be stored in
 arch-independent directories like <filename>/usr/share/mime</filename> or even in user's home directories.
 </para>
 <para>
-Cache files have to be written atomically - write to a temporary name, then move over the old file - so 
+Cache files have to be written atomically - write to a temporary name, then move over the old file - so
 that clients that have the old cache file open and mmap'ed won't get corrupt data.
 </para>
 	</sect2>
@@ -905,20 +905,20 @@ If the patterns are different, keep only globs with the longest pattern, as prev
 If after this, there is one or more matching glob, and all the matching globs
 result in the same mimetype, use that mimetype as the result.
 				</para></listitem>
-				
+
 				<listitem><para>
 If the glob matching fails or results in multiple conflicting mimetypes, read the
 contents of the file and do magic sniffing on it. If no magic rule matches the data (or if
 the content is not available), use the default type of application/octet-stream for
 binary data, or text/plain for textual data. If there was no glob match, use the magic match
-as the result. 
+as the result.
 				</para><para>
 Note: Checking the first 128 bytes of the file for ASCII control characters is
 a good way to guess whether a file is binary or text, but note that files with high-bit-set
 characters should still be treated as text since these can appear in UTF-8 text,
 unlike control characters.
 				</para></listitem>
-				
+
 				<listitem><para>
 If any of the mimetypes resulting from a glob match is equal to or a subclass of
 the result from the magic sniffing, use this as the result. This allows us for example to
@@ -926,7 +926,7 @@ distinguish text files called "foo.doc" from MS-Word files with the same name, a
 magic match for the MS-Word file would be application/x-ole-storage which the MS-Word type
 inherits.
 				</para></listitem>
-				
+
 				<listitem><para>
 Otherwise use the result of the glob match that has the highest weight.
 				</para></listitem>
@@ -976,13 +976,13 @@ point.
 	<sect2>
 		<title>Content types for volumes</title>
 		<para>
-Traditional MIME types apply to individual files or bytestreams. It is often useful 
-to apply the same methodologies when classifying the content of mountable volumes or 
-filesystems. The x-content type has been introduced for this purpose. Typical examples 
-are x-content/audio-dvd, x-content/blank-cd or x-content/image-dcf. 
+Traditional MIME types apply to individual files or bytestreams. It is often useful
+to apply the same methodologies when classifying the content of mountable volumes or
+filesystems. The x-content type has been introduced for this purpose. Typical examples
+are x-content/audio-dvd, x-content/blank-cd or x-content/image-dcf.
 		</para>
 		<para>
-Matching of content types works with <userinput>treemagic</userinput> elements, which 
+Matching of content types works with <userinput>treemagic</userinput> elements, which
 are analogous to the <userinput>magic</userinput> elements used for MIME type matching.
 Instead of looking for byte sequences in files, <userinput>treemagic</userinput> elements
 allow to look for files with certain names, permissions or mime types in a directory
@@ -992,7 +992,7 @@ hierarchy.
 	<sect2>
 		<title>URI scheme handlers</title>
 		<para>
-URI scheme handling (such as a movie player handling mms:// URIs, or a Podcast program 
+URI scheme handling (such as a movie player handling mms:// URIs, or a Podcast program
 handling feed:// URIs) are handled through applications handling the x-scheme-handler/foo
 mime-type, where foo is the URI scheme in question.
 		</para>
@@ -1002,9 +1002,9 @@ such as the ability to change the default handler, the cross-desktop support, an
 easier application launching.
 		</para>
 		<para>
-Note that this virtual mime-type is not for listing URI schemes that an application 
-can load files from. For example, a movie player would not list x-scheme-handler/http 
-in its supported mime-types, but it would list x-scheme-handler/rtsp if it supported 
+Note that this virtual mime-type is not for listing URI schemes that an application
+can load files from. For example, a movie player would not list x-scheme-handler/http
+in its supported mime-types, but it would list x-scheme-handler/rtsp if it supported
 playing back from RTSP locations.
 		</para>
 	</sect2>

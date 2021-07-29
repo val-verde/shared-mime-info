@@ -869,6 +869,16 @@ test.pysu application/x-pyspread-spreadsheet
 # Dart source code
 test.dart text/x-dart oxo
 
+# Godot files
+project.godot application/x-godot-project ox
+test.res application/x-godot-resource ox
+test.tres application/x-godot-resource
+test.scn application/x-godot-scene ox
+test.tscn application/x-godot-scene
+test.escn application/x-godot-scene
+test.gdshader application/x-godot-shader ox
+test.gd application/x-gdscript ox
+
 # Kotlin source code
 test.kt text/x-kotlin ox
 

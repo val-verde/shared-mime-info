@@ -4145,7 +4145,9 @@ command to generate the output files.
     <comment>DTSHD audio</comment>
     <sub-class-of type="audio/vnd.dts"/>
     <magic priority="60">
-      <match type="big32" value="0x64582025" offset="0:18725"/> <!-- 16bits HD be -->
+      <match type="big32" value="0x7FFE8001" offset="0"> <!-- 16bits core be -->
+        <match type="big32" value="0x64582025" offset="4:18725"/> <!-- 16bits HD be -->
+      </match>
     </magic>
     <alias type="audio/x-dtshd"/>
     <glob pattern="*.dtshd"/>

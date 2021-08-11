@@ -251,6 +251,8 @@ test.vsd application/vnd.visio ox
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=40800
 test.dts audio/vnd.dts
 test.dtshd audio/vnd.dts.hd
+# perl -e 'print "This is not DTSHD: \x{64}\x{58}\x{20}\x{25}"'
+test-not-dtshd.txt text/plain
 # Copied from http://samples.mplayerhq.hu/A-codecs/amr/sample2.amr
 sample2.amr audio/AMR
 # Testing case-insensitive mime-type matching

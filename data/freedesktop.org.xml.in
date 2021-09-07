@@ -3830,6 +3830,16 @@ command to generate the output files.
     </magic>
     <glob pattern="*.sub"/>
   </mime-type>
+  <mime-type type="text/x-mpl2">
+    <comment>MPlayer2 subtitles</comment>
+    <sub-class-of type="text/plain"/>
+    <magic priority="50">
+      <match type="string" value="[1]" offset="0"/>
+      <match type="string" value="[0]" offset="0"/>
+      <match type="string" value="][" offset="0:6"/>
+    </magic>
+    <glob pattern="*.mpl"/>
+  </mime-type>
   <mime-type type="text/x-mpsub">
     <comment>MPSub subtitles</comment>
     <acronym>MPSub</acronym>

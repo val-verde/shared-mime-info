@@ -468,7 +468,9 @@ command to generate the output files.
     <comment>Apple System Profiler</comment>
     <sub-class-of type="application/xml"/>
     <magic priority="50">
-      <match type="string" value="&lt;plist version=&quot;1.0&quot;" offset="0:256"/>
+      <match type="string" value="&lt;plist version=&quot;1.0&quot;" offset="0:256">
+        <match type="string" value="&lt;key&gt;_SPCommandLineArguments&lt;/key&gt;" offset="34:384"/>
+      </match>
     </magic>
     <glob pattern="*.spx" weight="40"/>
     <root-XML namespaceURI="http://www.apple.com/DTDs/PropertyList-1.0.dtd" localName="plist"/>

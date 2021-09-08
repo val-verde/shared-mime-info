@@ -28,6 +28,10 @@ test.im1 image/x-sun-raster x
 test.jpg image/jpeg
 # Possible false positive for a JPEG 2000 image
 img_5304.jpg image/jpeg
+# One with embeddded property list XML
+# https://github.com/DeaDBeeF-Player/deadbeef/issues/2667
+# convert -extent 1x1 cover.jpg jpg:- | exiftool "-PhotoshopThumbnail<=" - >test-with-plist-xml.jpg
+test-with-plist-xml.jpg image/jpeg
 # From https://github.com/bitsgalore/jp2kMagic
 balloon.j2c image/x-jp2-codestream
 balloon.jp2 image/jp2

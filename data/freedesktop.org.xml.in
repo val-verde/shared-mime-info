@@ -7702,7 +7702,9 @@ command to generate the output files.
   </mime-type>
 
   <mime-type type="image/avif">
-    <comment>AV1 Image File Format (AVIF)</comment>
+    <comment>AVIF image</comment>
+    <acronym>AVIF</acronym>
+    <expanded-acronym>AV1 Image File Format</expanded-acronym>
     <magic priority="50">
       <match type="string" value="ftypavif" offset="4"/>
       <match type="string" value="ftypavis" offset="4"/>

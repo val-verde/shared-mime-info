@@ -4775,6 +4775,14 @@ command to generate the output files.
     <comment>HEIF image</comment>
     <acronym>HEIF</acronym>
     <expanded-acronym>High Efficiency Image File</expanded-acronym>
+    <magic priority="40"><!-- less than AVIF due to ftypmif1 -->
+      <match type="string" value="ftypmif1" offset="4"/>
+      <match type="string" value="ftypmsf1" offset="4"/>
+      <match type="string" value="ftypheic" offset="4"/>
+      <match type="string" value="ftypheix" offset="4"/>
+      <match type="string" value="ftyphevc" offset="4"/>
+      <match type="string" value="ftyphevx" offset="4"/>
+    </magic>
     <glob pattern="*.heic"/>
     <glob pattern="*.heif"/>
     <alias type="image/heic"/>

@@ -359,8 +359,13 @@ isdir.m text/x-matlab x
 test.mo text/x-modelica xoo
 # From https://bugs.freedesktop.org/show_bug.cgi?id=29733
 bibtex.bib text/x-bibtex
-# hand-made
-simple-obj-c.m text/x-objcsrc
+# the following 6 test files are hand-made
+import-objc.m text/x-objcsrc
+comment-objc.m text/x-objcsrc ox
+import-objc++.mm text/x-objc++src ox
+include-objc++.mm text/x-objc++src ox
+simple-troff.tr text/troff
+simple-troff.mm text/x-troff-mm xx
 # Copied from LLVM project test suite
 test.cl text/x-opencl-src ox
 # hand-made
@@ -800,8 +805,11 @@ SConscript text/x-scons oxo
 SConscript.buildinfo text/x-scons oxo
 
 # Source code
+# the following 3 test files are hand-made
 cplusplusfile.C text/x-c++src oxo
 cfile.c text/x-csrc oxo
+no-extension-c-comment text/x-csrc x
+test-gettext.c text/x-csrc
 
 # Common Lisp source code
 common-lisp.asd text/x-common-lisp oxo

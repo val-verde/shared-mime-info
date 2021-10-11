@@ -479,6 +479,7 @@ command to generate the output files.
     <comment>GEDCOM family history</comment>
     <acronym>GEDCOM</acronym>
     <expanded-acronym>GEnealogical Data COMmunication</expanded-acronym>
+    <sub-class-of type="text/plain"/>
     <generic-icon name="x-office-document"/>
     <magic priority="50">
       <match type="string" value="0 HEAD" offset="0"/>
@@ -1983,6 +1984,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-qml">
     <comment>Qt Markup Language file</comment>
+    <sub-class-of type="text/plain"/>
     <magic priority="80">
       <match type="string" value="/bin/env qml" offset="2:16"/>
       <match type="string" value="import Qt" offset="0:3000">
@@ -3872,6 +3874,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-iMelody">
     <comment>iMelody ringtone</comment>
+    <sub-class-of type="text/plain"/>
     <magic priority="50">
       <match type="string" value="BEGIN:IMELODY" offset="0"/>
     </magic>
@@ -4627,6 +4630,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/vnd.rn-realtext">
     <comment>RealText document</comment>
+    <sub-class-of type="text/plain"/>
     <glob pattern="*.rt"/>
   </mime-type>
   <mime-type type="audio/x-riff">
@@ -5969,6 +5973,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/vnd.graphviz">
     <comment>Graphviz DOT graph</comment>
+    <sub-class-of type="text/plain"/>
     <generic-icon name="x-office-document"/>
     <magic priority="50">
       <match type="string" value="digraph " offset="0"/>
@@ -5983,6 +5988,7 @@ command to generate the output files.
     <comment>JAD document</comment>
     <acronym>JAD</acronym>
     <expanded-acronym>Java Application Descriptor</expanded-acronym>
+    <sub-class-of type="text/plain"/>
     <magic priority="50">
       <match type="string" value="MIDlet-" offset="0"/>
     </magic>
@@ -5997,6 +6003,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/vnd.wap.wmlscript">
     <comment>WMLScript program</comment>
+    <sub-class-of type="text/plain"/>
     <glob pattern="*.wmls"/>
   </mime-type>
   <mime-type type="text/vnd.senx.warpscript">
@@ -6262,6 +6269,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-google-video-pointer">
     <comment>Google Video Pointer shortcut</comment>
+    <sub-class-of type="text/plain"/>
     <magic priority="50">
       <match type="string" value="#.download.the.free.Google.Video.Player" offset="0"/>
       <match type="string" value="# download the free Google Video Player" offset="0"/>
@@ -6383,6 +6391,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-ocaml">
     <comment>OCaml source code</comment>
+    <sub-class-of type="text/plain"/>
     <glob pattern="*.ml"/>
     <glob pattern="*.mli"/>
   </mime-type>
@@ -7197,6 +7206,7 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-cisco-vpn-settings">
     <comment>Cisco VPN settings</comment>
+    <sub-class-of type="text/plain"/>
     <generic-icon name="text-x-generic"/>
     <magic priority="50">
       <match type="string" value="[main]" offset="0">

@@ -7463,6 +7463,16 @@ command to generate the output files.
     <glob pattern="*.pages"/>
     <alias type="application/x-iwork-pages-sffpages"/>
   </mime-type>
+  <mime-type type="application/vnd.apple.pkpass">
+    <comment>Apple Wallet pass</comment>
+    <sub-class-of type="application/zip"/>
+    <magic priority="65">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="pass.json" offset="30"/>
+      </match>
+    </magic>
+    <glob pattern="*.pkpass"/>
+  </mime-type>
 
   <mime-type type="application/x-pagemaker">
     <comment>Adobe PageMaker document</comment>

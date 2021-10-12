@@ -1572,9 +1572,9 @@ command to generate the output files.
   <mime-type type="application/x-blender">
     <comment>Blender scene</comment>
     <generic-icon name="image-x-generic"/>
-    <glob pattern="*.blender"/>
     <glob pattern="*.blend"/>
     <glob pattern="*.BLEND"/>
+    <glob pattern="*.blender"/>
     <magic priority="50">
       <match type="string" value="BLENDER" offset="0"/>
     </magic>

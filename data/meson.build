@@ -1,18 +1,12 @@
 
 install_man('update-mime-database.1')
 
-freedesktop_org_xml = custom_target('freedesktop.org.xml',
-    input : files(
-        'freedesktop.org.xml.in',
-        'its/shared-mime-info.its',
-        'its/shared-mime-info.loc',
-    ),
+freedesktop_org_xml = i18n.merge_file(
+    input: 'freedesktop.org.xml.in',
     output: 'freedesktop.org.xml',
-    command: [
-        find_program('freedesktop_generate.sh'),
-        meson.source_root(),
-        meson.build_root()
-    ],
+    data_dirs: '.',
+    po_dir: '../po',
+    type: 'xml',
     install: true,
     install_dir: get_option('datadir') / 'mime' / 'packages',
 )

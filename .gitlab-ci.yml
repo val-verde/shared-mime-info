@@ -9,7 +9,6 @@ variables:
                 glib2-devel
                 gettext
                 git
-                itstool
                 xmlto
                 findutils
                 gettext-devel
@@ -34,4 +33,3 @@ build:meson:
     paths:
       - _build/meson-logs/*.txt
       - _build/meson-dist/*.*
-

@@ -19,7 +19,7 @@ $ ninja -v -C _build install
 ```
 
 It requires the glib development package to be installed as well as
-gettext and itstool.
+gettext.
 This database is translated at Transifex.
 
 

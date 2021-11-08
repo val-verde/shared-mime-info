@@ -20,7 +20,6 @@ config.set_quoted('VERSION', meson.project_version())
 ###############################################################################
 # Find tools
 
-itstool = find_program('itstool')
 xmllint = find_program('xmllint')
 xmlto   = find_program('xmlto', required: false)
 

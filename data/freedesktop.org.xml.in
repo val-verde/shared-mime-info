@@ -1614,6 +1614,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-lrzip">
     <comment>Lrzip archive</comment>
+    <acronym>Lrzip</acronym>
+    <expanded-acronym>Long Range Zip</expanded-acronym>
     <generic-icon name="package-x-generic"/>
     <magic priority="60">
       <match type="string" value="LRZI" offset="0"/>
@@ -2176,6 +2178,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-font-linux-psf">
     <comment>Linux PSF console font</comment>
+    <acronym>PSF</acronym>
+    <expanded-acronym>PC Screen Font</expanded-acronym>
     <generic-icon name="font-x-generic"/>
     <magic priority="50">
       <match type="string" value="\x36\x04" offset="0"/>
@@ -2184,12 +2188,16 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-gz-font-linux-psf">
     <comment>Linux PSF console font (gzip-compressed)</comment>
+    <acronym>PSF</acronym>
+    <expanded-acronym>PC Screen Font</expanded-acronym>
     <sub-class-of type="application/gzip"/>
     <generic-icon name="font-x-generic"/>
     <glob pattern="*.psf.gz"/>
   </mime-type>
   <mime-type type="application/x-font-pcf">
     <comment>PCF font</comment>
+    <acronym>PCF</acronym>
+    <expanded-acronym>Portable Compiled Format</expanded-acronym>
     <generic-icon name="font-x-generic"/>
     <magic priority="50">
       <match type="string" value="\001fcp" offset="0"/>
@@ -3440,6 +3448,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-pef-executable">
     <comment>PEF executable</comment>
+    <acronym>PEF</acronym>
+    <expanded-acronym>Preferred Executable Format</expanded-acronym>
     <generic-icon name="application-x-executable"/>
     <magic priority="50">
       <match type="string" value="Joy!" offset="0"/>
@@ -3585,6 +3595,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/x-dar">
     <comment>DAR archive</comment>
+    <acronym>DAR</acronym>
+    <expanded-acronym>Disk ARchive</expanded-acronym>
     <generic-icon name="package-x-generic"/>
     <magic>
       <match type="big32" value="123" offset="0"/>
@@ -4156,6 +4168,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/vnd.dts">
     <comment>DTS audio</comment>
+    <acronym>DTS</acronym>
+    <expanded-acronym>Digital Theater Systems</expanded-acronym>
     <magic priority="50">
       <match type="big32" value="0x7FFE8001" offset="0"/> <!-- 16bits core be -->
       <match type="little32" value="0xFE7F0180" offset="0"/> <!-- 16bits core le -->
@@ -4167,6 +4181,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/vnd.dts.hd">
     <comment>DTSHD audio</comment>
+    <acronym>DTSHD</acronym>
+    <expanded-acronym>Digital Theater Systems High Definition</expanded-acronym>
     <sub-class-of type="audio/vnd.dts"/>
     <magic priority="60">
       <match type="big32" value="0x7FFE8001" offset="0"> <!-- 16bits core be -->
@@ -4216,6 +4232,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/x-adpcm">
     <comment>PCM audio</comment>
+    <acronym>PCM</acronym>
+    <expanded-acronym>Pulse-code Modulation</expanded-acronym>
     <magic priority="50">
       <match type="string" value=".snd" offset="0">
         <match type="big32" value="23" offset="12"/>
@@ -4288,6 +4306,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/flac">
     <comment>FLAC audio</comment>
+    <acronym>FLAC</acronym>
+    <expanded-acronym>Free Lossless Audio Codec</expanded-acronym>
     <magic priority="50">
       <match value="fLaC" type="string" offset="0"/>
     </magic>
@@ -4311,6 +4331,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="audio/midi">
     <comment>MIDI audio</comment>
+    <acronym>MIDI</acronym>
+    <expanded-acronym>Musical Instrument Digital Interface</expanded-acronym>
     <alias type="audio/x-midi"/>
     <magic priority="50">
       <match type="string" value="MThd" offset="0"/>
@@ -4735,11 +4757,15 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/g3fax">
     <comment>CCITT G3 fax image</comment>
+    <acronym>CCITT</acronym>
+    <expanded-acronym>Comité Consultatif International Téléphonique et Télégraphique</expanded-acronym>
     <glob pattern="*.g3"/>
     <alias type="image/fax-g3"/>
   </mime-type>
   <mime-type type="image/gif">
     <comment>GIF image</comment>
+    <acronym>GIF</acronym>
+    <expanded-acronym>Graphics Interchange Format</expanded-acronym>
     <magic priority="50">
       <match type="string" value="GIF8" offset="0"/>
     </magic>
@@ -4761,6 +4787,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/jpeg">
     <comment>JPEG image</comment>
+    <acronym>JPEG</acronym>
+    <expanded-acronym>Joint Photographic Experts Group</expanded-acronym>
     <magic priority="50">
       <match type="string" value="\377\330\377" offset="0"/>
       <match type="big16" value="0xffd8" offset="0"/>
@@ -5086,6 +5114,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/png">
     <comment>PNG image</comment>
+    <acronym>PNG</acronym>
+    <expanded-acronym>Portable Network Graphics</expanded-acronym>
     <magic priority="50">
       <match type="string" value="\x89PNG" offset="0"/>
     </magic>
@@ -5378,6 +5408,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/x-niff">
     <comment>NIFF image</comment>
+    <acronym>NIFF</acronym>
+    <expanded-acronym>Navy Image File Format</expanded-acronym>
     <magic priority="80">
       <match type="string" value="IIN1" offset="0"/>
     </magic>
@@ -5405,6 +5437,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="image/x-portable-anymap">
     <comment>PNM image</comment>
+    <acronym>PNM</acronym>
+    <expanded-acronym>Portable Anymap</expanded-acronym>
     <glob pattern="*.pnm"/>
   </mime-type>
   <mime-type type="image/x-portable-bitmap">
@@ -5940,6 +5974,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-opml+xml">
     <comment>OPML syndication feed</comment>
+    <acronym>OPML</acronym>
+    <expanded-acronym>Outline Processor Markup Language</expanded-acronym>
     <sub-class-of type="application/xml"/>
     <alias type="text/x-opml"/>
     <generic-icon name="text-html"/>
@@ -7218,6 +7254,8 @@ command to generate the output files.
   </mime-type>
   <mime-type type="application/vnd.iccprofile">
     <comment>ICC profile</comment>
+    <acronym>ICC</acronym>
+    <expanded-acronym>International Color Consortium</expanded-acronym>
     <magic priority="50">
       <match type="string" value="acsp" offset="36"/>
     </magic>

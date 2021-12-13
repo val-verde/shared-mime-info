@@ -1556,7 +1556,7 @@ command to generate the output files.
     <glob pattern="*.awk"/>
   </mime-type>
   <mime-type type="application/x-bcpio">
-    <comment>BCPIO document</comment>
+    <comment>BCPIO archive</comment>
     <acronym>BCPIO</acronym>
     <expanded-acronym>Binary CPIO</expanded-acronym>
     <generic-icon name="package-x-generic"/>
@@ -2548,7 +2548,7 @@ command to generate the output files.
     <glob pattern="*.gsh"/>
   </mime-type>
   <mime-type type="text/x-gradle">
-    <comment>Gradle scripts</comment>
+    <comment>Gradle script</comment>
     <sub-class-of type="text/x-groovy"/>
     <glob pattern="*.gradle"/>
   </mime-type>
@@ -4051,14 +4051,14 @@ command to generate the output files.
     <glob weight="10" pattern="*.t"/>
   </mime-type>
   <mime-type type="application/x-troff-man">
-    <comment>Manpage manual document</comment>
+    <comment>Manual page</comment>
     <sub-class-of type="text/plain"/>
     <generic-icon name="text-x-generic"/>
     <glob pattern="*.man"/>
     <glob pattern="*.[1-9]"/>
   </mime-type>
   <mime-type type="application/x-troff-man-compressed">
-    <comment>manual page (compressed)</comment>
+    <comment>Manual page (compressed)</comment>
     <generic-icon name="text-x-generic"/>
   </mime-type>
   <mime-type type="application/x-tzo">
@@ -4213,8 +4213,8 @@ command to generate the output files.
     <glob pattern="*.dts"/>
   </mime-type>
   <mime-type type="audio/vnd.dts.hd">
-    <comment>DTSHD audio</comment>
-    <acronym>DTSHD</acronym>
+    <comment>DTS-HD audio</comment>
+    <acronym>DTS-HD</acronym>
     <expanded-acronym>Digital Theater Systems High Definition</expanded-acronym>
     <sub-class-of type="audio/vnd.dts"/>
     <magic priority="60">

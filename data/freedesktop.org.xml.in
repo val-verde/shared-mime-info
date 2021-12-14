@@ -1619,26 +1619,26 @@ command to generate the output files.
     <glob pattern="*.ps.bz2"/>
   </mime-type>
   <mime-type type="application/vnd.comicbook-rar">
-    <comment>comic book archive</comment>
+    <comment>comic book archive (rar container)</comment>
     <sub-class-of type="application/vnd.rar"/>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.cbr"/>
     <alias type="application/x-cbr"/>
   </mime-type>
   <mime-type type="application/x-cb7">
-    <comment>comic book archive</comment>
+    <comment>comic book archive (7z container)</comment>
     <sub-class-of type="application/x-7z-compressed"/>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.cb7"/>
   </mime-type>
   <mime-type type="application/x-cbt">
-    <comment>comic book archive</comment>
+    <comment>comic book archive (tar container)</comment>
     <sub-class-of type="application/x-tar"/>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.cbt"/>
   </mime-type>
   <mime-type type="application/vnd.comicbook+zip">
-    <comment>comic book archive</comment>
+    <comment>comic book archive (zip container)</comment>
     <sub-class-of type="application/zip"/>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.cbz"/>

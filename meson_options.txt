@@ -10,3 +10,7 @@ option('build-tools', type: 'boolean', value: true,
 option('xdgmime-path', type: 'string', value: './xdgmime',
     description: 'Path to the xdgmime executable',
 )
+
+option('xml-docs', type: 'boolean', value: false,
+    description: 'Enables generation of XML documentation.',
+)

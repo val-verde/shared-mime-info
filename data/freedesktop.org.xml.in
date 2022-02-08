@@ -4329,6 +4329,37 @@ command to generate the output files.
     </magic>
     <glob pattern="*.aax"/>
   </mime-type>
+  <mime-type type="audio/x-dff">
+    <comment>DSDIFF audio</comment>
+    <acronym>DSDIFF</acronym>
+    <expanded-acronym>Direct Stream Digital Interchange File Format</expanded-acronym>
+    <magic priority="50">
+      <!-- from https://www.sonicstudio.com/pdf/dsd/DSDIFF_1.5_Spec.pdf -->
+      <match value="FRM8" type="string" offset="0">
+        <match value="DSD " type="string" offset="12"/>
+      </match>
+    </magic>
+    <glob pattern="*.dff"/>
+    <alias type="audio/dff"/>
+  </mime-type>
+  <mime-type type="audio/x-dsf">
+    <comment>DSF audio</comment>
+    <acronym>DSF</acronym>
+    <expanded-acronym>Direct stream digital Stream File</expanded-acronym>
+    <magic priority="50">
+      <!-- from https://dsd-guide.com/sites/default/files/white-papers/DSFFileFormatSpec_E.pdf -->
+      <match value="DSD " type="string" offset="0">
+        <match value="fmt " type="string" offset="28">
+          <match value="data" type="string" offset="80"/>
+        </match>
+      </match>
+    </magic>
+    <glob pattern="*.dsf"/>
+    <alias type="audio/dsf"/>
+    <!-- Problematic because some clients expect these mime types to be DSDIFF files -->
+    <alias type="audio/x-dsd"/>
+    <alias type="audio/dsd"/>
+  </mime-type>
   <mime-type type="audio/x-it">
     <comment>Impulse Tracker audio</comment>
     <magic priority="50">

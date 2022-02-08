@@ -272,6 +272,10 @@ raw-mjpeg.mjpeg video/x-mjpeg oxo
 x_speex_ogg.spx audio/x-speex+ogg
 # From https://cgit.kde.org/kfilemetadata.git/tree/autotests/samplefiles
 test.mpc audio/x-musepack
+# Created using https://tascam.com/us/product/hi-res_editor/top
+test.dsf audio/x-dsf
+# Created using https://tascam.com/us/product/hi-res_editor/top
+test.dff audio/x-dff
 
 # text
 text-iso8859-15.txt text/plain

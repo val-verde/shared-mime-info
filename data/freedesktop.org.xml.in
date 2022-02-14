@@ -2019,7 +2019,7 @@ command to generate the output files.
   <mime-type type="text/x-qml">
     <comment>Qt Markup Language file</comment>
     <sub-class-of type="text/plain"/>
-    <magic priority="80">
+    <magic priority="50">
       <match type="string" value="/bin/env qml" offset="2:16"/>
       <match type="string" value="import Qt" offset="0:3000">
         <match type="string" value="{" offset="9:3009"/>

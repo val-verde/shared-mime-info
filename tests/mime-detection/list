@@ -897,3 +897,7 @@ test.avifs image/avif
 test.org text/org ox
 # OpenZIM file
 test.zim application/x-openzim
+# SPARQL query
+test.qs application/sparql-query
+# SPARQL query results
+test.srx application/sparql-results+xml ox

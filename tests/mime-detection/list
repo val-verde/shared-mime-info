@@ -531,6 +531,8 @@ test.zz application/zlib ox
 test.xar application/x-xar
 # From https://bugs.freedesktop.org/show_bug.cgi?id=93549
 serafettin.rar application/vnd.rar
+# From https://github.com/electron/asar/tree/main/test/input
+extractthis.asar application/x-asar
 
 # Audio/Video files
 # https://bugs.freedesktop.org/show_bug.cgi?id=20070#c4

@@ -1528,6 +1528,17 @@ command to generate the output files.
     </magic>
     <glob pattern="*.arj"/>
   </mime-type>
+  <mime-type type="application/x-asar">
+    <comment>Electron Archive (ASAR)</comment>
+    <acronym>ASAR</acronym>
+    <expanded-acronym>Atom Shell Archive Format</expanded-acronym>
+    <magic priority="50">
+      <match type="string" value="\004\000\000\000" offset="0">
+        <match type="string" value="{&quot;files&quot;:" offset="16"/>
+      </match>
+    </magic>
+    <glob pattern="*.asar"/>
+  </mime-type>
   <mime-type type="application/x-asp">
     <comment>ASP page</comment>
     <acronym>ASP</acronym>

@@ -781,6 +781,8 @@ subshapes.swf application/vnd.adobe.flash.movie
 pci.mod application/x-object x
 # PIE executable https://gitlab.freedesktop.org/xdg/shared-mime-info/-/issues/11
 ls application/x-executable x
+# ELF shared library
+libldap-2.4.so.2 application/x-sharedlib oxo
 boardingpass.pkpass application/vnd.apple.pkpass
 
 hello.xdgapp application/vnd.flatpak

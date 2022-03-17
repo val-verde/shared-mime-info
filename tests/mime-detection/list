@@ -849,6 +849,8 @@ dbus.service text/x-dbus-service
 dbus-comment.service text/x-dbus-service
 
 # 3D models and GCODEs
+# "cube(10);" exported by OpenSCAD
+cube.3mf model/3mf ox
 binary.stl model/stl oxo
 ascii.stl model/stl
 test.gcode text/x.gcode ox

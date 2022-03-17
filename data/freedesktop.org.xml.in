@@ -7721,6 +7721,15 @@ command to generate the output files.
   </mime-type>
 
   <!-- 3D models and GCODEs -->
+  <mime-type type="model/3mf">
+    <comment>3MF document</comment>
+    <acronym>3MF</acronym>
+    <expanded-acronym>3D Manufacturing Format</expanded-acronym>
+    <glob pattern="*.3mf"/>
+    <alias type="application/vnd.ms-3mfdocument"/>
+    <sub-class-of type="application/zip"/>
+  </mime-type>
+
   <mime-type type="model/stl">
     <comment>STL 3D model</comment>
     <acronym>STL</acronym>

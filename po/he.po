@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the shared-mime-info package.
 # 
 # Translators:
-# Yaron Shahrabani <sh.yaron@gmail.com>, 2011-2012,2014,2016
+# Omer I.S. <omeritzicschwartz@gmail.com>, 2021
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2011-2012,2014,2016,2021
 msgid ""
 msgstr ""
 "Project-Id-Version: shared-mime-info\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-24 10:27+0200\n"
-"PO-Revision-Date: 2020-12-24 08:30+0000\n"
-"Last-Translator: Ville Skyttä <ville.skytta@iki.fi>\n"
+"POT-Creation-Date: 2020-12-31 11:24+0100\n"
+"PO-Revision-Date: 2010-11-30 12:22+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>, 2011-2012,2014,2016,2021\n"
 "Language-Team: Hebrew (http://www.transifex.com/freedesktop/shared-mime-info/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,15 +21,15 @@ msgstr ""
 
 #: data/freedesktop.org.xml.in:83
 msgid "Atari 2600 ROM"
-msgstr ""
+msgstr "Atari 2600 ROM"
 
 #: data/freedesktop.org.xml.in:88
 msgid "Atari 7800 ROM"
-msgstr ""
+msgstr "Atari 7800 ROM"
 
 #: data/freedesktop.org.xml.in:96
 msgid "Atari Lynx ROM"
-msgstr ""
+msgstr "Atari Lynx ROM"
 
 #: data/freedesktop.org.xml.in:104
 msgid "ATK inset"
@@ -40,7 +41,7 @@ msgstr "מסמך מסוג ספר אלקטרוני"
 
 #: data/freedesktop.org.xml.in:125
 msgid "Kindle book document"
-msgstr ""
+msgstr "מסמך ספר Kindle"
 
 #: data/freedesktop.org.xml.in:132
 msgid "Adobe Illustrator document"
@@ -52,7 +53,7 @@ msgstr "קובץ בקידוד Macintosh BinHex"
 
 #: data/freedesktop.org.xml.in:145
 msgid "Mathematica Notebook file"
-msgstr ""
+msgstr "קובץ מחברת של Mathematica"
 
 #: data/freedesktop.org.xml.in:160
 msgid "MathML document"
@@ -60,7 +61,7 @@ msgstr "מסמך MathML"
 
 #: data/freedesktop.org.xml.in:169
 msgid "mailbox file"
-msgstr "קובץ תיבת-דואר"
+msgstr "קובץ תיבת דואר"
 
 #: data/freedesktop.org.xml.in:178 data/freedesktop.org.xml.in:187
 msgid "Metalink file"
@@ -104,7 +105,7 @@ msgstr "שמע GSM 06.10"
 
 #: data/freedesktop.org.xml.in:264
 msgid "iRiver playlist"
-msgstr ""
+msgstr "רשימת נגינה של iRiver"
 
 #: data/freedesktop.org.xml.in:271
 msgid "PGP/MIME-encrypted message header"
@@ -120,7 +121,7 @@ msgstr "חתימת OpenPGP מנותקת"
 
 #: data/freedesktop.org.xml.in:317
 msgid "PKCS#7 file"
-msgstr ""
+msgstr "קובץ PKCS#7"
 
 #: data/freedesktop.org.xml.in:325
 msgid "detached S/MIME signature"
@@ -132,7 +133,7 @@ msgstr "מפתח פרטי של PKCS#8"
 
 #: data/freedesktop.org.xml.in:339
 msgid "PKCS#8 private key (encrypted)"
-msgstr ""
+msgstr "מפתח פרטי מסוג PKCS#8 (מוצפן)"
 
 #: data/freedesktop.org.xml.in:345
 msgid "PKCS#10 certification request"
@@ -144,7 +145,7 @@ msgstr "אישור X.509"
 
 #: data/freedesktop.org.xml.in:356
 msgid "certificate revocation list"
-msgstr ""
+msgstr "רשימת שלילת אישורים"
 
 #: data/freedesktop.org.xml.in:360
 msgid "PkiPath certification path"
@@ -152,7 +153,7 @@ msgstr "נתיב מאושר של PkiPath"
 
 #: data/freedesktop.org.xml.in:364
 msgid "PostScript document"
-msgstr ""
+msgstr "מסמך PostScript"
 
 #: data/freedesktop.org.xml.in:374
 msgid "Plucker document"
@@ -192,7 +193,7 @@ msgstr "מסד נתונים מסוג SQLite3"
 
 #: data/freedesktop.org.xml.in:461
 msgid "Apple System Profiler"
-msgstr ""
+msgstr "מאפיין מערכת של Apple"
 
 #: data/freedesktop.org.xml.in:470
 msgid "GEDCOM family history"
@@ -200,7 +201,7 @@ msgstr "היסטוריה משפחתית של GEDCOM"
 
 #: data/freedesktop.org.xml.in:482
 msgid "Flash video"
-msgstr "וידאו של פלאש"
+msgstr "וידאו Flash"
 
 #: data/freedesktop.org.xml.in:493
 msgid "JavaFX video"
@@ -223,7 +224,7 @@ msgstr "מסמך YAML"
 
 #: data/freedesktop.org.xml.in:545
 msgid "Corel Draw drawing"
-msgstr "ציור של Corel Draw"
+msgstr "ציור Corel Draw"
 
 #: data/freedesktop.org.xml.in:560
 msgid "HPGL file"
@@ -239,470 +240,474 @@ msgstr "גיליון נתונים של Lotus 1-2-3"
 
 #: data/freedesktop.org.xml.in:591
 msgid "Lotus Word Pro document"
-msgstr ""
+msgstr "מסמך Lotus Word Pro"
 
 #: data/freedesktop.org.xml.in:599
 msgid "JET database"
 msgstr "מסד נתונים מסוג JET"
 
-#: data/freedesktop.org.xml.in:616
+#: data/freedesktop.org.xml.in:615
 msgid "Microsoft Cabinet archive"
 msgstr "ארכיון CAB (מיקרוסופט)"
 
-#: data/freedesktop.org.xml.in:625 data/freedesktop.org.xml.in:655
+#: data/freedesktop.org.xml.in:624 data/freedesktop.org.xml.in:654
 msgid "Excel spreadsheet"
-msgstr "גליון נתונים של Excel"
+msgstr "גיליון נתונים של Excel"
 
-#: data/freedesktop.org.xml.in:643
+#: data/freedesktop.org.xml.in:642
 msgid "Excel add-in"
 msgstr "תוסף של Excel"
 
-#: data/freedesktop.org.xml.in:649
+#: data/freedesktop.org.xml.in:648
 msgid "Excel 2007 binary spreadsheet"
 msgstr "גיליון נתונים בינרי של Excel 2007"
 
-#: data/freedesktop.org.xml.in:661
+#: data/freedesktop.org.xml.in:660
 msgid "Excel spreadsheet template"
 msgstr "תבנית גיליון נתונים של Excel"
 
-#: data/freedesktop.org.xml.in:667 data/freedesktop.org.xml.in:683
-#: data/freedesktop.org.xml.in:695
+#: data/freedesktop.org.xml.in:666 data/freedesktop.org.xml.in:682
+#: data/freedesktop.org.xml.in:694
 msgid "PowerPoint presentation"
 msgstr "מצגת PowerPoint"
 
-#: data/freedesktop.org.xml.in:678
+#: data/freedesktop.org.xml.in:677
 msgid "PowerPoint add-in"
 msgstr "תוסף של PowerPoint"
 
-#: data/freedesktop.org.xml.in:689
+#: data/freedesktop.org.xml.in:688
 msgid "PowerPoint slide"
 msgstr "שקופית של PowerPoint"
 
-#: data/freedesktop.org.xml.in:701
+#: data/freedesktop.org.xml.in:700
 msgid "PowerPoint presentation template"
 msgstr "תבנית מצגת PowerPoint"
 
-#: data/freedesktop.org.xml.in:707 data/freedesktop.org.xml.in:725
+#: data/freedesktop.org.xml.in:706 data/freedesktop.org.xml.in:724
 msgid "Office Open XML Visio drawing"
-msgstr ""
+msgstr "ציור Office Open XML Visio"
 
-#: data/freedesktop.org.xml.in:713 data/freedesktop.org.xml.in:731
+#: data/freedesktop.org.xml.in:712 data/freedesktop.org.xml.in:730
 msgid "Office Open XML Visio template"
-msgstr ""
+msgstr "תבנית Office Open XML Visio"
 
-#: data/freedesktop.org.xml.in:719 data/freedesktop.org.xml.in:737
+#: data/freedesktop.org.xml.in:718 data/freedesktop.org.xml.in:736
 msgid "Office Open XML Visio stencil"
-msgstr ""
+msgstr "סטנסיל ל־Visio ב־Open XML מבית Office"
 
-#: data/freedesktop.org.xml.in:743 data/freedesktop.org.xml.in:785
+#: data/freedesktop.org.xml.in:742 data/freedesktop.org.xml.in:790
 msgid "Word document"
 msgstr "מסמך Word"
 
-#: data/freedesktop.org.xml.in:749
+#: data/freedesktop.org.xml.in:748
 msgid "Word document template"
 msgstr "תבנית מסמך Word"
 
-#: data/freedesktop.org.xml.in:755
+#: data/freedesktop.org.xml.in:754
+msgid "OpenXPS document"
+msgstr "מסמך OpenXPS"
+
+#: data/freedesktop.org.xml.in:762
 msgid "XPS document"
 msgstr "מסמך XPS"
 
-#: data/freedesktop.org.xml.in:766
+#: data/freedesktop.org.xml.in:771
 msgid "Microsoft Works document"
 msgstr "מסמך Microsoft Works"
 
-#: data/freedesktop.org.xml.in:776
+#: data/freedesktop.org.xml.in:781
 msgid "Microsoft Visio document"
-msgstr "מסמך "
+msgstr "מסמך Microsoft Visio"
 
-#: data/freedesktop.org.xml.in:805
+#: data/freedesktop.org.xml.in:810
 msgid "Word template"
 msgstr "תבנית Word"
 
-#: data/freedesktop.org.xml.in:811
+#: data/freedesktop.org.xml.in:816
 msgid "GML document"
 msgstr "מסמך GML"
 
-#: data/freedesktop.org.xml.in:819
+#: data/freedesktop.org.xml.in:824
 msgid "GNUnet search file"
 msgstr "קובץ חיפוש של GNUnet"
 
-#: data/freedesktop.org.xml.in:826
+#: data/freedesktop.org.xml.in:831
 msgid "TNEF message"
 msgstr "הודעת TNEF"
 
-#: data/freedesktop.org.xml.in:838
-msgid "StarCalc spreadsheet"
-msgstr "גליון נתונים של StarCalc"
-
 #: data/freedesktop.org.xml.in:843
-msgid "StarChart chart"
-msgstr "טבלה של StarChart"
+msgid "StarCalc spreadsheet"
+msgstr "גיליון נתונים של StarCalc"
 
 #: data/freedesktop.org.xml.in:848
-msgid "StarDraw drawing"
-msgstr "ציור של StarDrawing"
+msgid "StarChart chart"
+msgstr "טבלת StarChart"
 
 #: data/freedesktop.org.xml.in:853
-msgid "StarImpress presentation"
-msgstr "מצגת של StarImpress"
+msgid "StarDraw drawing"
+msgstr "ציור StarDrawing"
 
-#: data/freedesktop.org.xml.in:859
+#: data/freedesktop.org.xml.in:858
+msgid "StarImpress presentation"
+msgstr "מצגת StarImpress"
+
+#: data/freedesktop.org.xml.in:864
 msgid "StarMail email"
 msgstr "דוא״ל של StarMail"
 
-#: data/freedesktop.org.xml.in:863
+#: data/freedesktop.org.xml.in:868
 msgid "StarMath formula"
 msgstr "נוסחה של StarMath"
 
-#: data/freedesktop.org.xml.in:868
+#: data/freedesktop.org.xml.in:873
 msgid "StarWriter document"
-msgstr "מסמך של StarWriter"
+msgstr "מסמך StarWriter"
 
-#: data/freedesktop.org.xml.in:879
+#: data/freedesktop.org.xml.in:884
 msgid "OpenOffice Calc spreadsheet"
-msgstr "גליון נתונים של OpenOffice Calc"
+msgstr "גיליון נתונים של OpenOffice Calc"
 
-#: data/freedesktop.org.xml.in:892
+#: data/freedesktop.org.xml.in:897
 msgid "OpenOffice Calc template"
 msgstr "תבנית של OpenOffice Calc"
 
-#: data/freedesktop.org.xml.in:905
+#: data/freedesktop.org.xml.in:910
 msgid "OpenOffice Draw drawing"
 msgstr "ציור של OpenOffice Draw"
 
-#: data/freedesktop.org.xml.in:918
+#: data/freedesktop.org.xml.in:923
 msgid "OpenOffice Draw template"
 msgstr "תבנית של OpenOffice Draw"
 
-#: data/freedesktop.org.xml.in:931
+#: data/freedesktop.org.xml.in:936
 msgid "OpenOffice Impress presentation"
 msgstr "מצגת של OpenOffice Impress"
 
-#: data/freedesktop.org.xml.in:944
+#: data/freedesktop.org.xml.in:949
 msgid "OpenOffice Impress template"
 msgstr "תבנית של OpenOffice Impress"
 
-#: data/freedesktop.org.xml.in:957
+#: data/freedesktop.org.xml.in:962
 msgid "OpenOffice Math formula"
 msgstr "נוסחה של OpenOffice Math"
 
-#: data/freedesktop.org.xml.in:970
+#: data/freedesktop.org.xml.in:975
 msgid "OpenOffice Writer document"
 msgstr "מסמך של OpenOffice Writer"
 
-#: data/freedesktop.org.xml.in:983
+#: data/freedesktop.org.xml.in:988
 msgid "OpenOffice Writer global document"
 msgstr "מסמך גלובלי של OpenOffice Writer"
 
-#: data/freedesktop.org.xml.in:996
+#: data/freedesktop.org.xml.in:1001
 msgid "OpenOffice Writer template"
 msgstr "תסנית של OpenOffice Writer"
 
-#: data/freedesktop.org.xml.in:1009
+#: data/freedesktop.org.xml.in:1014
 msgid "ODT document"
 msgstr "מסמך ODT"
 
-#: data/freedesktop.org.xml.in:1024
+#: data/freedesktop.org.xml.in:1029
 msgid "ODT document (Flat XML)"
 msgstr "מסמך ODT‏ (Flat XML)"
 
-#: data/freedesktop.org.xml.in:1032
+#: data/freedesktop.org.xml.in:1037
 msgid "ODT template"
 msgstr "תבנית ODT"
 
-#: data/freedesktop.org.xml.in:1047
+#: data/freedesktop.org.xml.in:1052
 msgid "OTH template"
 msgstr "תבנית OTH"
 
-#: data/freedesktop.org.xml.in:1062
+#: data/freedesktop.org.xml.in:1067
 msgid "ODM document"
 msgstr "מסמך ODM"
 
-#: data/freedesktop.org.xml.in:1077
+#: data/freedesktop.org.xml.in:1082
 msgid "ODG drawing"
 msgstr "ציור ODG"
 
-#: data/freedesktop.org.xml.in:1092
+#: data/freedesktop.org.xml.in:1097
 msgid "ODG drawing (Flat XML)"
-msgstr "ציור ODG (Flat XML("
+msgstr "ציור ODG ‏(Flat XML)"
 
-#: data/freedesktop.org.xml.in:1100
+#: data/freedesktop.org.xml.in:1105
 msgid "ODG template"
 msgstr "תבנית ODG"
 
-#: data/freedesktop.org.xml.in:1115
+#: data/freedesktop.org.xml.in:1120
 msgid "ODP presentation"
 msgstr "מצגת ODP"
 
-#: data/freedesktop.org.xml.in:1130
+#: data/freedesktop.org.xml.in:1135
 msgid "ODP presentation (Flat XML)"
 msgstr "מצגת ODP‏ (Flat XML)"
 
-#: data/freedesktop.org.xml.in:1138
+#: data/freedesktop.org.xml.in:1143
 msgid "ODP template"
 msgstr "תבנית ODP"
 
-#: data/freedesktop.org.xml.in:1153
+#: data/freedesktop.org.xml.in:1158
 msgid "ODS spreadsheet"
-msgstr "גליון נתונים ODS"
+msgstr "גיליון נתונים ODS"
 
-#: data/freedesktop.org.xml.in:1168
+#: data/freedesktop.org.xml.in:1173
 msgid "ODS spreadsheet (Flat XML)"
-msgstr "גליון נתונים ODS‏ (XML פשוט)"
+msgstr "גיליון נתונים ODS‏ (XML פשוט)"
 
-#: data/freedesktop.org.xml.in:1176
+#: data/freedesktop.org.xml.in:1181
 msgid "ODS template"
 msgstr "תבנית ODS"
 
-#: data/freedesktop.org.xml.in:1191
+#: data/freedesktop.org.xml.in:1196
 msgid "ODC chart"
 msgstr "תו ODC"
 
-#: data/freedesktop.org.xml.in:1206
+#: data/freedesktop.org.xml.in:1211
 msgid "ODC template"
 msgstr "תבנית ODC"
 
-#: data/freedesktop.org.xml.in:1221
+#: data/freedesktop.org.xml.in:1226
 msgid "ODF formula"
 msgstr "נוסחת ODF"
 
-#: data/freedesktop.org.xml.in:1236
+#: data/freedesktop.org.xml.in:1241
 msgid "ODF template"
 msgstr "תבנית ODF"
 
-#: data/freedesktop.org.xml.in:1251
+#: data/freedesktop.org.xml.in:1256
 msgid "ODB database"
 msgstr "מסד נתונים ODB"
 
-#: data/freedesktop.org.xml.in:1267
+#: data/freedesktop.org.xml.in:1272
 msgid "ODI image"
 msgstr "תמונת ODI"
 
-#: data/freedesktop.org.xml.in:1282
+#: data/freedesktop.org.xml.in:1287
 msgid "OpenOffice.org extension"
 msgstr "הרחבה של OpenOffice.org"
 
-#: data/freedesktop.org.xml.in:1288
-msgid "Android package"
-msgstr "חבילת אנדרויד"
-
 #: data/freedesktop.org.xml.in:1293
+msgid "Android package"
+msgstr "חבילת Android"
+
+#: data/freedesktop.org.xml.in:1298
 msgid "SIS package"
 msgstr "חבילת SIS"
 
-#: data/freedesktop.org.xml.in:1303
+#: data/freedesktop.org.xml.in:1308
 msgid "SISX package"
 msgstr "חבילת SISX"
 
-#: data/freedesktop.org.xml.in:1313
+#: data/freedesktop.org.xml.in:1318
 msgid "network packet capture"
-msgstr ""
+msgstr "לכידת מנות מהרשת"
 
-#: data/freedesktop.org.xml.in:1325
+#: data/freedesktop.org.xml.in:1330
 msgid "WordPerfect document"
 msgstr "מסמך WordPerfect"
 
-#: data/freedesktop.org.xml.in:1341
+#: data/freedesktop.org.xml.in:1346
 msgid "YouTube media archive"
-msgstr ""
+msgstr "ארכיון מדיה של YouTube"
 
-#: data/freedesktop.org.xml.in:1347
+#: data/freedesktop.org.xml.in:1352
 msgid "SPSS portable data file"
-msgstr ""
+msgstr "קובץ נתונים נייד של SPSS"
 
-#: data/freedesktop.org.xml.in:1356
+#: data/freedesktop.org.xml.in:1361
 msgid "SPSS data file"
-msgstr ""
+msgstr "קובץ נתונים של SPSS"
 
-#: data/freedesktop.org.xml.in:1368
+#: data/freedesktop.org.xml.in:1373
 msgid "XBEL bookmarks"
 msgstr "סימניית XBEL"
 
-#: data/freedesktop.org.xml.in:1379
+#: data/freedesktop.org.xml.in:1384
 msgid "7-zip archive"
 msgstr "ארכיון 7-zip"
 
-#: data/freedesktop.org.xml.in:1387
+#: data/freedesktop.org.xml.in:1392
 msgid "AbiWord document"
 msgstr "מסמך AbiWord"
 
-#: data/freedesktop.org.xml.in:1401
+#: data/freedesktop.org.xml.in:1406
 msgid "CD image cuesheet"
-msgstr "גליון נתונים לתמונת דיסק"
+msgstr "גיליון נתונים לדמות תקליטור"
 
-#: data/freedesktop.org.xml.in:1407
+#: data/freedesktop.org.xml.in:1412
 msgid "Lotus AmiPro document"
 msgstr "מסמך של Lotus AmiPro"
 
-#: data/freedesktop.org.xml.in:1412
+#: data/freedesktop.org.xml.in:1417
 msgid "AportisDoc document"
 msgstr "מסמך AportisDoc"
 
-#: data/freedesktop.org.xml.in:1423
+#: data/freedesktop.org.xml.in:1428
 msgid "Applix Spreadsheets spreadsheet"
-msgstr "גליון נתונים של Applix Spreadsheets"
+msgstr "גיליון נתונים של Applix Spreadsheets"
 
-#: data/freedesktop.org.xml.in:1434
+#: data/freedesktop.org.xml.in:1439
 msgid "Applix Words document"
 msgstr "מסמך של Applix Words"
 
-#: data/freedesktop.org.xml.in:1444
+#: data/freedesktop.org.xml.in:1449
 msgid "ARC archive"
 msgstr "ארכיון ARC"
 
-#: data/freedesktop.org.xml.in:1456
+#: data/freedesktop.org.xml.in:1461
 msgid "AR archive"
 msgstr "ארכיון AR"
 
-#: data/freedesktop.org.xml.in:1466
+#: data/freedesktop.org.xml.in:1471
 msgid "ARJ archive"
 msgstr "ארכיון ARJ"
 
-#: data/freedesktop.org.xml.in:1476
+#: data/freedesktop.org.xml.in:1481
 msgid "ASP page"
 msgstr "עמוד ASP"
 
-#: data/freedesktop.org.xml.in:1484
+#: data/freedesktop.org.xml.in:1489
 msgid "AWK script"
 msgstr "תסריט AWK"
 
-#: data/freedesktop.org.xml.in:1503
+#: data/freedesktop.org.xml.in:1508
 msgid "BCPIO document"
 msgstr "מסמך של BCPO"
 
-#: data/freedesktop.org.xml.in:1510
+#: data/freedesktop.org.xml.in:1515
 msgid "BitTorrent seed file"
 msgstr "קובץ זריעה של BitTorrent"
 
-#: data/freedesktop.org.xml.in:1517
+#: data/freedesktop.org.xml.in:1522
 msgid "Blender scene"
 msgstr "סצנת Blender"
 
-#: data/freedesktop.org.xml.in:1527
+#: data/freedesktop.org.xml.in:1532
 msgid "TeX DVI document (bzip-compressed)"
 msgstr "מסמך מסוג TeX DVI (מכווץ ע״י bzip)"
 
-#: data/freedesktop.org.xml.in:1533
+#: data/freedesktop.org.xml.in:1538
 msgid "Bzip archive"
 msgstr "ארכיון Bzip"
 
-#: data/freedesktop.org.xml.in:1544
+#: data/freedesktop.org.xml.in:1549
 msgid "Tar archive (bzip-compressed)"
 msgstr "ארכיון Tar (מכווץ ע״י bzip)"
 
-#: data/freedesktop.org.xml.in:1554
+#: data/freedesktop.org.xml.in:1559
 msgid "PDF document (bzip-compressed)"
 msgstr "מסמך PDF (מכווץ ע״י bzip)"
 
-#: data/freedesktop.org.xml.in:1560
+#: data/freedesktop.org.xml.in:1565
 msgid "PostScript document (bzip-compressed)"
 msgstr "מסמך PostDcript (מכווץ ע״י bzip)"
 
-#: data/freedesktop.org.xml.in:1566 data/freedesktop.org.xml.in:1573
-#: data/freedesktop.org.xml.in:1579 data/freedesktop.org.xml.in:1585
+#: data/freedesktop.org.xml.in:1571 data/freedesktop.org.xml.in:1578
+#: data/freedesktop.org.xml.in:1584 data/freedesktop.org.xml.in:1590
 msgid "comic book archive"
-msgstr "ארכיון ספר קומי"
+msgstr "ארכיון ספר קומיקס"
 
-#: data/freedesktop.org.xml.in:1592
+#: data/freedesktop.org.xml.in:1597
 msgid "Lrzip archive"
 msgstr "ארכיון Lrzip"
 
-#: data/freedesktop.org.xml.in:1600
+#: data/freedesktop.org.xml.in:1605
 msgid "Tar archive (lrzip-compressed)"
 msgstr "ארכיון Tar (מכווץ ע״י lrzip)"
 
-#: data/freedesktop.org.xml.in:1607
+#: data/freedesktop.org.xml.in:1612
 msgid "Apple disk image"
 msgstr "תמונת כונן Apple"
 
-#: data/freedesktop.org.xml.in:1611
+#: data/freedesktop.org.xml.in:1616
 msgid "Raw disk image"
 msgstr "דמות גולמית של כונן"
 
-#: data/freedesktop.org.xml.in:1616
+#: data/freedesktop.org.xml.in:1621
 msgid "Floppy disk image"
-msgstr ""
+msgstr "דמות תקליטון"
 
-#: data/freedesktop.org.xml.in:1623
+#: data/freedesktop.org.xml.in:1628
 msgid "Raw disk image (XZ-compressed)"
 msgstr "דמות גולמית של כונן (בדחיסת XZ)"
 
-#: data/freedesktop.org.xml.in:1629
+#: data/freedesktop.org.xml.in:1634
 msgid "raw CD image"
 msgstr "תמונת דיסק גולמית"
 
-#: data/freedesktop.org.xml.in:1637
+#: data/freedesktop.org.xml.in:1642
 msgid "Compressed CD image"
-msgstr ""
+msgstr "דמות תקליטור דחוסה"
 
-#: data/freedesktop.org.xml.in:1644 data/freedesktop.org.xml.in:7335
+#: data/freedesktop.org.xml.in:1649 data/freedesktop.org.xml.in:7353
 msgid "AppImage application bundle"
 msgstr "חבילת יישומי AppImage"
 
-#: data/freedesktop.org.xml.in:1660
+#: data/freedesktop.org.xml.in:1665
 msgid "CD Table Of Contents"
 msgstr "תוכן עניינים של דיסק"
 
-#: data/freedesktop.org.xml.in:1675
+#: data/freedesktop.org.xml.in:1680
 msgid "GD-ROM image cuesheet"
-msgstr ""
+msgstr "גיליון cue של דמות GD-ROM"
 
-#: data/freedesktop.org.xml.in:1685
+#: data/freedesktop.org.xml.in:1690
 msgid "Padus DiscJuggler CD image"
-msgstr ""
+msgstr "תמונת תקליטור Padus DiscJuggler"
 
-#: data/freedesktop.org.xml.in:1689
+#: data/freedesktop.org.xml.in:1694
 msgid "PGN chess game notation"
 msgstr "סימון משחק שח PGN"
 
-#: data/freedesktop.org.xml.in:1701
+#: data/freedesktop.org.xml.in:1706
 msgid "CHM document"
 msgstr "מסמך CHM"
 
-#: data/freedesktop.org.xml.in:1709
+#: data/freedesktop.org.xml.in:1714
 msgid "Java byte code"
 msgstr "קוד Java byte"
 
-#: data/freedesktop.org.xml.in:1712
+#: data/freedesktop.org.xml.in:1717
 msgid "UNIX-compressed file"
 msgstr "קובץ בכיווץ UNIX"
 
-#: data/freedesktop.org.xml.in:1720
+#: data/freedesktop.org.xml.in:1725
 msgid "Tar archive (gzip-compressed)"
 msgstr "ארכיון Tar (מכווץ ע״י gzip)"
 
-#: data/freedesktop.org.xml.in:1727
+#: data/freedesktop.org.xml.in:1732
 msgid "program crash data"
 msgstr "מידע מקריסת תכנית"
 
-#: data/freedesktop.org.xml.in:1746
+#: data/freedesktop.org.xml.in:1751
 msgid "CPIO archive"
 msgstr "ארכיון CPIO"
 
-#: data/freedesktop.org.xml.in:1757
+#: data/freedesktop.org.xml.in:1762
 msgid "CPIO archive (gzip-compressed)"
 msgstr "ארכיון CPIO (מכווץ ע״י gzip)"
 
-#: data/freedesktop.org.xml.in:1763
+#: data/freedesktop.org.xml.in:1768
 msgid "C shell script"
 msgstr "תסריט מעטפת C"
 
-#: data/freedesktop.org.xml.in:1776
+#: data/freedesktop.org.xml.in:1781
 msgid "Xbase document"
 msgstr "מסמך Xbase"
 
-#: data/freedesktop.org.xml.in:1784
+#: data/freedesktop.org.xml.in:1789
 msgid "ECMAScript program"
 msgstr "תכנית EMCAScript"
 
-#: data/freedesktop.org.xml.in:1792
+#: data/freedesktop.org.xml.in:1797
 msgid "MAME compressed hard disk image"
-msgstr ""
+msgstr "דמות כונן קשיח בדחיסת MAME"
 
 #. Translate this to Mega-CD if the console was known as such in your locale
 #. Should be Mega-CD in all but en_US, Mexico, Canada and Brazil:
 #. https://en.wikipedia.org/wiki/Sega_CD
-#: data/freedesktop.org.xml.in:1802
+#: data/freedesktop.org.xml.in:1807
 msgid "Sega CD disc image"
 msgstr "דמות כונן Sega CD"
 
@@ -710,219 +715,219 @@ msgstr "דמות כונן Sega CD"
 #. your locale
 #. Should be Sega Pico in all but Japan:
 #. https://en.wikipedia.org/wiki/Sega_Pico
-#: data/freedesktop.org.xml.in:1818
+#: data/freedesktop.org.xml.in:1823
 msgid "Sega Pico ROM"
-msgstr ""
+msgstr "ROM של Sega Pico"
 
-#: data/freedesktop.org.xml.in:1825
+#: data/freedesktop.org.xml.in:1831
 msgid "Sega Saturn disc image"
 msgstr "דמות כונן Sega Saturn"
 
-#: data/freedesktop.org.xml.in:1834
+#: data/freedesktop.org.xml.in:1840
 msgid "Dreamcast disc image"
-msgstr ""
+msgstr "דמות כונן Dreamcast"
 
-#: data/freedesktop.org.xml.in:1841
+#: data/freedesktop.org.xml.in:1848
 msgid "Nintendo DS ROM"
 msgstr "ROM של Nintendo"
 
-#: data/freedesktop.org.xml.in:1846
+#: data/freedesktop.org.xml.in:1853
 msgid "Nintendo 3DS ROM"
-msgstr ""
+msgstr "ROM של Nintendo 3DS"
 
-#: data/freedesktop.org.xml.in:1855
+#: data/freedesktop.org.xml.in:1862
 msgid "Nintendo 3DS Executable"
-msgstr ""
+msgstr "קובץ הפעלה של Nintendo 3DS"
 
-#: data/freedesktop.org.xml.in:1863
+#: data/freedesktop.org.xml.in:1870
 msgid "PC Engine ROM"
 msgstr "ROM של PC Engine"
 
-#: data/freedesktop.org.xml.in:1868
+#: data/freedesktop.org.xml.in:1875
 msgid "Wii disc image"
 msgstr "דמות כונן Wii"
 
-#: data/freedesktop.org.xml.in:1881
+#: data/freedesktop.org.xml.in:1888
 msgid "WiiWare bundle"
 msgstr "מאגד WiiWare"
 
-#: data/freedesktop.org.xml.in:1891
+#: data/freedesktop.org.xml.in:1898
 msgid "GameCube disc image"
 msgstr "דמות כונן GameCube"
 
-#: data/freedesktop.org.xml.in:1900
+#: data/freedesktop.org.xml.in:1907
 msgid "Thomson Mémo7 cartridge"
-msgstr ""
+msgstr "קלטת Thomson Mémo7"
 
-#: data/freedesktop.org.xml.in:1905
+#: data/freedesktop.org.xml.in:1912
 msgid "Thomson cassette"
-msgstr ""
+msgstr "קלטת Thomson"
 
-#: data/freedesktop.org.xml.in:1910
+#: data/freedesktop.org.xml.in:1917
 msgid "HFE floppy disk image"
-msgstr ""
+msgstr "דמות כונן תקליטון מסוג HPE"
 
-#: data/freedesktop.org.xml.in:1921
+#: data/freedesktop.org.xml.in:1928
 msgid "SAP Thomson floppy disk image"
-msgstr ""
+msgstr "דמות כונן תקליטון מסוג SAP Thomson"
 
-#: data/freedesktop.org.xml.in:1932
+#: data/freedesktop.org.xml.in:1939
 msgid "Debian package"
-msgstr "חבילת דביאן"
+msgstr "חבילת Debian"
 
-#: data/freedesktop.org.xml.in:1945
+#: data/freedesktop.org.xml.in:1952
 msgid "Qt Designer interface document"
-msgstr ""
+msgstr "מסמך מנשק של Qt Designer"
 
-#: data/freedesktop.org.xml.in:1955
+#: data/freedesktop.org.xml.in:1962
 msgid "Kaitai Struct definition file"
-msgstr ""
+msgstr "קובץ הגדרת Kaitai Struct"
 
-#: data/freedesktop.org.xml.in:1960
+#: data/freedesktop.org.xml.in:1967
 msgid "Qt Markup Language file"
 msgstr "קובץ שפת סימון של Qt"
 
-#: data/freedesktop.org.xml.in:1975
+#: data/freedesktop.org.xml.in:1982
 msgid "desktop configuration file"
 msgstr "קובץ הגדרות שולחן עבודה"
 
-#: data/freedesktop.org.xml.in:1990
+#: data/freedesktop.org.xml.in:1997
 msgid "FictionBook document"
 msgstr "מסמך FictionBook"
 
-#: data/freedesktop.org.xml.in:2000
+#: data/freedesktop.org.xml.in:2007
 msgid "Compressed FictionBook document"
 msgstr "מסמך FictionBook מכווץ"
 
-#: data/freedesktop.org.xml.in:2011
+#: data/freedesktop.org.xml.in:2018
 msgid "Dia diagram"
 msgstr "גרף של Dia"
 
-#: data/freedesktop.org.xml.in:2021
+#: data/freedesktop.org.xml.in:2028
 msgid "Dia shape"
 msgstr "צורה של Dia"
 
-#: data/freedesktop.org.xml.in:2031
+#: data/freedesktop.org.xml.in:2038
 msgid "TeX DVI document"
 msgstr "מסמך מסוג TeX DVI"
 
-#: data/freedesktop.org.xml.in:2041
+#: data/freedesktop.org.xml.in:2048
 msgid "Enlightenment theme"
 msgstr "ערכת נושא של Enlightenment"
 
-#: data/freedesktop.org.xml.in:2045
+#: data/freedesktop.org.xml.in:2052
 msgid "Egon Animator animation"
 msgstr "אנימצייה של Egon Animator"
 
-#: data/freedesktop.org.xml.in:2050
+#: data/freedesktop.org.xml.in:2057
 msgid "executable"
 msgstr "קובץ הרצה"
 
-#: data/freedesktop.org.xml.in:2067
+#: data/freedesktop.org.xml.in:2074
 msgid "FLTK Fluid file"
 msgstr "קובץ FLTK Fluid"
 
-#: data/freedesktop.org.xml.in:2078
+#: data/freedesktop.org.xml.in:2085
 msgid "WOFF font"
 msgstr "גופן WOFF"
 
-#: data/freedesktop.org.xml.in:2089
+#: data/freedesktop.org.xml.in:2096
 msgid "WOFF2 font"
-msgstr ""
+msgstr "גופן WOFF2"
 
-#: data/freedesktop.org.xml.in:2099
+#: data/freedesktop.org.xml.in:2106
 msgid "PostScript type-1 font"
-msgstr ""
+msgstr "גופן PostScript type-1"
 
-#: data/freedesktop.org.xml.in:2115
+#: data/freedesktop.org.xml.in:2122
 msgid "Adobe font metrics"
 msgstr "מדדי גופן של Adobe"
 
-#: data/freedesktop.org.xml.in:2120
+#: data/freedesktop.org.xml.in:2127
 msgid "BDF font"
 msgstr "גופן BDF"
 
-#: data/freedesktop.org.xml.in:2128
+#: data/freedesktop.org.xml.in:2135
 msgid "DOS font"
 msgstr "גופן DOS"
 
-#: data/freedesktop.org.xml.in:2137
+#: data/freedesktop.org.xml.in:2144
 msgid "Adobe FrameMaker font"
 msgstr "גופן של Adobe FrameMaker"
 
-#: data/freedesktop.org.xml.in:2144
+#: data/freedesktop.org.xml.in:2151
 msgid "LIBGRX font"
 msgstr "גופן LIBGRX"
 
-#: data/freedesktop.org.xml.in:2151
+#: data/freedesktop.org.xml.in:2158
 msgid "Linux PSF console font"
 msgstr "גופן לקונסול מסוג Linux PSF"
 
-#: data/freedesktop.org.xml.in:2159
+#: data/freedesktop.org.xml.in:2166
 msgid "Linux PSF console font (gzip-compressed)"
 msgstr "גופן למסוף מסוג Linux PSF (מכווץ ע״י gzip)"
 
-#: data/freedesktop.org.xml.in:2165
+#: data/freedesktop.org.xml.in:2172
 msgid "PCF font"
 msgstr "גופן PCF"
 
-#: data/freedesktop.org.xml.in:2175
+#: data/freedesktop.org.xml.in:2182
 msgid "OpenType font"
 msgstr "גופן של OpenType"
 
-#: data/freedesktop.org.xml.in:2185
+#: data/freedesktop.org.xml.in:2192
 msgid "Speedo font"
 msgstr "גופן של Speedo"
 
-#: data/freedesktop.org.xml.in:2193
+#: data/freedesktop.org.xml.in:2200
 msgid "SunOS News font"
 msgstr "גופן של SunOS News"
 
-#: data/freedesktop.org.xml.in:2202
+#: data/freedesktop.org.xml.in:2209
 msgid "TeX font"
 msgstr "גופן TeX"
 
-#: data/freedesktop.org.xml.in:2211
+#: data/freedesktop.org.xml.in:2218
 msgid "TeX font metrics"
 msgstr "ממדי גופן של TeX"
 
-#: data/freedesktop.org.xml.in:2219
+#: data/freedesktop.org.xml.in:2226
 msgid "TrueType font"
 msgstr "גופן מסוג TrueType"
 
-#: data/freedesktop.org.xml.in:2230
+#: data/freedesktop.org.xml.in:2237
 msgid "Font collection"
-msgstr ""
+msgstr "אוסף גופנים"
 
-#: data/freedesktop.org.xml.in:2235
+#: data/freedesktop.org.xml.in:2242
 msgid "TrueType XML font"
 msgstr "גופן XML מסוג TrueType"
 
-#: data/freedesktop.org.xml.in:2244
+#: data/freedesktop.org.xml.in:2251
 msgid "V font"
 msgstr "גופן של V"
 
-#: data/freedesktop.org.xml.in:2251
+#: data/freedesktop.org.xml.in:2258
 msgid "Adobe FrameMaker document"
 msgstr "מסמך Adobe FrameMaker"
 
-#: data/freedesktop.org.xml.in:2266
+#: data/freedesktop.org.xml.in:2273
 msgid "Game Boy ROM"
 msgstr "ROM של Game Boy"
 
-#: data/freedesktop.org.xml.in:2277
+#: data/freedesktop.org.xml.in:2284
 msgid "Game Boy Color ROM"
 msgstr "ROM של Game Boy Color"
 
-#: data/freedesktop.org.xml.in:2288
+#: data/freedesktop.org.xml.in:2295
 msgid "Game Boy Advance ROM"
 msgstr "ROM של Game Boy Advance"
 
-#: data/freedesktop.org.xml.in:2294
+#: data/freedesktop.org.xml.in:2301
 msgid "Virtual Boy ROM"
-msgstr ""
+msgstr "ROM של Virtual Boy"
 
-#: data/freedesktop.org.xml.in:2299
+#: data/freedesktop.org.xml.in:2306
 msgid "GDBM database"
 msgstr "מסד נתונים GDBM"
 
@@ -930,7 +935,7 @@ msgstr "מסד נתונים GDBM"
 #. locale
 #. Should be Mega Drive in all but en_US, Mexico and Canada:
 #. https://en.wikipedia.org/wiki/Sega_Genesis#History
-#: data/freedesktop.org.xml.in:2311
+#: data/freedesktop.org.xml.in:2318
 msgid "Genesis ROM"
 msgstr "ROM מסוג Genesis"
 
@@ -938,2318 +943,2318 @@ msgstr "ROM מסוג Genesis"
 #. known as such in your locale
 #. Should be Super 32X in Japan, Mega Drive 32X in PAL region and Mega 32X in
 #. Brazil: https://en.wikipedia.org/wiki/32X
-#: data/freedesktop.org.xml.in:2327
+#: data/freedesktop.org.xml.in:2334
 msgid "Genesis 32X ROM"
 msgstr "ROM מסוג Genesis 32X"
 
-#: data/freedesktop.org.xml.in:2336
+#: data/freedesktop.org.xml.in:2343
 msgid "translated messages (machine-readable)"
 msgstr "הודעות מתורגמות (מובן ע״י מכונה)"
 
-#: data/freedesktop.org.xml.in:2345
+#: data/freedesktop.org.xml.in:2352
 msgid "GTK+ Builder interface document"
-msgstr ""
+msgstr "מסמך מנשק של GTK+ Builder"
 
-#: data/freedesktop.org.xml.in:2354
+#: data/freedesktop.org.xml.in:2361
 msgid "Glade project"
 msgstr "מיזם Glade"
 
-#: data/freedesktop.org.xml.in:2363
+#: data/freedesktop.org.xml.in:2370
 msgid "GnuCash financial data"
 msgstr "מידע כלכלי של GnuCash"
 
-#: data/freedesktop.org.xml.in:2370
+#: data/freedesktop.org.xml.in:2377
 msgid "Gnumeric spreadsheet"
-msgstr "גליון עבודה Gnumeric"
+msgstr "גיליון עבודה של Gnumeric"
 
-#: data/freedesktop.org.xml.in:2379
+#: data/freedesktop.org.xml.in:2386
 msgid "Gnuplot document"
 msgstr "מסמך Gnuplot"
 
-#: data/freedesktop.org.xml.in:2387
+#: data/freedesktop.org.xml.in:2394
 msgid "Graphite scientific graph"
 msgstr "תרשים מדעי של Graphite"
 
-#: data/freedesktop.org.xml.in:2392
+#: data/freedesktop.org.xml.in:2399
 msgid "GTKtalog catalog"
 msgstr "קטלוג GTKtalog"
 
-#: data/freedesktop.org.xml.in:2399
+#: data/freedesktop.org.xml.in:2406
 msgid "TeX DVI document (gzip-compressed)"
 msgstr "מסמך מסוג TeX DVI (מכווץ ע״י gzip)"
 
-#: data/freedesktop.org.xml.in:2405
+#: data/freedesktop.org.xml.in:2412
 msgid "Gzip archive"
 msgstr "ארכיון Gzip"
 
-#: data/freedesktop.org.xml.in:2414
+#: data/freedesktop.org.xml.in:2421
 msgid "PDF document (gzip-compressed)"
 msgstr "מסמך PDF (מכווץ ע״י gzip)"
 
-#: data/freedesktop.org.xml.in:2420
+#: data/freedesktop.org.xml.in:2427
 msgid "PostScript document (gzip-compressed)"
 msgstr "מסמך PostScript (מכוות ע״י gzip)"
 
-#: data/freedesktop.org.xml.in:2426
+#: data/freedesktop.org.xml.in:2433
 msgid "HDF document"
 msgstr "מסמך HDF"
 
-#: data/freedesktop.org.xml.in:2441
+#: data/freedesktop.org.xml.in:2448
 msgid "IFF file"
 msgstr "קובץ IFF"
 
-#: data/freedesktop.org.xml.in:2449
+#: data/freedesktop.org.xml.in:2456
 msgid "iPod firmware"
 msgstr "קושחת ipod"
 
-#: data/freedesktop.org.xml.in:2455
+#: data/freedesktop.org.xml.in:2462
 msgid "Java archive"
 msgstr "ארכיון Java"
 
-#: data/freedesktop.org.xml.in:2463
+#: data/freedesktop.org.xml.in:2470
 msgid "Java class"
 msgstr "מחלקת Java"
 
-#: data/freedesktop.org.xml.in:2475
+#: data/freedesktop.org.xml.in:2482
 msgid "Groovy source code"
-msgstr ""
+msgstr "קוד מקור ב־Groovy"
 
-#: data/freedesktop.org.xml.in:2484
+#: data/freedesktop.org.xml.in:2491
 msgid "Gradle scripts"
-msgstr ""
+msgstr "סקריפטים ב־Gradle"
 
-#: data/freedesktop.org.xml.in:2489
+#: data/freedesktop.org.xml.in:2496
 msgid "JNLP file"
 msgstr "קובץ JNLP"
 
-#: data/freedesktop.org.xml.in:2500
+#: data/freedesktop.org.xml.in:2507
 msgid "Java keystore"
 msgstr "אחסון מפתחות של Java"
 
-#: data/freedesktop.org.xml.in:2509
+#: data/freedesktop.org.xml.in:2516
 msgid "Java JCE keystore"
 msgstr "אחסון מפתחות של Java JCE"
 
-#: data/freedesktop.org.xml.in:2518
+#: data/freedesktop.org.xml.in:2525
 msgid "Pack200 Java archive"
 msgstr "ארכיון מסוג Pack200 Java"
 
-#: data/freedesktop.org.xml.in:2526
+#: data/freedesktop.org.xml.in:2533
 msgid "JavaScript program"
 msgstr "תכנית JavaScript"
 
-#: data/freedesktop.org.xml.in:2548
+#: data/freedesktop.org.xml.in:2555
 msgid "JSON document"
 msgstr "מסמך JSON"
 
-#: data/freedesktop.org.xml.in:2556
+#: data/freedesktop.org.xml.in:2563
 msgid "JRD document"
 msgstr "מסמך JRD"
 
-#: data/freedesktop.org.xml.in:2564
+#: data/freedesktop.org.xml.in:2571
 msgid "JSON patch"
 msgstr "טלאי JSON"
 
-#: data/freedesktop.org.xml.in:2572
+#: data/freedesktop.org.xml.in:2579
 msgid "JSON-LD document"
 msgstr "מסמך JSON-LD"
 
-#: data/freedesktop.org.xml.in:2580
+#: data/freedesktop.org.xml.in:2587
 msgid "Jupyter notebook document"
-msgstr ""
+msgstr "מסמך מחברת של Jupyter"
 
-#: data/freedesktop.org.xml.in:2591
+#: data/freedesktop.org.xml.in:2598
 msgid "CoffeeScript document"
 msgstr "מסמך CoffeeScript"
 
-#: data/freedesktop.org.xml.in:2597
+#: data/freedesktop.org.xml.in:2604
 msgid "JBuilder project"
 msgstr "מיזם JBuilder"
 
-#: data/freedesktop.org.xml.in:2603
+#: data/freedesktop.org.xml.in:2610
 msgid "Karbon14 drawing"
 msgstr "ציור Karbon14"
 
-#: data/freedesktop.org.xml.in:2620
+#: data/freedesktop.org.xml.in:2627
 msgid "KChart chart"
 msgstr "תרשים KChart"
 
-#: data/freedesktop.org.xml.in:2637
+#: data/freedesktop.org.xml.in:2644
 msgid "Kexi settings"
-msgstr ""
+msgstr "הגדרות Kexi"
 
-#: data/freedesktop.org.xml.in:2641
+#: data/freedesktop.org.xml.in:2648
 msgid "Kexi shortcut"
-msgstr ""
+msgstr "קיצור דרך של Kexi"
 
-#: data/freedesktop.org.xml.in:2645 data/freedesktop.org.xml.in:2650
+#: data/freedesktop.org.xml.in:2652 data/freedesktop.org.xml.in:2657
 msgid "Kexi database file"
-msgstr ""
+msgstr "קובץ מסד נתונים של Kexi"
 
-#: data/freedesktop.org.xml.in:2657
+#: data/freedesktop.org.xml.in:2664
 msgid "KFormula formula"
 msgstr "נוסחת KFormula"
 
-#: data/freedesktop.org.xml.in:2674
+#: data/freedesktop.org.xml.in:2681
 msgid "KIllustrator drawing"
 msgstr "ציור KIllustrator"
 
-#: data/freedesktop.org.xml.in:2686
+#: data/freedesktop.org.xml.in:2693
 msgid "Kivio flowchart"
 msgstr "תרשים זרימה של Kivio"
 
-#: data/freedesktop.org.xml.in:2703
+#: data/freedesktop.org.xml.in:2710
 msgid "Kontour drawing"
 msgstr "ציור Kontour"
 
-#: data/freedesktop.org.xml.in:2720
+#: data/freedesktop.org.xml.in:2727
 msgid "KPovModeler scene"
 msgstr "סצנת KPovModeler"
 
-#: data/freedesktop.org.xml.in:2725
+#: data/freedesktop.org.xml.in:2732
 msgid "KPresenter presentation"
 msgstr "מצגת KPresenter"
 
-#: data/freedesktop.org.xml.in:2743
+#: data/freedesktop.org.xml.in:2750
 msgid "Krita document"
 msgstr "מסמך Krita"
 
-#: data/freedesktop.org.xml.in:2760
+#: data/freedesktop.org.xml.in:2767
 msgid "KSpread spreadsheet"
-msgstr "גליון נתונים של Kspread"
-
-#: data/freedesktop.org.xml.in:2777
-msgid "KSpread spreadsheet (encrypted)"
-msgstr "גליון נתונים של KSpread (מוצפן)"
+msgstr "גיליון נתונים של Kspread"
 
 #: data/freedesktop.org.xml.in:2784
+msgid "KSpread spreadsheet (encrypted)"
+msgstr "גיליון נתונים של KSpread (מוצפן)"
+
+#: data/freedesktop.org.xml.in:2791
 msgid "KSysV init package"
 msgstr "חבילת KSysV init"
 
-#: data/freedesktop.org.xml.in:2793
+#: data/freedesktop.org.xml.in:2800
 msgid "Kugar document"
 msgstr "מסמך Kugar"
 
-#: data/freedesktop.org.xml.in:2798
+#: data/freedesktop.org.xml.in:2805
 msgid "KWord document"
 msgstr "מסמך KWord"
 
-#: data/freedesktop.org.xml.in:2816
+#: data/freedesktop.org.xml.in:2823
 msgid "KWord document (encrypted)"
 msgstr "מסמך KWord (מוצפן)"
 
-#: data/freedesktop.org.xml.in:2823
+#: data/freedesktop.org.xml.in:2830
 msgid "LHA archive"
 msgstr "ארכיון LHA"
 
-#: data/freedesktop.org.xml.in:2844
+#: data/freedesktop.org.xml.in:2851
 msgid "LHZ archive"
 msgstr "ארכיון LHZ"
 
-#: data/freedesktop.org.xml.in:2849
+#: data/freedesktop.org.xml.in:2856
 msgid "message catalog"
 msgstr "קטלוג הודעות"
 
-#: data/freedesktop.org.xml.in:2859
+#: data/freedesktop.org.xml.in:2866
 msgid "LyX document"
 msgstr "מסמך Lyx"
 
-#: data/freedesktop.org.xml.in:2869
+#: data/freedesktop.org.xml.in:2876
 msgid "LZ4 archive"
 msgstr "ארכיון LZ4"
 
-#: data/freedesktop.org.xml.in:2878
+#: data/freedesktop.org.xml.in:2885
 msgid "Tar archive (LZ4-compressed)"
 msgstr "ארכיון Tar (מכווץ ע״י LZ4)"
 
-#: data/freedesktop.org.xml.in:2884
+#: data/freedesktop.org.xml.in:2891
 msgid "Lzip archive"
 msgstr "ארכיון Lzip"
 
-#: data/freedesktop.org.xml.in:2892
+#: data/freedesktop.org.xml.in:2899
 msgid "Tar archive (lzip-compressed)"
 msgstr "ארכיון Tar (מכווץ ע״י lzip)"
 
-#: data/freedesktop.org.xml.in:2898
+#: data/freedesktop.org.xml.in:2905
 msgid "PDF document (lzip-compressed)"
-msgstr ""
+msgstr "מסמך PDF (דחוס ב־lzip)"
 
-#: data/freedesktop.org.xml.in:2904
+#: data/freedesktop.org.xml.in:2911
 msgid "LZMA archive"
 msgstr "ארכיון LZMA"
 
-#: data/freedesktop.org.xml.in:2911
+#: data/freedesktop.org.xml.in:2918
 msgid "Tar archive (LZMA-compressed)"
 msgstr "ארכיון Tar (מכווץ ע״י LZMA)"
 
-#: data/freedesktop.org.xml.in:2918
+#: data/freedesktop.org.xml.in:2925
 msgid "LZO archive"
 msgstr "ארכיון LZO"
 
-#: data/freedesktop.org.xml.in:2928
+#: data/freedesktop.org.xml.in:2935
 msgid "Qpress archive"
 msgstr "ארכיון Qpress"
 
-#: data/freedesktop.org.xml.in:2936
+#: data/freedesktop.org.xml.in:2943
 msgid "XAR archive"
 msgstr "ארכיון XAR"
 
-#: data/freedesktop.org.xml.in:2948
+#: data/freedesktop.org.xml.in:2955
 msgid "Zlib archive"
 msgstr "ארכיון Zlib"
 
-#: data/freedesktop.org.xml.in:2953
+#: data/freedesktop.org.xml.in:2960
 msgid "MagicPoint presentation"
 msgstr "מצגת MagicPoint"
 
-#: data/freedesktop.org.xml.in:2959
+#: data/freedesktop.org.xml.in:2966
 msgid "Macintosh MacBinary file"
 msgstr "קובץ בינרי של מקינטוש"
 
-#: data/freedesktop.org.xml.in:2966
+#: data/freedesktop.org.xml.in:2973
 msgid "Matroska stream"
 msgstr "זרימת Matroska"
 
-#: data/freedesktop.org.xml.in:2980
+#: data/freedesktop.org.xml.in:2987
 msgid "Matroska video"
 msgstr "וידאו Matroska"
 
-#: data/freedesktop.org.xml.in:2985
+#: data/freedesktop.org.xml.in:2992
 msgid "Matroska 3D video"
 msgstr "סרטון תלת ממדי מסוג Matroska"
 
-#: data/freedesktop.org.xml.in:2990
+#: data/freedesktop.org.xml.in:2997
 msgid "Matroska audio"
 msgstr "שמע Matroska"
 
-#: data/freedesktop.org.xml.in:2995
+#: data/freedesktop.org.xml.in:3002
 msgid "WebM video"
 msgstr "וידאו WebM"
 
-#: data/freedesktop.org.xml.in:3009
+#: data/freedesktop.org.xml.in:3016
 msgid "WebM audio"
 msgstr "שמע WebM"
 
-#: data/freedesktop.org.xml.in:3013
+#: data/freedesktop.org.xml.in:3020
 msgid "MHTML web archive"
 msgstr "ארכיון רשת MHTML"
 
-#: data/freedesktop.org.xml.in:3021
+#: data/freedesktop.org.xml.in:3028
 msgid "MXF video"
 msgstr "וידאו MXF"
 
-#: data/freedesktop.org.xml.in:3031
+#: data/freedesktop.org.xml.in:3038
 msgid "OCL file"
 msgstr "קובץ OCL"
 
-#: data/freedesktop.org.xml.in:3038
+#: data/freedesktop.org.xml.in:3045
 msgid "COBOL source code"
-msgstr ""
+msgstr "קוד מקור COBOL"
 
-#: data/freedesktop.org.xml.in:3046
+#: data/freedesktop.org.xml.in:3053
 msgid "Mobipocket e-book"
 msgstr "ספר אלקטרוני של Mobipocket"
 
-#: data/freedesktop.org.xml.in:3060
+#: data/freedesktop.org.xml.in:3067
 msgid "Adobe FrameMaker MIF document"
 msgstr "מסמך MIF של Adobe FrameMaker"
 
-#: data/freedesktop.org.xml.in:3064
+#: data/freedesktop.org.xml.in:3071
 msgid "Mozilla bookmarks"
 msgstr "סימניה של Mozilla"
 
-#: data/freedesktop.org.xml.in:3073
+#: data/freedesktop.org.xml.in:3080
 msgid "DOS/Windows executable"
 msgstr "קובץ בר־הרצה של DOS/חלונות"
 
-#: data/freedesktop.org.xml.in:3081
+#: data/freedesktop.org.xml.in:3088
 msgid "Internet shortcut"
 msgstr "קיצור דרך של האינטרנט"
 
-#: data/freedesktop.org.xml.in:3091
+#: data/freedesktop.org.xml.in:3098
 msgid "WRI document"
 msgstr "מסמך WRI"
 
-#: data/freedesktop.org.xml.in:3096
+#: data/freedesktop.org.xml.in:3103
 msgid "MSX ROM"
 msgstr "MSX ROM"
 
-#: data/freedesktop.org.xml.in:3101
+#: data/freedesktop.org.xml.in:3108
 msgid "M4 macro"
 msgstr "מאקרו M4"
 
-#: data/freedesktop.org.xml.in:3107
+#: data/freedesktop.org.xml.in:3114
 msgid "Nintendo64 ROM"
 msgstr "ROM של Nintendo64"
 
-#: data/freedesktop.org.xml.in:3122
+#: data/freedesktop.org.xml.in:3129
 msgid "Nautilus link"
 msgstr "קישור של Nautilus"
 
-#: data/freedesktop.org.xml.in:3130
+#: data/freedesktop.org.xml.in:3137
 msgid "Neo-Geo Pocket ROM"
-msgstr ""
+msgstr "ROM מסוג Neo-Geo Pocket"
 
-#: data/freedesktop.org.xml.in:3141
+#: data/freedesktop.org.xml.in:3148
 msgid "Neo-Geo Pocket Color ROM"
-msgstr ""
+msgstr "ROM של Neo-Geo Pocket"
 
 #. Translate this to Famicom if the console was known as such in your locale
-#: data/freedesktop.org.xml.in:3153
+#: data/freedesktop.org.xml.in:3160
 msgid "NES ROM"
 msgstr "ROM של NES"
 
-#: data/freedesktop.org.xml.in:3161
+#: data/freedesktop.org.xml.in:3168
 msgid "Unidata NetCDF document"
 msgstr "מסמך של Unidata NetCDF"
 
-#: data/freedesktop.org.xml.in:3169
+#: data/freedesktop.org.xml.in:3176
 msgid "NewzBin usenet index"
 msgstr "אינדקס שרתי חדשות NewzBin"
 
-#: data/freedesktop.org.xml.in:3177
+#: data/freedesktop.org.xml.in:3184
 msgid "object code"
 msgstr "קוד אובייקט"
 
-#: data/freedesktop.org.xml.in:3194
+#: data/freedesktop.org.xml.in:3201
 msgid "Annodex exchange format"
 msgstr "תבנית החלפת Annodex"
 
-#: data/freedesktop.org.xml.in:3207
+#: data/freedesktop.org.xml.in:3214
 msgid "Annodex video"
-msgstr ""
+msgstr "סרטון Annodex"
 
-#: data/freedesktop.org.xml.in:3220
+#: data/freedesktop.org.xml.in:3227
 msgid "Annodex audio"
-msgstr ""
+msgstr "שמע Annodex"
 
-#: data/freedesktop.org.xml.in:3233
+#: data/freedesktop.org.xml.in:3240
 msgid "Ogg multimedia file"
 msgstr "קובץ מולטימדיה Ogg"
 
-#: data/freedesktop.org.xml.in:3242
+#: data/freedesktop.org.xml.in:3249
 msgid "Ogg audio"
-msgstr ""
+msgstr "שמע Ogg"
 
-#: data/freedesktop.org.xml.in:3253
+#: data/freedesktop.org.xml.in:3260
 msgid "Ogg video"
-msgstr ""
+msgstr "וידאו Ogg"
 
-#: data/freedesktop.org.xml.in:3263
+#: data/freedesktop.org.xml.in:3270
 msgid "Ogg Vorbis audio"
 msgstr "שמע Ogg Vorbis"
 
-#: data/freedesktop.org.xml.in:3276
+#: data/freedesktop.org.xml.in:3283
 msgid "Ogg FLAC audio"
 msgstr "שמע Ogg FLAC"
 
-#: data/freedesktop.org.xml.in:3291
+#: data/freedesktop.org.xml.in:3298
 msgid "Opus audio"
 msgstr "שמע Opus"
 
-#: data/freedesktop.org.xml.in:3301
+#: data/freedesktop.org.xml.in:3308
 msgid "Ogg Speex audio"
 msgstr "שמע Ogg Speex"
 
-#: data/freedesktop.org.xml.in:3313
+#: data/freedesktop.org.xml.in:3320
 msgid "Speex audio"
 msgstr "שמע של Speex"
 
-#: data/freedesktop.org.xml.in:3320
+#: data/freedesktop.org.xml.in:3327
 msgid "Ogg Theora video"
 msgstr "שמע Ogg Theora"
 
-#: data/freedesktop.org.xml.in:3331
+#: data/freedesktop.org.xml.in:3338
 msgid "OGM video"
 msgstr "וידאו OGM"
 
-#: data/freedesktop.org.xml.in:3344
+#: data/freedesktop.org.xml.in:3351
 msgid "OLE2 compound document storage"
 msgstr "אחסון מסמך משותף OLE2"
 
-#: data/freedesktop.org.xml.in:3352
+#: data/freedesktop.org.xml.in:3359
 msgid "Microsoft Publisher document"
 msgstr "מסמך Microsoft Publisher"
 
-#: data/freedesktop.org.xml.in:3357
+#: data/freedesktop.org.xml.in:3364
 msgid "Windows Installer package"
 msgstr "חבילה של Windows Installer"
 
-#: data/freedesktop.org.xml.in:3362
+#: data/freedesktop.org.xml.in:3369
 msgid "GNU Oleo spreadsheet"
-msgstr "גליון נתונים של GNU Oleo"
+msgstr "גיליון נתונים של GNU Oleo"
 
-#: data/freedesktop.org.xml.in:3370
+#: data/freedesktop.org.xml.in:3377
 msgid "PAK archive"
 msgstr "ארכיון PAK"
 
-#: data/freedesktop.org.xml.in:3378
+#: data/freedesktop.org.xml.in:3385
 msgid "Palm OS database"
 msgstr "מסד נתונים של Palm OS"
 
-#: data/freedesktop.org.xml.in:3386
+#: data/freedesktop.org.xml.in:3393
 msgid "Parchive archive"
 msgstr "ארכיון של Parchive"
 
-#: data/freedesktop.org.xml.in:3397
+#: data/freedesktop.org.xml.in:3404
 msgid "PEF executable"
 msgstr "קובץ הרצה PEF"
 
-#: data/freedesktop.org.xml.in:3404
+#: data/freedesktop.org.xml.in:3411
 msgid "Perl script"
 msgstr "תסריט מעטפת של Perl"
 
-#: data/freedesktop.org.xml.in:3433
+#: data/freedesktop.org.xml.in:3440
 msgid "PHP script"
 msgstr "תסריט מעטפת של PHP"
 
-#: data/freedesktop.org.xml.in:3446
+#: data/freedesktop.org.xml.in:3453
 msgid "PKCS#7 certificate bundle"
 msgstr "בקשה מוסמכת PKCS#7"
 
-#: data/freedesktop.org.xml.in:3453
+#: data/freedesktop.org.xml.in:3460
 msgid "PKCS#12 certificate bundle"
 msgstr "בקשה מוסמכת PKCS#12"
 
-#: data/freedesktop.org.xml.in:3461
+#: data/freedesktop.org.xml.in:3468
 msgid "PlanPerfect spreadsheet"
-msgstr "גליון נתונים של PlanPerfect"
+msgstr "גיליון נתונים של PlanPerfect"
 
-#: data/freedesktop.org.xml.in:3466
+#: data/freedesktop.org.xml.in:3473
 msgid "Pocket Word document"
 msgstr "מסמך של Pocket Word"
 
-#: data/freedesktop.org.xml.in:3474
+#: data/freedesktop.org.xml.in:3481
 msgid "profiler results"
 msgstr "תוצאות מאבחן"
 
-#: data/freedesktop.org.xml.in:3480
+#: data/freedesktop.org.xml.in:3487
 msgid "Pathetic Writer document"
 msgstr "מסמך של Pathetic Writer"
 
-#: data/freedesktop.org.xml.in:3485
+#: data/freedesktop.org.xml.in:3492
 msgid "Python bytecode"
 msgstr "Bytecode של Python"
 
-#: data/freedesktop.org.xml.in:3493
+#: data/freedesktop.org.xml.in:3500
 msgid "QtiPlot document"
 msgstr "מסמך QtiPlot"
 
-#: data/freedesktop.org.xml.in:3503
-msgid "Quattro Pro spreadsheet"
-msgstr "גליון נתונים של Quattro Pro"
-
 #: data/freedesktop.org.xml.in:3510
-msgid "QuickTime playlist"
-msgstr ""
+msgid "Quattro Pro spreadsheet"
+msgstr "גיליון נתונים של Quattro Pro"
 
-#: data/freedesktop.org.xml.in:3525
+#: data/freedesktop.org.xml.in:3517
+msgid "QuickTime playlist"
+msgstr "רשימת השמעה של QuickTime"
+
+#: data/freedesktop.org.xml.in:3532
 msgid "Quicken document"
 msgstr "מסמך של Quicken"
 
-#: data/freedesktop.org.xml.in:3530
+#: data/freedesktop.org.xml.in:3537
 msgid "RAR archive"
 msgstr "ארכיון RAR"
 
-#: data/freedesktop.org.xml.in:3542
+#: data/freedesktop.org.xml.in:3549
 msgid "DAR archive"
 msgstr "ארכיון DAR"
 
-#: data/freedesktop.org.xml.in:3550
+#: data/freedesktop.org.xml.in:3557
 msgid "Alzip archive"
 msgstr "ארכיון Alzip"
 
-#: data/freedesktop.org.xml.in:3558
+#: data/freedesktop.org.xml.in:3565
 msgid "rejected patch"
 msgstr "טלאי שנדחה"
 
-#: data/freedesktop.org.xml.in:3565
+#: data/freedesktop.org.xml.in:3572
 msgid "RPM package"
 msgstr "חבילת RPM"
 
-#: data/freedesktop.org.xml.in:3574
+#: data/freedesktop.org.xml.in:3581
 msgid "Source RPM package"
 msgstr "חבילת מקור RPM"
 
-#: data/freedesktop.org.xml.in:3581
+#: data/freedesktop.org.xml.in:3588
 msgid "Ruby script"
 msgstr "תסריט Ruby"
 
-#: data/freedesktop.org.xml.in:3592
+#: data/freedesktop.org.xml.in:3599
 msgid "Markaby script"
 msgstr "תסריט Markby"
 
-#: data/freedesktop.org.xml.in:3598
+#: data/freedesktop.org.xml.in:3605
 msgid "Rust source code"
 msgstr "קוד מקור של Rust"
 
-#: data/freedesktop.org.xml.in:3603
-msgid "SC/Xspread spreadsheet"
-msgstr "גליון נתונים של SC/Xspread"
-
 #: data/freedesktop.org.xml.in:3610
+msgid "SC/Xspread spreadsheet"
+msgstr "גיליון נתונים של SC/Xspread"
+
+#: data/freedesktop.org.xml.in:3617
 msgid "shell archive"
 msgstr "ארכיון מעטפת"
 
-#: data/freedesktop.org.xml.in:3615
+#: data/freedesktop.org.xml.in:3622
 msgid "libtool shared library"
 msgstr "ספרייה משותפת של libtool"
 
-#: data/freedesktop.org.xml.in:3621
+#: data/freedesktop.org.xml.in:3628
 msgid "shared library"
 msgstr "ספרייה משותפת"
 
-#: data/freedesktop.org.xml.in:3630
+#: data/freedesktop.org.xml.in:3637
 msgid "shell script"
 msgstr "תסריט מעטפת"
 
-#: data/freedesktop.org.xml.in:3651
+#: data/freedesktop.org.xml.in:3658
 msgid "Shockwave Flash file"
 msgstr "קובץ של Shockwave Flash"
 
 #. translators: "Shorten" is the name of an audio codec
-#: data/freedesktop.org.xml.in:3664
+#: data/freedesktop.org.xml.in:3671
 msgid "Shorten audio"
 msgstr "שמע של Shorten"
 
-#: data/freedesktop.org.xml.in:3673
+#: data/freedesktop.org.xml.in:3680
 msgid "Siag spreadsheet"
-msgstr "גליון נתונים של Siag"
+msgstr "גיליון נתונים של Siag"
 
-#: data/freedesktop.org.xml.in:3678
+#: data/freedesktop.org.xml.in:3685
 msgid "Skencil document"
 msgstr "מסמך Skencil"
 
-#: data/freedesktop.org.xml.in:3686
+#: data/freedesktop.org.xml.in:3693
 msgid "Stampede package"
 msgstr "חבילה של Stampede"
 
-#: data/freedesktop.org.xml.in:3690
+#: data/freedesktop.org.xml.in:3697
 msgid "SG-1000 ROM"
-msgstr ""
+msgstr "ROM של SG-1000"
 
 #. Translate this to "Master System/Mark III" if the console was known as such
 #. in your locale (probably only in Japan)
-#: data/freedesktop.org.xml.in:3696
+#: data/freedesktop.org.xml.in:3703
 msgid "Master System ROM"
-msgstr ""
+msgstr "ROM של Master System"
 
-#: data/freedesktop.org.xml.in:3708
+#: data/freedesktop.org.xml.in:3715
 msgid "Game Gear ROM"
-msgstr ""
+msgstr "ROM של Game Gear"
 
 #. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in
 #. Europe) if the console was known as such in your locale
-#: data/freedesktop.org.xml.in:3722
+#: data/freedesktop.org.xml.in:3729
 msgid "Super NES ROM"
 msgstr "ROM של Super NES"
 
-#: data/freedesktop.org.xml.in:3729
+#: data/freedesktop.org.xml.in:3736
 msgid "StuffIt archive"
 msgstr "ארכיון של StuffIt"
 
-#: data/freedesktop.org.xml.in:3740
+#: data/freedesktop.org.xml.in:3747
 msgid "SubRip subtitles"
 msgstr "כתוביות של SubRip"
 
-#: data/freedesktop.org.xml.in:3752
+#: data/freedesktop.org.xml.in:3759
 msgid "WebVTT subtitles"
 msgstr "כתוביות WebVTT"
 
-#: data/freedesktop.org.xml.in:3763
+#: data/freedesktop.org.xml.in:3770
 msgid "SAMI subtitles"
 msgstr "כתוביות SAMI"
 
-#: data/freedesktop.org.xml.in:3775
+#: data/freedesktop.org.xml.in:3782
 msgid "MicroDVD subtitles"
 msgstr "כתוביות של MicroDVD"
 
-#: data/freedesktop.org.xml.in:3785
+#: data/freedesktop.org.xml.in:3792
 msgid "MPSub subtitles"
 msgstr "כתוביות MPSub"
 
-#: data/freedesktop.org.xml.in:3795
+#: data/freedesktop.org.xml.in:3802
 msgid "SSA subtitles"
 msgstr "כתובית SSA"
 
-#: data/freedesktop.org.xml.in:3807
+#: data/freedesktop.org.xml.in:3814
 msgid "SubViewer subtitles"
 msgstr "כתוביות של SubViewer"
 
-#: data/freedesktop.org.xml.in:3815
+#: data/freedesktop.org.xml.in:3822
 msgid "iMelody ringtone"
 msgstr "צלצול של iMelody"
 
-#: data/freedesktop.org.xml.in:3825
+#: data/freedesktop.org.xml.in:3832
 msgid "SMAF audio"
 msgstr "שמע SMAF"
 
-#: data/freedesktop.org.xml.in:3837
+#: data/freedesktop.org.xml.in:3844
 msgid "MRML playlist"
 msgstr "רשימת השמעה MRML"
 
-#: data/freedesktop.org.xml.in:3847
+#: data/freedesktop.org.xml.in:3854
 msgid "XMF audio"
 msgstr "שמע XMF"
 
-#: data/freedesktop.org.xml.in:3859
+#: data/freedesktop.org.xml.in:3866
 msgid "SV4 CPIO archive"
 msgstr "ארכיון של SV4 SPIO"
 
-#: data/freedesktop.org.xml.in:3864
+#: data/freedesktop.org.xml.in:3871
 msgid "SV4 CPIO archive (with CRC)"
 msgstr "ארכיון של SV4 SPIO (עם CRC)"
 
-#: data/freedesktop.org.xml.in:3869
+#: data/freedesktop.org.xml.in:3876
 msgid "Tar archive"
 msgstr "ארכיון Tar"
 
-#: data/freedesktop.org.xml.in:3881
+#: data/freedesktop.org.xml.in:3888
 msgid "Tar archive (compressed)"
 msgstr "ארכיון Tar (מכווץ)"
 
-#: data/freedesktop.org.xml.in:3888
+#: data/freedesktop.org.xml.in:3895
 msgid "generic font file"
 msgstr "קובץ גופן גנרי"
 
-#: data/freedesktop.org.xml.in:3893
+#: data/freedesktop.org.xml.in:3900
 msgid "packed font file"
 msgstr "קובץ גופן ארוז"
 
-#: data/freedesktop.org.xml.in:3898
+#: data/freedesktop.org.xml.in:3905
 msgid "TGIF document"
 msgstr "מסמך TGIF"
 
-#: data/freedesktop.org.xml.in:3906
+#: data/freedesktop.org.xml.in:3913
 msgid "theme"
 msgstr "ערכת נושא"
 
-#: data/freedesktop.org.xml.in:3912
+#: data/freedesktop.org.xml.in:3919
 msgid "ToutDoux document"
 msgstr "מסמך של ToutDoux"
 
-#: data/freedesktop.org.xml.in:3916
+#: data/freedesktop.org.xml.in:3923
 msgid "backup file"
 msgstr "קובץ גיבוי"
 
-#: data/freedesktop.org.xml.in:3924
+#: data/freedesktop.org.xml.in:3931
 msgid "Troff document"
 msgstr "מסמך Troff"
 
-#: data/freedesktop.org.xml.in:3939
+#: data/freedesktop.org.xml.in:3946
 msgid "Manpage manual document"
 msgstr "מסמך תיעוד man"
 
-#: data/freedesktop.org.xml.in:3945
+#: data/freedesktop.org.xml.in:3952
 msgid "manual page (compressed)"
 msgstr "דף עזר (מכווץ)"
 
-#: data/freedesktop.org.xml.in:3949
+#: data/freedesktop.org.xml.in:3956
 msgid "Tar archive (LZO-compressed)"
 msgstr "ארכיון Tar (מכווץ ע״י LZO)"
 
-#: data/freedesktop.org.xml.in:3956
+#: data/freedesktop.org.xml.in:3963
 msgid "XZ archive"
 msgstr "ארכיון XZ"
 
-#: data/freedesktop.org.xml.in:3964
+#: data/freedesktop.org.xml.in:3971
 msgid "Tar archive (XZ-compressed)"
 msgstr "ארכיון Tar (מכווץ ע״י XZ)"
 
-#: data/freedesktop.org.xml.in:3971
+#: data/freedesktop.org.xml.in:3978
 msgid "Zstandard archive"
-msgstr ""
-
-#: data/freedesktop.org.xml.in:3979
-msgid "Tar archive (Zstandard-compressed)"
-msgstr ""
+msgstr "ארכיון Zstandard"
 
 #: data/freedesktop.org.xml.in:3986
+msgid "Tar archive (Zstandard-compressed)"
+msgstr "ארכיון Tar (מכווץ ע״י Zstandard)"
+
+#: data/freedesktop.org.xml.in:3993
 msgid "PDF document (XZ-compressed)"
 msgstr "מסמך PDF (מכווץ ע״י XZ)"
 
-#: data/freedesktop.org.xml.in:3992
+#: data/freedesktop.org.xml.in:3999
 msgid "Ustar archive"
 msgstr "ארכיון Ustar"
 
-#: data/freedesktop.org.xml.in:3997
+#: data/freedesktop.org.xml.in:4004
 msgid "WAIS source code"
 msgstr "קוד מקור של WAIS"
 
-#: data/freedesktop.org.xml.in:4003
+#: data/freedesktop.org.xml.in:4010
 msgid "WordPerfect/Drawperfect image"
 msgstr "תמונה של WordPerfect/Drawperfect"
 
-#: data/freedesktop.org.xml.in:4008
+#: data/freedesktop.org.xml.in:4015
 msgid "Bandai WonderSwan ROM"
-msgstr ""
+msgstr "ROM של Bandai WonderSwan"
 
-#: data/freedesktop.org.xml.in:4013
+#: data/freedesktop.org.xml.in:4020
 msgid "Bandai WonderSwan Color ROM"
-msgstr ""
+msgstr "ROM של Bandai WonderSwan Color"
 
-#: data/freedesktop.org.xml.in:4018
+#: data/freedesktop.org.xml.in:4025
 msgid "DER/PEM/Netscape-encoded X.509 certificate"
 msgstr "אישור מסוג X.509 של DER/PEM/Netscape-encoded"
 
-#: data/freedesktop.org.xml.in:4026
+#: data/freedesktop.org.xml.in:4033
 msgid "empty document"
 msgstr "מסמך ריק"
 
-#: data/freedesktop.org.xml.in:4029
+#: data/freedesktop.org.xml.in:4036
 msgid "Zoo archive"
 msgstr "ארכיון Zoo"
 
-#: data/freedesktop.org.xml.in:4037
+#: data/freedesktop.org.xml.in:4044
 msgid "XHTML page"
 msgstr "דף XHTML"
 
-#: data/freedesktop.org.xml.in:4055
+#: data/freedesktop.org.xml.in:4062
 msgid "Zip archive"
 msgstr "ארכיון Zip"
 
-#: data/freedesktop.org.xml.in:4065
+#: data/freedesktop.org.xml.in:4072
 msgid "WIM disk image"
-msgstr ""
+msgstr "דמות כונן WIM"
 
-#: data/freedesktop.org.xml.in:4075
+#: data/freedesktop.org.xml.in:4082
 msgid "Dolby Digital audio"
 msgstr "שמע Dolby Digital"
 
-#: data/freedesktop.org.xml.in:4082
+#: data/freedesktop.org.xml.in:4089
 msgid "DTS audio"
 msgstr "שמע DTS"
 
-#: data/freedesktop.org.xml.in:4093
+#: data/freedesktop.org.xml.in:4100
 msgid "DTSHD audio"
 msgstr "שמע DTSHD"
 
-#: data/freedesktop.org.xml.in:4102
+#: data/freedesktop.org.xml.in:4109
 msgid "AMR audio"
 msgstr "שמע AMR"
 
-#: data/freedesktop.org.xml.in:4113
+#: data/freedesktop.org.xml.in:4120
 msgid "AMR-WB audio"
 msgstr "שמע AMR-WN"
 
-#: data/freedesktop.org.xml.in:4124
+#: data/freedesktop.org.xml.in:4131
 msgid "ULAW (Sun) audio"
 msgstr "שמע ULAW (של Sun)"
 
-#: data/freedesktop.org.xml.in:4132
+#: data/freedesktop.org.xml.in:4139
 msgid "Commodore 64 audio"
 msgstr "שמע של Commodore 64"
 
-#: data/freedesktop.org.xml.in:4140
+#: data/freedesktop.org.xml.in:4147
 msgid "PCM audio"
 msgstr "שמע PCM"
 
-#: data/freedesktop.org.xml.in:4158
+#: data/freedesktop.org.xml.in:4165
 msgid "AIFC audio"
 msgstr "שמע AIFC"
 
-#: data/freedesktop.org.xml.in:4170
+#: data/freedesktop.org.xml.in:4177
 msgid "AIFF/Amiga/Mac audio"
 msgstr "שמע AIFF/Amiga/Mac"
 
-#: data/freedesktop.org.xml.in:4182
+#: data/freedesktop.org.xml.in:4189
 msgid "Monkey's audio"
 msgstr "שמע של Monkey's"
 
-#: data/freedesktop.org.xml.in:4189
+#: data/freedesktop.org.xml.in:4196
 msgid "Audible.Com audio"
-msgstr ""
-
-#: data/freedesktop.org.xml.in:4198
-msgid "Audible Enhanced audio"
-msgstr ""
+msgstr "שמע של Audible.Com"
 
 #: data/freedesktop.org.xml.in:4205
+msgid "Audible Enhanced audio"
+msgstr "שמע Audible Enhanced"
+
+#: data/freedesktop.org.xml.in:4212
 msgid "Impulse Tracker audio"
 msgstr "שמע של Impulse Tracker"
 
-#: data/freedesktop.org.xml.in:4212
+#: data/freedesktop.org.xml.in:4219
 msgid "FLAC audio"
 msgstr "קובץ שמע מסוג FLAC"
 
-#: data/freedesktop.org.xml.in:4220
+#: data/freedesktop.org.xml.in:4227
 msgid "WavPack audio"
 msgstr "שמע WavPack"
 
-#: data/freedesktop.org.xml.in:4228
+#: data/freedesktop.org.xml.in:4235
 msgid "WavPack audio correction file"
 msgstr "קובץ תיקון שמע של WavPack"
 
-#: data/freedesktop.org.xml.in:4235
+#: data/freedesktop.org.xml.in:4242
 msgid "MIDI audio"
 msgstr "שמע MIDI"
 
-#: data/freedesktop.org.xml.in:4245
+#: data/freedesktop.org.xml.in:4252
 msgid "compressed Tracker audio"
 msgstr "שמע גשש מכווץ"
 
-#: data/freedesktop.org.xml.in:4252
+#: data/freedesktop.org.xml.in:4259
 msgid "AAC audio"
 msgstr "שמע AAC"
 
-#: data/freedesktop.org.xml.in:4265
-msgid "USAC audio"
-msgstr ""
-
 #: data/freedesktop.org.xml.in:4272
+msgid "USAC audio"
+msgstr "שמע USAC"
+
+#: data/freedesktop.org.xml.in:4279
 msgid "MPEG-4 audio"
 msgstr "שמע MPEG-4"
 
-#: data/freedesktop.org.xml.in:4282
+#: data/freedesktop.org.xml.in:4289
 msgid "MPEG-4 ringtone"
-msgstr ""
+msgstr "נעימון MPEG-4"
 
-#: data/freedesktop.org.xml.in:4287
+#: data/freedesktop.org.xml.in:4294
 msgid "MPEG-4 video"
 msgstr "וידאו MPEG-4"
 
-#: data/freedesktop.org.xml.in:4304
+#: data/freedesktop.org.xml.in:4311
 msgid "MPEG-4 audio book"
 msgstr "ספר דיגיטלי MPEG-4"
 
-#: data/freedesktop.org.xml.in:4313
+#: data/freedesktop.org.xml.in:4320
 msgid "3GPP multimedia file"
 msgstr "קובץ מולטימדיה מסוג 3GPP"
 
-#: data/freedesktop.org.xml.in:4336
+#: data/freedesktop.org.xml.in:4343
 msgid "3GPP2 multimedia file"
 msgstr "קובץ מולטימדיה 3GPP2"
 
-#: data/freedesktop.org.xml.in:4348
+#: data/freedesktop.org.xml.in:4355
 msgid "Amiga SoundTracker audio"
 msgstr "קובץ שמע של Amiga SoundTracker"
 
-#: data/freedesktop.org.xml.in:4392
+#: data/freedesktop.org.xml.in:4399
 msgid "MP2 audio"
 msgstr "שמע MP2"
 
-#: data/freedesktop.org.xml.in:4397
+#: data/freedesktop.org.xml.in:4404
 msgid "MP3 audio"
 msgstr "שמע MP3"
 
-#: data/freedesktop.org.xml.in:4410
+#: data/freedesktop.org.xml.in:4417
 msgid "MP3 audio (streamed)"
 msgstr "שמע MP3  (מוזרם)"
 
-#: data/freedesktop.org.xml.in:4425
+#: data/freedesktop.org.xml.in:4432
 msgid "HTTP Live Streaming playlist"
 msgstr "רשימת השמעה הזרימה של HTTP"
 
-#: data/freedesktop.org.xml.in:4437
+#: data/freedesktop.org.xml.in:4444
 msgid "Microsoft ASX playlist"
 msgstr "רשימת השמעה ASX (מיקרוסופט)"
 
-#: data/freedesktop.org.xml.in:4454
+#: data/freedesktop.org.xml.in:4461
 msgid "PSF audio"
 msgstr "שמע PSF"
 
-#: data/freedesktop.org.xml.in:4463
+#: data/freedesktop.org.xml.in:4470
 msgid "MiniPSF audio"
 msgstr "שמע של MiniPSP"
 
-#: data/freedesktop.org.xml.in:4470
+#: data/freedesktop.org.xml.in:4477
 msgid "PSFlib audio library"
 msgstr "ספריית שמע PSFlib"
 
-#: data/freedesktop.org.xml.in:4477
+#: data/freedesktop.org.xml.in:4484
 msgid "Windows Media audio"
 msgstr "שמע של Windows Media"
 
-#: data/freedesktop.org.xml.in:4483
+#: data/freedesktop.org.xml.in:4490
 msgid "Musepack audio"
 msgstr "שמע של Musepack"
 
-#: data/freedesktop.org.xml.in:4493
+#: data/freedesktop.org.xml.in:4500
 msgid "RealAudio document"
 msgstr "מסמך של RealAudio"
 
-#: data/freedesktop.org.xml.in:4500
+#: data/freedesktop.org.xml.in:4507
 msgid "RealMedia playlist"
-msgstr ""
+msgstr "רשימת השמעה של RealMedia"
 
-#: data/freedesktop.org.xml.in:4504
+#: data/freedesktop.org.xml.in:4511
 msgid "RealVideo document"
 msgstr "מסמך של RealVideo"
 
-#: data/freedesktop.org.xml.in:4510
+#: data/freedesktop.org.xml.in:4517
 msgid "RealMedia document"
 msgstr "מסמך של RealMedia"
 
-#: data/freedesktop.org.xml.in:4524
+#: data/freedesktop.org.xml.in:4531
 msgid "RealPix document"
 msgstr "מסמך של RealPix"
 
-#: data/freedesktop.org.xml.in:4528
+#: data/freedesktop.org.xml.in:4535
 msgid "RealText document"
 msgstr "מסמך של RealText"
 
-#: data/freedesktop.org.xml.in:4532
+#: data/freedesktop.org.xml.in:4539
 msgid "RIFF audio"
 msgstr "שמע RIFF"
 
-#: data/freedesktop.org.xml.in:4535
+#: data/freedesktop.org.xml.in:4542
 msgid "RIFF container"
 msgstr "מכולת RIFF"
 
-#: data/freedesktop.org.xml.in:4542
+#: data/freedesktop.org.xml.in:4549
 msgid "Scream Tracker 3 audio"
 msgstr "שמע של Scream Tracker 3"
 
-#: data/freedesktop.org.xml.in:4549
+#: data/freedesktop.org.xml.in:4556
 msgid "MP3 ShoutCast playlist"
 msgstr "רשימת השמעה MP3 של ShoutCast"
 
-#: data/freedesktop.org.xml.in:4560
+#: data/freedesktop.org.xml.in:4567
 msgid "Scream Tracker audio"
 msgstr "שמע של Scream Tracker"
 
-#: data/freedesktop.org.xml.in:4569
+#: data/freedesktop.org.xml.in:4576
 msgid "VOC audio"
 msgstr "שמע VOC"
 
-#: data/freedesktop.org.xml.in:4573
+#: data/freedesktop.org.xml.in:4580
 msgid "WAV audio"
 msgstr "שמע WAV"
 
-#: data/freedesktop.org.xml.in:4583
+#: data/freedesktop.org.xml.in:4590
 msgid "Scream Tracker instrument"
 msgstr "כלי של Scream Tracker"
 
-#: data/freedesktop.org.xml.in:4590
+#: data/freedesktop.org.xml.in:4597
 msgid "FastTracker II audio"
 msgstr "שמע FastTracker II"
 
-#: data/freedesktop.org.xml.in:4597
+#: data/freedesktop.org.xml.in:4604
 msgid "TrueAudio audio"
 msgstr "שמע TrueAudio"
 
-#: data/freedesktop.org.xml.in:4605
+#: data/freedesktop.org.xml.in:4612
 msgid "Windows BMP image"
 msgstr "תמונת BMP של Windows"
 
-#: data/freedesktop.org.xml.in:4620
+#: data/freedesktop.org.xml.in:4627
 msgid "WBMP image"
 msgstr "תמונת WBMP"
 
-#: data/freedesktop.org.xml.in:4626
+#: data/freedesktop.org.xml.in:4633
 msgid "CGM image"
-msgstr ""
+msgstr "תמונת CGM"
 
-#: data/freedesktop.org.xml.in:4632
+#: data/freedesktop.org.xml.in:4639
 msgid "CCITT G3 fax image"
-msgstr ""
+msgstr "תמונת פקס של CCITT G3"
 
-#: data/freedesktop.org.xml.in:4637
+#: data/freedesktop.org.xml.in:4644
 msgid "GIF image"
 msgstr "תמונת GIF"
 
-#: data/freedesktop.org.xml.in:4644
+#: data/freedesktop.org.xml.in:4651
 msgid "HEIF image"
-msgstr ""
+msgstr "תמונת HEIF"
 
-#: data/freedesktop.org.xml.in:4654
+#: data/freedesktop.org.xml.in:4661
 msgid "IEF image"
 msgstr "תמונת IEF"
 
-#: data/freedesktop.org.xml.in:4658
+#: data/freedesktop.org.xml.in:4665
 msgid "JPEG image"
 msgstr "תמונת JPEG"
 
-#: data/freedesktop.org.xml.in:4669
+#: data/freedesktop.org.xml.in:4676
 msgid "MJPEG video stream"
-msgstr ""
+msgstr "תזרים וידאו MJPEG"
 
-#: data/freedesktop.org.xml.in:4677
+#: data/freedesktop.org.xml.in:4684
 msgid "JPEG-2000 codestream"
-msgstr ""
+msgstr "תזרים קוד JPEG-2000"
 
-#: data/freedesktop.org.xml.in:4686
+#: data/freedesktop.org.xml.in:4693
 msgid "JPEG-2000 JP2 image"
-msgstr ""
+msgstr "תמונת JP2 של JPEG-2000"
 
-#: data/freedesktop.org.xml.in:4699
+#: data/freedesktop.org.xml.in:4706
 msgid "JPEG-2000 JPX image"
-msgstr ""
+msgstr "תמונת JPX של JPEG-2000"
 
-#: data/freedesktop.org.xml.in:4709
+#: data/freedesktop.org.xml.in:4716
 msgid "JPEG-2000 JPM image"
-msgstr ""
+msgstr "תמונת JPM של JPEG-2000"
 
-#: data/freedesktop.org.xml.in:4719
+#: data/freedesktop.org.xml.in:4726
 msgid "JPEG-2000 MJ2 video"
-msgstr ""
+msgstr "סרטון MJ2 של JPEG-2000"
 
-#: data/freedesktop.org.xml.in:4729
+#: data/freedesktop.org.xml.in:4736
 msgid "OpenRaster image"
-msgstr ""
+msgstr "תמונת OpenRaster"
 
-#: data/freedesktop.org.xml.in:4741
+#: data/freedesktop.org.xml.in:4748
 msgid "DirectDraw surface"
 msgstr "משטח של DirectDraw"
 
-#: data/freedesktop.org.xml.in:4748
+#: data/freedesktop.org.xml.in:4755
 msgid "X11 cursor"
 msgstr "סמן של X11"
 
-#: data/freedesktop.org.xml.in:4754
+#: data/freedesktop.org.xml.in:4761
 msgid "EXR image"
 msgstr "תמונת EXR"
 
-#: data/freedesktop.org.xml.in:4761
+#: data/freedesktop.org.xml.in:4768
 msgid "Macintosh Quickdraw/PICT drawing"
 msgstr "ציור של Macintosh Quickdraw/PICT"
 
-#: data/freedesktop.org.xml.in:4786
+#: data/freedesktop.org.xml.in:4793
 msgid "UFRaw ID image"
 msgstr "תמונה של UFRaw ID"
 
-#: data/freedesktop.org.xml.in:4794
+#: data/freedesktop.org.xml.in:4801
 msgid "digital raw image"
 msgstr "תמונה דיגטלית גולמית"
 
-#: data/freedesktop.org.xml.in:4797
+#: data/freedesktop.org.xml.in:4804
 msgid "Adobe DNG negative"
 msgstr "תשליל Adobe DNG"
 
-#: data/freedesktop.org.xml.in:4807
+#: data/freedesktop.org.xml.in:4814
 msgid "Canon CRW raw image"
 msgstr "תמונה גולמית של Canon CRW"
 
-#: data/freedesktop.org.xml.in:4818
+#: data/freedesktop.org.xml.in:4825
 msgid "Canon CR2 raw image"
 msgstr "תמונה גולמית של Canon CR2"
 
-#: data/freedesktop.org.xml.in:4826
+#: data/freedesktop.org.xml.in:4833
 msgid "Fuji RAF raw image"
 msgstr "תמונה גולמית של Fuji RAF"
 
-#: data/freedesktop.org.xml.in:4836
+#: data/freedesktop.org.xml.in:4843
 msgid "Kodak DCR raw image"
 msgstr "תמונה גולמית של Kodak DCR"
 
-#: data/freedesktop.org.xml.in:4844
+#: data/freedesktop.org.xml.in:4851
 msgid "Kodak K25 raw image"
 msgstr "תמונה גולמית של Kodak K25"
 
-#: data/freedesktop.org.xml.in:4852
+#: data/freedesktop.org.xml.in:4859
 msgid "Kodak KDC raw image"
 msgstr "תמונה גולמית של Kodak KDC"
 
-#: data/freedesktop.org.xml.in:4863
+#: data/freedesktop.org.xml.in:4870
 msgid "Minolta MRW raw image"
 msgstr "תמונה גולמית של Minolta MRW"
 
-#: data/freedesktop.org.xml.in:4873
+#: data/freedesktop.org.xml.in:4880
 msgid "Nikon NEF raw image"
 msgstr "תמונה גולמית של Nikon NEF"
 
-#: data/freedesktop.org.xml.in:4881
+#: data/freedesktop.org.xml.in:4888
 msgid "Olympus ORF raw image"
 msgstr "תמונה גולמית של Olympus ORF"
 
-#: data/freedesktop.org.xml.in:4896 data/freedesktop.org.xml.in:4906
+#: data/freedesktop.org.xml.in:4903 data/freedesktop.org.xml.in:4913
 msgid "Panasonic raw image"
 msgstr "תמונה גולמית של Panasonic"
 
-#: data/freedesktop.org.xml.in:4916
+#: data/freedesktop.org.xml.in:4923
 msgid "Pentax PEF raw image"
 msgstr "תמונה גולמית של Pentax PEF"
 
-#: data/freedesktop.org.xml.in:4924
+#: data/freedesktop.org.xml.in:4931
 msgid "Sigma X3F raw image"
 msgstr "תמונה גולמית של Sigma X3F"
 
-#: data/freedesktop.org.xml.in:4938
+#: data/freedesktop.org.xml.in:4945
 msgid "Sony SRF raw image"
 msgstr "תמונה גולמית של Sony SRF"
 
-#: data/freedesktop.org.xml.in:4946
+#: data/freedesktop.org.xml.in:4953
 msgid "Sony SR2 raw image"
 msgstr "תמונה גולמית של Sony SR2"
 
-#: data/freedesktop.org.xml.in:4954
+#: data/freedesktop.org.xml.in:4961
 msgid "Sony ARW raw image"
 msgstr "תמונה גולמית של Sony ARW"
 
-#: data/freedesktop.org.xml.in:4962
+#: data/freedesktop.org.xml.in:4969
 msgid "PNG image"
 msgstr "תמונת PNG"
 
-#: data/freedesktop.org.xml.in:4969
+#: data/freedesktop.org.xml.in:4976
 msgid "RLE bitmap image"
-msgstr ""
+msgstr "תמונת מפת סיביות RLE"
 
-#: data/freedesktop.org.xml.in:4975
+#: data/freedesktop.org.xml.in:4982
 msgid "SVG image"
 msgstr "תמונת SVG"
 
-#: data/freedesktop.org.xml.in:4993
+#: data/freedesktop.org.xml.in:5000
 msgid "compressed SVG image"
 msgstr "תמונת SVG מכווצת"
 
-#: data/freedesktop.org.xml.in:5000
+#: data/freedesktop.org.xml.in:5007
 msgid "TIFF image"
 msgstr "תמונת TIFF"
 
-#: data/freedesktop.org.xml.in:5011
+#: data/freedesktop.org.xml.in:5018
 msgid "Multi-page TIFF image"
 msgstr "תמונת TIFF עם ריבוי עמודים"
 
-#: data/freedesktop.org.xml.in:5017
+#: data/freedesktop.org.xml.in:5024
 msgid "AutoCAD image"
 msgstr "תמונה של AutoCAD"
 
-#: data/freedesktop.org.xml.in:5021
+#: data/freedesktop.org.xml.in:5028
 msgid "DXF vector image"
 msgstr "תמונת DXF וקטורית"
 
-#: data/freedesktop.org.xml.in:5029
+#: data/freedesktop.org.xml.in:5036
 msgid "MDI image"
-msgstr ""
+msgstr "תמונת MDI"
 
-#: data/freedesktop.org.xml.in:5038
+#: data/freedesktop.org.xml.in:5045
 msgid "WebP image"
 msgstr "תמונת WebP"
 
-#: data/freedesktop.org.xml.in:5047
+#: data/freedesktop.org.xml.in:5054
 msgid "3D Studio image"
 msgstr "תמונת 3D Studio"
 
-#: data/freedesktop.org.xml.in:5054
+#: data/freedesktop.org.xml.in:5061
 msgid "Applix Graphics image"
 msgstr "תמונה של Applix Graphics"
 
-#: data/freedesktop.org.xml.in:5063
+#: data/freedesktop.org.xml.in:5070
 msgid "EPS image (bzip-compressed)"
 msgstr "תמונת EPS (מכווץ בbzip)"
 
-#: data/freedesktop.org.xml.in:5070
+#: data/freedesktop.org.xml.in:5077
 msgid "CMU raster image"
 msgstr "תמונת סריקה CMU"
 
-#: data/freedesktop.org.xml.in:5074
+#: data/freedesktop.org.xml.in:5081
 msgid "compressed GIMP image"
 msgstr "תמונת GIMP מכווצת"
 
-#: data/freedesktop.org.xml.in:5079
+#: data/freedesktop.org.xml.in:5086
 msgid "DICOM image"
 msgstr "תמונת DICOM"
 
-#: data/freedesktop.org.xml.in:5090
+#: data/freedesktop.org.xml.in:5097
 msgid "DocBook document"
 msgstr "מסמך DocBook"
 
-#: data/freedesktop.org.xml.in:5105
+#: data/freedesktop.org.xml.in:5112
 msgid "DIB image"
 msgstr "תמונת DIB"
 
-#: data/freedesktop.org.xml.in:5113
+#: data/freedesktop.org.xml.in:5120
 msgid "DjVu image"
 msgstr "תמונת DjVu"
 
-#: data/freedesktop.org.xml.in:5128
+#: data/freedesktop.org.xml.in:5135
 msgid "DjVu document"
 msgstr "מסמך DjVu"
 
-#: data/freedesktop.org.xml.in:5143
+#: data/freedesktop.org.xml.in:5150
 msgid "DPX image"
 msgstr "תמונת DPX"
 
-#: data/freedesktop.org.xml.in:5151
+#: data/freedesktop.org.xml.in:5158
 msgid "EPS image"
 msgstr "תמונת EPS"
 
-#: data/freedesktop.org.xml.in:5169
+#: data/freedesktop.org.xml.in:5176
 msgid "FITS document"
 msgstr "מסמך FITS"
 
-#: data/freedesktop.org.xml.in:5179
+#: data/freedesktop.org.xml.in:5186
 msgid "FPX image"
 msgstr "תמונת FPX"
 
-#: data/freedesktop.org.xml.in:5187
+#: data/freedesktop.org.xml.in:5194
 msgid "EPS image (gzip-compressed)"
 msgstr "תמונת EPS (מכווץ ע״י gzip)"
 
-#: data/freedesktop.org.xml.in:5194
+#: data/freedesktop.org.xml.in:5201
 msgid "Windows icon"
 msgstr "סמל של Windows"
 
-#: data/freedesktop.org.xml.in:5209
+#: data/freedesktop.org.xml.in:5216
 msgid "MacOS X icon"
 msgstr "סמל בתקן MacOS X"
 
-#: data/freedesktop.org.xml.in:5216
+#: data/freedesktop.org.xml.in:5223
 msgid "ILBM image"
 msgstr "תמונת ILBM"
 
-#: data/freedesktop.org.xml.in:5230
+#: data/freedesktop.org.xml.in:5237
 msgid "JNG image"
 msgstr "תמונת JNG"
 
-#: data/freedesktop.org.xml.in:5236
+#: data/freedesktop.org.xml.in:5243
 msgid "LightWave object"
 msgstr "עצם LightWave"
 
-#: data/freedesktop.org.xml.in:5241
+#: data/freedesktop.org.xml.in:5248
 msgid "LightWave scene"
 msgstr "סצנה של LightWave"
 
-#: data/freedesktop.org.xml.in:5245
+#: data/freedesktop.org.xml.in:5252
 msgid "MacPaint Bitmap image"
 msgstr "תמונת מפת-סיביות של MacPaint"
 
-#: data/freedesktop.org.xml.in:5249
+#: data/freedesktop.org.xml.in:5256
 msgid "Office drawing"
 msgstr "ציור של Office"
 
-#: data/freedesktop.org.xml.in:5253
+#: data/freedesktop.org.xml.in:5260
 msgid "NIFF image"
 msgstr "תמונת NIFF"
 
-#: data/freedesktop.org.xml.in:5259
+#: data/freedesktop.org.xml.in:5266
 msgid "PCX image"
 msgstr "תמונת PCX"
 
-#: data/freedesktop.org.xml.in:5274
+#: data/freedesktop.org.xml.in:5281
 msgid "PCD image"
 msgstr "תמונת PCD"
 
-#: data/freedesktop.org.xml.in:5280
+#: data/freedesktop.org.xml.in:5287
 msgid "PNM image"
 msgstr "תמונת PNM"
 
-#: data/freedesktop.org.xml.in:5284
+#: data/freedesktop.org.xml.in:5291
 msgid "PBM image"
 msgstr "תמונת PBM"
 
-#: data/freedesktop.org.xml.in:5305
+#: data/freedesktop.org.xml.in:5312
 msgid "PGM image"
 msgstr "תמונת PGM"
 
-#: data/freedesktop.org.xml.in:5326
+#: data/freedesktop.org.xml.in:5333
 msgid "PPM image"
 msgstr "תמונת PPM"
 
-#: data/freedesktop.org.xml.in:5347
+#: data/freedesktop.org.xml.in:5354
 msgid "Photoshop image"
 msgstr "תמונת Photoshop"
 
-#: data/freedesktop.org.xml.in:5360
+#: data/freedesktop.org.xml.in:5367
 msgid "RGB image"
 msgstr "תמונת RGB"
 
-#: data/freedesktop.org.xml.in:5364
+#: data/freedesktop.org.xml.in:5371
 msgid "SGI image"
 msgstr "תמונת SGI"
 
-#: data/freedesktop.org.xml.in:5368
+#: data/freedesktop.org.xml.in:5375
 msgid "Sun raster image"
 msgstr "תמונה סרוקה של Sun"
 
-#: data/freedesktop.org.xml.in:5375
+#: data/freedesktop.org.xml.in:5382
 msgid "TGA image"
 msgstr "תמונת TGA"
 
-#: data/freedesktop.org.xml.in:5401
+#: data/freedesktop.org.xml.in:5408
 msgid "Windows cursor"
 msgstr "סמן של Windows"
 
-#: data/freedesktop.org.xml.in:5410
+#: data/freedesktop.org.xml.in:5417
 msgid "Windows animated cursor"
 msgstr "סמן מונפש של Windows"
 
-#: data/freedesktop.org.xml.in:5419
+#: data/freedesktop.org.xml.in:5426
 msgid "EMF image"
 msgstr "תמונת EMF"
 
-#: data/freedesktop.org.xml.in:5437
+#: data/freedesktop.org.xml.in:5444
 msgid "WMF image"
 msgstr "תמונת WMF"
 
-#: data/freedesktop.org.xml.in:5461
+#: data/freedesktop.org.xml.in:5468
 msgid "XBM image"
 msgstr "תמונת XBM"
 
-#: data/freedesktop.org.xml.in:5467
+#: data/freedesktop.org.xml.in:5474
 msgid "GIMP image"
 msgstr "תמונת GIMP"
 
-#: data/freedesktop.org.xml.in:5475
-msgid "GIMP brush"
-msgstr ""
-
 #: data/freedesktop.org.xml.in:5482
-msgid "GIMP brush pipe"
-msgstr ""
+msgid "GIMP brush"
+msgstr "מברשת GIMP"
 
-#: data/freedesktop.org.xml.in:5486
-msgid "GIMP pattern"
-msgstr ""
+#: data/freedesktop.org.xml.in:5489
+msgid "GIMP brush pipe"
+msgstr "צינורית מברשת GIMP"
 
 #: data/freedesktop.org.xml.in:5493
+msgid "GIMP pattern"
+msgstr "מרקם של GIMP"
+
+#: data/freedesktop.org.xml.in:5500
 msgid "XFig image"
 msgstr "תמונת XFig"
 
-#: data/freedesktop.org.xml.in:5500
+#: data/freedesktop.org.xml.in:5507
 msgid "XPM image"
 msgstr "תמונת XPM"
 
-#: data/freedesktop.org.xml.in:5510
+#: data/freedesktop.org.xml.in:5517
 msgid "X window image"
 msgstr "תמונת חלון של X"
 
-#: data/freedesktop.org.xml.in:5514
+#: data/freedesktop.org.xml.in:5521
 msgid "block device"
 msgstr "התקן בלוק"
 
-#: data/freedesktop.org.xml.in:5517
+#: data/freedesktop.org.xml.in:5524
 msgid "character device"
 msgstr "התקן תכונה"
 
-#: data/freedesktop.org.xml.in:5520
+#: data/freedesktop.org.xml.in:5527
 msgid "folder"
 msgstr "תיקייה"
 
-#: data/freedesktop.org.xml.in:5525
+#: data/freedesktop.org.xml.in:5532
 msgid "pipe"
 msgstr "צינור"
 
-#: data/freedesktop.org.xml.in:5528
+#: data/freedesktop.org.xml.in:5535
 msgid "mount point"
 msgstr "נקודת עיגון"
 
-#: data/freedesktop.org.xml.in:5532
+#: data/freedesktop.org.xml.in:5539
 msgid "socket"
 msgstr "נקודת חיבור"
 
-#: data/freedesktop.org.xml.in:5535
+#: data/freedesktop.org.xml.in:5542
 msgid "symbolic link"
 msgstr "קישור סימבולי"
 
-#: data/freedesktop.org.xml.in:5538
+#: data/freedesktop.org.xml.in:5545
 msgid "mail delivery report"
 msgstr "דוח העברת דואר"
 
-#: data/freedesktop.org.xml.in:5543
+#: data/freedesktop.org.xml.in:5550
 msgid "mail disposition report"
 msgstr "דוח אספקת דואר"
 
-#: data/freedesktop.org.xml.in:5548
+#: data/freedesktop.org.xml.in:5555
 msgid "reference to remote file"
 msgstr "התיחסות לקובץ מרוחק"
 
-#: data/freedesktop.org.xml.in:5552
+#: data/freedesktop.org.xml.in:5559
 msgid "Usenet news message"
 msgstr "הודעת חדשות של Usenet"
 
-#: data/freedesktop.org.xml.in:5562
+#: data/freedesktop.org.xml.in:5569
 msgid "partial email message"
 msgstr "מסר דוא״ל חלקי"
 
-#: data/freedesktop.org.xml.in:5567
+#: data/freedesktop.org.xml.in:5574
 msgid "email message"
 msgstr "הודעת דואר אלקטרוני"
 
-#: data/freedesktop.org.xml.in:5585
+#: data/freedesktop.org.xml.in:5592
 msgid "GNU mail message"
 msgstr "הודעת דואר של GNU"
 
-#: data/freedesktop.org.xml.in:5590
+#: data/freedesktop.org.xml.in:5597
 msgid "IGES document"
 msgstr "מסמך IGES"
 
-#: data/freedesktop.org.xml.in:5603
+#: data/freedesktop.org.xml.in:5610
 msgid "VRML document"
 msgstr "מסמך VRML"
 
-#: data/freedesktop.org.xml.in:5616
+#: data/freedesktop.org.xml.in:5623
 msgid "message in several formats"
 msgstr "הודעה במספר תבניות"
 
-#: data/freedesktop.org.xml.in:5619
+#: data/freedesktop.org.xml.in:5626
 msgid "Macintosh AppleDouble-encoded file"
 msgstr "קובץ מסוג Macintosh AppleDouble-encoded"
 
-#: data/freedesktop.org.xml.in:5622
+#: data/freedesktop.org.xml.in:5629
 msgid "message digest"
 msgstr "תקציר ההודעה"
 
-#: data/freedesktop.org.xml.in:5625
+#: data/freedesktop.org.xml.in:5632
 msgid "encrypted message"
 msgstr "הודעה מוצפנת"
 
-#: data/freedesktop.org.xml.in:5628
+#: data/freedesktop.org.xml.in:5635
 msgid "compound documents"
 msgstr "מסמכים מורכבים"
 
-#: data/freedesktop.org.xml.in:5631
+#: data/freedesktop.org.xml.in:5638
 msgid "compound document"
 msgstr "מסמך מורכב"
 
-#: data/freedesktop.org.xml.in:5634
+#: data/freedesktop.org.xml.in:5641
 msgid "mail system report"
 msgstr "דו״ח של מערכת הדואר"
 
-#: data/freedesktop.org.xml.in:5637
+#: data/freedesktop.org.xml.in:5644
 msgid "signed message"
 msgstr "הודעה חתומה"
 
-#: data/freedesktop.org.xml.in:5640
+#: data/freedesktop.org.xml.in:5647
 msgid "stream of data (server push)"
 msgstr "מידע בזרימה (דחיפה ע״י השרת)"
 
-#: data/freedesktop.org.xml.in:5643
+#: data/freedesktop.org.xml.in:5650
 msgid "VCS/ICS calendar"
 msgstr "לוח שנה VCS/ICS"
 
-#: data/freedesktop.org.xml.in:5657
-msgid "CSS stylesheet"
-msgstr "גליון עיצוב CSS"
-
 #: data/freedesktop.org.xml.in:5664
+msgid "CSS stylesheet"
+msgstr "גיליון עיצוב CSS"
+
+#: data/freedesktop.org.xml.in:5671
 msgid "electronic business card"
 msgstr "כרטיס ביקור אלקטרוני"
 
-#: data/freedesktop.org.xml.in:5678
+#: data/freedesktop.org.xml.in:5685
 msgid "Turtle document"
 msgstr "מסמך Turtle"
 
-#: data/freedesktop.org.xml.in:5683
+#: data/freedesktop.org.xml.in:5690
 msgid "txt2tags document"
 msgstr "מסמך txt2tags"
 
-#: data/freedesktop.org.xml.in:5692
+#: data/freedesktop.org.xml.in:5699
 msgid "Verilog source code"
 msgstr "קוד מקור של "
 
-#: data/freedesktop.org.xml.in:5697
+#: data/freedesktop.org.xml.in:5704
 msgid "SystemVerilog header"
 msgstr "כותרת SystemVerilog"
 
-#: data/freedesktop.org.xml.in:5702
+#: data/freedesktop.org.xml.in:5709
 msgid "SystemVerilog source code"
 msgstr "קוד מקור של SystemVerilog"
 
-#: data/freedesktop.org.xml.in:5707
+#: data/freedesktop.org.xml.in:5714
 msgid "VHDL source code"
 msgstr "קוד מקור של VHDL"
 
-#: data/freedesktop.org.xml.in:5715
+#: data/freedesktop.org.xml.in:5722
 msgid "enriched text document"
 msgstr "מסמך טקסט מועשר"
 
-#: data/freedesktop.org.xml.in:5719
+#: data/freedesktop.org.xml.in:5726
 msgid "help page"
 msgstr "דף עזרה"
 
-#: data/freedesktop.org.xml.in:5723
+#: data/freedesktop.org.xml.in:5730
 msgid "plain text document"
 msgstr "מסמך טקסט פשוט"
 
-#: data/freedesktop.org.xml.in:5733
+#: data/freedesktop.org.xml.in:5740
 msgid "RDF file"
 msgstr "קובץ RDF"
 
-#: data/freedesktop.org.xml.in:5744
+#: data/freedesktop.org.xml.in:5751
 msgid "reStructuredText document"
-msgstr ""
+msgstr "מסמך reStructuredText"
 
-#: data/freedesktop.org.xml.in:5749
+#: data/freedesktop.org.xml.in:5756
 msgid "OWL XML file"
-msgstr ""
+msgstr "קובץ XML מסוג OWL"
 
-#: data/freedesktop.org.xml.in:5760
+#: data/freedesktop.org.xml.in:5767
 msgid "email headers"
 msgstr "כותרת דוא״ל"
 
-#: data/freedesktop.org.xml.in:5764
+#: data/freedesktop.org.xml.in:5771
 msgid "rich text document"
 msgstr "מסמך טקסט עשיר"
 
-#: data/freedesktop.org.xml.in:5769
+#: data/freedesktop.org.xml.in:5776
 msgid "RSS summary"
 msgstr "תקציר RSS"
 
-#: data/freedesktop.org.xml.in:5782
+#: data/freedesktop.org.xml.in:5789
 msgid "Atom syndication feed"
 msgstr "הזנה דרך הרשת של Atom"
 
-#: data/freedesktop.org.xml.in:5792
+#: data/freedesktop.org.xml.in:5799
 msgid "OPML syndication feed"
 msgstr "הזנה דרך הרשת OPML"
 
-#: data/freedesktop.org.xml.in:5802
+#: data/freedesktop.org.xml.in:5809
 msgid "SGML document"
 msgstr "מסמך SGML"
 
-#: data/freedesktop.org.xml.in:5810
+#: data/freedesktop.org.xml.in:5817
 msgid "spreadsheet interchange document"
-msgstr "מסמך גליון נתונים מתחלף"
+msgstr "מסמך גיליון נתונים מתחלף"
 
-#: data/freedesktop.org.xml.in:5819
+#: data/freedesktop.org.xml.in:5826
 msgid "TSV document"
 msgstr "מסמך TSV"
 
-#: data/freedesktop.org.xml.in:5826
+#: data/freedesktop.org.xml.in:5833
 msgid "Graphviz DOT graph"
 msgstr "תרשים של Graphviz DOT"
 
-#: data/freedesktop.org.xml.in:5838
+#: data/freedesktop.org.xml.in:5845
 msgid "JAD document"
 msgstr "מסמך JAD"
 
-#: data/freedesktop.org.xml.in:5847
+#: data/freedesktop.org.xml.in:5854
 msgid "WML document"
 msgstr "מסמך WML"
 
-#: data/freedesktop.org.xml.in:5854
+#: data/freedesktop.org.xml.in:5861
 msgid "WMLScript program"
 msgstr "תכנית של WMLScript"
 
-#: data/freedesktop.org.xml.in:5858
+#: data/freedesktop.org.xml.in:5865
 msgid "WarpScript source code"
-msgstr ""
+msgstr "קוד מקור ב־WarpScript"
 
-#: data/freedesktop.org.xml.in:5863
+#: data/freedesktop.org.xml.in:5870
 msgid "ACE archive"
 msgstr "ארכיון ACE"
 
-#: data/freedesktop.org.xml.in:5871
+#: data/freedesktop.org.xml.in:5878
 msgid "Ada source code"
 msgstr "קוד מקור Ada"
 
-#: data/freedesktop.org.xml.in:5877
+#: data/freedesktop.org.xml.in:5884
 msgid "author list"
 msgstr "רשימת יוצרים"
 
-#: data/freedesktop.org.xml.in:5882
+#: data/freedesktop.org.xml.in:5889
 msgid "BibTeX document"
 msgstr "מסמך BibTeX"
 
-#: data/freedesktop.org.xml.in:5890
+#: data/freedesktop.org.xml.in:5897
 msgid "C++ header"
 msgstr "כותר C++‎"
 
-#: data/freedesktop.org.xml.in:5899
+#: data/freedesktop.org.xml.in:5906
 msgid "C++ source code"
 msgstr "קוד מקור של C++‎"
 
-#: data/freedesktop.org.xml.in:5908
+#: data/freedesktop.org.xml.in:5915
 msgid "ChangeLog document"
 msgstr "מסמך של ChangeLog"
 
-#: data/freedesktop.org.xml.in:5913
+#: data/freedesktop.org.xml.in:5920
 msgid "C header"
 msgstr "כותר C"
 
-#: data/freedesktop.org.xml.in:5918
+#: data/freedesktop.org.xml.in:5925
 msgid "CMake source code"
 msgstr "קוד מקור של CMake"
 
-#: data/freedesktop.org.xml.in:5924
+#: data/freedesktop.org.xml.in:5931
 msgid "Common Lisp source code"
-msgstr ""
+msgstr "קוד מקור של Common Lisp"
 
-#: data/freedesktop.org.xml.in:5932
+#: data/freedesktop.org.xml.in:5939
 msgid "CSV document"
 msgstr "מסמך CSV"
 
-#: data/freedesktop.org.xml.in:5941
+#: data/freedesktop.org.xml.in:5948
 msgid "CSV Schema document"
 msgstr "מסמך פריסת CSV"
 
-#: data/freedesktop.org.xml.in:5948
+#: data/freedesktop.org.xml.in:5955
 msgid "license terms"
 msgstr "תנאי רישיון"
 
-#: data/freedesktop.org.xml.in:5953
+#: data/freedesktop.org.xml.in:5960
 msgid "author credits"
 msgstr "קרדיטים של היוצר"
 
-#: data/freedesktop.org.xml.in:5958
+#: data/freedesktop.org.xml.in:5965
 msgid "C source code"
 msgstr "קוד מקור של C"
 
-#: data/freedesktop.org.xml.in:5969
+#: data/freedesktop.org.xml.in:5976
 msgid "C# source code"
 msgstr "קוד מקור של C#‎"
 
-#: data/freedesktop.org.xml.in:5974
+#: data/freedesktop.org.xml.in:5981
 msgid "Vala source code"
 msgstr "קוד מקור של Vala"
 
-#: data/freedesktop.org.xml.in:5980
+#: data/freedesktop.org.xml.in:5987
 msgid "OOC source code"
 msgstr "קוד מקור של OOC"
 
-#: data/freedesktop.org.xml.in:5987
+#: data/freedesktop.org.xml.in:5994
 msgid "DCL script"
 msgstr "תסריט DCL"
 
-#: data/freedesktop.org.xml.in:5994
+#: data/freedesktop.org.xml.in:6001
 msgid "DSSSL document"
 msgstr "מסמך DSSSL"
 
-#: data/freedesktop.org.xml.in:6001
+#: data/freedesktop.org.xml.in:6008
 msgid "D source code"
 msgstr "קוד מקור לשפת D"
 
-#: data/freedesktop.org.xml.in:6007
+#: data/freedesktop.org.xml.in:6014
 msgid "DTD file"
 msgstr "מסמך DTD"
 
-#: data/freedesktop.org.xml.in:6016
+#: data/freedesktop.org.xml.in:6023
 msgid "Eiffel source code"
 msgstr "קוד מקור של Eiffel"
 
-#: data/freedesktop.org.xml.in:6022
+#: data/freedesktop.org.xml.in:6029
 msgid "Emacs Lisp source code"
 msgstr "קוד מקור של Emcas Lisp"
 
-#: data/freedesktop.org.xml.in:6031
+#: data/freedesktop.org.xml.in:6038
 msgid "Erlang source code"
 msgstr "קוד מקור של Erlang"
 
-#: data/freedesktop.org.xml.in:6036
+#: data/freedesktop.org.xml.in:6043
 msgid "Fortran source code"
 msgstr "קוד מקור של Fortran"
 
-#: data/freedesktop.org.xml.in:6044
+#: data/freedesktop.org.xml.in:6051
 msgid "Genie source code"
 msgstr "קוד מקור של Genie"
 
-#: data/freedesktop.org.xml.in:6050
+#: data/freedesktop.org.xml.in:6057
 msgid "translation file"
 msgstr "קובץ תרגום"
 
-#: data/freedesktop.org.xml.in:6057
+#: data/freedesktop.org.xml.in:6064
 msgid "translation template"
 msgstr "תבנית תרגום"
 
-#: data/freedesktop.org.xml.in:6066
+#: data/freedesktop.org.xml.in:6073
 msgid "Gherkin document"
-msgstr ""
+msgstr "מסמך Gherkin"
 
-#: data/freedesktop.org.xml.in:6071
+#: data/freedesktop.org.xml.in:6078
 msgid "HTML document"
 msgstr "מסמך HTML"
 
-#: data/freedesktop.org.xml.in:6100
+#: data/freedesktop.org.xml.in:6107
 msgid "Web application cache file"
-msgstr ""
+msgstr "קובץ מטמון של תוכנית ברשת"
 
-#: data/freedesktop.org.xml.in:6113
+#: data/freedesktop.org.xml.in:6120
 msgid "Google Video Pointer shortcut"
-msgstr ""
+msgstr "קיצור למצביע וידאו של Google"
 
-#: data/freedesktop.org.xml.in:6122
+#: data/freedesktop.org.xml.in:6129
 msgid "Haskell source code"
 msgstr "קוד מקור של Haskell"
 
-#: data/freedesktop.org.xml.in:6127
+#: data/freedesktop.org.xml.in:6134
 msgid "IDL document"
 msgstr "מסמך IDL"
 
-#: data/freedesktop.org.xml.in:6134
+#: data/freedesktop.org.xml.in:6141
 msgid "installation instructions"
 msgstr "הוראות התקנה"
 
-#: data/freedesktop.org.xml.in:6139
+#: data/freedesktop.org.xml.in:6146
 msgid "Java source code"
 msgstr "קוד מקור ב־Java"
 
-#: data/freedesktop.org.xml.in:6144
+#: data/freedesktop.org.xml.in:6151
 msgid "LDIF address book"
 msgstr "ספר כתובות של LDIF"
 
-#: data/freedesktop.org.xml.in:6155
+#: data/freedesktop.org.xml.in:6162
 msgid "Lilypond music sheet"
 msgstr "דף מוזיקה של Lilypond"
 
-#: data/freedesktop.org.xml.in:6160
+#: data/freedesktop.org.xml.in:6167
 msgid "LHS source code"
 msgstr "קוד מקור של LHS"
 
-#: data/freedesktop.org.xml.in:6167
+#: data/freedesktop.org.xml.in:6174
 msgid "application log"
 msgstr "יומן יישום"
 
-#: data/freedesktop.org.xml.in:6172
+#: data/freedesktop.org.xml.in:6179
 msgid "Makefile build file"
-msgstr ""
+msgstr "קובץ בניית Makefile"
 
-#: data/freedesktop.org.xml.in:6185
+#: data/freedesktop.org.xml.in:6192
 msgid "Markdown document"
 msgstr "מסמך Markdown"
 
-#: data/freedesktop.org.xml.in:6193
+#: data/freedesktop.org.xml.in:6200
 msgid "Qt MOC file"
 msgstr "קובץ Qt MOC"
 
-#: data/freedesktop.org.xml.in:6200
+#: data/freedesktop.org.xml.in:6207
 msgid "Windows Registry extract"
 msgstr "קובץ רשומות מערכת של Windows"
 
-#: data/freedesktop.org.xml.in:6210
-msgid "MOF file"
-msgstr ""
-
 #: data/freedesktop.org.xml.in:6217
-msgid "Mup musical composition document"
-msgstr ""
+msgid "MOF file"
+msgstr "קובץ MOF"
 
-#: data/freedesktop.org.xml.in:6226
+#: data/freedesktop.org.xml.in:6224
+msgid "Mup musical composition document"
+msgstr "מסמך קומפוזיציה מוזיקלית מסוג Mup"
+
+#: data/freedesktop.org.xml.in:6233
 msgid "Objective-C source code"
 msgstr "קוד מקור של Objective-C"
 
-#: data/freedesktop.org.xml.in:6234
+#: data/freedesktop.org.xml.in:6241
 msgid "OCaml source code"
 msgstr "קוד מקור של OCaml"
 
-#: data/freedesktop.org.xml.in:6239
-msgid "OpenCL source code"
-msgstr ""
-
 #: data/freedesktop.org.xml.in:6246
-msgid "MATLAB file"
-msgstr ""
+msgid "OpenCL source code"
+msgstr "קוד מקור OpenCL"
 
-#: data/freedesktop.org.xml.in:6261
+#: data/freedesktop.org.xml.in:6253
+msgid "MATLAB file"
+msgstr "קובץ MATLAB"
+
+#: data/freedesktop.org.xml.in:6268
 msgid "Meson source code"
 msgstr "קוד מקור Meson"
 
-#: data/freedesktop.org.xml.in:6267
+#: data/freedesktop.org.xml.in:6274
 msgid "Modelica model"
 msgstr "דגם של Modelica"
 
-#: data/freedesktop.org.xml.in:6287
+#: data/freedesktop.org.xml.in:6294
 msgid "Pascal source code"
 msgstr "קוד מקור של Pascal"
 
-#: data/freedesktop.org.xml.in:6293
+#: data/freedesktop.org.xml.in:6300
 msgid "differences between files"
 msgstr "הבדל בין קבצים"
 
-#: data/freedesktop.org.xml.in:6312
+#: data/freedesktop.org.xml.in:6319
 msgid "Go source code"
 msgstr "קוד מקור של Go"
 
-#: data/freedesktop.org.xml.in:6317
+#: data/freedesktop.org.xml.in:6324
 msgid "SCons configuration file"
 msgstr "קובץ תצורה של SCons"
 
-#: data/freedesktop.org.xml.in:6324
+#: data/freedesktop.org.xml.in:6331
 msgid "Python 3 script"
-msgstr ""
+msgstr "סקריפט Python 3"
 
-#: data/freedesktop.org.xml.in:6343
+#: data/freedesktop.org.xml.in:6350
 msgid "Python script"
 msgstr "תסריט Python"
 
-#: data/freedesktop.org.xml.in:6363
+#: data/freedesktop.org.xml.in:6370
 msgid "SageMath script"
-msgstr ""
+msgstr "סקריפט SageMath"
 
-#: data/freedesktop.org.xml.in:6368
+#: data/freedesktop.org.xml.in:6375
 msgid "Lua script"
 msgstr "תסריט Lua"
 
-#: data/freedesktop.org.xml.in:6380
+#: data/freedesktop.org.xml.in:6387
 msgid "README document"
 msgstr "מסמך README"
 
-#: data/freedesktop.org.xml.in:6385
+#: data/freedesktop.org.xml.in:6392
 msgid "NFO document"
 msgstr "מסמך NFO"
 
-#: data/freedesktop.org.xml.in:6390
+#: data/freedesktop.org.xml.in:6397
 msgid "RPM spec file"
 msgstr "קובץ מפרט RPM"
 
-#: data/freedesktop.org.xml.in:6401
+#: data/freedesktop.org.xml.in:6408
 msgid "Sass CSS pre-processor file"
 msgstr "קובץ קדם עיבוד Sass CSS"
 
-#: data/freedesktop.org.xml.in:6409
+#: data/freedesktop.org.xml.in:6416
 msgid "Scala source code"
 msgstr "קוד מקור של Scala"
 
-#: data/freedesktop.org.xml.in:6414
+#: data/freedesktop.org.xml.in:6421
 msgid "Scheme source code"
 msgstr "קוד מקור של Scheme"
 
-#: data/freedesktop.org.xml.in:6420
+#: data/freedesktop.org.xml.in:6427
 msgid "SCSS pre-processor file"
-msgstr ""
+msgstr "קובץ עיבוד קדם SCSS"
 
-#: data/freedesktop.org.xml.in:6428
+#: data/freedesktop.org.xml.in:6435
 msgid "Setext document"
 msgstr "מסמך של Setext"
 
-#: data/freedesktop.org.xml.in:6433
+#: data/freedesktop.org.xml.in:6440
 msgid "SQL code"
 msgstr "קוד SQL"
 
-#: data/freedesktop.org.xml.in:6439
+#: data/freedesktop.org.xml.in:6446
 msgid "Tcl script"
 msgstr "תסריט Tcl"
 
-#: data/freedesktop.org.xml.in:6446
+#: data/freedesktop.org.xml.in:6453
 msgid "TeX document"
 msgstr "מסמך TeX"
 
-#: data/freedesktop.org.xml.in:6464
+#: data/freedesktop.org.xml.in:6471
 msgid "TeXInfo document"
 msgstr "מסמך של TeXInfo"
 
-#: data/freedesktop.org.xml.in:6470
+#: data/freedesktop.org.xml.in:6477
 msgid "Troff ME input document"
 msgstr "מסמך קלט של Troff ME"
 
-#: data/freedesktop.org.xml.in:6475
+#: data/freedesktop.org.xml.in:6482
 msgid "Troff MM input document"
 msgstr "מסמך קלט של Troff MM"
 
-#: data/freedesktop.org.xml.in:6480
+#: data/freedesktop.org.xml.in:6487
 msgid "Troff MS input document"
 msgstr "מסמך קלט של Troff MS"
 
-#: data/freedesktop.org.xml.in:6485
+#: data/freedesktop.org.xml.in:6492
 msgid "Twig template"
 msgstr "תבנית Twig"
 
-#: data/freedesktop.org.xml.in:6491
+#: data/freedesktop.org.xml.in:6498
 msgid "X-Motif UIL table"
 msgstr "טבלה של X-Motif UIL"
 
-#: data/freedesktop.org.xml.in:6496
+#: data/freedesktop.org.xml.in:6503
 msgid "resource location"
 msgstr "מיקום של משאב"
 
-#: data/freedesktop.org.xml.in:6501
+#: data/freedesktop.org.xml.in:6508
 msgid "uuencoded file"
 msgstr "קובץ בקידוד uu"
 
-#: data/freedesktop.org.xml.in:6510
-msgid "VBScript program"
-msgstr ""
-
 #: data/freedesktop.org.xml.in:6517
+msgid "VBScript program"
+msgstr "תכנית VBScript"
+
+#: data/freedesktop.org.xml.in:6524
 msgid "XMI file"
 msgstr "קובץ XMI"
 
-#: data/freedesktop.org.xml.in:6526
+#: data/freedesktop.org.xml.in:6533
 msgid "XSL FO file"
 msgstr "קובץ XSL FO"
 
-#: data/freedesktop.org.xml.in:6535
+#: data/freedesktop.org.xml.in:6542
 msgid "iptables configuration file"
 msgstr "קובץ הגדרה של iptables"
 
-#: data/freedesktop.org.xml.in:6560
+#: data/freedesktop.org.xml.in:6567
 msgid "D-Bus service file"
-msgstr ""
+msgstr "קובץ שירות D-Bus"
 
-#: data/freedesktop.org.xml.in:6569
+#: data/freedesktop.org.xml.in:6576
 msgid "systemd unit file"
-msgstr ""
+msgstr "קובץ יחידת systemd"
 
-#: data/freedesktop.org.xml.in:6613
+#: data/freedesktop.org.xml.in:6620
 msgid "XSLT stylesheet"
-msgstr "גליון סגנון XSLT"
-
-#: data/freedesktop.org.xml.in:6626
-msgid "Maven description file"
-msgstr ""
+msgstr "גיליון סגנון XSLT"
 
 #: data/freedesktop.org.xml.in:6633
+msgid "Maven description file"
+msgstr "קובץ תיאור Maven"
+
+#: data/freedesktop.org.xml.in:6640
 msgid "XMCD CD database"
 msgstr "מסד נתונים XMCD CD"
 
-#: data/freedesktop.org.xml.in:6640
+#: data/freedesktop.org.xml.in:6647
 msgid "XML document"
 msgstr "מסמך XML"
 
-#: data/freedesktop.org.xml.in:6655
+#: data/freedesktop.org.xml.in:6662
 msgid "XML entities document"
 msgstr "מסמך ישויות XML"
 
-#: data/freedesktop.org.xml.in:6664
+#: data/freedesktop.org.xml.in:6671
 msgid "DV video"
 msgstr "וידאו DV"
 
-#: data/freedesktop.org.xml.in:6673
+#: data/freedesktop.org.xml.in:6680
 msgid "ISI video"
 msgstr "וידאו ISI"
 
-#: data/freedesktop.org.xml.in:6676
+#: data/freedesktop.org.xml.in:6683
 msgid "MPEG-2 transport stream"
 msgstr "העברת זרימה של MPEG-2"
 
-#: data/freedesktop.org.xml.in:6711
+#: data/freedesktop.org.xml.in:6718
 msgid "MPEG video"
 msgstr "וידאו MPEG"
 
-#: data/freedesktop.org.xml.in:6731
+#: data/freedesktop.org.xml.in:6738
 msgid "MPEG video (streamed)"
 msgstr "קובץ MPEG (בהזרמה)"
 
-#: data/freedesktop.org.xml.in:6742
+#: data/freedesktop.org.xml.in:6749
 msgid "QuickTime video"
 msgstr "וידאו של QuickTime"
 
-#: data/freedesktop.org.xml.in:6755
+#: data/freedesktop.org.xml.in:6762
 msgid "QuickTime image"
 msgstr "תמונה של QuickTime"
 
-#: data/freedesktop.org.xml.in:6763
+#: data/freedesktop.org.xml.in:6770 data/freedesktop.org.xml.in:6781
 msgid "Khronos texture image"
-msgstr ""
+msgstr "תמונת מרקם של Khronos"
 
-#: data/freedesktop.org.xml.in:6774
+#: data/freedesktop.org.xml.in:6792
 msgid "ASTC texture"
-msgstr ""
+msgstr "מרקם של ASTC"
 
-#: data/freedesktop.org.xml.in:6783
+#: data/freedesktop.org.xml.in:6801
 msgid "Vivo video"
 msgstr "וידאו של Vivo"
 
-#: data/freedesktop.org.xml.in:6789
+#: data/freedesktop.org.xml.in:6807
 msgid "Wavelet video"
 msgstr "וידאו של Wavelet"
 
-#: data/freedesktop.org.xml.in:6792
+#: data/freedesktop.org.xml.in:6810
 msgid "ANIM animation"
 msgstr "הנפשת ANIM"
 
-#: data/freedesktop.org.xml.in:6796
+#: data/freedesktop.org.xml.in:6814
 msgid "FLIC animation"
 msgstr "הנפשת FLIC"
 
-#: data/freedesktop.org.xml.in:6807
+#: data/freedesktop.org.xml.in:6825
 msgid "Haansoft Hangul document"
 msgstr "מסמך Haansoft Hangul"
 
-#: data/freedesktop.org.xml.in:6816
+#: data/freedesktop.org.xml.in:6834
 msgid "Haansoft Hangul document template"
 msgstr "תבנית מסמך של Haansoft Hangul"
 
-#: data/freedesktop.org.xml.in:6822
+#: data/freedesktop.org.xml.in:6840
 msgid "MNG animation"
 msgstr "הנפשת MNG"
 
-#: data/freedesktop.org.xml.in:6831
+#: data/freedesktop.org.xml.in:6849
 msgid "ASF video"
 msgstr "וידאו ASF"
 
-#: data/freedesktop.org.xml.in:6844
+#: data/freedesktop.org.xml.in:6862
 msgid "Windows Media Station file"
 msgstr "קובץ תחנה של Windows Media"
 
-#: data/freedesktop.org.xml.in:6853
+#: data/freedesktop.org.xml.in:6871
 msgid "Windows Media video"
 msgstr "וידאו של Windows Media"
 
-#: data/freedesktop.org.xml.in:6858
+#: data/freedesktop.org.xml.in:6876
 msgid "AVI video"
 msgstr "וידאו AVI"
 
-#: data/freedesktop.org.xml.in:6879
+#: data/freedesktop.org.xml.in:6897
 msgid "NullSoft video"
 msgstr "וידאו של NullSot"
 
-#: data/freedesktop.org.xml.in:6886
+#: data/freedesktop.org.xml.in:6904
 msgid "SDP multicast stream file"
 msgstr "קובץ שידור בזרימה SDP"
 
-#: data/freedesktop.org.xml.in:6901
+#: data/freedesktop.org.xml.in:6919
 msgid "SGI video"
 msgstr "וידאו SGI"
 
-#: data/freedesktop.org.xml.in:6908
+#: data/freedesktop.org.xml.in:6926
 msgid "eMusic download package"
 msgstr "חבילת הורדה של eMusic"
 
-#: data/freedesktop.org.xml.in:6916
+#: data/freedesktop.org.xml.in:6934
 msgid "KML geographic data"
 msgstr "מידע גאוגרפי KML"
 
-#: data/freedesktop.org.xml.in:6924
+#: data/freedesktop.org.xml.in:6942
 msgid "KML geographic compressed data"
 msgstr "מידע גאוגרפי דחוס KML"
 
-#: data/freedesktop.org.xml.in:6931
+#: data/freedesktop.org.xml.in:6949
 msgid "GeoJSON geospatial data"
-msgstr ""
+msgstr "נתונים מרחביים ב־GeoJSON"
 
-#: data/freedesktop.org.xml.in:6938
+#: data/freedesktop.org.xml.in:6956
 msgid "GPX geographic data"
 msgstr "נתונים גאוגרפיים GPX"
 
-#: data/freedesktop.org.xml.in:6950
+#: data/freedesktop.org.xml.in:6968
 msgid "Citrix ICA settings file"
 msgstr "קובץ הגדרות של Citrix ICA"
 
-#: data/freedesktop.org.xml.in:6958
+#: data/freedesktop.org.xml.in:6976
 msgid "XUL interface document"
 msgstr "מסמך ממשק XUL"
 
-#: data/freedesktop.org.xml.in:6967
+#: data/freedesktop.org.xml.in:6985
 msgid "XPInstall installer module"
 msgstr "מודול התקנה של XPInstall"
 
-#: data/freedesktop.org.xml.in:6972
+#: data/freedesktop.org.xml.in:6990
 msgid "Word 2007 document"
 msgstr "מסמך Word 2007"
 
-#: data/freedesktop.org.xml.in:6978
+#: data/freedesktop.org.xml.in:6996
 msgid "Word 2007 document template"
 msgstr "תבנית מסמך של Word 2007"
 
-#: data/freedesktop.org.xml.in:6984
+#: data/freedesktop.org.xml.in:7002
 msgid "PowerPoint 2007 presentation"
 msgstr "מצגת של PowerPoint 2007"
 
-#: data/freedesktop.org.xml.in:6990
+#: data/freedesktop.org.xml.in:7008
 msgid "PowerPoint 2007 slide"
 msgstr "שקופית של PowerPoint 2007"
 
-#: data/freedesktop.org.xml.in:6996
+#: data/freedesktop.org.xml.in:7014
 msgid "PowerPoint 2007 show"
 msgstr "תצוגה של PowerPoint 2007"
 
-#: data/freedesktop.org.xml.in:7002
+#: data/freedesktop.org.xml.in:7020
 msgid "PowerPoint 2007 presentation template"
 msgstr "תבנית למצגת של PowerPoint 2007"
 
-#: data/freedesktop.org.xml.in:7008
+#: data/freedesktop.org.xml.in:7026
 msgid "Excel 2007 spreadsheet"
-msgstr "גליון נתונים של Excel 2007"
+msgstr "גיליון נתונים של Excel 2007"
 
-#: data/freedesktop.org.xml.in:7014
+#: data/freedesktop.org.xml.in:7032
 msgid "Excel 2007 spreadsheet template"
 msgstr "תבנית של גיליון נתונים של Excel 2007"
 
-#: data/freedesktop.org.xml.in:7020
+#: data/freedesktop.org.xml.in:7038
 msgid "T602 document"
 msgstr "מסמך T602"
 
-#: data/freedesktop.org.xml.in:7030
+#: data/freedesktop.org.xml.in:7048
 msgid "Cisco VPN settings"
-msgstr ""
+msgstr "הגדרות VPN של Cisco"
 
-#: data/freedesktop.org.xml.in:7040
+#: data/freedesktop.org.xml.in:7058
 msgid "ICC profile"
 msgstr "פרופיל ICC"
 
-#: data/freedesktop.org.xml.in:7048
+#: data/freedesktop.org.xml.in:7066
 msgid "IT 8.7 color calibration file"
 msgstr "קובץ כיול צבע IT 8.7"
 
-#: data/freedesktop.org.xml.in:7057
+#: data/freedesktop.org.xml.in:7075
 msgid "CCMX color correction file"
 msgstr "קובץ תיקון צבע מסוג CCMX"
 
-#: data/freedesktop.org.xml.in:7066
+#: data/freedesktop.org.xml.in:7084
 msgid "WinHelp help file"
 msgstr "קובץ עזרה מסוג WinHelp"
 
-#: data/freedesktop.org.xml.in:7074
+#: data/freedesktop.org.xml.in:7092
 msgid "binary differences between files"
 msgstr "הבדלים בינריים בין קבצים"
 
 #. http://en.wikipedia.org/wiki/Design_rule_for_Camera_File_system
-#: data/freedesktop.org.xml.in:7085
+#: data/freedesktop.org.xml.in:7103
 msgid "digital photos"
 msgstr "תמונות דיגיטליות"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Video_CD
 #. http://www.herongyang.com/CD-DVD/VCD-Movie-File-Directory-Structure.html
-#: data/freedesktop.org.xml.in:7095
+#: data/freedesktop.org.xml.in:7113
 msgid "Video CD"
 msgstr "תקליטור וידאו"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Super_Video_CD
 #. http://everything2.com/index.pl?node_id=1009222
-#: data/freedesktop.org.xml.in:7105
+#: data/freedesktop.org.xml.in:7123
 msgid "Super Video CD"
 msgstr "Super Video CD"
 
 #. http://en.wikipedia.org/wiki/DVD-Video
-#: data/freedesktop.org.xml.in:7113
+#: data/freedesktop.org.xml.in:7131
 msgid "video DVD"
 msgstr "DVD וידאו"
 
 #. http://en.wikipedia.org/wiki/Red_Book_(audio_CD_standard)
-#: data/freedesktop.org.xml.in:7124
+#: data/freedesktop.org.xml.in:7142
 msgid "audio CD"
 msgstr "תקליטור שמע"
 
 #. http://en.wikipedia.org/wiki/Compact_Disc
-#: data/freedesktop.org.xml.in:7129
+#: data/freedesktop.org.xml.in:7147
 msgid "blank CD disc"
 msgstr "תקליטור ריק"
 
 #. http://en.wikipedia.org/wiki/DVD
-#: data/freedesktop.org.xml.in:7134
+#: data/freedesktop.org.xml.in:7152
 msgid "blank DVD disc"
 msgstr "תקליטור DVD ריק"
 
 #. http://en.wikipedia.org/wiki/Blu-ray_Disc
-#: data/freedesktop.org.xml.in:7139
+#: data/freedesktop.org.xml.in:7157
 msgid "blank Blu-ray disc"
 msgstr "תקליטור בלו־ריי ריק"
 
 #. http://en.wikipedia.org/wiki/HD_DVD
-#: data/freedesktop.org.xml.in:7144
+#: data/freedesktop.org.xml.in:7162
 msgid "blank HD DVD disc"
 msgstr "דיסק HD DVD ריק"
 
 #. http://en.wikipedia.org/wiki/DVD-Audio
-#: data/freedesktop.org.xml.in:7149
+#: data/freedesktop.org.xml.in:7167
 msgid "audio DVD"
 msgstr "DVD שמע"
 
 #. http://en.wikipedia.org/wiki/Blu-ray_Disc
 #. http://www.blu-raydisc.com/Section-13470/Section-13890/Index.html
-#: data/freedesktop.org.xml.in:7159
+#: data/freedesktop.org.xml.in:7177
 msgid "Blu-ray video disc"
 msgstr "תקליטור וידאו מסוג בלו־ריי"
 
 #. http://en.wikipedia.org/wiki/HD_DVD
 #. http://www.dvdafteredit.com/wiki/The_HVDVD_TS_Folder
-#: data/freedesktop.org.xml.in:7169
+#: data/freedesktop.org.xml.in:7187
 msgid "HD DVD video disc"
 msgstr "תקליטור וידאו HD DVD"
 
 #. see fd.o hal spec
-#: data/freedesktop.org.xml.in:7179
+#: data/freedesktop.org.xml.in:7197
 msgid "e-book reader"
 msgstr "קורא ספרים אלקטרוניים"
 
 #. TRANSLATORS: This is a brand-name, not a generic term. Please see
 #. http://en.wikipedia.org/wiki/Picture_CD
 #. http://www.re.org/kristin/picturecd.html
-#: data/freedesktop.org.xml.in:7190
+#: data/freedesktop.org.xml.in:7208
 msgid "Picture CD"
 msgstr "תקליטור תמונות"
 
 #. see fd.o hal spec
-#: data/freedesktop.org.xml.in:7198
+#: data/freedesktop.org.xml.in:7216
 msgid "portable audio player"
 msgstr "נגן מוזיקה נייד"
 
 #. https://github.com/ostreedev/ostree/blob/master/man/ostree-create-usb.xml
-#: data/freedesktop.org.xml.in:7203
+#: data/freedesktop.org.xml.in:7221
 msgid "OSTree software updates"
-msgstr ""
+msgstr "עדכוני תכנה של OSTree"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: data/freedesktop.org.xml.in:7214
+#: data/freedesktop.org.xml.in:7232
 msgid "software"
 msgstr "תכנה"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: data/freedesktop.org.xml.in:7220
+#: data/freedesktop.org.xml.in:7238
 msgid "UNIX software"
 msgstr "תכנה ל־UNIX"
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
-#: data/freedesktop.org.xml.in:7232
+#: data/freedesktop.org.xml.in:7250
 msgid "Windows software"
 msgstr "תכנה ל־Windows"
 
-#: data/freedesktop.org.xml.in:7241
+#: data/freedesktop.org.xml.in:7259
 msgid "TriG RDF document"
 msgstr "מסמך RDF של TriG"
 
-#: data/freedesktop.org.xml.in:7250
+#: data/freedesktop.org.xml.in:7268
 msgid "Apple Keynote 5 presentation"
 msgstr "מצגת Apple Keynote 5"
 
-#: data/freedesktop.org.xml.in:7263
+#: data/freedesktop.org.xml.in:7281
 msgid "Adobe PageMaker document"
-msgstr ""
+msgstr "מסמך Adobe PageMaker"
 
-#: data/freedesktop.org.xml.in:7273
+#: data/freedesktop.org.xml.in:7291
 msgid "Doom WAD file"
-msgstr ""
+msgstr "קובץ WAD של Doom"
 
-#: data/freedesktop.org.xml.in:7285
+#: data/freedesktop.org.xml.in:7303
 msgid "Amiga disk image"
 msgstr "דמות כונן Amiga"
 
-#: data/freedesktop.org.xml.in:7293
+#: data/freedesktop.org.xml.in:7311
 msgid "Flatpak application bundle"
 msgstr "חבילת יישומי Flatpak"
 
-#: data/freedesktop.org.xml.in:7305
+#: data/freedesktop.org.xml.in:7323
 msgid "Flatpak repository description"
 msgstr "תיאור מאגר Flatpak"
 
-#: data/freedesktop.org.xml.in:7315
+#: data/freedesktop.org.xml.in:7333
 msgid "Flatpak repository reference"
-msgstr ""
+msgstr "הפניית מאגר Flatpak"
 
-#: data/freedesktop.org.xml.in:7325
+#: data/freedesktop.org.xml.in:7343
 msgid "Squashfs filesystem image"
-msgstr ""
+msgstr "תמונת מערכת קבצים Squashfs"
 
-#: data/freedesktop.org.xml.in:7352
+#: data/freedesktop.org.xml.in:7370
 msgid "Snap package"
 msgstr "חבילת Snap"
 
-#: data/freedesktop.org.xml.in:7359
+#: data/freedesktop.org.xml.in:7377
 msgid "STL 3D model"
-msgstr ""
+msgstr "דגם תלת ממדי של STL"
 
-#: data/freedesktop.org.xml.in:7372
+#: data/freedesktop.org.xml.in:7390
 msgid "G-code file"
-msgstr ""
+msgstr "קובץ G-code"
 
-#: data/freedesktop.org.xml.in:7379
+#: data/freedesktop.org.xml.in:7397
 msgid "Nintendo FDS disk image"
-msgstr ""
+msgstr "תמונת כונן Nintendo FDS"
 
-#: data/freedesktop.org.xml.in:7389
+#: data/freedesktop.org.xml.in:7407
 msgid "QEMU QCOW disk image"
-msgstr ""
+msgstr "תמונת כונן QEMU QCOW"
 
-#: data/freedesktop.org.xml.in:7402
+#: data/freedesktop.org.xml.in:7420
 msgid "AppleWorks document"
-msgstr ""
+msgstr "מסמך AppleWorks"
 
-#: data/freedesktop.org.xml.in:7408
+#: data/freedesktop.org.xml.in:7426
 msgid "BPS patch"
-msgstr ""
-
-#: data/freedesktop.org.xml.in:7418
-msgid "IPS patch"
-msgstr ""
-
-#: data/freedesktop.org.xml.in:7428
-msgid "Pyspread spreadsheet"
-msgstr ""
+msgstr "טלאי BPS"
 
 #: data/freedesktop.org.xml.in:7436
+msgid "IPS patch"
+msgstr "טלאי IPS"
+
+#: data/freedesktop.org.xml.in:7446
+msgid "Pyspread spreadsheet"
+msgstr "גיליון Pyspread"
+
+#: data/freedesktop.org.xml.in:7454
 msgid "Pyspread spreadsheet (bzip-compressed)"
-msgstr ""
+msgstr "גיליון Pyspread (בדחיסת bzip)"
 
-#: data/freedesktop.org.xml.in:7443
+#: data/freedesktop.org.xml.in:7461
 msgid "Kotlin source code"
-msgstr ""
+msgstr "קוד מקור של Kotlin"
 
-#: data/freedesktop.org.xml.in:7449
+#: data/freedesktop.org.xml.in:7467
 msgid "AV1 Image File Format (AVIF)"
-msgstr ""
+msgstr "תצורת קובץ תמונת AV1‏ (AVIF)"
